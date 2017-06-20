@@ -1,0 +1,1269 @@
+{
+    "@context": "../paper-context.json",
+    "@id": "https://doi.org/10.1639/0007-2745(2007)110[46:POTCWA]2.0.CO;2",
+    "@type": "tbd:Publication",
+    "citation": "Fisher KM, Wall DP, Yip KL, Mishler BD (2007) The Bryologist 110(1):46-73.",
+    "comments": "None.",
+    "curator": "Gaurav Vaidya <gaurav@ggvaidya.com>",
+    "inputFiles": [
+        {
+            "filename": "T748.nexml",
+            "ot:dataDeposit": "https://treebase.org/treebase-web/search/study/taxa.html?id=1624&treeid=748",
+            "phylogenies": [
+                {
+                    "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624",
+                    "annotations": [
+                        {
+                            "@type": "Annotation",
+                            "annotationBody": "56",
+                            "annotationName": "ntax.tree",
+                            "annotationTarget": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624"
+                        },
+                        {
+                            "@type": "Annotation",
+                            "annotationBody": "Unrated",
+                            "annotationName": "quality.tree",
+                            "annotationTarget": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624"
+                        },
+                        {
+                            "@type": "Annotation",
+                            "annotationBody": "Consensus",
+                            "annotationName": "type.tree",
+                            "annotationTarget": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624"
+                        },
+                        {
+                            "@type": "Annotation",
+                            "annotationBody": "Species Tree",
+                            "annotationName": "kind.tree",
+                            "annotationTarget": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624"
+                        },
+                        {
+                            "@type": "Annotation",
+                            "annotationBody": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624",
+                            "annotationName": "isDefinedBy",
+                            "annotationTarget": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624"
+                        }
+                    ],
+                    "newick": "[&U] (((((((((Calymperes_lonchophyllum:0.0,(Calymperes_tahitense_320:0.0,Calymperes_tahitense_115:0.0):0.0):0.0,(Calymperes_graffeanum:0.0,(Calymperes_afzelii_165:0.0,Calymperes_afzelii_179:0.0):0.0):0.0):0.0,(((Calymperes_hispidium:0.0,Calymperes_subintegrum:0.0,Calymperes_tenerum:0.0,(Calymperes_tuatomuense:0.0,Calymperes_pseudopodianum:0.0):0.0):0.0,Calymperes_moluccense:0.0):0.0,((Calymperes_erosum:0.0,Calymperes_robinsonii:0.0):0.0,(Calymperes_motleyi:0.0,(Calymperes_palisotii_159:0.0,Calymperes_palisotii_180:0.0):0.0):0.0):0.0):0.0):0.0,Syrrhopodon_incompletus:0.0):0.0,Syrrhopodon_mauritianus:0.0):0.0,((((Syrrhopodon_apertus:0.0,Syrrhopodon_fissipapillatus:0.0,Syrrhopodon_croceus:0.0):0.0,Syrrhopodon_tristichus:0.0):0.0,(Syrrhopodon_mahensis:0.0,(((Mitthyridium_obtusifolium:0.0,Mitthyridium_constrictum:0.0):0.0,Mitthyridium_fasiculatum:0.0):0.0,(Mitthyridium_jungquilianum:0.0,Mitthyridium_undulatum:0.0):0.0):0.0):0.0):0.0,((((((((Leucophanes_seychellarum:0.0,(Leucophanes_octoblepharioides:0.0,Leucophanes_albescens:0.0):0.0,Leucophanes_glaucum:0.0):0.0,Syrrhopodon_confertus:0.0):0.0,Exodictyon_incrassatum:0.0):0.0,((Exostratum_blumei_243:0.0,Exostratum_blumei_245:0.0):0.0,Arthrocormus_schimperi:0.0):0.0):0.0,Syrrhopodon_muelleri:0.0):0.0,Syrrhopodon_perarmatus:0.0):0.0,((((Syrrhopodon_involutus:0.0,Syrrhopodon_banksii:0.0):0.0,Syrrhopodon_trachyphyllus:0.0,Syrrhopodon_parasiticus:0.0):0.0,(Syrrhopodon_prolifer:0.0,(Syrrhopodon_tortillis:0.0,Syrrhopodon_leprieurii:0.0):0.0):0.0):0.0,((Syrrhopodon_albovaginatus_446:0.0,Syrrhopodon_albovaginatus_162:0.0):0.0,Syrrhopodon_ciliatus:0.0):0.0):0.0):0.0,(Syrrhopodon_armatus:0.0,Syrrhopodon_fimbriatulus:0.0):0.0):0.0):0.0):0.0,Syrrhopodon_japonicus:0.0):0.0,Syrrhopodon_gardneri:0.0):0.0,(Octoblepharum_Moorea_445:0.0,Octoblepharum_albidum:0.0):0.0);",
+                    "nodes": [
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_1",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_2",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_3"
+                            ],
+                            "siblings": []
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_2",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_4",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_5"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_3"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_4",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_6",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_7"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_5"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_6",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_8",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_9"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_7"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_8",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_10",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_11"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_9"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_10",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_12",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_13"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_11"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_12",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_14",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_15"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_13"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_14",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_16",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_17"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_15"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_16",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_18",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_19"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_17"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_18",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_19"
+                            ],
+                            "taxonName": "Calymperes lonchophyllum"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_19",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_20",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_21"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_18"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_20",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "binomialName": "Calymperes tahitense",
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_21"
+                            ],
+                            "taxonName": "Calymperes tahitense 320"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_21",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "binomialName": "Calymperes tahitense",
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_20"
+                            ],
+                            "taxonName": "Calymperes tahitense 115"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_17",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_22",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_23"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_16"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_22",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_23"
+                            ],
+                            "taxonName": "Calymperes graffeanum"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_23",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_24",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_25"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_22"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_24",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "binomialName": "Calymperes afzelii",
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_25"
+                            ],
+                            "taxonName": "Calymperes afzelii 165"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_25",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "binomialName": "Calymperes afzelii",
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_24"
+                            ],
+                            "taxonName": "Calymperes afzelii 179"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_15",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_26",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_27"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_14"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_26",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_28",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_29"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_27"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_28",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_30",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_31",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_32",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_33"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_29"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_30",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_31",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_32",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_33"
+                            ],
+                            "taxonName": "Calymperes hispidium"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_31",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_30",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_32",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_33"
+                            ],
+                            "taxonName": "Calymperes subintegrum"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_32",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_30",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_31",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_33"
+                            ],
+                            "taxonName": "Calymperes tenerum"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_33",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_34",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_35"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_30",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_31",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_32"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_34",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_35"
+                            ],
+                            "taxonName": "Calymperes tuatomuense"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_35",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_34"
+                            ],
+                            "taxonName": "Calymperes pseudopodianum"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_29",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_28"
+                            ],
+                            "taxonName": "Calymperes moluccense"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_27",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_36",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_37"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_26"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_36",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_38",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_39"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_37"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_38",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_39"
+                            ],
+                            "taxonName": "Calymperes erosum"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_39",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_38"
+                            ],
+                            "taxonName": "Calymperes robinsonii"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_37",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_40",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_41"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_36"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_40",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_41"
+                            ],
+                            "taxonName": "Calymperes motleyi"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_41",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_42",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_43"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_40"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_42",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "binomialName": "Calymperes palisotii",
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_43"
+                            ],
+                            "taxonName": "Calymperes palisotii 159"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_43",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "binomialName": "Calymperes palisotii",
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_42"
+                            ],
+                            "taxonName": "Calymperes palisotii 180"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_13",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_12"
+                            ],
+                            "taxonName": "Syrrhopodon incompletus"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_11",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_10"
+                            ],
+                            "taxonName": "Syrrhopodon mauritianus"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_9",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_44",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_45"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_8"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_44",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_46",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_47"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_45"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_46",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_48",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_49"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_47"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_48",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_50",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_51",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_52"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_49"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_50",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_51",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_52"
+                            ],
+                            "taxonName": "Syrrhopodon apertus"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_51",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_50",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_52"
+                            ],
+                            "taxonName": "Syrrhopodon fissipapillatus"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_52",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_50",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_51"
+                            ],
+                            "taxonName": "Syrrhopodon croceus"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_49",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_48"
+                            ],
+                            "taxonName": "Syrrhopodon tristichus"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_47",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_53",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_54"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_46"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_53",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_54"
+                            ],
+                            "taxonName": "Syrrhopodon mahensis"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_54",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_55",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_56"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_53"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_55",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_57",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_58"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_56"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_57",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_59",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_60"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_58"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_59",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_60"
+                            ],
+                            "taxonName": "Mitthyridium obtusifolium"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_60",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_59"
+                            ],
+                            "taxonName": "Mitthyridium constrictum"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_58",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_57"
+                            ],
+                            "taxonName": "Mitthyridium fasiculatum"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_56",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_61",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_62"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_55"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_61",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_62"
+                            ],
+                            "taxonName": "Mitthyridium jungquilianum"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_62",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_61"
+                            ],
+                            "taxonName": "Mitthyridium undulatum"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_45",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_63",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_64"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_44"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_63",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_65",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_66"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_64"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_65",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_67",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_68"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_66"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_67",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_69",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_70"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_68"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_69",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_71",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_72"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_70"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_71",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_73",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_74"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_72"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_73",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_75",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_76"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_74"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_75",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_77",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_78",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_79"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_76"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_77",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_78",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_79"
+                            ],
+                            "taxonName": "Leucophanes seychellarum"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_78",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_80",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_81"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_77",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_79"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_80",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_81"
+                            ],
+                            "taxonName": "Leucophanes octoblepharioides"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_81",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_80"
+                            ],
+                            "taxonName": "Leucophanes albescens"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_79",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_77",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_78"
+                            ],
+                            "taxonName": "Leucophanes glaucum"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_76",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_75"
+                            ],
+                            "taxonName": "Syrrhopodon confertus"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_74",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_73"
+                            ],
+                            "taxonName": "Exodictyon incrassatum"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_72",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_82",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_83"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_71"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_82",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_84",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_85"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_83"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_84",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "binomialName": "Exostratum blumei",
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_85"
+                            ],
+                            "taxonName": "Exostratum blumei 243"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_85",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "binomialName": "Exostratum blumei",
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_84"
+                            ],
+                            "taxonName": "Exostratum blumei 245"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_83",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_82"
+                            ],
+                            "taxonName": "Arthrocormus schimperi"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_70",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_69"
+                            ],
+                            "taxonName": "Syrrhopodon muelleri"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_68",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_67"
+                            ],
+                            "taxonName": "Syrrhopodon perarmatus"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_66",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_86",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_87"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_65"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_86",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_88",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_89"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_87"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_88",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_90",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_91",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_92"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_89"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_90",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_93",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_94"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_91",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_92"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_93",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_94"
+                            ],
+                            "taxonName": "Syrrhopodon involutus"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_94",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_93"
+                            ],
+                            "taxonName": "Syrrhopodon banksii"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_91",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_90",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_92"
+                            ],
+                            "taxonName": "Syrrhopodon trachyphyllus"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_92",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_90",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_91"
+                            ],
+                            "taxonName": "Syrrhopodon parasiticus"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_89",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_95",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_96"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_88"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_95",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_96"
+                            ],
+                            "taxonName": "Syrrhopodon prolifer"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_96",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_97",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_98"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_95"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_97",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_98"
+                            ],
+                            "taxonName": "Syrrhopodon tortillis"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_98",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_97"
+                            ],
+                            "taxonName": "Syrrhopodon leprieurii"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_87",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_99",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_100"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_86"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_99",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_101",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_102"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_100"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_101",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "binomialName": "Syrrhopodon albovaginatus",
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_102"
+                            ],
+                            "taxonName": "Syrrhopodon albovaginatus 446"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_102",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "binomialName": "Syrrhopodon albovaginatus",
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_101"
+                            ],
+                            "taxonName": "Syrrhopodon albovaginatus 162"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_100",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_99"
+                            ],
+                            "taxonName": "Syrrhopodon ciliatus"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_64",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_103",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_104"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_63"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_103",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_104"
+                            ],
+                            "taxonName": "Syrrhopodon armatus"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_104",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_103"
+                            ],
+                            "taxonName": "Syrrhopodon fimbriatulus"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_7",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_6"
+                            ],
+                            "taxonName": "Syrrhopodon japonicus"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_5",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_4"
+                            ],
+                            "taxonName": "Syrrhopodon gardneri"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_3",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_105",
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_106"
+                            ],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_2"
+                            ]
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_105",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "binomialName": "Octoblepharum Moorea",
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_106"
+                            ],
+                            "taxonName": "Octoblepharum Moorea 445"
+                        },
+                        {
+                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_106",
+                            "@type": "cdao:0000140",
+                            "annotations": [],
+                            "children": [],
+                            "siblings": [
+                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_105"
+                            ],
+                            "taxonName": "Octoblepharum albidum"
+                        }
+                    ]
+                }
+            ],
+            "phylorefs": [
+                {
+                    "description": "nomen cladi conversum, Calymperaceae M\u00c3\u017d\u00c3\u00a1\u00c3\u00a5\u00c3\u00b7 Hal., Synop. Musc. Frond. 1. (1849)\n\tStem-based definition:\n\tinternal specifier: Type: Syrrhopodon gardneri (Hook.) Schw\u00c3\u017d\u00c3\u00a1\u00c3\u00a9\u00c3\u00a5., Sp. Musc. Frond. Suppl. 2(1): 110, tab. 131, figs. 1\u00c3\u017d\u00c3\u00ad\u00c3\u00b1 (1824)\n\tinternal specifier: Type: Leucophanes octoblepharoides Brid., Bryol. Univ. 1: 763. (1826)\n\texternal specifier: Type: Octoblepharum albidum Hedw., Sp. Musc. 50. (1801)\n\tImportant synapomorphies: cancellinae, central strand absent from stem\n\tIncluded terminal clades: gardneri, japonicus",
+                    "externalSpecifiers": [
+                        {
+                            "binomialName": "Octoblepharum albidum",
+                            "description": "Type: Octoblepharum albidum Hedw., Sp. Musc. 50. (1801)"
+                        }
+                    ],
+                    "internalSpecifiers": [
+                        {
+                            "binomialName": "Syrrhopodon gardneri",
+                            "description": "Syrrhopodon gardneri (Hook.) Schw\u00c3\u017d\u00c3\u00a1\u00c3\u00a9\u00c3\u00a5., Sp. Musc. Frond. Suppl. 2(1): 110, tab. 131, figs. 1-13 (1824)"
+                        },
+                        {
+                            "binomialName": "Leucophanes octoblepharoides",
+                            "description": "Type: Leucophanes octoblepharoides Brid., Bryol. Univ. 1: 763. (1826)"
+                        }
+                    ],
+                    "label": "Calymperaceae"
+                }
+            ]
+        }
+    ],
+    "url": "https://doi.org/10.1639/0007-2745(2007)110[46:POTCWA]2.0.CO;2",
+    "year": 2007
+}

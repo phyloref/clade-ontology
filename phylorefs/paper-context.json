@@ -1,0 +1,133 @@
+{
+    "@context": {
+        "@base": "http://example.org/TBD#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "dc": "http://purl.org/dc/elements/1.1/",
+        "ot": "http://purl.org/opentree/nexson#",
+        "oa": "http://www.w3.org/ns/oa#",
+        "cdao": "http://purl.obolibrary.org/obo/CDAO_",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "phyloref": "http://phyloinformatics.net/phyloref.owl#",
+        "tbd": "http://example.org/TBD#",
+        
+        "curator": {
+            "@id": "ot:curatorName",
+            "@type": "xsd:string"
+        },
+        "comments": {
+            "@id": "ot:comment",
+            "@type": "xsd:string"
+        },
+
+        "citation": "ot:studyPublicationReference",
+        "url": {
+            "@id": "ot:studyPublication",
+            "@type": "@id"
+        },
+        "year": {
+            "@id": "ot:studyYear",
+            "@type": "xsd:integer"
+        },
+
+        "inputFiles": {
+            "@id": "tbd:inputFiles",
+            "@container": "@list"
+        },
+
+        "phylogenies": {
+            "@id": "tbd:phylogenies",
+            "@container": "@list"
+        },
+
+        "annotations": {
+            "@id": "tbd:annotations",
+            "@containter": "@set" 
+        },
+
+        "Annotation": "oa:Annotation",
+
+        "annotationTarget": {
+            "@id": "oa:hasTarget",
+            "@type": "@id"
+        },
+
+        "annotationName": {
+            "@id": "rdfs:label",
+            "@type": "xsd:string"
+        },
+
+        "annotationBody": {
+            "@id": "oa:hasBody",
+            "@type": "xsd:string"
+        },
+
+        "otus": {
+            "@id": "tbd:otus",
+            "@container": "@set"
+        },
+
+        "children": {
+            "@id": "cdao:0000149",
+            "@type": "@id"
+        },
+
+        "siblings": {
+            "@id": "phyloref:has_Sibling",
+            "@type": "@id"
+        },
+
+        "nodes": {
+            "@id": "tbd:nodes",
+            "@container": "@set"
+        },
+
+        "taxonName": {
+            "@id": "tbd:taxonName",
+            "@type": "xsd:string"
+        },
+
+        "binomialName": {
+            "@id": "tbd:binomialName",
+            "@type": "xsd:string"
+        },
+        
+        "description": {
+            "@id": "dc:description",
+            "@type": "xsd:string"
+        },
+
+        "phylorefs": {
+            "@id": "tbd:phylorefs",
+            "@container": "@set"
+        },
+
+        "newick": {
+            "@id": "tbd:asNewickString",
+            "@type": "xsd:string"
+        },
+
+        "cladeDefinition": {
+            "@id": "tbd:cladeDefinition",
+            "@type": "xsd:string"
+        },
+
+        "internalSpecifiers": {
+            "@id": "tbd:internalSpecifiers",
+            "@container": "@set"
+        },
+
+        "externalSpecifiers": {
+            "@id": "tbd:externalSpecifiers",
+            "@container": "@set"
+        },
+
+        "label": "rdfs:label",
+        "NCBITaxonId": "tbd:NCBITaxonId",
+        "uBioNameBankId": "tbd:uBioNameBankId",
+        "GenBankAccession": "tbd:GenBankAccession",
+        "voucheredSpecimen": "tbd:voucheredSpecimen",
+        "collectionDetails": "tbd:collectionDetails",
+
+        "filename": "tbd:filename"
+    }
+}
