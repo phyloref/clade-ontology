@@ -5,7 +5,7 @@
         "dc": "http://purl.org/dc/elements/1.1/",
         "ot": "http://purl.org/opentree/nexson#",
         "oa": "http://www.w3.org/ns/oa#",
-        "cdao": "http://purl.obolibrary.org/obo/CDAO_",
+        "obo": "http://purl.obolibrary.org/obo/",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
         "phyloref": "http://phyloinformatics.net/phyloref.owl#",
         "tbd": "http://example.org/TBD#",
@@ -44,6 +44,11 @@
             "@containter": "@set" 
         },
 
+        "taxonAnnotations": {
+            "@id": "tbd:taxonAnnotations",
+            "@containter": "@set" 
+        },
+
         "Annotation": "oa:Annotation",
 
         "annotationTarget": {
@@ -67,7 +72,7 @@
         },
 
         "children": {
-            "@id": "cdao:0000149",
+            "@id": "obo:CDAO_0000149",
             "@type": "@id"
         },
 
@@ -99,6 +104,11 @@
         "phylorefs": {
             "@id": "tbd:phylorefs",
             "@container": "@set"
+        },
+
+        "closeMatch": {
+            "@id": "tbd:closeMatch",
+            "@type": "@id"
         },
 
         "newick": {

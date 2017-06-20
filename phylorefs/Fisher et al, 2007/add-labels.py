@@ -134,15 +134,18 @@ for inputFile in paper['inputFiles']:
             node_dict = dict()
             node_dict['@id'] = get_id_for_node(node)
 
-            node_dict['@type'] = 'cdao:0000140'
-            node_dict['annotations'] = list()
+            node_dict['@type'] = 'obo:CDAO_0000140'
+            annotations = list()
             for annotation in node.annotations:
-                node_dict['annotations'].append({
+                annotations.append({
                     '@type': "Annotation",
                     'annotationName': annotation.name,
                     'annotationTarget': get_id_for_node(node),
                     'annotationBody': str(annotation.value)
                 })
+            
+            if len(annotations) > 0:
+                node_dict['annotations'] = annotations
 
             if node.taxon is not None:
                 node_dict['taxonName'] = node.taxon.label
@@ -151,6 +154,22 @@ for inputFile in paper['inputFiles']:
                 match = re.match('^(\w+) ([\w\-]+)\s+.*$', node.taxon.label)
                 if match:
                     node_dict['binomialName'] = match.group(1) + " " + match.group(2)
+
+                closeMatches = node.taxon.annotations.findall(name='closeMatch')
+                node_dict['closeMatch'] = [closeMatch.value for closeMatch in closeMatches]
+
+                # Extract all annotations
+                #annotations = list()
+                #for annotation in node.taxon.annotations:
+                #    annotations.append({
+                #        '@type': "Annotation",
+                #        'annotationName': annotation.name,
+                #        'annotationTarget': get_id_for_node(node),
+                #        'annotationBody': str(annotation.value)
+                #    })
+                #
+                #if len(annotations) > 0:
+                #    node_dict['taxonAnnotations'] = annotations
 
             node_dict['children'] = list()
             for child in node.child_nodes():
