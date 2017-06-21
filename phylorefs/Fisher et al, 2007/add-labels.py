@@ -65,6 +65,9 @@ paper = json.load(input_file);
 if FLAG_VERBOSE:
     sys.stderr.write("Loaded input file, id: {0}\n".format(paper['@id']))
 
+# Make this .json file into an ontology!
+paper['@type'] = [paper['@type'], 'owl:Ontology']
+
 # Iterate over each inputFile.
 # Note that we add elements directly to 'paper' as necessary.
 for inputFile in paper['inputFiles']:
@@ -134,7 +137,7 @@ for inputFile in paper['inputFiles']:
             node_dict = dict()
             node_dict['@id'] = get_id_for_node(node)
 
-            node_dict['@type'] = 'obo:CDAO_0000140'
+            node_dict['@type'] = ['obo:CDAO_0000140', 'owl:Thing'],
             annotations = list()
             for annotation in node.annotations:
                 annotations.append({
@@ -190,6 +193,39 @@ for inputFile in paper['inputFiles']:
         add_all_child_nodes(tree.seed_node, phylogeny['nodes'])
 
         phylogenies.append(phylogeny)
+
+
+    # Now translate all phylorefs into OWL classes.
+    for phyloref in inputFile['phylorefs']:
+        internal_specifiers = phyloref['internalSpecifiers']
+        external_specifiers = phyloref['externalSpecifiers']
+
+        def internal_specifier_to_OWL_expression(specifier):
+            specifiers = list()
+            for key in specifier:
+                if key == 'dc:description':
+                    continue
+
+                specifiers.append("{0} value '{1}'".format(key, specifier[key]))
+
+            return "(has_Descendant some (Node that " + " or ".join(specifiers) + "))"
+
+        def external_specifier_to_OWL_expression(specifier):
+            specifiers = list()
+            for key in specifier:
+                if key == 'dc:description':
+                    continue
+
+                specifiers.append("{0} value '{1}'".format(key, specifier[key]))
+
+            return "(excludes_lineage_to some (Node that " + " or ".join(specifiers) + "))"
+
+        specifiers = [internal_specifier_to_OWL_expression(sp) for sp in internal_specifiers]
+        specifiers.extend([external_specifier_to_OWL_expression(sp) for sp in external_specifiers])
+
+        # Create a phyloref in this form:
+        #   has_Child some ([specifier] and [specifier] and [specifier])
+        phyloref['manchesterSyntax'] = "has_Child some (" + " and ".join(specifiers) + ")"
 
 # Write the paper back out again.
 json.dump(paper, output_file, indent=4, sort_keys=True)

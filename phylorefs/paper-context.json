@@ -9,6 +9,7 @@
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
         "phyloref": "http://phyloinformatics.net/phyloref.owl#",
         "tbd": "http://example.org/TBD#",
+        "owl": "http://www.w3.org/2002/07/owl#",
         
         "curator": {
             "@id": "ot:curatorName",
@@ -129,6 +130,11 @@
         "externalSpecifiers": {
             "@id": "tbd:externalSpecifiers",
             "@container": "@set"
+        },
+
+        "manchesterSyntax": {
+            "@id": "tbd:manchesterSyntax",
+            "@type": "xsd:string"
         },
 
         "label": "rdfs:label",

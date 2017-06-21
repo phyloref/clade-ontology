@@ -1,14 +1,14 @@
 {
     "@context": "../paper-context.json",
 
-    "@id": "https://doi.org/10.1639/0007-2745(2007)110[46:POTCWA]2.0.CO;2",
+    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#",
     "@type": "tbd:Publication",
 
     "curator": "Gaurav Vaidya <gaurav@ggvaidya.com>",
     "comments": "None.",
 
     "citation": "Fisher KM, Wall DP, Yip KL, Mishler BD (2007) The Bryologist 110(1):46-73.",
-    "url": "https://doi.org/10.1639/0007-2745(2007)110[46:POTCWA]2.0.CO;2",
+    "url": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2",
     "year": 2007,
         
     "inputFiles": [{
@@ -17,15 +17,15 @@
         "phylorefs": [
             {
                 "label": "Calymperaceae",
-                "description": "nomen cladi conversum, Calymperaceae MÎáå÷ Hal., Synop. Musc. Frond. 1. (1849)\n\tStem-based definition:\n\tinternal specifier: Type: Syrrhopodon gardneri (Hook.) SchwÎáéå., Sp. Musc. Frond. Suppl. 2(1): 110, tab. 131, figs. 1Îíñ (1824)\n\tinternal specifier: Type: Leucophanes octoblepharoides Brid., Bryol. Univ. 1: 763. (1826)\n\texternal specifier: Type: Octoblepharum albidum Hedw., Sp. Musc. 50. (1801)\n\tImportant synapomorphies: cancellinae, central strand absent from stem\n\tIncluded terminal clades: gardneri, japonicus",
+                "description": "nomen cladi conversum, Calymperaceae ____ Hal., Synop. Musc. Frond. 1. (1849)\n\tStem-based definition:\n\tinternal specifier: Type: Syrrhopodon gardneri (Hook.) Schw____, Sp. Musc. Frond. Suppl. 2(1): 110, tab. 131, figs. ____ (1824)\n\tinternal specifier: Type: Leucophanes octoblepharoides Brid., Bryol. Univ. 1: 763. (1826)\n\texternal specifier: Type: Octoblepharum albidum Hedw., Sp. Musc. 50. (1801)\n\tImportant synapomorphies: cancellinae, central strand absent from stem\n\tIncluded terminal clades: gardneri, japonicus",
                 "internalSpecifiers": [
                     {
-                        "description": "Syrrhopodon gardneri (Hook.) SchwÎáéå., Sp. Musc. Frond. Suppl. 2(1): 110, tab. 131, figs. 1-13 (1824)",
-                        "binomialName": "Syrrhopodon gardneri"
+                        "dc:description": "Syrrhopodon gardneri (Hook.) _____, Sp. Musc. Frond. Suppl. 2(1): 110, tab. 131, figs. 1-13 (1824)",
+                        "tbd:binomialName": "Syrrhopodon gardneri"
                     },
                     {
-                        "description": "Type: Leucophanes octoblepharoides Brid., Bryol. Univ. 1: 763. (1826)",
-                        "binomialName": "Leucophanes octoblepharoides"
+                        "dc:description": "Type: Leucophanes octoblepharoides Brid., Bryol. Univ. 1: 763. (1826)",
+                        "tbd:binomialName": "Leucophanes octoblepharoides"
                     }
                 ],
                 "externalSpecifiers": [
