@@ -158,12 +158,12 @@ for inputFile in paper['inputFiles']:
                 node_dict['annotations'] = annotations
 
             if node.taxon is not None:
-                node_dict['taxonName'] = node.taxon.label
+                node_dict['submittedName'] = node.taxon.label
 
                 # Is this also a binomial name?
-                match = re.match('^(\w+) ([\w\-]+)\s+.*$', node.taxon.label)
+                match = re.search('^(\w+) ([\w\-]+)\\b', node.taxon.label)
                 if match:
-                    node_dict['tnrs:submittedName'] = match.group(1) + " " + match.group(2)
+                    node_dict['matchedName'] = match.group(1) + " " + match.group(2)
 
                 closeMatches = node.taxon.annotations.findall(name='closeMatch')
                 node_dict['skos:closeMatch'] = [closeMatch.value for closeMatch in closeMatches]

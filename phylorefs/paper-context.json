@@ -145,11 +145,16 @@
         },
 
         "label": "rdfs:label",
-        "NCBITaxonId": "tbd:NCBITaxonId",
-        "uBioNameBankId": "tbd:uBioNameBankId",
-        "GenBankAccession": "tbd:GenBankAccession",
-        "voucheredSpecimen": "tbd:voucheredSpecimen",
-        "collectionDetails": "tbd:collectionDetails",
+
+        "submittedName": {
+            "@id": "tnrs:submittedName",
+            "@type": "xsd:string"
+        },
+
+        "matchedName": {
+            "@id": "tnrs:matchedName",
+            "@type": "xsd:string"
+        },
 
         "filename": "tbd:filename"
     }

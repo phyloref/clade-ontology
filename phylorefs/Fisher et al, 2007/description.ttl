@@ -1,5 +1,4 @@
-﻿@prefix : <http://purl.org/phylo/treebase/phylows/study/TB2_S1624#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
+﻿@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix ot: <http://purl.org/opentree/nexson#> .
@@ -7,1104 +6,931 @@
 @prefix phyloref: <http://phyloinformatics.net/phyloref.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix tbd: <http://example.org/TBD#> .
+@prefix tnrs: <http://phylotastic.org/terms/tnrs.rdf#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:Node_1 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    obo:CDAO_0000149 :Node_2,
-        :Node_3 ;
-    rdfs:isDefinedBy : .
-
-:Node_10 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_11 ;
-    obo:CDAO_0000149 :Node_12,
-        :Node_13 ;
-    rdfs:isDefinedBy : .
-
-:Node_100 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/171458>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3937410> ;
-    tbd:taxonName "Syrrhopodon ciliatus"^^xsd:string ;
-    phyloref:has_Sibling :Node_99 ;
-    rdfs:isDefinedBy : .
-
-:Node_101 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:binomialName "Syrrhopodon albovaginatus"^^xsd:string ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/171457>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5966406> ;
-    tbd:taxonName "Syrrhopodon albovaginatus 446"^^xsd:string ;
-    phyloref:has_Sibling :Node_102 ;
-    rdfs:isDefinedBy : .
-
-:Node_102 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:binomialName "Syrrhopodon albovaginatus"^^xsd:string ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/171457>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5966406> ;
-    tbd:taxonName "Syrrhopodon albovaginatus 162"^^xsd:string ;
-    phyloref:has_Sibling :Node_101 ;
-    rdfs:isDefinedBy : .
-
-:Node_103 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/171454>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3778113> ;
-    tbd:taxonName "Syrrhopodon armatus"^^xsd:string ;
-    phyloref:has_Sibling :Node_104 ;
-    rdfs:isDefinedBy : .
-
-:Node_104 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/122796>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3937406> ;
-    tbd:taxonName "Syrrhopodon fimbriatulus"^^xsd:string ;
-    phyloref:has_Sibling :Node_103 ;
-    rdfs:isDefinedBy : .
-
-:Node_105 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:binomialName "Octoblepharum Moorea"^^xsd:string ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/98493>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2643066> ;
-    tbd:taxonName "Octoblepharum Moorea 445"^^xsd:string ;
-    phyloref:has_Sibling :Node_106 ;
-    rdfs:isDefinedBy : .
-
-:Node_106 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/98494>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3872847> ;
-    tbd:taxonName "Octoblepharum albidum"^^xsd:string ;
-    phyloref:has_Sibling :Node_105 ;
-    rdfs:isDefinedBy : .
-
-:Node_11 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/354094>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3937448> ;
-    tbd:taxonName "Syrrhopodon mauritianus"^^xsd:string ;
-    phyloref:has_Sibling :Node_10 ;
-    rdfs:isDefinedBy : .
-
-:Node_12 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_13 ;
-    obo:CDAO_0000149 :Node_14,
-        :Node_15 ;
-    rdfs:isDefinedBy : .
-
-:Node_13 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/122797>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3873432> ;
-    tbd:taxonName "Syrrhopodon incompletus"^^xsd:string ;
-    phyloref:has_Sibling :Node_12 ;
-    rdfs:isDefinedBy : .
-
-:Node_14 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_15 ;
-    obo:CDAO_0000149 :Node_16,
-        :Node_17 ;
-    rdfs:isDefinedBy : .
-
-:Node_15 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_14 ;
-    obo:CDAO_0000149 :Node_26,
-        :Node_27 ;
-    rdfs:isDefinedBy : .
-
-:Node_16 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_17 ;
-    obo:CDAO_0000149 :Node_18,
-        :Node_19 ;
-    rdfs:isDefinedBy : .
-
-:Node_17 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_16 ;
-    obo:CDAO_0000149 :Node_22,
-        :Node_23 ;
-    rdfs:isDefinedBy : .
-
-:Node_18 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/324445>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3934876> ;
-    tbd:taxonName "Calymperes lonchophyllum"^^xsd:string ;
-    phyloref:has_Sibling :Node_19 ;
-    rdfs:isDefinedBy : .
-
-:Node_19 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_18 ;
-    obo:CDAO_0000149 :Node_20,
-        :Node_21 ;
-    rdfs:isDefinedBy : .
-
-:Node_2 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_3 ;
-    obo:CDAO_0000149 :Node_4,
-        :Node_5 ;
-    rdfs:isDefinedBy : .
-
-:Node_20 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:binomialName "Calymperes tahitense"^^xsd:string ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/122779>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3778339> ;
-    tbd:taxonName "Calymperes tahitense 320"^^xsd:string ;
-    phyloref:has_Sibling :Node_21 ;
-    rdfs:isDefinedBy : .
-
-:Node_21 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:binomialName "Calymperes tahitense"^^xsd:string ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/122779>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3778339> ;
-    tbd:taxonName "Calymperes tahitense 115"^^xsd:string ;
-    phyloref:has_Sibling :Node_20 ;
-    rdfs:isDefinedBy : .
-
-:Node_22 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/65521>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:444096> ;
-    tbd:taxonName "Calymperes graffeanum"^^xsd:string ;
-    phyloref:has_Sibling :Node_23 ;
-    rdfs:isDefinedBy : .
-
-:Node_23 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_22 ;
-    obo:CDAO_0000149 :Node_24,
-        :Node_25 ;
-    rdfs:isDefinedBy : .
-
-:Node_24 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:binomialName "Calymperes afzelii"^^xsd:string ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/122776>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3873033> ;
-    tbd:taxonName "Calymperes afzelii 165"^^xsd:string ;
-    phyloref:has_Sibling :Node_25 ;
-    rdfs:isDefinedBy : .
-
-:Node_25 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:binomialName "Calymperes afzelii"^^xsd:string ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/122776>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3873033> ;
-    tbd:taxonName "Calymperes afzelii 179"^^xsd:string ;
-    phyloref:has_Sibling :Node_24 ;
-    rdfs:isDefinedBy : .
-
-:Node_26 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_27 ;
-    obo:CDAO_0000149 :Node_28,
-        :Node_29 ;
-    rdfs:isDefinedBy : .
-
-:Node_27 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_26 ;
-    obo:CDAO_0000149 :Node_36,
-        :Node_37 ;
-    rdfs:isDefinedBy : .
-
-:Node_28 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_29 ;
-    obo:CDAO_0000149 :Node_30,
-        :Node_31,
-        :Node_32,
-        :Node_33 ;
-    rdfs:isDefinedBy : .
-
-:Node_29 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3778779> ;
-    tbd:taxonName "Calymperes moluccense"^^xsd:string ;
-    phyloref:has_Sibling :Node_28 ;
-    rdfs:isDefinedBy : .
-
-:Node_3 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_2 ;
-    obo:CDAO_0000149 :Node_105,
-        :Node_106 ;
-    rdfs:isDefinedBy : .
-
-:Node_34 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/65521>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:444096> ;
-    tbd:taxonName "Calymperes tuatomuense"^^xsd:string ;
-    phyloref:has_Sibling :Node_35 ;
-    rdfs:isDefinedBy : .
-
-:Node_35 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3339132> ;
-    tbd:taxonName "Calymperes pseudopodianum"^^xsd:string ;
-    phyloref:has_Sibling :Node_34 ;
-    rdfs:isDefinedBy : .
-
-:Node_36 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_37 ;
-    obo:CDAO_0000149 :Node_38,
-        :Node_39 ;
-    rdfs:isDefinedBy : .
-
-:Node_37 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_36 ;
-    obo:CDAO_0000149 :Node_40,
-        :Node_41 ;
-    rdfs:isDefinedBy : .
-
-:Node_38 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/71395>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3872791> ;
-    tbd:taxonName "Calymperes erosum"^^xsd:string ;
-    phyloref:has_Sibling :Node_39 ;
-    rdfs:isDefinedBy : .
-
-:Node_39 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/354100>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3331884> ;
-    tbd:taxonName "Calymperes robinsonii"^^xsd:string ;
-    phyloref:has_Sibling :Node_38 ;
-    rdfs:isDefinedBy : .
-
-:Node_4 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_5 ;
-    obo:CDAO_0000149 :Node_6,
-        :Node_7 ;
-    rdfs:isDefinedBy : .
-
-:Node_40 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/354101>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3339200> ;
-    tbd:taxonName "Calymperes motleyi"^^xsd:string ;
-    phyloref:has_Sibling :Node_41 ;
-    rdfs:isDefinedBy : .
-
-:Node_41 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_40 ;
-    obo:CDAO_0000149 :Node_42,
-        :Node_43 ;
-    rdfs:isDefinedBy : .
-
-:Node_42 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:binomialName "Calymperes palisotii"^^xsd:string ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/122778>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3873034> ;
-    tbd:taxonName "Calymperes palisotii 159"^^xsd:string ;
-    phyloref:has_Sibling :Node_43 ;
-    rdfs:isDefinedBy : .
-
-:Node_43 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:binomialName "Calymperes palisotii"^^xsd:string ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/122778>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3873034> ;
-    tbd:taxonName "Calymperes palisotii 180"^^xsd:string ;
-    phyloref:has_Sibling :Node_42 ;
-    rdfs:isDefinedBy : .
-
-:Node_44 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_45 ;
-    obo:CDAO_0000149 :Node_46,
-        :Node_47 ;
-    rdfs:isDefinedBy : .
-
-:Node_45 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_44 ;
-    obo:CDAO_0000149 :Node_63,
-        :Node_64 ;
-    rdfs:isDefinedBy : .
-
-:Node_46 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_47 ;
-    obo:CDAO_0000149 :Node_48,
-        :Node_49 ;
-    rdfs:isDefinedBy : .
-
-:Node_47 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_46 ;
-    obo:CDAO_0000149 :Node_53,
-        :Node_54 ;
-    rdfs:isDefinedBy : .
-
-:Node_48 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_49 ;
-    obo:CDAO_0000149 :Node_50,
-        :Node_51,
-        :Node_52 ;
-    rdfs:isDefinedBy : .
-
-:Node_49 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/354092>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3937474> ;
-    tbd:taxonName "Syrrhopodon tristichus"^^xsd:string ;
-    phyloref:has_Sibling :Node_48 ;
-    rdfs:isDefinedBy : .
-
-:Node_5 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/98460>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3778475> ;
-    tbd:taxonName "Syrrhopodon gardneri"^^xsd:string ;
-    phyloref:has_Sibling :Node_4 ;
-    rdfs:isDefinedBy : .
-
-:Node_53 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/71394>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3343159> ;
-    tbd:taxonName "Syrrhopodon mahensis"^^xsd:string ;
-    phyloref:has_Sibling :Node_54 ;
-    rdfs:isDefinedBy : .
-
-:Node_54 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_53 ;
-    obo:CDAO_0000149 :Node_55,
-        :Node_56 ;
-    rdfs:isDefinedBy : .
-
-:Node_55 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_56 ;
-    obo:CDAO_0000149 :Node_57,
-        :Node_58 ;
-    rdfs:isDefinedBy : .
-
-:Node_56 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_55 ;
-    obo:CDAO_0000149 :Node_61,
-        :Node_62 ;
-    rdfs:isDefinedBy : .
-
-:Node_57 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_58 ;
-    obo:CDAO_0000149 :Node_59,
-        :Node_60 ;
-    rdfs:isDefinedBy : .
-
-:Node_58 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/122790>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3933089> ;
-    tbd:taxonName "Mitthyridium fasiculatum"^^xsd:string ;
-    phyloref:has_Sibling :Node_57 ;
-    rdfs:isDefinedBy : .
-
-:Node_59 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/122792>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3933095> ;
-    tbd:taxonName "Mitthyridium obtusifolium"^^xsd:string ;
-    phyloref:has_Sibling :Node_60 ;
-    rdfs:isDefinedBy : .
-
-:Node_6 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_7 ;
-    obo:CDAO_0000149 :Node_8,
-        :Node_9 ;
-    rdfs:isDefinedBy : .
-
-:Node_60 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/122789>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3933087> ;
-    tbd:taxonName "Mitthyridium constrictum"^^xsd:string ;
-    phyloref:has_Sibling :Node_59 ;
-    rdfs:isDefinedBy : .
-
-:Node_61 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/122791>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3933091> ;
-    tbd:taxonName "Mitthyridium jungquilianum"^^xsd:string ;
-    phyloref:has_Sibling :Node_62 ;
-    rdfs:isDefinedBy : .
-
-:Node_62 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/122793>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3933100> ;
-    tbd:taxonName "Mitthyridium undulatum"^^xsd:string ;
-    phyloref:has_Sibling :Node_61 ;
-    rdfs:isDefinedBy : .
-
-:Node_63 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_64 ;
-    obo:CDAO_0000149 :Node_65,
-        :Node_66 ;
-    rdfs:isDefinedBy : .
-
-:Node_64 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_63 ;
-    obo:CDAO_0000149 :Node_103,
-        :Node_104 ;
-    rdfs:isDefinedBy : .
-
-:Node_65 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_66 ;
-    obo:CDAO_0000149 :Node_67,
-        :Node_68 ;
-    rdfs:isDefinedBy : .
-
-:Node_66 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_65 ;
-    obo:CDAO_0000149 :Node_86,
-        :Node_87 ;
-    rdfs:isDefinedBy : .
-
-:Node_67 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_68 ;
-    obo:CDAO_0000149 :Node_69,
-        :Node_70 ;
-    rdfs:isDefinedBy : .
-
-:Node_68 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/171453>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3778476> ;
-    tbd:taxonName "Syrrhopodon perarmatus"^^xsd:string ;
-    phyloref:has_Sibling :Node_67 ;
-    rdfs:isDefinedBy : .
-
-:Node_69 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_70 ;
-    obo:CDAO_0000149 :Node_71,
-        :Node_72 ;
-    rdfs:isDefinedBy : .
-
-:Node_7 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/354095>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3937441> ;
-    tbd:taxonName "Syrrhopodon japonicus"^^xsd:string ;
-    phyloref:has_Sibling :Node_6 ;
-    rdfs:isDefinedBy : .
-
-:Node_70 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/171462>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3937449> ;
-    tbd:taxonName "Syrrhopodon muelleri"^^xsd:string ;
-    phyloref:has_Sibling :Node_69 ;
-    rdfs:isDefinedBy : .
-
-:Node_71 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_72 ;
-    obo:CDAO_0000149 :Node_73,
-        :Node_74 ;
-    rdfs:isDefinedBy : .
-
-:Node_72 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_71 ;
-    obo:CDAO_0000149 :Node_82,
-        :Node_83 ;
-    rdfs:isDefinedBy : .
-
-:Node_73 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_74 ;
-    obo:CDAO_0000149 :Node_75,
-        :Node_76 ;
-    rdfs:isDefinedBy : .
-
-:Node_74 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/122782>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3937624> ;
-    tbd:taxonName "Exodictyon incrassatum"^^xsd:string ;
-    phyloref:has_Sibling :Node_73 ;
-    rdfs:isDefinedBy : .
-
-:Node_75 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_76 ;
-    obo:CDAO_0000149 :Node_77,
-        :Node_78,
-        :Node_79 ;
-    rdfs:isDefinedBy : .
-
-:Node_76 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/122795>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3343054> ;
-    tbd:taxonName "Syrrhopodon confertus"^^xsd:string ;
-    phyloref:has_Sibling :Node_75 ;
-    rdfs:isDefinedBy : .
-
-:Node_8 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_9 ;
-    obo:CDAO_0000149 :Node_10,
-        :Node_11 ;
-    rdfs:isDefinedBy : .
-
-:Node_80 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/354096>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3777822> ;
-    tbd:taxonName "Leucophanes octoblepharioides"^^xsd:string ;
-    phyloref:has_Sibling :Node_81 ;
-    rdfs:isDefinedBy : .
-
-:Node_81 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/122786>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3936001> ;
-    tbd:taxonName "Leucophanes albescens"^^xsd:string ;
-    phyloref:has_Sibling :Node_80 ;
-    rdfs:isDefinedBy : .
-
-:Node_82 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_83 ;
-    obo:CDAO_0000149 :Node_84,
-        :Node_85 ;
-    rdfs:isDefinedBy : .
-
-:Node_83 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/122775>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3937508> ;
-    tbd:taxonName "Arthrocormus schimperi"^^xsd:string ;
-    phyloref:has_Sibling :Node_82 ;
-    rdfs:isDefinedBy : .
-
-:Node_84 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:binomialName "Exostratum blumei"^^xsd:string ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/122784>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5961398> ;
-    tbd:taxonName "Exostratum blumei 243"^^xsd:string ;
-    phyloref:has_Sibling :Node_85 ;
-    rdfs:isDefinedBy : .
-
-:Node_85 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:binomialName "Exostratum blumei"^^xsd:string ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/122784>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5961398> ;
-    tbd:taxonName "Exostratum blumei 245"^^xsd:string ;
-    phyloref:has_Sibling :Node_84 ;
-    rdfs:isDefinedBy : .
-
-:Node_86 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_87 ;
-    obo:CDAO_0000149 :Node_88,
-        :Node_89 ;
-    rdfs:isDefinedBy : .
-
-:Node_87 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_86 ;
-    obo:CDAO_0000149 :Node_100,
-        :Node_99 ;
-    rdfs:isDefinedBy : .
-
-:Node_88 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_89 ;
-    obo:CDAO_0000149 :Node_90,
-        :Node_91,
-        :Node_92 ;
-    rdfs:isDefinedBy : .
-
-:Node_89 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_88 ;
-    obo:CDAO_0000149 :Node_95,
-        :Node_96 ;
-    rdfs:isDefinedBy : .
-
-:Node_9 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_8 ;
-    obo:CDAO_0000149 :Node_44,
-        :Node_45 ;
-    rdfs:isDefinedBy : .
-
-:Node_93 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/295136>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3937436> ;
-    tbd:taxonName "Syrrhopodon involutus"^^xsd:string ;
-    phyloref:has_Sibling :Node_94 ;
-    rdfs:isDefinedBy : .
-
-:Node_94 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/122794>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3937438> ;
-    tbd:taxonName "Syrrhopodon banksii"^^xsd:string ;
-    phyloref:has_Sibling :Node_93 ;
-    rdfs:isDefinedBy : .
-
-:Node_95 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/171461>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3872790> ;
-    tbd:taxonName "Syrrhopodon prolifer"^^xsd:string ;
-    phyloref:has_Sibling :Node_96 ;
-    rdfs:isDefinedBy : .
-
-:Node_96 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_95 ;
-    obo:CDAO_0000149 :Node_97,
-        :Node_98 ;
-    rdfs:isDefinedBy : .
-
-:Node_97 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/65523>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:444090> ;
-    tbd:taxonName "Syrrhopodon tortillis"^^xsd:string ;
-    phyloref:has_Sibling :Node_98 ;
-    rdfs:isDefinedBy : .
-
-:Node_98 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/122798>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3343147> ;
-    tbd:taxonName "Syrrhopodon leprieurii"^^xsd:string ;
-    phyloref:has_Sibling :Node_97 ;
-    rdfs:isDefinedBy : .
-
-:Node_99 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_100 ;
-    obo:CDAO_0000149 :Node_101,
-        :Node_102 ;
-    rdfs:isDefinedBy : .
-
-:Node_50 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/171459>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3343065> ;
-    tbd:taxonName "Syrrhopodon apertus"^^xsd:string ;
-    phyloref:has_Sibling :Node_51,
-        :Node_52 ;
-    rdfs:isDefinedBy : .
-
-:Node_51 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3336792> ;
-    tbd:taxonName "Syrrhopodon fissipapillatus"^^xsd:string ;
-    phyloref:has_Sibling :Node_50,
-        :Node_52 ;
-    rdfs:isDefinedBy : .
-
-:Node_52 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/171456>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3343062> ;
-    tbd:taxonName "Syrrhopodon croceus"^^xsd:string ;
-    phyloref:has_Sibling :Node_50,
-        :Node_51 ;
-    rdfs:isDefinedBy : .
-
-:Node_77 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/171460>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3340842> ;
-    tbd:taxonName "Leucophanes seychellarum"^^xsd:string ;
-    phyloref:has_Sibling :Node_78,
-        :Node_79 ;
-    rdfs:isDefinedBy : .
-
-:Node_78 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_77,
-        :Node_79 ;
-    obo:CDAO_0000149 :Node_80,
-        :Node_81 ;
-    rdfs:isDefinedBy : .
-
-:Node_79 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/122787>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3936000> ;
-    tbd:taxonName "Leucophanes glaucum"^^xsd:string ;
-    phyloref:has_Sibling :Node_77,
-        :Node_78 ;
-    rdfs:isDefinedBy : .
-
-:Node_90 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_91,
-        :Node_92 ;
-    obo:CDAO_0000149 :Node_93,
-        :Node_94 ;
-    rdfs:isDefinedBy : .
-
-:Node_91 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/171455>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3343210> ;
-    tbd:taxonName "Syrrhopodon trachyphyllus"^^xsd:string ;
-    phyloref:has_Sibling :Node_90,
-        :Node_92 ;
-    rdfs:isDefinedBy : .
-
-:Node_92 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/354093>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3873434> ;
-    tbd:taxonName "Syrrhopodon parasiticus"^^xsd:string ;
-    phyloref:has_Sibling :Node_90,
-        :Node_91 ;
-    rdfs:isDefinedBy : .
-
-:Node_30 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/354102>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3339184> ;
-    tbd:taxonName "Calymperes hispidium"^^xsd:string ;
-    phyloref:has_Sibling :Node_31,
-        :Node_32,
-        :Node_33 ;
-    rdfs:isDefinedBy : .
-
-:Node_31 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3339268> ;
-    tbd:taxonName "Calymperes subintegrum"^^xsd:string ;
-    phyloref:has_Sibling :Node_30,
-        :Node_32,
-        :Node_33 ;
-    rdfs:isDefinedBy : .
-
-:Node_32 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    tbd:closeMatch <http://purl.uniprot.org/taxonomy/354098>,
-        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3873035> ;
-    tbd:taxonName "Calymperes tenerum"^^xsd:string ;
-    phyloref:has_Sibling :Node_30,
-        :Node_31,
-        :Node_33 ;
-    rdfs:isDefinedBy : .
-
-:Node_33 a obo:CDAO_0000140,
-        owl:NamedIndividual,
-        owl:Thing ;
-    phyloref:has_Sibling :Node_30,
-        :Node_31,
-        :Node_32 ;
-    obo:CDAO_0000149 :Node_34,
-        :Node_35 ;
-    rdfs:isDefinedBy : .
-
-<http://purl.org/phylo/treebase/phylows/study/TB2_S1624> tbd:annotations [ a oa:Annotation ;
-            rdfs:label "type.tree"^^xsd:string ;
-            rdfs:isDefinedBy : ;
-            oa:hasBody "Consensus"^^xsd:string ;
-            oa:hasTarget <http://purl.org/phylo/treebase/phylows/study/TB2_S1624> ],
-        [ a oa:Annotation ;
-            rdfs:label "isDefinedBy"^^xsd:string ;
-            rdfs:isDefinedBy : ;
-            oa:hasBody "http://purl.org/phylo/treebase/phylows/study/TB2_S1624"^^xsd:string ;
-            oa:hasTarget <http://purl.org/phylo/treebase/phylows/study/TB2_S1624> ],
-        [ a oa:Annotation ;
-            rdfs:label "ntax.tree"^^xsd:string ;
-            rdfs:isDefinedBy : ;
-            oa:hasBody "56"^^xsd:string ;
-            oa:hasTarget <http://purl.org/phylo/treebase/phylows/study/TB2_S1624> ],
-        [ a oa:Annotation ;
-            rdfs:label "kind.tree"^^xsd:string ;
-            rdfs:isDefinedBy : ;
-            oa:hasBody "Species Tree"^^xsd:string ;
-            oa:hasTarget <http://purl.org/phylo/treebase/phylows/study/TB2_S1624> ],
-        [ a oa:Annotation ;
-            rdfs:label "quality.tree"^^xsd:string ;
-            rdfs:isDefinedBy : ;
-            oa:hasBody "Unrated"^^xsd:string ;
-            oa:hasTarget <http://purl.org/phylo/treebase/phylows/study/TB2_S1624> ] ;
-    tbd:asNewickString "[&U] (((((((((Calymperes_lonchophyllum:0.0,(Calymperes_tahitense_320:0.0,Calymperes_tahitense_115:0.0):0.0):0.0,(Calymperes_graffeanum:0.0,(Calymperes_afzelii_165:0.0,Calymperes_afzelii_179:0.0):0.0):0.0):0.0,(((Calymperes_hispidium:0.0,Calymperes_subintegrum:0.0,Calymperes_tenerum:0.0,(Calymperes_tuatomuense:0.0,Calymperes_pseudopodianum:0.0):0.0):0.0,Calymperes_moluccense:0.0):0.0,((Calymperes_erosum:0.0,Calymperes_robinsonii:0.0):0.0,(Calymperes_motleyi:0.0,(Calymperes_palisotii_159:0.0,Calymperes_palisotii_180:0.0):0.0):0.0):0.0):0.0):0.0,Syrrhopodon_incompletus:0.0):0.0,Syrrhopodon_mauritianus:0.0):0.0,((((Syrrhopodon_apertus:0.0,Syrrhopodon_fissipapillatus:0.0,Syrrhopodon_croceus:0.0):0.0,Syrrhopodon_tristichus:0.0):0.0,(Syrrhopodon_mahensis:0.0,(((Mitthyridium_obtusifolium:0.0,Mitthyridium_constrictum:0.0):0.0,Mitthyridium_fasiculatum:0.0):0.0,(Mitthyridium_jungquilianum:0.0,Mitthyridium_undulatum:0.0):0.0):0.0):0.0):0.0,((((((((Leucophanes_seychellarum:0.0,(Leucophanes_octoblepharioides:0.0,Leucophanes_albescens:0.0):0.0,Leucophanes_glaucum:0.0):0.0,Syrrhopodon_confertus:0.0):0.0,Exodictyon_incrassatum:0.0):0.0,((Exostratum_blumei_243:0.0,Exostratum_blumei_245:0.0):0.0,Arthrocormus_schimperi:0.0):0.0):0.0,Syrrhopodon_muelleri:0.0):0.0,Syrrhopodon_perarmatus:0.0):0.0,((((Syrrhopodon_involutus:0.0,Syrrhopodon_banksii:0.0):0.0,Syrrhopodon_trachyphyllus:0.0,Syrrhopodon_parasiticus:0.0):0.0,(Syrrhopodon_prolifer:0.0,(Syrrhopodon_tortillis:0.0,Syrrhopodon_leprieurii:0.0):0.0):0.0):0.0,((Syrrhopodon_albovaginatus_446:0.0,Syrrhopodon_albovaginatus_162:0.0):0.0,Syrrhopodon_ciliatus:0.0):0.0):0.0):0.0,(Syrrhopodon_armatus:0.0,Syrrhopodon_fimbriatulus:0.0):0.0):0.0):0.0):0.0,Syrrhopodon_japonicus:0.0):0.0,Syrrhopodon_gardneri:0.0):0.0,(Octoblepharum_Moorea_445:0.0,Octoblepharum_albidum:0.0):0.0);"^^xsd:string ;
-    tbd:nodes :Node_1,
-        :Node_10,
-        :Node_100,
-        :Node_101,
-        :Node_102,
-        :Node_103,
-        :Node_104,
-        :Node_105,
-        :Node_106,
-        :Node_11,
-        :Node_12,
-        :Node_13,
-        :Node_14,
-        :Node_15,
-        :Node_16,
-        :Node_17,
-        :Node_18,
-        :Node_19,
-        :Node_2,
-        :Node_20,
-        :Node_21,
-        :Node_22,
-        :Node_23,
-        :Node_24,
-        :Node_25,
-        :Node_26,
-        :Node_27,
-        :Node_28,
-        :Node_29,
-        :Node_3,
-        :Node_30,
-        :Node_31,
-        :Node_32,
-        :Node_33,
-        :Node_34,
-        :Node_35,
-        :Node_36,
-        :Node_37,
-        :Node_38,
-        :Node_39,
-        :Node_4,
-        :Node_40,
-        :Node_41,
-        :Node_42,
-        :Node_43,
-        :Node_44,
-        :Node_45,
-        :Node_46,
-        :Node_47,
-        :Node_48,
-        :Node_49,
-        :Node_5,
-        :Node_50,
-        :Node_51,
-        :Node_52,
-        :Node_53,
-        :Node_54,
-        :Node_55,
-        :Node_56,
-        :Node_57,
-        :Node_58,
-        :Node_59,
-        :Node_6,
-        :Node_60,
-        :Node_61,
-        :Node_62,
-        :Node_63,
-        :Node_64,
-        :Node_65,
-        :Node_66,
-        :Node_67,
-        :Node_68,
-        :Node_69,
-        :Node_7,
-        :Node_70,
-        :Node_71,
-        :Node_72,
-        :Node_73,
-        :Node_74,
-        :Node_75,
-        :Node_76,
-        :Node_77,
-        :Node_78,
-        :Node_79,
-        :Node_8,
-        :Node_80,
-        :Node_81,
-        :Node_82,
-        :Node_83,
-        :Node_84,
-        :Node_85,
-        :Node_86,
-        :Node_87,
-        :Node_88,
-        :Node_89,
-        :Node_9,
-        :Node_90,
-        :Node_91,
-        :Node_92,
-        :Node_93,
-        :Node_94,
-        :Node_95,
-        :Node_96,
-        :Node_97,
-        :Node_98,
-        :Node_99 ;
-    rdfs:isDefinedBy : .
-
-: a owl:Ontology ;
-    owl:imports <http://phyloinformatics.net/phyloref.owl>,
-        obo:cdao.owl .
-
-[] rdf:first [ tbd:filename "T748.nexml" ;
-            tbd:phylogenies [ rdf:first <http://purl.org/phylo/treebase/phylows/study/TB2_S1624> ;
-                    rdf:rest () ;
-                    rdfs:isDefinedBy : ] ;
-            tbd:phylorefs [ rdfs:label "Calymperaceae" ;
-                    tbd:externalSpecifiers [ tbd:binomialName "Octoblepharum albidum"^^xsd:string ;
-                            dc:description "Type: Octoblepharum albidum Hedw., Sp. Musc. 50. (1801)"^^xsd:string ;
-                            rdfs:isDefinedBy : ] ;
-                    tbd:internalSpecifiers [ tbd:binomialName "Leucophanes octoblepharoides" ;
-                            dc:description "Type: Leucophanes octoblepharoides Brid., Bryol. Univ. 1: 763. (1826)" ;
-                            rdfs:isDefinedBy : ],
-                        [ tbd:binomialName "Syrrhopodon gardneri" ;
-                            rdfs:isDefinedBy : ] ;
-                    tbd:manchesterSyntax "has_Child some ((has_Descendant some (Node that tbd:binomialName value 'Syrrhopodon gardneri')) and (has_Descendant some (Node that tbd:binomialName value 'Leucophanes octoblepharoides')) and (excludes_lineage_to some (Node that description value 'Type: Octoblepharum albidum Hedw., Sp. Musc. 50. (1801)' or binomialName value 'Octoblepharum albidum')))"^^xsd:string ;
-                    dc:description """nomen cladi conversum, Calymperaceae MΓö£├óΓö╝Γò£Γö£├óΓö¼├¡Γö£├óΓö¼├æΓö£├óΓö¼Γòû Hal., Synop. Musc. Frond. 1. (1849)
+<https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#> a tbd:Publication,
+        owl:Ontology ;
+    tbd:inputFiles ( [ tbd:filename "T748.nexml" ;
+                tbd:phylogenies ( <http://purl.org/phylo/treebase/phylows/study/TB2:S1624> ) ;
+                tbd:phylorefs [ rdfs:label "Calymperaceae" ;
+                        tbd:externalSpecifiers [ tnrs:submittedName "Octoblepharum albidum" ;
+                                dc:description "Type: Octoblepharum albidum Hedw., Sp. Musc. 50. (1801)"^^xsd:string ] ;
+                        tbd:internalSpecifiers [ tnrs:submittedName "Syrrhopodon gardneri" ;
+                                dc:description "Syrrhopodon gardneri (Hook.) _____, Sp. Musc. Frond. Suppl. 2(1): 110, tab. 131, figs. 1-13 (1824)" ],
+                            [ tnrs:submittedName "Leucophanes octoblepharoides" ;
+                                dc:description "Type: Leucophanes octoblepharoides Brid., Bryol. Univ. 1: 763. (1826)" ] ;
+                        tbd:manchesterSyntax "has_Child some ((has_Descendant some (Node that tnrs:submittedName value 'Syrrhopodon gardneri')) and (has_Descendant some (Node that tnrs:submittedName value 'Leucophanes octoblepharoides')) and (excludes_lineage_to some (Node that description value 'Type: Octoblepharum albidum Hedw., Sp. Musc. 50. (1801)' or tnrs:submittedName value 'Octoblepharum albidum')))"^^xsd:string ;
+                        dc:description """nomen cladi conversum, Calymperaceae ____ Hal., Synop. Musc. Frond. 1. (1849)
 	Stem-based definition:
-	internal specifier: Type: Syrrhopodon gardneri (Hook.) SchwΓö£├óΓö╝Γò£Γö£├óΓö¼├¡Γö£├óΓö¼ΓîÉΓö£├óΓö¼├æ., Sp. Musc. Frond. Suppl. 2(1): 110, tab. 131, figs. 1Γö£├óΓö╝Γò£Γö£├óΓö¼┬íΓö£├óΓö¼ΓûÆ (1824)
+	internal specifier: Type: Syrrhopodon gardneri (Hook.) Schw____, Sp. Musc. Frond. Suppl. 2(1): 110, tab. 131, figs. ____ (1824)
 	internal specifier: Type: Leucophanes octoblepharoides Brid., Bryol. Univ. 1: 763. (1826)
 	external specifier: Type: Octoblepharum albidum Hedw., Sp. Musc. 50. (1801)
 	Important synapomorphies: cancellinae, central strand absent from stem
-	Included terminal clades: gardneri, japonicus"""^^xsd:string ;
-                    rdfs:isDefinedBy : ] ;
-            ot:dataDeposit "https://treebase.org/treebase-web/search/study/taxa.html?id=1624&treeid=748" ;
-            rdfs:isDefinedBy : ] ;
-    rdf:rest () ;
-    rdfs:isDefinedBy : .
+	Included terminal clades: gardneri, japonicus"""^^xsd:string ] ;
+                ot:dataDeposit "https://treebase.org/treebase-web/search/study/taxa.html?id=1624&treeid=748" ] ) ;
+    ot:comment "None."^^xsd:string ;
+    ot:curatorName "Gaurav Vaidya <gaurav@ggvaidya.com>"^^xsd:string ;
+    ot:studyPublication <https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2> ;
+    ot:studyPublicationReference "Fisher KM, Wall DP, Yip KL, Mishler BD (2007) The Bryologist 110(1):46-73." ;
+    ot:studyYear 2007 ;
+    owl:imports <http://phyloinformatics.net/phyloref.owl>,
+        <http://phylotastic.org/terms/tnrs.rdf>,
+        <https://www.w3.org/2004/02/skos/core> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_1> a obo:CDAO_0000140,
+        owl:Thing ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_2>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_3> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_10> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_11> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_12>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_13> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_100> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_99> ;
+    tnrs:matchedName "Syrrhopodon ciliatus"^^xsd:string ;
+    tnrs:submittedName "Syrrhopodon ciliatus"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/171458>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3937410> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_101> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_102> ;
+    tnrs:matchedName "Syrrhopodon albovaginatus"^^xsd:string ;
+    tnrs:submittedName "Syrrhopodon albovaginatus 446"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/171457>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5966406> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_102> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_101> ;
+    tnrs:matchedName "Syrrhopodon albovaginatus"^^xsd:string ;
+    tnrs:submittedName "Syrrhopodon albovaginatus 162"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/171457>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5966406> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_103> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_104> ;
+    tnrs:matchedName "Syrrhopodon armatus"^^xsd:string ;
+    tnrs:submittedName "Syrrhopodon armatus"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/171454>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3778113> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_104> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_103> ;
+    tnrs:matchedName "Syrrhopodon fimbriatulus"^^xsd:string ;
+    tnrs:submittedName "Syrrhopodon fimbriatulus"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/122796>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3937406> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_105> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_106> ;
+    tnrs:matchedName "Octoblepharum Moorea"^^xsd:string ;
+    tnrs:submittedName "Octoblepharum Moorea 445"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/98493>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2643066> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_106> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_105> ;
+    tnrs:matchedName "Octoblepharum albidum"^^xsd:string ;
+    tnrs:submittedName "Octoblepharum albidum"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/98494>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3872847> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_11> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_10> ;
+    tnrs:matchedName "Syrrhopodon mauritianus"^^xsd:string ;
+    tnrs:submittedName "Syrrhopodon mauritianus"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/354094>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3937448> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_12> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_13> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_14>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_15> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_13> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_12> ;
+    tnrs:matchedName "Syrrhopodon incompletus"^^xsd:string ;
+    tnrs:submittedName "Syrrhopodon incompletus"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/122797>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3873432> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_14> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_15> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_16>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_17> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_15> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_14> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_26>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_27> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_16> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_17> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_18>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_19> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_17> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_16> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_22>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_23> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_18> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_19> ;
+    tnrs:matchedName "Calymperes lonchophyllum"^^xsd:string ;
+    tnrs:submittedName "Calymperes lonchophyllum"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/324445>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3934876> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_19> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_18> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_20>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_21> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_2> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_3> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_4>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_5> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_20> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_21> ;
+    tnrs:matchedName "Calymperes tahitense"^^xsd:string ;
+    tnrs:submittedName "Calymperes tahitense 320"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/122779>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3778339> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_21> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_20> ;
+    tnrs:matchedName "Calymperes tahitense"^^xsd:string ;
+    tnrs:submittedName "Calymperes tahitense 115"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/122779>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3778339> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_22> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_23> ;
+    tnrs:matchedName "Calymperes graffeanum"^^xsd:string ;
+    tnrs:submittedName "Calymperes graffeanum"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/65521>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:444096> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_23> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_22> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_24>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_25> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_24> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_25> ;
+    tnrs:matchedName "Calymperes afzelii"^^xsd:string ;
+    tnrs:submittedName "Calymperes afzelii 165"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/122776>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3873033> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_25> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_24> ;
+    tnrs:matchedName "Calymperes afzelii"^^xsd:string ;
+    tnrs:submittedName "Calymperes afzelii 179"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/122776>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3873033> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_26> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_27> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_28>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_29> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_27> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_26> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_36>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_37> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_28> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_29> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_30>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_31>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_32>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_33> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_29> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_28> ;
+    tnrs:matchedName "Calymperes moluccense"^^xsd:string ;
+    tnrs:submittedName "Calymperes moluccense"^^xsd:string ;
+    skos:closeMatch <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3778779> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_3> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_2> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_105>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_106> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_34> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_35> ;
+    tnrs:matchedName "Calymperes tuatomuense"^^xsd:string ;
+    tnrs:submittedName "Calymperes tuatomuense"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/65521>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:444096> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_35> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_34> ;
+    tnrs:matchedName "Calymperes pseudopodianum"^^xsd:string ;
+    tnrs:submittedName "Calymperes pseudopodianum"^^xsd:string ;
+    skos:closeMatch <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3339132> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_36> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_37> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_38>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_39> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_37> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_36> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_40>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_41> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_38> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_39> ;
+    tnrs:matchedName "Calymperes erosum"^^xsd:string ;
+    tnrs:submittedName "Calymperes erosum"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/71395>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3872791> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_39> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_38> ;
+    tnrs:matchedName "Calymperes robinsonii"^^xsd:string ;
+    tnrs:submittedName "Calymperes robinsonii"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/354100>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3331884> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_4> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_5> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_6>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_7> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_40> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_41> ;
+    tnrs:matchedName "Calymperes motleyi"^^xsd:string ;
+    tnrs:submittedName "Calymperes motleyi"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/354101>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3339200> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_41> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_40> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_42>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_43> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_42> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_43> ;
+    tnrs:matchedName "Calymperes palisotii"^^xsd:string ;
+    tnrs:submittedName "Calymperes palisotii 159"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/122778>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3873034> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_43> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_42> ;
+    tnrs:matchedName "Calymperes palisotii"^^xsd:string ;
+    tnrs:submittedName "Calymperes palisotii 180"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/122778>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3873034> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_44> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_45> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_46>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_47> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_45> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_44> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_63>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_64> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_46> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_47> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_48>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_49> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_47> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_46> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_53>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_54> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_48> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_49> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_50>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_51>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_52> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_49> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_48> ;
+    tnrs:matchedName "Syrrhopodon tristichus"^^xsd:string ;
+    tnrs:submittedName "Syrrhopodon tristichus"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/354092>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3937474> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_5> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_4> ;
+    tnrs:matchedName "Syrrhopodon gardneri"^^xsd:string ;
+    tnrs:submittedName "Syrrhopodon gardneri"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/98460>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3778475> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_53> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_54> ;
+    tnrs:matchedName "Syrrhopodon mahensis"^^xsd:string ;
+    tnrs:submittedName "Syrrhopodon mahensis"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/71394>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3343159> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_54> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_53> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_55>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_56> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_55> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_56> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_57>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_58> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_56> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_55> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_61>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_62> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_57> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_58> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_59>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_60> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_58> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_57> ;
+    tnrs:matchedName "Mitthyridium fasiculatum"^^xsd:string ;
+    tnrs:submittedName "Mitthyridium fasiculatum"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/122790>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3933089> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_59> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_60> ;
+    tnrs:matchedName "Mitthyridium obtusifolium"^^xsd:string ;
+    tnrs:submittedName "Mitthyridium obtusifolium"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/122792>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3933095> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_6> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_7> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_8>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_9> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_60> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_59> ;
+    tnrs:matchedName "Mitthyridium constrictum"^^xsd:string ;
+    tnrs:submittedName "Mitthyridium constrictum"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/122789>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3933087> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_61> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_62> ;
+    tnrs:matchedName "Mitthyridium jungquilianum"^^xsd:string ;
+    tnrs:submittedName "Mitthyridium jungquilianum"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/122791>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3933091> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_62> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_61> ;
+    tnrs:matchedName "Mitthyridium undulatum"^^xsd:string ;
+    tnrs:submittedName "Mitthyridium undulatum"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/122793>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3933100> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_63> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_64> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_65>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_66> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_64> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_63> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_103>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_104> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_65> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_66> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_67>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_68> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_66> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_65> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_86>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_87> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_67> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_68> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_69>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_70> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_68> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_67> ;
+    tnrs:matchedName "Syrrhopodon perarmatus"^^xsd:string ;
+    tnrs:submittedName "Syrrhopodon perarmatus"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/171453>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3778476> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_69> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_70> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_71>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_72> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_7> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_6> ;
+    tnrs:matchedName "Syrrhopodon japonicus"^^xsd:string ;
+    tnrs:submittedName "Syrrhopodon japonicus"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/354095>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3937441> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_70> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_69> ;
+    tnrs:matchedName "Syrrhopodon muelleri"^^xsd:string ;
+    tnrs:submittedName "Syrrhopodon muelleri"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/171462>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3937449> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_71> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_72> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_73>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_74> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_72> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_71> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_82>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_83> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_73> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_74> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_75>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_76> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_74> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_73> ;
+    tnrs:matchedName "Exodictyon incrassatum"^^xsd:string ;
+    tnrs:submittedName "Exodictyon incrassatum"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/122782>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3937624> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_75> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_76> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_77>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_78>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_79> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_76> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_75> ;
+    tnrs:matchedName "Syrrhopodon confertus"^^xsd:string ;
+    tnrs:submittedName "Syrrhopodon confertus"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/122795>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3343054> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_8> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_9> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_10>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_11> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_80> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_81> ;
+    tnrs:matchedName "Leucophanes octoblepharioides"^^xsd:string ;
+    tnrs:submittedName "Leucophanes octoblepharioides"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/354096>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3777822> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_81> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_80> ;
+    tnrs:matchedName "Leucophanes albescens"^^xsd:string ;
+    tnrs:submittedName "Leucophanes albescens"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/122786>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3936001> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_82> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_83> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_84>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_85> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_83> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_82> ;
+    tnrs:matchedName "Arthrocormus schimperi"^^xsd:string ;
+    tnrs:submittedName "Arthrocormus schimperi"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/122775>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3937508> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_84> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_85> ;
+    tnrs:matchedName "Exostratum blumei"^^xsd:string ;
+    tnrs:submittedName "Exostratum blumei 243"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/122784>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5961398> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_85> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_84> ;
+    tnrs:matchedName "Exostratum blumei"^^xsd:string ;
+    tnrs:submittedName "Exostratum blumei 245"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/122784>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5961398> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_86> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_87> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_88>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_89> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_87> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_86> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_100>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_99> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_88> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_89> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_90>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_91>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_92> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_89> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_88> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_95>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_96> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_9> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_8> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_44>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_45> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_93> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_94> ;
+    tnrs:matchedName "Syrrhopodon involutus"^^xsd:string ;
+    tnrs:submittedName "Syrrhopodon involutus"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/295136>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3937436> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_94> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_93> ;
+    tnrs:matchedName "Syrrhopodon banksii"^^xsd:string ;
+    tnrs:submittedName "Syrrhopodon banksii"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/122794>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3937438> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_95> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_96> ;
+    tnrs:matchedName "Syrrhopodon prolifer"^^xsd:string ;
+    tnrs:submittedName "Syrrhopodon prolifer"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/171461>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3872790> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_96> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_95> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_97>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_98> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_97> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_98> ;
+    tnrs:matchedName "Syrrhopodon tortillis"^^xsd:string ;
+    tnrs:submittedName "Syrrhopodon tortillis"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/65523>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:444090> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_98> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_97> ;
+    tnrs:matchedName "Syrrhopodon leprieurii"^^xsd:string ;
+    tnrs:submittedName "Syrrhopodon leprieurii"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/122798>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3343147> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_99> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_100> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_101>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_102> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_50> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_51>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_52> ;
+    tnrs:matchedName "Syrrhopodon apertus"^^xsd:string ;
+    tnrs:submittedName "Syrrhopodon apertus"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/171459>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3343065> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_51> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_50>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_52> ;
+    tnrs:matchedName "Syrrhopodon fissipapillatus"^^xsd:string ;
+    tnrs:submittedName "Syrrhopodon fissipapillatus"^^xsd:string ;
+    skos:closeMatch <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3336792> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_52> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_50>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_51> ;
+    tnrs:matchedName "Syrrhopodon croceus"^^xsd:string ;
+    tnrs:submittedName "Syrrhopodon croceus"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/171456>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3343062> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_77> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_78>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_79> ;
+    tnrs:matchedName "Leucophanes seychellarum"^^xsd:string ;
+    tnrs:submittedName "Leucophanes seychellarum"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/171460>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3340842> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_78> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_77>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_79> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_80>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_81> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_79> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_77>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_78> ;
+    tnrs:matchedName "Leucophanes glaucum"^^xsd:string ;
+    tnrs:submittedName "Leucophanes glaucum"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/122787>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3936000> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_90> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_91>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_92> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_93>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_94> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_91> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_90>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_92> ;
+    tnrs:matchedName "Syrrhopodon trachyphyllus"^^xsd:string ;
+    tnrs:submittedName "Syrrhopodon trachyphyllus"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/171455>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3343210> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_92> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_90>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_91> ;
+    tnrs:matchedName "Syrrhopodon parasiticus"^^xsd:string ;
+    tnrs:submittedName "Syrrhopodon parasiticus"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/354093>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3873434> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_30> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_31>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_32>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_33> ;
+    tnrs:matchedName "Calymperes hispidium"^^xsd:string ;
+    tnrs:submittedName "Calymperes hispidium"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/354102>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3339184> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_31> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_30>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_32>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_33> ;
+    tnrs:matchedName "Calymperes subintegrum"^^xsd:string ;
+    tnrs:submittedName "Calymperes subintegrum"^^xsd:string ;
+    skos:closeMatch <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3339268> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_32> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_30>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_31>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_33> ;
+    tnrs:matchedName "Calymperes tenerum"^^xsd:string ;
+    tnrs:submittedName "Calymperes tenerum"^^xsd:string ;
+    skos:closeMatch <http://purl.uniprot.org/taxonomy/354098>,
+        <http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3873035> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_33> a obo:CDAO_0000140,
+        owl:Thing ;
+    phyloref:has_Sibling <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_30>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_31>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_32> ;
+    obo:CDAO_0000149 <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_34>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_35> .
+
+<http://purl.org/phylo/treebase/phylows/study/TB2:S1624> tbd:annotations [ a oa:Annotation ;
+            rdfs:label "ntax.tree"^^xsd:string ;
+            oa:hasBody "56"^^xsd:string ;
+            oa:hasTarget <http://purl.org/phylo/treebase/phylows/study/TB2:S1624> ],
+        [ a oa:Annotation ;
+            rdfs:label "kind.tree"^^xsd:string ;
+            oa:hasBody "Species Tree"^^xsd:string ;
+            oa:hasTarget <http://purl.org/phylo/treebase/phylows/study/TB2:S1624> ],
+        [ a oa:Annotation ;
+            rdfs:label "isDefinedBy"^^xsd:string ;
+            oa:hasBody "http://purl.org/phylo/treebase/phylows/study/TB2:S1624"^^xsd:string ;
+            oa:hasTarget <http://purl.org/phylo/treebase/phylows/study/TB2:S1624> ],
+        [ a oa:Annotation ;
+            rdfs:label "type.tree"^^xsd:string ;
+            oa:hasBody "Consensus"^^xsd:string ;
+            oa:hasTarget <http://purl.org/phylo/treebase/phylows/study/TB2:S1624> ],
+        [ a oa:Annotation ;
+            rdfs:label "quality.tree"^^xsd:string ;
+            oa:hasBody "Unrated"^^xsd:string ;
+            oa:hasTarget <http://purl.org/phylo/treebase/phylows/study/TB2:S1624> ] ;
+    tbd:asNewickString "[&U] (((((((((Calymperes_lonchophyllum:0.0,(Calymperes_tahitense_320:0.0,Calymperes_tahitense_115:0.0):0.0):0.0,(Calymperes_graffeanum:0.0,(Calymperes_afzelii_165:0.0,Calymperes_afzelii_179:0.0):0.0):0.0):0.0,(((Calymperes_hispidium:0.0,Calymperes_subintegrum:0.0,Calymperes_tenerum:0.0,(Calymperes_tuatomuense:0.0,Calymperes_pseudopodianum:0.0):0.0):0.0,Calymperes_moluccense:0.0):0.0,((Calymperes_erosum:0.0,Calymperes_robinsonii:0.0):0.0,(Calymperes_motleyi:0.0,(Calymperes_palisotii_159:0.0,Calymperes_palisotii_180:0.0):0.0):0.0):0.0):0.0):0.0,Syrrhopodon_incompletus:0.0):0.0,Syrrhopodon_mauritianus:0.0):0.0,((((Syrrhopodon_apertus:0.0,Syrrhopodon_fissipapillatus:0.0,Syrrhopodon_croceus:0.0):0.0,Syrrhopodon_tristichus:0.0):0.0,(Syrrhopodon_mahensis:0.0,(((Mitthyridium_obtusifolium:0.0,Mitthyridium_constrictum:0.0):0.0,Mitthyridium_fasiculatum:0.0):0.0,(Mitthyridium_jungquilianum:0.0,Mitthyridium_undulatum:0.0):0.0):0.0):0.0):0.0,((((((((Leucophanes_seychellarum:0.0,(Leucophanes_octoblepharioides:0.0,Leucophanes_albescens:0.0):0.0,Leucophanes_glaucum:0.0):0.0,Syrrhopodon_confertus:0.0):0.0,Exodictyon_incrassatum:0.0):0.0,((Exostratum_blumei_243:0.0,Exostratum_blumei_245:0.0):0.0,Arthrocormus_schimperi:0.0):0.0):0.0,Syrrhopodon_muelleri:0.0):0.0,Syrrhopodon_perarmatus:0.0):0.0,((((Syrrhopodon_involutus:0.0,Syrrhopodon_banksii:0.0):0.0,Syrrhopodon_trachyphyllus:0.0,Syrrhopodon_parasiticus:0.0):0.0,(Syrrhopodon_prolifer:0.0,(Syrrhopodon_tortillis:0.0,Syrrhopodon_leprieurii:0.0):0.0):0.0):0.0,((Syrrhopodon_albovaginatus_446:0.0,Syrrhopodon_albovaginatus_162:0.0):0.0,Syrrhopodon_ciliatus:0.0):0.0):0.0):0.0,(Syrrhopodon_armatus:0.0,Syrrhopodon_fimbriatulus:0.0):0.0):0.0):0.0):0.0,Syrrhopodon_japonicus:0.0):0.0,Syrrhopodon_gardneri:0.0):0.0,(Octoblepharum_Moorea_445:0.0,Octoblepharum_albidum:0.0):0.0);"^^xsd:string ;
+    tbd:nodes <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_1>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_10>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_100>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_101>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_102>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_103>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_104>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_105>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_106>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_11>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_12>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_13>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_14>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_15>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_16>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_17>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_18>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_19>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_2>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_20>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_21>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_22>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_23>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_24>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_25>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_26>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_27>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_28>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_29>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_3>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_30>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_31>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_32>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_33>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_34>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_35>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_36>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_37>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_38>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_39>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_4>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_40>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_41>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_42>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_43>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_44>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_45>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_46>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_47>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_48>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_49>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_5>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_50>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_51>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_52>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_53>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_54>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_55>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_56>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_57>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_58>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_59>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_6>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_60>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_61>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_62>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_63>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_64>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_65>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_66>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_67>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_68>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_69>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_7>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_70>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_71>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_72>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_73>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_74>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_75>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_76>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_77>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_78>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_79>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_8>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_80>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_81>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_82>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_83>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_84>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_85>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_86>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_87>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_88>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_89>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_9>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_90>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_91>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_92>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_93>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_94>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_95>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_96>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_97>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_98>,
+        <http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_99> .
 
