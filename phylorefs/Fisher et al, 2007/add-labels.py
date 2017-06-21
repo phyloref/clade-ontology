@@ -68,6 +68,13 @@ if FLAG_VERBOSE:
 # Make this .json file into an ontology!
 paper['@type'] = [paper['@type'], 'owl:Ontology']
 
+# To be an ontology, it needs to import a bunch of ontologies.
+paper['owl:imports'] = [
+    "https://www.w3.org/2004/02/skos/core",
+    "http://phylotastic.org/terms/tnrs.rdf",
+    "http://phyloinformatics.net/phyloref.owl"
+]
+
 # Iterate over each inputFile.
 # Note that we add elements directly to 'paper' as necessary.
 for inputFile in paper['inputFiles']:
@@ -156,10 +163,10 @@ for inputFile in paper['inputFiles']:
                 # Is this also a binomial name?
                 match = re.match('^(\w+) ([\w\-]+)\s+.*$', node.taxon.label)
                 if match:
-                    node_dict['binomialName'] = match.group(1) + " " + match.group(2)
+                    node_dict['tnrs:submittedName'] = match.group(1) + " " + match.group(2)
 
                 closeMatches = node.taxon.annotations.findall(name='closeMatch')
-                node_dict['closeMatch'] = [closeMatch.value for closeMatch in closeMatches]
+                node_dict['skos:closeMatch'] = [closeMatch.value for closeMatch in closeMatches]
 
                 # Extract all annotations
                 #annotations = list()

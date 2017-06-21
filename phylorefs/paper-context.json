@@ -10,6 +10,13 @@
         "phyloref": "http://phyloinformatics.net/phyloref.owl#",
         "tbd": "http://example.org/TBD#",
         "owl": "http://www.w3.org/2002/07/owl#",
+        "tnrs": "http://phylotastic.org/terms/tnrs.rdf#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+
+        "owl:imports": {
+            "@id": "owl:imports",
+            "@type": "@id"
+        },
         
         "curator": {
             "@id": "ot:curatorName",
@@ -107,8 +114,8 @@
             "@container": "@set"
         },
 
-        "closeMatch": {
-            "@id": "tbd:closeMatch",
+        "skos:closeMatch": {
+            "@id": "skos:closeMatch",
             "@type": "@id"
         },
 
