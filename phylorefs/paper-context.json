@@ -144,6 +144,28 @@
             "@type": "xsd:string"
         },
 
+        "equivalentClass": "owl:equivalentClass",
+        "intersectionOf": {
+            "@id": "owl:intersectionOf",
+            "@container": "@list"
+        },
+        "onProperty": {
+            "@id": "owl:onProperty",
+            "@type": "@id"
+        },
+        "someValuesFrom": {
+            "@id": "owl:someValuesFrom",
+            "@container": "@set"
+        },
+        "unionOf": {
+            "@id": "owl:unionOf",
+            "@container": "@list"
+        },
+        "hasValue": {
+            "@id": "owl:hasValue",
+            "@type": "xsd:string"
+        },
+
         "label": "rdfs:label",
 
         "submittedName": {

@@ -185,7 +185,14 @@ for inputFile in paper['inputFiles']:
             for node_label in node_labels:
                 node_dict['submittedName'] = node_label.label
 
-                # Is this also a binomial name?
+                matched_names = list()
+
+                # Is this a uninomial name?
+                match = re.search('^(\w+)$', node_label.label)
+                if match:
+                    node_dict['matchedName'] = match.group(1) 
+
+                # Is this a binomial name?
                 match = re.search('^(\w+) ([\w\-]+)\\b', node_label.label)
                 if match:
                     node_dict['matchedName'] = match.group(1) + " " + match.group(2)
@@ -229,9 +236,85 @@ for inputFile in paper['inputFiles']:
 
 
     # Now translate all phylorefs into OWL classes.
+    phyloref_count = 1
     for phyloref in inputFile['phylorefs']:
         internal_specifiers = phyloref['internalSpecifiers']
         external_specifiers = phyloref['externalSpecifiers']
+
+        # Represent this phyloreference as an OWL class expression
+        # in JSON-LD.
+
+        def internal_specifier_to_OWL_repr(specifier):
+            specifiers = list()
+            for key in specifier:
+                if key == 'dc:description':
+                    continue
+
+                specifiers.append({
+                    "@type": "owl:Class",
+                    "intersectionOf": [
+                        { "@id": "obo:CDAO_0000140" },
+                        { "@type": "owl:Restriction",
+                          "onProperty": key,
+                          "hasValue": specifier[key]
+                        }
+                    ]
+                })
+
+            return {
+                "@type": "owl:Restriction",
+                "onProperty": "obo:CDAO_0000174",
+                "someValuesFrom": {
+                    "@type": "owl:Class",
+                    "unionOf": specifiers
+                }
+            }
+
+        def external_specifier_to_OWL_repr(specifier):
+            specifiers = list()
+            for key in specifier:
+                if key == 'dc:description':
+                    continue
+
+                specifiers.append({
+                    "@type": "owl:Class",
+                    "intersectionOf": [
+                        { "@id": "obo:CDAO_0000140" },
+                        { "@type": "owl:Restriction",
+                          "onProperty": key,
+                          "hasValue": specifier[key]
+                        }
+                    ]
+                })
+
+            return {
+                "@type": "owl:Restriction",
+                "onProperty": "phyloref:excludes_lineage_to",
+                "someValuesFrom": {
+                    "@type": "owl:Class",
+                    "unionOf": specifiers
+                }
+            }
+
+        specifiers_repr = list()
+        for internal_specifier in internal_specifiers:
+            specifiers_repr.append(internal_specifier_to_OWL_repr(internal_specifier))
+
+        for external_specifier in external_specifiers:
+            specifiers_repr.append(external_specifier_to_OWL_repr(external_specifier))
+
+        if len(specifiers_repr) > 0:
+            # We have specifiers! Make this into a phyloreference.
+            phyloref['@id'] = phylogeny_id + "phyloref_" + str(phyloref_count)
+            phyloref['@type'] = "owl:Class"
+            phyloref['equivalentClass'] = {
+                '@type': 'owl:Class',
+                'intersectionOf': specifiers_repr
+            }
+            phyloref_count += 1
+
+        # Let's write out a Manchester/Protege string too,
+        # just for kicks.
 
         def internal_specifier_to_OWL_expression(specifier):
             specifiers = list()
@@ -239,7 +322,7 @@ for inputFile in paper['inputFiles']:
                 if key == 'dc:description':
                     continue
 
-                specifiers.append("{0} value '{1}'".format(key, specifier[key]))
+                specifiers.append("{0} value \"{1}\"^^xsd:string".format(key, specifier[key]))
 
             return "(has_Descendant some (Node that " + " or ".join(specifiers) + "))"
 
@@ -249,7 +332,7 @@ for inputFile in paper['inputFiles']:
                 if key == 'dc:description':
                     continue
 
-                specifiers.append("{0} value '{1}'".format(key, specifier[key]))
+                specifiers.append("{0} value \"{1}\"^^xsd:string".format(key, specifier[key]))
 
             return "(excludes_lineage_to some (Node that " + " or ".join(specifiers) + "))"
 
@@ -257,8 +340,8 @@ for inputFile in paper['inputFiles']:
         specifiers.extend([external_specifier_to_OWL_expression(sp) for sp in external_specifiers])
 
         # Create a phyloref in this form:
-        #   has_Child some ([specifier] and [specifier] and [specifier])
-        phyloref['manchesterSyntax'] = "has_Child some (" + " and ".join(specifiers) + ")"
+        #   Node and ...
+        phyloref['manchesterSyntax'] = "Node and (" + " and ".join(specifiers) + ")"
 
 # Write the paper back out again.
 json.dump(paper, output_file, indent=4, sort_keys=True)

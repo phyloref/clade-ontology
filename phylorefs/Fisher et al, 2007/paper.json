@@ -12,7 +12,7 @@
     "year": 2007,
         
     "inputFiles": [{
-        "filename": "T748.nexml",
+        "newick": "((((((((((('Arthrocormus schimperi',('Exostratum blumei 243','Exostratum blumei 245')Exostratum),('Exodictyon incrassatum',(('Leucophanes seychellarum',('Leucophanes octoblepharioides','Leucophanes albescens'),'Leucophanes glaucum'),'Syrrhopodon confertus')Leucophanes))Albifolium,'Syrrhopodon muelleri'),'Syrrhopodon perarmatus'),(('Syrrhopodon ciliatus',('Syrrhopodon albovaginatus 446','Syrrhopodon albovaginatus 162')),((('Syrrhopodon tortillis','Syrrhopodon leprieurii'),'Syrrhopodon prolifer'),('Syrrhopodon parasiticus','Syrrhopodon trachyphyllus',('Syrrhopodon banksii','Syrrhopodon involutus')Leucophanella)))Trachymitrium),('Syrrhopodon armatus','Syrrhopodon fimbriatulus')),((((('Mitthyridium obtusifolium','Mitthyridium constrictum'),'Mitthyridium fasiculatum'),('Mitthyridium undulatum','Mitthyridium jungquilianum'))Mitthyridium,'Syrrhopodon mahensis'),('Syrrhopodon tristichus',('Syrrhopodon croceus','Syrrhopodon apertus','Syrrhopodon fissipapillatus'))))Syrrhopodon,(('Syrrhopodon incompletus',((((('Calymperes palisotii 159','Calymperes palisotii 180'),'Calymperes motleyi'),('Calymperes erosum','Calymperes robinsonii')),(('Calymperes tenerum','Calymperes subintegrum',('Calymperes tuatomuense','Calymperes pseudopodianum'),'Calymperes hispidium'),'Calymperes moluccense')),((('Calymperes tahitense 320','Calymperes tahitense 115'),'Calymperes lonchophyllum'),(('Calymperes afzelii 179','Calymperes afzelii 165'),'Calymperes graffeanum')))),'Syrrhopodon mauritianus')Calymperes),'Syrrhopodon japonicus'),'Syrrhopodon gardneri')Calymperaceae,('Octoblepharum Moorea 445','Octoblepharum albidum')Octoblepharum);",
         "ot:dataDeposit": "https://treebase.org/treebase-web/search/study/taxa.html?id=1624&treeid=748",
         "phylorefs": [
             {
@@ -21,17 +21,17 @@
                 "internalSpecifiers": [
                     {
                         "dc:description": "Syrrhopodon gardneri (Hook.) _____, Sp. Musc. Frond. Suppl. 2(1): 110, tab. 131, figs. 1-13 (1824)",
-                        "tnrs:submittedName": "Syrrhopodon gardneri"
+                        "tnrs:matchedName": "Syrrhopodon gardneri"
                     },
                     {
                         "dc:description": "Type: Leucophanes octoblepharoides Brid., Bryol. Univ. 1: 763. (1826)",
-                        "tnrs:submittedName": "Leucophanes octoblepharoides"
+                        "tnrs:matchedName": "Leucophanes octoblepharioides"
                     }
                 ],
                 "externalSpecifiers": [
                     {
-                        "description": "Type: Octoblepharum albidum Hedw., Sp. Musc. 50. (1801)",
-                        "tnrs:submittedName": "Octoblepharum albidum"
+                        "dc:description": "Type: Octoblepharum albidum Hedw., Sp. Musc. 50. (1801)",
+                        "tnrs:matchedName": "Octoblepharum albidum"
                     }
                 ]
             }

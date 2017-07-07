@@ -10,47 +10,16 @@
     "curator": "Gaurav Vaidya <gaurav@ggvaidya.com>",
     "inputFiles": [
         {
-            "filename": "T748.nexml",
+            "newick": "((((((((((('Arthrocormus schimperi',('Exostratum blumei 243','Exostratum blumei 245')Exostratum),('Exodictyon incrassatum',(('Leucophanes seychellarum',('Leucophanes octoblepharioides','Leucophanes albescens'),'Leucophanes glaucum'),'Syrrhopodon confertus')Leucophanes))Albifolium,'Syrrhopodon muelleri'),'Syrrhopodon perarmatus'),(('Syrrhopodon ciliatus',('Syrrhopodon albovaginatus 446','Syrrhopodon albovaginatus 162')),((('Syrrhopodon tortillis','Syrrhopodon leprieurii'),'Syrrhopodon prolifer'),('Syrrhopodon parasiticus','Syrrhopodon trachyphyllus',('Syrrhopodon banksii','Syrrhopodon involutus')Leucophanella)))Trachymitrium),('Syrrhopodon armatus','Syrrhopodon fimbriatulus')),((((('Mitthyridium obtusifolium','Mitthyridium constrictum'),'Mitthyridium fasiculatum'),('Mitthyridium undulatum','Mitthyridium jungquilianum'))Mitthyridium,'Syrrhopodon mahensis'),('Syrrhopodon tristichus',('Syrrhopodon croceus','Syrrhopodon apertus','Syrrhopodon fissipapillatus'))))Syrrhopodon,(('Syrrhopodon incompletus',((((('Calymperes palisotii 159','Calymperes palisotii 180'),'Calymperes motleyi'),('Calymperes erosum','Calymperes robinsonii')),(('Calymperes tenerum','Calymperes subintegrum',('Calymperes tuatomuense','Calymperes pseudopodianum'),'Calymperes hispidium'),'Calymperes moluccense')),((('Calymperes tahitense 320','Calymperes tahitense 115'),'Calymperes lonchophyllum'),(('Calymperes afzelii 179','Calymperes afzelii 165'),'Calymperes graffeanum')))),'Syrrhopodon mauritianus')Calymperes),'Syrrhopodon japonicus'),'Syrrhopodon gardneri')Calymperaceae,('Octoblepharum Moorea 445','Octoblepharum albidum')Octoblepharum);",
             "ot:dataDeposit": "https://treebase.org/treebase-web/search/study/taxa.html?id=1624&treeid=748",
             "phylogenies": [
                 {
-                    "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624",
-                    "annotations": [
-                        {
-                            "@type": "Annotation",
-                            "annotationBody": "56",
-                            "annotationName": "ntax.tree",
-                            "annotationTarget": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624"
-                        },
-                        {
-                            "@type": "Annotation",
-                            "annotationBody": "Unrated",
-                            "annotationName": "quality.tree",
-                            "annotationTarget": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624"
-                        },
-                        {
-                            "@type": "Annotation",
-                            "annotationBody": "Consensus",
-                            "annotationName": "type.tree",
-                            "annotationTarget": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624"
-                        },
-                        {
-                            "@type": "Annotation",
-                            "annotationBody": "Species Tree",
-                            "annotationName": "kind.tree",
-                            "annotationTarget": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624"
-                        },
-                        {
-                            "@type": "Annotation",
-                            "annotationBody": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624",
-                            "annotationName": "isDefinedBy",
-                            "annotationTarget": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624"
-                        }
-                    ],
-                    "newick": "[&U] (((((((((Calymperes_lonchophyllum:0.0,(Calymperes_tahitense_320:0.0,Calymperes_tahitense_115:0.0):0.0):0.0,(Calymperes_graffeanum:0.0,(Calymperes_afzelii_165:0.0,Calymperes_afzelii_179:0.0):0.0):0.0):0.0,(((Calymperes_hispidium:0.0,Calymperes_subintegrum:0.0,Calymperes_tenerum:0.0,(Calymperes_tuatomuense:0.0,Calymperes_pseudopodianum:0.0):0.0):0.0,Calymperes_moluccense:0.0):0.0,((Calymperes_erosum:0.0,Calymperes_robinsonii:0.0):0.0,(Calymperes_motleyi:0.0,(Calymperes_palisotii_159:0.0,Calymperes_palisotii_180:0.0):0.0):0.0):0.0):0.0):0.0,Syrrhopodon_incompletus:0.0):0.0,Syrrhopodon_mauritianus:0.0):0.0,((((Syrrhopodon_apertus:0.0,Syrrhopodon_fissipapillatus:0.0,Syrrhopodon_croceus:0.0):0.0,Syrrhopodon_tristichus:0.0):0.0,(Syrrhopodon_mahensis:0.0,(((Mitthyridium_obtusifolium:0.0,Mitthyridium_constrictum:0.0):0.0,Mitthyridium_fasiculatum:0.0):0.0,(Mitthyridium_jungquilianum:0.0,Mitthyridium_undulatum:0.0):0.0):0.0):0.0):0.0,((((((((Leucophanes_seychellarum:0.0,(Leucophanes_octoblepharioides:0.0,Leucophanes_albescens:0.0):0.0,Leucophanes_glaucum:0.0):0.0,Syrrhopodon_confertus:0.0):0.0,Exodictyon_incrassatum:0.0):0.0,((Exostratum_blumei_243:0.0,Exostratum_blumei_245:0.0):0.0,Arthrocormus_schimperi:0.0):0.0):0.0,Syrrhopodon_muelleri:0.0):0.0,Syrrhopodon_perarmatus:0.0):0.0,((((Syrrhopodon_involutus:0.0,Syrrhopodon_banksii:0.0):0.0,Syrrhopodon_trachyphyllus:0.0,Syrrhopodon_parasiticus:0.0):0.0,(Syrrhopodon_prolifer:0.0,(Syrrhopodon_tortillis:0.0,Syrrhopodon_leprieurii:0.0):0.0):0.0):0.0,((Syrrhopodon_albovaginatus_446:0.0,Syrrhopodon_albovaginatus_162:0.0):0.0,Syrrhopodon_ciliatus:0.0):0.0):0.0):0.0,(Syrrhopodon_armatus:0.0,Syrrhopodon_fimbriatulus:0.0):0.0):0.0):0.0):0.0,Syrrhopodon_japonicus:0.0):0.0,Syrrhopodon_gardneri:0.0):0.0,(Octoblepharum_Moorea_445:0.0,Octoblepharum_albidum:0.0):0.0);",
+                    "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336",
+                    "annotations": [],
+                    "newick": "(((((((((((Arthrocormus_schimperi,(Exostratum_blumei_243,Exostratum_blumei_245)Exostratum),(Exodictyon_incrassatum,((Leucophanes_seychellarum,(Leucophanes_octoblepharioides,Leucophanes_albescens),Leucophanes_glaucum),Syrrhopodon_confertus)Leucophanes))Albifolium,Syrrhopodon_muelleri),Syrrhopodon_perarmatus),((Syrrhopodon_ciliatus,(Syrrhopodon_albovaginatus_446,Syrrhopodon_albovaginatus_162)),(((Syrrhopodon_tortillis,Syrrhopodon_leprieurii),Syrrhopodon_prolifer),(Syrrhopodon_parasiticus,Syrrhopodon_trachyphyllus,(Syrrhopodon_banksii,Syrrhopodon_involutus)Leucophanella)))Trachymitrium),(Syrrhopodon_armatus,Syrrhopodon_fimbriatulus)),(((((Mitthyridium_obtusifolium,Mitthyridium_constrictum),Mitthyridium_fasiculatum),(Mitthyridium_undulatum,Mitthyridium_jungquilianum))Mitthyridium,Syrrhopodon_mahensis),(Syrrhopodon_tristichus,(Syrrhopodon_croceus,Syrrhopodon_apertus,Syrrhopodon_fissipapillatus))))Syrrhopodon,((Syrrhopodon_incompletus,(((((Calymperes_palisotii_159,Calymperes_palisotii_180),Calymperes_motleyi),(Calymperes_erosum,Calymperes_robinsonii)),((Calymperes_tenerum,Calymperes_subintegrum,(Calymperes_tuatomuense,Calymperes_pseudopodianum),Calymperes_hispidium),Calymperes_moluccense)),(((Calymperes_tahitense_320,Calymperes_tahitense_115),Calymperes_lonchophyllum),((Calymperes_afzelii_179,Calymperes_afzelii_165),Calymperes_graffeanum)))),Syrrhopodon_mauritianus)Calymperes),Syrrhopodon_japonicus),Syrrhopodon_gardneri)Calymperaceae,(Octoblepharum_Moorea_445,Octoblepharum_albidum)Octoblepharum);",
                     "nodes": [
                         {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_1",
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_1",
                             "@type": [
                                 [
                                     "obo:CDAO_0000140",
@@ -58,13 +27,13 @@
                                 ]
                             ],
                             "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_2",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_3"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_2",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_3"
                             ],
                             "siblings": []
                         },
                         {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_2",
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_2",
                             "@type": [
                                 [
                                     "obo:CDAO_0000140",
@@ -72,15 +41,17 @@
                                 ]
                             ],
                             "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_4",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_5"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_4",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_5"
                             ],
+                            "matchedName": "Calymperaceae",
                             "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_3"
-                            ]
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_3"
+                            ],
+                            "submittedName": "Calymperaceae"
                         },
                         {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_4",
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_4",
                             "@type": [
                                 [
                                     "obo:CDAO_0000140",
@@ -88,15 +59,15 @@
                                 ]
                             ],
                             "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_6",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_7"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_6",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_7"
                             ],
                             "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_5"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_5"
                             ]
                         },
                         {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_6",
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_6",
                             "@type": [
                                 [
                                     "obo:CDAO_0000140",
@@ -104,15 +75,15 @@
                                 ]
                             ],
                             "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_8",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_9"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_8",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_9"
                             ],
                             "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_7"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_7"
                             ]
                         },
                         {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_8",
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_8",
                             "@type": [
                                 [
                                     "obo:CDAO_0000140",
@@ -120,15 +91,17 @@
                                 ]
                             ],
                             "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_10",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_11"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_10",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_11"
                             ],
+                            "matchedName": "Syrrhopodon",
                             "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_9"
-                            ]
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_9"
+                            ],
+                            "submittedName": "Syrrhopodon"
                         },
                         {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_10",
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_10",
                             "@type": [
                                 [
                                     "obo:CDAO_0000140",
@@ -136,15 +109,15 @@
                                 ]
                             ],
                             "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_12",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_13"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_12",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_13"
                             ],
                             "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_11"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_11"
                             ]
                         },
                         {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_12",
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_12",
                             "@type": [
                                 [
                                     "obo:CDAO_0000140",
@@ -152,15 +125,15 @@
                                 ]
                             ],
                             "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_14",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_15"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_14",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_15"
                             ],
                             "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_13"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_13"
                             ]
                         },
                         {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_14",
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_14",
                             "@type": [
                                 [
                                     "obo:CDAO_0000140",
@@ -168,15 +141,15 @@
                                 ]
                             ],
                             "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_16",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_17"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_16",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_17"
                             ],
                             "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_15"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_15"
                             ]
                         },
                         {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_16",
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_16",
                             "@type": [
                                 [
                                     "obo:CDAO_0000140",
@@ -184,34 +157,15 @@
                                 ]
                             ],
                             "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_18",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_19"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_18",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_19"
                             ],
                             "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_17"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_17"
                             ]
                         },
                         {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_18",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Calymperes lonchophyllum",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_19"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/324445",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3934876"
-                            ],
-                            "submittedName": "Calymperes lonchophyllum"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_19",
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_18",
                             "@type": [
                                 [
                                     "obo:CDAO_0000140",
@@ -219,53 +173,17 @@
                                 ]
                             ],
                             "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_20",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_21"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_20",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_21"
                             ],
+                            "matchedName": "Albifolium",
                             "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_18"
-                            ]
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_19"
+                            ],
+                            "submittedName": "Albifolium"
                         },
                         {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_20",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Calymperes tahitense",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_21"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/122779",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3778339"
-                            ],
-                            "submittedName": "Calymperes tahitense 320"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_21",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Calymperes tahitense",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_20"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/122779",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3778339"
-                            ],
-                            "submittedName": "Calymperes tahitense 115"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_17",
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_20",
                             "@type": [
                                 [
                                     "obo:CDAO_0000140",
@@ -273,1139 +191,15 @@
                                 ]
                             ],
                             "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_22",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_23"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_22",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_23"
                             ],
                             "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_16"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_21"
                             ]
                         },
                         {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_22",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Calymperes graffeanum",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_23"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/65521",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:444096"
-                            ],
-                            "submittedName": "Calymperes graffeanum"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_23",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_24",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_25"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_22"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_24",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Calymperes afzelii",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_25"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/122776",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3873033"
-                            ],
-                            "submittedName": "Calymperes afzelii 165"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_25",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Calymperes afzelii",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_24"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/122776",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3873033"
-                            ],
-                            "submittedName": "Calymperes afzelii 179"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_15",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_26",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_27"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_14"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_26",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_28",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_29"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_27"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_28",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_30",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_31",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_32",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_33"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_29"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_30",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Calymperes hispidium",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_31",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_32",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_33"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/354102",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3339184"
-                            ],
-                            "submittedName": "Calymperes hispidium"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_31",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Calymperes subintegrum",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_30",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_32",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_33"
-                            ],
-                            "skos:closeMatch": [
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3339268"
-                            ],
-                            "submittedName": "Calymperes subintegrum"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_32",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Calymperes tenerum",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_30",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_31",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_33"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/354098",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3873035"
-                            ],
-                            "submittedName": "Calymperes tenerum"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_33",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_34",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_35"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_30",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_31",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_32"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_34",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Calymperes tuatomuense",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_35"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/65521",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:444096"
-                            ],
-                            "submittedName": "Calymperes tuatomuense"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_35",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Calymperes pseudopodianum",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_34"
-                            ],
-                            "skos:closeMatch": [
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3339132"
-                            ],
-                            "submittedName": "Calymperes pseudopodianum"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_29",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Calymperes moluccense",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_28"
-                            ],
-                            "skos:closeMatch": [
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3778779"
-                            ],
-                            "submittedName": "Calymperes moluccense"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_27",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_36",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_37"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_26"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_36",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_38",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_39"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_37"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_38",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Calymperes erosum",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_39"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/71395",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3872791"
-                            ],
-                            "submittedName": "Calymperes erosum"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_39",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Calymperes robinsonii",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_38"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/354100",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3331884"
-                            ],
-                            "submittedName": "Calymperes robinsonii"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_37",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_40",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_41"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_36"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_40",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Calymperes motleyi",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_41"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/354101",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3339200"
-                            ],
-                            "submittedName": "Calymperes motleyi"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_41",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_42",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_43"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_40"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_42",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Calymperes palisotii",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_43"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/122778",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3873034"
-                            ],
-                            "submittedName": "Calymperes palisotii 159"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_43",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Calymperes palisotii",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_42"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/122778",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3873034"
-                            ],
-                            "submittedName": "Calymperes palisotii 180"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_13",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Syrrhopodon incompletus",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_12"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/122797",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3873432"
-                            ],
-                            "submittedName": "Syrrhopodon incompletus"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_11",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Syrrhopodon mauritianus",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_10"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/354094",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3937448"
-                            ],
-                            "submittedName": "Syrrhopodon mauritianus"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_9",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_44",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_45"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_8"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_44",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_46",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_47"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_45"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_46",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_48",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_49"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_47"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_48",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_50",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_51",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_52"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_49"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_50",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Syrrhopodon apertus",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_51",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_52"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/171459",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3343065"
-                            ],
-                            "submittedName": "Syrrhopodon apertus"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_51",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Syrrhopodon fissipapillatus",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_50",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_52"
-                            ],
-                            "skos:closeMatch": [
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3336792"
-                            ],
-                            "submittedName": "Syrrhopodon fissipapillatus"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_52",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Syrrhopodon croceus",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_50",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_51"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/171456",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3343062"
-                            ],
-                            "submittedName": "Syrrhopodon croceus"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_49",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Syrrhopodon tristichus",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_48"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/354092",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3937474"
-                            ],
-                            "submittedName": "Syrrhopodon tristichus"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_47",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_53",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_54"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_46"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_53",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Syrrhopodon mahensis",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_54"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/71394",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3343159"
-                            ],
-                            "submittedName": "Syrrhopodon mahensis"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_54",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_55",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_56"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_53"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_55",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_57",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_58"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_56"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_57",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_59",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_60"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_58"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_59",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Mitthyridium obtusifolium",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_60"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/122792",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3933095"
-                            ],
-                            "submittedName": "Mitthyridium obtusifolium"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_60",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Mitthyridium constrictum",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_59"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/122789",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3933087"
-                            ],
-                            "submittedName": "Mitthyridium constrictum"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_58",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Mitthyridium fasiculatum",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_57"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/122790",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3933089"
-                            ],
-                            "submittedName": "Mitthyridium fasiculatum"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_56",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_61",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_62"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_55"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_61",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Mitthyridium jungquilianum",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_62"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/122791",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3933091"
-                            ],
-                            "submittedName": "Mitthyridium jungquilianum"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_62",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Mitthyridium undulatum",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_61"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/122793",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3933100"
-                            ],
-                            "submittedName": "Mitthyridium undulatum"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_45",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_63",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_64"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_44"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_63",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_65",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_66"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_64"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_65",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_67",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_68"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_66"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_67",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_69",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_70"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_68"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_69",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_71",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_72"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_70"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_71",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_73",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_74"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_72"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_73",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_75",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_76"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_74"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_75",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_77",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_78",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_79"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_76"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_77",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Leucophanes seychellarum",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_78",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_79"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/171460",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3340842"
-                            ],
-                            "submittedName": "Leucophanes seychellarum"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_78",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_80",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_81"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_77",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_79"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_80",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Leucophanes octoblepharioides",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_81"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/354096",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3777822"
-                            ],
-                            "submittedName": "Leucophanes octoblepharioides"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_81",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Leucophanes albescens",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_80"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/122786",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3936001"
-                            ],
-                            "submittedName": "Leucophanes albescens"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_79",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Leucophanes glaucum",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_77",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_78"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/122787",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3936000"
-                            ],
-                            "submittedName": "Leucophanes glaucum"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_76",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Syrrhopodon confertus",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_75"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/122795",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3343054"
-                            ],
-                            "submittedName": "Syrrhopodon confertus"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_74",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Exodictyon incrassatum",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_73"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/122782",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3937624"
-                            ],
-                            "submittedName": "Exodictyon incrassatum"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_72",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_82",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_83"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_71"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_82",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_84",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_85"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_83"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_84",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Exostratum blumei",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_85"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/122784",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5961398"
-                            ],
-                            "submittedName": "Exostratum blumei 243"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_85",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Exostratum blumei",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_84"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/122784",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5961398"
-                            ],
-                            "submittedName": "Exostratum blumei 245"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_83",
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_22",
                             "@type": [
                                 [
                                     "obo:CDAO_0000140",
@@ -1415,16 +209,220 @@
                             "children": [],
                             "matchedName": "Arthrocormus schimperi",
                             "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_82"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/122775",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3937508"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_23"
                             ],
                             "submittedName": "Arthrocormus schimperi"
                         },
                         {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_70",
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_23",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_24",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_25"
+                            ],
+                            "matchedName": "Exostratum",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_22"
+                            ],
+                            "submittedName": "Exostratum"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_24",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Exostratum blumei",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_25"
+                            ],
+                            "submittedName": "Exostratum blumei 243"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_25",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Exostratum blumei",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_24"
+                            ],
+                            "submittedName": "Exostratum blumei 245"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_21",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_26",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_27"
+                            ],
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_20"
+                            ]
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_26",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Exodictyon incrassatum",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_27"
+                            ],
+                            "submittedName": "Exodictyon incrassatum"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_27",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_28",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_29"
+                            ],
+                            "matchedName": "Leucophanes",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_26"
+                            ],
+                            "submittedName": "Leucophanes"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_28",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_30",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_31",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_32"
+                            ],
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_29"
+                            ]
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_30",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Leucophanes seychellarum",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_31",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_32"
+                            ],
+                            "submittedName": "Leucophanes seychellarum"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_31",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_33",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_34"
+                            ],
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_30",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_32"
+                            ]
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_33",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Leucophanes octoblepharioides",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_34"
+                            ],
+                            "submittedName": "Leucophanes octoblepharioides"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_34",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Leucophanes albescens",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_33"
+                            ],
+                            "submittedName": "Leucophanes albescens"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_32",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Leucophanes glaucum",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_30",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_31"
+                            ],
+                            "submittedName": "Leucophanes glaucum"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_29",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Syrrhopodon confertus",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_28"
+                            ],
+                            "submittedName": "Syrrhopodon confertus"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_19",
                             "@type": [
                                 [
                                     "obo:CDAO_0000140",
@@ -1434,16 +432,12 @@
                             "children": [],
                             "matchedName": "Syrrhopodon muelleri",
                             "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_69"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/171462",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3937449"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_18"
                             ],
                             "submittedName": "Syrrhopodon muelleri"
                         },
                         {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_68",
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_17",
                             "@type": [
                                 [
                                     "obo:CDAO_0000140",
@@ -1453,16 +447,12 @@
                             "children": [],
                             "matchedName": "Syrrhopodon perarmatus",
                             "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_67"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/171453",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3778476"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_16"
                             ],
                             "submittedName": "Syrrhopodon perarmatus"
                         },
                         {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_66",
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_15",
                             "@type": [
                                 [
                                     "obo:CDAO_0000140",
@@ -1470,15 +460,17 @@
                                 ]
                             ],
                             "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_86",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_87"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_35",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_36"
                             ],
+                            "matchedName": "Trachymitrium",
                             "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_65"
-                            ]
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_14"
+                            ],
+                            "submittedName": "Trachymitrium"
                         },
                         {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_86",
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_35",
                             "@type": [
                                 [
                                     "obo:CDAO_0000140",
@@ -1486,286 +478,15 @@
                                 ]
                             ],
                             "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_88",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_89"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_37",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_38"
                             ],
                             "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_87"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_36"
                             ]
                         },
                         {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_88",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_90",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_91",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_92"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_89"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_90",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_93",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_94"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_91",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_92"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_93",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Syrrhopodon involutus",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_94"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/295136",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3937436"
-                            ],
-                            "submittedName": "Syrrhopodon involutus"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_94",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Syrrhopodon banksii",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_93"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/122794",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3937438"
-                            ],
-                            "submittedName": "Syrrhopodon banksii"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_91",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Syrrhopodon trachyphyllus",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_90",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_92"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/171455",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3343210"
-                            ],
-                            "submittedName": "Syrrhopodon trachyphyllus"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_92",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Syrrhopodon parasiticus",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_90",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_91"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/354093",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3873434"
-                            ],
-                            "submittedName": "Syrrhopodon parasiticus"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_89",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_95",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_96"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_88"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_95",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Syrrhopodon prolifer",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_96"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/171461",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3872790"
-                            ],
-                            "submittedName": "Syrrhopodon prolifer"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_96",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_97",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_98"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_95"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_97",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Syrrhopodon tortillis",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_98"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/65523",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:444090"
-                            ],
-                            "submittedName": "Syrrhopodon tortillis"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_98",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Syrrhopodon leprieurii",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_97"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/122798",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3343147"
-                            ],
-                            "submittedName": "Syrrhopodon leprieurii"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_87",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_99",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_100"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_86"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_99",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_101",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_102"
-                            ],
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_100"
-                            ]
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_101",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Syrrhopodon albovaginatus",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_102"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/171457",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5966406"
-                            ],
-                            "submittedName": "Syrrhopodon albovaginatus 446"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_102",
-                            "@type": [
-                                [
-                                    "obo:CDAO_0000140",
-                                    "owl:Thing"
-                                ]
-                            ],
-                            "children": [],
-                            "matchedName": "Syrrhopodon albovaginatus",
-                            "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_101"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/171457",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5966406"
-                            ],
-                            "submittedName": "Syrrhopodon albovaginatus 162"
-                        },
-                        {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_100",
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_37",
                             "@type": [
                                 [
                                     "obo:CDAO_0000140",
@@ -1775,16 +496,12 @@
                             "children": [],
                             "matchedName": "Syrrhopodon ciliatus",
                             "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_99"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/171458",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3937410"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_38"
                             ],
                             "submittedName": "Syrrhopodon ciliatus"
                         },
                         {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_64",
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_38",
                             "@type": [
                                 [
                                     "obo:CDAO_0000140",
@@ -1792,15 +509,252 @@
                                 ]
                             ],
                             "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_103",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_104"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_39",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_40"
                             ],
                             "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_63"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_37"
                             ]
                         },
                         {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_103",
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_39",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Syrrhopodon albovaginatus",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_40"
+                            ],
+                            "submittedName": "Syrrhopodon albovaginatus 446"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_40",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Syrrhopodon albovaginatus",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_39"
+                            ],
+                            "submittedName": "Syrrhopodon albovaginatus 162"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_36",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_41",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_42"
+                            ],
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_35"
+                            ]
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_41",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_43",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_44"
+                            ],
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_42"
+                            ]
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_43",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_45",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_46"
+                            ],
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_44"
+                            ]
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_45",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Syrrhopodon tortillis",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_46"
+                            ],
+                            "submittedName": "Syrrhopodon tortillis"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_46",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Syrrhopodon leprieurii",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_45"
+                            ],
+                            "submittedName": "Syrrhopodon leprieurii"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_44",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Syrrhopodon prolifer",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_43"
+                            ],
+                            "submittedName": "Syrrhopodon prolifer"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_42",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_47",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_48",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_49"
+                            ],
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_41"
+                            ]
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_47",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Syrrhopodon parasiticus",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_48",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_49"
+                            ],
+                            "submittedName": "Syrrhopodon parasiticus"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_48",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Syrrhopodon trachyphyllus",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_47",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_49"
+                            ],
+                            "submittedName": "Syrrhopodon trachyphyllus"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_49",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_50",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_51"
+                            ],
+                            "matchedName": "Leucophanella",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_47",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_48"
+                            ],
+                            "submittedName": "Leucophanella"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_50",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Syrrhopodon banksii",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_51"
+                            ],
+                            "submittedName": "Syrrhopodon banksii"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_51",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Syrrhopodon involutus",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_50"
+                            ],
+                            "submittedName": "Syrrhopodon involutus"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_13",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_52",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_53"
+                            ],
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_12"
+                            ]
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_52",
                             "@type": [
                                 [
                                     "obo:CDAO_0000140",
@@ -1810,16 +764,12 @@
                             "children": [],
                             "matchedName": "Syrrhopodon armatus",
                             "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_104"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/171454",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3778113"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_53"
                             ],
                             "submittedName": "Syrrhopodon armatus"
                         },
                         {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_104",
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_53",
                             "@type": [
                                 [
                                     "obo:CDAO_0000140",
@@ -1829,16 +779,849 @@
                             "children": [],
                             "matchedName": "Syrrhopodon fimbriatulus",
                             "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_103"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/122796",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3937406"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_52"
                             ],
                             "submittedName": "Syrrhopodon fimbriatulus"
                         },
                         {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_7",
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_11",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_54",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_55"
+                            ],
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_10"
+                            ]
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_54",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_56",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_57"
+                            ],
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_55"
+                            ]
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_56",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_58",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_59"
+                            ],
+                            "matchedName": "Mitthyridium",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_57"
+                            ],
+                            "submittedName": "Mitthyridium"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_58",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_60",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_61"
+                            ],
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_59"
+                            ]
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_60",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_62",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_63"
+                            ],
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_61"
+                            ]
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_62",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Mitthyridium obtusifolium",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_63"
+                            ],
+                            "submittedName": "Mitthyridium obtusifolium"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_63",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Mitthyridium constrictum",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_62"
+                            ],
+                            "submittedName": "Mitthyridium constrictum"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_61",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Mitthyridium fasiculatum",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_60"
+                            ],
+                            "submittedName": "Mitthyridium fasiculatum"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_59",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_64",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_65"
+                            ],
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_58"
+                            ]
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_64",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Mitthyridium undulatum",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_65"
+                            ],
+                            "submittedName": "Mitthyridium undulatum"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_65",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Mitthyridium jungquilianum",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_64"
+                            ],
+                            "submittedName": "Mitthyridium jungquilianum"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_57",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Syrrhopodon mahensis",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_56"
+                            ],
+                            "submittedName": "Syrrhopodon mahensis"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_55",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_66",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_67"
+                            ],
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_54"
+                            ]
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_66",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Syrrhopodon tristichus",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_67"
+                            ],
+                            "submittedName": "Syrrhopodon tristichus"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_67",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_68",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_69",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_70"
+                            ],
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_66"
+                            ]
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_68",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Syrrhopodon croceus",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_69",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_70"
+                            ],
+                            "submittedName": "Syrrhopodon croceus"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_69",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Syrrhopodon apertus",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_68",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_70"
+                            ],
+                            "submittedName": "Syrrhopodon apertus"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_70",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Syrrhopodon fissipapillatus",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_68",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_69"
+                            ],
+                            "submittedName": "Syrrhopodon fissipapillatus"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_9",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_71",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_72"
+                            ],
+                            "matchedName": "Calymperes",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_8"
+                            ],
+                            "submittedName": "Calymperes"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_71",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_73",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_74"
+                            ],
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_72"
+                            ]
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_73",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Syrrhopodon incompletus",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_74"
+                            ],
+                            "submittedName": "Syrrhopodon incompletus"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_74",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_75",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_76"
+                            ],
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_73"
+                            ]
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_75",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_77",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_78"
+                            ],
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_76"
+                            ]
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_77",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_79",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_80"
+                            ],
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_78"
+                            ]
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_79",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_81",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_82"
+                            ],
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_80"
+                            ]
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_81",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_83",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_84"
+                            ],
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_82"
+                            ]
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_83",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Calymperes palisotii",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_84"
+                            ],
+                            "submittedName": "Calymperes palisotii 159"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_84",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Calymperes palisotii",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_83"
+                            ],
+                            "submittedName": "Calymperes palisotii 180"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_82",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Calymperes motleyi",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_81"
+                            ],
+                            "submittedName": "Calymperes motleyi"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_80",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_85",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_86"
+                            ],
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_79"
+                            ]
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_85",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Calymperes erosum",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_86"
+                            ],
+                            "submittedName": "Calymperes erosum"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_86",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Calymperes robinsonii",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_85"
+                            ],
+                            "submittedName": "Calymperes robinsonii"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_78",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_87",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_88"
+                            ],
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_77"
+                            ]
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_87",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_89",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_90",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_91",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_92"
+                            ],
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_88"
+                            ]
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_89",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Calymperes tenerum",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_90",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_91",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_92"
+                            ],
+                            "submittedName": "Calymperes tenerum"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_90",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Calymperes subintegrum",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_89",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_91",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_92"
+                            ],
+                            "submittedName": "Calymperes subintegrum"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_91",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_93",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_94"
+                            ],
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_89",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_90",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_92"
+                            ]
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_93",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Calymperes tuatomuense",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_94"
+                            ],
+                            "submittedName": "Calymperes tuatomuense"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_94",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Calymperes pseudopodianum",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_93"
+                            ],
+                            "submittedName": "Calymperes pseudopodianum"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_92",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Calymperes hispidium",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_89",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_90",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_91"
+                            ],
+                            "submittedName": "Calymperes hispidium"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_88",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Calymperes moluccense",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_87"
+                            ],
+                            "submittedName": "Calymperes moluccense"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_76",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_95",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_96"
+                            ],
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_75"
+                            ]
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_95",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_97",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_98"
+                            ],
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_96"
+                            ]
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_97",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_99",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_100"
+                            ],
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_98"
+                            ]
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_99",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Calymperes tahitense",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_100"
+                            ],
+                            "submittedName": "Calymperes tahitense 320"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_100",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Calymperes tahitense",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_99"
+                            ],
+                            "submittedName": "Calymperes tahitense 115"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_98",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Calymperes lonchophyllum",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_97"
+                            ],
+                            "submittedName": "Calymperes lonchophyllum"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_96",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_101",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_102"
+                            ],
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_95"
+                            ]
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_101",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_103",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_104"
+                            ],
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_102"
+                            ]
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_103",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Calymperes afzelii",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_104"
+                            ],
+                            "submittedName": "Calymperes afzelii 179"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_104",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Calymperes afzelii",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_103"
+                            ],
+                            "submittedName": "Calymperes afzelii 165"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_102",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Calymperes graffeanum",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_101"
+                            ],
+                            "submittedName": "Calymperes graffeanum"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_72",
+                            "@type": [
+                                [
+                                    "obo:CDAO_0000140",
+                                    "owl:Thing"
+                                ]
+                            ],
+                            "children": [],
+                            "matchedName": "Syrrhopodon mauritianus",
+                            "siblings": [
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_71"
+                            ],
+                            "submittedName": "Syrrhopodon mauritianus"
+                        },
+                        {
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_7",
                             "@type": [
                                 [
                                     "obo:CDAO_0000140",
@@ -1848,16 +1631,12 @@
                             "children": [],
                             "matchedName": "Syrrhopodon japonicus",
                             "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_6"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/354095",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3937441"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_6"
                             ],
                             "submittedName": "Syrrhopodon japonicus"
                         },
                         {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_5",
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_5",
                             "@type": [
                                 [
                                     "obo:CDAO_0000140",
@@ -1867,16 +1646,12 @@
                             "children": [],
                             "matchedName": "Syrrhopodon gardneri",
                             "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_4"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/98460",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3778475"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_4"
                             ],
                             "submittedName": "Syrrhopodon gardneri"
                         },
                         {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_3",
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_3",
                             "@type": [
                                 [
                                     "obo:CDAO_0000140",
@@ -1884,15 +1659,17 @@
                                 ]
                             ],
                             "children": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_105",
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_106"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_105",
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_106"
                             ],
+                            "matchedName": "Octoblepharum",
                             "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_2"
-                            ]
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_2"
+                            ],
+                            "submittedName": "Octoblepharum"
                         },
                         {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_105",
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_105",
                             "@type": [
                                 [
                                     "obo:CDAO_0000140",
@@ -1902,16 +1679,12 @@
                             "children": [],
                             "matchedName": "Octoblepharum Moorea",
                             "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_106"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/98493",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2643066"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_106"
                             ],
                             "submittedName": "Octoblepharum Moorea 445"
                         },
                         {
-                            "@id": "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_106",
+                            "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_106",
                             "@type": [
                                 [
                                     "obo:CDAO_0000140",
@@ -1921,11 +1694,7 @@
                             "children": [],
                             "matchedName": "Octoblepharum albidum",
                             "siblings": [
-                                "http://purl.org/phylo/treebase/phylows/study/TB2:S1624#Node_105"
-                            ],
-                            "skos:closeMatch": [
-                                "http://purl.uniprot.org/taxonomy/98494",
-                                "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3872847"
+                                "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336#Node_105"
                             ],
                             "submittedName": "Octoblepharum albidum"
                         }
@@ -1934,25 +1703,98 @@
             ],
             "phylorefs": [
                 {
+                    "@id": "http://phyloref.org/example/aa4eb597-4905-430e-a535-7cdac0286336phyloref_1",
+                    "@type": "owl:Class",
                     "description": "nomen cladi conversum, Calymperaceae ____ Hal., Synop. Musc. Frond. 1. (1849)\n\tStem-based definition:\n\tinternal specifier: Type: Syrrhopodon gardneri (Hook.) Schw____, Sp. Musc. Frond. Suppl. 2(1): 110, tab. 131, figs. ____ (1824)\n\tinternal specifier: Type: Leucophanes octoblepharoides Brid., Bryol. Univ. 1: 763. (1826)\n\texternal specifier: Type: Octoblepharum albidum Hedw., Sp. Musc. 50. (1801)\n\tImportant synapomorphies: cancellinae, central strand absent from stem\n\tIncluded terminal clades: gardneri, japonicus",
+                    "equivalentClass": {
+                        "@type": "owl:Class",
+                        "intersectionOf": [
+                            {
+                                "@type": "owl:Restriction",
+                                "onProperty": "obo:CDAO_0000174",
+                                "someValuesFrom": {
+                                    "@type": "owl:Class",
+                                    "unionOf": [
+                                        {
+                                            "@type": "owl:Class",
+                                            "intersectionOf": [
+                                                {
+                                                    "@id": "obo:CDAO_0000140"
+                                                },
+                                                {
+                                                    "@type": "owl:Restriction",
+                                                    "hasValue": "Syrrhopodon gardneri",
+                                                    "onProperty": "tnrs:matchedName"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "@type": "owl:Restriction",
+                                "onProperty": "obo:CDAO_0000174",
+                                "someValuesFrom": {
+                                    "@type": "owl:Class",
+                                    "unionOf": [
+                                        {
+                                            "@type": "owl:Class",
+                                            "intersectionOf": [
+                                                {
+                                                    "@id": "obo:CDAO_0000140"
+                                                },
+                                                {
+                                                    "@type": "owl:Restriction",
+                                                    "hasValue": "Leucophanes octoblepharioides",
+                                                    "onProperty": "tnrs:matchedName"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "@type": "owl:Restriction",
+                                "onProperty": "phyloref:excludes_lineage_to",
+                                "someValuesFrom": {
+                                    "@type": "owl:Class",
+                                    "unionOf": [
+                                        {
+                                            "@type": "owl:Class",
+                                            "intersectionOf": [
+                                                {
+                                                    "@id": "obo:CDAO_0000140"
+                                                },
+                                                {
+                                                    "@type": "owl:Restriction",
+                                                    "hasValue": "Octoblepharum albidum",
+                                                    "onProperty": "tnrs:matchedName"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
                     "externalSpecifiers": [
                         {
-                            "description": "Type: Octoblepharum albidum Hedw., Sp. Musc. 50. (1801)",
-                            "tnrs:submittedName": "Octoblepharum albidum"
+                            "dc:description": "Type: Octoblepharum albidum Hedw., Sp. Musc. 50. (1801)",
+                            "tnrs:matchedName": "Octoblepharum albidum"
                         }
                     ],
                     "internalSpecifiers": [
                         {
                             "dc:description": "Syrrhopodon gardneri (Hook.) _____, Sp. Musc. Frond. Suppl. 2(1): 110, tab. 131, figs. 1-13 (1824)",
-                            "tnrs:submittedName": "Syrrhopodon gardneri"
+                            "tnrs:matchedName": "Syrrhopodon gardneri"
                         },
                         {
                             "dc:description": "Type: Leucophanes octoblepharoides Brid., Bryol. Univ. 1: 763. (1826)",
-                            "tnrs:submittedName": "Leucophanes octoblepharoides"
+                            "tnrs:matchedName": "Leucophanes octoblepharioides"
                         }
                     ],
                     "label": "Calymperaceae",
-                    "manchesterSyntax": "has_Child some ((has_Descendant some (Node that tnrs:submittedName value 'Syrrhopodon gardneri')) and (has_Descendant some (Node that tnrs:submittedName value 'Leucophanes octoblepharoides')) and (excludes_lineage_to some (Node that description value 'Type: Octoblepharum albidum Hedw., Sp. Musc. 50. (1801)' or tnrs:submittedName value 'Octoblepharum albidum')))"
+                    "manchesterSyntax": "Node and ((has_Descendant some (Node that tnrs:matchedName value \"Syrrhopodon gardneri\"^^xsd:string)) and (has_Descendant some (Node that tnrs:matchedName value \"Leucophanes octoblepharioides\"^^xsd:string)) and (excludes_lineage_to some (Node that tnrs:matchedName value \"Octoblepharum albidum\"^^xsd:string)))"
                 }
             ]
         }
