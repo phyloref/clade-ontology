@@ -9,6 +9,7 @@ import os.path
 import pystache
 import re
 import sys
+import uuid
 
 __version__ = "0.1"
 __author__ = "Gaurav Vaidya"
@@ -78,29 +79,46 @@ paper['owl:imports'] = [
 # Iterate over each inputFile.
 # Note that we add elements directly to 'paper' as necessary.
 for inputFile in paper['inputFiles']:
-    filename = inputFile['filename']
 
-    if FLAG_VERBOSE:
-        sys.stderr.write("Processing input file {0}\n".format(inputFile['filename']))
+    # Where is the tree located?
+    treelist = list()
 
-    if 'phylogenies' in inputFile:
+    # If we have a 'filename' tag, then it's a NeXML file.
+    if 'filename' in inputFile:
+        filename = inputFile['filename']
+
         if FLAG_VERBOSE:
-            sys.stderr.write("Skipping file; phylogenies already loaded.\n")
+            sys.stderr.write("Processing input file {0}\n".format(inputFile['filename']))
 
+        if 'phylogenies' in inputFile:
+            if FLAG_VERBOSE:
+                sys.stderr.write("Skipping file; phylogenies already loaded.\n")
+
+            continue
+
+        if not os.path.exists(filename):
+            sys.stderr.write("ERROR: tree file '{0}' could not be loaded!\n".format(filename))
+
+        # Load the tree file.
+        try:
+            treelist = dendropy.TreeList.get(path=filename, schema='nexml')
+        except dendropy.utility.error.DataParseError as err:
+            sys.stderr.write("Error: could not parse input!\n{0}\n".format(err))
+            continue
+
+        if len(treelist) == 0:
+            continue
+
+    elif 'newick' in inputFile:
+        try:
+            treelist = dendropy.TreeList.get(data=inputFile['newick'], schema='newick')
+        except dendropy.utility.error.DataParseError as err:
+            sys.stderr.write("Error: could not parse input!\n{0}\n".format(err))
+            continue
+
+    else:
+        sys.stderr.write("WARNING: input file '{0}' does not contain a phylogeny.".format(inputFile))
         continue
-
-    if not os.path.exists(filename):
-        sys.stderr.write("ERROR: tree file '{0}' could not be loaded!\n".format(filename))
-
-    # Load the tree file.
-    try:
-        treelist = dendropy.TreeList.get(path=filename, schema='nexml')
-    except dendropy.utility.error.DataParseError as err:
-        sys.stderr.write("Error: could not parse input!\n{0}\n".format(err))
-        next
-
-    if len(treelist) == 0:
-        next
 
     inputFile['phylogenies'] = list()
     phylogenies = inputFile['phylogenies']
@@ -109,11 +127,11 @@ for inputFile in paper['inputFiles']:
         phylogeny = dict()
 
         phylogeny_id = tree.annotations.get_value('isDefinedBy')
-        if phylogeny_id is not None:
-            phylogeny['@id'] = phylogeny_id
-        else:
-            # TODO: come up with a phylogeny ID if we don't already have one.
-            pass
+        if phylogeny_id is None:
+            # TODO: come up with a proper phylogeny ID if we don't already have one.
+            phylogeny_id = "http://phyloref.org/example/" + str(uuid.uuid4())
+        
+        phylogeny['@id'] = phylogeny_id
 
         phylogeny['annotations'] = list()
         for annotation in tree.annotations:
@@ -153,20 +171,28 @@ for inputFile in paper['inputFiles']:
                     'annotationTarget': get_id_for_node(node),
                     'annotationBody': str(annotation.value)
                 })
-            
+
             if len(annotations) > 0:
                 node_dict['annotations'] = annotations
 
+            # Do we have any taxonomic names?
+            node_labels = list()
             if node.taxon is not None:
-                node_dict['submittedName'] = node.taxon.label
+                node_labels.append(node.taxon)
+            elif node.label is not None:
+                node_labels.append(node)
+
+            for node_label in node_labels:
+                node_dict['submittedName'] = node_label.label
 
                 # Is this also a binomial name?
-                match = re.search('^(\w+) ([\w\-]+)\\b', node.taxon.label)
+                match = re.search('^(\w+) ([\w\-]+)\\b', node_label.label)
                 if match:
                     node_dict['matchedName'] = match.group(1) + " " + match.group(2)
 
-                closeMatches = node.taxon.annotations.findall(name='closeMatch')
-                node_dict['skos:closeMatch'] = [closeMatch.value for closeMatch in closeMatches]
+                if node_label.annotations:
+                    closeMatches = node_label.annotations.findall(name='closeMatch')
+                    node_dict['skos:closeMatch'] = [closeMatch.value for closeMatch in closeMatches]
 
                 # Extract all annotations
                 #annotations = list()
