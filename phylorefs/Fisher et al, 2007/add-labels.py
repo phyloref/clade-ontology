@@ -238,8 +238,14 @@ for inputFile in paper['inputFiles']:
     # Now translate all phylorefs into OWL classes.
     phyloref_count = 1
     for phyloref in inputFile['phylorefs']:
-        internal_specifiers = phyloref['internalSpecifiers']
-        external_specifiers = phyloref['externalSpecifiers']
+        # Make this into an owl:Thing.
+        phyloref['@id'] = phylogeny_id + "phyloref_" + str(phyloref_count)
+        phyloref['@type'] = "owl:Class"
+        phyloref_count += 1
+
+        # Sort out specifiers.
+        internal_specifiers = phyloref['internalSpecifiers'] if 'internalSpecifiers' in phyloref else list()
+        external_specifiers = phyloref['externalSpecifiers'] if 'externalSpecifiers' in phyloref else list()
 
         # Represent this phyloreference as an OWL class expression
         # in JSON-LD.
@@ -260,6 +266,9 @@ for inputFile in paper['inputFiles']:
                         }
                     ]
                 })
+
+            if len(specifiers) == 0:
+                return None
 
             return {
                 "@type": "owl:Restriction",
@@ -287,6 +296,9 @@ for inputFile in paper['inputFiles']:
                     ]
                 })
 
+            if len(specifiers) == 0:
+                return None
+
             return {
                 "@type": "owl:Restriction",
                 "onProperty": "phyloref:excludes_lineage_to",
@@ -296,22 +308,22 @@ for inputFile in paper['inputFiles']:
                 }
             }
 
-        specifiers_repr = list()
+        specifiers_repr = []
         for internal_specifier in internal_specifiers:
             specifiers_repr.append(internal_specifier_to_OWL_repr(internal_specifier))
 
         for external_specifier in external_specifiers:
             specifiers_repr.append(external_specifier_to_OWL_repr(external_specifier))
 
+        # Filter out {}s
+        specifiers_repr = [x for x in specifiers_repr if x is not None]
+        
         if len(specifiers_repr) > 0:
             # We have specifiers! Make this into a phyloreference.
-            phyloref['@id'] = phylogeny_id + "phyloref_" + str(phyloref_count)
-            phyloref['@type'] = "owl:Class"
             phyloref['equivalentClass'] = {
                 '@type': 'owl:Class',
                 'intersectionOf': specifiers_repr
             }
-            phyloref_count += 1
 
         # Let's write out a Manchester/Protege string too,
         # just for kicks.
