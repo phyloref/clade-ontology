@@ -120,8 +120,8 @@ for inputFile in paper['inputFiles']:
         sys.stderr.write("WARNING: input file '{0}' does not contain a phylogeny.".format(inputFile))
         continue
 
-    inputFile['phylogenies'] = list()
-    phylogenies = inputFile['phylogenies']
+    inputFile['nodes'] = list()
+    nodes = inputFile['nodes']
 
     for tree in treelist: 
         phylogeny = dict()
@@ -232,7 +232,7 @@ for inputFile in paper['inputFiles']:
         phylogeny['nodes'] = list()
         add_all_child_nodes(tree.seed_node, phylogeny['nodes'])
 
-        phylogenies.append(phylogeny)
+        nodes.append(phylogeny)
 
 
     # Now translate all phylorefs into OWL classes.
