@@ -16,7 +16,14 @@
         "ot:dataDeposit": "https://treebase.org/treebase-web/search/study/taxa.html?id=1624&treeid=748",
 
         "labeledNodeData": [
-            { "label": "Arthrocormus schimperi" },
+            { 
+                "label": "Arthrocormus schimperi",
+                "skos:closeMatch": [
+                    "http://www.theplantlist.org/tpl1.1/record/tro-35179022",
+                    "http://www.tropicos.org/Name/35179022",
+                    "http://www.gbif.org/species/2670392"
+                ]
+            },
             { "label": "Exostratum blumei 243" },
             { "label": "Exostratum blumei 245" },
             { "label": "Exostratum" },
@@ -197,7 +204,9 @@
                 "description": "nomen cladi novum\n\nStem-based definition:\n\ninternal specifier: Type: Arthrocormus schimperi (Dozy & Molk.) Dozy & Molk. (=Mielichhoferia schimperi Dozy & Molk.), Musci Frond. Ined. Archip. Ind. 75. (1846)\ninternal specifier: Type: Leucophanes octoblepharoides Brid., Bryol. Univ. 1: 763. (1826)\nexternal specifier: Type: Syrrhopodon muelleri (Dozy & Molk) Sande Lac., Bryol. Jav. 2: 224. (1870)\nImportant synapomorphies:\n\nLeaf architecture / chlorocysts and hyalocysts\ncircular depressions on peristome\nIncluded clades:\n\nArthrocormus, Exodictyon, Exostratum, Leucophanes",
                 "internalSpecifiers": [{
                     "dc:description": "Type: Arthrocormus schimperi (Dozy & Molk.) Dozy & Molk. (=Mielichhoferia schimperi Dozy & Molk.), Musci Frond. Ined. Archip. Ind. 75. (1846)",
-                    "tnrs:matchedName": "Arthrocormus schimperi"
+                    "skos:closeMatch": {
+                        "@id": "http://www.tropicos.org/Name/35179022"
+                    }
                 }, {
                     "dc:description": "Type: Leucophanes octoblepharoides Brid., Bryol. Univ. 1: 763. (1826)",
                     "tnrs:matchedName": "Leucophanes octoblepharioides"

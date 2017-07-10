@@ -80,6 +80,15 @@ paper['owl:imports'] = [
 # Note that we add elements directly to 'paper' as necessary.
 for inputFile in paper['phylogenies']:
 
+    # Before we do anything else, we need to prepare labeled data so that
+    # we can incorporate it into phylogeny.
+    labeled_data = dict()
+    for nodeData in inputFile['labeledNodeData']:
+        if 'label' not in nodeData:
+            continue
+
+        labeled_data[nodeData['label']] = nodeData
+
     # Where is the tree located?
     treelist = list()
 
@@ -200,6 +209,20 @@ for inputFile in paper['phylogenies']:
                 if node_label.annotations:
                     closeMatches = node_label.annotations.findall(name='closeMatch')
                     node_dict['skos:closeMatch'] = [closeMatch.value for closeMatch in closeMatches]
+
+                # Do we have any labeled data for this label?
+                if node_label.label in labeled_data:
+                    nodeData = labeled_data[node_label.label]
+
+                    for key in nodeData:
+                        if key == 'label':
+                            continue
+
+                        if key in node_dict:
+                            # TODO: clean this up!
+                            node_dict[key] = list(node_dict[key], nodeData[key])
+                        else:
+                            node_dict[key] = nodeData[key]
 
                 # Extract all annotations
                 #annotations = list()
