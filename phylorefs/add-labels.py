@@ -78,7 +78,7 @@ paper['owl:imports'] = [
 
 # Iterate over each inputFile.
 # Note that we add elements directly to 'paper' as necessary.
-for inputFile in paper['inputFiles']:
+for inputFile in paper['phylogenies']:
 
     # Where is the tree located?
     treelist = list()

@@ -44,6 +44,11 @@
 
         "phylogenies": {
             "@id": "tbd:phylogenies",
+            "@container": "@set"
+        },
+
+        "labeledNodeData": {
+            "@id": "tbd:labeledNodeData",
             "@container": "@list"
         },
 
