@@ -211,7 +211,11 @@ for inputFile in paper['phylogenies']:
                     node_dict['skos:closeMatch'] = [closeMatch.value for closeMatch in closeMatches]
 
                 # Do we have any labeled data for this label?
-                if node_label.label in labeled_data:
+                if node_label.label not in labeled_data:
+                    sys.stderr.write("No labeled data available for label '{0}'.\n".format(
+                        node_label.label
+                    ))
+                else:
                     nodeData = labeled_data[node_label.label]
 
                     for key in nodeData:
