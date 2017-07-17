@@ -12,7 +12,6 @@
         "https://www.w3.org/2004/02/skos/core",
         "http://phylotastic.org/terms/tnrs.rdf",
         "http://phyloinformatics.net/phyloref.owl",
-        "http://purl.org/dsw/",
         "http://filteredpush.org/ontologies/oa/dwcFP.owl",
         "http://rdf.biosemantics.org/ontologies/rsa"
     ],
@@ -2360,7 +2359,7 @@
                         "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/GB X12841"
                     },
                     "label": "Rana catesbiana X12841",
-                    "matchedName": "Rana catesbeiana"
+                    "matchedName": "Rana catesbiana"
                 },
                 {
                     "hasEvidence": {
@@ -2373,7 +2372,7 @@
                         "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779206"
                     },
                     "label": "Rana catesbiana DMH84R2",
-                    "matchedName": "Rana catesbeiana"
+                    "matchedName": "Rana catesbiana"
                 },
                 {
                     "hasEvidence": {
@@ -3554,7 +3553,6 @@
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/GB X12841"
                             },
                             "matchedName": [
-                                "Rana catesbeiana",
                                 "Rana catesbiana"
                             ],
                             "siblings": [
@@ -3581,7 +3579,6 @@
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779206"
                             },
                             "matchedName": [
-                                "Rana catesbeiana",
                                 "Rana catesbiana"
                             ],
                             "siblings": [
@@ -7028,7 +7025,7 @@
                                                 },
                                                 {
                                                     "@type": "owl:Restriction",
-                                                    "hasValue": "Rana montezumae Baird 1854",
+                                                    "hasValue": "Rana montezumae",
                                                     "onProperty": "tnrs:matchedName"
                                                 }
                                             ]
@@ -7085,7 +7082,7 @@
                     "internalSpecifiers": [
                         {
                             "dc:description": "Rana montezumae Baird 1854",
-                            "tnrs:matchedName": "Rana montezumae Baird 1854"
+                            "tnrs:matchedName": "Rana montezumae"
                         },
                         {
                             "dc:description": "R. megapoda Taylor 1942",
@@ -7097,7 +7094,7 @@
                         }
                     ],
                     "label": "Lacusirana",
-                    "manchesterSyntax": "Node and ((has_Descendant some (Node that tnrs:matchedName value \"Rana montezumae Baird 1854\"^^xsd:string)) and (has_Descendant some (Node that tnrs:matchedName value \"Rana megapoda\"^^xsd:string)) and (has_Descendant some (Node that tnrs:matchedName value \"Rana chiricahuensis\"^^xsd:string)))"
+                    "manchesterSyntax": "Node and ((has_Descendant some (Node that tnrs:matchedName value \"Rana montezumae\"^^xsd:string)) and (has_Descendant some (Node that tnrs:matchedName value \"Rana megapoda\"^^xsd:string)) and (has_Descendant some (Node that tnrs:matchedName value \"Rana chiricahuensis\"^^xsd:string)))"
                 },
                 {
                     "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref15",
