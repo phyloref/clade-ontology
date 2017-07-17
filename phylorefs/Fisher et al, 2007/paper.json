@@ -160,7 +160,7 @@
                     "tnrs:matchedName": "Mitthyridium fasciculatum"
                 }, {
                     "dc:description": "Type: Codonoblepharum undulatum Dozy & Molk., Ann. Sci. Nat., Bot., III, 2: 301. (1844)",
-                    "tnrs:matchedName": "Codonoblepharum undulatum"
+                    "tnrs:matchedName": "Mitthyridium undulatum"
                 }],
                 "externalSpecifiers": [{
                     "dc:description": "Type: Syrrhopodon croceus Mitt., J. Proc. Linn. Soc., Bot. Suppl. 1: 41. (1859)",
@@ -192,8 +192,7 @@
                     "dc:description": "Type: S. involutus Schwägr., Sp. Musc. Frond. Suppl. 2, 1(2): 117. pl. 132. (1824)",
                     "tnrs:matchedName": "Syrrhopodon involutus"
                 }, {
-                    "dc:description": "Type: S. revolutus Dozy & Molk.",
-                    "tnrs:matchedName": "Syrrhopodon revolutus"
+                    "dc:description": "Type: S. revolutus Dozy & Molk."
                 }],
                 "externalSpecifiers": [{
                     "dc:description": "external Specifier: S. trachyphyllus Mont., Sylloge Gen. Sp. Cryptog. 47. (1856)",
@@ -221,10 +220,8 @@
                 "label": "Arthrocormus",
                 "description": "nomen cladi conversum, Arthrocormus schimperi (Dozy & Molk.) Dozy & Molk. (= Mielichhoferia schimperi Dozy & Molk.), Musci Frond. Ined. Archip. Ind. 75. (1846)\nStem-based definition:\n\ninternal specifier: Type: Arthrocormus schimperi (Dozy & Molk.) Dozy & Molk. (= Mielichhoferia schimperi Dozy & Molk.), Musci Frond. Ined. Archip. Ind. 75. (1846)\ninternal specifier: Mishler 7/24/98 (5) Queensland, Australia (UC)\nexternal specifier: Type: Exostratum blumii (Nees ex Hampe) L. Ellis, Lindbergia 11: 22. (1985)\nIncluded terminal clade:\n\nschimperi",
                 "internalSpecifiers": [{
-                    "dc:description": "Type: Arthrocormus schimperi (Dozy & Molk.) Dozy & Molk. (= Mielichhoferia schimperi Dozy & Molk.), Musci Frond. Ined. Archip. Ind. 75. (1846)",
+                    "dc:description": "Type: Arthrocormus schimperi (Dozy & Molk.) Dozy & Molk. (= Mielichhoferia schimperi Dozy & Molk.), Musci Frond. Ined. Archip. Ind. 75. (1846) -- Mishler 7/24/98 (5) Queensland, Australia (UC)",
                     "tnrs:matchedName": "Arthrocormus schimperi"
-                }, {
-                    "dc:description": "Mishler 7/24/98 (5) Queensland, Australia (UC)"
                 }],
                 "externalSpecifiers": [{
                     "dc:description": "Type: Exostratum blumii (Nees ex Hampe) L. Ellis, Lindbergia 11: 22. (1985)",
@@ -250,9 +247,9 @@
                 "description": "nomen cladi conversum, Exodictyon Cardot, Rev. Bryol. Lichénol. 26: 6. (1899), excl. parte, emend Ellis in Lindbergia 11: 16 (1985)\n\nStem-based definition:\n\ninternal specifier: Type: Exodictyon Cardot, Rev. Bryol. Lichénol. 26: 6. (1899), excl. parte, emend Ellis in Lindbergia 11: 16 (1985)\ninternal specifier: Wall 2527, Fiji (uc)\nexternal specifier: Type: Leucophanes octoblepharoides Brid., Bryol. Univ. 1: 763. (1826)\nIncluded terminal clade:\n\nincrassatum",
 
                 "internalSpecifiers": [{
-                    "dc:description": "Type: Exodictyon Cardot, Rev. Bryol. Lichénol. 26: 6. (1899), excl. parte, emend Ellis in Lindbergia 11: 16 (1985)"
-                }, {
-                    "dc:description": "Wall 2527, Fiji (uc)"
+                    "dc:description": "Type: Exodictyon Cardot, Rev. Bryol. Lichénol. 26: 6. (1899), excl. parte, emend Ellis in Lindbergia 11: 16 (1985) -- Wall 2527, Fiji (uc)",
+                    "tnrs:submittedName": "Exodictyon incrassatum (Mitt.) Cardot",
+                    "tnrs:matchedName": "Exodictyon incrassatum"
                 }],
                 "externalSpecifiers": [{
                     "dc:description": "Type: Leucophanes octoblepharoides Brid., Bryol. Univ. 1: 763. (1826)",
@@ -271,7 +268,8 @@
                     "tnrs:matchedName": "Leucophanes seychellarum"
                 }],
                 "externalSpecifiers": [{
-                    "dc:description": "Wall 2527, Fiji (uc)"
+                    "dc:description": "Wall 2527, Fiji (uc) -- Exodictyon incrassatum (Mitt.) Cardot",
+                    "tnrs:matchedName": "Exodictyon incrassatum"
                 }]
             }
         ]

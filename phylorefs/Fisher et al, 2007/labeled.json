@@ -2262,7 +2262,7 @@
                                                 },
                                                 {
                                                     "@type": "owl:Restriction",
-                                                    "hasValue": "Codonoblepharum undulatum",
+                                                    "hasValue": "Mitthyridium undulatum",
                                                     "onProperty": "tnrs:matchedName"
                                                 }
                                             ]
@@ -2307,11 +2307,11 @@
                         },
                         {
                             "dc:description": "Type: Codonoblepharum undulatum Dozy & Molk., Ann. Sci. Nat., Bot., III, 2: 301. (1844)",
-                            "tnrs:matchedName": "Codonoblepharum undulatum"
+                            "tnrs:matchedName": "Mitthyridium undulatum"
                         }
                     ],
                     "label": "Mitthyridium",
-                    "manchesterSyntax": "Node and ((has_Descendant some (Node that tnrs:matchedName value \"Mitthyridium fasciculatum\"^^xsd:string)) and (has_Descendant some (Node that tnrs:matchedName value \"Codonoblepharum undulatum\"^^xsd:string)) and (excludes_lineage_to some (Node that tnrs:matchedName value \"Syrrhopodon croceus\"^^xsd:string)))"
+                    "manchesterSyntax": "Node and ((has_Descendant some (Node that tnrs:matchedName value \"Mitthyridium fasciculatum\"^^xsd:string)) and (has_Descendant some (Node that tnrs:matchedName value \"Mitthyridium undulatum\"^^xsd:string)) and (excludes_lineage_to some (Node that tnrs:matchedName value \"Syrrhopodon croceus\"^^xsd:string)))"
                 },
                 {
                     "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref5",
@@ -2470,28 +2470,6 @@
                             },
                             {
                                 "@type": "owl:Restriction",
-                                "onProperty": "obo:CDAO_0000174",
-                                "someValuesFrom": {
-                                    "@type": "owl:Class",
-                                    "unionOf": [
-                                        {
-                                            "@type": "owl:Class",
-                                            "intersectionOf": [
-                                                {
-                                                    "@id": "obo:CDAO_0000140"
-                                                },
-                                                {
-                                                    "@type": "owl:Restriction",
-                                                    "hasValue": "Syrrhopodon revolutus",
-                                                    "onProperty": "tnrs:matchedName"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "@type": "owl:Restriction",
                                 "onProperty": "phyloref:excludes_lineage_to",
                                 "someValuesFrom": {
                                     "@type": "owl:Class",
@@ -2530,12 +2508,11 @@
                             "tnrs:matchedName": "Syrrhopodon involutus"
                         },
                         {
-                            "dc:description": "Type: S. revolutus Dozy & Molk.",
-                            "tnrs:matchedName": "Syrrhopodon revolutus"
+                            "dc:description": "Type: S. revolutus Dozy & Molk."
                         }
                     ],
                     "label": "Leucophanella",
-                    "manchesterSyntax": "Node and ((has_Descendant some (Node that tnrs:matchedName value \"Syrrhopodon banksii\"^^xsd:string)) and (has_Descendant some (Node that tnrs:matchedName value \"Syrrhopodon involutus\"^^xsd:string)) and (has_Descendant some (Node that tnrs:matchedName value \"Syrrhopodon revolutus\"^^xsd:string)) and (excludes_lineage_to some (Node that tnrs:matchedName value \"Syrrhopodon trachyphyllus\"^^xsd:string)))"
+                    "manchesterSyntax": "Node and ((has_Descendant some (Node that tnrs:matchedName value \"Syrrhopodon banksii\"^^xsd:string)) and (has_Descendant some (Node that tnrs:matchedName value \"Syrrhopodon involutus\"^^xsd:string)) and  and (excludes_lineage_to some (Node that tnrs:matchedName value \"Syrrhopodon trachyphyllus\"^^xsd:string)))"
                 },
                 {
                     "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref7",
@@ -2706,15 +2683,12 @@
                     ],
                     "internalSpecifiers": [
                         {
-                            "dc:description": "Type: Arthrocormus schimperi (Dozy & Molk.) Dozy & Molk. (= Mielichhoferia schimperi Dozy & Molk.), Musci Frond. Ined. Archip. Ind. 75. (1846)",
+                            "dc:description": "Type: Arthrocormus schimperi (Dozy & Molk.) Dozy & Molk. (= Mielichhoferia schimperi Dozy & Molk.), Musci Frond. Ined. Archip. Ind. 75. (1846) -- Mishler 7/24/98 (5) Queensland, Australia (UC)",
                             "tnrs:matchedName": "Arthrocormus schimperi"
-                        },
-                        {
-                            "dc:description": "Mishler 7/24/98 (5) Queensland, Australia (UC)"
                         }
                     ],
                     "label": "Arthrocormus",
-                    "manchesterSyntax": "Node and ((has_Descendant some (Node that tnrs:matchedName value \"Arthrocormus schimperi\"^^xsd:string)) and  and (excludes_lineage_to some (Node that tnrs:matchedName value \"Exostratum blumii\"^^xsd:string)))"
+                    "manchesterSyntax": "Node and ((has_Descendant some (Node that tnrs:matchedName value \"Arthrocormus schimperi\"^^xsd:string)) and (excludes_lineage_to some (Node that tnrs:matchedName value \"Exostratum blumii\"^^xsd:string)))"
                 },
                 {
                     "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref9",
@@ -2806,6 +2780,41 @@
                         "intersectionOf": [
                             {
                                 "@type": "owl:Restriction",
+                                "onProperty": "obo:CDAO_0000174",
+                                "someValuesFrom": {
+                                    "@type": "owl:Class",
+                                    "unionOf": [
+                                        {
+                                            "@type": "owl:Class",
+                                            "intersectionOf": [
+                                                {
+                                                    "@id": "obo:CDAO_0000140"
+                                                },
+                                                {
+                                                    "@type": "owl:Restriction",
+                                                    "hasValue": "Exodictyon incrassatum (Mitt.) Cardot",
+                                                    "onProperty": "tnrs:submittedName"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@type": "owl:Class",
+                                            "intersectionOf": [
+                                                {
+                                                    "@id": "obo:CDAO_0000140"
+                                                },
+                                                {
+                                                    "@type": "owl:Restriction",
+                                                    "hasValue": "Exodictyon incrassatum",
+                                                    "onProperty": "tnrs:matchedName"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "@type": "owl:Restriction",
                                 "onProperty": "phyloref:excludes_lineage_to",
                                 "someValuesFrom": {
                                     "@type": "owl:Class",
@@ -2836,14 +2845,13 @@
                     ],
                     "internalSpecifiers": [
                         {
-                            "dc:description": "Type: Exodictyon Cardot, Rev. Bryol. Lich\u00c3\u00a9nol. 26: 6. (1899), excl. parte, emend Ellis in Lindbergia 11: 16 (1985)"
-                        },
-                        {
-                            "dc:description": "Wall 2527, Fiji (uc)"
+                            "dc:description": "Type: Exodictyon Cardot, Rev. Bryol. Lich\u00c3\u00a9nol. 26: 6. (1899), excl. parte, emend Ellis in Lindbergia 11: 16 (1985) -- Wall 2527, Fiji (uc)",
+                            "tnrs:matchedName": "Exodictyon incrassatum",
+                            "tnrs:submittedName": "Exodictyon incrassatum (Mitt.) Cardot"
                         }
                     ],
                     "label": "Exodictyon",
-                    "manchesterSyntax": "Node and ( and  and (excludes_lineage_to some (Node that tnrs:matchedName value \"Leucophanes octoblepharoides\"^^xsd:string)))"
+                    "manchesterSyntax": "Node and ((has_Descendant some (Node that tnrs:submittedName value \"Exodictyon incrassatum (Mitt.) Cardot\"^^xsd:string or tnrs:matchedName value \"Exodictyon incrassatum\"^^xsd:string)) and (excludes_lineage_to some (Node that tnrs:matchedName value \"Leucophanes octoblepharoides\"^^xsd:string)))"
                 },
                 {
                     "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref11",
@@ -2900,12 +2908,35 @@
                                         }
                                     ]
                                 }
+                            },
+                            {
+                                "@type": "owl:Restriction",
+                                "onProperty": "phyloref:excludes_lineage_to",
+                                "someValuesFrom": {
+                                    "@type": "owl:Class",
+                                    "unionOf": [
+                                        {
+                                            "@type": "owl:Class",
+                                            "intersectionOf": [
+                                                {
+                                                    "@id": "obo:CDAO_0000140"
+                                                },
+                                                {
+                                                    "@type": "owl:Restriction",
+                                                    "hasValue": "Exodictyon incrassatum",
+                                                    "onProperty": "tnrs:matchedName"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
                             }
                         ]
                     },
                     "externalSpecifiers": [
                         {
-                            "dc:description": "Wall 2527, Fiji (uc)"
+                            "dc:description": "Wall 2527, Fiji (uc) -- Exodictyon incrassatum (Mitt.) Cardot",
+                            "tnrs:matchedName": "Exodictyon incrassatum"
                         }
                     ],
                     "internalSpecifiers": [
@@ -2919,7 +2950,7 @@
                         }
                     ],
                     "label": "Leucophanes",
-                    "manchesterSyntax": "Node and ((has_Descendant some (Node that tnrs:matchedName value \"Leucophanes octoblepharoides\"^^xsd:string)) and (has_Descendant some (Node that tnrs:matchedName value \"Leucophanes seychellarum\"^^xsd:string)) and )"
+                    "manchesterSyntax": "Node and ((has_Descendant some (Node that tnrs:matchedName value \"Leucophanes octoblepharoides\"^^xsd:string)) and (has_Descendant some (Node that tnrs:matchedName value \"Leucophanes seychellarum\"^^xsd:string)) and (excludes_lineage_to some (Node that tnrs:matchedName value \"Exodictyon incrassatum\"^^xsd:string)))"
                 }
             ]
         }
