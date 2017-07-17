@@ -12,6 +12,10 @@
         "owl": "http://www.w3.org/2002/07/owl#",
         "tnrs": "http://phylotastic.org/terms/tnrs.rdf#",
         "skos": "http://www.w3.org/2004/02/skos/core#",
+        "dsw": "http://purl.org/dsw/",
+        "dwcFP": "http://filteredpush.org/ontologies/oa/dwcFP#",
+        "dwc": "http://rs.tdwg.org/dwc/terms/",
+        "rsa": "http://rdf.biosemantics.org/ontologies/rsa#",
 
         "owl:imports": {
             "@id": "owl:imports",
@@ -124,6 +128,11 @@
             "@type": "@id"
         },
 
+        "skos:exactMatch": {
+            "@id": "skos:exactMatch",
+            "@type": "@id"
+        },
+
         "newick": {
             "@id": "tbd:asNewickString",
             "@type": "xsd:string"
@@ -182,6 +191,13 @@
             "@id": "tnrs:matchedName",
             "@type": "xsd:string"
         },
+
+        "hasEvidence": "dsw:hasEvidence",
+        "locatedAt": "dsw:locatedAt",
+        "verbatimLocality": "dwc:verbatimLocality",
+        "ownerInstitutionCode": "dwc:ownerInstitutionCode",
+        "catalogNumber": "dwc:catalogNumber",
+        "GenBankID": "rsa:genBankID",
 
         "filename": "tbd:filename"
     }

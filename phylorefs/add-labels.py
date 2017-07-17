@@ -84,7 +84,9 @@ paper['@type'] = [paper['@type'], 'owl:Ontology']
 paper['owl:imports'] = [
     "https://www.w3.org/2004/02/skos/core",
     "http://phylotastic.org/terms/tnrs.rdf",
-    "http://phyloinformatics.net/phyloref.owl"
+    "http://phyloinformatics.net/phyloref.owl",
+    "http://purl.org/dsw/",
+    "http://filteredpush.org/ontologies/oa/dwcFP.owl"
 ]
 
 # Iterate over each inputFile.
