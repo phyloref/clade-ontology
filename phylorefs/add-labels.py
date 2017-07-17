@@ -309,7 +309,6 @@ for inputFile in paper['phylogenies']:
 
             # Represent this phyloreference as an OWL class expression
             # in JSON-LD.
-
             def internal_specifier_to_OWL_repr(specifier):
                 specifiers = list()
                 for key in specifier:

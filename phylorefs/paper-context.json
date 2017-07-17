@@ -192,12 +192,26 @@
             "@type": "xsd:string"
         },
 
-        "hasEvidence": "dsw:hasEvidence",
-        "locatedAt": "dsw:locatedAt",
-        "verbatimLocality": "dwc:verbatimLocality",
-        "ownerInstitutionCode": "dwc:ownerInstitutionCode",
-        "catalogNumber": "dwc:catalogNumber",
-        "GenBankID": "rsa:genBankID",
+        "_hasEvidence": "dsw:hasEvidence",
+        "hasEvidence": "dwcFP:hasBasisOfRecord",
+        "_locatedAt": "dsw:locatedAt",
+        "locatedAt": "dwcFP:hasCollectingEvent",
+        "verbatimLocality": {
+            "@id": "dwc:verbatimLocality",
+            "@type": "xsd:string"
+        },
+        "ownerInstitutionCode": {
+            "@id": "dwc:ownerInstitutionCode",
+            "@type": "xsd:string"
+        },
+        "catalogNumber": {
+            "@id": "dwc:catalogNumber",
+            "@type": "xsd:string"
+        },
+        "genBankID": {
+            "@id": "rsa:genBankID",
+            "@type": "xsd:string"
+        },
 
         "filename": "tbd:filename"
     }
