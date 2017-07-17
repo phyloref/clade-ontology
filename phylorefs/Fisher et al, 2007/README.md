@@ -1,4 +1,4 @@
-= Fisher *et al.*, 2007 =
+# Fisher *et al.*, 2007
 
 * Based on [Fisher *et al.*, 2007](https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2)
   * Tree [available on TreeBase](https://treebase.org/treebase-web/search/study/taxa.html?id=1624).
@@ -21,7 +21,7 @@
 * Calymperaceae: matched node `file1_tree1_node2`, correct node.
 * Calymperes: matched node `file1_tree1_node9`, correct node.
 * Exodictyon: **matched multiple nodes**.
-* Exostratum: **no nodes matched**.
+* Exostratum: matched node `file1_tree1_node23`, correct node.
 * Leucophanella: **no nodes matched**.
 * Leucophanes: **matched multiple nodes**.
 * Mitthyridium: **no nodes matched**.
