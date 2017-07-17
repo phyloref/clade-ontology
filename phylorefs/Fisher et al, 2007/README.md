@@ -13,3 +13,17 @@
   * This file can be opened in Protege; phyloreferences are instances of the 
     Phyloreference class and should contain a single node from which this clade
     descends.
+
+## Current test status
+
+* Albifolium: matched node `file1_tree1_node18`, correct node.
+* Arthrocormus: **no nodes matched**.
+* Calymperaceae: matched node `file1_tree1_node2`, correct node.
+* Calymperes: matched node `file1_tree1_node9`, correct node.
+* Exodictyon: **matched multiple nodes**.
+* Exostratum: **no nodes matched**.
+* Leucophanella: **no nodes matched**.
+* Leucophanes: **matched multiple nodes**.
+* Mitthyridium: **no nodes matched**.
+* Syrrhopodon: matched node `file1_tree1_node8`, correct node.
+* Trachymitrium: **no nodes matched**.
