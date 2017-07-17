@@ -297,8 +297,8 @@ for inputFile in paper['phylogenies']:
     if 'phylorefs' in inputFile:
         for phyloref in inputFile['phylorefs']:
             # Make this into an owl:Thing.
-            phyloref['@id'] = phylogeny_id + "phyloref_" + str(phyloref_count)
-            phyloref['@type'] = "owl:Class"
+            phyloref['@id'] = "{0}_phyloref{1}".format(phylogeny_id, phyloref_count)
+            phyloref['@type'] = ["phyloref:Phyloreference", "owl:Class"],
             phyloref_count += 1
 
             # Sort out specifiers.
@@ -394,7 +394,10 @@ for inputFile in paper['phylogenies']:
 
                     specifiers.append("{0} value \"{1}\"^^xsd:string".format(key, specifier[key]))
 
-                return "(has_Descendant some (Node that " + " or ".join(specifiers) + "))"
+                if len(specifiers) > 0:
+                    return "(has_Descendant some (Node that " + " or ".join(specifiers) + "))"
+                else:
+                    return ""
 
             def external_specifier_to_OWL_expression(specifier):
                 specifiers = list()
@@ -404,7 +407,10 @@ for inputFile in paper['phylogenies']:
 
                     specifiers.append("{0} value \"{1}\"^^xsd:string".format(key, specifier[key]))
 
-                return "(excludes_lineage_to some (Node that " + " or ".join(specifiers) + "))"
+                if len(specifiers) > 0:
+                    return "(excludes_lineage_to some (Node that " + " or ".join(specifiers) + "))"
+                else:
+                    return ""
 
             specifiers = [internal_specifier_to_OWL_expression(sp) for sp in internal_specifiers]
             specifiers.extend([external_specifier_to_OWL_expression(sp) for sp in external_specifiers])
