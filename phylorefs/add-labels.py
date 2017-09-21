@@ -318,8 +318,8 @@ for inputFile in paper['phylogenies']:
                     specifiers.append({
                         "@type": "owl:Class",
                         "intersectionOf": [
-                            { "@id": "obo:CDAO_0000140" },
-                            { "@type": "owl:Restriction",
+                            { "@id": "obo:CDAO_0000140" },  # Node and
+                            { "@type": "owl:Restriction",   # <key> <value>
                               "onProperty": key,
                               "hasValue": specifier[key]
                             }
@@ -329,13 +329,24 @@ for inputFile in paper['phylogenies']:
                 if len(specifiers) == 0:
                     return None
 
+                # For each specifier, convert it into the form:
+                #   <class> or has_Descendant <class> or ...
+
+                
+                specifiers = [{
+                    "unionOf": [
+                        x,
+                        {
+                            "@type": "owl:Restriction",
+                            "onProperty": "obo:CDAO_0000174",
+                            "someValuesFrom": x
+                        }
+                    ]
+                } for x in specifiers]
+
                 return {
-                    "@type": "owl:Restriction",
-                    "onProperty": "obo:CDAO_0000174",
-                    "someValuesFrom": {
-                        "@type": "owl:Class",
-                        "unionOf": specifiers
-                    }
+                    "@type": "owl:Class",
+                    "unionOf": specifiers
                 }
 
             def external_specifier_to_OWL_repr(specifier):

@@ -17,10 +17,10 @@
 ## Current test status
 
 * Albifolium: matched node `file1_tree1_node18`, correct node.
-* Arthrocormus: **no nodes matched**, caused by [phylo2owl issue #26](https://github.com/phyloref/phylo2owl/issues/26).
+* Arthrocormus: matched name `file1_tree1_node22`, correct node.
 * Calymperaceae: matched node `file1_tree1_node2`, correct node.
 * Calymperes: matched node `file1_tree1_node9`, correct node.
-* Exodictyon: **no nodes matched**, caused by [phylo2owl issue #26](https://github.com/phyloref/phylo2owl/issues/26).
+* Exodictyon: matched node `file1_tree1_node26`, correct node.
 * Exostratum: matched node `file1_tree1_node23`, correct node.
 * Leucophanella: matched node `file1_tree1_node49`, correct node.
 * Leucophanes: matched node `file1_tree1_node27`, correct node.
