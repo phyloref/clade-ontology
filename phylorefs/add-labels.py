@@ -297,9 +297,16 @@ for inputFile in paper['phylogenies']:
     # Now translate all phylorefs into OWL classes.
     phyloref_count = 1
     if 'phylorefs' in inputFile:
+
+        # Some phyloreferences need additional (ancillary?) OWL classes,
+        # so store those here by ID.
+        additional_classes = []
+        count_additional_classes = 0
+
         for phyloref in inputFile['phylorefs']:
             # Make this into an owl:Thing.
-            phyloref['@id'] = "{0}_phyloref{1}".format(phylogeny_id, phyloref_count)
+            phyloref_id = "{0}_phyloref{1}".format(phylogeny_id, phyloref_count)
+            phyloref['@id'] = phyloref_id
             phyloref['@type'] = ["phyloref:Phyloreference", "owl:Class"],
             phyloref_count += 1
 
@@ -307,11 +314,10 @@ for inputFile in paper['phylogenies']:
             internal_specifiers = phyloref['internalSpecifiers'] if 'internalSpecifiers' in phyloref else list()
             external_specifiers = phyloref['externalSpecifiers'] if 'externalSpecifiers' in phyloref else list()
 
-            # Represent this phyloreference as an OWL class expression
-            # in JSON-LD.
-            def internal_specifier_to_OWL_repr(specifier):
+            # Convert specifier into an OWL restriction.
+            def tunit_to_owl_class(tunit):
                 specifiers = list()
-                for key in specifier:
+                for key in tunit:
                     if key == 'dc:description':
                         continue
 
@@ -321,78 +327,102 @@ for inputFile in paper['phylogenies']:
                             { "@id": "obo:CDAO_0000140" },  # Node and
                             { "@type": "owl:Restriction",   # <key> <value>
                               "onProperty": key,
-                              "hasValue": specifier[key]
+                              "hasValue": tunit[key]
                             }
                         ]
                     })
 
                 if len(specifiers) == 0:
                     return None
-
-                # For each specifier, convert it into the form:
-                #   <class> or has_Descendant <class> or ...
-
-                
-                specifiers = [{
-                    "unionOf": [
-                        x,
-                        {
-                            "@type": "owl:Restriction",
-                            "onProperty": "obo:CDAO_0000174",
-                            "someValuesFrom": x
-                        }
-                    ]
-                } for x in specifiers]
 
                 return {
                     "@type": "owl:Class",
                     "unionOf": specifiers
                 }
 
+
+            # Represent this phyloreference as an OWL class expression
+            # in JSON-LD.
+            def internal_specifier_to_OWL_repr(specifier):
+                if specifier is None:
+                    return None
+
+                return {
+                    "@type": "owl:Class",
+                    "unionOf": [
+                        specifier,
+                        {
+                            "@type": "owl:Restriction",
+                            "onProperty": "obo:CDAO_0000174",
+                            "someValuesFrom": specifier
+                        }
+                    ]
+                }
+
             def external_specifier_to_OWL_repr(specifier):
-                specifiers = list()
-                for key in specifier:
-                    if key == 'dc:description':
-                        continue
-
-                    specifiers.append({
-                        "@type": "owl:Class",
-                        "intersectionOf": [
-                            { "@id": "obo:CDAO_0000140" },
-                            { "@type": "owl:Restriction",
-                              "onProperty": key,
-                              "hasValue": specifier[key]
-                            }
-                        ]
-                    })
-
-                if len(specifiers) == 0:
+                if specifier is None:
                     return None
 
                 return {
                     "@type": "owl:Restriction",
-                    "onProperty": "phyloref:excludes_lineage_to",
+                    "onProperty": "phyloref:has_Sibling",
                     "someValuesFrom": {
                         "@type": "owl:Class",
-                        "unionOf": specifiers
+                        "unionOf": internal_specifier_to_OWL_repr(specifier)
                     }
                 }
 
-            specifiers_repr = []
-            for internal_specifier in internal_specifiers:
-                specifiers_repr.append(internal_specifier_to_OWL_repr(internal_specifier))
+            def mrca_to_OWL_repr(specifier1, specifier2):
+                # Because these class definitions get really long
+                # and complicated, we'll "save" these specifiers
+                # as temporary classes, then refer to them in our
+                # definitions.
 
-            for external_specifier in external_specifiers:
-                specifiers_repr.append(external_specifier_to_OWL_repr(external_specifier))
+                mrca_as_owl = {
+                    "@type": "owl:Class",
+                    "intersectionOf": [
+                        {
+                            "@type": "owl:Restriction",
+                            "onProperty": "obo:CDAO_0000149",
+                            "someValuesFrom": {
+                                "@type": "owl:Class",
+                                "intersectionOf": [
+                                    internal_specifier_to_OWL_repr(specifier1),
+                                    external_specifier_to_OWL_repr(specifier2)
+                                ]
+                            }
+                        },
+                        {
+                            "@type": "owl:Restriction",
+                            "onProperty": "obo:CDAO_0000149",
+                            "someValuesFrom": {
+                                "@type": "owl:Class",
+                                "intersectionOf": [
+                                    internal_specifier_to_OWL_repr(specifier2),
+                                    external_specifier_to_OWL_repr(specifier1)
+                                ]
+                            }
+                        }
+                    ]
+                }
 
-            # Filter out {}s
-            specifiers_repr = [x for x in specifiers_repr if x is not None]
-            
-            if len(specifiers_repr) > 0:
-                # We have specifiers! Make this into a phyloreference.
-                phyloref['equivalentClass'] = {
+                # This is fine, in terms of complexity, but if you start
+                # using mrca on itself, the expression grows exponentially.
+                # So, instead of returning this class expression, let's
+                # safe it as its own class and return just that name.
+
+                global count_additional_classes, additional_classes
+                count_additional_classes += 1
+                additional_class_id = '{0}_additional{1}'.format(phylogeny_id, count_additional_classes)
+
+                additional_classes.append({
+                    '@id': additional_class_id,
                     '@type': 'owl:Class',
-                    'intersectionOf': specifiers_repr
+                    'equivalentClass': mrca_as_owl
+                })
+
+                return {
+                    '@id': additional_class_id
                 }
 
             # Let's write out a Manchester/Protege string too,
@@ -407,29 +437,106 @@ for inputFile in paper['phylogenies']:
                     specifiers.append("{0} value \"{1}\"^^xsd:string".format(key, specifier[key]))
 
                 if len(specifiers) > 0:
-                    return "(has_Descendant some (Node that " + " or ".join(specifiers) + "))"
+                    return "(Node that " + " or ".join(specifiers) + ") or has_Descendant some (Node that " + " or ".join(specifiers) + ")"
                 else:
                     return ""
 
             def external_specifier_to_OWL_expression(specifier):
-                specifiers = list()
-                for key in specifier:
-                    if key == 'dc:description':
-                        continue
-
-                    specifiers.append("{0} value \"{1}\"^^xsd:string".format(key, specifier[key]))
+                specifiers = internal_specifier_to_OWL_expression(specifier)
 
                 if len(specifiers) > 0:
-                    return "(excludes_lineage_to some (Node that " + " or ".join(specifiers) + "))"
+                    return "(has_Sibling some (" + specifiers + "))"
                 else:
                     return ""
 
-            specifiers = [internal_specifier_to_OWL_expression(sp) for sp in internal_specifiers]
-            specifiers.extend([external_specifier_to_OWL_expression(sp) for sp in external_specifiers])
+            def mrca_to_OWL_expression(specifier1, specifier2):
+                return "has_Child some (" + \
+                    internal_specifier_to_OWL_expression(specifier1) + \
+                    " and " + \
+                    external_specifier_to_OWL_expression(specifier2) + \
+                    ") and has_Child some (" + \
+                    internal_specifier_to_OWL_expression(specifier2) + \
+                    " and " + \
+                    external_specifier_to_OWL_expression(specifier1) + \
+                    ")"
 
-            # Create a phyloref in this form:
-            #   Node and ...
-            phyloref['manchesterSyntax'] = "Node and (" + " and ".join(specifiers) + ")"
+            # Check for malformed specifiers.
+            if len(external_specifiers) == 0 and len(internal_specifiers) == 0:
+                phyloref['malformedPhyloreference'] = "No specifiers providers"
+                phyloref['equivalentClass'] = {
+                    "@type": "obo:CDAO_0000140" # Node
+                }
+                phyloref['manchesterSyntax'] = "Node and (" + " and ".join(specifiers) + ")"
+
+            elif len(internal_specifiers) == 0:
+                phyloref['malformedPhyloreference'] = "No internal specifiers provided"
+
+            elif len(external_specifiers) > 1:
+                phyloref['malformedPhyloreference'] = "More than one external specifier provided"
+                
+            elif len(external_specifiers) == 0 and len(internal_specifiers) == 1:
+                phyloref['malformedPhyloreference'] = "Single internal specifier provided"
+
+            elif len(external_specifiers) == 0:
+                # This phyloreference is made up entirely of internal specifiers.
+                # Calculate in a pairwise fashion.
+                # 
+                # (has_Child some (internal(<node 1>) and external(<node 2>)) and 
+                #       has_Child some (internal(<node 2>) and external (<node 1>))
+                # 
+                
+                accum_equivalentClass = mrca_to_OWL_repr(
+                    tunit_to_owl_class(internal_specifiers[0]),
+                    tunit_to_owl_class(internal_specifiers[1])
+                )
+
+                last_internal_specifier = internal_specifiers[1]
+                for i in range(2, len(internal_specifiers)):
+                    accum_equivalentClass = mrca_to_OWL_repr(
+                        accum_equivalentClass,
+                        tunit_to_owl_class(internal_specifiers[i])
+                    )
+                    last_internal_specifier = internal_specifiers[i]
+
+
+                phyloref['equivalentClass'] = accum_equivalentClass
+                # phyloref['manchesterSyntax'] = mrca_to_OWL_expression(
+                #        accum_equivalentClass,
+                #        tunit_to_owl_class(last_internal_specifier)
+                #    )
+
+            else:
+                # This phyloreference is made up of one external specifier and
+                # some number of internal specifiers.
+
+                specifiers_repr = []
+                for internal_specifier in internal_specifiers:
+                    specifiers_repr.append(internal_specifier_to_OWL_repr(
+                        tunit_to_owl_class(internal_specifier))
+                    )
+
+                for external_specifier in external_specifiers:
+                    specifiers_repr.append(external_specifier_to_OWL_repr(
+                        tunit_to_owl_class(external_specifier))
+                    )
+
+                # Filter out {}s
+                specifiers_repr = [x for x in specifiers_repr if x is not None]
+                
+                if len(specifiers_repr) > 0:
+                    # We have specifiers! Make this into a phyloreference.
+                    phyloref['equivalentClass'] = {
+                        '@type': 'owl:Class',
+                        'intersectionOf': specifiers_repr
+                    }
+
+                specifiers = [internal_specifier_to_OWL_expression(sp) for sp in internal_specifiers]
+                specifiers.extend([external_specifier_to_OWL_expression(sp) for sp in external_specifiers])
+
+                phyloref['manchesterSyntax'] = "Node and (" + " and ".join(specifiers) + ")"
+
+        # Finally, add all those additional classes in as phylorefs.
+        inputFile['phylorefs'].extend(additional_classes)
 
 # Write the paper back out again.
 json.dump(paper, output_file, indent=4, sort_keys=True)

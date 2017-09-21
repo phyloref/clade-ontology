@@ -37,7 +37,8 @@
                     "label": "Exostratum"
                 },
                 {
-                    "label": "Exodictyon incrassatum"
+                    "label": "Exodictyon incrassatum",
+                    "matchedName": "Exodictyon"
                 },
                 {
                     "label": "Leucophanes seychellarum"
@@ -506,7 +507,10 @@
                                 ]
                             ],
                             "children": [],
-                            "matchedName": "Exodictyon incrassatum",
+                            "matchedName": [
+                                "Exodictyon incrassatum",
+                                "Exodictyon"
+                            ],
                             "siblings": [
                                 "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_node27"
                             ],
@@ -1939,6 +1943,7 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
+                                        "@type": "owl:Class",
                                         "unionOf": [
                                             {
                                                 "@type": "owl:Class",
@@ -1952,11 +1957,16 @@
                                                         "onProperty": "tnrs:matchedName"
                                                     }
                                                 ]
-                                            },
-                                            {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "@type": "owl:Restriction",
+                                        "onProperty": "obo:CDAO_0000174",
+                                        "someValuesFrom": {
+                                            "@type": "owl:Class",
+                                            "unionOf": [
+                                                {
                                                     "@type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
@@ -1969,8 +1979,8 @@
                                                         }
                                                     ]
                                                 }
-                                            }
-                                        ]
+                                            ]
+                                        }
                                     }
                                 ]
                             },
@@ -1978,6 +1988,7 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
+                                        "@type": "owl:Class",
                                         "unionOf": [
                                             {
                                                 "@type": "owl:Class",
@@ -1991,11 +2002,16 @@
                                                         "onProperty": "tnrs:matchedName"
                                                     }
                                                 ]
-                                            },
-                                            {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "@type": "owl:Restriction",
+                                        "onProperty": "obo:CDAO_0000174",
+                                        "someValuesFrom": {
+                                            "@type": "owl:Class",
+                                            "unionOf": [
+                                                {
                                                     "@type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
@@ -2008,31 +2024,61 @@
                                                         }
                                                     ]
                                                 }
-                                            }
-                                        ]
+                                            ]
+                                        }
                                     }
                                 ]
                             },
                             {
                                 "@type": "owl:Restriction",
-                                "onProperty": "phyloref:excludes_lineage_to",
+                                "onProperty": "phyloref:has_Sibling",
                                 "someValuesFrom": {
                                     "@type": "owl:Class",
-                                    "unionOf": [
-                                        {
-                                            "@type": "owl:Class",
-                                            "intersectionOf": [
-                                                {
-                                                    "@id": "obo:CDAO_0000140"
-                                                },
-                                                {
-                                                    "@type": "owl:Restriction",
-                                                    "hasValue": "Octoblepharum albidum",
-                                                    "onProperty": "tnrs:matchedName"
+                                    "unionOf": {
+                                        "@type": "owl:Class",
+                                        "unionOf": [
+                                            {
+                                                "@type": "owl:Class",
+                                                "unionOf": [
+                                                    {
+                                                        "@type": "owl:Class",
+                                                        "intersectionOf": [
+                                                            {
+                                                                "@id": "obo:CDAO_0000140"
+                                                            },
+                                                            {
+                                                                "@type": "owl:Restriction",
+                                                                "hasValue": "Octoblepharum albidum",
+                                                                "onProperty": "tnrs:matchedName"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@type": "owl:Restriction",
+                                                "onProperty": "obo:CDAO_0000174",
+                                                "someValuesFrom": {
+                                                    "@type": "owl:Class",
+                                                    "unionOf": [
+                                                        {
+                                                            "@type": "owl:Class",
+                                                            "intersectionOf": [
+                                                                {
+                                                                    "@id": "obo:CDAO_0000140"
+                                                                },
+                                                                {
+                                                                    "@type": "owl:Restriction",
+                                                                    "hasValue": "Octoblepharum albidum",
+                                                                    "onProperty": "tnrs:matchedName"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
                                                 }
-                                            ]
-                                        }
-                                    ]
+                                            }
+                                        ]
+                                    }
                                 }
                             }
                         ]
@@ -2054,7 +2100,7 @@
                         }
                     ],
                     "label": "Calymperaceae",
-                    "manchesterSyntax": "Node and ((has_Descendant some (Node that tnrs:matchedName value \"Syrrhopodon gardneri\"^^xsd:string)) and (has_Descendant some (Node that tnrs:matchedName value \"Leucophanes octoblepharoides\"^^xsd:string)) and (excludes_lineage_to some (Node that tnrs:matchedName value \"Octoblepharum albidum\"^^xsd:string)))"
+                    "manchesterSyntax": "Node and ((Node that tnrs:matchedName value \"Syrrhopodon gardneri\"^^xsd:string) or has_Descendant some (Node that tnrs:matchedName value \"Syrrhopodon gardneri\"^^xsd:string) and (Node that tnrs:matchedName value \"Leucophanes octoblepharoides\"^^xsd:string) or has_Descendant some (Node that tnrs:matchedName value \"Leucophanes octoblepharoides\"^^xsd:string) and (has_Sibling some ((Node that tnrs:matchedName value \"Octoblepharum albidum\"^^xsd:string) or has_Descendant some (Node that tnrs:matchedName value \"Octoblepharum albidum\"^^xsd:string))))"
                 },
                 {
                     "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref2",
@@ -2072,6 +2118,7 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
+                                        "@type": "owl:Class",
                                         "unionOf": [
                                             {
                                                 "@type": "owl:Class",
@@ -2085,11 +2132,16 @@
                                                         "onProperty": "tnrs:matchedName"
                                                     }
                                                 ]
-                                            },
-                                            {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "@type": "owl:Restriction",
+                                        "onProperty": "obo:CDAO_0000174",
+                                        "someValuesFrom": {
+                                            "@type": "owl:Class",
+                                            "unionOf": [
+                                                {
                                                     "@type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
@@ -2102,8 +2154,8 @@
                                                         }
                                                     ]
                                                 }
-                                            }
-                                        ]
+                                            ]
+                                        }
                                     }
                                 ]
                             },
@@ -2111,6 +2163,7 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
+                                        "@type": "owl:Class",
                                         "unionOf": [
                                             {
                                                 "@type": "owl:Class",
@@ -2124,11 +2177,16 @@
                                                         "onProperty": "tnrs:matchedName"
                                                     }
                                                 ]
-                                            },
-                                            {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "@type": "owl:Restriction",
+                                        "onProperty": "obo:CDAO_0000174",
+                                        "someValuesFrom": {
+                                            "@type": "owl:Class",
+                                            "unionOf": [
+                                                {
                                                     "@type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
@@ -2141,31 +2199,61 @@
                                                         }
                                                     ]
                                                 }
-                                            }
-                                        ]
+                                            ]
+                                        }
                                     }
                                 ]
                             },
                             {
                                 "@type": "owl:Restriction",
-                                "onProperty": "phyloref:excludes_lineage_to",
+                                "onProperty": "phyloref:has_Sibling",
                                 "someValuesFrom": {
                                     "@type": "owl:Class",
-                                    "unionOf": [
-                                        {
-                                            "@type": "owl:Class",
-                                            "intersectionOf": [
-                                                {
-                                                    "@id": "obo:CDAO_0000140"
-                                                },
-                                                {
-                                                    "@type": "owl:Restriction",
-                                                    "hasValue": "Syrrhopodon croceus",
-                                                    "onProperty": "tnrs:matchedName"
+                                    "unionOf": {
+                                        "@type": "owl:Class",
+                                        "unionOf": [
+                                            {
+                                                "@type": "owl:Class",
+                                                "unionOf": [
+                                                    {
+                                                        "@type": "owl:Class",
+                                                        "intersectionOf": [
+                                                            {
+                                                                "@id": "obo:CDAO_0000140"
+                                                            },
+                                                            {
+                                                                "@type": "owl:Restriction",
+                                                                "hasValue": "Syrrhopodon croceus",
+                                                                "onProperty": "tnrs:matchedName"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@type": "owl:Restriction",
+                                                "onProperty": "obo:CDAO_0000174",
+                                                "someValuesFrom": {
+                                                    "@type": "owl:Class",
+                                                    "unionOf": [
+                                                        {
+                                                            "@type": "owl:Class",
+                                                            "intersectionOf": [
+                                                                {
+                                                                    "@id": "obo:CDAO_0000140"
+                                                                },
+                                                                {
+                                                                    "@type": "owl:Restriction",
+                                                                    "hasValue": "Syrrhopodon croceus",
+                                                                    "onProperty": "tnrs:matchedName"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
                                                 }
-                                            ]
-                                        }
-                                    ]
+                                            }
+                                        ]
+                                    }
                                 }
                             }
                         ]
@@ -2187,7 +2275,7 @@
                         }
                     ],
                     "label": "Calymperes",
-                    "manchesterSyntax": "Node and ((has_Descendant some (Node that tnrs:matchedName value \"Calymperes lonchophyllum\"^^xsd:string)) and (has_Descendant some (Node that tnrs:matchedName value \"Syrrhopodon mauritianus\"^^xsd:string)) and (excludes_lineage_to some (Node that tnrs:matchedName value \"Syrrhopodon croceus\"^^xsd:string)))"
+                    "manchesterSyntax": "Node and ((Node that tnrs:matchedName value \"Calymperes lonchophyllum\"^^xsd:string) or has_Descendant some (Node that tnrs:matchedName value \"Calymperes lonchophyllum\"^^xsd:string) and (Node that tnrs:matchedName value \"Syrrhopodon mauritianus\"^^xsd:string) or has_Descendant some (Node that tnrs:matchedName value \"Syrrhopodon mauritianus\"^^xsd:string) and (has_Sibling some ((Node that tnrs:matchedName value \"Syrrhopodon croceus\"^^xsd:string) or has_Descendant some (Node that tnrs:matchedName value \"Syrrhopodon croceus\"^^xsd:string))))"
                 },
                 {
                     "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref3",
@@ -2205,6 +2293,7 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
+                                        "@type": "owl:Class",
                                         "unionOf": [
                                             {
                                                 "@type": "owl:Class",
@@ -2218,11 +2307,16 @@
                                                         "onProperty": "tnrs:matchedName"
                                                     }
                                                 ]
-                                            },
-                                            {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "@type": "owl:Restriction",
+                                        "onProperty": "obo:CDAO_0000174",
+                                        "someValuesFrom": {
+                                            "@type": "owl:Class",
+                                            "unionOf": [
+                                                {
                                                     "@type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
@@ -2235,8 +2329,8 @@
                                                         }
                                                     ]
                                                 }
-                                            }
-                                        ]
+                                            ]
+                                        }
                                     }
                                 ]
                             },
@@ -2244,6 +2338,7 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
+                                        "@type": "owl:Class",
                                         "unionOf": [
                                             {
                                                 "@type": "owl:Class",
@@ -2257,11 +2352,16 @@
                                                         "onProperty": "tnrs:matchedName"
                                                     }
                                                 ]
-                                            },
-                                            {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "@type": "owl:Restriction",
+                                        "onProperty": "obo:CDAO_0000174",
+                                        "someValuesFrom": {
+                                            "@type": "owl:Class",
+                                            "unionOf": [
+                                                {
                                                     "@type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
@@ -2274,31 +2374,61 @@
                                                         }
                                                     ]
                                                 }
-                                            }
-                                        ]
+                                            ]
+                                        }
                                     }
                                 ]
                             },
                             {
                                 "@type": "owl:Restriction",
-                                "onProperty": "phyloref:excludes_lineage_to",
+                                "onProperty": "phyloref:has_Sibling",
                                 "someValuesFrom": {
                                     "@type": "owl:Class",
-                                    "unionOf": [
-                                        {
-                                            "@type": "owl:Class",
-                                            "intersectionOf": [
-                                                {
-                                                    "@id": "obo:CDAO_0000140"
-                                                },
-                                                {
-                                                    "@type": "owl:Restriction",
-                                                    "hasValue": "Syrrhopodon mauritianus",
-                                                    "onProperty": "tnrs:matchedName"
+                                    "unionOf": {
+                                        "@type": "owl:Class",
+                                        "unionOf": [
+                                            {
+                                                "@type": "owl:Class",
+                                                "unionOf": [
+                                                    {
+                                                        "@type": "owl:Class",
+                                                        "intersectionOf": [
+                                                            {
+                                                                "@id": "obo:CDAO_0000140"
+                                                            },
+                                                            {
+                                                                "@type": "owl:Restriction",
+                                                                "hasValue": "Syrrhopodon mauritianus",
+                                                                "onProperty": "tnrs:matchedName"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@type": "owl:Restriction",
+                                                "onProperty": "obo:CDAO_0000174",
+                                                "someValuesFrom": {
+                                                    "@type": "owl:Class",
+                                                    "unionOf": [
+                                                        {
+                                                            "@type": "owl:Class",
+                                                            "intersectionOf": [
+                                                                {
+                                                                    "@id": "obo:CDAO_0000140"
+                                                                },
+                                                                {
+                                                                    "@type": "owl:Restriction",
+                                                                    "hasValue": "Syrrhopodon mauritianus",
+                                                                    "onProperty": "tnrs:matchedName"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
                                                 }
-                                            ]
-                                        }
-                                    ]
+                                            }
+                                        ]
+                                    }
                                 }
                             }
                         ]
@@ -2320,7 +2450,7 @@
                         }
                     ],
                     "label": "Syrrhopodon",
-                    "manchesterSyntax": "Node and ((has_Descendant some (Node that tnrs:matchedName value \"Syrrhopodon croceus\"^^xsd:string)) and (has_Descendant some (Node that tnrs:matchedName value \"Leucophanes octoblepharoides\"^^xsd:string)) and (excludes_lineage_to some (Node that tnrs:matchedName value \"Syrrhopodon mauritianus\"^^xsd:string)))"
+                    "manchesterSyntax": "Node and ((Node that tnrs:matchedName value \"Syrrhopodon croceus\"^^xsd:string) or has_Descendant some (Node that tnrs:matchedName value \"Syrrhopodon croceus\"^^xsd:string) and (Node that tnrs:matchedName value \"Leucophanes octoblepharoides\"^^xsd:string) or has_Descendant some (Node that tnrs:matchedName value \"Leucophanes octoblepharoides\"^^xsd:string) and (has_Sibling some ((Node that tnrs:matchedName value \"Syrrhopodon mauritianus\"^^xsd:string) or has_Descendant some (Node that tnrs:matchedName value \"Syrrhopodon mauritianus\"^^xsd:string))))"
                 },
                 {
                     "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref4",
@@ -2338,6 +2468,7 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
+                                        "@type": "owl:Class",
                                         "unionOf": [
                                             {
                                                 "@type": "owl:Class",
@@ -2351,11 +2482,16 @@
                                                         "onProperty": "tnrs:matchedName"
                                                     }
                                                 ]
-                                            },
-                                            {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "@type": "owl:Restriction",
+                                        "onProperty": "obo:CDAO_0000174",
+                                        "someValuesFrom": {
+                                            "@type": "owl:Class",
+                                            "unionOf": [
+                                                {
                                                     "@type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
@@ -2368,8 +2504,8 @@
                                                         }
                                                     ]
                                                 }
-                                            }
-                                        ]
+                                            ]
+                                        }
                                     }
                                 ]
                             },
@@ -2377,6 +2513,7 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
+                                        "@type": "owl:Class",
                                         "unionOf": [
                                             {
                                                 "@type": "owl:Class",
@@ -2390,11 +2527,16 @@
                                                         "onProperty": "tnrs:matchedName"
                                                     }
                                                 ]
-                                            },
-                                            {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "@type": "owl:Restriction",
+                                        "onProperty": "obo:CDAO_0000174",
+                                        "someValuesFrom": {
+                                            "@type": "owl:Class",
+                                            "unionOf": [
+                                                {
                                                     "@type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
@@ -2407,31 +2549,61 @@
                                                         }
                                                     ]
                                                 }
-                                            }
-                                        ]
+                                            ]
+                                        }
                                     }
                                 ]
                             },
                             {
                                 "@type": "owl:Restriction",
-                                "onProperty": "phyloref:excludes_lineage_to",
+                                "onProperty": "phyloref:has_Sibling",
                                 "someValuesFrom": {
                                     "@type": "owl:Class",
-                                    "unionOf": [
-                                        {
-                                            "@type": "owl:Class",
-                                            "intersectionOf": [
-                                                {
-                                                    "@id": "obo:CDAO_0000140"
-                                                },
-                                                {
-                                                    "@type": "owl:Restriction",
-                                                    "hasValue": "Syrrhopodon croceus",
-                                                    "onProperty": "tnrs:matchedName"
+                                    "unionOf": {
+                                        "@type": "owl:Class",
+                                        "unionOf": [
+                                            {
+                                                "@type": "owl:Class",
+                                                "unionOf": [
+                                                    {
+                                                        "@type": "owl:Class",
+                                                        "intersectionOf": [
+                                                            {
+                                                                "@id": "obo:CDAO_0000140"
+                                                            },
+                                                            {
+                                                                "@type": "owl:Restriction",
+                                                                "hasValue": "Syrrhopodon croceus",
+                                                                "onProperty": "tnrs:matchedName"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@type": "owl:Restriction",
+                                                "onProperty": "obo:CDAO_0000174",
+                                                "someValuesFrom": {
+                                                    "@type": "owl:Class",
+                                                    "unionOf": [
+                                                        {
+                                                            "@type": "owl:Class",
+                                                            "intersectionOf": [
+                                                                {
+                                                                    "@id": "obo:CDAO_0000140"
+                                                                },
+                                                                {
+                                                                    "@type": "owl:Restriction",
+                                                                    "hasValue": "Syrrhopodon croceus",
+                                                                    "onProperty": "tnrs:matchedName"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
                                                 }
-                                            ]
-                                        }
-                                    ]
+                                            }
+                                        ]
+                                    }
                                 }
                             }
                         ]
@@ -2453,7 +2625,7 @@
                         }
                     ],
                     "label": "Mitthyridium",
-                    "manchesterSyntax": "Node and ((has_Descendant some (Node that tnrs:matchedName value \"Mitthyridium fasciculatum\"^^xsd:string)) and (has_Descendant some (Node that tnrs:matchedName value \"Mitthyridium undulatum\"^^xsd:string)) and (excludes_lineage_to some (Node that tnrs:matchedName value \"Syrrhopodon croceus\"^^xsd:string)))"
+                    "manchesterSyntax": "Node and ((Node that tnrs:matchedName value \"Mitthyridium fasciculatum\"^^xsd:string) or has_Descendant some (Node that tnrs:matchedName value \"Mitthyridium fasciculatum\"^^xsd:string) and (Node that tnrs:matchedName value \"Mitthyridium undulatum\"^^xsd:string) or has_Descendant some (Node that tnrs:matchedName value \"Mitthyridium undulatum\"^^xsd:string) and (has_Sibling some ((Node that tnrs:matchedName value \"Syrrhopodon croceus\"^^xsd:string) or has_Descendant some (Node that tnrs:matchedName value \"Syrrhopodon croceus\"^^xsd:string))))"
                 },
                 {
                     "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref5",
@@ -2471,6 +2643,7 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
+                                        "@type": "owl:Class",
                                         "unionOf": [
                                             {
                                                 "@type": "owl:Class",
@@ -2484,11 +2657,16 @@
                                                         "onProperty": "tnrs:matchedName"
                                                     }
                                                 ]
-                                            },
-                                            {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "@type": "owl:Restriction",
+                                        "onProperty": "obo:CDAO_0000174",
+                                        "someValuesFrom": {
+                                            "@type": "owl:Class",
+                                            "unionOf": [
+                                                {
                                                     "@type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
@@ -2501,8 +2679,8 @@
                                                         }
                                                     ]
                                                 }
-                                            }
-                                        ]
+                                            ]
+                                        }
                                     }
                                 ]
                             },
@@ -2510,6 +2688,7 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
+                                        "@type": "owl:Class",
                                         "unionOf": [
                                             {
                                                 "@type": "owl:Class",
@@ -2523,11 +2702,16 @@
                                                         "onProperty": "tnrs:matchedName"
                                                     }
                                                 ]
-                                            },
-                                            {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "@type": "owl:Restriction",
+                                        "onProperty": "obo:CDAO_0000174",
+                                        "someValuesFrom": {
+                                            "@type": "owl:Class",
+                                            "unionOf": [
+                                                {
                                                     "@type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
@@ -2540,31 +2724,61 @@
                                                         }
                                                     ]
                                                 }
-                                            }
-                                        ]
+                                            ]
+                                        }
                                     }
                                 ]
                             },
                             {
                                 "@type": "owl:Restriction",
-                                "onProperty": "phyloref:excludes_lineage_to",
+                                "onProperty": "phyloref:has_Sibling",
                                 "someValuesFrom": {
                                     "@type": "owl:Class",
-                                    "unionOf": [
-                                        {
-                                            "@type": "owl:Class",
-                                            "intersectionOf": [
-                                                {
-                                                    "@id": "obo:CDAO_0000140"
-                                                },
-                                                {
-                                                    "@type": "owl:Restriction",
-                                                    "hasValue": "Syrrhopodon perarmatus",
-                                                    "onProperty": "tnrs:matchedName"
+                                    "unionOf": {
+                                        "@type": "owl:Class",
+                                        "unionOf": [
+                                            {
+                                                "@type": "owl:Class",
+                                                "unionOf": [
+                                                    {
+                                                        "@type": "owl:Class",
+                                                        "intersectionOf": [
+                                                            {
+                                                                "@id": "obo:CDAO_0000140"
+                                                            },
+                                                            {
+                                                                "@type": "owl:Restriction",
+                                                                "hasValue": "Syrrhopodon perarmatus",
+                                                                "onProperty": "tnrs:matchedName"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@type": "owl:Restriction",
+                                                "onProperty": "obo:CDAO_0000174",
+                                                "someValuesFrom": {
+                                                    "@type": "owl:Class",
+                                                    "unionOf": [
+                                                        {
+                                                            "@type": "owl:Class",
+                                                            "intersectionOf": [
+                                                                {
+                                                                    "@id": "obo:CDAO_0000140"
+                                                                },
+                                                                {
+                                                                    "@type": "owl:Restriction",
+                                                                    "hasValue": "Syrrhopodon perarmatus",
+                                                                    "onProperty": "tnrs:matchedName"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
                                                 }
-                                            ]
-                                        }
-                                    ]
+                                            }
+                                        ]
+                                    }
                                 }
                             }
                         ]
@@ -2586,7 +2800,7 @@
                         }
                     ],
                     "label": "Trachymitrium",
-                    "manchesterSyntax": "Node and ((has_Descendant some (Node that tnrs:matchedName value \"Syrrhopodon ciliatus\"^^xsd:string)) and (has_Descendant some (Node that tnrs:matchedName value \"Syrrhopodon involutus\"^^xsd:string)) and (excludes_lineage_to some (Node that tnrs:matchedName value \"Syrrhopodon perarmatus\"^^xsd:string)))"
+                    "manchesterSyntax": "Node and ((Node that tnrs:matchedName value \"Syrrhopodon ciliatus\"^^xsd:string) or has_Descendant some (Node that tnrs:matchedName value \"Syrrhopodon ciliatus\"^^xsd:string) and (Node that tnrs:matchedName value \"Syrrhopodon involutus\"^^xsd:string) or has_Descendant some (Node that tnrs:matchedName value \"Syrrhopodon involutus\"^^xsd:string) and (has_Sibling some ((Node that tnrs:matchedName value \"Syrrhopodon perarmatus\"^^xsd:string) or has_Descendant some (Node that tnrs:matchedName value \"Syrrhopodon perarmatus\"^^xsd:string))))"
                 },
                 {
                     "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref6",
@@ -2604,6 +2818,7 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
+                                        "@type": "owl:Class",
                                         "unionOf": [
                                             {
                                                 "@type": "owl:Class",
@@ -2617,11 +2832,16 @@
                                                         "onProperty": "tnrs:matchedName"
                                                     }
                                                 ]
-                                            },
-                                            {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "@type": "owl:Restriction",
+                                        "onProperty": "obo:CDAO_0000174",
+                                        "someValuesFrom": {
+                                            "@type": "owl:Class",
+                                            "unionOf": [
+                                                {
                                                     "@type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
@@ -2634,8 +2854,8 @@
                                                         }
                                                     ]
                                                 }
-                                            }
-                                        ]
+                                            ]
+                                        }
                                     }
                                 ]
                             },
@@ -2643,6 +2863,7 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
+                                        "@type": "owl:Class",
                                         "unionOf": [
                                             {
                                                 "@type": "owl:Class",
@@ -2656,11 +2877,16 @@
                                                         "onProperty": "tnrs:matchedName"
                                                     }
                                                 ]
-                                            },
-                                            {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "@type": "owl:Restriction",
+                                        "onProperty": "obo:CDAO_0000174",
+                                        "someValuesFrom": {
+                                            "@type": "owl:Class",
+                                            "unionOf": [
+                                                {
                                                     "@type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
@@ -2673,31 +2899,61 @@
                                                         }
                                                     ]
                                                 }
-                                            }
-                                        ]
+                                            ]
+                                        }
                                     }
                                 ]
                             },
                             {
                                 "@type": "owl:Restriction",
-                                "onProperty": "phyloref:excludes_lineage_to",
+                                "onProperty": "phyloref:has_Sibling",
                                 "someValuesFrom": {
                                     "@type": "owl:Class",
-                                    "unionOf": [
-                                        {
-                                            "@type": "owl:Class",
-                                            "intersectionOf": [
-                                                {
-                                                    "@id": "obo:CDAO_0000140"
-                                                },
-                                                {
-                                                    "@type": "owl:Restriction",
-                                                    "hasValue": "Syrrhopodon trachyphyllus",
-                                                    "onProperty": "tnrs:matchedName"
+                                    "unionOf": {
+                                        "@type": "owl:Class",
+                                        "unionOf": [
+                                            {
+                                                "@type": "owl:Class",
+                                                "unionOf": [
+                                                    {
+                                                        "@type": "owl:Class",
+                                                        "intersectionOf": [
+                                                            {
+                                                                "@id": "obo:CDAO_0000140"
+                                                            },
+                                                            {
+                                                                "@type": "owl:Restriction",
+                                                                "hasValue": "Syrrhopodon trachyphyllus",
+                                                                "onProperty": "tnrs:matchedName"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@type": "owl:Restriction",
+                                                "onProperty": "obo:CDAO_0000174",
+                                                "someValuesFrom": {
+                                                    "@type": "owl:Class",
+                                                    "unionOf": [
+                                                        {
+                                                            "@type": "owl:Class",
+                                                            "intersectionOf": [
+                                                                {
+                                                                    "@id": "obo:CDAO_0000140"
+                                                                },
+                                                                {
+                                                                    "@type": "owl:Restriction",
+                                                                    "hasValue": "Syrrhopodon trachyphyllus",
+                                                                    "onProperty": "tnrs:matchedName"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
                                                 }
-                                            ]
-                                        }
-                                    ]
+                                            }
+                                        ]
+                                    }
                                 }
                             }
                         ]
@@ -2722,7 +2978,7 @@
                         }
                     ],
                     "label": "Leucophanella",
-                    "manchesterSyntax": "Node and ((has_Descendant some (Node that tnrs:matchedName value \"Syrrhopodon banksii\"^^xsd:string)) and (has_Descendant some (Node that tnrs:matchedName value \"Syrrhopodon involutus\"^^xsd:string)) and  and (excludes_lineage_to some (Node that tnrs:matchedName value \"Syrrhopodon trachyphyllus\"^^xsd:string)))"
+                    "manchesterSyntax": "Node and ((Node that tnrs:matchedName value \"Syrrhopodon banksii\"^^xsd:string) or has_Descendant some (Node that tnrs:matchedName value \"Syrrhopodon banksii\"^^xsd:string) and (Node that tnrs:matchedName value \"Syrrhopodon involutus\"^^xsd:string) or has_Descendant some (Node that tnrs:matchedName value \"Syrrhopodon involutus\"^^xsd:string) and  and (has_Sibling some ((Node that tnrs:matchedName value \"Syrrhopodon trachyphyllus\"^^xsd:string) or has_Descendant some (Node that tnrs:matchedName value \"Syrrhopodon trachyphyllus\"^^xsd:string))))"
                 },
                 {
                     "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref7",
@@ -2740,6 +2996,7 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
+                                        "@type": "owl:Class",
                                         "unionOf": [
                                             {
                                                 "@type": "owl:Class",
@@ -2755,11 +3012,16 @@
                                                         "onProperty": "skos:closeMatch"
                                                     }
                                                 ]
-                                            },
-                                            {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "@type": "owl:Restriction",
+                                        "onProperty": "obo:CDAO_0000174",
+                                        "someValuesFrom": {
+                                            "@type": "owl:Class",
+                                            "unionOf": [
+                                                {
                                                     "@type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
@@ -2774,8 +3036,8 @@
                                                         }
                                                     ]
                                                 }
-                                            }
-                                        ]
+                                            ]
+                                        }
                                     }
                                 ]
                             },
@@ -2783,6 +3045,7 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
+                                        "@type": "owl:Class",
                                         "unionOf": [
                                             {
                                                 "@type": "owl:Class",
@@ -2796,11 +3059,16 @@
                                                         "onProperty": "tnrs:matchedName"
                                                     }
                                                 ]
-                                            },
-                                            {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "@type": "owl:Restriction",
+                                        "onProperty": "obo:CDAO_0000174",
+                                        "someValuesFrom": {
+                                            "@type": "owl:Class",
+                                            "unionOf": [
+                                                {
                                                     "@type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
@@ -2813,31 +3081,61 @@
                                                         }
                                                     ]
                                                 }
-                                            }
-                                        ]
+                                            ]
+                                        }
                                     }
                                 ]
                             },
                             {
                                 "@type": "owl:Restriction",
-                                "onProperty": "phyloref:excludes_lineage_to",
+                                "onProperty": "phyloref:has_Sibling",
                                 "someValuesFrom": {
                                     "@type": "owl:Class",
-                                    "unionOf": [
-                                        {
-                                            "@type": "owl:Class",
-                                            "intersectionOf": [
-                                                {
-                                                    "@id": "obo:CDAO_0000140"
-                                                },
-                                                {
-                                                    "@type": "owl:Restriction",
-                                                    "hasValue": "Syrrhopodon muelleri",
-                                                    "onProperty": "tnrs:matchedName"
+                                    "unionOf": {
+                                        "@type": "owl:Class",
+                                        "unionOf": [
+                                            {
+                                                "@type": "owl:Class",
+                                                "unionOf": [
+                                                    {
+                                                        "@type": "owl:Class",
+                                                        "intersectionOf": [
+                                                            {
+                                                                "@id": "obo:CDAO_0000140"
+                                                            },
+                                                            {
+                                                                "@type": "owl:Restriction",
+                                                                "hasValue": "Syrrhopodon muelleri",
+                                                                "onProperty": "tnrs:matchedName"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@type": "owl:Restriction",
+                                                "onProperty": "obo:CDAO_0000174",
+                                                "someValuesFrom": {
+                                                    "@type": "owl:Class",
+                                                    "unionOf": [
+                                                        {
+                                                            "@type": "owl:Class",
+                                                            "intersectionOf": [
+                                                                {
+                                                                    "@id": "obo:CDAO_0000140"
+                                                                },
+                                                                {
+                                                                    "@type": "owl:Restriction",
+                                                                    "hasValue": "Syrrhopodon muelleri",
+                                                                    "onProperty": "tnrs:matchedName"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
                                                 }
-                                            ]
-                                        }
-                                    ]
+                                            }
+                                        ]
+                                    }
                                 }
                             }
                         ]
@@ -2861,7 +3159,7 @@
                         }
                     ],
                     "label": "Albifolium",
-                    "manchesterSyntax": "Node and ((has_Descendant some (Node that skos:closeMatch value \"{'@id': 'http://www.tropicos.org/Name/35179022'}\"^^xsd:string)) and (has_Descendant some (Node that tnrs:matchedName value \"Leucophanes octoblepharoides\"^^xsd:string)) and (excludes_lineage_to some (Node that tnrs:matchedName value \"Syrrhopodon muelleri\"^^xsd:string)))"
+                    "manchesterSyntax": "Node and ((Node that skos:closeMatch value \"{'@id': 'http://www.tropicos.org/Name/35179022'}\"^^xsd:string) or has_Descendant some (Node that skos:closeMatch value \"{'@id': 'http://www.tropicos.org/Name/35179022'}\"^^xsd:string) and (Node that tnrs:matchedName value \"Leucophanes octoblepharoides\"^^xsd:string) or has_Descendant some (Node that tnrs:matchedName value \"Leucophanes octoblepharoides\"^^xsd:string) and (has_Sibling some ((Node that tnrs:matchedName value \"Syrrhopodon muelleri\"^^xsd:string) or has_Descendant some (Node that tnrs:matchedName value \"Syrrhopodon muelleri\"^^xsd:string))))"
                 },
                 {
                     "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref8",
@@ -2879,6 +3177,7 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
+                                        "@type": "owl:Class",
                                         "unionOf": [
                                             {
                                                 "@type": "owl:Class",
@@ -2892,11 +3191,16 @@
                                                         "onProperty": "tnrs:matchedName"
                                                     }
                                                 ]
-                                            },
-                                            {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "@type": "owl:Restriction",
+                                        "onProperty": "obo:CDAO_0000174",
+                                        "someValuesFrom": {
+                                            "@type": "owl:Class",
+                                            "unionOf": [
+                                                {
                                                     "@type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
@@ -2909,31 +3213,61 @@
                                                         }
                                                     ]
                                                 }
-                                            }
-                                        ]
+                                            ]
+                                        }
                                     }
                                 ]
                             },
                             {
                                 "@type": "owl:Restriction",
-                                "onProperty": "phyloref:excludes_lineage_to",
+                                "onProperty": "phyloref:has_Sibling",
                                 "someValuesFrom": {
                                     "@type": "owl:Class",
-                                    "unionOf": [
-                                        {
-                                            "@type": "owl:Class",
-                                            "intersectionOf": [
-                                                {
-                                                    "@id": "obo:CDAO_0000140"
-                                                },
-                                                {
-                                                    "@type": "owl:Restriction",
-                                                    "hasValue": "Exostratum blumii",
-                                                    "onProperty": "tnrs:matchedName"
+                                    "unionOf": {
+                                        "@type": "owl:Class",
+                                        "unionOf": [
+                                            {
+                                                "@type": "owl:Class",
+                                                "unionOf": [
+                                                    {
+                                                        "@type": "owl:Class",
+                                                        "intersectionOf": [
+                                                            {
+                                                                "@id": "obo:CDAO_0000140"
+                                                            },
+                                                            {
+                                                                "@type": "owl:Restriction",
+                                                                "hasValue": "Exostratum blumii",
+                                                                "onProperty": "tnrs:matchedName"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@type": "owl:Restriction",
+                                                "onProperty": "obo:CDAO_0000174",
+                                                "someValuesFrom": {
+                                                    "@type": "owl:Class",
+                                                    "unionOf": [
+                                                        {
+                                                            "@type": "owl:Class",
+                                                            "intersectionOf": [
+                                                                {
+                                                                    "@id": "obo:CDAO_0000140"
+                                                                },
+                                                                {
+                                                                    "@type": "owl:Restriction",
+                                                                    "hasValue": "Exostratum blumii",
+                                                                    "onProperty": "tnrs:matchedName"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
                                                 }
-                                            ]
-                                        }
-                                    ]
+                                            }
+                                        ]
+                                    }
                                 }
                             }
                         ]
@@ -2951,7 +3285,7 @@
                         }
                     ],
                     "label": "Arthrocormus",
-                    "manchesterSyntax": "Node and ((has_Descendant some (Node that tnrs:matchedName value \"Arthrocormus schimperi\"^^xsd:string)) and (excludes_lineage_to some (Node that tnrs:matchedName value \"Exostratum blumii\"^^xsd:string)))"
+                    "manchesterSyntax": "Node and ((Node that tnrs:matchedName value \"Arthrocormus schimperi\"^^xsd:string) or has_Descendant some (Node that tnrs:matchedName value \"Arthrocormus schimperi\"^^xsd:string) and (has_Sibling some ((Node that tnrs:matchedName value \"Exostratum blumii\"^^xsd:string) or has_Descendant some (Node that tnrs:matchedName value \"Exostratum blumii\"^^xsd:string))))"
                 },
                 {
                     "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref9",
@@ -2969,6 +3303,7 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
+                                        "@type": "owl:Class",
                                         "unionOf": [
                                             {
                                                 "@type": "owl:Class",
@@ -2982,11 +3317,16 @@
                                                         "onProperty": "tnrs:matchedName"
                                                     }
                                                 ]
-                                            },
-                                            {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "@type": "owl:Restriction",
+                                        "onProperty": "obo:CDAO_0000174",
+                                        "someValuesFrom": {
+                                            "@type": "owl:Class",
+                                            "unionOf": [
+                                                {
                                                     "@type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
@@ -2999,31 +3339,61 @@
                                                         }
                                                     ]
                                                 }
-                                            }
-                                        ]
+                                            ]
+                                        }
                                     }
                                 ]
                             },
                             {
                                 "@type": "owl:Restriction",
-                                "onProperty": "phyloref:excludes_lineage_to",
+                                "onProperty": "phyloref:has_Sibling",
                                 "someValuesFrom": {
                                     "@type": "owl:Class",
-                                    "unionOf": [
-                                        {
-                                            "@type": "owl:Class",
-                                            "intersectionOf": [
-                                                {
-                                                    "@id": "obo:CDAO_0000140"
-                                                },
-                                                {
-                                                    "@type": "owl:Restriction",
-                                                    "hasValue": "Arthrocormus schimperi",
-                                                    "onProperty": "tnrs:matchedName"
+                                    "unionOf": {
+                                        "@type": "owl:Class",
+                                        "unionOf": [
+                                            {
+                                                "@type": "owl:Class",
+                                                "unionOf": [
+                                                    {
+                                                        "@type": "owl:Class",
+                                                        "intersectionOf": [
+                                                            {
+                                                                "@id": "obo:CDAO_0000140"
+                                                            },
+                                                            {
+                                                                "@type": "owl:Restriction",
+                                                                "hasValue": "Arthrocormus schimperi",
+                                                                "onProperty": "tnrs:matchedName"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@type": "owl:Restriction",
+                                                "onProperty": "obo:CDAO_0000174",
+                                                "someValuesFrom": {
+                                                    "@type": "owl:Class",
+                                                    "unionOf": [
+                                                        {
+                                                            "@type": "owl:Class",
+                                                            "intersectionOf": [
+                                                                {
+                                                                    "@id": "obo:CDAO_0000140"
+                                                                },
+                                                                {
+                                                                    "@type": "owl:Restriction",
+                                                                    "hasValue": "Arthrocormus schimperi",
+                                                                    "onProperty": "tnrs:matchedName"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
                                                 }
-                                            ]
-                                        }
-                                    ]
+                                            }
+                                        ]
+                                    }
                                 }
                             }
                         ]
@@ -3044,7 +3414,7 @@
                         }
                     ],
                     "label": "Exostratum",
-                    "manchesterSyntax": "Node and ((has_Descendant some (Node that tnrs:matchedName value \"Exostratum blumii\"^^xsd:string)) and  and (excludes_lineage_to some (Node that tnrs:matchedName value \"Arthrocormus schimperi\"^^xsd:string)))"
+                    "manchesterSyntax": "Node and ((Node that tnrs:matchedName value \"Exostratum blumii\"^^xsd:string) or has_Descendant some (Node that tnrs:matchedName value \"Exostratum blumii\"^^xsd:string) and  and (has_Sibling some ((Node that tnrs:matchedName value \"Arthrocormus schimperi\"^^xsd:string) or has_Descendant some (Node that tnrs:matchedName value \"Arthrocormus schimperi\"^^xsd:string))))"
                 },
                 {
                     "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref10",
@@ -3062,6 +3432,7 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
+                                        "@type": "owl:Class",
                                         "unionOf": [
                                             {
                                                 "@type": "owl:Class",
@@ -3077,27 +3448,6 @@
                                                 ]
                                             },
                                             {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
-                                                    "@type": "owl:Class",
-                                                    "intersectionOf": [
-                                                        {
-                                                            "@id": "obo:CDAO_0000140"
-                                                        },
-                                                        {
-                                                            "@type": "owl:Restriction",
-                                                            "hasValue": "Exodictyon incrassatum (Mitt.) Cardot",
-                                                            "onProperty": "tnrs:submittedName"
-                                                        }
-                                                    ]
-                                                }
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "unionOf": [
-                                            {
                                                 "@type": "owl:Class",
                                                 "intersectionOf": [
                                                     {
@@ -3109,11 +3459,29 @@
                                                         "onProperty": "tnrs:matchedName"
                                                     }
                                                 ]
-                                            },
-                                            {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "@type": "owl:Restriction",
+                                        "onProperty": "obo:CDAO_0000174",
+                                        "someValuesFrom": {
+                                            "@type": "owl:Class",
+                                            "unionOf": [
+                                                {
+                                                    "@type": "owl:Class",
+                                                    "intersectionOf": [
+                                                        {
+                                                            "@id": "obo:CDAO_0000140"
+                                                        },
+                                                        {
+                                                            "@type": "owl:Restriction",
+                                                            "hasValue": "Exodictyon incrassatum (Mitt.) Cardot",
+                                                            "onProperty": "tnrs:submittedName"
+                                                        }
+                                                    ]
+                                                },
+                                                {
                                                     "@type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
@@ -3126,31 +3494,61 @@
                                                         }
                                                     ]
                                                 }
-                                            }
-                                        ]
+                                            ]
+                                        }
                                     }
                                 ]
                             },
                             {
                                 "@type": "owl:Restriction",
-                                "onProperty": "phyloref:excludes_lineage_to",
+                                "onProperty": "phyloref:has_Sibling",
                                 "someValuesFrom": {
                                     "@type": "owl:Class",
-                                    "unionOf": [
-                                        {
-                                            "@type": "owl:Class",
-                                            "intersectionOf": [
-                                                {
-                                                    "@id": "obo:CDAO_0000140"
-                                                },
-                                                {
-                                                    "@type": "owl:Restriction",
-                                                    "hasValue": "Leucophanes octoblepharoides",
-                                                    "onProperty": "tnrs:matchedName"
+                                    "unionOf": {
+                                        "@type": "owl:Class",
+                                        "unionOf": [
+                                            {
+                                                "@type": "owl:Class",
+                                                "unionOf": [
+                                                    {
+                                                        "@type": "owl:Class",
+                                                        "intersectionOf": [
+                                                            {
+                                                                "@id": "obo:CDAO_0000140"
+                                                            },
+                                                            {
+                                                                "@type": "owl:Restriction",
+                                                                "hasValue": "Leucophanes octoblepharoides",
+                                                                "onProperty": "tnrs:matchedName"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@type": "owl:Restriction",
+                                                "onProperty": "obo:CDAO_0000174",
+                                                "someValuesFrom": {
+                                                    "@type": "owl:Class",
+                                                    "unionOf": [
+                                                        {
+                                                            "@type": "owl:Class",
+                                                            "intersectionOf": [
+                                                                {
+                                                                    "@id": "obo:CDAO_0000140"
+                                                                },
+                                                                {
+                                                                    "@type": "owl:Restriction",
+                                                                    "hasValue": "Leucophanes octoblepharoides",
+                                                                    "onProperty": "tnrs:matchedName"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
                                                 }
-                                            ]
-                                        }
-                                    ]
+                                            }
+                                        ]
+                                    }
                                 }
                             }
                         ]
@@ -3169,7 +3567,7 @@
                         }
                     ],
                     "label": "Exodictyon",
-                    "manchesterSyntax": "Node and ((has_Descendant some (Node that tnrs:submittedName value \"Exodictyon incrassatum (Mitt.) Cardot\"^^xsd:string or tnrs:matchedName value \"Exodictyon incrassatum\"^^xsd:string)) and (excludes_lineage_to some (Node that tnrs:matchedName value \"Leucophanes octoblepharoides\"^^xsd:string)))"
+                    "manchesterSyntax": "Node and ((Node that tnrs:submittedName value \"Exodictyon incrassatum (Mitt.) Cardot\"^^xsd:string or tnrs:matchedName value \"Exodictyon incrassatum\"^^xsd:string) or has_Descendant some (Node that tnrs:submittedName value \"Exodictyon incrassatum (Mitt.) Cardot\"^^xsd:string or tnrs:matchedName value \"Exodictyon incrassatum\"^^xsd:string) and (has_Sibling some ((Node that tnrs:matchedName value \"Leucophanes octoblepharoides\"^^xsd:string) or has_Descendant some (Node that tnrs:matchedName value \"Leucophanes octoblepharoides\"^^xsd:string))))"
                 },
                 {
                     "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref11",
@@ -3187,6 +3585,7 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
+                                        "@type": "owl:Class",
                                         "unionOf": [
                                             {
                                                 "@type": "owl:Class",
@@ -3200,11 +3599,16 @@
                                                         "onProperty": "tnrs:matchedName"
                                                     }
                                                 ]
-                                            },
-                                            {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "@type": "owl:Restriction",
+                                        "onProperty": "obo:CDAO_0000174",
+                                        "someValuesFrom": {
+                                            "@type": "owl:Class",
+                                            "unionOf": [
+                                                {
                                                     "@type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
@@ -3217,8 +3621,8 @@
                                                         }
                                                     ]
                                                 }
-                                            }
-                                        ]
+                                            ]
+                                        }
                                     }
                                 ]
                             },
@@ -3226,6 +3630,7 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
+                                        "@type": "owl:Class",
                                         "unionOf": [
                                             {
                                                 "@type": "owl:Class",
@@ -3239,11 +3644,16 @@
                                                         "onProperty": "tnrs:matchedName"
                                                     }
                                                 ]
-                                            },
-                                            {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "@type": "owl:Restriction",
+                                        "onProperty": "obo:CDAO_0000174",
+                                        "someValuesFrom": {
+                                            "@type": "owl:Class",
+                                            "unionOf": [
+                                                {
                                                     "@type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
@@ -3256,31 +3666,61 @@
                                                         }
                                                     ]
                                                 }
-                                            }
-                                        ]
+                                            ]
+                                        }
                                     }
                                 ]
                             },
                             {
                                 "@type": "owl:Restriction",
-                                "onProperty": "phyloref:excludes_lineage_to",
+                                "onProperty": "phyloref:has_Sibling",
                                 "someValuesFrom": {
                                     "@type": "owl:Class",
-                                    "unionOf": [
-                                        {
-                                            "@type": "owl:Class",
-                                            "intersectionOf": [
-                                                {
-                                                    "@id": "obo:CDAO_0000140"
-                                                },
-                                                {
-                                                    "@type": "owl:Restriction",
-                                                    "hasValue": "Exodictyon incrassatum",
-                                                    "onProperty": "tnrs:matchedName"
+                                    "unionOf": {
+                                        "@type": "owl:Class",
+                                        "unionOf": [
+                                            {
+                                                "@type": "owl:Class",
+                                                "unionOf": [
+                                                    {
+                                                        "@type": "owl:Class",
+                                                        "intersectionOf": [
+                                                            {
+                                                                "@id": "obo:CDAO_0000140"
+                                                            },
+                                                            {
+                                                                "@type": "owl:Restriction",
+                                                                "hasValue": "Exodictyon incrassatum",
+                                                                "onProperty": "tnrs:matchedName"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@type": "owl:Restriction",
+                                                "onProperty": "obo:CDAO_0000174",
+                                                "someValuesFrom": {
+                                                    "@type": "owl:Class",
+                                                    "unionOf": [
+                                                        {
+                                                            "@type": "owl:Class",
+                                                            "intersectionOf": [
+                                                                {
+                                                                    "@id": "obo:CDAO_0000140"
+                                                                },
+                                                                {
+                                                                    "@type": "owl:Restriction",
+                                                                    "hasValue": "Exodictyon incrassatum",
+                                                                    "onProperty": "tnrs:matchedName"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
                                                 }
-                                            ]
-                                        }
-                                    ]
+                                            }
+                                        ]
+                                    }
                                 }
                             }
                         ]
@@ -3302,7 +3742,7 @@
                         }
                     ],
                     "label": "Leucophanes",
-                    "manchesterSyntax": "Node and ((has_Descendant some (Node that tnrs:matchedName value \"Leucophanes octoblepharoides\"^^xsd:string)) and (has_Descendant some (Node that tnrs:matchedName value \"Leucophanes seychellarum\"^^xsd:string)) and (excludes_lineage_to some (Node that tnrs:matchedName value \"Exodictyon incrassatum\"^^xsd:string)))"
+                    "manchesterSyntax": "Node and ((Node that tnrs:matchedName value \"Leucophanes octoblepharoides\"^^xsd:string) or has_Descendant some (Node that tnrs:matchedName value \"Leucophanes octoblepharoides\"^^xsd:string) and (Node that tnrs:matchedName value \"Leucophanes seychellarum\"^^xsd:string) or has_Descendant some (Node that tnrs:matchedName value \"Leucophanes seychellarum\"^^xsd:string) and (has_Sibling some ((Node that tnrs:matchedName value \"Exodictyon incrassatum\"^^xsd:string) or has_Descendant some (Node that tnrs:matchedName value \"Exodictyon incrassatum\"^^xsd:string))))"
                 }
             ]
         }
