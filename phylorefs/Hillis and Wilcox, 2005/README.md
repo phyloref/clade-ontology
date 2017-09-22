@@ -16,19 +16,19 @@
 
 ## Current test status
 
-1. Amerana: **no nodes matched**.
-2. Aquarana: **no nodes matched**.
-3. Lacusirana: **no nodes matched**.
-4. Laurasiarana: matched node `file1_tree1_node1`, **incorrect node**.
+1. Amerana: no nodes matched; *Rana pretiosa* is an internal specifier but not present in this phylogeny.
+2. Aquarana: matched node `file2_tree1_node17`, correct node.
+3. Lacusirana: no nodes matched; *Rana megapoda* is an internal specifier but not present in this phylogeny.
+4. Laurasiarana: matched node `file1_tree1_node1`, correct node for file, but not for figure in paper.
 5. Levirana: matched node `file2_tree1_node111`, correct node.
-6. Lithobates: **no nodes matched**.
+6. Lithobates: matched node `file2_tree1_node112`, correct node.
 7. Nenirana: matched node `file2_tree1_node49`, correct node.
-8. Novirana: **no nodes matched**.
-9. Pantherana: **no nodes matched**.
-10. Ranula: **no nodes matched**.
-11. Scurrilirana: **no nodes matched**.
+8. Novirana: matched node `file2_tree1_node4`, correct node.
+9. Pantherana: matched node `file2_tree1_node38`, correct node.
+10. Ranula: matched node `file2_tree1_node36`, correct node.
+11. Scurrilirana: matched node `file2_tree1_node50`, correct node.
 12. Sierrana: matched node `file2_tree1_node16`, correct node.
-13. Stertirana: **no nodes matched**.
+13. Stertirana: matched node `file_2_tree1_node48`, correct node.
 14. Torrentirana: matched node `file2_tree1_node37`, correct node.
-15. Trypheropsis: **no nodes matched**.
-16. Zweifelia: **no nodes matched**.
+15. Trypheropsis: matched node `file2_tree1_node114`, correct node.
+16. Zweifelia: matched node `file2_tree1_node39`, correct node.

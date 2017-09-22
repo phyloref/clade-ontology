@@ -380,29 +380,62 @@ for inputFile in paper['phylogenies']:
 
                 mrca_as_owl = {
                     "@type": "owl:Class",
-                    "intersectionOf": [
+                    "unionOf": [
+                        # What if the correct answer *is* specifier1 or
+                        # specifier2, such as if specifier2 is a direct
+                        # descendant of specifier1? We encode that here.
                         {
-                            "@type": "owl:Restriction",
-                            "onProperty": "obo:CDAO_0000149",
-                            "someValuesFrom": {
-                                "@type": "owl:Class",
-                                "intersectionOf": [
-                                    internal_specifier_to_OWL_repr(specifier1),
-                                    external_specifier_to_OWL_repr(specifier2)
-                                ]
-                            }
+                            "@type": "owl:Class",
+                            "intersectionOf": [
+                                specifier1,
+                                {
+                                    "@type": "owl:Restriction",
+                                    "onProperty": "obo:CDAO_0000174",
+                                        # has_Descendant
+                                    "someValuesFrom": [specifier2]
+                                }
+                            ]
                         },
                         {
-                            "@type": "owl:Restriction",
-                            "onProperty": "obo:CDAO_0000149",
-                            "someValuesFrom": {
-                                "@type": "owl:Class",
-                                "intersectionOf": [
-                                    internal_specifier_to_OWL_repr(specifier2),
-                                    external_specifier_to_OWL_repr(specifier1)
-                                ]
+                            "@type": "owl:Class",
+                            "intersectionOf": [
+                                specifier2,
+                                {
+                                    "@type": "owl:Restriction",
+                                    "onProperty": "obo:CDAO_0000174",
+                                        # has_Descendant
+                                    "someValuesFrom": [specifier1]
+                                }
+                            ]
+                        },
+
+                        # Standard mrca formula
+                        {
+                            "@type": "owl:Class",
+                            "intersectionOf": [
+                            {
+                                "@type": "owl:Restriction",
+                                "onProperty": "obo:CDAO_0000149",
+                                "someValuesFrom": {
+                                    "@type": "owl:Class",
+                                    "intersectionOf": [
+                                        internal_specifier_to_OWL_repr(specifier1),
+                                        external_specifier_to_OWL_repr(specifier2)
+                                    ]
+                                }
+                            },
+                            {
+                                "@type": "owl:Restriction",
+                                "onProperty": "obo:CDAO_0000149",
+                                "someValuesFrom": {
+                                    "@type": "owl:Class",
+                                    "intersectionOf": [
+                                        internal_specifier_to_OWL_repr(specifier2),
+                                        external_specifier_to_OWL_repr(specifier1)
+                                    ]
+                                }
                             }
-                        }
+                        ]}
                     ]
                 }
 
@@ -497,7 +530,6 @@ for inputFile in paper['phylogenies']:
                         tunit_to_owl_class(internal_specifiers[i])
                     )
                     last_internal_specifier = internal_specifiers[i]
-
 
                 phyloref['equivalentClass'] = accum_equivalentClass
                 # phyloref['manchesterSyntax'] = mrca_to_OWL_expression(
