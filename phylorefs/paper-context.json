@@ -13,7 +13,6 @@
         "tnrs": "http://phylotastic.org/terms/tnrs.rdf#",
         "skos": "http://www.w3.org/2004/02/skos/core#",
         "dsw": "http://purl.org/dsw/",
-        "dwcFP": "http://filteredpush.org/ontologies/oa/dwcFP#",
         "dwc": "http://rs.tdwg.org/dwc/terms/",
         "rsa": "http://rdf.biosemantics.org/ontologies/rsa#",
 
@@ -197,10 +196,8 @@
             "@type": "xsd:string"
         },
 
-        "_hasEvidence": "dsw:hasEvidence",
-        "hasEvidence": "dwcFP:hasBasisOfRecord",
-        "_locatedAt": "dsw:locatedAt",
-        "locatedAt": "dwcFP:hasCollectingEvent",
+        "hasEvidence": "tbd:hasBasisOfRecord",
+        "locatedAt": "tbd:hasCollectingEvent",
         "verbatimLocality": {
             "@id": "dwc:verbatimLocality",
             "@type": "xsd:string"

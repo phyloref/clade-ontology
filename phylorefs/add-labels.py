@@ -85,7 +85,6 @@ paper['owl:imports'] = [
     "https://www.w3.org/2004/02/skos/core",
     "http://phylotastic.org/terms/tnrs.rdf",
     "http://phyloinformatics.net/phyloref.owl",
-    "http://filteredpush.org/ontologies/oa/dwcFP.owl",
     "http://rdf.biosemantics.org/ontologies/rsa"
 ]
 
