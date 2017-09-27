@@ -8,11 +8,17 @@
     "citation": "Fisher KM, Wall DP, Yip KL, Mishler BD (2007) The Bryologist 110(1):46-73.",
     "comments": "None.",
     "curator": "Gaurav Vaidya <gaurav@ggvaidya.com>",
+    "http://phylotastic.org/terms/tnrs.rdf#matchedName": {
+        "@id": "tnrs:matchedName",
+        "@type": "owl:DatatypeProperty"
+    },
+    "http://phylotastic.org/terms/tnrs.rdf#submittedName": {
+        "@id": "tnrs:submittedName",
+        "@type": "owl:DatatypeProperty"
+    },
     "owl:imports": [
         "https://www.w3.org/2004/02/skos/core",
-        "http://phylotastic.org/terms/tnrs.rdf",
-        "http://phyloinformatics.net/phyloref.owl",
-        "http://filteredpush.org/ontologies/oa/dwcFP.owl",
+        "http://raw.githubusercontent.com/hlapp/phyloref/master/phyloref.owl",
         "http://rdf.biosemantics.org/ontologies/rsa"
     ],
     "phylogenies": [
@@ -421,8 +427,8 @@
                             ],
                             "children": [],
                             "matchedName": [
-                                "Arthrocormus schimperi",
-                                "Arthrocormus"
+                                "Arthrocormus",
+                                "Arthrocormus schimperi"
                             ],
                             "siblings": [
                                 "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_node23"
@@ -508,8 +514,8 @@
                             ],
                             "children": [],
                             "matchedName": [
-                                "Exodictyon incrassatum",
-                                "Exodictyon"
+                                "Exodictyon",
+                                "Exodictyon incrassatum"
                             ],
                             "siblings": [
                                 "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_node27"

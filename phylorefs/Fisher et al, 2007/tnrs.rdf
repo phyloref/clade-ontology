@@ -9,7 +9,7 @@
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY tc "http://rs.tdwg.org/ontology/voc/TaxonConcept#" >
+    <!ENTITY tc "http://rs.tdwg.org/ontology/voc/TaxonConcept.owl#" >
 ]>
 
 
@@ -18,7 +18,7 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:tc="http://rs.tdwg.org/ontology/voc/TaxonConcept#"
+     xmlns:tc="http://rs.tdwg.org/ontology/voc/TaxonConcept.owl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -40,7 +40,8 @@ The source repository where the ontology is maintained includes instance documen
 The primary reason that the canonical URI of the ontology ends in .rdf is so that Github serves it under the correct mimetype.
 </dc:description>
         <owl:versionIRI rdf:resource="http://phylotastic.org/terms/2013-06/tnrs.rdf"/>
-        <owl:imports rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonConcept"/>
+        <owl:imports rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonConcept.owl"/>
+        <owl:imports rdf:resource="http://phylodiversity.net/dsw/dsw.rdf"/>
     </owl:Ontology>
     
 
@@ -208,7 +209,9 @@ The primary reason that the canonical URI of the ontology ends in .rdf is so tha
 
     <!-- http://purl.org/dc/elements/1.1/title -->
 
+<!--
     <owl:DatatypeProperty rdf:about="&dc;title"/>
+    -->
     
 
 
@@ -236,7 +239,7 @@ The primary reason that the canonical URI of the ontology ends in .rdf is so tha
                         <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&tc;toTaxon"/>
+                        <owl:onProperty rdf:resource="http://purl.org/dsw/toTaxon"/>
                         <owl:onClass rdf:resource="&tc;TaxonConcept"/>
                         <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                     </owl:Restriction>
@@ -334,11 +337,13 @@ The primary reason that the canonical URI of the ontology ends in .rdf is so tha
                         <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
                         <owl:onDataRange rdf:resource="&xsd;string"/>
                     </owl:Restriction>
+                    <!--
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&dc;title"/>
                         <owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
                         <owl:onDataRange rdf:resource="&xsd;string"/>
                     </owl:Restriction>
+                    -->
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>

@@ -83,10 +83,27 @@ paper['@type'] = [paper['@type'], 'owl:Ontology']
 # To be an ontology, it needs to import a bunch of ontologies.
 paper['owl:imports'] = [
     "https://www.w3.org/2004/02/skos/core",
-    "http://phylotastic.org/terms/tnrs.rdf",
-    "http://phyloinformatics.net/phyloref.owl",
+    "http://raw.githubusercontent.com/hlapp/phyloref/master/phyloref.owl",
+        # Will become "http://phyloinformatics.net/phyloref.owl"
     "http://rdf.biosemantics.org/ontologies/rsa"
 ]
+
+# So, "http://phylotastic.org/terms/tnrs.rdf" is a huge pain to import,
+# as it does some strange things that can trip up some reasoners, and
+# depends on ontologies like TaxonConcept under the wrong URL, and so on.
+# So instead of actually importing it, for now, we'll just create
+# DatatypeProperty for the two TNRS properties we need. These will eventually
+# be moved somewhere sensible.
+
+paper['http://phylotastic.org/terms/tnrs.rdf#matchedName'] = {
+    '@id': 'tnrs:matchedName',
+    '@type': 'owl:DatatypeProperty'
+}
+
+paper['http://phylotastic.org/terms/tnrs.rdf#submittedName'] = {
+    '@id': 'tnrs:submittedName',
+    '@type': 'owl:DatatypeProperty'
+}
 
 # Iterate over each inputFile.
 # Note that we add elements directly to 'paper' as necessary.
