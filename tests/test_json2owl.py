@@ -15,10 +15,10 @@ def test_json_to_owl(paper_json):
     # For now, let's just use 
     # Since these are all Python tasks, eventually we should be able to
     # execute them straight from Python.
-    current_path = os.getcwd()
-    os.chdir(path)
 
+    current_path = os.getcwd()
     try:
+        os.chdir(path)
         assert os.system('python ../add-labels.py paper.json -o labeled.json') == 0
         assert os.system('rdfpipe -i json-ld -o xml labeled.json > paper.owl') == 0
 
