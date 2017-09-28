@@ -6,7 +6,6 @@ import argparse
 import dendropy
 import json
 import os.path
-import pystache
 import re
 import sys
 import uuid
