@@ -8,11 +8,17 @@
     "citation": "Hillis DM and Wilcox TP (2005) Molecular Phylogenetics and Evolution 34(2):299-314",
     "comments": "None.",
     "curator": "Gaurav Vaidya <gaurav@ggvaidya.com>",
+    "http://phylotastic.org/terms/tnrs.rdf#matchedName": {
+        "@id": "tnrs:matchedName",
+        "@type": "owl:DatatypeProperty"
+    },
+    "http://phylotastic.org/terms/tnrs.rdf#submittedName": {
+        "@id": "tnrs:submittedName",
+        "@type": "owl:DatatypeProperty"
+    },
     "owl:imports": [
         "https://www.w3.org/2004/02/skos/core",
-        "http://phylotastic.org/terms/tnrs.rdf",
-        "http://phyloinformatics.net/phyloref.owl",
-        "http://filteredpush.org/ontologies/oa/dwcFP.owl",
+        "http://raw.githubusercontent.com/hlapp/phyloref/master/phyloref.owl",
         "http://rdf.biosemantics.org/ontologies/rsa"
     ],
     "phylogenies": [
@@ -3449,8 +3455,8 @@
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779200"
                             },
                             "matchedName": [
-                                "Rana septentrionalis",
-                                "Rana septentrionales"
+                                "Rana septentrionales",
+                                "Rana septentrionalis"
                             ],
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node22"
@@ -3984,8 +3990,8 @@
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779219"
                             },
                             "matchedName": [
-                                "Rana zweifeli",
-                                "Rana zweifelii"
+                                "Rana zweifelii",
+                                "Rana zweifeli"
                             ],
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node45"
@@ -5071,8 +5077,8 @@
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779251"
                             },
                             "matchedName": [
-                                "Rana sphenocephela",
-                                "Rana sphenocephala"
+                                "Rana sphenocephala",
+                                "Rana sphenocephela"
                             ],
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node95"
@@ -5499,8 +5505,8 @@
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779209"
                             },
                             "matchedName": [
-                                "Rana warszewitshii",
-                                "Rana warszewitschii"
+                                "Rana warszewitschii",
+                                "Rana warszewitshii"
                             ],
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node116"
