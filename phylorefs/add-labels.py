@@ -514,7 +514,7 @@ for inputFile in paper['phylogenies']:
                 phyloref['equivalentClass'] = {
                     "@type": "obo:CDAO_0000140" # Node
                 }
-                phyloref['manchesterSyntax'] = "Node and (" + " and ".join(specifiers) + ")"
+                phyloref['manchesterSyntax'] = "Node"
 
             elif len(internal_specifiers) == 0:
                 phyloref['malformedPhyloreference'] = "No internal specifiers provided"
