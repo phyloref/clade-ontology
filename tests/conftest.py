@@ -8,7 +8,7 @@ import pytest
 import os
 import fnmatch
 
-phylorefs_path = "phylorefs"
+phylorefs_path = "curated"
 
 def pytest_generate_tests(metafunc):
     """ 
