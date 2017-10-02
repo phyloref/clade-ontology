@@ -14,7 +14,6 @@
         "skos": "http://www.w3.org/2004/02/skos/core#",
         "dsw": "http://purl.org/dsw/",
         "dwc": "http://rs.tdwg.org/dwc/terms/",
-        "rsa": "http://rdf.biosemantics.org/ontologies/rsa#",
 
         "owl:imports": {
             "@id": "owl:imports",
@@ -211,7 +210,7 @@
             "@type": "xsd:string"
         },
         "genBankID": {
-            "@id": "rsa:genBankID",
+            "@id": "tbd:genBankID",
             "@type": "xsd:string"
         },
 
