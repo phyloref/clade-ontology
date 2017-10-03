@@ -125,6 +125,25 @@
             "@type": "xsd:string"
         },
 
+        "hasSpecifier": {
+            "@id": "tbd:hasSpecifier",
+            "@type": "@set"
+        },
+
+        "hasInternalSpecifier": {
+            "@id": "tbd:hasInternalSpecifier",
+            "@type": "@set"
+        },
+
+        "hasExternalSpecifier": {
+            "@id": "tbd:hasExternalSpecifier",
+            "@type": "@set"
+        },
+
+
+
+
+
         "skos:closeMatch": {
             "@id": "skos:closeMatch",
             "@type": "@id"

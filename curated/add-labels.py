@@ -17,6 +17,11 @@ __copyright__ = "Copyright 2017 The Phyloreferencing Project"
 # Global variables
 FLAG_VERBOSE = False
 
+# Global constants
+SPECIFIER = 'Specifier'
+INTERNAL_SPECIFIER = 'InternalSpecifier'
+EXTERNAL_SPECIFIER = 'ExternalSpecifier'
+
 # Step 1. Parse command line arguments
 input_file = sys.stdin
 output_file = sys.stdout
@@ -117,6 +122,23 @@ paper['http://example.org/TBD#inPhylogeny'] = {
     'owl:inverseOf': { '@id': "http://example.org/TBD#hasNode" }
 }
 
+# hasPhylogeny
+paper['http://example.org/TBD#hasSpecifier'] = {
+    '@id': 'tbd:hasSpecifier',
+    '@type': 'owl:ObjectProperty'
+}
+
+paper['http://example.org/TBD#hasInternalSpecifier'] = {
+    '@id': 'tbd:hasSpecifier',
+    '@type': 'owl:ObjectProperty',
+    'rdfs:subPropertyOf': 'tbd:hasSpecifier'
+}
+
+paper['http://example.org/TBD#hasExternalSpecifier'] = {
+    '@id': 'tbd:hasSpecifier',
+    '@type': 'owl:ObjectProperty',
+    'rdfs:subPropertyOf': 'tbd:hasSpecifier'
+}
 
 # Iterate over each testCase.
 # Note that we add elements directly to 'paper' as necessary.
@@ -345,17 +367,28 @@ for testCase in paper['phylogenies']:
             external_specifiers = phyloref['externalSpecifiers'] if 'externalSpecifiers' in phyloref else list()
 
             # Convert specifier into an OWL restriction.
-            def tunit_to_owl_class(tunit):
+            count_specifiers = 1
+            def tunit_to_owl_class(tunit, phyloref, specifier_type):
+                global count_specifiers
+
                 specifiers = list()
+                
+                specifier_id = '{0}_specifier{1}'.format(phyloref_id, count_specifiers)
+                count_specifiers += 1
+
+                # Figure out the specifier_type
+                if specifier_type not in (INTERNAL_SPECIFIER, EXTERNAL_SPECIFIER):
+                    specifier_type = SPECIFIER
+
                 for key in tunit:
                     if key == 'dc:description':
                         continue
 
                     specifiers.append({
-                        "@type": "owl:Class",
+                        "@specifier_type": "owl:Class",
                         "intersectionOf": [
                             { "@id": "obo:CDAO_0000140" },  # Node and
-                            { "@type": "owl:Restriction",   # <key> <value>
+                            { "@specifier_type": "owl:Restriction",   # <key> <value>
                               "onProperty": key,
                               "hasValue": tunit[key]
                             }
@@ -365,8 +398,15 @@ for testCase in paper['phylogenies']:
                 if len(specifiers) == 0:
                     return None
 
+                # Tell the phyloref that we're now one of its specifiers.
+                if 'has' + specifier_type not in phyloref:
+                    phyloref['has' + specifier_type] = []
+                
+                phyloref['has' + specifier_type].append(specifier_id)
+
                 return {
-                    "@type": "owl:Class",
+                    "@id": specifier_id,
+                    "@specifier_type": [ "owl:Class", "tbd:" + specifier_type ],
                     "unionOf": specifiers
                 }
 
@@ -549,15 +589,15 @@ for testCase in paper['phylogenies']:
                 # 
                 
                 accum_equivalentClass = mrca_to_OWL_repr(
-                    tunit_to_owl_class(internal_specifiers[0]),
-                    tunit_to_owl_class(internal_specifiers[1])
+                    tunit_to_owl_class(internal_specifiers[0], phyloref, INTERNAL_SPECIFIER),
+                    tunit_to_owl_class(internal_specifiers[1], phyloref, INTERNAL_SPECIFIER)
                 )
 
                 last_internal_specifier = internal_specifiers[1]
                 for i in range(2, len(internal_specifiers)):
                     accum_equivalentClass = mrca_to_OWL_repr(
                         accum_equivalentClass,
-                        tunit_to_owl_class(internal_specifiers[i])
+                        tunit_to_owl_class(internal_specifiers[i], phyloref, INTERNAL_SPECIFIER)
                     )
                     last_internal_specifier = internal_specifiers[i]
 
@@ -574,12 +614,12 @@ for testCase in paper['phylogenies']:
                 specifiers_repr = []
                 for internal_specifier in internal_specifiers:
                     specifiers_repr.append(internal_specifier_to_OWL_repr(
-                        tunit_to_owl_class(internal_specifier))
+                        tunit_to_owl_class(internal_specifier, phyloref, INTERNAL_SPECIFIER))
                     )
 
                 for external_specifier in external_specifiers:
                     specifiers_repr.append(external_specifier_to_OWL_repr(
-                        tunit_to_owl_class(external_specifier))
+                        tunit_to_owl_class(external_specifier, phyloref, EXTERNAL_SPECIFIER))
                     )
 
                 # Filter out {}s
