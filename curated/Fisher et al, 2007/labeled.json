@@ -8,12 +8,26 @@
     "citation": "Fisher KM, Wall DP, Yip KL, Mishler BD (2007) The Bryologist 110(1):46-73.",
     "comments": "None.",
     "curator": "Gaurav Vaidya <gaurav@ggvaidya.com>",
+    "http://example.org/TBD#hasExternalSpecifier": {
+        "@id": "tbd:hasExternalSpecifier",
+        "@type": "owl:ObjectProperty",
+        "rdfs:subPropertyOf": "tbd:hasSpecifier"
+    },
+    "http://example.org/TBD#hasInternalSpecifier": {
+        "@id": "tbd:hasInternalSpecifier",
+        "@type": "owl:ObjectProperty",
+        "rdfs:subPropertyOf": "tbd:hasSpecifier"
+    },
     "http://example.org/TBD#hasNode": {
         "@id": "tbd:hasNode",
         "@type": "owl:ObjectProperty",
         "owl:inverseOf": {
             "@id": "http://example.org/TBD#inPhylogeny"
         }
+    },
+    "http://example.org/TBD#hasSpecifier": {
+        "@id": "tbd:hasSpecifier",
+        "@type": "owl:ObjectProperty"
     },
     "http://example.org/TBD#inPhylogeny": {
         "@id": "tbd:inPhylogeny",
@@ -440,8 +454,8 @@
                             ],
                             "children": [],
                             "matchedName": [
-                                "Arthrocormus schimperi",
-                                "Arthrocormus"
+                                "Arthrocormus",
+                                "Arthrocormus schimperi"
                             ],
                             "siblings": [
                                 "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_node23"
@@ -527,8 +541,8 @@
                             ],
                             "children": [],
                             "matchedName": [
-                                "Exodictyon",
-                                "Exodictyon incrassatum"
+                                "Exodictyon incrassatum",
+                                "Exodictyon"
                             ],
                             "siblings": [
                                 "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_node27"
@@ -1962,16 +1976,20 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@type": "owl:Class",
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref1_specifier1",
+                                        "@specifier_type": [
+                                            "owl:Class",
+                                            "tbd:InternalSpecifier"
+                                        ],
                                         "unionOf": [
                                             {
-                                                "@type": "owl:Class",
+                                                "@specifier_type": "owl:Class",
                                                 "intersectionOf": [
                                                     {
                                                         "@id": "obo:CDAO_0000140"
                                                     },
                                                     {
-                                                        "@type": "owl:Restriction",
+                                                        "@specifier_type": "owl:Restriction",
                                                         "hasValue": "Syrrhopodon gardneri",
                                                         "onProperty": "tnrs:matchedName"
                                                     }
@@ -1983,16 +2001,20 @@
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@type": "owl:Class",
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref1_specifier1",
+                                            "@specifier_type": [
+                                                "owl:Class",
+                                                "tbd:InternalSpecifier"
+                                            ],
                                             "unionOf": [
                                                 {
-                                                    "@type": "owl:Class",
+                                                    "@specifier_type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
                                                             "@id": "obo:CDAO_0000140"
                                                         },
                                                         {
-                                                            "@type": "owl:Restriction",
+                                                            "@specifier_type": "owl:Restriction",
                                                             "hasValue": "Syrrhopodon gardneri",
                                                             "onProperty": "tnrs:matchedName"
                                                         }
@@ -2007,16 +2029,20 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@type": "owl:Class",
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref1_specifier2",
+                                        "@specifier_type": [
+                                            "owl:Class",
+                                            "tbd:InternalSpecifier"
+                                        ],
                                         "unionOf": [
                                             {
-                                                "@type": "owl:Class",
+                                                "@specifier_type": "owl:Class",
                                                 "intersectionOf": [
                                                     {
                                                         "@id": "obo:CDAO_0000140"
                                                     },
                                                     {
-                                                        "@type": "owl:Restriction",
+                                                        "@specifier_type": "owl:Restriction",
                                                         "hasValue": "Leucophanes octoblepharoides",
                                                         "onProperty": "tnrs:matchedName"
                                                     }
@@ -2028,16 +2054,20 @@
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@type": "owl:Class",
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref1_specifier2",
+                                            "@specifier_type": [
+                                                "owl:Class",
+                                                "tbd:InternalSpecifier"
+                                            ],
                                             "unionOf": [
                                                 {
-                                                    "@type": "owl:Class",
+                                                    "@specifier_type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
                                                             "@id": "obo:CDAO_0000140"
                                                         },
                                                         {
-                                                            "@type": "owl:Restriction",
+                                                            "@specifier_type": "owl:Restriction",
                                                             "hasValue": "Leucophanes octoblepharoides",
                                                             "onProperty": "tnrs:matchedName"
                                                         }
@@ -2057,16 +2087,20 @@
                                         "@type": "owl:Class",
                                         "unionOf": [
                                             {
-                                                "@type": "owl:Class",
+                                                "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref1_specifier3",
+                                                "@specifier_type": [
+                                                    "owl:Class",
+                                                    "tbd:ExternalSpecifier"
+                                                ],
                                                 "unionOf": [
                                                     {
-                                                        "@type": "owl:Class",
+                                                        "@specifier_type": "owl:Class",
                                                         "intersectionOf": [
                                                             {
                                                                 "@id": "obo:CDAO_0000140"
                                                             },
                                                             {
-                                                                "@type": "owl:Restriction",
+                                                                "@specifier_type": "owl:Restriction",
                                                                 "hasValue": "Octoblepharum albidum",
                                                                 "onProperty": "tnrs:matchedName"
                                                             }
@@ -2078,16 +2112,20 @@
                                                 "@type": "owl:Restriction",
                                                 "onProperty": "obo:CDAO_0000174",
                                                 "someValuesFrom": {
-                                                    "@type": "owl:Class",
+                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref1_specifier3",
+                                                    "@specifier_type": [
+                                                        "owl:Class",
+                                                        "tbd:ExternalSpecifier"
+                                                    ],
                                                     "unionOf": [
                                                         {
-                                                            "@type": "owl:Class",
+                                                            "@specifier_type": "owl:Class",
                                                             "intersectionOf": [
                                                                 {
                                                                     "@id": "obo:CDAO_0000140"
                                                                 },
                                                                 {
-                                                                    "@type": "owl:Restriction",
+                                                                    "@specifier_type": "owl:Restriction",
                                                                     "hasValue": "Octoblepharum albidum",
                                                                     "onProperty": "tnrs:matchedName"
                                                                 }
@@ -2107,6 +2145,13 @@
                             "dc:description": "Type: Octoblepharum albidum Hedw., Sp. Musc. 50. (1801)",
                             "tnrs:matchedName": "Octoblepharum albidum"
                         }
+                    ],
+                    "hasExternalSpecifier": [
+                        "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref1_specifier3"
+                    ],
+                    "hasInternalSpecifier": [
+                        "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref1_specifier1",
+                        "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref1_specifier2"
                     ],
                     "internalSpecifiers": [
                         {
@@ -2137,16 +2182,20 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@type": "owl:Class",
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref2_specifier1",
+                                        "@specifier_type": [
+                                            "owl:Class",
+                                            "tbd:InternalSpecifier"
+                                        ],
                                         "unionOf": [
                                             {
-                                                "@type": "owl:Class",
+                                                "@specifier_type": "owl:Class",
                                                 "intersectionOf": [
                                                     {
                                                         "@id": "obo:CDAO_0000140"
                                                     },
                                                     {
-                                                        "@type": "owl:Restriction",
+                                                        "@specifier_type": "owl:Restriction",
                                                         "hasValue": "Calymperes lonchophyllum",
                                                         "onProperty": "tnrs:matchedName"
                                                     }
@@ -2158,16 +2207,20 @@
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@type": "owl:Class",
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref2_specifier1",
+                                            "@specifier_type": [
+                                                "owl:Class",
+                                                "tbd:InternalSpecifier"
+                                            ],
                                             "unionOf": [
                                                 {
-                                                    "@type": "owl:Class",
+                                                    "@specifier_type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
                                                             "@id": "obo:CDAO_0000140"
                                                         },
                                                         {
-                                                            "@type": "owl:Restriction",
+                                                            "@specifier_type": "owl:Restriction",
                                                             "hasValue": "Calymperes lonchophyllum",
                                                             "onProperty": "tnrs:matchedName"
                                                         }
@@ -2182,16 +2235,20 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@type": "owl:Class",
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref2_specifier2",
+                                        "@specifier_type": [
+                                            "owl:Class",
+                                            "tbd:InternalSpecifier"
+                                        ],
                                         "unionOf": [
                                             {
-                                                "@type": "owl:Class",
+                                                "@specifier_type": "owl:Class",
                                                 "intersectionOf": [
                                                     {
                                                         "@id": "obo:CDAO_0000140"
                                                     },
                                                     {
-                                                        "@type": "owl:Restriction",
+                                                        "@specifier_type": "owl:Restriction",
                                                         "hasValue": "Syrrhopodon mauritianus",
                                                         "onProperty": "tnrs:matchedName"
                                                     }
@@ -2203,16 +2260,20 @@
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@type": "owl:Class",
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref2_specifier2",
+                                            "@specifier_type": [
+                                                "owl:Class",
+                                                "tbd:InternalSpecifier"
+                                            ],
                                             "unionOf": [
                                                 {
-                                                    "@type": "owl:Class",
+                                                    "@specifier_type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
                                                             "@id": "obo:CDAO_0000140"
                                                         },
                                                         {
-                                                            "@type": "owl:Restriction",
+                                                            "@specifier_type": "owl:Restriction",
                                                             "hasValue": "Syrrhopodon mauritianus",
                                                             "onProperty": "tnrs:matchedName"
                                                         }
@@ -2232,16 +2293,20 @@
                                         "@type": "owl:Class",
                                         "unionOf": [
                                             {
-                                                "@type": "owl:Class",
+                                                "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref2_specifier3",
+                                                "@specifier_type": [
+                                                    "owl:Class",
+                                                    "tbd:ExternalSpecifier"
+                                                ],
                                                 "unionOf": [
                                                     {
-                                                        "@type": "owl:Class",
+                                                        "@specifier_type": "owl:Class",
                                                         "intersectionOf": [
                                                             {
                                                                 "@id": "obo:CDAO_0000140"
                                                             },
                                                             {
-                                                                "@type": "owl:Restriction",
+                                                                "@specifier_type": "owl:Restriction",
                                                                 "hasValue": "Syrrhopodon croceus",
                                                                 "onProperty": "tnrs:matchedName"
                                                             }
@@ -2253,16 +2318,20 @@
                                                 "@type": "owl:Restriction",
                                                 "onProperty": "obo:CDAO_0000174",
                                                 "someValuesFrom": {
-                                                    "@type": "owl:Class",
+                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref2_specifier3",
+                                                    "@specifier_type": [
+                                                        "owl:Class",
+                                                        "tbd:ExternalSpecifier"
+                                                    ],
                                                     "unionOf": [
                                                         {
-                                                            "@type": "owl:Class",
+                                                            "@specifier_type": "owl:Class",
                                                             "intersectionOf": [
                                                                 {
                                                                     "@id": "obo:CDAO_0000140"
                                                                 },
                                                                 {
-                                                                    "@type": "owl:Restriction",
+                                                                    "@specifier_type": "owl:Restriction",
                                                                     "hasValue": "Syrrhopodon croceus",
                                                                     "onProperty": "tnrs:matchedName"
                                                                 }
@@ -2282,6 +2351,13 @@
                             "dc:description": "Type: Syrrhopodon croceus Mitt., J. Proc. Linn. Soc., Bot. Suppl. 1: 41. (1859)",
                             "tnrs:matchedName": "Syrrhopodon croceus"
                         }
+                    ],
+                    "hasExternalSpecifier": [
+                        "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref2_specifier3"
+                    ],
+                    "hasInternalSpecifier": [
+                        "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref2_specifier1",
+                        "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref2_specifier2"
                     ],
                     "internalSpecifiers": [
                         {
@@ -2312,16 +2388,20 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@type": "owl:Class",
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref3_specifier1",
+                                        "@specifier_type": [
+                                            "owl:Class",
+                                            "tbd:InternalSpecifier"
+                                        ],
                                         "unionOf": [
                                             {
-                                                "@type": "owl:Class",
+                                                "@specifier_type": "owl:Class",
                                                 "intersectionOf": [
                                                     {
                                                         "@id": "obo:CDAO_0000140"
                                                     },
                                                     {
-                                                        "@type": "owl:Restriction",
+                                                        "@specifier_type": "owl:Restriction",
                                                         "hasValue": "Syrrhopodon croceus",
                                                         "onProperty": "tnrs:matchedName"
                                                     }
@@ -2333,16 +2413,20 @@
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@type": "owl:Class",
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref3_specifier1",
+                                            "@specifier_type": [
+                                                "owl:Class",
+                                                "tbd:InternalSpecifier"
+                                            ],
                                             "unionOf": [
                                                 {
-                                                    "@type": "owl:Class",
+                                                    "@specifier_type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
                                                             "@id": "obo:CDAO_0000140"
                                                         },
                                                         {
-                                                            "@type": "owl:Restriction",
+                                                            "@specifier_type": "owl:Restriction",
                                                             "hasValue": "Syrrhopodon croceus",
                                                             "onProperty": "tnrs:matchedName"
                                                         }
@@ -2357,16 +2441,20 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@type": "owl:Class",
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref3_specifier2",
+                                        "@specifier_type": [
+                                            "owl:Class",
+                                            "tbd:InternalSpecifier"
+                                        ],
                                         "unionOf": [
                                             {
-                                                "@type": "owl:Class",
+                                                "@specifier_type": "owl:Class",
                                                 "intersectionOf": [
                                                     {
                                                         "@id": "obo:CDAO_0000140"
                                                     },
                                                     {
-                                                        "@type": "owl:Restriction",
+                                                        "@specifier_type": "owl:Restriction",
                                                         "hasValue": "Leucophanes octoblepharoides",
                                                         "onProperty": "tnrs:matchedName"
                                                     }
@@ -2378,16 +2466,20 @@
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@type": "owl:Class",
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref3_specifier2",
+                                            "@specifier_type": [
+                                                "owl:Class",
+                                                "tbd:InternalSpecifier"
+                                            ],
                                             "unionOf": [
                                                 {
-                                                    "@type": "owl:Class",
+                                                    "@specifier_type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
                                                             "@id": "obo:CDAO_0000140"
                                                         },
                                                         {
-                                                            "@type": "owl:Restriction",
+                                                            "@specifier_type": "owl:Restriction",
                                                             "hasValue": "Leucophanes octoblepharoides",
                                                             "onProperty": "tnrs:matchedName"
                                                         }
@@ -2407,16 +2499,20 @@
                                         "@type": "owl:Class",
                                         "unionOf": [
                                             {
-                                                "@type": "owl:Class",
+                                                "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref3_specifier3",
+                                                "@specifier_type": [
+                                                    "owl:Class",
+                                                    "tbd:ExternalSpecifier"
+                                                ],
                                                 "unionOf": [
                                                     {
-                                                        "@type": "owl:Class",
+                                                        "@specifier_type": "owl:Class",
                                                         "intersectionOf": [
                                                             {
                                                                 "@id": "obo:CDAO_0000140"
                                                             },
                                                             {
-                                                                "@type": "owl:Restriction",
+                                                                "@specifier_type": "owl:Restriction",
                                                                 "hasValue": "Syrrhopodon mauritianus",
                                                                 "onProperty": "tnrs:matchedName"
                                                             }
@@ -2428,16 +2524,20 @@
                                                 "@type": "owl:Restriction",
                                                 "onProperty": "obo:CDAO_0000174",
                                                 "someValuesFrom": {
-                                                    "@type": "owl:Class",
+                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref3_specifier3",
+                                                    "@specifier_type": [
+                                                        "owl:Class",
+                                                        "tbd:ExternalSpecifier"
+                                                    ],
                                                     "unionOf": [
                                                         {
-                                                            "@type": "owl:Class",
+                                                            "@specifier_type": "owl:Class",
                                                             "intersectionOf": [
                                                                 {
                                                                     "@id": "obo:CDAO_0000140"
                                                                 },
                                                                 {
-                                                                    "@type": "owl:Restriction",
+                                                                    "@specifier_type": "owl:Restriction",
                                                                     "hasValue": "Syrrhopodon mauritianus",
                                                                     "onProperty": "tnrs:matchedName"
                                                                 }
@@ -2457,6 +2557,13 @@
                             "dc:description": "Type: Syrrhopodon mauritianus M\u00c3\u00bcll. Hal. ex \u00c3\u2026ngstr., \u00c3\u2013fv. F\u00c3\u00b6rh. Kongl. Svenska Vet.-Akad. 33(4): 54. (1876)",
                             "tnrs:matchedName": "Syrrhopodon mauritianus"
                         }
+                    ],
+                    "hasExternalSpecifier": [
+                        "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref3_specifier3"
+                    ],
+                    "hasInternalSpecifier": [
+                        "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref3_specifier1",
+                        "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref3_specifier2"
                     ],
                     "internalSpecifiers": [
                         {
@@ -2487,16 +2594,20 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@type": "owl:Class",
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref4_specifier1",
+                                        "@specifier_type": [
+                                            "owl:Class",
+                                            "tbd:InternalSpecifier"
+                                        ],
                                         "unionOf": [
                                             {
-                                                "@type": "owl:Class",
+                                                "@specifier_type": "owl:Class",
                                                 "intersectionOf": [
                                                     {
                                                         "@id": "obo:CDAO_0000140"
                                                     },
                                                     {
-                                                        "@type": "owl:Restriction",
+                                                        "@specifier_type": "owl:Restriction",
                                                         "hasValue": "Mitthyridium fasciculatum",
                                                         "onProperty": "tnrs:matchedName"
                                                     }
@@ -2508,16 +2619,20 @@
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@type": "owl:Class",
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref4_specifier1",
+                                            "@specifier_type": [
+                                                "owl:Class",
+                                                "tbd:InternalSpecifier"
+                                            ],
                                             "unionOf": [
                                                 {
-                                                    "@type": "owl:Class",
+                                                    "@specifier_type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
                                                             "@id": "obo:CDAO_0000140"
                                                         },
                                                         {
-                                                            "@type": "owl:Restriction",
+                                                            "@specifier_type": "owl:Restriction",
                                                             "hasValue": "Mitthyridium fasciculatum",
                                                             "onProperty": "tnrs:matchedName"
                                                         }
@@ -2532,16 +2647,20 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@type": "owl:Class",
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref4_specifier2",
+                                        "@specifier_type": [
+                                            "owl:Class",
+                                            "tbd:InternalSpecifier"
+                                        ],
                                         "unionOf": [
                                             {
-                                                "@type": "owl:Class",
+                                                "@specifier_type": "owl:Class",
                                                 "intersectionOf": [
                                                     {
                                                         "@id": "obo:CDAO_0000140"
                                                     },
                                                     {
-                                                        "@type": "owl:Restriction",
+                                                        "@specifier_type": "owl:Restriction",
                                                         "hasValue": "Mitthyridium undulatum",
                                                         "onProperty": "tnrs:matchedName"
                                                     }
@@ -2553,16 +2672,20 @@
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@type": "owl:Class",
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref4_specifier2",
+                                            "@specifier_type": [
+                                                "owl:Class",
+                                                "tbd:InternalSpecifier"
+                                            ],
                                             "unionOf": [
                                                 {
-                                                    "@type": "owl:Class",
+                                                    "@specifier_type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
                                                             "@id": "obo:CDAO_0000140"
                                                         },
                                                         {
-                                                            "@type": "owl:Restriction",
+                                                            "@specifier_type": "owl:Restriction",
                                                             "hasValue": "Mitthyridium undulatum",
                                                             "onProperty": "tnrs:matchedName"
                                                         }
@@ -2582,16 +2705,20 @@
                                         "@type": "owl:Class",
                                         "unionOf": [
                                             {
-                                                "@type": "owl:Class",
+                                                "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref4_specifier3",
+                                                "@specifier_type": [
+                                                    "owl:Class",
+                                                    "tbd:ExternalSpecifier"
+                                                ],
                                                 "unionOf": [
                                                     {
-                                                        "@type": "owl:Class",
+                                                        "@specifier_type": "owl:Class",
                                                         "intersectionOf": [
                                                             {
                                                                 "@id": "obo:CDAO_0000140"
                                                             },
                                                             {
-                                                                "@type": "owl:Restriction",
+                                                                "@specifier_type": "owl:Restriction",
                                                                 "hasValue": "Syrrhopodon croceus",
                                                                 "onProperty": "tnrs:matchedName"
                                                             }
@@ -2603,16 +2730,20 @@
                                                 "@type": "owl:Restriction",
                                                 "onProperty": "obo:CDAO_0000174",
                                                 "someValuesFrom": {
-                                                    "@type": "owl:Class",
+                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref4_specifier3",
+                                                    "@specifier_type": [
+                                                        "owl:Class",
+                                                        "tbd:ExternalSpecifier"
+                                                    ],
                                                     "unionOf": [
                                                         {
-                                                            "@type": "owl:Class",
+                                                            "@specifier_type": "owl:Class",
                                                             "intersectionOf": [
                                                                 {
                                                                     "@id": "obo:CDAO_0000140"
                                                                 },
                                                                 {
-                                                                    "@type": "owl:Restriction",
+                                                                    "@specifier_type": "owl:Restriction",
                                                                     "hasValue": "Syrrhopodon croceus",
                                                                     "onProperty": "tnrs:matchedName"
                                                                 }
@@ -2632,6 +2763,13 @@
                             "dc:description": "Type: Syrrhopodon croceus Mitt., J. Proc. Linn. Soc., Bot. Suppl. 1: 41. (1859)",
                             "tnrs:matchedName": "Syrrhopodon croceus"
                         }
+                    ],
+                    "hasExternalSpecifier": [
+                        "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref4_specifier3"
+                    ],
+                    "hasInternalSpecifier": [
+                        "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref4_specifier1",
+                        "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref4_specifier2"
                     ],
                     "internalSpecifiers": [
                         {
@@ -2662,16 +2800,20 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@type": "owl:Class",
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref5_specifier1",
+                                        "@specifier_type": [
+                                            "owl:Class",
+                                            "tbd:InternalSpecifier"
+                                        ],
                                         "unionOf": [
                                             {
-                                                "@type": "owl:Class",
+                                                "@specifier_type": "owl:Class",
                                                 "intersectionOf": [
                                                     {
                                                         "@id": "obo:CDAO_0000140"
                                                     },
                                                     {
-                                                        "@type": "owl:Restriction",
+                                                        "@specifier_type": "owl:Restriction",
                                                         "hasValue": "Syrrhopodon ciliatus",
                                                         "onProperty": "tnrs:matchedName"
                                                     }
@@ -2683,16 +2825,20 @@
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@type": "owl:Class",
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref5_specifier1",
+                                            "@specifier_type": [
+                                                "owl:Class",
+                                                "tbd:InternalSpecifier"
+                                            ],
                                             "unionOf": [
                                                 {
-                                                    "@type": "owl:Class",
+                                                    "@specifier_type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
                                                             "@id": "obo:CDAO_0000140"
                                                         },
                                                         {
-                                                            "@type": "owl:Restriction",
+                                                            "@specifier_type": "owl:Restriction",
                                                             "hasValue": "Syrrhopodon ciliatus",
                                                             "onProperty": "tnrs:matchedName"
                                                         }
@@ -2707,16 +2853,20 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@type": "owl:Class",
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref5_specifier2",
+                                        "@specifier_type": [
+                                            "owl:Class",
+                                            "tbd:InternalSpecifier"
+                                        ],
                                         "unionOf": [
                                             {
-                                                "@type": "owl:Class",
+                                                "@specifier_type": "owl:Class",
                                                 "intersectionOf": [
                                                     {
                                                         "@id": "obo:CDAO_0000140"
                                                     },
                                                     {
-                                                        "@type": "owl:Restriction",
+                                                        "@specifier_type": "owl:Restriction",
                                                         "hasValue": "Syrrhopodon involutus",
                                                         "onProperty": "tnrs:matchedName"
                                                     }
@@ -2728,16 +2878,20 @@
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@type": "owl:Class",
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref5_specifier2",
+                                            "@specifier_type": [
+                                                "owl:Class",
+                                                "tbd:InternalSpecifier"
+                                            ],
                                             "unionOf": [
                                                 {
-                                                    "@type": "owl:Class",
+                                                    "@specifier_type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
                                                             "@id": "obo:CDAO_0000140"
                                                         },
                                                         {
-                                                            "@type": "owl:Restriction",
+                                                            "@specifier_type": "owl:Restriction",
                                                             "hasValue": "Syrrhopodon involutus",
                                                             "onProperty": "tnrs:matchedName"
                                                         }
@@ -2757,16 +2911,20 @@
                                         "@type": "owl:Class",
                                         "unionOf": [
                                             {
-                                                "@type": "owl:Class",
+                                                "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref5_specifier3",
+                                                "@specifier_type": [
+                                                    "owl:Class",
+                                                    "tbd:ExternalSpecifier"
+                                                ],
                                                 "unionOf": [
                                                     {
-                                                        "@type": "owl:Class",
+                                                        "@specifier_type": "owl:Class",
                                                         "intersectionOf": [
                                                             {
                                                                 "@id": "obo:CDAO_0000140"
                                                             },
                                                             {
-                                                                "@type": "owl:Restriction",
+                                                                "@specifier_type": "owl:Restriction",
                                                                 "hasValue": "Syrrhopodon perarmatus",
                                                                 "onProperty": "tnrs:matchedName"
                                                             }
@@ -2778,16 +2936,20 @@
                                                 "@type": "owl:Restriction",
                                                 "onProperty": "obo:CDAO_0000174",
                                                 "someValuesFrom": {
-                                                    "@type": "owl:Class",
+                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref5_specifier3",
+                                                    "@specifier_type": [
+                                                        "owl:Class",
+                                                        "tbd:ExternalSpecifier"
+                                                    ],
                                                     "unionOf": [
                                                         {
-                                                            "@type": "owl:Class",
+                                                            "@specifier_type": "owl:Class",
                                                             "intersectionOf": [
                                                                 {
                                                                     "@id": "obo:CDAO_0000140"
                                                                 },
                                                                 {
-                                                                    "@type": "owl:Restriction",
+                                                                    "@specifier_type": "owl:Restriction",
                                                                     "hasValue": "Syrrhopodon perarmatus",
                                                                     "onProperty": "tnrs:matchedName"
                                                                 }
@@ -2807,6 +2969,13 @@
                             "dc:description": "Type: Syrrhopodon perarmatus Broth. & Watts, J. & Proc. Roy. Soc. New South Wales 49: 133. (1915)",
                             "tnrs:matchedName": "Syrrhopodon perarmatus"
                         }
+                    ],
+                    "hasExternalSpecifier": [
+                        "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref5_specifier3"
+                    ],
+                    "hasInternalSpecifier": [
+                        "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref5_specifier1",
+                        "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref5_specifier2"
                     ],
                     "internalSpecifiers": [
                         {
@@ -2837,16 +3006,20 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@type": "owl:Class",
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref6_specifier1",
+                                        "@specifier_type": [
+                                            "owl:Class",
+                                            "tbd:InternalSpecifier"
+                                        ],
                                         "unionOf": [
                                             {
-                                                "@type": "owl:Class",
+                                                "@specifier_type": "owl:Class",
                                                 "intersectionOf": [
                                                     {
                                                         "@id": "obo:CDAO_0000140"
                                                     },
                                                     {
-                                                        "@type": "owl:Restriction",
+                                                        "@specifier_type": "owl:Restriction",
                                                         "hasValue": "Syrrhopodon banksii",
                                                         "onProperty": "tnrs:matchedName"
                                                     }
@@ -2858,16 +3031,20 @@
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@type": "owl:Class",
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref6_specifier1",
+                                            "@specifier_type": [
+                                                "owl:Class",
+                                                "tbd:InternalSpecifier"
+                                            ],
                                             "unionOf": [
                                                 {
-                                                    "@type": "owl:Class",
+                                                    "@specifier_type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
                                                             "@id": "obo:CDAO_0000140"
                                                         },
                                                         {
-                                                            "@type": "owl:Restriction",
+                                                            "@specifier_type": "owl:Restriction",
                                                             "hasValue": "Syrrhopodon banksii",
                                                             "onProperty": "tnrs:matchedName"
                                                         }
@@ -2882,16 +3059,20 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@type": "owl:Class",
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref6_specifier2",
+                                        "@specifier_type": [
+                                            "owl:Class",
+                                            "tbd:InternalSpecifier"
+                                        ],
                                         "unionOf": [
                                             {
-                                                "@type": "owl:Class",
+                                                "@specifier_type": "owl:Class",
                                                 "intersectionOf": [
                                                     {
                                                         "@id": "obo:CDAO_0000140"
                                                     },
                                                     {
-                                                        "@type": "owl:Restriction",
+                                                        "@specifier_type": "owl:Restriction",
                                                         "hasValue": "Syrrhopodon involutus",
                                                         "onProperty": "tnrs:matchedName"
                                                     }
@@ -2903,16 +3084,20 @@
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@type": "owl:Class",
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref6_specifier2",
+                                            "@specifier_type": [
+                                                "owl:Class",
+                                                "tbd:InternalSpecifier"
+                                            ],
                                             "unionOf": [
                                                 {
-                                                    "@type": "owl:Class",
+                                                    "@specifier_type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
                                                             "@id": "obo:CDAO_0000140"
                                                         },
                                                         {
-                                                            "@type": "owl:Restriction",
+                                                            "@specifier_type": "owl:Restriction",
                                                             "hasValue": "Syrrhopodon involutus",
                                                             "onProperty": "tnrs:matchedName"
                                                         }
@@ -2932,16 +3117,20 @@
                                         "@type": "owl:Class",
                                         "unionOf": [
                                             {
-                                                "@type": "owl:Class",
+                                                "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref6_specifier4",
+                                                "@specifier_type": [
+                                                    "owl:Class",
+                                                    "tbd:ExternalSpecifier"
+                                                ],
                                                 "unionOf": [
                                                     {
-                                                        "@type": "owl:Class",
+                                                        "@specifier_type": "owl:Class",
                                                         "intersectionOf": [
                                                             {
                                                                 "@id": "obo:CDAO_0000140"
                                                             },
                                                             {
-                                                                "@type": "owl:Restriction",
+                                                                "@specifier_type": "owl:Restriction",
                                                                 "hasValue": "Syrrhopodon trachyphyllus",
                                                                 "onProperty": "tnrs:matchedName"
                                                             }
@@ -2953,16 +3142,20 @@
                                                 "@type": "owl:Restriction",
                                                 "onProperty": "obo:CDAO_0000174",
                                                 "someValuesFrom": {
-                                                    "@type": "owl:Class",
+                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref6_specifier4",
+                                                    "@specifier_type": [
+                                                        "owl:Class",
+                                                        "tbd:ExternalSpecifier"
+                                                    ],
                                                     "unionOf": [
                                                         {
-                                                            "@type": "owl:Class",
+                                                            "@specifier_type": "owl:Class",
                                                             "intersectionOf": [
                                                                 {
                                                                     "@id": "obo:CDAO_0000140"
                                                                 },
                                                                 {
-                                                                    "@type": "owl:Restriction",
+                                                                    "@specifier_type": "owl:Restriction",
                                                                     "hasValue": "Syrrhopodon trachyphyllus",
                                                                     "onProperty": "tnrs:matchedName"
                                                                 }
@@ -2982,6 +3175,13 @@
                             "dc:description": "external Specifier: S. trachyphyllus Mont., Sylloge Gen. Sp. Cryptog. 47. (1856)",
                             "tnrs:matchedName": "Syrrhopodon trachyphyllus"
                         }
+                    ],
+                    "hasExternalSpecifier": [
+                        "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref6_specifier4"
+                    ],
+                    "hasInternalSpecifier": [
+                        "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref6_specifier1",
+                        "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref6_specifier2"
                     ],
                     "internalSpecifiers": [
                         {
@@ -3015,16 +3215,20 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@type": "owl:Class",
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref7_specifier1",
+                                        "@specifier_type": [
+                                            "owl:Class",
+                                            "tbd:InternalSpecifier"
+                                        ],
                                         "unionOf": [
                                             {
-                                                "@type": "owl:Class",
+                                                "@specifier_type": "owl:Class",
                                                 "intersectionOf": [
                                                     {
                                                         "@id": "obo:CDAO_0000140"
                                                     },
                                                     {
-                                                        "@type": "owl:Restriction",
+                                                        "@specifier_type": "owl:Restriction",
                                                         "hasValue": {
                                                             "@id": "http://www.tropicos.org/Name/35179022"
                                                         },
@@ -3038,16 +3242,20 @@
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@type": "owl:Class",
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref7_specifier1",
+                                            "@specifier_type": [
+                                                "owl:Class",
+                                                "tbd:InternalSpecifier"
+                                            ],
                                             "unionOf": [
                                                 {
-                                                    "@type": "owl:Class",
+                                                    "@specifier_type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
                                                             "@id": "obo:CDAO_0000140"
                                                         },
                                                         {
-                                                            "@type": "owl:Restriction",
+                                                            "@specifier_type": "owl:Restriction",
                                                             "hasValue": {
                                                                 "@id": "http://www.tropicos.org/Name/35179022"
                                                             },
@@ -3064,16 +3272,20 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@type": "owl:Class",
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref7_specifier2",
+                                        "@specifier_type": [
+                                            "owl:Class",
+                                            "tbd:InternalSpecifier"
+                                        ],
                                         "unionOf": [
                                             {
-                                                "@type": "owl:Class",
+                                                "@specifier_type": "owl:Class",
                                                 "intersectionOf": [
                                                     {
                                                         "@id": "obo:CDAO_0000140"
                                                     },
                                                     {
-                                                        "@type": "owl:Restriction",
+                                                        "@specifier_type": "owl:Restriction",
                                                         "hasValue": "Leucophanes octoblepharoides",
                                                         "onProperty": "tnrs:matchedName"
                                                     }
@@ -3085,16 +3297,20 @@
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@type": "owl:Class",
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref7_specifier2",
+                                            "@specifier_type": [
+                                                "owl:Class",
+                                                "tbd:InternalSpecifier"
+                                            ],
                                             "unionOf": [
                                                 {
-                                                    "@type": "owl:Class",
+                                                    "@specifier_type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
                                                             "@id": "obo:CDAO_0000140"
                                                         },
                                                         {
-                                                            "@type": "owl:Restriction",
+                                                            "@specifier_type": "owl:Restriction",
                                                             "hasValue": "Leucophanes octoblepharoides",
                                                             "onProperty": "tnrs:matchedName"
                                                         }
@@ -3114,16 +3330,20 @@
                                         "@type": "owl:Class",
                                         "unionOf": [
                                             {
-                                                "@type": "owl:Class",
+                                                "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref7_specifier3",
+                                                "@specifier_type": [
+                                                    "owl:Class",
+                                                    "tbd:ExternalSpecifier"
+                                                ],
                                                 "unionOf": [
                                                     {
-                                                        "@type": "owl:Class",
+                                                        "@specifier_type": "owl:Class",
                                                         "intersectionOf": [
                                                             {
                                                                 "@id": "obo:CDAO_0000140"
                                                             },
                                                             {
-                                                                "@type": "owl:Restriction",
+                                                                "@specifier_type": "owl:Restriction",
                                                                 "hasValue": "Syrrhopodon muelleri",
                                                                 "onProperty": "tnrs:matchedName"
                                                             }
@@ -3135,16 +3355,20 @@
                                                 "@type": "owl:Restriction",
                                                 "onProperty": "obo:CDAO_0000174",
                                                 "someValuesFrom": {
-                                                    "@type": "owl:Class",
+                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref7_specifier3",
+                                                    "@specifier_type": [
+                                                        "owl:Class",
+                                                        "tbd:ExternalSpecifier"
+                                                    ],
                                                     "unionOf": [
                                                         {
-                                                            "@type": "owl:Class",
+                                                            "@specifier_type": "owl:Class",
                                                             "intersectionOf": [
                                                                 {
                                                                     "@id": "obo:CDAO_0000140"
                                                                 },
                                                                 {
-                                                                    "@type": "owl:Restriction",
+                                                                    "@specifier_type": "owl:Restriction",
                                                                     "hasValue": "Syrrhopodon muelleri",
                                                                     "onProperty": "tnrs:matchedName"
                                                                 }
@@ -3164,6 +3388,13 @@
                             "dc:description": "Type: Syrrhopodon muelleri (Dozy & Molk) Sande Lac., Bryol. Jav. 2: 224. (1870)",
                             "tnrs:matchedName": "Syrrhopodon muelleri"
                         }
+                    ],
+                    "hasExternalSpecifier": [
+                        "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref7_specifier3"
+                    ],
+                    "hasInternalSpecifier": [
+                        "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref7_specifier1",
+                        "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref7_specifier2"
                     ],
                     "internalSpecifiers": [
                         {
@@ -3196,16 +3427,20 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@type": "owl:Class",
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref8_specifier1",
+                                        "@specifier_type": [
+                                            "owl:Class",
+                                            "tbd:InternalSpecifier"
+                                        ],
                                         "unionOf": [
                                             {
-                                                "@type": "owl:Class",
+                                                "@specifier_type": "owl:Class",
                                                 "intersectionOf": [
                                                     {
                                                         "@id": "obo:CDAO_0000140"
                                                     },
                                                     {
-                                                        "@type": "owl:Restriction",
+                                                        "@specifier_type": "owl:Restriction",
                                                         "hasValue": "Arthrocormus schimperi",
                                                         "onProperty": "tnrs:matchedName"
                                                     }
@@ -3217,16 +3452,20 @@
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@type": "owl:Class",
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref8_specifier1",
+                                            "@specifier_type": [
+                                                "owl:Class",
+                                                "tbd:InternalSpecifier"
+                                            ],
                                             "unionOf": [
                                                 {
-                                                    "@type": "owl:Class",
+                                                    "@specifier_type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
                                                             "@id": "obo:CDAO_0000140"
                                                         },
                                                         {
-                                                            "@type": "owl:Restriction",
+                                                            "@specifier_type": "owl:Restriction",
                                                             "hasValue": "Arthrocormus schimperi",
                                                             "onProperty": "tnrs:matchedName"
                                                         }
@@ -3246,16 +3485,20 @@
                                         "@type": "owl:Class",
                                         "unionOf": [
                                             {
-                                                "@type": "owl:Class",
+                                                "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref8_specifier2",
+                                                "@specifier_type": [
+                                                    "owl:Class",
+                                                    "tbd:ExternalSpecifier"
+                                                ],
                                                 "unionOf": [
                                                     {
-                                                        "@type": "owl:Class",
+                                                        "@specifier_type": "owl:Class",
                                                         "intersectionOf": [
                                                             {
                                                                 "@id": "obo:CDAO_0000140"
                                                             },
                                                             {
-                                                                "@type": "owl:Restriction",
+                                                                "@specifier_type": "owl:Restriction",
                                                                 "hasValue": "Exostratum blumii",
                                                                 "onProperty": "tnrs:matchedName"
                                                             }
@@ -3267,16 +3510,20 @@
                                                 "@type": "owl:Restriction",
                                                 "onProperty": "obo:CDAO_0000174",
                                                 "someValuesFrom": {
-                                                    "@type": "owl:Class",
+                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref8_specifier2",
+                                                    "@specifier_type": [
+                                                        "owl:Class",
+                                                        "tbd:ExternalSpecifier"
+                                                    ],
                                                     "unionOf": [
                                                         {
-                                                            "@type": "owl:Class",
+                                                            "@specifier_type": "owl:Class",
                                                             "intersectionOf": [
                                                                 {
                                                                     "@id": "obo:CDAO_0000140"
                                                                 },
                                                                 {
-                                                                    "@type": "owl:Restriction",
+                                                                    "@specifier_type": "owl:Restriction",
                                                                     "hasValue": "Exostratum blumii",
                                                                     "onProperty": "tnrs:matchedName"
                                                                 }
@@ -3296,6 +3543,12 @@
                             "dc:description": "Type: Exostratum blumii (Nees ex Hampe) L. Ellis, Lindbergia 11: 22. (1985)",
                             "tnrs:matchedName": "Exostratum blumii"
                         }
+                    ],
+                    "hasExternalSpecifier": [
+                        "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref8_specifier2"
+                    ],
+                    "hasInternalSpecifier": [
+                        "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref8_specifier1"
                     ],
                     "internalSpecifiers": [
                         {
@@ -3322,16 +3575,20 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@type": "owl:Class",
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref9_specifier1",
+                                        "@specifier_type": [
+                                            "owl:Class",
+                                            "tbd:InternalSpecifier"
+                                        ],
                                         "unionOf": [
                                             {
-                                                "@type": "owl:Class",
+                                                "@specifier_type": "owl:Class",
                                                 "intersectionOf": [
                                                     {
                                                         "@id": "obo:CDAO_0000140"
                                                     },
                                                     {
-                                                        "@type": "owl:Restriction",
+                                                        "@specifier_type": "owl:Restriction",
                                                         "hasValue": "Exostratum blumii",
                                                         "onProperty": "tnrs:matchedName"
                                                     }
@@ -3343,16 +3600,20 @@
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@type": "owl:Class",
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref9_specifier1",
+                                            "@specifier_type": [
+                                                "owl:Class",
+                                                "tbd:InternalSpecifier"
+                                            ],
                                             "unionOf": [
                                                 {
-                                                    "@type": "owl:Class",
+                                                    "@specifier_type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
                                                             "@id": "obo:CDAO_0000140"
                                                         },
                                                         {
-                                                            "@type": "owl:Restriction",
+                                                            "@specifier_type": "owl:Restriction",
                                                             "hasValue": "Exostratum blumii",
                                                             "onProperty": "tnrs:matchedName"
                                                         }
@@ -3372,16 +3633,20 @@
                                         "@type": "owl:Class",
                                         "unionOf": [
                                             {
-                                                "@type": "owl:Class",
+                                                "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref9_specifier3",
+                                                "@specifier_type": [
+                                                    "owl:Class",
+                                                    "tbd:ExternalSpecifier"
+                                                ],
                                                 "unionOf": [
                                                     {
-                                                        "@type": "owl:Class",
+                                                        "@specifier_type": "owl:Class",
                                                         "intersectionOf": [
                                                             {
                                                                 "@id": "obo:CDAO_0000140"
                                                             },
                                                             {
-                                                                "@type": "owl:Restriction",
+                                                                "@specifier_type": "owl:Restriction",
                                                                 "hasValue": "Arthrocormus schimperi",
                                                                 "onProperty": "tnrs:matchedName"
                                                             }
@@ -3393,16 +3658,20 @@
                                                 "@type": "owl:Restriction",
                                                 "onProperty": "obo:CDAO_0000174",
                                                 "someValuesFrom": {
-                                                    "@type": "owl:Class",
+                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref9_specifier3",
+                                                    "@specifier_type": [
+                                                        "owl:Class",
+                                                        "tbd:ExternalSpecifier"
+                                                    ],
                                                     "unionOf": [
                                                         {
-                                                            "@type": "owl:Class",
+                                                            "@specifier_type": "owl:Class",
                                                             "intersectionOf": [
                                                                 {
                                                                     "@id": "obo:CDAO_0000140"
                                                                 },
                                                                 {
-                                                                    "@type": "owl:Restriction",
+                                                                    "@specifier_type": "owl:Restriction",
                                                                     "hasValue": "Arthrocormus schimperi",
                                                                     "onProperty": "tnrs:matchedName"
                                                                 }
@@ -3422,6 +3691,12 @@
                             "dc:description": "Type: Arthrocormus schimperi (Dozy & Molk.) Dozy & Molk. (= Mielichhoferia schimperi Dozy & Molk.), Musci Frond. Ined. Archip. Ind. 75. (1846)",
                             "tnrs:matchedName": "Arthrocormus schimperi"
                         }
+                    ],
+                    "hasExternalSpecifier": [
+                        "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref9_specifier3"
+                    ],
+                    "hasInternalSpecifier": [
+                        "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref9_specifier1"
                     ],
                     "internalSpecifiers": [
                         {
@@ -3451,29 +3726,33 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@type": "owl:Class",
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref10_specifier1",
+                                        "@specifier_type": [
+                                            "owl:Class",
+                                            "tbd:InternalSpecifier"
+                                        ],
                                         "unionOf": [
                                             {
-                                                "@type": "owl:Class",
+                                                "@specifier_type": "owl:Class",
                                                 "intersectionOf": [
                                                     {
                                                         "@id": "obo:CDAO_0000140"
                                                     },
                                                     {
-                                                        "@type": "owl:Restriction",
+                                                        "@specifier_type": "owl:Restriction",
                                                         "hasValue": "Exodictyon incrassatum (Mitt.) Cardot",
                                                         "onProperty": "tnrs:submittedName"
                                                     }
                                                 ]
                                             },
                                             {
-                                                "@type": "owl:Class",
+                                                "@specifier_type": "owl:Class",
                                                 "intersectionOf": [
                                                     {
                                                         "@id": "obo:CDAO_0000140"
                                                     },
                                                     {
-                                                        "@type": "owl:Restriction",
+                                                        "@specifier_type": "owl:Restriction",
                                                         "hasValue": "Exodictyon incrassatum",
                                                         "onProperty": "tnrs:matchedName"
                                                     }
@@ -3485,29 +3764,33 @@
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@type": "owl:Class",
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref10_specifier1",
+                                            "@specifier_type": [
+                                                "owl:Class",
+                                                "tbd:InternalSpecifier"
+                                            ],
                                             "unionOf": [
                                                 {
-                                                    "@type": "owl:Class",
+                                                    "@specifier_type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
                                                             "@id": "obo:CDAO_0000140"
                                                         },
                                                         {
-                                                            "@type": "owl:Restriction",
+                                                            "@specifier_type": "owl:Restriction",
                                                             "hasValue": "Exodictyon incrassatum (Mitt.) Cardot",
                                                             "onProperty": "tnrs:submittedName"
                                                         }
                                                     ]
                                                 },
                                                 {
-                                                    "@type": "owl:Class",
+                                                    "@specifier_type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
                                                             "@id": "obo:CDAO_0000140"
                                                         },
                                                         {
-                                                            "@type": "owl:Restriction",
+                                                            "@specifier_type": "owl:Restriction",
                                                             "hasValue": "Exodictyon incrassatum",
                                                             "onProperty": "tnrs:matchedName"
                                                         }
@@ -3527,16 +3810,20 @@
                                         "@type": "owl:Class",
                                         "unionOf": [
                                             {
-                                                "@type": "owl:Class",
+                                                "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref10_specifier2",
+                                                "@specifier_type": [
+                                                    "owl:Class",
+                                                    "tbd:ExternalSpecifier"
+                                                ],
                                                 "unionOf": [
                                                     {
-                                                        "@type": "owl:Class",
+                                                        "@specifier_type": "owl:Class",
                                                         "intersectionOf": [
                                                             {
                                                                 "@id": "obo:CDAO_0000140"
                                                             },
                                                             {
-                                                                "@type": "owl:Restriction",
+                                                                "@specifier_type": "owl:Restriction",
                                                                 "hasValue": "Leucophanes octoblepharoides",
                                                                 "onProperty": "tnrs:matchedName"
                                                             }
@@ -3548,16 +3835,20 @@
                                                 "@type": "owl:Restriction",
                                                 "onProperty": "obo:CDAO_0000174",
                                                 "someValuesFrom": {
-                                                    "@type": "owl:Class",
+                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref10_specifier2",
+                                                    "@specifier_type": [
+                                                        "owl:Class",
+                                                        "tbd:ExternalSpecifier"
+                                                    ],
                                                     "unionOf": [
                                                         {
-                                                            "@type": "owl:Class",
+                                                            "@specifier_type": "owl:Class",
                                                             "intersectionOf": [
                                                                 {
                                                                     "@id": "obo:CDAO_0000140"
                                                                 },
                                                                 {
-                                                                    "@type": "owl:Restriction",
+                                                                    "@specifier_type": "owl:Restriction",
                                                                     "hasValue": "Leucophanes octoblepharoides",
                                                                     "onProperty": "tnrs:matchedName"
                                                                 }
@@ -3577,6 +3868,12 @@
                             "dc:description": "Type: Leucophanes octoblepharoides Brid., Bryol. Univ. 1: 763. (1826)",
                             "tnrs:matchedName": "Leucophanes octoblepharoides"
                         }
+                    ],
+                    "hasExternalSpecifier": [
+                        "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref10_specifier2"
+                    ],
+                    "hasInternalSpecifier": [
+                        "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref10_specifier1"
                     ],
                     "internalSpecifiers": [
                         {
@@ -3604,16 +3901,20 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@type": "owl:Class",
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref11_specifier1",
+                                        "@specifier_type": [
+                                            "owl:Class",
+                                            "tbd:InternalSpecifier"
+                                        ],
                                         "unionOf": [
                                             {
-                                                "@type": "owl:Class",
+                                                "@specifier_type": "owl:Class",
                                                 "intersectionOf": [
                                                     {
                                                         "@id": "obo:CDAO_0000140"
                                                     },
                                                     {
-                                                        "@type": "owl:Restriction",
+                                                        "@specifier_type": "owl:Restriction",
                                                         "hasValue": "Leucophanes octoblepharoides",
                                                         "onProperty": "tnrs:matchedName"
                                                     }
@@ -3625,16 +3926,20 @@
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@type": "owl:Class",
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref11_specifier1",
+                                            "@specifier_type": [
+                                                "owl:Class",
+                                                "tbd:InternalSpecifier"
+                                            ],
                                             "unionOf": [
                                                 {
-                                                    "@type": "owl:Class",
+                                                    "@specifier_type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
                                                             "@id": "obo:CDAO_0000140"
                                                         },
                                                         {
-                                                            "@type": "owl:Restriction",
+                                                            "@specifier_type": "owl:Restriction",
                                                             "hasValue": "Leucophanes octoblepharoides",
                                                             "onProperty": "tnrs:matchedName"
                                                         }
@@ -3649,16 +3954,20 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@type": "owl:Class",
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref11_specifier2",
+                                        "@specifier_type": [
+                                            "owl:Class",
+                                            "tbd:InternalSpecifier"
+                                        ],
                                         "unionOf": [
                                             {
-                                                "@type": "owl:Class",
+                                                "@specifier_type": "owl:Class",
                                                 "intersectionOf": [
                                                     {
                                                         "@id": "obo:CDAO_0000140"
                                                     },
                                                     {
-                                                        "@type": "owl:Restriction",
+                                                        "@specifier_type": "owl:Restriction",
                                                         "hasValue": "Leucophanes seychellarum",
                                                         "onProperty": "tnrs:matchedName"
                                                     }
@@ -3670,16 +3979,20 @@
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@type": "owl:Class",
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref11_specifier2",
+                                            "@specifier_type": [
+                                                "owl:Class",
+                                                "tbd:InternalSpecifier"
+                                            ],
                                             "unionOf": [
                                                 {
-                                                    "@type": "owl:Class",
+                                                    "@specifier_type": "owl:Class",
                                                     "intersectionOf": [
                                                         {
                                                             "@id": "obo:CDAO_0000140"
                                                         },
                                                         {
-                                                            "@type": "owl:Restriction",
+                                                            "@specifier_type": "owl:Restriction",
                                                             "hasValue": "Leucophanes seychellarum",
                                                             "onProperty": "tnrs:matchedName"
                                                         }
@@ -3699,16 +4012,20 @@
                                         "@type": "owl:Class",
                                         "unionOf": [
                                             {
-                                                "@type": "owl:Class",
+                                                "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref11_specifier3",
+                                                "@specifier_type": [
+                                                    "owl:Class",
+                                                    "tbd:ExternalSpecifier"
+                                                ],
                                                 "unionOf": [
                                                     {
-                                                        "@type": "owl:Class",
+                                                        "@specifier_type": "owl:Class",
                                                         "intersectionOf": [
                                                             {
                                                                 "@id": "obo:CDAO_0000140"
                                                             },
                                                             {
-                                                                "@type": "owl:Restriction",
+                                                                "@specifier_type": "owl:Restriction",
                                                                 "hasValue": "Exodictyon incrassatum",
                                                                 "onProperty": "tnrs:matchedName"
                                                             }
@@ -3720,16 +4037,20 @@
                                                 "@type": "owl:Restriction",
                                                 "onProperty": "obo:CDAO_0000174",
                                                 "someValuesFrom": {
-                                                    "@type": "owl:Class",
+                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref11_specifier3",
+                                                    "@specifier_type": [
+                                                        "owl:Class",
+                                                        "tbd:ExternalSpecifier"
+                                                    ],
                                                     "unionOf": [
                                                         {
-                                                            "@type": "owl:Class",
+                                                            "@specifier_type": "owl:Class",
                                                             "intersectionOf": [
                                                                 {
                                                                     "@id": "obo:CDAO_0000140"
                                                                 },
                                                                 {
-                                                                    "@type": "owl:Restriction",
+                                                                    "@specifier_type": "owl:Restriction",
                                                                     "hasValue": "Exodictyon incrassatum",
                                                                     "onProperty": "tnrs:matchedName"
                                                                 }
@@ -3749,6 +4070,13 @@
                             "dc:description": "Wall 2527, Fiji (uc) -- Exodictyon incrassatum (Mitt.) Cardot",
                             "tnrs:matchedName": "Exodictyon incrassatum"
                         }
+                    ],
+                    "hasExternalSpecifier": [
+                        "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref11_specifier3"
+                    ],
+                    "hasInternalSpecifier": [
+                        "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref11_specifier1",
+                        "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref11_specifier2"
                     ],
                     "internalSpecifiers": [
                         {

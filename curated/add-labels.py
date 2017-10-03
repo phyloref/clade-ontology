@@ -129,15 +129,15 @@ paper['http://example.org/TBD#hasSpecifier'] = {
 }
 
 paper['http://example.org/TBD#hasInternalSpecifier'] = {
-    '@id': 'tbd:hasSpecifier',
+    '@id': 'tbd:hasInternalSpecifier',
     '@type': 'owl:ObjectProperty',
-    'rdfs:subPropertyOf': 'tbd:hasSpecifier'
+    'rdfs:subPropertyOf': { '@id': 'http://example.org/TBD#hasSpecifier' }
 }
 
 paper['http://example.org/TBD#hasExternalSpecifier'] = {
-    '@id': 'tbd:hasSpecifier',
+    '@id': 'tbd:hasExternalSpecifier',
     '@type': 'owl:ObjectProperty',
-    'rdfs:subPropertyOf': 'tbd:hasSpecifier'
+    'rdfs:subPropertyOf': { '@id': 'http://example.org/TBD#hasSpecifier' }
 }
 
 # Iterate over each testCase.

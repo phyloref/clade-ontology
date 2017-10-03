@@ -9,14 +9,18 @@
     "comments": "None.",
     "curator": "Gaurav Vaidya <gaurav@ggvaidya.com>",
     "http://example.org/TBD#hasExternalSpecifier": {
-        "@id": "tbd:hasSpecifier",
+        "@id": "tbd:hasExternalSpecifier",
         "@type": "owl:ObjectProperty",
-        "rdfs:subPropertyOf": "tbd:hasSpecifier"
+        "rdfs:subPropertyOf": {
+            "@id": "http://example.org/TBD#hasSpecifier"
+        }
     },
     "http://example.org/TBD#hasInternalSpecifier": {
-        "@id": "tbd:hasSpecifier",
+        "@id": "tbd:hasInternalSpecifier",
         "@type": "owl:ObjectProperty",
-        "rdfs:subPropertyOf": "tbd:hasSpecifier"
+        "rdfs:subPropertyOf": {
+            "@id": "http://example.org/TBD#hasSpecifier"
+        }
     },
     "http://example.org/TBD#hasNode": {
         "@id": "tbd:hasNode",
@@ -5077,8 +5081,8 @@
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779252"
                             },
                             "matchedName": [
-                                "Rana sphenocephela",
-                                "Rana sphenocephala utricularia"
+                                "Rana sphenocephala utricularia",
+                                "Rana sphenocephela"
                             ],
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node96"
