@@ -103,23 +103,38 @@ paper['http://phylotastic.org/terms/tnrs.rdf#submittedName'] = {
     '@type': 'owl:DatatypeProperty'
 }
 
-# Iterate over each inputFile.
+# tbd:nodes should be an object properties,
+# so let's declare them as such.
+paper['http://example.org/TBD#hasNode'] = {
+    '@id': 'tbd:hasNode',
+    '@type': 'owl:ObjectProperty',
+    'owl:inverseOf': { '@id': "http://example.org/TBD#inPhylogeny" }
+}
+
+paper['http://example.org/TBD#inPhylogeny'] = {
+    '@id': 'tbd:inPhylogeny',
+    '@type': 'owl:ObjectProperty',
+    'owl:inverseOf': { '@id': "http://example.org/TBD#hasNode" }
+}
+
+
+# Iterate over each testCase.
 # Note that we add elements directly to 'paper' as necessary.
-count_inputFile = 0
-for inputFile in paper['phylogenies']:
-    count_inputFile += 1
-    if '@id' in inputFile and inputFile['@id'] != '':
-        inputFile_id = inputFile['@id']
-        if inputFile_id[-1] != '#':
-            inputFile_id.append('#')
+count_testCase = 0
+for testCase in paper['phylogenies']:
+    count_testCase += 1
+    if '@id' in testCase and testCase['@id'] != '':
+        testCase_id = testCase['@id']
+        if testCase_id[-1] != '#':
+            testCase_id.append('#')
     else:
-        inputFile_id = '{0}file{1}'.format(paper_id, count_inputFile)
+        testCase_id = '{0}file{1}'.format(paper_id, count_testCase)
 
     # Before we do anything else, we need to prepare labeled data so that
     # we can incorporate it into phylogeny.
     labeled_data = dict()
-    if 'labeledNodeData' in inputFile:
-        for nodeData in inputFile['labeledNodeData']:
+    if 'labeledNodeData' in testCase:
+        for nodeData in testCase['labeledNodeData']:
             if 'label' not in nodeData:
                 continue
 
@@ -129,13 +144,13 @@ for inputFile in paper['phylogenies']:
     treelist = list()
 
     # If we have a 'filename' tag, then it's a NeXML file.
-    if 'filename' in inputFile:
-        filename = inputFile['filename']
+    if 'filename' in testCase:
+        filename = testCase['filename']
 
         if FLAG_VERBOSE:
-            sys.stderr.write("Processing input file {0}\n".format(inputFile['filename']))
+            sys.stderr.write("Processing input file {0}\n".format(testCase['filename']))
 
-        if 'phylogenies' in inputFile:
+        if 'phylogenies' in testCase:
             if FLAG_VERBOSE:
                 sys.stderr.write("Skipping file; phylogenies already loaded.\n")
 
@@ -154,26 +169,26 @@ for inputFile in paper['phylogenies']:
         if len(treelist) == 0:
             continue
 
-    elif 'newick' in inputFile:
+    elif 'newick' in testCase:
         try:
-            treelist = dendropy.TreeList.get(data=inputFile['newick'], schema='newick')
+            treelist = dendropy.TreeList.get(data=testCase['newick'], schema='newick')
         except dendropy.utility.error.DataParseError as err:
             sys.stderr.write("Error: could not parse input!\n{0}\n".format(err))
             continue
 
     else:
-        sys.stderr.write("WARNING: input file '{0}' does not contain a phylogeny.".format(inputFile))
+        sys.stderr.write("WARNING: input file '{0}' does not contain a phylogeny.".format(testCase))
         continue
 
-    inputFile['nodes'] = list()
-    nodes = inputFile['nodes']
+    testCase['phylogenies'] = list()
+    phylogenies = testCase['phylogenies']
 
     count_tree = 0
     for tree in treelist: 
         count_tree += 1
 
         phylogeny = dict()
-        phylogeny_id = '{0}_tree{1}'.format(inputFile_id, count_tree)
+        phylogeny_id = '{0}_tree{1}'.format(testCase_id, count_tree)
         phylogeny['@id'] = phylogeny_id
 
         phylogeny['annotations'] = list()
@@ -302,22 +317,22 @@ for inputFile in paper['phylogenies']:
             for child in node.child_nodes():
                 add_all_child_nodes(child, add_to)
 
-        phylogeny['nodes'] = list()
-        add_all_child_nodes(tree.seed_node, phylogeny['nodes'])
+        phylogeny['hasNode'] = list()
+        add_all_child_nodes(tree.seed_node, phylogeny['hasNode'])
 
-        nodes.append(phylogeny)
+        phylogenies.append(phylogeny)
 
 
     # Now translate all phylorefs into OWL classes.
     phyloref_count = 1
-    if 'phylorefs' in inputFile:
+    if 'phylorefs' in testCase:
 
         # Some phyloreferences need additional (ancillary?) OWL classes,
         # so store those here by ID.
         additional_classes = []
         count_additional_classes = 0
 
-        for phyloref in inputFile['phylorefs']:
+        for phyloref in testCase['phylorefs']:
             # Make this into an owl:Thing.
             phyloref_id = "{0}_phyloref{1}".format(phylogeny_id, phyloref_count)
             phyloref['@id'] = phyloref_id
@@ -582,7 +597,7 @@ for inputFile in paper['phylogenies']:
                 phyloref['manchesterSyntax'] = "Node and (" + " and ".join(specifiers) + ")"
 
         # Finally, add all those additional classes in as phylorefs.
-        inputFile['phylorefs'].extend(additional_classes)
+        testCase['phylorefs'].extend(additional_classes)
 
 # Write the paper back out again.
 json.dump(paper, output_file, indent=4, sort_keys=True)

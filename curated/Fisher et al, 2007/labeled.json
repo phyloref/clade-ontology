@@ -8,6 +8,20 @@
     "citation": "Fisher KM, Wall DP, Yip KL, Mishler BD (2007) The Bryologist 110(1):46-73.",
     "comments": "None.",
     "curator": "Gaurav Vaidya <gaurav@ggvaidya.com>",
+    "http://example.org/TBD#hasNode": {
+        "@id": "tbd:hasNode",
+        "@type": "owl:ObjectProperty",
+        "owl:inverseOf": {
+            "@id": "http://example.org/TBD#inPhylogeny"
+        }
+    },
+    "http://example.org/TBD#inPhylogeny": {
+        "@id": "tbd:inPhylogeny",
+        "@type": "owl:ObjectProperty",
+        "owl:inverseOf": {
+            "@id": "http://example.org/TBD#hasNode"
+        }
+    },
     "http://phylotastic.org/terms/tnrs.rdf#matchedName": {
         "@id": "tnrs:matchedName",
         "@type": "owl:DatatypeProperty"
@@ -230,12 +244,12 @@
                 }
             ],
             "newick": "((((((((((('Arthrocormus schimperi',('Exostratum blumii 243','Exostratum blumii 245')Exostratum),('Exodictyon incrassatum',(('Leucophanes seychellarum',('Leucophanes octoblepharoides','Leucophanes albescens'),'Leucophanes glaucum'),'Syrrhopodon confertus')Leucophanes))Albifolium,'Syrrhopodon muelleri'),'Syrrhopodon perarmatus'),(('Syrrhopodon ciliatus',('Syrrhopodon albovaginatus 446','Syrrhopodon albovaginatus 162')),((('Syrrhopodon tortillis','Syrrhopodon leprieurii'),'Syrrhopodon prolifer'),('Syrrhopodon parasiticus','Syrrhopodon trachyphyllus',('Syrrhopodon banksii','Syrrhopodon involutus')Leucophanella)))Trachymitrium),('Syrrhopodon armatus','Syrrhopodon fimbriatulus')),((((('Mitthyridium obtusifolium','Mitthyridium constrictum'),'Mitthyridium fasciculatum'),('Mitthyridium undulatum','Mitthyridium jungquilianum'))Mitthyridium,'Syrrhopodon mahensis'),('Syrrhopodon tristichus',('Syrrhopodon croceus','Syrrhopodon apertus','Syrrhopodon fissipapillatus'))))Syrrhopodon,(('Syrrhopodon incompletus',((((('Calymperes palisotii 159','Calymperes palisotii 180'),'Calymperes motleyi'),('Calymperes erosum','Calymperes robinsonii')),(('Calymperes tenerum','Calymperes subintegrum',('Calymperes tuatomuense','Calymperes pseudopodianum'),'Calymperes hispidium'),'Calymperes moluccense')),((('Calymperes tahitense 320','Calymperes tahitense 115'),'Calymperes lonchophyllum'),(('Calymperes afzelii 179','Calymperes afzelii 165'),'Calymperes graffeanum')))),'Syrrhopodon mauritianus')Calymperes),'Syrrhopodon japonicus'),'Syrrhopodon gardneri')Calymperaceae,('Octoblepharum Moorea 445','Octoblepharum albidum')Octoblepharum);",
-            "nodes": [
+            "ot:dataDeposit": "https://treebase.org/treebase-web/search/study/taxa.html?id=1624&treeid=748",
+            "phylogenies": [
                 {
                     "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1",
                     "annotations": [],
-                    "newick": "(((((((((((Arthrocormus_schimperi,(Exostratum_blumii_243,Exostratum_blumii_245)Exostratum),(Exodictyon_incrassatum,((Leucophanes_seychellarum,(Leucophanes_octoblepharoides,Leucophanes_albescens),Leucophanes_glaucum),Syrrhopodon_confertus)Leucophanes))Albifolium,Syrrhopodon_muelleri),Syrrhopodon_perarmatus),((Syrrhopodon_ciliatus,(Syrrhopodon_albovaginatus_446,Syrrhopodon_albovaginatus_162)),(((Syrrhopodon_tortillis,Syrrhopodon_leprieurii),Syrrhopodon_prolifer),(Syrrhopodon_parasiticus,Syrrhopodon_trachyphyllus,(Syrrhopodon_banksii,Syrrhopodon_involutus)Leucophanella)))Trachymitrium),(Syrrhopodon_armatus,Syrrhopodon_fimbriatulus)),(((((Mitthyridium_obtusifolium,Mitthyridium_constrictum),Mitthyridium_fasciculatum),(Mitthyridium_undulatum,Mitthyridium_jungquilianum))Mitthyridium,Syrrhopodon_mahensis),(Syrrhopodon_tristichus,(Syrrhopodon_croceus,Syrrhopodon_apertus,Syrrhopodon_fissipapillatus))))Syrrhopodon,((Syrrhopodon_incompletus,(((((Calymperes_palisotii_159,Calymperes_palisotii_180),Calymperes_motleyi),(Calymperes_erosum,Calymperes_robinsonii)),((Calymperes_tenerum,Calymperes_subintegrum,(Calymperes_tuatomuense,Calymperes_pseudopodianum),Calymperes_hispidium),Calymperes_moluccense)),(((Calymperes_tahitense_320,Calymperes_tahitense_115),Calymperes_lonchophyllum),((Calymperes_afzelii_179,Calymperes_afzelii_165),Calymperes_graffeanum)))),Syrrhopodon_mauritianus)Calymperes),Syrrhopodon_japonicus),Syrrhopodon_gardneri)Calymperaceae,(Octoblepharum_Moorea_445,Octoblepharum_albidum)Octoblepharum);",
-                    "nodes": [
+                    "hasNode": [
                         {
                             "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_node1",
                             "@type": [
@@ -1927,10 +1941,10 @@
                             ],
                             "submittedName": "Octoblepharum albidum"
                         }
-                    ]
+                    ],
+                    "newick": "(((((((((((Arthrocormus_schimperi,(Exostratum_blumii_243,Exostratum_blumii_245)Exostratum),(Exodictyon_incrassatum,((Leucophanes_seychellarum,(Leucophanes_octoblepharoides,Leucophanes_albescens),Leucophanes_glaucum),Syrrhopodon_confertus)Leucophanes))Albifolium,Syrrhopodon_muelleri),Syrrhopodon_perarmatus),((Syrrhopodon_ciliatus,(Syrrhopodon_albovaginatus_446,Syrrhopodon_albovaginatus_162)),(((Syrrhopodon_tortillis,Syrrhopodon_leprieurii),Syrrhopodon_prolifer),(Syrrhopodon_parasiticus,Syrrhopodon_trachyphyllus,(Syrrhopodon_banksii,Syrrhopodon_involutus)Leucophanella)))Trachymitrium),(Syrrhopodon_armatus,Syrrhopodon_fimbriatulus)),(((((Mitthyridium_obtusifolium,Mitthyridium_constrictum),Mitthyridium_fasciculatum),(Mitthyridium_undulatum,Mitthyridium_jungquilianum))Mitthyridium,Syrrhopodon_mahensis),(Syrrhopodon_tristichus,(Syrrhopodon_croceus,Syrrhopodon_apertus,Syrrhopodon_fissipapillatus))))Syrrhopodon,((Syrrhopodon_incompletus,(((((Calymperes_palisotii_159,Calymperes_palisotii_180),Calymperes_motleyi),(Calymperes_erosum,Calymperes_robinsonii)),((Calymperes_tenerum,Calymperes_subintegrum,(Calymperes_tuatomuense,Calymperes_pseudopodianum),Calymperes_hispidium),Calymperes_moluccense)),(((Calymperes_tahitense_320,Calymperes_tahitense_115),Calymperes_lonchophyllum),((Calymperes_afzelii_179,Calymperes_afzelii_165),Calymperes_graffeanum)))),Syrrhopodon_mauritianus)Calymperes),Syrrhopodon_japonicus),Syrrhopodon_gardneri)Calymperaceae,(Octoblepharum_Moorea_445,Octoblepharum_albidum)Octoblepharum);"
                 }
             ],
-            "ot:dataDeposit": "https://treebase.org/treebase-web/search/study/taxa.html?id=1624&treeid=748",
             "phylorefs": [
                 {
                     "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#file1_tree1_phyloref1",

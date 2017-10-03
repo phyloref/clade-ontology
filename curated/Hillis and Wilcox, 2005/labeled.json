@@ -8,6 +8,20 @@
     "citation": "Hillis DM and Wilcox TP (2005) Molecular Phylogenetics and Evolution 34(2):299-314",
     "comments": "None.",
     "curator": "Gaurav Vaidya <gaurav@ggvaidya.com>",
+    "http://example.org/TBD#hasNode": {
+        "@id": "tbd:hasNode",
+        "@type": "owl:ObjectProperty",
+        "owl:inverseOf": {
+            "@id": "http://example.org/TBD#inPhylogeny"
+        }
+    },
+    "http://example.org/TBD#inPhylogeny": {
+        "@id": "tbd:inPhylogeny",
+        "@type": "owl:ObjectProperty",
+        "owl:inverseOf": {
+            "@id": "http://example.org/TBD#hasNode"
+        }
+    },
     "http://phylotastic.org/terms/tnrs.rdf#matchedName": {
         "@id": "tnrs:matchedName",
         "@type": "owl:DatatypeProperty"
@@ -23,7 +37,7 @@
     "phylogenies": [
         {
             "filename": "T4419.nexml",
-            "nodes": [
+            "phylogenies": [
                 {
                     "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                     "annotations": [
@@ -58,8 +72,7 @@
                             "annotationTarget": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1"
                         }
                     ],
-                    "newick": "[&U] (Rana_temporaria:0.0,((Rana_boylii:0.0,(Rana_luteiventris_MVZ191016:0.0,Rana_luteiventris_MVZ225749:0.0):0.0):0.0,(Rana_muscosa:0.0,(Rana_aurora:0.0,Rana_cascadae:0.0):0.0):0.0):0.0,(((Rana_sylvatica:0.0,Rana_sylvatica_DMH84R43:0.0):0.0,((Rana_septentrionales:0.0,(Rana_grylio:0.0,((Rana_okaloosae:0.0,Rana_clamitans:0.0):0.0,(Rana_heckscheri:0.0,(Rana_catesbiana_X12841:0.0,Rana_catesbiana_DMH84R2:0.0):0.0):0.0):0.0):0.0):0.0,Rana_virgatipes:0.0):0.0):0.0,(((Rana_maculata:0.0,(Rana_vibicaria:0.0,Rana_warszewitshii:0.0):0.0):0.0,((((Rana_palmipes_AMNHA118801:0.0,Rana_palmipes_KU204425:0.0):0.0,Rana_sp1_QCAZ13219:0.0):0.0,Rana_bwana:0.0):0.0,(Rana_vaillanti:0.0,Rana_juliani:0.0):0.0):0.0):0.0,((Rana_sierramadrensis:0.0,((Rana_psilonota:0.0,Rana_zweifelii:0.0):0.0,(Rana_tarahumarae:0.0,Rana_pustulosa:0.0):0.0):0.0):0.0,(((Rana_pipiens_JSF1119:0.0,Rana_pipiens_Y10945:0.0):0.0,((Rana_dunni:0.0,Rana_montezumae:0.0):0.0,(Rana_sp2_KU_204420:0.0,((Rana_chiricahuensis_KU_194442:0.0,Rana_subaquavocalis:0.0):0.0,Rana_chiricahuensis_KU_194419:0.0):0.0):0.0):0.0):0.0,((Rana_palustris:0.0,(Rana_areolata:0.0,(Rana_sevosa:0.0,Rana_capito:0.0):0.0):0.0):0.0,(((Rana_spectabilis:0.0,(Rana_omiltemana:0.0,Rana_sp3_KU_194559:0.0):0.0):0.0,((((Rana_tlaloci:0.0,Rana_neovolcanica:0.0):0.0,Rana_berlandieri:0.0):0.0,Rana_blairi:0.0):0.0,(Rana_sphenocephela:0.0,Rana_sphenocephela_utricularia:0.0):0.0):0.0):0.0,(Rana_forreri:0.0,(((Rana_magnaocularis:0.0,Rana_sp7_KU_194492:0.0):0.0,((Rana_yavapaiensis:0.0,Rana_onca:0.0):0.0,Rana_sp8_KU_195346:0.0):0.0):0.0,(((Rana_macroglossa:0.0,Rana_macroglossa_b:0.0):0.0,Rana_taylori:0.0):0.0,((Rana_sp4_AMNH_A_124167:0.0,Rana_sp5_LACM_146764:0.0):0.0,Rana_sp6_LACM_146810:0.0):0.0):0.0):0.0):0.0):0.0):0.0):0.0):0.0):0.0):0.0);",
-                    "nodes": [
+                    "hasNode": [
                         {
                             "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node1",
                             "@type": [
@@ -2245,7 +2258,8 @@
                             "skos:closeMatch": [],
                             "submittedName": "Rana sp6 LACM 146810"
                         }
-                    ]
+                    ],
+                    "newick": "[&U] (Rana_temporaria:0.0,((Rana_boylii:0.0,(Rana_luteiventris_MVZ191016:0.0,Rana_luteiventris_MVZ225749:0.0):0.0):0.0,(Rana_muscosa:0.0,(Rana_aurora:0.0,Rana_cascadae:0.0):0.0):0.0):0.0,(((Rana_sylvatica:0.0,Rana_sylvatica_DMH84R43:0.0):0.0,((Rana_septentrionales:0.0,(Rana_grylio:0.0,((Rana_okaloosae:0.0,Rana_clamitans:0.0):0.0,(Rana_heckscheri:0.0,(Rana_catesbiana_X12841:0.0,Rana_catesbiana_DMH84R2:0.0):0.0):0.0):0.0):0.0):0.0,Rana_virgatipes:0.0):0.0):0.0,(((Rana_maculata:0.0,(Rana_vibicaria:0.0,Rana_warszewitshii:0.0):0.0):0.0,((((Rana_palmipes_AMNHA118801:0.0,Rana_palmipes_KU204425:0.0):0.0,Rana_sp1_QCAZ13219:0.0):0.0,Rana_bwana:0.0):0.0,(Rana_vaillanti:0.0,Rana_juliani:0.0):0.0):0.0):0.0,((Rana_sierramadrensis:0.0,((Rana_psilonota:0.0,Rana_zweifelii:0.0):0.0,(Rana_tarahumarae:0.0,Rana_pustulosa:0.0):0.0):0.0):0.0,(((Rana_pipiens_JSF1119:0.0,Rana_pipiens_Y10945:0.0):0.0,((Rana_dunni:0.0,Rana_montezumae:0.0):0.0,(Rana_sp2_KU_204420:0.0,((Rana_chiricahuensis_KU_194442:0.0,Rana_subaquavocalis:0.0):0.0,Rana_chiricahuensis_KU_194419:0.0):0.0):0.0):0.0):0.0,((Rana_palustris:0.0,(Rana_areolata:0.0,(Rana_sevosa:0.0,Rana_capito:0.0):0.0):0.0):0.0,(((Rana_spectabilis:0.0,(Rana_omiltemana:0.0,Rana_sp3_KU_194559:0.0):0.0):0.0,((((Rana_tlaloci:0.0,Rana_neovolcanica:0.0):0.0,Rana_berlandieri:0.0):0.0,Rana_blairi:0.0):0.0,(Rana_sphenocephela:0.0,Rana_sphenocephela_utricularia:0.0):0.0):0.0):0.0,(Rana_forreri:0.0,(((Rana_magnaocularis:0.0,Rana_sp7_KU_194492:0.0):0.0,((Rana_yavapaiensis:0.0,Rana_onca:0.0):0.0,Rana_sp8_KU_195346:0.0):0.0):0.0,(((Rana_macroglossa:0.0,Rana_macroglossa_b:0.0):0.0,Rana_taylori:0.0):0.0,((Rana_sp4_AMNH_A_124167:0.0,Rana_sp5_LACM_146764:0.0):0.0,Rana_sp6_LACM_146810:0.0):0.0):0.0):0.0):0.0):0.0):0.0):0.0):0.0):0.0):0.0);"
                 }
             ]
         },
@@ -3080,12 +3094,12 @@
                 }
             ],
             "newick": "(((('Rana luteiventris MVZ225749','Rana luteiventris MVZ191016'),'Rana boylii'),('Rana muscosa',('Rana cascadae','Rana aurora')))Amerana,'Rana temporaria',(((('Rana septentrionales',((('Rana heckscheri',('Rana catesbiana X12841','Rana catesbiana DMH84R2')),('Rana clamitans','Rana okaloosae')),'Rana grylio')),'Rana virgatipes')Aquarana,('Rana sylvatica DMH84R43','Rana sylvatica')),((((('Rana pustulosa','Rana tarahumarae'),('Rana psilonota','Rana zweifelii'))Zweifelia,'Rana sierramadrensis')Torrentirana,((('Rana palustris',('Rana areolata',('Rana capito','Rana sevosa')))Nenirana,((((('Rana magnaocularis','Rana sp7 KU 194492'),('Rana sp8 KU 195346',('Rana onca','Rana yavapaiensis'))),(('Rana sp6 LACM 146810',('Rana sp5 LACM 146764','Rana sp4 AMNH A 124167')),('Rana taylori',('Rana macroglossa','Rana macroglossa b')))),'Rana forreri'),(('Rana spectabilis',('Rana sp3 KU 194559','Rana omiltemana')),(((('Rana tlaloci','Rana neovolcanica'),'Rana berlandieri'),'Rana blairi'),('Rana sphenocephela utricularia','Rana sphenocephela'))))Scurrilirana),(((('Rana chiricahuensis KU 194419',('Rana subaquavocalis','Rana chiricahuensis KU 194442')),'Rana sp2 KU 204420'),('Rana dunni','Rana montezumae'))Lacusirana,('Rana pipiens JSF1119','Rana pipiens Y10945'))Stertirana)Pantherana),(('Rana maculata',('Rana warszewitshii','Rana vibicaria')Trypheropsis)Levirana,(('Rana bwana',('Rana sp1 QCAZ13219',('Rana palmipes KU204425','Rana palmipes AMNHA118801'))),('Rana vaillanti','Rana juliani'))Lithobates)Ranula)Sierrana)Novirana);",
-            "nodes": [
+            "ot:dataDeposit": "https://treebase.org/treebase-web/search/study/taxa.html?id=1269&treeid=4419",
+            "phylogenies": [
                 {
                     "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                     "annotations": [],
-                    "newick": "((((Rana_luteiventris_MVZ225749,Rana_luteiventris_MVZ191016),Rana_boylii),(Rana_muscosa,(Rana_cascadae,Rana_aurora)))Amerana,Rana_temporaria,((((Rana_septentrionales,(((Rana_heckscheri,(Rana_catesbiana_X12841,Rana_catesbiana_DMH84R2)),(Rana_clamitans,Rana_okaloosae)),Rana_grylio)),Rana_virgatipes)Aquarana,(Rana_sylvatica_DMH84R43,Rana_sylvatica)),(((((Rana_pustulosa,Rana_tarahumarae),(Rana_psilonota,Rana_zweifelii))Zweifelia,Rana_sierramadrensis)Torrentirana,(((Rana_palustris,(Rana_areolata,(Rana_capito,Rana_sevosa)))Nenirana,(((((Rana_magnaocularis,Rana_sp7_KU_194492),(Rana_sp8_KU_195346,(Rana_onca,Rana_yavapaiensis))),((Rana_sp6_LACM_146810,(Rana_sp5_LACM_146764,Rana_sp4_AMNH_A_124167)),(Rana_taylori,(Rana_macroglossa,Rana_macroglossa_b)))),Rana_forreri),((Rana_spectabilis,(Rana_sp3_KU_194559,Rana_omiltemana)),((((Rana_tlaloci,Rana_neovolcanica),Rana_berlandieri),Rana_blairi),(Rana_sphenocephela_utricularia,Rana_sphenocephela))))Scurrilirana),((((Rana_chiricahuensis_KU_194419,(Rana_subaquavocalis,Rana_chiricahuensis_KU_194442)),Rana_sp2_KU_204420),(Rana_dunni,Rana_montezumae))Lacusirana,(Rana_pipiens_JSF1119,Rana_pipiens_Y10945))Stertirana)Pantherana),((Rana_maculata,(Rana_warszewitshii,Rana_vibicaria)Trypheropsis)Levirana,((Rana_bwana,(Rana_sp1_QCAZ13219,(Rana_palmipes_KU204425,Rana_palmipes_AMNHA118801))),(Rana_vaillanti,Rana_juliani))Lithobates)Ranula)Sierrana)Novirana);",
-                    "nodes": [
+                    "hasNode": [
                         {
                             "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node1",
                             "@type": [
@@ -3989,8 +4003,8 @@
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779219"
                             },
                             "matchedName": [
-                                "Rana zweifelii",
-                                "Rana zweifeli"
+                                "Rana zweifeli",
+                                "Rana zweifelii"
                             ],
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node45"
@@ -5776,10 +5790,10 @@
                             ],
                             "submittedName": "Rana juliani"
                         }
-                    ]
+                    ],
+                    "newick": "((((Rana_luteiventris_MVZ225749,Rana_luteiventris_MVZ191016),Rana_boylii),(Rana_muscosa,(Rana_cascadae,Rana_aurora)))Amerana,Rana_temporaria,((((Rana_septentrionales,(((Rana_heckscheri,(Rana_catesbiana_X12841,Rana_catesbiana_DMH84R2)),(Rana_clamitans,Rana_okaloosae)),Rana_grylio)),Rana_virgatipes)Aquarana,(Rana_sylvatica_DMH84R43,Rana_sylvatica)),(((((Rana_pustulosa,Rana_tarahumarae),(Rana_psilonota,Rana_zweifelii))Zweifelia,Rana_sierramadrensis)Torrentirana,(((Rana_palustris,(Rana_areolata,(Rana_capito,Rana_sevosa)))Nenirana,(((((Rana_magnaocularis,Rana_sp7_KU_194492),(Rana_sp8_KU_195346,(Rana_onca,Rana_yavapaiensis))),((Rana_sp6_LACM_146810,(Rana_sp5_LACM_146764,Rana_sp4_AMNH_A_124167)),(Rana_taylori,(Rana_macroglossa,Rana_macroglossa_b)))),Rana_forreri),((Rana_spectabilis,(Rana_sp3_KU_194559,Rana_omiltemana)),((((Rana_tlaloci,Rana_neovolcanica),Rana_berlandieri),Rana_blairi),(Rana_sphenocephela_utricularia,Rana_sphenocephela))))Scurrilirana),((((Rana_chiricahuensis_KU_194419,(Rana_subaquavocalis,Rana_chiricahuensis_KU_194442)),Rana_sp2_KU_204420),(Rana_dunni,Rana_montezumae))Lacusirana,(Rana_pipiens_JSF1119,Rana_pipiens_Y10945))Stertirana)Pantherana),((Rana_maculata,(Rana_warszewitshii,Rana_vibicaria)Trypheropsis)Levirana,((Rana_bwana,(Rana_sp1_QCAZ13219,(Rana_palmipes_KU204425,Rana_palmipes_AMNHA118801))),(Rana_vaillanti,Rana_juliani))Lithobates)Ranula)Sierrana)Novirana);"
                 }
             ],
-            "ot:dataDeposit": "https://treebase.org/treebase-web/search/study/taxa.html?id=1269&treeid=4419",
             "phylorefs": [
                 {
                     "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref1",

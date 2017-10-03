@@ -39,9 +39,13 @@
             "@type": "xsd:integer"
         },
 
-        "nodes": {
-            "@id": "tbd:nodes",
-            "@container": "@list"
+        "hasNode": {
+            "@id": "tbd:hasNode",
+            "@container": "@set"
+        },
+
+        "hasRootNode": {
+            "@id": "tbd:hasRootNode"
         },
 
         "phylogenies": {
@@ -51,7 +55,7 @@
 
         "labeledNodeData": {
             "@id": "tbd:labeledNodeData",
-            "@container": "@list"
+            "@container": "@set"
         },
 
         "annotations": {
@@ -94,11 +98,6 @@
         "siblings": {
             "@id": "phyloref:has_Sibling",
             "@type": "@id"
-        },
-
-        "nodes": {
-            "@id": "tbd:nodes",
-            "@container": "@set"
         },
 
         "taxonName": {
