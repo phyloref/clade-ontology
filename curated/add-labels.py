@@ -261,9 +261,10 @@ for testCase in paper['phylogenies']:
 
                 # Do we have any labeled data for this label?
                 if node_label.label not in labeled_data:
-                    sys.stderr.write("No labeled data available for label '{0}'.\n".format(
-                        node_label.label
-                    ))
+                    if FLAG_VERBOSE:
+                        sys.stderr.write("No labeled data available for label '{0}'.\n".format(
+                            node_label.label
+                        ))
                 else:
                     nodeData = labeled_data[node_label.label]
 
