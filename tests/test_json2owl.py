@@ -25,5 +25,8 @@ def test_json_to_owl(paper_json):
         # On Windows, this will end up being Unicode 16 -- which is fine,
         # Java seems to be able to load them just fine!
 
+        assert os.system('java -jar ../../jphyloref/jphyloref.jar test paper.owl') == 0
+
     finally:
         os.chdir(current_path)
+
