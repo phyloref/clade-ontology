@@ -385,10 +385,10 @@ for testCase in paper['phylogenies']:
                         continue
 
                     specifiers.append({
-                        "@specifier_type": "owl:Class",
+                        "@type": "owl:Class",
                         "intersectionOf": [
                             { "@id": "obo:CDAO_0000140" },  # Node and
-                            { "@specifier_type": "owl:Restriction",   # <key> <value>
+                            { "@type": "owl:Restriction",   # <key> <value>
                               "onProperty": key,
                               "hasValue": tunit[key]
                             }
@@ -402,11 +402,11 @@ for testCase in paper['phylogenies']:
                 if 'has' + specifier_type not in phyloref:
                     phyloref['has' + specifier_type] = []
                 
-                phyloref['has' + specifier_type].append(specifier_id)
+                phyloref['has' + specifier_type].append({'@id': specifier_id})
 
                 return {
                     "@id": specifier_id,
-                    "@specifier_type": [ "owl:Class", "tbd:" + specifier_type ],
+                    "@type": [ "owl:Class", "tbd:" + specifier_type ],
                     "unionOf": specifiers
                 }
 
