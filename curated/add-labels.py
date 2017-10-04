@@ -384,6 +384,8 @@ for testCase in paper['phylogenies']:
                     if key == 'dc:description':
                         continue
 
+                    # TODO: add support for fields containing other fields
+
                     specifiers.append({
                         "@type": "owl:Class",
                         "intersectionOf": [
