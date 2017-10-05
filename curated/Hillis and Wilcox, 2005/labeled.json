@@ -10,24 +10,15 @@
     "curator": "Gaurav Vaidya <gaurav@ggvaidya.com>",
     "http://example.org/TBD#hasExternalSpecifier": {
         "@id": "tbd:hasExternalSpecifier",
-        "@type": "owl:ObjectProperty",
-        "rdfs:subPropertyOf": {
-            "@id": "http://example.org/TBD#hasSpecifier"
-        }
+        "@type": "owl:ObjectProperty"
     },
     "http://example.org/TBD#hasInternalSpecifier": {
         "@id": "tbd:hasInternalSpecifier",
-        "@type": "owl:ObjectProperty",
-        "rdfs:subPropertyOf": {
-            "@id": "http://example.org/TBD#hasSpecifier"
-        }
+        "@type": "owl:ObjectProperty"
     },
     "http://example.org/TBD#hasNode": {
         "@id": "tbd:hasNode",
-        "@type": "owl:ObjectProperty",
-        "owl:inverseOf": {
-            "@id": "http://example.org/TBD#inPhylogeny"
-        }
+        "@type": "owl:ObjectProperty"
     },
     "http://example.org/TBD#hasSpecifier": {
         "@id": "tbd:hasSpecifier",
@@ -35,10 +26,7 @@
     },
     "http://example.org/TBD#inPhylogeny": {
         "@id": "tbd:inPhylogeny",
-        "@type": "owl:ObjectProperty",
-        "owl:inverseOf": {
-            "@id": "http://example.org/TBD#hasNode"
-        }
+        "@type": "owl:ObjectProperty"
     },
     "http://phylotastic.org/terms/tnrs.rdf#matchedName": {
         "@id": "tnrs:matchedName",
@@ -104,6 +92,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node3",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node4"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": []
                         },
                         {
@@ -115,6 +104,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana temporaria",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node3",
@@ -138,6 +128,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node5",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node6"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node2",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node4"
@@ -155,6 +146,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node7",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node8"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node6"
                             ]
@@ -168,6 +160,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana boylii",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node8"
@@ -190,6 +183,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node9",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node10"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node7"
                             ]
@@ -203,6 +197,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana luteiventris",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node10"
@@ -222,6 +217,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana luteiventris",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node9"
@@ -244,6 +240,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node11",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node12"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node5"
                             ]
@@ -257,6 +254,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana muscosa",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node12"
@@ -279,6 +277,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node13",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node14"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node11"
                             ]
@@ -292,6 +291,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana aurora",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node14"
@@ -311,6 +311,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana cascadae",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node13"
@@ -333,6 +334,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node15",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node16"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node2",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node3"
@@ -350,6 +352,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node17",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node18"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node16"
                             ]
@@ -366,6 +369,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node19",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node20"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node18"
                             ]
@@ -379,6 +383,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana sylvatica",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node20"
@@ -398,6 +403,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana sylvatica",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node19"
@@ -420,6 +426,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node21",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node22"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node17"
                             ]
@@ -436,6 +443,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node23",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node24"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node22"
                             ]
@@ -449,6 +457,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana septentrionales",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node24"
@@ -471,6 +480,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node25",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node26"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node23"
                             ]
@@ -484,6 +494,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana grylio",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node26"
@@ -506,6 +517,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node27",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node28"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node25"
                             ]
@@ -522,6 +534,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node29",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node30"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node28"
                             ]
@@ -535,6 +548,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana okaloosae",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node30"
@@ -554,6 +568,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana clamitans",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node29"
@@ -576,6 +591,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node31",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node32"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node27"
                             ]
@@ -589,6 +605,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana heckscheri",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node32"
@@ -611,6 +628,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node33",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node34"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node31"
                             ]
@@ -624,6 +642,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana catesbiana",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node34"
@@ -643,6 +662,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana catesbiana",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node33"
@@ -662,6 +682,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana virgatipes",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node21"
@@ -684,6 +705,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node35",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node36"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node15"
                             ]
@@ -700,6 +722,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node37",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node38"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node36"
                             ]
@@ -716,6 +739,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node39",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node40"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node38"
                             ]
@@ -729,6 +753,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana maculata",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node40"
@@ -751,6 +776,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node41",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node42"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node39"
                             ]
@@ -764,6 +790,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana vibicaria",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node42"
@@ -783,6 +810,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana warszewitshii",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node41"
@@ -805,6 +833,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node43",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node44"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node37"
                             ]
@@ -821,6 +850,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node45",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node46"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node44"
                             ]
@@ -837,6 +867,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node47",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node48"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node46"
                             ]
@@ -853,6 +884,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node49",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node50"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node48"
                             ]
@@ -866,6 +898,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana palmipes",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node50"
@@ -885,6 +918,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana palmipes",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node49"
@@ -904,6 +938,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana sp1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node47"
@@ -920,6 +955,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana bwana",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node45"
@@ -942,6 +978,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node51",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node52"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node43"
                             ]
@@ -955,6 +992,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana vaillanti",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node52"
@@ -974,6 +1012,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana juliani",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node51"
@@ -996,6 +1035,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node53",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node54"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node35"
                             ]
@@ -1012,6 +1052,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node55",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node56"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node54"
                             ]
@@ -1025,6 +1066,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana sierramadrensis",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node56"
@@ -1047,6 +1089,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node57",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node58"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node55"
                             ]
@@ -1063,6 +1106,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node59",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node60"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node58"
                             ]
@@ -1076,6 +1120,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana psilonota",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node60"
@@ -1095,6 +1140,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana zweifelii",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node59"
@@ -1117,6 +1163,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node61",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node62"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node57"
                             ]
@@ -1130,6 +1177,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana tarahumarae",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node62"
@@ -1149,6 +1197,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana pustulosa",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node61"
@@ -1171,6 +1220,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node63",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node64"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node53"
                             ]
@@ -1187,6 +1237,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node65",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node66"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node64"
                             ]
@@ -1203,6 +1254,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node67",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node68"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node66"
                             ]
@@ -1216,6 +1268,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana pipiens",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node68"
@@ -1235,6 +1288,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana pipiens",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node67"
@@ -1257,6 +1311,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node69",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node70"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node65"
                             ]
@@ -1273,6 +1328,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node71",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node72"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node70"
                             ]
@@ -1286,6 +1342,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana dunni",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node72"
@@ -1305,6 +1362,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana montezumae",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node71"
@@ -1327,6 +1385,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node73",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node74"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node69"
                             ]
@@ -1340,6 +1399,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana sp2",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node74"
@@ -1359,6 +1419,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node75",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node76"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node73"
                             ]
@@ -1375,6 +1436,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node77",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node78"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node76"
                             ]
@@ -1388,6 +1450,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana chiricahuensis",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node78"
@@ -1407,6 +1470,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana subaquavocalis",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node77"
@@ -1426,6 +1490,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana chiricahuensis",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node75"
@@ -1448,6 +1513,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node79",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node80"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node63"
                             ]
@@ -1464,6 +1530,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node81",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node82"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node80"
                             ]
@@ -1477,6 +1544,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana palustris",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node82"
@@ -1499,6 +1567,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node83",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node84"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node81"
                             ]
@@ -1512,6 +1581,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana areolata",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node84"
@@ -1534,6 +1604,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node85",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node86"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node83"
                             ]
@@ -1547,6 +1618,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana sevosa",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node86"
@@ -1566,6 +1638,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana capito",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node85"
@@ -1588,6 +1661,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node87",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node88"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node79"
                             ]
@@ -1604,6 +1678,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node89",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node90"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node88"
                             ]
@@ -1620,6 +1695,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node91",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node92"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node90"
                             ]
@@ -1633,6 +1709,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana spectabilis",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node92"
@@ -1655,6 +1732,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node93",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node94"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node91"
                             ]
@@ -1668,6 +1746,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana omiltemana",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node94"
@@ -1687,6 +1766,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana sp3",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node93"
@@ -1706,6 +1786,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node95",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node96"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node89"
                             ]
@@ -1722,6 +1803,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node97",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node98"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node96"
                             ]
@@ -1738,6 +1820,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node99",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node100"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node98"
                             ]
@@ -1754,6 +1837,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node101",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node102"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node100"
                             ]
@@ -1767,6 +1851,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana tlaloci",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node102"
@@ -1786,6 +1871,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana neovolcanica",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node101"
@@ -1805,6 +1891,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana berlandieri",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node99"
@@ -1824,6 +1911,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana blairi",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node97"
@@ -1846,6 +1934,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node103",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node104"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node95"
                             ]
@@ -1859,6 +1948,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana sphenocephela",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node104"
@@ -1878,6 +1968,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana sphenocephela",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node103"
@@ -1899,6 +1990,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node105",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node106"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node87"
                             ]
@@ -1912,6 +2004,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana forreri",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node106"
@@ -1934,6 +2027,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node107",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node108"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node105"
                             ]
@@ -1950,6 +2044,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node109",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node110"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node108"
                             ]
@@ -1966,6 +2061,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node111",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node112"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node110"
                             ]
@@ -1979,6 +2075,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana magnaocularis",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node112"
@@ -1998,6 +2095,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana sp7",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node111"
@@ -2017,6 +2115,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node113",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node114"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node109"
                             ]
@@ -2033,6 +2132,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node115",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node116"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node114"
                             ]
@@ -2046,6 +2146,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana yavapaiensis",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node116"
@@ -2065,6 +2166,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana onca",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node115"
@@ -2084,6 +2186,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana sp8",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node113"
@@ -2103,6 +2206,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node117",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node118"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node107"
                             ]
@@ -2119,6 +2223,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node119",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node120"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node118"
                             ]
@@ -2135,6 +2240,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node121",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node122"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node120"
                             ]
@@ -2148,6 +2254,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana macroglossa",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node122"
@@ -2167,6 +2274,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana macroglossa",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node121"
@@ -2186,6 +2294,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana taylori",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node119"
@@ -2208,6 +2317,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node123",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node124"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node117"
                             ]
@@ -2224,6 +2334,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node125",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node126"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node124"
                             ]
@@ -2237,6 +2348,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana sp4",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node126"
@@ -2253,6 +2365,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana sp5",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node125"
@@ -2269,6 +2382,7 @@
                                 ]
                             ],
                             "children": [],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1",
                             "matchedName": "Rana sp6",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file1_tree1_node123"
@@ -2284,7 +2398,7 @@
         {
             "labeledNodeData": [
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "catalogNumber": "204370",
                         "genBankID": "AY779229",
                         "locatedAt": {
@@ -2297,7 +2411,7 @@
                     "matchedName": "Rana areolata"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779196",
                         "catalogNumber": "188960",
                         "locatedAt": {
@@ -2310,7 +2424,7 @@
                     "matchedName": "Rana aurora"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779235",
                         "catalogNumber": "1136",
                         "locatedAt": {
@@ -2323,7 +2437,7 @@
                     "matchedName": "Rana berlandieri"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779237",
                         "catalogNumber": "830",
                         "locatedAt": {
@@ -2336,7 +2450,7 @@
                     "matchedName": "Rana blairi"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779192",
                         "catalogNumber": "148929",
                         "locatedAt": {
@@ -2349,7 +2463,7 @@
                     "matchedName": "Rana boylii"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779212",
                         "catalogNumber": "13964",
                         "locatedAt": {
@@ -2362,7 +2476,7 @@
                     "matchedName": "Rana bwana"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779231",
                         "catalogNumber": "60195",
                         "locatedAt": {
@@ -2375,7 +2489,7 @@
                     "matchedName": "Rana capito"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779197",
                         "catalogNumber": "148946",
                         "locatedAt": {
@@ -2388,7 +2502,7 @@
                     "matchedName": "Rana cascadae"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "GB X12841",
                         "locatedAt": {
                             "verbatimLocality": "GenBank sequence; locality unknown"
@@ -2399,7 +2513,7 @@
                     "matchedName": "Rana catesbeiana"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779206",
                         "catalogNumber": "84-R2",
                         "locatedAt": {
@@ -2412,7 +2526,7 @@
                     "matchedName": "Rana catesbeiana"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779225",
                         "catalogNumber": "194442",
                         "locatedAt": {
@@ -2425,7 +2539,7 @@
                     "matchedName": "Rana chiricahuensis"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779226",
                         "catalogNumber": "194419",
                         "locatedAt": {
@@ -2438,7 +2552,7 @@
                     "matchedName": "Rana chiricahuensis"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779204",
                         "catalogNumber": "1118",
                         "locatedAt": {
@@ -2451,7 +2565,7 @@
                     "matchedName": "Rana clamitans"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779222",
                         "catalogNumber": "194527",
                         "locatedAt": {
@@ -2464,7 +2578,7 @@
                     "matchedName": "Rana dunni"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779233",
                         "catalogNumber": "194581",
                         "locatedAt": {
@@ -2477,7 +2591,7 @@
                     "matchedName": "Rana forreri"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779201",
                         "catalogNumber": "175945",
                         "locatedAt": {
@@ -2490,7 +2604,7 @@
                     "matchedName": "Rana grylio"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779205",
                         "catalogNumber": "164908",
                         "locatedAt": {
@@ -2503,7 +2617,7 @@
                     "matchedName": "Rana heckscheri"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779215",
                         "catalogNumber": "60324",
                         "locatedAt": {
@@ -2516,7 +2630,7 @@
                     "matchedName": "Rana juliani"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779193",
                         "catalogNumber": "225749",
                         "locatedAt": {
@@ -2529,7 +2643,7 @@
                     "matchedName": "Rana luteiventris"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779194",
                         "catalogNumber": "191016",
                         "locatedAt": {
@@ -2542,7 +2656,7 @@
                     "matchedName": "Rana luteiventris"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779242",
                         "catalogNumber": "195138",
                         "locatedAt": {
@@ -2556,7 +2670,7 @@
                 },
                 {
                     "comment": "I'm assuming this is 'b', because it's listed second in the table, but there's no clear evidence one way or the other.",
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779243",
                         "catalogNumber": "A-17185",
                         "locatedAt": {
@@ -2569,7 +2683,7 @@
                     "matchedName": "Rana macroglossa"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779207",
                         "catalogNumber": "195258",
                         "locatedAt": {
@@ -2582,7 +2696,7 @@
                     "matchedName": "Rana maculata"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779239",
                         "catalogNumber": "194592",
                         "locatedAt": {
@@ -2595,7 +2709,7 @@
                     "matchedName": "Rana magnaocularis"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779223",
                         "catalogNumber": "195251",
                         "locatedAt": {
@@ -2608,7 +2722,7 @@
                     "matchedName": "Rana montezumae"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779195",
                         "catalogNumber": "149006",
                         "locatedAt": {
@@ -2621,7 +2735,7 @@
                     "matchedName": "Rana muscosa"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779236",
                         "catalogNumber": "194536",
                         "locatedAt": {
@@ -2634,7 +2748,7 @@
                     "matchedName": "Rana neovolcanica"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779203",
                         "locatedAt": {
                             "verbatimLocality": "toe clip (released): USA:Florida: Santa Rosa: 5 km E Harold, Garnier Creek (collected by Paul Moler)"
@@ -2645,7 +2759,7 @@
                     "matchedName": "Rana okaloosae"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779238",
                         "catalogNumber": "195179",
                         "locatedAt": {
@@ -2658,7 +2772,7 @@
                     "matchedName": "Rana omiltemana"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779249",
                         "catalogNumber": "3542",
                         "locatedAt": {
@@ -2671,7 +2785,7 @@
                     "matchedName": "Rana onca"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779210",
                         "catalogNumber": "A-118801",
                         "locatedAt": {
@@ -2684,7 +2798,7 @@
                     "matchedName": "Rana palmipes"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779211",
                         "catalogNumber": "202896",
                         "locatedAt": {
@@ -2697,7 +2811,7 @@
                     "matchedName": "Rana palmipes"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779228",
                         "catalogNumber": "204425",
                         "locatedAt": {
@@ -2710,7 +2824,7 @@
                     "matchedName": "Rana palustris"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "GBX12841",
                         "locatedAt": {
                             "verbatimLocality": "GenBank sequence; locality unknown"
@@ -2721,7 +2835,7 @@
                     "matchedName": "Rana pipiens"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779221",
                         "catalogNumber": "1119",
                         "locatedAt": {
@@ -2734,7 +2848,7 @@
                     "matchedName": "Rana pipiens"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779217",
                         "catalogNumber": "195119",
                         "locatedAt": {
@@ -2747,7 +2861,7 @@
                     "matchedName": "Rana psilonota"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779220",
                         "catalogNumber": "200776",
                         "locatedAt": {
@@ -2760,7 +2874,7 @@
                     "matchedName": "Rana pustulosa"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779200",
                         "locatedAt": {
                             "verbatimLocality": "TNHC tissue collection: Canada: Ontario: Grey"
@@ -2772,7 +2886,7 @@
                     "matchedName": "Rana septentrionalis"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779230",
                         "catalogNumber": "60194",
                         "locatedAt": {
@@ -2785,7 +2899,7 @@
                     "matchedName": "Rana sevosa"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779216",
                         "catalogNumber": "195181",
                         "locatedAt": {
@@ -2798,7 +2912,7 @@
                     "matchedName": "Rana sierramadrensis"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779232",
                         "catalogNumber": "195186",
                         "locatedAt": {
@@ -2813,7 +2927,7 @@
                     "matchedName": "Rana spectabilis"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779251",
                         "catalogNumber": "845",
                         "locatedAt": {
@@ -2826,7 +2940,7 @@
                     "matchedName": "Rana sphenocephala"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779252",
                         "catalogNumber": "7448",
                         "locatedAt": {
@@ -2839,7 +2953,7 @@
                     "matchedName": "Rana sphenocephala utricularia"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779227",
                         "locatedAt": {
                             "verbatimLocality": "James Platz Collection (specimens destroyed, DNA in TNHC tissue collection): USA: Arizona: Cochise: Ramsey Canyon"
@@ -2851,7 +2965,7 @@
                     "matchedName": "Rana subaquavocalis"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779198",
                         "catalogNumber": "137426",
                         "locatedAt": {
@@ -2864,7 +2978,7 @@
                     "matchedName": "Rana sylvatica"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779199",
                         "catalogNumber": "84-R43",
                         "locatedAt": {
@@ -2877,7 +2991,7 @@
                     "matchedName": "Rana sylvatica"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779218",
                         "catalogNumber": "194596",
                         "locatedAt": {
@@ -2890,7 +3004,7 @@
                     "matchedName": "Rana tarahumarae"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779244",
                         "catalogNumber": "55963",
                         "locatedAt": {
@@ -2903,7 +3017,7 @@
                     "matchedName": "Rana taylori"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779191",
                         "catalogNumber": "84-R1",
                         "locatedAt": {
@@ -2916,7 +3030,7 @@
                     "matchedName": "Rana temporaria"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779234",
                         "catalogNumber": "194436",
                         "locatedAt": {
@@ -2929,7 +3043,7 @@
                     "matchedName": "Rana tlaloci"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779214",
                         "catalogNumber": "195299",
                         "locatedAt": {
@@ -2942,7 +3056,7 @@
                     "matchedName": "Rana vaillanti"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779208",
                         "catalogNumber": "149033",
                         "locatedAt": {
@@ -2955,7 +3069,7 @@
                     "matchedName": "Rana vibicaria"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779202",
                         "catalogNumber": "175944",
                         "locatedAt": {
@@ -2968,7 +3082,7 @@
                     "matchedName": "Rana virgatipes"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779209",
                         "catalogNumber": "1127",
                         "locatedAt": {
@@ -2981,7 +3095,7 @@
                     "matchedName": "Rana warszewitschii"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779240",
                         "catalogNumber": "194423",
                         "locatedAt": {
@@ -2994,7 +3108,7 @@
                     "matchedName": "Rana yavapaiensis"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779219",
                         "catalogNumber": "195310",
                         "locatedAt": {
@@ -3007,7 +3121,7 @@
                     "matchedName": "Rana zweifeli"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779213",
                         "catalogNumber": "13219",
                         "locatedAt": {
@@ -3020,7 +3134,7 @@
                     "matchedName": "Rana sp1"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779224",
                         "catalogNumber": "204420",
                         "locatedAt": {
@@ -3033,7 +3147,7 @@
                     "matchedName": "Rana sp2"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779250",
                         "catalogNumber": "194559",
                         "locatedAt": {
@@ -3046,7 +3160,7 @@
                     "matchedName": "Rana sp3"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779245",
                         "catalogNumber": "A-124167",
                         "locatedAt": {
@@ -3059,7 +3173,7 @@
                     "matchedName": "Rana sp4"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779246",
                         "catalogNumber": "146764",
                         "locatedAt": {
@@ -3072,7 +3186,7 @@
                     "matchedName": "Rana sp5"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779247",
                         "catalogNumber": "146810",
                         "locatedAt": {
@@ -3085,7 +3199,7 @@
                     "matchedName": "Rana sp6"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779241",
                         "catalogNumber": "194492",
                         "locatedAt": {
@@ -3098,7 +3212,7 @@
                     "matchedName": "Rana sp7"
                 },
                 {
-                    "hasEvidence": {
+                    "hasBasisOfRecord": {
                         "GenBankID": "AY779248",
                         "catalogNumber": "195346",
                         "locatedAt": {
@@ -3131,6 +3245,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node3",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node4"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": []
                         },
                         {
@@ -3145,6 +3260,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node5",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node6"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": "Amerana",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node3",
@@ -3164,6 +3280,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node7",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node8"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node6"
                             ]
@@ -3180,6 +3297,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node9",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node10"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node8"
                             ]
@@ -3193,7 +3311,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779193",
                                 "catalogNumber": "225749",
                                 "locatedAt": {
@@ -3202,6 +3320,7 @@
                                 "ownerInstitutionCode": "MVZ",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779193"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana luteiventris"
                             ],
@@ -3219,7 +3338,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779194",
                                 "catalogNumber": "191016",
                                 "locatedAt": {
@@ -3228,6 +3347,7 @@
                                 "ownerInstitutionCode": "MVZ",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779194"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana luteiventris"
                             ],
@@ -3245,7 +3365,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779192",
                                 "catalogNumber": "148929",
                                 "locatedAt": {
@@ -3254,6 +3374,7 @@
                                 "ownerInstitutionCode": "MVZ",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779192"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana boylii"
                             ],
@@ -3274,6 +3395,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node11",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node12"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node5"
                             ]
@@ -3287,7 +3409,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779195",
                                 "catalogNumber": "149006",
                                 "locatedAt": {
@@ -3296,6 +3418,7 @@
                                 "ownerInstitutionCode": "MVZ",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779195"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana muscosa"
                             ],
@@ -3316,6 +3439,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node13",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node14"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node11"
                             ]
@@ -3329,7 +3453,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779197",
                                 "catalogNumber": "148946",
                                 "locatedAt": {
@@ -3338,6 +3462,7 @@
                                 "ownerInstitutionCode": "MVZ",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779197"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana cascadae"
                             ],
@@ -3355,7 +3480,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779196",
                                 "catalogNumber": "188960",
                                 "locatedAt": {
@@ -3364,6 +3489,7 @@
                                 "ownerInstitutionCode": "MVZ",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779196"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana aurora"
                             ],
@@ -3381,7 +3507,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779191",
                                 "catalogNumber": "84-R1",
                                 "locatedAt": {
@@ -3390,6 +3516,7 @@
                                 "ownerInstitutionCode": "DMH",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779191"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana temporaria"
                             ],
@@ -3411,6 +3538,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node15",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node16"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": "Novirana",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node2",
@@ -3430,6 +3558,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node17",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node18"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node16"
                             ]
@@ -3446,6 +3575,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node19",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node20"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": "Aquarana",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node18"
@@ -3464,6 +3594,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node21",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node22"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node20"
                             ]
@@ -3477,7 +3608,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779200",
                                 "locatedAt": {
                                     "verbatimLocality": "TNHC tissue collection: Canada: Ontario: Grey"
@@ -3485,6 +3616,7 @@
                                 "ownerInstitutionCode": "TNHC tissue collection",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779200"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana septentrionales",
                                 "Rana septentrionalis"
@@ -3506,6 +3638,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node23",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node24"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node21"
                             ]
@@ -3522,6 +3655,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node25",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node26"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node24"
                             ]
@@ -3538,6 +3672,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node27",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node28"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node26"
                             ]
@@ -3551,7 +3686,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779205",
                                 "catalogNumber": "164908",
                                 "locatedAt": {
@@ -3560,6 +3695,7 @@
                                 "ownerInstitutionCode": "MVZ",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779205"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana heckscheri"
                             ],
@@ -3580,6 +3716,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node29",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node30"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node27"
                             ]
@@ -3593,13 +3730,14 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "GB X12841",
                                 "locatedAt": {
                                     "verbatimLocality": "GenBank sequence; locality unknown"
                                 },
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/GB X12841"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana catesbeiana",
                                 "Rana catesbiana"
@@ -3618,7 +3756,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779206",
                                 "catalogNumber": "84-R2",
                                 "locatedAt": {
@@ -3627,6 +3765,7 @@
                                 "ownerInstitutionCode": "DMH",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779206"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana catesbeiana",
                                 "Rana catesbiana"
@@ -3648,6 +3787,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node31",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node32"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node25"
                             ]
@@ -3661,7 +3801,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779204",
                                 "catalogNumber": "1118",
                                 "locatedAt": {
@@ -3670,6 +3810,7 @@
                                 "ownerInstitutionCode": "JSF",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779204"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana clamitans"
                             ],
@@ -3687,13 +3828,14 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779203",
                                 "locatedAt": {
                                     "verbatimLocality": "toe clip (released): USA:Florida: Santa Rosa: 5 km E Harold, Garnier Creek (collected by Paul Moler)"
                                 },
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779203"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana okaloosae"
                             ],
@@ -3711,7 +3853,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779201",
                                 "catalogNumber": "175945",
                                 "locatedAt": {
@@ -3720,6 +3862,7 @@
                                 "ownerInstitutionCode": "MVZ",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779201"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana grylio"
                             ],
@@ -3737,7 +3880,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779202",
                                 "catalogNumber": "175944",
                                 "locatedAt": {
@@ -3746,6 +3889,7 @@
                                 "ownerInstitutionCode": "MVZ",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779202"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana virgatipes"
                             ],
@@ -3766,6 +3910,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node33",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node34"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node17"
                             ]
@@ -3779,7 +3924,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779199",
                                 "catalogNumber": "84-R43",
                                 "locatedAt": {
@@ -3788,6 +3933,7 @@
                                 "ownerInstitutionCode": "DMH",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779199"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana sylvatica"
                             ],
@@ -3805,7 +3951,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779198",
                                 "catalogNumber": "137426",
                                 "locatedAt": {
@@ -3814,6 +3960,7 @@
                                 "ownerInstitutionCode": "MVZ",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779198"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana sylvatica"
                             ],
@@ -3834,6 +3981,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node35",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node36"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": "Sierrana",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node15"
@@ -3852,6 +4000,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node37",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node38"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node36"
                             ]
@@ -3868,6 +4017,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node39",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node40"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": "Torrentirana",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node38"
@@ -3886,6 +4036,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node41",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node42"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": "Zweifelia",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node40"
@@ -3904,6 +4055,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node43",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node44"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node42"
                             ]
@@ -3917,7 +4069,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779220",
                                 "catalogNumber": "200776",
                                 "locatedAt": {
@@ -3926,6 +4078,7 @@
                                 "ownerInstitutionCode": "KU",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779220"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana pustulosa"
                             ],
@@ -3943,7 +4096,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779218",
                                 "catalogNumber": "194596",
                                 "locatedAt": {
@@ -3952,6 +4105,7 @@
                                 "ownerInstitutionCode": "KU",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779218"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana tarahumarae"
                             ],
@@ -3972,6 +4126,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node45",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node46"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node41"
                             ]
@@ -3985,7 +4140,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779217",
                                 "catalogNumber": "195119",
                                 "locatedAt": {
@@ -3994,6 +4149,7 @@
                                 "ownerInstitutionCode": "KU",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779217"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana psilonota"
                             ],
@@ -4011,7 +4167,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779219",
                                 "catalogNumber": "195310",
                                 "locatedAt": {
@@ -4020,6 +4176,7 @@
                                 "ownerInstitutionCode": "KU",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779219"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana zweifeli",
                                 "Rana zweifelii"
@@ -4038,7 +4195,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779216",
                                 "catalogNumber": "195181",
                                 "locatedAt": {
@@ -4047,6 +4204,7 @@
                                 "ownerInstitutionCode": "KU",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779216"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana sierramadrensis"
                             ],
@@ -4067,6 +4225,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node47",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node48"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": "Pantherana",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node37"
@@ -4085,6 +4244,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node49",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node50"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node48"
                             ]
@@ -4101,6 +4261,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node51",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node52"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": "Nenirana",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node50"
@@ -4116,7 +4277,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779228",
                                 "catalogNumber": "204425",
                                 "locatedAt": {
@@ -4125,6 +4286,7 @@
                                 "ownerInstitutionCode": "KU",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779228"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana palustris"
                             ],
@@ -4145,6 +4307,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node53",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node54"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node51"
                             ]
@@ -4158,7 +4321,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "catalogNumber": "204370",
                                 "genBankID": "AY779229",
                                 "locatedAt": {
@@ -4167,6 +4330,7 @@
                                 "ownerInstitutionCode": "KU",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779229"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana areolata"
                             ],
@@ -4187,6 +4351,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node55",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node56"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node53"
                             ]
@@ -4200,7 +4365,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779231",
                                 "catalogNumber": "60195",
                                 "locatedAt": {
@@ -4209,6 +4374,7 @@
                                 "ownerInstitutionCode": "TNHC",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779231"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana capito"
                             ],
@@ -4226,7 +4392,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779230",
                                 "catalogNumber": "60194",
                                 "locatedAt": {
@@ -4235,6 +4401,7 @@
                                 "ownerInstitutionCode": "TNHC",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779230"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana sevosa"
                             ],
@@ -4255,6 +4422,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node57",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node58"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": "Scurrilirana",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node49"
@@ -4273,6 +4441,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node59",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node60"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node58"
                             ]
@@ -4289,6 +4458,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node61",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node62"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node60"
                             ]
@@ -4305,6 +4475,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node63",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node64"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node62"
                             ]
@@ -4321,6 +4492,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node65",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node66"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node64"
                             ]
@@ -4334,7 +4506,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779239",
                                 "catalogNumber": "194592",
                                 "locatedAt": {
@@ -4343,6 +4515,7 @@
                                 "ownerInstitutionCode": "KU",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779239"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana magnaocularis"
                             ],
@@ -4360,7 +4533,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779241",
                                 "catalogNumber": "194492",
                                 "locatedAt": {
@@ -4369,6 +4542,7 @@
                                 "ownerInstitutionCode": "KU",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779241"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana sp7"
                             ],
@@ -4389,6 +4563,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node67",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node68"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node63"
                             ]
@@ -4402,7 +4577,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779248",
                                 "catalogNumber": "195346",
                                 "locatedAt": {
@@ -4411,6 +4586,7 @@
                                 "ownerInstitutionCode": "KU",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779248"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana sp8"
                             ],
@@ -4431,6 +4607,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node69",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node70"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node67"
                             ]
@@ -4444,7 +4621,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779249",
                                 "catalogNumber": "3542",
                                 "locatedAt": {
@@ -4453,6 +4630,7 @@
                                 "ownerInstitutionCode": "LVT",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779249"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana onca"
                             ],
@@ -4470,7 +4648,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779240",
                                 "catalogNumber": "194423",
                                 "locatedAt": {
@@ -4479,6 +4657,7 @@
                                 "ownerInstitutionCode": "KU",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779240"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana yavapaiensis"
                             ],
@@ -4499,6 +4678,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node71",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node72"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node61"
                             ]
@@ -4515,6 +4695,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node73",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node74"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node72"
                             ]
@@ -4528,7 +4709,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779247",
                                 "catalogNumber": "146810",
                                 "locatedAt": {
@@ -4537,6 +4718,7 @@
                                 "ownerInstitutionCode": "LACM",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779247"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana sp6"
                             ],
@@ -4557,6 +4739,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node75",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node76"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node73"
                             ]
@@ -4570,7 +4753,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779246",
                                 "catalogNumber": "146764",
                                 "locatedAt": {
@@ -4579,6 +4762,7 @@
                                 "ownerInstitutionCode": "LACM",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779246"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana sp5"
                             ],
@@ -4596,7 +4780,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779245",
                                 "catalogNumber": "A-124167",
                                 "locatedAt": {
@@ -4605,6 +4789,7 @@
                                 "ownerInstitutionCode": "AMNH",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779245"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana sp4"
                             ],
@@ -4625,6 +4810,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node77",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node78"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node71"
                             ]
@@ -4638,7 +4824,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779244",
                                 "catalogNumber": "55963",
                                 "locatedAt": {
@@ -4647,6 +4833,7 @@
                                 "ownerInstitutionCode": "TCWC",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779244"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana taylori"
                             ],
@@ -4667,6 +4854,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node79",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node80"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node77"
                             ]
@@ -4680,7 +4868,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779242",
                                 "catalogNumber": "195138",
                                 "locatedAt": {
@@ -4689,6 +4877,7 @@
                                 "ownerInstitutionCode": "KU",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779242"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana macroglossa"
                             ],
@@ -4707,7 +4896,7 @@
                             ],
                             "children": [],
                             "comment": "I'm assuming this is 'b', because it's listed second in the table, but there's no clear evidence one way or the other.",
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779243",
                                 "catalogNumber": "A-17185",
                                 "locatedAt": {
@@ -4716,6 +4905,7 @@
                                 "ownerInstitutionCode": "UTA",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779243"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana macroglossa"
                             ],
@@ -4733,7 +4923,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779233",
                                 "catalogNumber": "194581",
                                 "locatedAt": {
@@ -4742,6 +4932,7 @@
                                 "ownerInstitutionCode": "KU",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779233"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana forreri"
                             ],
@@ -4762,6 +4953,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node81",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node82"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node57"
                             ]
@@ -4778,6 +4970,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node83",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node84"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node82"
                             ]
@@ -4791,7 +4984,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779232",
                                 "catalogNumber": "195186",
                                 "locatedAt": {
@@ -4802,6 +4995,7 @@
                                 "skos:exactMatch": "http://portal.vertnet.org/o/ku/kuh?id=be19ff1e-b069-11e3-8cfe-90b11c41863e",
                                 "typeStatus": "holotype of Rana spectabilis"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana spectabilis"
                             ],
@@ -4822,6 +5016,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node85",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node86"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node83"
                             ]
@@ -4835,7 +5030,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779250",
                                 "catalogNumber": "194559",
                                 "locatedAt": {
@@ -4844,6 +5039,7 @@
                                 "ownerInstitutionCode": "KU",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779250"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana sp3"
                             ],
@@ -4861,7 +5057,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779238",
                                 "catalogNumber": "195179",
                                 "locatedAt": {
@@ -4870,6 +5066,7 @@
                                 "ownerInstitutionCode": "KU",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779238"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana omiltemana"
                             ],
@@ -4890,6 +5087,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node87",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node88"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node81"
                             ]
@@ -4906,6 +5104,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node89",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node90"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node88"
                             ]
@@ -4922,6 +5121,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node91",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node92"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node90"
                             ]
@@ -4938,6 +5138,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node93",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node94"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node92"
                             ]
@@ -4951,7 +5152,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779234",
                                 "catalogNumber": "194436",
                                 "locatedAt": {
@@ -4960,6 +5161,7 @@
                                 "ownerInstitutionCode": "KU",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779234"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana tlaloci"
                             ],
@@ -4977,7 +5179,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779236",
                                 "catalogNumber": "194536",
                                 "locatedAt": {
@@ -4986,6 +5188,7 @@
                                 "ownerInstitutionCode": "KU",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779236"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana neovolcanica"
                             ],
@@ -5003,7 +5206,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779235",
                                 "catalogNumber": "1136",
                                 "locatedAt": {
@@ -5012,6 +5215,7 @@
                                 "ownerInstitutionCode": "JSF",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779235"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana berlandieri"
                             ],
@@ -5029,7 +5233,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779237",
                                 "catalogNumber": "830",
                                 "locatedAt": {
@@ -5038,6 +5242,7 @@
                                 "ownerInstitutionCode": "JSF",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779237"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana blairi"
                             ],
@@ -5058,6 +5263,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node95",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node96"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node87"
                             ]
@@ -5071,7 +5277,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779252",
                                 "catalogNumber": "7448",
                                 "locatedAt": {
@@ -5080,9 +5286,10 @@
                                 "ownerInstitutionCode": "USC",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779252"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
-                                "Rana sphenocephela",
-                                "Rana sphenocephala utricularia"
+                                "Rana sphenocephala utricularia",
+                                "Rana sphenocephela"
                             ],
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node96"
@@ -5098,7 +5305,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779251",
                                 "catalogNumber": "845",
                                 "locatedAt": {
@@ -5107,9 +5314,10 @@
                                 "ownerInstitutionCode": "JSF",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779251"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
-                                "Rana sphenocephela",
-                                "Rana sphenocephala"
+                                "Rana sphenocephala",
+                                "Rana sphenocephela"
                             ],
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node95"
@@ -5128,6 +5336,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node97",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node98"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": "Stertirana",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node47"
@@ -5146,6 +5355,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node99",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node100"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": "Lacusirana",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node98"
@@ -5164,6 +5374,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node101",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node102"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node100"
                             ]
@@ -5180,6 +5391,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node103",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node104"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node102"
                             ]
@@ -5193,7 +5405,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779226",
                                 "catalogNumber": "194419",
                                 "locatedAt": {
@@ -5202,6 +5414,7 @@
                                 "ownerInstitutionCode": "KU",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779226"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana chiricahuensis"
                             ],
@@ -5222,6 +5435,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node105",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node106"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node103"
                             ]
@@ -5235,7 +5449,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779227",
                                 "locatedAt": {
                                     "verbatimLocality": "James Platz Collection (specimens destroyed, DNA in TNHC tissue collection): USA: Arizona: Cochise: Ramsey Canyon"
@@ -5243,6 +5457,7 @@
                                 "ownerInstitutionCode": "TNHC tissue collection",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779227"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana subaquavocalis"
                             ],
@@ -5260,7 +5475,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779225",
                                 "catalogNumber": "194442",
                                 "locatedAt": {
@@ -5269,6 +5484,7 @@
                                 "ownerInstitutionCode": "KU",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779225"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana chiricahuensis"
                             ],
@@ -5286,7 +5502,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779224",
                                 "catalogNumber": "204420",
                                 "locatedAt": {
@@ -5295,6 +5511,7 @@
                                 "ownerInstitutionCode": "KU",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779224"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana sp2"
                             ],
@@ -5315,6 +5532,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node107",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node108"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node99"
                             ]
@@ -5328,7 +5546,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779222",
                                 "catalogNumber": "194527",
                                 "locatedAt": {
@@ -5337,6 +5555,7 @@
                                 "ownerInstitutionCode": "KU",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779222"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana dunni"
                             ],
@@ -5354,7 +5573,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779223",
                                 "catalogNumber": "195251",
                                 "locatedAt": {
@@ -5363,6 +5582,7 @@
                                 "ownerInstitutionCode": "KU",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779223"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana montezumae"
                             ],
@@ -5383,6 +5603,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node109",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node110"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node97"
                             ]
@@ -5396,7 +5617,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779221",
                                 "catalogNumber": "1119",
                                 "locatedAt": {
@@ -5405,6 +5626,7 @@
                                 "ownerInstitutionCode": "JSF",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779221"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana pipiens"
                             ],
@@ -5422,13 +5644,14 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "GBX12841",
                                 "locatedAt": {
                                     "verbatimLocality": "GenBank sequence; locality unknown"
                                 },
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/GBX12841"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana pipiens"
                             ],
@@ -5449,6 +5672,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node111",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node112"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": "Ranula",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node35"
@@ -5467,6 +5691,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node113",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node114"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": "Levirana",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node112"
@@ -5482,7 +5707,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779207",
                                 "catalogNumber": "195258",
                                 "locatedAt": {
@@ -5491,6 +5716,7 @@
                                 "ownerInstitutionCode": "KU",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779207"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana maculata"
                             ],
@@ -5511,6 +5737,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node115",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node116"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": "Trypheropsis",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node113"
@@ -5526,7 +5753,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779209",
                                 "catalogNumber": "1127",
                                 "locatedAt": {
@@ -5535,6 +5762,7 @@
                                 "ownerInstitutionCode": "JSF",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779209"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana warszewitschii",
                                 "Rana warszewitshii"
@@ -5553,7 +5781,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779208",
                                 "catalogNumber": "149033",
                                 "locatedAt": {
@@ -5562,6 +5790,7 @@
                                 "ownerInstitutionCode": "MVZ",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779208"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana vibicaria"
                             ],
@@ -5582,6 +5811,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node117",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node118"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": "Lithobates",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node111"
@@ -5600,6 +5830,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node119",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node120"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node118"
                             ]
@@ -5613,7 +5844,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779212",
                                 "catalogNumber": "13964",
                                 "locatedAt": {
@@ -5622,6 +5853,7 @@
                                 "ownerInstitutionCode": "QCAZ",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779212"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana bwana"
                             ],
@@ -5642,6 +5874,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node121",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node122"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node119"
                             ]
@@ -5655,7 +5888,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779213",
                                 "catalogNumber": "13219",
                                 "locatedAt": {
@@ -5664,6 +5897,7 @@
                                 "ownerInstitutionCode": "QCAZ",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779213"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana sp1"
                             ],
@@ -5684,6 +5918,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node123",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node124"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node121"
                             ]
@@ -5697,7 +5932,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779211",
                                 "catalogNumber": "202896",
                                 "locatedAt": {
@@ -5706,6 +5941,7 @@
                                 "ownerInstitutionCode": "KU",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779211"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana palmipes"
                             ],
@@ -5723,7 +5959,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779210",
                                 "catalogNumber": "A-118801",
                                 "locatedAt": {
@@ -5732,6 +5968,7 @@
                                 "ownerInstitutionCode": "AMNH",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779210"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana palmipes"
                             ],
@@ -5752,6 +5989,7 @@
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node125",
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node126"
                             ],
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "siblings": [
                                 "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_node117"
                             ]
@@ -5765,7 +6003,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779214",
                                 "catalogNumber": "195299",
                                 "locatedAt": {
@@ -5774,6 +6012,7 @@
                                 "ownerInstitutionCode": "KU",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779214"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana vaillanti"
                             ],
@@ -5791,7 +6030,7 @@
                                 ]
                             ],
                             "children": [],
-                            "hasEvidence": {
+                            "hasBasisOfRecord": {
                                 "GenBankID": "AY779215",
                                 "catalogNumber": "60324",
                                 "locatedAt": {
@@ -5800,6 +6039,7 @@
                                 "ownerInstitutionCode": "TNHC",
                                 "skos:closeMatch": "https://www.ncbi.nlm.nih.gov/nuccore/AY779215"
                             },
+                            "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1",
                             "matchedName": [
                                 "Rana juliani"
                             ],
@@ -5833,6 +6073,14 @@
                             "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref1_specifier2"
                         }
                     ],
+                    "hasSpecifier": [
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref1_specifier1"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref1_specifier2"
+                        }
+                    ],
                     "internalSpecifiers": [
                         {
                             "dc:description": "Rana temporaria Linne 1758",
@@ -5858,6 +6106,23 @@
                         "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_additional5"
                     },
                     "hasInternalSpecifier": [
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref2_specifier1"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref2_specifier2"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref2_specifier3"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref2_specifier4"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref2_specifier5"
+                        }
+                    ],
+                    "hasSpecifier": [
                         {
                             "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref2_specifier1"
                         },
@@ -5918,6 +6183,14 @@
                             "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref3_specifier2"
                         }
                     ],
+                    "hasSpecifier": [
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref3_specifier1"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref3_specifier2"
+                        }
+                    ],
                     "internalSpecifiers": [
                         {
                             "dc:description": "Rana catesbeiana Shaw 1802",
@@ -5943,6 +6216,29 @@
                         "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_additional12"
                     },
                     "hasInternalSpecifier": [
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref4_specifier1"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref4_specifier2"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref4_specifier3"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref4_specifier4"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref4_specifier5"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref4_specifier6"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref4_specifier7"
+                        }
+                    ],
+                    "hasSpecifier": [
                         {
                             "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref4_specifier1"
                         },
@@ -6020,6 +6316,17 @@
                             "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref5_specifier3"
                         }
                     ],
+                    "hasSpecifier": [
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref5_specifier1"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref5_specifier2"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref5_specifier3"
+                        }
+                    ],
                     "internalSpecifiers": [
                         {
                             "dc:description": "Rana juliani Hillis and de S\u00c3\u00a1, 1988",
@@ -6049,6 +6356,14 @@
                         "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_additional15"
                     },
                     "hasInternalSpecifier": [
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref6_specifier1"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref6_specifier2"
+                        }
+                    ],
+                    "hasSpecifier": [
                         {
                             "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref6_specifier1"
                         },
@@ -6088,6 +6403,14 @@
                             "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref7_specifier2"
                         }
                     ],
+                    "hasSpecifier": [
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref7_specifier1"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref7_specifier2"
+                        }
+                    ],
                     "internalSpecifiers": [
                         {
                             "dc:description": "Rana maculata Brocchi 1877",
@@ -6120,6 +6443,14 @@
                             "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref8_specifier2"
                         }
                     ],
+                    "hasSpecifier": [
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref8_specifier1"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref8_specifier2"
+                        }
+                    ],
                     "internalSpecifiers": [
                         {
                             "dc:description": "Rana warszewitschii (Schmidt) 1857",
@@ -6145,6 +6476,20 @@
                         "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_additional20"
                     },
                     "hasInternalSpecifier": [
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref9_specifier1"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref9_specifier2"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref9_specifier3"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref9_specifier4"
+                        }
+                    ],
+                    "hasSpecifier": [
                         {
                             "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref9_specifier1"
                         },
@@ -6198,6 +6543,14 @@
                             "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref10_specifier2"
                         }
                     ],
+                    "hasSpecifier": [
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref10_specifier1"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref10_specifier2"
+                        }
+                    ],
                     "internalSpecifiers": [
                         {
                             "dc:description": "Rana tarahumarae Boulenger 1917",
@@ -6230,6 +6583,14 @@
                             "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref11_specifier2"
                         }
                     ],
+                    "hasSpecifier": [
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref11_specifier1"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref11_specifier2"
+                        }
+                    ],
                     "internalSpecifiers": [
                         {
                             "dc:description": "Rana tarahumarae Boulenger 1917",
@@ -6255,6 +6616,20 @@
                         "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_additional25"
                     },
                     "hasInternalSpecifier": [
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref12_specifier1"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref12_specifier2"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref12_specifier3"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref12_specifier4"
+                        }
+                    ],
+                    "hasSpecifier": [
                         {
                             "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref12_specifier1"
                         },
@@ -6308,6 +6683,14 @@
                             "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref13_specifier2"
                         }
                     ],
+                    "hasSpecifier": [
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref13_specifier1"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref13_specifier2"
+                        }
+                    ],
                     "internalSpecifiers": [
                         {
                             "dc:description": "Rana pipiens Schreber 1782",
@@ -6333,6 +6716,17 @@
                         "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_additional28"
                     },
                     "hasInternalSpecifier": [
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref14_specifier1"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref14_specifier2"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref14_specifier3"
+                        }
+                    ],
+                    "hasSpecifier": [
                         {
                             "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref14_specifier1"
                         },
@@ -6379,6 +6773,14 @@
                             "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref15_specifier2"
                         }
                     ],
+                    "hasSpecifier": [
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref15_specifier1"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref15_specifier2"
+                        }
+                    ],
                     "internalSpecifiers": [
                         {
                             "dc:description": "Rana areolata Baird and Girard 1852",
@@ -6404,6 +6806,29 @@
                         "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_additional35"
                     },
                     "hasInternalSpecifier": [
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref16_specifier1"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref16_specifier2"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref16_specifier3"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref16_specifier4"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref16_specifier5"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref16_specifier6"
+                        },
+                        {
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref16_specifier7"
+                        }
+                    ],
+                    "hasSpecifier": [
                         {
                             "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#file2_tree1_phyloref16_specifier1"
                         },

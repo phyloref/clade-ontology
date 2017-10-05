@@ -44,6 +44,11 @@
             "@container": "@set"
         },
 
+        "inPhylogeny": {
+            "@id": "tbd:inPhylogeny",
+            "@type": "@id"
+        },
+
         "hasRootNode": {
             "@id": "tbd:hasRootNode"
         },
@@ -164,12 +169,12 @@
             "@type": "xsd:string"
         },
 
-        "internalSpecifiers": {
+        "_internalSpecifiers": {
             "@id": "tbd:internalSpecifiers",
             "@container": "@set"
         },
 
-        "externalSpecifiers": {
+        "_externalSpecifiers": {
             "@id": "tbd:externalSpecifiers",
             "@container": "@set"
         },

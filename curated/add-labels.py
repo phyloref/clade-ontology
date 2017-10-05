@@ -113,13 +113,13 @@ paper['http://phylotastic.org/terms/tnrs.rdf#submittedName'] = {
 paper['http://example.org/TBD#hasNode'] = {
     '@id': 'tbd:hasNode',
     '@type': 'owl:ObjectProperty',
-    'owl:inverseOf': { '@id': "http://example.org/TBD#inPhylogeny" }
+#    'owl:inverseOf': { '@id': "http://example.org/TBD#inPhylogeny" }
 }
 
 paper['http://example.org/TBD#inPhylogeny'] = {
     '@id': 'tbd:inPhylogeny',
     '@type': 'owl:ObjectProperty',
-    'owl:inverseOf': { '@id': "http://example.org/TBD#hasNode" }
+#    'owl:inverseOf': { '@id': "http://example.org/TBD#hasNode" }
 }
 
 # hasPhylogeny
@@ -131,13 +131,13 @@ paper['http://example.org/TBD#hasSpecifier'] = {
 paper['http://example.org/TBD#hasInternalSpecifier'] = {
     '@id': 'tbd:hasInternalSpecifier',
     '@type': 'owl:ObjectProperty',
-    'rdfs:subPropertyOf': { '@id': 'http://example.org/TBD#hasSpecifier' }
+    # 'rdfs:subPropertyOf': { '@id': 'http://example.org/TBD#hasSpecifier' }
 }
 
 paper['http://example.org/TBD#hasExternalSpecifier'] = {
     '@id': 'tbd:hasExternalSpecifier',
     '@type': 'owl:ObjectProperty',
-    'rdfs:subPropertyOf': { '@id': 'http://example.org/TBD#hasSpecifier' }
+    # 'rdfs:subPropertyOf': { '@id': 'http://example.org/TBD#hasSpecifier' }
 }
 
 # Iterate over each testCase.
@@ -237,10 +237,11 @@ for testCase in paper['phylogenies']:
                 node_index += 1
                 return nodes_by_id[node]
 
-        def add_all_child_nodes(node, add_to):
+        def add_all_child_nodes(node, add_to, phylogeny_id):
             # Create the node.
             node_dict = dict()
             node_dict['@id'] = get_id_for_node(node)
+            node_dict['inPhylogeny'] = phylogeny_id
 
             node_dict['@type'] = ['obo:CDAO_0000140', 'owl:Thing'],
             annotations = list()
@@ -338,10 +339,10 @@ for testCase in paper['phylogenies']:
 
             # Add all its children.
             for child in node.child_nodes():
-                add_all_child_nodes(child, add_to)
+                add_all_child_nodes(child, add_to, phylogeny_id)
 
         phylogeny['hasNode'] = list()
-        add_all_child_nodes(tree.seed_node, phylogeny['hasNode'])
+        add_all_child_nodes(tree.seed_node, phylogeny['hasNode'], phylogeny_id)
 
         phylogenies.append(phylogeny)
 
@@ -403,8 +404,12 @@ for testCase in paper['phylogenies']:
                 # Tell the phyloref that we're now one of its specifiers.
                 if 'has' + specifier_type not in phyloref:
                     phyloref['has' + specifier_type] = []
+
+                if 'hasSpecifier' not in phyloref:
+                    phyloref['hasSpecifier'] = []
                 
                 phyloref['has' + specifier_type].append({'@id': specifier_id})
+                phyloref['hasSpecifier'].append({'@id': specifier_id})
 
                 return {
                     "@id": specifier_id,
