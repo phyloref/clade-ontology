@@ -160,7 +160,12 @@ for testCase in paper['phylogenies']:
             if 'label' not in nodeData:
                 continue
 
-            labeled_data[nodeData['label']] = nodeData
+            labels = nodeData['label']
+            if isinstance(labels, str):
+                labels = [labels]
+
+            for label in labels:
+                labeled_data[label] = nodeData
 
     # Where is the tree located?
     treelist = list()
@@ -292,8 +297,8 @@ for testCase in paper['phylogenies']:
                     nodeData = labeled_data[node_label.label]
 
                     for key in nodeData:
-                        if key == 'label':
-                            continue
+                        #if key == 'label':
+                        #    continue
 
                         # Leave all variables as single elements if possible
                         # but if we see multiple values, turn it into a list 
