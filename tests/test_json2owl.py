@@ -5,6 +5,7 @@ test_json2owl.py: Convert paper.json into paper.owl.
 import pytest
 import os
 
+@pytest.mark.json
 def test_json_to_owl(paper_json):
     """ Convert paper.json file to paper.owl via labeled.owl. """
     path = paper_json[:-11]
@@ -25,8 +26,21 @@ def test_json_to_owl(paper_json):
         # On Windows, this will end up being Unicode 16 -- which is fine,
         # Java seems to be able to load them just fine!
 
+    finally:
+        os.chdir(current_path)
+
+@pytest.mark.owl
+def test_owl_to_rdf(paper_owl):
+    """ Test paper.owl using jphyloref. """
+    path = paper_owl[:-10]
+
+    current_path = os.getcwd()
+    try:
+        os.chdir(path)
+
         assert os.system('java -jar ../../jphyloref/jphyloref.jar test paper.owl') == 0
 
     finally:
         os.chdir(current_path)
+
 
