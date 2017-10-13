@@ -5,7 +5,7 @@ The Phyloreferencing curation workflow serves three main purposes:
 2. It provides a test space for trying different approaches to generating phyloreferences from JSON to OWL, although these will be moved into their own repositories if they prove to be successes.
 3. It provides a test suite of phyloreferences along with expected resolved nodes, allowing reasoning to be continually tested as ontologies and software tools are updated.
 
-[![Build Status](https://travis-ci.org/gaurav/curation-workflow.svg?branch=master)](https://travis-ci.org/gaurav/curation-workflow)
+[![Build Status](https://travis-ci.org/phyloref/curation-workflow.svg?branch=master)](https://travis-ci.org/phyloref/curation-workflow)
 
 ## Currently curated phyloreferences
 
