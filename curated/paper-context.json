@@ -38,7 +38,7 @@
             "@type": "xsd:integer"
         },
 
-        "hasNode": {
+        "nodes": {
             "@id": "tbd:hasNode",
             "@container": "@set"
         },
@@ -134,12 +134,12 @@
             "@type": "@set"
         },
 
-        "_hasInternalSpecifier": {
+        "hasInternalSpecifier": {
             "@id": "tbd:hasInternalSpecifier",
             "@type": "@set"
         },
 
-        "_hasExternalSpecifier": {
+        "hasExternalSpecifier": {
             "@id": "tbd:hasExternalSpecifier",
             "@type": "@set"
         },
