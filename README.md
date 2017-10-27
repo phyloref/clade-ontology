@@ -13,3 +13,13 @@ The Phyloreferencing curation workflow serves three main purposes:
 |---------------|-----|-----------------|--------|
 | [Fisher et al, 2007](curated/Fisher%20et%20al,%202007) | [doi](https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2) | 11 phyloreferences | All resolved correctly, but one resolved to a different node from paper | 
 | [Hillis and Wilcox, 2005](curated/Hillis%20and%20Wilcox,%202005) | [doi](https://doi.org/10.1016/j.ympev.2004.10.007) | 16 phyloreferences | All resolved correctly, but in two cases the correct resolution was no nodes |
+
+## Executing phyloreferences as a test suite
+
+You can execute and test all phyloreferences by running `py.test` in the root directory
+of this project. We support two marks:
+
+ * `py.test -m json` executes the scripts to create OWL representations of the test suite.
+   This tests the content of the JSON file and ensures that they can be converted into OWL.
+ * `py.test -m owl` reasons over the created OWL files and ensures that the expected nodes 
+   are correctly resolved by the phyloreferences.

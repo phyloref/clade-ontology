@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://vocab.phyloref.org/phyloref/testcase.owl#"
+     xml:base="http://vocab.phyloref.org/phyloref/testcase.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasAdditionalClass -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasAdditionalClass"/>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasAnnotation -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasAnnotation"/>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasBasisOfRecord -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasBasisOfRecord"/>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasCollectingEvent -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasCollectingEvent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasExternalSpecifier -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasExternalSpecifier">
+        <rdfs:subPropertyOf rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#hasSpecifier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasInternalSpecifier -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasInternalSpecifier">
+        <rdfs:subPropertyOf rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#hasSpecifier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasLabeledNodeData -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasLabeledNodeData"/>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasNode -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasNode">
+        <owl:inverseOf rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#inPhylogeny"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasOTU -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasOTU"/>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasPhylogeny -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasPhylogeny"/>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasPhyloreference -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasPhyloreference"/>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasRootNode -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasRootNode"/>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasSpecifier -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasSpecifier"/>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasTaxonAnnotation -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasTaxonAnnotation"/>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#inPhylogeny -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#inPhylogeny"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#asNewickString -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#asNewickString"/>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#cladeDefinition -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#cladeDefinition"/>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasBinomialName -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasBinomialName"/>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasTaxonName -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasTaxonName"/>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#identifiedAsTaxonName -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#identifiedAsTaxonName"/>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#malformedPhyloreference -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#malformedPhyloreference"/>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#manchesterSyntax -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#manchesterSyntax"/>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#matchedName -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#matchedName"/>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#submittedName -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#submittedName"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#PhyloreferenceTestSuite -->
+
+    <owl:Class rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#PhyloreferenceTestSuite">
+        <rdfs:label xml:lang="en">Phyloreference Test Case</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#TestSuiteFromPublication -->
+
+    <owl:Class rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#TestSuiteFromPublication">
+        <rdfs:label xml:lang="en">Test suite from publication</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
