@@ -1,6 +1,15 @@
 #!/usr/bin/env python
 
-"""add-labels.py: Adds NeXML file containing OTUs to a paper.json file as Newick and as OTUs."""
+"""
+add-labels.py: Converts a Phyloreference curated test file in JSON
+into a JSON-LD file with node information. It carries out two conversions:
+
+ 1. Converts all phylogenies into a node-based representation in OWL,
+    integrating any taxonomic unit-level information to the nodes.
+
+ 2. Converts all phyloreferences into an OWL-based representation
+    containing specifiers that can match taxonomic units.
+"""
 
 import argparse
 import dendropy
@@ -8,137 +17,74 @@ import json
 import os.path
 import re
 import sys
-import uuid
+from lib.PhyloreferenceTestSuite import PhyloreferenceTestSuite
 
 __version__ = "0.1"
 __author__ = "Gaurav Vaidya"
 __copyright__ = "Copyright 2017 The Phyloreferencing Project"
 
-# Global variables
-FLAG_VERBOSE = False
-
-# Global constants
-SPECIFIER = 'Specifier'
-INTERNAL_SPECIFIER = 'InternalSpecifier'
-EXTERNAL_SPECIFIER = 'ExternalSpecifier'
-
 # Step 1. Parse command line arguments
-input_file = sys.stdin
-output_file = sys.stdout
+def get_command_line_arguments():
+    cmdline_parser = argparse.ArgumentParser(
+        description="Add trees and labels from NeXML file into an existing paper.json file."
+    )
+    cmdline_parser.add_argument(
+        'input', metavar='paper.json', type=str, nargs='?',
+        help='paper.json file to add data into'
+    )
+    cmdline_parser.add_argument(
+        '-o', dest='output', metavar='output.json', type=str,
+        help='Ontology file to output'
+    )
+    cmdline_parser.add_argument(
+        '-v', '--version',
+        action='version', version='%(prog)s ' + __version__
+    )
+    cmdline_parser.add_argument(
+        '--verbose',
+        dest='flag_verbose', default=False, action='store_true',
+        help='Display debugging information'
+    )
 
-cmdline_parser = argparse.ArgumentParser(
-    description="Add trees and labels from NeXML file into an existing paper.json file."
-)
-cmdline_parser.add_argument(
-    'input', metavar='paper.json', type=str, nargs='?',
-    help='paper.json file to add data into'
-)
-cmdline_parser.add_argument(
-    '-o', dest='output', metavar='output.json', type=str,
-    help='Ontology file to output'
-)
-cmdline_parser.add_argument(
-    '-v', '--version',
-    action='version', version='%(prog)s ' + __version__
-)
-cmdline_parser.add_argument(
-    '--verbose', 
-    dest='flag_verbose', default=False, action='store_true', 
-    help='Display debugging information'
-)
-args = cmdline_parser.parse_args()
+    return cmdline_parser.parse_args()
+
+args = get_command_line_arguments()
 
 # Set up FLAG_VERBOSE.
 FLAG_VERBOSE = args.flag_verbose
 
 # Step 2. Set up input and output streams.
-# Try opening the input file.
 if args.input:
     input_file = open(args.input, 'r')
 
-# Figure out where the output should go, as well as the output name.
 if args.output:
     output_file = open(args.output, 'w')
+else:
+    output_file = sys.stdout
 
 if FLAG_VERBOSE:
     sys.stderr.write("Input file: {0}\n".format(input_file))
     sys.stderr.write("Output file: {0}\n".format(output_file))
 
-# Step 2. Read the JSON file.
-paper = json.load(input_file);
+# Step 3. Read the JSON file.
+doc = json.load(input_file)
 
-# What is the overall id?
-paper_id = paper['@id']
-if paper_id is None or paper_id == '':
-    sys.stderr.write("'@id' missing in input file " + str(input_file))
+try:
+    testCase = PhyloreferenceTestSuite.load_from_document(doc)
+except PhyloreferenceTestSuite.TestException as e:
+    sys.stderr.write("Could not read '" + input_file + "': " + e.message)
     exit(1)
-if paper_id[-1] != '#':
-    # If it doesn't end with '#', then add it there. We'll need it for
-    # other IDs we generate.
-    paper_id.append('#')
-    paper['@id'] = paper_id
 
 if FLAG_VERBOSE:
-    sys.stderr.write("Loaded input file, id: {0}\n".format(paper['@id']))
+    sys.stderr.write("Loaded test case, id: {0}\n".format(testCase.id))
 
-# Make this .json file into an ontology!
-paper['@type'] = [paper['@type'], 'owl:Ontology']
+# Write the paper back out again.
+json.dump(testCase.export_to_jsonld_document(), output_file, indent=4, sort_keys=True)
 
-# To be an ontology, it needs to import a bunch of ontologies.
-paper['owl:imports'] = [
-    "https://www.w3.org/2004/02/skos/core",
-    "http://raw.githubusercontent.com/hlapp/phyloref/master/phyloref.owl"
-        # Will become "http://phyloinformatics.net/phyloref.owl"
-]
-
-# So, "http://phylotastic.org/terms/tnrs.rdf" is a huge pain to import,
-# as it does some strange things that can trip up some reasoners, and
-# depends on ontologies like TaxonConcept under the wrong URL, and so on.
-# So instead of actually importing it, for now, we'll just create
-# DatatypeProperty for the two TNRS properties we need. These will eventually
-# be moved somewhere sensible.
-
-paper['http://phylotastic.org/terms/tnrs.rdf#matchedName'] = {
-    '@id': 'tnrs:matchedName',
-    '@type': 'owl:DatatypeProperty'
-}
-
-paper['http://phylotastic.org/terms/tnrs.rdf#submittedName'] = {
-    '@id': 'tnrs:submittedName',
-    '@type': 'owl:DatatypeProperty'
-}
+##### EVERYTHING BELOW THIS LINE WILL BE MOVED ELSEWHERE
 
 # tbd:nodes should be an object properties,
 # so let's declare them as such.
-paper['http://example.org/TBD#hasNode'] = {
-    '@id': 'tbd:hasNode',
-    '@type': 'owl:ObjectProperty',
-#    'owl:inverseOf': { '@id': "http://example.org/TBD#inPhylogeny" }
-}
-
-paper['http://example.org/TBD#inPhylogeny'] = {
-    '@id': 'tbd:inPhylogeny',
-    '@type': 'owl:ObjectProperty',
-#    'owl:inverseOf': { '@id': "http://example.org/TBD#hasNode" }
-}
-
-# hasPhylogeny
-paper['http://example.org/TBD#hasSpecifier'] = {
-    '@id': 'tbd:hasSpecifier',
-    '@type': 'owl:ObjectProperty'
-}
-
-paper['http://example.org/TBD#hasInternalSpecifier'] = {
-    '@id': 'tbd:hasInternalSpecifier',
-    '@type': 'owl:ObjectProperty',
-    # 'rdfs:subPropertyOf': { '@id': 'http://example.org/TBD#hasSpecifier' }
-}
-
-paper['http://example.org/TBD#hasExternalSpecifier'] = {
-    '@id': 'tbd:hasExternalSpecifier',
-    '@type': 'owl:ObjectProperty',
-    # 'rdfs:subPropertyOf': { '@id': 'http://example.org/TBD#hasSpecifier' }
-}
 
 # Iterate over each testCase.
 # Note that we add elements directly to 'paper' as necessary.
@@ -652,5 +598,4 @@ for testCase in paper['phylogenies']:
         # Finally, add all those additional classes in as phylorefs.
         testCase['phylorefs'].extend(additional_classes)
 
-# Write the paper back out again.
-json.dump(paper, output_file, indent=4, sort_keys=True)
+
