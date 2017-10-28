@@ -40,36 +40,36 @@
         },
 
         "nodes": {
-            "@id": "tbd:hasNode",
+            "@id": "testcase:hasNode",
             "@container": "@set"
         },
 
         "inPhylogeny": {
-            "@id": "tbd:inPhylogeny",
+            "@id": "testcase:inPhylogeny",
             "@type": "@id"
         },
 
         "hasRootNode": {
-            "@id": "tbd:hasRootNode"
+            "@id": "testcase:hasRootNode"
         },
 
         "phylogenies": {
-            "@id": "tbd:phylogenies",
+            "@id": "testcase:hasPhylogeny",
             "@container": "@set"
         },
 
         "labeledNodeData": {
-            "@id": "tbd:labeledNodeData",
+            "@id": "testcase:hasLabeledNodeData",
             "@container": "@set"
         },
 
         "annotations": {
-            "@id": "tbd:annotations",
+            "@id": "testcase:hasAnnotation",
             "@containter": "@set" 
         },
 
         "taxonAnnotations": {
-            "@id": "tbd:taxonAnnotations",
+            "@id": "testcase:hasTaxonAnnotation",
             "@containter": "@set" 
         },
 
@@ -91,7 +91,7 @@
         },
 
         "otus": {
-            "@id": "tbd:otus",
+            "@id": "testcase:hasOTU",
             "@container": "@set"
         },
 
@@ -106,12 +106,12 @@
         },
 
         "taxonName": {
-            "@id": "tbd:taxonName",
+            "@id": "testcase:hasTaxonName",
             "@type": "xsd:string"
         },
 
         "binomialName": {
-            "@id": "tbd:binomialName",
+            "@id": "testcase:hasBinomialName",
             "@type": "xsd:string"
         },
         
@@ -121,17 +121,17 @@
         },
 
         "phylorefs": {
-            "@id": "tbd:phylorefs",
+            "@id": "testcase:hasPhyloreference",
             "@container": "@set"
         },
 
         "malformedPhyloreference": {
-            "@id": "tbd:malformedPhyloreference",
+            "@id": "testcase:malformedPhyloreference",
             "@type": "xsd:string"
         },
 
         "hasSpecifier": {
-            "@id": "tbd:hasSpecifier",
+            "@id": "testcase:hasSpecifier",
             "@type": "@set"
         },
 
@@ -171,27 +171,17 @@
         },
 
         "newick": {
-            "@id": "tbd:asNewickString",
+            "@id": "testcase:asNewickString",
             "@type": "xsd:string"
         },
 
         "cladeDefinition": {
-            "@id": "tbd:cladeDefinition",
+            "@id": "testcase:cladeDefinition",
             "@type": "xsd:string"
         },
 
-        "_internalSpecifiers": {
-            "@id": "tbd:internalSpecifiers",
-            "@container": "@set"
-        },
-
-        "_externalSpecifiers": {
-            "@id": "tbd:externalSpecifiers",
-            "@container": "@set"
-        },
-
         "manchesterSyntax": {
-            "@id": "tbd:manchesterSyntax",
+            "@id": "testcase:manchesterSyntax",
             "@type": "xsd:string"
         },
 
@@ -220,12 +210,12 @@
         "label": "rdfs:label",
 
         "identifiedAsTaxonName": {
-            "@id": "tbd:identifiedAsTaxonName",
+            "@id": "testcase:identifiedAsTaxonName",
             "@type": "xsd:string"
         },
 
-        "hasBasisOfRecord": "tbd:hasBasisOfRecord",
-        "locatedAt": "tbd:hasCollectingEvent",
+        "hasBasisOfRecord": "testcase:hasBasisOfRecord",
+        "locatedAt": "testcase:hasCollectingEvent",
         "verbatimLocality": {
             "@id": "dwc:verbatimLocality",
             "@type": "xsd:string"
@@ -239,10 +229,10 @@
             "@type": "xsd:string"
         },
         "genBankID": {
-            "@id": "tbd:genBankID",
+            "@id": "testcase:genBankID",
             "@type": "xsd:string"
         },
 
-        "filename": "tbd:filename"
+        "filename": "testcase:filename"
     }
 }

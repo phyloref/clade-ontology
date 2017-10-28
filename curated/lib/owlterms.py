@@ -32,7 +32,8 @@ PHYLOREF_HAS_SIBLING = "phyloref:has_Sibling"
 BASE_URL = 'http://vocab.phyloref.org/phyloref/'
 
 # Phyloreference test suites belong to this class.
-PHYLOREFERENCE = BASE_URL + 'Phyloreference'
+PHYLOREFERENCE = 'http://phyloinformatics.net/phyloref.owl#Phyloreference'
+# PHYLOREFERENCE = BASE_URL + 'Phyloreference'
 PHYLOREFERENCE_TEST_CASE = BASE_URL + 'PhyloreferenceTestSuite'
 PHYLOREFERENCE_TEST_PHYLOGENY = BASE_URL + 'PhyloreferenceTestPhylogeny'
 

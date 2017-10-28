@@ -16,7 +16,13 @@ def pytest_generate_tests(metafunc):
     curated files to read.
     """
 
-    dirs = [d for d in os.listdir(phylorefs_path) if os.path.isdir(phylorefs_path + "/" + d)]
+    dirs = [d for d in os.listdir(phylorefs_path) if 
+        os.path.isdir(phylorefs_path + "/" + d) and 
+        d[0] != '.' and 
+            # Ignore Unix hidden folders
+        d != 'lib'
+            # Ignore the 'lib' directory
+    ]
 
     if "paper_json" in metafunc.fixturenames:
         metafunc.parametrize(

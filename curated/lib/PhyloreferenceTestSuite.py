@@ -53,7 +53,8 @@ class PhyloreferenceTestSuite:
         self.type = [owlterms.PHYLOREFERENCE_TEST_CASE, owlterms.OWL_ONTOLOGY]
         self.owl_imports = [
             "https://www.w3.org/2004/02/skos/core",
-            "http://vocab.phyloref.org/phyloref/testcase.owl",
+            "https://raw.githubusercontent.com/phyloref/curation-workflow/refactor_add_labels/curated/phyloref_testcase.owl",
+                # Will become "http://vocab.phyloref.org/phyloref/testcase.owl",
             "http://raw.githubusercontent.com/hlapp/phyloref/master/phyloref.owl"
                 # Will become "http://phyloinformatics.net/phyloref.owl"
         ]
