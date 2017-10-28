@@ -11,6 +11,7 @@
     "curator": "Gaurav Vaidya <gaurav@ggvaidya.com>",
     "owl:imports": [
         "https://www.w3.org/2004/02/skos/core",
+        "http://vocab.phyloref.org/phyloref/testcase.owl",
         "http://raw.githubusercontent.com/hlapp/phyloref/master/phyloref.owl"
     ],
     "phylogenies": [
@@ -1569,7 +1570,7 @@
             ],
             "phylorefs": [
                 {
-                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref1",
+                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref1",
                     "@type": [
                         "http://vocab.phyloref.org/phyloref/Phyloreference",
                         "owl:Class"
@@ -1582,13 +1583,13 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref1"
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref1_specifier1"
                                     },
                                     {
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref1"
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref1_specifier1"
                                         }
                                     }
                                 ]
@@ -1597,13 +1598,13 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref1"
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref1_specifier2"
                                     },
                                     {
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref1"
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref1_specifier2"
                                         }
                                     }
                                 ]
@@ -1613,28 +1614,30 @@
                                 "onProperty": "phyloref:has_Sibling",
                                 "someValuesFrom": {
                                     "@type": "owl:Class",
-                                    "unionOf": {
-                                        "@type": "owl:Class",
-                                        "unionOf": [
-                                            {
-                                                "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref1"
-                                            },
-                                            {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
-                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref1"
+                                    "unionOf": [
+                                        {
+                                            "@type": "owl:Class",
+                                            "unionOf": [
+                                                {
+                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref1_specifier3"
+                                                },
+                                                {
+                                                    "@type": "owl:Restriction",
+                                                    "onProperty": "obo:CDAO_0000174",
+                                                    "someValuesFrom": {
+                                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref1_specifier3"
+                                                    }
                                                 }
-                                            }
-                                        ]
-                                    }
+                                            ]
+                                        }
+                                    ]
                                 }
                             }
                         ]
                     },
                     "hasExternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref1",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref1_specifier3",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/ExternalSpecifier"
@@ -1649,7 +1652,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Octoblepharum albidum",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -1658,7 +1661,7 @@
                     ],
                     "hasInternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref1",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref1_specifier1",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -1673,14 +1676,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Syrrhopodon gardneri",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref1",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref1_specifier2",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -1695,7 +1698,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Leucophanes octoblepharoides",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -1705,7 +1708,7 @@
                     "label": "Calymperaceae"
                 },
                 {
-                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref2",
+                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref2",
                     "@type": [
                         "http://vocab.phyloref.org/phyloref/Phyloreference",
                         "owl:Class"
@@ -1718,13 +1721,13 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref2"
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref2_specifier1"
                                     },
                                     {
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref2"
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref2_specifier1"
                                         }
                                     }
                                 ]
@@ -1733,13 +1736,13 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref2"
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref2_specifier2"
                                     },
                                     {
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref2"
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref2_specifier2"
                                         }
                                     }
                                 ]
@@ -1749,28 +1752,30 @@
                                 "onProperty": "phyloref:has_Sibling",
                                 "someValuesFrom": {
                                     "@type": "owl:Class",
-                                    "unionOf": {
-                                        "@type": "owl:Class",
-                                        "unionOf": [
-                                            {
-                                                "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref2"
-                                            },
-                                            {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
-                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref2"
+                                    "unionOf": [
+                                        {
+                                            "@type": "owl:Class",
+                                            "unionOf": [
+                                                {
+                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref2_specifier3"
+                                                },
+                                                {
+                                                    "@type": "owl:Restriction",
+                                                    "onProperty": "obo:CDAO_0000174",
+                                                    "someValuesFrom": {
+                                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref2_specifier3"
+                                                    }
                                                 }
-                                            }
-                                        ]
-                                    }
+                                            ]
+                                        }
+                                    ]
                                 }
                             }
                         ]
                     },
                     "hasExternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref2",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref2_specifier3",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/ExternalSpecifier"
@@ -1785,7 +1790,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Syrrhopodon croceus",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -1794,7 +1799,7 @@
                     ],
                     "hasInternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref2",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref2_specifier1",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -1809,14 +1814,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Calymperes lonchophyllum",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref2",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref2_specifier2",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -1831,7 +1836,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Syrrhopodon mauritianus",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -1841,7 +1846,7 @@
                     "label": "Calymperes"
                 },
                 {
-                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref3",
+                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref3",
                     "@type": [
                         "http://vocab.phyloref.org/phyloref/Phyloreference",
                         "owl:Class"
@@ -1854,13 +1859,13 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref3"
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref3_specifier1"
                                     },
                                     {
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref3"
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref3_specifier1"
                                         }
                                     }
                                 ]
@@ -1869,13 +1874,13 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref3"
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref3_specifier2"
                                     },
                                     {
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref3"
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref3_specifier2"
                                         }
                                     }
                                 ]
@@ -1885,28 +1890,30 @@
                                 "onProperty": "phyloref:has_Sibling",
                                 "someValuesFrom": {
                                     "@type": "owl:Class",
-                                    "unionOf": {
-                                        "@type": "owl:Class",
-                                        "unionOf": [
-                                            {
-                                                "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref3"
-                                            },
-                                            {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
-                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref3"
+                                    "unionOf": [
+                                        {
+                                            "@type": "owl:Class",
+                                            "unionOf": [
+                                                {
+                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref3_specifier3"
+                                                },
+                                                {
+                                                    "@type": "owl:Restriction",
+                                                    "onProperty": "obo:CDAO_0000174",
+                                                    "someValuesFrom": {
+                                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref3_specifier3"
+                                                    }
                                                 }
-                                            }
-                                        ]
-                                    }
+                                            ]
+                                        }
+                                    ]
                                 }
                             }
                         ]
                     },
                     "hasExternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref3",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref3_specifier3",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/ExternalSpecifier"
@@ -1921,7 +1928,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Syrrhopodon mauritianus",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -1930,7 +1937,7 @@
                     ],
                     "hasInternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref3",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref3_specifier1",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -1945,14 +1952,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Syrrhopodon croceus",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref3",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref3_specifier2",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -1967,7 +1974,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Leucophanes octoblepharoides",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -1977,7 +1984,7 @@
                     "label": "Syrrhopodon"
                 },
                 {
-                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref4",
+                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref4",
                     "@type": [
                         "http://vocab.phyloref.org/phyloref/Phyloreference",
                         "owl:Class"
@@ -1990,13 +1997,13 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref4"
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref4_specifier1"
                                     },
                                     {
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref4"
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref4_specifier1"
                                         }
                                     }
                                 ]
@@ -2005,13 +2012,13 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref4"
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref4_specifier2"
                                     },
                                     {
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref4"
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref4_specifier2"
                                         }
                                     }
                                 ]
@@ -2021,28 +2028,30 @@
                                 "onProperty": "phyloref:has_Sibling",
                                 "someValuesFrom": {
                                     "@type": "owl:Class",
-                                    "unionOf": {
-                                        "@type": "owl:Class",
-                                        "unionOf": [
-                                            {
-                                                "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref4"
-                                            },
-                                            {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
-                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref4"
+                                    "unionOf": [
+                                        {
+                                            "@type": "owl:Class",
+                                            "unionOf": [
+                                                {
+                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref4_specifier3"
+                                                },
+                                                {
+                                                    "@type": "owl:Restriction",
+                                                    "onProperty": "obo:CDAO_0000174",
+                                                    "someValuesFrom": {
+                                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref4_specifier3"
+                                                    }
                                                 }
-                                            }
-                                        ]
-                                    }
+                                            ]
+                                        }
+                                    ]
                                 }
                             }
                         ]
                     },
                     "hasExternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref4",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref4_specifier3",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/ExternalSpecifier"
@@ -2057,7 +2066,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Syrrhopodon croceus",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -2066,7 +2075,7 @@
                     ],
                     "hasInternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref4",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref4_specifier1",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -2081,14 +2090,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Mitthyridium fasciculatum",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref4",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref4_specifier2",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -2103,7 +2112,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Mitthyridium undulatum",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -2113,7 +2122,7 @@
                     "label": "Mitthyridium"
                 },
                 {
-                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref5",
+                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref5",
                     "@type": [
                         "http://vocab.phyloref.org/phyloref/Phyloreference",
                         "owl:Class"
@@ -2126,13 +2135,13 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref5"
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref5_specifier1"
                                     },
                                     {
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref5"
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref5_specifier1"
                                         }
                                     }
                                 ]
@@ -2141,13 +2150,13 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref5"
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref5_specifier2"
                                     },
                                     {
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref5"
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref5_specifier2"
                                         }
                                     }
                                 ]
@@ -2157,28 +2166,30 @@
                                 "onProperty": "phyloref:has_Sibling",
                                 "someValuesFrom": {
                                     "@type": "owl:Class",
-                                    "unionOf": {
-                                        "@type": "owl:Class",
-                                        "unionOf": [
-                                            {
-                                                "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref5"
-                                            },
-                                            {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
-                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref5"
+                                    "unionOf": [
+                                        {
+                                            "@type": "owl:Class",
+                                            "unionOf": [
+                                                {
+                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref5_specifier3"
+                                                },
+                                                {
+                                                    "@type": "owl:Restriction",
+                                                    "onProperty": "obo:CDAO_0000174",
+                                                    "someValuesFrom": {
+                                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref5_specifier3"
+                                                    }
                                                 }
-                                            }
-                                        ]
-                                    }
+                                            ]
+                                        }
+                                    ]
                                 }
                             }
                         ]
                     },
                     "hasExternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref5",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref5_specifier3",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/ExternalSpecifier"
@@ -2193,7 +2204,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Syrrhopodon perarmatus",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -2202,7 +2213,7 @@
                     ],
                     "hasInternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref5",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref5_specifier1",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -2217,14 +2228,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Syrrhopodon ciliatus",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref5",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref5_specifier2",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -2239,7 +2250,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Syrrhopodon involutus",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -2249,7 +2260,7 @@
                     "label": "Trachymitrium"
                 },
                 {
-                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref6",
+                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref6",
                     "@type": [
                         "http://vocab.phyloref.org/phyloref/Phyloreference",
                         "owl:Class"
@@ -2262,13 +2273,13 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref6"
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref6_specifier1"
                                     },
                                     {
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref6"
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref6_specifier1"
                                         }
                                     }
                                 ]
@@ -2277,13 +2288,13 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref6"
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref6_specifier2"
                                     },
                                     {
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref6"
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref6_specifier2"
                                         }
                                     }
                                 ]
@@ -2292,13 +2303,13 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref6"
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref6_specifier3"
                                     },
                                     {
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref6"
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref6_specifier3"
                                         }
                                     }
                                 ]
@@ -2308,28 +2319,30 @@
                                 "onProperty": "phyloref:has_Sibling",
                                 "someValuesFrom": {
                                     "@type": "owl:Class",
-                                    "unionOf": {
-                                        "@type": "owl:Class",
-                                        "unionOf": [
-                                            {
-                                                "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref6"
-                                            },
-                                            {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
-                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref6"
+                                    "unionOf": [
+                                        {
+                                            "@type": "owl:Class",
+                                            "unionOf": [
+                                                {
+                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref6_specifier4"
+                                                },
+                                                {
+                                                    "@type": "owl:Restriction",
+                                                    "onProperty": "obo:CDAO_0000174",
+                                                    "someValuesFrom": {
+                                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref6_specifier4"
+                                                    }
                                                 }
-                                            }
-                                        ]
-                                    }
+                                            ]
+                                        }
+                                    ]
                                 }
                             }
                         ]
                     },
                     "hasExternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref6",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref6_specifier4",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/ExternalSpecifier"
@@ -2344,7 +2357,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Syrrhopodon trachyphyllus",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -2353,7 +2366,7 @@
                     ],
                     "hasInternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref6",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref6_specifier1",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -2368,14 +2381,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Syrrhopodon banksii",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref6",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref6_specifier2",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -2390,14 +2403,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Syrrhopodon involutus",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref6",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref6_specifier3",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -2408,7 +2421,7 @@
                     "label": "Leucophanella"
                 },
                 {
-                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref7",
+                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref7",
                     "@type": [
                         "http://vocab.phyloref.org/phyloref/Phyloreference",
                         "owl:Class"
@@ -2421,13 +2434,13 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref7"
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref7_specifier1"
                                     },
                                     {
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref7"
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref7_specifier1"
                                         }
                                     }
                                 ]
@@ -2436,13 +2449,13 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref7"
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref7_specifier2"
                                     },
                                     {
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref7"
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref7_specifier2"
                                         }
                                     }
                                 ]
@@ -2452,28 +2465,30 @@
                                 "onProperty": "phyloref:has_Sibling",
                                 "someValuesFrom": {
                                     "@type": "owl:Class",
-                                    "unionOf": {
-                                        "@type": "owl:Class",
-                                        "unionOf": [
-                                            {
-                                                "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref7"
-                                            },
-                                            {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
-                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref7"
+                                    "unionOf": [
+                                        {
+                                            "@type": "owl:Class",
+                                            "unionOf": [
+                                                {
+                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref7_specifier3"
+                                                },
+                                                {
+                                                    "@type": "owl:Restriction",
+                                                    "onProperty": "obo:CDAO_0000174",
+                                                    "someValuesFrom": {
+                                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref7_specifier3"
+                                                    }
                                                 }
-                                            }
-                                        ]
-                                    }
+                                            ]
+                                        }
+                                    ]
                                 }
                             }
                         ]
                     },
                     "hasExternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref7",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref7_specifier3",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/ExternalSpecifier"
@@ -2488,7 +2503,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Syrrhopodon muelleri",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -2497,7 +2512,7 @@
                     ],
                     "hasInternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref7",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref7_specifier1",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -2521,7 +2536,7 @@
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref7",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref7_specifier2",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -2536,7 +2551,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Leucophanes octoblepharoides",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -2546,7 +2561,7 @@
                     "label": "Albifolium"
                 },
                 {
-                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref8",
+                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref8",
                     "@type": [
                         "http://vocab.phyloref.org/phyloref/Phyloreference",
                         "owl:Class"
@@ -2559,13 +2574,13 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref8"
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref8_specifier1"
                                     },
                                     {
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref8"
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref8_specifier1"
                                         }
                                     }
                                 ]
@@ -2575,28 +2590,30 @@
                                 "onProperty": "phyloref:has_Sibling",
                                 "someValuesFrom": {
                                     "@type": "owl:Class",
-                                    "unionOf": {
-                                        "@type": "owl:Class",
-                                        "unionOf": [
-                                            {
-                                                "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref8"
-                                            },
-                                            {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
-                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref8"
+                                    "unionOf": [
+                                        {
+                                            "@type": "owl:Class",
+                                            "unionOf": [
+                                                {
+                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref8_specifier2"
+                                                },
+                                                {
+                                                    "@type": "owl:Restriction",
+                                                    "onProperty": "obo:CDAO_0000174",
+                                                    "someValuesFrom": {
+                                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref8_specifier2"
+                                                    }
                                                 }
-                                            }
-                                        ]
-                                    }
+                                            ]
+                                        }
+                                    ]
                                 }
                             }
                         ]
                     },
                     "hasExternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref8",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref8_specifier2",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/ExternalSpecifier"
@@ -2611,7 +2628,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Exostratum blumii",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -2620,7 +2637,7 @@
                     ],
                     "hasInternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref8",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref8_specifier1",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -2635,7 +2652,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Arthrocormus schimperi",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -2645,7 +2662,7 @@
                     "label": "Arthrocormus"
                 },
                 {
-                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref9",
+                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref9",
                     "@type": [
                         "http://vocab.phyloref.org/phyloref/Phyloreference",
                         "owl:Class"
@@ -2658,13 +2675,13 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref9"
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref9_specifier1"
                                     },
                                     {
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref9"
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref9_specifier1"
                                         }
                                     }
                                 ]
@@ -2673,13 +2690,13 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref9"
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref9_specifier2"
                                     },
                                     {
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref9"
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref9_specifier2"
                                         }
                                     }
                                 ]
@@ -2689,28 +2706,30 @@
                                 "onProperty": "phyloref:has_Sibling",
                                 "someValuesFrom": {
                                     "@type": "owl:Class",
-                                    "unionOf": {
-                                        "@type": "owl:Class",
-                                        "unionOf": [
-                                            {
-                                                "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref9"
-                                            },
-                                            {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
-                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref9"
+                                    "unionOf": [
+                                        {
+                                            "@type": "owl:Class",
+                                            "unionOf": [
+                                                {
+                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref9_specifier3"
+                                                },
+                                                {
+                                                    "@type": "owl:Restriction",
+                                                    "onProperty": "obo:CDAO_0000174",
+                                                    "someValuesFrom": {
+                                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref9_specifier3"
+                                                    }
                                                 }
-                                            }
-                                        ]
-                                    }
+                                            ]
+                                        }
+                                    ]
                                 }
                             }
                         ]
                     },
                     "hasExternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref9",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref9_specifier3",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/ExternalSpecifier"
@@ -2725,7 +2744,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Arthrocormus schimperi",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -2734,7 +2753,7 @@
                     ],
                     "hasInternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref9",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref9_specifier1",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -2749,14 +2768,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Exostratum blumii",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref9",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref9_specifier2",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -2767,7 +2786,7 @@
                     "label": "Exostratum"
                 },
                 {
-                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref10",
+                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref10",
                     "@type": [
                         "http://vocab.phyloref.org/phyloref/Phyloreference",
                         "owl:Class"
@@ -2780,13 +2799,13 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref10"
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref10_specifier1"
                                     },
                                     {
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref10"
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref10_specifier1"
                                         }
                                     }
                                 ]
@@ -2796,28 +2815,30 @@
                                 "onProperty": "phyloref:has_Sibling",
                                 "someValuesFrom": {
                                     "@type": "owl:Class",
-                                    "unionOf": {
-                                        "@type": "owl:Class",
-                                        "unionOf": [
-                                            {
-                                                "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref10"
-                                            },
-                                            {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
-                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref10"
+                                    "unionOf": [
+                                        {
+                                            "@type": "owl:Class",
+                                            "unionOf": [
+                                                {
+                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref10_specifier2"
+                                                },
+                                                {
+                                                    "@type": "owl:Restriction",
+                                                    "onProperty": "obo:CDAO_0000174",
+                                                    "someValuesFrom": {
+                                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref10_specifier2"
+                                                    }
                                                 }
-                                            }
-                                        ]
-                                    }
+                                            ]
+                                        }
+                                    ]
                                 }
                             }
                         ]
                     },
                     "hasExternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref10",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref10_specifier2",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/ExternalSpecifier"
@@ -2832,7 +2853,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Leucophanes octoblepharoides",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -2841,7 +2862,7 @@
                     ],
                     "hasInternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref10",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref10_specifier1",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -2856,7 +2877,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Exodictyon incrassatum (Mitt.) Cardot",
-                                            "onProperty": "tnrs:submittedName"
+                                            "onProperty": "testcase:submittedName"
                                         }
                                     ]
                                 },
@@ -2869,7 +2890,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Exodictyon incrassatum",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -2879,7 +2900,7 @@
                     "label": "Exodictyon"
                 },
                 {
-                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref11",
+                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref11",
                     "@type": [
                         "http://vocab.phyloref.org/phyloref/Phyloreference",
                         "owl:Class"
@@ -2892,13 +2913,13 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref11"
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref11_specifier1"
                                     },
                                     {
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref11"
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref11_specifier1"
                                         }
                                     }
                                 ]
@@ -2907,13 +2928,13 @@
                                 "@type": "owl:Class",
                                 "unionOf": [
                                     {
-                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref11"
+                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref11_specifier2"
                                     },
                                     {
                                         "@type": "owl:Restriction",
                                         "onProperty": "obo:CDAO_0000174",
                                         "someValuesFrom": {
-                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref11"
+                                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref11_specifier2"
                                         }
                                     }
                                 ]
@@ -2923,28 +2944,30 @@
                                 "onProperty": "phyloref:has_Sibling",
                                 "someValuesFrom": {
                                     "@type": "owl:Class",
-                                    "unionOf": {
-                                        "@type": "owl:Class",
-                                        "unionOf": [
-                                            {
-                                                "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref11"
-                                            },
-                                            {
-                                                "@type": "owl:Restriction",
-                                                "onProperty": "obo:CDAO_0000174",
-                                                "someValuesFrom": {
-                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref11"
+                                    "unionOf": [
+                                        {
+                                            "@type": "owl:Class",
+                                            "unionOf": [
+                                                {
+                                                    "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref11_specifier3"
+                                                },
+                                                {
+                                                    "@type": "owl:Restriction",
+                                                    "onProperty": "obo:CDAO_0000174",
+                                                    "someValuesFrom": {
+                                                        "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref11_specifier3"
+                                                    }
                                                 }
-                                            }
-                                        ]
-                                    }
+                                            ]
+                                        }
+                                    ]
                                 }
                             }
                         ]
                     },
                     "hasExternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref11",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref11_specifier3",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/ExternalSpecifier"
@@ -2959,7 +2982,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Exodictyon incrassatum",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -2968,7 +2991,7 @@
                     ],
                     "hasInternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref11",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref11_specifier1",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -2983,14 +3006,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Leucophanes octoblepharoides",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1phyloref11",
+                            "@id": "https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#phylogeny1_phyloref11_specifier2",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -3005,7 +3028,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Leucophanes seychellarum",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }

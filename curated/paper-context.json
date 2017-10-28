@@ -8,6 +8,7 @@
         "obo": "http://purl.obolibrary.org/obo/",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
         "phyloref": "http://vocab.phyloref.org/phyloref/",
+        "testcase": "http://vocab.phyloref.org/phyloref/testcase.owl#",
         "owl": "http://www.w3.org/2002/07/owl#",
         "tnrs": "http://phylotastic.org/terms/tnrs.rdf#",
         "skos": "http://www.w3.org/2004/02/skos/core#",
@@ -144,9 +145,8 @@
             "@type": "@set"
         },
 
-
-
-
+        "matchedName": "testcase:matchedName",
+        "submittedName": "testcase:submittedName",
 
         "skos:closeMatch": {
             "@id": "skos:closeMatch",

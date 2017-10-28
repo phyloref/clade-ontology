@@ -53,6 +53,7 @@ class PhyloreferenceTestSuite:
         self.type = [owlterms.PHYLOREFERENCE_TEST_CASE, owlterms.OWL_ONTOLOGY]
         self.owl_imports = [
             "https://www.w3.org/2004/02/skos/core",
+            "http://vocab.phyloref.org/phyloref/testcase.owl",
             "http://raw.githubusercontent.com/hlapp/phyloref/master/phyloref.owl"
                 # Will become "http://phyloinformatics.net/phyloref.owl"
         ]
@@ -163,7 +164,9 @@ class TestPhyloref:
             "onProperty": owlterms.PHYLOREF_HAS_SIBLING,
             "someValuesFrom": {
                 "@type": owlterms.OWL_CLASS,
-                "unionOf": self.get_class_expression_for_internal_specifier(specifier)
+                "unionOf": [
+                    self.get_class_expression_for_internal_specifier(specifier)
+                ]
             }
         }
 
@@ -334,14 +337,16 @@ class TestPhyloref:
             phyloref.description = json['description']
 
         if 'internalSpecifiers' in json:
-            phyloref.count_specifiers += 1
-            specifier_id = '{0}_specifier{1}'.format(phyloref_id, phyloref.count_specifiers)
-            phyloref.internal_specifiers.extend([TestSpecifier(phyloref_id, owlterms.INTERNAL_SPECIFIER, specifier) for specifier in json['internalSpecifiers']])
+            for specifier in json['internalSpecifiers']:
+                phyloref.count_specifiers += 1
+                specifier_id = '{0}_specifier{1}'.format(phyloref_id, phyloref.count_specifiers)
+                phyloref.internal_specifiers.append(TestSpecifier(specifier_id, owlterms.INTERNAL_SPECIFIER, specifier))
 
         if 'externalSpecifiers' in json:
-            phyloref.count_specifiers += 1
-            specifier_id = '{0}_specifier{1}'.format(phyloref_id, phyloref.count_specifiers)
-            phyloref.external_specifiers.extend([TestSpecifier(phyloref_id, owlterms.EXTERNAL_SPECIFIER, specifier) for specifier in json['externalSpecifiers']])
+            for specifier in json['externalSpecifiers']:
+                phyloref.count_specifiers += 1
+                specifier_id = '{0}_specifier{1}'.format(phyloref_id, phyloref.count_specifiers)
+                phyloref.external_specifiers.append(TestSpecifier(specifier_id, owlterms.EXTERNAL_SPECIFIER, specifier))
 
         return phyloref
 
@@ -467,7 +472,7 @@ class TestPhylogeny:
             phyloref_count = 0
             for phyloref in json['phylorefs']:
                 phyloref_count += 1
-                phyloref_id = phylogeny.id + 'phyloref' + str(phyloref_count)
+                phyloref_id = phylogeny.id + '_phyloref' + str(phyloref_count)
                 phylogeny.phylorefs.append(TestPhyloref.load_from_json(phyloref_id, phyloref))
 
         return phylogeny
