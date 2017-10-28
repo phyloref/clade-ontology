@@ -130,7 +130,7 @@ class TestPhyloref:
         self.description = ""
 
         # Additional classes
-        self.additional_class_count = 0
+        self.count_additional_classes = 0
         self.additional_classes = []
 
         # Store specifiers
@@ -595,7 +595,7 @@ class TestPhylogeny:
                 continue
 
             labels = nodeEntry['label']
-            if isinstance(labels, str) or isinstance(labels, unicode):
+            if isinstance(labels, str) or isinstance(labels, type("")):
                 labels = [labels]
 
             for label in labels:
