@@ -144,8 +144,7 @@ class TestPhyloref:
             return None
 
         return {
-            "@type": owlterms.OWL_CLASS,
-            "equivalentClass": {
+            "@type": owlterms.OWL_RESTRICTION,
                 "unionOf": [
                     specifier,
                     {
@@ -154,7 +153,6 @@ class TestPhyloref:
                         "someValuesFrom": specifier
                     }
                 ]
-            }
         }
 
     def get_class_expression_for_external_specifier(self, specifier):
@@ -175,7 +173,6 @@ class TestPhyloref:
     def get_class_expression_for_mrca(self, class1, class2):
         mrca_as_owl = {
             "@type": "owl:Class",
-            "equivalentClass": {
                 "unionOf": [
                     # What if the correct answer *is* specifier1 or
                     # specifier2, such as if specifier2 is a direct
@@ -233,7 +230,6 @@ class TestPhyloref:
                             }
                         ]}
                 ]
-            }
         }
 
         # This is fine, in terms of complexity, but if you start
@@ -265,6 +261,9 @@ class TestPhyloref:
         # Write out all specifiers.
         doc['hasInternalSpecifier'] = [specifier.export_to_jsonld_document() for specifier in self.internal_specifiers]
         doc['hasExternalSpecifier'] = [specifier.export_to_jsonld_document() for specifier in self.external_specifiers]
+
+        # Write out all additional classes.
+        doc['hasAdditionalClass'] = self.additional_classes
 
         # What type of phyloreference is this?
         # Check for malformed specifiers.
