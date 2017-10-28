@@ -11,6 +11,7 @@
     "curator": "Gaurav Vaidya <gaurav@ggvaidya.com>",
     "owl:imports": [
         "https://www.w3.org/2004/02/skos/core",
+        "http://vocab.phyloref.org/phyloref/testcase.owl",
         "http://raw.githubusercontent.com/hlapp/phyloref/master/phyloref.owl"
     ],
     "phylogenies": [
@@ -2299,8 +2300,8 @@
                     "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_tree1",
                     "label": "Rana septentrionales",
                     "matchedName": [
-                        "Rana septentrionales",
-                        "Rana septentrionalis"
+                        "Rana septentrionalis",
+                        "Rana septentrionales"
                     ],
                     "siblings": [
                         "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_tree1_node21"
@@ -2797,8 +2798,8 @@
                     "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_tree1",
                     "label": "Rana zweifelii",
                     "matchedName": [
-                        "Rana zweifelii",
-                        "Rana zweifeli"
+                        "Rana zweifeli",
+                        "Rana zweifelii"
                     ],
                     "siblings": [
                         "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_tree1_node44"
@@ -3782,8 +3783,8 @@
                     "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_tree1",
                     "label": "Rana sphenocephela utricularia",
                     "matchedName": [
-                        "Rana sphenocephala utricularia",
-                        "Rana sphenocephela"
+                        "Rana sphenocephela",
+                        "Rana sphenocephala utricularia"
                     ],
                     "siblings": [
                         "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_tree1_node95"
@@ -4206,8 +4207,8 @@
                     "inPhylogeny": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_tree1",
                     "label": "Rana warszewitshii",
                     "matchedName": [
-                        "Rana warszewitschii",
-                        "Rana warszewitshii"
+                        "Rana warszewitshii",
+                        "Rana warszewitschii"
                     ],
                     "siblings": [
                         "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_tree1_node115"
@@ -4464,19 +4465,19 @@
             ],
             "phylorefs": [
                 {
-                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref1",
+                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref1",
                     "@type": [
                         "http://vocab.phyloref.org/phyloref/Phyloreference",
                         "owl:Class"
                     ],
                     "description": "Laurasiarana, new clade name. Definition: The clade stemming from the most recent common ancestor of Rana temporaria Linne 1758 and Rana aurora Baird and Girard 1852.",
                     "equivalentClass": {
-                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref1_additional0"
+                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref1_additional0"
                     },
                     "hasExternalSpecifier": [],
                     "hasInternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref1",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref1_specifier1",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -4491,14 +4492,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana temporaria",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref1",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref1_specifier2",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -4513,7 +4514,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana aurora",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -4523,19 +4524,19 @@
                     "label": "Laurasiarana"
                 },
                 {
-                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref2",
+                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref2",
                     "@type": [
                         "http://vocab.phyloref.org/phyloref/Phyloreference",
                         "owl:Class"
                     ],
                     "description": "Amerana Dubois 1992 (converted clade name). Definition: The clade stemming from the most recent common ancestor of Rana aurora Baird and Girard 1852, Rana boylii Baird 1854, Rana cascadae Slater 1939, Rana muscosa Camp 1917, and Rana pretiosa Baird and Girard 1853.",
                     "equivalentClass": {
-                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref2_additional3"
+                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref2_additional3"
                     },
                     "hasExternalSpecifier": [],
                     "hasInternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref2",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref2_specifier1",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -4550,14 +4551,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana aurora",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref2",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref2_specifier2",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -4572,14 +4573,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana boylii",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref2",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref2_specifier3",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -4594,14 +4595,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana cascadae",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref2",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref2_specifier4",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -4616,14 +4617,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana muscosa",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref2",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref2_specifier5",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -4638,7 +4639,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana pretiosa",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -4648,19 +4649,19 @@
                     "label": "Amerana"
                 },
                 {
-                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref3",
+                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref3",
                     "@type": [
                         "http://vocab.phyloref.org/phyloref/Phyloreference",
                         "owl:Class"
                     ],
                     "description": "Novirana, new clade name. Definition: The clade stemming from the most recent common ancestor of Rana catesbeiana Shaw 1802 and Rana pipiens Schreber 1782.",
                     "equivalentClass": {
-                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref3_additional0"
+                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref3_additional0"
                     },
                     "hasExternalSpecifier": [],
                     "hasInternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref3",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref3_specifier1",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -4675,14 +4676,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana catesbeiana",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref3",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref3_specifier2",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -4697,7 +4698,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana pipiens",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -4707,19 +4708,19 @@
                     "label": "Novirana"
                 },
                 {
-                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref4",
+                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref4",
                     "@type": [
                         "http://vocab.phyloref.org/phyloref/Phyloreference",
                         "owl:Class"
                     ],
                     "description": "Aquarana Dubois 1992 (converted clade name). Definition: The clade stemming from the most recent common ancestor of Rana catesbeiana Shaw 1802, Rana clamitans Latreille 1802, Rana grylio Stejneger 1901, Rana heckscheri Wright 1924, Rana okaloosae Moler 1985, Rana septentrionalis Baird 1854, and Rana virgatipes Cope1891. The species used in the definition are those species that were included by Dubois within this group.",
                     "equivalentClass": {
-                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref4_additional5"
+                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref4_additional5"
                     },
                     "hasExternalSpecifier": [],
                     "hasInternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref4",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref4_specifier1",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -4734,14 +4735,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana catesbeiana",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref4",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref4_specifier2",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -4756,14 +4757,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana clamitans",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref4",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref4_specifier3",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -4778,14 +4779,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana grylio",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref4",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref4_specifier4",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -4800,14 +4801,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana heckscheri",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref4",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref4_specifier5",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -4822,14 +4823,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana okaloosae",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref4",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref4_specifier6",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -4844,14 +4845,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana septentrionalis",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref4",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref4_specifier7",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -4866,7 +4867,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana virgatipes",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -4876,19 +4877,19 @@
                     "label": "Aquarana"
                 },
                 {
-                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref5",
+                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref5",
                     "@type": [
                         "http://vocab.phyloref.org/phyloref/Phyloreference",
                         "owl:Class"
                     ],
                     "description": "Sierrana Dubois 1992 (converted clade name). Definition: The clade stemming from the most recent common ancestor of Rana julianiHillis and de S\u00c3\u00a1, 1988, Rana maculata Brocchi 1877, and Rana sierramadrensis Taylor 1939.",
                     "equivalentClass": {
-                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref5_additional1"
+                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref5_additional1"
                     },
                     "hasExternalSpecifier": [],
                     "hasInternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref5",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref5_specifier1",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -4903,14 +4904,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana juliani",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref5",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref5_specifier2",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -4925,14 +4926,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana maculata",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref5",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref5_specifier3",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -4947,7 +4948,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana sierramadrensis",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -4957,19 +4958,19 @@
                     "label": "Sierrana"
                 },
                 {
-                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref6",
+                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref6",
                     "@type": [
                         "http://vocab.phyloref.org/phyloref/Phyloreference",
                         "owl:Class"
                     ],
                     "description": "Ranula Peters 1859 (converted clade name). Definition: The clade stemming from the most recent common ancestor of Rana palmipes Spix 1824 and Rana warszewitschii (Schmidt) 1857.",
                     "equivalentClass": {
-                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref6_additional0"
+                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref6_additional0"
                     },
                     "hasExternalSpecifier": [],
                     "hasInternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref6",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref6_specifier1",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -4984,14 +4985,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana palmipes",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref6",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref6_specifier2",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5006,7 +5007,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana warszewitschii",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -5016,19 +5017,19 @@
                     "label": "Ranula"
                 },
                 {
-                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref7",
+                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref7",
                     "@type": [
                         "http://vocab.phyloref.org/phyloref/Phyloreference",
                         "owl:Class"
                     ],
                     "description": "Levirana Cope 1894 (converted clade name). Definition: The clade stemming from the most recent common ancestor of Rana maculata Brocchi 1877 and Rana vibicaria (Cope) 1894.",
                     "equivalentClass": {
-                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref7_additional0"
+                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref7_additional0"
                     },
                     "hasExternalSpecifier": [],
                     "hasInternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref7",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref7_specifier1",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5043,14 +5044,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana maculata",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref7",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref7_specifier2",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5065,7 +5066,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana vibicaria",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -5075,19 +5076,19 @@
                     "label": "Levirana"
                 },
                 {
-                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref8",
+                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref8",
                     "@type": [
                         "http://vocab.phyloref.org/phyloref/Phyloreference",
                         "owl:Class"
                     ],
                     "description": "Trypheropsis Cope 1868 (converted clade name). Definition: The clade stemming from the most recent common ancestor of Rana warszewitschii (Schmidt) 1857 and Rana vibicaria (Cope) 1894.",
                     "equivalentClass": {
-                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref8_additional0"
+                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref8_additional0"
                     },
                     "hasExternalSpecifier": [],
                     "hasInternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref8",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref8_specifier1",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5102,14 +5103,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana warszewitschii",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref8",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref8_specifier2",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5124,7 +5125,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana vibicaria",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -5134,19 +5135,19 @@
                     "label": "Trypheropsis"
                 },
                 {
-                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref9",
+                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref9",
                     "@type": [
                         "http://vocab.phyloref.org/phyloref/Phyloreference",
                         "owl:Class"
                     ],
                     "description": "Lithobates Fitzinger 1843 (converted clade name). Definition: The clade stemming from the most recent common ancestor of Rana palmipes Spix 1824, Rana vaillanti Brocchi 1877, Rana bwanaHillis and de S\u00c3\u00a1 1988, and Rana julianiHillis and de S\u00c3\u00a1 1988.",
                     "equivalentClass": {
-                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref9_additional2"
+                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref9_additional2"
                     },
                     "hasExternalSpecifier": [],
                     "hasInternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref9",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref9_specifier1",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5161,14 +5162,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana palmipes",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref9",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref9_specifier2",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5183,14 +5184,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana vaillanti",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref9",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref9_specifier3",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5205,14 +5206,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana bwana",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref9",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref9_specifier4",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5227,7 +5228,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana juliani",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -5237,19 +5238,19 @@
                     "label": "Lithobates"
                 },
                 {
-                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref10",
+                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref10",
                     "@type": [
                         "http://vocab.phyloref.org/phyloref/Phyloreference",
                         "owl:Class"
                     ],
                     "description": "Torrentirana, new clade name. Definition: The clade stemming from the most recent common ancestor of Rana tarahumarae Boulenger 1917 and Rana sierramadrensis Taylor 1939",
                     "equivalentClass": {
-                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref10_additional0"
+                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref10_additional0"
                     },
                     "hasExternalSpecifier": [],
                     "hasInternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref10",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref10_specifier1",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5264,14 +5265,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana tarahumarae",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref10",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref10_specifier2",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5286,7 +5287,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana sierramadrensis",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -5296,19 +5297,19 @@
                     "label": "Torrentirana"
                 },
                 {
-                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref11",
+                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref11",
                     "@type": [
                         "http://vocab.phyloref.org/phyloref/Phyloreference",
                         "owl:Class"
                     ],
                     "description": "Zweifelia Dubois 1992 (converted clade name). Definition: The clade stemming from the most recent common ancestor of Rana tarahumarae Boulenger 1917 and Rana zweifeli Hillis, Frost and Webb 1984.",
                     "equivalentClass": {
-                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref11_additional0"
+                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref11_additional0"
                     },
                     "hasExternalSpecifier": [],
                     "hasInternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref11",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref11_specifier1",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5323,14 +5324,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana tarahumarae",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref11",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref11_specifier2",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5345,7 +5346,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana zweifeli",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -5355,19 +5356,19 @@
                     "label": "Zweifelia"
                 },
                 {
-                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref12",
+                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref12",
                     "@type": [
                         "http://vocab.phyloref.org/phyloref/Phyloreference",
                         "owl:Class"
                     ],
                     "description": "Pantherana Dubois 1992 (converted clade name). Definition: The clade stemming from the most recent common ancestor of Rana pipiens Schreber 1782, Rana montezumae Baird 1854, Rana palustris LeConte 1825, and Rana berlandieri Baird 1854.",
                     "equivalentClass": {
-                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref12_additional2"
+                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref12_additional2"
                     },
                     "hasExternalSpecifier": [],
                     "hasInternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref12",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref12_specifier1",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5382,14 +5383,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana pipiens",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref12",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref12_specifier2",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5404,14 +5405,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana montezumae",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref12",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref12_specifier3",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5426,14 +5427,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana palustris",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref12",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref12_specifier4",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5448,7 +5449,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana berlandieri",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -5458,19 +5459,19 @@
                     "label": "Pantherana"
                 },
                 {
-                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref13",
+                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref13",
                     "@type": [
                         "http://vocab.phyloref.org/phyloref/Phyloreference",
                         "owl:Class"
                     ],
                     "description": "",
                     "equivalentClass": {
-                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref13_additional0"
+                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref13_additional0"
                     },
                     "hasExternalSpecifier": [],
                     "hasInternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref13",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref13_specifier1",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5485,14 +5486,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana pipiens",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref13",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref13_specifier2",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5507,7 +5508,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana montezumae",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -5517,19 +5518,19 @@
                     "label": "Stertirana"
                 },
                 {
-                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref14",
+                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref14",
                     "@type": [
                         "http://vocab.phyloref.org/phyloref/Phyloreference",
                         "owl:Class"
                     ],
                     "description": "Lacusirana, new clade name. Definition: The clade stemming from the most recent common ancestor of Rana montezumae Baird 1854, R. megapoda Taylor 1942, and Rana chiricahuensis Platz and Mecham 1979. Etymology: From the Latin words lacus, meaning ``lake,'' and rana, meaning ``frog,'' in reference to the habitat of most of the species in this group. Content: In addition to the species named in the definition, this clade contains Rana dunni Zweifel 1957, Rana megapoda Taylor 1942, Rana subaquavocalis Platz 1993, Rana lemosespinaliSmith and Chiszar 2003, and a least one undescribed species from the Mexican Plateau (species 2 in Figs. 1, 2). In addition, we place Rana fisheri Stejneger 1893 in this clade based on morphological similarity. Type species: R. megapoda Taylor 1942.",
                     "equivalentClass": {
-                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref14_additional1"
+                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref14_additional1"
                     },
                     "hasExternalSpecifier": [],
                     "hasInternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref14",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref14_specifier1",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5544,14 +5545,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana montezumae",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref14",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref14_specifier2",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5566,14 +5567,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana megapoda",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref14",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref14_specifier3",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5588,7 +5589,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana chiricahuensis",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -5598,19 +5599,19 @@
                     "label": "Lacusirana"
                 },
                 {
-                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref15",
+                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref15",
                     "@type": [
                         "http://vocab.phyloref.org/phyloref/Phyloreference",
                         "owl:Class"
                     ],
                     "description": "Nenirana, new clade name. Definition: The clade stemming from the most recent common ancestor of Rana areolata Baird and Girard 1852 and Rana palustris Le Conte 1825. Etymology: From the Latin words nenia, meaning ``a funeral song,'' and rana, meaning ``frog,'' in reference to the low, mournful advertisement call of the species in this clade. Content: In addition to the species specified in the definition, this clade includes Rana capito LeConte 1855 and Rana sevosa Goin and Netting 1940. Hillis et al. (1983) informally termed this clade the R. areolata group. Type species: Rana areolata Baird and Girard 1852.",
                     "equivalentClass": {
-                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref15_additional0"
+                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref15_additional0"
                     },
                     "hasExternalSpecifier": [],
                     "hasInternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref15",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref15_specifier1",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5625,14 +5626,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana areolata",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref15",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref15_specifier2",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5647,7 +5648,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana palustris",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
@@ -5657,19 +5658,19 @@
                     "label": "Nenirana"
                 },
                 {
-                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref16",
+                    "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref16",
                     "@type": [
                         "http://vocab.phyloref.org/phyloref/Phyloreference",
                         "owl:Class"
                     ],
                     "description": "Scurrilirana, new clade name. Definition: The clade stemming from the most recent common ancestor of Rana berlandieri Baird 1854, Rana sphenocephala Cope 1886, Rana forreri Boulenger 1883, R. spectabilisHillis and Frost 1985, Rana omiltemana Gunther 1900, Rana taylori Smith 1959, and Rana magnaocularis Frost and Bagnara 1976. Etymology: From the Latin words scurrilis, meaning ``jesting,'' and rana, meaning ``frog,'' in reference to the advertisement calls of most of the species in this clade, which sound like chuckling laughter. Content: In addition to the species specified in the definition, this clade includes Rana blairi Mecham, Littlejohn, Oldham, Brown, and Brown 1973, Rana chichicuahutlaCuellar et al., 1996, Rana macroglossa Brocchi 1877, Rana miadis Barbour and Loveridge 1929, Rana neovolcanicaHillis and Frost, 1985, Rana onca Cope in Yarrow 1875, Rana tlalociHillis and Frost, 1985, Rana yavapaiensis Platz and Frost 1984, and several undescribed species (species 3\u00e2\u20ac\u201c8) in Mexico and Central America. Hillis et al. (1983) informally termed this clade the beta division of the R. pipiens complex. Type species: Rana berlandieri Baird 1854.",
                     "equivalentClass": {
-                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref16_additional5"
+                        "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref16_additional5"
                     },
                     "hasExternalSpecifier": [],
                     "hasInternalSpecifier": [
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref16",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref16_specifier1",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5684,14 +5685,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana berlandieri",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref16",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref16_specifier2",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5706,14 +5707,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana sphenocephala",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref16",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref16_specifier3",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5728,14 +5729,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana forreri",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref16",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref16_specifier4",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5750,14 +5751,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana spectabilis",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref16",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref16_specifier5",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5772,14 +5773,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana omiltemana",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref16",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref16_specifier6",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5794,14 +5795,14 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana taylori",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2phyloref16",
+                            "@id": "https://doi.org/10.1016/j.ympev.2004.10.007#phylogeny2_phyloref16_specifier7",
                             "@type": [
                                 "owl:Class",
                                 "http://vocab.phyloref.org/phyloref/InternalSpecifier"
@@ -5816,7 +5817,7 @@
                                         {
                                             "@type": "owl:Restriction",
                                             "hasValue": "Rana magnaocularis",
-                                            "onProperty": "tnrs:matchedName"
+                                            "onProperty": "testcase:matchedName"
                                         }
                                     ]
                                 }

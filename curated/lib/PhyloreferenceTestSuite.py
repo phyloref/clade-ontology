@@ -145,14 +145,16 @@ class TestPhyloref:
 
         return {
             "@type": owlterms.OWL_CLASS,
-            "unionOf": [
-                specifier,
-                {
-                    "@type": owlterms.OWL_RESTRICTION,
-                    "onProperty": owlterms.CDAO_HAS_DESCENDANT,
-                    "someValuesFrom": specifier
-                }
-            ]
+            "equivalentClass": {
+                "unionOf": [
+                    specifier,
+                    {
+                        "@type": owlterms.OWL_RESTRICTION,
+                        "onProperty": owlterms.CDAO_HAS_DESCENDANT,
+                        "someValuesFrom": specifier
+                    }
+                ]
+            }
         }
 
     def get_class_expression_for_external_specifier(self, specifier):
@@ -173,63 +175,65 @@ class TestPhyloref:
     def get_class_expression_for_mrca(self, class1, class2):
         mrca_as_owl = {
             "@type": "owl:Class",
-            "unionOf": [
-                # What if the correct answer *is* specifier1 or
-                # specifier2, such as if specifier2 is a direct
-                # descendant of specifier1? We encode that here.
-                {
-                    "@type": "owl:Class",
-                    "intersectionOf": [
-                        class1,
-                        {
-                            "@type": "owl:Restriction",
-                            "onProperty": "obo:CDAO_0000174",
-                            # has_Descendant
-                            "someValuesFrom": [class2]
-                        }
-                    ]
-                },
-                {
-                    "@type": "owl:Class",
-                    "intersectionOf": [
-                        class2,
-                        {
-                            "@type": "owl:Restriction",
-                            "onProperty": "obo:CDAO_0000174",
-                            # has_Descendant
-                            "someValuesFrom": [class1]
-                        }
-                    ]
-                },
+            "equivalentClass": {
+                "unionOf": [
+                    # What if the correct answer *is* specifier1 or
+                    # specifier2, such as if specifier2 is a direct
+                    # descendant of specifier1? We encode that here.
+                    {
+                        "@type": "owl:Class",
+                        "intersectionOf": [
+                            class1,
+                            {
+                                "@type": "owl:Restriction",
+                                "onProperty": "obo:CDAO_0000174",
+                                # has_Descendant
+                                "someValuesFrom": [class2]
+                            }
+                        ]
+                    },
+                    {
+                        "@type": "owl:Class",
+                        "intersectionOf": [
+                            class2,
+                            {
+                                "@type": "owl:Restriction",
+                                "onProperty": "obo:CDAO_0000174",
+                                # has_Descendant
+                                "someValuesFrom": [class1]
+                            }
+                        ]
+                    },
 
-                # Standard mrca formula
-                {
-                    "@type": "owl:Class",
-                    "intersectionOf": [
-                        {
-                            "@type": "owl:Restriction",
-                            "onProperty": "obo:CDAO_0000149",
-                            "someValuesFrom": {
-                                "@type": "owl:Class",
-                                "intersectionOf": [
-                                    self.get_class_expression_for_internal_specifier(class1),
-                                    self.get_class_expression_for_external_specifier(class2)
-                                ]
+                    # Standard mrca formula
+                    {
+                        "@type": "owl:Class",
+                        "intersectionOf": [
+                            {
+                                "@type": "owl:Restriction",
+                                "onProperty": "obo:CDAO_0000149",
+                                "someValuesFrom": {
+                                    "@type": "owl:Class",
+                                    "intersectionOf": [
+                                        self.get_class_expression_for_internal_specifier(class1),
+                                        self.get_class_expression_for_external_specifier(class2)
+                                    ]
+                                }
+                            },
+                            {
+                                "@type": "owl:Restriction",
+                                "onProperty": "obo:CDAO_0000149",
+                                "someValuesFrom": {
+                                    "@type": "owl:Class",
+                                    "intersectionOf": [
+                                        self.get_class_expression_for_internal_specifier(class2),
+                                        self.get_class_expression_for_external_specifier(class1)
+                                    ]
+                                }
                             }
-                        },
-                        {
-                            "@type": "owl:Restriction",
-                            "onProperty": "obo:CDAO_0000149",
-                            "someValuesFrom": {
-                                "@type": "owl:Class",
-                                "intersectionOf": [
-                                    self.get_class_expression_for_internal_specifier(class2),
-                                    self.get_class_expression_for_external_specifier(class1)
-                                ]
-                            }
-                        }
-                    ]}
-            ]
+                        ]}
+                ]
+            }
         }
 
         # This is fine, in terms of complexity, but if you start

@@ -10,7 +10,6 @@
         "phyloref": "http://vocab.phyloref.org/phyloref/",
         "testcase": "http://vocab.phyloref.org/phyloref/testcase.owl#",
         "owl": "http://www.w3.org/2002/07/owl#",
-        "tnrs": "http://phylotastic.org/terms/tnrs.rdf#",
         "skos": "http://www.w3.org/2004/02/skos/core#",
         "dsw": "http://purl.org/dsw/",
         "dwc": "http://rs.tdwg.org/dwc/terms/",
@@ -145,8 +144,15 @@
             "@type": "@set"
         },
 
-        "matchedName": "testcase:matchedName",
-        "submittedName": "testcase:submittedName",
+        "matchedName": {
+            "@id": "testcase:matchedName",
+            "@type": "xsd:string"
+        },
+
+        "submittedName": {
+            "@id": "testcase:submittedName",
+            "@type": "xsd:string"
+        },
 
         "skos:closeMatch": {
             "@id": "skos:closeMatch",
