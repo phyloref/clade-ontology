@@ -35,6 +35,7 @@ BASE_URL = 'http://vocab.phyloref.org/phyloref/'
 PHYLOREFERENCE = 'http://phyloinformatics.net/phyloref.owl#Phyloreference'
 # PHYLOREFERENCE = BASE_URL + 'Phyloreference'
 PHYLOREFERENCE_TEST_CASE = BASE_URL + 'PhyloreferenceTestSuite'
+PHYLOREFERENCE_TEST_PHYLOGENY_GROUP = BASE_URL + 'PhyloreferenceTestPhylogenyGroup'
 PHYLOREFERENCE_TEST_PHYLOGENY = BASE_URL + 'PhyloreferenceTestPhylogeny'
 
 # Specifiers

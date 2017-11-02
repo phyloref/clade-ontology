@@ -5,7 +5,7 @@ TestCase.py: A test case represents a single JSON file, containing multiple phyl
 """
 
 import owlterms
-from lib.Phylogeny import TestPhylogeny
+from lib.Phylogeny import TestPhylogenyGroup
 
 __version__ = "0.1"
 __author__ = "Gaurav Vaidya"
@@ -86,11 +86,11 @@ class PhyloreferenceTestSuite:
 
         # Load all test phylogenies
         if 'phylogenies' in doc:
-            phylogeny_count = 0
-            for phylogeny in doc['phylogenies']:
-                phylogeny_count += 1
-                phylogeny_id = testSuite.id + 'phylogeny' + str(phylogeny_count)
-                testSuite.phylogenies.append(TestPhylogeny.load_from_json(phylogeny_id, phylogeny))
+            phylogenies_count = 0
+            for phylogenies in doc['phylogenies']:
+                phylogenies_count += 1
+                phylogenies_id = testSuite.id + 'phylogenies' + str(phylogenies_count)
+                testSuite.phylogenies.append(TestPhylogenyGroup.load_from_json(phylogenies_id, phylogenies))
 
         return testSuite
 

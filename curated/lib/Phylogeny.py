@@ -8,43 +8,26 @@ from lib.Phyloreference import TestPhyloreference
 import PhyloreferenceTestSuite
 
 
-class TestPhylogeny:
+class TestPhylogenyGroup:
+    """
+    DendroPy loads NeXML files as TreeLists that might contain multiple trees. We model them as a
+    PhylogenyGroup that contains multiple Phylogenies.
+    """
+
     def __init__(self, id):
         self.id = id
 
         # Storage for trees
-        self.trees = []
-        self.nodes = []
-        self.annotations = []
+        self.phylogenies = []
         self.phylorefs = []
-
-        # Temporary storage
-        self.node_count = 0
-        self.nodes_by_id = dict()
-
-    # Store identifiers for each node object
-    def get_id_for_node(self, tree_id, node):
-        if node in self.nodes_by_id:
-            return self.nodes_by_id[node]
-        else:
-            self.nodes_by_id[node] = '{0}_node{1}'.format(tree_id, self.node_count)
-            self.node_count += 1
-            return self.nodes_by_id[node]
 
     def export_to_jsonld_document(self):
         doc = dict()
 
         doc['@id'] = self.id
-        doc['@type'] = owlterms.PHYLOREFERENCE_TEST_PHYLOGENY
+        doc['@type'] = owlterms.PHYLOREFERENCE_TEST_PHYLOGENY_GROUP
 
-        # Export each tree in Newick.
-        if len(self.trees) == 1:
-            doc['newick'] = self.trees[0].as_string(schema='newick')
-        elif len(self.trees) > 1:
-            doc['newick'] = [tree.as_string(schema='newick') for tree in self.trees]
-
-        # Export each node.
-        doc['nodes'] = [node for node in self.nodes]
+        doc['phylogenies'] = [phylogeny.export_to_jsonld_document() for phylogeny in self.phylogenies]
 
         # Export all phylorefs
         if len(self.phylorefs) > 0:
@@ -56,8 +39,8 @@ class TestPhylogeny:
         return doc
 
     @staticmethod
-    def load_from_json(phylogeny_id, json):
-        phylogeny = TestPhylogeny(phylogeny_id)
+    def load_from_json(phylogenies_id, json):
+        phylogeny_group = TestPhylogenyGroup(phylogenies_id)
 
         # A phylogeny is made of three components:
         #   - labeledNodeData: information provided for nodes in the phylogeny
@@ -67,36 +50,110 @@ class TestPhylogeny:
         # Step 1. Extract all labeled node data.
         labeled_node_data = dict()
         if 'labeledNodeData' in json:
-            labeled_node_data = phylogeny.process_labeled_node_data(json['labeledNodeData'])
+            labeled_node_data = phylogeny_group.process_labeled_node_data(json['labeledNodeData'])
 
         # Step 2. Read phylogenies using DendroPy.
+        treeList = []
         if 'filename' in json:
-            phylogeny.trees = phylogeny.load_phylogeny_from_nexml(json['filename'])
+            treeList = phylogeny_group.load_phylogeny_from_nexml(json['filename'])
         elif 'newick' in json:
-            phylogeny.trees = phylogeny.load_phylogeny_from_newick(json['newick'])
-        else:
-            # Maybe we should warn someone?
-            pass
+            treeList = phylogeny_group.load_phylogeny_from_newick(json['newick'])
 
         # Step 3. Convert phylogenies into nodes.
-        tree_count = 0
-        for tree in phylogeny.trees:
-            tree_count += 1
-            tree_id = phylogeny.id + "_tree" + str(tree_count)
+        phylogeny_count = 0
+        for tree in treeList:
+            phylogeny_count += 1
+            phylogeny_id = phylogeny_group.id + "_phylogeny" + str(phylogeny_count)
 
-            phylogeny.nodes.extend(phylogeny.convert_tree_to_nodes(tree_id, tree, labeled_node_data))
+            phylogeny_group.phylogenies.append(TestPhylogeny(phylogeny_id, tree, labeled_node_data))
 
         # Step 4. Convert phylorefs into class expressions.
         if 'phylorefs' in json:
             phyloref_count = 0
             for phyloref in json['phylorefs']:
                 phyloref_count += 1
-                phyloref_id = phylogeny.id + '_phyloref' + str(phyloref_count)
-                phylogeny.phylorefs.append(TestPhyloreference.load_from_json(phyloref_id, phyloref))
+                phyloref_id = phylogeny_group.id + '_phyloref' + str(phyloref_count)
+                phylogeny_group.phylorefs.append(TestPhyloreference.load_from_json(phyloref_id, phyloref))
 
-        return phylogeny
+        return phylogeny_group
 
-    def convert_tree_to_nodes(self, tree_id, tree, labeled_data):
+    def load_phylogeny_from_nexml(self, filename):
+        if not os.path.exists(filename):
+            raise PhyloreferenceTestSuite.TestException("ERROR in phylogeny {0}: tree file '{1}' could not be loaded!".format(self.id, filename))
+
+        # Load the tree file.
+        try:
+            return dendropy.TreeList.get(path=filename, schema='nexml')
+        except dendropy.utility.error.DataParseError as err:
+            raise PhyloreferenceTestSuite.TestException("Could not parse NeXML in phylogeny {0}: {1}".format(self.id, err))
+
+    def load_phylogeny_from_newick(self, newick):
+        try:
+            return dendropy.TreeList.get(data=newick, schema='newick')
+        except dendropy.utility.error.DataParseError as err:
+            raise PhyloreferenceTestSuite.TestException("Could not parse Newick while reading phylogeny {0}: {1}".format(self.id, err))
+
+    def process_labeled_node_data(self, nodeData):
+        labeled_node_data = dict()
+
+        for nodeEntry in nodeData:
+            if 'label' not in nodeEntry:
+                continue
+
+            labels = nodeEntry['label']
+            if isinstance(labels, (type(""), type(u""))):
+                labels = [labels]
+
+            for label in labels:
+                if label in labeled_node_data:
+                    raise PhyloreferenceTestSuite.TestException("Label '{0}' duplicated in labeled node data in phylogeny {1}.".format(label, self.id))
+
+                labeled_node_data[label] = nodeEntry
+
+        return labeled_node_data
+
+class TestPhylogeny:
+    def __init__(self, id, tree, labeled_node_data):
+        self.id = id
+
+        # Other variables.
+        self.annotations = []
+
+        # Tree
+        self.tree = tree
+
+        # Node count management
+        self.node_count = 0
+        self.nodes_by_id = dict()
+        self.nodes = self.convert_tree_to_nodes(tree, labeled_node_data)
+
+
+    # Store identifiers for each node object
+    def get_id_for_node(self, node):
+        if node in self.nodes_by_id:
+            return self.nodes_by_id[node]
+        else:
+            self.nodes_by_id[node] = '{0}_node{1}'.format(self.id, self.node_count)
+            self.node_count += 1
+            return self.nodes_by_id[node]
+
+    def export_to_jsonld_document(self):
+        doc = dict()
+
+        doc['@id'] = self.id
+        doc['@type'] = owlterms.PHYLOREFERENCE_TEST_PHYLOGENY
+
+        # Export tree in Newick.
+        doc['newick'] = self.tree.as_string(schema='newick')
+
+        # Export each node as part of each phylogeny.
+        doc['nodes'] = self.nodes
+
+        doc['annotations'] = self.annotations
+
+        return doc
+
+    def convert_tree_to_nodes(self, tree, labeled_data):
         nodes = []
 
         # Copy over any annotations from NeXML
@@ -104,7 +161,7 @@ class TestPhylogeny:
             self.annotations.append({
                 '@type': "Annotation",
                 'annotationName': annotation.name,
-                'annotationTarget': tree_id,
+                'annotationTarget': self.id,
                 'annotationBody': str(annotation.value)
             })
 
@@ -113,8 +170,8 @@ class TestPhylogeny:
 
             # Create the node.
             node_dict = dict()
-            node_dict['@id'] = self.get_id_for_node(tree_id, node)
-            node_dict['inPhylogeny'] = tree_id
+            node_dict['@id'] = self.get_id_for_node(node)
+            node_dict['inPhylogeny'] = self.id
 
             node_dict['@type'] = owlterms.CDAO_NODE,
 
@@ -123,7 +180,7 @@ class TestPhylogeny:
                 self.annotations.append({
                     '@type': "Annotation",
                     'annotationName': annotation.name,
-                    'annotationTarget': self.get_id_for_node(tree_id, node),
+                    'annotationTarget': self.get_id_for_node(self.id, node),
                     'annotationBody': str(annotation.value)
                 })
 
@@ -174,11 +231,11 @@ class TestPhylogeny:
 
             node_dict['children'] = list()
             for child in node.child_nodes():
-                node_dict['children'].append(self.get_id_for_node(tree_id, child))
+                node_dict['children'].append(self.get_id_for_node(child))
 
             node_dict['siblings'] = list()
             for sibling in node.sibling_nodes():
-                node_dict['siblings'].append(self.get_id_for_node(tree_id, sibling))
+                node_dict['siblings'].append(self.get_id_for_node(sibling))
 
             # Add to the list of nodes
             nodes.append(node_dict)
@@ -195,37 +252,4 @@ class TestPhylogeny:
 
         return nodes
 
-    def load_phylogeny_from_nexml(self, filename):
-        if not os.path.exists(filename):
-            raise PhyloreferenceTestSuite.TestException("ERROR in phylogeny {0}: tree file '{1}' could not be loaded!".format(self.id, filename))
 
-        # Load the tree file.
-        try:
-            return dendropy.TreeList.get(path=filename, schema='nexml')
-        except dendropy.utility.error.DataParseError as err:
-            raise PhyloreferenceTestSuite.TestException("Could not parse NeXML in phylogeny {0}: {1}".format(self.id, err))
-
-    def load_phylogeny_from_newick(self, newick):
-        try:
-            return dendropy.TreeList.get(data=newick, schema='newick')
-        except dendropy.utility.error.DataParseError as err:
-            raise PhyloreferenceTestSuite.TestException("Could not parse Newick while reading phylogeny {0}: {1}".format(self.id, err))
-
-    def process_labeled_node_data(self, nodeData):
-        labeled_node_data = dict()
-
-        for nodeEntry in nodeData:
-            if 'label' not in nodeEntry:
-                continue
-
-            labels = nodeEntry['label']
-            if isinstance(labels, (type(""), type(u""))):
-                labels = [labels]
-
-            for label in labels:
-                if label in labeled_node_data:
-                    raise PhyloreferenceTestSuite.TestException("Label '{0}' duplicated in labeled node data in phylogeny {1}.".format(label, self.id))
-
-                labeled_node_data[label] = nodeEntry
-
-        return labeled_node_data
