@@ -21,7 +21,7 @@ import sys
 # Add './lib' to lookup path.
 sys.path.append(os.path.join(os.path.dirname(__file__), "lib"))
 
-from lib.PhyloreferenceTestSuite import PhyloreferenceTestSuite
+from lib import PhyloreferenceTestSuite
 
 __version__ = "0.1"
 __author__ = "Gaurav Vaidya"
@@ -73,16 +73,28 @@ if FLAG_VERBOSE:
 # Step 3. Read the JSON file.
 doc = json.load(input_file)
 
+# Do the load as if we're in the same folder as the JSON file, so that
+# references to files resolve correctly.
+current_working_directory = os.getcwd()
+
+if args.input:
+    os.chdir(os.path.dirname(os.path.realpath(args.input)))
+
 try:
-    testCase = PhyloreferenceTestSuite.load_from_document(doc)
+    testCase = PhyloreferenceTestSuite.PhyloreferenceTestSuite.load_from_document(doc)
 except PhyloreferenceTestSuite.TestException as e:
-    sys.stderr.write("Could not read '" + str(input_file) + "': " + e.message)
+    sys.stderr.write("Could not read '{0}': {1}\n".format(str(input_file), e.message))
     exit(1)
 
 if FLAG_VERBOSE:
     sys.stderr.write("Loaded test case, id: {0}\n".format(testCase.id))
 
-# Write the paper back out again.
+# Step 4. Write the paper back out again.
 doc = testCase.export_to_jsonld_document()
+
+# Once we've done that, restore the current working directory.
+os.chdir(current_working_directory)
+
+
 doc['@context'] = '../paper-context.json'
 json.dump(doc, output_file, indent=4, sort_keys=True)
