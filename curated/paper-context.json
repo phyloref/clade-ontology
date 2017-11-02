@@ -109,11 +109,6 @@
             "@id": "testcase:hasTaxonName",
             "@type": "xsd:string"
         },
-
-        "binomialName": {
-            "@id": "testcase:hasBinomialName",
-            "@type": "xsd:string"
-        },
         
         "description": {
             "@id": "dc:description",
@@ -148,6 +143,11 @@
         "hasAdditionalClass": {
             "@id": "testcase:hasAdditionalClass",
             "@type": "@set"
+        },
+
+        "verbatimName": {
+          "@id": "testcase:hasVerbatimName",
+          "@type": "xsd:string"
         },
 
         "matchedName": {
@@ -207,11 +207,14 @@
             "@type": "xsd:string"
         },
 
-        "label": "rdfs:label",
-
-        "identifiedAsTaxonName": {
-            "@id": "testcase:identifiedAsTaxonName",
+        "label": {
+            "@id": "rdfs:label",
             "@type": "xsd:string"
+        },
+
+        "taxa": {
+            "@id": "testcase:includedInTaxon",
+            "@container": "@set"
         },
 
         "hasBasisOfRecord": "testcase:hasBasisOfRecord",
@@ -233,6 +236,59 @@
             "@type": "xsd:string"
         },
 
-        "filename": "testcase:filename"
+        "filename": "testcase:filename",
+
+
+
+
+
+        "external_references": {
+            "@id": "obo:CDAO_0000164",
+            "@type": "@id"
+        },
+
+        "scientific_names": {
+            "@id": "testcase:has_scientific_name",
+            "@type": "@set"
+        },
+
+        "includes_specimens": {
+            "@id": "testcase:includes_specimen",
+            "@type": "@set"
+        },
+
+        "matched_taxonomic_units": {
+            "@id": "testcase:matched_taxonomic_unit",
+            "@type": "@set"
+        },
+
+        "matched_by_specifier": {
+            "@id": "testcase:matched_by_specifier",
+            "@type": "@set"
+        },
+
+        "scientific_name": {
+            "@id": "dwc:scientificName",
+            "@type": "xsd:string"
+        },
+        "binomial_name": {
+            "@id": "testcase:has_binomial_name",
+            "@type": "xsd:string"
+        },
+        "genus": {
+            "@id": "dwc:genus",
+            "@type": "xsd:string"
+        },
+        "specific_epithet": {
+            "@id": "dwc:specificEpithet",
+            "@type": "xsd:string"
+        },
+
+        "subClassOf": {
+            "@id": "rdfs:subClassOf",
+            "@type": "@id"
+        },
+
+        "expected_phyloreference_named": "testcase:expected_phyloreference_named"
     }
 }

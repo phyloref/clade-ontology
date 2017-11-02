@@ -13,6 +13,23 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#has_scientific_name -->
+
+    <owl:AnnotationProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#has_scientific_name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Object Properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -119,6 +136,32 @@
     
 
 
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#includedInTaxon -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#includedInTaxon"/>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#includes_specimen -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#includes_specimen"/>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#matched_by_specifier -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#matched_by_specifier">
+        <owl:inverseOf rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#matched_taxonomic_unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#matched_taxonomic_unit -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#matched_taxonomic_unit"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -142,15 +185,27 @@
     
 
 
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasBinomialName -->
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#expected_phyloreference_named -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasBinomialName"/>
+    <owl:DatatypeProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#expected_phyloreference_named"/>
     
 
 
     <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasTaxonName -->
 
     <owl:DatatypeProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasTaxonName"/>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasVerbatimName -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasVerbatimName"/>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#has_binomial_name -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#has_binomial_name"/>
     
 
 
@@ -200,6 +255,12 @@
     <owl:Class rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#PhyloreferenceTestSuite">
         <rdfs:label xml:lang="en">Phyloreference Test Case</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#Taxon -->
+
+    <owl:Class rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#Taxon"/>
     
 
 
