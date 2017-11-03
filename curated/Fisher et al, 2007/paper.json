@@ -17,7 +17,8 @@
 
         "labeledNodeData": [
             { 
-                "label": ["Arthrocormus schimperi", "Arthrocormus"],
+                "label": "Arthrocormus schimperi",
+                "matchedName": ["Arthrocormus schimperi", "Arthrocormus"],
                 "skos:closeMatch": [
                     "http://www.theplantlist.org/tpl1.1/record/tro-35179022",
                     "http://www.tropicos.org/Name/35179022",
@@ -28,7 +29,8 @@
             { "label": "Exostratum blumii 245" },
             { "label": "Exostratum" },
             { 
-                "label": ["Exodictyon incrassatum", "Exodictyon"]
+                "label": "Exodictyon incrassatum",
+                "matchedName": ["Exodictyon incrassatum", "Exodictyon"]
             },
             { "label": "Leucophanes seychellarum" },
             { "label": "Leucophanes octoblepharoides" },
@@ -194,7 +196,8 @@
                     "dc:description": "Type: S. involutus Schwägr., Sp. Musc. Frond. Suppl. 2, 1(2): 117. pl. 132. (1824)",
                     "testcase:matchedName": "Syrrhopodon involutus"
                 }, {
-                    "dc:description": "Type: S. revolutus Dozy & Molk."
+                    "dc:description": "Type: S. revolutus Dozy & Molk.",
+                    "testcase:matchedName": "Syrrhopodon revolutus"
                 }],
                 "externalSpecifiers": [{
                     "dc:description": "external Specifier: S. trachyphyllus Mont., Sylloge Gen. Sp. Cryptog. 47. (1856)",
@@ -238,6 +241,7 @@
                     "testcase:matchedName": "Exostratum blumii"
                 }, {
                     "dc:description": "Mishler 7/24/98(3), Queensland, Australia (uc)"
+
                 }],
                 "externalSpecifiers": [{
                     "dc:description": "Type: Arthrocormus schimperi (Dozy & Molk.) Dozy & Molk. (= Mielichhoferia schimperi Dozy & Molk.), Musci Frond. Ined. Archip. Ind. 75. (1846)",

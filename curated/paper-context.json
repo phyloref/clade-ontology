@@ -207,7 +207,10 @@
             "@type": "xsd:string"
         },
 
-        "label": "rdfs:label",
+        "label": {
+            "@id": "rdfs:label",
+            "@type": "xsd:string"
+        },
 
         "identifiedAsTaxonName": {
             "@id": "testcase:identifiedAsTaxonName",

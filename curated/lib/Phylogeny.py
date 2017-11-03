@@ -173,7 +173,7 @@ class TestPhylogeny:
             node_dict['@id'] = self.get_id_for_node(node)
             node_dict['inPhylogeny'] = self.id
 
-            node_dict['@type'] = owlterms.CDAO_NODE,
+            node_dict['@type'] = owlterms.CDAO_NODE
 
             annotations = list()
             for annotation in node.annotations:
@@ -192,19 +192,17 @@ class TestPhylogeny:
                 node_labels.append(node)
 
             for node_label in node_labels:
-                node_dict['submittedName'] = node_label.label
-
-                matched_names = list()
+                node_dict['submittedName'] = [node_label.label]
 
                 # Is this a uninomial name?
                 match = re.search('^(\w+)$', node_label.label)
                 if match:
-                    node_dict['matchedName'] = match.group(1)
+                    node_dict['matchedName'] = [match.group(1)]
 
                 # Is this a binomial name?
                 match = re.search('^(\w+) ([\w\-]+)\\b', node_label.label)
                 if match:
-                    node_dict['matchedName'] = match.group(1) + " " + match.group(2)
+                    node_dict['matchedName'] = [match.group(1) + " " + match.group(2)]
 
                 if node_label.annotations:
                     closeMatches = node_label.annotations.findall(name='closeMatch')
@@ -216,18 +214,21 @@ class TestPhylogeny:
 
                     for key in nodeData:
                         if key in node_dict:
-                            if type(node_dict[key]) is not list:
-                                node_dict[key] = [node_dict[key], nodeData[key]]
-
-                            node_dict[key].append(nodeData[key])
+                            if isinstance(nodeData[key], list):
+                                node_dict[key].extend(nodeData[key])
+                            else:
+                                node_dict[key].append(nodeData[key])
 
                             # hackity hack hack
                             # TODO: cleanup
                             # remove duplicates
-                            node_dict[key] = list(set(node_dict[key]))
+                            try:
+                                node_dict[key] = list(set(node_dict[key]))
+                            except TypeError as e:
+                                raise TypeError("Deduplication of nodeData failed on key '" + str(key) + "', value: " + str(node_dict[key]))
 
                         else:
-                            node_dict[key] = nodeData[key]
+                            node_dict[key] = [nodeData[key]]
 
             node_dict['children'] = list()
             for child in node.child_nodes():
