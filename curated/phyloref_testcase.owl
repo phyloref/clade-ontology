@@ -119,6 +119,12 @@
     
 
 
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#includedInTaxon -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#includedInTaxon"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -151,6 +157,12 @@
     <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasTaxonName -->
 
     <owl:DatatypeProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasTaxonName"/>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasVerbatimName -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasVerbatimName"/>
     
 
 
@@ -200,6 +212,12 @@
     <owl:Class rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#PhyloreferenceTestSuite">
         <rdfs:label xml:lang="en">Phyloreference Test Case</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#Taxon -->
+
+    <owl:Class rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#Taxon"/>
     
 
 

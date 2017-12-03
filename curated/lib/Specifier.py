@@ -5,13 +5,14 @@ phyloreference much easier.
 """
 
 import owlterms
+from Taxon import Taxon
 
 __version__ = "0.1"
 __author__ = "Gaurav Vaidya"
 __copyright__ = "Copyright 2017 The Phyloreferencing Project"
 
 
-class Specifier:
+class Specifier (Taxon):
     """ A Specifier provides the information necessary to  """
 
     def __init__(self, specifier_id, specifier_type, match_on):
@@ -27,6 +28,11 @@ class Specifier:
         self.id = specifier_id
         self.type = [owlterms.OWL_CLASS, specifier_type]
         self.match_on = match_on
+        self.taxon = None
+
+        # In this Brave New World, we're only interested in the 'name' property.
+        if 'name' in self.match_on:
+            self.taxon = Taxon(self.match_on['name'])
 
     def get_reference(self):
         """ Returns a reference to this specifier, which should also be exported using
@@ -44,25 +50,30 @@ class Specifier:
 
         specifier_exprs = list()
 
-        for key in self.match_on:
-            if key == 'dc:description':
-                continue
+        if False:
+            for key in self.match_on:
+                if key == 'dc:description':
+                    continue
 
-            # TODO: add support for fields containing other fields
+                # TODO: add support for fields containing other fields
 
-            specifier_exprs.append({
-                "@type": "owl:Class",
-                "intersectionOf": [
-                    {"@id": owlterms.CDAO_NODE},  # Node and
-                    {"@type": owlterms.OWL_RESTRICTION,  # <key> <value>
-                     "onProperty": key,
-                     "hasValue": self.match_on[key]
-                     }
-                ]
-            })
+                specifier_exprs.append({
+                    "@type": "owl:Class",
+                    "intersectionOf": [
+                        {"@id": owlterms.CDAO_NODE},  # Node and
+                        {"@type": owlterms.OWL_RESTRICTION,  # <key> <value>
+                         "onProperty": key,
+                         "hasValue": self.match_on[key]
+                         }
+                    ]
+                })
 
-        return {
+        specifier = {
             "@id": self.id,
-            "@type": self.type,
-            "unionOf": specifier_exprs
+            "@type": self.type
         }
+
+        if self.taxon_name is not None:
+            specifier['taxa'] = self.taxon_name.as_dict()
+
+        return specifier

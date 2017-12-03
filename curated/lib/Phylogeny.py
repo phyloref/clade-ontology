@@ -5,6 +5,7 @@ in JSON-LD.
 
 import re
 import owlterms
+from Taxon import Taxon
 
 __version__ = "0.1"
 __author__ = "Gaurav Vaidya"
@@ -92,22 +93,21 @@ class Phylogeny:
             elif node.label is not None:
                 node_labels.append(node)
 
+            # Identify all distinct taxon associated with this Node
+            # and store it in the 'taxa' JSON property.
+            node_dict['taxa'] = []
+
             for node_label in node_labels:
-                node_dict['submittedName'] = [node_label.label]
-
-                # Is this a uninomial name?
-                match = re.search('^(\w+)$', node_label.label)
-                if match:
-                    node_dict['matchedName'] = [match.group(1)]
-
-                # Is this a binomial name?
-                match = re.search('^(\w+) ([\w\-]+)\\b', node_label.label)
-                if match:
-                    node_dict['matchedName'] = [match.group(1) + " " + match.group(2)]
+                taxon = Taxon(node_label.label)
+                taxon_dict = taxon.as_dict()
 
                 if node_label.annotations:
                     closeMatches = node_label.annotations.findall(name='closeMatch')
-                    node_dict['skos:closeMatch'] = [closeMatch.value for closeMatch in closeMatches]
+                    taxon_dict['skos:closeMatch'] = [closeMatch.value for closeMatch in closeMatches]
+
+                if len(taxon.keys()) > 1:
+                    # This node contains has a taxon!
+                    node_dict['taxa'].append(taxon_dict)
 
                 # Do we have any labeled data for this label?
                 if node_label.label in self.labeled_data:

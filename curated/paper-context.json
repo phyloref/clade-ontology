@@ -150,6 +150,11 @@
             "@type": "@set"
         },
 
+        "verbatimName": {
+          "@id": "testcase:hasVerbatimName",
+          "@type": "xsd:string"
+        },
+
         "matchedName": {
             "@id": "testcase:matchedName",
             "@type": "xsd:string"
@@ -212,9 +217,9 @@
             "@type": "xsd:string"
         },
 
-        "identifiedAsTaxonName": {
-            "@id": "testcase:identifiedAsTaxonName",
-            "@type": "xsd:string"
+        "taxa": {
+            "@id": "testcase:includedInTaxon",
+            "@container": "@set"
         },
 
         "hasBasisOfRecord": "testcase:hasBasisOfRecord",
