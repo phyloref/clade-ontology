@@ -13,19 +13,25 @@ OWL_IMPORTS = [
     "https://www.w3.org/2004/02/skos/core",
     "https://raw.githubusercontent.com/phyloref/curation-workflow/refactor_add_labels/curated/phyloref_testcase.owl",
         # Will become "http://vocab.phyloref.org/phyloref/testcase.owl",
-    "http://raw.githubusercontent.com/hlapp/phyloref/master/phyloref.owl"
+    "http://raw.githubusercontent.com/hlapp/phyloref/master/phyloref.owl",
         # Will become "http://phyloinformatics.net/phyloref.owl"
+    "http://purl.obolibrary.org/obo/bco.owl"
+        # Contains OWL definitions for Darwin Core terms
+        # TODO remove once we've implemented these properties ourselves.
 ]
 
 # CDAO terms
 CDAO_NODE = 'obo:CDAO_0000140'
 CDAO_HAS_DESCENDANT = "obo:CDAO_0000174"
+CDAO_TAXONOMIC_UNIT = "obo:CDAO_0000138"
 
 # Phyloref terms
 PHYLOREF_HAS_SIBLING = "phyloref:has_Sibling"
 
 # Base URL for Phyloreferencing
 BASE_URL = 'http://vocab.phyloref.org/phyloref/'
+
+# Empty node URLs
 
 # Phyloreference test suites belong to this class.
 PHYLOREFERENCE = 'http://phyloinformatics.net/phyloref.owl#Phyloreference'

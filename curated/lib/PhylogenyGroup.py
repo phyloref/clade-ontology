@@ -6,9 +6,9 @@ import os.path
 
 import dendropy
 
-import owlterms
-import PhyloreferenceTestSuite
-from Phylogeny import Phylogeny
+from lib import owlterms
+import lib.PhyloreferenceTestSuite
+from lib.Phylogeny import Phylogeny
 
 __version__ = "0.1"
 __author__ = "Gaurav Vaidya"
@@ -75,7 +75,7 @@ class PhylogenyGroup:
         """ Load phylogenies from an NeXML file. """
 
         if not os.path.exists(filename):
-            raise PhyloreferenceTestSuite.TestSuiteException(
+            raise lib.PhyloreferenceTestSuite.TestSuiteException(
                 "ERROR in phylogeny {0}: dendropy_tree file '{1}' could not be loaded!".format(self.id, filename)
             )
 
@@ -83,7 +83,7 @@ class PhylogenyGroup:
         try:
             return dendropy.TreeList.get(path=filename, schema='nexml')
         except dendropy.utility.error.DataParseError as err:
-            raise PhyloreferenceTestSuite.TestSuiteException(
+            raise lib.PhyloreferenceTestSuite.TestSuiteException(
                 "Could not parse NeXML in phylogeny {0}: {1}".format(self.id, err)
             )
 
@@ -93,7 +93,7 @@ class PhylogenyGroup:
         try:
             return dendropy.TreeList.get(data=newick, schema='newick')
         except dendropy.utility.error.DataParseError as err:
-            raise PhyloreferenceTestSuite.TestSuiteException(
+            raise lib.PhyloreferenceTestSuite.TestSuiteException(
                 "Could not parse Newick while reading phylogeny {0}: {1}".format(self.id, err)
             )
 
@@ -112,7 +112,7 @@ class PhylogenyGroup:
 
             for label in labels:
                 if label in labeled_node_data:
-                    raise PhyloreferenceTestSuite.TestSuiteException(
+                    raise lib.PhyloreferenceTestSuite.TestSuiteException(
                         "Label '{0}' duplicated in labeled node data in phylogeny {1}.".format(label, self.id)
                     )
 

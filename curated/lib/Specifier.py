@@ -1,79 +1,51 @@
 """
-A Specifier matches one or more Nodes on a phylogeny on the basis of provided properties, such as taxonomic name,
-concept label, or any other property. Once the specifier has matched a taxonomic unit, this makes resolving the
-phyloreference much easier.
+A Specifier matches one or more Nodes on a phylogeny. Specifier-matching occurs outside of OWL and is
+inserted into OWL as a model. Once specifiers have matched, phyloreferences can be matched by reference
+to their specifiers.
 """
 
-import owlterms
-from Taxon import Taxon
+from lib import owlterms
+from lib.TaxonomicUnit import TaxonomicUnit
+from lib.Identified import Identified
 
 __version__ = "0.1"
 __author__ = "Gaurav Vaidya"
 __copyright__ = "Copyright 2017 The Phyloreferencing Project"
 
 
-class Specifier (Taxon):
-    """ A Specifier provides the information necessary to  """
+class Specifier(TaxonomicUnit, Identified):
+    """
+    A Specifier provides the information necessary to match a taxonomic unit.
+    It is therefore a Taxonomic Unit itself.
+    """
 
-    def __init__(self, specifier_id, specifier_type, match_on):
-        """ Create a specifier on the basis of:
-         - An identifier (specifier_id)
-         - A specifier_type (either owlterms.EXTERNAL_SPECIFIER or owlterms.INTERNAL_SPECIFIER)
-         - Key-value pairs in match_on
+    def __init__(self):
+        super(Specifier, self).__init__()
 
-        This is extremely messy, and will be cleaned up as
-        part of https://github.com/phyloref/curation-workflow/issues/6
-        """
+        self.owl_class.append(owlterms.SPECIFIER)
 
-        self.id = specifier_id
-        self.type = [owlterms.OWL_CLASS, specifier_type]
-        self.match_on = match_on
-        self.taxon = None
 
-        # In this Brave New World, we're only interested in the 'name' property.
-        if 'name' in self.match_on:
-            self.taxon = Taxon(self.match_on['name'])
+class InternalSpecifier(Specifier):
+    def __init__(self):
+        super(InternalSpecifier, self).__init__()
 
-    def get_reference(self):
-        """ Returns a reference to this specifier, which should also be exported using
-        export_to_jsonld_document().
+        self.owl_class.append(owlterms.INTERNAL_SPECIFIER)
 
-        :return: A JSON-LD object that resolves to this object.
-        """
+    @staticmethod
+    def from_jsonld(jsonld):
+        specifier = InternalSpecifier()
+        specifier.load_from_jsonld(jsonld)
+        return specifier
 
-        return {
-            '@id': self.id
-        }
 
-    def export_to_jsonld_document(self):
-        """ Return this specifier as a JSON-LD document. """
+class ExternalSpecifier(Specifier):
+    def __init__(self):
+        super(ExternalSpecifier, self).__init__()
 
-        specifier_exprs = list()
+        self.owl_class.append(owlterms.EXTERNAL_SPECIFIER)
 
-        if False:
-            for key in self.match_on:
-                if key == 'dc:description':
-                    continue
-
-                # TODO: add support for fields containing other fields
-
-                specifier_exprs.append({
-                    "@type": "owl:Class",
-                    "intersectionOf": [
-                        {"@id": owlterms.CDAO_NODE},  # Node and
-                        {"@type": owlterms.OWL_RESTRICTION,  # <key> <value>
-                         "onProperty": key,
-                         "hasValue": self.match_on[key]
-                         }
-                    ]
-                })
-
-        specifier = {
-            "@id": self.id,
-            "@type": self.type
-        }
-
-        if self.taxon_name is not None:
-            specifier['taxa'] = self.taxon_name.as_dict()
-
+    @staticmethod
+    def from_jsonld(jsonld):
+        specifier = ExternalSpecifier()
+        specifier.load_from_jsonld(jsonld)
         return specifier

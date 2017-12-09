@@ -3,9 +3,8 @@ A Phylogeny wraps a DendroPy tree, converting it into a Newick representation as
 in JSON-LD.
 """
 
-import re
-import owlterms
-from Taxon import Taxon
+from lib import owlterms
+from lib.TaxonomicUnit import TaxonomicUnit
 
 __version__ = "0.1"
 __author__ = "Gaurav Vaidya"
@@ -95,41 +94,19 @@ class Phylogeny:
 
             # Identify all distinct taxon associated with this Node
             # and store it in the 'taxa' JSON property.
-            node_dict['taxa'] = []
+            tunits = []
 
             for node_label in node_labels:
-                taxon = Taxon(node_label.label)
-                taxon_dict = taxon.as_dict()
+                tunits.append(TaxonomicUnit.from_scientific_name(node_label.label))
 
                 if node_label.annotations:
-                    closeMatches = node_label.annotations.findall(name='closeMatch')
-                    taxon_dict['skos:closeMatch'] = [closeMatch.value for closeMatch in closeMatches]
+                    close_matches = node_label.annotations.findall(name='closeMatch')
+                    tunits.extend(map(
+                        lambda n: TaxonomicUnit.from_scientific_name(n),
+                        [closeMatch.value for closeMatch in close_matches])
+                    )
 
-                if len(taxon.keys()) > 1:
-                    # This node contains has a taxon!
-                    node_dict['taxa'].append(taxon_dict)
-
-                # Do we have any labeled data for this label?
-                if node_label.label in self.labeled_data:
-                    nodeData = self.labeled_data[node_label.label]
-
-                    for key in nodeData:
-                        if key in node_dict:
-                            if isinstance(nodeData[key], list):
-                                node_dict[key].extend(nodeData[key])
-                            else:
-                                node_dict[key].append(nodeData[key])
-
-                            # hackity hack hack
-                            # TODO: cleanup
-                            # remove duplicates
-                            try:
-                                node_dict[key] = list(set(node_dict[key]))
-                            except TypeError as e:
-                                raise TypeError("Deduplication of nodeData failed on key '" + str(key) + "', value: " + str(node_dict[key]))
-
-                        else:
-                            node_dict[key] = [nodeData[key]]
+            node_dict['taxa'] = [tunit.as_jsonld() for tunit in tunits]
 
             node_dict['children'] = list()
             for child in node.child_nodes():

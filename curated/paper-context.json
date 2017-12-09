@@ -109,11 +109,6 @@
             "@id": "testcase:hasTaxonName",
             "@type": "xsd:string"
         },
-
-        "binomialName": {
-            "@id": "testcase:hasBinomialName",
-            "@type": "xsd:string"
-        },
         
         "description": {
             "@id": "dc:description",
@@ -241,6 +236,42 @@
             "@type": "xsd:string"
         },
 
-        "filename": "testcase:filename"
+        "filename": "testcase:filename",
+
+
+
+
+
+        "external_references": {
+            "@id": "obo:CDAO_0000164",
+            "@type": "@id"
+        },
+
+        "scientific_names": {
+            "@id": "testcase:has_scientific_name",
+            "@type": "@set"
+        },
+
+        "includes_specimens": {
+            "@id": "testcase:includes_specimen",
+            "@type": "@set"
+        },
+
+        "scientific_name": {
+            "@id": "dwc:scientificName",
+            "@type": "xsd:string"
+        },
+        "binomial_name": {
+            "@id": "testcase:has_binomial_name",
+            "@type": "xsd:string"
+        },
+        "genus": {
+            "@id": "dwc:genus",
+            "@type": "xsd:string"
+        },
+        "specific_epithet": {
+            "@id": "dwc:specificEpithet",
+            "@type": "xsd:string"
+        }
     }
 }

@@ -3,7 +3,7 @@ A Phyloreference is a definition that unambiguously refers to a node on a phylog
 internal and external specifiers.
 """
 
-from Specifier import Specifier
+from lib.Specifier import Specifier, InternalSpecifier, ExternalSpecifier
 import owlterms
 
 __version__ = "0.1"
@@ -47,14 +47,16 @@ class Phyloreference:
         if 'internalSpecifiers' in json:
             for specifier in json['internalSpecifiers']:
                 phyloref.count_specifiers += 1
-                specifier_id = '{0}_specifier{1}'.format(phyloref_id, phyloref.count_specifiers)
-                phyloref.internal_specifiers.append(Specifier(specifier_id, owlterms.INTERNAL_SPECIFIER, specifier))
+                internal_specifier = InternalSpecifier.from_jsonld(specifier)
+                internal_specifier.id = '{0}_specifier{1}'.format(phyloref_id, phyloref.count_specifiers)
+                phyloref.internal_specifiers.append(internal_specifier)
 
         if 'externalSpecifiers' in json:
             for specifier in json['externalSpecifiers']:
                 phyloref.count_specifiers += 1
-                specifier_id = '{0}_specifier{1}'.format(phyloref_id, phyloref.count_specifiers)
-                phyloref.external_specifiers.append(Specifier(specifier_id, owlterms.EXTERNAL_SPECIFIER, specifier))
+                external_specifier = ExternalSpecifier.from_jsonld(specifier)
+                external_specifier.id = '{0}_specifier{1}'.format(phyloref_id, phyloref.count_specifiers)
+                phyloref.external_specifiers.append(external_specifier)
 
         return phyloref
 
@@ -69,8 +71,8 @@ class Phyloreference:
         doc['description'] = self.description
 
         # Write out all specifiers.
-        doc['hasInternalSpecifier'] = [specifier.export_to_jsonld_document() for specifier in self.internal_specifiers]
-        doc['hasExternalSpecifier'] = [specifier.export_to_jsonld_document() for specifier in self.external_specifiers]
+        doc['hasInternalSpecifier'] = [specifier.as_jsonld() for specifier in self.internal_specifiers]
+        doc['hasExternalSpecifier'] = [specifier.as_jsonld() for specifier in self.external_specifiers]
 
         # What type of phyloreference is this?
         # Check for malformed specifiers.
