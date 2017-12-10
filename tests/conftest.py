@@ -20,8 +20,10 @@ def pytest_generate_tests(metafunc):
         os.path.isdir(phylorefs_path + "/" + d) and 
         d[0] != '.' and 
             # Ignore Unix hidden folders
-        d != 'lib'
+        d != 'lib' and
             # Ignore the 'lib' directory
+        os.path.isfile(phylorefs_path + "/" + d + "/paper.json")
+            # Only include directories containing 'paper.json'
     ]
 
     if "paper_json" in metafunc.fixturenames:
