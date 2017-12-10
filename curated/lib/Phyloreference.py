@@ -189,12 +189,7 @@ def get_class_expression_for_external_specifier(specifier):
     return {
         "@type": owlterms.OWL_RESTRICTION,
         "onProperty": owlterms.PHYLOREF_HAS_SIBLING,
-        "someValuesFrom": {
-            "@type": owlterms.OWL_CLASS,
-            "unionOf": [
-                get_class_expression_for_internal_specifier(specifier)
-            ]
-        }
+        "someValuesFrom": get_class_expression_for_internal_specifier(specifier)
     }
 
 

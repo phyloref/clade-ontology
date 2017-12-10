@@ -107,27 +107,36 @@ class Phylogeny(object):
             # and store it in the 'taxa' JSON property.
             tunits = []
 
+            node_label_strs = []
             tunit_count = 1
+
+            # Collect all the node labels.
             for node_label in node_labels:
                 # TODO clean up
                 if node_label.label in self.additional_node_properties:
                     node.additional_properties = self.additional_node_properties[node_label.label]
 
-                # TODO clean up
-                if node_label.label.startswith("expected "):
-                    node.expected_phyloref_named = node_label.label[9:]
+                    # Does the additional_node_properties have an 'additional_labels' property?
+                    if 'additional_labels' in node.additional_properties:
+                        node_label_strs.extend(node.additional_properties['additional_labels'])
 
-                tunit = TaxonomicUnit.from_scientific_name(node_label.label)
+                if node_label.annotations:
+                    for closeMatch in node_label.annotations.findall(name='closeMatch'):
+                        node_label_strs.append(closeMatch.value)
+
+            # Create taxonomic units for all the node labels.
+            for node_label_str in node_label_strs:
+                # TODO clean up
+                if node_label_str.startswith("expected "):
+                    node.expected_phyloref_named = node_label_str[9:]
+
+                tunit = TaxonomicUnit.from_scientific_name(node_label_str)
                 tunit.id = self.get_id_for_node(dendropy_node) + ("_tunit%d" % tunit_count)
                 tunits.append(tunit)
                 tunit_count += 1
 
-                if node_label.annotations:
-                    for closeMatch in node_label.annotations.findall(name='closeMatch'):
-                        tunit = TaxonomicUnit.from_scientific_name(closeMatch.value)
-                        tunit.id = self.get_id_for_node(dendropy_node) + ("_tunit%d" % tunit_count)
-                        tunits.append(tunit)
-                        tunit_count += 1
+                # TODO: check node.additional_properties and see if the user has provided
+                # specimen or scientific name information.
 
             node.taxonomic_units = tunits
             if dendropy_node not in self.tunits_by_node:
