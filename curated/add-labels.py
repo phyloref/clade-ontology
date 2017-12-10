@@ -20,7 +20,6 @@ import sys
 sys.path.append(os.path.join(os.path.dirname(__file__), "lib"))
 
 from lib import PhyloreferenceTestSuite
-from lib.Specifier import Specifier
 
 __version__ = "0.1"
 __author__ = "Gaurav Vaidya"
@@ -86,7 +85,8 @@ if args.input:
 
 try:
     testCase = PhyloreferenceTestSuite.PhyloreferenceTestSuite.load_from_document(doc)
-    print("match_specifiers: " + str(testCase.match_specifiers(Specifier.match_by_binomial_name)))
+    match_results = testCase.match_specifiers()
+    # print("match_specifiers: " + str(match_results))
 except PhyloreferenceTestSuite.TestSuiteException as e:
     sys.stderr.write("Could not read '{0}': {1}\n".format(str(input_file), e.message))
     exit(1)

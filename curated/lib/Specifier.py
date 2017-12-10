@@ -4,61 +4,84 @@ inserted into OWL as a model. Once specifiers have matched, phyloreferences can 
 to their specifiers.
 """
 
+import warnings
+
 from lib import owlterms
 from lib.TaxonomicUnit import TaxonomicUnit
 from lib.Identified import Identified
 
-__version__ = "0.1"
-__author__ = "Gaurav Vaidya"
-__copyright__ = "Copyright 2017 The Phyloreferencing Project"
 
-
-class Specifier(TaxonomicUnit):
+class Specifier(Identified):
     """
-    A Specifier provides the information necessary to match a taxonomic unit.
-    It is therefore a Taxonomic Unit itself.
+    A Specifier is a part of a phyloreference that matches nodes. It can
+    consist of one or more taxonomic units.
     """
 
-    def __init__(self):
+    def __init__(self, *tunits):
+        """ Create a Specifier that contains one or more taxonomic units. """
+
         super(Specifier, self).__init__()
 
-        self.owl_classes.append(owlterms.SPECIFIER)
+        self.owl_classes = [owlterms.SPECIFIER]
+        self.taxonomic_units = set()
+        self.taxonomic_units.update(tunits)
 
-    # Matchers
+    def as_jsonld(self):
+        """ Return this Specifier as a JSON-LD object. """
+
+        return {
+            '@id': self.id,
+            '@type': self.owl_classes,
+            'references_taxonomic_units': [tu.as_jsonld() for tu in self.taxonomic_units]
+        }
+
     @staticmethod
-    def match_by_binomial_name(specifier, tunit):
-        specifier_scnames = specifier.scientific_names
-        tunit_scnames = tunit.scientific_names
+    def from_jsonld(json):
+        """ Create a Specifier from a JSON-LD object. """
 
-        for specifier_scname in specifier_scnames:
-            for tunit_scname in tunit_scnames:
-                if specifier_scname.binomial_name == tunit_scname.binomial_name:
-                    return True
+        specifier = Specifier()
 
-        return False
+        if '@id' in json:
+            specifier.identified_as_id = json['@id']
+
+        if 'references_taxonomic_units' not in json:
+            return specifier
+
+        for tu_as_json in json['references_taxonomic_units']:
+            tu = TaxonomicUnit.from_jsonld(tu_as_json)
+            specifier.taxonomic_units.add(tu)
+
+        if len(specifier.taxonomic_units) == 0:
+            warnings.warn("Specifier '{!s}' created without any taxonomic units.".format(specifier))
+
+        return specifier
 
 
 class InternalSpecifier(Specifier):
     def __init__(self):
+        """ Create an internal specifier. """
         super(InternalSpecifier, self).__init__()
 
         self.owl_classes.append(owlterms.INTERNAL_SPECIFIER)
 
     @staticmethod
-    def from_jsonld(jsonld):
-        specifier = InternalSpecifier()
-        specifier.load_from_jsonld(jsonld)
+    def from_jsonld(json):
+        """ Create an internal specifier by loading it from a JSON-LD object. """
+        specifier = Specifier.from_jsonld(json)
+        specifier.owl_classes.append(owlterms.INTERNAL_SPECIFIER)
         return specifier
 
 
 class ExternalSpecifier(Specifier):
     def __init__(self):
+        """ Create an external specifier. """
         super(ExternalSpecifier, self).__init__()
 
         self.owl_classes.append(owlterms.EXTERNAL_SPECIFIER)
 
     @staticmethod
-    def from_jsonld(jsonld):
-        specifier = ExternalSpecifier()
-        specifier.load_from_jsonld(jsonld)
+    def from_jsonld(json):
+        """ Create an external specifier by loading it from a JSON-LD object. """
+        specifier = Specifier.from_jsonld(json)
+        specifier.owl_classes.append(owlterms.EXTERNAL_SPECIFIER)
         return specifier

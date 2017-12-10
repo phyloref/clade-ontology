@@ -4,26 +4,14 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#has_scientific_name -->
-
-    <owl:AnnotationProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#has_scientific_name"/>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/cdao/2013-02-01/cdao.owl"/>
+    </owl:Ontology>
     
 
 
@@ -38,127 +26,158 @@
     
 
 
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasAdditionalClass -->
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#has_additional_class -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasAdditionalClass"/>
-    
-
-
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasAnnotation -->
-
-    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasAnnotation"/>
-    
-
-
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasBasisOfRecord -->
-
-    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasBasisOfRecord"/>
-    
-
-
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasCollectingEvent -->
-
-    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasCollectingEvent">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#has_additional_class">
+        <rdfs:comment xml:lang="en">This phyloreference has additional class expressions that need to be resolved before the phyloreference can be resolved.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasExternalSpecifier -->
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#has_annotation -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasExternalSpecifier">
-        <rdfs:subPropertyOf rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#hasSpecifier"/>
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#has_annotation">
+        <rdfs:comment xml:lang="en">Additional annotations for nodes on this phylogeny, described using the Annotation Ontology.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasInternalSpecifier -->
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#has_external_specifier -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasInternalSpecifier">
-        <rdfs:subPropertyOf rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#hasSpecifier"/>
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#has_external_specifier">
+        <rdfs:subPropertyOf rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#has_specifier"/>
+        <rdfs:range rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#ExternalSpecifier"/>
+        <rdfs:comment xml:lang="en">Associates an external specifier with a phyloreference.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasLabeledNodeData -->
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#has_internal_specifier -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasLabeledNodeData"/>
-    
-
-
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasNode -->
-
-    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasNode">
-        <owl:inverseOf rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#inPhylogeny"/>
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#has_internal_specifier">
+        <rdfs:subPropertyOf rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#has_specifier"/>
+        <rdfs:range rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#InternalSpecifier"/>
+        <rdfs:comment xml:lang="en">Associates an internal specifier with a phyloreference.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasOTU -->
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#has_node -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasOTU"/>
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#has_node">
+        <owl:inverseOf rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#in_phylogeny"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+        <rdfs:comment xml:lang="en">Associates a phylogeny with a node contained in it.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasPhylogeny -->
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#has_phylogeny -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasPhylogeny"/>
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#has_phylogeny">
+        <rdfs:comment xml:lang="en">Phylogeny that is a part of this phylogeny group.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasPhyloreference -->
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#has_phyloreference -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasPhyloreference"/>
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#has_phyloreference">
+        <rdfs:comment xml:lang="en">Associates a phyloreference with test suite.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasRootNode -->
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#has_root_node -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasRootNode"/>
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#has_root_node">
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+        <rdfs:comment xml:lang="en">The root node(s) of a phylogeny.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasSpecifier -->
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#has_specifier -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasSpecifier"/>
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#has_specifier">
+        <rdfs:range rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#Specifier"/>
+        <rdfs:comment xml:lang="en">Associates a specifier with a phyloreference.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasTaxonAnnotation -->
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#has_taxonomic_unit_match -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasTaxonAnnotation"/>
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#has_taxonomic_unit_match">
+        <rdfs:comment xml:lang="en">Associates a taxonomic unit match (TUMatch) with a phyloreference test suite.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#inPhylogeny -->
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#in_phylogeny -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#inPhylogeny"/>
-    
-
-
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#includedInTaxon -->
-
-    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#includedInTaxon"/>
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#in_phylogeny">
+        <rdfs:comment xml:lang="en">Associates a node with the phylogeny it is contained in.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://vocab.phyloref.org/phyloref/testcase.owl#includes_specimen -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#includes_specimen"/>
-    
-
-
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#matched_by_specifier -->
-
-    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#matched_by_specifier">
-        <owl:inverseOf rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#matched_taxonomic_unit"/>
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#includes_specimen">
+        <rdfs:comment xml:lang="en">Asserts that a specimen is included in a Taxonomic Unit.</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#matched_taxonomic_unit -->
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#matches_node -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#matched_taxonomic_unit"/>
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#matches_node">
+        <owl:inverseOf rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#matches_specifier"/>
+        <rdfs:domain rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#Specifier"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#references_taxonomic_unit"/>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#matches_taxonomic_unit"/>
+            </rdf:Description>
+            <rdf:Description rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#matches_taxonomic_unit"/>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000187"/>
+            </rdf:Description>
+        </owl:propertyChainAxiom>
+        <rdfs:comment xml:lang="en">An association between a specifier and a node. Can be inferred through a taxonomic unit using a property chain.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#matches_specifier -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#matches_specifier">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+        <rdfs:range rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#Specifier"/>
+        <rdfs:comment xml:lang="en">Associates a node with the specifier matching it.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#matches_taxonomic_unit -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#matches_taxonomic_unit">
+        <rdfs:domain rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#TUMatch"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+        <rdfs:comment xml:lang="en">Associates a taxonomic unit with a taxonomic unit match (TUMatch).</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#references_taxonomic_unit -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#references_taxonomic_unit">
+        <rdfs:domain rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#Specifier"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000138"/>
+        <rdfs:comment xml:lang="en">Associates a taxonomic unit with a specifier.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
@@ -173,33 +192,28 @@
     
 
 
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#asNewickString -->
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#as_newick_string -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#asNewickString"/>
+    <owl:DatatypeProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#as_newick_string">
+        <rdfs:domain rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#PhyloreferenceTestPhylogeny"/>
+        <rdfs:comment xml:lang="en">This phylogeny represented as a Newick string.</rdfs:comment>
+    </owl:DatatypeProperty>
     
 
 
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#cladeDefinition -->
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#clade_definition -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#cladeDefinition"/>
+    <owl:DatatypeProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#clade_definition">
+        <rdfs:comment xml:lang="en">A clade definition in freeform text.</rdfs:comment>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://vocab.phyloref.org/phyloref/testcase.owl#expected_phyloreference_named -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#expected_phyloreference_named"/>
-    
-
-
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasTaxonName -->
-
-    <owl:DatatypeProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasTaxonName"/>
-    
-
-
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasVerbatimName -->
-
-    <owl:DatatypeProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasVerbatimName"/>
+    <owl:DatatypeProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#expected_phyloreference_named">
+        <rdfs:comment xml:lang="en">Identifies the name of the phyloreference that is expected to match this node.</rdfs:comment>
+    </owl:DatatypeProperty>
     
 
 
@@ -209,33 +223,11 @@
     
 
 
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#identifiedAsTaxonName -->
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#malformed_phyloreference -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#identifiedAsTaxonName"/>
-    
-
-
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#malformedPhyloreference -->
-
-    <owl:DatatypeProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#malformedPhyloreference"/>
-    
-
-
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#manchesterSyntax -->
-
-    <owl:DatatypeProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#manchesterSyntax"/>
-    
-
-
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#matchedName -->
-
-    <owl:DatatypeProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#matchedName"/>
-    
-
-
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#submittedName -->
-
-    <owl:DatatypeProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#submittedName"/>
+    <owl:DatatypeProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#malformed_phyloreference">
+        <rdfs:comment xml:lang="en">Provides a description of how this phyloreference is malformed.</rdfs:comment>
+    </owl:DatatypeProperty>
     
 
 
@@ -250,25 +242,55 @@
     
 
 
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#ExternalSpecifier -->
+
+    <owl:Class rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#ExternalSpecifier">
+        <rdfs:subClassOf rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#Specifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#InternalSpecifier -->
+
+    <owl:Class rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#InternalSpecifier">
+        <rdfs:subClassOf rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#Specifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#PhyloreferenceTestPhylogeny -->
+
+    <owl:Class rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#PhyloreferenceTestPhylogeny">
+        <rdfs:label xml:lang="en">Phyloreference Test Phylogeny</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#PhyloreferenceTestPhylogenyGroup -->
+
+    <owl:Class rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#PhyloreferenceTestPhylogenyGroup">
+        <rdfs:label xml:lang="en">Phyloreference Test Phylogeny Group</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://vocab.phyloref.org/phyloref/testcase.owl#PhyloreferenceTestSuite -->
 
     <owl:Class rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#PhyloreferenceTestSuite">
-        <rdfs:label xml:lang="en">Phyloreference Test Case</rdfs:label>
+        <rdfs:label xml:lang="en">Phyloreference Test Suite</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#Taxon -->
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#Specifier -->
 
-    <owl:Class rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#Taxon"/>
+    <owl:Class rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#Specifier"/>
     
 
 
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#TestSuiteFromPublication -->
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#TUMatch -->
 
-    <owl:Class rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#TestSuiteFromPublication">
-        <rdfs:label xml:lang="en">Test suite from publication</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#TUMatch"/>
 </rdf:RDF>
 
 

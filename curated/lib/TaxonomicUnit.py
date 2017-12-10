@@ -17,21 +17,15 @@ class TaxonomicUnit(Identified):
     of a single specimen, a set of specimens, a taxon or any other
     description of a unit of taxonomy.
 
-    Taxonomic units have three properties:
-        - external_reference: a URI that represents this taxonomic unit
-        - scientific_name: a ScientificName that identifies this Taxonomic Unit
+    Taxonomic units have three possible properties:
+        - external references: a URI that represents this taxonomic unit
+        - scientific names: a ScientificName that identifies this Taxonomic Unit
           as a taxon.
-        - specimens: a set of Specimen associated with this taxonomic unit.
+        - specimens: a set of Specimens associated with this taxonomic unit.
 
     While we don't assert any requirements, taxonomic units without
     any of these three properties cannot be matched.
     """
-
-    @staticmethod
-    def from_scientific_name(scname):
-        tunit = TaxonomicUnit()
-        tunit.scnames.append(ScientificName(scname))
-        return tunit
 
     def __init__(self):
         super(TaxonomicUnit, self).__init__()
@@ -44,18 +38,23 @@ class TaxonomicUnit(Identified):
         self.external_refs = []
         self.scnames = []
         self.specimen_list = []
-        self.matches_specifiers = set()
+
+    @staticmethod
+    def from_scientific_name(scname):
+        """ Create a taxonomic unit from a scientific name. """
+        tunit = TaxonomicUnit()
+        tunit.scnames.append(ScientificName(scname))
+        return tunit
 
     def as_jsonld(self):
+        """ Return this taxonomic unit as a JSON-LD object. """
         # print("TU.as_jsonld(" + self.id + "): " + str(self.matches_specifiers))
-
-        superclasses = set(self.owl_classes)
-        superclasses.update(self.matches_specifiers)
 
         jsonld = {
             '@id': self.id,
-            '@type': owlterms.OWL_CLASS,
-            'subClassOf': list(superclasses)
+            '@type': self.owl_classes
+            # '@type': owlterms.OWL_CLASS,
+            # 'subClassOf': list(superclasses)
         }
 
         if len(self.external_refs) > 0:
@@ -69,12 +68,12 @@ class TaxonomicUnit(Identified):
 
         return jsonld
 
-    def get_reference(self):
-        return {
-            '@id': self.id
-        }
-
     def load_from_jsonld(self, jsonld):
+        """ Load this taxonomic unit from a JSON-LD object.
+
+        This overwrites any current information stored in this object.
+        """
+
         self.external_refs = []
         self.scnames = []
         self.specimen_list = []
@@ -92,9 +91,10 @@ class TaxonomicUnit(Identified):
             self.specimen_list.extend(map(lambda sp: Specimen.from_jsonld(sp), jsonld['includes_specimens']))
 
     @staticmethod
-    def load_jsonld(jsonld):
+    def from_jsonld(jsonld):
+        """ Create a taxonomic unit from a JSON-LD object. """
         tunit = TaxonomicUnit()
-        tunit.add_from_jsonld(jsonld)
+        tunit.load_from_jsonld(jsonld)
         return tunit
 
     @property
@@ -129,48 +129,17 @@ class TaxonomicUnit(Identified):
 
         self.specimen_list = specimens
 
-# We might need to process labeled data later, in which case
-# I'll leave this around for now.
-# taxon_dict = taxon.as_dict()
-#
-# if node_label.annotations:
-#     closeMatches = node_label.annotations.findall(name='closeMatch')
-#     taxon_dict['skos:closeMatch'] = [closeMatch.value for closeMatch in closeMatches]
-#
-# if len(taxon.keys()) > 1:
-#     # This node contains has a taxon!
-#     node_dict['taxa'].append(taxon_dict)
-#
-# # Do we have any labeled data for this label?
-# if node_label.label in self.labeled_data:
-#     nodeData = self.labeled_data[node_label.label]
-#
-#     for key in nodeData:
-#         if key in node_dict:
-#             if isinstance(nodeData[key], list):
-#                 node_dict[key].extend(nodeData[key])
-#             else:
-#                 node_dict[key].append(nodeData[key])
-#
-#             # hackity hack hack
-#             # TODO: cleanup
-#             # remove duplicates
-#             try:
-#                 node_dict[key] = list(set(node_dict[key]))
-#             except TypeError as e:
-#                 raise TypeError(
-#                     "Deduplication of nodeData failed on key '" + str(key) + "', value: " + str(node_dict[key]))
-#
-#         else:
-#             node_dict[key] = [nodeData[key]]
-
 
 class ScientificName(object):
     """
-    A scientific name is used to identify taxa.
+    A scientific name is used to identify taxa. This is currently a pretty
+    simple model, with a verbatim name that is parsed into a binomial name,
+    genus and specific epithet. But we can make this more sophisticated as
+    required.
     """
 
     def __init__(self, verbatim_name):
+        """ Create a scientific name based on a verbatim name. """
         self.scname_verbatim_name = None
         self.scname_genus = None
         self.scname_specific_epithet = None
@@ -179,6 +148,10 @@ class ScientificName(object):
         self.verbatim_name = verbatim_name
 
     def load_from_jsonld(self, jsonld):
+        """ Load this scientific name from a JSON-LD object.
+
+        This overwrites any information in the current object.
+        """
         if 'scientific_name' in jsonld:
             self.__init__(jsonld['scientific_name'])
         else:
@@ -198,11 +171,13 @@ class ScientificName(object):
 
     @staticmethod
     def from_jsonld(jsonld):
+        """ Create a scientific name from a JSON-LD object. """
         scname = ScientificName(None)
         scname.load_from_jsonld(jsonld)
         return scname
 
     def as_jsonld(self):
+        """ Returns this scientific name as a JSON-LD object. """
         jsonld = {
             "@type": "dwc:Taxon",
             "scientific_name": self.verbatim_name
@@ -221,22 +196,29 @@ class ScientificName(object):
 
     @property
     def genus(self):
+        """ Returns the genus of this scientific name. """
         return self.scname_genus
 
     @property
     def specific_epithet(self):
+        """ Returns the specific epithet associated with this scientific name. """
         return self.scname_specific_epithet
 
     @property
     def binomial_name(self):
+        """ Returns the binomial name associated with this scientific name. """
         return self.scname_binomial_name
 
     @property
     def verbatim_name(self):
+        """ Returns the verbatim name associated with this scientific name. """
         return self.scname_verbatim_name
 
     @verbatim_name.setter
     def verbatim_name(self, verbatim_name):
+        """ Sets the verbatim name. Also causes it to be reparsed, with genus, specific
+        epithet and binomial name extracted if possible.
+        """
         self.scname_verbatim_name = verbatim_name
         self.scname_genus = None
         self.scname_specific_epithet = None
@@ -265,6 +247,7 @@ class ScientificName(object):
             self.scname_genus = match.group(1)
             self.scname_specific_epithet = match.group(2)
 
+
 class Specimen(object):
     """
     This class is here mainly as a placeholder; eventually, we'll support pretty
@@ -273,29 +256,30 @@ class Specimen(object):
     """
 
     def __init__(self, props):
+        """ Create a Specimen based on key-value properties.
+
+        :param props: A dict consisting of key-value properties.
+        """
         self.properties = props
 
         if '@type' not in self.properties:
             self.properties['@type'] = 'dwc:MaterialSample'
 
-    def load_from_json(self, jsonld):
+    def __init__(self):
+        """ Create a blank Specimen. """
+        self.__init__(dict())
+
+    def load_from_jsonld(self, jsonld):
+        """ Load this specimen from a JSON-LD object. Overwrites current properties. """
         self.properties = dict(jsonld)
 
     @staticmethod
-    def from_json(jsonld):
+    def from_jsonld(jsonld):
+        """ Read a Specimen from a JSON-LD object and return it. """
         sp = Specimen()
         sp.load_from_json(jsonld)
         return sp
 
     def as_json(self):
+        """ Return this Specimen as a JSON-LD object. """
         return self.properties
-
-    @property
-    def properties(self):
-        """ Return key-value properties known about this specimen in JSON-LD. """
-        return self.properties
-
-    @properties.setter
-    def properties(self, props):
-        """ Set the key-value properties known about this specimen in JSON-LD. """
-        self.properties = props

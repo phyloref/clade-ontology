@@ -3,16 +3,13 @@ A Phylogeny Group consists of a set of Phylogenies with shared labeled data.
 """
 
 import os.path
+import warnings
 
 import dendropy
 
 from lib import owlterms
 import lib.PhyloreferenceTestSuite
 from lib.Phylogeny import Phylogeny
-
-__version__ = "0.1"
-__author__ = "Gaurav Vaidya"
-__copyright__ = "Copyright 2017 The Phyloreferencing Project"
 
 
 class PhylogenyGroup(object):
@@ -22,14 +19,14 @@ class PhylogenyGroup(object):
     """
 
     def __init__(self, phylogeny_group_id):
-        """ Create a PhylogenyGroup with a particular identifier. """
+        """ Create a PhylogenyGroup with the given identifier. """
         self.id = phylogeny_group_id
 
         # Storage for trees
         self.phylogenies = []
 
     def export_to_jsonld_document(self):
-        """ Exports this Phylogeny Group as a JSON-LD. """
+        """ Exports this Phylogeny Group as a JSON-LD object. """
         doc = dict()
 
         doc['@id'] = self.id
@@ -46,13 +43,14 @@ class PhylogenyGroup(object):
         phylogeny_group = PhylogenyGroup(phylogenies_id)
 
         # A phylogeny is made of two components:
-        #   - phylogeny: either as a Newick or NeXML file
-        #   - labeledNodeData: information provided for nodes in the phylogeny
+        #   - phylogeny: either as a Newick or NeXML file.
+        #   - additional_node_properties: information provided for nodes in the phylogeny by label.
 
         # Step 1. Extract all labeled node data.
-        labeled_node_data = dict()
-        if 'labeledNodeData' in json:
-            labeled_node_data = phylogeny_group.read_labeled_node_data(json['labeledNodeData'])
+        additional_node_properties = dict()
+        if 'additional_node_properties' in json:
+            for label in json['additional_node_properties']:
+                additional_node_properties[label] = json['additional_node_properties'][label]
 
         # Step 2. Read phylogenies using DendroPy.
         phylogeny_list = []
@@ -60,6 +58,8 @@ class PhylogenyGroup(object):
             phylogeny_list = phylogeny_group.load_phylogeny_from_nexml(json['filename'])
         elif 'newick' in json:
             phylogeny_list = phylogeny_group.load_phylogeny_from_newick(json['newick'])
+        else:
+            warnings.warn("Phylogeny group '{!s}' containing neither a NeXML file nor a Newick string, and so contains zero phylogenies.".format(phylogenies_id))
 
         # Step 3. Convert phylogenies into nodes.
         phylogeny_count = 0
@@ -67,7 +67,7 @@ class PhylogenyGroup(object):
             phylogeny_count += 1
             phylogeny_id = phylogeny_group.id + "_phylogeny" + str(phylogeny_count)
 
-            phylogeny_group.phylogenies.append(Phylogeny(phylogeny_id, tree, labeled_node_data))
+            phylogeny_group.phylogenies.append(Phylogeny(phylogeny_id, tree, additional_node_properties))
 
         return phylogeny_group
 
@@ -97,25 +97,3 @@ class PhylogenyGroup(object):
                 "Could not parse Newick while reading phylogeny {0}: {1}".format(self.id, err)
             )
 
-    def read_labeled_node_data(self, node_data):
-        """ Read labeled node data with phylogenies in this phylogeny group. """
-
-        labeled_node_data = dict()
-
-        for node_entry in node_data:
-            if 'label' not in node_entry:
-                continue
-
-            labels = node_entry['label']
-            if isinstance(labels, (type(""), type(u""))):
-                labels = [labels]
-
-            for label in labels:
-                if label in labeled_node_data:
-                    raise lib.PhyloreferenceTestSuite.TestSuiteException(
-                        "Label '{0}' duplicated in labeled node data in phylogeny {1}.".format(label, self.id)
-                    )
-
-                labeled_node_data[label] = node_entry
-
-        return labeled_node_data
