@@ -29,8 +29,22 @@ class Phyloreference:
 
         # Store specifiers
         self.count_specifiers = 0
-        self.internal_specifiers = []
-        self.external_specifiers = []
+        self.internal_specifiers_list = []
+        self.external_specifiers_list = []
+
+    @property
+    def internal_specifiers(self):
+        return self.internal_specifiers_list
+
+    @property
+    def external_specifiers(self):
+        return self.external_specifiers_list
+
+    @property
+    def specifiers(self):
+        specifiers_list = set(self.internal_specifiers)
+        specifiers_list.update(self.external_specifiers)
+        return specifiers_list
 
     @staticmethod
     def load_from_json(phyloref_id, json):
@@ -49,14 +63,14 @@ class Phyloreference:
                 phyloref.count_specifiers += 1
                 internal_specifier = InternalSpecifier.from_jsonld(specifier)
                 internal_specifier.id = '{0}_specifier{1}'.format(phyloref_id, phyloref.count_specifiers)
-                phyloref.internal_specifiers.append(internal_specifier)
+                phyloref.internal_specifiers_list.append(internal_specifier)
 
         if 'externalSpecifiers' in json:
             for specifier in json['externalSpecifiers']:
                 phyloref.count_specifiers += 1
                 external_specifier = ExternalSpecifier.from_jsonld(specifier)
                 external_specifier.id = '{0}_specifier{1}'.format(phyloref_id, phyloref.count_specifiers)
-                phyloref.external_specifiers.append(external_specifier)
+                phyloref.external_specifiers_list.append(external_specifier)
 
         return phyloref
 
@@ -71,27 +85,27 @@ class Phyloreference:
         doc['description'] = self.description
 
         # Write out all specifiers.
-        doc['hasInternalSpecifier'] = [specifier.as_jsonld() for specifier in self.internal_specifiers]
-        doc['hasExternalSpecifier'] = [specifier.as_jsonld() for specifier in self.external_specifiers]
+        doc['hasInternalSpecifier'] = [specifier.as_jsonld() for specifier in self.internal_specifiers_list]
+        doc['hasExternalSpecifier'] = [specifier.as_jsonld() for specifier in self.external_specifiers_list]
 
         # What type of phyloreference is this?
         # Check for malformed specifiers.
-        if len(self.external_specifiers) == 0 and len(self.internal_specifiers) == 0:
+        if len(self.external_specifiers_list) == 0 and len(self.internal_specifiers_list) == 0:
             doc['malformedPhyloreference'] = "No specifiers providers"
             doc['equivalentClass'] = {
                 "@type": owlterms.CDAO_NODE
             }
 
-        elif len(self.internal_specifiers) == 0:
+        elif len(self.internal_specifiers_list) == 0:
             doc['malformedPhyloreference'] = "No internal specifiers provided"
 
-        elif len(self.external_specifiers) > 1:
+        elif len(self.external_specifiers_list) > 1:
             doc['malformedPhyloreference'] = "More than one external specifier provided"
 
-        elif len(self.external_specifiers) == 0 and len(self.internal_specifiers) == 1:
+        elif len(self.external_specifiers_list) == 0 and len(self.internal_specifiers_list) == 1:
             doc['malformedPhyloreference'] = "Single internal specifier provided"
 
-        elif len(self.external_specifiers) == 0:
+        elif len(self.external_specifiers_list) == 0:
             # This phyloreference is made up entirely of internal specifiers, calculated
             # in a pairwise fashion.
             #
@@ -102,19 +116,19 @@ class Phyloreference:
             accum_equivalentClass = get_class_expression_for_mrca(
                 self.id,
                 self.additional_classes,
-                self.internal_specifiers[0].get_reference(),
-                self.internal_specifiers[1].get_reference()
+                self.internal_specifiers_list[0].get_reference(),
+                self.internal_specifiers_list[1].get_reference()
             )
 
-            last_internal_specifier = self.internal_specifiers[1]
-            for i in range(2, len(self.internal_specifiers)):
+            last_internal_specifier = self.internal_specifiers_list[1]
+            for i in range(2, len(self.internal_specifiers_list)):
                 accum_equivalentClass = get_class_expression_for_mrca(
                     self.id,
                     self.additional_classes,
                     accum_equivalentClass,
-                    self.internal_specifiers[i].get_reference()
+                    self.internal_specifiers_list[i].get_reference()
                 )
-                last_internal_specifier = self.internal_specifiers[i]
+                last_internal_specifier = self.internal_specifiers_list[i]
 
             doc['equivalentClass'] = accum_equivalentClass
 
@@ -123,10 +137,10 @@ class Phyloreference:
             # some number of internal specifiers.
 
             specifiers_repr = []
-            for internal_specifier in self.internal_specifiers:
+            for internal_specifier in self.internal_specifiers_list:
                 specifiers_repr.append(get_class_expression_for_internal_specifier(internal_specifier.get_reference()))
 
-            for external_specifier in self.external_specifiers:
+            for external_specifier in self.external_specifiers_list:
                 specifiers_repr.append(get_class_expression_for_external_specifier(external_specifier.get_reference()))
 
             # Filter out Nones

@@ -23,6 +23,27 @@ class Specifier(TaxonomicUnit, Identified):
         super(Specifier, self).__init__()
 
         self.owl_class.append(owlterms.SPECIFIER)
+        self.matched_taxonomic_units = set()
+
+    def as_jsonld(self):
+        jsonld = super(Specifier, self).as_jsonld()
+
+        jsonld['matched_taxonomic_units'] = [tunit.get_reference() for tunit in self.matched_taxonomic_units]
+
+        return jsonld
+
+    # Matchers
+    @staticmethod
+    def match_by_binomial_name(specifier, tunit):
+        specifier_scnames = specifier.scientific_names
+        tunit_scnames = tunit.scientific_names
+
+        for specifier_scname in specifier_scnames:
+            for tunit_scname in tunit_scnames:
+                if specifier_scname.binomial_name == tunit_scname.binomial_name:
+                    return True
+
+        return False
 
 
 class InternalSpecifier(Specifier):

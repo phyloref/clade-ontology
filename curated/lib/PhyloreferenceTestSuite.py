@@ -59,7 +59,7 @@ class PhyloreferenceTestSuite:
         self.comments = []
 
         # A test case is made up of:
-        self.phylogenies = []
+        self.phylogeny_groups = []
         self.phylorefs = []
 
     @staticmethod
@@ -89,7 +89,7 @@ class PhyloreferenceTestSuite:
             for phylogenies in doc['phylogenies']:
                 phylogenies_count += 1
                 phylogenies_id = testSuite.id + 'phylogenies' + str(phylogenies_count)
-                testSuite.phylogenies.append(PhylogenyGroup.load_from_json(phylogenies_id, phylogenies))
+                testSuite.phylogeny_groups.append(PhylogenyGroup.load_from_json(phylogenies_id, phylogenies))
 
 
         # Load all phyloreferences.
@@ -127,10 +127,10 @@ class PhyloreferenceTestSuite:
         export_unless_blank('comments', self.comments)
 
         # Export all phylogenies.
-        if len(self.phylogenies) > 0:
+        if len(self.phylogeny_groups) > 0:
             doc['phylogenies'] = []
 
-            for phylogeny in self.phylogenies:
+            for phylogeny in self.phylogeny_groups:
                 doc['phylogenies'].append(phylogeny.export_to_jsonld_document())
 
         # Export all phylorefs.
@@ -141,3 +141,59 @@ class PhyloreferenceTestSuite:
                 doc['phylorefs'].append(phyloref.export_to_jsonld_document())
 
         return doc
+
+    def reset_specifiers(self):
+        """
+        Reset all matches in specifiers in this phyloreference.
+
+        :return: A dictionary describing the changes that have been made.
+        """
+
+        results = dict()
+        results['specifiers'] = 0
+
+        for phyloref in self.phylorefs:
+            for specifier in phyloref.specifiers:
+                specifier.matched_taxonomic_units = set()
+                results['specifiers'] += 1
+
+        return results
+
+    def match_specifiers(self, matcher):
+        """
+        Matches specifiers to taxonomic units. This modifies the specifiers, but
+        you can call reset_specifiers() if you want to undo the effects of this
+        matching.
+
+        :param matcher: A function taking two arguments (a specifier and a taxonomic
+        unit respectively) and returns True if they should be matched.
+        :return: A dictionary describing the changes that have been made.
+        """
+
+        results = dict()
+
+        # Retrieve all taxonomic units
+        taxonomic_units = set()
+        for phylogeny_group in self.phylogeny_groups:
+            for phylogeny in phylogeny_group.phylogenies:
+                taxonomic_units.update(phylogeny.taxonomic_units)
+
+        results['taxonomic_units'] = len(taxonomic_units)
+
+        # Retrieve all specifiers
+        specifiers = set()
+        for phyloref in self.phylorefs:
+            for specifier in phyloref.specifiers:
+                specifiers.add(specifier)
+
+        results['specifiers'] = len(specifiers)
+
+        # Match specifiers to taxonomic units.
+        results['modified'] = 0
+        for specifier in specifiers:
+            for tunit in taxonomic_units:
+                if matcher(specifier, tunit):
+                    specifier.matched_taxonomic_units.add(tunit)
+                    results['modified'] += 1
+
+        return results

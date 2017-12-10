@@ -34,7 +34,21 @@ class Phylogeny:
         # Node count management
         self.node_count = 0
         self.nodes_by_id = dict()
-        self.nodes = self.read_tree_to_nodes(dendropy_tree)
+        self.tunits_by_node = dict()
+        self.phylogeny_nodes = self.read_tree_to_nodes(dendropy_tree)
+
+    @property
+    def nodes(self):
+        return self.phylogeny_nodes
+
+    @property
+    def taxonomic_units(self):
+        tunits = set()
+
+        for tunit_sets in self.tunits_by_node.values():
+            tunits.update(tunit_sets)
+
+        return tunits
 
     def get_id_for_node(self, node):
         """ Node identifiers need to be consistent, but we don't want to create
@@ -81,7 +95,7 @@ class Phylogeny:
                 self.annotations.append({
                     '@type': "Annotation",
                     'annotationName': annotation.name,
-                    'annotationTarget': self.get_id_for_node(self.id, node),
+                    'annotationTarget': self.get_id_for_node(node),
                     'annotationBody': str(annotation.value)
                 })
 
@@ -96,8 +110,11 @@ class Phylogeny:
             # and store it in the 'taxa' JSON property.
             tunits = []
 
+            tunit_count = 1
             for node_label in node_labels:
-                tunits.append(TaxonomicUnit.from_scientific_name(node_label.label))
+                tunit = TaxonomicUnit.from_scientific_name(node_label.label)
+                tunit.id = self.get_id_for_node(node) + ("_tunit_%d" % tunit_count)
+                tunits.append(tunit)
 
                 if node_label.annotations:
                     close_matches = node_label.annotations.findall(name='closeMatch')
@@ -107,6 +124,10 @@ class Phylogeny:
                     )
 
             node_dict['taxa'] = [tunit.as_jsonld() for tunit in tunits]
+            if node not in self.tunits_by_node:
+                self.tunits_by_node[node] = set()
+
+            self.tunits_by_node[node].update(tunits)
 
             node_dict['children'] = list()
             for child in node.child_nodes():
@@ -143,7 +164,7 @@ class Phylogeny:
         doc['newick'] = self.dendropy_tree.as_string(schema='newick')
 
         # Export each node as part of each phylogeny.
-        doc['nodes'] = self.nodes
+        doc['nodes'] = self.phylogeny_nodes
 
         doc['annotations'] = self.annotations
 

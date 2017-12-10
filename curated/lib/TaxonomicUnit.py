@@ -47,6 +47,7 @@ class TaxonomicUnit(Identified):
 
     def as_jsonld(self):
         jsonld = {
+            '@id': self.id,
             '@type': self.owl_class
         }
 
@@ -60,6 +61,11 @@ class TaxonomicUnit(Identified):
             jsonld['includes_specimens'] = list(map(lambda sp: sp.as_jsonld(), self.specimen_list))
 
         return jsonld
+
+    def get_reference(self):
+        return {
+            '@id': self.id
+        }
 
     def load_from_jsonld(self, jsonld):
         self.external_refs = []
