@@ -84,7 +84,7 @@ class Phylogeny:
 
             # Create the node.
             node = Node()
-            node.id = self.get_id_for_node(node)
+            node.id = self.get_id_for_node(dendropy_node)
             node.in_phylogeny = self.id
 
             annotations = list()
@@ -109,6 +109,10 @@ class Phylogeny:
 
             tunit_count = 1
             for node_label in node_labels:
+                # TODO clean up
+                if node_label.label.startswith("expected "):
+                    node.expected_phyloref_named = node_label.label[9:]
+
                 tunit = TaxonomicUnit.from_scientific_name(node_label.label)
                 tunit.id = self.get_id_for_node(dendropy_node) + ("_tunit%d" % tunit_count)
                 tunits.append(tunit)
@@ -175,6 +179,7 @@ class Node(Identified):
         self.taxonomic_units = []
         self.children = []
         self.siblings = []
+        self.expected_phyloref_named = None
 
     def as_jsonld(self):
         types = set()
@@ -193,5 +198,8 @@ class Node(Identified):
 
         if self.in_phylogeny is not None:
             jsonld['inPhylogeny'] = self.in_phylogeny
+
+        if self.expected_phyloref_named is not None:
+            jsonld['expected_phyloreference_named'] = self.expected_phyloref_named
 
         return jsonld

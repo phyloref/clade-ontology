@@ -11,7 +11,7 @@ __copyright__ = "Copyright 2017 The Phyloreferencing Project"
 # OWL Imports
 OWL_IMPORTS = [
     "https://www.w3.org/2004/02/skos/core",
-    "https://raw.githubusercontent.com/phyloref/curation-workflow/refactor_add_labels_with_hasTaxon/curated/phyloref_testcase.owl",
+    "https://raw.githubusercontent.com/gaurav/curation-workflow/refactor_add_labels_with_hasTaxon/curated/phyloref_testcase.owl",
         # Will become "http://vocab.phyloref.org/phyloref/testcase.owl",
     "https://raw.githubusercontent.com/phyloref/phyloref-ontology/master/phyloref.owl",
         # Will become "http://phyloinformatics.net/phyloref.owl"

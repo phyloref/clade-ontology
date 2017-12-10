@@ -206,7 +206,7 @@ class PhyloreferenceTestSuite:
 
                 for tunit in taxonomic_units:
                     if matcher(specifier, tunit):
-                        print("adding id " + specifier.id)
+                        # print("adding id " + specifier.id)
                         tunit.matches_specifiers.add(specifier.id)
                         results['tunits_modified'] += 1
                         flag_matched = True

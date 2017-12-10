@@ -47,7 +47,7 @@ class TaxonomicUnit(Identified):
         self.matches_specifiers = set()
 
     def as_jsonld(self):
-        print("TU.as_jsonld(" + self.id + "): " + str(self.matches_specifiers))
+        # print("TU.as_jsonld(" + self.id + "): " + str(self.matches_specifiers))
 
         superclasses = set(self.owl_classes)
         superclasses.update(self.matches_specifiers)
@@ -275,7 +275,7 @@ class Specimen:
     def __init__(self, props):
         self.properties = props
 
-        if not '@type' in self.properties:
+        if '@type' not in self.properties:
             self.properties['@type'] = 'dwc:MaterialSample'
 
     def load_from_json(self, jsonld):
