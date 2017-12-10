@@ -17,14 +17,14 @@ class Phylogeny(object):
     A Phylogeny consists of a series of nodes representing a phylogeny. We also export it in Newick format.
     """
 
-    def __init__(self, phylogeny_id, dendropy_tree, labeled_data):
+    def __init__(self, phylogeny_id, dendropy_tree, additional_node_properties):
         """ Create a Phylogeny using a DendroPy tree object and the labeled data to be associated with it.
         """
 
         self.id = phylogeny_id
 
         # Labeled node data.
-        self.labeled_data = labeled_data
+        self.additional_node_properties = additional_node_properties
 
         # Other variables.
         self.annotations = []
@@ -110,6 +110,10 @@ class Phylogeny(object):
             tunit_count = 1
             for node_label in node_labels:
                 # TODO clean up
+                if node_label.label in self.additional_node_properties:
+                    node.additional_properties = self.additional_node_properties[node_label.label]
+
+                # TODO clean up
                 if node_label.label.startswith("expected "):
                     node.expected_phyloref_named = node_label.label[9:]
 
@@ -180,6 +184,7 @@ class Node(Identified):
         self.children = []
         self.siblings = []
         self.expected_phyloref_named = None
+        self.additional_properties = {}
 
     def as_jsonld(self):
         types = set()
@@ -201,5 +206,9 @@ class Node(Identified):
 
         if self.expected_phyloref_named is not None:
             jsonld['expected_phyloreference_named'] = self.expected_phyloref_named
+
+        # Add additional properties
+        for key in self.additional_properties:
+            jsonld[key] = self.additional_properties[key]
 
         return jsonld

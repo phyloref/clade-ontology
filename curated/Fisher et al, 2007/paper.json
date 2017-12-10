@@ -15,85 +15,14 @@
         "newick": "((((((((((('Arthrocormus schimperi',('Exostratum blumii 243','Exostratum blumii 245')expected_Exostratum),('Exodictyon incrassatum',(('Leucophanes seychellarum',('Leucophanes octoblepharoides','Leucophanes albescens'),'Leucophanes glaucum'),'Syrrhopodon confertus')expected_Leucophanes))expected_Albifolium,'Syrrhopodon muelleri'),'Syrrhopodon perarmatus'),(('Syrrhopodon ciliatus',('Syrrhopodon albovaginatus 446','Syrrhopodon albovaginatus 162')),((('Syrrhopodon tortillis','Syrrhopodon leprieurii'),'Syrrhopodon prolifer'),('Syrrhopodon parasiticus','Syrrhopodon trachyphyllus',('Syrrhopodon banksii','Syrrhopodon involutus')expected_Leucophanella)))expected_Trachymitrium),('Syrrhopodon armatus','Syrrhopodon fimbriatulus')),((((('Mitthyridium obtusifolium','Mitthyridium constrictum'),'Mitthyridium fasciculatum'),('Mitthyridium undulatum','Mitthyridium jungquilianum'))Mitthyridium_as_per_paper,'Syrrhopodon mahensis')expected_Mitthyridium,('Syrrhopodon tristichus',('Syrrhopodon croceus','Syrrhopodon apertus','Syrrhopodon fissipapillatus'))))expected_Syrrhopodon,(('Syrrhopodon incompletus',((((('Calymperes palisotii 159','Calymperes palisotii 180'),'Calymperes motleyi'),('Calymperes erosum','Calymperes robinsonii')),(('Calymperes tenerum','Calymperes subintegrum',('Calymperes tuatomuense','Calymperes pseudopodianum'),'Calymperes hispidium'),'Calymperes moluccense')),((('Calymperes tahitense 320','Calymperes tahitense 115'),'Calymperes lonchophyllum'),(('Calymperes afzelii 179','Calymperes afzelii 165'),'Calymperes graffeanum')))),'Syrrhopodon mauritianus')expected_Calymperes),'Syrrhopodon japonicus'),'Syrrhopodon gardneri')expected_Calymperaceae,('Octoblepharum Moorea 445','Octoblepharum albidum')expected_Octoblepharum);",
         "ot:dataDeposit": "https://treebase.org/treebase-web/search/study/taxa.html?id=1624&treeid=748",
 
-        "labeledNodeData": [
-            { 
-                "label": "Arthrocormus schimperi",
-                "matchedName": ["Arthrocormus schimperi", "Arthrocormus"],
-                "skos:closeMatch": [
-                    "http://www.theplantlist.org/tpl1.1/record/tro-35179022",
-                    "http://www.tropicos.org/Name/35179022",
-                    "http://www.gbif.org/species/2670392"
-                ]
+        "additional_node_properties": {
+			"Arthrocormus schimperi": {
+                "expected_phyloreference_named": ["Arthrocormus schimperi", "Arthrocormus"]
             },
-            { "label": "Exostratum blumii 243" },
-            { "label": "Exostratum blumii 245" },
-            { "label": "Exostratum" },
-            { 
-                "label": "Exodictyon incrassatum",
-                "matchedName": ["Exodictyon incrassatum", "Exodictyon"]
-            },
-            { "label": "Leucophanes seychellarum" },
-            { "label": "Leucophanes octoblepharoides" },
-            { "label": "Leucophanes albescens" },
-            { "label": "Leucophanes glaucum" },
-            { "label": "Syrrhopodon confertus" },
-            { "label": "Leucophanes" },
-            { "label": "Albifolium" },
-            { "label": "Syrrhopodon muelleri" },
-            { "label": "Syrrhopodon perarmatus" },
-            { "label": "Syrrhopodon ciliatus" },
-            { "label": "Syrrhopodon albovaginatus 446" },
-            { "label": "Syrrhopodon albovaginatus 162" },
-            { "label": "Syrrhopodon tortillis" },
-            { "label": "Syrrhopodon leprieurii" },
-            { "label": "Syrrhopodon prolifer" },
-            { "label": "Syrrhopodon parasiticus" },
-            { "label": "Syrrhopodon trachyphyllus" },
-            { "label": "Syrrhopodon banksii" },
-            { "label": "Syrrhopodon involutus" },
-            { "label": "Leucophanella" },
-            { "label": "Trachymitrium" },
-            { "label": "Syrrhopodon armatus" },
-            { "label": "Syrrhopodon fimbriatulus" },
-            { "label": "Mitthyridium obtusifolium" },
-            { "label": "Mitthyridium constrictum" },
-            { "label": "Mitthyridium fasciculatum" },
-            { "label": "Mitthyridium undulatum" },
-            { "label": "Mitthyridium jungquilianum" },
-            { "label": "Mitthyridium" },
-            { "label": "Syrrhopodon mahensis" },
-            { "label": "Syrrhopodon tristichus" },
-            { "label": "Syrrhopodon croceus" },
-            { "label": "Syrrhopodon apertus" },
-            { "label": "Syrrhopodon fissipapillatus" },
-            { "label": "Syrrhopodon" },
-            { "label": "Syrrhopodon incompletus" },
-            { "label": "Calymperes palisotii 159" },
-            { "label": "Calymperes palisotii 180" },
-            { "label": "Calymperes motleyi" },
-            { "label": "Calymperes erosum" },
-            { "label": "Calymperes robinsonii" },
-            { "label": "Calymperes tenerum" },
-            { "label": "Calymperes subintegrum" },
-            { "label": "Calymperes tuatomuense" },
-            { "label": "Calymperes pseudopodianum" },
-            { "label": "Calymperes hispidium" },
-            { "label": "Calymperes moluccense" },
-            { "label": "Calymperes tahitense 320" },
-            { "label": "Calymperes tahitense 115" },
-            { "label": "Calymperes lonchophyllum" },
-            { "label": "Calymperes afzelii 179" },
-            { "label": "Calymperes afzelii 165" },
-            { "label": "Calymperes graffeanum" },
-            { "label": "Syrrhopodon mauritianus" },
-            { "label": "Calymperes" },
-            { "label": "Syrrhopodon japonicus" },
-            { "label": "Syrrhopodon gardneri" },
-            { "label": "Calymperaceae" },
-            { "label": "Octoblepharum Moorea 445" },
-            { "label": "Octoblepharum albidum" },
-            { "label": "Octoblepharum" }
-        ]
+            "Exodictyon incrassatum": {
+                "expected_phyloreference_named": ["Exodictyon incrassatum", "Exodictyon"]
+            }
+        }
     }],
 
     "phylorefs": [

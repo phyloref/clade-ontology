@@ -50,9 +50,9 @@ class PhylogenyGroup(object):
         #   - labeledNodeData: information provided for nodes in the phylogeny
 
         # Step 1. Extract all labeled node data.
-        labeled_node_data = dict()
-        if 'labeledNodeData' in json:
-            labeled_node_data = phylogeny_group.read_labeled_node_data(json['labeledNodeData'])
+        additional_node_properties = dict()
+        if 'additional_node_properties' in json:
+            additional_node_properties = phylogeny_group.read_additional_node_properties(json['additional_node_properties'])
 
         # Step 2. Read phylogenies using DendroPy.
         phylogeny_list = []
@@ -67,7 +67,7 @@ class PhylogenyGroup(object):
             phylogeny_count += 1
             phylogeny_id = phylogeny_group.id + "_phylogeny" + str(phylogeny_count)
 
-            phylogeny_group.phylogenies.append(Phylogeny(phylogeny_id, tree, labeled_node_data))
+            phylogeny_group.phylogenies.append(Phylogeny(phylogeny_id, tree, additional_node_properties))
 
         return phylogeny_group
 
@@ -97,25 +97,12 @@ class PhylogenyGroup(object):
                 "Could not parse Newick while reading phylogeny {0}: {1}".format(self.id, err)
             )
 
-    def read_labeled_node_data(self, node_data):
+    def read_additional_node_properties(self, node_properties):
         """ Read labeled node data with phylogenies in this phylogeny group. """
 
         labeled_node_data = dict()
 
-        for node_entry in node_data:
-            if 'label' not in node_entry:
-                continue
-
-            labels = node_entry['label']
-            if isinstance(labels, (type(""), type(u""))):
-                labels = [labels]
-
-            for label in labels:
-                if label in labeled_node_data:
-                    raise lib.PhyloreferenceTestSuite.TestSuiteException(
-                        "Label '{0}' duplicated in labeled node data in phylogeny {1}.".format(label, self.id)
-                    )
-
-                labeled_node_data[label] = node_entry
+        for label in node_properties:
+            labeled_node_data[label] = node_properties[label]
 
         return labeled_node_data
