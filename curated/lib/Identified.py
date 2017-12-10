@@ -6,7 +6,7 @@ It generates one at random, but then replaces it with a proper name later.
 import uuid
 
 
-class Identified:
+class Identified(object):
     def __init__(self):
         super(Identified, self).__init__()
         self.identified_as_id = "_:%s" % (uuid.uuid4())

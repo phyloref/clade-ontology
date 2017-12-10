@@ -165,7 +165,7 @@ class TaxonomicUnit(Identified):
 #             node_dict[key] = [nodeData[key]]
 
 
-class ScientificName:
+class ScientificName(object):
     """
     A scientific name is used to identify taxa.
     """
@@ -265,7 +265,7 @@ class ScientificName:
             self.scname_genus = match.group(1)
             self.scname_specific_epithet = match.group(2)
 
-class Specimen:
+class Specimen(object):
     """
     This class is here mainly as a placeholder; eventually, we'll support pretty
     complex representations of specimens based on Darwin Core (where it is called

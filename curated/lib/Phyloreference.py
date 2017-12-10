@@ -11,7 +11,7 @@ __author__ = "Gaurav Vaidya"
 __copyright__ = "Copyright 2017 The Phyloreferencing Project"
 
 
-class Phyloreference:
+class Phyloreference(object):
     """ A Phyloreference is a definition that unambiguously refers to a node on a phylogeny. It consists
     of a set of internal and external specifiers.
     """

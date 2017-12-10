@@ -15,7 +15,7 @@ __author__ = "Gaurav Vaidya"
 __copyright__ = "Copyright 2017 The Phyloreferencing Project"
 
 
-class PhylogenyGroup:
+class PhylogenyGroup(object):
     """
     DendroPy loads NeXML files as TreeLists that might contain multiple trees. We model them as a
     PhylogenyGroup that contains multiple Phylogenies.

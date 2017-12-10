@@ -18,7 +18,7 @@ class TestSuiteException(Exception):
     pass
 
 
-class PhyloreferenceTestSuite:
+class PhyloreferenceTestSuite(object):
     """
     A test suite can be loaded from JSON and exported to JSON-LD. It is designed to model one publication, but will
     likely be extended to other sources of phylogenies and phyloreferences.

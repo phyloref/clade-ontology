@@ -12,7 +12,7 @@ __author__ = "Gaurav Vaidya"
 __copyright__ = "Copyright 2017 The Phyloreferencing Project"
 
 
-class Phylogeny:
+class Phylogeny(object):
     """
     A Phylogeny consists of a series of nodes representing a phylogeny. We also export it in Newick format.
     """
