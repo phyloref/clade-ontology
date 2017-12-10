@@ -5,6 +5,7 @@ in JSON-LD.
 
 from lib import owlterms
 from lib.TaxonomicUnit import TaxonomicUnit
+from lib.Identified import Identified
 
 __version__ = "0.1"
 __author__ = "Gaurav Vaidya"
@@ -35,7 +36,7 @@ class Phylogeny:
         self.node_count = 0
         self.nodes_by_id = dict()
         self.tunits_by_node = dict()
-        self.phylogeny_nodes = self.read_tree_to_nodes(dendropy_tree)
+        self.read_tree_to_nodes(dendropy_tree)
 
     @property
     def nodes(self):
@@ -67,7 +68,7 @@ class Phylogeny:
     def read_tree_to_nodes(self, tree):
         """ Reads nodes from a DendroPy tree and stores them in this Phylogeny. """
 
-        nodes = []
+        self.phylogeny_nodes = []
 
         # Copy over any annotations from NeXML
         for annotation in tree.annotations:
@@ -78,20 +79,16 @@ class Phylogeny:
                 'annotationBody': str(annotation.value)
             })
 
-        def add_all_child_nodes(node):
+        def add_all_child_nodes(dendropy_node):
             """ Recursively adds a node and all of its children to the current Phylogeny. """
 
-            # print("add_all_child_nodes(" + str(node) + ")")
-
             # Create the node.
-            node_dict = dict()
-            node_dict['@id'] = self.get_id_for_node(node)
-            node_dict['inPhylogeny'] = self.id
-
-            node_dict['@type'] = owlterms.CDAO_NODE
+            node = Node()
+            node.id = self.get_id_for_node(node)
+            node.in_phylogeny = self.id
 
             annotations = list()
-            for annotation in node.annotations:
+            for annotation in dendropy_node.annotations:
                 self.annotations.append({
                     '@type': "Annotation",
                     'annotationName': annotation.name,
@@ -101,10 +98,10 @@ class Phylogeny:
 
             # Do we have any taxonomic names?
             node_labels = list()
-            if node.taxon is not None:
-                node_labels.append(node.taxon)
-            elif node.label is not None:
-                node_labels.append(node)
+            if dendropy_node.taxon is not None:
+                node_labels.append(dendropy_node.taxon)
+            elif dendropy_node.label is not None:
+                node_labels.append(dendropy_node)
 
             # Identify all distinct taxon associated with this Node
             # and store it in the 'taxa' JSON property.
@@ -113,44 +110,41 @@ class Phylogeny:
             tunit_count = 1
             for node_label in node_labels:
                 tunit = TaxonomicUnit.from_scientific_name(node_label.label)
-                tunit.id = self.get_id_for_node(node) + ("_tunit_%d" % tunit_count)
+                tunit.id = self.get_id_for_node(dendropy_node) + ("_tunit%d" % tunit_count)
                 tunits.append(tunit)
+                tunit_count += 1
 
                 if node_label.annotations:
-                    close_matches = node_label.annotations.findall(name='closeMatch')
-                    tunits.extend(map(
-                        lambda n: TaxonomicUnit.from_scientific_name(n),
-                        [closeMatch.value for closeMatch in close_matches])
-                    )
+                    for closeMatch in node_label.annotations.findall(name='closeMatch'):
+                        tunit = TaxonomicUnit.from_scientific_name(closeMatch.value)
+                        tunit.id = self.get_id_for_node(dendropy_node) + ("_tunit%d" % tunit_count)
+                        tunits.append(tunit)
+                        tunit_count += 1
 
-            node_dict['taxa'] = [tunit.as_jsonld() for tunit in tunits]
-            if node not in self.tunits_by_node:
-                self.tunits_by_node[node] = set()
+            node.taxonomic_units = tunits
+            if dendropy_node not in self.tunits_by_node:
+                self.tunits_by_node[dendropy_node] = set()
 
-            self.tunits_by_node[node].update(tunits)
+            self.tunits_by_node[dendropy_node].update(tunits)
 
-            node_dict['children'] = list()
-            for child in node.child_nodes():
-                node_dict['children'].append(self.get_id_for_node(child))
+            node.children = list()
+            for child in dendropy_node.child_nodes():
+                node.children.append(self.get_id_for_node(child))
 
-            node_dict['siblings'] = list()
-            for sibling in node.sibling_nodes():
-                node_dict['siblings'].append(self.get_id_for_node(sibling))
+            node.siblings = list()
+            for sibling in dendropy_node.sibling_nodes():
+                node.siblings.append(self.get_id_for_node(sibling))
 
             # Add to the list of nodes
-            nodes.append(node_dict)
+            self.phylogeny_nodes.append(node)
 
             # print("Appended node " + str(node_dict) + " to nodes " + str(nodes))
 
             # Add all its children.
-            for child in node.child_nodes():
+            for child in dendropy_node.child_nodes():
                 add_all_child_nodes(child)
 
         add_all_child_nodes(tree.seed_node)
-
-        # print("Nodes: " + str(nodes))
-
-        return nodes
 
     def export_to_jsonld_document(self):
         """ Export this phylogeny as a JSON-LD document. """
@@ -164,8 +158,40 @@ class Phylogeny:
         doc['newick'] = self.dendropy_tree.as_string(schema='newick')
 
         # Export each node as part of each phylogeny.
-        doc['nodes'] = self.phylogeny_nodes
+        doc['nodes'] = [node.as_jsonld() for node in self.phylogeny_nodes]
 
         doc['annotations'] = self.annotations
 
         return doc
+
+
+class Node(Identified):
+    """ A node is a node in a phylogeny. """
+
+    def __init__(self):
+        super(Node, self).__init__()
+
+        self.in_phylogeny = None
+        self.taxonomic_units = []
+        self.children = []
+        self.siblings = []
+
+    def as_jsonld(self):
+        types = set()
+        types.add(owlterms.CDAO_NODE)
+
+        for tunit in self.taxonomic_units:
+            types.add(tunit.id)
+
+        jsonld = {
+            '@id': self.id,
+            '@type': list(types),
+            'taxa': [tunit.as_jsonld() for tunit in self.taxonomic_units],
+            'children': self.children,
+            'siblings': self.siblings
+        }
+
+        if self.in_phylogeny is not None:
+            jsonld['inPhylogeny'] = self.in_phylogeny
+
+        return jsonld

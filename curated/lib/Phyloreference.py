@@ -4,7 +4,7 @@ internal and external specifiers.
 """
 
 from lib.Specifier import Specifier, InternalSpecifier, ExternalSpecifier
-import owlterms
+from lib import owlterms
 
 __version__ = "0.1"
 __author__ = "Gaurav Vaidya"
@@ -165,16 +165,18 @@ def get_class_expression_for_internal_specifier(specifier):
     if specifier is None:
         return None
 
+    # matched_by_specifier :specifier or (hasDescendant some (matched_by_specifier :specifier))
+
     return {
         "@type": owlterms.OWL_RESTRICTION,
-            "unionOf": [
-                specifier,
-                {
-                    "@type": owlterms.OWL_RESTRICTION,
-                    "onProperty": owlterms.CDAO_HAS_DESCENDANT,
-                    "someValuesFrom": specifier
-                }
-            ]
+        "unionOf": [
+            specifier,
+            {
+                "@type": owlterms.OWL_RESTRICTION,
+                "onProperty": owlterms.CDAO_HAS_DESCENDANT,
+                "someValuesFrom": specifier
+            }
+        ]
     }
 
 

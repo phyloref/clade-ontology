@@ -13,7 +13,7 @@ __author__ = "Gaurav Vaidya"
 __copyright__ = "Copyright 2017 The Phyloreferencing Project"
 
 
-class Specifier(TaxonomicUnit, Identified):
+class Specifier(TaxonomicUnit):
     """
     A Specifier provides the information necessary to match a taxonomic unit.
     It is therefore a Taxonomic Unit itself.
@@ -22,15 +22,7 @@ class Specifier(TaxonomicUnit, Identified):
     def __init__(self):
         super(Specifier, self).__init__()
 
-        self.owl_class.append(owlterms.SPECIFIER)
-        self.matched_taxonomic_units = set()
-
-    def as_jsonld(self):
-        jsonld = super(Specifier, self).as_jsonld()
-
-        jsonld['matched_taxonomic_units'] = [tunit.get_reference() for tunit in self.matched_taxonomic_units]
-
-        return jsonld
+        self.owl_classes.append(owlterms.SPECIFIER)
 
     # Matchers
     @staticmethod
@@ -50,7 +42,7 @@ class InternalSpecifier(Specifier):
     def __init__(self):
         super(InternalSpecifier, self).__init__()
 
-        self.owl_class.append(owlterms.INTERNAL_SPECIFIER)
+        self.owl_classes.append(owlterms.INTERNAL_SPECIFIER)
 
     @staticmethod
     def from_jsonld(jsonld):
@@ -63,7 +55,7 @@ class ExternalSpecifier(Specifier):
     def __init__(self):
         super(ExternalSpecifier, self).__init__()
 
-        self.owl_class.append(owlterms.EXTERNAL_SPECIFIER)
+        self.owl_classes.append(owlterms.EXTERNAL_SPECIFIER)
 
     @staticmethod
     def from_jsonld(jsonld):

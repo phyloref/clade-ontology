@@ -97,7 +97,7 @@ class PhyloreferenceTestSuite:
             phyloref_count = 0
             for phyloref in doc['phylorefs']:
                 phyloref_count += 1
-                phyloref_id = testSuite.id + '_phyloref' + str(phyloref_count)
+                phyloref_id = testSuite.id + 'phyloref' + str(phyloref_count)
                 testSuite.phylorefs.append(Phyloreference.load_from_json(phyloref_id, phyloref))
 
         return testSuite
@@ -150,12 +150,20 @@ class PhyloreferenceTestSuite:
         """
 
         results = dict()
-        results['specifiers'] = 0
+        results['taxonomic_units'] = 0
+        results['taxonomic_units_modified'] = 0
 
-        for phyloref in self.phylorefs:
-            for specifier in phyloref.specifiers:
-                specifier.matched_taxonomic_units = set()
-                results['specifiers'] += 1
+        tunits = set()
+        for phylogenyGroup in self.phylogeny_groups:
+            for phylogeny in phylogenyGroup.phylogenies:
+                for tunit in phylogeny.taxonomic_units:
+                    tunits.add(tunit)
+
+        for tunit in tunits:
+            results['taxonomic_units'] += 1
+            if len(tunit.matched_by_specifiers) > 0:
+                tunit.matches_specifiers = set()
+                results['taxonomic_units_modified'] += 1
 
         return results
 
@@ -180,20 +188,46 @@ class PhyloreferenceTestSuite:
 
         results['taxonomic_units'] = len(taxonomic_units)
 
-        # Retrieve all specifiers
-        specifiers = set()
-        for phyloref in self.phylorefs:
-            for specifier in phyloref.specifiers:
-                specifiers.add(specifier)
-
-        results['specifiers'] = len(specifiers)
-
         # Match specifiers to taxonomic units.
-        results['modified'] = 0
-        for specifier in specifiers:
-            for tunit in taxonomic_units:
-                if matcher(specifier, tunit):
-                    specifier.matched_taxonomic_units.add(tunit)
-                    results['modified'] += 1
+        results['tunits_modified'] = 0
+        results['specifiers'] = 0
+        results['specifiers_matched'] = 0
+        results['specifiers_unmatched'] = 0
+        results['phyloreferences'] = len(self.phylorefs)
+        results['phyloreferences_fully_matched'] = 0
+        results['phyloreferences_partially_matched'] = 0
+        results['phyloreferences_unmatched'] = 0
+
+        for phyloref in self.phylorefs:
+            unmatched_specifiers = list()
+
+            for specifier in phyloref.specifiers:
+                flag_matched = False
+
+                for tunit in taxonomic_units:
+                    if matcher(specifier, tunit):
+                        print("adding id " + specifier.id)
+                        tunit.matches_specifiers.add(specifier.id)
+                        results['tunits_modified'] += 1
+                        flag_matched = True
+
+                results['specifiers'] += 1
+                if flag_matched:
+                    results['specifiers_matched'] += 1
+                else:
+                    results['specifiers_unmatched'] += 1
+                    unmatched_specifiers.append(specifier)
+
+            if len(phyloref.specifiers) == 0:
+                results['phyloreferences_unmatched'] += 1
+
+            elif len(unmatched_specifiers) == 0:
+                results['phyloreferences_fully_matched'] += 1
+
+            elif len(unmatched_specifiers) == len(phyloref.specifiers):
+                results['phyloreferences_unmatched'] += 1
+
+            else:
+                results['phyloreferences_partially_matched'] += 1
 
         return results

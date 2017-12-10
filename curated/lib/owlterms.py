@@ -11,9 +11,9 @@ __copyright__ = "Copyright 2017 The Phyloreferencing Project"
 # OWL Imports
 OWL_IMPORTS = [
     "https://www.w3.org/2004/02/skos/core",
-    "https://raw.githubusercontent.com/phyloref/curation-workflow/refactor_add_labels/curated/phyloref_testcase.owl",
+    "https://raw.githubusercontent.com/phyloref/curation-workflow/refactor_add_labels_with_hasTaxon/curated/phyloref_testcase.owl",
         # Will become "http://vocab.phyloref.org/phyloref/testcase.owl",
-    "http://raw.githubusercontent.com/hlapp/phyloref/master/phyloref.owl",
+    "https://raw.githubusercontent.com/phyloref/phyloref-ontology/master/phyloref.owl",
         # Will become "http://phyloinformatics.net/phyloref.owl"
     "http://purl.obolibrary.org/obo/bco.owl"
         # Contains OWL definitions for Darwin Core terms
@@ -27,6 +27,8 @@ CDAO_TAXONOMIC_UNIT = "obo:CDAO_0000138"
 
 # Phyloref terms
 PHYLOREF_HAS_SIBLING = "phyloref:has_Sibling"
+PHYLOREF_MATCHED_BY_SPECIFIER = "testcase:matched_by_specifier"
+PHYLOREF_MATCHED_TAXONOMIC_UNIT = "testcase:matched_taxonomic_unit"
 
 # Base URL for Phyloreferencing
 BASE_URL = 'http://vocab.phyloref.org/phyloref/'
@@ -50,3 +52,6 @@ OWL_ONTOLOGY = 'owl:Ontology'
 OWL_CLASS = 'owl:Class'
 OWL_THING = 'owl:Thing'
 OWL_RESTRICTION = "owl:Restriction"
+
+# Oh hey it's RDFS
+RDFS_CLASS = 'rdfs:Class'

@@ -258,7 +258,12 @@
         },
 
         "matched_taxonomic_units": {
-            "@id": "testcase:matched_taxonomic_units",
+            "@id": "testcase:matched_taxonomic_unit",
+            "@type": "@set"
+        },
+
+        "matched_by_specifier": {
+            "@id": "testcase:matched_by_specifier",
             "@type": "@set"
         },
 
@@ -277,6 +282,11 @@
         "specific_epithet": {
             "@id": "dwc:specificEpithet",
             "@type": "xsd:string"
+        },
+
+        "subClassOf": {
+            "@id": "rdfs:subClassOf",
+            "@type": "@id"
         }
     }
 }
