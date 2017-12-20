@@ -289,6 +289,18 @@
             "@type": "@id"
         },
 
-        "expected_phyloreference_named": "testcase:expected_phyloreference_named"
+        "expected_phyloreference_named": "testcase:expected_phyloreference_named",
+        "matches_taxonomic_units": {
+            "@id": "testcase:matches_taxonomic_unit",
+            "@type": "@set"
+        },
+        "reason": {
+            "@id": "testcase:reason_for_match",
+            "@type": "xsd:string"
+        },
+        "has_taxonomic_unit_matches": {
+            "@id": "testcase:has_taxonomic_unit_match",
+            "@type": "@set"
+        }
     }
 }

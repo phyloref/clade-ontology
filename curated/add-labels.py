@@ -86,7 +86,7 @@ if args.input:
 
 try:
     testCase = PhyloreferenceTestSuite.PhyloreferenceTestSuite.load_from_document(doc)
-    print("match_specifiers: " + str(testCase.match_specifiers(Specifier.match_by_binomial_name)))
+    print("match_specifiers: " + str(testCase.match_specifiers()))
 except PhyloreferenceTestSuite.TestSuiteException as e:
     sys.stderr.write("Could not read '{0}': {1}\n".format(str(input_file), e.message))
     exit(1)

@@ -52,7 +52,8 @@ class PhylogenyGroup(object):
         # Step 1. Extract all labeled node data.
         additional_node_properties = dict()
         if 'additional_node_properties' in json:
-            additional_node_properties = phylogeny_group.read_additional_node_properties(json['additional_node_properties'])
+            for label in json['additional_node_properties']:
+                additional_node_properties[label] = json['additional_node_properties'][label]
 
         # Step 2. Read phylogenies using DendroPy.
         phylogeny_list = []
@@ -97,12 +98,3 @@ class PhylogenyGroup(object):
                 "Could not parse Newick while reading phylogeny {0}: {1}".format(self.id, err)
             )
 
-    def read_additional_node_properties(self, node_properties):
-        """ Read labeled node data with phylogenies in this phylogeny group. """
-
-        labeled_node_data = dict()
-
-        for label in node_properties:
-            labeled_node_data[label] = node_properties[label]
-
-        return labeled_node_data

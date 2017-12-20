@@ -26,9 +26,14 @@ CDAO_HAS_DESCENDANT = "obo:CDAO_0000174"
 CDAO_TAXONOMIC_UNIT = "obo:CDAO_0000138"
 
 # Phyloref terms
+PHYLOREF_TAXONOMIC_UNIT_MATCH = "testcase:TUMatch"
+
 PHYLOREF_HAS_SIBLING = "phyloref:has_Sibling"
 PHYLOREF_MATCHED_BY_SPECIFIER = "testcase:matched_by_specifier"
 PHYLOREF_MATCHED_TAXONOMIC_UNIT = "testcase:matched_taxonomic_unit"
+PHYLOREF_MATCHES_TAXONOMIC_UNIT = "testcase:matches_taxonomic_unit"
+
+PHYLOREF_HAS_TAXONOMIC_UNIT_MATCH = "testcase:has_taxonomic_unit_match"
 
 # Base URL for Phyloreferencing
 BASE_URL = 'http://vocab.phyloref.org/phyloref/'

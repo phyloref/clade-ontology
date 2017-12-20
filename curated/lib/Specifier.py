@@ -13,52 +13,31 @@ __author__ = "Gaurav Vaidya"
 __copyright__ = "Copyright 2017 The Phyloreferencing Project"
 
 
-class Specifier(TaxonomicUnit):
+class Specifier:
     """
-    A Specifier provides the information necessary to match a taxonomic unit.
-    It is therefore a Taxonomic Unit itself.
+    A Specifier is a part of a phyloreference that matches nodes.
     """
 
     def __init__(self):
-        super(Specifier, self).__init__()
+        # super(Specifier, self).__init__()
 
-        self.owl_classes.append(owlterms.SPECIFIER)
+        # self.owl_classes.append(owlterms.SPECIFIER)
+        self.taxonomic_units = list()
 
-    # Matchers
     @staticmethod
-    def match_by_binomial_name(specifier, tunit):
-        specifier_scnames = specifier.scientific_names
-        tunit_scnames = tunit.scientific_names
-
-        for specifier_scname in specifier_scnames:
-            for tunit_scname in tunit_scnames:
-                if specifier_scname.binomial_name == tunit_scname.binomial_name:
-                    return True
-
-        return False
-
+    def from_jsonld(json):
+        # A specifier should consist entirely of taxonomic units.
+        
 
 class InternalSpecifier(Specifier):
     def __init__(self):
         super(InternalSpecifier, self).__init__()
 
-        self.owl_classes.append(owlterms.INTERNAL_SPECIFIER)
-
-    @staticmethod
-    def from_jsonld(jsonld):
-        specifier = InternalSpecifier()
-        specifier.load_from_jsonld(jsonld)
-        return specifier
+        # self.owl_classes.append(owlterms.INTERNAL_SPECIFIER)
 
 
 class ExternalSpecifier(Specifier):
     def __init__(self):
         super(ExternalSpecifier, self).__init__()
 
-        self.owl_classes.append(owlterms.EXTERNAL_SPECIFIER)
-
-    @staticmethod
-    def from_jsonld(jsonld):
-        specifier = ExternalSpecifier()
-        specifier.load_from_jsonld(jsonld)
-        return specifier
+        # self.owl_classes.append(owlterms.EXTERNAL_SPECIFIER)

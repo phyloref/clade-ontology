@@ -5,6 +5,7 @@ PhyloreferenceTestSuite.py: A test case represents a single JSON file containing
 from lib import owlterms
 from lib.PhylogenyGroup import PhylogenyGroup
 from lib.Phyloreference import Phyloreference
+from lib.TUMatch import TUMatch
 
 __version__ = "0.1"
 __author__ = "Gaurav Vaidya"
@@ -61,6 +62,7 @@ class PhyloreferenceTestSuite(object):
         # A test case is made up of:
         self.phylogeny_groups = []
         self.phylorefs = []
+        self.tu_matches = set()
 
     @staticmethod
     def load_from_document(doc):
@@ -109,6 +111,7 @@ class PhyloreferenceTestSuite(object):
         doc['@id'] = self.id
         doc['@type'] = self.type
         doc['owl:imports'] = self.owl_imports
+        doc['has_taxonomic_unit_matches'] = list(self.tu_matches)
 
         def export_unless_blank(prop, var):
             """ Export variables unless they are blank.
@@ -142,40 +145,14 @@ class PhyloreferenceTestSuite(object):
 
         return doc
 
-    def reset_specifiers(self):
+    def match_specifiers(self):
         """
-        Reset all matches in specifiers in this phyloreference.
-
-        :return: A dictionary describing the changes that have been made.
-        """
-
-        results = dict()
-        results['taxonomic_units'] = 0
-        results['taxonomic_units_modified'] = 0
-
-        tunits = set()
-        for phylogenyGroup in self.phylogeny_groups:
-            for phylogeny in phylogenyGroup.phylogenies:
-                for tunit in phylogeny.taxonomic_units:
-                    tunits.add(tunit)
-
-        for tunit in tunits:
-            results['taxonomic_units'] += 1
-            if len(tunit.matched_by_specifiers) > 0:
-                tunit.matches_specifiers = set()
-                results['taxonomic_units_modified'] += 1
-
-        return results
-
-    def match_specifiers(self, matcher):
-        """
-        Matches specifiers to taxonomic units. This modifies the specifiers, but
-        you can call reset_specifiers() if you want to undo the effects of this
-        matching.
+        Matches specifiers to taxonomic units. Matches are stored internally, so
+        if there are any matches, this test suite will be modified.
 
         :param matcher: A function taking two arguments (a specifier and a taxonomic
         unit respectively) and returns True if they should be matched.
-        :return: A dictionary describing the changes that have been made.
+        :return: A dictionary describing the matches that have been made.
         """
 
         results = dict()
@@ -188,46 +165,24 @@ class PhyloreferenceTestSuite(object):
 
         results['taxonomic_units'] = len(taxonomic_units)
 
-        # Match specifiers to taxonomic units.
-        results['tunits_modified'] = 0
-        results['specifiers'] = 0
-        results['specifiers_matched'] = 0
-        results['specifiers_unmatched'] = 0
-        results['phyloreferences'] = len(self.phylorefs)
-        results['phyloreferences_fully_matched'] = 0
-        results['phyloreferences_partially_matched'] = 0
-        results['phyloreferences_unmatched'] = 0
+        # Match taxonomic units with each other.
+        results['tunits_matched'] = 0
 
-        for phyloref in self.phylorefs:
-            unmatched_specifiers = list()
+        # TODO: match only the leading triangle
 
-            for specifier in phyloref.specifiers:
-                flag_matched = False
+        for tunit1 in taxonomic_units:
+            for tunit2 in taxonomic_units:
+                if tunit1 == tunit2:
+                    continue
 
-                for tunit in taxonomic_units:
-                    if matcher(specifier, tunit):
-                        # print("adding id " + specifier.id)
-                        tunit.matches_specifiers.add(specifier.id)
-                        results['tunits_modified'] += 1
-                        flag_matched = True
+                # Do these taxonomic units match?
+                tu_match = TUMatch.try_match(
+                    tunit1,
+                    tunit2
+                )
 
-                results['specifiers'] += 1
-                if flag_matched:
-                    results['specifiers_matched'] += 1
-                else:
-                    results['specifiers_unmatched'] += 1
-                    unmatched_specifiers.append(specifier)
-
-            if len(phyloref.specifiers) == 0:
-                results['phyloreferences_unmatched'] += 1
-
-            elif len(unmatched_specifiers) == 0:
-                results['phyloreferences_fully_matched'] += 1
-
-            elif len(unmatched_specifiers) == len(phyloref.specifiers):
-                results['phyloreferences_unmatched'] += 1
-
-            else:
-                results['phyloreferences_partially_matched'] += 1
+                if tu_match is not None:
+                    self.tu_matches.add(tu_match)
+                    results['tunits_matched'] += 1
 
         return results

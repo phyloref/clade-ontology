@@ -69,11 +69,6 @@ class TaxonomicUnit(Identified):
 
         return jsonld
 
-    def get_reference(self):
-        return {
-            '@id': self.id
-        }
-
     def load_from_jsonld(self, jsonld):
         self.external_refs = []
         self.scnames = []
@@ -94,7 +89,7 @@ class TaxonomicUnit(Identified):
     @staticmethod
     def load_jsonld(jsonld):
         tunit = TaxonomicUnit()
-        tunit.add_from_jsonld(jsonld)
+        tunit.load_from_jsonld(jsonld)
         return tunit
 
     @property
@@ -265,6 +260,7 @@ class ScientificName(object):
             self.scname_genus = match.group(1)
             self.scname_specific_epithet = match.group(2)
 
+
 class Specimen(object):
     """
     This class is here mainly as a placeholder; eventually, we'll support pretty
@@ -278,11 +274,14 @@ class Specimen(object):
         if '@type' not in self.properties:
             self.properties['@type'] = 'dwc:MaterialSample'
 
-    def load_from_json(self, jsonld):
+    def __init__(self):
+        self.__init__(dict())
+
+    def load_from_jsonld(self, jsonld):
         self.properties = dict(jsonld)
 
     @staticmethod
-    def from_json(jsonld):
+    def from_jsonld(jsonld):
         sp = Specimen()
         sp.load_from_json(jsonld)
         return sp
