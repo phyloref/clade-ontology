@@ -111,7 +111,7 @@ class PhyloreferenceTestSuite(object):
         doc['@id'] = self.id
         doc['@type'] = self.type
         doc['owl:imports'] = self.owl_imports
-        doc['has_taxonomic_unit_matches'] = list(self.tu_matches)
+        doc['has_taxonomic_unit_matches'] = [tu.as_jsonld() for tu in self.tu_matches]
 
         def export_unless_blank(prop, var):
             """ Export variables unless they are blank.
@@ -157,23 +157,33 @@ class PhyloreferenceTestSuite(object):
 
         results = dict()
 
-        # Retrieve all taxonomic units
+        # Retrieve all taxonomic units from the phylogeny
         taxonomic_units = set()
         for phylogeny_group in self.phylogeny_groups:
             for phylogeny in phylogeny_group.phylogenies:
                 taxonomic_units.update(phylogeny.taxonomic_units)
+
+        # Add all the taxonomic units from the specifiers
+        specifier_taxonomic_units = set()
+        for phyloref in self.phylorefs:
+            for specifier in phyloref.specifiers:
+                taxonomic_units.update(specifier.taxonomic_units)
+                specifier_taxonomic_units.update(specifier.taxonomic_units)
 
         results['taxonomic_units'] = len(taxonomic_units)
 
         # Match taxonomic units with each other.
         results['tunits_matched'] = 0
 
-        # TODO: match only the leading triangle
+        # For now, we only match specifier taxonomic units.
+        # Some day, we might want to match them all.
 
-        for tunit1 in taxonomic_units:
+        for tunit1 in specifier_taxonomic_units:
             for tunit2 in taxonomic_units:
                 if tunit1 == tunit2:
                     continue
+
+                print("Trying to match {!s} with {!s}".format(tunit1, tunit2))
 
                 # Do these taxonomic units match?
                 tu_match = TUMatch.try_match(

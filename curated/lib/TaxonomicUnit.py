@@ -87,7 +87,7 @@ class TaxonomicUnit(Identified):
             self.specimen_list.extend(map(lambda sp: Specimen.from_jsonld(sp), jsonld['includes_specimens']))
 
     @staticmethod
-    def load_jsonld(jsonld):
+    def from_jsonld(jsonld):
         tunit = TaxonomicUnit()
         tunit.load_from_jsonld(jsonld)
         return tunit

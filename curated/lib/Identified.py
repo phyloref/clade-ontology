@@ -7,9 +7,12 @@ import uuid
 
 
 class Identified(object):
+    identifier_count = 1
+
     def __init__(self):
         super(Identified, self).__init__()
-        self.identified_as_id = "_:%s" % (uuid.uuid4())
+        self.identified_as_id = "_:{!s}".format(Identified.identifier_count)
+        Identified.identifier_count += 1
 
     @property
     def id(self):

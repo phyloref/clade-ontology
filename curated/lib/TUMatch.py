@@ -24,20 +24,22 @@ class TUMatch(Identified):
     for identifying matching TUs within a Test Suite.
     """
 
-    def __init__(self, tunits, reason):
-        self.types = list(owlterms.PHYLOREF_TAXONOMIC_UNIT_MATCH)
-        self.taxonomic_units = set(tunits)
-        self.reason = reason
+    def __init__(self, tunits=list(), reason="No reason given"):
+        super(TUMatch, self).__init__()
 
-    def __init__(self):
-        self.__init__(set(), "No reason provided")
+        self.types = [owlterms.PHYLOREF_TAXONOMIC_UNIT_MATCH]
+        self.taxonomic_units = set()
+        self.taxonomic_units.update(tunits)
+        self.reason = reason
 
     def as_jsonld(self):
         return {
             '@id': self.id,
             '@type': self.types,
             'reason': self.reason,
-            'matches_taxonomic_units': list(self.taxonomic_units)
+            'matches_taxonomic_units': [tu.as_jsonld() for tu in self.taxonomic_units]
+                # TODO: eventually, we'll probably want to use a reference here instead
+                # of repeating the TUs. But being explicit is useful is debugging!
         }
 
     # Static methods for identifying matching taxonomic units
@@ -53,9 +55,8 @@ class TUMatch(Identified):
         :return: a TUMatch if there is a match, or None if there isn't one.
         """
 
-        methods_to_try = list(
-            TUMatch.try_match_by_binomial_name
-        )
+        methods_to_try = list()
+        methods_to_try.append(TUMatch.try_match_by_binomial_name)
 
         for method in methods_to_try:
             ret = method(tunit1, tunit2)
@@ -74,7 +75,7 @@ class TUMatch(Identified):
             for tunit2_scname in tunit2_scnames:
                 if tunit1_scname.binomial_name == tunit2_scname.binomial_name:
                     return TUMatch(
-                        list(tunit1, tunit2),
+                        [tunit1, tunit2],
                         "Scientific name '{!s}' of taxonomic unit '{!s}' and scientific name '{!s}' of taxonomic unit '{!s}' share the same binomial name: '{!s}'".format(
                             tunit1_scname, tunit1,
                             tunit2_scname, tunit2,
