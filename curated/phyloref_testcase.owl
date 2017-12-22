@@ -168,6 +168,7 @@
     <!-- http://vocab.phyloref.org/phyloref/testcase.owl#matches_node -->
 
     <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#matches_node">
+        <owl:inverseOf rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#matches_specifier"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#references_taxonomic_unit"/>
             <rdf:Description>
@@ -179,6 +180,12 @@
             </rdf:Description>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#matches_specifier -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#matches_specifier"/>
     
 
 
@@ -312,6 +319,12 @@
     <!-- http://vocab.phyloref.org/phyloref/testcase.owl#Specifier -->
 
     <owl:Class rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#Specifier"/>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#TUMatch -->
+
+    <owl:Class rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#TUMatch"/>
     
 
 

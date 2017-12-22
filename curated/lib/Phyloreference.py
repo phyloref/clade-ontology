@@ -170,11 +170,19 @@ def get_class_expression_for_internal_specifier(specifier):
     return {
         "@type": owlterms.OWL_RESTRICTION,
         "unionOf": [
-            specifier,
+            {
+                "@type": owlterms.OWL_RESTRICTION,
+                "onProperty": "testcase:matches_specifier",
+                "hasValue": specifier
+            },
             {
                 "@type": owlterms.OWL_RESTRICTION,
                 "onProperty": owlterms.CDAO_HAS_DESCENDANT,
-                "someValuesFrom": specifier
+                "someValuesFrom": {
+                    "@type": owlterms.OWL_RESTRICTION,
+                    "onProperty": "testcase:matches_specifier",
+                    "hasValue": specifier
+                }
             }
         ]
     }
@@ -208,11 +216,19 @@ def get_class_expression_for_mrca(phyloref_id, additional_classes, specifier1, s
             {
                 "@type": "owl:Class",
                 "intersectionOf": [
-                    specifier1,
+                    {
+                        "@type": owlterms.OWL_RESTRICTION,
+                        "onProperty": "testcase:matches_specifier",
+                        "hasValue": specifier1
+                    },
                     {
                         "@type": "owl:Restriction",
                         "onProperty": owlterms.CDAO_HAS_DESCENDANT,
-                        "someValuesFrom": [specifier2]
+                        "someValuesFrom": {
+                            "@type": owlterms.OWL_RESTRICTION,
+                            "onProperty": "testcase:matches_specifier",
+                            "hasValue": specifier2
+                        }
                     }
                 ]
             },
@@ -220,11 +236,19 @@ def get_class_expression_for_mrca(phyloref_id, additional_classes, specifier1, s
             {
                 "@type": "owl:Class",
                 "intersectionOf": [
-                    specifier2,
+                    {
+                        "@type": owlterms.OWL_RESTRICTION,
+                        "onProperty": "testcase:matches_specifier",
+                        "hasValue": specifier2
+                    },
                     {
                         "@type": "owl:Restriction",
                         "onProperty": owlterms.CDAO_HAS_DESCENDANT,
-                        "someValuesFrom": [specifier1]
+                        "someValuesFrom": {
+                            "@type": owlterms.OWL_RESTRICTION,
+                            "onProperty": "testcase:matches_specifier",
+                            "hasValue": specifier1
+                        }
                     }
                 ]
             },
