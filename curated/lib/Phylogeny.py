@@ -7,14 +7,12 @@ from lib import owlterms
 from lib.TaxonomicUnit import TaxonomicUnit
 from lib.Identified import Identified
 
-__version__ = "0.1"
-__author__ = "Gaurav Vaidya"
-__copyright__ = "Copyright 2017 The Phyloreferencing Project"
-
 
 class Phylogeny(object):
     """
-    A Phylogeny consists of a series of nodes representing a phylogeny. We also export it in Newick format.
+    A Phylogeny consists of a series of nodes representing a phylogeny. It can be loaded from any
+    valid DendroPy tree, and can optionally contain additional information associated with each
+    labeled node on the phylogeny.
     """
 
     def __init__(self, phylogeny_id, dendropy_tree, additional_node_properties):
@@ -36,14 +34,17 @@ class Phylogeny(object):
         self.node_count = 0
         self.nodes_by_id = dict()
         self.tunits_by_node = dict()
+        self.phylogeny_nodes = []
         self.read_tree_to_nodes(dendropy_tree)
 
     @property
     def nodes(self):
+        """ Returns a list of Node objects associated with this Phylogeny. """
         return self.phylogeny_nodes
 
     @property
     def taxonomic_units(self):
+        """ Returns a list of Taxonomic Units associated with nodes in this Phylogeny. """
         tunits = set()
 
         for tunit_sets in self.tunits_by_node.values():
@@ -51,36 +52,33 @@ class Phylogeny(object):
 
         return tunits
 
-    def get_id_for_node(self, node):
-        """ Node identifiers need to be consistent, but we don't want to create
-        individual node objects to track them. Instead, we assign unique identifiers
-        to each DendroPy node and keep them here, so that we always return the same
-        identifier for the same node.
+    def get_id_for_node(self, dendropy_node):
+        """ We need to maintain links between DendroPy nodes and our Node objects, so that
+        we can determine which node is child to and sibling to other nodes. Given a DendroPy
+        node, this function will consistently return the same identifier for that node.
         """
 
-        if node in self.nodes_by_id:
-            return self.nodes_by_id[node]
+        if dendropy_node in self.nodes_by_id:
+            return self.nodes_by_id[dendropy_node]
         else:
-            self.nodes_by_id[node] = '{0}_node{1}'.format(self.id, self.node_count)
+            self.nodes_by_id[dendropy_node] = '{0}_node{1}'.format(self.id, self.node_count)
             self.node_count += 1
-            return self.nodes_by_id[node]
+            return self.nodes_by_id[dendropy_node]
 
     def read_tree_to_nodes(self, tree):
         """ Reads nodes from a DendroPy tree and stores them in this Phylogeny. """
 
-        self.phylogeny_nodes = []
-
         # Copy over any annotations from NeXML
         for annotation in tree.annotations:
             self.annotations.append({
-                '@type': "Annotation",
+                '@type': owlterms.OA_ANNOTATION,
                 'annotationName': annotation.name,
                 'annotationTarget': self.id,
                 'annotationBody': str(annotation.value)
             })
 
         def add_all_child_nodes(dendropy_node):
-            """ Recursively adds a node and all of its children to the current Phylogeny. """
+            """ Recursively adds a DendroPy node and all of its children to the current Phylogeny. """
 
             # Create the node.
             node = Node()
@@ -90,7 +88,7 @@ class Phylogeny(object):
             annotations = list()
             for annotation in dendropy_node.annotations:
                 self.annotations.append({
-                    '@type': "Annotation",
+                    '@type': owlterms.OA_ANNOTATION,
                     'annotationName': annotation.name,
                     'annotationTarget': self.get_id_for_node(node),
                     'annotationBody': str(annotation.value)

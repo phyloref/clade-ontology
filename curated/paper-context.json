@@ -2,98 +2,60 @@
     "@context": {
         "@base": "http://example.org/TBD#",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
-        "dc": "http://purl.org/dc/elements/1.1/",
-        "ot": "http://purl.org/opentree/nexson#",
-        "oa": "http://www.w3.org/ns/oa#",
-        "obo": "http://purl.obolibrary.org/obo/",
-        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "phyloref": "http://phyloinformatics.net/phyloref.owl#",
-        "_phyloref": "http://vocab.phyloref.org/phyloref/",
-        "testcase": "http://vocab.phyloref.org/phyloref/testcase.owl#",
-        "owl": "http://www.w3.org/2002/07/owl#",
-        "skos": "http://www.w3.org/2004/02/skos/core#",
-        "dsw": "http://purl.org/dsw/",
-        "dwc": "http://rs.tdwg.org/dwc/terms/",
 
-        "owl:imports": {
-            "@id": "owl:imports",
-            "@type": "@id"
-        },
+        "testcase": "http://vocab.phyloref.org/phyloref/testcase.owl#",
+
+        "== TOP-LEVEL DOCUMENT PROPERTIES ==": {},
+        "ot": "http://purl.org/opentree/nexson#",
+        "dc": "http://purl.org/dc/elements/1.1/",
 
         "curator": {
             "@id": "ot:curatorName",
             "@type": "xsd:string"
         },
+
         "comments": {
             "@id": "ot:comment",
             "@type": "xsd:string"
         },
 
         "citation": "ot:studyPublicationReference",
+
         "url": {
             "@id": "ot:studyPublication",
             "@type": "@id"
         },
+
         "year": {
             "@id": "ot:studyYear",
             "@type": "xsd:integer"
         },
 
+        "== Management of nodes and internode relationships ==": {},
+
         "nodes": {
-            "@id": "testcase:hasNode",
+            "@id": "testcase:has_node",
             "@container": "@set"
         },
 
         "inPhylogeny": {
-            "@id": "testcase:inPhylogeny",
+            "@id": "testcase:in_phylogeny",
             "@type": "@id"
         },
 
         "hasRootNode": {
-            "@id": "testcase:hasRootNode"
-        },
-
-        "phylogenies": {
-            "@id": "testcase:hasPhylogeny",
-            "@container": "@set"
-        },
-
-        "labeledNodeData": {
-            "@id": "testcase:hasLabeledNodeData",
-            "@container": "@set"
-        },
-
-        "annotations": {
-            "@id": "testcase:hasAnnotation",
-            "@containter": "@set" 
-        },
-
-        "taxonAnnotations": {
-            "@id": "testcase:hasTaxonAnnotation",
-            "@containter": "@set" 
-        },
-
-        "Annotation": "oa:Annotation",
-
-        "annotationTarget": {
-            "@id": "oa:hasTarget",
+            "@id": "testcase:has_root_node",
             "@type": "@id"
         },
 
-        "annotationName": {
-            "@id": "rdfs:label",
-            "@type": "xsd:string"
-        },
-
-        "annotationBody": {
-            "@id": "oa:hasBody",
-            "@type": "xsd:string"
-        },
-
-        "otus": {
-            "@id": "testcase:hasOTU",
+        "phylogenies": {
+            "@id": "testcase:has_phylogeny",
             "@container": "@set"
         },
+
+        "== CDAO and Phyloref properties ==": {},
+        "obo": "http://purl.obolibrary.org/obo/",
+        "phyloref": "http://phyloinformatics.net/phyloref.owl#",
 
         "children": {
             "@id": "obo:CDAO_0000149",
@@ -160,16 +122,6 @@
             "@type": "xsd:string"
         },
 
-        "skos:closeMatch": {
-            "@id": "skos:closeMatch",
-            "@type": "@id"
-        },
-
-        "skos:exactMatch": {
-            "@id": "skos:exactMatch",
-            "@type": "@id"
-        },
-
         "newick": {
             "@id": "testcase:asNewickString",
             "@type": "xsd:string"
@@ -183,6 +135,22 @@
         "manchesterSyntax": {
             "@id": "testcase:manchesterSyntax",
             "@type": "xsd:string"
+        },
+
+        "== LOW-LEVEL RDF/RDFS/OWL TERMS ==": {},
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+
+        "label": {
+            "@id": "rdfs:label",
+            "@type": "xsd:string"
+        },
+
+        "== GLUE TO RENDER ONTOLOGY IN RDF ==": {},
+        "owl": "http://www.w3.org/2002/07/owl#",
+
+        "owl:imports": {
+            "@id": "owl:imports",
+            "@type": "@id"
         },
 
         "equivalentClass": "owl:equivalentClass",
@@ -207,40 +175,12 @@
             "@type": "xsd:string"
         },
 
-        "label": {
-            "@id": "rdfs:label",
-            "@type": "xsd:string"
-        },
-
-        "taxonomic_units": {
+        "TBD_taxonomic_units": {
             "@id": "obo:CDAO_0000187",
             "@container": "@set"
         },
 
-        "hasBasisOfRecord": "testcase:hasBasisOfRecord",
-        "locatedAt": "testcase:hasCollectingEvent",
-        "verbatimLocality": {
-            "@id": "dwc:verbatimLocality",
-            "@type": "xsd:string"
-        },
-        "ownerInstitutionCode": {
-            "@id": "dwc:ownerInstitutionCode",
-            "@type": "xsd:string"
-        },
-        "catalogNumber": {
-            "@id": "dwc:catalogNumber",
-            "@type": "xsd:string"
-        },
-        "genBankID": {
-            "@id": "testcase:genBankID",
-            "@type": "xsd:string"
-        },
-
         "filename": "testcase:filename",
-
-
-
-
 
         "external_references": {
             "@id": "obo:CDAO_0000164",
@@ -256,6 +196,9 @@
             "@id": "testcase:includes_specimen",
             "@type": "@set"
         },
+
+        "== Properties of individual OTUs ==": {},
+        "dwc": "http://rs.tdwg.org/dwc/terms/",
 
         "scientific_name": {
             "@id": "dwc:scientificName",
@@ -309,6 +252,37 @@
             "domain": "Node",
             "range": "TU",
             "@type": "@set"
+        },
+
+
+        "== TERMS FROM THE ANNOTATION ONTOLOGY ==": {},
+
+        "oa": "http://www.w3.org/ns/oa#",
+
+        "annotations": {
+            "@id": "testcase:has_annotation",
+            "@container": "@set"
+        },
+
+        "TBD_taxonAnnotations": {
+            "@id": "testcase:hasTaxonAnnotation",
+            "@container": "@set"
+        },
+
+        "annotationTarget": {
+            "@id": "oa:hasTarget",
+            "@type": "@id"
+        },
+
+        "annotationName": {
+            "@id": "rdfs:label",
+            "@type": "xsd:string"
+        },
+
+        "annotationBody": {
+            "@id": "oa:hasBody",
+            "@type": "xsd:string"
         }
+
     }
 }

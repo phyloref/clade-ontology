@@ -49,7 +49,7 @@ class PhyloreferenceTestSuite(object):
             self.id.append('#')
 
         # Set up other properties
-        self.type = [owlterms.PHYLOREFERENCE_TEST_CASE, owlterms.OWL_ONTOLOGY]
+        self.type = [owlterms.PHYLOREFERENCE_TEST_SUITE, owlterms.OWL_ONTOLOGY]
         self.owl_imports = owlterms.OWL_IMPORTS
 
         # Metadata

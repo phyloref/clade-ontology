@@ -4,13 +4,12 @@
 owlterms.py: A list of OWL terms used in Phyloreferencing.
 """
 
-__version__ = "0.1"
-__author__ = "Gaurav Vaidya"
-__copyright__ = "Copyright 2017 The Phyloreferencing Project"
-
-# OWL Imports
+# OWL Imports: a list of OWL ontologies that should be imported.
+# This list should contain URIs from where the ontologies can be
+# downloaded -- eventually, this will be final URIs, but for now
+# this can be direct links to particular versions of the ontologies
+# we want to use.
 OWL_IMPORTS = [
-    # "https://www.w3.org/2004/02/skos/core",
     "https://raw.githubusercontent.com/gaurav/curation-workflow/refactor_add_labels_with_hasTaxon/curated/phyloref_testcase.owl",
         # Will become "http://vocab.phyloref.org/phyloref/testcase.owl",
     "https://raw.githubusercontent.com/phyloref/phyloref-ontology/master/phyloref.owl",
@@ -21,41 +20,33 @@ OWL_IMPORTS = [
 ]
 
 # CDAO terms
-CDAO_NODE = 'obo:CDAO_0000140'
+CDAO_NODE = "obo:CDAO_0000140"
 CDAO_HAS_DESCENDANT = "obo:CDAO_0000174"
 CDAO_TAXONOMIC_UNIT = "obo:CDAO_0000138"
-
-# Phyloref terms
-PHYLOREF_TAXONOMIC_UNIT_MATCH = "testcase:TUMatch"
-
-PHYLOREF_HAS_SIBLING = "phyloref:has_Sibling"
-PHYLOREF_MATCHED_BY_SPECIFIER = "testcase:matched_by_specifier"
-PHYLOREF_MATCHED_TAXONOMIC_UNIT = "testcase:matched_taxonomic_unit"
-
-PHYLOREF_HAS_TAXONOMIC_UNIT_MATCH = "testcase:has_taxonomic_unit_match"
 
 # Base URL for Phyloreferencing
 BASE_URL = 'http://vocab.phyloref.org/phyloref/'
 
-# Empty node URLs
+# Phyloreference-related terms
+PHYLOREFERENCE = "http://phyloinformatics.net/phyloref.owl#Phyloreference"
+PHYLOREFERENCE_TEST_SUITE = "testcase:PhyloreferenceTestSuite"
+PHYLOREFERENCE_TEST_PHYLOGENY_GROUP = "testcase:PhyloreferenceTestPhylogenyGroup"
+PHYLOREFERENCE_PHYLOGENY = "testcase:PhyloreferenceTestPhylogeny"
 
-# Phyloreference test suites belong to this class.
-PHYLOREFERENCE = 'http://phyloinformatics.net/phyloref.owl#Phyloreference'
-# PHYLOREFERENCE = BASE_URL + 'Phyloreference'
-PHYLOREFERENCE_TEST_CASE = BASE_URL + 'PhyloreferenceTestSuite'
-PHYLOREFERENCE_TEST_PHYLOGENY_GROUP = BASE_URL + 'PhyloreferenceTestPhylogenyGroup'
-PHYLOREFERENCE_PHYLOGENY = BASE_URL + 'PhyloreferenceTestPhylogeny'
+PHYLOREF_HAS_SIBLING = "http://phyloinformatics.net/phyloref.owl#has_Sibling"
 
-# Specifiers
-SPECIFIER = BASE_URL + 'Specifier'
-INTERNAL_SPECIFIER = BASE_URL + 'InternalSpecifier'
-EXTERNAL_SPECIFIER = BASE_URL + 'ExternalSpecifier'
+# TU Match-related terms
+PHYLOREF_TAXONOMIC_UNIT_MATCH = "testcase:TUMatch"
+
+# Specifier-related terms
+SPECIFIER = "testcase:Specifier"
+INTERNAL_SPECIFIER = "testcase:InternalSpecifier"
+EXTERNAL_SPECIFIER = "testcase:ExternalSpecifier"
+
+# Terms from the Annotation Ontology
+OA_ANNOTATION = "http://www.w3.org/ns/oa#Annotation"
 
 # Other OWL terms we use
-OWL_ONTOLOGY = 'owl:Ontology'
-OWL_CLASS = 'owl:Class'
-OWL_THING = 'owl:Thing'
+OWL_ONTOLOGY = "owl:Ontology"
+OWL_CLASS = "owl:Class"
 OWL_RESTRICTION = "owl:Restriction"
-
-# Oh hey it's RDFS
-RDFS_CLASS = 'rdfs:Class'
