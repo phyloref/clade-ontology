@@ -34,7 +34,7 @@ class Specifier(Identified):
         return {
             '@id': self.id,
             '@type': self.owl_classes,
-            'matches_TUs': [tu.as_jsonld() for tu in self.taxonomic_units]
+            'references_taxonomic_units': [tu.as_jsonld() for tu in self.taxonomic_units]
         }
 
     @staticmethod
@@ -45,10 +45,10 @@ class Specifier(Identified):
         if '@id' in json:
             specifier.identified_as_id = json['@id']
 
-        if 'matches_TUs' not in json:
+        if 'references_taxonomic_units' not in json:
             return specifier
 
-        for tu_as_json in json['matches_TUs']:
+        for tu_as_json in json['references_taxonomic_units']:
             tu = TaxonomicUnit.from_jsonld(tu_as_json)
             specifier.taxonomic_units.add(tu)
 

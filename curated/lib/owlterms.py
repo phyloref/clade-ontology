@@ -10,7 +10,7 @@ __copyright__ = "Copyright 2017 The Phyloreferencing Project"
 
 # OWL Imports
 OWL_IMPORTS = [
-    "https://www.w3.org/2004/02/skos/core",
+    # "https://www.w3.org/2004/02/skos/core",
     "https://raw.githubusercontent.com/gaurav/curation-workflow/refactor_add_labels_with_hasTaxon/curated/phyloref_testcase.owl",
         # Will become "http://vocab.phyloref.org/phyloref/testcase.owl",
     "https://raw.githubusercontent.com/phyloref/phyloref-ontology/master/phyloref.owl",
@@ -31,7 +31,6 @@ PHYLOREF_TAXONOMIC_UNIT_MATCH = "testcase:TUMatch"
 PHYLOREF_HAS_SIBLING = "phyloref:has_Sibling"
 PHYLOREF_MATCHED_BY_SPECIFIER = "testcase:matched_by_specifier"
 PHYLOREF_MATCHED_TAXONOMIC_UNIT = "testcase:matched_taxonomic_unit"
-PHYLOREF_MATCHES_TAXONOMIC_UNIT = "testcase:matches_taxonomic_unit"
 
 PHYLOREF_HAS_TAXONOMIC_UNIT_MATCH = "testcase:has_taxonomic_unit_match"
 

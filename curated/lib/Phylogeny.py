@@ -112,6 +112,9 @@ class Phylogeny(object):
 
             # Collect all the node labels.
             for node_label in node_labels:
+                # Consider the label itself.
+                node_label_strs.append(node_label.label)
+
                 # TODO clean up
                 if node_label.label in self.additional_node_properties:
                     node.additional_properties = self.additional_node_properties[node_label.label]
@@ -129,6 +132,7 @@ class Phylogeny(object):
                 # TODO clean up
                 if node_label_str.startswith("expected "):
                     node.expected_phyloref_named = node_label_str[9:]
+                    node_label_str = node_label_str[9:]
 
                 tunit = TaxonomicUnit.from_scientific_name(node_label_str)
                 tunit.id = self.get_id_for_node(dendropy_node) + ("_tunit%d" % tunit_count)
@@ -138,7 +142,7 @@ class Phylogeny(object):
                 # TODO: check node.additional_properties and see if the user has provided
                 # specimen or scientific name information.
 
-            node.taxonomic_units = tunits
+            node.taxonomic_units.extend(tunits)
             if dendropy_node not in self.tunits_by_node:
                 self.tunits_by_node[dendropy_node] = set()
 
@@ -199,13 +203,13 @@ class Node(Identified):
         types = set()
         types.add(owlterms.CDAO_NODE)
 
-        for tunit in self.taxonomic_units:
-            types.add(tunit.id)
+        #for tunit in self.taxonomic_units:
+        #    types.add(tunit.id)
 
         jsonld = {
             '@id': self.id,
             '@type': list(types),
-            'taxa': [tunit.as_jsonld() for tunit in self.taxonomic_units],
+            'represents_taxonomic_units': [tunit.as_jsonld() for tunit in self.taxonomic_units],
             'children': self.children,
             'siblings': self.siblings
         }

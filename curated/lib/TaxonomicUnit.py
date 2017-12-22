@@ -44,18 +44,15 @@ class TaxonomicUnit(Identified):
         self.external_refs = []
         self.scnames = []
         self.specimen_list = []
-        self.matches_specifiers = set()
 
     def as_jsonld(self):
         # print("TU.as_jsonld(" + self.id + "): " + str(self.matches_specifiers))
 
-        superclasses = set(self.owl_classes)
-        superclasses.update(self.matches_specifiers)
-
         jsonld = {
             '@id': self.id,
-            '@type': owlterms.OWL_CLASS,
-            'subClassOf': list(superclasses)
+            '@type': self.owl_classes
+            # '@type': owlterms.OWL_CLASS,
+            # 'subClassOf': list(superclasses)
         }
 
         if len(self.external_refs) > 0:
