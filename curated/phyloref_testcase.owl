@@ -43,43 +43,33 @@
     
 
 
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasAdditionalClass -->
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#has_additional_class -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasAdditionalClass"/>
-    
-
-
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasExternalSpecifier -->
-
-    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasExternalSpecifier">
-        <rdfs:subPropertyOf rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#hasSpecifier"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasInternalSpecifier -->
-
-    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasInternalSpecifier">
-        <rdfs:subPropertyOf rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#hasSpecifier"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasPhyloreference -->
-
-    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasPhyloreference"/>
-    
-
-
-    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#hasSpecifier -->
-
-    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#hasSpecifier"/>
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#has_additional_class"/>
     
 
 
     <!-- http://vocab.phyloref.org/phyloref/testcase.owl#has_annotation -->
 
     <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#has_annotation"/>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#has_external_specifier -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#has_external_specifier">
+        <rdfs:subPropertyOf rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#has_specifier"/>
+        <rdfs:range rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#ExternalSpecifier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#has_internal_specifier -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#has_internal_specifier">
+        <rdfs:subPropertyOf rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#has_specifier"/>
+        <rdfs:range rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#InternalSpecifier"/>
+    </owl:ObjectProperty>
     
 
 
@@ -97,10 +87,24 @@
     
 
 
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#has_phyloreference -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#has_phyloreference"/>
+    
+
+
     <!-- http://vocab.phyloref.org/phyloref/testcase.owl#has_root_node -->
 
     <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#has_root_node">
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CDAO_0000140"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#has_specifier -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#has_specifier">
+        <rdfs:range rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#Specifier"/>
     </owl:ObjectProperty>
     
 
