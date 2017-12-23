@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """
-A taxonomic unit match encapsulates the match made between
+A Taxonomic Unit Match encapsulates the match made between
 two or more taxonomic units. Rather than simply asserting
 that some taxonomic units overlap, we can document exactly
 how much these taxonomic units through these matches.
@@ -15,7 +15,7 @@ class TUMatch(Identified):
     """
     A Taxonomic Unit match describes a match between
     two or more Taxonomic Units. At the moment, we
-    only support a simple string describing the match,
+    only support a simple string describing the match (the "reason"),
     but we will eventually flesh out this object with
     precise information on the possible relationship
     between sets of taxonomic units.
@@ -25,6 +25,7 @@ class TUMatch(Identified):
     """
 
     def __init__(self, tunits=list(), reason="No reason given"):
+        """ Create a TUMatch with a number of taxonomic units, matched on the basis of the provided reason. """
         super(TUMatch, self).__init__()
 
         self.types = [owlterms.PHYLOREF_TAXONOMIC_UNIT_MATCH]
@@ -33,6 +34,7 @@ class TUMatch(Identified):
         self.reason = reason
 
     def as_jsonld(self):
+        """ Return this Taxonomic Unit match as a JSON-LD object. """
         return {
             '@id': self.id,
             '@type': self.types,
@@ -48,7 +50,6 @@ class TUMatch(Identified):
     def try_match(tunit1, tunit2):
         """
         Attempt to create a match of the two taxonomic units provided.
-
         Eventually, we'll extend this to matching multiple taxonomic units.
 
         :param tunits: A list of taxonomic units to compare.

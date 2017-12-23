@@ -10,20 +10,16 @@ from lib import owlterms
 from lib.TaxonomicUnit import TaxonomicUnit
 from lib.Identified import Identified
 
-__version__ = "0.1"
-__author__ = "Gaurav Vaidya"
-__copyright__ = "Copyright 2017 The Phyloreferencing Project"
-
 
 class Specifier(Identified):
     """
-    A Specifier is a part of a phyloreference that matches nodes.
-
-    NOTES:
-        - For now, we treat TUs within Specifiers as a set, not a list.
+    A Specifier is a part of a phyloreference that matches nodes. It can
+    consist of one or more taxonomic units.
     """
 
     def __init__(self, *tunits):
+        """ Create a Specifier that contains one or more taxonomic units. """
+
         super(Specifier, self).__init__()
 
         self.owl_classes = [owlterms.SPECIFIER]
@@ -31,6 +27,8 @@ class Specifier(Identified):
         self.taxonomic_units.update(tunits)
 
     def as_jsonld(self):
+        """ Return this Specifier as a JSON-LD object. """
+
         return {
             '@id': self.id,
             '@type': self.owl_classes,
@@ -39,7 +37,8 @@ class Specifier(Identified):
 
     @staticmethod
     def from_jsonld(json):
-        # A specifier should consist entirely of taxonomic units.
+        """ Create a Specifier from a JSON-LD object. """
+
         specifier = Specifier()
 
         if '@id' in json:
@@ -60,12 +59,14 @@ class Specifier(Identified):
 
 class InternalSpecifier(Specifier):
     def __init__(self):
+        """ Create an internal specifier. """
         super(InternalSpecifier, self).__init__()
 
         self.owl_classes.append(owlterms.INTERNAL_SPECIFIER)
 
     @staticmethod
     def from_jsonld(json):
+        """ Create an internal specifier by loading it from a JSON-LD object. """
         specifier = Specifier.from_jsonld(json)
         specifier.owl_classes.append(owlterms.INTERNAL_SPECIFIER)
         return specifier
@@ -73,12 +74,14 @@ class InternalSpecifier(Specifier):
 
 class ExternalSpecifier(Specifier):
     def __init__(self):
+        """ Create an external specifier. """
         super(ExternalSpecifier, self).__init__()
 
         self.owl_classes.append(owlterms.EXTERNAL_SPECIFIER)
 
     @staticmethod
     def from_jsonld(json):
+        """ Create an external specifier by loading it from a JSON-LD object. """
         specifier = Specifier.from_jsonld(json)
         specifier.owl_classes.append(owlterms.EXTERNAL_SPECIFIER)
         return specifier

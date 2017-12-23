@@ -7,14 +7,10 @@ from lib.PhylogenyGroup import PhylogenyGroup
 from lib.Phyloreference import Phyloreference
 from lib.TUMatch import TUMatch
 
-__version__ = "0.1"
-__author__ = "Gaurav Vaidya"
-__copyright__ = "Copyright 2017 The Phyloreferencing Project"
-
 
 class TestSuiteException(Exception):
     """
-    An exception used indicate that something went wrong in processing a test case.
+    An exception used to indicate that something went wrong in processing a test case.
     """
     pass
 
@@ -23,6 +19,10 @@ class PhyloreferenceTestSuite(object):
     """
     A test suite can be loaded from JSON and exported to JSON-LD. It is designed to model one publication, but will
     likely be extended to other sources of phylogenies and phyloreferences.
+
+    It consists of multiple phylogenies (organized into phylogeny groups) and phyloreferences.
+
+    Currently, matching taxonomic units is not explicit, and needs a separate call to the "match_specifiers" method.
     """
 
     @staticmethod
@@ -44,7 +44,8 @@ class PhyloreferenceTestSuite(object):
         """ Create a test case for a given identifier. """
         self.id = id
 
-        # Make sure the identifier ends with '#' or '/'
+        # Make sure the identifier ends with '#' or '/', since we're going to extend it to build identifiers
+        # for phylogeny groups, phylogenies, nodes and phyloreferences.
         if self.id[-1] != '#' and self.id[-1] != '/':
             self.id.append('#')
 
@@ -83,8 +84,7 @@ class PhyloreferenceTestSuite(object):
         PhyloreferenceTestSuite.append_extend_or_ignore(testSuite.comments, doc, 'comments')
 
         # Load all test phylogenies. Each "phylogeny" is actually a PhylogenyGroup, to account for
-        # a single NeXML file containing multiple phylogenies, but usually it corresponds to a single
-        # phylogeny.
+        # a single NeXML file containing multiple phylogenies.
 
         if 'phylogenies' in doc:
             phylogenies_count = 0
@@ -149,10 +149,6 @@ class PhyloreferenceTestSuite(object):
         """
         Matches specifiers to taxonomic units. Matches are stored internally, so
         if there are any matches, this test suite will be modified.
-
-        :param matcher: A function taking two arguments (a specifier and a taxonomic
-        unit respectively) and returns True if they should be matched.
-        :return: A dictionary describing the matches that have been made.
         """
 
         results = dict()
@@ -175,15 +171,17 @@ class PhyloreferenceTestSuite(object):
         # Match taxonomic units with each other.
         results['tunits_matched'] = 0
 
-        # For now, we only match specifier taxonomic units.
-        # Some day, we might want to match them all.
+        # For now, we only match taxonomic units associated with specifiers
+        # with all taxonomic units, as matching every taxonomic unit against
+        # every other is prohibitively slow, and we're really only trying to
+        # match the specifiers anyway.
 
         for tunit1 in specifier_taxonomic_units:
             for tunit2 in taxonomic_units:
                 if tunit1 == tunit2:
                     continue
 
-                print("Trying to match {!s} with {!s}".format(tunit1, tunit2))
+                # print("Trying to match {!s} with {!s}".format(tunit1, tunit2))
 
                 # Do these taxonomic units match?
                 tu_match = TUMatch.try_match(

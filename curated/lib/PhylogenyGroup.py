@@ -3,16 +3,13 @@ A Phylogeny Group consists of a set of Phylogenies with shared labeled data.
 """
 
 import os.path
+import warnings
 
 import dendropy
 
 from lib import owlterms
 import lib.PhyloreferenceTestSuite
 from lib.Phylogeny import Phylogeny
-
-__version__ = "0.1"
-__author__ = "Gaurav Vaidya"
-__copyright__ = "Copyright 2017 The Phyloreferencing Project"
 
 
 class PhylogenyGroup(object):
@@ -22,14 +19,14 @@ class PhylogenyGroup(object):
     """
 
     def __init__(self, phylogeny_group_id):
-        """ Create a PhylogenyGroup with a particular identifier. """
+        """ Create a PhylogenyGroup with the given identifier. """
         self.id = phylogeny_group_id
 
         # Storage for trees
         self.phylogenies = []
 
     def export_to_jsonld_document(self):
-        """ Exports this Phylogeny Group as a JSON-LD. """
+        """ Exports this Phylogeny Group as a JSON-LD object. """
         doc = dict()
 
         doc['@id'] = self.id
@@ -46,8 +43,8 @@ class PhylogenyGroup(object):
         phylogeny_group = PhylogenyGroup(phylogenies_id)
 
         # A phylogeny is made of two components:
-        #   - phylogeny: either as a Newick or NeXML file
-        #   - labeledNodeData: information provided for nodes in the phylogeny
+        #   - phylogeny: either as a Newick or NeXML file.
+        #   - additional_node_properties: information provided for nodes in the phylogeny by label.
 
         # Step 1. Extract all labeled node data.
         additional_node_properties = dict()
@@ -61,6 +58,8 @@ class PhylogenyGroup(object):
             phylogeny_list = phylogeny_group.load_phylogeny_from_nexml(json['filename'])
         elif 'newick' in json:
             phylogeny_list = phylogeny_group.load_phylogeny_from_newick(json['newick'])
+        else:
+            warnings.warn("Phylogeny group '{!s}' containing neither a NeXML file nor a Newick string, and so contains zero phylogenies.".format(phylogenies_id))
 
         # Step 3. Convert phylogenies into nodes.
         phylogeny_count = 0

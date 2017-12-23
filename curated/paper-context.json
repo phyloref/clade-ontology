@@ -1,6 +1,5 @@
 {
     "@context": {
-        "@base": "http://example.org/TBD#",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
 
         "== TOP-LEVEL DOCUMENT PROPERTIES ==": {},
@@ -143,11 +142,6 @@
             "@type": "xsd:string"
         },
 
-        "TBD_taxonomic_units": {
-            "@id": "obo:CDAO_0000187",
-            "@container": "@set"
-        },
-
         "filename": "testcase:filename",
 
         "external_references": {
@@ -229,11 +223,6 @@
 
         "annotations": {
             "@id": "testcase:has_annotation",
-            "@container": "@set"
-        },
-
-        "TBD_taxonAnnotations": {
-            "@id": "testcase:hasTaxonAnnotation",
             "@container": "@set"
         },
 

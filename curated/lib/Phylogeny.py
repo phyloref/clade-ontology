@@ -16,7 +16,11 @@ class Phylogeny(object):
     """
 
     def __init__(self, phylogeny_id, dendropy_tree, additional_node_properties):
-        """ Create a Phylogeny using a DendroPy tree object and the labeled data to be associated with it.
+        """ Create a Phylogeny using a DendroPy tree object and additional properties associated with labeled nodes.
+
+        :param phylogeny_id: a URI that identifies this phylogeny.
+        :param dendropy_tree: a DendroPy Tree object that this Phylogeny reflects.
+        :param additional_node_properties: a dict with keys (node labels) and values (dicts containing property-value pairs).
         """
 
         self.id = phylogeny_id
@@ -67,7 +71,10 @@ class Phylogeny(object):
             return self.nodes_by_id[dendropy_node]
 
     def read_tree_to_nodes(self, tree):
-        """ Reads nodes from a DendroPy tree and stores them in this Phylogeny. """
+        """ Reads nodes from a DendroPy tree and stores them in this Phylogeny.
+
+        :param tree: A DendroPy Tree object
+        """
 
         # Copy over any annotations from NeXML
         for annotation in tree.annotations:
@@ -114,7 +121,6 @@ class Phylogeny(object):
                 # Consider the label itself.
                 node_label_strs.append(node_label.label)
 
-                # TODO clean up
                 if node_label.label in self.additional_node_properties:
                     node.additional_properties = self.additional_node_properties[node_label.label]
 
@@ -128,7 +134,6 @@ class Phylogeny(object):
 
             # Create taxonomic units for all the node labels.
             for node_label_str in node_label_strs:
-                # TODO clean up
                 if node_label_str.startswith("expected "):
                     node.expected_phyloref_named = node_label_str[9:]
                     node_label_str = node_label_str[9:]
@@ -141,16 +146,19 @@ class Phylogeny(object):
                 # TODO: check node.additional_properties and see if the user has provided
                 # specimen or scientific name information.
 
+            # Store discovered taxonomic units.
             node.taxonomic_units.extend(tunits)
             if dendropy_node not in self.tunits_by_node:
                 self.tunits_by_node[dendropy_node] = set()
 
             self.tunits_by_node[dendropy_node].update(tunits)
 
+            # Store all the children of this node.
             node.children = list()
             for child in dendropy_node.child_nodes():
                 node.children.append(self.get_id_for_node(child))
 
+            # Store all the siblings of this node.
             node.siblings = list()
             for sibling in dendropy_node.sibling_nodes():
                 node.siblings.append(self.get_id_for_node(sibling))
@@ -196,7 +204,11 @@ class Node(Identified):
     """ A node is a node in a phylogeny. """
 
     def __init__(self):
+        """ Create a Node with default properties. """
         super(Node, self).__init__()
+
+        # In a gross violation of OOP, Nodes should only
+        # be created and managed by Phylogeny classes.
 
         self.in_phylogeny = None
         self.taxonomic_units = []
@@ -206,11 +218,10 @@ class Node(Identified):
         self.additional_properties = {}
 
     def as_jsonld(self):
+        """ Return this Node as a JSON-LD object. """
+
         types = set()
         types.add(owlterms.CDAO_NODE)
-
-        #for tunit in self.taxonomic_units:
-        #    types.add(tunit.id)
 
         jsonld = {
             '@id': self.id,
