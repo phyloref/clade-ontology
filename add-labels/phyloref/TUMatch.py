@@ -7,8 +7,8 @@ that some taxonomic units overlap, we can document exactly
 how much these taxonomic units through these matches.
 """
 
-from lib import owlterms
-from lib.Identified import Identified
+from phyloref import owlterms
+from phyloref.Identified import Identified
 
 
 class TUMatch(Identified):

@@ -16,10 +16,10 @@ import json
 import os.path
 import sys
 
-# Add './lib' to lookup path.
-sys.path.append(os.path.join(os.path.dirname(__file__), "lib"))
+# Add './phyloref' to lookup path.
+sys.path.append(os.path.join(os.path.dirname(__file__), "phyloref"))
 
-from lib import PhyloreferenceTestSuite
+from phyloref import PhyloreferenceTestSuite
 
 __version__ = "0.1"
 __author__ = "Gaurav Vaidya"
@@ -101,5 +101,5 @@ doc = testCase.export_to_jsonld_document()
 os.chdir(current_working_directory)
 
 # Step 4. Write the paper back out again.
-doc['@context'] = '../paper-context.json'
+doc['@context'] = '../../add-labels/paper-context.json'
 json.dump(doc, output_file, indent=4, sort_keys=True)

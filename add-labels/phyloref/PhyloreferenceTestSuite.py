@@ -2,10 +2,10 @@
 PhyloreferenceTestSuite.py: A test case represents a single JSON file containing multiple phylogenies and phyloreferences.
 """
 
-from lib import owlterms
-from lib.PhylogenyGroup import PhylogenyGroup
-from lib.Phyloreference import Phyloreference
-from lib.TUMatch import TUMatch
+from phyloref import owlterms
+from phyloref.PhylogenyGroup import PhylogenyGroup
+from phyloref.Phyloreference import Phyloreference
+from phyloref.TUMatch import TUMatch
 
 
 class TestSuiteException(Exception):
