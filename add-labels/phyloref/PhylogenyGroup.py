@@ -7,9 +7,9 @@ import warnings
 
 import dendropy
 
-from lib import owlterms
-import lib.PhyloreferenceTestSuite
-from lib.Phylogeny import Phylogeny
+from phyloref import owlterms
+import phyloref.PhyloreferenceTestSuite
+from phyloref.Phylogeny import Phylogeny
 
 
 class PhylogenyGroup(object):
@@ -75,7 +75,7 @@ class PhylogenyGroup(object):
         """ Load phylogenies from an NeXML file. """
 
         if not os.path.exists(filename):
-            raise lib.PhyloreferenceTestSuite.TestSuiteException(
+            raise phyloref.PhyloreferenceTestSuite.TestSuiteException(
                 "ERROR in phylogeny {0}: dendropy_tree file '{1}' could not be loaded!".format(self.id, filename)
             )
 
@@ -83,7 +83,7 @@ class PhylogenyGroup(object):
         try:
             return dendropy.TreeList.get(path=filename, schema='nexml')
         except dendropy.utility.error.DataParseError as err:
-            raise lib.PhyloreferenceTestSuite.TestSuiteException(
+            raise phyloref.PhyloreferenceTestSuite.TestSuiteException(
                 "Could not parse NeXML in phylogeny {0}: {1}".format(self.id, err)
             )
 
@@ -93,7 +93,7 @@ class PhylogenyGroup(object):
         try:
             return dendropy.TreeList.get(data=newick, schema='newick')
         except dendropy.utility.error.DataParseError as err:
-            raise lib.PhyloreferenceTestSuite.TestSuiteException(
+            raise phyloref.PhyloreferenceTestSuite.TestSuiteException(
                 "Could not parse Newick while reading phylogeny {0}: {1}".format(self.id, err)
             )
 

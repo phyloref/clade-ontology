@@ -3,8 +3,8 @@ A Phyloreference is a definition that unambiguously refers to a node on a phylog
 internal and external specifiers, and resolves to a set of Nodes.
 """
 
-from lib.Specifier import InternalSpecifier, ExternalSpecifier
-from lib import owlterms
+from phyloref.Specifier import InternalSpecifier, ExternalSpecifier
+from phyloref import owlterms
 
 
 class Phyloreference(object):

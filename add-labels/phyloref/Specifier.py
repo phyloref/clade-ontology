@@ -6,9 +6,9 @@ to their specifiers.
 
 import warnings
 
-from lib import owlterms
-from lib.TaxonomicUnit import TaxonomicUnit
-from lib.Identified import Identified
+from phyloref import owlterms
+from phyloref.TaxonomicUnit import TaxonomicUnit
+from phyloref.Identified import Identified
 
 
 class Specifier(Identified):

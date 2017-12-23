@@ -7,8 +7,8 @@ on the specimens or taxa represented by that node.
 
 import re
 
-from lib import owlterms
-from lib.Identified import Identified
+from phyloref import owlterms
+from phyloref.Identified import Identified
 
 
 class TaxonomicUnit(Identified):

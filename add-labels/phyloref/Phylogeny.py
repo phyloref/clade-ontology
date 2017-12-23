@@ -3,9 +3,9 @@ A Phylogeny wraps a DendroPy tree, converting it into a Newick representation as
 in JSON-LD.
 """
 
-from lib import owlterms
-from lib.TaxonomicUnit import TaxonomicUnit
-from lib.Identified import Identified
+from phyloref import owlterms
+from phyloref.TaxonomicUnit import TaxonomicUnit
+from phyloref.Identified import Identified
 
 
 class Phylogeny(object):
