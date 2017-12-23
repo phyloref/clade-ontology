@@ -3,11 +3,8 @@
         "@base": "http://example.org/TBD#",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
 
-        "testcase": "http://vocab.phyloref.org/phyloref/testcase.owl#",
-
         "== TOP-LEVEL DOCUMENT PROPERTIES ==": {},
         "ot": "http://purl.org/opentree/nexson#",
-        "dc": "http://purl.org/dc/elements/1.1/",
 
         "curator": {
             "@id": "ot:curatorName",
@@ -32,6 +29,7 @@
         },
 
         "== Management of nodes and internode relationships ==": {},
+        "testcase": "http://vocab.phyloref.org/phyloref/testcase.owl#",
 
         "nodes": {
             "@id": "testcase:has_node",
@@ -67,23 +65,13 @@
             "@type": "@id"
         },
 
-        "taxonName": {
-            "@id": "testcase:hasTaxonName",
-            "@type": "xsd:string"
-        },
-        
-        "description": {
-            "@id": "dc:description",
-            "@type": "xsd:string"
-        },
-
         "phylorefs": {
             "@id": "testcase:has_phyloreference",
             "@container": "@set"
         },
 
         "malformedPhyloreference": {
-            "@id": "testcase:malformedPhyloreference",
+            "@id": "testcase:malformed_phyloreference",
             "@type": "xsd:string"
         },
 
@@ -107,33 +95,13 @@
             "@type": "@set"
         },
 
-        "verbatimName": {
-          "@id": "testcase:hasVerbatimName",
-          "@type": "xsd:string"
-        },
-
-        "matchedName": {
-            "@id": "testcase:matchedName",
-            "@type": "xsd:string"
-        },
-
-        "submittedName": {
-            "@id": "testcase:submittedName",
-            "@type": "xsd:string"
-        },
-
         "newick": {
-            "@id": "testcase:asNewickString",
+            "@id": "testcase:as_newick_string",
             "@type": "xsd:string"
         },
 
         "cladeDefinition": {
-            "@id": "testcase:cladeDefinition",
-            "@type": "xsd:string"
-        },
-
-        "manchesterSyntax": {
-            "@id": "testcase:manchesterSyntax",
+            "@id": "testcase:clade_definition",
             "@type": "xsd:string"
         },
 

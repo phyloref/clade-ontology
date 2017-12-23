@@ -35,6 +35,7 @@ class Phylogeny(object):
         self.nodes_by_id = dict()
         self.tunits_by_node = dict()
         self.phylogeny_nodes = []
+        self.root_nodes = []
         self.read_tree_to_nodes(dendropy_tree)
 
     @property
@@ -164,6 +165,7 @@ class Phylogeny(object):
                 add_all_child_nodes(child)
 
         add_all_child_nodes(tree.seed_node)
+        self.root_nodes = [self.get_id_for_node(tree.seed_node)]
 
     def export_to_jsonld_document(self):
         """ Export this phylogeny as a JSON-LD document. """
@@ -179,6 +181,12 @@ class Phylogeny(object):
         # Export each node as part of each phylogeny.
         doc['nodes'] = [node.as_jsonld() for node in self.phylogeny_nodes]
 
+        # Record the root/seed node of the phylogeny.
+        doc['hasRootNode'] = [{
+            '@id': id
+        } for id in self.root_nodes]
+
+        # Export all annotations.
         doc['annotations'] = self.annotations
 
         return doc

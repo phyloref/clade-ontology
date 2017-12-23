@@ -22,7 +22,7 @@ class Phyloreference(object):
         self.id = phyloref_id
 
         self.label = ""
-        self.description = ""
+        self.clade_definition = ""
 
         # Additional classes
         self.additional_classes = []
@@ -55,8 +55,8 @@ class Phyloreference(object):
         if 'label' in json:
             phyloref.label = json['label']
 
-        if 'description' in json:
-            phyloref.description = json['description']
+        if 'clade_definition' in json:
+            phyloref.clade_definition = json['clade_definition']
 
         if 'internalSpecifiers' in json:
             for specifier in json['internalSpecifiers']:
@@ -82,7 +82,7 @@ class Phyloreference(object):
         doc['@id'] = self.id
         doc['@type'] = [owlterms.PHYLOREFERENCE, owlterms.OWL_CLASS]
         doc['label'] = self.label
-        doc['description'] = self.description
+        doc['clade_definition'] = self.clade_definition
 
         # Write out all specifiers.
         doc['hasInternalSpecifier'] = [specifier.as_jsonld() for specifier in self.internal_specifiers_list]
