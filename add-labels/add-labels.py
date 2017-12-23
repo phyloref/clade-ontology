@@ -101,5 +101,5 @@ doc = testCase.export_to_jsonld_document()
 os.chdir(current_working_directory)
 
 # Step 4. Write the paper back out again.
-doc['@context'] = '../paper-context.json'
+doc['@context'] = '../../add-labels/paper-context.json'
 json.dump(doc, output_file, indent=4, sort_keys=True)
