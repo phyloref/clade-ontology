@@ -242,22 +242,22 @@ class ScientificName(object):
 
     @property
     def genus(self):
-        """ Returns the genus of this scientific name. """
+        """ Returns the genus of this scientific name or None if not present. """
         return self.scname_genus
 
     @property
     def specific_epithet(self):
-        """ Returns the specific epithet associated with this scientific name. """
+        """ Returns the specific epithet associated with this scientific name or None if not present. """
         return self.scname_specific_epithet
 
     @property
     def binomial_name(self):
-        """ Returns the binomial name associated with this scientific name. """
+        """ Returns the binomial name associated with this scientific name or None if not present. """
         return self.scname_binomial_name
 
     @property
     def verbatim_name(self):
-        """ Returns the verbatim name associated with this scientific name. """
+        """ Returns the verbatim name associated with this scientific name or None if not present. """
         return self.scname_verbatim_name
 
     @verbatim_name.setter
@@ -296,9 +296,7 @@ class ScientificName(object):
 
 class Specimen(object):
     """
-    This class is here mainly as a placeholder; eventually, we'll support pretty
-    complex representations of specimens based on Darwin Core (where it is called
-    a "material sample", https://terms.tdwg.org/wiki/dwc:MaterialSample).
+    Represents a single specimen included in a taxonomic unit.
     """
 
     def __init__(self, props):
@@ -333,3 +331,79 @@ class Specimen(object):
     def as_json(self):
         """ Return this Specimen as a JSON-LD object. """
         return self.properties
+
+    # Helper properties to access some common ways of identifying specimens.
+    @property
+    def identifier(self):
+        """
+        Retrieves a single identifier for this specimen.
+
+        Based on http://dx.doi.org/10.1371/journal.pone.0114069, there appear to be two common schemes
+        for doing this:
+         - institutionCode + ':' + (collectionCode + ':')? + catalogNumber
+         - occurrenceID, preferably expressed as 'urn:catalog:[institutionCode]:[collectionCode]:[catalogNumber]'
+
+        Oddly, they don't refer to materialSampleID; Darwin Core refers to this as a reference to the sample and not
+        just its digital record, so that might be why.
+
+        At the level of the Taxonomic Unit, CDAO provides a third option: setting an external reference to a URI that
+        identifies a specimen, such as:
+         - http://portal.vertnet.org/o/ku/kuh?id=be1b5c81-b069-11e3-8cfe-90b11c41863e
+         - https://www.idigbio.org/portal/records/07e2d181-cc8b-4b6d-9e27-58756ea08c9b
+
+        :return: A combined identifier if one is detectable, or None.
+        """
+
+        # Option 1. Compare occurrenceIDs
+        if 'occurrenceID' in self.properties and self.properties['occurrenceID'].strip() != '':
+            return self.properties['occurrenceID']
+
+        if 'catalogNumber' in self.properties:
+            catalogNumber = self.properties['catalogNumber']
+            collectionCode = self.properties.get('collectionCode')
+            institutionCode = self.properties.get('institutionCode')
+
+            if institutionCode is None:
+                if collectionCode is None:
+                    return catalogNumber
+                else:
+                    return collectionCode + ':' + catalogNumber
+            else:
+                if collectionCode is None:
+                    return institutionCode + ':' + catalogNumber
+                else:
+                    return institutionCode + ':' + collectionCode + ':' + catalogNumber
+
+        return None
+
+    @identifier.setter
+    def identifier(self, value):
+        """ Sets the occurrenceId and look for Darwin Core Triplet components. """
+        self.properties['occurrenceID'] = value
+
+        # Reset the Darwin Core Triplet components.
+        del(self.properties['catalogNumber'])
+        del(self.properties['collectionCode'])
+        del(self.properties['institutionCode'])
+
+        components = value.strip().split(':')
+        if len(components) <= 1:
+            # Nothing we can do.
+            pass
+
+        elif len(components) == 2:
+            # Darwin Core Doublet
+            self.properties['institutionCode'] = components[0]
+            self.properties['catalogNumber'] = components[1]
+
+        elif len(components) == 3:
+            # Darwin Core Triplet
+            self.properties['institutionCode'] = components[0]
+            self.properties['collectionCode'] = components[1]
+            self.properties['catalogNumber'] = components[2]
+
+        else:
+            # Can't split; ignore.
+            pass
+
+        # All done!

@@ -169,8 +169,10 @@
             "@type": "@set"
         },
 
-        "== Properties of individual OTUs ==": {},
+        "== Properties of individual TUs ==": {},
         "dwc": "http://rs.tdwg.org/dwc/terms/",
+
+        "=== Scientific names ===": {},
 
         "scientificName": {
             "@id": "dwc:scientificName",
@@ -188,6 +190,13 @@
             "@id": "dwc:specificEpithet",
             "@type": "xsd:string"
         },
+
+        "=== Specimen identifiers ===": {},
+
+        "occurrenceID": "dwc:occurrenceID",
+        "catalogNumber": "dwc:catalogNumber",
+        "collectionCode": "dwc:collectionCode",
+        "institutionCode": "dwc:institutionCode",
 
         "subClassOf": {
             "@id": "rdfs:subClassOf",
