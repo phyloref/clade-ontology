@@ -171,6 +171,9 @@ class PhyloreferenceTestCase(object):
         # Match taxonomic units with each other.
         results['tunits_matched'] = 0
 
+        # Which taxonomic units were matched?
+        matched_taxonomic_units = set()
+
         # For now, we only match taxonomic units associated with specifiers
         # with all taxonomic units, as matching every taxonomic unit against
         # every other is prohibitively slow, and we're really only trying to
@@ -190,7 +193,44 @@ class PhyloreferenceTestCase(object):
                 )
 
                 if tu_match is not None:
+                    matched_taxonomic_units.add(tunit1)
+                    matched_taxonomic_units.add(tunit2)
+
                     self.tu_matches.add(tu_match)
                     results['tunits_matched'] += 1
+
+        # Mark phyloreferences as:
+        #   - FullyMatchedPhyloreference: at least one TU on each specifier matched
+        #   - PartiallyMatchedPhyloreference: at least one specifier had no TUs that matched
+        #   - FullyUnmatchedPhyloreference: no specifiers matched any TUs at all
+        #   - PhyloreferenceWithoutSpecifiers: this phyloreference has no specifiers at all
+
+        for phyloref in self.phylorefs:
+            matched_specifiers = set()
+            unmatched_specifiers = set()
+
+            for specifier in phyloref.specifiers:
+                flag_specifier_matched = False
+
+                for tu in specifier.taxonomic_units:
+                    if tu in matched_taxonomic_units:
+                        flag_specifier_matched = True
+
+                if flag_specifier_matched:
+                    # At least one TU in this specifier matched.
+                    matched_specifiers.add(specifier)
+                else:
+                    unmatched_specifiers.add(specifier)
+
+            if len(phyloref.specifiers) == 0:
+                pass
+            elif len(matched_specifiers) == len(phyloref.specifiers):
+                pass
+            elif len(matched_specifiers) < len(phyloref.specifiers):
+                phyloref.unmatched_specifiers = unmatched_specifiers
+            elif len(matched_specifiers) == 0:
+                phyloref.unmatched_specifiers = unmatched_specifiers
+            else:
+                raise RuntimeError("Impossible code path")
 
         return results

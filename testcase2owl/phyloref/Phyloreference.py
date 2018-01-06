@@ -22,6 +22,9 @@ class Phyloreference(object):
         self.label = ""
         self.clade_definition = ""
 
+        # Information on matches among specifiers
+        self.unmatched_specifiers = set()
+
         # Additional classes
         self.additional_classes = []
 
@@ -78,16 +81,22 @@ class Phyloreference(object):
     def export_to_jsonld_document(self):
         """ Export this phyloreference as a JSON-LD document. """
 
+        types = [owlterms.PHYLOREFERENCE, owlterms.OWL_CLASS]
+
         doc = dict()
 
         doc['@id'] = self.id
-        doc['@type'] = [owlterms.PHYLOREFERENCE, owlterms.OWL_CLASS]
+        doc['@type'] = types
         doc['label'] = self.label
         doc['clade_definition'] = self.clade_definition
 
         # Write out all specifiers.
         doc['hasInternalSpecifier'] = [specifier.as_jsonld() for specifier in self.internal_specifiers_list]
         doc['hasExternalSpecifier'] = [specifier.as_jsonld() for specifier in self.external_specifiers_list]
+
+        # Which specifiers could not be matched?
+        if len(self.unmatched_specifiers) > 0:
+            doc['hasUnmatchedSpecifiers'] = [specifier.get_reference() for specifier in self.unmatched_specifiers]
 
         # What type of phyloreference is this?
         # Check for malformed specifiers.
