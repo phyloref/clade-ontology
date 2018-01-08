@@ -114,6 +114,14 @@
     
 
 
+    <!-- http://vocab.phyloref.org/phyloref/testcase.owl#has_unmatched_specifier -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#has_unmatched_specifier">
+        <rdfs:subPropertyOf rdf:resource="http://vocab.phyloref.org/phyloref/testcase.owl#has_specifier"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://vocab.phyloref.org/phyloref/testcase.owl#in_phylogeny -->
 
     <owl:ObjectProperty rdf:about="http://vocab.phyloref.org/phyloref/testcase.owl#in_phylogeny">
