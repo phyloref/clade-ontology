@@ -20,7 +20,7 @@ def test_json_to_owl(paper_json):
     current_path = os.getcwd()
     try:
         os.chdir(path)
-        assert os.system('python ../../add-labels/add-labels.py paper.json -o labeled.json') == 0
+        assert os.system('python ../../testcase2owl/testcase2owl.py paper.json -o labeled.json') == 0
         assert os.system('rdfpipe -i json-ld -o xml labeled.json > paper.owl') == 0
 
         # On Windows, this will end up being Unicode 16 -- which is fine,

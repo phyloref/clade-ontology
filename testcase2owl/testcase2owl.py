@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
 """
-add-labels.py: Converts a Phyloreference curated test file in JSON
-into a JSON-LD file with node information. It carries out two conversions:
+testcase2owl.py: Converts a Phyloreference curated test case into a 
+JSON-LD file with node information. It carries out two conversions:
 
  1. Converts all phylogenies into a node-based representation in OWL,
     integrating any taxonomic unit-level information to the nodes.
@@ -101,5 +101,6 @@ doc = testCase.export_to_jsonld_document()
 os.chdir(current_working_directory)
 
 # Step 4. Write the paper back out again.
-doc['@context'] = '../../add-labels/paper-context.json'
+path_to_this_script = os.path.dirname(os.path.realpath(__file__))
+doc['@context'] = path_to_this_script + '/paper-context.json'
 json.dump(doc, output_file, indent=4, sort_keys=True)
