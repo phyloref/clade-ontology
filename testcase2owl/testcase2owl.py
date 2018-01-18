@@ -16,9 +16,6 @@ import json
 import os.path
 import sys
 
-# Add './phyloref' to lookup path.
-sys.path.append(os.path.join(os.path.dirname(__file__), "phyloref"))
-
 from phyloref import PhyloreferenceTestCase
 
 __version__ = "0.1"
