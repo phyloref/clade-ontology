@@ -19,7 +19,7 @@ import sys
 # Add './phyloref' to lookup path.
 sys.path.append(os.path.join(os.path.dirname(__file__), "phyloref"))
 
-from phyloref import PhyloreferenceTestSuite
+from phyloref import PhyloreferenceTestCase
 
 __version__ = "0.1"
 __author__ = "Gaurav Vaidya"
@@ -84,10 +84,10 @@ if args.input:
     os.chdir(os.path.dirname(os.path.realpath(args.input)))
 
 try:
-    testCase = PhyloreferenceTestSuite.PhyloreferenceTestSuite.load_from_document(doc)
+    testCase = PhyloreferenceTestCase.PhyloreferenceTestCase.load_from_document(doc)
     match_results = testCase.match_specifiers()
     # print("match_specifiers: " + str(match_results))
-except PhyloreferenceTestSuite.TestSuiteException as e:
+except PhyloreferenceTestCase.TestCaseException as e:
     sys.stderr.write("Could not read '{0}': {1}\n".format(str(input_file), e.message))
     exit(1)
 

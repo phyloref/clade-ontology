@@ -21,7 +21,7 @@ class TUMatch(Identified):
     between sets of taxonomic units.
 
     As a utility, this class also provides static methods
-    for identifying matching TUs within a Test Suite.
+    for identifying matching TUs within a Test Case.
     """
 
     def __init__(self, tunits=list(), reason="No reason given"):
@@ -44,8 +44,7 @@ class TUMatch(Identified):
                 # of repeating the TUs. But being explicit is useful is debugging!
         }
 
-    # Static methods for identifying matching taxonomic units
-    # within a Test Suite.
+    # Static methods for identifying matching taxonomic units.
     @staticmethod
     def try_match(tunit1, tunit2):
         """
