@@ -1,5 +1,5 @@
 """
-PhyloreferenceTestSuite.py: A test case represents a single JSON file containing multiple phylogenies and phyloreferences.
+PhyloreferenceTestCase.py: A test case represents a single JSON file containing multiple phylogenies and phyloreferences.
 """
 
 from phyloref import owlterms
@@ -8,16 +8,16 @@ from phyloref.Phyloreference import Phyloreference
 from phyloref.TUMatch import TUMatch
 
 
-class TestSuiteException(Exception):
+class TestCaseException(Exception):
     """
     An exception used to indicate that something went wrong in processing a test case.
     """
     pass
 
 
-class PhyloreferenceTestSuite(object):
+class PhyloreferenceTestCase(object):
     """
-    A test suite can be loaded from JSON and exported to JSON-LD. It is designed to model one publication, but will
+    A test case can be loaded from JSON and exported to JSON-LD. It is designed to model one publication, but will
     likely be extended to other sources of phylogenies and phyloreferences.
 
     It consists of multiple phylogenies (organized into phylogeny groups) and phyloreferences.
@@ -50,7 +50,7 @@ class PhyloreferenceTestSuite(object):
             self.id.append('#')
 
         # Set up other properties
-        self.type = [owlterms.PHYLOREFERENCE_TEST_SUITE, owlterms.OWL_ONTOLOGY]
+        self.type = [owlterms.PHYLOREFERENCE_TEST_CASE, owlterms.OWL_ONTOLOGY]
         self.owl_imports = owlterms.OWL_IMPORTS
 
         # Metadata
@@ -67,21 +67,21 @@ class PhyloreferenceTestSuite(object):
 
     @staticmethod
     def load_from_document(doc):
-        """ Load a test suite from a JSON file. """
+        """ Load a test case from a JSON file. """
         if '@id' not in doc:
-            raise PhyloreferenceTestSuite.TestSuiteException("Document does not contain required key '@id'")
+            raise PhyloreferenceTestCase.TestCaseException("Document does not contain required key '@id'")
 
-        testSuite = PhyloreferenceTestSuite(doc['@id'])
+        testCase = PhyloreferenceTestCase(doc['@id'])
 
         # Load document-level properties
-        PhyloreferenceTestSuite.append_extend_or_ignore(testSuite.type, doc, '@type')
-        PhyloreferenceTestSuite.append_extend_or_ignore(testSuite.owl_imports, doc, 'owl:imports')
+        PhyloreferenceTestCase.append_extend_or_ignore(testCase.type, doc, '@type')
+        PhyloreferenceTestCase.append_extend_or_ignore(testCase.owl_imports, doc, 'owl:imports')
 
-        PhyloreferenceTestSuite.append_extend_or_ignore(testSuite.citation, doc, 'citation')
-        PhyloreferenceTestSuite.append_extend_or_ignore(testSuite.url, doc, 'url')
-        PhyloreferenceTestSuite.append_extend_or_ignore(testSuite.year, doc, 'year')
-        PhyloreferenceTestSuite.append_extend_or_ignore(testSuite.curator, doc, 'curator')
-        PhyloreferenceTestSuite.append_extend_or_ignore(testSuite.comments, doc, 'comments')
+        PhyloreferenceTestCase.append_extend_or_ignore(testCase.citation, doc, 'citation')
+        PhyloreferenceTestCase.append_extend_or_ignore(testCase.url, doc, 'url')
+        PhyloreferenceTestCase.append_extend_or_ignore(testCase.year, doc, 'year')
+        PhyloreferenceTestCase.append_extend_or_ignore(testCase.curator, doc, 'curator')
+        PhyloreferenceTestCase.append_extend_or_ignore(testCase.comments, doc, 'comments')
 
         # Load all test phylogenies. Each "phylogeny" is actually a PhylogenyGroup, to account for
         # a single NeXML file containing multiple phylogenies.
@@ -90,8 +90,8 @@ class PhyloreferenceTestSuite(object):
             phylogenies_count = 0
             for phylogenies in doc['phylogenies']:
                 phylogenies_count += 1
-                phylogenies_id = testSuite.id + 'phylogenies' + str(phylogenies_count)
-                testSuite.phylogeny_groups.append(PhylogenyGroup.load_from_json(phylogenies_id, phylogenies))
+                phylogenies_id = testCase.id + 'phylogenies' + str(phylogenies_count)
+                testCase.phylogeny_groups.append(PhylogenyGroup.load_from_json(phylogenies_id, phylogenies))
 
 
         # Load all phyloreferences.
@@ -99,10 +99,10 @@ class PhyloreferenceTestSuite(object):
             phyloref_count = 0
             for phyloref in doc['phylorefs']:
                 phyloref_count += 1
-                phyloref_id = testSuite.id + 'phyloref' + str(phyloref_count)
-                testSuite.phylorefs.append(Phyloreference.load_from_json(phyloref_id, phyloref))
+                phyloref_id = testCase.id + 'phyloref' + str(phyloref_count)
+                testCase.phylorefs.append(Phyloreference.load_from_json(phyloref_id, phyloref))
 
-        return testSuite
+        return testCase
 
     def export_to_jsonld_document(self):
         """ Export to a JSON-LD document that can be saved as a JSON file. """
@@ -147,8 +147,8 @@ class PhyloreferenceTestSuite(object):
 
     def match_specifiers(self):
         """
-        Matches specifiers to taxonomic units. Matches are stored internally, so
-        if there are any matches, this test suite will be modified.
+        Matches specifiers to taxonomic units. Matches are stored in self.tu_matches,
+        so this will add on to existing matches.
         """
 
         results = dict()

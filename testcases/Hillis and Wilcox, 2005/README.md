@@ -5,8 +5,8 @@
 
 * Input file: [`paper.json`](paper.json)
 * To create ontology:
-  * `python ../add-labels.py paper.json -o labeled.json`
-  * `rdfpipe -i json-ld labeled.json -o xml > hillis_and_wilcox_2005.owl`
+  * `python ../../testcase2owl/testcase2owl.py paper.json -o paper_as_owl.json`
+  * `rdfpipe -i json-ld paper_as_owl.json -o xml > hillis_and_wilcox_2005.owl`
     * (On Windows, you need to end with `... | Set-Content -Encoding UTF8 hillis_and_wilcox_2005.owl`
 
 * Output file: [`hillis_and_wilcox_2005.owl`](hillis_and_wilcox_2005.owl)

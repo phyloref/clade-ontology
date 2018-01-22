@@ -29,7 +29,7 @@ BASE_URL = 'http://vocab.phyloref.org/phyloref/'
 
 # Phyloreference-related terms
 PHYLOREFERENCE = "http://phyloinformatics.net/phyloref.owl#Phyloreference"
-PHYLOREFERENCE_TEST_SUITE = "testcase:PhyloreferenceTestSuite"
+PHYLOREFERENCE_TEST_CASE = "testcase:PhyloreferenceTestCase"
 PHYLOREFERENCE_TEST_PHYLOGENY_GROUP = "testcase:PhyloreferenceTestPhylogenyGroup"
 PHYLOREFERENCE_PHYLOGENY = "testcase:PhyloreferenceTestPhylogeny"
 

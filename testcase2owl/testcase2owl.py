@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
 """
-add-labels.py: Converts a Phyloreference curated test file in JSON
-into a JSON-LD file with node information. It carries out two conversions:
+testcase2owl.py: Converts a Phyloreference curated test case into a 
+JSON-LD file with node information. It carries out two conversions:
 
  1. Converts all phylogenies into a node-based representation in OWL,
     integrating any taxonomic unit-level information to the nodes.
@@ -16,10 +16,7 @@ import json
 import os.path
 import sys
 
-# Add './phyloref' to lookup path.
-sys.path.append(os.path.join(os.path.dirname(__file__), "phyloref"))
-
-from phyloref import PhyloreferenceTestSuite
+from phyloref import PhyloreferenceTestCase
 
 __version__ = "0.1"
 __author__ = "Gaurav Vaidya"
@@ -84,10 +81,10 @@ if args.input:
     os.chdir(os.path.dirname(os.path.realpath(args.input)))
 
 try:
-    testCase = PhyloreferenceTestSuite.PhyloreferenceTestSuite.load_from_document(doc)
+    testCase = PhyloreferenceTestCase.PhyloreferenceTestCase.load_from_document(doc)
     match_results = testCase.match_specifiers()
     # print("match_specifiers: " + str(match_results))
-except PhyloreferenceTestSuite.TestSuiteException as e:
+except PhyloreferenceTestCase.TestCaseException as e:
     sys.stderr.write("Could not read '{0}': {1}\n".format(str(input_file), e.message))
     exit(1)
 
@@ -101,5 +98,6 @@ doc = testCase.export_to_jsonld_document()
 os.chdir(current_working_directory)
 
 # Step 4. Write the paper back out again.
-doc['@context'] = '../../add-labels/paper-context.json'
+path_to_this_script = os.path.dirname(os.path.realpath(__file__))
+doc['@context'] = path_to_this_script + '/paper-context.json'
 json.dump(doc, output_file, indent=4, sort_keys=True)
