@@ -6,24 +6,24 @@
 * Input file: [`paper.json`](paper.json)
 * To create ontology:
   * `python ../../testcase2owl/testcase2owl.py paper.json -o paper_as_owl.json`
-  * `rdfpipe -i json-ld paper_as_owl.json -o xml > fisher_et_al_2007.owl`
+  * `rdfpipe -i json-ld paper_as_owl.json -o xml > paper.owl`
     * (On Windows, you need to end with `... | Set-Content -Encoding UTF8 fisher_et_al_2007.owl`)
 
-* Output file: [`fisher_et_al_2007.owl`](fisher_et_al_2007.owl)
+* Output file: `paper.owl`
   * This file can be opened in Protege; phyloreferences are instances of the 
     Phyloreference class and should contain a single node from which this clade
     descends.
 
 ## Current test status
 
-* Albifolium: matched node `file1_tree1_node18`, correct node.
-* Arthrocormus: matched name `file1_tree1_node22`, correct node.
-* Calymperaceae: matched node `file1_tree1_node2`, correct node.
-* Calymperes: matched node `file1_tree1_node9`, correct node.
-* Exodictyon: matched node `file1_tree1_node26`, correct node.
-* Exostratum: matched node `file1_tree1_node23`, correct node.
-* Leucophanella: matched node `file1_tree1_node49`, correct node.
-* Leucophanes: matched node `file1_tree1_node27`, correct node.
-* Mitthyridium: matched node `file1_tree1_node54`, **incorrect node** caused by [phylo2owl issue #29](https://github.com/phyloref/phylo2owl/issues/29).
-* Syrrhopodon: matched node `file1_tree1_node8`, correct node.
-* Trachymitrium: matched node `file1_tree1_node15`, correct node.
+* Albifolium: resolved correctly.
+* Arthrocormus: resolved correctly.
+* Calymperaceae: resolved correctly.
+* Calymperes: resolved correctly.
+* Exodictyon: resolved correctly.
+* Exostratum: resolved correctly.
+* Leucophanella: **no nodes resolved**, as it specifies *Syrrhopodon revolutus* as an internal specifier, but this specifier does not exist in this phylogeny.
+* Leucophanes: resolved correctly.
+* Mitthyridium: resolved correctly.
+* Syrrhopodon: resolved correctly.
+* Trachymitrium: resolved correctly.
