@@ -33,6 +33,17 @@ class Phyloreference(object):
         self.internal_specifiers_list = []
         self.external_specifiers_list = []
 
+    def __str__(self):
+        """ Describe this phyloreference as a string. """
+
+        if self.label is not None and self.label != "":
+            return "phyloreference '{0}'".format(self.label)
+
+        if self.clade_definition is not None and self.clade_definition != "":
+            return "unlabeled phyloreference defined '{0}'".format(self.clade_definition)
+
+        return "unlabeled, undefined phyloreference ({0})".format(repr(self))
+
     @property
     def internal_specifiers(self):
         """ Returns a list of internal specifiers. """

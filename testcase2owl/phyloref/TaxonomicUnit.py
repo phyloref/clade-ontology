@@ -39,6 +39,33 @@ class TaxonomicUnit(Identified):
         self.scnames = []
         self.specimen_list = []
 
+    def __str__(self):
+        """ Return a string representation of this taxonomic unit. """
+        consists_of = []
+
+        if len(self.external_refs) > 0:
+            consists_of.append("{0} external references ({1})".format(
+                len(self.external_refs),
+                ", ".join(self.external_refs)
+            ))
+
+        if len(self.scnames) > 0:
+            consists_of.append("{0} scientific names ({1})".format(
+                len(self.scnames),
+                ", ".join([str(scname) for scname in self.scnames])
+            ))
+
+        if len(self.specimen_list) > 0:
+            consists_of.append("{0} specimens ({1})".format(
+                len(self.specimen_list),
+                ", ".join([str(specimen) for specimen in self.specimen_list])
+            ))
+
+        if len(consists_of) > 0:
+            return "taxonomic unit consisting of " + ", ".join(consists_of)
+
+        return "empty taxonomic unit"
+
     @staticmethod
     def from_scientific_name(scname):
         """ Create a taxonomic unit from a scientific name. """
@@ -146,6 +173,17 @@ class ScientificName(object):
         self.scname_binomial_name = None
 
         self.verbatim_name = verbatim_name
+
+    def __str__(self):
+        """ Returns a string representation of this scientific name """
+
+        if self.binomial_name is not None and self.binomial_name != "":
+            return "{0} from '{1}'".format(self.binomial_name, self.verbatim_name)
+
+        if self.verbatim_name is not None and self.verbatim_name != "":
+            return self.verbatim_name
+
+        return "empty scientific name"
 
     def load_from_jsonld(self, jsonld):
         """ Load this scientific name from a JSON-LD object.
@@ -268,6 +306,10 @@ class Specimen(object):
     def __init__(self):
         """ Create a blank Specimen. """
         self.__init__(dict())
+
+    def __str__(self):
+        """ Return a string representation of this Specimen. """
+        return "specimen containing properties {0!s}".format(self.properties)
 
     def load_from_jsonld(self, jsonld):
         """ Load this specimen from a JSON-LD object. Overwrites current properties. """
