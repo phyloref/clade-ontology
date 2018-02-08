@@ -170,6 +170,7 @@ class PhyloreferenceTestCase(object):
 
         # Match taxonomic units with each other.
         results['tunits_matched'] = 0
+        results['unmatched_specifiers_by_phyloref'] = dict()
 
         # Which taxonomic units were matched?
         matched_taxonomic_units = set()
@@ -228,8 +229,10 @@ class PhyloreferenceTestCase(object):
                 pass
             elif len(matched_specifiers) < len(phyloref.specifiers):
                 phyloref.unmatched_specifiers = unmatched_specifiers
+                results['unmatched_specifiers_by_phyloref'][phyloref] = unmatched_specifiers
             elif len(matched_specifiers) == 0:
                 phyloref.unmatched_specifiers = unmatched_specifiers
+                results['unmatched_specifiers_by_phyloref'][phyloref] = unmatched_specifiers
             else:
                 raise RuntimeError("Impossible code path")
 

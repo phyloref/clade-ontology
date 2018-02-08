@@ -15,6 +15,7 @@ import argparse
 import json
 import os.path
 import sys
+import io
 
 from phyloref import PhyloreferenceTestCase
 
@@ -58,10 +59,10 @@ def get_command_line_arguments():
 args = get_command_line_arguments()
 
 if args.input:
-    input_file = open(args.input, 'r')
+    input_file = io.open(args.input, 'r', encoding='utf-8')
 
 if args.output:
-    output_file = open(args.output, 'w')
+    output_file = io.open(args.output, 'w', encoding='utf-8')
 else:
     output_file = sys.stdout
 
@@ -83,9 +84,20 @@ if args.input:
 try:
     testCase = PhyloreferenceTestCase.PhyloreferenceTestCase.load_from_document(doc)
     match_results = testCase.match_specifiers()
-    # print("match_specifiers: " + str(match_results))
+
+    if len(match_results['unmatched_specifiers_by_phyloref']) > 0:
+        for phyloref_containing_unmatched_specifier in match_results['unmatched_specifiers_by_phyloref'].keys():
+            for specifier in match_results['unmatched_specifiers_by_phyloref'][phyloref_containing_unmatched_specifier]:
+                sys.stderr.write("ERROR: Could not match specifier in {0}: {1}\n".format(
+                    str(phyloref_containing_unmatched_specifier),
+                    str(specifier)
+                    )
+                )
+
+        raise PhyloreferenceTestCase.TestCaseException("One or more specifiers could not be matched. Use 'match_not_expected' to document why it could not be matched.")
+
 except PhyloreferenceTestCase.TestCaseException as e:
-    sys.stderr.write("Could not read '{0}': {1}\n".format(str(input_file), e.message))
+    sys.stderr.write("Could not read '{0}': {1!s}\n".format(input_file, e))
     exit(1)
 
 if FLAG_VERBOSE:
