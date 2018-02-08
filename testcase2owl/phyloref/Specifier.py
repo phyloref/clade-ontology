@@ -23,20 +23,37 @@ class Specifier(Identified):
         super(Specifier, self).__init__()
 
         self.owl_classes = [owlterms.SPECIFIER]
+        self.specifier_will_not_match = None
         self.taxonomic_units = set()
         self.taxonomic_units.update(tunits)
 
     def __str__(self):
         """ Return a string representation of this specifier. """
+        str_repr = ""
+
+        # What type of specifier is this?
+        specifier_type = "specifier"
+        if owlterms.INTERNAL_SPECIFIER in self.owl_classes:
+            specifier_type = "internal " + specifier_type
+
+        if owlterms.EXTERNAL_SPECIFIER in self.owl_classes:
+            specifier_type = "external " + specifier_type
+
         if len(self.taxonomic_units) == 1:
-            return "specifier consisting of a {0}".format(list(self.taxonomic_units)[0])
+            str_repr = "{0} consisting of a {1}".format(specifier_type, list(self.taxonomic_units)[0])
         elif len(self.taxonomic_units) > 0:
-            return "specifier consisting of {0} taxonomic units: {1}".format(
+            str_repr = "{0} consisting of {1} taxonomic units: {2}".format(
+                specifier_type,
                 len(self.taxonomic_units),
                 ", ".join([str(tu) for tu in sorted(list(self.taxonomic_units))])
             )
+        else:
+            str_repr = "empty {0}".format(specifier_type)
 
-        return "empty specifier"
+        if self.specifier_will_not_match is not None:
+            return "{0}, not expected to match because '{1}'".format(str_repr, self.specifier_will_not_match)
+
+        return str_repr
 
     def as_jsonld(self):
         """ Return this Specifier as a JSON-LD object. """
@@ -55,6 +72,9 @@ class Specifier(Identified):
 
         if '@id' in json:
             specifier.identified_as_id = json['@id']
+
+        if 'specifier_will_not_match' in json:
+            specifier.specifier_will_not_match = json['specifier_will_not_match']
 
         if 'references_taxonomic_units' not in json:
             return specifier
@@ -76,16 +96,6 @@ class InternalSpecifier(Specifier):
 
         self.owl_classes.append(owlterms.INTERNAL_SPECIFIER)
 
-    def __str__(self):
-        """ Return a string representation of this specifier. """
-        if len(self.taxonomic_units) > 0:
-            return "internal specifier consisting of {0} taxonomic units: {1}".format(
-                len(self.taxonomic_units),
-                ", ".join([str(tu) for tu in sorted(list(self.taxonomic_units))])
-            )
-
-        return "empty internal specifier"
-
     @staticmethod
     def from_jsonld(json):
         """ Create an internal specifier by loading it from a JSON-LD object. """
@@ -100,16 +110,6 @@ class ExternalSpecifier(Specifier):
         super(ExternalSpecifier, self).__init__()
 
         self.owl_classes.append(owlterms.EXTERNAL_SPECIFIER)
-
-    def __str__(self):
-        """ Return a string representation of this specifier. """
-        if len(self.taxonomic_units) > 0:
-            return "external specifier consisting of {0} taxonomic units: {1}".format(
-                len(self.taxonomic_units),
-                ", ".join([str(tu) for tu in sorted(list(self.taxonomic_units))])
-            )
-
-        return "empty external specifier"
 
     @staticmethod
     def from_jsonld(json):

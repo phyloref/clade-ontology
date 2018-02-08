@@ -86,15 +86,29 @@ try:
     match_results = testCase.match_specifiers()
 
     if len(match_results['unmatched_specifiers_by_phyloref']) > 0:
+        count_unmatched_specifiers = 0
+
         for phyloref_containing_unmatched_specifier in match_results['unmatched_specifiers_by_phyloref'].keys():
             for specifier in match_results['unmatched_specifiers_by_phyloref'][phyloref_containing_unmatched_specifier]:
-                sys.stderr.write("ERROR: Could not match specifier in {0}: {1}\n".format(
-                    str(phyloref_containing_unmatched_specifier),
-                    str(specifier)
+                if specifier.specifier_will_not_match is not None:
+                    sys.stderr.write("WARNING: Could not match specifier in {0!s} because '{1!s}': {2!s}\n".format(
+                        phyloref_containing_unmatched_specifier,
+                        specifier.specifier_will_not_match,
+                        specifier
+                        )
                     )
-                )
+                else:
+                    sys.stderr.write("ERROR: Could not match specifier in {0}: {1}\n".format(
+                        str(phyloref_containing_unmatched_specifier),
+                        str(specifier)
+                        )
+                    )
+                    count_unmatched_specifiers += 1
 
-        raise PhyloreferenceTestCase.TestCaseException("One or more specifiers could not be matched. Use 'match_not_expected' to document why it could not be matched.")
+        if count_unmatched_specifiers > 0:
+            raise PhyloreferenceTestCase.TestCaseException(
+                "One or more specifiers could not be matched. Use 'match_not_expected' to document why it could not be matched."
+            )
 
 except PhyloreferenceTestCase.TestCaseException as e:
     sys.stderr.write("Could not read '{0}': {1!s}\n".format(input_file, e))
