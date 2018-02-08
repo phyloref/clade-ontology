@@ -9,6 +9,12 @@ JSON-LD file with node information. It carries out two conversions:
 
  2. Converts all phyloreferences into an OWL-based representation
     containing specifiers that can be used to match taxonomic units.
+
+For scripting purposes, this program can return one of three exit codes:
+ - 0: File processed successfully.
+ - 1: File could not be processed; error on stderr.
+ - 65: File processed with warnings; warnings on stderr.
+    - Chosen to correspond to EX_DATAERR in sysexits.h.
 """
 
 import argparse
@@ -73,7 +79,10 @@ if FLAG_VERBOSE:
     sys.stderr.write("Output file: {0}\n".format(output_file))
 
 # Step 2. Read the JSON file.
-doc = json.load(input_file)
+# Note that json.load can't handle JSON files that contain UTF-8 characters,
+# so it's easier to convert the input into UTF-8 first, then let json.load()
+# read it.
+doc = json.load(input_file, encoding='utf-8')
 
 # Change to the folder containing the JSON file, so that relative paths to files resolve correctly.
 current_working_directory = os.getcwd()
@@ -97,17 +106,19 @@ try:
                         specifier
                         )
                     )
+                    flag_warnings_emitted = True
                 else:
-                    sys.stderr.write("ERROR: Could not match specifier in {0}: {1}\n".format(
-                        str(phyloref_containing_unmatched_specifier),
-                        str(specifier)
+                    sys.stderr.write("ERROR: Could not match specifier in {0!s}: {1!s}\n".format(
+                        phyloref_containing_unmatched_specifier,
+                        specifier
                         )
                     )
                     count_unmatched_specifiers += 1
 
         if count_unmatched_specifiers > 0:
             raise PhyloreferenceTestCase.TestCaseException(
-                "One or more specifiers could not be matched. Use 'match_not_expected' to document why it could not be matched."
+                "One or more specifiers could not be matched. " +
+                "Use 'match_not_expected' to document why it could not be matched."
             )
 
 except PhyloreferenceTestCase.TestCaseException as e:
@@ -126,4 +137,13 @@ os.chdir(current_working_directory)
 # Step 4. Write the paper back out again.
 path_to_this_script = os.path.dirname(os.path.realpath(__file__))
 doc['@context'] = path_to_this_script + '/paper-context.json'
-json.dump(doc, output_file, indent=4, sort_keys=True)
+output_as_json = json.dumps(doc, indent=4, sort_keys=True, ensure_ascii=False)
+if isinstance(output_as_json, str):
+    try:
+        unicode = str
+    except Exception as ex:
+        raise ex
+
+    output_as_json = unicode(output_as_json)
+output_file.write(output_as_json)
+output_file.close()

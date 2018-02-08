@@ -10,6 +10,11 @@ import re
 from phyloref import owlterms
 from phyloref.Identified import Identified
 
+try:
+    UNICODE_EXISTS = bool(type(unicode))
+except NameError:
+    # Python 3!
+    unicode = str
 
 class TaxonomicUnit(Identified):
     """
@@ -44,27 +49,27 @@ class TaxonomicUnit(Identified):
         consists_of = []
 
         if len(self.external_refs) > 0:
-            consists_of.append("{0} external references ({1})".format(
+            consists_of.append(u"{0} external references ({1})".format(
                 len(self.external_refs),
-                ", ".join(self.external_refs)
+                u", ".join(self.external_refs)
             ))
 
         if len(self.scnames) > 0:
-            consists_of.append("{0} scientific names ({1})".format(
+            consists_of.append(u"{0} scientific names ({1})".format(
                 len(self.scnames),
-                ", ".join([str(scname) for scname in self.scnames])
+                u", ".join([unicode(scname) for scname in self.scnames])
             ))
 
         if len(self.specimen_list) > 0:
-            consists_of.append("{0} specimens ({1})".format(
+            consists_of.append(u"{0} specimens ({1})".format(
                 len(self.specimen_list),
-                ", ".join([str(specimen) for specimen in self.specimen_list])
+                u", ".join([unicode(specimen) for specimen in self.specimen_list])
             ))
 
         if len(consists_of) > 0:
-            return "taxonomic unit consisting of " + ", ".join(consists_of)
+            return u"taxonomic unit consisting of " + ", ".join(consists_of)
 
-        return "empty taxonomic unit"
+        return u"empty taxonomic unit"
 
     @staticmethod
     def from_scientific_name(scname):
@@ -178,12 +183,12 @@ class ScientificName(object):
         """ Returns a string representation of this scientific name """
 
         if self.binomial_name is not None and self.binomial_name != "":
-            return "{0} from '{1}'".format(self.binomial_name, self.verbatim_name)
+            return self.binomial_name + u" from '" + self.verbatim_name + "'"
 
         if self.verbatim_name is not None and self.verbatim_name != "":
             return self.verbatim_name
 
-        return "empty scientific name"
+        return u"empty scientific name"
 
     def load_from_jsonld(self, jsonld):
         """ Load this scientific name from a JSON-LD object.
@@ -273,13 +278,13 @@ class ScientificName(object):
         self.scname_binomial_name = None
 
         # Is this a uninomial name?
-        match = re.search('^(\w+)$', self.verbatim_name)
+        match = re.search(u'^(\w+)$', self.verbatim_name)
         if match:
             self.scname_binomial_name = match.group(1)
             self.scname_genus = match.group(1)
 
         # Is this a binomial name?
-        match = re.search('^(\w+) ([\w\-]+)\\b', self.verbatim_name)
+        match = re.search(u'^(\w+) ([\w\-]+)\\b', self.verbatim_name)
         if match:
             self.scname_binomial_name = match.group(1) + " " + match.group(2)
             self.scname_genus = match.group(1)
@@ -309,7 +314,7 @@ class Specimen(object):
 
     def __str__(self):
         """ Return a string representation of this Specimen. """
-        return "specimen containing properties {0!s}".format(self.properties)
+        return u"specimen containing properties {0!s}".format(self.properties)
 
     def load_from_jsonld(self, jsonld):
         """ Load this specimen from a JSON-LD object. Overwrites current properties. """

@@ -76,7 +76,7 @@ class TUMatch(Identified):
                 if tunit1_scname.binomial_name == tunit2_scname.binomial_name:
                     return TUMatch(
                         [tunit1, tunit2],
-                        "Scientific name '{!s}' of taxonomic unit '{!s}' and scientific name '{!s}' of taxonomic unit '{!s}' share the same binomial name: '{!s}'".format(
+                        u"Scientific name '{0}' of taxonomic unit '{1}' and scientific name '{2}' of taxonomic unit '{3}' share the same binomial name: '{4}'".format(
                             tunit1_scname, tunit1,
                             tunit2_scname, tunit2,
                             tunit1_scname.binomial_name
