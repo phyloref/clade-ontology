@@ -159,10 +159,22 @@ class Phyloreference(object):
 
             specifiers_repr = []
             for internal_specifier in self.internal_specifiers_list:
-                specifiers_repr.append(Phyloreference.get_class_expression_for_internal_specifier(internal_specifier.get_reference()))
+                specifiers_repr.append(
+                    Phyloreference.get_class_expression_for_internal_classexp(
+                        Phyloreference.convert_specifier_to_classexp(
+                            internal_specifier.get_reference()
+                        )
+                    )
+                )
 
             for external_specifier in self.external_specifiers_list:
-                specifiers_repr.append(Phyloreference.get_class_expression_for_external_specifier(external_specifier.get_reference()))
+                specifiers_repr.append(
+                    Phyloreference.get_class_expression_for_external_classexp(
+                        Phyloreference.convert_specifier_to_classexp(
+                            external_specifier.get_reference()
+                        )
+                    )
+                )
 
             # Filter out Nones
             specifiers_repr = [x for x in specifiers_repr if x is not None]
@@ -180,53 +192,69 @@ class Phyloreference(object):
         return doc
 
     @staticmethod
-    def get_class_expression_for_internal_specifier(specifier):
-        """ Create a class expression for internal specifiers, based on the specifier provided. """
+    def convert_specifier_to_classexp(specifier):
+        """ Convert a specifier to a class expression for nodes """
+        return {
+            "@type": owlterms.OWL_RESTRICTION,
+            "onProperty": "testcase:matches_specifier",
+            "hasValue": specifier
+        }
 
-        if specifier is None:
+    @staticmethod
+    def get_class_expression_for_internal_classexp(node_class):
+        """ Create a class expression for internal nodes. """
+
+        if node_class is None:
             return None
-
-        # matched_by_specifier :specifier or (hasDescendant some (matched_by_specifier :specifier))
 
         return {
             "@type": owlterms.OWL_RESTRICTION,
             "unionOf": [
-                {
-                    "@type": owlterms.OWL_RESTRICTION,
-                    "onProperty": "testcase:matches_specifier",
-                    "hasValue": specifier
-                },
+                node_class,
                 {
                     "@type": owlterms.OWL_RESTRICTION,
                     "onProperty": owlterms.CDAO_HAS_DESCENDANT,
-                    "someValuesFrom": {
-                        "@type": owlterms.OWL_RESTRICTION,
-                        "onProperty": "testcase:matches_specifier",
-                        "hasValue": specifier
-                    }
+                    "someValuesFrom": node_class
                 }
             ]
         }
 
     @staticmethod
-    def get_class_expression_for_external_specifier(specifier):
-        """ Create a class expression for external specifiers, based on the specifier provided. """
+    def get_class_expression_for_external_classexp(node_class):
+        """ Create a class expression for external nodes. """
 
-        if specifier is None:
+        if node_class is None:
             return None
 
         return {
             "@type": owlterms.OWL_RESTRICTION,
             "onProperty": owlterms.PHYLOREF_HAS_SIBLING,
-            "someValuesFrom": Phyloreference.get_class_expression_for_internal_specifier(specifier)
+            "someValuesFrom": Phyloreference.get_class_expression_for_internal_classexp(node_class)
         }
 
     @staticmethod
-    def get_class_expression_for_mrca(phyloref_id, additional_classes, specifier1, specifier2):
-        """ Create a class expression that matches the most recent common ancestor between two provided specifiers.
+    def get_class_expression_for_mrca(phyloref_id, additional_classes, specifieradditional1, specifieradditional2):
+        """ Create a class expression that matches the most recent common ancestor between two provided specifiernode.
         """
 
         count_additional_classes = len(additional_classes)
+        additional_classes_ids = set([cls['@id'] for cls in additional_classes])
+
+        # sys.stderr.write("Looking for '" + str(specifieradditional1) + "' in " + str(additional_classes_ids) + "\n")
+
+        # specifieradditional1 may either be a specifier or an additional class. Luckily, we
+        # know about all the additional classes, so we can look for it there!
+        if specifieradditional1['@id'] in additional_classes_ids:
+            classexp1 = specifieradditional1
+        else:
+            classexp1 = Phyloreference.convert_specifier_to_classexp(specifieradditional1)
+
+        # sys.stderr.write("Looking for '" + str(specifieradditional2) + "' in " + str(additional_classes_ids) + "\n")
+
+        if specifieradditional2['@id'] in additional_classes_ids:
+            classexp2 = specifieradditional2
+        else:
+            classexp2 = Phyloreference.convert_specifier_to_classexp(specifieradditional2)
 
         mrca_as_owl = {
             "@type": "owl:Class",
@@ -237,19 +265,11 @@ class Phyloreference(object):
                 {
                     "@type": "owl:Class",
                     "intersectionOf": [
-                        {
-                            "@type": owlterms.OWL_RESTRICTION,
-                            "onProperty": "testcase:matches_specifier",
-                            "hasValue": specifier1
-                        },
+                        classexp1,
                         {
                             "@type": "owl:Restriction",
                             "onProperty": owlterms.CDAO_HAS_DESCENDANT,
-                            "someValuesFrom": {
-                                "@type": owlterms.OWL_RESTRICTION,
-                                "onProperty": "testcase:matches_specifier",
-                                "hasValue": specifier2
-                            }
+                            "someValuesFrom": classexp2
                         }
                     ]
                 },
@@ -257,19 +277,11 @@ class Phyloreference(object):
                 {
                     "@type": "owl:Class",
                     "intersectionOf": [
-                        {
-                            "@type": owlterms.OWL_RESTRICTION,
-                            "onProperty": "testcase:matches_specifier",
-                            "hasValue": specifier2
-                        },
+                        classexp2,
                         {
                             "@type": "owl:Restriction",
                             "onProperty": owlterms.CDAO_HAS_DESCENDANT,
-                            "someValuesFrom": {
-                                "@type": owlterms.OWL_RESTRICTION,
-                                "onProperty": "testcase:matches_specifier",
-                                "hasValue": specifier1
-                            }
+                            "someValuesFrom": classexp1
                         }
                     ]
                 },
@@ -284,8 +296,8 @@ class Phyloreference(object):
                             "someValuesFrom": {
                                 "@type": "owl:Class",
                                 "intersectionOf": [
-                                    Phyloreference.get_class_expression_for_internal_specifier(specifier1),
-                                    Phyloreference.get_class_expression_for_external_specifier(specifier2)
+                                    Phyloreference.get_class_expression_for_internal_classexp(classexp1),
+                                    Phyloreference.get_class_expression_for_external_classexp(classexp2)
                                 ]
                             }
                         },
@@ -295,8 +307,8 @@ class Phyloreference(object):
                             "someValuesFrom": {
                                 "@type": "owl:Class",
                                 "intersectionOf": [
-                                    Phyloreference.get_class_expression_for_internal_specifier(specifier2),
-                                    Phyloreference.get_class_expression_for_external_specifier(specifier1)
+                                    Phyloreference.get_class_expression_for_internal_classexp(classexp2),
+                                    Phyloreference.get_class_expression_for_external_classexp(classexp1)
                                 ]
                             }
                         }
@@ -308,7 +320,7 @@ class Phyloreference(object):
         # This is fine, in terms of complexity, but if you start
         # using mrca on itself, the expression grows exponentially.
         # So, instead of returning this class expression, let's
-        # safe it as its own class and return just that name.
+        # save it as its own class and return just that name.
 
         additional_class_id = '{0}_additional{1}'.format(phyloref_id, count_additional_classes)
         count_additional_classes += 1
