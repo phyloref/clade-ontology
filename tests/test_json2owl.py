@@ -21,6 +21,7 @@ def test_json_to_owl(paper_json):
     # report any error as a failed test.
     try:
         output_str = subprocess.check_output('python ../../testcase2owl/testcase2owl.py paper.json -o paper_as_owl.json',
+            shell=True,
             stderr=subprocess.STDOUT
         ).decode('utf-8')
 
