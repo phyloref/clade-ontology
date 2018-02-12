@@ -15,6 +15,9 @@ class Specifier(Identified):
     """
     A Specifier is a part of a phyloreference that matches nodes. It can
     consist of one or more taxonomic units.
+
+    Contains a specifier_will_not_match property that can be set to a
+    string explaining why we expect this specifier to not match.
     """
 
     def __init__(self, *tunits):

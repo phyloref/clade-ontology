@@ -98,6 +98,15 @@ try:
         count_unmatched_specifiers = 0
 
         for phyloref_containing_unmatched_specifier in match_results['unmatched_specifiers_by_phyloref'].keys():
+
+            # We found a phyloreference containing an unmatched specifier! If this is documented or expected -- by
+            # using the 'specifier_will_not_match' property -- then produce a warning. If it is not documented,
+            # count them and then throw an exception.
+
+            # Note that we don't currently report an error if a specifier we expect not to match actually
+            # does match. To do that, we'd have to check all phyloreferences, which doesn't slow us down
+            # much, but I won't implement that until it's necessary.
+
             for specifier in match_results['unmatched_specifiers_by_phyloref'][phyloref_containing_unmatched_specifier]:
                 if specifier.specifier_will_not_match is not None:
                     sys.stderr.write("WARNING: Could not match specifier in {0!s} because '{1!s}': {2!s}\n".format(
@@ -114,6 +123,8 @@ try:
                         )
                     )
                     count_unmatched_specifiers += 1
+
+        # If we have any unmatched specifiers, throw an exception.
 
         if count_unmatched_specifiers > 0:
             raise PhyloreferenceTestCase.TestCaseException(
@@ -137,6 +148,11 @@ os.chdir(current_working_directory)
 # Step 4. Write the paper back out again.
 path_to_this_script = os.path.dirname(os.path.realpath(__file__))
 doc['@context'] = path_to_this_script + '/paper-context.json'
+
+# json.dump() has issues with documents that are partially str and partially
+# unicode. Instead, we dump it to a string, make sure Python knows to treat
+# that string as unicode, and then write it out.
+
 output_as_json = json.dumps(doc, indent=4, sort_keys=True, ensure_ascii=False)
 if isinstance(output_as_json, str):
     try:

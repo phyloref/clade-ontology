@@ -10,6 +10,9 @@ import re
 from phyloref import owlterms
 from phyloref.Identified import Identified
 
+# In Python 2, unicode(obj) calls obj.__str__() and expected unicode as output.
+# In Python 3, the way to do that is calling str(obj). So we create an alias
+# so we don't get NameErrors when using unicode(obj).
 try:
     UNICODE_EXISTS = bool(type(unicode))
 except NameError:
