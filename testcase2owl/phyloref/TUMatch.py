@@ -39,7 +39,7 @@ class TUMatch(Identified):
             '@id': self.id,
             '@type': self.types,
             'reason': self.reason,
-            'matches_taxonomic_units': [tu.as_jsonld() for tu in self.taxonomic_units]
+            'matchesTaxonomicUnits': [tu.as_jsonld() for tu in self.taxonomic_units]
                 # TODO: eventually, we'll probably want to use a reference here instead
                 # of repeating the TUs. But being explicit is useful is debugging!
         }

@@ -48,9 +48,9 @@ class PhylogenyGroup(object):
 
         # Step 1. Extract all labeled node data.
         additional_node_properties = dict()
-        if 'additional_node_properties' in json:
-            for label in json['additional_node_properties']:
-                additional_node_properties[label] = json['additional_node_properties'][label]
+        if 'additionalNodeProperties' in json:
+            for label in json['additionalNodeProperties']:
+                additional_node_properties[label] = json['additionalNodeProperties'][label]
 
         # Step 2. Read phylogenies using DendroPy.
         phylogeny_list = []

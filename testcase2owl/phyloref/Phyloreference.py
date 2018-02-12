@@ -70,8 +70,8 @@ class Phyloreference(object):
         if 'label' in json:
             phyloref.label = json['label']
 
-        if 'clade_definition' in json:
-            phyloref.clade_definition = json['clade_definition']
+        if 'cladeDefinition' in json:
+            phyloref.clade_definition = json['cladeDefinition']
 
         if 'internalSpecifiers' in json:
             for specifier in json['internalSpecifiers']:
@@ -99,7 +99,7 @@ class Phyloreference(object):
         doc['@id'] = self.id
         doc['@type'] = types
         doc['label'] = self.label
-        doc['clade_definition'] = self.clade_definition
+        doc['cladeDefinition'] = self.clade_definition
 
         # Write out all specifiers.
         doc['hasInternalSpecifier'] = [specifier.as_jsonld() for specifier in self.internal_specifiers_list]

@@ -154,17 +154,17 @@
 
         "filename": "testcase:filename",
 
-        "external_references": {
+        "externalReferences": {
             "@id": "obo:CDAO_0000164",
-            "@type": "@id"
+            "@type": "@set"
         },
 
-        "scientific_names": {
+        "scientificNames": {
             "@id": "testcase:has_scientific_name",
             "@type": "@set"
         },
 
-        "includes_specimens": {
+        "includesSpecimens": {
             "@id": "testcase:includes_specimen",
             "@type": "@set"
         },
@@ -172,11 +172,11 @@
         "== Properties of individual OTUs ==": {},
         "dwc": "http://rs.tdwg.org/dwc/terms/",
 
-        "scientific_name": {
+        "scientificName": {
             "@id": "dwc:scientificName",
             "@type": "xsd:string"
         },
-        "binomial_name": {
+        "binomialName": {
             "@id": "testcase:has_binomial_name",
             "@type": "xsd:string"
         },
@@ -184,7 +184,7 @@
             "@id": "dwc:genus",
             "@type": "xsd:string"
         },
-        "specific_epithet": {
+        "specificEpithet": {
             "@id": "dwc:specificEpithet",
             "@type": "xsd:string"
         },
@@ -194,39 +194,40 @@
             "@type": "@id"
         },
 
-        "expected_phyloreference_named": "testcase:expected_phyloreference_named",
+        "expectedPhyloreferenceNamed": "testcase:expected_phyloreference_named",
 
         "reason": {
             "@id": "testcase:reason_for_match",
             "@type": "xsd:string"
         },
-        "has_taxonomic_unit_matches": {
+
+        "hasTaxonomicUnitMatches": {
             "@id": "testcase:has_taxonomic_unit_match",
             "@type": "@set"
         },
 
-        "references_taxonomic_units": {
+        "referencesTaxonomicUnits": {
             "@id": "testcase:references_taxonomic_unit",
             "domain": "Specifier",
             "range": "TU",
             "@type": "@set"
         },
 
-        "matches_taxonomic_units": {
+        "matchesTaxonomicUnits": {
             "@id": "testcase:matches_taxonomic_unit",
             "domain": "TUMatch",
             "range": "TU",
             "@type": "@set"
         },
 
-        "represents_taxonomic_units": {
+        "representsTaxonomicUnits": {
             "@id": "obo:CDAO_0000187",
             "domain": "Node",
             "range": "TU",
             "@type": "@set"
         },
         
-        "specifier_will_not_match": {
+        "specifierWillNotMatch": {
             "@id": "testcase:specifier_will_not_match",
             "@type": "@set"
         },

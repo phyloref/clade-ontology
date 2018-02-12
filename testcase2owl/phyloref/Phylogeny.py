@@ -125,8 +125,8 @@ class Phylogeny(object):
                     node.additional_properties = self.additional_node_properties[node_label.label]
 
                     # Does the additional_node_properties have an 'additional_labels' property?
-                    if 'additional_labels' in node.additional_properties:
-                        node_label_strs.extend(node.additional_properties['additional_labels'])
+                    if 'additionalLabels' in node.additional_properties:
+                        node_label_strs.extend(node.additional_properties['additionalLabels'])
 
                 if node_label.annotations:
                     for closeMatch in node_label.annotations.findall(name='closeMatch'):
@@ -226,7 +226,7 @@ class Node(Identified):
         jsonld = {
             '@id': self.id,
             '@type': list(types),
-            'represents_taxonomic_units': [tunit.as_jsonld() for tunit in self.taxonomic_units],
+            'representsTaxonomicUnits': [tunit.as_jsonld() for tunit in self.taxonomic_units],
             'children': self.children,
             'siblings': self.siblings
         }
@@ -235,7 +235,7 @@ class Node(Identified):
             jsonld['inPhylogeny'] = self.in_phylogeny
 
         if self.expected_phyloref_named is not None:
-            jsonld['expected_phyloreference_named'] = self.expected_phyloref_named
+            jsonld['expectedPhyloreferenceNamed'] = self.expected_phyloref_named
 
         # Add additional properties
         for key in self.additional_properties:

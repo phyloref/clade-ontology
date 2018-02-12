@@ -111,7 +111,7 @@ class PhyloreferenceTestCase(object):
         doc['@id'] = self.id
         doc['@type'] = self.type
         doc['owl:imports'] = self.owl_imports
-        doc['has_taxonomic_unit_matches'] = [tumatch.as_jsonld() for tumatch in self.tu_matches]
+        doc['hasTaxonomicUnitMatches'] = [tumatch.as_jsonld() for tumatch in self.tu_matches]
 
         def export_unless_blank(prop, var):
             """ Export variables unless they are blank.

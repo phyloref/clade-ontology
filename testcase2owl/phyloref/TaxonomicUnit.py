@@ -93,13 +93,13 @@ class TaxonomicUnit(Identified):
         }
 
         if len(self.external_refs) > 0:
-            jsonld['external_references'] = self.external_refs
+            jsonld['externalReferences'] = self.external_refs
 
         if len(self.scnames) > 0:
-            jsonld['scientific_names'] = list(map(lambda sn: sn.as_jsonld(), self.scnames))
+            jsonld['scientificNames'] = list(map(lambda sn: sn.as_jsonld(), self.scnames))
 
         if len(self.specimen_list) > 0:
-            jsonld['includes_specimens'] = list(map(lambda sp: sp.as_jsonld(), self.specimen_list))
+            jsonld['includesSpecimens'] = list(map(lambda sp: sp.as_jsonld(), self.specimen_list))
 
         return jsonld
 
@@ -116,14 +116,14 @@ class TaxonomicUnit(Identified):
         if '@id' in jsonld:
             self.id = jsonld['@id']
 
-        if 'external_references' in jsonld:
-            self.external_refs.extend(jsonld['external_references'])
+        if 'externalReferences' in jsonld:
+            self.external_refs.extend(jsonld['externalReferences'])
 
-        if 'scientific_names' in jsonld:
-            self.scnames.extend(map(lambda sn: ScientificName.from_jsonld(sn), jsonld['scientific_names']))
+        if 'scientificNames' in jsonld:
+            self.scnames.extend(map(lambda sn: ScientificName.from_jsonld(sn), jsonld['scientificNames']))
 
-        if 'includes_specimens' in jsonld:
-            self.specimen_list.extend(map(lambda sp: Specimen.from_jsonld(sp), jsonld['includes_specimens']))
+        if 'includesSpecimens' in jsonld:
+            self.specimen_list.extend(map(lambda sp: Specimen.from_jsonld(sp), jsonld['includesSpecimens']))
 
     @staticmethod
     def from_jsonld(jsonld):
@@ -198,22 +198,22 @@ class ScientificName(object):
 
         This overwrites any information in the current object.
         """
-        if 'scientific_name' in jsonld:
-            self.__init__(jsonld['scientific_name'])
+        if 'scientificName' in jsonld:
+            self.__init__(jsonld['scientificName'])
         else:
             self.__init__(None)
 
         # By this point, the parsed components should
         # be set up. We'll override any set explicitly.
 
-        if 'binomial_name' in jsonld:
-            self.scname_binomial_name = jsonld['binomial_name']
+        if 'binomialName' in jsonld:
+            self.scname_binomial_name = jsonld['binomialName']
 
         if 'genus' in jsonld:
             self.scname_genus = jsonld['genus']
 
-        if 'specific_epithet' in jsonld:
-            self.scname_specific_epithet = jsonld['specific_epithet']
+        if 'specificEpithet' in jsonld:
+            self.scname_specific_epithet = jsonld['specificEpithet']
 
     @staticmethod
     def from_jsonld(jsonld):
@@ -226,17 +226,17 @@ class ScientificName(object):
         """ Returns this scientific name as a JSON-LD object. """
         jsonld = {
             "@type": "dwc:Taxon",
-            "scientific_name": self.verbatim_name
+            "scientificName": self.verbatim_name
         }
 
         if self.scname_binomial_name is not None:
-            jsonld['binomial_name'] = self.scname_binomial_name
+            jsonld['binomialName'] = self.scname_binomial_name
 
         if self.scname_genus is not None:
             jsonld['genus'] = self.scname_genus
 
         if self.scname_specific_epithet is not None:
-            jsonld['specific_epithet'] = self.scname_specific_epithet
+            jsonld['specificEpithet'] = self.scname_specific_epithet
 
         return jsonld
 
