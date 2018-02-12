@@ -170,7 +170,6 @@ class PhyloreferenceTestCase(object):
 
         # Match taxonomic units with each other.
         results['tunits_matched'] = 0
-        results['unmatched_specifiers_by_phyloref'] = dict()
 
         # Which taxonomic units were matched?
         matched_taxonomic_units = set()
@@ -200,11 +199,9 @@ class PhyloreferenceTestCase(object):
                     self.tu_matches.add(tu_match)
                     results['tunits_matched'] += 1
 
-        # Mark phyloreferences as:
-        #   - FullyMatchedPhyloreference: at least one TU on each specifier matched
-        #   - PartiallyMatchedPhyloreference: at least one specifier had no TUs that matched
-        #   - FullyUnmatchedPhyloreference: no specifiers matched any TUs at all
-        #   - PhyloreferenceWithoutSpecifiers: this phyloreference has no specifiers at all
+        # Make a list of unmatched specifiers and return that in a dictionary
+        # that provides sets of unmatched specifiers for each phyloreference.
+        results['unmatched_specifiers_by_phyloref'] = dict()
 
         for phyloref in self.phylorefs:
             matched_specifiers = set()
