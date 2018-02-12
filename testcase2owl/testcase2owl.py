@@ -9,12 +9,6 @@ JSON-LD file with node information. It carries out two conversions:
 
  2. Converts all phyloreferences into an OWL-based representation
     containing specifiers that can be used to match taxonomic units.
-
-For scripting purposes, this program can return one of three exit codes:
- - 0: File processed successfully.
- - 1: File could not be processed; error on stderr.
- - 65: File processed with warnings; warnings on stderr.
-    - Chosen to correspond to EX_DATAERR in sysexits.h.
 """
 
 import argparse
