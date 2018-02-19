@@ -128,6 +128,14 @@ class Phylogeny(object):
                     if 'additionalLabels' in node.additional_properties:
                         node_label_strs.extend(node.additional_properties['additionalLabels'])
 
+                    # Does the additional_node_properties have additional tunits?
+                    if 'representsTaxonomicUnits' in node.additional_properties:
+                        for tunit_jsonld in node.additional_properties['representsTaxonomicUnits']:
+                            tunit = TaxonomicUnit.from_jsonld(tunit_jsonld)
+                            tunit.id = self.get_id_for_node(dendropy_node) + ("_tunit%d" % tunit_count)
+                            tunits.append(tunit)
+                            tunit_count += 1
+
                 if node_label.annotations:
                     for closeMatch in node_label.annotations.findall(name='closeMatch'):
                         node_label_strs.append(closeMatch.value)
@@ -142,9 +150,6 @@ class Phylogeny(object):
                 tunit.id = self.get_id_for_node(dendropy_node) + ("_tunit%d" % tunit_count)
                 tunits.append(tunit)
                 tunit_count += 1
-
-                # TODO: check node.additional_properties and see if the user has provided
-                # specimen or scientific name information.
 
             # Store discovered taxonomic units.
             node.taxonomic_units.extend(tunits)
@@ -239,6 +244,9 @@ class Node(Identified):
 
         # Add additional properties
         for key in self.additional_properties:
-            jsonld[key] = self.additional_properties[key]
+            if key in jsonld:
+                jsonld[key].append(self.additional_properties[key])
+            else:
+                jsonld[key] = self.additional_properties[key]
 
         return jsonld
