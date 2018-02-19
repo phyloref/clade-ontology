@@ -127,7 +127,7 @@ try:
             )
 
 except PhyloreferenceTestCase.TestCaseException as e:
-    sys.stderr.write("Could not read '{0}': {1!s}\n".format(input_file, e))
+    sys.stderr.write("\nCould not read input stream '{0}': {1!s}\n".format(input_file, e))
     exit(1)
 
 if FLAG_VERBOSE:
