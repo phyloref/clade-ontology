@@ -17,10 +17,44 @@
 
                 "additionalNodeProperties": {
                     "Arthrocormus schimperi": {
-                        "expectedPhyloreferenceNamed": ["Arthrocormus"]
+                        "expectedPhyloreferenceNamed": ["Arthrocormus"],
+                        "representsTaxonomicUnits": [{
+                            "includesSpecimens": [{
+                                "catalogNumber": "Mishler 7/24/98 (5)"  
+                            }]
+                        }]
                     },
                     "Exodictyon incrassatum": {
-                        "expectedPhyloreferenceNamed": ["Exodictyon"]
+                        "expectedPhyloreferenceNamed": ["Exodictyon"],
+                        "representsTaxonomicUnits": [{
+                            "includesSpecimens": [{
+                                "catalogNumber": "Wall 2527, Fiji (uc)"
+                            }]
+                        }]
+                    },
+                    "Exostratum blumii 243": {
+                        "comment": "The paper does not tell us which specimen ID goes with which node, so I've assigned both specmen IDs to both nodes. -- GGV",
+                        "representsTaxonomicUnits": [{
+                            "includesSpecimens": [{
+                                "catalogNumber": "Mishler 7/24/98(3)"
+                            }]
+                        }, {
+                            "includesSpecimens": [{
+                                "catalogNumber": "Mishler 7/26/98(1)"
+                            }]
+                        }]
+                    },
+                    "Exostratum blumii 245": {
+                        "comment": "The paper does not tell us which specimen ID goes with which node, so I've assigned both specmen IDs to both nodes. -- GGV",
+                        "representsTaxonomicUnits": [{
+                            "includesSpecimens": [{
+                                "catalogNumber": "Mishler 7/24/98(3)"
+                            }]
+                        }, {
+                            "includesSpecimens": [{
+                                "catalogNumber": "Mishler 7/26/98(1)"
+                            }]
+                        }]
                     }
                 }
 	}],
@@ -250,6 +284,11 @@
                     "scientificName": "Type: Arthrocormus schimperi (Dozy & Molk.) Dozy & Molk. (= Mielichhoferia schimperi Dozy & Molk.), Musci Frond. Ined. Archip. Ind. 75. (1846) -- Mishler 7/24/98 (5) Queensland, Australia (UC)",
                     "binomialName": "Arthrocormus schimperi"
                 }]
+            }, {
+                "includesSpecimens": [{
+                    "label": "Mishler 7/24/98 (5) Queensland, Australia (UC)",
+                    "catalogNumber": "Mishler 7/24/98 (5)"  
+                }]   
             }]
         }],
         "externalSpecifiers": [{
@@ -273,12 +312,9 @@
             }]
         }, {
             "referencesTaxonomicUnits": [{
-                "specimens": [{
-                    "label": "Mishler 7/24/98(3), Queensland, Australia (uc)"
-                }],
-                "scientificNames": [{
-                    "scientificName": "Exostratum blumii (Nees ex Hampe) L.T. Ellis",
-                    "comment": "As per table 1 in the paper, which identifies this specimen."
+                "includesSpecimens": [{
+                    "label": "Mishler 7/24/98(3), Queensland, Australia (uc)",
+                    "catalogNumber": "Mishler 7/24/98(3)"
                 }]
             }]
         }],
@@ -299,9 +335,12 @@
             "referencesTaxonomicUnits": [{
                 "scientificNames": [{
                     "scientificName": "Type: Exodictyon Cardot, Rev. Bryol. Lichénol. 26: 6. (1899), excl. parte, emend Ellis in Lindbergia 11: 16 (1985) -- Wall 2527, Fiji (uc)",
-                    "testcase:submittedName": "Exodictyon incrassatum (Mitt.) Cardot",
-                    "binomialName": "Exodictyon incrassatum"
+                    "binomialName": "Exodictyon"
                 }]
+            }, {
+                "includesSpecimens": [{
+                    "catalogNumber": "Wall 2527, Fiji (uc)"
+                }]   
             }]
         }],
         "externalSpecifiers": [{
@@ -334,9 +373,8 @@
         }],
         "externalSpecifiers": [{
             "referencesTaxonomicUnits": [{
-                "scientificNames": [{
-                    "scientificName": "Wall 2527, Fiji (uc) -- Exodictyon incrassatum (Mitt.) Cardot",
-                    "binomialName": "Exodictyon incrassatum"
+                "includesSpecimens": [{
+                    "catalogNumber": "Wall 2527, Fiji (uc)"
                 }]
             }]
         }]
