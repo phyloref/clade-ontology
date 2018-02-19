@@ -299,7 +299,7 @@ class Specimen(object):
     Represents a single specimen included in a taxonomic unit.
     """
 
-    def __init__(self, props):
+    def __init__(self, props=dict()):
         """ Create a Specimen based on key-value properties.
 
         :param props: A dict consisting of key-value properties.
@@ -308,10 +308,6 @@ class Specimen(object):
 
         if '@type' not in self.properties:
             self.properties['@type'] = 'dwc:MaterialSample'
-
-    def __init__(self):
-        """ Create a blank Specimen. """
-        self.__init__(dict())
 
     def __str__(self):
         """ Return a string representation of this Specimen. """
@@ -325,10 +321,10 @@ class Specimen(object):
     def from_jsonld(jsonld):
         """ Read a Specimen from a JSON-LD object and return it. """
         sp = Specimen()
-        sp.load_from_json(jsonld)
+        sp.load_from_jsonld(jsonld)
         return sp
 
-    def as_json(self):
+    def as_jsonld(self):
         """ Return this Specimen as a JSON-LD object. """
         return self.properties
 
