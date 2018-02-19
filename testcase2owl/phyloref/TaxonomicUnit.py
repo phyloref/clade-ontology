@@ -10,6 +10,14 @@ import re
 from phyloref import owlterms
 from phyloref.Identified import Identified
 
+# In Python 2, unicode(obj) calls obj.__str__() and expected unicode as output.
+# In Python 3, the way to do that is calling str(obj). So we create an alias
+# so we don't get NameErrors when using unicode(obj).
+try:
+    UNICODE_EXISTS = bool(type(unicode))
+except NameError:
+    # Python 3!
+    unicode = str
 
 class TaxonomicUnit(Identified):
     """
@@ -39,6 +47,33 @@ class TaxonomicUnit(Identified):
         self.scnames = []
         self.specimen_list = []
 
+    def __str__(self):
+        """ Return a string representation of this taxonomic unit. """
+        consists_of = []
+
+        if len(self.external_refs) > 0:
+            consists_of.append(u"{0} external references ({1})".format(
+                len(self.external_refs),
+                u", ".join(self.external_refs)
+            ))
+
+        if len(self.scnames) > 0:
+            consists_of.append(u"{0} scientific names ({1})".format(
+                len(self.scnames),
+                u", ".join([unicode(scname) for scname in self.scnames])
+            ))
+
+        if len(self.specimen_list) > 0:
+            consists_of.append(u"{0} specimens ({1})".format(
+                len(self.specimen_list),
+                u", ".join([unicode(specimen) for specimen in self.specimen_list])
+            ))
+
+        if len(consists_of) > 0:
+            return u"taxonomic unit consisting of " + ", ".join(consists_of)
+
+        return u"empty taxonomic unit"
+
     @staticmethod
     def from_scientific_name(scname):
         """ Create a taxonomic unit from a scientific name. """
@@ -58,13 +93,13 @@ class TaxonomicUnit(Identified):
         }
 
         if len(self.external_refs) > 0:
-            jsonld['external_references'] = self.external_refs
+            jsonld['externalReferences'] = self.external_refs
 
         if len(self.scnames) > 0:
-            jsonld['scientific_names'] = list(map(lambda sn: sn.as_jsonld(), self.scnames))
+            jsonld['scientificNames'] = list(map(lambda sn: sn.as_jsonld(), self.scnames))
 
         if len(self.specimen_list) > 0:
-            jsonld['includes_specimens'] = list(map(lambda sp: sp.as_jsonld(), self.specimen_list))
+            jsonld['includesSpecimens'] = list(map(lambda sp: sp.as_jsonld(), self.specimen_list))
 
         return jsonld
 
@@ -81,14 +116,14 @@ class TaxonomicUnit(Identified):
         if '@id' in jsonld:
             self.id = jsonld['@id']
 
-        if 'external_references' in jsonld:
-            self.external_refs.extend(jsonld['external_references'])
+        if 'externalReferences' in jsonld:
+            self.external_refs.extend(jsonld['externalReferences'])
 
-        if 'scientific_names' in jsonld:
-            self.scnames.extend(map(lambda sn: ScientificName.from_jsonld(sn), jsonld['scientific_names']))
+        if 'scientificNames' in jsonld:
+            self.scnames.extend(map(lambda sn: ScientificName.from_jsonld(sn), jsonld['scientificNames']))
 
-        if 'includes_specimens' in jsonld:
-            self.specimen_list.extend(map(lambda sp: Specimen.from_jsonld(sp), jsonld['includes_specimens']))
+        if 'includesSpecimens' in jsonld:
+            self.specimen_list.extend(map(lambda sp: Specimen.from_jsonld(sp), jsonld['includesSpecimens']))
 
     @staticmethod
     def from_jsonld(jsonld):
@@ -147,27 +182,38 @@ class ScientificName(object):
 
         self.verbatim_name = verbatim_name
 
+    def __str__(self):
+        """ Returns a string representation of this scientific name """
+
+        if self.binomial_name is not None and self.binomial_name != "":
+            return self.binomial_name + u" from '" + self.verbatim_name + "'"
+
+        if self.verbatim_name is not None and self.verbatim_name != "":
+            return self.verbatim_name
+
+        return u"empty scientific name"
+
     def load_from_jsonld(self, jsonld):
         """ Load this scientific name from a JSON-LD object.
 
         This overwrites any information in the current object.
         """
-        if 'scientific_name' in jsonld:
-            self.__init__(jsonld['scientific_name'])
+        if 'scientificName' in jsonld:
+            self.__init__(jsonld['scientificName'])
         else:
             self.__init__(None)
 
         # By this point, the parsed components should
         # be set up. We'll override any set explicitly.
 
-        if 'binomial_name' in jsonld:
-            self.scname_binomial_name = jsonld['binomial_name']
+        if 'binomialName' in jsonld:
+            self.scname_binomial_name = jsonld['binomialName']
 
         if 'genus' in jsonld:
             self.scname_genus = jsonld['genus']
 
-        if 'specific_epithet' in jsonld:
-            self.scname_specific_epithet = jsonld['specific_epithet']
+        if 'specificEpithet' in jsonld:
+            self.scname_specific_epithet = jsonld['specificEpithet']
 
     @staticmethod
     def from_jsonld(jsonld):
@@ -180,17 +226,17 @@ class ScientificName(object):
         """ Returns this scientific name as a JSON-LD object. """
         jsonld = {
             "@type": "dwc:Taxon",
-            "scientific_name": self.verbatim_name
+            "scientificName": self.verbatim_name
         }
 
         if self.scname_binomial_name is not None:
-            jsonld['binomial_name'] = self.scname_binomial_name
+            jsonld['binomialName'] = self.scname_binomial_name
 
         if self.scname_genus is not None:
             jsonld['genus'] = self.scname_genus
 
         if self.scname_specific_epithet is not None:
-            jsonld['specific_epithet'] = self.scname_specific_epithet
+            jsonld['specificEpithet'] = self.scname_specific_epithet
 
         return jsonld
 
@@ -235,13 +281,13 @@ class ScientificName(object):
         self.scname_binomial_name = None
 
         # Is this a uninomial name?
-        match = re.search('^(\w+)$', self.verbatim_name)
+        match = re.search(u'^(\w+)$', self.verbatim_name)
         if match:
             self.scname_binomial_name = match.group(1)
             self.scname_genus = match.group(1)
 
         # Is this a binomial name?
-        match = re.search('^(\w+) ([\w\-]+)\\b', self.verbatim_name)
+        match = re.search(u'^(\w+) ([\w\-]+)\\b', self.verbatim_name)
         if match:
             self.scname_binomial_name = match.group(1) + " " + match.group(2)
             self.scname_genus = match.group(1)
@@ -268,6 +314,10 @@ class Specimen(object):
     def __init__(self):
         """ Create a blank Specimen. """
         self.__init__(dict())
+
+    def __str__(self):
+        """ Return a string representation of this Specimen. """
+        return u"specimen containing properties {0!s}".format(self.properties)
 
     def load_from_jsonld(self, jsonld):
         """ Load this specimen from a JSON-LD object. Overwrites current properties. """
