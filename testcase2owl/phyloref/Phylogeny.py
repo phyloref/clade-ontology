@@ -243,9 +243,19 @@ class Node(Identified):
             jsonld['expectedPhyloreferenceNamed'] = self.expected_phyloref_named
 
         # Add additional properties
+        #
+        # Note that this duplicates taxonomic units added through the additional properties list,
+        # which are first added above (as TaxonomicUnits) and then added again through additional properties.
+        # There isn't a straightforward way to deduplicate them, and I like the idea of those additional
+        # properties being explicitly visible, as they could be useful for debugging if there are properties
+        # in additional properties that were misread or ignored by the TaxonomicUnit processing.
+        #
         for key in self.additional_properties:
             if key in jsonld:
-                jsonld[key].append(self.additional_properties[key])
+                if isinstance(self.additional_properties[key], list):
+                    jsonld[key].extend(self.additional_properties[key])
+                else:
+                    jsonld[key].append(self.additional_properties[key])
             else:
                 jsonld[key] = self.additional_properties[key]
 
