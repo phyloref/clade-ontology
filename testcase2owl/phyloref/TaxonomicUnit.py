@@ -354,8 +354,12 @@ class Specimen(object):
         if 'occurrenceID' in self.properties and self.properties['occurrenceID'].strip() != '':
             return self.properties['occurrenceID']
 
+        # Option 2. Compare catalog numbers along with collection code and institution codes.
         if 'catalogNumber' in self.properties:
             catalogNumber = self.properties['catalogNumber']
+
+            # We use '.get(...)' below because it will return None instead of throwing a KeyError
+            # if these fields are missing.
             collectionCode = self.properties.get('collectionCode')
             institutionCode = self.properties.get('institutionCode')
 
@@ -374,18 +378,43 @@ class Specimen(object):
 
     @identifier.setter
     def identifier(self, value):
-        """ Sets the occurrenceId and look for Darwin Core Triplet components. """
+        """ Sets the identifier (the dwc:occurrenceID). If the occurrence ID contains a Darwin Core Triplet (with or
+        without 'urn:catalog:'), we separate its individual components. """
         self.properties['occurrenceID'] = value
 
         # Reset the Darwin Core Triplet components.
-        del(self.properties['catalogNumber'])
-        del(self.properties['collectionCode'])
-        del(self.properties['institutionCode'])
+        if 'catalogNumber' in self.properties:
+            del(self.properties['catalogNumber'])
 
+        if 'collectionCode' in self.properties:
+            del(self.properties['collectionCode'])
+
+        if 'institutionCode' in self.properties:
+            del(self.properties['institutionCode'])
+
+        # Is there a 'urn:catalog:' prefix? If so, ignore it when splitting the occurrenceID into components.
+        if value.startswith('urn:catalog:'):
+            value = value[12:]
+
+        # Is the occurrence ID a URL or URN? If so, don't try splitting it!
+        URL_URN_PREFIXES = [
+            'http://',
+            'https://',
+            'ftp://',
+            'sftp://',
+            'file://',
+            'urn:'
+        ]
+        value_lowercase = value.lower()
+        for prefix in URL_URN_PREFIXES:
+            if value_lowercase.startswith(prefix):
+                return
+
+        # Attempt to split these components into a Darwin Core Triplet.
         components = value.strip().split(':')
         if len(components) <= 1:
-            # Nothing we can do.
-            pass
+            # Symmetrically with the getter, let's treat the occurrenceID as the catalog number.
+            self.properties['catalogNumber'] = value
 
         elif len(components) == 2:
             # Darwin Core Doublet
@@ -399,7 +428,8 @@ class Specimen(object):
             self.properties['catalogNumber'] = components[2]
 
         else:
-            # Can't split; ignore.
-            pass
-
-        # All done!
+            # Let's assume that the first two components are the institution code
+            # and the collection code, and that the catalog number contains ':'s.
+            self.properties['institutionCode'] = components[0]
+            self.properties['collectionCode'] = components[1]
+            self.properties['catalogNumber'] = ":".join(components[2:])
