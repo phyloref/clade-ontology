@@ -123,7 +123,7 @@ try:
         if count_unmatched_specifiers > 0:
             raise PhyloreferenceTestCase.TestCaseException(
                 "One or more specifiers could not be matched. " +
-                "Use 'match_not_expected' to document why it could not be matched."
+                "Use 'specifierWillNotMatch' to document why it could not be matched."
             )
 
 except PhyloreferenceTestCase.TestCaseException as e:
