@@ -69,7 +69,7 @@ class PhyloreferenceTestCase(object):
     def load_from_document(doc):
         """ Load a test case from a JSON file. """
         if '@id' not in doc:
-            raise PhyloreferenceTestCase.TestCaseException("Document does not contain required key '@id'")
+            raise TestCaseException("Document does not contain required key '@id'")
 
         testCase = PhyloreferenceTestCase(doc['@id'])
 
