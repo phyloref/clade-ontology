@@ -1,5 +1,4 @@
 {
-    "@context": "http://ggvaidya.com/curation-tool/json/phyx.json",
     "doi": "10.1146/annurev.earth.31.100901.141308",
     "url": "https://www.annualreviews.org/doi/10.1146/annurev.earth.31.100901.141308",
     "citation": "Brochu (2003) Annual Review of Earth and Planetary Sciences 31:357-397",
@@ -105,7 +104,17 @@
                         "@id": "pso:draft"
                     },
                     "tvc:atTime": {
-                        "timeinterval:hasIntervalStartDate": "2018-06-08T21:00:35.387Z"
+                        "timeinterval:hasIntervalStartDate": "2018-06-08T21:00:35.387Z",
+                        "timeinterval:hasIntervalEndDate": "2018-06-08T21:23:00.523Z"
+                    }
+                },
+                {
+                    "@type": "http://purl.org/spar/pso/StatusInTime",
+                    "pso:withStatus": {
+                        "@id": "pso:final-draft"
+                    },
+                    "tvc:atTime": {
+                        "timeinterval:hasIntervalStartDate": "2018-06-08T21:23:00.523Z"
                     }
                 }
             ]
@@ -208,7 +217,17 @@
                         "@id": "pso:submitted"
                     },
                     "tvc:atTime": {
-                        "timeinterval:hasIntervalStartDate": "2018-06-08T20:25:51.383Z"
+                        "timeinterval:hasIntervalStartDate": "2018-06-08T20:25:51.383Z",
+                        "timeinterval:hasIntervalEndDate": "2018-06-08T21:23:46.042Z"
+                    }
+                },
+                {
+                    "@type": "http://purl.org/spar/pso/StatusInTime",
+                    "pso:withStatus": {
+                        "@id": "pso:under-review"
+                    },
+                    "tvc:atTime": {
+                        "timeinterval:hasIntervalStartDate": "2018-06-08T21:23:46.042Z"
                     }
                 }
             ]
@@ -995,5 +1014,6 @@
             ]
         }
     ],
-    "title": "Phylogenetic Approaches Toward Crocodylian History"
+    "title": "Phylogenetic Approaches Toward Crocodylian History",
+    "@context": "http://ggvaidya.com/curation-tool/json/phyx.json"
 }
