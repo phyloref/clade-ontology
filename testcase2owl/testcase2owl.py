@@ -140,8 +140,9 @@ doc = testCase.export_to_jsonld_document()
 os.chdir(current_working_directory)
 
 # Step 4. Write the paper back out again.
-path_to_this_script = os.path.dirname(os.path.realpath(__file__))
-doc['@context'] = path_to_this_script + '/paper-context.json'
+if '@context' not in doc:
+    path_to_this_script = os.path.dirname(os.path.realpath(__file__))
+    doc['@context'] = path_to_this_script + '/paper-context.json'
 
 # json.dump() has issues with documents that are partially str and partially
 # unicode. Instead, we dump it to a string, make sure Python knows to treat

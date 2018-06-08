@@ -58,6 +58,7 @@ class PhyloreferenceTestCase(object):
         self.owl_imports = owlterms.OWL_IMPORTS
 
         # Metadata
+        self.context = []
         self.citation = []
         self.url = []
         self.year = []
@@ -80,6 +81,7 @@ class PhyloreferenceTestCase(object):
 
         # Load document-level properties
         PhyloreferenceTestCase.append_extend_or_ignore(testCase.type, doc, '@type')
+        PhyloreferenceTestCase.append_extend_or_ignore(testCase.context, doc, '@context')
         PhyloreferenceTestCase.append_extend_or_ignore(testCase.owl_imports, doc, 'owl:imports')
 
         PhyloreferenceTestCase.append_extend_or_ignore(testCase.citation, doc, 'citation')
@@ -128,6 +130,7 @@ class PhyloreferenceTestCase(object):
             elif len(var) > 1:
                 doc[prop] = var
 
+        export_unless_blank('@context', self.context)
         export_unless_blank('citation', self.citation)
         export_unless_blank('url', self.url)
         export_unless_blank('year', self.year)
