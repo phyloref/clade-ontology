@@ -41,6 +41,11 @@
                     "expectedPhyloreferenceNamed": [
                         "Crocodyloidea"
                     ]
+                },
+                "Osteolaemus tetraspis": {
+                    "expectedPhyloreferenceNamed": [
+                        "Osteolaeminae"
+                    ]
                 }
             }
         }
@@ -96,28 +101,7 @@
                     "specifierWillNotMatch": "Not present in figure 1"
                 }
             ],
-            "externalSpecifiers": [],
-            "pso:holdsStatusInTime": [
-                {
-                    "@type": "http://purl.org/spar/pso/StatusInTime",
-                    "pso:withStatus": {
-                        "@id": "pso:draft"
-                    },
-                    "tvc:atTime": {
-                        "timeinterval:hasIntervalStartDate": "2018-06-08T21:00:35.387Z",
-                        "timeinterval:hasIntervalEndDate": "2018-06-08T21:23:00.523Z"
-                    }
-                },
-                {
-                    "@type": "http://purl.org/spar/pso/StatusInTime",
-                    "pso:withStatus": {
-                        "@id": "pso:final-draft"
-                    },
-                    "tvc:atTime": {
-                        "timeinterval:hasIntervalStartDate": "2018-06-08T21:23:00.523Z"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         },
         {
             "label": "Crocodylia",
@@ -157,18 +141,7 @@
                     ]
                 }
             ],
-            "externalSpecifiers": [],
-            "pso:holdsStatusInTime": [
-                {
-                    "@type": "http://purl.org/spar/pso/StatusInTime",
-                    "pso:withStatus": {
-                        "@id": "pso:submitted"
-                    },
-                    "tvc:atTime": {
-                        "timeinterval:hasIntervalStartDate": "2018-06-08T20:25:46.808Z"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         },
         {
             "label": "Gavialoidea",
@@ -208,27 +181,6 @@
                             ]
                         }
                     ]
-                }
-            ],
-            "pso:holdsStatusInTime": [
-                {
-                    "@type": "http://purl.org/spar/pso/StatusInTime",
-                    "pso:withStatus": {
-                        "@id": "pso:submitted"
-                    },
-                    "tvc:atTime": {
-                        "timeinterval:hasIntervalStartDate": "2018-06-08T20:25:51.383Z",
-                        "timeinterval:hasIntervalEndDate": "2018-06-08T21:23:46.042Z"
-                    }
-                },
-                {
-                    "@type": "http://purl.org/spar/pso/StatusInTime",
-                    "pso:withStatus": {
-                        "@id": "pso:under-review"
-                    },
-                    "tvc:atTime": {
-                        "timeinterval:hasIntervalStartDate": "2018-06-08T21:23:46.042Z"
-                    }
                 }
             ]
         },
@@ -284,18 +236,7 @@
                     ]
                 }
             ],
-            "curatorComments": "Not included in figure 1.",
-            "pso:holdsStatusInTime": [
-                {
-                    "@type": "http://purl.org/spar/pso/StatusInTime",
-                    "pso:withStatus": {
-                        "@id": "pso:draft"
-                    },
-                    "tvc:atTime": {
-                        "timeinterval:hasIntervalStartDate": "2018-06-08T21:21:06.586Z"
-                    }
-                }
-            ]
+            "curatorComments": "Not included in figure 1."
         },
         {
             "label": "Brevirostres",
@@ -324,18 +265,7 @@
                     ]
                 }
             ],
-            "externalSpecifiers": [],
-            "pso:holdsStatusInTime": [
-                {
-                    "@type": "http://purl.org/spar/pso/StatusInTime",
-                    "pso:withStatus": {
-                        "@id": "pso:submitted"
-                    },
-                    "tvc:atTime": {
-                        "timeinterval:hasIntervalStartDate": "2018-06-08T20:26:01.384Z"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         },
         {
             "label": "Alligatoroidea",
@@ -381,11 +311,13 @@
                 {
                     "@type": "http://purl.org/spar/pso/StatusInTime",
                     "pso:withStatus": {
-                        "@id": "pso:under-review"
+                        "@id": "pso:final-draft"
                     },
                     "tvc:atTime": {
-                        "timeinterval:hasIntervalStartDate": "2018-06-08T20:26:18.885Z"
-                    }
+                        "timeinterval:hasIntervalStartDate": "2018-06-11T20:00:47.151Z"
+                    },
+                    "statusCURIE": "pso:final-draft",
+                    "intervalStart": "2018-06-11T20:00:47.151Z"
                 }
             ]
         },
@@ -417,17 +349,6 @@
                         }
                     ]
                 }
-            ],
-            "pso:holdsStatusInTime": [
-                {
-                    "@type": "http://purl.org/spar/pso/StatusInTime",
-                    "pso:withStatus": {
-                        "@id": "pso:submitted"
-                    },
-                    "tvc:atTime": {
-                        "timeinterval:hasIntervalStartDate": "2018-06-08T20:26:33.989Z"
-                    }
-                }
             ]
         },
         {
@@ -458,17 +379,6 @@
                         }
                     ]
                 }
-            ],
-            "pso:holdsStatusInTime": [
-                {
-                    "@type": "http://purl.org/spar/pso/StatusInTime",
-                    "pso:withStatus": {
-                        "@id": "pso:submitted"
-                    },
-                    "tvc:atTime": {
-                        "timeinterval:hasIntervalStartDate": "2018-06-08T20:27:26.728Z"
-                    }
-                }
             ]
         },
         {
@@ -498,18 +408,7 @@
                     ]
                 }
             ],
-            "externalSpecifiers": [],
-            "pso:holdsStatusInTime": [
-                {
-                    "@type": "http://purl.org/spar/pso/StatusInTime",
-                    "pso:withStatus": {
-                        "@id": "pso:submitted"
-                    },
-                    "tvc:atTime": {
-                        "timeinterval:hasIntervalStartDate": "2018-06-08T20:27:31.482Z"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         },
         {
             "label": "Alligatorinae",
@@ -538,17 +437,6 @@
                             ]
                         }
                     ]
-                }
-            ],
-            "pso:holdsStatusInTime": [
-                {
-                    "@type": "http://purl.org/spar/pso/StatusInTime",
-                    "pso:withStatus": {
-                        "@id": "pso:submitted"
-                    },
-                    "tvc:atTime": {
-                        "timeinterval:hasIntervalStartDate": "2018-06-08T20:27:38.862Z"
-                    }
                 }
             ]
         },
@@ -579,17 +467,6 @@
                             ]
                         }
                     ]
-                }
-            ],
-            "pso:holdsStatusInTime": [
-                {
-                    "@type": "http://purl.org/spar/pso/StatusInTime",
-                    "pso:withStatus": {
-                        "@id": "pso:submitted"
-                    },
-                    "tvc:atTime": {
-                        "timeinterval:hasIntervalStartDate": "2018-06-08T20:27:43.503Z"
-                    }
                 }
             ]
         },
@@ -632,17 +509,6 @@
                         }
                     ]
                 }
-            ],
-            "pso:holdsStatusInTime": [
-                {
-                    "@type": "http://purl.org/spar/pso/StatusInTime",
-                    "pso:withStatus": {
-                        "@id": "pso:under-review"
-                    },
-                    "tvc:atTime": {
-                        "timeinterval:hasIntervalStartDate": "2018-06-08T20:27:48.973Z"
-                    }
-                }
             ]
         },
         {
@@ -683,18 +549,7 @@
                     ]
                 }
             ],
-            "externalSpecifiers": [],
-            "pso:holdsStatusInTime": [
-                {
-                    "@type": "http://purl.org/spar/pso/StatusInTime",
-                    "pso:withStatus": {
-                        "@id": "pso:submitted"
-                    },
-                    "tvc:atTime": {
-                        "timeinterval:hasIntervalStartDate": "2018-06-08T20:27:53.586Z"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         },
         {
             "label": "Mekosuchinae",
@@ -786,18 +641,7 @@
                 }
             ],
             "externalSpecifiers": [],
-            "curatorComments": "Not illustrated in fig 1",
-            "pso:holdsStatusInTime": [
-                {
-                    "@type": "http://purl.org/spar/pso/StatusInTime",
-                    "pso:withStatus": {
-                        "@id": "pso:draft"
-                    },
-                    "tvc:atTime": {
-                        "timeinterval:hasIntervalStartDate": "2018-06-08T21:01:01.155Z"
-                    }
-                }
-            ]
+            "curatorComments": "Not illustrated in fig 1"
         },
         {
             "label": "Tomistominae",
@@ -826,17 +670,6 @@
                             ]
                         }
                     ]
-                }
-            ],
-            "pso:holdsStatusInTime": [
-                {
-                    "@type": "http://purl.org/spar/pso/StatusInTime",
-                    "pso:withStatus": {
-                        "@id": "pso:submitted"
-                    },
-                    "tvc:atTime": {
-                        "timeinterval:hasIntervalStartDate": "2018-06-08T20:28:08.057Z"
-                    }
                 }
             ]
         },
@@ -867,17 +700,6 @@
                             ]
                         }
                     ]
-                }
-            ],
-            "pso:holdsStatusInTime": [
-                {
-                    "@type": "http://purl.org/spar/pso/StatusInTime",
-                    "pso:withStatus": {
-                        "@id": "pso:submitted"
-                    },
-                    "tvc:atTime": {
-                        "timeinterval:hasIntervalStartDate": "2018-06-08T20:28:12.844Z"
-                    }
                 }
             ]
         },
@@ -910,7 +732,7 @@
                     ]
                 }
             ],
-            "curatorComments": "Not illustrated in fig 1",
+            "curatorComments": "Not illustrated in fig 1, but it's resolution is pretty unambiguous, so I'm going to assert that it should resolve to \"Osteolaemus tetraspis\"",
             "pso:holdsStatusInTime": [
                 {
                     "@type": "http://purl.org/spar/pso/StatusInTime",
@@ -918,7 +740,7 @@
                         "@id": "pso:submitted"
                     },
                     "tvc:atTime": {
-                        "timeinterval:hasIntervalStartDate": "2018-06-08T20:28:16.526Z"
+                        "timeinterval:hasIntervalStartDate": "2018-06-11T21:47:47.495Z"
                     }
                 }
             ]
@@ -926,94 +748,156 @@
         {
             "label": "Crocodylidae (alt)",
             "cladeDefinition": "Crocodylidae (Cuvier 1807).\n\nLast common ancestor of Crocodylus niloticus and Osteolaemus tetraspis and all of its descendents.",
-            "internalSpecifiers": [],
-            "externalSpecifiers": [],
-            "curatorComments": "Not illustrated on fig 1.",
-            "pso:holdsStatusInTime": [
+            "internalSpecifiers": [
                 {
-                    "@type": "http://purl.org/spar/pso/StatusInTime",
-                    "pso:withStatus": {
-                        "@id": "pso:draft"
-                    },
-                    "tvc:atTime": {
-                        "timeinterval:hasIntervalStartDate": "2018-06-08T21:00:54.409Z"
-                    }
+                    "referencesTaxonomicUnits": [
+                        {
+                            "scientificNames": [
+                                {
+                                    "scientificName": "Osteolaemus tetraspis"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "referencesTaxonomicUnits": [
+                        {
+                            "scientificNames": [
+                                {
+                                    "scientificName": "Crocodylus niloticus"
+                                }
+                            ]
+                        }
+                    ]
                 }
-            ]
+            ],
+            "externalSpecifiers": [],
+            "curatorComments": "Not illustrated on fig 1."
         },
         {
             "label": "Crocodylinae (alt)",
             "cladeDefinition": "Crocodylinae (Cuvier 1807). At present, this would be redundant with Crocodylus.\n\nCrocodylus niloticus and all crocodylians closer to it than to Osteolaemus tetraspis.",
-            "internalSpecifiers": [],
-            "externalSpecifiers": [],
-            "curatorComments": "Not illustrated in fig 1.",
-            "pso:holdsStatusInTime": [
+            "internalSpecifiers": [
                 {
-                    "@type": "http://purl.org/spar/pso/StatusInTime",
-                    "pso:withStatus": {
-                        "@id": "pso:draft"
-                    },
-                    "tvc:atTime": {
-                        "timeinterval:hasIntervalStartDate": "2018-06-08T21:00:52.083Z"
-                    }
+                    "referencesTaxonomicUnits": [
+                        {
+                            "scientificNames": [
+                                {
+                                    "scientificName": "Crocodylus niloticus"
+                                }
+                            ]
+                        }
+                    ]
                 }
-            ]
+            ],
+            "externalSpecifiers": [
+                {
+                    "referencesTaxonomicUnits": [
+                        {
+                            "scientificNames": [
+                                {
+                                    "scientificName": "Osteolaemus tetraspis"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "curatorComments": "Not illustrated in fig 1."
         },
         {
             "label": "Gavialidae (alt)",
             "cladeDefinition": "Gavialidae (Adams 1854). In a morphological context, Gavialidae would be redundant with Gavialis gangeticus.\n\nLast common ancestor of Gavialis gangeticus and Tomistoma schlegelii and all of its descendents.",
-            "internalSpecifiers": [],
-            "externalSpecifiers": [],
-            "curatorComments": "Not illustrated in fig 1.",
-            "pso:holdsStatusInTime": [
+            "internalSpecifiers": [
                 {
-                    "@type": "http://purl.org/spar/pso/StatusInTime",
-                    "pso:withStatus": {
-                        "@id": "pso:draft"
-                    },
-                    "tvc:atTime": {
-                        "timeinterval:hasIntervalStartDate": "2018-06-08T21:00:49.809Z"
-                    }
+                    "referencesTaxonomicUnits": [
+                        {
+                            "scientificNames": [
+                                {
+                                    "scientificName": "Tomistoma schlegelii"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "referencesTaxonomicUnits": [
+                        {
+                            "scientificNames": [
+                                {
+                                    "scientificName": "Gavialis gangeticus"
+                                }
+                            ]
+                        }
+                    ]
                 }
-            ]
+            ],
+            "externalSpecifiers": [],
+            "curatorComments": "Not illustrated in fig 1."
         },
         {
             "label": "Tomistominae (alt)",
             "cladeDefinition": "Tomistominae (Kälin 1955).\n\nTomistoma schlegelii and all crocodylians closer to it than to Gavialis gangeticus.",
-            "internalSpecifiers": [],
-            "externalSpecifiers": [],
-            "curatorComments": "Not illustrated in fig 1.",
-            "pso:holdsStatusInTime": [
+            "internalSpecifiers": [
                 {
-                    "@type": "http://purl.org/spar/pso/StatusInTime",
-                    "pso:withStatus": {
-                        "@id": "pso:draft"
-                    },
-                    "tvc:atTime": {
-                        "timeinterval:hasIntervalStartDate": "2018-06-08T21:00:46.976Z"
-                    }
+                    "referencesTaxonomicUnits": [
+                        {
+                            "scientificNames": [
+                                {
+                                    "scientificName": "Tomistoma schlegelii"
+                                }
+                            ]
+                        }
+                    ]
                 }
-            ]
+            ],
+            "externalSpecifiers": [
+                {
+                    "referencesTaxonomicUnits": [
+                        {
+                            "scientificNames": [
+                                {
+                                    "scientificName": "Gavialis gangeticus"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "curatorComments": "Not illustrated in fig 1."
         },
         {
             "label": "Gavialinae (alt)",
             "cladeDefinition": "Gavialinae (Nopcsa 1923).\n\nGavialis gangeticus and all crocodylians closer to it than to Tomistoma schlegelii.",
-            "internalSpecifiers": [],
-            "externalSpecifiers": [],
-            "curatorComments": "Not illustrated in fig 1",
-            "pso:holdsStatusInTime": [
+            "internalSpecifiers": [
                 {
-                    "@type": "http://purl.org/spar/pso/StatusInTime",
-                    "pso:withStatus": {
-                        "@id": "pso:draft"
-                    },
-                    "tvc:atTime": {
-                        "timeinterval:hasIntervalStartDate": "2018-06-08T21:00:43.628Z"
-                    }
+                    "referencesTaxonomicUnits": [
+                        {
+                            "scientificNames": [
+                                {
+                                    "scientificName": "Gavialis gangeticus"
+                                }
+                            ]
+                        }
+                    ]
                 }
-            ]
+            ],
+            "externalSpecifiers": [
+                {
+                    "referencesTaxonomicUnits": [
+                        {
+                            "scientificNames": [
+                                {
+                                    "scientificName": "Tomistoma schlegelii"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "curatorComments": "Not illustrated in fig 1"
         }
     ],
-    "title": "Phylogenetic Approaches Toward Crocodylian History",
-    "@context": "http://ggvaidya.com/curation-tool/json/phyx.json"
+    "title": "Phylogenetic Approaches Toward Crocodylian History"
 }
