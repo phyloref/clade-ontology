@@ -144,11 +144,24 @@ if '@context' not in doc:
     path_to_this_script = os.path.dirname(os.path.realpath(__file__))
     doc['@context'] = path_to_this_script + '/paper-context.json'
 
+# Add type declarations so that jphyloref can process timeintervals correctly.
+output = [ doc ]
+
+output.append({
+    '@id': 'http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate',
+    '@type': { '@id': 'http://www.w3.org/2002/07/owl#DatatypeProperty' }
+})
+
+output.append({
+    '@id': 'http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate',
+    '@type': { '@id': 'http://www.w3.org/2002/07/owl#DatatypeProperty' }
+})
+
 # json.dump() has issues with documents that are partially str and partially
 # unicode. Instead, we dump it to a string, make sure Python knows to treat
 # that string as unicode, and then write it out.
 
-output_as_json = json.dumps(doc, indent=4, sort_keys=True, ensure_ascii=False)
+output_as_json = json.dumps(output, indent=4, sort_keys=True, ensure_ascii=False)
 if isinstance(output_as_json, str):
     try:
         unicode = str

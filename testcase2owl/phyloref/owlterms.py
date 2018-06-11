@@ -17,8 +17,9 @@ OWL_IMPORTS = [
     "http://purl.obolibrary.org/obo/bco.owl",
         # Contains OWL definitions for Darwin Core terms
         # TODO remove once we've implemented these properties ourselves.
-    "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl",
+    # "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl",
         # OWL definitions for time intervals; used by the Publication Status Ontology
+        # TODO cannot be imported as they cause JFact++ 1.2.4 to report an inconsistent ontology
     # "http://www.essepuntato.it/2012/04/tvc",
         # OWL definitions for tvc:atTime, which links publication statuses with
         # time intervals
