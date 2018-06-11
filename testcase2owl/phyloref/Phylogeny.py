@@ -140,6 +140,9 @@ class Phylogeny(object):
                     for closeMatch in node_label.annotations.findall(name='closeMatch'):
                         node_label_strs.append(closeMatch.value)
 
+            # Record all the node labels.
+            node.labels = node_label_strs
+
             # Create taxonomic units for all the node labels.
             for node_label_str in node_label_strs:
                 if node_label_str.startswith("expected "):
@@ -216,6 +219,7 @@ class Node(Identified):
         # be created and managed by Phylogeny classes.
 
         self.in_phylogeny = None
+        self.labels = []
         self.taxonomic_units = []
         self.children = []
         self.siblings = []
@@ -235,6 +239,9 @@ class Node(Identified):
             'children': self.children,
             'siblings': self.siblings
         }
+
+        if self.labels:
+            jsonld['labels'] = self.labels
 
         if self.in_phylogeny is not None:
             jsonld['inPhylogeny'] = self.in_phylogeny
