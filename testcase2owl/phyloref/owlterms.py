@@ -14,9 +14,19 @@ OWL_IMPORTS = [
         # Will become "http://vocab.phyloref.org/phyloref/testcase.owl",
     "https://raw.githubusercontent.com/phyloref/phyloref-ontology/master/phyloref.owl",
         # Will become "http://phyloinformatics.net/phyloref.owl"
-    "http://purl.obolibrary.org/obo/bco.owl"
+    "http://purl.obolibrary.org/obo/bco.owl",
         # Contains OWL definitions for Darwin Core terms
         # TODO remove once we've implemented these properties ourselves.
+    "http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl",
+        # OWL definitions for time intervals; used by the Publication Status Ontology
+    # "http://www.essepuntato.it/2012/04/tvc",
+        # OWL definitions for tvc:atTime, which links publication statuses with
+        # time intervals
+        # TODO: cannot be imported as one of its prerequisties don't work
+    # "http://purl.org/spar/pso",
+        # Publication Status Ontology: used to assign publication statuses to
+        # individual phyloreferences
+        # TODO: cannot be imported as one of its prerequisites don't work
 ]
 
 # CDAO terms
