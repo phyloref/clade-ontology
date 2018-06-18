@@ -25,6 +25,9 @@ class Phyloreference(object):
         # Information on matches among specifiers
         self.unmatched_specifiers = set()
 
+        # Information on the status of each phyloreference
+        self.holds_status_in_time = []
+
         # Additional classes
         self.additional_classes = []
 
@@ -87,6 +90,12 @@ class Phyloreference(object):
                 external_specifier.id = '{0}_specifier{1}'.format(phyloref_id, phyloref.count_specifiers)
                 phyloref.external_specifiers_list.append(external_specifier)
 
+        if 'pso:holdsStatusInTime' in json:
+            # For now, we store the status information verbatim and restore it on export
+            # TODO: add an additional class to model status information once we're sure 
+            # it works for our needs.
+            phyloref.holds_status_in_time = json['pso:holdsStatusInTime']
+
         return phyloref
 
     def export_to_jsonld_document(self):
@@ -100,6 +109,7 @@ class Phyloreference(object):
         doc['@type'] = types
         doc['label'] = self.label
         doc['cladeDefinition'] = self.clade_definition
+        doc['pso:holdsStatusInTime'] = self.holds_status_in_time
 
         # Write out all specifiers.
         doc['hasInternalSpecifier'] = [specifier.as_jsonld() for specifier in self.internal_specifiers_list]

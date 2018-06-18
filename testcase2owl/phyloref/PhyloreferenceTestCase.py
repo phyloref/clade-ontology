@@ -40,8 +40,12 @@ class PhyloreferenceTestCase(object):
         else:
             property.append(dict[key])
 
-    def __init__(self, id):
-        """ Create a test case for a given identifier. """
+    def __init__(self, id="#"):
+        """ Create a test case for a given identifier.
+        If no identifier is provided, we default to creating relative paths, which in JSON-LD will be converted
+        into absolute paths using the base IRI (see https://json-ld.org/spec/latest/json-ld/#iris).
+        """
+
         self.id = id
 
         # Make sure the identifier ends with '#' or '/', since we're going to extend it to build identifiers
@@ -54,6 +58,7 @@ class PhyloreferenceTestCase(object):
         self.owl_imports = owlterms.OWL_IMPORTS
 
         # Metadata
+        self.context = []
         self.citation = []
         self.url = []
         self.year = []
@@ -68,13 +73,15 @@ class PhyloreferenceTestCase(object):
     @staticmethod
     def load_from_document(doc):
         """ Load a test case from a JSON file. """
-        if '@id' not in doc:
-            raise PhyloreferenceTestCase.TestCaseException("Document does not contain required key '@id'")
 
-        testCase = PhyloreferenceTestCase(doc['@id'])
+        if '@id' in doc:
+            testCase = PhyloreferenceTestCase(doc['@id'])
+        else:
+            testCase = PhyloreferenceTestCase()
 
         # Load document-level properties
         PhyloreferenceTestCase.append_extend_or_ignore(testCase.type, doc, '@type')
+        PhyloreferenceTestCase.append_extend_or_ignore(testCase.context, doc, '@context')
         PhyloreferenceTestCase.append_extend_or_ignore(testCase.owl_imports, doc, 'owl:imports')
 
         PhyloreferenceTestCase.append_extend_or_ignore(testCase.citation, doc, 'citation')
@@ -123,6 +130,7 @@ class PhyloreferenceTestCase(object):
             elif len(var) > 1:
                 doc[prop] = var
 
+        export_unless_blank('@context', self.context)
         export_unless_blank('citation', self.citation)
         export_unless_blank('url', self.url)
         export_unless_blank('year', self.year)
