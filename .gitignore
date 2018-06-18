@@ -1,3 +1,10 @@
+# Ignore files produced by the test suite
+phyx/*/paper_as_owl.json
+phyx/*/paper.owl
+
+# Ignore files produced by pytest
+.pytest_cache/
+
 # Ignore Mac-specific files
 .DS_Store
 
