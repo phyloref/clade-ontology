@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """
-testcase2owl.py: Converts a Phyloreference curated test case into a 
+phyx2owl.py: Converts a Phyloreference curated test case into a
 JSON-LD file with node information. It carries out two conversions:
 
  1. Converts all phylogenies into a node-based representation in OWL,
