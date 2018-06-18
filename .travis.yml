@@ -9,4 +9,4 @@ install:
 # command to run tests
 script:
   - cd testcase2owl; python -m pytest; cd ..
-  - travis_wait 40 py.test ./tests
+  - travis_wait 60 py.test ./tests
