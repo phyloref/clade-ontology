@@ -32,10 +32,10 @@ def pytest_generate_tests(metafunc):
             [phylorefs_path + "/" + path + "/paper.json" for path in dirs]
         )
 
-    if "labeled_json" in metafunc.fixturenames:
+    if "paper_as_owl_json" in metafunc.fixturenames:
         metafunc.parametrize(
-            "labeled_json",
-            [phylorefs_path + "/" + path + "/labeled.json" for path in dirs]
+            "paper_as_owl_json",
+            [phylorefs_path + "/" + path + "/paper_as_owl.json" for path in dirs]
         )
     
     if "paper_owl" in metafunc.fixturenames:
