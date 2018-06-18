@@ -8,5 +8,5 @@ install:
 
 # command to run tests
 script:
-  - cd testcase2owl; python -m pytest; cd ..
+  - cd phyx2owl; python -m pytest; cd ..
   - travis_wait 40 py.test ./tests
