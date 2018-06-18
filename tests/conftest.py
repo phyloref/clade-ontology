@@ -8,7 +8,7 @@ import pytest
 import os
 import fnmatch
 
-phylorefs_path = "testcases"
+phylorefs_path = "phyx"
 
 def pytest_generate_tests(metafunc):
     """ 
