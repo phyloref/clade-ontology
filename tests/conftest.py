@@ -7,10 +7,11 @@ that need processing.
 import pytest
 import os
 import fnmatch
+import glob
 
 phyloref_paths = [
-    "phyx",
-    "private"
+    "private/*/*.json",
+    "phyx/*/paper.json"
 ]
 
 def pytest_generate_tests(metafunc):
@@ -19,31 +20,20 @@ def pytest_generate_tests(metafunc):
     curated files to read.
     """
 
+    files = []
+
     for path in phyloref_paths:
-        dirs.extend([d for d in os.listdir(path) if 
-            os.path.isdir(path + "/" + d) and 
-            d[0] != '.' and 
-                # Ignore Unix hidden folders
-            d != 'lib' and
-                # Ignore the 'lib' directory
-            os.path.isfile(path + "/" + d + "/paper.json")
-                # Only include directories containing 'paper.json'
+        # Look for files that match the glob patterns provided above.
+        files.extend([f for f in glob.glob(path) if 
+            # The matched file should be a file
+            os.path.isfile(f) and
+            # The matched file shouldn't be an '..._as_owl.json' JSON-LD file.
+            not f.endswith('_as_owl.json')
         ])
 
     if "paper_json" in metafunc.fixturenames:
         metafunc.parametrize(
             "paper_json",
-            [path + "/" + path + "/paper.json" for path in dirs]
+            files
         )
 
-    if "paper_as_owl_json" in metafunc.fixturenames:
-        metafunc.parametrize(
-            "paper_as_owl_json",
-            [path + "/" + path + "/paper_as_owl.json" for path in dirs]
-        )
-    
-    if "paper_owl" in metafunc.fixturenames:
-        metafunc.parametrize(
-            "paper_owl",
-            [path + "/" + path + "/paper.owl" for path in dirs]
-        )

@@ -10,29 +10,29 @@ import warnings
 
 @pytest.mark.json
 def test_json_to_owl(paper_json):
-    """ Convert paper.json file to paper.owl via paper_as_owl.json. """
-    path = paper_json[:-11]
+    """ Convert input JSON file to OWL file via `[filename]_as_owl.json`. """
 
-    # Switch to the path of the JSON file.
-    current_path = os.getcwd()
-    os.chdir(path)
+    paper_as_owl_json = os.path.splitext(paper_json)[0] + '_as_owl.json'
+    paper_owl = os.path.splitext(paper_json)[0] + '.owl'
 
     # Run phyx2owl.py and rdfpipe; in case of exceptions or non-zero exit values,
     # report any error as a failed test.
     try:
-        output_str = subprocess.check_output('python ../../phyx2owl/phyx2owl.py paper.json -o paper_as_owl.json',
+        output_str = subprocess.check_output(
+            'python ./phyx2owl/phyx2owl.py "%s" -o "%s"' % (paper_json, paper_as_owl_json),
             shell=True,
             stderr=subprocess.STDOUT
         ).decode('utf-8')
 
         # Will only be run if phyx2owl.py returned zero!
-        assert os.system('rdfpipe -i json-ld -o xml paper_as_owl.json > paper.owl') == 0
+        # rdfpipe doesn't support arguments that contain spaces, so
+
+        assert 0 == os.system(
+            'rdfpipe -i json-ld -o xml - < "%s" > "%s"' % (paper_as_owl_json, paper_owl)
+        )
 
     except subprocess.CalledProcessError as err:
         output_str = u'ERROR: ' + err.output.decode('utf-8')
-
-    finally:
-        os.chdir(current_path)
 
     # Did phyx2owl report any errors?
     if 'ERROR' in output_str:
