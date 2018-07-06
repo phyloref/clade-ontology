@@ -9,10 +9,8 @@ import os
 import fnmatch
 import glob
 
-phyloref_paths = [
-    "private/*/*.json",
-    "phyx/*/paper.json"
-]
+# All Phyx files should be in the 'phyx/' directory.
+PHYLOREF_PATH = 'phyx/'
 
 def pytest_generate_tests(metafunc):
     """ 
@@ -20,20 +18,19 @@ def pytest_generate_tests(metafunc):
     curated files to read.
     """
 
-    files = []
+    paper_json_filenames = []
 
-    for path in phyloref_paths:
-        # Look for files that match the glob patterns provided above.
-        files.extend([f for f in glob.glob(path) if 
-            # The matched file should be a file
-            os.path.isfile(f) and
-            # The matched file shouldn't be an '..._as_owl.json' JSON-LD file.
-            not f.endswith('_as_owl.json')
-        ])
+    # Recurse through all the files in the PHYLOREF_PATH
+    for root, subdirs, files in os.walk(PHYLOREF_PATH):
+        for filename in files:
+            # Check if it's a JSON file but not an '_as_owl.json' file.
+            if filename.endswith('.json') and not filename.endswith('_as_owl.json'):
+                # Add it to the list.
+                paper_json_filenames.append(os.path.join(root, filename))
 
     if "paper_json" in metafunc.fixturenames:
         metafunc.parametrize(
             "paper_json",
-            files
+            paper_json_filenames 
         )
 
