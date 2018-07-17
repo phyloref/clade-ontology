@@ -1,25 +1,40 @@
-# Phyloreferencing Curation Workflow
-The Phyloreferencing curation workflow serves three main purposes:
+# Clade Ontology
 
-1. It provides a set of exemplar curated phyloreferences in JSON and OWL.
-2. It provides a test space for trying different approaches to generating phyloreferences from JSON to OWL, although these will be moved into their own repositories if they prove to be successes.
-3. It provides a test suite of phyloreferences along with expected resolved nodes, allowing reasoning to be continually tested as ontologies and software tools are updated.
+The Clade Ontology is an ontology of exemplar phyloreferences curated from peer-reviewed publications. Phyloreferences in this ontology include their verbatim clade definition and the phylogeny upon which they were initially defined. The ontology therefore acts as both a catalogue of computable clade definitions as well as a test suite of phyloreferences that can be tested to determine if each phyloreference resolves as expected. This ontology is expressed in the [Web Ontology Language (OWL)]. The executable software code in this repository is available for reuse under the terms of the [MIT license].
 
-[![Build Status](https://travis-ci.org/phyloref/curation-workflow.svg?branch=master)](https://travis-ci.org/phyloref/curation-workflow)
-
-## Currently curated phyloreferences
-
-| Curated paper | DOI | Phyloreferences | Status |
-|---------------|-----|-----------------|--------|
-| [Fisher et al, 2007](testcases/Fisher%20et%20al,%202007) | [doi](https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2#https://doi.org/10.1639/0007-2745%282007%29110%5B46%3APOTCWA%5D2.0.CO%3B2) | 11 phyloreferences | All resolved correctly, but one resolved to a different node from paper | 
-| [Hillis and Wilcox, 2005](testcases/Hillis%20and%20Wilcox,%202005) | [doi](https://doi.org/10.1016/j.ympev.2004.10.007) | 16 phyloreferences | All resolved correctly, but in two cases the correct resolution was no nodes |
+[![Build Status](https://travis-ci.org/phyloref/clade-ontology.svg?branch=master)](https://travis-ci.org/phyloref/clade-ontology)
 
 ## Executing phyloreferences as a test suite
 
-You can execute and test all phyloreferences by running `py.test` in the root directory
-of this project. We support two marks:
+To generate all OWL files and test all phyloreferences, you will need [pytest], which you can install by running `pip install -r requirements.txt`. Note that you will also need to have [Java] installed to test the phyloreferences.
 
- * `py.test -m json` executes the scripts to create OWL representations of the test suite.
-   This tests the content of the JSON file and ensures that they can be converted into OWL.
- * `py.test -m owl` reasons over the created OWL files and ensures that the expected nodes 
-   are correctly resolved by the phyloreferences.
+Once pytest and all other required libraries are installed, you can execute all tests by running `py.test tests/` in the root directory of this project. We support two optional marks:
+
+ * `py.test tests/ -m json` executes the scripts to create OWL representations of the test suite. This tests the content of the JSON file and ensures that they can be converted into OWL.
+ * `py.test tests/ -m owl` reasons over the created OWL files and ensures that the expected nodes are correctly resolved by the phyloreferences.
+
+## Data workflow
+
+Curated phyloreferences produced by the [Curation Tool] as Phyloreference eXchange (PHYX) files are currently stored in the [`phyx`] directory (see [Brochu 2003] as an example). When executed as a test suite, these files are converted into the Web Ontology Language (OWL) in the following steps:
+
+1. PHYX files are converted to JSON-LD files using the [`phyx2owl`] Python tool. This tool translate phylogenies stored in [the Newick format] into a series of statements describing individual nodes and their relationships, and translates phyloreferences into OWL class restrictions that describes the nodes they resolve to.
+2. The produced JSON-LD files can be transformed by any standards-compliant converter into OWL files. In the test suite, we use the  [`rdfpipe`] tool included in the [`rdflib`] Python library.
+3. Any compliant [OWL 2 DL reasoner] should be able to reason over this OWL file and provide information on which nodes each phyloreference resolved to. In the test suite, we use [`jphyloref`], a Java application that uses the [JFact++ OWL reasoner] to reason over input OWL files. `jphyloref` can also read the annotations that indicate where each phyloreference was expected to resolve on any of the included phylogenies, and test whether phyloreferences resolved to the expected nodes.
+
+We are currently working on a complete workflow that would allow us to [merge separate PHYX files into a single Clade Ontology] available as a single OWL file available for individual download. At the moment, therefore, OWL files need to be generated by running the test suite on your own computer.
+
+[Web Ontology Language (OWL)]: https://en.wikipedia.org/wiki/Web_Ontology_Language
+[MIT license]: ./LICENSE
+[pytest]: https://docs.pytest.org/
+[Java]: https://java.com/
+[Curation Tool]: https://github.com/phyloref/curation-tool
+[`phyx`]: ./phyx/
+[Brochu 2003]: ./phyx/Brochu%202003/paper.json
+[`phyx2owl`]: ./phyx2owl/
+[the Newick format]: https://en.wikipedia.org/wiki/Newick_format
+[`rdfpipe`]: http://rdflib.readthedocs.io/en/stable/apidocs/rdflib.tools.html#module-rdflib.tools.rdfpipe
+[`rdflib`]: http://rdflib.readthedocs.io/
+[OWL 2 DL reasoner]: https://www.w3.org/TR/2012/REC-owl2-direct-semantics-20121211/
+[`jphyloref`]: https://github.com/phyloref/jphyloref
+[JFact++ 1.2.4 OWL reasoner]: http://jfact.sourceforge.net/
+[merge separate PHYX files into a single Clade Ontology]: https://github.com/phyloref/clade-ontology/projects/3
