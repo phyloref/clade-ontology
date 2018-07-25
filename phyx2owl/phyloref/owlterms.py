@@ -12,8 +12,8 @@ owlterms.py: A list of OWL terms used in Phyloreferencing.
 OWL_IMPORTS = [
     "https://raw.githubusercontent.com/phyloref/curation-workflow/develop/ontologies/phyloref_testcase.owl",
         # Will become "http://vocab.phyloref.org/phyloref/testcase.owl",
-    "https://raw.githubusercontent.com/phyloref/phyloref-ontology/master/phyloref.owl",
-        # Will become "http://phyloinformatics.net/phyloref.owl"
+    "http://ontology.phyloref.org/phyloref.owl",
+        # Contains OWL definitions for defining Phyloreferences
     "http://purl.obolibrary.org/obo/bco.owl",
         # Contains OWL definitions for Darwin Core terms
         # TODO remove once we've implemented these properties ourselves.
@@ -39,12 +39,12 @@ CDAO_TAXONOMIC_UNIT = "obo:CDAO_0000138"
 BASE_URL = 'http://vocab.phyloref.org/phyloref/'
 
 # Phyloreference-related terms
-PHYLOREFERENCE = "http://phyloinformatics.net/phyloref.owl#Phyloreference"
+PHYLOREFERENCE = "http://ontology.phyloref.org/phyloref.owl#Phyloreference"
 PHYLOREFERENCE_TEST_CASE = "testcase:PhyloreferenceTestCase"
 PHYLOREFERENCE_TEST_PHYLOGENY_GROUP = "testcase:PhyloreferenceTestPhylogenyGroup"
 PHYLOREFERENCE_PHYLOGENY = "testcase:PhyloreferenceTestPhylogeny"
 
-PHYLOREF_HAS_SIBLING = "http://phyloinformatics.net/phyloref.owl#has_Sibling"
+PHYLOREF_HAS_SIBLING = "http://ontology.phyloref.org/phyloref.owl#has_Sibling"
 
 # TU Match-related terms
 PHYLOREF_TAXONOMIC_UNIT_MATCH = "testcase:TUMatch"
