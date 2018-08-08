@@ -6,4 +6,4 @@ were released under the [LGPL] license and are distributed here under that licen
 
 [FaCT++]: https://bitbucket.org/dtsarkov/factplusplus
 [its Google Code repository]: https://code.google.com/archive/p/factplusplus/downloads
-[LGPL]: ./licensing/lgpl-1.2.txt
+[LGPL]: ./licensing/lgpl-2.1.txt
