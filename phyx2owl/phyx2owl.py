@@ -140,9 +140,10 @@ doc = testCase.export_to_jsonld_document()
 os.chdir(current_working_directory)
 
 # Step 4. Write the paper back out again.
+
+# Include a '@context' if one is missing.
 if '@context' not in doc:
-    path_to_this_script = os.path.dirname(os.path.realpath(__file__))
-    doc['@context'] = path_to_this_script + '/paper-context.json'
+    doc['@context'] = 'https://www.phyloref.org/curation-tool/json/phyx.json'
 
 # Add type declarations so that jphyloref can process timeintervals correctly.
 output = [ doc ]
