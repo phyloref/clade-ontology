@@ -5,6 +5,8 @@ python:
 # command to install dependencies
 install:
   - pip install -r requirements.txt
+  # Download FaCT++ reasoner native libraries
+  - bash ./jphyloref/lib/download_factpp_native_lib.sh
 
 # command to run tests
 script:
