@@ -51,7 +51,7 @@ def test_owl_to_rdf(paper_owl):
     try:
         os.chdir(path)
 
-        assert os.system('java "-Djava.library.path=../../jphyloref/FaCT++-v1.5.2/64bit/" -jar ../../jphyloref/jphyloref.jar test paper.owl --reasoner fact++') == 0
+        assert os.system('java "-Djava.library.path=../../jphyloref/lib/" -jar ../../jphyloref/jphyloref.jar test paper.owl --reasoner fact++') == 0
 
     finally:
         os.chdir(current_path)
