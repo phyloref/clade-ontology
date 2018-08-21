@@ -6,7 +6,7 @@ python:
 install:
   - pip install -r requirements.txt
   # Download FaCT++ reasoner native libraries and use them.
-  - bash ./jphyloref/lib/download_factpp_native_lib.sh
+  - wget -O - https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/factplusplus/FaCTpp-linux-v1.5.2.tgz | tar zxf - --strip-components=2 -C jphyloref/lib "FaCT++-linux-v1.5.2/64bit/libFaCTPlusPlusJNI.so"
   - export JVM_ARGS="-Djava.library.path=jphyloref/lib/"
   - export JPHYLOREF_ARGS="--reasoner fact++"
 
