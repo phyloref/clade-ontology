@@ -5,13 +5,12 @@ python:
 # command to install dependencies
 install:
   - pip install -r requirements.txt
-  # Download FaCT++ reasoner native libraries
+  # Download FaCT++ reasoner native libraries and use them.
   - bash ./jphyloref/lib/download_factpp_native_lib.sh
+  - export JVM_ARGS="-Djava.library.path=jphyloref/lib/"
+  - export JPHYLOREF_ARGS="--reasoner fact++"
 
 # command to run tests
 script:
   - cd phyx2owl; python -m pytest; cd ..
-  # Use the FaCT++ reasoner set up during 'install'.
-  - export JVM_ARGS="-Djava.library.path=jphyloref/lib/"
-  - export JPHYLOREF_ARGS="--reasoner fact++"
   - travis_wait 40 py.test ./tests
