@@ -44,16 +44,19 @@ def test_json_to_owl(paper_json):
 
 @pytest.mark.owl
 def test_owl_to_rdf(paper_owl):
-    """ Test paper.owl using jphyloref. """
-    path = paper_owl[:-10]
+    """ Test paper.owl using JPhyloRef. """
 
-    current_path = os.getcwd()
-    try:
-        os.chdir(path)
+    # Check whether arguments are provided to the JVM or to JPhyloRef.
+    JVM_ARGS = os.getenv('JVM_ARGS', '')
+    JPHYLOREF_ARGS = os.getenv('JPHYLOREF_ARGS', '--reasoner jfact')
+        # TODO we don't need to specify a reasoner once
+        # https://github.com/phyloref/jphyloref/pull/23 has been merged.
 
-        assert os.system('java "-Djava.library.path=../../jphyloref/lib/" -jar ../../jphyloref/jphyloref.jar test paper.owl --reasoner fact++') == 0
-
-    finally:
-        os.chdir(current_path)
-
-
+    # Execute JPhyloRef to test the provided filename.
+    assert os.system(
+        'java {0} -jar jphyloref/jphyloref.jar test "{1}" {2}'.format(
+            JVM_ARGS,
+            paper_owl,
+            JPHYLOREF_ARGS
+        )
+    ) == 0

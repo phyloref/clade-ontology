@@ -11,4 +11,7 @@ install:
 # command to run tests
 script:
   - cd phyx2owl; python -m pytest; cd ..
+  # Use the FaCT++ reasoner set up during 'install'.
+  - export JVM_ARGS="-Djava.library.path=jphyloref/lib/"
+  - export JPHYLOREF_ARGS="--reasoner fact++"
   - travis_wait 40 py.test ./tests
