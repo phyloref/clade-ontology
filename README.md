@@ -8,6 +8,11 @@ The Clade Ontology is an ontology of exemplar phyloreferences curated from peer-
 
 To generate all OWL files and test all phyloreferences, you will need [pytest], which you can install by running `pip install -r requirements.txt`. Note that you will also need to have [Java] installed to test the phyloreferences.
 
+You can configure testing by setting one or more of the following environmental variables:
+
+ * `JVM_ARGS` contains arguments that are passed to the Java Virtual Machine (i.e. `java $JVM_ARGS -jar ...`). You can use this to set available memory (e.g. `-Xmx12G`) or a directory containing native libraries (e.g. `-Djava.library.path=jphyloref/lib/`).
+ * `JPHYLOREF_ARGS` contains arguments that are passed to JPhyloRef (i.e. `java -jar jphyloref.jar test file.owl $JPHYLOREF_ARGS`). You can use this to set the reasoner (e.g. `--reasoner fact++`).
+
 Once pytest and all other required libraries are installed, you can execute all tests by running `py.test tests/` in the root directory of this project. We support two optional marks:
 
  * `py.test tests/ -m json` executes the scripts to create OWL representations of the test suite. This tests the content of the JSON file and ensures that they can be converted into OWL.

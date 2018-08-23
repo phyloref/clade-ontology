@@ -8,6 +8,9 @@ phyx/*/paper.owl
 # Ignore Mac-specific files
 .DS_Store
 
+# Ignore libraries installed locally for JPhyloRef
+jphyloref/lib/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
