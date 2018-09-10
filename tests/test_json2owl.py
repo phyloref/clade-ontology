@@ -45,7 +45,7 @@ def test_json_to_owl(paper_json):
         # rdfpipe doesn't support arguments that contain spaces, so
 
         assert 0 == os.system(
-            'rdfpipe -i json-ld -o xml - <"%s" >"%s"' % (paper_as_owl_json, paper_owl)
+            'rdfpipe -i json-ld -o xml - < "%s" > "%s"' % (paper_as_owl_json, paper_owl)
         )
 
     except subprocess.CalledProcessError as err:
@@ -60,7 +60,7 @@ def test_json_to_owl(paper_json):
         warnings.warn(u"phyx2owl.py reported warnings: " + output_str)
 
 @pytest.mark.owl
-def test_owl_to_rdf(paper_owl):
+def test_owl_to_rdf(paper_json):
     """ Test paper.owl using JPhyloRef. """
 
     # Check whether arguments are provided to the JVM or to JPhyloRef.
@@ -68,6 +68,9 @@ def test_owl_to_rdf(paper_owl):
     JPHYLOREF_ARGS = os.getenv('JPHYLOREF_ARGS', '--reasoner jfact')
         # TODO we don't need to specify a reasoner once
         # https://github.com/phyloref/jphyloref/pull/23 has been merged.
+
+    # Calculate paper_owl
+    paper_owl = os.path.splitext(paper_json)[0] + '.owl'
 
     # Execute JPhyloRef to test the provided filename.
     assert os.system(
