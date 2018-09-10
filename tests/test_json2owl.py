@@ -45,7 +45,7 @@ def test_json_to_owl(paper_json):
         # rdfpipe doesn't support arguments that contain spaces, so
 
         assert 0 == os.system(
-            'rdfpipe -i json-ld -o xml "%s" > "%s"' % (paper_as_owl_json, paper_owl)
+            'rdfpipe -i json-ld -o xml - <"%s" >"%s"' % (paper_as_owl_json, paper_owl)
         )
 
     except subprocess.CalledProcessError as err:
