@@ -72,6 +72,12 @@ def test_owl_to_rdf(paper_json):
     # Calculate paper_owl
     paper_owl = os.path.splitext(paper_json)[0] + '.owl'
 
+    if not os.path.isfile(paper_owl):
+        warnings.warn('Expected "%s" but file not found: this is likely because OWL generation failed' % (
+            paper_owl
+        ))
+        return
+
     # Execute JPhyloRef to test the provided filename.
     assert os.system(
         'java {0} -jar jphyloref/jphyloref.jar test "{1}" {2}'.format(
