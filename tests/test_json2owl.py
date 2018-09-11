@@ -60,20 +60,19 @@ def test_json_to_owl(paper_json):
         warnings.warn(u"phyx2owl.py reported warnings: " + output_str)
 
 @pytest.mark.owl
-def test_owl_to_rdf(paper_json):
+def test_phylorefs_in_owl(paper_json):
     """ Test paper.owl using JPhyloRef. """
 
     # Check whether arguments are provided to the JVM or to JPhyloRef.
     JVM_ARGS = os.getenv('JVM_ARGS', '')
-    JPHYLOREF_ARGS = os.getenv('JPHYLOREF_ARGS', '--reasoner jfact')
-        # TODO we don't need to specify a reasoner once
-        # https://github.com/phyloref/jphyloref/pull/23 has been merged.
+    JPHYLOREF_ARGS = os.getenv('JPHYLOREF_ARGS', '')
 
     # Calculate paper_owl
     paper_owl = os.path.splitext(paper_json)[0] + '.owl'
 
+    # If paper_owl doesn't exist, we can't test the OWL file here, so skip this test.
     if not os.path.isfile(paper_owl):
-        warnings.warn('Expected "%s" but file not found: this is likely because OWL generation failed' % (
+        pytest.skip('Expected OWL file "%s" but file not found: this is likely because OWL generation failed' % (
             paper_owl
         ))
         return
