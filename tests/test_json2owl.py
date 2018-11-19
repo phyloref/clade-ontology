@@ -33,7 +33,7 @@ def test_json_to_owl(paper_json):
     # report any error as a failed test.
     try:
         output_str = subprocess.check_output(
-            'python ./phyx2owl/phyx2owl.py "%s" -o "%s"' % (paper_json, paper_as_owl_json),
+            'node ./curation-tool/js/phyx2jsonld.js "%s" -o "%s"' % (paper_json, paper_as_owl_json),
             shell=True,
             stderr=subprocess.STDOUT
         ).decode('utf-8')
