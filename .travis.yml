@@ -1,12 +1,11 @@
 language: node_js
 node_js:
-  - "node"
+  - "11"
 
 # command to install dependencies
 install:
-  # Install Python requirements.
-  - pip install --user -r requirements.txt
-  # Install Curation Tool Javascript libraries.
+  # Install Javascript libraries.
+  - npm install
   - cd curation-tool; npm install; cd ..
   # Download FaCT++ reasoner native libraries and use them.
   - wget -O - https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/factplusplus/FaCTpp-linux-v1.5.2.tgz | tar zxf - --strip-components=2 -C jphyloref/lib "FaCT++-linux-v1.5.2/64bit/libFaCTPlusPlusJNI.so"
@@ -15,5 +14,4 @@ install:
 
 # command to run tests
 script:
-  - cd phyx2owl; python -m pytest; cd ..
-  - travis_wait 40 py.test ./tests --durations=0
+  - travis_wait 40 npm test
