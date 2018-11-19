@@ -1,10 +1,12 @@
-language: python
-python:
-  - "2.7"
+language: node_js
+node_js:
+  - "node"
 
 # command to install dependencies
 install:
   - pip install -r requirements.txt
+  # Install Curation Tool Javascript libraries.
+  - cd curation-tool; npm install; cd ..
   # Download FaCT++ reasoner native libraries and use them.
   - wget -O - https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/factplusplus/FaCTpp-linux-v1.5.2.tgz | tar zxf - --strip-components=2 -C jphyloref/lib "FaCT++-linux-v1.5.2/64bit/libFaCTPlusPlusJNI.so"
   - export JVM_ARGS="-Djava.library.path=jphyloref/lib/"
