@@ -69,15 +69,16 @@ describe('Test PHYX files in repository', function() {
               // Test using JPhyloRef.
               var args = [
                 '-jar', 'jphyloref/jphyloref.jar',
-                'test', '-'
+                'test', '-', '--jsonld'
               ];
               if('JVM_ARGS' in process.env) {
-                args.unshift(process.env.JVM_ARGS);
+                args = process.env.JVM_ARGS.split(/\s+/).concat(args);
               }
               if('JPHYLOREF_ARGS' in process.env) {
-                args.push(process.env.JPHYLOREF_ARGS);
+                args = args.concat(process.env.JPHYLOREF_ARGS.split(/\s+/));
               }
-              const stdout = child_process.execFileSync('java', args);
+              // console.log("args: " + args);
+              const stdout = child_process.execFileSync('java', args, { input: jsonld });
               const matches = /Testing complete:(\d+) successes, (\d+) failures, (\d+) failures marked TODO, (\d+) skipped./.exec(stdout);
               assert.isNotNull(matches, 'Testing complete line not found in STDOUT');
 
