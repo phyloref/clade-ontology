@@ -4,8 +4,8 @@ node_js:
 
 # command to install dependencies
 install:
-  - pip3 install -r requirements.txt
-  # Install Curation Tool Javascript libraries.
+  # Install Javascript libraries.
+  - npm install
   - cd curation-tool; npm install; cd ..
   # Download FaCT++ reasoner native libraries and use them.
   - wget -O - https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/factplusplus/FaCTpp-linux-v1.5.2.tgz | tar zxf - --strip-components=2 -C jphyloref/lib "FaCT++-linux-v1.5.2/64bit/libFaCTPlusPlusJNI.so"
@@ -14,5 +14,4 @@ install:
 
 # command to run tests
 script:
-  - cd phyx2owl; python3 -m pytest; cd ..
-  - travis_wait 40 python3 -m pytest ./tests --durations=0
+  - travis_wait 40 npm test
