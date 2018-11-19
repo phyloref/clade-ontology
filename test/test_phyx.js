@@ -65,6 +65,34 @@ describe('Test PHYX files in repository', function() {
               const phyx = data.toString('utf-8');
               const jsonld = phyx2jsonld.convertPHYXToJSONLD(phyx);
               assert.isNotEmpty(jsonld);
+
+              // Test using JPhyloRef.
+              var args = [
+                '-jar', 'jphyloref/jphyloref.jar',
+                'test', '-'
+              ];
+              if('JVM_ARGS' in process.env) {
+                args.unshift(process.env.JVM_ARGS);
+              }
+              if('JPHYLOREF_ARGS' in process.env) {
+                args.push(process.env.JPHYLOREF_ARGS);
+              }
+              const stdout = child_process.execFileSync('java', args);
+              const matches = /Testing complete:(\d+) successes, (\d+) failures, (\d+) failures marked TODO, (\d+) skipped./.exec(stdout);
+              assert.isNotNull(matches, 'Testing complete line not found in STDOUT');
+
+              const successes = matches[1];
+              const failures = matches[2];
+              const todos = matches[3];
+              const skipped = matched[4];
+
+              if(skipped > 0 || todos > 0 || successes == 0) {
+                this.skip();
+                return;
+              }
+
+              assert.notStrictEqual(failures, 0, failures + ' failures occurred in this file');
+              assert.isAbove(successes, 0, 'Only successes occured when testing this PHYX file');
             });
         });
     });
