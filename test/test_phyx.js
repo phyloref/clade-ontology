@@ -50,12 +50,12 @@ describe('Test PHYX files in repository', function() {
             });
 
             const data = fs.readFileSync(filename).slice(0, 9);
-            if(data.equals(Buffer.from([0, 'G', 'I', 'T', 'C', 'R', 'Y', 'P', 'T']))) {
-                it.skip('is git-crypt encrypted (' + data + ')');
+            if(data.equals(Buffer.from("\x00GITCRYPT"))) {
+                it.skip('is git-crypt encrypted');
                 return;
             }
 
-            it('is not git-crypt encrypted (' + data + ')');
+            it('is not git-crypt encrypted');
         });
     });
 });
