@@ -4,7 +4,11 @@
 
 const BASE_DIR = 'phyx/';
 
+// Our libraries.
+const phyx2jsonld = require('../curation-tool/js/phyx2jsonld.js');
+
 // Javascript libraries.
+const child_process = require('child_process');
 const fs = require('fs');
 const path = require('path');
 const chai = require('chai');
@@ -43,19 +47,25 @@ function findPHYXFiles(dirPath) {
 describe('Test PHYX files in repository', function() {
     findPHYXFiles(BASE_DIR).forEach(function(filename) {
         describe('PHYX file: ' + filename, function() {
-            const stats = fs.lstatSync(filename);
-
             it('is not empty', function() {
-                assert.notEqual(stats["size"], 0);
+              const stats = fs.lstatSync(filename);
+              assert.notEqual(stats["size"], 0);
             });
 
-            const data = fs.readFileSync(filename).slice(0, 9);
-            if(data.equals(Buffer.from("\x00GITCRYPT"))) {
-                it.skip('is git-crypt encrypted');
-                return;
-            }
+            it('can be converted into JSON-LD and reasoned over (skipped if git-crypt encrypted)', function() {
+              // Load the PHYX data. Check to see if it is git-crypt encrypted.
+              const data = fs.readFileSync(filename);
+              const gitcrypt = data.slice(0, 9);
+              if(gitcrypt.equals(Buffer.from("\x00GITCRYPT"))) {
+                  this.skip(); // Hopefully they will eventually let us write out a message here.
+                  return;
+              }
 
-            it('is not git-crypt encrypted');
+              // Read the PHYX data as 'UTF-8' and convert it into JSON-LD.
+              const phyx = data.toString('utf-8');
+              const jsonld = phyx2jsonld.convertPHYXToJSONLD(phyx);
+              assert.isNotEmpty(jsonld);
+            });
         });
     });
 });
