@@ -12,7 +12,7 @@ const assert = chai.assert;
 
 /*
  * Returns a list of PHYX files that we can test in the provided directory.
- * 
+ *
  * We use a simple flatMap to search for these files. Since flatMap isn't in
  * Node.js yet, I use a map to recursively find the files and then flatten it
  * using reduce() and concat().
@@ -44,25 +44,21 @@ describe('Test PHYX files in repository', function() {
     findPHYXFiles(BASE_DIR).forEach(function(filename) {
         describe('PHYX file: ' + filename, function() {
             const stats = fs.lstatSync(filename);
-            
+
             it('is not empty', function() {
                 assert.notEqual(stats["size"], 0);
             });
 
-            const readStream = fs.createReadStream(filename, {start: 0, end: 9});
-            var data;
-            while(null !== (data = readStream.read(9)));
-
-            if(data === "\x00GITCRYPT") {
-                it.skip('is git-crypt encrypted');
+            const data = fs.readFileSync(filename).slice(0, 9);
+            if(data.equals(Buffer.from([0, 'G', 'I', 'T', 'C', 'R', 'Y', 'P', 'T']))) {
+                it.skip('is git-crypt encrypted (' + data + ')');
                 return;
             }
 
-            it('is not git-crypt encrypted');
+            it('is not git-crypt encrypted (' + data + ')');
         });
     });
 });
 
 
 //  2. Skip files that start with "\x00GITCRYPT", which means they are Git encrypted.
-
