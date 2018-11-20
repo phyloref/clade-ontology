@@ -78,14 +78,14 @@ describe('Test PHYX files in repository', function() {
                 args = args.concat(process.env.JPHYLOREF_ARGS.split(/\s+/));
               }
               // console.log("args: " + args);
-              const stdout = child_process.execFileSync('java', args, { input: jsonld });
-              const matches = /Testing complete:(\d+) successes, (\d+) failures, (\d+) failures marked TODO, (\d+) skipped./.exec(stdout);
+              const child = child_process.spawnSync('java', args, { input: jsonld });
+              const matches = /Testing complete:(\d+) successes, (\d+) failures, (\d+) failures marked TODO, (\d+) skipped./.exec(child.stderr);
               assert.isNotNull(matches, 'Testing complete line not found in STDOUT');
 
               const successes = matches[1];
               const failures = matches[2];
               const todos = matches[3];
-              const skipped = matched[4];
+              const skipped = matches[4];
 
               if(skipped > 0 || todos > 0 || successes == 0) {
                 this.skip();
@@ -94,6 +94,10 @@ describe('Test PHYX files in repository', function() {
 
               assert.notStrictEqual(failures, 0, failures + ' failures occurred in this file');
               assert.isAbove(successes, 0, 'Only successes occured when testing this PHYX file');
+
+              // On the off chance that all of the above made sense but the exit code didn't,
+              // we'll check that here.
+              assert.equal(child.status, 0, 'Exit code from JPhyloRef was not zero');
             });
         });
     });
