@@ -52,56 +52,72 @@ describe('Test PHYX files in repository', function() {
               assert.notEqual(stats["size"], 0);
             });
 
-            it('can be converted into JSON-LD and reasoned over (skipped if git-crypt encrypted)', function() {
-              // Load the PHYX data. Check to see if it is git-crypt encrypted.
-              const data = fs.readFileSync(filename);
-              const gitcrypt = data.slice(0, 9);
-              if(gitcrypt.equals(Buffer.from("\x00GITCRYPT"))) {
-                  this.skip(); // Hopefully they will eventually let us write out a message here.
-                  return;
-              }
+            // Load the PHYX data. Check to see if it is git-crypt encrypted.
+            const data = fs.readFileSync(filename);
+            const gitcrypt = data.slice(0, 9);
+            if(gitcrypt.equals(Buffer.from("\x00GITCRYPT"))) {
+                it.skip('cannot test git-encrypted file');
+                return;
+            }
 
-              // Read the PHYX data as 'UTF-8' and convert it into JSON-LD.
-              const phyx = data.toString('utf-8');
-              const jsonld = phyx2jsonld.convertPHYXToJSONLD(phyx);
+            // Read the PHYX data as 'UTF-8' and convert it into JSON-LD.
+            const phyx = data.toString('utf-8');
+            var jsonld;
+            try {
+              jsonld = phyx2jsonld.convertPHYXToJSONLD(phyx);
+            } catch(ex) {
+              it('convertPHYXToJSONLD threw an exception', function() {
+                throw ex;
+              });
+              return;
+            }
+
+            it('produced JSON-LD is not empty', function() {
               assert.isNotEmpty(jsonld);
+            });
 
-              // Test using JPhyloRef.
-              var args = [
-                '-jar', 'jphyloref/jphyloref.jar',
-                'test', '-', '--jsonld'
-              ];
-              if('JVM_ARGS' in process.env) {
-                args = process.env.JVM_ARGS.split(/\s+/).concat(args);
-              }
-              if('JPHYLOREF_ARGS' in process.env) {
-                args = args.concat(process.env.JPHYLOREF_ARGS.split(/\s+/));
-              }
-              // console.log("args: " + args);
-              const child = child_process.spawnSync('java', args, { input: jsonld });
-              const matches = /Testing complete:(\d+) successes, (\d+) failures, (\d+) failures marked TODO, (\d+) skipped./.exec(child.stderr);
+            // Test using JPhyloRef.
+            var args = [
+              '-jar', 'jphyloref/jphyloref.jar',
+              'test', '-', '--jsonld'
+            ];
+            if('JVM_ARGS' in process.env) {
+              args = process.env.JVM_ARGS.split(/\s+/).concat(args);
+            }
+            if('JPHYLOREF_ARGS' in process.env) {
+              args = args.concat(process.env.JPHYLOREF_ARGS.split(/\s+/));
+            }
+            // console.log("args: " + args);
+            const child = child_process.spawnSync('java', args, { input: jsonld });
+            const matches = /Testing complete:(\d+) successes, (\d+) failures, (\d+) failures marked TODO, (\d+) skipped./.exec(child.stderr);
+
+            it('Testing test result line from JPhyloRef', function() {
               assert.isNotNull(matches, 'Testing complete line not found in STDOUT');
 
-              const successes = matches[1];
               const failures = matches[2];
-              const todos = matches[3];
-              const skipped = matches[4];
+              assert.equal(failures, 0, failures + ' failures occurred during testing');
+            });
 
-              if(skipped > 0 || todos > 0 || successes == 0) {
-                this.skip();
-                return;
-              }
+            const successes = matches[1];
+            const todos = matches[3];
+            const skipped = matches[4];
 
-              assert.notStrictEqual(failures, 0, failures + ' failures occurred in this file');
-              assert.isAbove(successes, 0, 'Only successes occured when testing this PHYX file');
+            if(todos > 0) {
+              it.skip(todos + ' phyloreferences were marked as TODO during testing.');
+              return;
+            }
 
-              // On the off chance that all of the above made sense but the exit code didn't,
-              // we'll check that here.
+            if(skipped > 0) {
+              it.skip(skipped + ' phyloreferences were skipped during testing.');
+              return;
+            }
+
+            // On the off chance that all of the above made sense but the exit code didn't,
+            // we'll check that here.
+            it('passed testing in JPhyloRef', function() {
               assert.equal(child.status, 0, 'Exit code from JPhyloRef was not zero');
+              assert.isAbove(successes, 0, 'No successes occurred during testing');
             });
         });
     });
 });
-
-
-//  2. Skip files that start with "\x00GITCRYPT", which means they are Git encrypted.
