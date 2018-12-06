@@ -166,7 +166,7 @@ let specifiers = [];
 for (let phyxFile of jsons) {
   for (let phyloref of phyxFile.phylorefs) {
     entityIndex += 1;
-    const jsonld = new phyx.PhylorefWrapper(phyloref).exportAsJSONLD(getIdentifier(entityIndex));
+    const jsonld = new phyx.PhylorefWrapper(phyloref).asJSONLD(getIdentifier(entityIndex));
 
     jsonld['@context'] = PHYX_CONTEXT_JSON;
     phylorefs.push(jsonld);
