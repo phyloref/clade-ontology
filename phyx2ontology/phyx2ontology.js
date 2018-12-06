@@ -174,12 +174,53 @@ for (let phyxFile of jsons) {
 }
 
 const phylogenies = [];
-for (var phyxFile of jsons) {
-  for (var phylogeny of phyxFile.phylogenies) {
+const tunitMatches = [];
+for (let phyxFile of jsons) {
+  for (let phylogeny of phyxFile.phylogenies) {
     entityIndex += 1;
+    const phylogenyAsJSONLD = new phyx.PhylogenyWrapper(phylogeny).asJSONLD(getIdentifier(entityIndex));
 
-    // TODO: Add phylogeny, nodes and taxonomic units.
-    // TODO: Add matching to *all* specifiers.
+    phylogenyAsJSONLD['@context'] = PHYX_CONTEXT_JSON;
+    phylogenies.push(phylogenyAsJSONLD);
+  }
+}
+
+for(let phyloref of phylorefs) {
+  let specifiers = [];
+  if (hasOwnProperty(phyloref, 'internalSpecifiers')) specifiers = phyloref.internalSpecifiers;
+  if (hasOwnProperty(phyloref, 'externalSpecifiers')) specifiers = specifiers.concat(phyloref.externalSpecifiers);
+
+  for(let specifier of specifiers) {
+    let countMatchedNodes = 0;
+
+    if (hasOwnProperty(specifier, 'referencesTaxonomicUnits')) {
+      for(let specifierTU of specifier.referencesTaxonomicUnits) {
+
+        for(let phylogenyAsJSONLD of phylogenies) {
+          for(let node of phylogenyAsJSONLD.nodes) {
+            if (!hasOwnProperty(node, 'representsTaxonomicUnits')) continue;
+
+            for(let nodeTU of node.representsTaxonomicUnits) {
+              const matcher = new phyx.TaxonomicUnitMatcher(specifierTU, nodeTU);
+              if (matcher.matched) {
+                entityIndex += 1;
+                const tuMatchAsJSONLD = matcher.asJSONLD(getIdentifier(entityIndex));
+
+                countMatchedNodes += 1;
+                tuMatchAsJSONLD['@context'] = PHYX_CONTEXT_JSON;
+                tunitMatches.push(tuMatchAsJSONLD);
+              }
+            }
+          }
+        }
+      }
+
+      // If this specifier could not be matched, record it as an unmatched specifier.
+      if(countMatchedNodes == 0) {
+        if (!hasOwnProperty(phyloref, 'hasUnmatchedSpecifiers')) phyloref.hasUnmatchedSpecifiers = [];
+        phyloref.hasUnmatchedSpecifiers.push({'@id': specifier['@id']});
+      }
+    }
   }
 }
 
@@ -196,7 +237,7 @@ const cladeOntology = [
   }
 ];
 console.log(JSON.stringify(
-  cladeOntology.concat(phylorefs).concat(phylogenies),
+  cladeOntology.concat(phylorefs).concat(phylogenies).concat(tunitMatches),
   null,
   4
 ));
