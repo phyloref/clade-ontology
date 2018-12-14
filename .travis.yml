@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "11"
+  - "node" # Tests against the latest Node version available.
 
 # command to install dependencies
 install:
