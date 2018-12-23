@@ -124,7 +124,9 @@ describe('Test PHYX files in repository', function() {
             });
             tapParser.on('assert', result => {
               const phyloref = new phyx.PhylorefWrapper(json.phylorefs[result.id - 1]);
-              describe('Phyloreference ' + phyloref.label, function () {
+              const countInternal = phyloref.phyloref.internalSpecifiers.length;
+              const countExternal = phyloref.phyloref.externalSpecifiers.length;
+              describe(`Phyloreference ${phyloref.label} (${countInternal} internal specifiers, ${countExternal} external specifiers)`, function () {
                 phyloref.specifiers.forEach(specifier => {
                   it('Includes ' +  phyloref.getSpecifierType(specifier).toLowerCase() +
                     ' specifier ' + phyx.PhylorefWrapper.getSpecifierLabel(specifier), function () {
