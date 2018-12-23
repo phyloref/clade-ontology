@@ -36,6 +36,7 @@ const phyx = require('../curation-tool/js/phyx.js');
 const child_process = require('child_process');
 const fs = require('fs');
 const path = require('path');
+const TapParser = require('tap-parser');
 const chai = require('chai');
 const assert = chai.assert;
 
@@ -113,18 +114,6 @@ describe('Test PHYX files in repository', function() {
               assert.isAbove(json.phylorefs.length, 0);
             });
 
-            json.phylorefs.forEach(phylorefAsJSON => {
-              const phyloref = new phyx.PhylorefWrapper(phylorefAsJSON);
-
-              describe('includes phyloreference ' + phyloref.label, function () {
-                phyloref.specifiers.forEach(specifier => {
-                  it('includes ' + phyloref.getSpecifierType(specifier) + ' specifier ' + phyx.PhylorefWrapper.getSpecifierLabel(specifier), function () {
-                    assert.isOk(specifier);
-                  });
-                });
-              });
-            });
-
             // Test the produced JSON-LD using JPhyloRef.
             var args = [
               '-jar', 'jphyloref/jphyloref.jar',
@@ -142,8 +131,43 @@ describe('Test PHYX files in repository', function() {
               args = args.concat(process.env.JPHYLOREF_ARGS.split(/\s+/));
             }
 
+            // Set up a TapParser.
+            const tapParser = new TapParser(result => {
+              it('should test all phyloreferences', function () {
+                assert.equal(result.count, json.phylorefs.length, 'number of test results should equal the number of phylorefs in file');
+              });
+
+              it('should pass all non-skipped tests', function () {
+                assert(result.ok);
+              });
+            });
+            tapParser.on('assert', result => {
+              const phyloref = new phyx.PhylorefWrapper(json.phylorefs[result.id - 1]);
+              describe('Phyloreference ' + phyloref.label, function () {
+                phyloref.specifiers.forEach(specifier => {
+                  it('Includes ' +  phyloref.getSpecifierType(specifier).toLowerCase() +
+                    ' specifier ' + phyx.PhylorefWrapper.getSpecifierLabel(specifier), function () {
+                      assert(true);
+                    });
+                });
+
+                if (result.hasOwnProperty('todo')) {
+                  it.skip('Skipping as TODO: ' + result.todo);
+                } else if (result.hasOwnProperty('skip')) {
+                  it.skip('Skipping: ' + result.skip);
+                } else {
+                  it('should pass testing', function () {
+                    assert(assert.ok);
+                  });
+                }
+              });
+            });
+
             // Execute the command line, giving it the JSON-LD on STDIN.
             const child = child_process.spawnSync('java', args, { input: jsonld });
+
+            tapParser.write(child.stdout);
+            tapParser.end();
 
             // Test whether we can read the test result line from JPhyloRef.
             // Eventually, we will parse the TAP results directly.
