@@ -95,6 +95,13 @@ describe('Test PHYX files in repository', function() {
               assert.isAbove(json.phylorefs.length, 0);
             });
 
+            // Create a dictionary of phyloreferences by label.
+            const wrappedPhylorefsByLabel = {};
+            json.phylorefs.forEach(phyloref => {
+              const wrapped = new phyx.PhylorefWrapper(phyloref);
+              wrappedPhylorefsByLabel[wrapped.label] = wrapped;
+            });
+
             // Test the produced JSON-LD using JPhyloRef.
             var args = [
               '-jar', 'jphyloref/jphyloref.jar',
@@ -123,7 +130,16 @@ describe('Test PHYX files in repository', function() {
               });
             });
             tapParser.on('assert', result => {
-              const phyloref = new phyx.PhylorefWrapper(json.phylorefs[result.id - 1]);
+              const matches = result.name.match(/^Phyloreference '(.*)'$/);
+              if(matches === null) {
+                throw new RuntimeException(`Invalid test name: '${result.name}'`);
+              }
+
+              const phyloref = wrappedPhylorefsByLabel[matches[1]];
+              if(!phyloref) {
+                throw new RuntimeException(`Phyloreference '${matches[1]}' was tested but is not present in the input PHYX file`);
+              }
+
               const countInternal = phyloref.phyloref.internalSpecifiers.length;
               const countExternal = phyloref.phyloref.externalSpecifiers.length;
               describe(`Phyloreference ${phyloref.label} (${countInternal} internal specifiers, ${countExternal} external specifiers)`, function () {
