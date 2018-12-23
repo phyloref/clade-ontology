@@ -89,9 +89,10 @@ describe('Test PHYX files in repository', function() {
 
             // Read the PHYX data as UTF-8 and convert it into JSON-LD.
             const phyxContent = data.toString('utf-8');
-            var jsonld;
+            let json;
+            let jsonld;
             try {
-              const json = JSON.parse(phyxContent);
+              json = JSON.parse(phyxContent);
               const wrappedPhyx = new phyx.PHYXWrapper(json);
               jsonld = JSON.stringify(wrappedPhyx.asJSONLD());
             } catch(ex) {
@@ -104,6 +105,24 @@ describe('Test PHYX files in repository', function() {
             // Make sure the produced JSON-LD is not empty.
             it('produced JSON-LD is not empty', function() {
               assert.isNotEmpty(jsonld);
+            });
+
+            // Write out information about the tested phyloreferences.
+            it('contains one or more phyloreferences', function() {
+              assert.property(json, 'phylorefs');
+              assert.isAbove(json.phylorefs.length, 0);
+            });
+
+            json.phylorefs.forEach(phylorefAsJSON => {
+              const phyloref = new phyx.PhylorefWrapper(phylorefAsJSON);
+
+              describe('includes phyloreference ' + phyloref.label, function () {
+                phyloref.specifiers.forEach(specifier => {
+                  it('includes ' + phyloref.getSpecifierType(specifier) + ' specifier ' + phyx.PhylorefWrapper.getSpecifierLabel(specifier), function () {
+                    assert.isOk(specifier);
+                  });
+                });
+              });
             });
 
             // Test the produced JSON-LD using JPhyloRef.
