@@ -41,5 +41,5 @@ We initially developed the Clade Ontology in Python before replacing it with a N
 [`jphyloref`]: https://github.com/phyloref/jphyloref
 [JFact++ 1.2.4 OWL reasoner]: http://jfact.sourceforge.net/
 [merge separate PHYX files into a single Clade Ontology]: https://github.com/phyloref/clade-ontology/projects/3
-[v1.0]: https://github.com/phyloref/clade-ontology/tree/v0.1
+[v0.1]: https://github.com/phyloref/clade-ontology/tree/v0.1
 [available from Github as a release]: https://github.com/phyloref/clade-ontology/releases/tag/v0.1
