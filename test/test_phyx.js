@@ -71,7 +71,7 @@ function findPHYXFiles(dirPath) {
 
 describe('Test PHYX files in repository', function() {
     // Test each input file.
-    findPHYXFiles(BASE_DIR).splice(1,2).forEach(function(filename) {
+    findPHYXFiles(BASE_DIR).forEach(function(filename) {
         describe('PHYX file: ' + filename, function() {
 
             // Make sure the file to test isn't empty.
