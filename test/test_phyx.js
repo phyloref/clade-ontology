@@ -194,43 +194,45 @@ describe('Test PHYX files in repository', function() {
               assert.isNotNull(matches, 'Test result line not found in STDOUT');
             });
 
-            // Test whether we have any failures.
-            it('did not report any failures', function() {
-              const failures = matches[2];
-              assert.equal(failures, 0, failures + ' failures occurred during testing');
-            });
+            if(matches !== null) {
+              // Test whether we have any failures.
+              it('did not report any failures', function() {
+                const failures = matches[2];
+                assert.equal(failures, 0, failures + ' failures occurred during testing');
+              });
 
-            // Look for TODOs or skipped tests.
-            const successes = matches[1];
-            const todos = matches[3];
-            const skipped = matches[4];
+              // Look for TODOs or skipped tests.
+              const successes = matches[1];
+              const todos = matches[3];
+              const skipped = matches[4];
 
-            if(todos > 0) {
-              // TODOs are phyloreferences that we didn't expect to resolve.
-              it.skip(todos + ' phyloreferences were marked as TODO during testing.');
-              return;
+              if(todos > 0) {
+                // TODOs are phyloreferences that we didn't expect to resolve.
+                it.skip(todos + ' phyloreferences were marked as TODO during testing.');
+                return;
+              }
+
+              if(skipped > 0) {
+                // Skipped phyloreferences are here for historical reasons: JPhyloRef
+                // won't actually recognize any phyloreferences as skipped. This has
+                // been reported as https://github.com/phyloref/jphyloref/issues/40
+                it.skip(skipped + ' phyloreferences were skipped during testing.');
+                return;
+              }
+
+              // We could have zero failures but also zero successes. A Phyx file
+              // without any failures, TODOs or any successes in the Clade Ontology
+              // should be reported as a failure.
+              it('had at least one success', function() {
+                assert.isAbove(successes, 0, 'No successes occurred during testing');
+              });
+
+              // On the off chance that all of the above made sense but the exit code didn't,
+              // we'll check that here.
+              it('passed testing in JPhyloRef', function() {
+                assert.equal(child.status, 0, 'Exit code from JPhyloRef was not zero');
+              });
             }
-
-            if(skipped > 0) {
-              // Skipped phyloreferences are here for historical reasons: JPhyloRef
-              // won't actually recognize any phyloreferences as skipped. This has
-              // been reported as https://github.com/phyloref/jphyloref/issues/40
-              it.skip(skipped + ' phyloreferences were skipped during testing.');
-              return;
-            }
-
-            // We could have zero failures but also zero successes. A Phyx file
-            // without any failures, TODOs or any successes in the Clade Ontology
-            // should be reported as a failure.
-            it('had at least one success', function() {
-              assert.isAbove(successes, 0, 'No successes occurred during testing');
-            });
-
-            // On the off chance that all of the above made sense but the exit code didn't,
-            // we'll check that here.
-            it('passed testing in JPhyloRef', function() {
-              assert.equal(child.status, 0, 'Exit code from JPhyloRef was not zero');
-            });
         });
     });
 });
