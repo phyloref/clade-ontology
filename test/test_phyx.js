@@ -181,7 +181,7 @@ describe('Test PHYX files in repository', function() {
                 // Test whether we have any failures.
                 it('did not report any failures', function() {
                   const failures = matches[2];
-                  assert.equal(failures, 0, `${failures} failures occurred during testing: ${child.stdout}`);
+                  assert.equal(failures, 0, `${failures} failures occurred during testing:\n===STDOUT===\n${child.stdout}\n===STDERR===\n${child.stderr}\n===`);
                 });
 
               // Look for TODOs or skipped tests.
