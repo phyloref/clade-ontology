@@ -207,7 +207,7 @@ describe('Test PHYX files in repository', function() {
               // without any failures, TODOs or any successes in the Clade Ontology
               // should be reported as a failure.
               it('had at least one success', function() {
-                assert.isAbove(successes, 0, 'No successes occurred during testing');
+                assert.isAbove(successes, 0, `No successes occurred during testing:\n===STDOUT===\n${child.stdout}\n===STDERR===\n${child.stderr}\n===`);
               });
 
               // On the off chance that all of the above made sense but the exit code didn't,
