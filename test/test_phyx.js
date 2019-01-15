@@ -127,23 +127,6 @@ describe('Test PHYX files in repository', function() {
               wrappedPhylorefsByLabel[wrapped.label] = wrapped;
             });
 
-            // Test the produced JSON-LD using JPhyloRef.
-            var args = [
-              '-jar', 'jphyloref/jphyloref.jar',
-              'test', '-', '--jsonld'
-            ];
-
-            // Some command line arguments should also be inserted into the command line.
-            // JVM_ARGS should be given to the Java interpreter.
-            if('JVM_ARGS' in process.env) {
-              args = process.env.JVM_ARGS.split(/\s+/).concat(args);
-            }
-
-            // JPHYLOREF_ARGS should be given to JPhyloRef
-            if('JPHYLOREF_ARGS' in process.env) {
-              args = args.concat(process.env.JPHYLOREF_ARGS.split(/\s+/));
-            }
-
             // Set up a TapParser.
             const tapParser = new TapParser(result => {
               it('should test all phyloreferences', function () {
@@ -182,6 +165,23 @@ describe('Test PHYX files in repository', function() {
                 }
               });
             });
+
+            // Test the produced JSON-LD using JPhyloRef.
+            let args = [
+              '-jar', 'jphyloref/jphyloref.jar',
+              'test', '-', '--jsonld'
+            ];
+
+            // Some command line arguments should also be inserted into the command line.
+            // JVM_ARGS should be given to the Java interpreter.
+            if('JVM_ARGS' in process.env) {
+              args = process.env.JVM_ARGS.split(/\s+/).concat(args);
+            }
+
+            // JPHYLOREF_ARGS should be given to JPhyloRef
+            if('JPHYLOREF_ARGS' in process.env) {
+              args = args.concat(process.env.JPHYLOREF_ARGS.split(/\s+/));
+            }
 
             // Execute the command line, giving it the JSON-LD on STDIN.
             const child = child_process.spawnSync('java', args, { input: jsonld });
