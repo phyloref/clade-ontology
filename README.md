@@ -23,6 +23,10 @@ Curated phyloreferences produced by the [Curation Tool] as Phyloreference eXchan
 
 We are currently working on a complete workflow that would allow us to [merge separate PHYX files into a single Clade Ontology] available as a single OWL file available for individual download.
 
+## Previous iterations of this code
+
+We initially developed the Clade Ontology in Python before replacing it with a Node.js-based library. That earlier iteration is available as a release tagged [v0.1] in this repository.
+
 [Web Ontology Language (OWL)]: https://en.wikipedia.org/wiki/Web_Ontology_Language
 [MIT license]: ./LICENSE
 [Node.js]: http://nodejs.org/
@@ -37,3 +41,4 @@ We are currently working on a complete workflow that would allow us to [merge se
 [`jphyloref`]: https://github.com/phyloref/jphyloref
 [JFact++ 1.2.4 OWL reasoner]: http://jfact.sourceforge.net/
 [merge separate PHYX files into a single Clade Ontology]: https://github.com/phyloref/clade-ontology/projects/3
+[v0.1]: https://github.com/phyloref/clade-ontology/releases/tag/v0.1
