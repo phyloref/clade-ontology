@@ -25,7 +25,7 @@ We are currently working on a complete workflow that would allow us to [merge se
 
 ## Previous iterations of this code
 
-We initially developed the Clade Ontology in Python before replacing it with a Node.js-based library. That earlier iteration has been tagged as [v0.1] in this repository and is additionally [available from Github as a release].
+We initially developed the Clade Ontology in Python before replacing it with a Node.js-based library. That earlier iteration is available as a release tagged [v0.1] in this repository.
 
 [Web Ontology Language (OWL)]: https://en.wikipedia.org/wiki/Web_Ontology_Language
 [MIT license]: ./LICENSE
@@ -41,5 +41,4 @@ We initially developed the Clade Ontology in Python before replacing it with a N
 [`jphyloref`]: https://github.com/phyloref/jphyloref
 [JFact++ 1.2.4 OWL reasoner]: http://jfact.sourceforge.net/
 [merge separate PHYX files into a single Clade Ontology]: https://github.com/phyloref/clade-ontology/projects/3
-[v0.1]: https://github.com/phyloref/clade-ontology/tree/v0.1
-[available from Github as a release]: https://github.com/phyloref/clade-ontology/releases/tag/v0.1
+[v0.1]: https://github.com/phyloref/clade-ontology/releases/tag/v0.1
