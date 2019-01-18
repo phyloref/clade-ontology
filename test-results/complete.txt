@@ -1,0 +1,571 @@
+
+> clade-ontology@0.1.0 test /home/vaidyagi/code/phyloref/clade-ontology
+> mocha
+
+
+
+  Test PHYX files in repository
+    PHYX file: phyx/encrypted/phylonym/phloref.Apo-Spermatophyta.Hilton_Bateman_2006.json
+      ✓ is not empty
+      ✓ produced JSON-LD is not empty
+      ✓ contains one or more phyloreferences
+      ✓ should test all phyloreferences
+      ✓ produces a valid test result line from JPhyloRef
+      ✓ did not report any failures
+      - 1 phyloreferences were marked as TODO during testing.
+      Phyloreference Apo-Spermatophyta (5 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Gnetum gnemon Linnaeus 1767 (Gnetophyta)
+        ✓ Includes internal specifier Cycas revoluta Thunberg 1782 (Cycadophyta)
+        ✓ Includes internal specifier Ginkgo biloba Linnaeus 1771
+        ✓ Includes internal specifier Magnolia tripetala (Linnaeus) Linnaeus 1759 (Angiospermae)
+        ✓ Includes internal specifier Podocarpus macrophyllus (Thunberg) Sweet 1818 (Coniferae)
+        - Skipping as TODO: Phyloreference could not be tested, as one or more specifiers did not match.
+    PHYX file: phyx/encrypted/phylonym/phloref.Basidomycota.James_2006.json
+      ✓ is not empty
+      ✓ produced JSON-LD is not empty
+      ✓ contains one or more phyloreferences
+      ✓ should test all phyloreferences
+      ✓ produces a valid test result line from JPhyloRef
+      ✓ did not report any failures
+      - 1 phyloreferences were marked as TODO during testing.
+      Phyloreference Basidomycota (1 internal specifiers, 3 external specifiers)
+        ✓ Includes internal specifier Coprinopsis cinerea (Schaeff.) Redhead, Vilgalys & Moncalvo 2001
+        ✓ Includes external specifier Peziza vesiculosa Bull. 1790
+        ✓ Includes external specifier Taphrina wiesneri (Ráthay) Mix 1954
+        ✓ Includes external specifier Saccharomyces cerevisiae Meyen 1838
+        - Skipping as TODO: Phyloreference did not resolve, but has status [phyloreference status http://purl.org/spar/pso/draft starting at 2018-07-16T18:33:47.992Z]
+    PHYX file: phyx/encrypted/phylonym/phyloref.Apo-Tracheophyte.Crane.2004.json
+      ✓ is not empty
+      ✓ produced JSON-LD is not empty
+      ✓ contains one or more phyloreferences
+      ✓ should test all phyloreferences
+      ✓ produces a valid test result line from JPhyloRef
+      ✓ did not report any failures
+      - 1 phyloreferences were marked as TODO during testing.
+      Phyloreference Apo-Tracheophyte (1 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Pinus sylvestris Linnaeus 1753
+        - Skipping as TODO: Phyloreference could not be tested, as one or more specifiers did not match.
+    PHYX file: phyx/encrypted/phylonym/phyloref.Archaeplastida.Burki.2008.json
+      ✓ is not empty
+      ✓ produced JSON-LD is not empty
+      ✓ contains one or more phyloreferences
+      ✓ should test all phyloreferences
+      ✓ produces a valid test result line from JPhyloRef
+      ✓ did not report any failures
+      - 1 phyloreferences were marked as TODO during testing.
+      Phyloreference Archaeplastida (2 internal specifiers, 1 external specifiers)
+        ✓ Includes internal specifier Galdieria sulphuraria (Galdieri) Merola in Merola et al. 1981 (Rhodoplantae)
+        ✓ Includes internal specifier Arabidopsis thaliana (Linnaeus) Heynhold 1842
+        ✓ Includes external specifier Homo sapiens Linnaeus 1758
+        - Skipping as TODO: Phyloreference could not be tested, as one or more specifiers did not match.
+    PHYX file: phyx/encrypted/phylonym/phyloref.Asteridae.Soltis2011.json
+      ✓ is not empty
+      ✓ produced JSON-LD is not empty
+      ✓ contains one or more phyloreferences
+      ✓ should test all phyloreferences
+      ✓ produces a valid test result line from JPhyloRef
+      ✓ did not report any failures
+      - 1 phyloreferences were marked as TODO during testing.
+      Phyloreference Asteridae (4 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Arbutus unedo Linnaeus 1753 (Ericales)
+        ✓ Includes internal specifier Aster amellus Linnaeus 1753 (Campanulidae/Asterales)
+        ✓ Includes internal specifier Cornus mas Linnaeus 1753 (Cornales)
+        ✓ Includes internal specifier Lamium purpureum Linnaeus 1753 (Lamiidae/Lamiales)
+        - Skipping as TODO: Phyloreference could not be tested, as one or more specifiers did not match.
+    PHYX file: phyx/encrypted/phylonym/phyloref.Bignoniaceae.Olmstead.2009.json
+      ✓ is not empty
+      ✓ produced JSON-LD is not empty
+      ✓ contains one or more phyloreferences
+      ✓ should test all phyloreferences
+      ✓ produces a valid test result line from JPhyloRef
+      ✓ did not report any failures
+      1) had at least one success
+      ✓ passed testing in JPhyloRef
+      Phyloreference Bignoniaceae (3 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Eccremocarpus scaber Ruiz & Pavon 1794
+        ✓ Includes internal specifier Jacaranda mimosifolia D. Don 1822
+        ✓ Includes internal specifier Bignonia capreolata Linnaeus 1753
+        ✓ should pass testing
+    PHYX file: phyx/encrypted/phylonym/phyloref.Campanulaceae.Tank2010.json
+      ✓ is not empty
+      ✓ produced JSON-LD is not empty
+      ✓ contains one or more phyloreferences
+      ✓ should test all phyloreferences
+      ✓ produces a valid test result line from JPhyloRef
+      ✓ did not report any failures
+      - 1 phyloreferences were marked as TODO during testing.
+      Phyloreference Campanulaceae (1 internal specifiers, 3 external specifiers)
+        ✓ Includes internal specifier Campanula latifolia Linnaeus 1753 
+        ✓ Includes external specifier Roussea simplex J. E. Smith 1789
+        ✓ Includes external specifier Pentaphragma ellipticum Poulsen 1903
+        ✓ Includes external specifier Stylidium graminifolium Swartz ex Willdenow 1805
+        - Skipping as TODO: Phyloreference could not be tested, as one or more specifiers did not match.
+    PHYX file: phyx/encrypted/phylonym/phyloref.Chlorophyta.Cocquyt.2009.json
+      ✓ is not empty
+      ✓ produced JSON-LD is not empty
+      ✓ contains one or more phyloreferences
+      ✓ should test all phyloreferences
+      ✓ produces a valid test result line from JPhyloRef
+      ✓ did not report any failures
+      - 1 phyloreferences were marked as TODO during testing.
+      Phyloreference Chlorophyta (1 internal specifiers, 1 external specifiers)
+        ✓ Includes internal specifier Chlamydomonas reinhardtii P. C. A. Dangeard 1891
+        ✓ Includes external specifier Chara vulgaris Linnaeus 175
+        - Skipping as TODO: Phyloreference could not be tested, as one or more specifiers did not match.
+    PHYX file: phyx/encrypted/phylonym/phyloref.Dikarya.Bauer.2015.json
+      ✓ is not empty
+      ✓ produced JSON-LD is not empty
+      ✓ contains one or more phyloreferences
+      ✓ should test all phyloreferences
+      ✓ produces a valid test result line from JPhyloRef
+      ✓ did not report any failures
+      - 1 phyloreferences were marked as TODO during testing.
+      Phyloreference Dikarya  (3 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Entorrhiza casparyana (Magnus) Lagerb. 1888 (Entorrhizomycota)
+        ✓ Includes internal specifier Saccharomyces cerevisiae Meyen 1838 (Ascomycota)
+        ✓ Includes internal specifier Coprinopsis cinerea (Schaeff.) Redhead, Vilgalys & Moncalvo 2001 (Basidiomycota/Agaricomycotina)
+        - Skipping as TODO: Phyloreference could not be tested, as one or more specifiers did not match.
+    PHYX file: phyx/encrypted/phylonym/phyloref.Discicristata.Hampl.2009.json
+      ✓ is not empty
+      ✓ produced JSON-LD is not empty
+      ✓ contains one or more phyloreferences
+      ✓ should test all phyloreferences
+      ✓ produces a valid test result line from JPhyloRef
+      ✓ did not report any failures
+      - 1 phyloreferences were marked as TODO during testing.
+      Phyloreference Discicristata  (2 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Naegleria gruberi (Schardinger) Alexeieff 1912 (Heterolobosea)
+        ✓ Includes internal specifier Euglena gracilis Klebs 1883 (Euglenozoa)
+        - Skipping as TODO: Phyloreference could not be tested, as one or more specifiers did not match.
+    PHYX file: phyx/encrypted/phylonym/phyloref.amorphea.Minge2009.2.json
+      ✓ is not empty
+      ✓ produced JSON-LD is not empty
+      ✓ contains one or more phyloreferences
+      ✓ should test all phyloreferences
+      ✓ produces a valid test result line from JPhyloRef
+      ✓ did not report any failures
+      - 1 phyloreferences were marked as TODO during testing.
+      Phyloreference Amorphea (3 internal specifiers, 4 external specifiers)
+        ✓ Includes internal specifier Dictyostelium discoideum Raper 1935
+        ✓ Includes internal specifier Neurospora crassa Shear and Dodge 1927
+        ✓ Includes internal specifier Homo sapiens Linnaeus 1758
+        ✓ Includes external specifier Arabidopsis thaliana (Linnaeus) Heynhold 1842
+        ✓ Includes external specifier Bigelowiella natans Moestrup and Sengco 2001
+        ✓ Includes external specifier Euglena gracilis Klebs 1883
+        ✓ Includes external specifier Emiliania huxleyi (Lohmann) Hay and Mohler 1967
+        - Skipping as TODO: Phyloreference could not be tested, as one or more specifiers did not match.
+    PHYX file: phyx/encrypted/phylonym/phyloref.amphibia.Vallin2004.json
+      ✓ is not empty
+      ✓ produced JSON-LD is not empty
+      ✓ contains one or more phyloreferences
+      ✓ should test all phyloreferences
+      ✓ produces a valid test result line from JPhyloRef
+      ✓ did not report any failures
+      - 1 phyloreferences were marked as TODO during testing.
+      Phyloreference Amphibia (5 internal specifiers, 1 external specifiers)
+        ✓ Includes internal specifier Rana temporaria Linnaeus 1758 (Anura) 
+        ✓ Includes internal specifier Proteus anguinus Laurenti 1768 (Proteidae)
+        ✓ Includes internal specifier Andrias japonicus (Temminck 1836)
+        ✓ Includes internal specifier Siren lacertina Österdam 1766 (Sirenidae)
+        ✓ Includes internal specifier Caecilia tentaculata Linnaeus 1758 (Gymnophiona)
+        ✓ Includes external specifier Homo sapiens Linnaeus 1758 (Synapsida)
+        - Skipping as TODO: Phyloreference could not be tested, as one or more specifiers did not match.
+    PHYX file: phyx/encrypted/phylonym/phyloref.angiospermae.Doyle2018.json
+      ✓ is not empty
+      ✓ produced JSON-LD is not empty
+      ✓ contains one or more phyloreferences
+      ✓ should test all phyloreferences
+      ✓ produces a valid test result line from JPhyloRef
+      ✓ did not report any failures
+      - 1 phyloreferences were marked as TODO during testing.
+      Phyloreference Angiospermae (1 internal specifiers, 4 external specifiers)
+        ✓ Includes internal specifier Liquidambar styraciflua Linnaeus 1753
+        ✓ Includes external specifier Cycas revoluta Thunberg 1782 (Cycadophyta)
+        ✓ Includes external specifier Ginkgo biloba Linnaeus 1771
+        ✓ Includes external specifier Pinus strobus Linnaeus 1753 (Coniferae)
+        ✓ Includes external specifier Gnetum gnemon Linnaeus 1767 (Gnetophyta)
+        - Skipping as TODO: Phyloreference could not be tested, as one or more specifiers did not match.
+    PHYX file: phyx/encrypted/phylonym/phyloref.caniformia.Flynn2005.json
+      ✓ is not empty
+      ✓ produced JSON-LD is not empty
+      ✓ contains one or more phyloreferences
+      ✓ should test all phyloreferences
+      ✓ produces a valid test result line from JPhyloRef
+      ✓ did not report any failures
+      - 1 phyloreferences were marked as TODO during testing.
+      Phyloreference Caniformia (1 internal specifiers, 1 external specifiers)
+        ✓ Includes internal specifier Canis lupus Linnaeus 1758 (Canidae) 
+        ✓ Includes external specifier Felis silvestris Schreber 1777 (Felidae)
+        - Skipping as TODO: Phyloreference could not be tested, as one or more specifiers did not match.
+    PHYX file: phyx/from_papers/Brochu 2003/paper.json
+      ✓ is not empty
+      ✓ produced JSON-LD is not empty
+      ✓ contains one or more phyloreferences
+      ✓ should test all phyloreferences
+      ✓ produces a valid test result line from JPhyloRef
+      ✓ did not report any failures
+      - 11 phyloreferences were marked as TODO during testing.
+      Phyloreference Crocodylinae (1 internal specifiers, 1 external specifiers)
+        ✓ Includes internal specifier Crocodylus niloticus
+        ✓ Includes external specifier Tomistoma schlegelii
+        ✓ should pass testing
+      Phyloreference Tomistominae (1 internal specifiers, 1 external specifiers)
+        ✓ Includes internal specifier Tomistoma schlegelii
+        ✓ Includes external specifier Crocodylus niloticus
+        ✓ should pass testing
+      Phyloreference Mekosuchinae (7 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Mekosuchus inexpectatus
+        ✓ Includes internal specifier Quinkana fortirostrum
+        ✓ Includes internal specifier Trilophosuchus rackhami
+        ✓ Includes internal specifier Baru darrowi
+        ✓ Includes internal specifier Pallimnarchus pollens
+        ✓ Includes internal specifier Australosuchus clarkae
+        ✓ Includes internal specifier Kambara murgonensis
+        - Skipping as TODO: Phyloreference could not be tested, as one or more specifiers did not match.
+      Phyloreference Crocodylidae (3 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Tomistoma schlegelii
+        ✓ Includes internal specifier Osteolaemus tetraspis
+        ✓ Includes internal specifier Crocodylus niloticus
+        ✓ should pass testing
+      Phyloreference Crocodyloidea (1 internal specifiers, 2 external specifiers)
+        ✓ Includes internal specifier Crocodylus niloticus
+        ✓ Includes external specifier Alligator mississippiensis
+        ✓ Includes external specifier Gavialis gangeticus
+        - Skipping as TODO: Phyloreference did not resolve, but has status [phyloreference status http://purl.org/spar/pso/under-review starting at 2018-06-11T22:49:48.240Z]
+      Phyloreference Caimaninae (1 internal specifiers, 1 external specifiers)
+        ✓ Includes internal specifier Caiman crocodilus
+        ✓ Includes external specifier Alligator mississippiensis
+        ✓ should pass testing
+      Phyloreference Gavialinae (alt) (1 internal specifiers, 1 external specifiers)
+        ✓ Includes internal specifier Gavialis gangeticus
+        ✓ Includes external specifier Tomistoma schlegelii
+        - Skipping as TODO: Phyloreference did not resolve, but has status [phyloreference status http://purl.org/spar/pso/final-draft starting at 2018-06-11T22:51:05.073Z]
+      Phyloreference Tomistominae (alt) (1 internal specifiers, 1 external specifiers)
+        ✓ Includes internal specifier Tomistoma schlegelii
+        ✓ Includes external specifier Gavialis gangeticus
+        - Skipping as TODO: Phyloreference did not resolve, but has status [phyloreference status http://purl.org/spar/pso/final-draft starting at 2018-06-11T22:51:01.914Z]
+      Phyloreference Gavialidae (alt) (2 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Tomistoma schlegelii
+        ✓ Includes internal specifier Gavialis gangeticus
+        - Skipping as TODO: Phyloreference did not resolve, but has status [phyloreference status http://purl.org/spar/pso/final-draft starting at 2018-06-11T22:50:58.482Z]
+      Phyloreference Crocodylinae (alt) (1 internal specifiers, 1 external specifiers)
+        ✓ Includes internal specifier Crocodylus niloticus
+        ✓ Includes external specifier Osteolaemus tetraspis
+        - Skipping as TODO: Phyloreference did not resolve, but has status [phyloreference status http://purl.org/spar/pso/final-draft starting at 2018-06-11T22:50:53.131Z]
+      Phyloreference Crocodylidae (alt) (2 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Osteolaemus tetraspis
+        ✓ Includes internal specifier Crocodylus niloticus
+        - Skipping as TODO: Phyloreference did not resolve, but has status [phyloreference status http://purl.org/spar/pso/final-draft starting at 2018-06-11T22:50:46.938Z]
+      Phyloreference Osteolaeminae (1 internal specifiers, 1 external specifiers)
+        ✓ Includes internal specifier Osteolaemus tetraspis
+        ✓ Includes external specifier Crocodylus niloticus
+        ✓ should pass testing
+      Phyloreference Gavialoidea (1 internal specifiers, 2 external specifiers)
+        ✓ Includes internal specifier Gavialis gangeticus
+        ✓ Includes external specifier Alligator mississippiensis
+        ✓ Includes external specifier Crocodylus niloticus
+        - Skipping as TODO: Phyloreference did not resolve, but has status [phyloreference status http://purl.org/spar/pso/under-review starting at 2018-06-11T22:48:48.903Z]
+      Phyloreference Crocodylia (3 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Crocodylus niloticus
+        ✓ Includes internal specifier Alligator mississippiensis
+        ✓ Includes internal specifier Gavialis gangeticus
+        ✓ should pass testing
+      Phyloreference Eusuchia (4 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Alligator mississippiensis
+        ✓ Includes internal specifier Gavialis gangeticus
+        ✓ Includes internal specifier Crocodylus niloticus
+        ✓ Includes internal specifier Hylaeochampsa vectiana
+        - Skipping as TODO: Phyloreference could not be tested, as one or more specifiers did not match.
+      Phyloreference Diplocynodontinae (1 internal specifiers, 1 external specifiers)
+        ✓ Includes internal specifier Diplocynodon ratelii
+        ✓ Includes external specifier Alligator mississippiensis
+        ✓ should pass testing
+      Phyloreference Alligatoroidea (1 internal specifiers, 2 external specifiers)
+        ✓ Includes internal specifier Alligator mississippiensis
+        ✓ Includes external specifier Crocodylus niloticus
+        ✓ Includes external specifier Gavialis gangeticus
+        - Skipping as TODO: Phyloreference did not resolve, but has status [phyloreference status http://purl.org/spar/pso/final-draft starting at 2018-06-11T20:00:47.151Z]
+      Phyloreference Brevirostres (2 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Crocodylus niloticus
+        ✓ Includes internal specifier Alligator mississippiensis
+        ✓ should pass testing
+      Phyloreference Pristichampsinae (1 internal specifiers, 3 external specifiers)
+        ✓ Includes internal specifier Pristichampsus rollinati
+        ✓ Includes external specifier Gavialis gangeticus
+        ✓ Includes external specifier Alligator mississippiensis
+        ✓ Includes external specifier Crocodylus niloticus
+        - Skipping as TODO: Phyloreference could not be tested, as one or more specifiers did not match.
+      Phyloreference Alligatorinae (1 internal specifiers, 1 external specifiers)
+        ✓ Includes internal specifier Alligator mississippiensis
+        ✓ Includes external specifier Caiman crocodilus
+        ✓ should pass testing
+      Phyloreference Alligatoridae (2 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Caiman crocodilus
+        ✓ Includes internal specifier Alligator mississippiensis
+        ✓ should pass testing
+      Phyloreference Globidonta (1 internal specifiers, 1 external specifiers)
+        ✓ Includes internal specifier Alligator mississippiensis
+        ✓ Includes external specifier Diplocynodon ratelii
+        ✓ should pass testing
+    PHYX file: phyx/from_papers/Fisher et al, 2007/paper.json
+      ✓ is not empty
+      ✓ produced JSON-LD is not empty
+      ✓ contains one or more phyloreferences
+      ✓ should test all phyloreferences
+      ✓ produces a valid test result line from JPhyloRef
+      ✓ did not report any failures
+      - 1 phyloreferences were marked as TODO during testing.
+      Phyloreference Syrrhopodon (2 internal specifiers, 1 external specifiers)
+        ✓ Includes internal specifier Syrrhopodon croceus Mitt., J. Proc. Linn. Soc., Bot. Suppl. 1: 41. (1859)
+        ✓ Includes internal specifier Leucophanes octoblepharoides Brid., Bryol. Univ. 1: 763. (1826)
+        ✓ Includes external specifier Syrrhopodon mauritianus Müll. Hal. ex Ångstr., Öfv. Förh. Kongl. Svenska Vet.-Akad. 33(4): 54. (1876)
+        ✓ should pass testing
+      Phyloreference Leucophanes (2 internal specifiers, 1 external specifiers)
+        ✓ Includes internal specifier Leucophanes octoblepharoides Brid., Bryol. Univ. 1: 763. (1826)
+        ✓ Includes internal specifier Leucophanes seychellarum Besch., Ann. Sci. Nat., Bot., VI, 9: 337. (1880)
+        ✓ Includes external specifier Specimen urn:catalog:::Wall 2527, Fiji (uc)
+        ✓ should pass testing
+      Phyloreference Calymperes (2 internal specifiers, 1 external specifiers)
+        ✓ Includes internal specifier Calymperes lonchophyllum Schwägr., Tab. Exhib. Calyptr. Opercul. (3). 1814 (1813).
+        ✓ Includes internal specifier Syrrhopodon mauritianus Müll. Hal. ex Ångstr., Öfv. Förh. Kongl. Svenska Vet.-Akad. 33(4): 54. (1876)
+        ✓ Includes external specifier Syrrhopodon croceus Mitt., J. Proc. Linn. Soc., Bot. Suppl. 1: 41. (1859)
+        ✓ should pass testing
+      Phyloreference Calymperaceae (2 internal specifiers, 1 external specifiers)
+        ✓ Includes internal specifier Syrrhopodon gardneri (Hook.) Schwägr., Sp. Musc. Frond. Suppl. 2(1): 110, tab. 131, figs. 1-13 (1824)
+        ✓ Includes internal specifier Leucophanes octoblepharoides Brid., Bryol. Univ. 1: 763. (1826)
+        ✓ Includes external specifier Octoblepharum albidum Hedw., Sp. Musc. 50. (1801)
+        ✓ should pass testing
+      Phyloreference Albifolium (2 internal specifiers, 1 external specifiers)
+        ✓ Includes internal specifier Arthrocormus schimperi (Dozy & Molk.) Dozy & Molk. (=Mielichhoferia schimperi Dozy & Molk.), Musci Frond. Ined. Archip. Ind. 75. (1846)
+        ✓ Includes internal specifier Leucophanes octoblepharoides Brid., Bryol. Univ. 1: 763. (1826)
+        ✓ Includes external specifier Syrrhopodon muelleri (Dozy & Molk) Sande Lac., Bryol. Jav. 2: 224. (1870)
+        ✓ should pass testing
+      Phyloreference Leucophanella (3 internal specifiers, 1 external specifiers)
+        ✓ Includes internal specifier Syrrhopodon banksii Müll. Hal., Bot. Zeitung (Berlin) 16: 162. (1858)
+        ✓ Includes internal specifier Syrrhopodon involutus Schwägr., Sp. Musc. Frond. Suppl. 2, 1(2): 117. pl. 132. (1824)
+        ✓ Includes internal specifier Syrrhopodon revolutus Dozy & Molk.
+        ✓ Includes external specifier Syrrhopodon trachyphyllus Mont., Sylloge Gen. Sp. Cryptog. 47. (1856)
+        - Skipping as TODO: Phyloreference could not be tested, as one or more specifiers did not match.
+      Phyloreference Trachymitrium (2 internal specifiers, 1 external specifiers)
+        ✓ Includes internal specifier Weissia ciliata Hook., Musci Exot. 2: 7. 171. (1820) or Syrrhopodon ciliatus
+        ✓ Includes internal specifier Syrrhopodon involutus Schwägr., Sp. Musc. Frond. Suppl. 2, 1(2): 117. pl. 132. (1824)
+        ✓ Includes external specifier Syrrhopodon perarmatus Broth. & Watts, J. & Proc. Roy. Soc. New South Wales 49: 133. (1915)
+        ✓ should pass testing
+      Phyloreference Mitthyridium (2 internal specifiers, 1 external specifiers)
+        ✓ Includes internal specifier Syrrhopodon fasciculatum Hook. & Grev., Edinb. J. Sci. 3: 225. (1825) or Mitthyridium fasciculatum
+        ✓ Includes internal specifier Codonoblepharum undulatum Dozy & Molk., Ann. Sci. Nat., Bot., III, 2: 301. (1844) or Mitthyridium undulatum
+        ✓ Includes external specifier Syrrhopodon croceus Mitt., J. Proc. Linn. Soc., Bot. Suppl. 1: 41. (1859)
+        ✓ should pass testing
+      Phyloreference Exodictyon (2 internal specifiers, 1 external specifiers)
+        ✓ Includes internal specifier Exodictyon Cardot, Rev. Bryol. Lichénol. 26: 6. (1899), excl. parte, emend Ellis in Lindbergia 11: 16 (1985) or Exodictyon sp
+        ✓ Includes internal specifier Specimen urn:catalog:::Wall 2527, Fiji (uc)
+        ✓ Includes external specifier Leucophanes octoblepharoides Brid., Bryol. Univ. 1: 763. (1826)
+        ✓ should pass testing
+      Phyloreference Exostratum (2 internal specifiers, 1 external specifiers)
+        ✓ Includes internal specifier Exostratum blumii (Nees ex Hampe) L. Ellis, Lindbergia 11: 22. (1985)
+        ✓ Includes internal specifier Specimen urn:catalog:::Mishler 7/24/98(3)
+        ✓ Includes external specifier Arthrocormus schimperi (Dozy & Molk.) Dozy & Molk. (= Mielichhoferia schimperi Dozy & Molk.), Musci Frond. Ined. Archip. Ind. 75. (1846)
+        ✓ should pass testing
+      Phyloreference Arthrocormus (2 internal specifiers, 1 external specifiers)
+        ✓ Includes internal specifier Arthrocormus schimperi (Dozy & Molk.) Dozy & Molk. (= Mielichhoferia schimperi Dozy & Molk.), Musci Frond. Ined. Archip. Ind. 75. (1846)
+        ✓ Includes internal specifier Specimen urn:catalog:::Mishler 7/24/98 (5)
+        ✓ Includes external specifier Exostratum blumii (Nees ex Hampe) L. Ellis, Lindbergia 11: 22. (1985)
+        ✓ should pass testing
+    PHYX file: phyx/from_papers/Hillis and Wilcox, 2005/paper.json
+      ✓ is not empty
+      ✓ produced JSON-LD is not empty
+      ✓ contains one or more phyloreferences
+      ✓ should test all phyloreferences
+      ✓ produces a valid test result line from JPhyloRef
+      ✓ did not report any failures
+      - 2 phyloreferences were marked as TODO during testing.
+      Phyloreference Scurrilirana (7 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Rana berlandieri Baird 1854
+        ✓ Includes internal specifier Rana sphenocephala Cope 1886
+        ✓ Includes internal specifier Rana forreri Boulenger 1883
+        ✓ Includes internal specifier Rana spectabilis Hillis and Frost 1985
+        ✓ Includes internal specifier Rana omiltemana Gunther 1900
+        ✓ Includes internal specifier Rana taylori Smith 1959
+        ✓ Includes internal specifier Rana magnaocularis Frost and Bagnara 1976
+        ✓ should pass testing
+      Phyloreference Nenirana (2 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Rana areolata Baird and Girard 1852
+        ✓ Includes internal specifier Rana palustris Le Conte 1825
+        ✓ should pass testing
+      Phyloreference Lacusirana (3 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Rana montezumae Baird 1854
+        ✓ Includes internal specifier Rana megapoda Taylor 1942
+        ✓ Includes internal specifier Rana chiricahuensis Platz and Mecham 1979
+        - Skipping as TODO: Phyloreference could not be tested, as one or more specifiers did not match.
+      Phyloreference Stertirana (2 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Rana pipiens Schreber 1782
+        ✓ Includes internal specifier Rana montezumae Baird 1854
+        ✓ should pass testing
+      Phyloreference Pantherana (4 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Rana pipiens Schreber 1782
+        ✓ Includes internal specifier Rana montezumae Baird 1854
+        ✓ Includes internal specifier Rana palustris LeConte 1825
+        ✓ Includes internal specifier Rana berlandieri Baird 1854
+        ✓ should pass testing
+      Phyloreference Zweifelia (2 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Rana tarahumarae Boulenger 1917
+        ✓ Includes internal specifier Rana zweifeli Hillis, Frost and Webb 1984
+        ✓ should pass testing
+      Phyloreference Novirana (2 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Rana catesbeiana Shaw 1802
+        ✓ Includes internal specifier Rana pipiens Schreber 1782
+        ✓ should pass testing
+      Phyloreference Amerana (5 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Rana aurora Baird and Girard 1852
+        ✓ Includes internal specifier Rana boylii Baird 1854
+        ✓ Includes internal specifier Rana cascadae Slater 1939
+        ✓ Includes internal specifier Rana muscosa Camp 1917
+        ✓ Includes internal specifier Rana pretiosa Baird and Girard 1853
+        - Skipping as TODO: Phyloreference could not be tested, as one or more specifiers did not match.
+      Phyloreference Laurasiarana (2 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Rana temporaria Linne 1758
+        ✓ Includes internal specifier Rana aurora Baird and Girard 1852
+        ✓ should pass testing
+      Phyloreference Levirana (2 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Rana maculata Brocchi 1877
+        ✓ Includes internal specifier Rana vibicaria (Cope) 1894
+        ✓ should pass testing
+      Phyloreference Ranula (2 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Rana palmipes Spix 1824
+        ✓ Includes internal specifier Rana warszewitschii (Schmidt) 1857
+        ✓ should pass testing
+      Phyloreference Sierrana (3 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Rana juliani Hillis and de Sá, 1988
+        ✓ Includes internal specifier Rana maculata Brocchi 1877
+        ✓ Includes internal specifier Rana sierramadrensis Taylor 1939
+        ✓ should pass testing
+      Phyloreference Aquarana (7 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Rana catesbeiana Shaw 1802
+        ✓ Includes internal specifier Rana clamitans Latreille 1802
+        ✓ Includes internal specifier Rana grylio Stejneger 1901
+        ✓ Includes internal specifier Rana heckscheri Wright 1924
+        ✓ Includes internal specifier Rana okaloosae Moler 1985
+        ✓ Includes internal specifier Rana septentrionalis Baird 1854
+        ✓ Includes internal specifier Rana virgatipes Cope1891
+        ✓ should pass testing
+      Phyloreference Torrentirana (2 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Rana tarahumarae Boulenger 1917
+        ✓ Includes internal specifier Rana sierramadrensis Taylor 1939
+        ✓ should pass testing
+      Phyloreference Lithobates (4 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Rana palmipes Spix 1824
+        ✓ Includes internal specifier Rana vaillanti Brocchi 1877
+        ✓ Includes internal specifier Rana bwana Hillis and de Sá 1988
+        ✓ Includes internal specifier Rana juliani Hillis and de Sá 1988
+        ✓ should pass testing
+      Phyloreference Trypheropsis (2 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Rana warszewitschii (Schmidt) 1857
+        ✓ Includes internal specifier Rana vibicaria (Cope) 1894
+        ✓ should pass testing
+    PHYX file: phyx/from_papers/Wojciechowski, 2013/paper.json
+      ✓ is not empty
+      ✓ produced JSON-LD is not empty
+      ✓ contains one or more phyloreferences
+      ✓ should test all phyloreferences
+      ✓ produces a valid test result line from JPhyloRef
+      ✓ did not report any failures
+      - 6 phyloreferences were marked as TODO during testing.
+      Phyloreference Cladrastis (1 internal specifiers, 2 external specifiers)
+        ✓ Includes internal specifier Cladrastis kentukea (Dum. Cours.) Rudd 1971
+        ✓ Includes external specifier Dermatophyllum secundiflorum (Ortega) Gandhi & Reveal 2011
+        ✓ Includes external specifier Swartzia simplex Spreng. 1825
+        - Skipping as TODO: Phyloreference could not be tested, as one or more specifiers did not match.
+      Phyloreference Papilionoideae (2 internal specifiers, 3 external specifiers)
+        ✓ Includes internal specifier Vicia faba L. 1753
+        ✓ Includes internal specifier Castanospermum australe A. Cunn. ex Mudie 1829
+        ✓ Includes external specifier Caesalpinia gilliesii (Wall. ex Hook.) D. Dietr. 1840
+        ✓ Includes external specifier Gleditsia triacanthos L.
+        ✓ Includes external specifier Dialium guianense (Aubl.) Sandwith 1939
+        - Skipping as TODO: Phyloreference could not be tested, as one or more specifiers did not match.
+      Phyloreference Pan-Papilionoidea (0 internal specifiers, 0 external specifiers)
+        - Skipping as TODO: Phyloreference did not resolve, but has status [phyloreference status http://purl.org/spar/pso/draft starting at 2018-06-07T23:40:22.617Z ending at 2018-06-07T23:55:56.973Z, phyloreference status http://purl.org/spar/pso/under-review starting at 2018-06-07T23:55:56.973Z ending at 2018-06-08T06:20:13.832Z, phyloreference status http://purl.org/spar/pso/draft starting at 2018-06-08T06:20:13.832Z]
+      Phyloreference Hologalegina (4 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Vicia faba L. 1753
+        ✓ Includes internal specifier Sesbania grandiflora (L.) Pers. 1807
+        ✓ Includes internal specifier Robinia pseudoacacia L. 1753
+        ✓ Includes internal specifier Astragalus canadensis L. 1753
+        ✓ should pass testing
+      Phyloreference Dalbergioid s.l. (2 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Dalbergia sissoo Roxb. ex DC. 1825
+        ✓ Includes internal specifier Amorpha fruticosa L. 1753
+        ✓ should pass testing
+      Phyloreference Vataireoid (2 internal specifiers, 3 external specifiers)
+        ✓ Includes internal specifier Vatairea guianensis Aubl.
+        ✓ Includes internal specifier Sweetia fruticosa Spreng. 1825
+        ✓ Includes external specifier Andira inermis (W. Wright) DC.
+        ✓ Includes external specifier Zollernia ilicifolia (Brongn.) Vogel 1837
+        ✓ Includes external specifier Aldina insignis (Benth.) Endl. 1843
+        - Skipping as TODO: Phyloreference did not resolve, but has status [phyloreference status http://purl.org/spar/pso/draft starting at 2018-06-08T05:06:40.434Z ending at 2018-06-08T05:16:18.943Z, phyloreference status http://purl.org/spar/pso/under-review starting at 2018-06-08T05:16:18.943Z ending at 2018-06-08T06:05:51.040Z, phyloreference status http://purl.org/spar/pso/final-draft starting at 2018-06-08T06:05:51.040Z]
+      Phyloreference Meso-Papilionoideae (5 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Glycine max (L.) Merr. 1917
+        ✓ Includes internal specifier Wisteria floribunda (Willd.) DC. 1825
+        ✓ Includes internal specifier Maackia amurensis Rupr. 1856
+        ✓ Includes internal specifier Holocalyx balansae Micheli 1883
+        ✓ Includes internal specifier Aldina latifolia Spruce ex Benth. 1870
+        - Skipping as TODO: Phyloreference could not be tested, as one or more specifiers did not match.
+      Phyloreference IRLC (3 internal specifiers, 0 external specifiers)
+        ✓ Includes internal specifier Glycyrrhiza lepidota Nuttall 1813
+        ✓ Includes internal specifier Galega officinalis L. 1753
+        ✓ Includes internal specifier Vicia faba L.
+        - Skipping as TODO: Phyloreference could not be tested, as one or more specifiers did not match.
+
+
+  368 passing (118ms)
+  50 pending
+  1 failing
+
+  1) Test PHYX files in repository
+       PHYX file: phyx/encrypted/phylonym/phyloref.Bignoniaceae.Olmstead.2009.json
+         had at least one success:
+     AssertionError: No successes occurred during testing:
+===STDOUT===
+1..1
+ok 1 Phyloreference 'Bignoniaceae'
+# The following nodes were matched and expected this phyloreference: [Bignoniaceae]
+# Phyloreference resolved correctly but was not expected to resolve; status should be changed to 'pso:submitted' from [phyloreference status http://purl.org/spar/pso/draft starting at 2018-08-01T19:29:19.118Z]
+
+
+===STDERR===
+Input: -
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/home/vaidyagi/code/phyloref/clade-ontology/jphyloref/jphyloref.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Found local ontologies: [http://vocab.phyloref.org/phyloref/testcase.owl]
+[main] WARN uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl - Runtime Warning: Parsers should load imported ontologies using the makeImportLoadRequest method.
+[main] INFO org.semanticweb.owlapi.io.AbstractOWLParser - URL connection input stream is compressed using gzip
+[main] WARN uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl - Runtime Warning: Parsers should load imported ontologies using the makeImportLoadRequest method.
+[main] INFO org.semanticweb.owlapi.io.AbstractOWLParser - URL connection input stream is compressed using gzip
+[main] WARN uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl - Runtime Warning: Parsers should load imported ontologies using the makeImportLoadRequest method.
+[main] INFO org.semanticweb.owlapi.io.AbstractOWLParser - URL connection input stream is compressed using gzip
+[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - Unparsed triple: _:genid32 -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/2002/07/owl#AllDifferent
+[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - Unparsed triple: _:genid23 -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/2002/07/owl#AllDifferent
+[main] WARN uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl - Runtime Warning: Parsers should load imported ontologies using the makeImportLoadRequest method.
+[main] INFO org.semanticweb.owlapi.io.AbstractOWLParser - URL connection input stream is compressed using gzip
+[main] WARN uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl - Runtime Warning: Parsers should load imported ontologies using the makeImportLoadRequest method.
+[main] INFO org.semanticweb.owlapi.io.AbstractOWLParser - URL connection input stream is compressed using gzip
+[main] INFO org.semanticweb.owlapi.io.AbstractOWLParser - URL connection input stream is compressed using gzip
+[main] INFO org.semanticweb.owlapi.io.AbstractOWLParser - URL connection input stream is compressed using gzip
+[main] INFO org.semanticweb.owlapi.io.AbstractOWLParser - URL connection input stream is compressed using gzip
+[main] INFO org.semanticweb.owlapi.io.AbstractOWLParser - URL connection input stream is compressed using gzip
+[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - Unparsed triple: _:genid-nodeid-_:186 -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/2002/07/owl#AllDifferent
+[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - Unparsed triple: _:genid-nodeid-_:177 -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/2002/07/owl#AllDifferent
+[main] ERROR uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl - Illegal redeclarations of entities: reuse of entity http://purl.obolibrary.org/obo/OBI_0000293 in punning not allowed [Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OBI_0000293>)), Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000293>))]
+[main] ERROR uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl - Illegal redeclarations of entities: reuse of entity http://purl.obolibrary.org/obo/RO_0002233 in punning not allowed [Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0002233>)), Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002233>))]
+[main] ERROR uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl - Illegal redeclarations of entities: reuse of entity http://purl.org/dc/terms/modified in punning not allowed [Declaration(AnnotationProperty(<http://purl.org/dc/terms/modified>)), Declaration(DataProperty(<http://purl.org/dc/terms/modified>))]
+Loaded ontology: Ontology(OntologyID(OntologyIRI(<http://example.org/jphyloref>) VersionIRI(<null>))) [Axioms: 1853 Logical Axioms: 1611] First 20 axioms: {EquivalentClasses(<http://example.org/jphyloref#phyloref0> <http://example.org/jphyloref#phyloref0_additional1> ) EquivalentClasses(<http://example.org/jphyloref#phyloref0_additional0> ObjectUnionOf(ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/CDAO_0000149> ObjectIntersectionOf(ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/CDAO_0000174> ObjectHasValue(<http://vocab.phyloref.org/phyloref/testcase.owl#matches_specifier> <http://example.org/jphyloref#phyloref0_specifier_internal1>)) ObjectHasValue(<http://vocab.phyloref.org/phyloref/testcase.owl#matches_specifier> <http://example.org/jphyloref#phyloref0_specifier_internal1>)) ObjectSomeValuesFrom(<http://ontology.phyloref.org/phyloref.owl#excludes_lineage_to> ObjectHasValue(<http://vocab.phyloref.org/phyloref/testcase.owl#matches_specifier> <http://example.org/jphyloref#phyloref0_specifier_internal2>)))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/CDAO_0000149> ObjectIntersectionOf(ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/CDAO_0000174> ObjectHasValue(<http://vocab.phyloref.org/phyloref/testcase.owl#matches_specifier> <http://example.org/jphyloref#phyloref0_specifier_internal2>)) ObjectHasValue(<http://vocab.phyloref.org/phyloref/testcase.owl#matches_specifier> <http://example.org/jphyloref#phyloref0_specifier_internal2>)) ObjectSomeValuesFrom(<http://ontology.phyloref.org/phyloref.owl#excludes_lineage_to> ObjectHasValue(<http://vocab.phyloref.org/phyloref/testcase.owl#matches_specifier> <http://example.org/jphyloref#phyloref0_specifier_internal1>))))) ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/CDAO_0000174> ObjectHasValue(<http://vocab.phyloref.org/phyloref/testcase.owl#matches_specifier> <http://example.org/jphyloref#phyloref0_specifier_internal1>)) ObjectHasValue(<http://vocab.phyloref.org/phyloref/testcase.owl#matches_specifier> <http://example.org/jphyloref#phyloref0_specifier_internal2>)) ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/CDAO_0000174> ObjectHasValue(<http://vocab.phyloref.org/phyloref/testcase.owl#matches_specifier> <http://example.org/jphyloref#phyloref0_specifier_internal2>)) ObjectHasValue(<http://vocab.phyloref.org/phyloref/testcase.owl#matches_specifier> <http://example.org/jphyloref#phyloref0_specifier_internal1>))) ) EquivalentClasses(<http://example.org/jphyloref#phyloref0_additional1> ObjectUnionOf(ObjectIntersectionOf(<http://example.org/jphyloref#phyloref0_additional0> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/CDAO_0000174> ObjectHasValue(<http://vocab.phyloref.org/phyloref/testcase.owl#matches_specifier> <http://example.org/jphyloref#phyloref0_specifier_internal3>))) ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/CDAO_0000149> ObjectIntersectionOf(ObjectUnionOf(<http://example.org/jphyloref#phyloref0_additional0> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/CDAO_0000174> <http://example.org/jphyloref#phyloref0_additional0>)) ObjectSomeValuesFrom(<http://ontology.phyloref.org/phyloref.owl#excludes_lineage_to> ObjectHasValue(<http://vocab.phyloref.org/phyloref/testcase.owl#matches_specifier> <http://example.org/jphyloref#phyloref0_specifier_internal3>)))) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/CDAO_0000149> ObjectIntersectionOf(ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/CDAO_0000174> ObjectHasValue(<http://vocab.phyloref.org/phyloref/testcase.owl#matches_specifier> <http://example.org/jphyloref#phyloref0_specifier_internal3>)) ObjectHasValue(<http://vocab.phyloref.org/phyloref/testcase.owl#matches_specifier> <http://example.org/jphyloref#phyloref0_specifier_internal3>)) ObjectSomeValuesFrom(<http://ontology.phyloref.org/phyloref.owl#excludes_lineage_to> <http://example.org/jphyloref#phyloref0_additional0>)))) ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/CDAO_0000174> <http://example.org/jphyloref#phyloref0_additional0>) ObjectHasValue(<http://vocab.phyloref.org/phyloref/testcase.owl#matches_specifier> <http://example.org/jphyloref#phyloref0_specifier_internal3>))) ) ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/CDAO_0000149> <http://example.org/jphyloref#phylogeny0_node195> <http://example.org/jphyloref#phylogeny0_node196>) ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/CDAO_0000149> <http://example.org/jphyloref#phylogeny0_node141> <http://example.org/jphyloref#phylogeny0_node143>) ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/CDAO_0000149> <http://example.org/jphyloref#phylogeny0_node65> <http://example.org/jphyloref#phylogeny0_node67>) ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/CDAO_0000149> <http://example.org/jphyloref#phylogeny0_node49> <http://example.org/jphyloref#phylogeny0_node51>) ObjectPropertyAssertion(<http://vocab.phyloref.org/phyloref/testcase.owl#has_node> <http://example.org/jphyloref#phylogeny0> <http://example.org/jphyloref#phylogeny0_node106>) ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/CDAO_0000187> <http://example.org/jphyloref#phylogeny0_node150> <http://example.org/jphyloref#phylogeny0_node150_taxonomicunit0>) ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/CDAO_0000187> <http://example.org/jphyloref#phylogeny0_node137> <http://example.org/jphyloref#phylogeny0_node137_taxonomicunit0>) ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/CDAO_0000187> <http://example.org/jphyloref#phylogeny0_node64> <http://example.org/jphyloref#phylogeny0_node64_taxonomicunit0>) ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/CDAO_0000149> <http://example.org/jphyloref#phylogeny0_node86> <http://example.org/jphyloref#phylogeny0_node88>) ObjectPropertyAssertion(<http://ontology.phyloref.org/phyloref.owl#has_Sibling> <http://example.org/jphyloref#phylogeny0_node113> <http://example.org/jphyloref#phylogeny0_node112>) ObjectPropertyAssertion(<http://ontology.phyloref.org/phyloref.owl#has_Sibling> <http://example.org/jphyloref#phylogeny0_node37> <http://example.org/jphyloref#phylogeny0_node36>) ObjectPropertyAssertion(<http://ontology.phyloref.org/phyloref.owl#has_Sibling> <http://example.org/jphyloref#phylogeny0_node184> <http://example.org/jphyloref#phylogeny0_node187>) ObjectPropertyAssertion(<http://ontology.phyloref.org/phyloref.owl#has_Sibling> <http://example.org/jphyloref#phylogeny0_node8> <http://example.org/jphyloref#phylogeny0_node5>) ObjectPropertyAssertion(<http://ontology.phyloref.org/phyloref.owl#has_Sibling> <http://example.org/jphyloref#phylogeny0_node104> <http://example.org/jphyloref#phylogeny0_node101>) ObjectPropertyAssertion(<http://ontology.phyloref.org/phyloref.owl#has_Sibling> <http://example.org/jphyloref#phylogeny0_node173> <http://example.org/jphyloref#phylogeny0_node176>) ObjectPropertyAssertion(<http://ontology.phyloref.org/phyloref.owl#has_Sibling> <http://example.org/jphyloref#phylogeny0_node111> <http://example.org/jphyloref#phylogeny0_node109>) ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/CDAO_0000149> <http://example.org/jphyloref#phylogeny0_node76> <http://example.org/jphyloref#phylogeny0_node80>) }
+FaCT++.Kernel: Reasoner for the SROIQ(D) Description Logic, 64-bit
+Copyright (C) Dmitry Tsarkov, 2002-2011. Version 1.5.2 (12 April 2011)
+Testing complete:1 successes, 0 failures, 0 failures marked TODO, 0 skipped.
+
+===: expected '1' to be a number or a date
+      at Context.<anonymous> (test/test_phyx.js:229:24)
+
+
+
