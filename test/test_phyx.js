@@ -99,7 +99,7 @@ describe('Test PHYX files in repository', function() {
 
               // Let's write the JSON-LD into a file for debugging.
               fs.writeFileSync(
-                filename.replace('paper.json', 'paper_as_owl.json'),
+                filename.replace(/.json$/, '_as_owl.json'),
                 jsonld
               );
             } catch(ex) {
