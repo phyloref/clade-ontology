@@ -10,27 +10,8 @@ const BASE_DIR = 'phyx/';
  * this in Node, we load them and add them to the global object.
  */
 
-// Load moment as a global variable so it can be accessed by phyx.js.
-global.moment = require('moment');
-
-// Load jQuery.extend as a global variable so it can be accessed by phyx.js.
-global.jQuery = {};
-global.jQuery.extend = require('extend');
-
-// Load d3 as a global variable so it can be accessed by both phylotree.js (which
-// needs to add additional objects to it) and phyx.js (which needs to call it).
-global.d3 = require('d3');
-
-// phylotree.js does not export functions itself, but adds them to global.d3.layout.
-// So we set up a global.d3.layout object for them to be added to, and then we include
-// phylotree.js ourselves.
-if (!Object.prototype.hasOwnProperty.call(global.d3, 'layout')) {
-  global.d3.layout = {};
-}
-require('../curation-tool/lib/phylotree.js/phylotree.js');
-
 // Load phyx.js, our PHYX library.
-const phyx = require('../curation-tool/js/phyx.js');
+const phyx = require('@phyloref/phyx');
 
 // Javascript libraries.
 const child_process = require('child_process');
