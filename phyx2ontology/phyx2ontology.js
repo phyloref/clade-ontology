@@ -250,8 +250,8 @@ const cladeOntology = [
     '@type': 'owl:Ontology',
     'owl:imports': [
       'http://raw.githubusercontent.com/phyloref/curation-workflow/develop/ontologies/phyloref_testcase.owl',
-      'http://ontology.phyloref.org/phyloref.owl',
-      'http://purl.obolibrary.org/obo/bco.owl'
+      'http://ontology.phyloref.org/2018-12-14/phyloref.owl',
+      'http://ontology.phyloref.org/2018-12-14/tcan.owl',
     ]
   }
 ];
