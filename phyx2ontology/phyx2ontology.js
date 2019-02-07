@@ -23,17 +23,13 @@ const path = require('path');
  * this in Node, we load them and add them to the global object.
  */
 
-// Load moment as a global variable so it can be accessed by phyx.js.
-global.moment = require('moment');
-
-// Load jQuery.extend as a global variable so it can be accessed by phyx.js.
-global.jQuery = {};
-global.jQuery.extend = require('extend');
-
 // Load phyx.js, our PHYX library.
 const phyx = require('@phyloref/phyx');
 
 // Helper methods.
+function hasOwnProperty(obj, propName) {
+  return Object.prototype.hasOwnProperty.call(obj, propName);
+}
 
 /*
  * Returns a list of PHYX files that we can test in the provided directory.
@@ -144,12 +140,21 @@ const jsons = phyxFiles
  *    ]
  * }]
  */
+const phylorefsByLabel = {};
+
 const phylorefs = [];
 let specifiers = [];
 for (let phyxFile of jsons) {
   for (let phyloref of phyxFile.phylorefs) {
     entityIndex += 1;
-    const jsonld = new phyx.PhylorefWrapper(phyloref).asJSONLD(getIdentifier(entityIndex));
+    const phylorefWrapper = new phyx.PhylorefWrapper(phyloref);
+    const jsonld = phylorefWrapper.asJSONLD(getIdentifier(entityIndex));
+
+    // Record the label of the phylorefs. We'll need this to link phylogenies to
+    // the phylorefs they expect to resolve to.
+    if(phylorefWrapper.label !== undefined) {
+      phylorefsByLabel[phylorefWrapper.label.toString()] = jsonld;
+    }
 
     jsonld['@context'] = PHYX_CONTEXT_JSON;
     phylorefs.push(jsonld);
@@ -162,6 +167,37 @@ for (let phyxFile of jsons) {
   for (let phylogeny of phyxFile.phylogenies) {
     entityIndex += 1;
     const phylogenyAsJSONLD = new phyx.PhylogenyWrapper(phylogeny).asJSONLD(getIdentifier(entityIndex));
+
+    // For every internal node in this phylogeny, check to see if it's expected to
+    // resolve to a phylogeny we know about. If so, add an rdf:type to that effect.
+    (phylogenyAsJSONLD.nodes || []).forEach(node => {
+      // Check the node label.
+      const expectedToResolveTo = node.labels || [];
+
+      expectedToResolveTo.forEach(phylorefLabel => {
+        if(!hasOwnProperty(phylorefsByLabel, phylorefLabel)) return;
+
+        // This node is expected to match phylorefLabel, which is a phyloreference we know about.
+        const phylorefId = phylorefsByLabel[phylorefLabel]['@id'];
+        if(!hasOwnProperty(node, '@type')) node['@type'] = [];
+        if(!Array.isArray(node['@type'])) node['@type'] = [node['@type']];
+        node['@type'].push({
+          '@type':'owl:Restriction',
+          'onProperty': 'obo:OBI_0000312', // obi:is_specified_output_of
+          'someValuesFrom': {
+            '@type': 'owl:Class',
+            'intersectionOf': [
+              { '@id':'obo:OBI_0302910' }, // obi:prediction
+              {
+                '@type': 'owl:Restriction',
+                'onProperty': 'obo:OBI_0000293', // obi:has_specified_input
+                'someValuesFrom': { '@id': phylorefId }
+              }
+            ]
+          }
+        });
+      });
+    });
 
     phylogenyAsJSONLD['@context'] = PHYX_CONTEXT_JSON;
     phylogenies.push(phylogenyAsJSONLD);
