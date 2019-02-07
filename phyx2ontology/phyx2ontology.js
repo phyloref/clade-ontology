@@ -168,11 +168,15 @@ for (let phyxFile of jsons) {
     entityIndex += 1;
     const phylogenyAsJSONLD = new phyx.PhylogenyWrapper(phylogeny).asJSONLD(getIdentifier(entityIndex));
 
-    // For every internal node in this phylogeny, check to see if it's expected to
-    // resolve to a phylogeny we know about. If so, add an rdf:type to that effect.
     (phylogenyAsJSONLD.nodes || []).forEach(node => {
-      // Check the node label.
-      const expectedToResolveTo = node.labels || [];
+      // For every internal node in this phylogeny, check to see if it's expected to
+      // resolve to a phylogeny we know about. If so, add an rdf:type to that effect.
+      let expectedToResolveTo = node.labels || [];
+
+      // Are there any phyloreferences expected to resolve here?
+      if(hasOwnProperty(node, 'expectedPhyloreferenceNamed')) {
+        expectedToResolveTo = expectedToResolveTo.concat(node.expectedPhyloreferenceNamed);
+      }
 
       expectedToResolveTo.forEach(phylorefLabel => {
         if(!hasOwnProperty(phylorefsByLabel, phylorefLabel)) return;
