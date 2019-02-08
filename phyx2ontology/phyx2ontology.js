@@ -169,6 +169,10 @@ for (let phyxFile of jsons) {
     const phylogenyAsJSONLD = new phyx.PhylogenyWrapper(phylogeny).asJSONLD(getIdentifier(entityIndex));
 
     (phylogenyAsJSONLD.nodes || []).forEach(node => {
+      // Make sure this node has a '@type'.
+      if(!hasOwnProperty(node, '@type')) node['@type'] = [];
+      if(!Array.isArray(node['@type'])) node['@type'] = [node['@type']];
+
       // For every internal node in this phylogeny, check to see if it's expected to
       // resolve to a phylogeny we know about. If so, add an rdf:type to that effect.
       let expectedToResolveTo = node.labels || [];
@@ -183,8 +187,6 @@ for (let phyxFile of jsons) {
 
         // This node is expected to match phylorefLabel, which is a phyloreference we know about.
         const phylorefId = phylorefsByLabel[phylorefLabel]['@id'];
-        if(!hasOwnProperty(node, '@type')) node['@type'] = [];
-        if(!Array.isArray(node['@type'])) node['@type'] = [node['@type']];
         node['@type'].push({
           '@type':'owl:Restriction',
           'onProperty': 'obo:OBI_0000312', // obi:is_specified_output_of
@@ -201,6 +203,38 @@ for (let phyxFile of jsons) {
           }
         });
       });
+
+      // Does this node have taxonomic units? If so, convert them into class expressions.
+      if(hasOwnProperty(node, 'representsTaxonomicUnits')) {
+        node.representsTaxonomicUnits.forEach(tunit => {
+          // We can only do this for scientific names currently.
+          if(hasOwnProperty(tunit, 'scientificNames')) {
+            tunit.scientificNames.forEach(name => {
+              if(hasOwnProperty(name, 'binomialName')) {
+                node['@type'].push({
+                  '@type': 'owl:Restriction',
+                  'onProperty': 'obo:CDAO_0000187',
+                  'someValuesFrom': {
+                    '@type': 'owl:Restriction',
+                    'onProperty': 'http://rs.tdwg.org/ontology/voc/TaxonConcept#hasName',
+                    'someValuesFrom': {
+                      '@type': 'owl:Class',
+                      'intersectionOf': [
+                        { '@id':'obo:NOMEN_0000107' }, // ICZN -- TODO replace with a check once we close phyloref/phyx.js#5.
+                        {
+                          '@type':'owl:Restriction',
+                          'onProperty': 'dwc:scientificName',
+                          'hasValue': name.binomialName, // TODO: We really want the "canonical name" here: binomial or trinomial, but without any additional authority information.
+                        }
+                      ]
+                    }
+                  }
+                });
+              }
+            });
+          }
+        });
+      }
     });
 
     phylogenyAsJSONLD['@context'] = PHYX_CONTEXT_JSON;
