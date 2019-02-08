@@ -199,6 +199,10 @@ for (let phyxFile of jsons) {
     delete jsonld['equivalentClass'];
     delete jsonld['hasAdditionalClass'];
 
+    // Finally, we still have the clade definition and other terms, but we call them by different names now.
+    jsonld['obo:IAO_0000115'] = jsonld['cladeDefinition'];
+    delete jsonld['cladeDefinition'];
+
     // Instead, from the specifiers, we construct different kinds of definitions in
     // This code will be moved into phyx.js once we're fully committed to Model 2.0,
     // but is here so we can see what the Clade Ontology would look like in Model 2.0.
@@ -235,6 +239,11 @@ for (let phyxFile of jsons) {
     entityIndex += 1;
     const phylogenyAsJSONLD = new phyx.PhylogenyWrapper(phylogeny).asJSONLD(getIdentifier(entityIndex));
 
+    // Change name for including Newick.
+    phylogenyAsJSONLD['phyloref:newick_expression'] = phylogenyAsJSONLD['newick'];
+    delete phylogenyAsJSONLD['newick'];
+
+    // Change how nodes are represented.
     (phylogenyAsJSONLD.nodes || []).forEach(node => {
       // Make sure this node has a '@type'.
       if(!hasOwnProperty(node, '@type')) node['@type'] = [];
