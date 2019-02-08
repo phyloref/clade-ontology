@@ -9,7 +9,7 @@
  */
 
 // Configuration options.
-const PHYX_CONTEXT_JSON = 'http://www.phyloref.org/curation-tool/json/phyx.json';
+const PHYX_CONTEXT_JSON = 'http://www.phyloref.org/phyx.js/context/v0.1.0/phyx.json';
 const CLADE_ONTOLOGY_BASEURI = 'http://phyloref.org/clade-ontology/clado.owl';
 
 // Load necessary modules.
