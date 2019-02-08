@@ -225,6 +225,26 @@ for (let phyxFile of jsons) {
           }
         ]
       }
+    } else if(internalSpecifiers.length === 2 && externalSpecifiers.length === 0) {
+      jsonld['equivalentClass'] = {
+        '@type': 'owl:Restriction',
+        'onProperty': 'obo:CDAO_0000149', // cdao:has_Child
+        'someValuesFrom': {
+          '@type': 'owl:Class',
+          'intersectionOf': [
+            {
+              '@type': 'owl:Restriction',
+              'onProperty': 'phyloref:excludes_TU',
+              'someValuesFrom': convertTUtoRestriction(internalSpecifiers[0])[0],
+            },
+            {
+              '@type': 'owl:Restriction',
+              'onProperty': 'phyloref:includes_TU',
+              'someValuesFrom': convertTUtoRestriction(internalSpecifiers[1])[0],
+            }
+          ]
+        }
+      }
     }
 
     jsonld['@context'] = PHYX_CONTEXT_JSON;
