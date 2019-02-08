@@ -31,6 +31,39 @@ function hasOwnProperty(obj, propName) {
   return Object.prototype.hasOwnProperty.call(obj, propName);
 }
 
+function convertTUtoRestriction(tunit) {
+  // If we're called with a specifier, use the first TU in that specifier (for now).
+  if(hasOwnProperty(tunit, 'referencesTaxonomicUnits')) {
+    return convertTUtoRestriction(tunit.referencesTaxonomicUnits[0] || {});
+  }
+
+  // We can only do this for scientific names currently.
+  const results = [];
+  if(hasOwnProperty(tunit, 'scientificNames')) {
+    tunit.scientificNames.forEach(name => {
+      if(hasOwnProperty(name, 'binomialName') || hasOwnProperty(name, 'scientificName')) {
+        results.push({
+          '@type': 'owl:Restriction',
+          'onProperty': 'http://rs.tdwg.org/ontology/voc/TaxonConcept#hasName',
+          'someValuesFrom': {
+            '@type': 'owl:Class',
+            'intersectionOf': [
+              { '@id':'obo:NOMEN_0000107' }, // ICZN -- TODO replace with a check once we close phyloref/phyx.js#5.
+              {
+                '@type':'owl:Restriction',
+                'onProperty': 'dwc:scientificName',
+                'hasValue': name['binomialName'] || name['scientificName'], // TODO: We really want the "canonical name" here: binomial or trinomial, but without any additional authority information.
+              }
+            ]
+          }
+        });
+      }
+    });
+  }
+
+  return results;
+}
+
 /*
  * Returns a list of PHYX files that we can test in the provided directory.
  *
@@ -156,6 +189,40 @@ for (let phyxFile of jsons) {
       phylorefsByLabel[phylorefWrapper.label.toString()] = jsonld;
     }
 
+    // In Model 2.0, phyloreferences are not punned, but are specifically subclasses
+    // of class Phyloreference. So let's set that up.
+    delete jsonld['@type'];
+    jsonld['subClassOf'] = 'phyloref:Phyloreference';
+
+    // We also no longer use the additional classes system or the equivalent class
+    // definitions, so let's get rid of those too.
+    delete jsonld['equivalentClass'];
+    delete jsonld['hasAdditionalClass'];
+
+    // Instead, from the specifiers, we construct different kinds of definitions in
+    // This code will be moved into phyx.js once we're fully committed to Model 2.0,
+    // but is here so we can see what the Clade Ontology would look like in Model 2.0.
+    const internalSpecifiers = jsonld.internalSpecifiers || [];
+    const externalSpecifiers = jsonld.externalSpecifiers || [];
+
+    if (internalSpecifiers.length === 1 && externalSpecifiers.length === 1) {
+      jsonld['equivalentClass'] = {
+        '@type': 'owl:Class',
+        'intersectionOf': [
+          {
+            '@type': 'owl:Restriction',
+            'onProperty': 'phyloref:excludes_TU',
+            'someValuesFrom': convertTUtoRestriction(externalSpecifiers[0])[0],
+          },
+          {
+            '@type': 'owl:Restriction',
+            'onProperty': 'phyloref:includes_TU',
+            'someValuesFrom': convertTUtoRestriction(internalSpecifiers[0])[0],
+          }
+        ]
+      }
+    }
+
     jsonld['@context'] = PHYX_CONTEXT_JSON;
     phylorefs.push(jsonld);
   }
@@ -207,32 +274,13 @@ for (let phyxFile of jsons) {
       // Does this node have taxonomic units? If so, convert them into class expressions.
       if(hasOwnProperty(node, 'representsTaxonomicUnits')) {
         node.representsTaxonomicUnits.forEach(tunit => {
-          // We can only do this for scientific names currently.
-          if(hasOwnProperty(tunit, 'scientificNames')) {
-            tunit.scientificNames.forEach(name => {
-              if(hasOwnProperty(name, 'binomialName')) {
-                node['@type'].push({
-                  '@type': 'owl:Restriction',
-                  'onProperty': 'obo:CDAO_0000187',
-                  'someValuesFrom': {
-                    '@type': 'owl:Restriction',
-                    'onProperty': 'http://rs.tdwg.org/ontology/voc/TaxonConcept#hasName',
-                    'someValuesFrom': {
-                      '@type': 'owl:Class',
-                      'intersectionOf': [
-                        { '@id':'obo:NOMEN_0000107' }, // ICZN -- TODO replace with a check once we close phyloref/phyx.js#5.
-                        {
-                          '@type':'owl:Restriction',
-                          'onProperty': 'dwc:scientificName',
-                          'hasValue': name.binomialName, // TODO: We really want the "canonical name" here: binomial or trinomial, but without any additional authority information.
-                        }
-                      ]
-                    }
-                  }
-                });
-              }
+          convertTUtoRestriction(tunit).forEach(restriction => {
+            node['@type'].push({
+              '@type': 'owl:Restriction',
+              'onProperty': 'obo:CDAO_0000187',
+              'someValuesFrom': restriction
             });
-          }
+          });
         });
       }
     });
