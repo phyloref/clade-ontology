@@ -40,24 +40,24 @@ function convertTUtoRestriction(tunit) {
   // We can only do this for scientific names currently.
   const results = [];
   if(hasOwnProperty(tunit, 'scientificNames')) {
-    tunit.scientificNames.forEach(name => {
-      if(hasOwnProperty(name, 'binomialName') || hasOwnProperty(name, 'scientificName')) {
-        results.push({
-          '@type': 'owl:Restriction',
-          'onProperty': 'http://rs.tdwg.org/ontology/voc/TaxonConcept#hasName',
-          'someValuesFrom': {
-            '@type': 'owl:Class',
-            'intersectionOf': [
-              { '@id':'obo:NOMEN_0000107' }, // ICZN -- TODO replace with a check once we close phyloref/phyx.js#5.
-              {
-                '@type':'owl:Restriction',
-                'onProperty': 'dwc:scientificName',
-                'hasValue': name['binomialName'] || name['scientificName'], // TODO: We really want the "canonical name" here: binomial or trinomial, but without any additional authority information.
-              }
-            ]
-          }
-        });
-      }
+    tunit.scientificNames.forEach(sciname => {
+      const wrappedSciname = new phyx.ScientificNameWrapper(sciname);
+
+      results.push({
+        '@type': 'owl:Restriction',
+        'onProperty': 'http://rs.tdwg.org/ontology/voc/TaxonConcept#hasName',
+        'someValuesFrom': {
+          '@type': 'owl:Class',
+          'intersectionOf': [
+            { '@id':'obo:NOMEN_0000107' }, // ICZN -- TODO replace with a check once we close phyloref/phyx.js#5.
+            {
+              '@type':'owl:Restriction',
+              'onProperty': 'dwc:scientificName',
+              'hasValue': wrappedSciname.binomialName, // TODO: We really want the "canonical name" here: binomial or trinomial, but without any additional authority information.
+            }
+          ]
+        }
+      });
     });
   }
 
