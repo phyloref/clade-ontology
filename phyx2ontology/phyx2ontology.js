@@ -174,6 +174,7 @@ const jsons = phyxFiles
  * }]
  */
 const phylorefsByLabel = {};
+const additionalClassesByLabel = {};
 
 const phylorefs = [];
 let specifiers = [];
@@ -245,6 +246,113 @@ for (let phyxFile of jsons) {
           ]
         }
       }
+    } else if(externalSpecifiers.length === 0 && internalSpecifiers.length > 0) {
+      // The overall pattern here is going to be:
+      // equivalentClass: [
+      //  has_Child some (excludes_lineage_to some (A, B, C) and includes_TU some (D_as_restriction) ),
+      //  has_Child some (excludes_lineage_to some (A, B, D) and includes_TU some (C_as_restriction) ),
+      //  ...
+      // ]
+      // where (A, B) uses the standard 1-int 1-ext form.
+      let additionalClassCount = 0;
+      jsonld['hasAdditionalClass'] = [];
+      function createMRCAAdditionalClass(internals, remaining) {
+        // This can only really work when internals.length === 2; any more than
+        // that, and we need to pass this back to createEquivalentClasses to break
+        // it down further.
+        if(internals.length > 2) {
+          // TODO We need to replace this with an actual object-based comparison,
+          // rather than trusting the labels to tell us everything.
+          const additionalClassLabel = '(' + internals
+            .map(i => convertTUtoRestriction(i)[0].someValuesFrom.intersectionOf[1].hasValue || '(error)')
+            .sort()
+            .join(',') + ')';
+
+          if(hasOwnProperty(additionalClassesByLabel, additionalClassLabel)) {
+            return { '@id': additionalClassesByLabel[additionalClassLabel]['@id'] };
+          }
+
+          additionalClassCount += 1;
+          const additionalClass = {};
+          additionalClass['@id'] = jsonld['@id'] + '_additional' + additionalClassCount;
+          additionalClass['@type'] = 'owl:Class';
+          additionalClass['subClassOf'] = 'phyloref:PhyloreferenceUsingMaximumClade';
+          additionalClass['equivalentClass'] = createEquivalentClasses(internals, []);
+          additionalClass['label'] = additionalClassLabel;
+          jsonld['hasAdditionalClass'].push(additionalClass);
+
+          additionalClassesByLabel[additionalClassLabel] = additionalClass;
+
+          return {'@id': additionalClass['@id']};
+        } else if(internals.length === 2) {
+          return {
+            '@type': 'owl:Restriction',
+            'onProperty': 'obo:CDAO_0000149', // cdao:has_Child
+            'someValuesFrom': {
+              '@type': 'owl:Class',
+              'intersectionOf': [
+                {
+                  '@type': 'owl:Restriction',
+                  'onProperty': 'phyloref:excludes_TU',
+                  'someValuesFrom': convertTUtoRestriction(internals[0])[0],
+                },
+                {
+                  '@type': 'owl:Restriction',
+                  'onProperty': 'phyloref:includes_TU',
+                  'someValuesFrom': convertTUtoRestriction(internals[1])[0],
+                }
+              ]
+            }
+          }
+        } else if(internals.length === 1) {
+          return {
+            '@type': 'owl:Restriction',
+            'onProperty': 'phyloref:includes_TU',
+            'someValuesFrom': convertTUtoRestriction(internals[0])[0]
+          };
+        } else {
+          throw new Error('impossible branch');
+        }
+      }
+
+      function createEquivalentClasses(remaining, selectedParam) {
+        const selected = selectedParam || [];
+        const results = [];
+
+        // process.stderr.write("Remaining: "+remaining.length +", selected: " +selected.length+"\n");
+
+        // Recursively call ourselves as long as there are more remaining.
+        if(remaining.length >= selected.length) {
+          remaining.forEach(newlySelected => {
+            createEquivalentClasses(
+              remaining.filter(i => i !== newlySelected),
+              selected.concat([newlySelected]),
+            ).forEach(cls => results.push(cls));
+              // results.push(
+              //.reduce((acc, val) => acc.concat(val), []));
+          });
+        }
+
+        // Finally, add this particular set of remaining and selected.
+        if(selected.length > 0) {
+          results.push({
+            '@type': 'owl:Restriction',
+            'onProperty':'obo:CDAO_0000149', // cdao:has_Child
+            'someValuesFrom': {
+              '@type': 'owl:Class',
+              'intersectionOf': [{
+                '@type': 'owl:Restriction',
+                'onProperty': 'phyloref:excludes_lineage_to',
+                'someValuesFrom': createMRCAAdditionalClass(remaining)
+              }, createMRCAAdditionalClass(selected, remaining)]
+            }
+          });
+        }
+
+        return results;
+      }
+
+      jsonld['equivalentClass'] = createEquivalentClasses(internalSpecifiers, []);
     }
 
     jsonld['@context'] = PHYX_CONTEXT_JSON;
