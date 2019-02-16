@@ -174,56 +174,60 @@ const jsons = phyxFiles
  * }]
  */
 const phylorefsByLabel = {};
-const additionalClassesByLabel = {};
+
 let additionalClassCount = 0;
+const additionalClassesByLabel = {};
+function createAdditionalClass(jsonld, internalSpecifiers, externalSpecifiers, equivalentClassFunc) {
+  // This function creates an additional class for the set of internal and external
+  // specifiers provided for the equivalentClass expression provided. If one already
+  // exists for this set of internal and external specifiers, we just return that
+  // instead of creating a new one.
+  //
+  // For some reason this acts strange if equivalentClass is a string, so instead
+  // I've made it into a function here.
 
-function createMRCAAdditionalClass(jsonld, internals) {
-  process.stderr.write("MRCA for internals: "+internals.length+"\n");
+  if(internalSpecifiers.length === 0) throw new Error('Cannot create additional class without any internal specifiers');
+  if(internalSpecifiers.length === 1 && externalSpecifiers.length === 0)
+    throw new Error('Cannot create additional class with a single internal specifiers and no external specifiers');
 
-  // Given a list of internal specifiers, create an expression for the MRCA of
-  // those specifiers.
-  //  - jsonld: The phyloref being manipulated. We need this to set additional classes
-  //    and to access it's '@id'.
-  //  - internals: The list of internal specifiers to process.
-  // This function could return one of two things:
-  //  - It could return an entire OWL expression if given exactly two internal specifiers.
-  //  - Otherwise, it creates an additional class that represents this set of internal
-  //    specifier, and returns just an `{'@id': <additional class ID>}`.
-  //      To do this, it calls out to createClassExpressionForInternals(), which can
-  //      recursively create this expression. Note that createMRCAAdditionalClass() is
-  //      usually called from here -- so we end up with a pretty complicated pattern
-  //      of back-and-forth callbacks.
+  // TODO We need to replace this with an actual object-based comparison,
+  // rather than trusting the labels to tell us everything.
+  const externalSpecifierLabel = ' ~ ' + externalSpecifiers
+    .map(i => convertTUtoRestriction(i)[0].someValuesFrom.intersectionOf[1].hasValue || '(error)')
+    .sort()
+    .join(' V ');
 
-  // This can only really work when internals.length === 2; any more than
-  // that, and we need to pass this back to createEquivalentClasses to break
-  // it down further.
-  if (internals.length > 2) {
-    // TODO We need to replace this with an actual object-based comparison,
-    // rather than trusting the labels to tell us everything.
-    const additionalClassLabel = '(' + internals
-      .map(i => convertTUtoRestriction(i)[0].someValuesFrom.intersectionOf[1].hasValue || '(error)')
-      .sort()
-      .join(' & ') + ')';
+  // Add the internal specifiers to this.
+  const additionalClassLabel = '(' + internalSpecifiers
+    .map(i => convertTUtoRestriction(i)[0].someValuesFrom.intersectionOf[1].hasValue || '(error)')
+    .sort()
+    .join(' & ')
+    + (externalSpecifiers.length > 0 ? externalSpecifierLabel : '')
+    + ')';
 
-    if(hasOwnProperty(additionalClassesByLabel, additionalClassLabel)) {
-      return { '@id': additionalClassesByLabel[additionalClassLabel]['@id'] };
-    }
+  process.stderr.write("Additional class label: " + additionalClassLabel + "\n");
 
-    additionalClassCount += 1;
-    const additionalClass = {};
-    additionalClass['@id'] = jsonld['@id'] + '_additional' + additionalClassCount;
-    additionalClass['@type'] = 'owl:Class';
-    additionalClass['subClassOf'] = 'phyloref:PhyloreferenceUsingMaximumClade';
-    additionalClass['equivalentClass'] = createClassExpressionsForInternals(jsonld, internals, []);
-    additionalClass['label'] = additionalClassLabel;
-    jsonld['hasAdditionalClass'].push(additionalClass);
-
-    additionalClassesByLabel[additionalClassLabel] = additionalClass;
-
-    return {'@id': additionalClass['@id']};
-  } else {
-    throw new Error('Too few internal specifiers provided to createMRCAAdditionalClass(): ' + internals.length);
+  if(hasOwnProperty(additionalClassesByLabel, additionalClassLabel)) {
+    process.stderr.write("Found additional class with id: " + additionalClassesByLabel[additionalClassLabel]['@id'] + "\n");
+    return { '@id': additionalClassesByLabel[additionalClassLabel]['@id'] };
   }
+
+  additionalClassCount += 1;
+  const additionalClass = {};
+  additionalClass['@id'] = jsonld['@id'] + '_additional' + additionalClassCount;
+  process.stderr.write("Creating new additionalClass with id: " + additionalClass['@id']);
+
+  additionalClass['@type'] = 'owl:Class';
+  additionalClass['subClassOf'] = (
+    externalSpecifiers.length > 0 ? 'phyloref:PhyloreferenceUsingMinimumClade' : 'phyloref:PhyloreferenceUsingMaximumClade'
+  );
+  additionalClass['equivalentClass'] = equivalentClassFunc();
+  additionalClass['label'] = additionalClassLabel;
+  jsonld['hasAdditionalClass'].push(additionalClass);
+
+  additionalClassesByLabel[additionalClassLabel] = additionalClass;
+
+  return {'@id': additionalClass['@id']};
 }
 
 function getMRCA2Expression(tu1, tu2) {
@@ -286,7 +290,12 @@ function createClassExpressionsForInternals(jsonld, remainingInternals, selected
     } else if(remainingInternals.length === 2) {
       remainingInternalsExpr = getMRCA2Expression(remainingInternals[0], remainingInternals[1]);
     } else {
-      remainingInternalsExpr = createMRCAAdditionalClass(jsonld, remainingInternals);
+      remainingInternalsExpr = createAdditionalClass(
+        jsonld,
+        remainingInternals,
+        [],
+        () => createClassExpressionsForInternals(jsonld, remainingInternals, [])
+      );
     }
 
     let selectedExpr = [];
@@ -295,7 +304,12 @@ function createClassExpressionsForInternals(jsonld, remainingInternals, selected
     } else if(selected.length === 2) {
       selectedExpr = getMRCA2Expression(selected[0], selected[1]);
     } else {
-      selectedExpr = createMRCAAdditionalClass(jsonld, selected);
+      selectedExpr = createAdditionalClass(
+        jsonld,
+        selected,
+        [],
+        () => createClassExpressionsForInternals(jsonld, selected, [])
+      );
     }
 
     classExprs.push({
