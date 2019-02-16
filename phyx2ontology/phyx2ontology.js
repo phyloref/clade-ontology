@@ -175,6 +175,165 @@ const jsons = phyxFiles
  */
 const phylorefsByLabel = {};
 const additionalClassesByLabel = {};
+let additionalClassCount = 0;
+
+function createMRCAAdditionalClass(jsonld, internals) {
+  process.stderr.write("MRCA for internals: "+internals.length+"\n");
+
+  // Given a list of internal specifiers, create an expression for the MRCA of
+  // those specifiers.
+  //  - jsonld: The phyloref being manipulated. We need this to set additional classes
+  //    and to access it's '@id'.
+  //  - internals: The list of internal specifiers to process.
+  // This function could return one of two things:
+  //  - It could return an entire OWL expression if given exactly two internal specifiers.
+  //  - Otherwise, it creates an additional class that represents this set of internal
+  //    specifier, and returns just an `{'@id': <additional class ID>}`.
+  //      To do this, it calls out to createClassExpressionForInternals(), which can
+  //      recursively create this expression. Note that createMRCAAdditionalClass() is
+  //      usually called from here -- so we end up with a pretty complicated pattern
+  //      of back-and-forth callbacks.
+
+  // This can only really work when internals.length === 2; any more than
+  // that, and we need to pass this back to createEquivalentClasses to break
+  // it down further.
+  if (internals.length > 2) {
+    // TODO We need to replace this with an actual object-based comparison,
+    // rather than trusting the labels to tell us everything.
+    const additionalClassLabel = '(' + internals
+      .map(i => convertTUtoRestriction(i)[0].someValuesFrom.intersectionOf[1].hasValue || '(error)')
+      .sort()
+      .join(' & ') + ')';
+
+    if(hasOwnProperty(additionalClassesByLabel, additionalClassLabel)) {
+      return { '@id': additionalClassesByLabel[additionalClassLabel]['@id'] };
+    }
+
+    additionalClassCount += 1;
+    const additionalClass = {};
+    additionalClass['@id'] = jsonld['@id'] + '_additional' + additionalClassCount;
+    additionalClass['@type'] = 'owl:Class';
+    additionalClass['subClassOf'] = 'phyloref:PhyloreferenceUsingMaximumClade';
+    additionalClass['equivalentClass'] = createClassExpressionsForInternals(jsonld, internals, []);
+    additionalClass['label'] = additionalClassLabel;
+    jsonld['hasAdditionalClass'].push(additionalClass);
+
+    additionalClassesByLabel[additionalClassLabel] = additionalClass;
+
+    return {'@id': additionalClass['@id']};
+  } else {
+    throw new Error('Too few internal specifiers provided to createMRCAAdditionalClass(): ' + internals.length);
+  }
+}
+
+function getMRCA2Expression(tu1, tu2) {
+  return {
+    '@type': 'owl:Restriction',
+    'onProperty': 'obo:CDAO_0000149', // cdao:has_Child
+    'someValuesFrom': {
+      '@type': 'owl:Class',
+      'intersectionOf': [
+        {
+          '@type': 'owl:Restriction',
+          'onProperty': 'phyloref:excludes_TU',
+          'someValuesFrom': convertTUtoRestriction(tu1)[0],
+        },
+        getIncludesRestrictionForTU(tu2)
+      ]
+    }
+  };
+}
+
+function getIncludesRestrictionForTU(tu) {
+  return {
+    '@type': 'owl:Restriction',
+    'onProperty': 'phyloref:includes_TU',
+    'someValuesFrom': convertTUtoRestriction(tu)[0],
+  }
+}
+
+function createClassExpressionsForInternals(jsonld, remainingInternals, selected) {
+  // Create a class expression for a phyloref made up entirely of internal specifiers.
+  //  - additionalClasses: used to store additional classes as needed.
+  //  - remainingInternals: taxonomic units remaining to be included.
+  //  - selected: taxonomic units that have been selected already.
+
+  // This algorithm works like this:
+  //  - 1. We start with everything remaining and nothing selected.
+  //  - 2. We recurse into this method, moving everything in remaining into selected one by one.
+  //    - Think of it as a tree: the root node selects each internal once, and then each child node
+  //      selects one additional item from remaining, and so on.
+  process.stderr.write("@id [" + jsonld['@id'] + "] Remaining internals: "+remainingInternals.length +", selected: " +selected.length+"\n");
+
+  // Quick special case: if we have two 'remainingInternals' and zero selecteds,
+  // we can just return the MRCA for two internal specifiers.
+  if (selected.length === 0) {
+    if (remainingInternals.length === 2) {
+      return getMRCA2Expression(remainingInternals[0], remainingInternals[1]);
+    } else if(remainingInternals.length === 1) {
+      throw new Error('Cannot determine class expression for a single specifier');
+    } else if(remainingInternals.length === 0) {
+      throw new Error('Cannot determine class expression for zero specifiers');
+    }
+  }
+
+  // Step 1. If we've already selected something, create an expression for it.
+  const classExprs = [];
+  if(selected.length > 0) {
+    let remainingInternalsExpr = [];
+    if(remainingInternals.length === 1) {
+      remainingInternalsExpr = getIncludesRestrictionForTU(remainingInternals[0]);
+    } else if(remainingInternals.length === 2) {
+      remainingInternalsExpr = getMRCA2Expression(remainingInternals[0], remainingInternals[1]);
+    } else {
+      remainingInternalsExpr = createMRCAAdditionalClass(jsonld, remainingInternals);
+    }
+
+    let selectedExpr = [];
+    if(selected.length === 1) {
+      selectedExpr = getIncludesRestrictionForTU(selected[0]);
+    } else if(selected.length === 2) {
+      selectedExpr = getMRCA2Expression(selected[0], selected[1]);
+    } else {
+      selectedExpr = createMRCAAdditionalClass(jsonld, selected);
+    }
+
+    classExprs.push({
+      '@type': 'owl:Restriction',
+      'onProperty':'obo:CDAO_0000149', // cdao:has_Child
+      'someValuesFrom': {
+        '@type': 'owl:Class',
+        'intersectionOf': [{
+          '@type': 'owl:Restriction',
+          'onProperty': 'phyloref:excludes_lineage_to',
+          'someValuesFrom': remainingInternalsExpr,
+        }, selectedExpr]
+      }
+    });
+  }
+
+  // Step 2. Now select everything from remaining once, and start recursing through
+  // every possibility.
+  // Note that we only process cases where there are more remainingInternals than
+  // selected internals -- when there are fewer, we'll just end up with the inverses
+  // of the previous comparisons, which we'll already have covered.
+  // TODO: the other way around that would be to wrap *everything* into additional
+  // classes, which might be a useful thing to do anyway.
+  if(remainingInternals.length > 1 && selected.length <= remainingInternals.length) {
+    remainingInternals.map(newlySelected => {
+      process.stderr.write("Selecting new object, remaining now at: "+remainingInternals.filter(i => i !== newlySelected).length +", selected: " +selected.concat([newlySelected]).length+"\n");
+      return createClassExpressionsForInternals(
+        jsonld,
+        remainingInternals.filter(i => i !== newlySelected), // The new remaining is the old remaining minus the selected TU.
+        selected.concat([newlySelected]), // The new selected is the old selected plus the selected TU.
+      );
+    })
+      .reduce((acc, val) => acc.concat(val), [])
+      .forEach(expr => classExprs.push(expr));
+  }
+
+  return classExprs;
+}
 
 const phylorefs = [];
 let specifiers = [];
@@ -210,149 +369,22 @@ for (let phyxFile of jsons) {
     const internalSpecifiers = jsonld.internalSpecifiers || [];
     const externalSpecifiers = jsonld.externalSpecifiers || [];
 
-    if (internalSpecifiers.length === 1 && externalSpecifiers.length === 1) {
-      jsonld['equivalentClass'] = {
-        '@type': 'owl:Class',
-        'intersectionOf': [
-          {
-            '@type': 'owl:Restriction',
-            'onProperty': 'phyloref:excludes_TU',
-            'someValuesFrom': convertTUtoRestriction(externalSpecifiers[0])[0],
-          },
-          {
-            '@type': 'owl:Restriction',
-            'onProperty': 'phyloref:includes_TU',
-            'someValuesFrom': convertTUtoRestriction(internalSpecifiers[0])[0],
-          }
-        ]
+    // We might be create additional classes, so get going.
+    jsonld['hasAdditionalClass'] = [];
+
+    // Step 1. Figure out what the node is for all our internal specifiers.
+    if(internalSpecifiers.length === 0) {
+      jsonld['malformedPhyloreference'] = "No internal specifiers provided";
+    } else {
+      let expressionForInternals = (internalSpecifiers.length === 1) ?
+        getIncludesRestrictionForTU(internalSpecifiers[0]) :
+        createClassExpressionsForInternals(jsonld, internalSpecifiers, []);
+
+      if(externalSpecifiers.length === 0) {
+        jsonld['equivalentClass'] = expressionForInternals;
+      } else {
+        // TODO
       }
-    } else if(internalSpecifiers.length === 2 && externalSpecifiers.length === 0) {
-      jsonld['equivalentClass'] = {
-        '@type': 'owl:Restriction',
-        'onProperty': 'obo:CDAO_0000149', // cdao:has_Child
-        'someValuesFrom': {
-          '@type': 'owl:Class',
-          'intersectionOf': [
-            {
-              '@type': 'owl:Restriction',
-              'onProperty': 'phyloref:excludes_TU',
-              'someValuesFrom': convertTUtoRestriction(internalSpecifiers[0])[0],
-            },
-            {
-              '@type': 'owl:Restriction',
-              'onProperty': 'phyloref:includes_TU',
-              'someValuesFrom': convertTUtoRestriction(internalSpecifiers[1])[0],
-            }
-          ]
-        }
-      }
-    } else if(externalSpecifiers.length === 0 && internalSpecifiers.length > 0) {
-      // The overall pattern here is going to be:
-      // equivalentClass: [
-      //  has_Child some (excludes_lineage_to some (A, B, C) and includes_TU some (D_as_restriction) ),
-      //  has_Child some (excludes_lineage_to some (A, B, D) and includes_TU some (C_as_restriction) ),
-      //  ...
-      // ]
-      // where (A, B) uses the standard 1-int 1-ext form.
-      let additionalClassCount = 0;
-      jsonld['hasAdditionalClass'] = [];
-      function createMRCAAdditionalClass(internals, remaining) {
-        // This can only really work when internals.length === 2; any more than
-        // that, and we need to pass this back to createEquivalentClasses to break
-        // it down further.
-        if(internals.length > 2) {
-          // TODO We need to replace this with an actual object-based comparison,
-          // rather than trusting the labels to tell us everything.
-          const additionalClassLabel = '(' + internals
-            .map(i => convertTUtoRestriction(i)[0].someValuesFrom.intersectionOf[1].hasValue || '(error)')
-            .sort()
-            .join(',') + ')';
-
-          if(hasOwnProperty(additionalClassesByLabel, additionalClassLabel)) {
-            return { '@id': additionalClassesByLabel[additionalClassLabel]['@id'] };
-          }
-
-          additionalClassCount += 1;
-          const additionalClass = {};
-          additionalClass['@id'] = jsonld['@id'] + '_additional' + additionalClassCount;
-          additionalClass['@type'] = 'owl:Class';
-          additionalClass['subClassOf'] = 'phyloref:PhyloreferenceUsingMaximumClade';
-          additionalClass['equivalentClass'] = createEquivalentClasses(internals, []);
-          additionalClass['label'] = additionalClassLabel;
-          jsonld['hasAdditionalClass'].push(additionalClass);
-
-          additionalClassesByLabel[additionalClassLabel] = additionalClass;
-
-          return {'@id': additionalClass['@id']};
-        } else if(internals.length === 2) {
-          return {
-            '@type': 'owl:Restriction',
-            'onProperty': 'obo:CDAO_0000149', // cdao:has_Child
-            'someValuesFrom': {
-              '@type': 'owl:Class',
-              'intersectionOf': [
-                {
-                  '@type': 'owl:Restriction',
-                  'onProperty': 'phyloref:excludes_TU',
-                  'someValuesFrom': convertTUtoRestriction(internals[0])[0],
-                },
-                {
-                  '@type': 'owl:Restriction',
-                  'onProperty': 'phyloref:includes_TU',
-                  'someValuesFrom': convertTUtoRestriction(internals[1])[0],
-                }
-              ]
-            }
-          }
-        } else if(internals.length === 1) {
-          return {
-            '@type': 'owl:Restriction',
-            'onProperty': 'phyloref:includes_TU',
-            'someValuesFrom': convertTUtoRestriction(internals[0])[0]
-          };
-        } else {
-          throw new Error('impossible branch');
-        }
-      }
-
-      function createEquivalentClasses(remaining, selectedParam) {
-        const selected = selectedParam || [];
-        const results = [];
-
-        // process.stderr.write("Remaining: "+remaining.length +", selected: " +selected.length+"\n");
-
-        // Recursively call ourselves as long as there are more remaining.
-        if(remaining.length >= selected.length) {
-          remaining.forEach(newlySelected => {
-            createEquivalentClasses(
-              remaining.filter(i => i !== newlySelected),
-              selected.concat([newlySelected]),
-            ).forEach(cls => results.push(cls));
-              // results.push(
-              //.reduce((acc, val) => acc.concat(val), []));
-          });
-        }
-
-        // Finally, add this particular set of remaining and selected.
-        if(selected.length > 0) {
-          results.push({
-            '@type': 'owl:Restriction',
-            'onProperty':'obo:CDAO_0000149', // cdao:has_Child
-            'someValuesFrom': {
-              '@type': 'owl:Class',
-              'intersectionOf': [{
-                '@type': 'owl:Restriction',
-                'onProperty': 'phyloref:excludes_lineage_to',
-                'someValuesFrom': createMRCAAdditionalClass(remaining)
-              }, createMRCAAdditionalClass(selected, remaining)]
-            }
-          });
-        }
-
-        return results;
-      }
-
-      jsonld['equivalentClass'] = createEquivalentClasses(internalSpecifiers, []);
     }
 
     jsonld['@context'] = PHYX_CONTEXT_JSON;
