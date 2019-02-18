@@ -273,7 +273,7 @@ function createClassExpressionsForInternals(jsonld, remainingInternals, selected
   // we can just return the MRCA for two internal specifiers.
   if (selected.length === 0) {
     if (remainingInternals.length === 2) {
-      return getMRCA2Expression(remainingInternals[0], remainingInternals[1]);
+      return [getMRCA2Expression(remainingInternals[0], remainingInternals[1])];
     } else if(remainingInternals.length === 1) {
       throw new Error('Cannot determine class expression for a single specifier');
     } else if(remainingInternals.length === 0) {
@@ -350,8 +350,7 @@ function createClassExpressionsForInternals(jsonld, remainingInternals, selected
 }
 
 function getExclusionsForSingleTU(includedExpr, tu) {
-  if(!includedExpr || includedExpr === null || includedExpr === undefined)
-    throw new Error('Exclusions require an included expression');
+  if(!includedExpr) throw new Error('Exclusions require an included expression');
 
   return [{
     '@type': 'owl:Class',
@@ -394,23 +393,23 @@ function createClassExpressionsForExternals(jsonld, accumulatedExpr, remainingEx
   // Step 1. If we only have one external remaining, we can provide our two-case example
   // to detect it.
   const classExprs = [];
-  if(remainingExternals.length === 1) {
+  if(remainingExternals.length === 0) {
+    throw new Error('Cannot create class expression when no externals remain');
+  }
+  else if(remainingExternals.length === 1) {
     if(selected.length === 0) {
       // Special case: a single external specifier can be represented with a
       // single TU expression.
-      return [
-        getExclusionsForSingleTU(accumulatedExpr, remainingExternals[0])
-      ];
+      return getExclusionsForSingleTU(accumulatedExpr, remainingExternals[0]);
     }
 
     const remainingExternalsExprs = getExclusionsForSingleTU(accumulatedExpr, remainingExternals[0])
     remainingExternalsExprs.forEach(expr => classExprs.push(expr))
   }
 
-
   // Recurse into remaining externals. Every time we select a single entry,
   // we create a class expression for that.
-  if(remainingExternals.length > 1) {
+  else { // if(remainingExternals.length > 1)
     remainingExternals.map(newlySelected => {
       process.stderr.write("Selecting new object, remaining now at: "+remainingExternals.filter(i => i !== newlySelected).length +", selected: " +selected.concat([newlySelected]).length+"\n");
 
@@ -418,10 +417,7 @@ function createClassExpressionsForExternals(jsonld, accumulatedExpr, remainingEx
         jsonld,
         jsonld.internalSpecifiers,
         selected.concat([newlySelected]),
-        () => getExclusionsForSingleTU(
-          accumulatedExpr, // If we don't have an accumulated expr, start with the internals expression.
-          newlySelected
-        )
+        () => getExclusionsForSingleTU(accumulatedExpr, newlySelected)
       )
 
       return createClassExpressionsForExternals(
@@ -434,6 +430,8 @@ function createClassExpressionsForExternals(jsonld, accumulatedExpr, remainingEx
       .reduce((acc, val) => acc.concat(val), [])
       .forEach(expr => classExprs.push(expr));
   }
+
+  // console.dir(classExprs, { depth: null })
 
   return classExprs;
 }
@@ -479,14 +477,16 @@ for (let phyxFile of jsons) {
     if(internalSpecifiers.length === 0) {
       jsonld['malformedPhyloreference'] = "No internal specifiers provided";
     } else {
-      let expressionForInternals = (internalSpecifiers.length === 1) ?
-        getIncludesRestrictionForTU(internalSpecifiers[0]) :
+      let expressionsForInternals = (internalSpecifiers.length === 1) ?
+        [getIncludesRestrictionForTU(internalSpecifiers[0])] :
         createClassExpressionsForInternals(jsonld, internalSpecifiers, []);
 
       if(externalSpecifiers.length === 0) {
-        jsonld['equivalentClass'] = expressionForInternals;
+        jsonld['equivalentClass'] = expressionsForInternals;
       } else {
-        jsonld['equivalentClass'] = createClassExpressionsForExternals(jsonld, expressionForInternals, externalSpecifiers, [])
+        jsonld['equivalentClass'] = expressionsForInternals.map(
+          exprForInternal => createClassExpressionsForExternals(jsonld, exprForInternal, externalSpecifiers, [])
+        ).reduce((acc, val) => acc.concat(val), [])
       }
     }
 
