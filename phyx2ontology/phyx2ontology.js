@@ -349,6 +349,95 @@ function createClassExpressionsForInternals(jsonld, remainingInternals, selected
   return classExprs;
 }
 
+function getExclusionsForSingleTU(includedExpr, tu) {
+  if(!includedExpr || includedExpr === null || includedExpr === undefined)
+    throw new Error('Exclusions require an included expression');
+
+  return [{
+    '@type': 'owl:Class',
+    'intersectionOf': [
+      includedExpr,
+      {
+        '@type': 'owl:Restriction',
+        'onProperty': 'obo:CDAO_0000144', // has_Ancestor
+        'someValuesFrom': {
+          '@type': 'owl:Restriction',
+          'onProperty': 'phyloref:excludes_TU',
+          'someValuesFrom': convertTUtoRestriction(tu)[0],
+        },
+      },
+    ],
+  }, {
+    '@type': 'owl:Class',
+    'intersectionOf': [
+      includedExpr,
+      {
+        '@type': 'owl:Restriction',
+        'onProperty': 'phyloref:excludes_TU',
+        'someValuesFrom': convertTUtoRestriction(tu)[0],
+      },
+    ],
+  }];
+}
+
+function createClassExpressionsForExternals(jsonld, accumulatedExpr, remainingExternals, selected) {
+  // When creating a class expression with external specifiers, we can treat the
+  // internal expression as evaluating to a particular set of nodes. Each external
+  // specifier can have one of two relationships with the internal expression node:
+  //  - It could directly excludes_TU the external specifier, or
+  //  - It could have an ancestor that excludes_TU the external specifier.
+  // For the single case, this is straightforward. But when there are multiple
+  // external specifiers, we must use the same recursive algorithm we use to
+  // ensure that we try them out in every possible combination.
+  process.stderr.write("@id [" + jsonld['@id'] + "] Remaining externals: "+remainingExternals.length +", selected: " +selected.length+"\n");
+
+  // Step 1. If we only have one external remaining, we can provide our two-case example
+  // to detect it.
+  const classExprs = [];
+  if(remainingExternals.length === 1) {
+    if(selected.length === 0) {
+      // Special case: a single external specifier can be represented with a
+      // single TU expression.
+      return [
+        getExclusionsForSingleTU(accumulatedExpr, remainingExternals[0])
+      ];
+    }
+
+    const remainingExternalsExprs = getExclusionsForSingleTU(accumulatedExpr, remainingExternals[0])
+    remainingExternalsExprs.forEach(expr => classExprs.push(expr))
+  }
+
+
+  // Recurse into remaining externals. Every time we select a single entry,
+  // we create a class expression for that.
+  if(remainingExternals.length > 1) {
+    remainingExternals.map(newlySelected => {
+      process.stderr.write("Selecting new object, remaining now at: "+remainingExternals.filter(i => i !== newlySelected).length +", selected: " +selected.concat([newlySelected]).length+"\n");
+
+      const newlyAccumulatedExpr = createAdditionalClass(
+        jsonld,
+        jsonld.internalSpecifiers,
+        selected.concat([newlySelected]),
+        () => getExclusionsForSingleTU(
+          accumulatedExpr, // If we don't have an accumulated expr, start with the internals expression.
+          newlySelected
+        )
+      )
+
+      return createClassExpressionsForExternals(
+        jsonld,
+        newlyAccumulatedExpr,
+        remainingExternals.filter(i => i !== newlySelected), // The new remaining is the old remaining minus the selected TU.
+        selected.concat([newlySelected]), // The new selected is the old selected plus the selected TU.
+      );
+    })
+      .reduce((acc, val) => acc.concat(val), [])
+      .forEach(expr => classExprs.push(expr));
+  }
+
+  return classExprs;
+}
+
 const phylorefs = [];
 let specifiers = [];
 for (let phyxFile of jsons) {
@@ -397,7 +486,7 @@ for (let phyxFile of jsons) {
       if(externalSpecifiers.length === 0) {
         jsonld['equivalentClass'] = expressionForInternals;
       } else {
-        // TODO
+        jsonld['equivalentClass'] = createClassExpressionsForExternals(jsonld, expressionForInternals, externalSpecifiers, [])
       }
     }
 
