@@ -37,7 +37,6 @@ function convertTUtoRestriction(tunit) {
     return convertTUtoRestriction(tunit.referencesTaxonomicUnits[0] || {});
   }
 
-  // We can only do this for scientific names currently.
   const results = [];
   if(hasOwnProperty(tunit, 'scientificNames')) {
     tunit.scientificNames.forEach(sciname => {
@@ -59,6 +58,23 @@ function convertTUtoRestriction(tunit) {
         }
       });
     });
+  } else if(hasOwnProperty(tunit, 'includesSpecimens')) {
+    tunit.includesSpecimens.forEach(specimen => {
+      const wrappedSpecimen = new phyx.SpecimenWrapper(specimen);
+
+      results.push({
+        '@type': 'owl:Restriction',
+        'onProperty': 'http://rs.tdwg.org/ontology/voc/TaxonConcept#circumscribedBy',
+        'someValuesFrom': {
+          '@type': 'owl:Restriction',
+          'onProperty': 'dwc:organismID', // TODO Technically, this should be a token. Probably.
+          'hasValue': wrappedSpecimen.occurrenceID
+        }
+      });
+    });
+  } else {
+    process.stderr.write(`WARNING: taxonomic unit could not be converted into restriction: ${JSON.stringify}`);
+    results.push({});
   }
 
   return results;
