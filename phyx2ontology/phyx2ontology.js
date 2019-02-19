@@ -512,6 +512,10 @@ for (let phyxFile of jsons) {
       if(!hasOwnProperty(node, '@type')) node['@type'] = [];
       if(!Array.isArray(node['@type'])) node['@type'] = [node['@type']];
 
+      // TODO remove hack: replace "parent" with "obo:CDAO_0000179" so we get has_Parent
+      // relationships in our output ontology.
+      if(hasOwnProperty(node, 'parent')) node['obo:CDAO_0000179'] = { '@id': node.parent };
+
       // For every internal node in this phylogeny, check to see if it's expected to
       // resolve to a phylogeny we know about. If so, add an rdf:type to that effect.
       let expectedToResolveTo = node.labels || [];
