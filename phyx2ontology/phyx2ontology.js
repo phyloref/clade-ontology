@@ -492,6 +492,19 @@ for (let phyxFile of jsons) {
     // Step 1. Figure out what the node is for all our internal specifiers.
     if(internalSpecifiers.length === 0) {
       jsonld['malformedPhyloreference'] = "No internal specifiers provided";
+    } else if(internalSpecifiers.length === 1 && externalSpecifiers.length === 1) {
+      // We have a particularly compact form for this case!
+      jsonld['equivalentClass'] = {
+        '@type': 'owl:Class',
+        'intersectionOf': [
+          {
+            '@type': 'owl:Restriction',
+            'onProperty': 'phyloref:excludes_TU',
+            'someValuesFrom': convertTUtoRestriction(externalSpecifiers[0])[0],
+          },
+          getIncludesRestrictionForTU(internalSpecifiers[0])
+        ]
+      };
     } else {
       let expressionsForInternals = (internalSpecifiers.length === 1) ?
         [getIncludesRestrictionForTU(internalSpecifiers[0])] :
