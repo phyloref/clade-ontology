@@ -365,7 +365,7 @@ function createClassExpressionsForInternals(jsonld, remainingInternals, selected
   return classExprs;
 }
 
-function getExclusionsForExprAndTU(includedExpr, tu, flagAddHasAncestorCheck) {
+function getExclusionsForExprAndTU(includedExpr, tu) {
   if(!includedExpr) throw new Error('Exclusions require an included expression');
 
   const exprs = [{
@@ -379,7 +379,11 @@ function getExclusionsForExprAndTU(includedExpr, tu, flagAddHasAncestorCheck) {
       },
     ],
   }];
-  if(flagAddHasAncestorCheck) {
+
+  if(!Array.isArray(includedExpr) && hasOwnProperty(includedExpr, 'onProperty') && includedExpr.onProperty === 'phyloref:includes_TU') {
+    // In this specific set of circumstances, we do NOT need to add the has_Ancestor check.
+  } else {
+    // Add the has_Ancestor check!
     exprs.push({
       '@type': 'owl:Class',
       'intersectionOf': [
@@ -396,6 +400,7 @@ function getExclusionsForExprAndTU(includedExpr, tu, flagAddHasAncestorCheck) {
       ],
     });
   }
+
   return exprs;
 }
 
