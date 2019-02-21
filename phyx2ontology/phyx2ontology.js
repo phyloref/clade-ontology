@@ -33,43 +33,43 @@ function hasOwnProperty(obj, propName) {
 
 function convertTUtoRestriction(tunit) {
   // If we're called with a specifier, use the first TU in that specifier (for now).
-  if(hasOwnProperty(tunit, 'referencesTaxonomicUnits')) {
+  if (hasOwnProperty(tunit, 'referencesTaxonomicUnits')) {
     return convertTUtoRestriction(tunit.referencesTaxonomicUnits[0] || {});
   }
 
   const results = [];
-  if(hasOwnProperty(tunit, 'scientificNames')) {
-    tunit.scientificNames.forEach(sciname => {
+  if (hasOwnProperty(tunit, 'scientificNames')) {
+    tunit.scientificNames.forEach((sciname) => {
       const wrappedSciname = new phyx.ScientificNameWrapper(sciname);
 
       results.push({
         '@type': 'owl:Restriction',
-        'onProperty': 'http://rs.tdwg.org/ontology/voc/TaxonConcept#hasName',
-        'someValuesFrom': {
+        onProperty: 'http://rs.tdwg.org/ontology/voc/TaxonConcept#hasName',
+        someValuesFrom: {
           '@type': 'owl:Class',
-          'intersectionOf': [
-            { '@id':'obo:NOMEN_0000107' }, // ICZN -- TODO replace with a check once we close phyloref/phyx.js#5.
+          intersectionOf: [
+            { '@id': 'obo:NOMEN_0000107' }, // ICZN -- TODO replace with a check once we close phyloref/phyx.js#5.
             {
-              '@type':'owl:Restriction',
-              'onProperty': 'dwc:scientificName',
-              'hasValue': wrappedSciname.binomialName, // TODO: We really want the "canonical name" here: binomial or trinomial, but without any additional authority information.
-            }
-          ]
-        }
+              '@type': 'owl:Restriction',
+              onProperty: 'dwc:scientificName',
+              hasValue: wrappedSciname.binomialName, // TODO: We really want the "canonical name" here: binomial or trinomial, but without any additional authority information.
+            },
+          ],
+        },
       });
     });
-  } else if(hasOwnProperty(tunit, 'includesSpecimens')) {
-    tunit.includesSpecimens.forEach(specimen => {
+  } else if (hasOwnProperty(tunit, 'includesSpecimens')) {
+    tunit.includesSpecimens.forEach((specimen) => {
       const wrappedSpecimen = new phyx.SpecimenWrapper(specimen);
 
       results.push({
         '@type': 'owl:Restriction',
-        'onProperty': 'http://rs.tdwg.org/ontology/voc/TaxonConcept#circumscribedBy',
-        'someValuesFrom': {
+        onProperty: 'http://rs.tdwg.org/ontology/voc/TaxonConcept#circumscribedBy',
+        someValuesFrom: {
           '@type': 'owl:Restriction',
-          'onProperty': 'dwc:organismID', // TODO Technically, this should be a token. Probably.
-          'hasValue': wrappedSpecimen.occurrenceID
-        }
+          onProperty: 'dwc:organismID', // TODO Technically, this should be a token. Probably.
+          hasValue: wrappedSpecimen.occurrenceID,
+        },
       });
     });
   } else {
@@ -92,21 +92,19 @@ function convertTUtoRestriction(tunit) {
  * to get that list before we start testing.
  */
 function findPHYXFiles(dirPath) {
-    return fs.readdirSync(dirPath).map(function(filename) {
-        const filePath = path.join(dirPath, filename);
+  return fs.readdirSync(dirPath).map((filename) => {
+    const filePath = path.join(dirPath, filename);
 
-        if(fs.lstatSync(filePath).isDirectory()) {
-            // Recurse into this directory.
-            return findPHYXFiles(filePath);
-        } else {
-            // Look for .json files (but not for '_as_owl.json' files, for historical reasons).
-            if(filePath.endsWith('.json') && !filePath.endsWith('_as_owl.json')) {
-                return [filePath];
-            } else {
-                return [];
-            }
-        }
-   }).reduce((x, y) => x.concat(y), []); // This flattens the list of results.
+    if (fs.lstatSync(filePath).isDirectory()) {
+      // Recurse into this directory.
+      return findPHYXFiles(filePath);
+    }
+    // Look for .json files (but not for '_as_owl.json' files, for historical reasons).
+    if (filePath.endsWith('.json') && !filePath.endsWith('_as_owl.json')) {
+      return [filePath];
+    }
+    return [];
+  }).reduce((x, y) => x.concat(y), []); // This flattens the list of results.
 }
 
 // Read command-line arguments.
@@ -121,7 +119,7 @@ const argv = require('yargs')
 
 // Make sure there are no unknown arguments.
 if (argv._.length > 0) {
-  throw new Error('Unknown arguments: ' + argv._);
+  throw new Error(`Unknown arguments: ${argv._}`);
 }
 
 // Determine the directory to process.
@@ -142,11 +140,11 @@ function getIdentifier(index) {
 
 // Loop through our files and assemble a combined ontology.
 const jsons = phyxFiles
-  .map(filename => {
+  .map((filename) => {
     const content = fs.readFileSync(filename);
 
     // Some of these PHYX files are encrypted! We need to ignore those.
-    if(content.slice(0, 9).equals(Buffer.from("\x00GITCRYPT"))) {
+    if (content.slice(0, 9).equals(Buffer.from('\x00GITCRYPT'))) {
       return [];
     }
 
@@ -154,7 +152,7 @@ const jsons = phyxFiles
     let json;
     try {
       json = JSON.parse(content.toString('utf8'));
-    } catch(err) {
+    } catch (err) {
       process.stderr.write(`WARNING: ${filename} could not be read as JSON, skipping.`);
       return [];
     }
@@ -202,74 +200,73 @@ function createAdditionalClass(jsonld, internalSpecifiers, externalSpecifiers, e
   // For some reason this acts strange if equivalentClass is a string, so instead
   // I've made it into a function here.
 
-  if(internalSpecifiers.length === 0) throw new Error('Cannot create additional class without any internal specifiers');
-  if(internalSpecifiers.length === 1 && externalSpecifiers.length === 0)
-    throw new Error('Cannot create additional class with a single internal specifiers and no external specifiers');
+  if (internalSpecifiers.length === 0) throw new Error('Cannot create additional class without any internal specifiers');
+  if (internalSpecifiers.length === 1 && externalSpecifiers.length === 0) throw new Error('Cannot create additional class with a single internal specifiers and no external specifiers');
 
   // TODO We need to replace this with an actual object-based comparison,
   // rather than trusting the labels to tell us everything.
-  const externalSpecifierLabel = ' ~ ' + externalSpecifiers
+  const externalSpecifierLabel = ` ~ ${externalSpecifiers
     .map(i => convertTUtoRestriction(i)[0].someValuesFrom.intersectionOf[1].hasValue || '(error)')
     .sort()
-    .join(' V ');
+    .join(' V ')}`;
 
   // Add the internal specifiers to this.
-  const additionalClassLabel = '(' + internalSpecifiers
+  const additionalClassLabel = `(${internalSpecifiers
     .map(i => convertTUtoRestriction(i)[0].someValuesFrom.intersectionOf[1].hasValue || '(error)')
     .sort()
     .join(' & ')
-    + (externalSpecifiers.length > 0 ? externalSpecifierLabel : '')
-    + ')';
+  }${externalSpecifiers.length > 0 ? externalSpecifierLabel : ''
+  })`;
 
-  process.stderr.write("Additional class label: " + additionalClassLabel + "\n");
+  process.stderr.write(`Additional class label: ${additionalClassLabel}\n`);
 
-  if(hasOwnProperty(additionalClassesByLabel, additionalClassLabel)) {
-    process.stderr.write("Found additional class with id: " + additionalClassesByLabel[additionalClassLabel]['@id'] + "\n");
+  if (hasOwnProperty(additionalClassesByLabel, additionalClassLabel)) {
+    process.stderr.write(`Found additional class with id: ${additionalClassesByLabel[additionalClassLabel]['@id']}\n`);
     return { '@id': additionalClassesByLabel[additionalClassLabel]['@id'] };
   }
 
   additionalClassCount += 1;
   const additionalClass = {};
-  additionalClass['@id'] = jsonld['@id'] + '_additional' + additionalClassCount;
-  process.stderr.write("Creating new additionalClass with id: " + additionalClass['@id']);
+  additionalClass['@id'] = `${jsonld['@id']}_additional${additionalClassCount}`;
+  process.stderr.write(`Creating new additionalClass with id: ${additionalClass['@id']}`);
 
   additionalClass['@type'] = 'owl:Class';
-  additionalClass['subClassOf'] = (
+  additionalClass.subClassOf = (
     externalSpecifiers.length > 0 ? 'phyloref:PhyloreferenceUsingMinimumClade' : 'phyloref:PhyloreferenceUsingMaximumClade'
   );
-  additionalClass['equivalentClass'] = equivalentClassFunc();
-  additionalClass['label'] = additionalClassLabel;
-  jsonld['hasAdditionalClass'].push(additionalClass);
+  additionalClass.equivalentClass = equivalentClassFunc();
+  additionalClass.label = additionalClassLabel;
+  jsonld.hasAdditionalClass.push(additionalClass);
 
   additionalClassesByLabel[additionalClassLabel] = additionalClass;
 
-  return {'@id': additionalClass['@id']};
+  return { '@id': additionalClass['@id'] };
 }
 
 function getMRCA2Expression(tu1, tu2) {
   return {
     '@type': 'owl:Restriction',
-    'onProperty': 'obo:CDAO_0000149', // cdao:has_Child
-    'someValuesFrom': {
+    onProperty: 'obo:CDAO_0000149', // cdao:has_Child
+    someValuesFrom: {
       '@type': 'owl:Class',
-      'intersectionOf': [
+      intersectionOf: [
         {
           '@type': 'owl:Restriction',
-          'onProperty': 'phyloref:excludes_TU',
-          'someValuesFrom': convertTUtoRestriction(tu1)[0],
+          onProperty: 'phyloref:excludes_TU',
+          someValuesFrom: convertTUtoRestriction(tu1)[0],
         },
-        getIncludesRestrictionForTU(tu2)
-      ]
-    }
+        getIncludesRestrictionForTU(tu2),
+      ],
+    },
   };
 }
 
 function getIncludesRestrictionForTU(tu) {
   return {
     '@type': 'owl:Restriction',
-    'onProperty': 'phyloref:includes_TU',
-    'someValuesFrom': convertTUtoRestriction(tu)[0],
-  }
+    onProperty: 'phyloref:includes_TU',
+    someValuesFrom: convertTUtoRestriction(tu)[0],
+  };
 }
 
 function createClassExpressionsForInternals(jsonld, remainingInternals, selected) {
@@ -283,27 +280,27 @@ function createClassExpressionsForInternals(jsonld, remainingInternals, selected
   //  - 2. We recurse into this method, moving everything in remaining into selected one by one.
   //    - Think of it as a tree: the root node selects each internal once, and then each child node
   //      selects one additional item from remaining, and so on.
-  process.stderr.write("@id [" + jsonld['@id'] + "] Remaining internals: "+remainingInternals.length +", selected: " +selected.length+"\n");
+  process.stderr.write(`@id [${jsonld['@id']}] Remaining internals: ${remainingInternals.length}, selected: ${selected.length}\n`);
 
   // Quick special case: if we have two 'remainingInternals' and zero selecteds,
   // we can just return the MRCA for two internal specifiers.
   if (selected.length === 0) {
     if (remainingInternals.length === 2) {
       return [getMRCA2Expression(remainingInternals[0], remainingInternals[1])];
-    } else if(remainingInternals.length === 1) {
+    } if (remainingInternals.length === 1) {
       throw new Error('Cannot determine class expression for a single specifier');
-    } else if(remainingInternals.length === 0) {
+    } else if (remainingInternals.length === 0) {
       throw new Error('Cannot determine class expression for zero specifiers');
     }
   }
 
   // Step 1. If we've already selected something, create an expression for it.
   const classExprs = [];
-  if(selected.length > 0) {
+  if (selected.length > 0) {
     let remainingInternalsExpr = [];
-    if(remainingInternals.length === 1) {
+    if (remainingInternals.length === 1) {
       remainingInternalsExpr = getIncludesRestrictionForTU(remainingInternals[0]);
-    } else if(remainingInternals.length === 2) {
+    } else if (remainingInternals.length === 2) {
       remainingInternalsExpr = getMRCA2Expression(remainingInternals[0], remainingInternals[1]);
     } else {
       remainingInternalsExpr = createAdditionalClass(
@@ -315,9 +312,9 @@ function createClassExpressionsForInternals(jsonld, remainingInternals, selected
     }
 
     let selectedExpr = [];
-    if(selected.length === 1) {
+    if (selected.length === 1) {
       selectedExpr = getIncludesRestrictionForTU(selected[0]);
-    } else if(selected.length === 2) {
+    } else if (selected.length === 2) {
       selectedExpr = getMRCA2Expression(selected[0], selected[1]);
     } else {
       selectedExpr = createAdditionalClass(
@@ -330,15 +327,15 @@ function createClassExpressionsForInternals(jsonld, remainingInternals, selected
 
     classExprs.push({
       '@type': 'owl:Restriction',
-      'onProperty':'obo:CDAO_0000149', // cdao:has_Child
-      'someValuesFrom': {
+      onProperty: 'obo:CDAO_0000149', // cdao:has_Child
+      someValuesFrom: {
         '@type': 'owl:Class',
-        'intersectionOf': [{
+        intersectionOf: [{
           '@type': 'owl:Restriction',
-          'onProperty': 'phyloref:excludes_lineage_to',
-          'someValuesFrom': remainingInternalsExpr,
-        }, selectedExpr]
-      }
+          onProperty: 'phyloref:excludes_lineage_to',
+          someValuesFrom: remainingInternalsExpr,
+        }, selectedExpr],
+      },
     });
   }
 
@@ -349,13 +346,13 @@ function createClassExpressionsForInternals(jsonld, remainingInternals, selected
   // of the previous comparisons, which we'll already have covered.
   // TODO: the other way around that would be to wrap *everything* into additional
   // classes, which might be a useful thing to do anyway.
-  if(remainingInternals.length > 1 && selected.length <= remainingInternals.length) {
-    remainingInternals.map(newlySelected => {
-      process.stderr.write("Selecting new object, remaining now at: "+remainingInternals.filter(i => i !== newlySelected).length +", selected: " +selected.concat([newlySelected]).length+"\n");
+  if (remainingInternals.length > 1 && selected.length <= remainingInternals.length) {
+    remainingInternals.map((newlySelected) => {
+      process.stderr.write(`Selecting new object, remaining now at: ${remainingInternals.filter(i => i !== newlySelected).length}, selected: ${selected.concat([newlySelected]).length}\n`);
       return createClassExpressionsForInternals(
         jsonld,
         remainingInternals.filter(i => i !== newlySelected), // The new remaining is the old remaining minus the selected TU.
-        selected.concat([newlySelected]), // The new selected is the old selected plus the selected TU.
+        selected.concat([newlySelected]) // The new selected is the old selected plus the selected TU.
       );
     })
       .reduce((acc, val) => acc.concat(val), [])
@@ -366,35 +363,35 @@ function createClassExpressionsForInternals(jsonld, remainingInternals, selected
 }
 
 function getExclusionsForExprAndTU(includedExpr, tu) {
-  if(!includedExpr) throw new Error('Exclusions require an included expression');
+  if (!includedExpr) throw new Error('Exclusions require an included expression');
 
   const exprs = [{
     '@type': 'owl:Class',
-    'intersectionOf': [
+    intersectionOf: [
       includedExpr,
       {
         '@type': 'owl:Restriction',
-        'onProperty': 'phyloref:excludes_TU',
-        'someValuesFrom': convertTUtoRestriction(tu)[0],
+        onProperty: 'phyloref:excludes_TU',
+        someValuesFrom: convertTUtoRestriction(tu)[0],
       },
     ],
   }];
 
-  if(!Array.isArray(includedExpr) && hasOwnProperty(includedExpr, 'onProperty') && includedExpr.onProperty === 'phyloref:includes_TU') {
+  if (!Array.isArray(includedExpr) && hasOwnProperty(includedExpr, 'onProperty') && includedExpr.onProperty === 'phyloref:includes_TU') {
     // In this specific set of circumstances, we do NOT need to add the has_Ancestor check.
   } else {
     // Add the has_Ancestor check!
     exprs.push({
       '@type': 'owl:Class',
-      'intersectionOf': [
+      intersectionOf: [
         includedExpr,
         {
           '@type': 'owl:Restriction',
-          'onProperty': 'obo:CDAO_0000144', // has_Ancestor
-          'someValuesFrom': {
+          onProperty: 'obo:CDAO_0000144', // has_Ancestor
+          someValuesFrom: {
             '@type': 'owl:Restriction',
-            'onProperty': 'phyloref:excludes_TU',
-            'someValuesFrom': convertTUtoRestriction(tu)[0],
+            onProperty: 'phyloref:excludes_TU',
+            someValuesFrom: convertTUtoRestriction(tu)[0],
           },
         },
       ],
@@ -413,15 +410,14 @@ function createClassExpressionsForExternals(jsonld, accumulatedExpr, remainingEx
   // For the single case, this is straightforward. But when there are multiple
   // external specifiers, we must use the same recursive algorithm we use to
   // ensure that we try them out in every possible combination.
-  process.stderr.write("@id [" + jsonld['@id'] + "] Remaining externals: "+remainingExternals.length +", selected: " +selected.length+"\n");
+  process.stderr.write(`@id [${jsonld['@id']}] Remaining externals: ${remainingExternals.length}, selected: ${selected.length}\n`);
 
   // Step 1. If we only have one external remaining, we can provide our two-case example
   // to detect it.
   const classExprs = [];
-  if(remainingExternals.length === 0) {
+  if (remainingExternals.length === 0) {
     throw new Error('Cannot create class expression when no externals remain');
-  }
-  else if(remainingExternals.length === 1) {
+  } else if (remainingExternals.length === 1) {
     const remainingExternalsExprs = getExclusionsForExprAndTU(accumulatedExpr, remainingExternals[0], selected.length > 0);
     remainingExternalsExprs.forEach(expr => classExprs.push(expr));
   }
@@ -429,21 +425,21 @@ function createClassExpressionsForExternals(jsonld, accumulatedExpr, remainingEx
   // Recurse into remaining externals. Every time we select a single entry,
   // we create a class expression for that.
   else { // if(remainingExternals.length > 1)
-    remainingExternals.map(newlySelected => {
-      process.stderr.write("Selecting new object, remaining now at: "+remainingExternals.filter(i => i !== newlySelected).length +", selected: " +selected.concat([newlySelected]).length+"\n");
+    remainingExternals.map((newlySelected) => {
+      process.stderr.write(`Selecting new object, remaining now at: ${remainingExternals.filter(i => i !== newlySelected).length}, selected: ${selected.concat([newlySelected]).length}\n`);
 
       const newlyAccumulatedExpr = createAdditionalClass(
         jsonld,
         jsonld.internalSpecifiers,
         selected.concat([newlySelected]),
         () => getExclusionsForExprAndTU(accumulatedExpr, newlySelected, selected.length > 0)
-      )
+      );
 
       return createClassExpressionsForExternals(
         jsonld,
         newlyAccumulatedExpr,
         remainingExternals.filter(i => i !== newlySelected), // The new remaining is the old remaining minus the selected TU.
-        selected.concat([newlySelected]), // The new selected is the old selected plus the selected TU.
+        selected.concat([newlySelected]) // The new selected is the old selected plus the selected TU.
       );
     })
       .reduce((acc, val) => acc.concat(val), [])
@@ -456,32 +452,32 @@ function createClassExpressionsForExternals(jsonld, accumulatedExpr, remainingEx
 }
 
 const phylorefs = [];
-let specifiers = [];
-for (let phyxFile of jsons) {
-  for (let phyloref of phyxFile.phylorefs) {
+const specifiers = [];
+for (const phyxFile of jsons) {
+  for (const phyloref of phyxFile.phylorefs) {
     entityIndex += 1;
     const phylorefWrapper = new phyx.PhylorefWrapper(phyloref);
     const jsonld = phylorefWrapper.asJSONLD(getIdentifier(entityIndex));
 
     // Record the label of the phylorefs. We'll need this to link phylogenies to
     // the phylorefs they expect to resolve to.
-    if(phylorefWrapper.label !== undefined) {
+    if (phylorefWrapper.label !== undefined) {
       phylorefsByLabel[phylorefWrapper.label.toString()] = jsonld;
     }
 
     // In Model 2.0, phyloreferences are not punned, but are specifically subclasses
     // of class Phyloreference. So let's set that up.
     delete jsonld['@type'];
-    jsonld['subClassOf'] = 'phyloref:Phyloreference';
+    jsonld.subClassOf = 'phyloref:Phyloreference';
 
     // We also no longer use the additional classes system or the equivalent class
     // definitions, so let's get rid of those too.
-    delete jsonld['equivalentClass'];
-    delete jsonld['hasAdditionalClass'];
+    delete jsonld.equivalentClass;
+    delete jsonld.hasAdditionalClass;
 
     // Finally, we still have the clade definition and other terms, but we call them by different names now.
-    jsonld['obo:IAO_0000115'] = jsonld['cladeDefinition'];
-    delete jsonld['cladeDefinition'];
+    jsonld['obo:IAO_0000115'] = jsonld.cladeDefinition;
+    delete jsonld.cladeDefinition;
 
     // Instead, from the specifiers, we construct different kinds of definitions in
     // This code will be moved into phyx.js once we're fully committed to Model 2.0,
@@ -490,22 +486,22 @@ for (let phyxFile of jsons) {
     const externalSpecifiers = jsonld.externalSpecifiers || [];
 
     // We might be create additional classes, so get going.
-    jsonld['hasAdditionalClass'] = [];
+    jsonld.hasAdditionalClass = [];
 
     // Step 1. Figure out what the node is for all our internal specifiers.
-    if(internalSpecifiers.length === 0) {
-      jsonld['malformedPhyloreference'] = "No internal specifiers provided";
+    if (internalSpecifiers.length === 0) {
+      jsonld.malformedPhyloreference = 'No internal specifiers provided';
     } else {
-      let expressionsForInternals = (internalSpecifiers.length === 1) ?
-        [getIncludesRestrictionForTU(internalSpecifiers[0])] :
-        createClassExpressionsForInternals(jsonld, internalSpecifiers, []);
+      const expressionsForInternals = (internalSpecifiers.length === 1)
+        ? [getIncludesRestrictionForTU(internalSpecifiers[0])]
+        : createClassExpressionsForInternals(jsonld, internalSpecifiers, []);
 
-      if(externalSpecifiers.length === 0) {
-        jsonld['equivalentClass'] = expressionsForInternals;
+      if (externalSpecifiers.length === 0) {
+        jsonld.equivalentClass = expressionsForInternals;
       } else {
-        jsonld['equivalentClass'] = expressionsForInternals.map(
+        jsonld.equivalentClass = expressionsForInternals.map(
           exprForInternal => createClassExpressionsForExternals(jsonld, exprForInternal, externalSpecifiers, [])
-        ).reduce((acc, val) => acc.concat(val), [])
+        ).reduce((acc, val) => acc.concat(val), []);
       }
     }
 
@@ -516,64 +512,64 @@ for (let phyxFile of jsons) {
 
 const phylogenies = [];
 const tunitMatches = [];
-for (let phyxFile of jsons) {
-  for (let phylogeny of phyxFile.phylogenies) {
+for (const phyxFile of jsons) {
+  for (const phylogeny of phyxFile.phylogenies) {
     entityIndex += 1;
     const phylogenyAsJSONLD = new phyx.PhylogenyWrapper(phylogeny).asJSONLD(getIdentifier(entityIndex));
 
     // Change name for including Newick.
-    phylogenyAsJSONLD['phyloref:newick_expression'] = phylogenyAsJSONLD['newick'];
-    delete phylogenyAsJSONLD['newick'];
+    phylogenyAsJSONLD['phyloref:newick_expression'] = phylogenyAsJSONLD.newick;
+    delete phylogenyAsJSONLD.newick;
 
     // Change how nodes are represented.
-    (phylogenyAsJSONLD.nodes || []).forEach(node => {
+    (phylogenyAsJSONLD.nodes || []).forEach((node) => {
       // Make sure this node has a '@type'.
-      if(!hasOwnProperty(node, '@type')) node['@type'] = [];
-      if(!Array.isArray(node['@type'])) node['@type'] = [node['@type']];
+      if (!hasOwnProperty(node, '@type')) node['@type'] = [];
+      if (!Array.isArray(node['@type'])) node['@type'] = [node['@type']];
 
       // TODO remove hack: replace "parent" with "obo:CDAO_0000179" so we get has_Parent
       // relationships in our output ontology.
-      if(hasOwnProperty(node, 'parent')) node['obo:CDAO_0000179'] = { '@id': node.parent };
+      if (hasOwnProperty(node, 'parent')) node['obo:CDAO_0000179'] = { '@id': node.parent };
 
       // For every internal node in this phylogeny, check to see if it's expected to
       // resolve to a phylogeny we know about. If so, add an rdf:type to that effect.
       let expectedToResolveTo = node.labels || [];
 
       // Are there any phyloreferences expected to resolve here?
-      if(hasOwnProperty(node, 'expectedPhyloreferenceNamed')) {
+      if (hasOwnProperty(node, 'expectedPhyloreferenceNamed')) {
         expectedToResolveTo = expectedToResolveTo.concat(node.expectedPhyloreferenceNamed);
       }
 
-      expectedToResolveTo.forEach(phylorefLabel => {
-        if(!hasOwnProperty(phylorefsByLabel, phylorefLabel)) return;
+      expectedToResolveTo.forEach((phylorefLabel) => {
+        if (!hasOwnProperty(phylorefsByLabel, phylorefLabel)) return;
 
         // This node is expected to match phylorefLabel, which is a phyloreference we know about.
         const phylorefId = phylorefsByLabel[phylorefLabel]['@id'];
         node['@type'].push({
-          '@type':'owl:Restriction',
-          'onProperty': 'obo:OBI_0000312', // obi:is_specified_output_of
-          'someValuesFrom': {
+          '@type': 'owl:Restriction',
+          onProperty: 'obo:OBI_0000312', // obi:is_specified_output_of
+          someValuesFrom: {
             '@type': 'owl:Class',
-            'intersectionOf': [
-              { '@id':'obo:OBI_0302910' }, // obi:prediction
+            intersectionOf: [
+              { '@id': 'obo:OBI_0302910' }, // obi:prediction
               {
                 '@type': 'owl:Restriction',
-                'onProperty': 'obo:OBI_0000293', // obi:has_specified_input
-                'someValuesFrom': { '@id': phylorefId }
-              }
-            ]
-          }
+                onProperty: 'obo:OBI_0000293', // obi:has_specified_input
+                someValuesFrom: { '@id': phylorefId },
+              },
+            ],
+          },
         });
       });
 
       // Does this node have taxonomic units? If so, convert them into class expressions.
-      if(hasOwnProperty(node, 'representsTaxonomicUnits')) {
-        node.representsTaxonomicUnits.forEach(tunit => {
-          convertTUtoRestriction(tunit).forEach(restriction => {
+      if (hasOwnProperty(node, 'representsTaxonomicUnits')) {
+        node.representsTaxonomicUnits.forEach((tunit) => {
+          convertTUtoRestriction(tunit).forEach((restriction) => {
             node['@type'].push({
               '@type': 'owl:Restriction',
-              'onProperty': 'obo:CDAO_0000187',
-              'someValuesFrom': restriction
+              onProperty: 'obo:CDAO_0000187',
+              someValuesFrom: restriction,
             });
           });
         });
@@ -585,22 +581,21 @@ for (let phyxFile of jsons) {
   }
 }
 
-for(let phyloref of phylorefs) {
+for (const phyloref of phylorefs) {
   let specifiers = [];
   if (hasOwnProperty(phyloref, 'internalSpecifiers')) specifiers = phyloref.internalSpecifiers;
   if (hasOwnProperty(phyloref, 'externalSpecifiers')) specifiers = specifiers.concat(phyloref.externalSpecifiers);
 
-  for(let specifier of specifiers) {
+  for (const specifier of specifiers) {
     let countMatchedNodes = 0;
 
     if (hasOwnProperty(specifier, 'referencesTaxonomicUnits')) {
-      for(let specifierTU of specifier.referencesTaxonomicUnits) {
-
-        for(let phylogenyAsJSONLD of phylogenies) {
-          for(let node of phylogenyAsJSONLD.nodes) {
+      for (const specifierTU of specifier.referencesTaxonomicUnits) {
+        for (const phylogenyAsJSONLD of phylogenies) {
+          for (const node of phylogenyAsJSONLD.nodes) {
             if (!hasOwnProperty(node, 'representsTaxonomicUnits')) continue;
 
-            for(let nodeTU of node.representsTaxonomicUnits) {
+            for (const nodeTU of node.representsTaxonomicUnits) {
               const matcher = new phyx.TaxonomicUnitMatcher(specifierTU, nodeTU);
               if (matcher.matched) {
                 entityIndex += 1;
@@ -616,9 +611,9 @@ for(let phyloref of phylorefs) {
       }
 
       // If this specifier could not be matched, record it as an unmatched specifier.
-      if(countMatchedNodes == 0) {
+      if (countMatchedNodes == 0) {
         if (!hasOwnProperty(phyloref, 'hasUnmatchedSpecifiers')) phyloref.hasUnmatchedSpecifiers = [];
-        phyloref.hasUnmatchedSpecifiers.push({'@id': specifier['@id']});
+        phyloref.hasUnmatchedSpecifiers.push({ '@id': specifier['@id'] });
       }
     }
   }
@@ -633,8 +628,8 @@ const cladeOntology = [
       'http://raw.githubusercontent.com/phyloref/curation-workflow/develop/ontologies/phyloref_testcase.owl',
       'http://ontology.phyloref.org/2018-12-14/phyloref.owl',
       'http://ontology.phyloref.org/2018-12-14/tcan.owl',
-    ]
-  }
+    ],
+  },
 ];
 console.log(JSON.stringify(
   cladeOntology.concat(phylorefs).concat(phylogenies).concat(tunitMatches),
