@@ -365,24 +365,10 @@ function createClassExpressionsForInternals(jsonld, remainingInternals, selected
   return classExprs;
 }
 
-function getExclusionsForSingleTU(includedExpr, tu) {
+function getExclusionsForExprAndTU(includedExpr, tu, flagAddHasAncestorCheck) {
   if(!includedExpr) throw new Error('Exclusions require an included expression');
 
-  return [{
-    '@type': 'owl:Class',
-    'intersectionOf': [
-      includedExpr,
-      {
-        '@type': 'owl:Restriction',
-        'onProperty': 'obo:CDAO_0000144', // has_Ancestor
-        'someValuesFrom': {
-          '@type': 'owl:Restriction',
-          'onProperty': 'phyloref:excludes_TU',
-          'someValuesFrom': convertTUtoRestriction(tu)[0],
-        },
-      },
-    ],
-  }, {
+  const exprs = [{
     '@type': 'owl:Class',
     'intersectionOf': [
       includedExpr,
@@ -393,6 +379,24 @@ function getExclusionsForSingleTU(includedExpr, tu) {
       },
     ],
   }];
+  if(flagAddHasAncestorCheck) {
+    exprs.push({
+      '@type': 'owl:Class',
+      'intersectionOf': [
+        includedExpr,
+        {
+          '@type': 'owl:Restriction',
+          'onProperty': 'obo:CDAO_0000144', // has_Ancestor
+          'someValuesFrom': {
+            '@type': 'owl:Restriction',
+            'onProperty': 'phyloref:excludes_TU',
+            'someValuesFrom': convertTUtoRestriction(tu)[0],
+          },
+        },
+      ],
+    });
+  }
+  return exprs;
 }
 
 function createClassExpressionsForExternals(jsonld, accumulatedExpr, remainingExternals, selected) {
@@ -413,14 +417,8 @@ function createClassExpressionsForExternals(jsonld, accumulatedExpr, remainingEx
     throw new Error('Cannot create class expression when no externals remain');
   }
   else if(remainingExternals.length === 1) {
-    if(selected.length === 0) {
-      // Special case: a single external specifier can be represented with a
-      // single TU expression.
-      return getExclusionsForSingleTU(accumulatedExpr, remainingExternals[0]);
-    }
-
-    const remainingExternalsExprs = getExclusionsForSingleTU(accumulatedExpr, remainingExternals[0])
-    remainingExternalsExprs.forEach(expr => classExprs.push(expr))
+    const remainingExternalsExprs = getExclusionsForExprAndTU(accumulatedExpr, remainingExternals[0], selected.length > 0);
+    remainingExternalsExprs.forEach(expr => classExprs.push(expr));
   }
 
   // Recurse into remaining externals. Every time we select a single entry,
@@ -433,7 +431,7 @@ function createClassExpressionsForExternals(jsonld, accumulatedExpr, remainingEx
         jsonld,
         jsonld.internalSpecifiers,
         selected.concat([newlySelected]),
-        () => getExclusionsForSingleTU(accumulatedExpr, newlySelected)
+        () => getExclusionsForExprAndTU(accumulatedExpr, newlySelected, selected.length > 0)
       )
 
       return createClassExpressionsForExternals(
@@ -492,19 +490,6 @@ for (let phyxFile of jsons) {
     // Step 1. Figure out what the node is for all our internal specifiers.
     if(internalSpecifiers.length === 0) {
       jsonld['malformedPhyloreference'] = "No internal specifiers provided";
-    } else if(internalSpecifiers.length === 1 && externalSpecifiers.length === 1) {
-      // We have a particularly compact form for this case!
-      jsonld['equivalentClass'] = {
-        '@type': 'owl:Class',
-        'intersectionOf': [
-          {
-            '@type': 'owl:Restriction',
-            'onProperty': 'phyloref:excludes_TU',
-            'someValuesFrom': convertTUtoRestriction(externalSpecifiers[0])[0],
-          },
-          getIncludesRestrictionForTU(internalSpecifiers[0])
-        ]
-      };
     } else {
       let expressionsForInternals = (internalSpecifiers.length === 1) ?
         [getIncludesRestrictionForTU(internalSpecifiers[0])] :
