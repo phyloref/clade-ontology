@@ -92,43 +92,48 @@ function convertTUtoRestriction(tunit) {
  * to get that list before we start testing.
  */
 function findPHYXFiles(dirPath) {
-  return fs.readdirSync(dirPath).map((filename) => {
+  const filesFound = fs.readdirSync(dirPath).map((filename) => {
     const filePath = path.join(dirPath, filename);
 
-    if (fs.lstatSync(filePath).isDirectory()) {
+    const stats = fs.statSync(filePath);
+    if (stats.isDirectory()) {
       // Recurse into this directory.
       return findPHYXFiles(filePath);
     }
+
+    if (!stats.isFile()) {
+      throw new Error(`Attempted to select non-file object: ${filePath}`);
+    }
+
     // Look for .json files (but not for '_as_owl.json' files, for historical reasons).
     if (filePath.endsWith('.json') && !filePath.endsWith('_as_owl.json')) {
       return [filePath];
     }
     return [];
   }).reduce((x, y) => x.concat(y), []); // This flattens the list of results.
+  if (filesFound.length === 0) process.stderr.write(`Warning: directory ${dirPath} contains no JSON files.`);
+  return filesFound;
 }
 
 // Read command-line arguments.
 const argv = require('yargs')
-  .usage('Usage: $0 [-d root]')
-  .alias('d', 'dir')
-  .nargs('d', 1)
-  .describe('d', 'Directory to look for PHYX files in')
+  .usage('Usage: $0 <directories or files to convert>')
+  .demandCommand(1) // Make sure there's at least one directory or file!
   .help('h')
   .alias('h', 'help')
   .argv;
 
-// Make sure there are no unknown arguments.
-if (argv._.length > 0) {
-  throw new Error(`Unknown arguments: ${argv._}`);
-}
+// Unnamed arguments should be files or directories to be processed.
+const phyxFiles = argv._.map((filenameOrDirname) => {
+  const stats = fs.statSync(filenameOrDirname);
+  if (stats.isDirectory()) return findPHYXFiles(filenameOrDirname);
+  if (stats.isFile()) return [filenameOrDirname];
+  throw new Error(`Argument ${filenameOrDirname} is neither a file nor a directory!`);
+}).reduce((acc, val) => acc.concat(val), []);
 
-// Determine the directory to process.
-const dir = argv.dir || process.cwd();
-// process.stderr.write(`Searching directory: ${dir}\n`);
+if (phyxFiles.length === 0) throw new Error('No arguments provided!');
 
-// Get list of PHYX files to process.
-const phyxFiles = findPHYXFiles(dir);
-// process.stderr.write(`PHYX files to combine: ${phyxFiles}`);
+// process.stderr.write(`PHYX files to combine: ${phyxFiles}.`);
 
 // It would be pretty easy to convert each individual PHYX file into a JSON-LD file by
 // using the phyx2jsonld module. However, we would then have to identify every URI in
