@@ -117,11 +117,14 @@ function findPHYXFiles(dirPath) {
 
 // Read command-line arguments.
 const argv = require('yargs')
-  .usage('Usage: $0 <directories or files to convert>')
+  .usage('Usage: $0 <directories or files to convert> [--no-phylogenies]')
   .demandCommand(1) // Make sure there's at least one directory or file!
+  .default('no-phylogenies', false)
   .help('h')
   .alias('h', 'help')
   .argv;
+
+const flag_no_phylogenies = argv.no_phylogenies
 
 // Unnamed arguments should be files or directories to be processed.
 const phyxFiles = argv._.map((filenameOrDirname) => {
@@ -636,8 +639,12 @@ const cladeOntology = [
     ],
   },
 ];
+let objs = cladeOntology.concat(phylorefs)
+if(!flag_no_phylogenies) {
+    objs = objs.concat(phylogenies)
+}
 console.log(JSON.stringify(
-  cladeOntology.concat(phylorefs).concat(phylogenies).concat(tunitMatches),
+  objs,
   null,
   4
 ));
