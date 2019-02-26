@@ -52,7 +52,9 @@ function convertTUtoRestriction(tunit) {
             {
               '@type': 'owl:Restriction',
               onProperty: 'dwc:scientificName',
-              hasValue: wrappedSciname.binomialName, // TODO: We really want the "canonical name" here: binomial or trinomial, but without any additional authority information.
+              // TODO: We really want the "canonical name" here: binomial or
+              // trinomial, but without any additional authority information.
+              hasValue: wrappedSciname.binomialName,
             },
           ],
         },
@@ -124,7 +126,8 @@ const argv = require('yargs')
   .alias('h', 'help')
   .argv;
 
-const flag_no_phylogenies = argv.no_phylogenies
+// Configuration flag: whether or not to include phylogenies in the output.
+const flagNoPhylogenies = argv.no_phylogenies;
 
 // Unnamed arguments should be files or directories to be processed.
 const phyxFiles = argv._.map((filenameOrDirname) => {
@@ -199,7 +202,7 @@ const phylorefsByLabel = {};
 
 let additionalClassCount = 0;
 const additionalClassesByLabel = {};
-function createAdditionalClass(jsonld, internalSpecifiers, externalSpecifiers, equivalentClassFunc) {
+function createAdditionalClass(jsonld, internalSpecifiers, externalSpecifiers, equivClassFunc) {
   // This function creates an additional class for the set of internal and external
   // specifiers provided for the equivalentClass expression provided. If one already
   // exists for this set of internal and external specifiers, we just return that
@@ -242,13 +245,21 @@ function createAdditionalClass(jsonld, internalSpecifiers, externalSpecifiers, e
   additionalClass.subClassOf = (
     externalSpecifiers.length > 0 ? 'phyloref:PhyloreferenceUsingMinimumClade' : 'phyloref:PhyloreferenceUsingMaximumClade'
   );
-  additionalClass.equivalentClass = equivalentClassFunc();
+  additionalClass.equivalentClass = equivClassFunc();
   additionalClass.label = additionalClassLabel;
   jsonld.hasAdditionalClass.push(additionalClass);
 
   additionalClassesByLabel[additionalClassLabel] = additionalClass;
 
   return { '@id': additionalClass['@id'] };
+}
+
+function getIncludesRestrictionForTU(tu) {
+  return {
+    '@type': 'owl:Restriction',
+    onProperty: 'phyloref:includes_TU',
+    someValuesFrom: convertTUtoRestriction(tu)[0],
+  };
 }
 
 function getMRCA2Expression(tu1, tu2) {
@@ -266,14 +277,6 @@ function getMRCA2Expression(tu1, tu2) {
         getIncludesRestrictionForTU(tu2),
       ],
     },
-  };
-}
-
-function getIncludesRestrictionForTU(tu) {
-  return {
-    '@type': 'owl:Restriction',
-    onProperty: 'phyloref:includes_TU',
-    someValuesFrom: convertTUtoRestriction(tu)[0],
   };
 }
 
@@ -359,8 +362,10 @@ function createClassExpressionsForInternals(jsonld, remainingInternals, selected
       process.stderr.write(`Selecting new object, remaining now at: ${remainingInternals.filter(i => i !== newlySelected).length}, selected: ${selected.concat([newlySelected]).length}\n`);
       return createClassExpressionsForInternals(
         jsonld,
-        remainingInternals.filter(i => i !== newlySelected), // The new remaining is the old remaining minus the selected TU.
-        selected.concat([newlySelected]) // The new selected is the old selected plus the selected TU.
+        // The new remaining is the old remaining minus the selected TU.
+        remainingInternals.filter(i => i !== newlySelected),
+        // The new selected is the old selected plus the selected TU.
+        selected.concat([newlySelected])
       );
     })
       .reduce((acc, val) => acc.concat(val), [])
@@ -426,13 +431,15 @@ function createClassExpressionsForExternals(jsonld, accumulatedExpr, remainingEx
   if (remainingExternals.length === 0) {
     throw new Error('Cannot create class expression when no externals remain');
   } else if (remainingExternals.length === 1) {
-    const remainingExternalsExprs = getExclusionsForExprAndTU(accumulatedExpr, remainingExternals[0], selected.length > 0);
+    const remainingExternalsExprs = getExclusionsForExprAndTU(
+      accumulatedExpr,
+      remainingExternals[0],
+      selected.length > 0
+    );
     remainingExternalsExprs.forEach(expr => classExprs.push(expr));
-  }
-
-  // Recurse into remaining externals. Every time we select a single entry,
-  // we create a class expression for that.
-  else { // if(remainingExternals.length > 1)
+  } else { // if(remainingExternals.length > 1)
+    // Recurse into remaining externals. Every time we select a single entry,
+    // we create a class expression for that.
     remainingExternals.map((newlySelected) => {
       process.stderr.write(`Selecting new object, remaining now at: ${remainingExternals.filter(i => i !== newlySelected).length}, selected: ${selected.concat([newlySelected]).length}\n`);
 
@@ -446,8 +453,10 @@ function createClassExpressionsForExternals(jsonld, accumulatedExpr, remainingEx
       return createClassExpressionsForExternals(
         jsonld,
         newlyAccumulatedExpr,
-        remainingExternals.filter(i => i !== newlySelected), // The new remaining is the old remaining minus the selected TU.
-        selected.concat([newlySelected]) // The new selected is the old selected plus the selected TU.
+        // The new remaining is the old remaining minus the selected TU.
+        remainingExternals.filter(i => i !== newlySelected),
+        // The new selected is the old selected plus the selected TU.
+        selected.concat([newlySelected])
       );
     })
       .reduce((acc, val) => acc.concat(val), [])
@@ -460,9 +469,8 @@ function createClassExpressionsForExternals(jsonld, accumulatedExpr, remainingEx
 }
 
 const phylorefs = [];
-const specifiers = [];
-for (const phyxFile of jsons) {
-  for (const phyloref of phyxFile.phylorefs) {
+jsons.forEach((phyxFile) => {
+  phyxFile.phylorefs.forEach((phyloref) => {
     entityIndex += 1;
     const phylorefWrapper = new phyx.PhylorefWrapper(phyloref);
     const jsonld = phylorefWrapper.asJSONLD(getIdentifier(entityIndex));
@@ -483,7 +491,7 @@ for (const phyxFile of jsons) {
     delete jsonld.equivalentClass;
     delete jsonld.hasAdditionalClass;
 
-    // Finally, we still have the clade definition and other terms, but we call them by different names now.
+    // Finally, we still have the clade definition, but we call it IAO_0000115 now.
     jsonld['obo:IAO_0000115'] = jsonld.cladeDefinition;
     delete jsonld.cladeDefinition;
 
@@ -508,29 +516,34 @@ for (const phyxFile of jsons) {
         jsonld.equivalentClass = expressionsForInternals;
       } else {
         jsonld.equivalentClass = expressionsForInternals.map(
-          exprForInternal => createClassExpressionsForExternals(jsonld, exprForInternal, externalSpecifiers, [])
+          exprForInternal => createClassExpressionsForExternals(
+            jsonld, exprForInternal, externalSpecifiers, []
+          )
         ).reduce((acc, val) => acc.concat(val), []);
       }
     }
 
     jsonld['@context'] = PHYX_CONTEXT_JSON;
     phylorefs.push(jsonld);
-  }
-}
+  });
+});
 
 const phylogenies = [];
 const tunitMatches = [];
-for (const phyxFile of jsons) {
-  for (const phylogeny of phyxFile.phylogenies) {
+jsons.forEach((phyxFile) => {
+  phyxFile.phylogenies.forEach((phylogeny) => {
     entityIndex += 1;
-    const phylogenyAsJSONLD = new phyx.PhylogenyWrapper(phylogeny).asJSONLD(getIdentifier(entityIndex));
+    const phylogenyAsJSONLD = new phyx.PhylogenyWrapper(phylogeny)
+      .asJSONLD(getIdentifier(entityIndex));
 
     // Change name for including Newick.
     phylogenyAsJSONLD['phyloref:newick_expression'] = phylogenyAsJSONLD.newick;
     delete phylogenyAsJSONLD.newick;
 
     // Change how nodes are represented.
-    (phylogenyAsJSONLD.nodes || []).forEach((node) => {
+    (phylogenyAsJSONLD.nodes || []).forEach((nodeAsParam) => {
+      const node = nodeAsParam;
+
       // Make sure this node has a '@type'.
       if (!hasOwnProperty(node, '@type')) node['@type'] = [];
       if (!Array.isArray(node['@type'])) node['@type'] = [node['@type']];
@@ -586,24 +599,26 @@ for (const phyxFile of jsons) {
 
     phylogenyAsJSONLD['@context'] = PHYX_CONTEXT_JSON;
     phylogenies.push(phylogenyAsJSONLD);
-  }
-}
+  });
+});
 
-for (const phyloref of phylorefs) {
+phylorefs.forEach((phylorefAsParam) => {
+  const phyloref = phylorefAsParam;
+
   let specifiers = [];
   if (hasOwnProperty(phyloref, 'internalSpecifiers')) specifiers = phyloref.internalSpecifiers;
   if (hasOwnProperty(phyloref, 'externalSpecifiers')) specifiers = specifiers.concat(phyloref.externalSpecifiers);
 
-  for (const specifier of specifiers) {
+  specifiers.forEach((specifier) => {
     let countMatchedNodes = 0;
 
     if (hasOwnProperty(specifier, 'referencesTaxonomicUnits')) {
-      for (const specifierTU of specifier.referencesTaxonomicUnits) {
-        for (const phylogenyAsJSONLD of phylogenies) {
-          for (const node of phylogenyAsJSONLD.nodes) {
-            if (!hasOwnProperty(node, 'representsTaxonomicUnits')) continue;
+      specifier.referencesTaxonomicUnits.forEach((specifierTU) => {
+        phylogenies.forEach((phylogenyAsJSONLD) => {
+          phylogenyAsJSONLD.nodes.forEach((node) => {
+            if (!hasOwnProperty(node, 'representsTaxonomicUnits')) return;
 
-            for (const nodeTU of node.representsTaxonomicUnits) {
+            node.representsTaxonomicUnits.forEach((nodeTU) => {
               const matcher = new phyx.TaxonomicUnitMatcher(specifierTU, nodeTU);
               if (matcher.matched) {
                 entityIndex += 1;
@@ -613,19 +628,19 @@ for (const phyloref of phylorefs) {
                 tuMatchAsJSONLD['@context'] = PHYX_CONTEXT_JSON;
                 tunitMatches.push(tuMatchAsJSONLD);
               }
-            }
-          }
-        }
-      }
+            });
+          });
+        });
+      });
 
       // If this specifier could not be matched, record it as an unmatched specifier.
-      if (countMatchedNodes == 0) {
+      if (countMatchedNodes === 0) {
         if (!hasOwnProperty(phyloref, 'hasUnmatchedSpecifiers')) phyloref.hasUnmatchedSpecifiers = [];
         phyloref.hasUnmatchedSpecifiers.push({ '@id': specifier['@id'] });
       }
     }
-  }
-}
+  });
+});
 
 const cladeOntology = [
   {
@@ -639,11 +654,11 @@ const cladeOntology = [
     ],
   },
 ];
-let objs = cladeOntology.concat(phylorefs)
-if(!flag_no_phylogenies) {
-    objs = objs.concat(phylogenies)
+let objs = cladeOntology.concat(phylorefs);
+if (!flagNoPhylogenies) {
+  objs = objs.concat(phylogenies);
 }
-console.log(JSON.stringify(
+process.stdout.write(JSON.stringify(
   objs,
   null,
   4
