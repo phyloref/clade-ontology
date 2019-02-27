@@ -2,10 +2,7 @@
  * phyx2ontology.js: A tool for synthesizing all PHYX files into a single
  * Clade Ontology in JSON-LD.
  *
- * Synopsis: phyx2ontology.js [-d root] > ontology.json
- *
- * Arguments:
- *  - `-d`: Set the directory to look for PHYX files in.
+ * Synopsis: phyx2ontology.js [files or directories to process] > ontology.json
  */
 
 // Configuration options.
@@ -16,29 +13,31 @@ const CLADE_ONTOLOGY_BASEURI = 'http://phyloref.org/clade-ontology/clado.owl';
 const process = require('process');
 const fs = require('fs');
 const path = require('path');
-
-/*
- * phyx.js uses some code (in particular through phylotree.js) that expects certain
- * Javascript libraries to be loaded via the browser using <script>. To replicate
- * this in Node, we load them and add them to the global object.
- */
+const { has } = require('lodash');
 
 // Load phyx.js, our PHYX library.
 const phyx = require('@phyloref/phyx');
 
-// Helper methods.
-function hasOwnProperty(obj, propName) {
-  return Object.prototype.hasOwnProperty.call(obj, propName);
-}
-
+/*
+ * convertTUtoRestriction(tunit)
+ *  - tunit: A taxonomic unit (or a specifier containing at least one taxonomic unit)
+ *
+ * Converts a taxonomic unit to a list of OWL restrictions, in the form of:
+ *  tc:hasName some (ICZN_Name and dwc:scientificName value "scientific name")
+ * or:
+ *  tc:circumscribedBy some (dwc:organismID value "occurrence ID")
+ *
+* This method will be moved back into phyx.js as part of https://github.com/phyloref/phyx.js/issues/4
+ */
 function convertTUtoRestriction(tunit) {
   // If we're called with a specifier, use the first TU in that specifier (for now).
-  if (hasOwnProperty(tunit, 'referencesTaxonomicUnits')) {
+  if (has(tunit, 'referencesTaxonomicUnits')) {
     return convertTUtoRestriction(tunit.referencesTaxonomicUnits[0] || {});
   }
 
+  // Build up a series of taxonomic units from scientific names and specimens.
   const results = [];
-  if (hasOwnProperty(tunit, 'scientificNames')) {
+  if (has(tunit, 'scientificNames')) {
     tunit.scientificNames.forEach((sciname) => {
       const wrappedSciname = new phyx.ScientificNameWrapper(sciname);
 
@@ -48,12 +47,17 @@ function convertTUtoRestriction(tunit) {
         someValuesFrom: {
           '@type': 'owl:Class',
           intersectionOf: [
-            { '@id': 'obo:NOMEN_0000107' }, // ICZN -- TODO replace with a check once we close phyloref/phyx.js#5.
+            {
+              // TODO: replace with a check once we close https://github.com/phyloref/phyx.js/issues/5.
+              // For now, we pretend that all names are ICZN names.
+              '@id': 'obo:NOMEN_0000107',
+            },
             {
               '@type': 'owl:Restriction',
               onProperty: 'dwc:scientificName',
               // TODO: We really want the "canonical name" here: binomial or
               // trinomial, but without any additional authority information.
+              // See https://github.com/phyloref/phyx.js/issues/8
               hasValue: wrappedSciname.binomialName,
             },
           ],
@@ -84,10 +88,6 @@ function convertTUtoRestriction(tunit) {
 
 /*
  * Returns a list of PHYX files that we can test in the provided directory.
- *
- * We use a simple flatMap to search for these files. Since flatMap isn't in
- * Node.js yet, I use a map to recursively find the files and then flatten it
- * using reduce() and concat().
  *
  * This could be implemented asynchronously, but we need a list of files to
  * test each one individually in Mocha, so we need a synchronous implementation
@@ -121,15 +121,15 @@ function findPHYXFiles(dirPath) {
 const argv = require('yargs')
   .usage('Usage: $0 <directories or files to convert> [--no-phylogenies]')
   .demandCommand(1) // Make sure there's at least one directory or file!
+  .option('no-phylogenies', {
+    describe: 'Do not include phylogenies in the produced ontology',
+  })
   .default('no-phylogenies', false)
   .help('h')
   .alias('h', 'help')
   .argv;
 
-// Configuration flag: whether or not to include phylogenies in the output.
-const flagNoPhylogenies = argv.no_phylogenies;
-
-// Unnamed arguments should be files or directories to be processed.
+// Unnamed arguments maybe files or directories to be processed.
 const phyxFiles = argv._.map((filenameOrDirname) => {
   const stats = fs.statSync(filenameOrDirname);
   if (stats.isDirectory()) return findPHYXFiles(filenameOrDirname);
@@ -139,27 +139,25 @@ const phyxFiles = argv._.map((filenameOrDirname) => {
 
 if (phyxFiles.length === 0) throw new Error('No arguments provided!');
 
-// process.stderr.write(`PHYX files to combine: ${phyxFiles}.`);
+/* Start producing the output ontology */
 
-// It would be pretty easy to convert each individual PHYX file into a JSON-LD file by
-// using the phyx2jsonld module. However, we would then have to identify every URI in
-// the file and rename all of them, which could be confusing.
+// Every entity in the output ontology should have a unique CLADO identifier.
 let entityIndex = 0;
 function getIdentifier(index) {
   return `${CLADE_ONTOLOGY_BASEURI}#CLADO_${index.toString().padStart(8, '0')}`;
 }
 
-// Loop through our files and assemble a combined ontology.
+// Loop through our files (ignoring GITCRYPT-encrypted files) and read them as JSON.
 const jsons = phyxFiles
   .map((filename) => {
     const content = fs.readFileSync(filename);
 
-    // Some of these PHYX files are encrypted! We need to ignore those.
+    // Some of these Phyx files are encrypted! We need to ignore those.
     if (content.slice(0, 9).equals(Buffer.from('\x00GITCRYPT'))) {
       return [];
     }
 
-    // Try to read this PHYX file as a JSON file.
+    // Try to read this Phyx file as a JSON file.
     let json;
     try {
       json = JSON.parse(content.toString('utf8'));
@@ -167,37 +165,11 @@ const jsons = phyxFiles
       process.stderr.write(`WARNING: ${filename} could not be read as JSON, skipping.`);
       return [];
     }
-
-    // If not encrypted, we can treat this file as UTF-8 and read it as a string.
     return [json];
   })
   // Flatten map to remove files that could not be read or parsed.
   .reduce((a, b) => a.concat(b), []);
 
-/*
- * We'd like our combine JSON-LD file to be in this format:
- * [{
- *    '@context': 'http://phyloref.org/curation-tool/json/phyx.json',
- *    '@id': 'http://vocab.phyloref.org/clado/',
- *    '@type': 'owl:Ontology'
- *    [... ontology metadata ...]
- * }, {
- *    '@context': 'http://phyloref.org/curation-tool/json/phyx.json',
- *    '@id': 'http://vocab.phyloref.org/clado/CLADO_PHYLOREF_1',
- *    '@type': 'phyloref:Phyloreference',
- *    'label': '...',
- *    'hasInternalSpecifier': ...,
- *    'internalSpecifiers': ...
- * }, {
- *    '@context': 'http://phyloref.org/curation-tool/json/phyx.json',
- *    '@id': 'http://vocab.phyloref.org/clado/CLADO_PHYLOGENY_1',
- *    '@type': 'cdao:???',
- *    'includesNodes': [
- *      {'@id': 'http://vocab.phyloref.org/clado/CLADO_PHYLOGENY_1_node1', ...},
- *      {'@id': 'http://vocab.phyloref.org/clado/CLADO_PHYLOGENY_1_node2', ...}
- *    ]
- * }]
- */
 const phylorefsByLabel = {};
 
 let additionalClassCount = 0;
@@ -231,7 +203,7 @@ function createAdditionalClass(jsonld, internalSpecifiers, externalSpecifiers, e
 
   process.stderr.write(`Additional class label: ${additionalClassLabel}\n`);
 
-  if (hasOwnProperty(additionalClassesByLabel, additionalClassLabel)) {
+  if (has(additionalClassesByLabel, additionalClassLabel)) {
     process.stderr.write(`Found additional class with id: ${additionalClassesByLabel[additionalClassLabel]['@id']}\n`);
     return { '@id': additionalClassesByLabel[additionalClassLabel]['@id'] };
   }
@@ -390,7 +362,7 @@ function getExclusionsForExprAndTU(includedExpr, tu) {
     ],
   }];
 
-  if (!Array.isArray(includedExpr) && hasOwnProperty(includedExpr, 'onProperty') && includedExpr.onProperty === 'phyloref:includes_TU') {
+  if (!Array.isArray(includedExpr) && has(includedExpr, 'onProperty') && includedExpr.onProperty === 'phyloref:includes_TU') {
     // In this specific set of circumstances, we do NOT need to add the has_Ancestor check.
   } else {
     // Add the has_Ancestor check!
@@ -545,24 +517,24 @@ jsons.forEach((phyxFile) => {
       const node = nodeAsParam;
 
       // Make sure this node has a '@type'.
-      if (!hasOwnProperty(node, '@type')) node['@type'] = [];
+      if (!has(node, '@type')) node['@type'] = [];
       if (!Array.isArray(node['@type'])) node['@type'] = [node['@type']];
 
       // TODO remove hack: replace "parent" with "obo:CDAO_0000179" so we get has_Parent
       // relationships in our output ontology.
-      if (hasOwnProperty(node, 'parent')) node['obo:CDAO_0000179'] = { '@id': node.parent };
+      if (has(node, 'parent')) node['obo:CDAO_0000179'] = { '@id': node.parent };
 
       // For every internal node in this phylogeny, check to see if it's expected to
       // resolve to a phylogeny we know about. If so, add an rdf:type to that effect.
       let expectedToResolveTo = node.labels || [];
 
       // Are there any phyloreferences expected to resolve here?
-      if (hasOwnProperty(node, 'expectedPhyloreferenceNamed')) {
+      if (has(node, 'expectedPhyloreferenceNamed')) {
         expectedToResolveTo = expectedToResolveTo.concat(node.expectedPhyloreferenceNamed);
       }
 
       expectedToResolveTo.forEach((phylorefLabel) => {
-        if (!hasOwnProperty(phylorefsByLabel, phylorefLabel)) return;
+        if (!has(phylorefsByLabel, phylorefLabel)) return;
 
         // This node is expected to match phylorefLabel, which is a phyloreference we know about.
         const phylorefId = phylorefsByLabel[phylorefLabel]['@id'];
@@ -584,7 +556,7 @@ jsons.forEach((phyxFile) => {
       });
 
       // Does this node have taxonomic units? If so, convert them into class expressions.
-      if (hasOwnProperty(node, 'representsTaxonomicUnits')) {
+      if (has(node, 'representsTaxonomicUnits')) {
         node.representsTaxonomicUnits.forEach((tunit) => {
           convertTUtoRestriction(tunit).forEach((restriction) => {
             node['@type'].push({
@@ -606,17 +578,17 @@ phylorefs.forEach((phylorefAsParam) => {
   const phyloref = phylorefAsParam;
 
   let specifiers = [];
-  if (hasOwnProperty(phyloref, 'internalSpecifiers')) specifiers = phyloref.internalSpecifiers;
-  if (hasOwnProperty(phyloref, 'externalSpecifiers')) specifiers = specifiers.concat(phyloref.externalSpecifiers);
+  if (has(phyloref, 'internalSpecifiers')) specifiers = phyloref.internalSpecifiers;
+  if (has(phyloref, 'externalSpecifiers')) specifiers = specifiers.concat(phyloref.externalSpecifiers);
 
   specifiers.forEach((specifier) => {
     let countMatchedNodes = 0;
 
-    if (hasOwnProperty(specifier, 'referencesTaxonomicUnits')) {
+    if (has(specifier, 'referencesTaxonomicUnits')) {
       specifier.referencesTaxonomicUnits.forEach((specifierTU) => {
         phylogenies.forEach((phylogenyAsJSONLD) => {
           phylogenyAsJSONLD.nodes.forEach((node) => {
-            if (!hasOwnProperty(node, 'representsTaxonomicUnits')) return;
+            if (!has(node, 'representsTaxonomicUnits')) return;
 
             node.representsTaxonomicUnits.forEach((nodeTU) => {
               const matcher = new phyx.TaxonomicUnitMatcher(specifierTU, nodeTU);
@@ -635,7 +607,7 @@ phylorefs.forEach((phylorefAsParam) => {
 
       // If this specifier could not be matched, record it as an unmatched specifier.
       if (countMatchedNodes === 0) {
-        if (!hasOwnProperty(phyloref, 'hasUnmatchedSpecifiers')) phyloref.hasUnmatchedSpecifiers = [];
+        if (!has(phyloref, 'hasUnmatchedSpecifiers')) phyloref.hasUnmatchedSpecifiers = [];
         phyloref.hasUnmatchedSpecifiers.push({ '@id': specifier['@id'] });
       }
     }
@@ -655,7 +627,7 @@ const cladeOntology = [
   },
 ];
 let objs = cladeOntology.concat(phylorefs);
-if (!flagNoPhylogenies) {
+if (!argv.no_phylogenies) { // if the --no-phylogenies command line option was NOT true
   objs = objs.concat(phylogenies);
 }
 process.stdout.write(JSON.stringify(
