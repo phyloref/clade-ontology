@@ -7,7 +7,8 @@
   "scripts": {
     "lint": "eslint \"test/**\" \"phyx2ontology/**\" --ext .js",
     "pretest": "npm run lint",
-    "test": "mocha"
+    "test": "mocha",
+    "build-ontology": "node phyx2ontology/phyx2ontology.js phyx/ > CLADO.json"
   },
   "repository": {
     "type": "git",
