@@ -5,6 +5,8 @@
   "main": "index.js",
   "directories": {},
   "scripts": {
+    "lint": "eslint \"test/**\" --ext .js",
+    "pretest": "npm run lint",
     "test": "mocha"
   },
   "repository": {
@@ -17,9 +19,13 @@
     "url": "https://github.com/phyloref/clade-ontology/issues"
   },
   "homepage": "https://github.com/phyloref/clade-ontology#readme",
-  "dependencies": {
+  "devDependencies": {
     "@phyloref/phyx": "^0.1.2",
     "chai": "^4.2.0",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-mocha": "^5.2.1"
   }
 }
