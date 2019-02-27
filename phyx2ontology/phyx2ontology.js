@@ -60,18 +60,18 @@ function convertTUtoRestriction(tunit) {
         },
       });
     });
-  } else if (hasOwnProperty(tunit, 'includesSpecimens')) {
+  }
+
+  if (has(tunit, 'includesSpecimens')) {
+    // This is a quick-and-dirty implementation. Discussion about it should be
+    // carried out in https://github.com/phyloref/clade-ontology/issues/61
     tunit.includesSpecimens.forEach((specimen) => {
       const wrappedSpecimen = new phyx.SpecimenWrapper(specimen);
 
       results.push({
         '@type': 'owl:Restriction',
-        onProperty: 'http://rs.tdwg.org/ontology/voc/TaxonConcept#circumscribedBy',
-        someValuesFrom: {
-          '@type': 'owl:Restriction',
-          onProperty: 'dwc:organismID', // TODO Technically, this should be a token. Probably.
-          hasValue: wrappedSpecimen.occurrenceID,
-        },
+        onProperty: 'dwc:organismID',
+        hasValue: wrappedSpecimen.occurrenceID,
       });
     });
   } else {
