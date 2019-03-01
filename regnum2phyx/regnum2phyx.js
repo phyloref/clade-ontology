@@ -60,7 +60,11 @@ dump.forEach((entry) => {
       countErrors += 1;
     }
 
-    const scname = `${specifier.specifier_name || ''} ${specifier.displayAuths || ''}, ${specifier.specifier_year || ''} [${specifier.specifier_code || ''}]`;
+    const specifierName = (specifier.specifier_name || '').trim();
+    const specifierAuthority = `${(specifier.displayAuths || '').trim()}, ${(specifier.specifier_year || '').trim()}`;
+    const specifierCode = `[${(specifier.specifier_code || '').trim()}]`;
+
+    const scname = `${specifierName} ${specifierAuthority} ${specifierCode}`.trim();
     const specifierTemplate = {
       verbatimSpecifier: scname,
       referencesTaxonomicUnits: [{
