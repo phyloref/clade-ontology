@@ -614,7 +614,8 @@ phylorefs.forEach((phylorefAsParam) => {
   });
 });
 
-const cladeOntology = [
+/* Construct an object to represent the Clade Ontology itself. */
+let cladeOntologyObjects = [
   {
     '@context': PHYX_CONTEXT_JSON,
     '@id': CLADE_ONTOLOGY_BASEURI,
@@ -626,12 +627,16 @@ const cladeOntology = [
     ],
   },
 ];
-let objs = cladeOntology.concat(phylorefs);
+
+/* Add all the phyloreferences and phylogenies to the JSON-LD file being prepared. */
+cladeOntologyObjects = cladeOntologyObjects.concat(phylorefs);
 if (!argv.no_phylogenies) { // if the --no-phylogenies command line option was NOT true
-  objs = objs.concat(phylogenies);
+  cladeOntologyObjects = cladeOntologyObjects.concat(phylogenies);
 }
+
+/* Write the list of Clade Ontology objects to STDOUT. */
 process.stdout.write(JSON.stringify(
-  objs,
+  cladeOntologyObjects,
   null,
   4
 ));
