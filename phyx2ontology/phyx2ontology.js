@@ -13,6 +13,7 @@ const CLADE_ONTOLOGY_BASEURI = 'http://phyloref.org/clade-ontology/clado.owl';
 const process = require('process');
 const fs = require('fs');
 const path = require('path');
+const yargs = require('yargs');
 const { has } = require('lodash');
 
 // Load phyx.js, our PHYX library.
@@ -57,8 +58,7 @@ function findPHYXFiles(dirPath) {
 }
 
 // Read command-line arguments.
-const argv = require('yargs')
-  .usage('Usage: $0 <directories or files to convert> [--no-phylogenies]')
+const argv = yargs.usage('Usage: $0 <directories or files to convert> [--no-phylogenies]')
   .demandCommand(1) // Make sure there's at least one directory or file!
   .option('no-phylogenies', {
     // --no-phylogenies: Flag for turning off including phylogenies in the produced ontology.
@@ -82,7 +82,7 @@ if (phyxFiles.length === 0) throw new Error('No arguments provided!');
 /* Start producing the output ontology */
 
 // Every entity in the output ontology should have a unique CLADO identifier.
-// getIdentifier() provides these.
+// getIdentifier() provides these given a unique entityIndex.
 let entityIndex = 0;
 function getIdentifier(index) {
   return `${CLADE_ONTOLOGY_BASEURI}#CLADO_${index.toString().padStart(8, '0')}`;
@@ -111,10 +111,12 @@ const jsons = phyxFiles
   // Flatten map to remove files that could not be read or parsed.
   .reduce((a, b) => a.concat(b), []);
 
+/* Convert every phyloreference (from every Phyx file) into a JSON-LD object. */
 const phylorefsByLabel = {};
 const phylorefs = [];
 jsons.forEach((phyxFile) => {
   phyxFile.phylorefs.forEach((phyloref) => {
+    // Convert phyloreference to JSON-LD.
     entityIndex += 1;
     const phylorefWrapper = new phyx.PhylorefWrapper(phyloref);
     const jsonld = phylorefWrapper.asJSONLD(getIdentifier(entityIndex));
@@ -136,29 +138,31 @@ jsons.forEach((phyxFile) => {
     delete jsonld.hasAdditionalClass;
 
     // Finally, we still have the clade definition, but we call it IAO_0000115 now.
+    // To be fixed in https://github.com/phyloref/curation-tool/issues/94.
     jsonld['obo:IAO_0000115'] = jsonld.cladeDefinition;
     delete jsonld.cladeDefinition;
 
-    // Instead, from the specifiers, we construct different kinds of definitions in
-    // This code will be moved into phyx.js once we're fully committed to Model 2.0,
-    // but is here so we can see what the Clade Ontology would look like in Model 2.0.
+    // Construct the OWL restrictions for the equivalentClass using Model 2.0 code.
     const internalSpecifiers = jsonld.internalSpecifiers || [];
     const externalSpecifiers = jsonld.externalSpecifiers || [];
 
     // We might be create additional classes, so get going.
     jsonld.hasAdditionalClass = [];
-
-    // Step 1. Figure out what the node is for all our internal specifiers.
     if (internalSpecifiers.length === 0) {
+      // We can't handle phyloreferences without at least one internal specifier.
       jsonld.malformedPhyloreference = 'No internal specifiers provided';
     } else {
+      // Step 1. Construct an expression for all internal specifiers.
       const expressionsForInternals = (internalSpecifiers.length === 1)
         ? [getIncludesRestrictionForTU(internalSpecifiers[0])]
         : createClassExpressionsForInternals(jsonld, internalSpecifiers, []);
 
       if (externalSpecifiers.length === 0) {
+        // If we don't have external specifiers, we can just use the expression
+        // for the internal specifier.
         jsonld.equivalentClass = expressionsForInternals;
       } else {
+        // Step 2. Create alternate class expressions for external specifiers.
         jsonld.equivalentClass = expressionsForInternals.map(
           exprForInternal => createClassExpressionsForExternals(
             jsonld, exprForInternal, externalSpecifiers, []
@@ -167,19 +171,23 @@ jsons.forEach((phyxFile) => {
       }
     }
 
+    // Set a JSON-LD context so this block can be interpreted in isolation.
     jsonld['@context'] = PHYX_CONTEXT_JSON;
     phylorefs.push(jsonld);
   });
 });
 
+/* Convert every phylogeny (from every Phyx file) into a JSON-LD object. */
 const phylogenies = [];
 jsons.forEach((phyxFile) => {
   phyxFile.phylogenies.forEach((phylogeny) => {
+    // Convert phylogenies into JSON-LD.
     entityIndex += 1;
     const phylogenyAsJSONLD = new phyx.PhylogenyWrapper(phylogeny)
       .asJSONLD(getIdentifier(entityIndex));
 
     // Change name for including Newick.
+    // To be fixed in https://github.com/phyloref/phyx.js/issues/9
     phylogenyAsJSONLD['phyloref:newick_expression'] = phylogenyAsJSONLD.newick;
     delete phylogenyAsJSONLD.newick;
 
@@ -191,8 +199,9 @@ jsons.forEach((phyxFile) => {
       if (!has(node, '@type')) node['@type'] = [];
       if (!Array.isArray(node['@type'])) node['@type'] = [node['@type']];
 
-      // TODO remove hack: replace "parent" with "obo:CDAO_0000179" so we get has_Parent
+      // We replace "parent" with "obo:CDAO_0000179" so we get has_Parent
       // relationships in our output ontology.
+      // To be fixed in https://github.com/phyloref/phyx.js/issues/10
       if (has(node, 'parent')) node['obo:CDAO_0000179'] = { '@id': node.parent };
 
       // For every internal node in this phylogeny, check to see if it's expected to
@@ -240,6 +249,7 @@ jsons.forEach((phyxFile) => {
       }
     });
 
+    // Set a '@context' so it can be interpreted from other objects in the output file.
     phylogenyAsJSONLD['@context'] = PHYX_CONTEXT_JSON;
     phylogenies.push(phylogenyAsJSONLD);
   });
