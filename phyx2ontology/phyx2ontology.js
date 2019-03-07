@@ -173,7 +173,6 @@ jsons.forEach((phyxFile) => {
 });
 
 const phylogenies = [];
-const tunitMatches = [];
 jsons.forEach((phyxFile) => {
   phyxFile.phylogenies.forEach((phylogeny) => {
     entityIndex += 1;
@@ -243,46 +242,6 @@ jsons.forEach((phyxFile) => {
 
     phylogenyAsJSONLD['@context'] = PHYX_CONTEXT_JSON;
     phylogenies.push(phylogenyAsJSONLD);
-  });
-});
-
-phylorefs.forEach((phylorefAsParam) => {
-  const phyloref = phylorefAsParam;
-
-  let specifiers = [];
-  if (has(phyloref, 'internalSpecifiers')) specifiers = phyloref.internalSpecifiers;
-  if (has(phyloref, 'externalSpecifiers')) specifiers = specifiers.concat(phyloref.externalSpecifiers);
-
-  specifiers.forEach((specifier) => {
-    let countMatchedNodes = 0;
-
-    if (has(specifier, 'referencesTaxonomicUnits')) {
-      specifier.referencesTaxonomicUnits.forEach((specifierTU) => {
-        phylogenies.forEach((phylogenyAsJSONLD) => {
-          phylogenyAsJSONLD.nodes.forEach((node) => {
-            if (!has(node, 'representsTaxonomicUnits')) return;
-
-            node.representsTaxonomicUnits.forEach((nodeTU) => {
-              const matcher = new phyx.TaxonomicUnitMatcher(specifierTU, nodeTU);
-              if (matcher.matched) {
-                entityIndex += 1;
-                const tuMatchAsJSONLD = matcher.asJSONLD(getIdentifier(entityIndex));
-
-                countMatchedNodes += 1;
-                tuMatchAsJSONLD['@context'] = PHYX_CONTEXT_JSON;
-                tunitMatches.push(tuMatchAsJSONLD);
-              }
-            });
-          });
-        });
-      });
-
-      // If this specifier could not be matched, record it as an unmatched specifier.
-      if (countMatchedNodes === 0) {
-        if (!has(phyloref, 'hasUnmatchedSpecifiers')) phyloref.hasUnmatchedSpecifiers = [];
-        phyloref.hasUnmatchedSpecifiers.push({ '@id': specifier['@id'] });
-      }
-    }
   });
 });
 
