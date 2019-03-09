@@ -80,19 +80,24 @@ function convertTUtoRestriction(tunit) {
 
 let additionalClassCount = 0;
 const additionalClassesByLabel = {};
-function createAdditionalClass(jsonld, internalSpecifiers, externalSpecifiers, equivClassFunc) {
-  // This function creates an additional class for the set of internal and external
-  // specifiers provided for the equivalentClass expression provided. If one already
-  // exists for this set of internal and external specifiers, we just return that
-  // instead of creating a new one.
-  //
-  // TODO For some reason this acts strange if equivalentClass is a string, so instead
-  // I've made it into a function here. To be fixed.
 
+/*
+ * Create an additional class for the set of internal and external specifiers provided.
+ * We turn this into a label (in the form `A & B ~ C V D`), which we use to ensure that
+ * we don't create more than one class for a particular set of internal and external
+ * specifiers.
+ * - jsonld: The JSON-LD representation of the Phyloreference this is an additional class
+ *   for. We mainly use this to retrieve its '@id'.
+ * - internalSpecifiers: The set of internal specifiers for this additional class.
+ * - externalSpecifiers: The set of external specifiers for this additional class.
+ * - equivClassFunc: The equivalent class expression for this additional class as a function
+ *   that returns the expression as a string.
+ */
+function createAdditionalClass(jsonld, internalSpecifiers, externalSpecifiers, equivClassFunc) {
   if (internalSpecifiers.length === 0) throw new Error('Cannot create additional class without any internal specifiers');
   if (internalSpecifiers.length === 1 && externalSpecifiers.length === 0) throw new Error('Cannot create additional class with a single internal specifiers and no external specifiers');
 
-  /* Come up with a label that represents this additional class. */
+  /* Generate a label that represents this additional class. */
 
   // Start with the internal specifiers, concatenated with '&'.
   const internalSpecifierLabel = internalSpecifiers
@@ -189,11 +194,10 @@ function getMRCARestrictionOfTwoTUs(tu1, tu2) {
  *     We generate the expressions for remaining specifiers and selected specifiers by calling
  *     this method recursively.
  *  3. Finally, we select another internal from the remainingInternals and generate an
- *     expression for that selection by calling this method recursively. We stop doing
- *     this once we've selected as many internals as are remaining, since at that point
- *     we will have tried every possible combination of internals.
- *
- * This ensures that every sequence of internal specifiers are tested.
+ *     expression for that selection by calling this method recursively. Note that we
+ *     only process cases where there are more remainingInternals than selected
+ *     internals -- when there are fewer, we'll just end up with the inverses of the
+ *     previous comparisons, which we'll already have covered.
  */
 function createClassExpressionsForInternals(jsonld, remainingInternals, selected) {
   // process.stderr.write(`@id [${jsonld['@id']}] Remaining internals:
@@ -264,19 +268,14 @@ function createClassExpressionsForInternals(jsonld, remainingInternals, selected
   // Note that we only process cases where there are more remainingInternals than
   // selected internals -- when there are fewer, we'll just end up with the inverses
   // of the previous comparisons, which we'll already have covered.
-  // TODO: the other way around that would be to wrap *everything* into additional
-  // classes, which might be a useful thing to do anyway.
   if (remainingInternals.length > 1 && selected.length <= remainingInternals.length) {
-    remainingInternals.map((newlySelected) => {
-      process.stderr.write(`Selecting new object, remaining now at: ${remainingInternals.filter(i => i !== newlySelected).length}, selected: ${selected.concat([newlySelected]).length}\n`);
-      return createClassExpressionsForInternals(
-        jsonld,
-        // The new remaining is the old remaining minus the selected TU.
-        remainingInternals.filter(i => i !== newlySelected),
-        // The new selected is the old selected plus the selected TU.
-        selected.concat([newlySelected])
-      );
-    })
+    remainingInternals.map(newlySelected => createClassExpressionsForInternals(
+      jsonld,
+      // The new remaining is the old remaining minus the selected TU.
+      remainingInternals.filter(i => i !== newlySelected),
+      // The new selected is the old selected plus the selected TU.
+      selected.concat([newlySelected])
+    ))
       .reduce((acc, val) => acc.concat(val), [])
       .forEach(expr => classExprs.push(expr));
   }
