@@ -93,7 +93,7 @@ const additionalClassesByLabel = {};
  * - equivClassFunc: The equivalent class expression for this additional class as a function
  *   that returns the expression as a string.
  */
-function createAdditionalClass(jsonld, internalSpecifiers, externalSpecifiers, equivClassFunc) {
+function createAdditionalClass(jsonld, internalSpecifiers, externalSpecifiers, equivClass) {
   if (internalSpecifiers.length === 0) throw new Error('Cannot create additional class without any internal specifiers');
   if (internalSpecifiers.length === 1 && externalSpecifiers.length === 0) throw new Error('Cannot create additional class with a single internal specifiers and no external specifiers');
 
@@ -136,7 +136,7 @@ function createAdditionalClass(jsonld, internalSpecifiers, externalSpecifiers, e
   additionalClass.subClassOf = (
     externalSpecifiers.length > 0 ? 'phyloref:PhyloreferenceUsingMinimumClade' : 'phyloref:PhyloreferenceUsingMaximumClade'
   );
-  additionalClass.equivalentClass = equivClassFunc();
+  additionalClass.equivalentClass = equivClass;
   additionalClass.label = additionalClassLabel;
   jsonld.hasAdditionalClass.push(additionalClass);
 
@@ -231,7 +231,7 @@ function createClassExpressionsForInternals(jsonld, remainingInternals, selected
         jsonld,
         remainingInternals,
         [],
-        () => createClassExpressionsForInternals(jsonld, remainingInternals, [])
+        createClassExpressionsForInternals(jsonld, remainingInternals, [])
       );
     }
 
@@ -245,7 +245,7 @@ function createClassExpressionsForInternals(jsonld, remainingInternals, selected
         jsonld,
         selected,
         [],
-        () => createClassExpressionsForInternals(jsonld, selected, [])
+        createClassExpressionsForInternals(jsonld, selected, [])
       );
     }
 
@@ -390,7 +390,7 @@ function createClassExpressionsForExternals(jsonld, accumulatedExpr, remainingEx
         jsonld,
         jsonld.internalSpecifiers,
         selected.concat([newlySelected]),
-        () => getClassExpressionsForExprAndTU(accumulatedExpr, newlySelected, selected.length > 0)
+        getClassExpressionsForExprAndTU(accumulatedExpr, newlySelected, selected.length > 0)
       );
 
       // Call ourselves recursively to add the remaining externals.
