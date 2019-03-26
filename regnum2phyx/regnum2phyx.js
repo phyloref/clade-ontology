@@ -13,15 +13,77 @@ const yargs = require('yargs');
 const { has, keys } = require('lodash');
 
 // Helper functions.
-function convertAuthorsIntoStrings(authors) {
+function convertAuthorsIntoStrings(authors, lastNameFirst = true) {
   // We combine authors as $first_name $middle_name $last_name.
   // We could instead use foaf:firstName and foaf:lastName, but that's probably
   // unnecessary (http://xmlns.com/foaf/spec/#term_firstName).
+
+  if (lastNameFirst) {
+    // Use "last first middle".
+    return authors.map(author => (
+      `${author.last_name || ''} ${author.first_name || ''}${
+        ((has(author, 'middle_name') && author.middle_name.trim() !== '') ? ` ${author.middle_name}` : '')
+      }`.trim()
+    )).filter(name => name !== '');
+  }
+
+  // Use "first middle last".
   return authors.map(author => (
     `${author.first_name || ''} ${
       ((has(author, 'middle_name') && author.middle_name.trim() !== '') ? `${author.middle_name} ` : '')
-    }${author.last_name || ''}`
-  ).trim()).filter(name => name !== '');
+    }${author.last_name || ''}`.trim()
+  )).filter(name => name !== '');
+}
+
+function convertCitation(citation) {
+  // Convert a citation from its Regnum format into an ontologized form.
+  // We rely on BIBO (https://github.com/structureddynamics/Bibliographic-Ontology-BIBO)
+  // quite extensively for this.
+
+  if (!citation) return [];
+  if (Array.isArray(citation)) {
+    return citation.map(c => convertCitation(c)).reduce((acc, val) => acc.concat(val), []);
+  }
+
+  // Figure out the citation type.
+  const citationTypes = {
+    journal: 'bibo:Article',
+    book: 'bibo:Book',
+    book_section: 'bibo:BookSection',
+  };
+  const citationType = citationTypes[citation.citation_type || 'journal'];
+  if (!citationType) {
+    throw new Error(`Unknown citation type: '${citation.citation_type}'`);
+  }
+
+  // Do we have a title and a year? If not, skip this entry.
+  if (citation.title === undefined || citation.title.trim() === '' || citation.year === undefined || citation.year.trim() === '') {
+    return [];
+  }
+
+  const entry = {
+    '@type': [
+      'obo:IAO_0000301', // A citation
+      citationType,
+    ],
+    'dc:title': (citation.title || '').trim(),
+    'dc:date': (citation.year || '').trim(),
+    'bibo:authorList': convertAuthorsIntoStrings(citation.authors),
+    'bibo:doi': (citation.doi || '').trim(),
+    'bibo:volume': (citation.volume || '').trim(),
+    'bibo:pages': (citation.pages || '').trim(),
+    'bibo:isbn': (citation.isbn || '').trim(),
+    // TODO: citation.figure
+  };
+
+  if (has(citation, 'journal')) {
+    entry['dc:isPartOf'] = {
+      '@type': 'bibo:Journal',
+      'dc:title': citation.journal,
+    };
+  }
+
+  return [entry];
 }
 
 // Read command-line arguments.
@@ -58,7 +120,12 @@ dump.forEach((entry) => {
   const phylorefTemplate = {
     regnumId: entry.id,
     label: phylorefLabel,
-    'dwc:scientificNameAuthorship': (convertAuthorsIntoStrings(entry.authors || []) || []).join(', '),
+    'dwc:scientificNameAuthorship': (convertAuthorsIntoStrings(entry.authors)).join(', '),
+    'dwc:namePublishedIn': convertCitation(entry.citations.preexisting),
+    definitionalCitation: convertCitation(entry.citations.definitional),
+    descriptionCitation: convertCitation(entry.citations.description),
+    primaryPhylogenyCitation: convertCitation(entry.citations.primary_phylogeny),
+    phylogenyCitation: convertCitation(entry.citations.phylogeny),
     cladeDefinition: (entry.definition || '').trim(),
     internalSpecifiers: [],
     externalSpecifiers: [],
