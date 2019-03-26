@@ -12,6 +12,18 @@ const path = require('path');
 const yargs = require('yargs');
 const { has, keys } = require('lodash');
 
+// Helper functions.
+function convertAuthorsIntoStrings(authors) {
+  // We combine authors as $first_name $middle_name $last_name.
+  // We could instead use foaf:firstName and foaf:lastName, but that's probably
+  // unnecessary (http://xmlns.com/foaf/spec/#term_firstName).
+  return authors.map(author => (
+    `${author.first_name || ''} ${
+      ((has(author, 'middle_name') && author.middle_name.trim() !== '') ? `${author.middle_name} ` : '')
+    }${author.last_name || ''}`
+  ).trim()).filter(name => name !== '');
+}
+
 // Read command-line arguments.
 const argv = yargs
   .usage('Usage: $0 <JSON file to process> -o <directory to write files to>')
@@ -44,7 +56,9 @@ dump.forEach((entry) => {
 
   // Prepare and fill a simple Phyx file template.
   const phylorefTemplate = {
+    regnumId: entry.id,
     label: phylorefLabel,
+    'dwc:scientificNameAuthorship': (convertAuthorsIntoStrings(entry.authors || []) || []).join(', '),
     cladeDefinition: (entry.definition || '').trim(),
     internalSpecifiers: [],
     externalSpecifiers: [],
