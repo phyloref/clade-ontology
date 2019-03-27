@@ -116,14 +116,31 @@ dump.forEach((entry) => {
     return;
   }
 
+  // We should never have an actual value for entry.citations.description; if we do,
+  // we might be misinterpreting the input and should exit with an error.
+  if (has(entry.citations, 'description')) {
+    // The Regnum dumps contains citations marked "description" that are empty.
+    // Since convertCitation() removes citations that don't have a title and a
+    // year, we can use it to check whether the "description" citation(s) are
+    // empty or contain an actual citation. In the latter case, we throw an Error
+    // so we fail with an error.
+    const descriptionCitations = convertCitation(entry.citations.description);
+
+    if (descriptionCitations.length > 0) {
+      throw new Error(`Citation of type 'description' found in entry: ${
+        JSON.stringify(convertCitation(entry.citations.definitional), null, 4)
+      }`);
+    }
+  }
+
   // Prepare and fill a simple Phyx file template.
   const phylorefTemplate = {
     regnumId: entry.id,
     label: phylorefLabel,
     'dwc:scientificNameAuthorship': (convertAuthorsIntoStrings(entry.authors)).join(', '),
     'dwc:namePublishedIn': convertCitation(entry.citations.preexisting),
-    definitionalCitation: convertCitation(entry.citations.definitional),
-    descriptionCitation: convertCitation(entry.citations.description),
+    'obo:IAO_0000119': // IAO:definition source (http://purl.obolibrary.org/obo/IAO_0000119)
+      convertCitation(entry.citations.definitional),
     primaryPhylogenyCitation: convertCitation(entry.citations.primary_phylogeny),
     phylogenyCitation: convertCitation(entry.citations.phylogeny),
     cladeDefinition: (entry.definition || '').trim(),
