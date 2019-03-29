@@ -8,6 +8,8 @@
 // Configuration options.
 const PHYX_CONTEXT_JSON = 'http://www.phyloref.org/phyx.js/context/v0.1.0/phyx.json';
 const CLADE_ONTOLOGY_BASEURI = 'http://phyloref.org/clade-ontology/clado.owl';
+const MAX_INTERNAL_SPECIFIERS = 7;
+const MAX_EXTERNAL_SPECIFIERS = 7;
 
 // Load necessary modules.
 const process = require('process');
@@ -151,6 +153,16 @@ jsons.forEach((phyxFile) => {
     if (internalSpecifiers.length === 0) {
       // We can't handle phyloreferences without at least one internal specifier.
       jsonld.malformedPhyloreference = 'No internal specifiers provided';
+    } else if (internalSpecifiers.length > MAX_INTERNAL_SPECIFIERS) {
+      process.stderr.write(
+        `Phyloreference ${phylorefWrapper.label} has ${internalSpecifiers.length} internal specifiers,`
+        + `which is more than the limit of ${MAX_INTERNAL_SPECIFIERS}.\n`
+      );
+    } else if (externalSpecifiers.length > MAX_EXTERNAL_SPECIFIERS) {
+      process.stderr.write(
+        `Phyloreference ${phylorefWrapper.label} has ${externalSpecifiers.length} external specifiers,`
+        + `which is more than the limit of ${MAX_EXTERNAL_SPECIFIERS}.\n`
+      );
     } else {
       // Step 1. Construct an expression for all internal specifiers.
       const expressionsForInternals = (internalSpecifiers.length === 1)
