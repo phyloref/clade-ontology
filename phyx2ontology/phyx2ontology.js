@@ -14,7 +14,7 @@ const process = require('process');
 const fs = require('fs');
 const path = require('path');
 const yargs = require('yargs');
-const { has } = require('lodash');
+const { has, isString } = require('lodash');
 
 // Load phyx.js, our PHYX library.
 const phyx = require('@phyloref/phyx');
@@ -247,6 +247,13 @@ jsons.forEach((phyxFile) => {
           });
         });
       }
+
+      // Now, rdfpipe can handle '@type's that contain restrictions,
+      // but OWLAPI can't. So let's translate all '@type's into
+      // 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type'.
+      node['http://www.w3.org/1999/02/22-rdf-syntax-ns#type'] = node['@type']
+        .map(c => isString(c) ? { '@id': c } : c);
+      delete node['@type'];
     });
 
     // Set a '@context' so it can be interpreted from other objects in the output file.
