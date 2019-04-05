@@ -8,8 +8,8 @@
 // Configuration options.
 const PHYX_CONTEXT_JSON = 'http://www.phyloref.org/phyx.js/context/v0.1.0/phyx.json';
 const CLADE_ONTOLOGY_BASEURI = 'http://phyloref.org/clade-ontology/clado.owl';
-const MAX_INTERNAL_SPECIFIERS = 5; // 7 seems to work too
-const MAX_EXTERNAL_SPECIFIERS = 5; // 7 seems to work too
+const MAX_INTERNAL_SPECIFIERS = 6; // 8 causes Node to run out of memory on my laptop.
+const MAX_EXTERNAL_SPECIFIERS = 6; // 7 takes a lot of time to process in the browser.
 
 // Load necessary modules.
 const process = require('process');
