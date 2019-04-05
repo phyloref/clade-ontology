@@ -105,7 +105,7 @@ const jsons = phyxFiles
     try {
       json = JSON.parse(content.toString('utf8'));
     } catch (err) {
-      process.stderr.write(`WARNING: ${filename} could not be read as JSON, skipping.`);
+      process.stderr.write(`WARNING: ${filename} could not be read as JSON, skipping.\n`);
       return [];
     }
     return [json];
@@ -117,7 +117,7 @@ const jsons = phyxFiles
 const phylorefsByLabel = {};
 const phylorefs = [];
 jsons.forEach((phyxFile) => {
-  phyxFile.phylorefs.forEach((phyloref) => {
+  (phyxFile.phylorefs || []).forEach((phyloref) => {
     // Convert phyloreference to JSON-LD.
     entityIndex += 1;
     const phylorefWrapper = new phyx.PhylorefWrapper(phyloref);
