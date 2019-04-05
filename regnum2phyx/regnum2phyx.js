@@ -159,17 +159,20 @@ dump.forEach((entry) => {
     }
 
     const specifierName = (specifier.specifier_name || '').trim();
-    const specifierAuthority = `${(specifier.displayAuths || '').trim()}, ${(specifier.specifier_year || '').trim()}`;
-    const specifierCode = `[${(specifier.specifier_code || '').trim()}]`;
+    const specifierAuthors = (specifier.displayAuths || '').trim();
+    const specifierAuthority = (specifierAuthors.length > 0) ?
+      `${specifierAuthors}, ${(specifier.specifier_year || '').trim()}` :
+      (specifier.specifier_year || '').trim();
+    const specifierCode = (specifier.specifier_code || '').trim();
 
-    const scname = `${specifierName} ${specifierAuthority} ${specifierCode}`.trim();
+    // TODO: parse out genus and binomial name?
+
+    const scname = `${specifierName} ${specifierAuthority}`.trim();
     const specifierTemplate = {
       verbatimSpecifier: scname,
-      referencesTaxonomicUnits: [{
-        scientificNames: [{
-          scientificName: scname,
-        }],
-      }],
+      scientificName: scname,
+      canonicalName: specifierName,
+      nomenclaturalCode: specifierCode,
     };
 
     addTo.push(specifierTemplate);
