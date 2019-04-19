@@ -35,6 +35,21 @@ function convertAuthorsIntoStrings(authors, lastNameFirst = true) {
   )).filter(name => name !== '');
 }
 
+function convertAuthorsIntoObjects(authors) {
+  return authors.map(author => ({
+    name: `${author.last_name || ''}, ${author.first_name || ''}${
+      ((has(author, 'middle_name') && author.middle_name.trim() !== '') ? ` ${author.middle_name}` : '')
+    }`.trim(),
+    alternate: [
+      `${author.first_name || ''} ${
+        ((has(author, 'middle_name') && author.middle_name.trim() !== '') ? `${author.middle_name} ` : '')
+      }${author.last_name || ''}`.trim(),
+    ],
+    firstname: author.first_name || '',
+    lastname: author.last_name || '',
+  }));
+}
+
 function convertCitation(citation) {
   // Convert a citation from its Regnum format into an ontologized form.
   // We rely on BIBO (https://github.com/structureddynamics/Bibliographic-Ontology-BIBO)
@@ -61,27 +76,34 @@ function convertCitation(citation) {
     return [];
   }
 
-  const entry = {
-    '@type': [
-      'obo:IAO_0000301', // A citation
-      citationType,
-    ],
-    'dc:title': (citation.title || '').trim(),
-    'dc:date': (citation.year || '').trim(),
-    'bibo:authorList': convertAuthorsIntoStrings(citation.authors),
-    'bibo:doi': (citation.doi || '').trim(),
-    'bibo:volume': (citation.volume || '').trim(),
-    'bibo:pages': (citation.pages || '').trim(),
-    'bibo:isbn': (citation.isbn || '').trim(),
-    // TODO: citation.figure
-  };
+  // No authors, title or year? Ignore.
+  if (!citation.authors || !citation.title || !citation.year) return [];
 
-  if (has(citation, 'journal')) {
-    entry['dc:isPartOf'] = {
-      '@type': 'bibo:Journal',
-      'dc:title': citation.journal,
-    };
-  }
+  const entry = {
+    type: citation.citation_type || 'journal',
+    title: (citation.title || '').trim(),
+    year: (citation.year || '').trim(),
+    authors: convertAuthorsIntoObjects(citation.authors),
+    journal: {
+      name: (citation.journal || '').trim(),
+      volume: (citation.volume || '').trim(),
+      pages: (citation.pages || '').trim(),
+      identifier: [
+        {
+          type: 'isbn',
+          id: (citation.isbn || '').trim(),
+        },
+        {
+          type: 'issn',
+          id: (citation.isbn || '').trim(),
+        },
+      ],
+    },
+    identifier: {
+      type: 'doi',
+      id: (citation.doi || '').trim(),
+    },
+  };
 
   return [entry];
 }
