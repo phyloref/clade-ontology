@@ -10,7 +10,7 @@
 const fs = require('fs');
 const path = require('path');
 const yargs = require('yargs');
-const { has, keys } = require('lodash');
+const { has, keys, pickBy } = require('lodash');
 
 // Helper functions.
 function convertAuthorsIntoStrings(authors, lastNameFirst = true) {
@@ -36,18 +36,20 @@ function convertAuthorsIntoStrings(authors, lastNameFirst = true) {
 }
 
 function convertAuthorsIntoObjects(authors) {
-  return authors.map(author => ({
-    name: `${author.last_name || ''}, ${author.first_name || ''}${
-      ((has(author, 'middle_name') && author.middle_name.trim() !== '') ? ` ${author.middle_name}` : '')
-    }`.trim(),
-    alternate: [
-      `${author.first_name || ''} ${
-        ((has(author, 'middle_name') && author.middle_name.trim() !== '') ? `${author.middle_name} ` : '')
-      }${author.last_name || ''}`.trim(),
-    ],
-    firstname: author.first_name || '',
-    lastname: author.last_name || '',
-  }));
+  return authors
+    .filter(author => author.last_name)
+    .map(author => ({
+      name: `${author.last_name || ''}, ${author.first_name || ''}${
+        ((has(author, 'middle_name') && author.middle_name.trim() !== '') ? ` ${author.middle_name}` : '')
+      }`.trim(),
+      alternate: [
+        `${author.first_name || ''} ${
+          ((has(author, 'middle_name') && author.middle_name.trim() !== '') ? `${author.middle_name} ` : '')
+        }${author.last_name || ''}`.trim(),
+      ],
+      firstname: author.first_name || '',
+      lastname: author.last_name || '',
+    }));
 }
 
 function convertCitation(citation) {
@@ -79,31 +81,56 @@ function convertCitation(citation) {
   // No authors, title or year? Ignore.
   if (!citation.authors || !citation.title || !citation.year) return [];
 
-  const entry = {
-    type: citation.citation_type || 'journal',
+  const type = citation.citation_type || 'article';
+  const identifiers = [];
+  if (citation.doi) identifiers.push({ type: 'doi', id: citation.doi });
+
+  const urls = [];
+  if (citation.url) urls.push({ url: citation.url });
+
+  // lodash.pickBy will remove empty keys from the object.
+  const entry = pickBy({
+    type,
     title: (citation.title || '').trim(),
+    section_title: (citation.section_title || '').trim(),
     year: (citation.year || '').trim(),
+    edition: (citation.edition || '').trim(),
     authors: convertAuthorsIntoObjects(citation.authors),
-    journal: {
+    editors: convertAuthorsIntoObjects(citation.editors || []),
+    series_editors: convertAuthorsIntoObjects(citation.series_editors || []),
+    publisher: (citation.publisher || '').trim(),
+    city: (citation.city || '').trim(),
+    pages: (citation.pages || '').trim(),
+    figure: (citation.figure || '').trim(),
+    keywords: (citation.keyword || '').trim(),
+    identifier: identifiers,
+    link: urls,
+  });
+
+  if (type === 'book' || type === 'book_section') {
+    // We already have all the details included, so don't add anything else.
+  } else if (type === 'journal') {
+    // Identifying journal identifiers.
+    const journalIdentifiers = [];
+    if (citation.isbn) {
+      journalIdentifiers.push({ type: 'isbn', id: citation.isbn });
+    }
+    if (citation.issn) {
+      journalIdentifiers.push({ type: 'issn', id: citation.issn });
+    }
+
+    // In BibJSON (http://okfnlabs.org/bibjson/), the journal name, volume, number
+    // and pages should go into the 'journal' object.
+    entry.journal = pickBy({
       name: (citation.journal || '').trim(),
       volume: (citation.volume || '').trim(),
+      number: (citation.number || '').trim(),
       pages: (citation.pages || '').trim(),
-      identifier: [
-        {
-          type: 'isbn',
-          id: (citation.isbn || '').trim(),
-        },
-        {
-          type: 'issn',
-          id: (citation.isbn || '').trim(),
-        },
-      ],
-    },
-    identifier: {
-      type: 'doi',
-      id: (citation.doi || '').trim(),
-    },
-  };
+      identifier: journalIdentifiers,
+    });
+  } else {
+    throw new Error(`Unknown citation type: ${type}`);
+  }
 
   return [entry];
 }
