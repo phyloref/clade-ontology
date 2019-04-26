@@ -49,6 +49,7 @@ function convertAuthorsIntoObjects(authors) {
       ],
       firstname: author.first_name || '',
       lastname: author.last_name || '',
+      middlename: author.middle_name || '',
     }));
 }
 
