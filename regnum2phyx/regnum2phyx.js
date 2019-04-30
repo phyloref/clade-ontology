@@ -24,8 +24,8 @@ function convertAuthorsIntoStrings(authors, lastNameFirst = true) {
   // return a list of author names with a single name.
   //
   // We combine author names in two possible ways:
-  //  If lastNameFirst is true: $first_name $middle_name $last_name
-  //  If lastNameFirst is false: $last_name, $first_name $middle_name
+  //  If lastNameFirst is true: $last_name $first_name $middle_name
+  //  If lastNameFirst is false: $first_name $middle_name $last_name
   // The middle name will be ignored if it is blank or not present.
 
   if (lastNameFirst) {
@@ -47,21 +47,20 @@ function convertAuthorsIntoStrings(authors, lastNameFirst = true) {
 
 function convertAuthorsIntoBibJSON(authors) {
   // Convert a list of authors in the Regnum dump format into a list of authors
-  // in the BibJSON format. Names without a last name will be ignored.
+  // in the BibJSON format (http://okfnlabs.org/bibjson/). Names without a
+  // last name will be ignored.
   return authors
     .filter(author => author.last_name)
     .map(author => pickBy({ // lodash.pickBy will remove empty keys from the object.
-      name: `${author.last_name || ''}, ${author.first_name || ''}${
-        ((has(author, 'middle_name') && author.middle_name.trim() !== '') ? ` ${author.middle_name}` : '')
-      }`.trim(),
+      // We store the author name as last_name, first_name middle_name
+      name: convertAuthorsIntoStrings([author], true).join(),
       alternate: [
-        `${author.first_name || ''} ${
-          ((has(author, 'middle_name') && author.middle_name.trim() !== '') ? `${author.middle_name} ` : '')
-        }${author.last_name || ''}`.trim(),
+        // We store an alternate author name as first_name middle_name last_name.
+        convertAuthorsIntoStrings([author], false).join(),
       ],
-      firstname: author.first_name || '',
-      lastname: author.last_name || '',
-      middlename: author.middle_name || '',
+      firstname: (author.first_name || '').trim(),
+      lastname: (author.last_name || '').trim(),
+      middlename: (author.middle_name || '').trim(),
     }));
 }
 
@@ -80,7 +79,10 @@ function convertCitationsToBibJSON(citation) {
   }
 
   // Do we have a title and a year? If not, skip this entry.
-  if (citation.title === undefined || citation.title.trim() === '' || citation.year === undefined || citation.year.trim() === '') {
+  if (
+    citation.title === undefined || citation.title.trim() === ''
+    || citation.year === undefined || citation.year.trim() === ''
+  ) {
     return [];
   }
 
@@ -147,6 +149,8 @@ function convertCitationsToBibJSON(citation) {
   return [entry];
 }
 
+// Command line application starts here.
+
 // Read command-line arguments.
 const argv = yargs
   .usage('Usage: $0 <JSON file to process> -o <directory to write files to>')
@@ -168,6 +172,7 @@ const dump = JSON.parse(fs.readFileSync(argv._[0], 'utf8'));
 const phyxProduced = {};
 let countErrors = 0;
 
+// Loop through all phylorefs in the database dump.
 dump.forEach((entry) => {
   const phylorefLabel = entry.name.trim();
 
@@ -238,10 +243,13 @@ dump.forEach((entry) => {
 
     // Do we have authors? If so, incorporate them into the specifier authors.
     // Otherwise, just use the year.
-    const specifierAuthority = (specifierAuthors.length > 0)
-      ? `${specifierAuthors}, ${(specifier.specifier_year || '').trim()}`
-      : (specifier.specifier_year || '').trim();
+    let specifierAuthority = (specifier.specifier_year || '').trim();
+    if (specifierAuthors.length > 0) {
+      specifierAuthority = `${specifierAuthors}, ${(specifier.specifier_year || '').trim()}`;
+    }
 
+    // Write out a scientificName that includes the specifier name as well as its
+    // nomenclatural authority, if present.
     const scname = `${specifierName} ${specifierAuthority}`.trim();
     const specifierTemplate = {
       verbatimSpecifier: scname,
@@ -258,10 +266,9 @@ dump.forEach((entry) => {
     '@context': 'http://www.phyloref.org/phyx.js/context/v0.1.0/phyx.json',
     phylogenies,
     phylorefs: [phylorefTemplate],
-    debug: entry, // To help with debugging, dump the entire entry into the Phyx file.
   });
 
-  // Write out Phyx file.
+  // Write out Phyx file for this phyloreference.
   const phyxFilename = path.join(argv.outputDir, `${phylorefLabel}.json`);
   fs.writeFileSync(phyxFilename, JSON.stringify(phyxTemplate, null, 4));
 
