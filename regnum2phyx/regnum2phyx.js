@@ -31,7 +31,7 @@ function convertAuthorsIntoStrings(authors, lastNameFirst = true) {
   if (lastNameFirst) {
     // Use "last first middle".
     return authors.map(author => (
-      `${author.last_name || ''} ${author.first_name || ''}${
+      `${author.last_name || ''}, ${author.first_name || ''}${
         ((has(author, 'middle_name') && author.middle_name.trim() !== '') ? ` ${author.middle_name}` : '')
       }`.trim()
     )).filter(name => name !== '');
@@ -52,11 +52,11 @@ function convertAuthorsIntoBibJSON(authors) {
   return authors
     .filter(author => author.last_name)
     .map(author => pickBy({ // lodash.pickBy will remove empty keys from the object.
-      // We store the author name as last_name, first_name middle_name
-      name: convertAuthorsIntoStrings([author], true).join(),
+      // We store the author name as first_name middle_name last_name
+      name: convertAuthorsIntoStrings([author], false).join(),
       alternate: [
-        // We store an alternate author name as first_name middle_name last_name.
-        convertAuthorsIntoStrings([author], false).join(),
+        // We store an alternate author name as last_name, first_name middle_name.
+        convertAuthorsIntoStrings([author], true).join(),
       ],
       firstname: (author.first_name || '').trim(),
       lastname: (author.last_name || '').trim(),
