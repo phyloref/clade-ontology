@@ -113,7 +113,7 @@ function convertCitationsToBibJSON(citation) {
     city: (citation.city || '').trim(),
     pages: (citation.pages || '').trim(),
     figure: (citation.figure || '').trim(),
-    keywords: (citation.keyword || '').trim(),
+    // keywords: (citation.keyword || '').trim(), -- We really don't need this.
     identifier: identifiers,
     link: urls,
   });
