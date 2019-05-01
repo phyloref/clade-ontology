@@ -87,7 +87,10 @@ function convertCitationsToBibJSON(citation) {
   }
 
   // Assume a default type of 'article' if none was provided.
-  const type = citation.citation_type || 'article';
+  let type = citation.citation_type || 'article';
+
+  // Regnum uses 'journal' where BibJSON uses 'article'.
+  if (type === 'journal') type = 'article';
 
   // In BibJSON, identifiers are kept separate from URLs.
   const identifiers = [];
@@ -120,7 +123,7 @@ function convertCitationsToBibJSON(citation) {
     if (citation.isbn) {
       identifiers.push({ type: 'isbn', id: citation.isbn });
     }
-  } else if (type === 'journal') {
+  } else if (type === 'article') {
     // Identify journal identifiers, such as the
     const journalIdentifiers = [];
     if (citation.isbn) {
