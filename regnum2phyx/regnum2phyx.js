@@ -222,7 +222,7 @@ dump.forEach((entry) => {
     phylogeny => pickBy({ primaryPhylogenyCitation: phylogeny })
   );
   const phylogenyCitation = convertCitationsToBibJSON(entry.citations.phylogeny).map(
-    phylogeny => pickBy({ primaryPhylogenyCitation: phylogeny })
+    phylogeny => pickBy({ phylogenyCitation: phylogeny })
   );
   const phylogenies = primaryPhylogenyCitation.concat(phylogenyCitation).filter(
     phylogeny => !isEmpty(phylogeny)
