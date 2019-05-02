@@ -1,0 +1,107 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Phylogenetic approaches toward crocodylian history",
+                "year": "2003",
+                "authors": [
+                    {
+                        "name": "Christopher A. Brochu",
+                        "alternate": [
+                            "Brochu, Christopher A."
+                        ],
+                        "firstname": "Christopher",
+                        "lastname": "Brochu",
+                        "middlename": "A."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1146/annurev.earth.31.100901.141308"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "https://doi.org/10.1146/annurev.earth.31.100901.141308"
+                    }
+                ],
+                "journal": {
+                    "name": "Annual Review of Earth and Planetary Sciences",
+                    "volume": "31",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 1,
+            "label": "Crocodylia",
+            "dwc:scientificNameAuthorship": "Brochu, Christopher A.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Caroli a Linné. Systema naturae per regna tria naturae : secundum classes, ordines, genera, species, cum characteribus, differentiis, synonymis, locis.",
+                    "year": "1788",
+                    "edition": "13",
+                    "authors": [
+                        {
+                            "name": "Johann Friedrich Gmelin",
+                            "alternate": [
+                                "Gmelin, Johann Friedrich"
+                            ],
+                            "firstname": "Johann",
+                            "lastname": "Gmelin",
+                            "middlename": "Friedrich"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Lipsiae :impensis Georg. Emanuel. Beer, 1788-93.",
+                    "city": "Lipsiae",
+                    "pages": "1057",
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.5962/bhl.title.36932"
+                        }
+                    ],
+                    "link": [
+                        {
+                            "url": "http://doi.org/10.5962/bhl.title.36932"
+                        }
+                    ]
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "Last common ancestor of Gavialis gangeticus, Alligator mississippiensis, and Crocodylus niloticus and all of its descendents",
+            "internalSpecifiers": [
+                {
+                    "verbatimSpecifier": "Gavialis gangeticus Gmelin, 1789",
+                    "scientificName": "Gavialis gangeticus Gmelin, 1789",
+                    "canonicalName": "Gavialis gangeticus",
+                    "nomenclaturalCode": "ICZN"
+                },
+                {
+                    "verbatimSpecifier": "Alligator mississippiensis Daudin, 1802",
+                    "scientificName": "Alligator mississippiensis Daudin, 1802",
+                    "canonicalName": "Alligator mississippiensis",
+                    "nomenclaturalCode": "ICZN"
+                },
+                {
+                    "verbatimSpecifier": "Crocodylus niloticus Gmelin, 1768",
+                    "scientificName": "Crocodylus niloticus Gmelin, 1768",
+                    "canonicalName": "Crocodylus niloticus",
+                    "nomenclaturalCode": "ICZN"
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

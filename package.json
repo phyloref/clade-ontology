@@ -8,6 +8,7 @@
     "lint": "eslint \"test/**\" \"phyx2ontology/**\" \"regnum2phyx/**\" --ext .js",
     "pretest": "npm run lint",
     "test": "mocha",
+    "mocha": "mocha",
     "build-ontology": "node phyx2ontology/phyx2ontology.js phyx/ > CLADO.json"
   },
   "repository": {
