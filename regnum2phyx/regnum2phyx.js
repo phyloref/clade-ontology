@@ -139,7 +139,6 @@ function convertCitationsToBibJSON(citation) {
       name: (citation.journal || '').trim(),
       volume: (citation.volume || '').trim(),
       number: (citation.number || '').trim(),
-      pages: (citation.pages || '').trim(),
       identifier: journalIdentifiers,
     });
 
