@@ -260,6 +260,20 @@
               "Eusuchia (Huxley 1875). Amended definition.\n\nLast common ancestor of Hylaeochampsa vectiana, Crocodylus niloticus, Gavialis gangeticus, and Alligator mississippiensis\t and all of its descendents."
             ]
           },
+          "dwc:namePublishedIn": {
+            "title": "A citation for the original description of the pre-existing name of this phyloreference",
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/citation"
+            }
+          },
+          "obo:IAO_0000119": {
+            "title": "A citation for this phyloreference definition",
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/citation"
+            }
+          },
           "internalSpecifiers": {
             "type": "array",
             "title": "Internal specifiers of this phyloreference",
