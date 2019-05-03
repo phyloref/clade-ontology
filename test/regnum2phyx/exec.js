@@ -19,7 +19,7 @@ function loadJSON(filename) {
   return JSON.parse(content);
 }
 
-describe('Test PHYX files in repository', function () {
+describe('Test regnum2phyx.js', function () {
   fs.readdirSync(`${__dirname}/examples`).forEach(function (filename) {
     describe(`Processing example Regnum dump: ${filename}`, function () {
       const filepath = `${__dirname}/examples/${filename}`;
