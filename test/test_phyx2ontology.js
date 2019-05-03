@@ -4,28 +4,37 @@
 
 const BASE_DIR = 'phyx/';
 
-// Javascript libraries.
+// Node libraries.
 const ChildProcess = require('child_process');
+const fs = require('fs');
+
+// Javascript libraries.
+const tmp = require('tmp');
 const chai = require('chai');
 
 const assert = chai.assert;
 
+const tmpfilename = tmp.fileSync().name;
+
 describe('Executing phyx2ontology.js on all current Phyx files', function () {
   const child = ChildProcess.spawnSync(process.execPath, [
-    'phyx2ontology/phyx2ontology.js', BASE_DIR,
-  ]);
+    'phyx2ontology/phyx2ontology.js', BASE_DIR, '>', tmpfilename,
+  ], {
+    encoding: 'utf8',
+    shell: true,
+  });
 
   it('should execute successfully', function () {
     assert.isEmpty(child.stderr, 'Should not produce any output to STDERR');
-    assert.isNotEmpty(child.stdout, 'Should produce output in STDOUT');
-    assert.isNull(child.signal, `Should not have terminated because of signal ${child.signal}`);
+    assert.isNull(child.signal, `Terminated because of signal ${child.signal}`);
     assert.equal(child.status, 0, 'Exit value should be zero');
   });
 
   it('should produce valid JSON output', function () {
+    const jsonContent = fs.readFileSync(tmpfilename, { encoding: 'utf8' });
     let json = [];
     assert.doesNotThrow(function () {
-      json = JSON.parse(child.stdout);
+      json = JSON.parse(jsonContent);
     }, SyntaxError);
     assert.isNotEmpty(json, 'Produced JSON should not be empty');
   });
