@@ -8,7 +8,7 @@ const fs = require('fs');
 
 const tmp = require('tmp');
 const chai = require('chai');
-const ajv = require('ajv');
+const Ajv = require('ajv');
 
 const assert = chai.assert;
 const expect = chai.expect;
@@ -74,10 +74,12 @@ describe('Test PHYX files in repository', function () {
                 });
 
                 const phyxSchemaJSON = loadJSON(`${__dirname}/phyx.schema.json`);
-                const ajvInstance = new ajv();
+                const ajvInstance = new Ajv({
+                  allErrors: true, // Display all error messages, not just the first.
+                });
                 const phyxSchema = ajvInstance.compile(phyxSchemaJSON);
                 const result = phyxSchema(producedPhyx);
-                
+
                 it('should validate against the Phyx JSON Schema', function () {
                     phyxSchema.errors.forEach(function (error) {
                         assert.fail(ajvInstance.errorsText([error]));
