@@ -15,79 +15,79 @@ const expect = chai.expect;
 
 // Load a JSON file from the file system.
 function loadJSON(filename) {
-    const content = fs.readFileSync(filename, { encoding: 'utf8' });
-    return JSON.parse(content);
+  const content = fs.readFileSync(filename, { encoding: 'utf8' });
+  return JSON.parse(content);
 }
 
 describe('Test PHYX files in repository', function () {
-  fs.readdirSync(__dirname + '/examples').forEach(function (filename) {
+  fs.readdirSync(`${__dirname}/examples`).forEach(function (filename) {
     describe(`Processing example Regnum dump: ${filename}`, function () {
-        const filepath = `${__dirname}/examples/${filename}`;
+      const filepath = `${__dirname}/examples/${filename}`;
 
-        // We only test '.json' files.
-        if (!filepath.endsWith('.json')) {
-            it.skip('not a JSON file');
-            return;
+      // We only test '.json' files.
+      if (!filepath.endsWith('.json')) {
+        it.skip('not a JSON file');
+        return;
+      }
+
+      // Create a temporary directory to make files into.
+      const tmpdirname = tmp.dirSync().name;
+
+      // Run phyx2regnum.js on it.
+      const child = ChildProcess.spawnSync(
+        'node',
+        [
+          'regnum2phyx/regnum2phyx.js',
+          filepath,
+          '-o',
+          tmpdirname,
+        ],
+        {
+          encoding: 'utf8',
         }
+      );
 
-        // Create a temporary directory to make files into.
-        const tmpdirname = tmp.dirSync().name;
+      it('could be executed by regnum2phyx.js', function () {
+        expect(child.stderr).to.be.empty;
+        expect(child.stdout).to.match(/^(\d+) Phyx files produced successfully.\n$/);
+        expect(child.status).to.equal(0);
+      });
 
-        // Run phyx2regnum.js on it.
-        const child = ChildProcess.spawnSync(
-            'node',
-            [
-                'regnum2phyx/regnum2phyx.js',
-                filepath,
-                '-o',
-                tmpdirname
-            ],
-            {
-                encoding: 'utf8'
-            }
-        );
+      // There should be an ./expected/${basename} directory
+      // containing at least one file.
+      const basename = filename.replace(/.json$/i, '');
+      const producedFiles = fs.readdirSync(`${tmpdirname}`);
+      const expectedFiles = fs.readdirSync(`${__dirname}/expected/${basename}`);
 
-        it('could be executed by regnum2phyx.js', function () {
-            expect(child.stderr).to.be.empty;
-            expect(child.stdout).to.match(/^(\d+) Phyx files produced successfully.\n$/);
-            expect(child.status).to.equal(0);
-        });
+      it('should produce the expected files', function () {
+        expect(producedFiles).to.deep.equal(expectedFiles);
+        expect(producedFiles).to.not.be.empty;
+      });
 
-        // There should be an ./expected/${basename} directory
-        // containing at least one file.
-        const basename = filename.replace(/.json$/i, '');
-        const producedFiles = fs.readdirSync(`${tmpdirname}`);
-        const expectedFiles = fs.readdirSync(`${__dirname}/expected/${basename}`);
+      producedFiles.forEach(function (producedFile) {
+        describe(`Testing produced file ${producedFile}`, function () {
+          const producedPhyx = loadJSON(`${tmpdirname}/${producedFile}`);
+          const expectedPhyx = loadJSON(`${__dirname}/expected/${basename}/${producedFile}`);
 
-        it('should produce the expected files', function () {
-            expect(producedFiles).to.deep.equal(expectedFiles);
-            expect(producedFiles).to.not.be.empty;
-        });
+          it('should be identical to expected', function () {
+            expect(producedPhyx).to.deep.equal(expectedPhyx);
+          });
 
-        producedFiles.forEach(function(producedFile) {
-            describe(`Testing produced file ${producedFile}`, function () {
-                const producedPhyx = loadJSON(`${tmpdirname}/${producedFile}`);
-                const expectedPhyx = loadJSON(`${__dirname}/expected/${basename}/${producedFile}`);
+          const phyxSchemaJSON = loadJSON(`${__dirname}/phyx.schema.json`);
+          const ajvInstance = new Ajv({
+            allErrors: true, // Display all error messages, not just the first.
+          });
+          const phyxSchema = ajvInstance.compile(phyxSchemaJSON);
+          const result = phyxSchema(producedPhyx);
 
-                it('should be identical to expected', function () {
-                    expect(producedPhyx).to.deep.equal(expectedPhyx);
-                });
-
-                const phyxSchemaJSON = loadJSON(`${__dirname}/phyx.schema.json`);
-                const ajvInstance = new Ajv({
-                  allErrors: true, // Display all error messages, not just the first.
-                });
-                const phyxSchema = ajvInstance.compile(phyxSchemaJSON);
-                const result = phyxSchema(producedPhyx);
-
-                it('should validate against the Phyx JSON Schema', function () {
-                    phyxSchema.errors.forEach(function (error) {
-                        assert.fail(ajvInstance.errorsText([error]));
-                    });
-                    expect(result).is.true;
-                });
+          it('should validate against the Phyx JSON Schema', function () {
+            phyxSchema.errors.forEach(function (error) {
+              assert.fail(ajvInstance.errorsText([error]));
             });
+            expect(result).is.true;
+          });
         });
+      });
     });
   });
 });
