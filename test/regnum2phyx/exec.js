@@ -35,7 +35,7 @@ describe('Test PHYX files in repository', function () {
 
       // Run phyx2regnum.js on it.
       const child = ChildProcess.spawnSync(
-        '/usr/bin/node',
+        process.execPath,
         [
           'regnum2phyx/regnum2phyx.js',
           filepath,
@@ -44,7 +44,6 @@ describe('Test PHYX files in repository', function () {
         ],
         {
           encoding: 'utf8',
-          shell: true,
         }
       );
 
