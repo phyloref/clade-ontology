@@ -17,8 +17,9 @@ describe('Executing phyx2ontology.js on all current Phyx files', function () {
 
   it('should execute successfully', function () {
     assert.isEmpty(child.stderr, 'Should not produce any output to STDERR');
-    assert.equal(child.status, 0, 'Exit value should be zero');
     assert.isNotEmpty(child.stdout, 'Should produce output in STDOUT');
+    assert.isNull(child.signal, `Should not have terminated because of signal ${child.signal}`);
+    assert.equal(child.status, 0, 'Exit value should be zero');
   });
 
   it('should produce valid JSON output', function () {
