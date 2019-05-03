@@ -104,7 +104,7 @@ function convertCitationsToBibJSON(citation) {
     type,
     title: (citation.title || '').trim(),
     section_title: (citation.section_title || '').trim(),
-    year: (citation.year || '').trim(),
+    year: Number((citation.year || '')),
     edition: (citation.edition || '').trim(),
     authors: convertAuthorsIntoBibJSON(citation.authors),
     editors: convertAuthorsIntoBibJSON(citation.editors || []),

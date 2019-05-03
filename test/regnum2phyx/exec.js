@@ -5,11 +5,12 @@
 // Javascript libraries.
 const ChildProcess = require('child_process');
 const fs = require('fs');
-const path = require('path');
 
 const tmp = require('tmp');
 const chai = require('chai');
+const ajv = require('ajv');
 
+const assert = chai.assert;
 const expect = chai.expect;
 
 // Load a JSON file from the file system.
@@ -70,6 +71,18 @@ describe('Test PHYX files in repository', function () {
 
                 it('should be identical to expected', function () {
                     expect(producedPhyx).to.deep.equal(expectedPhyx);
+                });
+
+                const phyxSchemaJSON = loadJSON(`${__dirname}/phyx.schema.json`);
+                const ajvInstance = new ajv();
+                const phyxSchema = ajvInstance.compile(phyxSchemaJSON);
+                const result = phyxSchema(producedPhyx);
+                
+                it('should validate against the Phyx JSON Schema', function () {
+                    phyxSchema.errors.forEach(function (error) {
+                        assert.fail(ajvInstance.errorsText([error]));
+                    });
+                    expect(result).is.true;
                 });
             });
         });
