@@ -44,6 +44,7 @@ describe('Test PHYX files in repository', function () {
         ],
         {
           encoding: 'utf8',
+          shell: true,
         }
       );
 
