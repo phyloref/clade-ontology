@@ -158,6 +158,24 @@
           }
         }
       }
+    },
+    "specifier": {
+      "@id": "#/definitions/specifier",
+      "type": "object",
+      "properties": {
+        "verbatimSpecifier": {
+          "type": "string"
+        },
+        "scientificName": {
+          "type": "string"
+        },
+        "canonicalName": {
+          "type": "string"
+        },
+        "nomenclaturalCode": {
+          "enum": [ "ICZN", "ICBN", "ICNafp" ]
+        }
+      }
     }
   },
 
@@ -172,7 +190,6 @@
   ],
   "properties": {
     "@context": {
-      "$id": "#/properties/@context",
       "type": "string",
       "title": "JSON-LD schema for interpreting this Phyx file",
       "default": "http://www.phyloref.org/phyx.js/context/v0.1.0/phyx.json",
@@ -213,96 +230,41 @@
           "label",
           "cladeDefinition",
           "internalSpecifiers",
-          "externalSpecifiers",
-          "pso:holdsStatusInTime"
+          "externalSpecifiers"
         ],
         "properties": {
           "label": {
-            "$id": "#/properties/phylorefs/items/properties/label",
             "type": "string",
             "title": "The Label Schema",
-            "default": "",
             "examples": [
               "Eusuchia"
-            ],
-            "pattern": "^(.*)$"
+            ]
           },
           "cladeDefinition": {
-            "$id": "#/properties/phylorefs/items/properties/cladeDefinition",
             "type": "string",
             "title": "The Cladedefinition Schema",
-            "default": "",
             "examples": [
               "Eusuchia (Huxley 1875). Amended definition.\n\nLast common ancestor of Hylaeochampsa vectiana, Crocodylus niloticus, Gavialis gangeticus, and Alligator mississippiensis\t and all of its descendents."
-            ],
-            "pattern": "^(.*)$"
+            ]
           },
           "internalSpecifiers": {
-            "$id": "#/properties/phylorefs/items/properties/internalSpecifiers",
             "type": "array",
-            "title": "The Internalspecifiers Schema",
+            "title": "Internal specifiers of this phyloreference",
             "items": {
-              "$id": "#/properties/phylorefs/items/properties/internalSpecifiers/items",
-              "type": "object",
-              "title": "The Items Schema",
-              "required": [
-                "referencesTaxonomicUnits"
-              ],
-              "properties": {
-                "referencesTaxonomicUnits": {
-                  "$id": "#/properties/phylorefs/items/properties/internalSpecifiers/items/properties/referencesTaxonomicUnits",
-                  "type": "array",
-                  "title": "The Referencestaxonomicunits Schema",
-                  "items": {
-                    "$id": "#/properties/phylorefs/items/properties/internalSpecifiers/items/properties/referencesTaxonomicUnits/items",
-                    "type": "object",
-                    "title": "The Items Schema",
-                    "required": [
-                      "scientificNames"
-                    ],
-                    "properties": {
-                      "scientificNames": {
-                        "$id": "#/properties/phylorefs/items/properties/internalSpecifiers/items/properties/referencesTaxonomicUnits/items/properties/scientificNames",
-                        "type": "array",
-                        "title": "The Scientificnames Schema",
-                        "items": {
-                          "$id": "#/properties/phylorefs/items/properties/internalSpecifiers/items/properties/referencesTaxonomicUnits/items/properties/scientificNames/items",
-                          "type": "object",
-                          "title": "The Items Schema",
-                          "required": [
-                            "scientificName"
-                          ],
-                          "properties": {
-                            "scientificName": {
-                              "$id": "#/properties/phylorefs/items/properties/internalSpecifiers/items/properties/referencesTaxonomicUnits/items/properties/scientificNames/items/properties/scientificName",
-                              "type": "string",
-                              "title": "The Scientificname Schema",
-                              "default": "",
-                              "examples": [
-                                "Alligator mississippiensis"
-                              ],
-                              "pattern": "^(.*)$"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
+              "$ref": "#/definitions/specifier"
             }
           },
           "externalSpecifiers": {
-            "$id": "#/properties/phylorefs/items/properties/externalSpecifiers",
             "type": "array",
-            "title": "The Externalspecifiers Schema"
+            "title": "External specifiers of this phyloreference",
+            "items": {
+              "$ref": "#/definitions/specifier"
+            }
           },
           "pso:holdsStatusInTime": {
-            "$id": "#/properties/phylorefs/items/properties/pso:holdsStatusInTime",
             "type": "array",
             "title": "The Pso:holdsstatusintime Schema",
             "items": {
-              "$id": "#/properties/phylorefs/items/properties/pso:holdsStatusInTime/items",
               "type": "object",
               "title": "The Items Schema",
               "required": [
@@ -312,7 +274,6 @@
               ],
               "properties": {
                 "@type": {
-                  "$id": "#/properties/phylorefs/items/properties/pso:holdsStatusInTime/items/properties/@type",
                   "type": "string",
                   "title": "The @type Schema",
                   "default": "",
@@ -322,7 +283,6 @@
                   "pattern": "^(.*)$"
                 },
                 "pso:withStatus": {
-                  "$id": "#/properties/phylorefs/items/properties/pso:holdsStatusInTime/items/properties/pso:withStatus",
                   "type": "object",
                   "title": "The Pso:withstatus Schema",
                   "required": [
@@ -363,16 +323,6 @@
           }
         }
       }
-    },
-    "title": {
-      "$id": "#/properties/title",
-      "type": "string",
-      "title": "The Title Schema",
-      "default": "",
-      "examples": [
-        "Phylogenetic Approaches Toward Crocodylian History"
-      ],
-      "pattern": "^(.*)$"
     }
   }
 }

@@ -81,7 +81,7 @@ describe('Test PHYX files in repository', function () {
           const result = phyxSchema(producedPhyx);
 
           it('should validate against the Phyx JSON Schema', function () {
-            phyxSchema.errors.forEach(function (error) {
+            (phyxSchema.errors || []).forEach(function (error) {
               assert.fail(ajvInstance.errorsText([error]));
             });
             expect(result).is.true;
