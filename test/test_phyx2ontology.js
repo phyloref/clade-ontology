@@ -11,13 +11,13 @@ const chai = require('chai');
 const assert = chai.assert;
 
 describe('Executing phyx2ontology.js on all current Phyx files', function () {
-  const child = ChildProcess.spawnSync('node', [
+  const child = ChildProcess.spawnSync(process.execPath, [
     'phyx2ontology/phyx2ontology.js', BASE_DIR,
   ]);
 
   it('should execute successfully', function () {
-    assert.equal(child.status, 0, 'Exit value should be zero');
     assert.isEmpty(child.stderr, 'Should not produce any output to STDERR');
+    assert.equal(child.status, 0, 'Exit value should be zero');
   });
 
   it('should produce valid JSON output', function () {
