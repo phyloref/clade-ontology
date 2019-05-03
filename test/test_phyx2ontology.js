@@ -18,13 +18,14 @@ describe('Executing phyx2ontology.js on all current Phyx files', function () {
   it('should execute successfully', function () {
     assert.isEmpty(child.stderr, 'Should not produce any output to STDERR');
     assert.equal(child.status, 0, 'Exit value should be zero');
+    assert.isNotEmpty(child.stdout, 'Should produce output in STDOUT');
   });
 
   it('should produce valid JSON output', function () {
     let json = [];
     assert.doesNotThrow(function () {
       json = JSON.parse(child.stdout);
-    }, SyntaxError, 'Produced JSON should be parsable');
+    }, SyntaxError);
     assert.isNotEmpty(json, 'Produced JSON should not be empty');
   });
 });
