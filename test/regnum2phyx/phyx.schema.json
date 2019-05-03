@@ -18,6 +18,7 @@
     },
     "agent": {
       "$id": "#/definitions/agent",
+      "title": "An agent, such as an author, editor or series editor",
       "type": "object",
       "required": [
         "name"
@@ -57,6 +58,7 @@
     },
     "citation": {
       "$id": "#/definitions/citation",
+      "title": "A citation",
       "type": "object",
       "required": [
         "type",
@@ -161,18 +163,23 @@
     },
     "specifier": {
       "@id": "#/definitions/specifier",
+      "title": "A specifier",
       "type": "object",
       "properties": {
         "verbatimSpecifier": {
+          "title": "The verbatim description of this specifier",
           "type": "string"
         },
         "scientificName": {
+          "title": "The scientific name of this specifier",
           "type": "string"
         },
         "canonicalName": {
+          "title": "The canonical name of this specifier, i.e. the genus and specific epithet only",
           "type": "string"
         },
         "nomenclaturalCode": {
+          "title": "The nomenclatural code of this specifier",
           "enum": [ "ICZN", "ICBN", "ICNafp" ]
         }
       }
@@ -212,20 +219,26 @@
             ]
           },
           "primaryPhylogenyCitation": {
-            "$ref": "#/definitions/citation"
+            "title": "The primary phylogeny citation for the phyloreferences in this file",
+            "items": {
+              "$ref": "#/definitions/citation"
+            }
           },
           "phylogenyCitation": {
-            "$ref": "#/definitions/citation"
+            "title": "A phylogeny citation for the phyloreferences in this file",
+            "items": {
+              "$ref": "#/definitions/citation"
+            }
           }
         }
       }
     },
     "phylorefs": {
       "type": "array",
-      "title": "The Phylorefs Schema",
+      "title": "The phyloreferences in this Phyx file",
       "items": {
         "type": "object",
-        "title": "The Items Schema",
+        "title": "A phyloreference in this Phyx file",
         "required": [
           "label",
           "cladeDefinition",
@@ -235,14 +248,14 @@
         "properties": {
           "label": {
             "type": "string",
-            "title": "The Label Schema",
+            "title": "The label of this phyloreference",
             "examples": [
               "Eusuchia"
             ]
           },
           "cladeDefinition": {
             "type": "string",
-            "title": "The Cladedefinition Schema",
+            "title": "The verbatim clade definition of this phyloreference",
             "examples": [
               "Eusuchia (Huxley 1875). Amended definition.\n\nLast common ancestor of Hylaeochampsa vectiana, Crocodylus niloticus, Gavialis gangeticus, and Alligator mississippiensis\t and all of its descendents."
             ]
@@ -263,10 +276,10 @@
           },
           "pso:holdsStatusInTime": {
             "type": "array",
-            "title": "The Pso:holdsstatusintime Schema",
+            "title": "List of publication statuses that have applied to this phyloreference at different times",
             "items": {
               "type": "object",
-              "title": "The Items Schema",
+              "title": "A particular status at a particular time",
               "required": [
                 "@type",
                 "pso:withStatus",
@@ -274,47 +287,50 @@
               ],
               "properties": {
                 "@type": {
-                  "type": "string",
-                  "title": "The @type Schema",
-                  "default": "",
-                  "examples": [
-                    "http://purl.org/spar/pso/StatusInTime"
-                  ],
-                  "pattern": "^(.*)$"
+                  "const": "http://purl.org/spar/pso/StatusInTime"
                 },
                 "pso:withStatus": {
                   "type": "object",
-                  "title": "The Pso:withstatus Schema",
+                  "title": "The status that applied to this phyloreference at this time.",
                   "required": [
                     "@id"
                   ],
                   "properties": {
                     "@id": {
-                      "type": "string",
-                      "title": "The @id Schema",
-                      "default": "",
-                      "examples": [
-                        "pso:final-draft"
-                      ],
-                      "pattern": "^(.*)$"
+                      "title": "The type of this status",
+                      "enum": [
+                        "pso:draft",
+                        "pso:final-draft",
+                        "pso:under-review",
+                        "pso:submitted",
+                        "pso:published",
+                        "pso:retracted-from-publication"
+                      ]
                     }
                   }
                 },
                 "tvc:atTime": {
                   "type": "object",
-                  "title": "The Tvc:attime Schema",
+                  "title": "The time at which this status applied to this phyloreference.",
                   "required": [
                     "timeinterval:hasIntervalStartDate"
                   ],
                   "properties": {
                     "timeinterval:hasIntervalStartDate": {
                       "type": "string",
-                      "title": "The Timeinterval:hasintervalstartdate Schema",
-                      "default": "",
+                      "format": "date-time",
+                      "title": "When did this phyloreference start being in this state",
                       "examples": [
                         "2018-06-11T22:46:23.547Z"
-                      ],
-                      "pattern": "^(.*)$"
+                      ]
+                    },
+                    "timeinterval:hasIntervalEndDate": {
+                      "type": "string",
+                      "format": "date-time",
+                      "title": "When did this phyloreference end being in this state",
+                      "examples": [
+                        "2018-06-11T22:46:23.547Z"
+                      ]
                     }
                   }
                 }
