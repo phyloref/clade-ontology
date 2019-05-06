@@ -169,8 +169,8 @@ const argv = yargs
 // Read the database dump.
 const dump = JSON.parse(fs.readFileSync(argv._[0], 'utf8'));
 
-// This dump consists of multiple named phyloreferences, each of which should be
-// written out to a separate file.
+// This dump consists of multiple named phylogenetic clade definitions,
+// each of which should be written out to a separate file.
 const phyxProduced = {};
 let countErrors = 0;
 
