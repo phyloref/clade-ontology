@@ -5,9 +5,10 @@
   "main": "index.js",
   "directories": {},
   "scripts": {
-    "lint": "eslint \"test/**\" \"phyx2ontology/**\" --ext .js",
+    "lint": "eslint \"test/**\" \"phyx2ontology/**\" \"regnum2phyx/**\" --ext .js",
     "pretest": "npm run lint",
-    "test": "mocha",
+    "test": "mocha --recursive",
+    "mocha": "mocha",
     "build-ontology": "node phyx2ontology/phyx2ontology.js phyx/ > CLADO.json"
   },
   "repository": {
@@ -23,13 +24,15 @@
   "dependencies": {
     "@phyloref/phyx": "^0.1.2",
     "lodash": "^4.17.11",
-    "yargs": "^12.0.5"
+    "yargs": "^13.2.1"
   },
   "devDependencies": {
+    "ajv": "^6.10.0",
     "chai": "^4.2.0",
     "eslint": "^5.12.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-json": "^1.4.0",
     "eslint-plugin-mocha": "^5.2.1",
     "mocha": "^5.2.0",
     "tmp": "^0.1.0"

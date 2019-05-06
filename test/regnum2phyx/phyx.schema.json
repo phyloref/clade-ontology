@@ -1,0 +1,358 @@
+{
+  "definitions": {
+    "identifier": {
+      "$id": "#/definitions/identifier",
+      "type": "object",
+      "title": "Identifier for a publication",
+      "required": [
+        "type",
+        "id"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "doi"
+          ]
+        }
+      }
+    },
+    "agent": {
+      "$id": "#/definitions/agent",
+      "title": "An agent, such as an author, editor or series editor",
+      "type": "object",
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "name": {
+          "title": "The name of this agent",
+          "examples": [
+            "Charles Darwin"
+          ]
+        },
+        "alternate": {
+          "title": "Alternate name for this agent",
+          "examples": [
+            "Darwin, Charles"
+          ]
+        },
+        "firstname": {
+          "title": "First name for this agent",
+          "examples": [
+            "Charles"
+          ]
+        },
+        "middlename": {
+          "title": "Middle name for this agent",
+          "examples": [
+            "Robert"
+          ]
+        },
+        "lastname": {
+          "title": "Last name for this agent",
+          "examples": [
+            "Charles"
+          ]
+        }
+      }
+    },
+    "citation": {
+      "$id": "#/definitions/citation",
+      "title": "A citation",
+      "type": "object",
+      "required": [
+        "type",
+        "authors",
+        "title",
+        "year"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "article",
+            "book",
+            "book_section"
+          ]
+        },
+        "title": {
+          "type": "string"
+        },
+        "year": {
+          "type": "integer",
+          "minimum": -9999,
+          "maximum": 9999
+        },
+        "authors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/agent"
+          }
+        },
+        "editors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/agent"
+          }
+        },
+        "series_editors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/agent"
+          }
+        },
+        "figure": {
+          "type": "string",
+          "title": "Figure description"
+        },
+        "publisher": {
+          "type": "string",
+          "title": "The publisher of this publication"
+        },
+        "city": {
+          "type": "string",
+          "title": "The city in which this publication was published"
+        },
+        "pages": {
+          "type": "string",
+          "title": "The pages of this publication"
+        },
+        "identifier": {
+          "type": "array",
+          "title": "Identifiers for this publication",
+          "items": {
+            "$ref": "#/definitions/identifier"
+          }
+        },
+        "link": {
+          "type": "array",
+          "title": "URLs for this publication",
+          "items": {
+            "type": "object",
+            "required": [ "url" ],
+            "properties": {
+              "url": {
+                "type": "string",
+                "format": "uri"
+              }
+            }
+          }
+        },
+        "journal": {
+          "type": "object",
+          "title": "Information about the journal this publication is in.",
+          "required": [ "name" ],
+          "properties": {
+            "name": {
+              "title": "Title of the journal",
+              "type": "string"
+            },
+            "volume": {
+              "title": "Volume in this journal",
+              "type": "string"
+            },
+            "identifier": {
+              "type": "array",
+              "title": "Identifiers for this journal",
+              "items": {
+                "$ref": "#/definitions/identifier"
+              }
+            }
+          }
+        }
+      }
+    },
+    "specifier": {
+      "@id": "#/definitions/specifier",
+      "title": "A specifier",
+      "type": "object",
+      "properties": {
+        "verbatimSpecifier": {
+          "title": "The verbatim description of this specifier",
+          "type": "string"
+        },
+        "scientificName": {
+          "title": "The scientific name of this specifier",
+          "type": "string"
+        },
+        "canonicalName": {
+          "title": "The canonical name of this specifier, i.e. the genus and specific epithet only",
+          "type": "string"
+        },
+        "nomenclaturalCode": {
+          "title": "The nomenclatural code of this specifier",
+          "enum": [ "ICZN", "ICBN", "ICNafp" ]
+        }
+      }
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://phyloref.org/phyx.js/schema/v1.0.0/phyx.schema.json",
+  "type": "object",
+  "title": "Phyloreference Exchange (Phyx) schema",
+  "required": [
+    "@context",
+    "phylogenies",
+    "phylorefs"
+  ],
+  "properties": {
+    "@context": {
+      "type": "string",
+      "title": "JSON-LD schema for interpreting this Phyx file",
+      "default": "http://www.phyloref.org/phyx.js/context/v0.1.0/phyx.json",
+      "examples": [
+        "http://www.phyloref.org/phyx.js/context/v0.1.0/phyx.json"
+      ]
+    },
+    "phylogenies": {
+      "type": "array",
+      "title": "Phylogenies in this Phyx file",
+      "items": {
+        "type": "object",
+        "title": "A single phylogeny in this Phyx file",
+        "properties": {
+          "newick": {
+            "type": "string",
+            "title": "This phylogeny in the Newick format (https://en.wikipedia.org/wiki/Newick_format)",
+            "examples": [
+              "((Homo, Pan)Hominini, Gorilla);"
+            ]
+          },
+          "primaryPhylogenyCitation": {
+            "title": "The primary phylogeny citation for the phyloreferences in this file",
+            "items": {
+              "$ref": "#/definitions/citation"
+            }
+          },
+          "phylogenyCitation": {
+            "title": "A phylogeny citation for the phyloreferences in this file",
+            "items": {
+              "$ref": "#/definitions/citation"
+            }
+          }
+        }
+      }
+    },
+    "phylorefs": {
+      "type": "array",
+      "title": "The phyloreferences in this Phyx file",
+      "items": {
+        "type": "object",
+        "title": "A phyloreference in this Phyx file",
+        "required": [
+          "label",
+          "cladeDefinition",
+          "internalSpecifiers",
+          "externalSpecifiers"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "title": "The label of this phyloreference",
+            "examples": [
+              "Eusuchia"
+            ]
+          },
+          "cladeDefinition": {
+            "type": "string",
+            "title": "The verbatim clade definition of this phyloreference",
+            "examples": [
+              "Eusuchia (Huxley 1875). Amended definition.\n\nLast common ancestor of Hylaeochampsa vectiana, Crocodylus niloticus, Gavialis gangeticus, and Alligator mississippiensis\t and all of its descendents."
+            ]
+          },
+          "dwc:namePublishedIn": {
+            "title": "A citation for the original description of the pre-existing name of this phyloreference",
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/citation"
+            }
+          },
+          "obo:IAO_0000119": {
+            "title": "A citation for this phyloreference definition",
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/citation"
+            }
+          },
+          "internalSpecifiers": {
+            "type": "array",
+            "title": "Internal specifiers of this phyloreference",
+            "items": {
+              "$ref": "#/definitions/specifier"
+            }
+          },
+          "externalSpecifiers": {
+            "type": "array",
+            "title": "External specifiers of this phyloreference",
+            "items": {
+              "$ref": "#/definitions/specifier"
+            }
+          },
+          "pso:holdsStatusInTime": {
+            "type": "array",
+            "title": "List of publication statuses that have applied to this phyloreference at different times",
+            "items": {
+              "type": "object",
+              "title": "A particular status at a particular time",
+              "required": [
+                "@type",
+                "pso:withStatus",
+                "tvc:atTime"
+              ],
+              "properties": {
+                "@type": {
+                  "const": "http://purl.org/spar/pso/StatusInTime"
+                },
+                "pso:withStatus": {
+                  "type": "object",
+                  "title": "The status that applied to this phyloreference at this time.",
+                  "required": [
+                    "@id"
+                  ],
+                  "properties": {
+                    "@id": {
+                      "title": "The type of this status",
+                      "enum": [
+                        "pso:draft",
+                        "pso:final-draft",
+                        "pso:under-review",
+                        "pso:submitted",
+                        "pso:published",
+                        "pso:retracted-from-publication"
+                      ]
+                    }
+                  }
+                },
+                "tvc:atTime": {
+                  "type": "object",
+                  "title": "The time at which this status applied to this phyloreference.",
+                  "required": [
+                    "timeinterval:hasIntervalStartDate"
+                  ],
+                  "properties": {
+                    "timeinterval:hasIntervalStartDate": {
+                      "type": "string",
+                      "format": "date-time",
+                      "title": "When did this phyloreference start being in this state",
+                      "examples": [
+                        "2018-06-11T22:46:23.547Z"
+                      ]
+                    },
+                    "timeinterval:hasIntervalEndDate": {
+                      "type": "string",
+                      "format": "date-time",
+                      "title": "When did this phyloreference end being in this state",
+                      "examples": [
+                        "2018-06-11T22:46:23.547Z"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
