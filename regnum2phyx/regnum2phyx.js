@@ -10,6 +10,10 @@
  * PhyloRegnum can be accessed at http://app.phyloregnum.org
  */
 
+// We currently produce Phyx files in v0.2.0 format. If this changes, please
+// update this here.
+const PHYX_CONTEXT_URL = 'http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json';
+
 // Load necessary modules.
 const fs = require('fs');
 const path = require('path');
@@ -265,7 +269,7 @@ dump.forEach((entry) => {
 
   // Prepare a simple Phyx file template.
   const phyxTemplate = pickBy({
-    '@context': 'http://www.phyloref.org/phyx.js/context/v0.1.0/phyx.json',
+    '@context': PHYX_CONTEXT_URL,
     phylogenies,
     phylorefs: [phylorefTemplate],
   });
