@@ -14,6 +14,14 @@
 // update this here.
 const PHYX_CONTEXT_URL = 'http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json';
 
+// Some constants for nomenclatural codes. We should really export these in Phyx
+// (see https://github.com/phyloref/phyx.js/issues/44)
+const NAME_IN_UNKNOWN_CODE = 'http://purl.obolibrary.org/obo/NOMEN_0000036';
+const ICZN_NAME = 'http://purl.obolibrary.org/obo/NOMEN_0000107';
+const ICN_NAME = 'http://purl.obolibrary.org/obo/NOMEN_0000109';
+const ICNP_NAME = 'http://purl.obolibrary.org/obo/NOMEN_0000110';
+const ICTV_NAME = 'http://purl.obolibrary.org/obo/NOMEN_0000111';
+
 // Load necessary modules.
 const fs = require('fs');
 const path = require('path');
@@ -247,6 +255,21 @@ dump.forEach((entry) => {
     const specifierAuthors = (specifier.displayAuths || '').trim();
     const specifierCode = (specifier.specifier_code || '').trim();
 
+    let nomenCode = NAME_IN_UNKNOWN_CODE;
+    switch(specifierCode) {
+      case 'ICZN':
+        nomenCode = ICZN_NAME;
+        break;
+      case 'ICBN':
+        nomenCode = ICN_NAME;
+        break;
+      case '':
+        nomenCode = NAME_IN_UNKNOWN_CODE;
+        break;
+      default:
+        throw new Error("Unknown specifier_code: '" + specifierCode + "'")
+    }
+
     // Do we have authors? If so, incorporate them into the specifier authors.
     // Otherwise, just use the year.
     let specifierAuthority = (specifier.specifier_year || '').trim();
@@ -254,14 +277,19 @@ dump.forEach((entry) => {
       specifierAuthority = `${specifierAuthors}, ${(specifier.specifier_year || '').trim()}`;
     }
 
+    // TODO: split name into genus/specifier.
+
     // Write out a scientificName that includes the specifier name as well as its
     // nomenclatural authority, if present.
     const scname = `${specifierName} ${specifierAuthority}`.trim();
     const specifierTemplate = {
-      verbatimSpecifier: scname,
-      scientificName: scname,
-      canonicalName: specifierName,
-      nomenclaturalCode: specifierCode,
+      "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+      "hasName": {
+          "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+          "nomenclaturalCode": nomenCode,
+          "label": scname,
+          "nameComplete": specifierName
+      }
     };
 
     addTo.push(specifierTemplate);
