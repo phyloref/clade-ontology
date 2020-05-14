@@ -12,6 +12,11 @@ import os
 import pandas
 from pandas.io.json import json_normalize
 
+# CONFIGURATION FLAG
+# If FLAG_SINGLE_PHYLOGENY_ONLY is set, we only include a single phylogeny for
+# each phyloreference.
+FLAG_SINGLE_PHYLOGENY_ONLY = True
+
 # The command line should provide input files.
 input_files = sys.argv[1:]
 
@@ -24,9 +29,19 @@ for input_file in input_files:
     with open(input_file) as fd:
         data = json.load(fd)
         if 'phylogenies' in data:
+            phyx_phylogenies = []
             for phylogeny in data['phylogenies']:
                 phylogeny['00filename'] = input_filename
-                phylogenies.append(phylogeny)
+                phyx_phylogenies.append(phylogeny)
+
+            if phyx_phylogenies:
+                # If we only want a single phylogeny per file, then only add the
+                # first one to the list of files.
+                if FLAG_SINGLE_PHYLOGENY_ONLY:
+                    phylogenies.append(phyx_phylogenies[0])
+                else:
+                    phylogenies.extend(phyx_phylogenies)
+
         if 'phylorefs' in data:
             phylogenies.extend(data['phylorefs'])
 
