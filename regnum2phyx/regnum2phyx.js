@@ -254,9 +254,8 @@ dump.forEach((entry) => {
     // nomenclatural authority, if present.
     const scname = `${specifierName} ${specifierAuthority}`.trim();
     const specifierTemplate = {
-      verbatimSpecifier: scname,
-      scientificName: scname,
-      canonicalName: specifierName,
+      label: scname,
+      nameComplete: scname,
       nomenclaturalCode: specifierCode,
     };
 
