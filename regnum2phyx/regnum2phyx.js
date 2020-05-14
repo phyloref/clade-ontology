@@ -174,6 +174,14 @@ const argv = yargs
     describe: 'Directory to write Phyx files to',
   })
   .demandOption(['o'])
+  .option('filenames', {
+    describe: 'Choose the type of filenames to generate',
+    choices: [
+      'label',
+      'number',
+      'regnum-id'
+    ]
+  })
   .help('h')
   .alias('h', 'help')
   .argv;
@@ -187,7 +195,7 @@ const phyxProduced = {};
 let countErrors = 0;
 
 // Loop through all phylorefs in the database dump.
-dump.forEach((entry) => {
+dump.forEach((entry, index) => {
   const phylorefLabel = entry.name.trim();
 
   // Make sure we don't have multiple phyloreferences with the same label, since
@@ -303,7 +311,20 @@ dump.forEach((entry) => {
   });
 
   // Write out Phyx file for this phyloreference.
-  const phyxFilename = path.join(argv.outputDir, `${phylorefLabel}.json`);
+  let phyxFilename;
+  if (argv.filenames == 'label') {
+    // Use the phyloref label.
+    phyxFilename = path.join(argv.outputDir, `${phylorefLabel}.json`);
+  } else if (argv.filenames == 'regnum-id') {
+    // Use the regnum id.
+    if (entry.id)
+      phyxFilename = path.join(argv.outputDir, `REGNUM_${entry.id}.json`);
+    else
+      phyxFilename = path.join(argv.outputDir, `${index + 1}.json`);
+  } else {
+    // Default to just the number of the sequence.
+    phyxFilename = path.join(argv.outputDir, `${index + 1}.json`);
+  }
   fs.writeFileSync(phyxFilename, JSON.stringify(phyxTemplate, null, 4));
 
   // Save for later use if needed.
