@@ -179,12 +179,12 @@ const argv = yargs
     choices: [
       'label',
       'number',
-      'regnum-id'
-    ]
+      'regnum-id',
+    ],
   })
   .option('filename-prefix', {
     describe: 'Choose the prefix for the filename being generated',
-    string: true
+    string: true,
   })
   .help('h')
   .alias('h', 'help')
@@ -268,7 +268,7 @@ dump.forEach((entry, index) => {
     const specifierCode = (specifier.specifier_code || '').trim();
 
     let nomenCode = NAME_IN_UNKNOWN_CODE;
-    switch(specifierCode) {
+    switch (specifierCode) {
       case 'ICZN':
         nomenCode = ICZN_NAME;
         break;
@@ -279,7 +279,7 @@ dump.forEach((entry, index) => {
         nomenCode = NAME_IN_UNKNOWN_CODE;
         break;
       default:
-        throw new Error("Unknown specifier_code: '" + specifierCode + "'")
+        throw new Error(`Unknown specifier_code: '${specifierCode}'`);
     }
 
     // Do we have authors? If so, incorporate them into the specifier authors.
@@ -295,13 +295,13 @@ dump.forEach((entry, index) => {
     // nomenclatural authority, if present.
     const scname = `${specifierName} ${specifierAuthority}`.trim();
     const specifierTemplate = {
-      "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-      "hasName": {
-          "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-          "nomenclaturalCode": nomenCode,
-          "label": scname,
-          "nameComplete": specifierName
-      }
+      '@type': 'http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept',
+      hasName: {
+        '@type': 'http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName',
+        nomenclaturalCode: nomenCode,
+        label: scname,
+        nameComplete: specifierName,
+      },
     };
 
     addTo.push(specifierTemplate);
@@ -318,15 +318,13 @@ dump.forEach((entry, index) => {
   const fileIndex = `${index + 1}`.padStart(6, '0');
   const filePrefix = argv.filenamePrefix || '';
   let phyxFilename;
-  if (argv.filenames == 'label') {
+  if (argv.filenames === 'label') {
     // Use the phyloref label.
     phyxFilename = path.join(argv.outputDir, `${phylorefLabel}.json`);
-  } else if (argv.filenames == 'regnum-id') {
+  } else if (argv.filenames === 'regnum-id') {
     // Use the regnum id.
-    if (entry.id)
-      phyxFilename = path.join(argv.outputDir, `REGNUM_${(entry.id + '').padStart(6, '0')}.json`);
-    else
-      phyxFilename = path.join(argv.outputDir, `${filePrefix}${fileIndex}.json`);
+    if (entry.id) phyxFilename = path.join(argv.outputDir, `REGNUM_${(`${entry.id}`).padStart(6, '0')}.json`);
+    else phyxFilename = path.join(argv.outputDir, `${filePrefix}${fileIndex}.json`);
   } else {
     // Default to just the number of the sequence.
     phyxFilename = path.join(argv.outputDir, `${filePrefix}${fileIndex}.json`);
