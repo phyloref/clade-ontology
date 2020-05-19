@@ -19,8 +19,8 @@ const PHYX_CONTEXT_URL = 'http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.js
 const NAME_IN_UNKNOWN_CODE = 'http://purl.obolibrary.org/obo/NOMEN_0000036';
 const ICZN_NAME = 'http://purl.obolibrary.org/obo/NOMEN_0000107';
 const ICN_NAME = 'http://purl.obolibrary.org/obo/NOMEN_0000109';
-const ICNP_NAME = 'http://purl.obolibrary.org/obo/NOMEN_0000110';
-const ICTV_NAME = 'http://purl.obolibrary.org/obo/NOMEN_0000111';
+//const ICNP_NAME = 'http://purl.obolibrary.org/obo/NOMEN_0000110';
+//const ICTV_NAME = 'http://purl.obolibrary.org/obo/NOMEN_0000111';
 
 // Load necessary modules.
 const fs = require('fs');
@@ -268,6 +268,9 @@ dump.forEach((entry, index) => {
     const specifierCode = (specifier.specifier_code || '').trim();
 
     let nomenCode = NAME_IN_UNKNOWN_CODE;
+    // As of the May 14, 2020 Regnum dump, only ICZN and ICBN
+    // are used as pre-existing codes. I'll add ICNP and ICTV
+    // as well once we need them.
     switch (specifierCode) {
       case 'ICZN':
         nomenCode = ICZN_NAME;
