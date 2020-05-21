@@ -49,8 +49,8 @@ function findPHYXFiles(dirPath) {
       // Recurse into this directory.
       return findPHYXFiles(filePath);
     }
-    // Look for .json files (but not for '_as_owl.json' files, for historical reasons).
-    if (filePath.endsWith('.json') && !filePath.endsWith('_as_owl.json')) {
+    // Look for .json files.
+    if (filePath.endsWith('.json')) {
       return [filePath];
     }
     return [];
