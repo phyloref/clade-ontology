@@ -1,5 +1,5 @@
 /*
- * test_phyx.js: Test all PHYX files in this repository.
+ * test_phyx.js: Test all Phyx files in this repository.
  */
 
 const BASE_DIR = 'phyx/';
@@ -13,7 +13,7 @@ const BASE_DIR = 'phyx/';
  *  - 2. See if JPhyloRef can validate the ontology without a problem.
  */
 
-// Load phyx.js, our PHYX library.
+// Load phyx.js, our Phyx library.
 const phyx = require('@phyloref/phyx');
 
 // Javascript libraries.
@@ -31,7 +31,7 @@ const assert = chai.assert;
 const FLAG_SLOW_TESTS = process.env.RUN_SLOW_TESTS || false;
 
 /*
- * Returns a list of PHYX files that we can test in the provided directory.
+ * Returns a list of Phyx files that we can test in the provided directory.
  *
  * We use a simple flatMap to search for these files. Since flatMap isn't in
  * Node.js yet, I use a map to recursively find the files and then flatten it
@@ -41,13 +41,13 @@ const FLAG_SLOW_TESTS = process.env.RUN_SLOW_TESTS || false;
  * test each one individually in Mocha, so we need a synchronous implementation
  * to get that list before we start testing.
  */
-function findPHYXFiles(dirPath) {
+function findPhyxFiles(dirPath) {
   return fs.readdirSync(dirPath).map(function (filename) {
     const filePath = path.join(dirPath, filename);
 
     if (fs.lstatSync(filePath).isDirectory()) {
       // Recurse into this directory.
-      return findPHYXFiles(filePath);
+      return findPhyxFiles(filePath);
     }
     // Look for .json files.
     if (filePath.endsWith('.json')) {
@@ -57,17 +57,17 @@ function findPHYXFiles(dirPath) {
   }).reduce((x, y) => x.concat(y), []); // This flattens the list of results.
 }
 
-describe('Test PHYX files in repository', function () {
+describe('Test Phyx files in repository', function () {
   // Test each input file.
-  findPHYXFiles(BASE_DIR).forEach(function (filename) {
-    describe(`PHYX file: ${filename}`, function () {
+  findPhyxFiles(BASE_DIR).forEach(function (filename) {
+    describe(`Phyx file: ${filename}`, function () {
       // Make sure the file to test isn't empty.
       it('is not empty', function () {
         const stats = fs.lstatSync(filename);
         assert.notEqual(stats.size, 0);
       });
 
-      // Load the PHYX data. Skip testing if it is git-crypt encrypted.
+      // Load the Phyx data. Skip testing if it is git-crypt encrypted.
       const data = fs.readFileSync(filename);
       const gitcrypt = data.slice(0, 9);
       if (gitcrypt.equals(Buffer.from('\x00GITCRYPT'))) {
@@ -75,15 +75,15 @@ describe('Test PHYX files in repository', function () {
         return;
       }
 
-      // Read the PHYX data as UTF-8 and convert it into JSON-LD.
+      // Read the Phyx data as UTF-8 and convert it into JSON-LD.
       const phyxContent = data.toString('utf-8');
       let jsonld;
       try {
         const json = JSON.parse(phyxContent);
-        const wrappedPhyx = new phyx.PHYXWrapper(json);
+        const wrappedPhyx = new phyx.PhyxWrapper(json);
         jsonld = JSON.stringify(wrappedPhyx.asJSONLD());
       } catch (ex) {
-        it('Exception thrown while converting PHYX to JSON-LD', function () {
+        it('Exception thrown while converting Phyx to JSON-LD', function () {
           throw ex;
         });
         return;
