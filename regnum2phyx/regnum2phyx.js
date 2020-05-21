@@ -176,6 +176,7 @@ const argv = yargs
   .demandOption(['o'])
   .option('filenames', {
     describe: 'Choose the type of filenames to generate',
+    default: 'label',
     choices: [
       'label',
       'number',
