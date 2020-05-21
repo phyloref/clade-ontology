@@ -96,9 +96,9 @@ describe('Test Phyx files in repository', function () {
       const json = JSON.parse(phyxContent);
       const result = phyxSchema(json);
       it('should validate against the Phyx JSON Schema', function () {
-        (phyxSchema.errors || []).forEach(function (error) {
-          assert.fail(ajvInstance.errorsText([error]));
-        });
+        const errorStrings = (phyxSchema.errors || []).map(err => ajvInstance.errorsText([err]));
+        assert.deepEqual(errorStrings, []);
+        assert.isNull(phyxSchema.errors);
         assert.true(result);
       });
 
