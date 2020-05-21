@@ -94,14 +94,13 @@ describe('Test Phyx files in repository', function () {
       // against the JSON schema.
       const phyxContent = data.toString('utf-8');
       const json = JSON.parse(phyxContent);
-      const result = phyxSchema(json);
       it('should validate against the Phyx JSON Schema', function () {
+        const result = phyxSchema(json);
         const errorStrings = (phyxSchema.errors || []).map(err => ajvInstance.errorsText([err]));
         assert.deepEqual(errorStrings, []);
         assert.isNull(phyxSchema.errors);
         assert.true(result);
       });
-
 
       // Read the Phyx data as UTF-8 and convert it into JSON-LD.
       let wrappedPhyx;
