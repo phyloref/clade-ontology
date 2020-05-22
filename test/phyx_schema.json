@@ -242,9 +242,7 @@
       "description": "A phylogeny is an evolutionary hypothesis that can be used to test Phyx files.",
       "minItems": 0,
       "items": {
-        "required": [
-          "newick"
-        ],
+        "required": [],
         "properties": {
           "label": {
             "type": "string",
@@ -281,7 +279,10 @@
         ],
         "properties": {
           "regnumId": {
-            "type": "string",
+            "type": [
+              "string",
+              "integer"
+            ],
             "description": "The identifier of this clade definition in the Regnum database",
             "minLength": 1
           },
