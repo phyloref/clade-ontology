@@ -17,6 +17,8 @@ const assert = chai.assert;
 const tmpfilename = tmp.fileSync().name;
 
 describe('Executing phyx2ontology.js on all current Phyx files', function () {
+  this.timeout(10000);
+
   const child = ChildProcess.spawnSync(process.execPath, [
     'phyx2ontology/phyx2ontology.js', BASE_DIR, '>', tmpfilename,
   ], {
