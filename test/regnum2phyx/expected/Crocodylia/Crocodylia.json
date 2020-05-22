@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.1.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -82,24 +82,33 @@
             "obo:IAO_0000119": [],
             "cladeDefinition": "Last common ancestor of Gavialis gangeticus, Alligator mississippiensis, and Crocodylus niloticus and all of its descendents",
             "internalSpecifiers": [
-                {
-                    "verbatimSpecifier": "Gavialis gangeticus Gmelin, 1789",
-                    "scientificName": "Gavialis gangeticus Gmelin, 1789",
-                    "canonicalName": "Gavialis gangeticus",
-                    "nomenclaturalCode": "ICZN"
-                },
-                {
-                    "verbatimSpecifier": "Alligator mississippiensis Daudin, 1802",
-                    "scientificName": "Alligator mississippiensis Daudin, 1802",
-                    "canonicalName": "Alligator mississippiensis",
-                    "nomenclaturalCode": "ICZN"
-                },
-                {
-                    "verbatimSpecifier": "Crocodylus niloticus Gmelin, 1768",
-                    "scientificName": "Crocodylus niloticus Gmelin, 1768",
-                    "canonicalName": "Crocodylus niloticus",
-                    "nomenclaturalCode": "ICZN"
+              {
+                "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                "hasName": {
+                  "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                  "label": "Gavialis gangeticus Gmelin, 1789",
+                  "nameComplete": "Gavialis gangeticus",
+                  "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107"
                 }
+              },
+              {
+                "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                "hasName": {
+                  "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                  "label": "Alligator mississippiensis Daudin, 1802",
+                  "nameComplete": "Alligator mississippiensis",
+                  "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107"
+                }
+              },
+              {
+                "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                "hasName": {
+                  "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                  "label": "Crocodylus niloticus Gmelin, 1768",
+                  "nameComplete": "Crocodylus niloticus",
+                  "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107"
+                }
+              }
             ],
             "externalSpecifiers": []
         }
