@@ -2,15 +2,6 @@ language: node_js
 node_js:
   - "node" # Tests against the latest Node version available.
 
-# command to install dependencies
-install:
-  # Install Javascript libraries.
-  - npm install
-  # Download FaCT++ reasoner native libraries and use them.
-  - wget -O - https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/factplusplus/FaCTpp-linux-v1.5.2.tgz | tar zxf - --strip-components=2 -C jphyloref/lib "FaCT++-linux-v1.5.2/64bit/libFaCTPlusPlusJNI.so"
-  - export JVM_ARGS="-Djava.library.path=jphyloref/lib/"
-  - export JPHYLOREF_ARGS="--reasoner fact++"
-
 # command to run tests
 script:
   - travis_wait 40 npm test
