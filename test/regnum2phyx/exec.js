@@ -73,7 +73,7 @@ describe('Test regnum2phyx.js', function () {
             expect(producedPhyx).to.deep.equal(expectedPhyx);
           });
 
-          const phyxSchemaJSON = loadJSON(`${__dirname}/phyx.schema.json`);
+          const phyxSchemaJSON = loadJSON(`${__dirname}/../phyx_schema.json`);
           const ajvInstance = new Ajv({
             allErrors: true, // Display all error messages, not just the first.
           });

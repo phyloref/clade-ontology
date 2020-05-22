@@ -5,7 +5,7 @@
   "main": "index.js",
   "directories": {},
   "scripts": {
-    "lint": "eslint \"test/**\" \"phyx2ontology/**\" \"regnum2phyx/**\" --ext .js",
+    "lint": "eslint \"test/**/*.js\" \"phyx2ontology/**/*.js\" \"regnum2phyx/**/*.js\"",
     "pretest": "npm run lint",
     "test": "mocha --recursive",
     "mocha": "mocha",
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/phyloref/clade-ontology#readme",
   "dependencies": {
-    "@phyloref/phyx": "^0.1.2",
+    "@phyloref/phyx": "^0.2.1",
     "lodash": "^4.17.11",
     "yargs": "^13.2.1"
   },

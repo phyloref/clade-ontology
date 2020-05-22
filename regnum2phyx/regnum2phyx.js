@@ -10,6 +10,18 @@
  * PhyloRegnum can be accessed at http://app.phyloregnum.org
  */
 
+// We currently produce Phyx files in v0.2.0 format. If this changes, please
+// update this here.
+const PHYX_CONTEXT_URL = 'http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json';
+
+// Some constants for nomenclatural codes. We should really export these in Phyx
+// (see https://github.com/phyloref/phyx.js/issues/44)
+const NAME_IN_UNKNOWN_CODE = 'http://purl.obolibrary.org/obo/NOMEN_0000036';
+const ICZN_NAME = 'http://purl.obolibrary.org/obo/NOMEN_0000107';
+const ICN_NAME = 'http://purl.obolibrary.org/obo/NOMEN_0000109';
+// const ICNP_NAME = 'http://purl.obolibrary.org/obo/NOMEN_0000110';
+// const ICTV_NAME = 'http://purl.obolibrary.org/obo/NOMEN_0000111';
+
 // Load necessary modules.
 const fs = require('fs');
 const path = require('path');
@@ -162,6 +174,19 @@ const argv = yargs
     describe: 'Directory to write Phyx files to',
   })
   .demandOption(['o'])
+  .option('filenames', {
+    describe: 'Choose the type of filenames to generate',
+    default: 'label',
+    choices: [
+      'label',
+      'number',
+      'regnum-id',
+    ],
+  })
+  .option('filename-prefix', {
+    describe: 'Choose the prefix for the filename being generated',
+    string: true,
+  })
   .help('h')
   .alias('h', 'help')
   .argv;
@@ -175,7 +200,7 @@ const phyxProduced = {};
 let countErrors = 0;
 
 // Loop through all phylorefs in the database dump.
-dump.forEach((entry) => {
+dump.forEach((entry, index) => {
   const phylorefLabel = entry.name.trim();
 
   // Make sure we don't have multiple phyloreferences with the same label, since
@@ -243,6 +268,24 @@ dump.forEach((entry) => {
     const specifierAuthors = (specifier.displayAuths || '').trim();
     const specifierCode = (specifier.specifier_code || '').trim();
 
+    let nomenCode = NAME_IN_UNKNOWN_CODE;
+    // As of the May 14, 2020 Regnum dump, only ICZN and ICBN
+    // are used as pre-existing codes. I'll add ICNP and ICTV
+    // as well once we need them.
+    switch (specifierCode) {
+      case 'ICZN':
+        nomenCode = ICZN_NAME;
+        break;
+      case 'ICBN':
+        nomenCode = ICN_NAME;
+        break;
+      case '':
+        nomenCode = NAME_IN_UNKNOWN_CODE;
+        break;
+      default:
+        throw new Error(`Unknown specifier_code: '${specifierCode}'`);
+    }
+
     // Do we have authors? If so, incorporate them into the specifier authors.
     // Otherwise, just use the year.
     let specifierAuthority = (specifier.specifier_year || '').trim();
@@ -250,14 +293,19 @@ dump.forEach((entry) => {
       specifierAuthority = `${specifierAuthors}, ${(specifier.specifier_year || '').trim()}`;
     }
 
+    // TODO: split name into genus/specifier.
+
     // Write out a scientificName that includes the specifier name as well as its
     // nomenclatural authority, if present.
     const scname = `${specifierName} ${specifierAuthority}`.trim();
     const specifierTemplate = {
-      verbatimSpecifier: scname,
-      scientificName: scname,
-      canonicalName: specifierName,
-      nomenclaturalCode: specifierCode,
+      '@type': 'http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept',
+      hasName: {
+        '@type': 'http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName',
+        nomenclaturalCode: nomenCode,
+        label: scname,
+        nameComplete: specifierName,
+      },
     };
 
     addTo.push(specifierTemplate);
@@ -265,13 +313,26 @@ dump.forEach((entry) => {
 
   // Prepare a simple Phyx file template.
   const phyxTemplate = pickBy({
-    '@context': 'http://www.phyloref.org/phyx.js/context/v0.1.0/phyx.json',
+    '@context': PHYX_CONTEXT_URL,
     phylogenies,
     phylorefs: [phylorefTemplate],
   });
 
   // Write out Phyx file for this phyloreference.
-  const phyxFilename = path.join(argv.outputDir, `${phylorefLabel}.json`);
+  const fileIndex = `${index + 1}`.padStart(6, '0');
+  const filePrefix = argv.filenamePrefix || '';
+  let phyxFilename;
+  if (argv.filenames === 'label') {
+    // Use the phyloref label.
+    phyxFilename = path.join(argv.outputDir, `${phylorefLabel}.json`);
+  } else if (argv.filenames === 'regnum-id') {
+    // Use the regnum id.
+    if (entry.id) phyxFilename = path.join(argv.outputDir, `REGNUM_${(`${entry.id}`).padStart(6, '0')}.json`);
+    else phyxFilename = path.join(argv.outputDir, `${filePrefix}${fileIndex}.json`);
+  } else {
+    // Default to just the number of the sequence.
+    phyxFilename = path.join(argv.outputDir, `${filePrefix}${fileIndex}.json`);
+  }
   fs.writeFileSync(phyxFilename, JSON.stringify(phyxTemplate, null, 4));
 
   // Save for later use if needed.

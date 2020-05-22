@@ -6,27 +6,22 @@
  */
 
 // Configuration options.
-const PHYX_CONTEXT_JSON = 'http://www.phyloref.org/phyx.js/context/v0.1.0/phyx.json';
+const PHYX_CONTEXT_JSON = 'http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json';
 const CLADE_ONTOLOGY_BASEURI = 'http://phyloref.org/clade-ontology/clado.owl';
 
+// Configuration.
+/* Maximum number of internal specifiers to test. */
+const MAX_INTERNAL_SPECIFIERS = process.env.MAX_INTERNAL_SPECIFIERS || 7;
+/* Maximum number of external specifiers to test. */
+const MAX_EXTERNAL_SPECIFIERS = process.env.MAX_EXTERNAL_SPECIFIERS || 10;
+
 // Load necessary modules.
-const process = require('process');
 const fs = require('fs');
 const path = require('path');
 const yargs = require('yargs');
-const { has } = require('lodash');
 
 // Load phyx.js, our PHYX library.
 const phyx = require('@phyloref/phyx');
-
-// Load some methods we use to convert from Model 1.0 to Model 2.0 on the fly.
-// These will be moved into phyx.js in https://github.com/phyloref/phyx.js/issues/4
-const {
-  convertTUtoRestriction,
-  getIncludesRestrictionForTU,
-  createClassExpressionsForInternals,
-  createClassExpressionsForExternals,
-} = require('./model2.js');
 
 /*
  * Returns a list of PHYX files that we can test in the provided directory.
@@ -43,7 +38,7 @@ function findPHYXFiles(dirPath) {
     }
 
     // Look for .json files (but not for '_as_owl.json' files, for historical reasons).
-    if (filePath.endsWith('.json') && !filePath.endsWith('_as_owl.json')) {
+    if (filePath.endsWith('.json')) {
       return [filePath];
     }
 
@@ -91,10 +86,12 @@ function getIdentifier(index) {
 // Loop through our files (ignoring GITCRYPT-encrypted files) and read them as JSON.
 const jsons = phyxFiles
   .map((filename) => {
+    // console.log(`Reading Phyx file ${filename} as JSON.`);
     const content = fs.readFileSync(filename);
 
     // Some of these Phyx files are encrypted! We need to ignore those.
     if (content.slice(0, 9).equals(Buffer.from('\x00GITCRYPT'))) {
+      console.warn(`Could not process git-crypted Phyx file ${filename}, skipping.`);
       return [];
     }
 
@@ -119,56 +116,28 @@ jsons.forEach((phyxFile) => {
     // Convert phyloreference to JSON-LD.
     entityIndex += 1;
     const phylorefWrapper = new phyx.PhylorefWrapper(phyloref);
+
+    // Figure out if we should convert this phyloref.
+    if (phylorefWrapper.internalSpecifiers.length > MAX_INTERNAL_SPECIFIERS) {
+      console.warn(`Phyloreference ${phylorefWrapper.label} has `
+        + `${phylorefWrapper.internalSpecifiers.length} internal specifiers but `
+        + `the limit is ${MAX_INTERNAL_SPECIFIERS}`);
+      return;
+    }
+    if (phylorefWrapper.externalSpecifiers.length > MAX_EXTERNAL_SPECIFIERS) {
+      console.warn(`Phyloreference ${phylorefWrapper.label} has `
+        + `${phylorefWrapper.externalSpecifiers.length} external specifiers but `
+        + `the limit is ${MAX_EXTERNAL_SPECIFIERS}`);
+      return;
+    }
+
+    // Convert to OWL/JSON-LD.
     const jsonld = phylorefWrapper.asJSONLD(getIdentifier(entityIndex));
 
     // Record the label of the phylorefs. We'll need this to link phylogenies to
     // the phylorefs they expect to resolve to.
     if (phylorefWrapper.label !== undefined) {
       phylorefsByLabel[phylorefWrapper.label.toString()] = jsonld;
-    }
-
-    // In Model 2.0, phyloreferences are not punned, but are specifically subclasses
-    // of class Phyloreference. So let's set that up.
-    delete jsonld['@type'];
-    jsonld.subClassOf = 'phyloref:Phyloreference';
-
-    // We also no longer use the additional classes system or the equivalent class
-    // definitions, so let's get rid of those too.
-    delete jsonld.equivalentClass;
-    delete jsonld.hasAdditionalClass;
-
-    // Finally, we still have the clade definition, but we call it IAO_0000115 now.
-    // To be fixed in https://github.com/phyloref/curation-tool/issues/94.
-    jsonld['obo:IAO_0000115'] = jsonld.cladeDefinition;
-    delete jsonld.cladeDefinition;
-
-    // Construct the OWL restrictions for the equivalentClass using Model 2.0 code.
-    const internalSpecifiers = jsonld.internalSpecifiers || [];
-    const externalSpecifiers = jsonld.externalSpecifiers || [];
-
-    // We might be create additional classes, so get going.
-    jsonld.hasAdditionalClass = [];
-    if (internalSpecifiers.length === 0) {
-      // We can't handle phyloreferences without at least one internal specifier.
-      jsonld.malformedPhyloreference = 'No internal specifiers provided';
-    } else {
-      // Step 1. Construct an expression for all internal specifiers.
-      const expressionsForInternals = (internalSpecifiers.length === 1)
-        ? [getIncludesRestrictionForTU(internalSpecifiers[0])]
-        : createClassExpressionsForInternals(jsonld, internalSpecifiers, []);
-
-      if (externalSpecifiers.length === 0) {
-        // If we don't have external specifiers, we can just use the expression
-        // for the internal specifier.
-        jsonld.equivalentClass = expressionsForInternals;
-      } else {
-        // Step 2. Create alternate class expressions for external specifiers.
-        jsonld.equivalentClass = expressionsForInternals.map(
-          exprForInternal => createClassExpressionsForExternals(
-            jsonld, exprForInternal, externalSpecifiers, []
-          )
-        ).reduce((acc, val) => acc.concat(val), []);
-      }
     }
 
     // Set a JSON-LD context so this block can be interpreted in isolation.
@@ -185,69 +154,6 @@ jsons.forEach((phyxFile) => {
     entityIndex += 1;
     const phylogenyAsJSONLD = new phyx.PhylogenyWrapper(phylogeny)
       .asJSONLD(getIdentifier(entityIndex));
-
-    // Change name for including Newick.
-    // To be fixed in https://github.com/phyloref/phyx.js/issues/9
-    phylogenyAsJSONLD['phyloref:newick_expression'] = phylogenyAsJSONLD.newick;
-    delete phylogenyAsJSONLD.newick;
-
-    // Change how nodes are represented.
-    (phylogenyAsJSONLD.nodes || []).forEach((nodeAsParam) => {
-      const node = nodeAsParam;
-
-      // Make sure this node has a '@type'.
-      if (!has(node, '@type')) node['@type'] = [];
-      if (!Array.isArray(node['@type'])) node['@type'] = [node['@type']];
-
-      // We replace "parent" with "obo:CDAO_0000179" so we get has_Parent
-      // relationships in our output ontology.
-      // To be fixed in https://github.com/phyloref/phyx.js/issues/10
-      if (has(node, 'parent')) node['obo:CDAO_0000179'] = { '@id': node.parent };
-
-      // For every internal node in this phylogeny, check to see if it's expected to
-      // resolve to a phylogeny we know about. If so, add an rdf:type to that effect.
-      let expectedToResolveTo = node.labels || [];
-
-      // Are there any phyloreferences expected to resolve here?
-      if (has(node, 'expectedPhyloreferenceNamed')) {
-        expectedToResolveTo = expectedToResolveTo.concat(node.expectedPhyloreferenceNamed);
-      }
-
-      expectedToResolveTo.forEach((phylorefLabel) => {
-        if (!has(phylorefsByLabel, phylorefLabel)) return;
-
-        // This node is expected to match phylorefLabel, which is a phyloreference we know about.
-        const phylorefId = phylorefsByLabel[phylorefLabel]['@id'];
-        node['@type'].push({
-          '@type': 'owl:Restriction',
-          onProperty: 'obo:OBI_0000312', // obi:is_specified_output_of
-          someValuesFrom: {
-            '@type': 'owl:Class',
-            intersectionOf: [
-              { '@id': 'obo:OBI_0302910' }, // obi:prediction
-              {
-                '@type': 'owl:Restriction',
-                onProperty: 'obo:OBI_0000293', // obi:has_specified_input
-                someValuesFrom: { '@id': phylorefId },
-              },
-            ],
-          },
-        });
-      });
-
-      // Does this node have taxonomic units? If so, convert them into class expressions.
-      if (has(node, 'representsTaxonomicUnits')) {
-        node.representsTaxonomicUnits.forEach((tunit) => {
-          convertTUtoRestriction(tunit).forEach((restriction) => {
-            node['@type'].push({
-              '@type': 'owl:Restriction',
-              onProperty: 'obo:CDAO_0000187',
-              someValuesFrom: restriction,
-            });
-          });
-        });
-      }
-    });
 
     // Set a '@context' so it can be interpreted from other objects in the output file.
     phylogenyAsJSONLD['@context'] = PHYX_CONTEXT_JSON;

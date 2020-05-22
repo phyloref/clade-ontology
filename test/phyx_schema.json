@@ -1,0 +1,333 @@
+{
+  "definitions": {
+    "agent": {
+      "type": "object",
+      "description": "A person or entity.",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The full name of this agent.",
+          "minLength": 1
+        },
+        "alternate": {
+          "type": "array",
+          "description": "A list of alternate names for this agent.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "firstname": {
+          "type": "string",
+          "description": "The first (or given) name of this agent.",
+          "minLength": 1
+        },
+        "middlename": {
+          "type": "string",
+          "description": "The middle name of this agent.",
+          "minLength": 1
+        },
+        "lastname": {
+          "type": "string",
+          "description": "The last (or family) name of this agent.",
+          "minLength": 1
+        }
+      }
+    },
+    "citation": {
+      "type": "object",
+      "description": "A citation to a publication.",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "The type of publication. BibTeX entry types (https://en.wikipedia.org/wiki/BibTeX#Entry_types) are recommended.",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "description": "The title of this publication.",
+          "minLength": 1
+        },
+        "year": {
+          "type": "number",
+          "description": "The year of publication."
+        },
+        "authors": {
+          "type": "array",
+          "description": "The authors of this work.",
+          "items": {
+            "$ref": "#/definitions/agent"
+          }
+        },
+        "editors": {
+          "type": "array",
+          "description": "The editors of this work.",
+          "items": {
+            "$ref": "#/definitions/agent"
+          }
+        },
+        "series_editors": {
+          "type": "array",
+          "description": "The editors of the series of work of which this work is a part.",
+          "items": {
+            "$ref": "#/definitions/agent"
+          }
+        },
+        "publisher": {
+          "type": "string",
+          "description": "The publisher of this work."
+        },
+        "city": {
+          "type": "string",
+          "description": "The city in which this work was published."
+        },
+        "figure": {
+          "type": "string",
+          "description": "The figure(s) in the work being cited."
+        },
+        "journal": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "volume": {
+              "type": "string",
+              "minLength": 1
+            },
+            "pages": {
+              "type": "string",
+              "minLength": 1
+            },
+            "identifier": {
+              "type": "array",
+              "items": {
+                "required": [],
+                "properties": {}
+              }
+            }
+          },
+          "required": [
+            "name",
+            "volume",
+            "identifier"
+          ]
+        },
+        "identifier": {
+          "type": "array",
+          "items": {
+            "required": ["type", "id"],
+            "properties": {
+              "type": {
+                "type": "string",
+                "description": "The type of identifier (e.g. 'doi')"
+              },
+              "id": {
+                "type": "string",
+                "description": "The identifier itself (e.g. '10.1146/annurev.earth.31.100901.141308')"
+              }
+            }
+          }
+        },
+        "link": {
+          "type": "array",
+          "description": "Links to this publication.",
+          "items": {
+            "required": ["url"],
+            "properties": {
+              "url": {
+                "type": "string",
+                "description": "The URL of this publication."
+              }
+            }
+          }
+        }
+      }
+    },
+
+    "taxonomic_unit": {
+      "type": "object",
+      "description": "A unit of taxonomy, i.e. a taxon, taxon concept or specimen.",
+      "additionalProperties": false,
+      "required": [
+        "@type"
+      ],
+      "properties": {
+        "@type": {
+          "type": "string",
+          "description": "The type of this taxonomic unit.",
+          "enum": [
+            "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+            "http://rs.tdwg.org/dwc/terms/Occurrence"
+          ]
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "hasName": {
+          "type": "object",
+          "description": "The scientific name of this taxon, taxon concept or specimen.",
+          "properties": {
+            "@type": {
+              "type": "string",
+              "description": "The type of this taxonomic name.",
+              "enum": [
+                "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName"
+              ]
+            },
+            "nomenclaturalCode": {
+              "type": "string",
+              "description": "The nomenclatural code under which this name is defined.",
+              "enum": [
+                "http://purl.obolibrary.org/obo/NOMEN_0000036",
+                "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                "http://purl.obolibrary.org/obo/NOMEN_0000110",
+                "http://purl.obolibrary.org/obo/NOMEN_0000111"
+              ]
+            },
+            "label": {
+              "type": "string",
+              "minLength": 1
+            },
+            "nameComplete": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "@type",
+            "nomenclaturalCode",
+            "label",
+            "nameComplete"
+          ]
+        }
+      }
+    }
+  },
+
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A Phyx file contains digital clade definitions and optionally phylogenies that indicate where they should resolve. See http://phyloref.org/phyx.js for more information.",
+  "type": "object",
+  "required": [
+    "@context"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "@context": {
+      "type": "string",
+      "description": "Every Phyx file should have a @context, making it a valid JSON-LD file.",
+      "minLength": 1
+    },
+    "source": {
+      "description": "A citation to the source of this Phyx file.",
+      "$ref": "#/definitions/citation"
+    },
+    "defaultNomenclaturalCodeURI": {
+      "description": "The default nomenclatural code to use for new phyloreferences in this Phyx file.",
+      "enum": [
+        "http://purl.obolibrary.org/obo/NOMEN_0000036",
+        "http://purl.obolibrary.org/obo/NOMEN_0000107",
+        "http://purl.obolibrary.org/obo/NOMEN_0000109",
+        "http://purl.obolibrary.org/obo/NOMEN_0000110",
+        "http://purl.obolibrary.org/obo/NOMEN_0000111"
+      ]
+    },
+    "phylogenies": {
+      "type": "array",
+      "description": "A phylogeny is an evolutionary hypothesis that can be used to test Phyx files.",
+      "minItems": 0,
+      "items": {
+        "required": [],
+        "properties": {
+          "label": {
+            "type": "string",
+            "description": "The label of this phylogeny.",
+            "minLength": 1
+          },
+          "newick": {
+            "type": "string",
+            "description": "This phylogeny represented as a Newick string (https://en.wikipedia.org/wiki/Newick_format).",
+            "minLength": 2
+          },
+          "phylogenyType": {
+            "type": "string",
+            "description": "Specifies what type of phylogeny this is. All phylogenies are assumed to be 'phylogeny', unless they are a 'reference_phylogeny' or a 'primary_reference_phylogeny'.",
+            "enum": [
+              "primary_reference_phylogeny",
+              "reference_phylogeny",
+              "phylogeny"
+            ]
+          },
+          "citation": {
+            "description": "A citation to the published source of this phylogeny.",
+            "$ref": "#/definitions/citation"
+          }
+        }
+      }
+    },
+    "phylorefs": {
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "required": [
+          "cladeDefinition"
+        ],
+        "properties": {
+          "regnumId": {
+            "type": [
+              "string",
+              "integer"
+            ],
+            "description": "The identifier of this clade definition in the Regnum database",
+            "minLength": 1
+          },
+          "label": {
+            "type": "string",
+            "description": "The name or label of this phyloreference."
+          },
+          "scientificNameAuthorship": {
+            "type": "string",
+            "description": "The authors of the scientific name being used as the phyloreference label (if any)",
+            "minLength": 1
+          },
+          "namePublishedIn": {
+            "description": "The source of the scientific name being used as the phyloreference label (if any)",
+            "$ref": "#/definitions/citation"
+          },
+          "definition": {
+            "type": "string",
+            "description": "A verbatim, free-text definition of this clade.",
+            "minLength": 1
+          },
+          "definitionSource": {
+            "description": "The source of the clade definition.",
+            "$ref": "#/definitions/citation"
+          },
+          "internalSpecifiers": {
+            "type": "array",
+            "description": "An array of taxonomic units that must be included in the defined clade",
+            "uniqueItems": true,
+            "minItems": 1,
+            "items": {
+              "$ref": "#/definitions/taxonomic_unit"
+            }
+          },
+          "externalSpecifiers": {
+            "type": "array",
+            "description": "An array of taxonomic units that must be excluded from the defined clade",
+            "uniqueItems": true,
+            "minItems": 0,
+            "items": {
+              "$ref": "#/definitions/taxonomic_unit"
+            }
+          }
+        }
+      }
+    }
+  }
+}

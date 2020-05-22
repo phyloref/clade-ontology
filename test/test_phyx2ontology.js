@@ -17,6 +17,8 @@ const assert = chai.assert;
 const tmpfilename = tmp.fileSync().name;
 
 describe('Executing phyx2ontology.js on all current Phyx files', function () {
+  this.timeout(10000);
+
   const child = ChildProcess.spawnSync(process.execPath, [
     'phyx2ontology/phyx2ontology.js', BASE_DIR, '>', tmpfilename,
   ], {
@@ -25,7 +27,6 @@ describe('Executing phyx2ontology.js on all current Phyx files', function () {
   });
 
   it('should execute successfully', function () {
-    assert.isEmpty(child.stderr, 'Should not produce any output to STDERR');
     assert.isNull(child.signal, `Terminated because of signal ${child.signal}`);
     assert.equal(child.status, 0, 'Exit value should be zero');
   });
