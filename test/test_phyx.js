@@ -108,7 +108,7 @@ describe('Test Phyx files in repository', function () {
       try {
         wrappedPhyx = new phyx.PhyxWrapper(json);
       } catch (ex) {
-        it('Exception thrown while converting Phyx to JSON-LD', function () {
+        it('Exception thrown while loading Phyx to JSON-LD', function () {
           throw ex;
         });
         return;
@@ -162,6 +162,7 @@ describe('Test Phyx files in repository', function () {
         .reduce((a, b) => a || b, false);
 
       if (!skipFile) {
+        console.log(`Converting Phyx file ${filename} into JSON-LD`);
         const jsonld = JSON.stringify(wrappedPhyx.asJSONLD());
 
         // Make sure the produced JSON-LD is not empty.
