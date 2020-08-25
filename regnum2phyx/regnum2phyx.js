@@ -189,6 +189,11 @@ const argv = yargs
       'regnum-id',
     ],
   })
+  .option('digits', {
+    describe: 'Number of digits to put into CLADO name',
+    type: 'number',
+    default: 7,
+  })
   .option('filename-prefix', {
     describe: 'Choose the prefix for the filename being generated',
     string: true,
@@ -325,7 +330,7 @@ dump.forEach((entry, index) => {
   });
 
   // Write out Phyx file for this phyloreference.
-  const fileIndex = `${index + 1}`.padStart(6, '0');
+  const fileIndex = `${index + 1}`.padStart(argv.digits, '0');
   const filePrefix = argv.filenamePrefix || '';
   let phyxFilename;
   if (argv.filenames === 'label') {
@@ -333,7 +338,7 @@ dump.forEach((entry, index) => {
     phyxFilename = path.join(argv.outputDir, `${phylorefLabel}.json`);
   } else if (argv.filenames === 'regnum-id') {
     // Use the regnum id.
-    if (entry.id) phyxFilename = path.join(argv.outputDir, `REGNUM_${(`${entry.id}`).padStart(6, '0')}.json`);
+    if (entry.id) phyxFilename = path.join(argv.outputDir, `CLADO_${(`${entry.id}`).padStart(argv.digits, '0')}.json`);
     else phyxFilename = path.join(argv.outputDir, `${filePrefix}${fileIndex}.json`);
   } else {
     // Default to just the number of the sequence.
