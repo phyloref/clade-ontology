@@ -6,7 +6,7 @@
   "directories": {},
   "scripts": {
     "lint": "eslint \"test/**/*.js\" \"phyx2ontology/**/*.js\" \"regnum2phyx/**/*.js\"",
-    "pretest": "npm run lint",
+    "_pretest": "npm run lint",
     "test": "mocha --recursive",
     "mocha": "mocha",
     "build-ontology": "node phyx2ontology/phyx2ontology.js phyx/ > CLADO.json"
@@ -35,6 +35,7 @@
     "eslint-plugin-json": "^1.4.0",
     "eslint-plugin-mocha": "^5.2.1",
     "mocha": "^5.2.0",
+    "retus": "^1.1.1",
     "tmp": "^0.1.0"
   }
 }
