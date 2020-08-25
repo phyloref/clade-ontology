@@ -31,22 +31,28 @@ const {
 } = require('lodash');
 
 // Helper functions.
-function convertAuthorsIntoStrings(authors, lastNameFirst = true) {
+function convertAuthorsIntoStrings(authors, lastNameStatus = 'first') {
   // Given a list of authors with first_name, middle_name and last_name properties,
   // return a list of author names with a single name.
   //
-  // We combine author names in two possible ways:
-  //  If lastNameFirst is true: $last_name $first_name $middle_name
-  //  If lastNameFirst is false: $first_name $middle_name $last_name
+  // We combine author names in three possible ways:
+  //  If lastNameStatus is 'first': $last_name $first_name $middle_name
+  //  If lastNameStatus is 'only': $last_name
+  //  Any other value: $first_name $middle_name $last_name
   // The middle name will be ignored if it is blank or not present.
 
-  if (lastNameFirst) {
+  if (lastNameStatus === 'first') {
     // Use "last first middle".
     return authors.map(author => (
       `${author.last_name || ''}, ${author.first_name || ''}${
         ((has(author, 'middle_name') && author.middle_name.trim() !== '') ? ` ${author.middle_name}` : '')
       }`.trim()
     )).filter(name => name !== '');
+  }
+
+  if (lastNameStatus === 'only') {
+    // Use "last".
+    return authors.map(author => `${author.last_name || ''}`.trim()).filter(name => name !== '');
   }
 
   // Use "first middle last".
@@ -65,10 +71,10 @@ function convertAuthorsIntoBibJSON(authors) {
     .filter(author => author.last_name)
     .map(author => pickBy({ // lodash.pickBy will remove empty keys from the object.
       // We store the author name as first_name middle_name last_name
-      name: convertAuthorsIntoStrings([author], false).join(),
+      name: convertAuthorsIntoStrings([author], 'last').join(),
       alternate: [
         // We store an alternate author name as last_name, first_name middle_name.
-        convertAuthorsIntoStrings([author], true).join(),
+        convertAuthorsIntoStrings([author], 'first').join(),
       ],
       firstname: (author.first_name || '').trim(),
       lastname: (author.last_name || '').trim(),
@@ -265,7 +271,7 @@ dump.forEach((entry, index) => {
 
     // Set up specifier name, authorship and nomenclatural code.
     const specifierName = (specifier.specifier_name || '').trim();
-    const specifierAuthors = (specifier.displayAuths || '').trim();
+    const specifierAuthors = convertAuthorsIntoStrings(specifier.authors, 'only')
     const specifierCode = (specifier.specifier_code || '').trim();
 
     let nomenCode = NAME_IN_UNKNOWN_CODE;
