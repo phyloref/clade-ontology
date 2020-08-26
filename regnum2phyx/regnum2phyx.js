@@ -71,10 +71,10 @@ function convertAuthorsIntoBibJSON(authors) {
     .filter(author => author.last_name)
     .map(author => pickBy({ // lodash.pickBy will remove empty keys from the object.
       // We store the author name as first_name middle_name last_name
-      name: convertAuthorsIntoStrings([author], 'last').join(),
+      name: convertAuthorsIntoStrings([author], 'last').join(' and '),
       alternate: [
         // We store an alternate author name as last_name, first_name middle_name.
-        convertAuthorsIntoStrings([author], 'first').join(),
+        convertAuthorsIntoStrings([author], 'first').join(' and '),
       ],
       firstname: (author.first_name || '').trim(),
       lastname: (author.last_name || '').trim(),
@@ -243,7 +243,7 @@ dump.forEach((entry, index) => {
   const phylorefTemplate = pickBy({
     regnumId: entry.id,
     label: phylorefLabel,
-    'dwc:scientificNameAuthorship': (convertAuthorsIntoStrings(entry.authors)).join(', '),
+    'dwc:scientificNameAuthorship': (convertAuthorsIntoStrings(entry.authors)).join(' and '),
     'dwc:namePublishedIn': convertCitationsToBibJSON(entry.citations.preexisting),
     'obo:IAO_0000119': // IAO:definition source (http://purl.obolibrary.org/obo/IAO_0000119)
       convertCitationsToBibJSON(entry.citations.definitional),
@@ -276,7 +276,7 @@ dump.forEach((entry, index) => {
 
     // Set up specifier name, authorship and nomenclatural code.
     const specifierName = (specifier.specifier_name || '').trim();
-    const specifierAuthors = convertAuthorsIntoStrings(specifier.authors, 'only')
+    const specifierAuthors = convertAuthorsIntoStrings(specifier.authors, 'only').join(' and ');
     const specifierCode = (specifier.specifier_code || '').trim();
 
     let nomenCode = NAME_IN_UNKNOWN_CODE;
