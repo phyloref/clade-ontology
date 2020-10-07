@@ -121,6 +121,11 @@ describe('Test Phyx files in repository', function () {
 
       console.log(`Loaded Phyx file ${filename}`);
 
+        it('should have a Newick phylogeny', () => {
+          const newick = json.phylogenies.map(p => p.newick || "").find(elem => !lodash.isEmpty(elem));
+          assert.isNotEmpty(newick);
+        });
+
       const skipFile = (json.phylorefs || [])
         .map(phyloref => new phyx.PhylorefWrapper(phyloref))
         .map((wrappedPhyloref) => {
