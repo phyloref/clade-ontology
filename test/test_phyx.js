@@ -21,6 +21,9 @@ const ChildProcess = require('child_process');
 const fs = require('fs');
 const path = require('path');
 
+const retus = require('retus');
+const lodash = require('lodash');
+
 const Ajv = require('ajv');
 const chai = require('chai');
 
@@ -30,7 +33,9 @@ const assert = chai.assert;
  * Configuration options.
  */
 /* Flag used to determine whether or not we run the slow tests. */
-const FLAG_SLOW_TESTS = process.env.RUN_SLOW_TESTS || false;
+const FLAG_SLOW_TESTS = process.env.SLOW_TESTS || false;
+/* Flag used to determine whether or not we run the online tests. */
+const FLAG_ONLINE_TESTS = process.env.ONLINE_TESTS || false;
 /* Maximum number of internal specifiers to test. */
 const MAX_INTERNAL_SPECIFIERS = process.env.MAX_INTERNAL_SPECIFIERS || 7;
 /* Maximum number of external specifiers to test. */
@@ -108,13 +113,18 @@ describe('Test Phyx files in repository', function () {
       try {
         wrappedPhyx = new phyx.PhyxWrapper(json);
       } catch (ex) {
-        it('Exception thrown while converting Phyx to JSON-LD', function () {
+        it('Exception thrown while loading Phyx to JSON-LD', function () {
           throw ex;
         });
         return;
       }
 
       console.log(`Loaded Phyx file ${filename}`);
+
+        it('should have a Newick phylogeny', () => {
+          const newick = json.phylogenies.map(p => p.newick || "").find(elem => !lodash.isEmpty(elem));
+          assert.isNotEmpty(newick);
+        });
 
       const skipFile = (json.phylorefs || [])
         .map(phyloref => new phyx.PhylorefWrapper(phyloref))
@@ -142,12 +152,119 @@ describe('Test Phyx files in repository', function () {
         .reduce((a, b) => a || b, false);
 
       if (!skipFile) {
+        console.log(`Converting Phyx file ${filename} into JSON-LD`);
         const jsonld = JSON.stringify(wrappedPhyx.asJSONLD());
 
         // Make sure the produced JSON-LD is not empty.
         it('produced a non-empty JSON-LD ontology without throwing an exception', function () {
           assert.isNotEmpty(jsonld);
         });
+
+        // Test the Phyx file using the Open Tree of Life API.
+        if (FLAG_ONLINE_TESTS) {
+          /**
+           * Display debugging output to STDERR if the '--verbose' flag has been set.
+           */
+          function debug(...args) {
+            process.stderr.write(args.join(' ') + "\n")
+          }
+
+          function specifierToOTLId(specifier) {
+            const wrappedSpecifier = new phyx.TaxonomicUnitWrapper(specifier);
+
+            if (!wrappedSpecifier.taxonConcept) {
+              debug(`     - ${wrappedSpecifier.label}: not a taxon concept`);
+              return undefined;
+            } else {
+              const nameComplete = new phyx.TaxonConceptWrapper(specifier).nameComplete;
+
+              if (!nameComplete) {
+                debug(`     - ${wrappedSpecifier.label} is missing a taxonomic name: ${JSON.stringify(specifier)}`);
+                return undefined;
+              } else {
+                const nameToUse = nameComplete.replace(/\s+\(originally \w+\)/g, "");
+                const { statusCode, body } = retus("https://api.opentreeoflife.org/v3/tnrs/match_names", {
+                  method: 'post',
+                  json: { names : [ nameToUse ] },
+                });
+
+                const matches = body['results'].map(result => result['matches']).reduce((acc, curr) => acc.concat(curr), []);
+
+                const ottNames = matches.filter(match => match).map(match => match['taxon']['name']).filter(name => name);
+                const ottIds = matches.filter(match => match).map(match => match['taxon']['ott_id']).filter(ott_id => ott_id);
+
+                if (ottIds.length > 1) debug(`     - Taxon name ${nameComplete} resolved to multiple OTT Ids: ${ottIds.join(', ')}.`)
+
+                const result = {};
+                result[nameComplete] = ottIds;
+                return result;
+              }
+            }
+          }
+
+          (json.phylorefs || [])
+            .map(phyloref => new phyx.PhylorefWrapper(phyloref))
+            .forEach((wrappedPhyloref) => {
+              const internalOTTs = wrappedPhyloref.internalSpecifiers.map(specifierToOTLId);
+              const internalOTTids = lodash.flattenDeep(internalOTTs.map(ott => lodash.head(lodash.values(ott))));
+              debug(`   - Internal specifiers: ${internalOTTids.join(", ")}`);
+              // console.log(internalOTTids);
+
+              const externalOTTs = wrappedPhyloref.externalSpecifiers.map(specifierToOTLId);
+              const externalOTTids = lodash.flattenDeep(externalOTTs.map(ott => lodash.head(lodash.values(ott))));
+              debug(`   - External specifiers: ${externalOTTids.join(", ")}`);
+              // console.log(externalOTTids);
+
+              describe(`Phyloreference ${wrappedPhyloref.label}`, () => {
+                it(`should be resolvable on the Open Tree of Life`, () => {
+                  assert(internalOTTids.filter(x => x === undefined).length === 0, "All internal specifiers must be matched to OTT Ids");
+                  assert(externalOTTids.filter(x => x === undefined).length === 0, "All external specifiers must be matched to OTT Ids");
+                  assert(internalOTTids.length > 0, "No internal specifiers present in phyloref.");
+
+                  // debug('Request: ', { node_ids: internalOTTids, excluded_node_ids: externalOTTids });
+                  const result = retus("https://api.opentreeoflife.org/v3/tree_of_life/mrca ", {
+                    throwHttpErrors: false,
+                    method: 'post',
+                    json: { node_ids: internalOTTids.map(id => "ott" + id), excluded_node_ids: externalOTTids.map(id => "ott" + id) },
+                    responseType: 'text',
+                  });
+
+                  // There are two types of responses we might get:
+                  //  - If we have external specifiers, we'll get a 'node_ids', where the first one
+                  //    is the node-based name and the last one is the branch-based name, and a 'synth_id'.
+                  //  - If we have only internal specifiers, we'll get a 'mrca' with a 'node_id' (as well as
+                  //    'supported_by' and 'unique_name') and a 'synth_id'.
+
+                  assert(result.statusCode != 404 && result.statusCode != 400, `Could not find MRCA: ${result}`);
+
+                  const body = JSON.parse(result.body);
+                  const synth_id = body['synth_id'];
+                  if (body['node_ids']) {
+                    const node_id = body.node_ids[body.node_ids.length - 1];
+                    debug(`          -> ${body.node_ids.length} node IDs returned, with branch-based node at: https://tree.opentreeoflife.org/opentree/argus/${synth_id}@${node_id}`);
+
+                    const nodeInfo = retus("https://api.opentreeoflife.org/v3/tree_of_life/node_info ", {
+                      method: 'post',
+                      json: { node_id }
+                    });
+
+                    let name = "";
+                    if (nodeInfo['body'] && nodeInfo['body']['taxon'] && nodeInfo['body']['taxon']['unique_name']) {
+                      name = nodeInfo['body']['taxon']['unique_name'];
+                      debug(`            - Identified as ${name}.`);
+                    } else {
+                      debug(`            - Could not identify node.`);
+                    }
+                  } else if(body['mrca']) {
+                    const name = body.mrca.unique_name || ((body.mrca.taxon || {}).name) || "";
+                    debug(`          -> Found MRCA node (${name}): https://tree.opentreeoflife.org/opentree/argus/${synth_id}@${body.mrca.node_id}`);
+                  } else {
+                    assert.fail('Unable to interpret Open Tree MRCA response: ', body);
+                  }
+                });
+              });
+            });
+        }
 
         // Test the produced JSON-LD using JPhyloRef.
         if (FLAG_SLOW_TESTS) {

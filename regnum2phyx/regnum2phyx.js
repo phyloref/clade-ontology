@@ -327,7 +327,7 @@ dump.forEach((entry, index) => {
     phyxFilename = path.join(argv.outputDir, `${phylorefLabel}.json`);
   } else if (argv.filenames === 'regnum-id') {
     // Use the regnum id.
-    if (entry.id) phyxFilename = path.join(argv.outputDir, `REGNUM_${(`${entry.id}`).padStart(6, '0')}.json`);
+    if (entry.id) phyxFilename = path.join(argv.outputDir, `CLADO_${(`${entry.id}`).padStart(6, '0')}.json`);
     else phyxFilename = path.join(argv.outputDir, `${filePrefix}${fileIndex}.json`);
   } else {
     // Default to just the number of the sequence.
