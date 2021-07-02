@@ -114,6 +114,19 @@ describe('Test Phyx files in repository', function () {
         return;
       }
 
+      it('has at least one Newick phylogeny', function () {
+        const phylogenies = json.phylogenies || [];
+        assert.isAbove(phylogenies.length, 0, 'No phylogenies found in file');
+
+        const newicks = phylogenies
+          .map(ph => ph.newick || [])
+          .reduce((a, b) => a.concat(b), [])
+          .filter(nw => nw.trim() !== '');
+        assert.isAbove(newicks.length, 0, 'No Newick phylogenies found in file');
+
+        assert.equal(newicks.length, 1, 'Contains {len(newicks)} Newick phylogenies in {len(phylogenies)} phylogenies.');
+      });
+
       console.log(`Loaded Phyx file ${filename}`);
 
       const skipFile = (json.phylorefs || [])
