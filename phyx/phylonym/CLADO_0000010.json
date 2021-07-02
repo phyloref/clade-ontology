@@ -1,0 +1,154 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Assembling the squamate tree of life: Perspectives from the phenotype and the fossil record.",
+                "year": 2012,
+                "authors": [
+                    {
+                        "name": "J. A. Gauthier",
+                        "alternate": [
+                            "Gauthier, J. A."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Gauthier",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "M. Kearney",
+                        "alternate": [
+                            "Kearney, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Kearney"
+                    },
+                    {
+                        "name": "J. A. Maisano",
+                        "alternate": [
+                            "Maisano, J. A."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Maisano",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "O. Rieppel",
+                        "alternate": [
+                            "Rieppel, O."
+                        ],
+                        "firstname": "O.",
+                        "lastname": "Rieppel"
+                    },
+                    {
+                        "name": "A. D. B. Behlke",
+                        "alternate": [
+                            "Behlke, A. D. B."
+                        ],
+                        "firstname": "A. D.",
+                        "lastname": "Behlke",
+                        "middlename": "B."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.3374/014.053.0101"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Bulletin of the Peabody Museum of Natural History",
+                    "volume": "53",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 10,
+            "label": "Amphisbaenia",
+            "dwc:scientificNameAuthorship": "Kearney , M., de Querioz, K.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Catalogue of the tortoises, crocodiles, and amphisbaenians in the collection of the British Museum.",
+                    "year": 1844,
+                    "authors": [
+                        {
+                            "name": "J. E. Gray",
+                            "alternate": [
+                                "Gray, J. E."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gray",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Trustees of the British Museum",
+                    "city": "London",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The largest crown clade containing Amphisbaena fuliginosa Linnaeus 1758 (Amphisbaenidae) but not Lacerta agilis Linnaeus 1758 (Lacertidae) and Teius (Lacerta) teyou (Daudin 1802) (Teioidea) and Dibamus novaeguineae Duméril and Bibron 1839 (Dibamidae) and Coluber constrictor Linnaeus 1758 (Serpentes).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Amphisbaena fuliginosa Linnaeus, 1758",
+                        "nameComplete": "Amphisbaena fuliginosa"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Lacerta agilis Linnaeus, 1758",
+                        "nameComplete": "Lacerta agilis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Teius (Lacerta) teyou Daudin, 1802",
+                        "nameComplete": "Teius (Lacerta) teyou"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Dibamus novaeguineae Duméril and Bibron, 1839",
+                        "nameComplete": "Dibamus novaeguineae"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Coluber constrictor Linnaeus, 1758",
+                        "nameComplete": "Coluber constrictor"
+                    }
+                }
+            ]
+        }
+    ]
+}

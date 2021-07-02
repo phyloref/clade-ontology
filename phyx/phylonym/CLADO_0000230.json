@@ -1,0 +1,159 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Ordovician edrioasteroids from Morocco: Faunal exchanges across the Rheic Ocean.",
+                "year": 2011,
+                "authors": [
+                    {
+                        "name": "C. D. Sumrall",
+                        "alternate": [
+                            "Sumrall, C. D."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Sumrall",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "S. Zamora",
+                        "alternate": [
+                            "Zamora, S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Zamora"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "6",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1080/14772019.2010.499137"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "J. Sys. Pal.",
+                    "volume": "9",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Revised phylogeny and functional interpretation of the Edrioasteroidea based on new taxa from the Early and Middle Ordovician of western Utah.",
+                "year": 1994,
+                "authors": [
+                    {
+                        "name": "Guensburg",
+                        "alternate": [
+                            "Guensburg ,"
+                        ],
+                        "lastname": "Guensburg"
+                    },
+                    {
+                        "name": "Sprinkle",
+                        "alternate": [
+                            "Sprinkle ,"
+                        ],
+                        "lastname": "Sprinkle"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Fieldiana (Geology)",
+                    "volume": "29",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 230,
+            "label": "Isorophida",
+            "dwc:scientificNameAuthorship": "Sumrall, C. D.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "A study of North American Edrioasteroidea.",
+                    "year": 1976,
+                    "authors": [
+                        {
+                            "name": "M. M. Bell",
+                            "alternate": [
+                                "Bell, M. M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Bell",
+                            "middlename": "M."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "New York St. Mus. Mem",
+                    "pages": "476",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The clade originating in the most recent common ancestor of Streptaster vorticellatus (Hall 1866), Argodiscus espilezorum Sumrall and Zamora 2011, Carneyella pilea (Hall 1866), Isorophus cincinnatiensis (Roemer 1851), and Agelacrinites hamiltonensis Vanuxem 1842.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Streptaster vorticellatus Hall, 1866",
+                        "nameComplete": "Streptaster vorticellatus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Argodiscus espilezorum Sumrall and Zamora, 2011",
+                        "nameComplete": "Argodiscus espilezorum"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Carneyella pilea Hall, 1866",
+                        "nameComplete": "Carneyella pilea"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Isorophus cincinnatiensis Roemer, 1851",
+                        "nameComplete": "Isorophus cincinnatiensis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Agelacrinites hamiltonensis Vanuxem, 1842",
+                        "nameComplete": "Agelacrinites hamiltonensis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Phylogeny of the Carnivora: basal relationships among the carnivoramorphans, and assessment of the position of “Miacoidea” relative to crown-clade Carnivora.",
+                "year": 2005,
+                "edition": "3",
+                "authors": [
+                    {
+                        "name": "Wesley-Hunt",
+                        "alternate": [
+                            "Wesley-Hunt,"
+                        ],
+                        "lastname": "Wesley-Hunt"
+                    },
+                    {
+                        "name": "Flynn",
+                        "alternate": [
+                            "Flynn,"
+                        ],
+                        "lastname": "Flynn"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": ", 12.2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1017/S1477201904001518"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "J. Syst. Palaeontology",
+                    "volume": "1",
+                    "identifier": []
+                }
+            },
+            "newick": "((((((((((((Miacis_cognitus, Daphoenus/Amphicyonid), \n((Hesperocyon_gregarious, (Otarocyon_macdonaldi, Canis_latrans)),\n(Zodiolestes_diamonelixensis, \n((Pteronarctos_goedertae, Otariidae),\n((Gulo_gulo, Mephitis), \n((Ailurus_fulgens, Ursus), Procyon_lotor)))))),\n\n((Dinictis_felina, Hoplophoneus_sp.), \n(Nandinia_binotata,\n((Palaeoprionodon_lamandini, (Proailurus_lemanensis, Stenogale_julieni)), \n(((Herpestes, (Felis, Hyaena)), Civettictis), Herpestides_antiquus))))),\n\nTapocyon_robustus), \n\n(Prohesperocyon_wilsoni, Miacis_sylvestris)), \n\nMiacis_parvivorus),\n\n(Vulpavus_ovatus, Vulpavus_profectus)), \n\nOodectes_herpestoides), \n\n((Protictis_schaffi, (Viveravus_minutus, Viverravus_gracilis)), Didymictis_vancleveae)),\n\n(Hyaenodon, Thinocyon)), \n\n(Leptictis, Erinaceus)), Echinosorex)"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 267,
+            "label": "Pan-Carnivora",
+            "dwc:scientificNameAuthorship": "Flynn, J. J., Wyss, A. R., Wolsan, M.",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The total clade composed of the crown clade Carnivora and all extinct organisms or species sharing a more recent common ancestor with Carnivora than with any extant organisms or species that are not members of Carnivora.",
+            "internalSpecifiers": [],
+            "externalSpecifiers": []
+        }
+    ]
+}

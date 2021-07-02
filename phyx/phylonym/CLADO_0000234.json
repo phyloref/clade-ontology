@@ -1,0 +1,160 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Global patterns of diversification in the history of modern amphibians.",
+                "year": 2007,
+                "authors": [
+                    {
+                        "name": "K. Roelants",
+                        "alternate": [
+                            "Roelants , K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Roelants"
+                    },
+                    {
+                        "name": "D. J. Gower",
+                        "alternate": [
+                            "Gower, D. J."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Gower",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "M. Wilkinson",
+                        "alternate": [
+                            "Wilkinson, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Wilkinson"
+                    },
+                    {
+                        "name": "S. P. Loader",
+                        "alternate": [
+                            "Loader, S. P."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Loader",
+                        "middlename": "P."
+                    },
+                    {
+                        "name": "S. D. Biju",
+                        "alternate": [
+                            "Biju, S. D."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Biju",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "K. Guillaume",
+                        "alternate": [
+                            "Guillaume, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Guillaume"
+                    },
+                    {
+                        "name": "L. Moriau",
+                        "alternate": [
+                            "Moriau, L."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Moriau"
+                    },
+                    {
+                        "name": "F. Bossuyt",
+                        "alternate": [
+                            "Bossuyt, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Bossuyt"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1073/pnas.0608378104"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Proceedings of the National Academy of Science U. S. A.",
+                    "volume": "104",
+                    "identifier": []
+                }
+            },
+            "newick": "((Andrias, (Batrachuperus, Hynobius)),\n\n(Siren,\n\n(((Ambystoma, Dicamptodon),\n\n((Salamandra, ((Pleurodeles, Tylototriton), (Taricha, (Calotriton, Triturus)))))),\n\n((Proteus, Necturus), (Rhyacotriton, (Amphiuma, \n((Blitoglossa, (Eurycea, Pseudotriton)),\n((Plethodon, ((Desmognathus, Ensatira), (Hydromantes, Speleomantes)))))))))))"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 234,
+            "label": "Caudata",
+            "dwc:scientificNameAuthorship": "Wake, D.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Introductio ad historiam naturelam, sistens genera lapidum, planarum, edt animalium hactenus detecta, caracteribus essentialibus donate, in tribus divisa, subinde ad leges naturae.",
+                    "year": 1777,
+                    "authors": [
+                        {
+                            "name": "J. A. Scopoli",
+                            "alternate": [
+                                "Scopoli, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Scopoli",
+                            "middlename": "A."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "city": "Gerle, Prague",
+                    "pages": ".  i-x + 1-506 + i-xxxvi",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Salamandra salamandra Linnaeus 1758 (Salamandridae), Siren lacertina Österdam 1766 (Sirenidae) and Cryptobranchus (originally Salamandra) alleganiensis Daudin 1803 (Cryptobranchidae).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Salamandra salamandra Linnaeus, 1758",
+                        "nameComplete": "Salamandra salamandra"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Siren lacertina Österdam, 1766",
+                        "nameComplete": "Siren lacertina"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Cryptobranchus (originally Salamandra) alleganiensis Daudin, 1803",
+                        "nameComplete": "Cryptobranchus (originally Salamandra) alleganiensis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

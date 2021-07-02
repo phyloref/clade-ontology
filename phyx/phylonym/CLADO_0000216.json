@@ -1,0 +1,236 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "The assembly of the avian body plan: a 160-million-year-long process.",
+                "year": 2018,
+                "edition": "57",
+                "authors": [
+                    {
+                        "name": "A. Cau",
+                        "alternate": [
+                            "Cau, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Cau"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Bollettino della Società Paleontologica Italiana",
+                    "volume": "1",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "The early evolution of archosaurs: relationships and the origin of major clades.",
+                "year": 2011,
+                "authors": [
+                    {
+                        "name": "Nesbitt",
+                        "alternate": [
+                            "Nesbitt,"
+                        ],
+                        "lastname": "Nesbitt"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "52",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1206/351.1"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Bulletin American Museum Natural History",
+                    "volume": "352",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Untangling the dinosaur family tree.",
+                "year": 2017,
+                "authors": [
+                    {
+                        "name": "M. C. Langer",
+                        "alternate": [
+                            "Langer, M. C."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Langer",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "M. D. Ezcurra",
+                        "alternate": [
+                            "Ezcurra, M. D."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Ezcurra",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "O. W. M. Rauhut",
+                        "alternate": [
+                            "Rauhut, O. W. M."
+                        ],
+                        "firstname": "O. W.",
+                        "lastname": "Rauhut",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "M. J. Benton",
+                        "alternate": [
+                            "Benton, M. J."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Benton",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "F. Knoll",
+                        "alternate": [
+                            "Knoll, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Knoll"
+                    },
+                    {
+                        "name": "B. W. McPhee",
+                        "alternate": [
+                            "McPhee, B. W."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "McPhee",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "F. E. Novas",
+                        "alternate": [
+                            "Novas, F. E."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Novas",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "D. Pol",
+                        "alternate": [
+                            "Pol, D."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Pol"
+                    },
+                    {
+                        "name": "S. L. Brusatte",
+                        "alternate": [
+                            "Brusatte, S. L."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Brusatte",
+                        "middlename": "L."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1038/nature21700"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Nature",
+                    "volume": "551",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 216,
+            "label": "Theropoda",
+            "dwc:scientificNameAuthorship": "Naish, D., Cau, A., Holtz, T. R., Fabbri, M., Gauthier, J. A.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Principal characters of American Jurassic dinosaurs. Part. V.",
+                    "year": 1881,
+                    "edition": "3",
+                    "authors": [
+                        {
+                            "name": "O. C. Marsh",
+                            "alternate": [
+                                "Marsh, O. C."
+                            ],
+                            "firstname": "O.",
+                            "lastname": "Marsh",
+                            "middlename": "C."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "American Journal of Science",
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "American Journal of Science",
+                        "volume": "21",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The largest clade containing Allosaurus fragilis Marsh 1877 (Theropoda) but neither Plateosaurus engelhardti Meyer 1837 (Sauropodomorpha) nor Heterodontosaurus tucki Crompton and Charig 1962 (Ornithischia).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Allosaurus fragilis Marsh, 1877",
+                        "nameComplete": "Allosaurus fragilis"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Plateosaurus engelhardti Meyer, 1837",
+                        "nameComplete": "Plateosaurus engelhardti"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Heterodontosaurus tucki Crompton and Charig, 1962",
+                        "nameComplete": "Heterodontosaurus tucki"
+                    }
+                }
+            ]
+        }
+    ]
+}

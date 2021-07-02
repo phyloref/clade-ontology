@@ -1,0 +1,479 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Phylogeny of the \"forgotten\" cellular slime mold, Fonticula alba, reveals a key evolutionary branch within Opisthokonta.",
+                "year": 2009,
+                "authors": [
+                    {
+                        "name": "M. W. Brown",
+                        "alternate": [
+                            "Brown, M. W."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Brown",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "F. W. Spiegel",
+                        "alternate": [
+                            "Spiegel, F. W."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Spiegel",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "J. D. Silberman",
+                        "alternate": [
+                            "Silberman, J. D."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Silberman",
+                        "middlename": "D."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1093/molbev/msp185"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Biology & Evolution",
+                    "volume": "26",
+                    "identifier": []
+                }
+            },
+            "newick": "((((((((\n((Fonticula_alba, Nuclearia_simplex), \n(Bastocladiella_emersonii, \n((Rhizophlyctis_rosea, (Batrachochytrium_dendrobatidis, Chytriomyces_confervae)),\n((Mortierella_verticillata, (Umbelopsis_ramanniana, (Rhizopus_stolonifer, Mucor_racemosus))),\n(\n(Cryptococcus_neoformans, (Schizophyllum_commune, Coprinopsis_cinerea)),\n(Schizosaccharomyces_pombe, (Neurospora_crassa, (Candida_albicans, Saccaromyces_cerevisiae)))))))),\n\n((((((Nematostella_vectensis, Geodia_cydonium), \n(Salpingoeca_amphoridium, Monosiga_ovata)), \nMinisteria_vibrans), Capsaspora_owczarzaki), \n(Sphaeroforma_arctica, Amoebidium_parasiticum)), \nCorallochytrium_limacisporum)),\n\nApusomonas_proboscidea), \n\n(Planomonas_micra, (Breviata_anathema, (Hartmanella_vermiformis, Acanthamoeba_castellanii)))),\n\nGonimonas_truncata), \n\n(Cyanophora_paradoxa, Glaucocystis_nostochinearum)), \n\n((Mesostigma_viride, Arabidopsis_thaliana), Chlamydomonas_reinhardtii)), \n\n(Apodachyla_brachynema, Phytophthora_palmivora)), \n\n((Oxytricha_granulifera, Paramecium_caudatum), Toxoplasma_gondii))"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "The protistan origins of animals and fungi.",
+                "year": 2006,
+                "authors": [
+                    {
+                        "name": "E. T. Steenkamp",
+                        "alternate": [
+                            "Steenkamp , E. T."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Steenkamp",
+                        "middlename": "T."
+                    },
+                    {
+                        "name": "J. Wright",
+                        "alternate": [
+                            "Wright, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Wright"
+                    },
+                    {
+                        "name": "S. L. Baldauf",
+                        "alternate": [
+                            "Baldauf, S. L."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Baldauf",
+                        "middlename": "L."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1093/molbev/msj011"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Phylogenetics and Evolution",
+                    "volume": "23",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Toward resolving the eukaryotic tree: the phylogenetic positions of jakobids and cercozoans.",
+                "year": 2007,
+                "authors": [
+                    {
+                        "name": "N. Rodríguez-Ezpeleta",
+                        "alternate": [
+                            "Rodríguez-Ezpeleta, N."
+                        ],
+                        "firstname": "N.",
+                        "lastname": "Rodríguez-Ezpeleta"
+                    },
+                    {
+                        "name": "H. Brinkmann",
+                        "alternate": [
+                            "Brinkmann, H."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Brinkmann"
+                    },
+                    {
+                        "name": "G. Burger",
+                        "alternate": [
+                            "Burger, G."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Burger"
+                    },
+                    {
+                        "name": "A. J. Roger",
+                        "alternate": [
+                            "Roger, A. J."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Roger",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "M. W. Gray",
+                        "alternate": [
+                            "Gray, M. W."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Gray",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "H. Philippe",
+                        "alternate": [
+                            "Philippe, H."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Philippe"
+                    },
+                    {
+                        "name": "B. F. Lang",
+                        "alternate": [
+                            "Lang, B. F."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Lang",
+                        "middlename": "F."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.cub.2007.07.036"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Current Biology",
+                    "volume": "17",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Broadly sampled multigene analyses yield a well-resolved eukaryotic tree of life.",
+                "year": 2010,
+                "authors": [
+                    {
+                        "name": "L. W. Parfrey",
+                        "alternate": [
+                            "Parfrey, L. W."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Parfrey",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "J. Grant",
+                        "alternate": [
+                            "Grant, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Grant"
+                    },
+                    {
+                        "name": "Y. I. Tekle",
+                        "alternate": [
+                            "Tekle, Y. I."
+                        ],
+                        "firstname": "Y.",
+                        "lastname": "Tekle",
+                        "middlename": "I."
+                    },
+                    {
+                        "name": "E. Lasek-Nesselquist",
+                        "alternate": [
+                            "Lasek-Nesselquist, E."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Lasek-Nesselquist"
+                    },
+                    {
+                        "name": "H. G. Morrison",
+                        "alternate": [
+                            "Morrison, H. G."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Morrison",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "M. L. Sogin",
+                        "alternate": [
+                            "Sogin, M. L."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Sogin",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "D. J. Patterson",
+                        "alternate": [
+                            "Patterson, D. J."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Patterson",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "L. A. Katz",
+                        "alternate": [
+                            "Katz, L. A."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Katz",
+                        "middlename": "A."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1093/sysbio/syq037"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Systematic Biology",
+                    "volume": "59",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Novel predators reshape holozoan phylogeny and reveal the presence of a two-component signaling system in the ancestor of animals.",
+                "year": 2017,
+                "authors": [
+                    {
+                        "name": "E. D. Hehenberger",
+                        "alternate": [
+                            "Hehenberger , E. D."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Hehenberger",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "V. Tikhonenkov",
+                        "alternate": [
+                            "Tikhonenkov, V."
+                        ],
+                        "firstname": "V.",
+                        "lastname": "Tikhonenkov"
+                    },
+                    {
+                        "name": "M. Kolisko",
+                        "alternate": [
+                            "Kolisko, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Kolisko"
+                    },
+                    {
+                        "name": "J. Del Campo",
+                        "alternate": [
+                            "Del Campo, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Del Campo"
+                    },
+                    {
+                        "name": "A. S. Esaulov",
+                        "alternate": [
+                            "Esaulov, A. S."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Esaulov",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "A. P. Mylnikov",
+                        "alternate": [
+                            "Mylnikov, A. P."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Mylnikov",
+                        "middlename": "P."
+                    },
+                    {
+                        "name": "P. J. Keeling",
+                        "alternate": [
+                            "Keeling, P. J."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Keeling",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.cub.2017.06.006"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Current Biology",
+                    "volume": "27",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 72,
+            "label": "Opisthokonta",
+            "dwc:scientificNameAuthorship": "Simpson, A. G. B., Medina, M.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book_section",
+                    "title": "Evolutionary biology of the fungi.",
+                    "section_title": "The origin of fungi and pseudofungi.",
+                    "year": 1987,
+                    "authors": [
+                        {
+                            "name": "T. Cavalier-Smith",
+                            "alternate": [
+                                "Cavalier-Smith, T."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Cavalier-Smith"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "A. D. M. Rayner",
+                            "alternate": [
+                                "Rayner, A. D. M."
+                            ],
+                            "firstname": "A.",
+                            "lastname": "Rayner",
+                            "middlename": "D. M."
+                        },
+                        {
+                            "name": "C. M. Brasier",
+                            "alternate": [
+                                "Brasier, C. M."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Brasier",
+                            "middlename": "M."
+                        },
+                        {
+                            "name": "D. Moore",
+                            "alternate": [
+                                "Moore, D."
+                            ],
+                            "firstname": "D.",
+                            "lastname": "Moore"
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "Cambridge University Press",
+                    "city": "Cambridge",
+                    "pages": "339-353",
+                    "figure": "23.2",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing Homo sapiens Linnaeus 1758 (Metazoa), Neurospora crassa Shear and Dodge 1927 (Fungi), and Monosiga ovata Saville Kent 1882 (Choanoflagellata) but not Dictyostelium discoideum Raper 1935 (Amoebozoa) or Arabidopsis thaliana (Linnaeus) Heynhold, 1842 (Archaeplastida).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Homo sapiens Linnaeus, 1758",
+                        "nameComplete": "Homo sapiens"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Neurospora crassa Shear and Dodge, 1927",
+                        "nameComplete": "Neurospora crassa"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Monosiga ovata Kent, 1882",
+                        "nameComplete": "Monosiga ovata"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Dictyostelium discoideum Raper, 1935",
+                        "nameComplete": "Dictyostelium discoideum"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Arabidopsis thaliana Heynhold, 1842",
+                        "nameComplete": "Arabidopsis thaliana"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,524 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Entorrhizomycota: a new fungal phylum reveals new perspectives on the evolution of Fungi.",
+                "year": 2015,
+                "authors": [
+                    {
+                        "name": "R. Bauer",
+                        "alternate": [
+                            "Bauer, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Bauer"
+                    },
+                    {
+                        "name": "S. Garnica",
+                        "alternate": [
+                            "Garnica, S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Garnica"
+                    },
+                    {
+                        "name": "F. Oberwinkler",
+                        "alternate": [
+                            "Oberwinkler, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Oberwinkler"
+                    },
+                    {
+                        "name": "K. Riess",
+                        "alternate": [
+                            "Riess, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Riess"
+                    },
+                    {
+                        "name": "M. Weiß",
+                        "alternate": [
+                            "Weiß, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Weiß"
+                    },
+                    {
+                        "name": "D. Begerow",
+                        "alternate": [
+                            "Begerow, D."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Begerow"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1371/journal.pone.0128183"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "PLOS One",
+                    "volume": "10",
+                    "identifier": []
+                }
+            },
+            "newick": "((((((((((((((((((Tephrocybe_rancida, Agaricus_bisporus), Ramaria_stricta),\n(Sebacina_incrustans, Piriformospora_indica)), \nHydnum_repandum), Calocera_vicosa), Tremella_mesenterica),\n\n((((Malassezia_pachydermatis, Ustilago_tritici), Tilletia_goloskokovii),\nExobasidium_vaccinii), Wallemia_sebi)),\n\n(((Agaricostilbum_pulcherrimum, Mixia_osmundae),\nMicrobotryum_violaceum), Puccinia_graminis)),\n\n((((((Neurospra_crassa, Magnaporthe_grisea), Sclerotinia_scerotiorum),\n(Aspergillus_fumigatus, Lecanora_hybocarpa)), \nAleuria_aurantia), \n(Saccharomyces_cerevisiae, Candida_albicans)), \n((Taphrina_deformans, Protomyces_inouyei), Neolecta_vitellina)),\n\n((Entorrhiza_aschersoniana, Entorrhiza_casparyana), Entorrhiza_parvula)),\n\n((Gigaspora_gigantea, Funneliformis_mosseae), Mucor_hiemalis)),\n\nMortierella_verticillata),\n\nBasidiobolus_ranarum),\n\n(((Caniomyces_stellatus, Zancudomyces_culisetae), Furculomyces_boomerangus),\nCoemansia_reversa)),\n\n(Conidiobolus_coronatus, Entomophthora_muscae)),\n\n(((Catenaria_anguillulae, Allomyces_macrogynus), Coelomomyces_stegomyiae),\nPhysoderma_maydis)),\n\n(((((Polychytrium_aggregatum, Cladochytrium_replicatum), \nBoothiomyces_macroporosum), Synchytrium_macrosporum),\n(Hyaloraphidium_curvatum, Monoblepharis_macranda)),\nNeocallimastix_frontalis)),\n\nEncephalitozoon_cuniculi),\n\n(((Mus_musculus, Homo_sapiens), Drosophila_melanogaster),\nCaenorhabditis_elegans))"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Reconstructing the early evolution of Fungi using a six-gene phylogeny.",
+                "year": 2006,
+                "authors": [
+                    {
+                        "name": "T. Y. James",
+                        "alternate": [
+                            "James, T. Y."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "James",
+                        "middlename": "Y."
+                    },
+                    {
+                        "name": "F. Kauff",
+                        "alternate": [
+                            "Kauff, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Kauff"
+                    },
+                    {
+                        "name": "C. Schoch",
+                        "alternate": [
+                            "Schoch, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Schoch"
+                    },
+                    {
+                        "name": "P. B. Matheny",
+                        "alternate": [
+                            "Matheny, P. B."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Matheny",
+                        "middlename": "B."
+                    },
+                    {
+                        "name": "V. Hofstetter",
+                        "alternate": [
+                            "Hofstetter, V."
+                        ],
+                        "firstname": "V.",
+                        "lastname": "Hofstetter"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1038/nature05110"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Nature",
+                    "volume": "443",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "A consistent phylogenetic backbone for the Fungi.",
+                "year": 2011,
+                "authors": [
+                    {
+                        "name": "I. Ebersberger",
+                        "alternate": [
+                            "Ebersberger, I."
+                        ],
+                        "firstname": "I.",
+                        "lastname": "Ebersberger"
+                    },
+                    {
+                        "name": "R. de Matos Simoes",
+                        "alternate": [
+                            "de Matos Simoes, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "de Matos Simoes"
+                    },
+                    {
+                        "name": "A. Kupczok",
+                        "alternate": [
+                            "Kupczok, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Kupczok"
+                    },
+                    {
+                        "name": "M. Gube",
+                        "alternate": [
+                            "Gube, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Gube"
+                    },
+                    {
+                        "name": "E. Kothe",
+                        "alternate": [
+                            "Kothe, E."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Kothe"
+                    },
+                    {
+                        "name": "K. Voight",
+                        "alternate": [
+                            "Voight, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Voight"
+                    },
+                    {
+                        "name": "A. von Haeseler",
+                        "alternate": [
+                            "von Haeseler, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "von Haeseler"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1093/molbev/msr285"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Biology and Evolution",
+                    "volume": "29",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Phylogenomic analyses indicate that early fungi evolved digesting cell walls of algal ancestors of land plants.",
+                "year": 2015,
+                "authors": [
+                    {
+                        "name": "Y. Chang",
+                        "alternate": [
+                            "Chang, Y."
+                        ],
+                        "firstname": "Y.",
+                        "lastname": "Chang"
+                    },
+                    {
+                        "name": "S. Wang",
+                        "alternate": [
+                            "Wang, S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Wang"
+                    },
+                    {
+                        "name": "S. Sekimoto",
+                        "alternate": [
+                            "Sekimoto, S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Sekimoto"
+                    },
+                    {
+                        "name": "A. L. Aerts",
+                        "alternate": [
+                            "Aerts, A. L."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Aerts",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "C. Choi",
+                        "alternate": [
+                            "Choi, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Choi"
+                    },
+                    {
+                        "name": "A. Clum",
+                        "alternate": [
+                            "Clum, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Clum"
+                    },
+                    {
+                        "name": "K. M. LaButti",
+                        "alternate": [
+                            "LaButti, K. M."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "LaButti",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "E. A. Lindquist",
+                        "alternate": [
+                            "Lindquist, E. A."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Lindquist",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "C. Y. Ngan",
+                        "alternate": [
+                            "Ngan, C. Y."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Ngan",
+                        "middlename": "Y."
+                    },
+                    {
+                        "name": "R. A. Ohm",
+                        "alternate": [
+                            "Ohm, R. A."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Ohm",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "A. A. Salamov",
+                        "alternate": [
+                            "Salamov, A. A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Salamov",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "I. V. Grigoriev",
+                        "alternate": [
+                            "Grigoriev, I. V."
+                        ],
+                        "firstname": "I.",
+                        "lastname": "Grigoriev",
+                        "middlename": "V."
+                    },
+                    {
+                        "name": "J. W. Spatafora",
+                        "alternate": [
+                            "Spatafora, J. W."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Spatafora",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "M. L. Berbee",
+                        "alternate": [
+                            "Berbee, M. L."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Berbee",
+                        "middlename": "L."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1093/gbe/evv090"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Genome Biology and Evolution",
+                    "volume": "7",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Phylogenetic resolution of deep eukaryotic and fungal relationships using highly conserved low-copy nuclear genes.",
+                "year": 2016,
+                "authors": [
+                    {
+                        "name": "R. Ren",
+                        "alternate": [
+                            "Ren, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Ren"
+                    },
+                    {
+                        "name": "Y. Sun",
+                        "alternate": [
+                            "Sun, Y."
+                        ],
+                        "firstname": "Y.",
+                        "lastname": "Sun"
+                    },
+                    {
+                        "name": "Y. Zhao",
+                        "alternate": [
+                            "Zhao, Y."
+                        ],
+                        "firstname": "Y.",
+                        "lastname": "Zhao"
+                    },
+                    {
+                        "name": "D. Geiser",
+                        "alternate": [
+                            "Geiser, D."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Geiser"
+                    },
+                    {
+                        "name": "H. Ma",
+                        "alternate": [
+                            "Ma, H."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Ma"
+                    },
+                    {
+                        "name": "X. Zhou",
+                        "alternate": [
+                            "Zhou, X."
+                        ],
+                        "firstname": "X.",
+                        "lastname": "Zhou"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "5",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1093/gbe/evw196"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Genome Biology and Evolution.",
+                    "volume": "8",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 35,
+            "label": "Dikarya",
+            "dwc:scientificNameAuthorship": "Hibbett, D. S., Blackwell, M., James, T., Spatafora, J. W., Taylor, J. W., Vilgalys, R.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "A higher-level phylogenetic classification of the Fungi.",
+                    "year": 2007,
+                    "authors": [
+                        {
+                            "name": "D. S. Hibbett",
+                            "alternate": [
+                                "Hibbett, D. S."
+                            ],
+                            "firstname": "D.",
+                            "lastname": "Hibbett",
+                            "middlename": "S."
+                        },
+                        {
+                            "name": "T. Y. James",
+                            "alternate": [
+                                "James, T. Y."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "James",
+                            "middlename": "Y."
+                        },
+                        {
+                            "name": "R. Vilgalys",
+                            "alternate": [
+                                "Vilgalys, R."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Vilgalys"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Mycol. Res.",
+                        "volume": "111",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing Coprinopsis cinerea (Schaeff.) Redhead, Vilgalys & Moncalvo 2001 (Basidiomycota/Agaricomycotina), Saccharomyces cerevisiae Meyen 1838 (Ascomycota), and Entorrhiza casparyana (Magnus) Lagerb. 1888 (Entorrhizomycota).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Coprinopsis cinerea Redhead and Vilgalys and Moncalvo, 2001",
+                        "nameComplete": "Coprinopsis cinerea"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Saccharomyces cerevisiae Meyen, 1838",
+                        "nameComplete": "Saccharomyces cerevisiae"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Entorrhiza casparyana Magnus, 1888",
+                        "nameComplete": "Entorrhiza casparyana"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

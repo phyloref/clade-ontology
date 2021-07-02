@@ -1,0 +1,164 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Defining the major lineages of red algae (Rhodophyta).",
+                "year": 2006,
+                "authors": [
+                    {
+                        "name": "H. S. Yoon",
+                        "alternate": [
+                            "Yoon, H. S."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Yoon",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "K. M. Müller",
+                        "alternate": [
+                            "Müller, K. M."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Müller",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "R. G. Sheath",
+                        "alternate": [
+                            "Sheath, R. G."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Sheath",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "F. D. Ott",
+                        "alternate": [
+                            "Ott, F. D."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Ott",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "D. Bhattacharya",
+                        "alternate": [
+                            "Bhattacharya, D."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Bhattacharya"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.1529-8817.2006.00210.x"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Phycology",
+                    "volume": "42",
+                    "identifier": []
+                }
+            },
+            "newick": "((((((((Bangia_atropurpurea, Porphyra_purpurea), \n(Chondrus_crispus, Palmaria_palmata)), \n(Dixoniella_grisea, Rhodella_violacea)), \n\n(((Stylonema_alsidii, Rhodosorus_marinus), Bangiopsis_subsmplex),\n(Compsopogon_coeruleus, Rhodochaete_parvula))),\n\n(Flintiella_sanguinaria, Porphyridum_aerugineum)),\n\n((Cyanidium_caldarium, Cyanidioschzon_merolae), Galdieria_sulphuraria)),\n\n(((((((Arabidopsis_thaliana, Zea_mays), Pinus_thunbergii), \nPsilotum_nudum), (Anthoceros_formosae, Marchantia_polymorpha)),\nChaetosphaeridium_globosum), \n((Chlamydomonas_reinhardtii, Chlorella_vulgaris), Mesostigma_viride)),\n\n(Cyanophora_paradoxa, Glaucocystis_nostochinearum))),\n\n((Nostoc_sp., Thermosynechococcus_elongatus), Synechocystis_sp.))"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 119,
+            "label": "Cyanidiales",
+            "dwc:scientificNameAuthorship": "Saunders, G. W.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book_section",
+                    "title": "Botanik. Bind II. Systematisk botanik Nr. 2. I Kommission hos Munksgaard",
+                    "section_title": "Alger",
+                    "year": 1962,
+                    "authors": [
+                        {
+                            "name": "T. Christensen",
+                            "alternate": [
+                                "Christensen, T."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Christensen"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "T. W. Bocher",
+                            "alternate": [
+                                "Bocher, T. W."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Bocher",
+                            "middlename": "W."
+                        },
+                        {
+                            "name": "M. Lange",
+                            "alternate": [
+                                "Lange, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Lange"
+                        },
+                        {
+                            "name": "T. Sorensen",
+                            "alternate": [
+                                "Sorensen, T."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Sorensen"
+                        }
+                    ],
+                    "series_editors": [],
+                    "city": "Denmark",
+                    "pages": "1-178",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The largest crown clade containing Cyanidium caldarium (J. Tilden) Geitler 1933 and Galdieria sulphuraria (Galdieri) Merola in Merola et al. 1981 but not Compsopogon caeruleus (C. Agardh) Montagne 1846.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Cyanidium caldarium Geitler, 1933",
+                        "nameComplete": "Cyanidium caldarium"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Galdieria sulphuraria Merola, 1981",
+                        "nameComplete": "Galdieria sulphuraria"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Compsopogon caeruleus Montagne, 1846",
+                        "nameComplete": "Compsopogon caeruleus"
+                    }
+                }
+            ]
+        }
+    ]
+}

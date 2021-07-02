@@ -1,0 +1,203 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A phylogenomic study of birds reveals their evolutionary history.",
+                "year": 2008,
+                "authors": [
+                    {
+                        "name": "S. J. Hackett",
+                        "alternate": [
+                            "Hackett, S. J."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Hackett",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "R. T. Kimball",
+                        "alternate": [
+                            "Kimball, R. T."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Kimball",
+                        "middlename": "T."
+                    },
+                    {
+                        "name": "S. Reddy",
+                        "alternate": [
+                            "Reddy, S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Reddy"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1126/science.1157704"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Science",
+                    "volume": "320",
+                    "identifier": []
+                }
+            },
+            "newick": "(.Alligator:0.022561,.Gavialis:0.045458,((((((((((Acanthisitta:0.104596,(((((((((Bombycilla:0.067060,Regulus:0.056671):0.002489,(Sylvia:0.055851,Turdus:0.063024):0.003520):0.000393,((Fringilla:0.036294,Passer:0.040818):0.008852,(Ploceus:0.023436,Vidua:0.027999):0.005305):0.013079):0.009812,Picathartes:0.053895):0.006319,Corvus:0.044225):0.009903,Malurus:0.083712):0.012328,Climacteris:0.077503):0.006066,Menura:0.059299):0.026149,(((((Dendrocolaptes:0.055765,Scytalopus:0.055361):0.004101,Grallaria:0.058324):0.004199,Thamnophilus:0.061805):0.014647,((Mionectes:0.038317,Tyrannus:0.042419):0.011208,Pipra:0.037734):0.028602):0.013458,((Pitta:0.079160,Smithornis:0.054061):0.002972,Sapayoa:0.064324):0.032117):0.014098):0.011135):0.051940,(((((Alisterus:0.025857,Psittacula:0.023140):0.002518,Micropsitta:0.035173):0.003373,(Chalcopsitta:0.035748,Platycercus:0.031536):0.003623):0.005708,Psittacus:0.044181):0.007079,Cacatua:0.034020):0.080722):0.003214,((Daptrius:0.025422,Falco:0.042045):0.020204,(Herpetotheres:0.013273,Micrastur:0.015684):0.017691):0.033545):0.001248,Cariama:0.064557):0.002413,((((((((((Alcedo:0.120941,Momotus:0.084333):0.009393,Todus:0.096383):0.014113,(Brachypteracias:0.059926,Coracias:0.059306):0.025887):0.001850,Merops:0.113525):0.012257,((Bucco:0.097348,Galbula:0.093829):0.029020,((Capito:0.061571,Megalaima:0.070621):0.028918,(Dryocopus:0.045771,Indicator:0.040802):0.019814):0.080422):0.012788):0.004011,((Bucorvus:0.030500,Tockus:0.067023):0.062953,(Phoeniculus:0.098169,Upupa:0.099034):0.100031):0.015769):0.006487,(Pharomachrus:0.031980,Trogon:0.032860):0.086987):0.001360,Leptosomus:0.081090):0.003193,((Colius:0.036846,Urocolius:0.044264):0.104693,((Phodilus:0.021908,Tyto:0.024670):0.038841,(Speotyto:0.042650,Strix:0.019555):0.038003):0.011322):0.001582):0.001889,((((Buteo:0.026466,Gampsonyx:0.047509):0.006245,Pandion:0.039038):0.009904,Sagittarius:0.048561):0.011531,(Cathartes:0.008966,Sarcoramphus:0.007934):0.028138):0.001418):0.001111):0.005212,(((Arenaria:0.046052,((Jacana:0.059560,Rostratula:0.055239):0.009395,(Pedionomus:0.043950,Thinocorus:0.053497):0.016681):0.017520):0.024302,((Dromas:0.025419,Larus:0.032647):0.015026,Turnix:0.188730):0.008810):0.009831,(Burhinus:0.045568,((Charadrius:0.028140,Phegornis:0.026739):0.014782,Haematopus:0.032531):0.014788):0.003951):0.013010):0.002734,((((((((((Anhinga:0.039714,Phalacrocorax:0.051194):0.004943,Morus:0.031659):0.017862,Fregata:0.036293):0.005898,(((Ardea:0.029045,Cochlearius:0.025018):0.032668,Eudocimus:0.053985):0.001574,((Balaeniceps:0.033735,Scopus:0.055110):0.001343,Pelecanus:0.045666):0.010306):0.001878):0.001160,Ciconia:0.043283):0.001253,(((Diomedea:0.026207,(Oceanodroma:0.032772,(Pelecanoides:0.024161,Puffinus:0.015536):0.015313):0.002986):0.000824,Oceanites:0.045177):0.004445,Eudyptula:0.044753):0.002742):0.001953,Gavia:0.049699):0.001400,(Corythaeola:0.040341,Tauraco:0.045392):0.040747):0.001505,(((((Aramus:0.034399,Grus:0.027902):0.016386,Psophia:0.068580):0.007701,((Heliornis:0.081266,Sarothrura:0.098432):0.013724,(Himantornis:0.036588,Rallus:0.035633):0.045303):0.041851):0.020906,(((Centropus:0.105747,Coua:0.072867):0.004570,((Coccyzus:0.038539,Phaenicophaeus:0.024286):0.034617,Cuculus:0.052701):0.028485):0.010289,(Crotophaga:0.065790,Geococcyx:0.075601):0.015668):0.047155):0.001564,(Choriotis:0.022179,Eupodotis:0.024254):0.063626):0.002641):0.002031,Opisthocomus:0.089041):0.002382):0.001494,((((((Aegotheles:0.092918,(((Aerodramus:0.042417,Streptoprocne:0.026977):0.013721,Hemiprocne:0.041301):0.037704,(Colibri:0.036348,Phaethornis:0.039041):0.086258):0.014326):0.012744,(Caprimulgus:0.045907,Eurostopodus:0.042431):0.033167):0.001994,(Batrachostomus:0.038779,Podargus:0.031374):0.051052):0.002299,((Nyctibius_br:0.023877,Nyctibius_gr:0.017044):0.040279,Steatornis:0.075216):0.001377):0.003449,(Eurypyga:0.049583,Rhynochetos:0.045071):0.067821):0.002659,(((((((Columba:0.033245,Geotrygon:0.032737):0.009269,Treron:0.035234):0.001206,(Columbina:0.038143,Otidiphaps:0.023405):0.002133):0.078976,(Mesitornis:0.023582,Monias:0.023104):0.083163):0.002749,(Pterocles:0.030308,Syrrhaptes:0.028131):0.070212):0.001440,(Phaethon_le:0.002726,Phaethon_ru:0.002406):0.075196):0.001028,(Phoenicopterus:0.036539,Podiceps:0.070732):0.019648):0.001701):0.002134):0.044959,(((Alectura:0.030480,Megapodius:0.029367):0.069087,(((Colinus:0.099855,((Coturnix:0.066402,Gallus:0.036350):0.010595,Rollulus:0.068711):0.014614):0.008216,Numida:0.044719):0.063430,Crax:0.090261):0.013369):0.032204,((((((Anas:0.012596,Aythya:0.011903):0.023881,Biziura:0.034803):0.003654,(Anser:0.022753,Malacorhynchus:0.043280):0.003531):0.002077,Oxyura:0.040265):0.054998,Anseranas:0.048445):0.008696,Chauna:0.057828):0.008393):0.044868):0.066177,((((Apteryx:0.038180,(Casuarius:0.014445,Dromaius:0.018430):0.030882):0.002320,((Crypturellus:0.061151,Tinamus:0.042862):0.017360,(Eudromia:0.084637,Nothoprocta:0.080725):0.004910):0.091284):0.001643,Rhea:0.083110):0.011185,Struthio:0.068069):0.055986):0.475018);\n"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Convergence and divergence in the evolution of aquatic birds.",
+                "year": 2001,
+                "authors": [
+                    {
+                        "name": "M. van Tuinen",
+                        "alternate": [
+                            "van Tuinen, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "van Tuinen"
+                    },
+                    {
+                        "name": "D. B. Butvill",
+                        "alternate": [
+                            "Butvill, D. B."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Butvill",
+                        "middlename": "B."
+                    },
+                    {
+                        "name": "J. A. W. Kirsch",
+                        "alternate": [
+                            "Kirsch, J. A. W."
+                        ],
+                        "firstname": "J. A.",
+                        "lastname": "Kirsch",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "S. B. Hedges",
+                        "alternate": [
+                            "Hedges, S. B."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Hedges",
+                        "middlename": "B."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1098/rspb.2001.1679"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Proc. R. Soc. London B",
+                    "volume": "268",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Morphological evidence for sister group relationship between flamingos (Aves: Phoenicopteridae) and grebes (Podicipedidae).",
+                "year": 2004,
+                "authors": [
+                    {
+                        "name": "G. Mayr",
+                        "alternate": [
+                            "Mayr, G."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Mayr"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.1096-3642.2003.00094.x"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Zool. J. Linn. Soc.",
+                    "volume": "140",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 281,
+            "label": "Mirandornithes",
+            "dwc:scientificNameAuthorship": "Sangster, G.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "A name for the flamingo-grebe clade.",
+                    "year": 2005,
+                    "authors": [
+                        {
+                            "name": "G. Sangster",
+                            "alternate": [
+                                "Sangster, G."
+                            ],
+                            "firstname": "G.",
+                            "lastname": "Sangster"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Ibis",
+                        "volume": "147",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing Phoenicopterus chilensis Molina 1782 and Podiceps (originally Colymbus) auritus (Linnaeus 1758).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Phoenicopterus chilensis Molina, 1782",
+                        "nameComplete": "Phoenicopterus chilensis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Podiceps (originally Colymbus) auritus Linnaeus, 1758",
+                        "nameComplete": "Podiceps (originally Colymbus) auritus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

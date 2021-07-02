@@ -1,0 +1,121 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Phylogenetic relationships and divergence times of Charadriiformes genera: multigene evidence for the Cretaceous origin of at least 14 clades of shorebirds.",
+                "year": 2007,
+                "authors": [
+                    {
+                        "name": "A. J. Baker",
+                        "alternate": [
+                            "Baker, A. J."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Baker",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "S. L. Pereira",
+                        "alternate": [
+                            "Pereira, S. L."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Pereira",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "T. A. Paton",
+                        "alternate": [
+                            "Paton, T. A."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Paton",
+                        "middlename": "A."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1098/rsbl.2006.0606"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Biol. Lett.",
+                    "volume": "3",
+                    "identifier": []
+                }
+            },
+            "newick": "(((((((((((((((((((Onychoprion, Sterna), Thalasseus), Chlidonias), \n((Gelochelidon, Hydroprogne), Larosterna)), \n(Phaetusa, Sternula)),\n\n(((((Larus, Rissa), Pagophila), Xema), (Creagrus, Rhodostethia)), Rhychops))),\n\nGygis), Anous),\n\n(((((((((Alca, Pinguinus), Alle), Uria), Synthliboramphus), Cepphus), Brachyramphus),\n(((Aethia, Cyclorrhynchus), Ptychoramphus), (Cerorhincha, Fratercula)))),\n(Catharacta, Stercorarius))),\n\n((((Glareola, Stiltia), Cursorius), Rhinoptilus))),\n(Turnix))),\n\n(((((((((Aphriza, Calidris), Eurynorphynchus), \n(Lamicola, Philomachus),\n(Micropalama, Tryngites)),\nArenaria),\n(((((Heteroscelus, Tringa), Catoptrophorus), Actitis), Xenus), Phalaropus)),\n(((Ceonocorypha, Gallinago), Scolopax), (Limnodromus, Lymnocryptes))),\nLimosa),\n(Bartramia, Numenius)),\n((((((Irediparra, Microparra), Actophilornis), (Hydrophasianus, Jacana)), (Nycticryphes, Rostratula)),\n((Attagis, Thinocorus), Pedionomus))))),\n\n((((((((((Elseyornis, Thinornis), Chadarius), Eudromias), Phegornis), Oreopholus),\n(((Anarchynchus, Peltohyas), Erythrogonys), Vanellus)),\n((((((Cladorhychus, Himantopus), Recurvirostra)), (Haematopus, Ibidoryncha))), Pluvialis)))\n,\nPluvianus), \n((Burhinus, Esacus), (Chionis, Pluvianellus)))),\n\n(Pterocles), Columba))),\n\n(((Anhima, Chauna), Anas), \n((Crax, Gallus), Megapodius)), Struthio)\n\n\n\n\n\n\n\n\n\n"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 282,
+            "label": "Charadriiformes",
+            "dwc:scientificNameAuthorship": "Sangster, G.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "On certain muscles of birds and their value in the classification. Part II.",
+                    "year": 1874,
+                    "authors": [
+                        {
+                            "name": "A. H. Garrod",
+                            "alternate": [
+                                "Garrod, A. H."
+                            ],
+                            "firstname": "A.",
+                            "lastname": "Garrod",
+                            "middlename": "H."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Proc. Zool. Soc.",
+                    "city": "London",
+                    "pages": "111-123",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing Charadrius hiaticula Linnaeus 1758 (Charadrii), Scolopax minor J. F. Gmelin 1789 (Scolopaci) and Larus marinus Linnaeus 1758 (Lari).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Charadrius hiaticula Linnaeus, 1758",
+                        "nameComplete": "Charadrius hiaticula"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Scolopax minor Gmelin, 1789",
+                        "nameComplete": "Scolopax minor"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Larus marinus Linnaeus, 1758",
+                        "nameComplete": "Larus marinus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

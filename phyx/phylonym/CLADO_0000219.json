@@ -1,0 +1,91 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Amniote phylogeny and the importance of fossils.",
+                "authors": [
+                    {
+                        "name": "J. A. Gauthier",
+                        "alternate": [
+                            "Gauthier, J. A."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Gauthier",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "A. G. Kluge",
+                        "alternate": [
+                            "Kluge, A. G."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Kluge",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "T. B. Rowe",
+                        "alternate": [
+                            "Rowe, T. B."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Rowe",
+                        "middlename": "B."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.1096-0031.1988.tb00514"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Cladistics",
+                    "volume": "4",
+                    "identifier": []
+                }
+            },
+            "newick": "((((((((((((Ornithosuchia, Pseudosuchia), Proterochampsidae),\nErythrosuchidae), Proterosuchidae), Protorosauria), Choristodera), Trilophosaurus), Rhynchosauria),\nLepidosauromorpha), Araeoscelidia), (Testudines, Captorhinidae)),\n(((((((((((((((Mammalia, Morganucodontidae), Tritylodontidae), Exaeretodon), Diademodon), Thrinaxodon),\nProcynosuchus), Therocephalia), Dicynodontia), Gorgonopsia), Dinocephalia), Biarmosuchia), Sphenacodontinae),\nEdaphosaurus), Ophiacodon), Casea))\n\n"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 219,
+            "label": "Cynodontia",
+            "dwc:scientificNameAuthorship": "Rowe, T. B.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Paleontology or a systematic summary of extinct animals and their geological relations.",
+                    "year": 1861,
+                    "edition": "2",
+                    "authors": [
+                        {
+                            "name": "R. Owen",
+                            "alternate": [
+                                "Owen, R."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Owen"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Adams and Charles Black",
+                    "city": "Edinburgh",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The clade possessing the apomorphy occlusal triconodont molariform postcanine teeth—i.e., the crowns of the molariform postcanine teeth have three principal cusps aligned longitudinally (or further modifications of this condition) and the upper and lower molariform teeth occlude, at least irregularly—as inherited by Thrinaxodon liorhinus Seeley 1894a.",
+            "internalSpecifiers": [],
+            "externalSpecifiers": []
+        }
+    ]
+}

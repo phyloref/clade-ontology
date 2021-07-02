@@ -1,0 +1,130 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [],
+    "phylorefs": [
+        {
+            "regnumId": 218,
+            "label": "Annelida",
+            "dwc:scientificNameAuthorship": "Pleijel, F., Rouse, G. W.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Discours d'ouverture, prononcé le 27 floréal an 10, au Muséum d’Histoire naturelle.",
+                    "year": 1802,
+                    "authors": [
+                        {
+                            "name": "J. B. Lamarck",
+                            "alternate": [
+                                "Lamarck, J. B."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Lamarck",
+                            "middlename": "B."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Maillard",
+                    "city": "Paris",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The least inclusive crown clade containing (in order of appearance on the reference phylogeny) Eulalia viridis (Linnaeus, 1767) (Phyllodocidae), Riftia pachyptila Jones, 1981 (Siboglinidae), Aeolosoma hemprichi Ehrenberg, 1828, Chaetopterus variopedatus (Renier, 1804), Eurythoe complanata (Pallas, 1766) (Amphinomidae), Notomastus latericeus M. Sars, 1851 (Capitellidae), Ophelina acuminata Ørsted, 1843,(Opheliidae), Cirratulus cirratus (O.F. Müller, 1776), Pectinaria regalis Verrill, 1901, Arenicola marina (Linnaeus, 1758), Terebellides stroemi M. Sars, 1835 (Terebelliformia), Flabelligera affinis (M. Sars, 1829), Scoloplos armiger (O.F. Müller, 1776) (Orbiniidae), Sabellaria alveolata (Linnaeus, 1767), Harmothoe imbricata (Linnaeus, 1767) (Aphroditiformia), Scalibregma inflatum Rathke, 1843, Nereis pelagica Linnaeus, 1758, Eunice pennata (O.F. Müller, 1776), Sabella pavonina Savigny, 1822, Polydora ciliata (Johnston, 1838) (Spionidae), Capilloventer australis Erséus, 1993 (incertae sedis), Lumbricus terrestris Linnaeus, 1758 (Clitellata), and Hirudo medicinalis Linnaeus, 1758.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Eulalia viridis Linnaeus, 1767",
+                        "nameComplete": "Eulalia viridis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Riftia pachyptila Jones, 1981",
+                        "nameComplete": "Riftia pachyptila"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Aeolosoma hemprichi Ehrenberg, 1828",
+                        "nameComplete": "Aeolosoma hemprichi"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Chaetopterus variopedatus Renier, 1804",
+                        "nameComplete": "Chaetopterus variopedatus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Eurythoe complanata Pallas, 1766",
+                        "nameComplete": "Eurythoe complanata"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Notomastus latericeus Sars, 1851",
+                        "nameComplete": "Notomastus latericeus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Ophelina acuminata Ørsted, 1843",
+                        "nameComplete": "Ophelina acuminata"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Cirratulus cirratus Müller, 1776",
+                        "nameComplete": "Cirratulus cirratus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Pectinaria regalis Verrill, 1901",
+                        "nameComplete": "Pectinaria regalis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Arenicola marina Linnaeus, 1758",
+                        "nameComplete": "Arenicola marina"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

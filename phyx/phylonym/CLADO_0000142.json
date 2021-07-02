@@ -1,0 +1,161 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A combined approach to the phylogeny of Cephalopoda (Mollusca).",
+                "year": 2004,
+                "authors": [
+                    {
+                        "name": "A. R. Lindgren",
+                        "alternate": [
+                            "Lindgren, A. R."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Lindgren",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "G. Giribet",
+                        "alternate": [
+                            "Giribet, G."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Giribet"
+                    },
+                    {
+                        "name": "M. K. Nishiguchi",
+                        "alternate": [
+                            "Nishiguchi, M. K."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Nishiguchi",
+                        "middlename": "K."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.1096-0031.2004.00032"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Cladistics",
+                    "volume": "20",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Co-estimation of phylogeny and divergence times of Argonautoidea using relaxed phylogenetics.",
+                "year": 2010,
+                "authors": [
+                    {
+                        "name": "J. Strugnell",
+                        "alternate": [
+                            "Strugnell, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Strugnell"
+                    },
+                    {
+                        "name": "A. L. Allock",
+                        "alternate": [
+                            "Allock, A. L."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Allock",
+                        "middlename": "L."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2009.11.017"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Phylogenetic  and Evolution",
+                    "volume": "54",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 142,
+            "label": "Octopoda",
+            "dwc:scientificNameAuthorship": "Anderson, F.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Synopsis of the orders, families and genera of the class Cephalopoda.",
+                    "year": 1817,
+                    "authors": [
+                        {
+                            "name": "W. Leach",
+                            "alternate": [
+                                "Leach, W."
+                            ],
+                            "firstname": "W.",
+                            "lastname": "Leach"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "The Zoological Miscellany: being Descriptions of New, or Interesting Animals",
+                        "volume": "3",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Argonauta argo Linnaeus 1758 (Incirrata) and Stauroteuthis syrtensis Verrill 1879 (Cirrata), provided that this clade does not include Sepia officinalis Linnaeus 1758.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Argonauta argo Linnaeus, 1758",
+                        "nameComplete": "Argonauta argo"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Stauroteuthis syrtensis Verrill, 1879",
+                        "nameComplete": "Stauroteuthis syrtensis"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Sepia officinalis Linnaeus, 1758",
+                        "nameComplete": "Sepia officinalis"
+                    }
+                }
+            ]
+        }
+    ]
+}

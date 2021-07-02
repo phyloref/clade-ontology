@@ -1,0 +1,129 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Primitive Early Eocene bat from Wyoming and the evolution of flight and echolocation.",
+                "year": 2008,
+                "authors": [
+                    {
+                        "name": "N. B. Simmons",
+                        "alternate": [
+                            "Simmons, N. B."
+                        ],
+                        "firstname": "N.",
+                        "lastname": "Simmons",
+                        "middlename": "B."
+                    },
+                    {
+                        "name": "K. L. Seymour",
+                        "alternate": [
+                            "Seymour, K. L."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Seymour",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "J. Habersetzer",
+                        "alternate": [
+                            "Habersetzer, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Habersetzer"
+                    },
+                    {
+                        "name": "G. F. Gunnell",
+                        "alternate": [
+                            "Gunnell, G. F."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Gunnell",
+                        "middlename": "F."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "4",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1038/nature06549"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Nature",
+                    "volume": "451",
+                    "identifier": []
+                }
+            },
+            "newick": "(Onychonycteris, (Icaronycteris, (Archaeonycteris, (Hassianycteris, \n(Palaeochiropteryx, ((Pteropodidae, Rhinolophoidea), (Emallonuroidea, \n(Noctilionidoidea, Vespertilionoidea))))))))"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 239,
+            "label": "Yangochiroptera",
+            "dwc:scientificNameAuthorship": "Cirranello, A. L., Simmons, N. B., Gunnell, G. F.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "A synopsis of the families of bats, Part VII.",
+                    "year": 1985,
+                    "authors": [
+                        {
+                            "name": "K. F. Koopman",
+                            "alternate": [
+                                "Koopman, K. F."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "Koopman",
+                            "middlename": "F."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Bat Research News",
+                    "pages": "25-27",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Vespertilio murinus Linnaeus 1758 (Vespertilionoidea) and all extant species that share a more recent common ancestor with Vespertilio murinus Linnaeus 1758 than with Pteropus vampyrus (Linnaeus 1758) (Pteropodidae) and Rhinolophus ferrumequinum (Schreber 1774) (Rhinolophoidea).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Vespertilio murinus Linnaeus, 1758",
+                        "nameComplete": "Vespertilio murinus"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Pteropus vampyrus Linnaeus, 1758",
+                        "nameComplete": "Pteropus vampyrus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Rhinolophus ferrumequinum Schreber, 1774",
+                        "nameComplete": "Rhinolophus ferrumequinum"
+                    }
+                }
+            ]
+        }
+    ]
+}

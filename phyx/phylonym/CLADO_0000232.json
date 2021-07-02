@@ -1,0 +1,88 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Morphological and systematic reinterpretation of two enigmatic edrioasteroids (Echinodermata) from Canada.",
+                "year": 2006,
+                "authors": [
+                    {
+                        "name": "C. D. Sumrall",
+                        "alternate": [
+                            "Sumrall, C. D."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Sumrall",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "F. J. Gahn",
+                        "alternate": [
+                            "Gahn, F. J."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Gahn",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3.1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1139/e05-114"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Can. Jour. Earth Sci.",
+                    "volume": "43",
+                    "identifier": []
+                }
+            },
+            "newick": "(((((((((Carneyella, Foerstediscus), Isorophus, Isorophusella), Agelacrinites, \nThresherodiscus), Neoisorophusella), Postibulla), Lepidodiscus, Ulrichidiscus),\nCooperidiscus), Clavidiscus), (Lispidecodus, Giganticlavus, Hypsiclavus))"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 232,
+            "label": "Lepidodiscina",
+            "dwc:scientificNameAuthorship": "Sumrall, C. D.",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The clade originating in the most recent common ancestor of Lepidodiscus squamosus (Meek and Worthen 1868), Ulrichidiscus pulaskiensis, (Miller and Gurley 1894) and Hypsiclavus huntsvillensis Sumrall 1996.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Lepidodiscus squamosus Meek and Worthen, 1868",
+                        "nameComplete": "Lepidodiscus squamosus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Ulrichidiscus pulaskiensis Miller and Gurley, 1894",
+                        "nameComplete": "Ulrichidiscus pulaskiensis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Hypsiclavus huntsvillensis Sumrall, 1996",
+                        "nameComplete": "Hypsiclavus huntsvillensis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

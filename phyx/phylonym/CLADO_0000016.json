@@ -1,0 +1,117 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Phylogenomics reveals a new ‘megagroup’ including most photosynthetic eukaryotes.",
+                "year": 2008,
+                "authors": [
+                    {
+                        "name": "F. Burki",
+                        "alternate": [
+                            "Burki, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Burki"
+                    },
+                    {
+                        "name": "K. Shalchian-Tabrizi",
+                        "alternate": [
+                            "Shalchian-Tabrizi, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Shalchian-Tabrizi"
+                    },
+                    {
+                        "name": "J. Pawlowski",
+                        "alternate": [
+                            "Pawlowski, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Pawlowski"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1098/rsbl.2008.0224"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Biol. Lett.",
+                    "volume": "4",
+                    "identifier": []
+                }
+            },
+            "newick": "(((((((((Alexandrium, (Karenia, Karlodinium)), Oxyrrhis), \nPerkinsus),\n(Cryptosporidium, ((Eimeria, Toxoplasma), \n(Plasmodium, Theileria)))),\n(Paramecium, Tetrahymena)),\n\n(((Aureococcus, (Phaeodactylum, Thalassiosira)), Phytophythora)\nBlastocystis)),\n((Bigelowiella, (Cercomonas, Gymnophrys)), \n(Quinqueloculina, Reticulomyxa))),\n\n((((((((Arabidopsis, Brassica), (Oryza, Sorghum)), Pinus),\nPhyscomitrella), ((Chlamydomonas, Volvox), Ostreococcus)),\n(Galdieria, (Gracilaria, Porphyra))), \n\n(Cyanophora, Glaucocystis)), \n\n(((Emiliania, Isochrysis), Pavlova), Guillardia))),\n\n(((Hartmannella, Acanthamoeba), (Dictyostelium, Mastigamoeba)),\n((((Cryptococcus, Ustilago), (Neurospora, Schizosaccharomyces)),\nPhycomyces),\n\n(((Drosophia, (Gallus, (Homo, Mus))), \n(Nematostella, Trichoplax)), \nMonosiga))),\n\n(((Euglena, (Leishmania, Trypanosoma)), \n(Naegleria, (Sawyeria, Stachyamoeba))),\n((Histiona, Reclinomonas), Jakoba)))\n\n"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 16,
+            "label": "Archaeplastida",
+            "dwc:scientificNameAuthorship": "Simpson, A. G. B.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "The new higher level classification of eukaryotes with emphasis on the taxonomy of protists.",
+                    "year": 2005,
+                    "authors": [
+                        {
+                            "name": "S. M. Adl",
+                            "alternate": [
+                                "Adl, S. M."
+                            ],
+                            "firstname": "S.",
+                            "lastname": "Adl",
+                            "middlename": "M."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.1111/j.1550-7408.2005.00053.x"
+                        }
+                    ],
+                    "link": [],
+                    "journal": {
+                        "name": "J. Eukaryot. Microbiol.",
+                        "volume": "52",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The crown clade for which possession of primary plastids, as inherited by Arabidopsis thaliana (Linnaeus) Heynhold 1842, is an apomorphy relative to other crown clades, provided that it includes Galdieria sulphuraria (Galdieri) Merola in Merola et al. 1981 (Rhodoplantae) and excludes Homo sapiens Linnaeus 1758.  In this definition, \"plastids\" refers to the organelles also known as chloroplasts in the broadest sense, that is, all homologous organelles irrespective of appearance or function; \"an apomorphy\" means it stems directly from the same event of primary endosymbiosis and does not include later origin through a subsequent event of secondary endosymbiosis.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Galdieria sulphuraria Merola, 1981",
+                        "nameComplete": "Galdieria sulphuraria"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Homo sapiens Linnaeus, 1758",
+                        "nameComplete": "Homo sapiens"
+                    }
+                }
+            ]
+        }
+    ]
+}

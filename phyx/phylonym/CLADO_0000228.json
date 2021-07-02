@@ -1,0 +1,68 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Echinoderm phylogeny including Xyloplax, a progenetic asteroid.",
+                "year": 2011,
+                "authors": [
+                    {
+                        "name": "D. A. Janies",
+                        "alternate": [
+                            "Janies, D. A."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Janies",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "J. R. Voight",
+                        "alternate": [
+                            "Voight, J. R."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Voight",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "M. Daly",
+                        "alternate": [
+                            "Daly, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Daly"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1093/sysbio/syr044"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Systematic Biology",
+                    "volume": "60",
+                    "identifier": []
+                }
+            },
+            "newick": "((((((((((((((Echinus_esculentus, Strongylocentrotus_purpuratus), \n(Genocidaris_maculata, Tripneustes_gratilla)),\n\n(Paracentrotus_lividus, Psammechinus_miliaris)),\n\nPseudechinus_albocinctus),\n\n(Amblypneustes_ovum, Holopneustes_inflatus)), \n\n(((Salmaciella_oligopora, Salmacis_belli), Temnopleurus_alexandri), \n(Mespilis_globulus, Temnotrema_sculptum))), \n\n(((((Arbacia_lixula, Arbacia_punctulata), Encope_aberrans), \n(Echinocardium_cordatum, Meoma_ventricosa)), \n(Sphaerechinus_granularis, Stomopneustes_variolaris)), \nEucidaris_tribuloides)), \n\n((((((((Ophiopholis_aculeata, Ophiotrix_oerstedii), Amphipholis_squamata), \nOphionereis_reticulata), Ophiocoma_echinata), \n((Ophioderma_brevispinum, Ophiomyxa_flaccida), Ophiopsammus_maculata)),\nOphiocanops_fugiens), \n((Asteronyx_sp., Gorgonocephalus_eucnemis), Schizostella_bifurcata)), \n\n(((((((Cucumaria_miniata, Pentaca_pygmaea), Cucumaria_salma), Parastichopus_californicus),\nPseudostichopus_villosus), Holothuria_leucospilota), Psychropotes_longicauda), \n(Chiridota_rotifera, Leprtosynapra_clarkii)))),\n\n\n((((((((Diplodntias_miliaris, Odontaster_validus), Acodontaster_conspicuus), \nEurygonias_hylacanthus), Caymanostella), \n((Echinaster_sentus, Henricia_sp.), Archaster_typicus)), \n\n((((Asterina_miniata, Perknaster_fuscus), Stegnaster_inflatus), Patiriella_regularis),\n(Crossaster_papposus, Solaster_stimpsonii)),\n\n((((Luidia_clathrata, Luidia_foliolata), Macroptychaster_accrescens), Astropecten_articulatus),\n(Dermasterias_imbricata, Pseudarchaster_pareli))),\n\nAstropecten_polyacanthus),\n\n((((((((Evasterias_troschelii, Pisaster_ochraceus), Leptasterias_hexactis), Asterias_forbesi),\nRathnunaster_californicus), (Coscinasterias_muricata, Diplasterias_bruci)),\n(Brisingaster_robillardi, Heliaster_helianthoides)),\n(Allostichaster_sp., Stichaster_australis)), \n((Hymenaster_pellucidus, Pteraster_tesselatus), Xyloplax_janetae)))),\n\n((Gymnocrinus_richeri, Florormetra_serratissima), Metacrinus_rotundus)),\n((Harriamania_planktophilus, Saccoglossus_kowalevskii), Ptychodera_flava))), \n\nCephalodiscus_gracilis), Ciona_intestinalis)\n\n\n\n\n"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 228,
+            "label": "Pan-Echinodermata",
+            "dwc:scientificNameAuthorship": "Sumrall, C. D.",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The total clade of the crown clade Echinodermata.",
+            "internalSpecifiers": [],
+            "externalSpecifiers": []
+        }
+    ]
+}

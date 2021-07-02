@@ -1,0 +1,77 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Primitive Early Eocene bat from Wyoming and the evolution of flight and echolocation.",
+                "year": 2008,
+                "authors": [
+                    {
+                        "name": "N. B. Simmons",
+                        "alternate": [
+                            "Simmons, N. B."
+                        ],
+                        "firstname": "N.",
+                        "lastname": "Simmons",
+                        "middlename": "B."
+                    },
+                    {
+                        "name": "K. L. Seymour",
+                        "alternate": [
+                            "Seymour, K. L."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Seymour",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "J. Habersetzer",
+                        "alternate": [
+                            "Habersetzer, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Habersetzer"
+                    },
+                    {
+                        "name": "G. F. Gunnell",
+                        "alternate": [
+                            "Gunnell, G. F."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Gunnell",
+                        "middlename": "F."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "4",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1038/nature06549"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Nature",
+                    "volume": "451",
+                    "identifier": []
+                }
+            },
+            "newick": "(Onychonycteris, (Icaronycteris, (Archaeonycteris, (Hassianycteris, \n(Palaeochiropteryx, ((Pteropodidae, Rhinolophoidea), (Emallonuroidea, \n(Noctilionidoidea, Vespertilionoidea))))))))"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 237,
+            "label": "Apo-Chiroptera",
+            "dwc:scientificNameAuthorship": "Cirranello, A. L., Simmons, N. B., Gunnell, G. F.",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The clade for which the unique modifications of the hand, forearm, humerus, scapula, hip, and ankle (see Diagnostic Apomorphies) associated with flapping flight, as inherited by Vespertilio murinus Linnaeus 1758, are apomorphies.",
+            "internalSpecifiers": [],
+            "externalSpecifiers": []
+        }
+    ]
+}

@@ -1,0 +1,106 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Cranial morphology and affinities of Microbrachis, and a reappraisal of the phylogeny and lifestyle of the first amphibians.",
+                "year": 2004,
+                "authors": [
+                    {
+                        "name": "G. Vallin",
+                        "alternate": [
+                            "Vallin, G."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Vallin"
+                    },
+                    {
+                        "name": "M. Laurin",
+                        "alternate": [
+                            "Laurin, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Laurin"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "6",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Vertebrate Paleontology",
+                    "volume": "24",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 13,
+            "label": "Anthracosauria",
+            "dwc:scientificNameAuthorship": "Laurin, M., Smithson, T. R.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Some points of view concerning the evolution of the vertebrates and the classification of this group.",
+                    "year": 1934,
+                    "authors": [
+                        {
+                            "name": "G. Säve-Söderbergh",
+                            "alternate": [
+                                "Säve-Söderbergh , G."
+                            ],
+                            "firstname": "G.",
+                            "lastname": "Säve-Söderbergh"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Ark. Zool.",
+                        "volume": "26A",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The largest clade containing Anthracosaurus russelli Huxley 1863 (Embolomeri) but not Ascaphus truei Stejneger 1899 (closest to Discoglossidae and Pipidae in the reference phylogeny) and Eryops megacephalus Cope 1877 (Temnospondyli).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Anthracosaurus russelli Huxley, 1863",
+                        "nameComplete": "Anthracosaurus russelli"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Ascaphus truei Stejneger, 1899",
+                        "nameComplete": "Ascaphus truei"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Eryops megacephalus Cope, 1877",
+                        "nameComplete": "Eryops megacephalus"
+                    }
+                }
+            ]
+        }
+    ]
+}

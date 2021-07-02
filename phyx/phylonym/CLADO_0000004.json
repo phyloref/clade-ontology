@@ -1,0 +1,117 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Live birth among Iguanian lizards predates Pliocene–Pleistocene glaciations.",
+                "year": 2010,
+                "authors": [
+                    {
+                        "name": "James, II A Schulte",
+                        "alternate": [
+                            "Schulte, James, II A"
+                        ],
+                        "firstname": "James, II",
+                        "lastname": "Schulte",
+                        "middlename": "A"
+                    },
+                    {
+                        "name": "Franck Moreno-Roark",
+                        "alternate": [
+                            "Moreno-Roark, Franck"
+                        ],
+                        "firstname": "Franck",
+                        "lastname": "Moreno-Roark"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1098/rsbl.2009.0707"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Biology Letters",
+                    "volume": "6",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 4,
+            "label": "Acrodonta",
+            "dwc:scientificNameAuthorship": "Schulte, II, J.  A., de Queiroz, K., Torres-Carvajal, O.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Handbuch der Zootomie (zweiter Theil). Die Wirbelthiere.",
+                    "year": 1856,
+                    "authors": [
+                        {
+                            "name": "H. Stannius",
+                            "alternate": [
+                                "Stannius, H."
+                            ],
+                            "firstname": "H.",
+                            "lastname": "Stannius"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Verlag von Veit & Comp.",
+                    "city": "Berlin",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Agama (originally Lacerta) agama (Linnaeus 1758), Chamaeleo (originally Lacerta) chamaeleon (Linnaeus 1758), Uromastyx (originally Lacerta) aegyptia (Forsskål 1775) and Leiolepis guttata Cuvier 1829.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Agama agama Linnaeus, 1758",
+                        "nameComplete": "Agama agama"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Chamaeleo (originally Lacerta) chamaeleon Linnaeus, 1758",
+                        "nameComplete": "Chamaeleo (originally Lacerta) chamaeleon"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Uromastyx (originally Lacerta) aegyptia Forsskål, 1775",
+                        "nameComplete": "Uromastyx (originally Lacerta) aegyptia"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Leiolepis guttata Cuvier, 1829",
+                        "nameComplete": "Leiolepis guttata"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

@@ -1,0 +1,128 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Definition, diagnosis and origin of Mammalia.",
+                "year": 1988,
+                "authors": [
+                    {
+                        "name": "T. B. Rowe",
+                        "alternate": [
+                            "Rowe, T. B."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Rowe",
+                        "middlename": "B."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1080/02724634.1988.10011708"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Vertebrate Paleontology",
+                    "volume": "8",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Transformation and diversification in early mammal evolution.",
+                "year": 2007,
+                "authors": [
+                    {
+                        "name": "Z. X. Luo",
+                        "alternate": [
+                            "Luo, Z. X."
+                        ],
+                        "firstname": "Z.",
+                        "lastname": "Luo",
+                        "middlename": "X."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1038/nature06277"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Nature",
+                    "volume": "450",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 221,
+            "label": "Mammaliaformes",
+            "dwc:scientificNameAuthorship": "Rowe, T. B.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Definition, diagnosis and origin of Mammalia.",
+                    "year": 1988,
+                    "authors": [
+                        {
+                            "name": "T. B. Rowe",
+                            "alternate": [
+                                "Rowe, T. B."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Rowe",
+                            "middlename": "B."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Journal of Vertebrate Paleontology",
+                        "volume": "8",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest clade containing Homo sapiens Linnaeus 1758 (Mammalia) and Morganucodon oehleri Rigney 1963 (Morganucodontidae).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Homo sapiens Linnaeus, 1758",
+                        "nameComplete": "Homo sapiens"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Morganucodon oehleri Rigney, 1963",
+                        "nameComplete": "Morganucodon oehleri"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

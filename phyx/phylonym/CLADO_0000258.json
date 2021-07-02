@@ -1,0 +1,78 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "New Paleocene skeletons and the relationship of plesiadapiforms to crown-clade primates.",
+                "year": 2007,
+                "authors": [
+                    {
+                        "name": "J. I. Bloch",
+                        "alternate": [
+                            "Bloch , J. I."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Bloch",
+                        "middlename": "I."
+                    },
+                    {
+                        "name": "M. T. Silcox",
+                        "alternate": [
+                            "Silcox, M. T."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Silcox",
+                        "middlename": "T."
+                    },
+                    {
+                        "name": "D. M. Boyer",
+                        "alternate": [
+                            "Boyer, D. M."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Boyer",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "E. J. Sargis",
+                        "alternate": [
+                            "Sargis, E. J."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Sargis",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "4",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1073/pnas.0610579104"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Proceedings of the National Academy of Sciences",
+                    "volume": "104",
+                    "identifier": []
+                }
+            },
+            "newick": "(((Dermoptera, Plagiomenidae), Scandentia), \n\n(Purgatorius, (Micromomyidae, ((Berruvius, Microsyopidae),\n((Palaechthon, Paromomyidae),\n\n((((Plesiadapidae, Carpolestidae), Saxonellidae), Chronolestes),\n\n(Altiatlasius, \n\n((Altanius, Adapoidea), Omomyoidea))))))))"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 258,
+            "label": "Pan-Primates",
+            "dwc:scientificNameAuthorship": "Chester, S. G. B., Sargis, E. J.",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The total clade composed of the crown clade Primates and all extinct organisms or species that share a more recent common ancestor with Primates than with any extant organisms or species that are not members of Primates.",
+            "internalSpecifiers": [],
+            "externalSpecifiers": []
+        }
+    ]
+}

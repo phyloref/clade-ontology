@@ -1,0 +1,118 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A phylogenetic analysis of the major groups of catfishes (Teleostei: Siluriformes) using nuclear rag1 and rag2 gene sequences.",
+                "year": 2006,
+                "authors": [
+                    {
+                        "name": "J. P. Sullivan",
+                        "alternate": [
+                            "Sullivan, J. P."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Sullivan",
+                        "middlename": "P."
+                    },
+                    {
+                        "name": "J. G. Lundberg",
+                        "alternate": [
+                            "Lundberg, J. G."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Lundberg",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "M. Hardman",
+                        "alternate": [
+                            "Hardman, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Hardman"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1 and 2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2006.05.044"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Phylogenetics and Evolution",
+                    "volume": "41",
+                    "identifier": []
+                }
+            },
+            "newick": "((Nematogenys_ine, \n((Trichomycterus_gui, Bullockia_mal), (Henonemus_pun, Ochmacanthus_alt)), \n((Callichthys_cal, Corydoras_tri), (Scoloplax_dis, \n((Astroblepus_sp1, Astroblepus_sp2), (Liposarcus_mul, (Loricaria_sim, \n(Lamontichthys_sti, Farlowella_nat))))))),\n((Diplomystes_mes, Diplomystes_nah), Siluroidei))"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 199,
+            "label": "Siluriformes",
+            "dwc:scientificNameAuthorship": "Lundberg, J. G.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "The Pleistocene of the western region of North America and its vertebrated animals",
+                    "year": 1929,
+                    "authors": [
+                        {
+                            "name": "O. P. Hay",
+                            "alternate": [
+                                "Hay, O. P."
+                            ],
+                            "firstname": "O.",
+                            "lastname": "Hay",
+                            "middlename": "P."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Publication/Carnegie Institution of Washington",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Loricaria cataphracta Linnaeus 1758 (Loricarioidei), Diplomystes (originally Silurus) chilensis (Molina 1782) (Diplomystidae), and Silurus glanis Linnaeus 1758 (Siluroidei).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Loricaria cataphracta Linnaeus, 1758",
+                        "nameComplete": "Loricaria cataphracta"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Diplomystes (originally Silurus) chilensis Molina, 1782",
+                        "nameComplete": "Diplomystes (originally Silurus) chilensis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Silurus glanis Linnaeus, 1758",
+                        "nameComplete": "Silurus glanis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

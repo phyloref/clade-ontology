@@ -1,0 +1,442 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Phylogenomic analyses support the monophyly of Excavata and resolve relationships among eukaryotic “supergroups”.",
+                "year": 2009,
+                "authors": [
+                    {
+                        "name": "V. Hampl",
+                        "alternate": [
+                            "Hampl, V."
+                        ],
+                        "firstname": "V.",
+                        "lastname": "Hampl"
+                    },
+                    {
+                        "name": "L. Hug",
+                        "alternate": [
+                            "Hug, L."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Hug"
+                    },
+                    {
+                        "name": "J. W. Leigh",
+                        "alternate": [
+                            "Leigh, J. W."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Leigh",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "J. B. Dacks",
+                        "alternate": [
+                            "Dacks, J. B."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Dacks",
+                        "middlename": "B."
+                    },
+                    {
+                        "name": "B. F. Lang",
+                        "alternate": [
+                            "Lang, B. F."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Lang",
+                        "middlename": "F."
+                    },
+                    {
+                        "name": "A. G. B.  Simpson",
+                        "alternate": [
+                            "Simpson, A. G. B."
+                        ],
+                        "firstname": "A. G.",
+                        "lastname": "Simpson",
+                        "middlename": "B."
+                    },
+                    {
+                        "name": "A. J. Roger",
+                        "alternate": [
+                            "Roger, A. J."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Roger",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1073/pnas.0807880106"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Proceedings of the National Academy of Sciences U. S. A.",
+                    "volume": "106",
+                    "identifier": []
+                }
+            },
+            "newick": "((((Acanthamoeba_sp., Mastigamoeba_balamuthi), \n(Physarum_polycephalum, Dictyostelium_discoideum)), \n\n((Blastocladiella_sp., Ustilago_maydis), \n((Proterospongia_sp., Monosiga_sp.), (Drosophila_melanogaster, Homosapiens)))),\n\n((Malawimonas_californiana, Malawimonas_jakobiformis),\n\n(\n(((Monocercomonoides_sp., Trimastix_pyriformis), \n(Trichomonas_vaginalis, (Spironucleus_barkhanus, Giardia_intestinalis))),\n\n((Andalucia_incarcerata, (Jakoba_bahamensis, (Jakoba_libera, \n(Seculamonas_ecuadoriensis, (Histiona_aroides, Reclinommonas_americana))))), \n((Naegleria_sp., (Sawyeria_marylandensis, Stachyamoeba_lipophora)), \n(Euglena_gracilis, (Trypanosoma_sp., Leishmania_sp.))))),\n\n(\n((Glaucocystis_nostochinearum, Cyanophora_paradoxa),\n((Oryza_sativa, (Micromonas_sp., Chlamydomonas_reinhardtii)), \n(Chondrus_crispus, Porphyra_sp.), (Pavlova_lutheri, Emiliana_huxley))),\n\n((Bigelowiella_nutans, Cercomonas_longicauda), \n((Blastocystis_hominis, (Thallassiosira_pseudonana, Phytophtora_sp.)), \n((Oxytricha_trifallax, Tetrahymena_sp.), \n(Toxoplasma_gondii, (Alexandrium_tamarense, Amphidinium_carterae)))))))))"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Andalucia (gen. nov,): a new taxon for the deepest branch within jakobids (Jakobida; Excavata), based on morphological and molecular study of a new flagellate from soil.",
+                "year": 2006,
+                "authors": [
+                    {
+                        "name": "E. Lara",
+                        "alternate": [
+                            "Lara, E."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Lara"
+                    },
+                    {
+                        "name": "A. Chatzinotas",
+                        "alternate": [
+                            "Chatzinotas, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Chatzinotas"
+                    },
+                    {
+                        "name": "A. G. B.  Simpson",
+                        "alternate": [
+                            "Simpson, A. G. B."
+                        ],
+                        "firstname": "A. G.",
+                        "lastname": "Simpson",
+                        "middlename": "B."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.1550-7408.2005.00081.x"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Eukaryotic Microbiology",
+                    "volume": "53",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Lateral transfer of the gene for a widely used marker, α-tubulin, indicated by a multi-protein study of the phylogenetic position of Andalucia (Excavata).",
+                "year": 2008,
+                "authors": [
+                    {
+                        "name": "A. G.  B.  Simpson",
+                        "alternate": [
+                            "Simpson, A. G.  B."
+                        ],
+                        "firstname": "A. G.",
+                        "lastname": "Simpson",
+                        "middlename": "B."
+                    },
+                    {
+                        "name": "T. A. Perley",
+                        "alternate": [
+                            "Perley, T. A."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Perley",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "E. Lara",
+                        "alternate": [
+                            "Lara, E."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Lara"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1, 3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2007.11.035"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Phylogenetics Evolution",
+                    "volume": "47",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Gene content evolution in discobid mitochondria deduced from the phylogenetic position and complete mitochondrial genome of Tsukubamonas globosa.",
+                "year": 2014,
+                "authors": [
+                    {
+                        "name": "R. Kamikawa",
+                        "alternate": [
+                            "Kamikawa, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Kamikawa"
+                    },
+                    {
+                        "name": "M. Kolisko",
+                        "alternate": [
+                            "Kolisko, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Kolisko"
+                    },
+                    {
+                        "name": "Y. Nishimura",
+                        "alternate": [
+                            "Nishimura, Y."
+                        ],
+                        "firstname": "Y.",
+                        "lastname": "Nishimura"
+                    },
+                    {
+                        "name": "A. Yabuki",
+                        "alternate": [
+                            "Yabuki, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Yabuki"
+                    },
+                    {
+                        "name": "M. W. Brown",
+                        "alternate": [
+                            "Brown, M. W."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Brown",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "S. A. Ishikawa",
+                        "alternate": [
+                            "Ishikawa, S. A."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Ishikawa",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "K. Ishida",
+                        "alternate": [
+                            "Ishida, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Ishida"
+                    },
+                    {
+                        "name": "A. J. Roger",
+                        "alternate": [
+                            "Roger, A. J."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Roger",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "T. Hashimoto",
+                        "alternate": [
+                            "Hashimoto, T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Hashimoto"
+                    },
+                    {
+                        "name": "Y. Inagaki",
+                        "alternate": [
+                            "Inagaki, Y."
+                        ],
+                        "firstname": "Y.",
+                        "lastname": "Inagaki"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1093/gbe/evu015"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Genome Biological Evolution",
+                    "volume": "6",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 37,
+            "label": "Discoba",
+            "dwc:scientificNameAuthorship": "Simpson, A.  G. B.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Phylogenomic analyses support the monophyly of Excavata and resolve relationships among eukaryotic “supergroups”.",
+                    "year": 2009,
+                    "authors": [
+                        {
+                            "name": "V. Hampl",
+                            "alternate": [
+                                "Hampl, V."
+                            ],
+                            "firstname": "V.",
+                            "lastname": "Hampl"
+                        },
+                        {
+                            "name": "L. Hug",
+                            "alternate": [
+                                "Hug, L."
+                            ],
+                            "firstname": "L.",
+                            "lastname": "Hug"
+                        },
+                        {
+                            "name": "J. W. Leigh",
+                            "alternate": [
+                                "Leigh, J. W."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Leigh",
+                            "middlename": "W."
+                        },
+                        {
+                            "name": "J. B. Dacks",
+                            "alternate": [
+                                "Dacks, J. B."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Dacks",
+                            "middlename": "B."
+                        },
+                        {
+                            "name": "B. F. Lang",
+                            "alternate": [
+                                "Lang, B. F."
+                            ],
+                            "firstname": "B.",
+                            "lastname": "Lang",
+                            "middlename": "F."
+                        },
+                        {
+                            "name": "A. G.  B. Simpson",
+                            "alternate": [
+                                "Simpson, A. G.  B."
+                            ],
+                            "firstname": "A. G.",
+                            "lastname": "Simpson",
+                            "middlename": "B."
+                        },
+                        {
+                            "name": "A. J. Roger",
+                            "alternate": [
+                                "Roger, A. J."
+                            ],
+                            "firstname": "A.",
+                            "lastname": "Roger",
+                            "middlename": "J."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Proc. Natl. Acad. Sci. USA",
+                        "volume": "106",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing Jakoba libera (Ruinen) Patterson 1990 (Jakobida), Andalucia godoyi Lara et al. 2006 (Jakobida), Euglena gracilis Klebs 1883 (Discicristata), and Naegleria gruberi (Schardinger) Alexeieff 1912 (Discicristata), but not Homo sapiens Linnaeus 1758 (Opisthokonta) or Arabidopsis thaliana (Linnaeus) Heynhold 1842 (Archaeplastida).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Jakoba libera Patterson, 1990",
+                        "nameComplete": "Jakoba libera"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Andalucia godoyi Lara, 2006",
+                        "nameComplete": "Andalucia godoyi"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Euglena gracilis Klebs, 1883",
+                        "nameComplete": "Euglena gracilis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Naegleria gruberi Alexeieff, 1912",
+                        "nameComplete": "Naegleria gruberi"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Homo sapiens Linnaeus, 1758",
+                        "nameComplete": "Homo sapiens"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Arabidopsis thaliana Heynhold, 1842",
+                        "nameComplete": "Arabidopsis thaliana"
+                    }
+                }
+            ]
+        }
+    ]
+}

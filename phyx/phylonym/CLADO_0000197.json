@@ -1,0 +1,121 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Interrelationships of the ostariophysan fishes (Teleostei).",
+                "year": 1981,
+                "authors": [
+                    {
+                        "name": "S. V. Fink",
+                        "alternate": [
+                            "Fink, S. V."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Fink",
+                        "middlename": "V."
+                    },
+                    {
+                        "name": "W. L. Fink",
+                        "alternate": [
+                            "Fink, W. L."
+                        ],
+                        "firstname": "W.",
+                        "lastname": "Fink",
+                        "middlename": "L."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.1096-3642.1981.tb01575"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Zoological Journal of Linnaean Society",
+                    "volume": "72",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 197,
+            "label": "Otophysi",
+            "dwc:scientificNameAuthorship": "Lundberg, J. G.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "The phyletic classification of Teleostei.",
+                    "year": 1931,
+                    "authors": [
+                        {
+                            "name": "W. Garstang",
+                            "alternate": [
+                                "Garstang, W."
+                            ],
+                            "firstname": "W.",
+                            "lastname": "Garstang"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Proc. Leeds Phil. Lit. Soc.",
+                        "volume": "2",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Cyprinus carpio Linnaeus 1758 (Cypriniformes), Charax (originally Salmo) gibbosus (Linnaeus 1758) (Characiformes), Gymnotus carapo Linnaeus 1758 (Gymnotiformes; Gymnotoidei on the reference phylogeny), Silurus glanis Linnaeus 1758 (Siluriformes; Siluroidei on the reference phylogeny).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Cyprinus carpio Linnaeus, 1758",
+                        "nameComplete": "Cyprinus carpio"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Charax (originally Salmo) gibbosus Linnaeus, 1758",
+                        "nameComplete": "Charax (originally Salmo) gibbosus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Gymnotus carapo Linnaeus, 1758",
+                        "nameComplete": "Gymnotus carapo"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Silurus glanis Linnaeus, 1758",
+                        "nameComplete": "Silurus glanis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

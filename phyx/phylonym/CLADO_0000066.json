@@ -1,0 +1,463 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Phylogenomic analyses support the monophyly of Excavata and resolve relationships among eukaryotic “supergroups”.",
+                "year": 2009,
+                "authors": [
+                    {
+                        "name": "Hampl",
+                        "alternate": [
+                            "Hampl,"
+                        ],
+                        "lastname": "Hampl"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1073/pnas.0807880106"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Proceedings of the National Academy of Sciences U.S.A.",
+                    "volume": "106",
+                    "identifier": []
+                }
+            },
+            "newick": "((((Acanthamoeba_sp., Mastigamoeba_balamuthi), \n(Physarum_polycephalum, Dictyostelium_discoideum)), \n\n((Blastocladiella_sp., Ustilago_maydis), \n((Proterospongia_sp., Monosiga_sp.), (Drosophila_melanogaster, Homosapiens)))),\n\n((Malawimonas_californiana, Malawimonas_jakobiformis),\n\n(\n(((Monocercomonoides_sp., Trimastix_pyriformis), \n(Trichomonas_vaginalis, (Spironucleus_barkhanus, Giardia_intestinalis))),\n\n((Andalucia_incarcerata, (Jakoba_bahamensis, (Jakoba_libera, \n(Seculamonas_ecuadoriensis, (Histiona_aroides, Reclinommonas_americana))))), \n((Naegleria_sp., (Sawyeria_marylandensis, Stachyamoeba_lipophora)), \n(Euglena_gracilis, (Trypanosoma_sp., Leishmania_sp.))))),\n\n(\n((Glaucocystis_nostochinearum, Cyanophora_paradoxa),\n((Oryza_sativa, (Micromonas_sp., Chlamydomonas_reinhardtii)), \n(Chondrus_crispus, Porphyra_sp.), (Pavlova_lutheri, Emiliana_huxley))),\n\n((Bigelowiella_nutans, Cercomonas_longicauda), \n((Blastocystis_hominis, (Thallassiosira_pseudonana, Phytophtora_sp.)), \n((Oxytricha_trifallax, Tetrahymena_sp.), \n(Toxoplasma_gondii, (Alexandrium_tamarense, Amphidinium_carterae)))))))))"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "The excavate protozoan phyla Metamonada Grasse emend. (Anaeromonadea, Parabasalia, Carpediemonas, Eopharyngia) and Loukozoa emend. (Jakobea, Malawimonas): their evolutionary affinities and new higher taxa.",
+                "year": 2003,
+                "authors": [
+                    {
+                        "name": "T. Cavalier-Smith",
+                        "alternate": [
+                            "Cavalier-Smith, T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Cavalier-Smith"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1099/ijs.0.02548-0"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "International Journal of Systematics Evolution Microbiology",
+                    "volume": "53",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Multigene phylogenies of diverse Carpediemonas-like organisms identify the closest relatives of ‘amitochondriate’ diplomonads and retortamonads.",
+                "year": 2012,
+                "authors": [
+                    {
+                        "name": "K. Takishita",
+                        "alternate": [
+                            "Takishita , K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Takishita"
+                    },
+                    {
+                        "name": "M. Kolisko",
+                        "alternate": [
+                            "Kolisko, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Kolisko"
+                    },
+                    {
+                        "name": "H. Komatsuzaki",
+                        "alternate": [
+                            "Komatsuzaki, H."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Komatsuzaki"
+                    },
+                    {
+                        "name": "A. Yabuki",
+                        "alternate": [
+                            "Yabuki, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Yabuki"
+                    },
+                    {
+                        "name": "Y. Inagaki",
+                        "alternate": [
+                            "Inagaki, Y."
+                        ],
+                        "firstname": "Y.",
+                        "lastname": "Inagaki"
+                    },
+                    {
+                        "name": "I. Čepička",
+                        "alternate": [
+                            "Čepička, I."
+                        ],
+                        "firstname": "I.",
+                        "lastname": "Čepička"
+                    },
+                    {
+                        "name": "P. Smejkalová",
+                        "alternate": [
+                            "Smejkalová, P."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Smejkalová"
+                    },
+                    {
+                        "name": "J. D. Silberman",
+                        "alternate": [
+                            "Silberman, J. D."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Silberman",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "T. Hashimoto",
+                        "alternate": [
+                            "Hashimoto, T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Hashimoto"
+                    },
+                    {
+                        "name": "A. J. Roger",
+                        "alternate": [
+                            "Roger, A. J."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Roger",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "A.G. B. Simpson",
+                        "alternate": [
+                            "Simpson, A.G. B."
+                        ],
+                        "firstname": "A.G.",
+                        "lastname": "Simpson",
+                        "middlename": "B."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "S9",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.protis.2011.12.007"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Protist",
+                    "volume": "163",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Organelles that illuminate the origins of Trichomonas hydrogenosomes and Giardia mitosomes.",
+                "year": 2017,
+                "authors": [
+                    {
+                        "name": "M. M. Leger",
+                        "alternate": [
+                            "Leger, M. M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Leger",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "M. Kolisko",
+                        "alternate": [
+                            "Kolisko, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Kolisko"
+                    },
+                    {
+                        "name": "R. Kamikawa",
+                        "alternate": [
+                            "Kamikawa, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Kamikawa"
+                    },
+                    {
+                        "name": "C. W. Stairs",
+                        "alternate": [
+                            "Stairs, C. W."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Stairs",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "K. Kume",
+                        "alternate": [
+                            "Kume, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Kume"
+                    },
+                    {
+                        "name": "I. Čepička",
+                        "alternate": [
+                            "Čepička, I."
+                        ],
+                        "firstname": "I.",
+                        "lastname": "Čepička"
+                    },
+                    {
+                        "name": "J. D. Silberman",
+                        "alternate": [
+                            "Silberman, J. D."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Silberman",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "J. O. Andersson",
+                        "alternate": [
+                            "Andersson, J. O."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Andersson",
+                        "middlename": "O."
+                    },
+                    {
+                        "name": "F. Xu",
+                        "alternate": [
+                            "Xu, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Xu"
+                    },
+                    {
+                        "name": "A. Yabuki",
+                        "alternate": [
+                            "Yabuki, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Yabuki"
+                    },
+                    {
+                        "name": "L. Eme",
+                        "alternate": [
+                            "Eme, L."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Eme"
+                    },
+                    {
+                        "name": "Q. Zhang",
+                        "alternate": [
+                            "Zhang, Q."
+                        ],
+                        "firstname": "Q.",
+                        "lastname": "Zhang"
+                    },
+                    {
+                        "name": "K. Takishita",
+                        "alternate": [
+                            "Takishita, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Takishita"
+                    },
+                    {
+                        "name": "Y. Inagaki",
+                        "alternate": [
+                            "Inagaki, Y."
+                        ],
+                        "firstname": "Y.",
+                        "lastname": "Inagaki"
+                    },
+                    {
+                        "name": "A. G.  B. Simpson",
+                        "alternate": [
+                            "Simpson, A. G.  B."
+                        ],
+                        "firstname": "A. G.",
+                        "lastname": "Simpson",
+                        "middlename": "B."
+                    },
+                    {
+                        "name": "T. Hashimoto",
+                        "alternate": [
+                            "Hashimoto, T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Hashimoto"
+                    },
+                    {
+                        "name": "A. J. Roger",
+                        "alternate": [
+                            "Roger, A. J."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Roger",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1038/s41559-017-0092"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Natural Ecology & Evolution",
+                    "volume": "1",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Ultrastructure and molecular phylogeny of Iotanema spirale gen. nov. et sp. nov., a new lineage of endobiotic Fornicata with strikingly simplified ultrastructure.",
+                "year": 2017,
+                "authors": [
+                    {
+                        "name": "N. Yubuki",
+                        "alternate": [
+                            "Yubuki, N."
+                        ],
+                        "firstname": "N.",
+                        "lastname": "Yubuki"
+                    },
+                    {
+                        "name": "E. Zadrobílková",
+                        "alternate": [
+                            "Zadrobílková , E."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Zadrobílková"
+                    },
+                    {
+                        "name": "I. Čepička",
+                        "alternate": [
+                            "Čepička, I."
+                        ],
+                        "firstname": "I.",
+                        "lastname": "Čepička"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "5",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/jeu.12376"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Eukaryotic Microbiology",
+                    "volume": "64",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 66,
+            "label": "Metamonada",
+            "dwc:scientificNameAuthorship": "Simpson, A. G. B.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Eukaryotes with no mitochondria",
+                    "year": 1987,
+                    "authors": [
+                        {
+                            "name": "T Cavalier-Smith",
+                            "alternate": [
+                                "Cavalier-Smith, T"
+                            ],
+                            "firstname": "T",
+                            "lastname": "Cavalier-Smith"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Nature",
+                        "volume": "326",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing Paratrimastix pyriformis (Klebs, 1893) Zhang et al. 2015, Trichomonas vaginalis Donné 1836, and Spironucleus barkhanus Sterud et al. 1997, provided that the clade does not include any organisms with mitochondria capable of oxidative phosphorylation (e.g. Malawimonas jakobiformis O’Kelly and Nerad, 1999).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Paratrimastix pyriformis Zhang, 2015",
+                        "nameComplete": "Paratrimastix pyriformis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Trichomonas vaginalis Donné, 1836",
+                        "nameComplete": "Trichomonas vaginalis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Spironucleus barkhanus Sterud, 1997",
+                        "nameComplete": "Spironucleus barkhanus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

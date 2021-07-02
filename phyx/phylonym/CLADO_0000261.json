@@ -1,0 +1,123 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A phylogenetic blueprint for a modern whale.",
+                "year": 2013,
+                "authors": [
+                    {
+                        "name": "J. Gatesy",
+                        "alternate": [
+                            "Gatesy, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Gatesy"
+                    },
+                    {
+                        "name": "J. H. Geisler",
+                        "alternate": [
+                            "Geisler, J. H."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Geisler",
+                        "middlename": "H."
+                    },
+                    {
+                        "name": "J. Chang",
+                        "alternate": [
+                            "Chang, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Chang"
+                    },
+                    {
+                        "name": "C. Buell",
+                        "alternate": [
+                            "Buell, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Buell"
+                    },
+                    {
+                        "name": "A. Berta",
+                        "alternate": [
+                            "Berta, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Berta"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2012.10.012"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Phylogenetics and Evolution",
+                    "volume": "66",
+                    "identifier": []
+                }
+            },
+            "newick": "((Camelidae:11.0,((Suidae:1.0,Tayassuidae:1.0):9.0,((Hippopotamidae:8.0,((((Balaenopteridae:1.0,Eschrichtiidae:1.0):1.0,Neobalaenidae:2.0):1.0,Balaenidae:3.0):4.0,(((((Delphinidae:2.0,(Monodontidae:1.0,Phocoenidae:1.0):1.0):1.0,(Iniidae:1.0,Pontoporiidae:1.0):2.0):1.0,Ziphiidae:4.0):1.0,Platanistidae:5.0):1.0,(Kogiidae:1.0,Physeteridae:1.0):5.0):1.0):1.0):1.0,(Tragulidae:4.0,(((Bovidae:1.0,Moschidae:1.0):1.0,Cervidae:2.0):1.0,(Giraffidae:1.0,Antilocapridae:1.0):2.0):1.0):5.0):1.0):1.0):1.0,(Equidae:2.0,(Rhinocerotidae:1.0,Tapiridae:1.0):1.0):10.0);"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 261,
+            "label": "Cetacea",
+            "dwc:scientificNameAuthorship": "Deméré, T. A.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Regnum animale in classes IX distributum sive synopsis methodica. Editio altera auctior. Leiden, Theodorum Haak",
+                    "year": 1762,
+                    "authors": [
+                        {
+                            "name": "M. J. Brisson",
+                            "alternate": [
+                                "Brisson, M. J."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Brisson",
+                            "middlename": "J."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "pages": "viii + 296",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing Tursiops (originally Delphinus) truncatus (Montagu 1821) (Odontoceti/Delphinidae) and Balaena mysticetus Linnaeus 1758 (Mysticeti/Balaenidae).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Tursiops (originally Delphinus) truncatus Montagu, 1821",
+                        "nameComplete": "Tursiops (originally Delphinus) truncatus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Balaena mysticetus Linnaeus, 1758",
+                        "nameComplete": "Balaena mysticetus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

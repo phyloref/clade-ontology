@@ -1,0 +1,160 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A new genus of living nautiloid cephalopod and its bearing on phylogeny of the Nautilida.",
+                "year": 1997,
+                "authors": [
+                    {
+                        "name": "P. D. Ward",
+                        "alternate": [
+                            "Ward, P. D."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Ward",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "W. B. Saunders",
+                        "alternate": [
+                            "Saunders, W. B."
+                        ],
+                        "firstname": "W.",
+                        "lastname": "Saunders",
+                        "middlename": "B."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1017/S0022336000036039"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal Paleontology",
+                    "volume": "71",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Phylogenetic taxonomy and the status of Allonautilus",
+                "year": 1999,
+                "authors": [
+                    {
+                        "name": "A. W. Harvey",
+                        "alternate": [
+                            "Harvey, A. W."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Harvey",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "R. Mooi",
+                        "alternate": [
+                            "Mooi, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Mooi"
+                    },
+                    {
+                        "name": "T. M. Gosliner",
+                        "alternate": [
+                            "Gosliner, T. M."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Gosliner",
+                        "middlename": "M."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1-3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1017/S0022336000031103"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Paleontology",
+                    "volume": "73",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 140,
+            "label": "Nautilus",
+            "dwc:scientificNameAuthorship": "Anderson, F.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Systema naturae per regna tria naturae, secundum classes, ordines, genera, species, cum characteribus, differentiis, synonymis, locis. Tomus I. Editio decima, reformata.",
+                    "year": 1758,
+                    "edition": "Tenth",
+                    "authors": [
+                        {
+                            "name": "C. Linnaeus",
+                            "alternate": [
+                                "Linnaeus, C."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Linnaeus"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Laurentii Salvii",
+                    "city": "Holmiae",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Nautilus pompilius Linnaeus 1758, Nautilus perforatus Conrad, 1847 and Nautilus scrobiculatus Lightfoot 1786.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Nautilus pompilius Linnaeus, 1758",
+                        "nameComplete": "Nautilus pompilius"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Nautilus perforatus Conrad, 1847",
+                        "nameComplete": "Nautilus perforatus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Nautilus scrobiculatus Lightfoot, 1758",
+                        "nameComplete": "Nautilus scrobiculatus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

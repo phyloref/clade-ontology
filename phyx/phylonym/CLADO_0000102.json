@@ -1,0 +1,122 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Cranial morphology and affinities of Microbrachis, and a reappraisal of the phylogeny and lifestyle of the first amphibians.",
+                "year": 2004,
+                "authors": [
+                    {
+                        "name": "G. Vallin",
+                        "alternate": [
+                            "Vallin, G."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Vallin"
+                    },
+                    {
+                        "name": "M. Laurin",
+                        "alternate": [
+                            "Laurin, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Laurin"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "6",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1671/5.1"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Vertebrate Paleontology",
+                    "volume": "24",
+                    "identifier": []
+                }
+            },
+            "newick": "(Osteolepiformes, (Panderichthyidae, (Acanthostega, \n(Ichthyostega, (Tulerpeton, \n((Crassigyrinus, Baphetidae), (Colosteidae, \n((Dendrerpeton, (Eryops, (Ecolsonia, \n((Tersomius, Apateon), (Amphibamus, Doleserpeton))))),\n((Proterogyrinus, Archeria), (Gephyrostegidae, \n((Kotlassia, (Seymouria, Ariekanerpeton)),\n\n(((Aistopoda, Adelogyrinidae), (Nectridea, \n((Microbrachis, Utaherpeton),\n(Pantylus, (Cardiocephalus, (Rhynchonkos, \n(Brachystelechidae, (Lysorophia, \n((Triadobatrachus, (Discoglossidae, Pipidae)),\n((Karaurus, Hynobiidae), (Proteidae, (Sirenidae,\n(Eocaecilia, (Rhinatrematidae, Ichthyophiidae)))))))))))))),\n\nWestlothiana, \n\n(Solenodonsaurus, ((Limnoscelis, Diadectes),\n(Synapsida, (Captorhinidae, Procolophonidae))))))))))))))))"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 102,
+            "label": "Stegocephali",
+            "dwc:scientificNameAuthorship": "Laurin, M.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Synopsis of the extinct Batrachia of North America.",
+                    "year": 1868,
+                    "authors": [
+                        {
+                            "name": "E. S. Cope",
+                            "alternate": [
+                                "Cope, E. S."
+                            ],
+                            "firstname": "E.",
+                            "lastname": "Cope",
+                            "middlename": "S."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Proc. Acad. Nat. Sci. Phila.",
+                        "volume": "20",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The largest clade that includes Eryops megacephalus Cope 1877 (Temnospondyli) but not Tiktaalik roseae Daeschler et al. 2006, Panderichthys rhombolepis Gross 1930 (Panderichthyidae), and Eusthenopteron foordi Whiteaves 1881 (Osteolepiformes).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Eryops megacephalus Cope, 1877",
+                        "nameComplete": "Eryops megacephalus"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Tiktaalik roseae Daeschler, 2006",
+                        "nameComplete": "Tiktaalik roseae"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Panderichthys rhombolepis Gross, 1930",
+                        "nameComplete": "Panderichthys rhombolepis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Eusthenopteron foordi Whiteaves, 1881",
+                        "nameComplete": "Eusthenopteron foordi"
+                    }
+                }
+            ]
+        }
+    ]
+}

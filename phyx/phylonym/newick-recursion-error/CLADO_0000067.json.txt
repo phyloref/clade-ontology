@@ -1,0 +1,441 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Horsetails are the sister group to all other monilophytes and Marattiales are sister to leptosporangiate ferns.",
+                "year": 2015,
+                "authors": [
+                    {
+                        "name": "Knie",
+                        "alternate": [
+                            "Knie,"
+                        ],
+                        "lastname": "Knie"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "4",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "0.1016/j.ympev.2015.05.008"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Phylogenetics and Evolution",
+                    "volume": "90",
+                    "identifier": []
+                }
+            },
+            "newick": "((((((Oryza_sativa:0.22073946,Cycas_taitungensis:0.06720185)1.0000:0.09444409,(((((((((((((Woodwardia:0.01968824,Blechnum:0.02040356)1.0000:0.01268257,Asplenium:0.06377492)1.0000:0.02943973,Pteridium_aquilinum:0.03170305)1.0000:0.01094585,Adiantum:0.16983224)1.0000:0.05135050,(Dicksonia_antarctica:0.01436044,Cyathea:0.01692798)1.0000:0.01011581)0.9270:0.00622380,(Marsilea:0.07381189,(Azolla:0.02828771,Salvinia:0.04306599)1.0000:0.06395163)0.9970:0.02116796)1.0000:0.06578434,(Lygodium:0.15167498,(Schizaea:0.14713674,(Anemia_mexicana:0.00283133,Anemia_phyllitidis:0.00369502)1.0000:0.08696917)1.0000:0.08345549)1.0000:0.08520772)1.0000:0.02989748,(Vandenboschia_radicans:0.05501633,Hymenophyllum:0.02941274)1.0000:0.02999739)0.1930:0.00446122,(Gleichenia:0.10371397,Matonia_pectinata:0.07026427)0.8370:0.00836444)1.0000:0.05268675,(Todea_barbara:0.00458544,Leptopteris:0.01075073)1.0000:0.03864602)1.0000:0.04705441,(Marattia:0.01445385,Angiopteris:0.01249964)1.0000:0.07360958)0.8930:0.01125340,((Psilotum_nudum:0.02717094,Tmesipteris:0.02340292)1.0000:0.09498299,(Ophioglossum:0.12141713,(Helminthostachys_zeylanica:0.05148786,Botrychium:0.05199878)0.9910:0.01153738)1.0000:0.06571024)1.0000:0.03713038)0.9920:0.01465254,(Equisetum_hyemale:0.01901179,(Equisetum:0.01570547,Equisetum_bogotense:0.02293567)0.7190:0.00468046)1.0000:0.20258556)1.0000:0.04231722)0.9600:0.01943110,(Huperzia:0.08503624,Isoetes:0.11936958)1.0000:0.03237409)0.9650:0.01428641,(Nothoceros_aenigmaticus:0.06351895,Anthoceros:0.06732998)1.0000:0.08786321)0.9980:0.01583012,(Physcomitrella_patens:0.07208520,Tetraphis_pellucida:0.04898641)1.0000:0.04480168)1.0000:0.01920999,(Marchantia_polymorpha:0.06526653,Pellia_endiviifolia_/_Pleurozia_purpurea:0.10014353)1.0000:0.06732139);\n"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "The evolutionary history of ferns inferred from 25 low-copy nuclear genes.",
+                "year": 2015,
+                "authors": [
+                    {
+                        "name": "C. J. Rothfels",
+                        "alternate": [
+                            "Rothfels, C. J."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Rothfels",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "American Journal of Botany",
+                    "volume": "102",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Horsetails and ferns are a monophyletic group and the closest living relatives to seed plants.",
+                "year": 2001,
+                "authors": [
+                    {
+                        "name": "K. M. Pryer",
+                        "alternate": [
+                            "Pryer, K. M."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Pryer",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "H. Schneider",
+                        "alternate": [
+                            "Schneider, H."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Schneider"
+                    },
+                    {
+                        "name": "A. R. Smith",
+                        "alternate": [
+                            "Smith, A. R."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Smith",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "R. Cranfill",
+                        "alternate": [
+                            "Cranfill, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Cranfill"
+                    },
+                    {
+                        "name": "P. G. Wolf",
+                        "alternate": [
+                            "Wolf, P. G."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Wolf",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "J. S. Hunt",
+                        "alternate": [
+                            "Hunt, J. S."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Hunt",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "S. D. Sipes",
+                        "alternate": [
+                            "Sipes, S. D."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Sipes",
+                        "middlename": "D."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1038/35054555"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Nature",
+                    "volume": "409",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Phylogeny and evolution of ferns (monilophytes) with a focus on the early leptosporangiate divergences.",
+                "year": 2004,
+                "authors": [
+                    {
+                        "name": "K. M. Pryer",
+                        "alternate": [
+                            "Pryer, K. M."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Pryer",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "E. Schuettpelz",
+                        "alternate": [
+                            "Schuettpelz, E."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Schuettpelz"
+                    },
+                    {
+                        "name": "P. G. Wolf",
+                        "alternate": [
+                            "Wolf, P. G."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Wolf",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "H. Schneider",
+                        "alternate": [
+                            "Schneider, H."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Schneider"
+                    },
+                    {
+                        "name": "A. R. Smith",
+                        "alternate": [
+                            "Smith, A. R."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Smith",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "R. Cranfill",
+                        "alternate": [
+                            "Cranfill, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Cranfill"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.3732/ajb.91.10.1582"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "American Journal of Botany",
+                    "volume": "91",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "A nonflowering land plant phylogeny inferred from nucleotide sequences of seven chloroplast, mitochondrial, and nuclear genes.",
+                "year": 2007,
+                "authors": [
+                    {
+                        "name": "Y. L. Qiu",
+                        "alternate": [
+                            "Qiu, Y. L."
+                        ],
+                        "firstname": "Y.",
+                        "lastname": "Qiu",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "L. Li",
+                        "alternate": [
+                            "Li, L."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Li"
+                    },
+                    {
+                        "name": "B. Wang",
+                        "alternate": [
+                            "Wang, B."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Wang"
+                    },
+                    {
+                        "name": "Z. Chen",
+                        "alternate": [
+                            "Chen, Z."
+                        ],
+                        "firstname": "Z.",
+                        "lastname": "Chen"
+                    },
+                    {
+                        "name": "O. Dombrovska",
+                        "alternate": [
+                            "Dombrovska, O."
+                        ],
+                        "firstname": "O.",
+                        "lastname": "Dombrovska"
+                    },
+                    {
+                        "name": "J. Lee",
+                        "alternate": [
+                            "Lee, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Lee"
+                    },
+                    {
+                        "name": "L. Kent",
+                        "alternate": [
+                            "Kent, L."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Kent"
+                    },
+                    {
+                        "name": "R. Li",
+                        "alternate": [
+                            "Li, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Li"
+                    },
+                    {
+                        "name": "R. W. Jobson",
+                        "alternate": [
+                            "Jobson, R. W."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Jobson",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "T. A. Hendry",
+                        "alternate": [
+                            "Hendry, T. A."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Hendry",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "D. W. Taylor",
+                        "alternate": [
+                            "Taylor, D. W."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Taylor",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "C. M. Testa",
+                        "alternate": [
+                            "Testa, C. M."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Testa",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "M. Ambros",
+                        "alternate": [
+                            "Ambros, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Ambros"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1086/513474"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "International Journal of Plant Science",
+                    "volume": "168",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Phylotranscriptomic analysis of the origin and early diversification of land plants.",
+                "year": 2014,
+                "authors": [
+                    {
+                        "name": "N. J. Wickett",
+                        "alternate": [
+                            "Wickett, N. J."
+                        ],
+                        "firstname": "N.",
+                        "lastname": "Wickett",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2, 3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1073/pnas.1323926111"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Proceedings of the National Academy of Sciences U.S.A",
+                    "volume": "111",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 67,
+            "label": "Monilophyta",
+            "dwc:scientificNameAuthorship": "Doyle, J. A., Cantino, P. D., Donoghue, M. J.",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The largest crown clade containing Pteridium aquilinum (Linnaeus) Kuhn 1879 (originally Pteris aquilina) (Leptosporangiatae) and Equisetum hyemale Linnaeus 1753 but not Oryza sativa Linnaeus 1753 (Spermatophyta) or Huperzia lucidula (Michaux) Trevisan de Saint-Léon 1875 (originally Lycopodium lucidulum) (Lycopodiophyta).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Pteridium aquilinum 1879",
+                        "nameComplete": "Pteridium aquilinum"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Equisetum hyemale 1753",
+                        "nameComplete": "Equisetum hyemale"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Oryza sativa 1753",
+                        "nameComplete": "Oryza sativa"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Huperzia lucidula 1875",
+                        "nameComplete": "Huperzia lucidula"
+                    }
+                }
+            ]
+        }
+    ]
+}

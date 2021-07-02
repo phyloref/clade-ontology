@@ -1,0 +1,135 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "book_section",
+                "title": "Owls: a guide to the owls of the world. Second Edition",
+                "section_title": "Molecular phylogeny and systematics of owls (Strigiformes)",
+                "year": 2008,
+                "authors": [
+                    {
+                        "name": "M. Wink",
+                        "alternate": [
+                            "Wink, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Wink"
+                    },
+                    {
+                        "name": "P. Heidrich",
+                        "alternate": [
+                            "Heidrich, P."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Heidrich"
+                    },
+                    {
+                        "name": "H. Sauer-Gurth",
+                        "alternate": [
+                            "Sauer-Gurth, H."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Sauer-Gurth"
+                    },
+                    {
+                        "name": "A. A. Elsayed",
+                        "alternate": [
+                            "Elsayed, A. A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Elsayed",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "J. Gonzalez",
+                        "alternate": [
+                            "Gonzalez, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Gonzalez"
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "C. Konig",
+                        "alternate": [
+                            "Konig, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Konig"
+                    },
+                    {
+                        "name": "F. Weick",
+                        "alternate": [
+                            "Weick, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Weick"
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "Pica Press",
+                "city": "Robertsbridge, UK",
+                "pages": "42-63",
+                "figure": "1",
+                "identifier": [],
+                "link": []
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 284,
+            "label": "Strigiformes",
+            "dwc:scientificNameAuthorship": "Sangster, G.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "A hand-list of the genera and species of birds",
+                    "year": 1899,
+                    "authors": [
+                        {
+                            "name": "R. B. Sharpe",
+                            "alternate": [
+                                "Sharpe, R. B."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Sharpe",
+                            "middlename": "B."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "British Museum",
+                    "city": "London",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing Tyto (originally Strix) alba (Scopoli 1769) and Strix aluco Linnaeus 1758.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Tyto (originally Strix) alba Scopoli, 1769",
+                        "nameComplete": "Tyto (originally Strix) alba"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Strix aluco Linnaeus, 1758",
+                        "nameComplete": "Strix aluco"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

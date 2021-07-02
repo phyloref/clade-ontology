@@ -1,0 +1,89 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "The earliest pterodactyloid and the origin of the group.",
+                "year": 2014,
+                "authors": [
+                    {
+                        "name": "B. J. Andres",
+                        "alternate": [
+                            "Andres, B. J."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Andres",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "M. Clark",
+                        "alternate": [
+                            "Clark, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Clark"
+                    },
+                    {
+                        "name": "X. Xu",
+                        "alternate": [
+                            "Xu, X."
+                        ],
+                        "firstname": "X.",
+                        "lastname": "Xu"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.cub.2014.03.030"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Current Biology",
+                    "volume": "24",
+                    "identifier": []
+                }
+            },
+            "newick": "((((((Eudimorphodon_ranzii, Eudimorphodon_rosenfeldi), \nEudimorphodon_cromptonellus), \n(Caviramus_schesaplanensis, Raeticodactylus_filisurensis)), \nPeteinosaurus_zambellii), \n(Austriadactylus_cristatus, Preondactylus_buffarinii)),\n\n((Dimorphodon_macronyx, Parapsicephalus_purdoni),\n((Campylognathoides_liasicus, Campylognathoides_zitteli),\n\n(((\n((((Sericipterus_wucaiwanensis, Angustinaripterus_longicephalus),\nHarpactognathus_gentryii), \nQinglongopterus_guoi), \n(Rhamphorhynchus_muensteri, \n(Cacibupteryx_caribensis, Nesodactylus_hesperius))),\nDorygnathus_banthensis), Scaphognathus_crassirosteris), \n\n(Sordes_pilosus,\n(((Darwinopterus_modularis, Wukongopterus_lii), \nPterorhynchus_wellnhoferi),\n(Changchengopterus_pani,\n((((Anurognathus_ammoni, Batrachognathus_volans), \nJeholopterus_ningchengensis), Dendrorhynchoides_curvidentatus), \n(Kryptodrakon_progenitor,\n\n(\n(((((\n((((((Gnathosaurus_subulatus, Gnathosaurus_macrurus),\nPlataleorhynchus_streptophorodon),\nHuanhepterus_quingyangensis), \n(Moganopterus_zhuiana, Feilongus_youngi)), \nElanodactylus_prolatus), Kepodactylus_insperatus),\n((Ctenochasma_elegans, Ctenochasma_porocristata),\n(Pterodaustro_guinazui, (Eosipterus_yangi,\n(Beipiaopterus_chenianus, Gegepterus_changi))))),\n\n(Gallodactylus_canjuersensis, Cycnorhamphus_suevicus)), \nArdeadactylus_longicollum),\n(Pterodactylus_kochi, Pterodactylus_antiquus)),\n(Normannognathus_wellnhoferi, \n(Germanodactylus_cristatus, Germanodactylus_rhamphastinus))),\n\n(Haopterus_gracilis, \n\n(((((((((((((((Anhanguera_santanae, Anhanguera_piscator), \nAnhanguera_blittersdorfii), Anhanguera_araripensis), \nLiaoningopterus_gui), \n(Tropeognathus_mesembrinus, (Ornithocheirus_simuis,\nColoborhynchus_clavirostris))),\nLudodactylus_sibbicki),\nBrasieodactylus_araripensis),\nCearadactylus_atrox), \n(Guidraco_venator, \n(Zhenyuanopterus_longiristris, Boreopterus_cuiae))), \n(Nurhachius_ignaciobritoi, (Longchengopterus_zhaoi, \n(Liaoxipterus_brachyognathus, (Istiodactylus_sinensis,\nIstiodactylus_latidens))))), \nLonchodectes_compressirostris),\nHongshanopterus_lacustris), \n(Pteranodon_longiceps, Pteranodon_sternbergi)), \n(Nyctodaurus_gracilis, Nyctosaurus_lamegoi, Muzquizopteryx_coahuilensis)),\n\n(((((((((Tapejara_wellnhoferi, Europejara_olcadesorum), Bakonydraco_galaczi),\n(Tupandactylus_navigans, Tupandactylus_imperator)),\n(\"Huaxiapterus\"_benxiensis, \"Huaxiapterus\"_corollatus)), \nSinopterus_dongi), Huaxiapterus_jii), \n(Eopteranodon_lii, (Sinopterus_gui, Nemicolopterus_crypticus))),\nBennettazhia_oregonensis),\n\n((((Dsungaripterus_weii, Domeykodactylus_ceciliae), \n(Noripterus_parvus, Noripterus_complicidens)), \n(Thalassodromeus_sethi, (Tupuxuara_longicristatus, Tupuxuara_leonardii))),\n((((Chaoyangopterus_zhangi, Jipapterus_edentus), \nShenzhoupterus_chaoyangensis), Eoazhdarcho_liaoxiensis), \n(Azhdarcho_lancicollis, (Zhejiangopterus_linhaiensis, \n(Arambourgiania_philadelphiae, Quetzalcoatlus_northropi))))))))))))))))))"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 158,
+            "label": "Pterodactyloidea",
+            "dwc:scientificNameAuthorship": "Andres, B., Padian, K.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Beiträge zur Kenntnis der Flugsaurier.",
+                    "year": 1901,
+                    "authors": [
+                        {
+                            "name": "F. Plieninger",
+                            "alternate": [
+                                "Plieninger, F."
+                            ],
+                            "firstname": "F.",
+                            "lastname": "Plieninger"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Palaeontographica",
+                    "pages": "65-90",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The clade characterized by the apomorphy elongate wing metacarpal that is at least 80 percent as long as the humerus (at adult stage), as inherited by Pterodactylus antiquus (Soemmerring 1812).",
+            "internalSpecifiers": [],
+            "externalSpecifiers": []
+        }
+    ]
+}

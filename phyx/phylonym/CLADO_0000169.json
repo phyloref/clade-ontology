@@ -1,0 +1,138 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Medusozoan phylogeny and character evolution clarified by new large and small subunit rDNA data and an assessment of the utility of phylogenetic mixture models.",
+                "year": 2006,
+                "authors": [
+                    {
+                        "name": "A. G. Collins",
+                        "alternate": [
+                            "Collins, A. G."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Collins",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "P. Schuchert",
+                        "alternate": [
+                            "Schuchert, P."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Schuchert"
+                    },
+                    {
+                        "name": "A. C. Marques",
+                        "alternate": [
+                            "Marques, A. C."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Marques",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "T. Jankowski",
+                        "alternate": [
+                            "Jankowski, T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Jankowski"
+                    },
+                    {
+                        "name": "M. Medina",
+                        "alternate": [
+                            "Medina, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Medina"
+                    },
+                    {
+                        "name": "B. Schierwater",
+                        "alternate": [
+                            "Schierwater, B."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Schierwater"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "6",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1080/10635150500433615"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Systematic Biology",
+                    "volume": "55",
+                    "identifier": []
+                }
+            },
+            "newick": "(((((((((((((Acanthodes:1.0,Homalacanthus:1.0):1.0,Cheiracanthus:2.0):1.0,Mesacanthus:3.0,Promesacanthus:3.0):1.0,Cassidiceps:4.0):1.0,Euthacanthus:5.0):1.0,(Ischnacanthus:1.0,Poracanthodes:1.0):5.0):1.0,((((Cheirolepis:1.0,Howqualepis:1.0,Mimia:1.0):1.0,(Onychodus:1.0,Porolepis:1.0,Psarolepis:1.0):1.0):1.0,Ligulalepis:3.0):1.0,Dialipina:4.0):3.0):1.0,(((((Akmonistion:1.0,Cladoselache:1.0):1.0,Cladodoides:2.0,Doliodus:2.0,Hamiltonichthys:2.0,Obtusacanthus:2.0,Orthacanthus:2.0,Pucapampella:2.0,'\"Tamiobatis\"':2.0):1.0,Kathemacanthus:3.0):1.0,Brochoadmones:4.0):1.0,((Brachyacanthus:1.0,Parexus:1.0):1.0,Climatius:2.0):3.0,Ptomacanthus:5.0):3.0,Culmacanthus:8.0,((Diplacanthus:1.0,Gladiobranchus:1.0):1.0,Tetanopsyrus:2.0):6.0):1.0,((Buchanosteus:1.0,Coccosteus:1.0):1.0,Dicksonosteus:2.0):7.0):1.0,Brindabellaspis:10.0,((Campbellodus:1.0,Rhamphodopsis:1.0):1.0,Macropetalichthys:2.0):8.0):1.0,(Bothriolepis:1.0,Pterichthyodes:1.0):10.0):1.0,Osteostraci:12.0):1.0,Galeaspida:13.0);"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 169,
+            "label": "Hydroidolina",
+            "dwc:scientificNameAuthorship": "Collins, A. G., Dunn, C. W.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Towards understanding the phylogenetic history of Hydrozoa: Hypothesis testing with 18S gene sequence data.",
+                    "year": 2000,
+                    "authors": [
+                        {
+                            "name": "A. G. Collins",
+                            "alternate": [
+                                "Collins, A. G."
+                            ],
+                            "firstname": "A.",
+                            "lastname": "Collins",
+                            "middlename": "G."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Sci. Mar.",
+                        "volume": "64",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The most inclusive crown clade containing Hydra vulgaris (Pallas 1766) but not Solmissus marshalli A. Agassiz and Mayer 1902 (Trachylina).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Hydra vulgaris Pallas, 1766",
+                        "nameComplete": "Hydra vulgaris"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Solmissus marshalli Agassiz and Mayer, 1902",
+                        "nameComplete": "Solmissus marshalli"
+                    }
+                }
+            ]
+        }
+    ]
+}

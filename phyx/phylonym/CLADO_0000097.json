@@ -1,0 +1,156 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Cranial morphology and affinities of Microbrachis, and a reappraisal of the phylogeny and lifestyle of the first amphibians.",
+                "year": 2004,
+                "authors": [
+                    {
+                        "name": "G. Vallin",
+                        "alternate": [
+                            "Vallin, G."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Vallin"
+                    },
+                    {
+                        "name": "M. Laurin",
+                        "alternate": [
+                            "Laurin, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Laurin"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "6",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1671/5.1"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Vertebrate Paleontology",
+                    "volume": "24",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 97,
+            "label": "Seymouriamorpha",
+            "dwc:scientificNameAuthorship": "Laurin, M., Klembara, J.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "A sketch classification of the pre-Jurassic tetrapod vertebrates.",
+                    "year": 1917,
+                    "authors": [
+                        {
+                            "name": "D. M. S. Watson",
+                            "alternate": [
+                                "Watson, D. M. S."
+                            ],
+                            "firstname": "D. M.",
+                            "lastname": "Watson",
+                            "middlename": "S."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Proc. zool. Soc. Lond.",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The largest clade containing Seymouria baylorensis Broili 1904 but not Homo sapiens Linnaeus 1758 (Synapsida), Procolophon trigoniceps Owen 1876, Anthracosaurus russelli Huxley 1863 (Embolomeri), Eryops megacephalus Cope 1877 (Temnospondyli), Gephyrostegus bohemicus Jaekel 1902 (Gephryostegidae), Solenodonsaurus janenschi Broili 1924, and Diadectes sideropelicus Cope 1878 (Diadectomorpha).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Seymouria baylorensis Broili, 1904",
+                        "nameComplete": "Seymouria baylorensis"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Homo sapiens Linnaeus, 1758",
+                        "nameComplete": "Homo sapiens"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Procolophon trigoniceps Owen, 1876",
+                        "nameComplete": "Procolophon trigoniceps"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Anthracosaurus russelli Huxley, 1863",
+                        "nameComplete": "Anthracosaurus russelli"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Eryops megacephalus Cope, 1877",
+                        "nameComplete": "Eryops megacephalus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Gephyrostegus bohemicus Jaekel, 1902",
+                        "nameComplete": "Gephyrostegus bohemicus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Solenodonsaurus janenschi Broili, 1924",
+                        "nameComplete": "Solenodonsaurus janenschi"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Diadectes sideropelicus Cope, 1878",
+                        "nameComplete": "Diadectes sideropelicus"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,163 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Echinoderm phylogeny including Xyloplax, a progenetic asteroid.",
+                "year": 2011,
+                "authors": [
+                    {
+                        "name": "D. A. Jaines",
+                        "alternate": [
+                            "Jaines, D. A."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Jaines",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "J. R. Voight",
+                        "alternate": [
+                            "Voight, J. R."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Voight",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "M. Daly",
+                        "alternate": [
+                            "Daly, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Daly"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1093/sysbio/syr044"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Syst. Biol.",
+                    "volume": "60",
+                    "identifier": []
+                }
+            },
+            "newick": "((((((((((((((Echinus_esculentus,Strongylocentrotus_purpuratus),(Genocidaris_maculata,Tripneustes_gratilla)),(Paracentrotus_lividus,Psammechinus_miliaris)),Pseudechinus_albocinctus),(Amblypneustes_ovum,Holopneustes_inflatus)),(((Salmaciella_oligopora,Salmacis_belli),Temnopleurus_alexandri),(Mespilis_globulus,Temnotrema_sculptum))),(((((Arbacia_lixula,Arbacia_punctulata),Encope_aberrans),(Echinocardium_cordatum,Meoma_ventricosa)),(Sphaerechinus_granularis,Stomopneustes_variolaris)),Eucidaris_tribuloides)),((((((((Ophiopholis_aculeata,Ophiotrix_oerstedii),Amphipholis_squamata),Ophionereis_reticulata),Ophiocoma_echinata),((Ophioderma_brevispinum,Ophiomyxa_flaccida),Ophiopsammus_maculata)),Ophiocanops_fugiens),((Asteronyx_sp.,Gorgonocephalus_eucnemis),Schizostella_bifurcata)),(((((((Cucumaria_miniata,Pentaca_pygmaea),Cucumaria_salma),Parastichopus_californicus),Pseudostichopus_villosus),Holothuria_leucospilota),Psychropotes_longicauda),(Chiridota_rotifera,Leprtosynapra_clarkii)))),((((((((Diplodntias_miliaris,Odontaster_validus),Acodontaster_conspicuus),Eurygonias_hylacanthus),Caymanostella),((Echinaster_sentus,Henricia_sp.),Archaster_typicus)),((((Asterina_miniata,Perknaster_fuscus),Stegnaster_inflatus),Patiriella_regularis),(Crossaster_papposus,Solaster_stimpsonii)),((((Luidia_clathrata,Luidia_foliolata),Macroptychaster_accrescens),Astropecten_articulatus),(Dermasterias_imbricata,Pseudarchaster_pareli))),Astropecten_polyacanthus),((((((((Evasterias_troschelii,Pisaster_ochraceus),Leptasterias_hexactis),Asterias_forbesi),Rathnunaster_californicus),(Coscinasterias_muricata,Diplasterias_bruci)),(Brisingaster_robillardi,Heliaster_helianthoides)),(Allostichaster_sp.,Stichaster_australis)),((Hymenaster_pellucidus,Pteraster_tesselatus),Xyloplax_janetae)))),((Gymnocrinus_richeri,Florormetra_serratissima),Metacrinus_rotundus))Echinodermata,((Harriamania_planktophilus,Saccoglossus_kowalevskii),Ptychodera_flava))),Cephalodiscus_gracilis),Ciona_intestinalis)root"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 243,
+            "label": "Echinodermata",
+            "dwc:scientificNameAuthorship": "Sumrall, C. D.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Ordre naturel des oursins de mer et fossiles, avec des observations sur les piquants des oursins de mer et quelques remarques sur les bélemnites.",
+                    "year": 1754,
+                    "authors": [
+                        {
+                            "name": "T. Klein",
+                            "alternate": [
+                                "Klein, T."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Klein"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "C. J. B. Bauche",
+                    "city": "Paris",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Asterias forbesi (Desor 1848) (Asteroidea), Ophioderma brevispinum (Say 1825) (Ophiuroidea), Strongylocentrotus purpuratus (Stimpson 1857) (Echinoidea), Cucumaria miniata (Brandt 1835) (Holothuroidea), Metacrinus rotundus Carpenter 1885 (Crinoidea) and Xyloplax janetae Mah 2006 (Concentricycloidea).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Asterias forbesi Desor, 1848",
+                        "nameComplete": "Asterias forbesi",
+                        "genusPart": "Asterias",
+                        "specificEpithet": "forbesi"
+                    },
+                    "label": "Asterias forbesi 1848"
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Ophioderma brevispinum Say, 1825",
+                        "nameComplete": "Ophioderma brevispinum",
+                        "genusPart": "Ophioderma",
+                        "specificEpithet": "brevispinum"
+                    },
+                    "label": "Ophioderma brevispinum 1825"
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Strongylocentrotus purpuratus Stimpson, 1857",
+                        "nameComplete": "Strongylocentrotus purpuratus",
+                        "genusPart": "Strongylocentrotus",
+                        "specificEpithet": "purpuratus"
+                    },
+                    "label": "Strongylocentrotus purpuratus 1857"
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Cucumaria miniata Brandt, 1835",
+                        "nameComplete": "Cucumaria miniata",
+                        "genusPart": "Cucumaria",
+                        "specificEpithet": "miniata"
+                    },
+                    "label": "Cucumaria miniata 1835"
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Metacrinus rotundus Carpenter, 1885",
+                        "nameComplete": "Metacrinus rotundus",
+                        "genusPart": "Metacrinus",
+                        "specificEpithet": "rotundus"
+                    },
+                    "label": "Metacrinus rotundus 1885"
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Xyloplax janetae Mah, 2006",
+                        "nameComplete": "Xyloplax janetae",
+                        "genusPart": "Xyloplax",
+                        "specificEpithet": "janetae"
+                    },
+                    "label": "Xyloplax janetae 2006"
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

@@ -1,0 +1,150 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Monophyly of the Convolvulaceae and circumscription of their major lineages based on DNA sequences of multiple chloroplast loci.",
+                "year": 2002,
+                "authors": [
+                    {
+                        "name": "S. Stefanovic",
+                        "alternate": [
+                            "Stefanovic, S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Stefanovic"
+                    },
+                    {
+                        "name": "L. E. Krueger",
+                        "alternate": [
+                            "Krueger, L. E."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Krueger",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "R. G. Olmstead",
+                        "alternate": [
+                            "Olmstead, R. G."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Olmstead",
+                        "middlename": "G."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "doi.org/10.3732/ajb.89.9.1510"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "American Journal of Botany",
+                    "volume": "89",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Testing the phylogenetic position of a parasitic plant (Cuscuta, Convolvulaceae, Asteridae):  Bayesian inference and the Parametric Bootstrap on data drawn from three genomes.",
+                "year": 2004,
+                "authors": [
+                    {
+                        "name": "S. L. Stefanovic",
+                        "alternate": [
+                            "Stefanovic, S. L."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Stefanovic",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "R. G. Olmstead",
+                        "alternate": [
+                            "Olmstead, R. G."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Olmstead",
+                        "middlename": "G."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1, 3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1080/10635150490445896"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Systematic Biology",
+                    "volume": "53",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 32,
+            "label": "Convolvulaceae",
+            "dwc:scientificNameAuthorship": "Stefanović , S., Olmstead, R. G.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Genera plantarum.",
+                    "year": 1789,
+                    "authors": [
+                        {
+                            "name": "A. L. Jussieu",
+                            "alternate": [
+                                "Jussieu, A. L."
+                            ],
+                            "firstname": "A.",
+                            "lastname": "Jussieu",
+                            "middlename": "L."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "city": "Paris",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The least inclusive clade containing Convolvulus arvensis Linnaeus 1753 and Humbertia madagascariensis Lamarck 1786.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Convolvulus arvensis Linnaeus, 1753",
+                        "nameComplete": "Convolvulus arvensis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Humbertia madagascariensis Lamarck, 1786",
+                        "nameComplete": "Humbertia madagascariensis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

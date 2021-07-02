@@ -1,0 +1,646 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Molecular phylogeny of monocotyledons inferred from combined analysis of plastid matK and rbcL gene sequences.",
+                "year": 2004,
+                "authors": [
+                    {
+                        "name": "M. N. Tamura",
+                        "alternate": [
+                            "Tamura, M. N."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Tamura",
+                        "middlename": "N."
+                    },
+                    {
+                        "name": "J. Yamashita",
+                        "alternate": [
+                            "Yamashita, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Yamashita"
+                    },
+                    {
+                        "name": "S. Fuse",
+                        "alternate": [
+                            "Fuse, S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Fuse"
+                    },
+                    {
+                        "name": "M. Haraguchi",
+                        "alternate": [
+                            "Haraguchi, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Haraguchi"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1007/s10265-003-0133-3"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Plant Research",
+                    "volume": "117",
+                    "identifier": []
+                }
+            },
+            "newick": "(((((((((((((Hordeum, Phyllostachys), Flagellaria), \n(Juncus, Scirpodendron)),\n\n(Typha, Sparganium)),\n\n((Zingiber, Hedychium), Globba), \n(((Eichhornia, Monochoria), Hanguana), Angiozanthos)), \n(Butia, Phoenix)), \n\n((\n((((((Polygonatum, \n(Heteropolygonatum, Disporopsis), (Smilacina, Maianthemum)),\n(Draceana, Pleomele), Ruscus, \n(Ophiopogon, (Liriope, Peliosanthes)),\n(Convallaria, \n(Reineckea, (Campylandra, Rohdea)), \n((Tupistra, Tricalistra), Aspidistra)),\n(Nolina, Dasylirion), Comospermum),\n\n((((((Yucca_1, Yucca_2), Polianthes), Camassia), Hosta), Chlorophytum),\n(Dianella, Hemerocallis))), \n\n(((((Galanthus, Leucojum), Stenomesson), Clivia), Amaryllis), \n((Tulbaghia, Nothoscordum), Allium)), \n(((Brodiaea, Milla), Bessera), \n(Scilla, Bowiea))), \n\nIris), (Ixiolirion, Doryanthes)), \n((Curculigo, Rhodohypoxis), Blandfordia)), \n\n(Phaius, Spiranthes))),\n\n((\n(((Disporum, Uvularia), Colchicum), \n(Drymophila, Alstroemeria)),\n\n((((((Lilium, Nomocharis), Fritillaria), \n((Erythronium, Amana), Tulipa)),\n(Medeola, Clintonia)), \nTricyrtis), \n(Streptopus, Scoliopus))),\n\n(((((Paris, Daiswa), Kinugasa), Trillium), \n((Heloniopsis, Ypsilandra), Chionographis)), \nVeraturum))),\n\n((((Freycinetia, Carludovica), Stremona), \n(Dioscorea, Tacca)), \n(((Lophiola, Narthecium), Metanarthecium), Aletris))),\n\n(Petrosavia, Japonolirion)), \n\n((Tofieldia, (((Potamogeton, Triglochin), Aponogeton),\n((Limnocharis, Alisma), Blyxa))), \n((Amorphophallus, Zantedeschia), Gymnostachys))),\n\nAcorus), \n\n(Piper, Magnolia))\n"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "book_section",
+                "title": "Multigene analyses of monocot relationships: a summary. Pages 62–74 in Monocots: comparative biology and evolution (excluding Poales) (J. T. Columbus, E. A. Friar, J. M. Porter, L. M. Prince, and M. G. Simpson,eds.).",
+                "year": 2006,
+                "authors": [
+                    {
+                        "name": "M. W. Chase",
+                        "alternate": [
+                            "Chase, M. W."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Chase",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "M. F. Fay",
+                        "alternate": [
+                            "Fay, M. F."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Fay",
+                        "middlename": "F."
+                    },
+                    {
+                        "name": "D. S. Devey",
+                        "alternate": [
+                            "Devey, D. S."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Devey",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "O. Maurin",
+                        "alternate": [
+                            "Maurin, O."
+                        ],
+                        "firstname": "O.",
+                        "lastname": "Maurin"
+                    },
+                    {
+                        "name": "N. Rønsted",
+                        "alternate": [
+                            "Rønsted, N."
+                        ],
+                        "firstname": "N.",
+                        "lastname": "Rønsted"
+                    },
+                    {
+                        "name": "J. Davies",
+                        "alternate": [
+                            "Davies, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Davies"
+                    },
+                    {
+                        "name": "Y. Pillon",
+                        "alternate": [
+                            "Pillon, Y."
+                        ],
+                        "firstname": "Y.",
+                        "lastname": "Pillon"
+                    },
+                    {
+                        "name": "G. Petersen",
+                        "alternate": [
+                            "Petersen, G."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Petersen"
+                    },
+                    {
+                        "name": "O. Seberg",
+                        "alternate": [
+                            "Seberg, O."
+                        ],
+                        "firstname": "O.",
+                        "lastname": "Seberg"
+                    },
+                    {
+                        "name": "M. N. Tamura",
+                        "alternate": [
+                            "Tamura, M. N."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Tamura",
+                        "middlename": "N."
+                    },
+                    {
+                        "name": "C. B. Asmussen",
+                        "alternate": [
+                            "Asmussen, C. B."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Asmussen",
+                        "middlename": "B."
+                    },
+                    {
+                        "name": "K. Hilu",
+                        "alternate": [
+                            "Hilu, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Hilu"
+                    },
+                    {
+                        "name": "T. Borsch",
+                        "alternate": [
+                            "Borsch, T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Borsch"
+                    },
+                    {
+                        "name": "J. I. Davis",
+                        "alternate": [
+                            "Davis, J. I."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Davis",
+                        "middlename": "I."
+                    },
+                    {
+                        "name": "D. W. Stevenson",
+                        "alternate": [
+                            "Stevenson, D. W."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Stevenson",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "J. C. Pires",
+                        "alternate": [
+                            "Pires, J. C."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Pires",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "T. J. Givnish",
+                        "alternate": [
+                            "Givnish, T. J."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Givnish",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "K. J. Sytsma",
+                        "alternate": [
+                            "Sytsma, K. J."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Sytsma",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "M. A. McPherson",
+                        "alternate": [
+                            "McPherson, M. A."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "McPherson",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "S. W. Graham",
+                        "alternate": [
+                            "Graham, S. W."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Graham",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "H. S. Rai",
+                        "alternate": [
+                            "Rai, H. S."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Rai",
+                        "middlename": "S."
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "J. T. Columbus",
+                        "alternate": [
+                            "Columbus, J. T."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Columbus",
+                        "middlename": "T."
+                    },
+                    {
+                        "name": "E. A. Friar",
+                        "alternate": [
+                            "Friar, E. A."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Friar",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "J. M. Porter",
+                        "alternate": [
+                            "Porter, J. M."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Porter",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "L. M. Prince",
+                        "alternate": [
+                            "Prince, L. M."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Prince",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "M. G. Simpson",
+                        "alternate": [
+                            "Simpson, M. G."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Simpson",
+                        "middlename": "G."
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "Rancho Santa Ana Botanic Garden",
+                "city": "Claremont, CA",
+                "pages": "62-74",
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.5642/aliso.20062201.06"
+                    }
+                ],
+                "link": []
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "book_section",
+                "title": "Monocots: comparative biology and evolution (excluding Poales)",
+                "section_title": "Robust inference of monocot deep phylogeny using an expanded multigene plastid data set.",
+                "year": 2006,
+                "authors": [
+                    {
+                        "name": "S. W. Graham",
+                        "alternate": [
+                            "Graham, S. W."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Graham",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "J. M. Zgurski",
+                        "alternate": [
+                            "Zgurski, J. M."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Zgurski",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "M. A. McPherson",
+                        "alternate": [
+                            "McPherson, M. A."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "McPherson",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "D. M. Cherniawsky",
+                        "alternate": [
+                            "Cherniawsky, D. M."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Cherniawsky",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "J. M. Saarela",
+                        "alternate": [
+                            "Saarela, J. M."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Saarela",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "E. S. C. Horne",
+                        "alternate": [
+                            "Horne, E. S. C."
+                        ],
+                        "firstname": "E. S.",
+                        "lastname": "Horne",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "S. Y. Smith",
+                        "alternate": [
+                            "Smith, S. Y."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Smith",
+                        "middlename": "Y."
+                    },
+                    {
+                        "name": "W. A. Wong",
+                        "alternate": [
+                            "Wong, W. A."
+                        ],
+                        "firstname": "W.",
+                        "lastname": "Wong",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "H. E. O'Brien",
+                        "alternate": [
+                            "O'Brien, H. E."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "O'Brien",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "V. L. Biron",
+                        "alternate": [
+                            "Biron, V. L."
+                        ],
+                        "firstname": "V.",
+                        "lastname": "Biron",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "J. C. Pires",
+                        "alternate": [
+                            "Pires, J. C."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Pires",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "R. G. Olmstead",
+                        "alternate": [
+                            "Olmstead, R. G."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Olmstead",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "M. W. Chase",
+                        "alternate": [
+                            "Chase, M. W."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Chase",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "H. S. Rai",
+                        "alternate": [
+                            "Rai, H. S."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Rai",
+                        "middlename": "S."
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "J. T. Columbus",
+                        "alternate": [
+                            "Columbus, J. T."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Columbus",
+                        "middlename": "T."
+                    },
+                    {
+                        "name": "E. A. Friar",
+                        "alternate": [
+                            "Friar, E. A."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Friar",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "J. M. Porter",
+                        "alternate": [
+                            "Porter, J. M."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Porter",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "L. M. Prince",
+                        "alternate": [
+                            "Prince, L. M."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Prince",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "M. G. Simpson",
+                        "alternate": [
+                            "Simpson, M. G."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Simpson",
+                        "middlename": "G."
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "Rancho Stana Ana Botanic Garden",
+                "city": "Claremont CA",
+                "pages": "3-20",
+                "figure": "1B",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.5642/aliso.20062201.02"
+                    }
+                ],
+                "link": []
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 84,
+            "label": "Petrosaviidae",
+            "dwc:scientificNameAuthorship": "Graham, S. W., Judd, W. S., Iles, W. J.D.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Towards a phylogenetic nomenclature of Tracheophyta.",
+                    "year": 2007,
+                    "authors": [
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Doyle",
+                            "alternate": [
+                                "Doyle, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Doyle",
+                            "middlename": "A."
+                        },
+                        {
+                            "name": "S. W. Graham",
+                            "alternate": [
+                                "Graham, S. W."
+                            ],
+                            "firstname": "S.",
+                            "lastname": "Graham",
+                            "middlename": "W."
+                        },
+                        {
+                            "name": "W. S. Judd",
+                            "alternate": [
+                                "Judd, W. S."
+                            ],
+                            "firstname": "W.",
+                            "lastname": "Judd",
+                            "middlename": "S."
+                        },
+                        {
+                            "name": "R. G. Olmstead",
+                            "alternate": [
+                                "Olmstead, R. G."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Olmstead",
+                            "middlename": "G."
+                        },
+                        {
+                            "name": "D. E. Soltis",
+                            "alternate": [
+                                "Soltis, D. E."
+                            ],
+                            "firstname": "D.",
+                            "lastname": "Soltis",
+                            "middlename": "E."
+                        },
+                        {
+                            "name": "P. S. Soltis",
+                            "alternate": [
+                                "Soltis, P. S."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Soltis",
+                            "middlename": "S."
+                        },
+                        {
+                            "name": "M. J. Donoghue",
+                            "alternate": [
+                                "Donoghue, M. J."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Donoghue",
+                            "middlename": "J."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Taxon",
+                        "volume": "56",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing Lilium candidum L. 1753 and Petrosavia stellaris Becc. 1871, but not Acorus calamus L. 1753 or Alisma plantago-aquatica L. 1753.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Lilium candidum Linnaeus, 1753",
+                        "nameComplete": "Lilium candidum"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Petrosavia stellaris Becc., 1871",
+                        "nameComplete": "Petrosavia stellaris"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Alisma plantago-aquatica Linnaeus, 1753",
+                        "nameComplete": "Alisma plantago-aquatica"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Acorus calamus Linnaeus, 1753",
+                        "nameComplete": "Acorus calamus"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,95 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Phylogeny of Medusozoa and the evolution of cnidarian life cycles",
+                "year": 2002,
+                "authors": [
+                    {
+                        "name": "A. G. Collins",
+                        "alternate": [
+                            "Collins , A. G."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Collins",
+                        "middlename": "G."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1046/j.1420-9101.2002.00403"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Evolutionary Biology",
+                    "volume": "15",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 165,
+            "label": "Cnidaria",
+            "dwc:scientificNameAuthorship": "Collins, A. G., Daly, M., Dunn, C. W.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Classification of polyps.",
+                    "year": 1865,
+                    "authors": [
+                        {
+                            "name": "A. E. Verrill",
+                            "alternate": [
+                                "Verrill, A. E."
+                            ],
+                            "firstname": "A.",
+                            "lastname": "Verrill",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Proc. Essex Inst.",
+                        "volume": "4",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Hydra vulgaris (Pallas 1766) and Nematostella vectensis Stephenson 1935.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Hydra vulgaris Pallas, 1766",
+                        "nameComplete": "Hydra vulgaris"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Nematostella vectensis Stephenson, 1935",
+                        "nameComplete": "Nematostella vectensis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

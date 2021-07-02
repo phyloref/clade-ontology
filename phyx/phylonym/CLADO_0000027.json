@@ -1,0 +1,131 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Gain and loss of elongation factor genes in green algae.",
+                "year": 2009,
+                "authors": [
+                    {
+                        "name": "E. Cocquyt",
+                        "alternate": [
+                            "Cocquyt, E."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Cocquyt"
+                    },
+                    {
+                        "name": "H. Verbruggen",
+                        "alternate": [
+                            "Verbruggen, H."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Verbruggen"
+                    },
+                    {
+                        "name": "F. Leliaert",
+                        "alternate": [
+                            "Leliaert, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Leliaert"
+                    },
+                    {
+                        "name": "F. W. Zechman",
+                        "alternate": [
+                            "Zechman, F. W."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Zechman",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "K. Sabbe",
+                        "alternate": [
+                            "Sabbe, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Sabbe"
+                    },
+                    {
+                        "name": "O. De Clerck",
+                        "alternate": [
+                            "De Clerck, O."
+                        ],
+                        "firstname": "O.",
+                        "lastname": "De Clerck"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1186/1471-2148-9-39"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "BMC Evolutionary Biology",
+                    "volume": "9",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 27,
+            "label": "Chlorophyta",
+            "dwc:scientificNameAuthorship": "Hall, J. D., Lewis, L. A., McCourt, R. M., Delwiche, C. F., Mishler, B., Karol, K. G.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Das Pflanzenreich in seinen natürlichen Classen und Familien entwickelt und durch mehr als tausend in Kupfer gestochene übersichtlich-bildliche Darstellungen fur Anfänger und Freunde der Botanik.",
+                    "year": 1834,
+                    "authors": [
+                        {
+                            "name": "Reichenback",
+                            "alternate": [
+                                "Reichenback,"
+                            ],
+                            "lastname": "Reichenback"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "city": "Leipzig",
+                    "pages": "62",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The largest crown clade containing Chlamydomonas reinhardti P. C. A. Dangeard 1891 but not Chara vulgaris Linnaeus 1753.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Chlamydomonas reinhardti Dangeard, 1891",
+                        "nameComplete": "Chlamydomonas reinhardti"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Chara vulgaris Linnaeus, 1753",
+                        "nameComplete": "Chara vulgaris"
+                    }
+                }
+            ]
+        }
+    ]
+}

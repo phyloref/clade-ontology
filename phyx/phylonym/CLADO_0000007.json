@@ -1,0 +1,96 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Observations on the structure of the Early Permian reptile Stereosternum temidum.",
+                "year": 1999,
+                "authors": [
+                    {
+                        "name": "S. P. Modesto",
+                        "alternate": [
+                            "Modesto, S. P."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Modesto",
+                        "middlename": "P."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "4A",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Palaeontologica Africana",
+                    "volume": "35",
+                    "identifier": []
+                }
+            },
+            "newick": "(Seymouria, ((Diadectidae, Limnoscelidae), (Synapsida, \n((Captorhinidae, (Paleothyris, (Araeoscelidia, (Younginiformes)))),\n(Mesosauridae, (Millerettidae, (Pareiasauria, (Procolophonidae, Testudines))))))))"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 7,
+            "label": "Amniota",
+            "dwc:scientificNameAuthorship": "Laurin, M, Reisz, R. R.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Generelle Morphologie der Organismen.",
+                    "year": 1866,
+                    "authors": [
+                        {
+                            "name": "E. Haeckel",
+                            "alternate": [
+                                "Haeckel, E."
+                            ],
+                            "firstname": "E.",
+                            "lastname": "Haeckel"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Reimer",
+                    "city": "Berlin",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing Homo sapiens Linnaeus 1758 (Synapsida), Testudo graeca Linnaeus 1758 (Testudines), and Crocodylus (originally Lacerta) niloticus Laurenti 1768 (Diapsida; see Reference Phylogeny).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Homo sapiens Linnaeus, 1758",
+                        "nameComplete": "Homo sapiens"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Testudo graeca Linnaeus, 1758",
+                        "nameComplete": "Testudo graeca"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Crocodylus (originally Lacerta) niloticus Laurenti, 1768",
+                        "nameComplete": "Crocodylus (originally Lacerta) niloticus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

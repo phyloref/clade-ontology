@@ -1,0 +1,138 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Multigene phylogenetic analyses support recognition of the Sporolithales ord. nov.",
+                "year": 2010,
+                "authors": [
+                    {
+                        "name": "L. Le Gall",
+                        "alternate": [
+                            "Le Gall, L."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Le Gall"
+                    },
+                    {
+                        "name": "C. Payri",
+                        "alternate": [
+                            "Payri, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Payri"
+                    },
+                    {
+                        "name": "L. Bittner",
+                        "alternate": [
+                            "Bittner, L."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Bittner"
+                    },
+                    {
+                        "name": "G. W. Saunders",
+                        "alternate": [
+                            "Saunders, G. W."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Saunders",
+                        "middlename": "W."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2009.05.026"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Mol. Phylogenet. Evol.",
+                    "volume": "54",
+                    "identifier": []
+                }
+            },
+            "newick": "((Camelidae:11.0,((Suidae:1.0,Tayassuidae:1.0):9.0,((Hippopotamidae:8.0,((((Balaenopteridae:1.0,Eschrichtiidae:1.0):1.0,Neobalaenidae:2.0):1.0,Balaenidae:3.0):4.0,(((((Delphinidae:2.0,(Monodontidae:1.0,Phocoenidae:1.0):1.0):1.0,(Iniidae:1.0,Pontoporiidae:1.0):2.0):1.0,Ziphiidae:4.0):1.0,Platanistidae:5.0):1.0,(Kogiidae:1.0,Physeteridae:1.0):5.0):1.0):1.0):1.0,(Tragulidae:4.0,(((Bovidae:1.0,Moschidae:1.0):1.0,Cervidae:2.0):1.0,(Giraffidae:1.0,Antilocapridae:1.0):2.0):1.0):5.0):1.0):1.0):1.0,(Equidae:2.0,(Rhinocerotidae:1.0,Tapiridae:1.0):1.0):10.0);"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 132,
+            "label": "Corallinophycidae",
+            "dwc:scientificNameAuthorship": "Saunders, G. W.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "A nuclear phylogeny of the Florideophyceae (Rhodophyta) inferred from combined EF2, small subunit and large subunit ribosomal DNA: establishing the new red algal subclass Corallinophycidae.",
+                    "year": 2007,
+                    "authors": [
+                        {
+                            "name": "L. Le Gall",
+                            "alternate": [
+                                "Le Gall, L."
+                            ],
+                            "firstname": "L.",
+                            "lastname": "Le Gall"
+                        },
+                        {
+                            "name": "G. W. Saunders",
+                            "alternate": [
+                                "Saunders, G. W."
+                            ],
+                            "firstname": "G.",
+                            "lastname": "Saunders",
+                            "middlename": "W."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Mol. Phylogenet. Evol.",
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Mol. Phylogenet. Evol.",
+                        "volume": "43",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Corallina officinalis Linnaeus 1758, Rhodogorgon ramosissima J.N. Norris & Bucher 1989, and Sporolithon ptychoides Heydrich 1897.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Corallina officinalis Linnaeus, 1758",
+                        "nameComplete": "Corallina officinalis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Rhodogorgon ramosissima Norris and Bucher, 1989",
+                        "nameComplete": "Rhodogorgon ramosissima"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Sporolithon ptychoides Heydrich, 1897",
+                        "nameComplete": "Sporolithon ptychoides"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

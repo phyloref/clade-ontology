@@ -1,0 +1,147 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Resolving the phylogenetic position of Ombrocharis (Lamiaceae), with reference to the molecular phylogeny of tribe Elsholtzieae.",
+                "year": 2016,
+                "authors": [
+                    {
+                        "name": "Y. P. Chen",
+                        "alternate": [
+                            "Chen, Y. P."
+                        ],
+                        "firstname": "Y.",
+                        "lastname": "Chen",
+                        "middlename": "P."
+                    },
+                    {
+                        "name": "B. T. Drew",
+                        "alternate": [
+                            "Drew, B. T."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Drew",
+                        "middlename": "T."
+                    },
+                    {
+                        "name": "B. Li",
+                        "alternate": [
+                            "Li, B."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Li"
+                    },
+                    {
+                        "name": "D. E. Soltis",
+                        "alternate": [
+                            "Soltis, D. E."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Soltis",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "P. S. Soltis",
+                        "alternate": [
+                            "Soltis, P. S."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Soltis",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "C. L. Xiang",
+                        "alternate": [
+                            "Xiang, C. L."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Xiang",
+                        "middlename": "L."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "4",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.12705/651.8"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Taxon",
+                    "volume": "65",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 71,
+            "label": "Nepetoideae",
+            "dwc:scientificNameAuthorship": "Cantino, P. D., Olmstead, R. G.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Pollen morphology and plant taxonomy. IV. Labiatae, Verbenaceae, and Avicenniaceae.",
+                    "year": 1945,
+                    "authors": [
+                        {
+                            "name": "G. Erdtman",
+                            "alternate": [
+                                "Erdtman, G."
+                            ],
+                            "firstname": "G.",
+                            "lastname": "Erdtman"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Sven. Bot. Tidskr.",
+                        "volume": "39",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing Nepeta cataria Linnaeus 1753 (Mentheae), Ocimum basilicum Linnaeus 1753 (Ocimeae), and Elsholtzia fruticosa Rehder 1916 (Elsholtzieae).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Nepeta cataria Linnaeus, 1753",
+                        "nameComplete": "Nepeta cataria"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Ocimum basilicum Linnaeus, 1753",
+                        "nameComplete": "Ocimum basilicum"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Elsholtzia fruticosa Rehder, 1916",
+                        "nameComplete": "Elsholtzia fruticosa"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

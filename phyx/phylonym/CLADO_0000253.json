@@ -1,0 +1,60 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "The anatomy of Turinia pagei (Powrie), and the phylogenetic status of the Thelodonti.",
+                "year": 2001,
+                "authors": [
+                    {
+                        "name": "J. P. C. Donoghue",
+                        "alternate": [
+                            "Donoghue, J. P. C."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Donoghue",
+                        "middlename": "P. C."
+                    },
+                    {
+                        "name": "M. P. Smith",
+                        "alternate": [
+                            "Smith, M. P."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Smith",
+                        "middlename": "P."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "8B",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1017/S026359330000002X"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Transactions of the Royal Society of Edinburgh: Earth Sciences",
+                    "volume": "92",
+                    "identifier": []
+                }
+            },
+            "newick": "(Temnospondyli, (Embolomeri, (Seymouriamorpha, (Reptiliomorpha, \n((Adelogyrinidae, Aistopoda), \n(Urocordylidae, (Scincosauridae, Keraterpetonidae)), \n(Microbrachis, (Pantylus, (Brachystelechidae, \n(Lysorophia, \n((\n(Karaurus, \n(Sirenidae, (Cryptobranchidae, Hynobiidae))),\n(Rhinatrematidae, Ichthyophiidae)), \n(Ascaphus, (Leiopelma, Discoglossus))))))))))))"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 253,
+            "label": "Pan-Gnathostomata",
+            "dwc:scientificNameAuthorship": "Downs, J. P.",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The total clade of the crown clade Gnathostomata.",
+            "internalSpecifiers": [],
+            "externalSpecifiers": []
+        }
+    ]
+}

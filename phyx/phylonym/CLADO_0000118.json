@@ -1,0 +1,76 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "book_section",
+                "title": "Phylogenetic relationships of the lizard families",
+                "section_title": "A phylogenetic analysis of Lepidosauromorpha.",
+                "year": 1988,
+                "authors": [
+                    {
+                        "name": "J. Gauthier",
+                        "alternate": [
+                            "Gauthier, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Gauthier"
+                    },
+                    {
+                        "name": "R. Estes",
+                        "alternate": [
+                            "Estes, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Estes"
+                    },
+                    {
+                        "name": "K. de Queiroz",
+                        "alternate": [
+                            "de Queiroz, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "de Queiroz"
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "R. Estes",
+                        "alternate": [
+                            "Estes, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Estes"
+                    },
+                    {
+                        "name": "G. Pregill",
+                        "alternate": [
+                            "Pregill, G."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Pregill"
+                    }
+                ],
+                "series_editors": [],
+                "city": "Stanford",
+                "pages": "15-98",
+                "figure": "13",
+                "identifier": [],
+                "link": []
+            },
+            "newick": "(((Chamaeleontidae, Agamidae), Iguanidae),\n\n(Gekkonidae, Pygopdidae), \n\nDibamidae, Amphisbaenia, Serpentes, \n\n((Gymnophthalmidae, Teiidae), Lacertidae, Xantusiidae, (Scincidae, Cordylidae)),\n\n(Anguidae, Xenosauridae),\n\nHelodermatidae, Lanthanotus, Varanus)"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 118,
+            "label": "Pan-Lepidosauria",
+            "dwc:scientificNameAuthorship": "Gauthier, J. A., de Queiroz, K.",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The total clade of the crown clade Lepidosauria—that is, the total clade containing both Squamata and Sphenodon but not Aves, Testudines, Crocodylia, and Mammalia.",
+            "internalSpecifiers": [],
+            "externalSpecifiers": []
+        }
+    ]
+}

@@ -1,0 +1,122 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "book",
+                "title": "Bird families of the world: Cuckoos.",
+                "year": 2005,
+                "authors": [
+                    {
+                        "name": "R. B. Payne",
+                        "alternate": [
+                            "Payne, R. B."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Payne",
+                        "middlename": "B."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "publisher": "Oxford University Press",
+                "city": "Oxford",
+                "figure": "5.1",
+                "identifier": [],
+                "link": []
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 280,
+            "label": "Cuculidae",
+            "dwc:scientificNameAuthorship": "Sangster, G.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book_section",
+                    "title": "Synopsis of the contents of the British Museum",
+                    "section_title": "Eleventh room.",
+                    "year": 1820,
+                    "edition": "17",
+                    "authors": [
+                        {
+                            "name": "W. E. Leach",
+                            "alternate": [
+                                "Leach, W. E."
+                            ],
+                            "firstname": "W.",
+                            "lastname": "Leach",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "British Museum (Natural History)",
+                    "city": "London",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing Carpococcyx (originally Calobates) radiceus (Temminck 1832) and Centropus (originally Cuculus) senegalensis (Linnaeus 1766) and Crotophaga ani Linnaeus 1758 and Cuculus canorus Linnaeus 1758 and Neomorphus (originally Coccyzus) geoffroyi (Temminck 1820) and Piaya cayana (originally Cuculus cayanus) (Linnaeus 1758).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Carpococcyx (originally Calobates) radiceus Temminck, 1832",
+                        "nameComplete": "Carpococcyx (originally Calobates) radiceus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Centropus (originally Cuculus) senegalensis Linnaeus, 1766",
+                        "nameComplete": "Centropus (originally Cuculus) senegalensis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Crotophaga ani Linnaeus, 1758",
+                        "nameComplete": "Crotophaga ani"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Cuculus canorus Linnaues, 1758",
+                        "nameComplete": "Cuculus canorus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Neomorphus (originally Coccyzus) geoffroyi Temminck, 1820",
+                        "nameComplete": "Neomorphus (originally Coccyzus) geoffroyi"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Piaya cayana Linnaeus, 1758",
+                        "nameComplete": "Piaya cayana"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

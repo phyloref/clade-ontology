@@ -1,0 +1,67 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Influence of Tertiary paleoenvironmental changes on the diversification of South American mammals: a relaxed molecular study within xenarthrans.",
+                "year": 2004,
+                "authors": [
+                    {
+                        "name": "F. Delsuc",
+                        "alternate": [
+                            "Delsuc , F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Delsuc"
+                    },
+                    {
+                        "name": "S. Vizcaíno",
+                        "alternate": [
+                            "Vizcaíno, S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Vizcaíno"
+                    },
+                    {
+                        "name": "E. J. P. Douzery",
+                        "alternate": [
+                            "Douzery, E. J. P."
+                        ],
+                        "firstname": "E. J.",
+                        "lastname": "Douzery",
+                        "middlename": "P."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1, 3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1186/1471-2148-4-11"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "BMC Evolutionary Biology",
+                    "volume": "4",
+                    "identifier": []
+                }
+            },
+            "newick": "(\n((Elephas, (Dugong, Procavia)), \n(Orycteropus, (Macroscelidae, (Amblysomus, Echinops)))),\n\n(\n(((Bradypus, Choloepus), (Cyclopes, (Myrmecophaga, Tamandua))),\n((Dasypus_kappleri, Dasypus_novemcinctus), \n((Priodontes, (Cabassous, Tolypeutes)), \n(Chaetophractus, (Euphractus, Zaedyus))))),\n\n(\n(Tupaia, (Homo, (Cynocephalus, (Lepus, \n((Aplodontia, Sciuridae), \n(Hystricidae, (Mus, Rattus))))))),\n\n((Erinaceus, Scalopus), \n(((Tonatia, (Myotis, Tadarida)), \n((Cynopterus, Pteropus), (Hipposideros, Megaderma))),\n(((Equus, Rhinocerotidae), (Felis, Manis)), \n(Lama, (Sus, (Bos, (Hippopotamus, Physeter))))))))))"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 256,
+            "label": "Pan-Xenarthra",
+            "dwc:scientificNameAuthorship": "Shockey, B. J.",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The total clade of the crown clade Xenarthra.",
+            "internalSpecifiers": [],
+            "externalSpecifiers": []
+        }
+    ]
+}

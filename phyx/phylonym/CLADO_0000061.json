@@ -1,0 +1,620 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "book_section",
+                "title": "A phylogenetic analysis of Lepidosauromorpha in Phylogenetic relationships of the lizard families",
+                "year": 1988,
+                "authors": [
+                    {
+                        "name": "J. Gauthier",
+                        "alternate": [
+                            "Gauthier, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Gauthier"
+                    },
+                    {
+                        "name": "R. Estes",
+                        "alternate": [
+                            "Estes, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Estes"
+                    },
+                    {
+                        "name": "K. de Queiroz",
+                        "alternate": [
+                            "de Queiroz, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "de Queiroz"
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "R. Estes",
+                        "alternate": [
+                            "Estes, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Estes"
+                    },
+                    {
+                        "name": "G. Pregill",
+                        "alternate": [
+                            "Pregill, G."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Pregill"
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "Stanford University Press",
+                "city": "Stanford",
+                "pages": "15-98",
+                "figure": "13",
+                "identifier": [],
+                "link": []
+            },
+            "newick": "(((Chamaeleontidae, Agamidae), Iguanidae),\n\n(Gekkonidae, Pygopdidae), \n\nDibamidae, Amphisbaenia, Serpentes, \n\n((Gymnophthalmidae, Teiidae), Lacertidae, Xantusiidae, (Scincidae, Cordylidae)),\n\n(Anguidae, Xenosauridae),\n\nHelodermatidae, Lanthanotus, Varanus)"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "book",
+                "title": "A cladistic analysis of the higher systematic categories of the Diapsida.  Ph.D. dissertation",
+                "year": 1984,
+                "authors": [
+                    {
+                        "name": "J. A. Gauthier",
+                        "alternate": [
+                            "Gauthier, J. A."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Gauthier",
+                        "middlename": "A."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "publisher": "University of California",
+                "city": "Berkeley",
+                "figure": "32-33",
+                "identifier": [],
+                "link": []
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "The classification of the Lepidosauria.",
+                "year": 1984,
+                "authors": [
+                    {
+                        "name": "S. E. Evans",
+                        "alternate": [
+                            "Evans, S. E."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Evans",
+                        "middlename": "E."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Zoological Journal of Linnaen Society",
+                    "volume": "82",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "book_section",
+                "title": "The early history and relationships of the Diapsida in The phylogeny and classification of the tetrapods, volume 1:  Amphibians, reptiles, birds (M. J. Benton, ed.).",
+                "section_title": "The phylogeny and classification of the tetrapods, volume 1:  Amphibians, reptiles, birds",
+                "year": 1988,
+                "edition": "Systematics Association Special Volume 35A",
+                "authors": [
+                    {
+                        "name": "S. E. Evans",
+                        "alternate": [
+                            "Evans, S. E."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Evans",
+                        "middlename": "E."
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "M. J. Benton",
+                        "alternate": [
+                            "Benton, M. J."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Benton",
+                        "middlename": "J."
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "Systematics Association",
+                "pages": "221-260",
+                "figure": "6.1-6.2",
+                "identifier": [],
+                "link": []
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Molecular systematics of primary reptilian lineages and the tuatara mitochondrial genome.",
+                "year": 2003,
+                "authors": [
+                    {
+                        "name": "J. S. Rest",
+                        "alternate": [
+                            "Rest, J. S."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Rest",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "J. C. Ast",
+                        "alternate": [
+                            "Ast, J. C."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Ast",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "C. C. Austin",
+                        "alternate": [
+                            "Austin, C. C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Austin",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "P. J. Waddell",
+                        "alternate": [
+                            "Waddell, P. J."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Waddell",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "E. A. Tibbetts",
+                        "alternate": [
+                            "Tibbetts, E. A."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Tibbetts",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "J. M. Hay",
+                        "alternate": [
+                            "Hay, J. M."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Hay",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "D. P. Mindell",
+                        "alternate": [
+                            "Mindell, D. P."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Mindell",
+                        "middlename": "P."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/S1055-7903(03)00108-8"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Phylogenetic Evolution",
+                    "volume": "29",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Integration of morphological data sets for phylogenetic analysis of Amniota: The importance of integumentary characters and increased taxonomic sampling.",
+                "year": 2005,
+                "authors": [
+                    {
+                        "name": "R. V. Hill",
+                        "alternate": [
+                            "Hill, R. V."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Hill",
+                        "middlename": "V."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1080/10635150590950326"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Systematic Biology",
+                    "volume": "54",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "book_section",
+                "title": "The origin, early history and diversification of lepidosauromorph reptiles.  Pp. 27–44 in New aspects of Mesozoic biodiversity (S. Bandyopadhyay, ed.).",
+                "year": 2010,
+                "authors": [
+                    {
+                        "name": "S. E. Evans",
+                        "alternate": [
+                            "Evans, S. E."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Evans",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "M. E. H. Jones",
+                        "alternate": [
+                            "Jones, M. E. H."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Jones",
+                        "middlename": "E. H."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "publisher": "Springer",
+                "city": "Berlin, Heidelberg",
+                "pages": "27-44",
+                "figure": "2.1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1007/978-3-642-10311-7_2"
+                    }
+                ],
+                "link": []
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "More than 1000 ultraconserved elements provide evidence that turtles are the sister group of archosaurs.",
+                "year": 2012,
+                "authors": [
+                    {
+                        "name": "N. G. Crawford",
+                        "alternate": [
+                            "Crawford, N. G."
+                        ],
+                        "firstname": "N.",
+                        "lastname": "Crawford",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "B. C. Faircloth",
+                        "alternate": [
+                            "Faircloth, B. C."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Faircloth",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "J. E. McCormack",
+                        "alternate": [
+                            "McCormack, J. E."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "McCormack",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "R. T. Brumfield",
+                        "alternate": [
+                            "Brumfield, R. T."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Brumfield",
+                        "middlename": "T."
+                    },
+                    {
+                        "name": "K. Winkler",
+                        "alternate": [
+                            "Winkler, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Winkler"
+                    },
+                    {
+                        "name": "T. C. Glenn",
+                        "alternate": [
+                            "Glenn, T. C."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Glenn",
+                        "middlename": "C."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1098/rsbl.2012.0331"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Biological Letters",
+                    "volume": "8",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Integration of molecules and new fossils supports a Triassic origin for Lepidosauria (lizards, snakes, and tuatara).",
+                "year": 2013,
+                "authors": [
+                    {
+                        "name": "M. E. H. Jones",
+                        "alternate": [
+                            "Jones, M. E. H."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Jones",
+                        "middlename": "E. H."
+                    },
+                    {
+                        "name": "C. L. Anderson",
+                        "alternate": [
+                            "Anderson, C. L."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Anderson",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "C. A. Hipsley",
+                        "alternate": [
+                            "Hipsley, C. A."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Hipsley",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "J. Müller",
+                        "alternate": [
+                            "Müller, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Müller"
+                    },
+                    {
+                        "name": "S. E. Evans",
+                        "alternate": [
+                            "Evans, S. E."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Evans",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "R. R. Schoch",
+                        "alternate": [
+                            "Schoch, R. R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Schoch",
+                        "middlename": "R."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3-4",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1186/1471-2148-13-208"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "BMC Evolutionary Biology",
+                    "volume": "13",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "The origin of squamates revealed by a Middle Triassic lizard from the Italian Alps.",
+                "year": 2018,
+                "authors": [
+                    {
+                        "name": "T. R. Simões",
+                        "alternate": [
+                            "Simões , T. R."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Simões",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "M. W. Caldwell",
+                        "alternate": [
+                            "Caldwell, M. W."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Caldwell",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "M. Talanda",
+                        "alternate": [
+                            "Talanda, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Talanda"
+                    },
+                    {
+                        "name": "M. Bernardi",
+                        "alternate": [
+                            "Bernardi, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Bernardi"
+                    },
+                    {
+                        "name": "A. Palci",
+                        "alternate": [
+                            "Palci, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Palci"
+                    },
+                    {
+                        "name": "O. Vernygora",
+                        "alternate": [
+                            "Vernygora, O."
+                        ],
+                        "firstname": "O.",
+                        "lastname": "Vernygora"
+                    },
+                    {
+                        "name": "F. Bernardini",
+                        "alternate": [
+                            "Bernardini, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Bernardini"
+                    },
+                    {
+                        "name": "L. Mancini",
+                        "alternate": [
+                            "Mancini, L."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Mancini"
+                    },
+                    {
+                        "name": "R. L. Nydam",
+                        "alternate": [
+                            "Nydam, R. L."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Nydam",
+                        "middlename": "L."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1038/s41586-018-0093-3"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Nature",
+                    "volume": "557",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 61,
+            "label": "Lepidosauria",
+            "dwc:scientificNameAuthorship": "de Queiroz, K., Gauthier, J. A.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Generelle Morphologie der Organismen.  Band 2: Allgemeine Entwicklungsgeschichte der Organismen.",
+                    "year": 1866,
+                    "authors": [
+                        {
+                            "name": "E. Haeckel",
+                            "alternate": [
+                                "Haeckel, E."
+                            ],
+                            "firstname": "E.",
+                            "lastname": "Haeckel"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "George Reimer",
+                    "city": "Berlin",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing Lacerta agilis Linnaeus 1758 (Squamata) and Sphenodon (originally Hatteria) punctatus (Gray 1842) (Rhynchocephalia).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Lacerta agilis Linnaeus, 1758",
+                        "nameComplete": "Lacerta agilis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Sphenodon (originally Hatteria) punctatus Gray, 1842",
+                        "nameComplete": "Sphenodon (originally Hatteria) punctatus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

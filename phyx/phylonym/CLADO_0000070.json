@@ -1,0 +1,760 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Clades, clocks, and continents: Historical and biogeographical analysis of Myrtaceae, Vochysiaceae, and relatives in the Southern Hemisphere.",
+                "year": 2004,
+                "authors": [
+                    {
+                        "name": "K. J. Sytsma",
+                        "alternate": [
+                            "Sytsma, K. J."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Sytsma",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "A. Litt",
+                        "alternate": [
+                            "Litt, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Litt"
+                    },
+                    {
+                        "name": "M. L. Zjhra",
+                        "alternate": [
+                            "Zjhra, M. L."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Zjhra",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "C. Pires",
+                        "alternate": [
+                            "Pires, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Pires"
+                    },
+                    {
+                        "name": "M. Nepokroeff",
+                        "alternate": [
+                            "Nepokroeff, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Nepokroeff"
+                    },
+                    {
+                        "name": "E. Conti",
+                        "alternate": [
+                            "Conti, E."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Conti"
+                    },
+                    {
+                        "name": "J. Walker",
+                        "alternate": [
+                            "Walker, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Walker"
+                    },
+                    {
+                        "name": "P. G. Wilson",
+                        "alternate": [
+                            "Wilson, P. G."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Wilson",
+                        "middlename": "G."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1086/421066"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "International Journal of Plant Sciences",
+                    "volume": "165(4)",
+                    "identifier": []
+                }
+            },
+            "newick": "((((((((Metrosid:0.008962,Backhous:0.016849):3.6E-4,((Acmena:0.01887,Angophor:0.015535):0.00212,Euromyrtus:0.026669,((Myrtus:0.022241,Eugenia:0.009043):0.00108,Myrciant:0.017398):0.006018):9.41E-4):0.006341,(Psiloxyl:0.008611,Heteropy:0.012218):0.009837):0.003052,((Vochysia:0.007915,Qualea:0.027601):0.001327,Erisma:0.012248):0.030911):0.006099,(((((Olinia:0.014685,Rhyncoc:0.007248):9.11E-4,Penaea:0.018667):0.004097,Alzatea:0.015195):0.005733,Cryptero:0.020613):0.009531,((((Astronis:0.002892,Astronim:0.003307):0.009227,(((((((((Amphibl:0.018476,Calvoa:0.005927):0.004435,Medinill:0.009898):0.003101,Driessen:0.01052):0.005975,Diplectr:0.011756):0.002627,Blakea:0.010315):0.00224,((((Arthros:0.017697,Rhexia:0.022131):0.00414,(((Dichaeta:0.005761,((Dissotis:0.007699,Osbeckia:0.014614):0.001838,Melastom:0.005801):0.003929):0.003457,Tibouch:0.018782):0.00178,(Heteroce:0.012922,Monocha:0.015941):6.88E-4):0.010722):0.001184,((Lavoisie:0.001876,Microlic:0.00412):0.013202,Rhynchan:0.006849):0.017696):0.005739,Monolena:0.01398):6.63E-4):0.002916,Triolena:0.007103):0.002188,Bertolo:0.016356):0.00306,((((Clidemia:0.002471,((Maieta:0.001164,Tetrazyg:0.007739):5.49E-4,Tococa:0.013142):0.002998):0.001798,Leandra:0.005005):0.005629,(Graffenr:0.007815,Meriania:0.008478):0.006604):0.002601,Macrocen:0.018032):0.003232):0.001685):0.033181,Pternand:0.029115):0.004301,(Mouriri:0.01939,Memecyl:0.014559):0.018222):0.03433):0.022297):0.005164,(((((((((Clarkia:0.008371,((Oenothe:0.005959,(Gaura:9.41E-4,Stenos:0.001443):0.002866,Calylo:0.004772):0.003216,Camiss:0.001424):0.001069,Gayoph:0.003347):4.62E-4,Xylona:0.006743):0.001024,(Epilob:0.003928,Chameri:0.018798):0.00505):0.013368,Gongylo:0.024971):0.005802,(Megacor:0.032093,Lopezia:0.023904):0.01343):0.004445,(Circaea:0.038208,Fuchsia:0.009763):0.012619):0.004862,Hauya:0.010513):0.018724,Ludwigia:0.037758):0.008908,((((Lythrum:0.036741,Trapa:0.0466):0.002046,(Lawsonia:0.011429,Nesaea:0.026874):0.012904):7.61E-4,Duabanga:0.019034):0.00336,Cuphea:0.045899):0.024441):0.013901):0.002338,(((Terminal:0.008117,Bucida:0.007804):0.002008,Quisqual:0.011218):0.013776,Conocarp:0.032242):0.037895):0.011321,((Arabidop:0.10795,Tropaeol:0.04421):0.021278,(Byttner:0.038011,Tilia:0.018705):0.040431):0.023991);"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Circumscription of Myrtales and their relationship to other rosids: evidence from rbcL sequence data.",
+                "year": 1996,
+                "authors": [
+                    {
+                        "name": "E. Conti",
+                        "alternate": [
+                            "Conti, E."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Conti"
+                    },
+                    {
+                        "name": "A. Litt",
+                        "alternate": [
+                            "Litt, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Litt"
+                    },
+                    {
+                        "name": "J. K. Sytsma",
+                        "alternate": [
+                            "Sytsma, J. K."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Sytsma",
+                        "middlename": "K."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1002/j.1537-2197.1996.tb12700.x"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "American Journal of Botany",
+                    "volume": "83",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Interfamilial relationships in Myrtales: molecular phylogeny and patterns of morphological evolution.",
+                "year": 1997,
+                "authors": [
+                    {
+                        "name": "E. Conti",
+                        "alternate": [
+                            "Conti, E."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Conti"
+                    },
+                    {
+                        "name": "A. Litt",
+                        "alternate": [
+                            "Litt, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Litt"
+                    },
+                    {
+                        "name": "P. G. Wilson",
+                        "alternate": [
+                            "Wilson, P. G."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Wilson",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "S. A. Graham",
+                        "alternate": [
+                            "Graham, S. A."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Graham",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "B. G. Briggs",
+                        "alternate": [
+                            "Briggs, B. G."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Briggs",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "L.A. S. Johnson",
+                        "alternate": [
+                            "Johnson, L.A. S."
+                        ],
+                        "firstname": "L.A.",
+                        "lastname": "Johnson",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "K. J. Sytsma",
+                        "alternate": [
+                            "Sytsma, K. J."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Sytsma",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.2307/2419432"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Systematic Botany",
+                    "volume": "22",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Phylogeny of eudicots: A nearly complete familial analysis based on rbcL gene sequences.",
+                "authors": [
+                    {
+                        "name": "V. M. Savolainen",
+                        "alternate": [
+                            "Savolainen , V. M."
+                        ],
+                        "firstname": "V.",
+                        "lastname": "Savolainen",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "M. F. Fay",
+                        "alternate": [
+                            "Fay, M. F."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Fay",
+                        "middlename": "F."
+                    },
+                    {
+                        "name": "D. C. Albach",
+                        "alternate": [
+                            "Albach, D. C."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Albach",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "A. Backlund",
+                        "alternate": [
+                            "Backlund, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Backlund"
+                    },
+                    {
+                        "name": "M. van der Bank",
+                        "alternate": [
+                            "van der Bank, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "van der Bank"
+                    },
+                    {
+                        "name": "K. M. Cameron",
+                        "alternate": [
+                            "Cameron, K. M."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Cameron",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "S. A. Johnson",
+                        "alternate": [
+                            "Johnson, S. A."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Johnson",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "M. D. Lledo",
+                        "alternate": [
+                            "Lledo, M. D."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Lledo",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "J. C. Pintaud",
+                        "alternate": [
+                            "Pintaud, J. C."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Pintaud",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "M. Powell",
+                        "alternate": [
+                            "Powell, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Powell"
+                    },
+                    {
+                        "name": "M. C. Sheahan",
+                        "alternate": [
+                            "Sheahan, M. C."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Sheahan",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "D. E. Soltis",
+                        "alternate": [
+                            "Soltis, D. E."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Soltis",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "P. S. Soltis",
+                        "alternate": [
+                            "Soltis, P. S."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Soltis",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "P. Weston",
+                        "alternate": [
+                            "Weston, P."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Weston"
+                    },
+                    {
+                        "name": "M. W. Whitten",
+                        "alternate": [
+                            "Whitten, M. W."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Whitten",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "K. J. Wurdack",
+                        "alternate": [
+                            "Wurdack, K. J."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Wurdack",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "M. W. Chase",
+                        "alternate": [
+                            "Chase, M. W."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Chase",
+                        "middlename": "W."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "6",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.2307/4115644"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Kew Bulletin",
+                    "volume": "55",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Angiosperm phylogeny inferred from 18S rDNA, rbcL, and atpB sequences.",
+                "year": 2000,
+                "authors": [
+                    {
+                        "name": "D. E. Soltis",
+                        "alternate": [
+                            "Soltis, D. E."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Soltis",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "P. S. Soltis",
+                        "alternate": [
+                            "Soltis, P. S."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Soltis",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "M. W. Chase",
+                        "alternate": [
+                            "Chase, M. W."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Chase",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "M. E. Mort",
+                        "alternate": [
+                            "Mort, M. E."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Mort",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "D. C. Albach",
+                        "alternate": [
+                            "Albach, D. C."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Albach",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "M. Zanis",
+                        "alternate": [
+                            "Zanis, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Zanis"
+                    },
+                    {
+                        "name": "V. Savolainen",
+                        "alternate": [
+                            "Savolainen, V."
+                        ],
+                        "firstname": "V.",
+                        "lastname": "Savolainen"
+                    },
+                    {
+                        "name": "W. H. Hahn",
+                        "alternate": [
+                            "Hahn, W. H."
+                        ],
+                        "firstname": "W.",
+                        "lastname": "Hahn",
+                        "middlename": "H."
+                    },
+                    {
+                        "name": "S. B. Hoot",
+                        "alternate": [
+                            "Hoot, S. B."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Hoot",
+                        "middlename": "B."
+                    },
+                    {
+                        "name": "M. F. Fay",
+                        "alternate": [
+                            "Fay, M. F."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Fay",
+                        "middlename": "F."
+                    },
+                    {
+                        "name": "M. Axtell",
+                        "alternate": [
+                            "Axtell, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Axtell"
+                    },
+                    {
+                        "name": "S. M. Swensen",
+                        "alternate": [
+                            "Swensen, S. M."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Swensen",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "L. M. Prince",
+                        "alternate": [
+                            "Prince, L. M."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Prince",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "W. J. Kress",
+                        "alternate": [
+                            "Kress, W. J."
+                        ],
+                        "firstname": "W.",
+                        "lastname": "Kress",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "K. C. Nixon",
+                        "alternate": [
+                            "Nixon, K. C."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Nixon",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "J. S. Farris",
+                        "alternate": [
+                            "Farris, J. S."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Farris",
+                        "middlename": "S."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "9",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.1095-8339.2000.tb01588.x"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Botanical Journal of Linnaen Society",
+                    "volume": "133",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Rosid radiation and the rapid rise of angiosperm-dominated forests.",
+                "year": 2009,
+                "authors": [
+                    {
+                        "name": "H. C. Wang",
+                        "alternate": [
+                            "Wang, H. C."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Wang",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "M. J. Moore",
+                        "alternate": [
+                            "Moore, M. J."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Moore",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "P. S. Soltis",
+                        "alternate": [
+                            "Soltis, P. S."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Soltis",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "C. D. Bell",
+                        "alternate": [
+                            "Bell, C. D."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Bell",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "S. F. Brokington",
+                        "alternate": [
+                            "Brokington, S. F."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Brokington",
+                        "middlename": "F."
+                    },
+                    {
+                        "name": "R. Alexandre",
+                        "alternate": [
+                            "Alexandre, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Alexandre"
+                    },
+                    {
+                        "name": "C. C. Davis",
+                        "alternate": [
+                            "Davis, C. C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Davis",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "M. Latvia",
+                        "alternate": [
+                            "Latvia, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Latvia"
+                    },
+                    {
+                        "name": "S. R. Manchester",
+                        "alternate": [
+                            "Manchester, S. R."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Manchester",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "D. E. Soltis",
+                        "alternate": [
+                            "Soltis, D. E."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Soltis",
+                        "middlename": "E."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1073/pnas.0813376106"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Proceedings of the National Academy of Science U. S. A.",
+                    "volume": "106",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 70,
+            "label": "Myrtales",
+            "dwc:scientificNameAuthorship": "Judd, W. S.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Přirozenosti Rostlin.",
+                    "year": 1820,
+                    "authors": [
+                        {
+                            "name": "F. Berchtold",
+                            "alternate": [
+                                "Berchtold, F."
+                            ],
+                            "firstname": "F.",
+                            "lastname": "Berchtold"
+                        },
+                        {
+                            "name": "J. S. Presl.",
+                            "alternate": [
+                                "Presl., J. S."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Presl.",
+                            "middlename": "S."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Krala Wiljma Endevsa",
+                    "city": "Praha",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing Terminalia catappa L. 1771 (Combretaceae), Lythrum salicaria Linnaeus 1753 (Lythraceae), Clidemia rubra (Aublet) Martius 1832 (Melastomataceae), and Myrtus communis Linnaeus 1753 (Myrtaceae).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Terminalia catappa Linnaeus, 1771",
+                        "nameComplete": "Terminalia catappa"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Lythrum salicaria Linnaeus, 1753",
+                        "nameComplete": "Lythrum salicaria"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Clidemia rubra Martius, 1832",
+                        "nameComplete": "Clidemia rubra"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Myrtus communis Linnaeus, 1753",
+                        "nameComplete": "Myrtus communis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

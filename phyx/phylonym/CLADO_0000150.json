@@ -1,0 +1,145 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "The closest living relatives of land plants.",
+                "year": 2001,
+                "authors": [
+                    {
+                        "name": "K. G. Karol",
+                        "alternate": [
+                            "Karol, K. G."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Karol",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "R. M. McCourt",
+                        "alternate": [
+                            "McCourt, R. M."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "McCourt",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "M. T. Cimino",
+                        "alternate": [
+                            "Cimino, M. T."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Cimino",
+                        "middlename": "T."
+                    },
+                    {
+                        "name": "C. F. Delwiche",
+                        "alternate": [
+                            "Delwiche, C. F."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Delwiche",
+                        "middlename": "F."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1126/science.1065156"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Science",
+                    "volume": "294",
+                    "identifier": []
+                }
+            },
+            "newick": "((((((((((((((Arabidopsis, Taxus), \n(Psilotum, Dicksonia)), \nHuperzia), Sphagnum), Anthoceros), Marchantia), \n\n(((Chara, Lamprothamnium), (Lychnothamnus, Nitellopsis)),\n(Nitella, Tolypella))), \n\n(((Coleochaete_obicularis, Coleochaete_soluta), \n(Coleochaete_irregularis, Coleochaete_sieminskiana)), \n(Chaetosphaeridium_ovalis, Chaetosphaeridium_globosum))), \n\n((((Mesotaenium, Mougeotia), Zygnema), Spirogyra),\n((Onychonema, Cosmocladium), Gonatozygon))), \n\n(((Klebsormidium_nitens, Klebsormidium_subtilissimum), \nKlebsormidium_flaccidum), Entransia)), \n\nChlorokybus), \n\n(Mesostigma_viride_50-1, Mesostigma_viride_296)), \n\n((((Volvox, Chalmydomonas), Paulschulzia), Pteromonas),\nNephroselmis)),\n\nCyanophora)"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 150,
+            "label": "Phragmoplastophyta",
+            "dwc:scientificNameAuthorship": "Hall, J. D., McCourt, R. M., Delwiche, C. F., Mishler, B. D., Karol, K. G.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "The tree of life.",
+                    "year": 2006,
+                    "authors": [
+                        {
+                            "name": "G. Lecointre",
+                            "alternate": [
+                                "Lecointre, G."
+                            ],
+                            "firstname": "G.",
+                            "lastname": "Lecointre"
+                        },
+                        {
+                            "name": "H. Le Guyader",
+                            "alternate": [
+                                "Le Guyader, H."
+                            ],
+                            "firstname": "H.",
+                            "lastname": "Le Guyader"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Harvard University Press",
+                    "city": "Cambridge",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Arabidopsis thaliana (Linnaeus) Heynh. 1842 (Embryophyta), Chara vulgaris Linnaeus 1753 (Charophyceae), Coleochaete scutata Brébisson 1844 (Coleochaetophyceae), and Zygnema cruciatum (Vaucher) C. Agardh 1817 (Zygnematophyceae).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Arabidopsis thaliana Heynh., 1842",
+                        "nameComplete": "Arabidopsis thaliana"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Chara vulgaris Linnaeus, 1753",
+                        "nameComplete": "Chara vulgaris"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Coleochaete scutata Brébisson, 1844",
+                        "nameComplete": "Coleochaete scutata"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Zygnema cruciatum Agardh, 1817",
+                        "nameComplete": "Zygnema cruciatum"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

@@ -1,0 +1,230 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Molecular phylogeny of Demospongiae: implications for classification and scenarios of character evolution.",
+                "year": 2004,
+                "authors": [
+                    {
+                        "name": "C. Borchiellini",
+                        "alternate": [
+                            "Borchiellini , C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Borchiellini"
+                    },
+                    {
+                        "name": "C. Chombard",
+                        "alternate": [
+                            "Chombard, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Chombard"
+                    },
+                    {
+                        "name": "M. Manuel",
+                        "alternate": [
+                            "Manuel, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Manuel"
+                    },
+                    {
+                        "name": "E. Alivon",
+                        "alternate": [
+                            "Alivon, E."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Alivon"
+                    },
+                    {
+                        "name": "J. Vacelet",
+                        "alternate": [
+                            "Vacelet, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Vacelet"
+                    },
+                    {
+                        "name": "N. Boury-Esnault",
+                        "alternate": [
+                            "Boury-Esnault, N."
+                        ],
+                        "firstname": "N.",
+                        "lastname": "Boury-Esnault"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2004.02.021"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Phylogenetics and Evolution",
+                    "volume": "32",
+                    "identifier": []
+                }
+            },
+            "newick": "(Diaphanoeca_grandis, Monosiga_brevicolis,\n\n(\n((Leucosolenia_sp., Petrobiona_massiliana), \n(Leucaltis_clathria, Soleniscus_radovani)),\n\n(((Montastraea_franski, Antipathes_galapagensis), \n(Hydra_circumcincta, Nectopyramis_sp.)),\n((Beroe_ovata, Mnemiopsis_leidyi), Pleurobrachia_bachei)),\n\n(Oscarella_tuberculata, Plakortis_simplex),\n\n(\n((((Spongia_officinalis, Hippospongia_communis), Pleraplysilla_spinifera),\nAplysilla_sulfurea), \n((Aplysina_cavernicola, Hexadella_pruvoti), Chondrosia_reniformis)),\n\n((((((((Microciona_prolifera, Mycale_fibrexilis), \n(Phorbas_tenacior, Crella_elegans)),\n(Spongosorites_genitrix, Suberites_ficus)),\n(Agelas_oroides, Axinella_damicornis)), \n(Dictyonella_incisa, Axinella_polypoides)),\n(Tetilla_japonica, Geodia_cydonium)),\n((Spongilla_lacustris, Eunapinus_fragilis), Ephydatia_muelleri, Clypeatula_cooperensis)),\nHaliclona_mediterranea))))"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "The Cambrian Conundrum: Early Divergence and Later Ecological Success in the Early History of Animals.",
+                "year": 2011,
+                "authors": [
+                    {
+                        "name": "D. H. Erwin",
+                        "alternate": [
+                            "Erwin, D. H."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Erwin",
+                        "middlename": "H."
+                    },
+                    {
+                        "name": "M. Laflamme",
+                        "alternate": [
+                            "Laflamme, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Laflamme"
+                    },
+                    {
+                        "name": "S. M. Tweedt",
+                        "alternate": [
+                            "Tweedt, S. M."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Tweedt",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "E. A. Sperling",
+                        "alternate": [
+                            "Sperling, E. A."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Sperling",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "D. Pisani",
+                        "alternate": [
+                            "Pisani, D."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Pisani"
+                    },
+                    {
+                        "name": "K. J. Peterson",
+                        "alternate": [
+                            "Peterson, K. J."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Peterson",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1126/science.1206375"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Science",
+                    "volume": "334",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 202,
+            "label": "Demospongiae",
+            "dwc:scientificNameAuthorship": "Boury-Esnault, N., Manuel, M.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "A Classification of the Sponges.",
+                    "year": 1885,
+                    "edition": "16",
+                    "authors": [
+                        {
+                            "name": "W. J. Sollas",
+                            "alternate": [
+                                "Sollas, W. J."
+                            ],
+                            "firstname": "W.",
+                            "lastname": "Sollas",
+                            "middlename": "J."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Ann. Mag. Nat. Hist.",
+                        "volume": "95",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The least inclusive crown clade containing Spongia officinalis Linnaeus 1759 (Keratosa), Chondrosia reniformis Nardo 1847 (Myxospongiae), Haliclona mediterranea Griessinger 1971 (Haploscleromorpha) and Axinella polypoides Schmidt 1862 (Democlavia).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Spongia officinalis Linnaeus, 1759",
+                        "nameComplete": "Spongia officinalis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Chondrosia reniformis Nardo, 1847",
+                        "nameComplete": "Chondrosia reniformis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Haliclona mediterranea Griessinger, 1971",
+                        "nameComplete": "Haliclona mediterranea"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Axinella polypoides Schmidt, 1862",
+                        "nameComplete": "Axinella polypoides"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

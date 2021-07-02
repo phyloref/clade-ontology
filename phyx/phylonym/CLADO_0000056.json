@@ -1,0 +1,216 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Cranial morphology and affinities of Microbrachis, and a reappraisal of the phylogeny and lifestyle of the first amphibians.",
+                "year": 2004,
+                "authors": [
+                    {
+                        "name": "G. Vallin",
+                        "alternate": [
+                            "Vallin, G."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Vallin"
+                    },
+                    {
+                        "name": "M. Laurin",
+                        "alternate": [
+                            "Laurin, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Laurin"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "6",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1671/5.1"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Vertebral Paleontology",
+                    "volume": "24",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "The phylogeny of the 'higher' temnospondyls (Vertebrata: Choanata) and its implications for the monophyly and origins of the Stereospondyli.",
+                "year": 2000,
+                "authors": [
+                    {
+                        "name": "A. M. Yates",
+                        "alternate": [
+                            "Yates, A. M."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Yates",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "A. Warren",
+                        "alternate": [
+                            "Warren, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Warren"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.1096-3642.2000.tb00650.x"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Zoological Journal of Linnean Society",
+                    "volume": "128",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Dates, nodes and character conflict: addressing the lissamphibian origin problem.",
+                "year": 2007,
+                "authors": [
+                    {
+                        "name": "M. Ruta",
+                        "alternate": [
+                            "Ruta, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Ruta"
+                    },
+                    {
+                        "name": "M. I. Coates",
+                        "alternate": [
+                            "Coates, M. I."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Coates",
+                        "middlename": "I."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1017/S1477201906002008"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Systematic Palaeontology",
+                    "volume": "5",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 56,
+            "label": "Labyrinthodontia",
+            "dwc:scientificNameAuthorship": "Laurin, M.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "On the orders of fossil and recent Reptilia and their distribution in time.",
+                    "year": 1859,
+                    "authors": [
+                        {
+                            "name": "R. Owen",
+                            "alternate": [
+                                "Owen, R."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Owen"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Rept. Brit. Assn. Adv. Sci. 29th meeting",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest clade containing Acanthostega gunnari Jarvik 1952, Ichthyostega stensiöi Säve-Söderbergh 1932, Crassigyrinus scoticus Lydekker 1890, Mastodonsaurus giganteus Jaeger 1828, Baphetes kirkbyi Owen 1854 (Baphetidae), and Anthracosaurus russelli Huxley 1863.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Acanthostega gunnari Jarvik, 1952",
+                        "nameComplete": "Acanthostega gunnari"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Ichthyostega stensiöi Säve-Söderbergh, 1932",
+                        "nameComplete": "Ichthyostega stensiöi"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Crassigyrinus scoticus Lydekker, 1890",
+                        "nameComplete": "Crassigyrinus scoticus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Mastodonsaurus giganteus Jaeger, 1828",
+                        "nameComplete": "Mastodonsaurus giganteus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Baphetes kirkbyi Owen, 1854",
+                        "nameComplete": "Baphetes kirkbyi"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Anthracosaurus russelli Huxley, 1863",
+                        "nameComplete": "Anthracosaurus russelli"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}
