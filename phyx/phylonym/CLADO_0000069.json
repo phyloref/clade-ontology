@@ -53,7 +53,8 @@
                     "volume": "103",
                     "identifier": []
                 }
-            }
+            },
+            "newick": "((((Notothylas,Anthoceros),(Equisetum,(Zea_mays,(Lygodium_japonicum,Asplenium_australiasicum)))),((Lophocolea_heterphylla,Haplomitrium_hookeri),(Sphaerocarpus_texasnus_marchantia_polymorpha))),((Takakia_lepidozioides,(Sphagnum_palustre,Sphagnum_cuspidatum)),((Andreaea_rothii,Andreaeobryum_macrosporum),(Oedipodium_griffithianum,((Polytrichum_commune,Dawsonia_papuana),((Tetraphis_pellucida,Buxbaumia_aphylla),(Diphyscium_foliosum,(Funaria_hygrometrica,(Timmia_sibirica,(((Bryobrittonia_longipes,Encalypta_rhaptocarpa),((Drummondia,Scouleria_aquatica),(Dicranum_scoparium,(Tortula_ruralis,Ptychomitrium_gardneri)))),((Orthotrichum_lyellii,(Leptobryum_pyriforme,Splachnum_ampullaceum)),(Philonotis,Hedwigia_ciliata,(Mnium,Rhodobryum_giganteum),(Racopilum,(Hypnodendron,Bescherellia_brevifolia)),(Hookeria,(Fontinalis_antipyretica,Hypnum_lindbergii)))))))))))))Musci)root"
         },
         {
             "phylogenyCitation": {
@@ -292,8 +293,17 @@
                     "hasName": {
                         "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Sphagnum palustre Linnaeus, 1753",
+                        "label": "Sphagnum palustre 1753",
                         "nameComplete": "Sphagnum palustre"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Zea mays 1753",
+                        "nameComplete": "Zea mays"
                     }
                 }
             ],
@@ -303,7 +313,7 @@
                     "hasName": {
                         "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Marchantia polymorpha Linnaeus, 1753",
+                        "label": "Marchantia polymorpha 1753",
                         "nameComplete": "Marchantia polymorpha"
                     }
                 },
@@ -312,17 +322,8 @@
                     "hasName": {
                         "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Anthoceros punctatus Linnaeus, 1753",
+                        "label": "Anthoceros punctatus 1753",
                         "nameComplete": "Anthoceros punctatus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Zea mays Linneaus, 1753",
-                        "nameComplete": "Zea mays"
                     }
                 }
             ]

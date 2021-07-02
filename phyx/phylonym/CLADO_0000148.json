@@ -56,8 +56,10 @@
                     "volume": "35",
                     "identifier": []
                 }
-            }
-        }
+            },
+            "newick": "(Trachydosaurus_rugosus, Rhineura_floridana, \n\n((Eublepharis_macularius, Coleonyx_variegatus),\n\n(((\n(((Pseudogonatodes_guianensis, \n(Coleodactylus_septentrionalis, Coleodactylus_brachystoma)),\n\n(((Sphaerodactylus_roosevelti, Sphaerodactylus_ocoae), \nSphaerodactylus_elegans),\n(Sphaerodactylus_nigropunctatus, Sphaerodactylus_torrei))),\n\n(\n(Lepidoblepharis_sp., Lepidoblepharis_xanthostigma), \n(((Gonatodes_daudinii, Gonatodes_albogularis), \n((Gonatodes_annularis, Gonatodes_hasemani, Gonatodes_sp.), \nGonatodes_humeralis)),\nGonatodes_caudiscutatus))),\n\nSaurodactylus_brosseti),\n\n(\n((Teratoscincus_roborowskii, Teratoscincus_scincus), \nTeratoscincus_microlepis), \n(Quedenfeldtia_trachyblephara, Aristelliger_lar), \nEuleptes_europaea), \n\nPristurus_carteri),\n\n(Phyllodactylus_xanti, \n((((Narudasia_festiva, (Rhoptropus_boultoni, Phelsuma_madagascariensis)), \nHemidactylus_frenatus), Cnemaspis_limi),\n(Lepidodactylus_lugubris, Gekko_gecko)))), \n\n(\n(Rhacodactylus_ciliatus, Oedura_marmorata), \n(\n(Nephrurus_milii, Carphodactylus_laevis), \n(Lialis_burtonis, Pygopus_nigriceps)))))"
+        },
+        {}
     ],
     "phylorefs": [
         {
@@ -96,7 +98,7 @@
                     "hasName": {
                         "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Gekko (originally Lacerta) gecko Linnaeus, 1758",
+                        "label": "Gekko (originally Lacerta) gecko 1758",
                         "nameComplete": "Gekko (originally Lacerta) gecko"
                     }
                 },
@@ -105,7 +107,7 @@
                     "hasName": {
                         "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Eublepharis (originally Cyrtodactylus) macularius Blyth, 1854",
+                        "label": "Eublepharis (originally Cyrtodactylus) macularius 1854",
                         "nameComplete": "Eublepharis (originally Cyrtodactylus) macularius"
                     }
                 },
@@ -114,7 +116,7 @@
                     "hasName": {
                         "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Pygopus (originally Cryptodelma) nigriceps Fischer, 1882",
+                        "label": "Pygopus (originally Cryptodelma) nigriceps 1882",
                         "nameComplete": "Pygopus (originally Cryptodelma) nigriceps"
                     }
                 }
