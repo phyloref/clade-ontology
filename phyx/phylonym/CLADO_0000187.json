@@ -1,0 +1,119 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "book_section",
+                "title": "Spiders of North America: an identification manual",
+                "section_title": "Phylogeny and classification of spiders.",
+                "year": 2005,
+                "authors": [
+                    {
+                        "name": "J. A. Coddington",
+                        "alternate": [
+                            "Coddington, J. A."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Coddington",
+                        "middlename": "A."
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "D. Ubick",
+                        "alternate": [
+                            "Ubick, D."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Ubick"
+                    },
+                    {
+                        "name": "P. Paquin",
+                        "alternate": [
+                            "Paquin, P."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Paquin"
+                    },
+                    {
+                        "name": "P. E. Cushing",
+                        "alternate": [
+                            "Cushing, P. E."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Cushing",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "V. Roths",
+                        "alternate": [
+                            "Roths, V."
+                        ],
+                        "firstname": "V.",
+                        "lastname": "Roths"
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "The American Arachnological Society",
+                "pages": "18-24",
+                "figure": "2,2",
+                "identifier": [],
+                "link": []
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 187,
+            "label": "Orbiculariae",
+            "dwc:scientificNameAuthorship": "Kuntner, M., Agnarsson, I.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Faune parisienne. Insectes. ou Histoire abrégée des insectes de environs de Paris.",
+                    "year": 1802,
+                    "authors": [
+                        {
+                            "name": "C. A. Walckenaer",
+                            "alternate": [
+                                "Walckenaer, C. A."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Walckenaer",
+                            "middlename": "A."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "city": "Paris",
+                    "pages": "187-250",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The crown clade for which orbweb building behaviors (e.g., frame, radius, and sticky-spiral construction behaviors and their derivatives), as inherited by Araneus angulatus Clerck 1757 (Araneidae) and either Uloborus walckenaerius Latreille 1806 (Uloboridae) or Deinopis lamia MacLeay 1839 (Deinopidae) or both of those species, are apomorphies relative to other crown clades (see Comments).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Uloborus walckenaerius Latreille, 1806",
+                        "nameComplete": "Uloborus walckenaerius"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Deinopis lamia MacLeay, 1839",
+                        "nameComplete": "Deinopis lamia"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

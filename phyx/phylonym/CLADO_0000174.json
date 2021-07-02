@@ -1,0 +1,94 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Amniote phylogeny and the importance of fossils.",
+                "year": 1988,
+                "authors": [
+                    {
+                        "name": "J. Gauthier",
+                        "alternate": [
+                            "Gauthier, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Gauthier"
+                    },
+                    {
+                        "name": "A. Kluge",
+                        "alternate": [
+                            "Kluge, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Kluge"
+                    },
+                    {
+                        "name": "T. Rowe",
+                        "alternate": [
+                            "Rowe, T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Rowe"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.1096-0031.1988.tb00514"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Cladistics",
+                    "volume": "4(2)",
+                    "identifier": []
+                }
+            },
+            "newick": "((((((((((((Ornithosuchia, Pseudosuchia), Proterochampsidae),\nErythrosuchidae), Proterosuchidae), Protorosauria), Choristodera), Trilophosaurus), Rhynchosauria),\nLepidosauromorpha), Araeoscelidia), (Testudines, Captorhinidae)),\n(((((((((((((((Mammalia, Morganucodontidae), Tritylodontidae), Exaeretodon), Diademodon), Thrinaxodon),\nProcynosuchus), Therocephalia), Dicynodontia), Gorgonopsia), Dinocephalia), Biarmosuchia), Sphenacodontinae),\nEdaphosaurus), Ophiacodon), Casea))\n\n"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 174,
+            "label": "Archosauriformes",
+            "dwc:scientificNameAuthorship": "Gauthier, J. A.",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The least inclusive clade containing Gallus (originally Phasianus) gallus (Aves) (Linnaeus 1758), Alligator (originally Crocodilus) mississippiensis (Daudin 1802) (Crocodylia), and Proterosuchus fergusi (Proterosuchidae) Broom 1903.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Gallus (originally Phasianus) gallus Linnaeus, 1758",
+                        "nameComplete": "Gallus (originally Phasianus) gallus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Alligator (originally Crocodilus) mississippiensis Daudin, 1802",
+                        "nameComplete": "Alligator (originally Crocodilus) mississippiensis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Proterosuchus fergusi Broom, 1903",
+                        "nameComplete": "Proterosuchus fergusi"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

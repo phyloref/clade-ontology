@@ -1,0 +1,174 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Pattern and timing of diversification of Cetartiodactyla (Mammalia, Laurasiatheria), as revealed by a comprehensive analysis of mitochondrial genomes.",
+                "year": 2012,
+                "authors": [
+                    {
+                        "name": "A. Hassanin",
+                        "alternate": [
+                            "Hassanin, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Hassanin"
+                    },
+                    {
+                        "name": "F. Delsuc",
+                        "alternate": [
+                            "Delsuc, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Delsuc"
+                    },
+                    {
+                        "name": "A. Ropiquet",
+                        "alternate": [
+                            "Ropiquet, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Ropiquet"
+                    },
+                    {
+                        "name": "C. Hammer",
+                        "alternate": [
+                            "Hammer, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Hammer"
+                    },
+                    {
+                        "name": "B. Jansen van Vurren",
+                        "alternate": [
+                            "Jansen van Vurren, B."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Jansen van Vurren"
+                    },
+                    {
+                        "name": "C. Matthee",
+                        "alternate": [
+                            "Matthee, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Matthee"
+                    },
+                    {
+                        "name": "M. Ruiz-Garcia",
+                        "alternate": [
+                            "Ruiz-Garcia, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Ruiz-Garcia"
+                    },
+                    {
+                        "name": "F. Catzeflis",
+                        "alternate": [
+                            "Catzeflis, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Catzeflis"
+                    },
+                    {
+                        "name": "V. Areskoug",
+                        "alternate": [
+                            "Areskoug, V."
+                        ],
+                        "firstname": "V.",
+                        "lastname": "Areskoug"
+                    },
+                    {
+                        "name": "T. T. Nguyen",
+                        "alternate": [
+                            "Nguyen, T. T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Nguyen",
+                        "middlename": "T."
+                    },
+                    {
+                        "name": "A. Couloux",
+                        "alternate": [
+                            "Couloux, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Couloux"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.crvi.2011.11.002"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Comptes Rendus Biologies",
+                    "volume": "335",
+                    "identifier": []
+                }
+            },
+            "newick": "(Pteropus_dasymallus_NC002612:0.9538123634092511,(Equus_asinus_NC001788:0.5287685675699482,Panthera_tigris_NC010642:0.7399114630034729):0.07801191569212557,(((Pecari_tajacu_2_NC012103:0.025082832818284113,(Pecari_tajacu_1:0.02241360756071432,Pecari_tajacu_3:0.02408222231815641):0.03293819059448499):0.4008935061351099,((Phacochoerus_africanus_NC008830:0.09587443293181833,Potamochoerus_porcus:0.11910847119692158):0.0435067141811089,(Sus_scrofa_FJ237000:0.024979590785389215,Sus_barbatus_EF545592:0.015691912506412158):0.06116109604751734):0.3071247657630275):0.27659577001495683,(((Lama_guanicoe_NC011822:0.011087312206265968,Vicugna_pacos_AJ566364:0.010955501149852912):0.15187221900792533,(Camelus_dromedarius:0.05108221980713518,(Camelus_ferus_NC009629:0.011760898385292007,Camelus_bactrianus_NC009628:0.010115281441633941):0.04155301224162598):0.16217126886099947):0.5757005483161829,(((Hippopotamus_amphibius_NC000889:0.05796839119445795,Choeropsis_liberiensis:0.04936275883855411):0.4833137471500908,(((Balaena_mysticetus_NC005268:0.03785831772956349,(Eubalaena_australis_NC006930:0.007252802058823554,Eubalaena_japonica_NC006931:0.008965506719004684):0.027581130978122224):0.06739881618930496,(Caperea_marginata_NC005269:0.16232662918095997,((Balaenoptera_acutorostrata_NC005271:0.040643857743803975,Balaenoptera_bonaerensis_NC006926:0.02725490584811856):0.05735256106387647,((Eschrichtius_robustus_NC005270:0.08155842710836853,(Megaptera_novaeangliae_NC006927:0.04452197096780846,Balaenoptera_physalus_NC001321:0.06152965027664456):0.023214820881227217):0.006933880659867165,(Balaenoptera_musculus_NC001601:0.05257795464802136,(Balaenoptera_omurai_NC007937:0.07864262579093795,(Balaenoptera_borealis_NC006929:0.01731023462765462,(Balaenoptera_edeni_brydei_NC006928:0.022088062897834496,Balaenoptera_edeni_edeni_NC007938:0.01704125858001819):0.008420421675071232):0.029593436866333905):0.010133706018122867):0.014758895089723246):0.008320376793518198):0.03585120380503648):0.020553893189476896):0.08082983511201976,((Kogia_breviceps_NC005272:0.21673353816373095,Physeter_macrocephalus_NC002503:0.23817549012484146):0.09630523804606772,((Platanista_gangetica_NC005275:0.35058516902553993,(Hyperoodon_ampullatus_NC005273:0.14196395802162476,Berardius_bairdii_NC005274:0.1570463829497836):0.09303504536077602):0.015668133688056318,((Lipotes_vexillifer_NC007629:0.38638166892905684,(Inia_geoffrensis_NC005276:0.29591771962139374,Pontoporia_blainvillei_NC005277:0.36617342865455305):0.08970323279154052):0.011815690616238021,((Monodon_monoceros_NC005279:0.14658684380649484,Phocoena_phocoena_NC005280:0.1775370823473101):0.03799324169524578,(Lagenorhynchus_albirostris_NC005278:0.057199117914905825,(Cephalorhynchus_heavisidii:0.05964671193315587,(Grampus_griseus_NC012062:0.05200705326119504,(Stenella_attenuata_NC012051:0.02246420234034511,(Sousa_chinensis_NC012057:0.022392046571553824,(Tursiops_truncatus_NC012059:0.022569356699740445,(Stenella_coeruleoalba_NC012053:0.01175975630139536,(Delphinus_capensis_NC012061:0.012551256039657694,Tursiops_aduncus_NC012058:0.014185833376502444):0.001409668367790616):0.005228634556345746):0.0037558315026921677):0.0063537950901542475):0.03839245895470707):0.005312495032750995):0.011005576533930946):0.09329894978170425):0.08482112642477095):0.09473207109209464):0.020049681529434395):0.02202396167545539):0.3721895202061531):0.10883071547968433,((Hyemoschus_aquaticus:0.29299893309101105,Tragulus_kanchil:0.32284990174641065):0.2933262250614211,(Antilocapra_americana:0.22612966248525088,((Okapia_johnstoni:0.1662502332141515,(Giraffa_camelopardalis_angolensis_NC012100:0.01492320183899516,Giraffa_camelopardalis_antiquorum:0.01504889816407183):0.1571236620806769):0.07589980872059407,((((Alces_alces:0.11931940563167888,(Hydropotes_inermis:0.10822348771439039,Capreolus_capreolus:0.11094440026920997):0.04558342304517822):0.006653560713024096,(Rangifer_tarandus_NC007703:0.10131769736884799,((Pudu_puda:0.07325148610035676,((Ozotoceros_bezoarcticus:0.058486643813266646,(Mazama_gouazoubira:0.04573396260090843,Hippocamelus_antisensis:0.04575129207081182):0.020455899403372967):0.007884675042342127,(Blastocerus_dichotomus:0.07508933090069582,(Mazama_nemorivaga_2:0.03088776932953906,Mazama_nemorivaga_1:0.03032232373057633):0.053404284839959376):0.003477924468242027):0.006936871500428946):0.036709131673052384,((Mazama_rufina:0.009635946842414086,Pudu_mephistophiles:0.00989278786807315):0.07410643717391822,((Odocoileus_virginianus_1:0.01503846422876135,(Odocoileus_virginianus_3:0.0077202915922323445,Odocoileus_hemionus:0.00879668255025274):0.005097886522263344):0.025291260166657666,(Odocoileus_virginianus_2:0.03912598724150104,(Mazama_americana_1:0.029053028702980255,Mazama_americana_2:0.02803362170113702):0.010290423607441788):0.010221610115611532):0.03594494590396689):0.022666822291106458):0.014913887009465564):0.04378052221283005):0.01800831312357857,((Elaphodus_cephalophus_N008749:0.11949910877380887,((Muntiacus_muntjak_NC004563:0.0440688127968079,Muntiacus_crinifrons_NC004577:0.037350728125357224):0.013552665462649854,(Muntiacus_reevesi_NC008491:0.04109795861995564,Muntiacus_vuquangensis:0.040993615512323445):0.004955442291062007):0.07198858118278717):0.016869835114617048,((Rucervus_duvauceli:0.05252186632271587,(Axis_porcinus:0.044889741316525324,Axis_axis:0.04105253733652516):0.0174542381226149):0.021999404008527138,((Dama_dama_dama:0.0570310021643551,Dama_dama_mesopotamica:0.05577034764584127):0.019104930683318692,((Elaphurus_davidianus:0.028216212197626402,Rucervus_eldi:0.03623490314793647):0.012405932462846105,(Rusa_alfredi:0.04230981950800347,((Rusa_unicolor_NC008414:0.0198944939310005,Rusa_timorensis:0.021462366438005986):0.006977016557652588,(Cervus_elaphus_NC007704:0.035603018883720056,(Przewalskium_albirostris:0.02917448369569331,(Cervus_nippon_taiouanus_NC008462:0.020196057619483888,(Cervus_nippon_yakushimae_NC007179:0.0167645605951835,Cervus_nippon_centralis_NC006993:0.016487888896691894):0.005054345696010195):0.00702664043067276):0.009208629380112132):0.0023548514604454034):0.008485490420048878):0.008512071959278273):0.016092852424444738):0.018818687530678318):0.04106071575805611):0.02310679625912086):0.10428200900507245,((Moschus_berezovskii_NC012694:0.043543446674883905,Moschus_moschiferus:0.03894050325260081):0.16380600935106554,(((Boselaphus_tragocamelus:0.0860931607591571,Tetracerus_quadricornis:0.09167336767522953):0.10358369558086399,((Tragelaphus_imberbis:0.1321518730044024,((Tragelaphus_scriptus_1:0.0928173285568248,Tragelaphus_angasii:0.08172618299219941):0.03634249789545273,((Tragelaphus_strepsiceros:0.08438935974056055,(Tragelaphus_oryx:0.04072412663445904,Tragelaphus_derbianus:0.040864978375685965):0.026813080055573136):0.004055838506785617,((Tragelaphus_scriptus_2:0.023332792714678818,Tragelaphus_scriptus_3:0.019971304683020087):0.03197261690205092,(Tragelaphus_spekii:0.04084243656083688,Tragelaphus_eurycerus:0.038234887055914796):0.010009097861044567):0.025993194853733474):0.04062480754391038):0.018346302214842042):0.10061638997950106,((Syncerus_caffer:0.08094252364399317,(Bubalus_bubalis_carabanesis:0.011340000758619694,(Bubalus_bubalis_bubalis_AF547270:0.013995891504290078,Bubalus_depressicornis:0.017942154596342855):0.0034877905315608393):0.07781015293665788):0.0562687918086047,(Pseudoryx_nghetinhensis:0.1834569601203469,((Bison_bonasus:0.042199488066661114,(Bos_taurus_indicus_EU177868:0.00933995775037752,Bos_taurus_taurus_EU177832:0.007674931161589292):0.033587442504423755):0.01214657717823732,((Bison_bison:0.017368802253883715,Bos_grunniens_NC006380:0.024412928565838526):0.028035054737193903,(Bos_javanicus_birmanicus:0.02707954813985309,(Bos_gaurus:0.02635990663573624,Bos_javanicus_javanicus:0.030383275231161085):0.0019212988831408043):0.022808041555026123):0.006024614559748052):0.1297369749617873):0.0049903522737597345):0.029444586268192224):0.008386777641799159):0.029001548863346806,((Aepyceros_melampus:0.19929053767682597,(Neotragus_batesi:0.18123606360751718,Nesotragus_moschatus:0.1265574789441873):0.07550962596105969):0.022356684493640394,((Procapra_gutturosa:0.15855051320198857,((Rahicerus_campestris:0.17817552051393762,(Dorcatragus_megalotis:0.13769120693190265,(Madoqua_saltiana:0.08534669817369879,Madoqua_kirkii:0.09698883214757388):0.053503547023946704):0.04334472327891623):0.016042369160557964,(Ourebia_ourebi:0.16582563105077167,(Saiga_tatarica:0.12882836588429103,((Litocranius_walleri:0.10134984530961337,Antidorcas_marsupialis:0.12274322222974024):0.019622257967514982,(Antilope_cervicapra:0.07905304313902696,(((Eudorcas_rufifrons_1:0.004482749399311434,Eudorcas_rufifrons_2:0.003405551941205249):0.07711839750676293,(Nanger_granti:0.029832431233485213,(Nanger_soemmerringii:0.015156270002144503,Nanger_dama:0.020293196237018255):0.00829707086787859):0.04448271443853906):0.01360212277894782,((Gazella_spekei:0.02481810166325821,((Gazella_dorcas_pelzelnii:0.004276922041559318,Gazella_dorcas_osiris:0.006249397063237984):0.02088228222387641,(Gazella_gazella_gazella:0.004115513109192576,Gazella_gazella_erlangeri:0.005172999875064137):0.026399510845341485):0.003190643438894198):0.007311504238806922,((Gazella_bennettii:0.021899221750299045,Gazella_subgutturosa_subgutturosa:0.020756276920971227):0.006908034277866072,(Gazella_subgutturosa_marica:0.009581639153568647,(Gazella_leptoceros:0.0034710627446260154,Gazella_cuvieri:0.0018480074359386168):0.008587545966265599):0.015106313757314098):0.008963110185860186):0.05156432494864569):0.007369442253551278):0.055033380363475784):0.011430641521990978):0.03317730141341134):0.010657031810429407):0.004311439791694931):0.037299499228400486,(((Redunca_fulvorufula:0.08265545490781735,Redunca_arundinum:0.06351915427496532):0.05762652407713596,(Pelea_capreolus:0.1201753591110283,(Kobus_ellipsiprymnus:0.06555175267816178,Kobus_leche:0.05318837042092039):0.0664128080275585):0.007678385476166937):0.07308120818439462,((Oreotragus_oreotragus:0.20085521058207922,((Philantomba_maxwelli:0.052576359333443796,(Philantomba_monticola_2:0.04032713938131161,Philantomba_monticola_1:0.03468349096632363):0.017240523344058244):0.05631001354673905,((Sylvicapra_grimmia:0.081216251992428,(Cephalophus_dorsalis:0.03924937442600188,(Cephalophus_jentinki:0.04623003093097968,(Cephalophus_silvicultor:0.016621722722730384,Cephalophus_spadix:0.016237452983967005):0.022434509430490825):0.0070838167870748365):0.028590453182060705):0.013587036019182996,(Cephalophus_adersi:0.0830673062856309,(((Cephalophus_callipygus_2:0.012409240656586912,Cephalophus_callipygus_1:0.010689287723216956):0.005579269219775363,(Cephalophus_ogilbyi:0.012227960679487214,Cephalophus_callipygus_3:0.008756815246816442):0.006028778950375093):0.050046066384618934,(Cephalophus_leucogaster:0.04973363762385135,(Cephalophus_natalensis:0.01761542101226114,(Cephalophus_rufilatus:0.0038459484017936934,Cephalophus_nigrifrons:0.003374103267888854):0.017385500375276076):0.026064075795884142):0.02992502197702513):0.014500760079237944):0.006394409188848432):0.03500553709509787):0.05718522586097806):0.012741127943434242,((((Damaliscus_pygargus_FJ207530:0.07777919406159454,(Alcelaphus_buselaphus_lichtensteinii:0.025939454193219285,Alcelaphus_buselaphus_buselaphus:0.031182357283559385):0.030715456900144166):0.029324503020027724,(Connochaetes_taurinus_1:0.01458583409432899,(Connochaetes_taurinus_2:0.01018982933667671,Connochaetes_gnou:0.011586493645845287):0.0034815729886126757):0.0817278469163197):0.06665732945789826,((Hippotragus_equinus:0.07936771733622885,Hippotragus_niger:0.09930852192139998):0.01552966000815429,(Addax_nasomaculatus:0.03939950977311316,(Oryx_beisa:0.01982144408295239,(Oryx_gazella:0.028677642379866766,(Oryx_leucoryx:0.021613641149554552,Oryx_dammah:0.019129117196344157):0.004869614361965288):0.002351359356020363):0.018460767548351045):0.0644950824679642):0.07041476403656005):0.006869099813530506,(Pantholops_hodgsonii_NC007441:0.13069888205663258,((Ovibos_moschatus_FJ207536:0.0818989126504484,((Capricornis_crispus_FJ207533:0.0360623201675663,(Capricornis_milneedwardsii_FJ207534:0.016696703104148666,Capricornis_swinhoei_NC010640:0.03071729201516056):0.01099767405030914):0.03565594006620864,(Naemorhedus_griseus_griseus_FJ207532:0.06757829080226391,(Naemorhedus_baileyi:0.031210301620016707,Naemorhedus_griseus_evansi:0.03358226271761733):0.03471896622923496):0.008850135007810225):0.015517264244891821):0.05907050072140069,(Ovis_aries_NC001941:0.11409890228811286,(((Ammotragus_lervia_FJ207522:0.06666084881804694,Arabitragus_jayakari_FJ207523:0.06578792114836361):0.03637109438260482,(Rupicapra_pyrenaica_FJ207539:0.0259370871427901,Rupicapra_rupicapra_FJ207538:0.025530469568379795):0.09170797093336505):0.008222685837068831,((Budorcas_taxicolor_FJ207524:0.11674214026068594,Oreamnos_americanus_FJ207535:0.14020601783153083):0.0062761536998265,(Pseudois_nayaur_FJ207537:0.07928902804935574,((Capra_sibirica_FJ207529:0.04521714742941108,Hemitragus_jemlahicus_FJ207531:0.05443149876024582):0.005973757494123671,(Capra_nubiana_FJ207527:0.027482913965400754,((Capra_pyrenaica_FJ207528:0.010345729497383407,Capra_ibex_FJ207526:0.007519791686953092):0.014468470723404719,(Capra_caucasica:0.016885227476009127,(Capra_hircus:0.018555399474806927,Capra_falconeri_FJ207525:0.01665096397982129):0.0012933765164548875):0.006388932195009603):0.0034174637335054768):0.02380158294150642):0.042841790832114764):0.03108496246666705):0.005458567622488317):0.005185467435097229):0.01829749335894308):0.018034659456231148):0.038976319650026015):0.030027708874145666):0.005347532736613444):0.0040234326316865325):0.010679063931308332):0.021387202003035198):0.019294122036887386):0.008174339990060543):0.013621639064178287):0.04119067297162364):0.17616910547243442):0.13822729277856205):0.07520505027863503):0.070900144384445):0.1638079917414696);"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 266,
+            "label": "Antilopinae",
+            "dwc:scientificNameAuthorship": "Bibi, F., Vrba, E. S.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book_section",
+                    "title": "Explorations and surveys for a railroad route from the Mississippi River to the Pacific Ocean.",
+                    "section_title": "Mammals.",
+                    "year": 1857,
+                    "authors": [
+                        {
+                            "name": "S. F. Baird",
+                            "alternate": [
+                                "Baird, S. F."
+                            ],
+                            "firstname": "S.",
+                            "lastname": "Baird",
+                            "middlename": "F."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "pages": "1-757",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Antilope cervicapra (Linnaeus 1758) (Antilopini) and all extant bovids that share a more recent common ancestor with Antilope cervicapra than with Bos taurus Linnaeus 1758 (Bovini).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Gazella dorcas Linnaeus, 1758",
+                        "nameComplete": "Gazella dorcas"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Bos taurus Linnaeus, 1758",
+                        "nameComplete": "Bos taurus"
+                    }
+                }
+            ]
+        }
+    ]
+}

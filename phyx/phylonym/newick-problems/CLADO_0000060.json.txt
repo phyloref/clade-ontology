@@ -1,0 +1,522 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A phylogeny of legumes (Leguminosae) based on analyses of the plastid matK gene resolves many well-supported subclades within the family.",
+                "year": 2004,
+                "authors": [
+                    {
+                        "name": "M. Wojciechowski",
+                        "alternate": [
+                            "Wojciechowski, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Wojciechowski"
+                    },
+                    {
+                        "name": "M. Lavin",
+                        "alternate": [
+                            "Lavin, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Lavin"
+                    },
+                    {
+                        "name": "M. Sanderson",
+                        "alternate": [
+                            "Sanderson, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Sanderson"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1-5",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.3732/ajb.91.11.1846"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "American Journal of Botany",
+                    "volume": "91",
+                    "identifier": []
+                }
+            },
+            "newick": "(Vauquelinia_californica,Polygala_californica,((Suriana_maritima,Quillaja_saponaria),(((Bauhinia_tomentosa,(Cercis_gigantea,Cercis_occidentalis,Cercis_canadensis)),((Colophospermum_mopane,Prioria_copaifera),((Hymenaea_courbaril,Tessmannia_lescrauwaetii),((Brownea_sp.,((Oddoniodendron_micranthum,Berlinia_congolensis),Brachystegia_spiciformis),Cynometra_mannii),Amherstia_nobilis)))),(((((Erythrostemon_gilliesii,(Caesalpinia_andamanica,Haematoxylum_brasiletto)),(Chamaecrista_fasciculata,(Senna_candolleana,Senna_covesii)),(((Peltophorum_dubium,((Cercidium_floridum,Parkinsonia_aculeata),Conzattia_multiflora)),Dinizia_excelsa),(((((((((Enterolobium_cyclocarpum,Chloroleucon_manganse,(Inga_punctata,Albizia_julibrissin),Samanea_saman,Enterolobium_contortisiliq,Acacia_melanoxylon),(Lysiloma_watsonii,Havardia_mexicana)),(Calliandra_californica,Calliandra_surinamensis),Faidherbia_albidea),Acacia_willardiana),Acacia_greggii),Acacia_hindsii,(Parkia_timoriana,Microlobium_foetidus)),(Desmant \nhus_cooleyi,Prosopidastrum_mexicana),(Leucaena_retusa,Neptunia_monosperma),(Prosopis_glandulosa,Prosopis_pallida),Dichrostachys_cinerea),((Adenanthera_pavonina,Tetrapleura_tetraptera,Amblygonocarpus_andongens),((Xylia_africana,Calpocalyx_heitzii),Pseudoprosopis_gilletii),(Piptadeniastrum_africanum,Entada_abyssinica))),(Pentaclethra_macroloba,Pentaclethra_macrophylla)))),Ceratonia_siliqua,(Gymnocladus_chinensis,(Gleditsia_sinensis,Gleditsia_triacanthos)),Arcoa_gonavensis),(((((((((((Aotus_ericoides,Gastrolobium_punctatum),Bossiaea_cordigera,(Isotropis_foliosa,Gompholobium_minus)),Daviesia_latifolia),Hypocalyptus_coluteoides),((((((Erythrina_cristi_galli,(((((((Vigna_subterranea,(Vigna_unguiculata,Vigna_umbellata)),(((Phaseolus_coccineus,Phaseolus_vulgaris),Phaseolus_microcarpus),Strophostyles_umbellata)),(Lablab_purpureus,Dipogon_lignosus)),((Macrotyloma_uniflorum,Dolichos_trinervatus),Sphenostylis_angustifolia)),Wajira_albescens),Cologania_hintoniorum),((Glycine_max,(Psoralea \n_cinerea,(Otholobium_glandulosum,(Psoralidium_tenuiflorum,Rupertia_physodes)))),Amphicarpaea_bracteata,Pueraria_montana))),(Desmodium_psilocarpum,Campylotropis_macrocarpa)),Apios_americana),((Galactia_striata,(((Piscidia_piscipula,((Pongamiopsis_amygdalina,Millettia_thonningii,Neodunnia_richardiana),((Paraderris_elliptica,Derris_laxiflora),Brachypterum_robusta),Lonchocarpus_lanceolatus)),(Tephrosia_heckmanniana,Mundulea_sericea)),((Millettia_grandis,(Philenoptera_eriocalyx,Philenoptera_laxiflora)),Fordia_leptobotrya))),Abrus_precatorius),Dalbergiella_nyasae,Austrosteenisia_blackii,Platycyamus_regnellii),Xeroderris_stuhlmannii),(Cyamopsis_senegalensis,(Indigofera_suffruticosa,Indigofera_sphaerocarpa)),(((((Lotus_purshianus,((Lotus_japonicus,Ornithopus_compressus),Anthyllis_vulneraria)),Coronilla_varia),((Sesbania_vesicaria,Sesbania_drummondii),(Sesbania_emerus,Sesbania_grandiflora))),(((((Coursetia_glandulosa,(Coursetia_axillaris,Coursetia_insomnifolia)),(Genistidium_dumosum,P \neteria_thompsonae)),(((Poissonia_weberbaueri,Poissonia_heterantha),Poissonia_hypoleuca),Sphinctospermum_constrictum),Olneya_tesota),(Robinia_neomexicana,Robinia_pseudoacacia)),(Gliricidia_brenningii,Gliricidia_maculata,Gliricidia_ehrenbergii,((Poitea_glyciphylla,Poitea_campanilla),Poitea_immarginata)),Lennea_modesta,Hebestigma_cubense)),(((((((Sutherlandia_frutescens,Colutea_arborescens),((Clianthus_puniceus,Carmichaelia_williamsii),Swainsona_pterostylis)),(((Astragalus_lonchocarpus,Astragalus_nothoxys),(Astragalus_canadensis,Astragalus_americanus)),(Oxytropis_deflexa,Oxytropis_lambertii))),(Caragana_arborescens,((Onobrychis_montana,Hedysarum_boreale),Alhagi_maurorum))),(((((((((Lathyrus_latifolius,Lathyrus_sativus),Lathyrus_aphaca),Pisum_sativum),Vicia_ludoviciana,Vicia_hirsuta,((Vicia_americana,(Vicia_faba,Vicia_sativa)),Lens_culinaris)),((((Trifolium_beckwithii,Trifolium_nanum),Trifolium_repens),Trifolium_hirtum),Trifolium_lupinaster)),((((Trigonella_kotschyi,Trigonella_foenum_graecum),(Trigonella_cretic\nergia_congestiflora,Dalbergia_sissoo)),(((Diphysa_americana,Diphysa_thurberii),Diphysa_floribunda),((Ormocarpopsis_calcicola,Ormocarpopsis_itremoensis),(Ormocarpum_bernierianum,Ormocarpum_kirkii)),Ormocarpum_yemenense,(Pictetia_aculeata,(Pictetia_marginata,Pictetia_angustifolia)))),(((((((Arachis_pintoi,Arachis_major),(Stylosanthes_hamata,Stylosanthes_capitata)),((Chapmannia_gracilis,Chapmannia_sericea),Chapmannia_floridana)),Fiebrigiella_gracilis),(Cascaronia_astragalina,(Geoffroea_spinosa,Geoffroea_decorticans))),((((Brya_ebenus,Cranocarpus_martii),Platymiscium_stipulare),Grazielodendron_riodocense),((Centrolobium,(Inocarpus_fagifer,(Pterocarpus_indicus,Pterocarpus_macrocarpus),Ramorinoa_girolae,Tipuana_tipu,Maraniona_lavinii)),Platypodium_elegans))),((Discolobium_psoraleifolium,Discolobium_pulchellum),Riedeliella_graciliflora)))),(((Apoplanesia_paniculata,(Errazurizia_benthami,Eysenhardtia_orthocarpa)),(Amorpha_fruticosa,Parryella_filifolia)),((Marina_parryi,Dalea_pulchra) \n,Psorothamnus_arborescens))),(Hymenolobium_mesoamericana,Andira_galeottiana)),((Luetzeburgia_auriculata,(Vatairea_sp_nov,Vatairea_macrocarpa)),Sweetia_fruticosa),(Ormosia_colombiana,Ormosia_formosana),(((((Bowdichia_virgiloides_1,Bowdichia_virgiloides_2),Acosmium_panamense),(Diplotropis_martiusii,Diplotropis_brasiliensis)),(((((Ammodendron_argenteum,(Sophora_davidii,Sophora_nuttalliana)),(Baptisia_australis,Thermopsis_rhombifolia)),(Piptanthus_nepalensis,Maackia_amurensis)),Bolusanthus_speciosus),(((Anarthrophyllum_desideratum,((Cytisus_scoparius,(Genista_monspessulana,Spartium_junceum)),((Lupinus_argenteus,Lupinus_tegeticulatus),Lupinus_consentii))),Crotalaria_pumila),Calpurnia_aurea))),((((Brongniartia_alamosana,Hovea_purpurea),Cyclolobium_brasiliense),Harpalyce_arborescens),Poecilanthe_parviflora))),(Holocalyx_balansae,Uribea_tamarindoides)),(Calia_secundiflora,Calia_arizonica)),((((Cladrastis_lutea,Cladrastis_delavayi),Styphnolobium_japonicum),Pickeringia_montana),Cladras \ntis_platycarpa)),((Amburana_cearensis,Angylocalyx_sp.,Dussia_macroprophyllata,((Myrocarpus_frondosus,Myrospermum_sousanum),Myrospermum_frutescens),(Dipteryx_alata,Pterodon_pubescens)),((Ateleia_herbertsmithii,Cyathostegia_mathewsii),((Swartzia_simplex,(Swartzia_flaemingii,Swartzia_jorori)),Bobgunnia_madagascariensis))))),((Petalostylis_labicheoides,Dialium_guianensis),Poeppigia_procera)))))"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "RbcL and legume phylogeny, with particular reference to Phaseoleae, Millettieae, and allies.",
+                "year": 2001,
+                "authors": [
+                    {
+                        "name": "T. Kajita",
+                        "alternate": [
+                            "Kajita , T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Kajita"
+                    },
+                    {
+                        "name": "H. Ohashi",
+                        "alternate": [
+                            "Ohashi, H."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Ohashi"
+                    },
+                    {
+                        "name": "Y. Tateishi",
+                        "alternate": [
+                            "Tateishi, Y."
+                        ],
+                        "firstname": "Y.",
+                        "lastname": "Tateishi"
+                    },
+                    {
+                        "name": "C. Bailey",
+                        "alternate": [
+                            "Bailey, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Bailey"
+                    },
+                    {
+                        "name": "J. Doyle",
+                        "alternate": [
+                            "Doyle, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Doyle"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1-3",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Systematic Botany",
+                    "volume": "26",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Angiosperm phylogeny based on matK sequence information.",
+                "year": 2003,
+                "authors": [
+                    {
+                        "name": "K. W. Hilu",
+                        "alternate": [
+                            "Hilu, K. W."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Hilu",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "T. Borsch",
+                        "alternate": [
+                            "Borsch, T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Borsch"
+                    },
+                    {
+                        "name": "K. Muller",
+                        "alternate": [
+                            "Muller, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Muller"
+                    },
+                    {
+                        "name": "D. E. Soltis",
+                        "alternate": [
+                            "Soltis, D. E."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Soltis",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "P. S. Soltis",
+                        "alternate": [
+                            "Soltis, P. S."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Soltis",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "V. Savolanien",
+                        "alternate": [
+                            "Savolanien, V."
+                        ],
+                        "firstname": "V.",
+                        "lastname": "Savolanien"
+                    },
+                    {
+                        "name": "M. W. Chase",
+                        "alternate": [
+                            "Chase, M. W."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Chase",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "M. P. Powell",
+                        "alternate": [
+                            "Powell, M. P."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Powell",
+                        "middlename": "P."
+                    },
+                    {
+                        "name": "L. A. Alice",
+                        "alternate": [
+                            "Alice, L. A."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Alice",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "R. Evans",
+                        "alternate": [
+                            "Evans, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Evans"
+                    },
+                    {
+                        "name": "H. Sauquet",
+                        "alternate": [
+                            "Sauquet, H."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Sauquet"
+                    },
+                    {
+                        "name": "C. Neinhuis",
+                        "alternate": [
+                            "Neinhuis, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Neinhuis"
+                    },
+                    {
+                        "name": "T. A. B. Slotta",
+                        "alternate": [
+                            "Slotta, T. A. B."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Slotta",
+                        "middlename": "A. B."
+                    },
+                    {
+                        "name": "J. G. Rohwer",
+                        "alternate": [
+                            "Rohwer, J. G."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Rohwer",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "C. S. Campbell",
+                        "alternate": [
+                            "Campbell, C. S."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Campbell",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "L. W. Chatrou",
+                        "alternate": [
+                            "Chatrou, L. W."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Chatrou",
+                        "middlename": "W."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "9",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.3732/ajb.90.12.1758"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "American Journal of Botany",
+                    "volume": "90",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "The role of biotic and abiotic factors in evolution of ant dispersal in the milkwort family (Polygalaceae).",
+                "year": 2007,
+                "authors": [
+                    {
+                        "name": "F. Forest",
+                        "alternate": [
+                            "Forest , F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Forest"
+                    },
+                    {
+                        "name": "M. W. Chase",
+                        "alternate": [
+                            "Chase, M. W."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Chase",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "C. Persson",
+                        "alternate": [
+                            "Persson, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Persson"
+                    },
+                    {
+                        "name": "P. R. Crane",
+                        "alternate": [
+                            "Crane, P. R."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Crane",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "J. A. Hawkins",
+                        "alternate": [
+                            "Hawkins, J. A."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Hawkins",
+                        "middlename": "A."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.1558-5646.2007.00138.x"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Evolution",
+                    "volume": "61",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Phylogenetic patterns and diversification in the caesalpinioid legumes.",
+                "authors": [
+                    {
+                        "name": "A. Bruneau",
+                        "alternate": [
+                            "Bruneau, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Bruneau"
+                    },
+                    {
+                        "name": "M. Mercure",
+                        "alternate": [
+                            "Mercure, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Mercure"
+                    },
+                    {
+                        "name": "G. P. Lewis",
+                        "alternate": [
+                            "Lewis, G. P."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Lewis",
+                        "middlename": "P."
+                    },
+                    {
+                        "name": "P. S. Herendeen",
+                        "alternate": [
+                            "Herendeen, P. S."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Herendeen",
+                        "middlename": "S."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2008",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1139/B08-058"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Botany",
+                    "volume": "86",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Angiosperm phylogeny: 17 genes, 640 taxa.",
+                "year": 2011,
+                "authors": [
+                    {
+                        "name": "D. E. Soltis",
+                        "alternate": [
+                            "Soltis, D. E."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Soltis",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "S. A. Smith",
+                        "alternate": [
+                            "Smith, S. A."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Smith",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "N. Cellinese",
+                        "alternate": [
+                            "Cellinese, N."
+                        ],
+                        "firstname": "N.",
+                        "lastname": "Cellinese"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.3732/ajb.1000404"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "American Journal of Botany",
+                    "volume": "98",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 60,
+            "label": "Leguminosae",
+            "dwc:scientificNameAuthorship": "Sanderson, M. J., Wojciechowski, M. F., McMahon, M. M., Lavin, M.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Genera Plantarum.",
+                    "year": 1789,
+                    "authors": [
+                        {
+                            "name": "A. L. Jussieu",
+                            "alternate": [
+                                "Jussieu, A. L."
+                            ],
+                            "firstname": "A.",
+                            "lastname": "Jussieu",
+                            "middlename": "L."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Apud Viduam Herissant et Theophilum Barrois",
+                    "city": "Parisii",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Vicia faba Linnaeus 1753 and all extant organisms or species that share a more recent common ancestor with Vicia faba than with Polygala californica Nuttall 1840, Quillaja saponaria Molina 1782, and Suriana maritima Linnaeus 1753.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Vicia faba 1753",
+                        "nameComplete": "Vicia faba"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Quillaja saponaria 1782",
+                        "nameComplete": "Quillaja saponaria"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Suriana maritima 1753",
+                        "nameComplete": "Suriana maritima"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Polygala californica 1840",
+                        "nameComplete": "Polygala californica"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,176 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "book_section",
+                "title": "Reproductive Biology and Phylogeny of Gymnophiona (Caecilians)",
+                "section_title": "Caecilian phylogeny and classification",
+                "year": 2006,
+                "authors": [
+                    {
+                        "name": "M. Wilkinson",
+                        "alternate": [
+                            "Wilkinson, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Wilkinson"
+                    },
+                    {
+                        "name": "R. A. Nussbaum",
+                        "alternate": [
+                            "Nussbaum, R. A."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Nussbaum",
+                        "middlename": "A."
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "J. M. Exbrayat",
+                        "alternate": [
+                            "Exbrayat, J. M."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Exbrayat",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "B. G. M. Jamieson",
+                        "alternate": [
+                            "Jamieson, B. G. M."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Jamieson",
+                        "middlename": "G. M."
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "Science Publishers",
+                "city": "Enfield, New Hampshire",
+                "pages": "39-78",
+                "figure": "1.1",
+                "identifier": [],
+                "link": []
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "A nine-family classification of caecilians (Amphibia:Gymnophiona).",
+                "year": 2011,
+                "authors": [
+                    {
+                        "name": "M. Wilkinson",
+                        "alternate": [
+                            "Wilkinson, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Wilkinson"
+                    },
+                    {
+                        "name": "D. San Mauro",
+                        "alternate": [
+                            "San Mauro, D."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "San Mauro"
+                    },
+                    {
+                        "name": "E. Sherratt",
+                        "alternate": [
+                            "Sherratt, E."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Sherratt"
+                    },
+                    {
+                        "name": "D. Gower",
+                        "alternate": [
+                            "Gower, D."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Gower"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Zootaxa",
+                    "volume": "2874",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 235,
+            "label": "Gymnophiona",
+            "dwc:scientificNameAuthorship": "Wake, M. H.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Fine del prodomodi Erpetologia Siciliana.",
+                    "year": 1814,
+                    "authors": [
+                        {
+                            "name": "C. S. Rafinesque Schmaltz",
+                            "alternate": [
+                                "Rafinesque Schmaltz , C. S."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Rafinesque Schmaltz",
+                            "middlename": "S."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Speccio Sci.",
+                        "volume": "2",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Caecilia tentaculata Linnaeus 1758 (Caeciliidae), Ichthyophis glutinosus (Linnaeus 1758) (Ichthyophiidae), and Rhinatrema bivittatum (Cuvier in Guérin-Méneville, 1829) (Rhinatrematidae).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Caecilia tentaculata Linnaeus, 1758",
+                        "nameComplete": "Caecilia tentaculata"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Ichthyophis glutinosus Linnaeus, 1758",
+                        "nameComplete": "Ichthyophis glutinosus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Rhinatrema bivittatum Cuvier in Guérin-Méneville, 1829",
+                        "nameComplete": "Rhinatrema bivittatum"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

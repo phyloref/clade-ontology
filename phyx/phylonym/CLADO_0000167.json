@@ -1,0 +1,124 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "DNA sequence variation of mitochondrial large-subunit rRNA provides support for a two-sublass organization of the Anthozoa (Cnidaria).",
+                "year": 1996,
+                "authors": [
+                    {
+                        "name": "S. C. France",
+                        "alternate": [
+                            "France, S. C."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "France",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "P. E. Rosel",
+                        "alternate": [
+                            "Rosel, P. E."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Rosel",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "J. E. Agenbroad",
+                        "alternate": [
+                            "Agenbroad, J. E."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Agenbroad",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "L. S. Mullineaux",
+                        "alternate": [
+                            "Mullineaux, L. S."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Mullineaux",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "T. D. Kocher",
+                        "alternate": [
+                            "Kocher, T. D."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Kocher",
+                        "middlename": "D."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Marine Biology and Biotechnology",
+                    "volume": "5",
+                    "identifier": []
+                }
+            },
+            "newick": "(((((Anthothela_nuttingi, Lophogorgia_chilensis, Protodendron_sp., Murica_fructicosa, \nAcanthogorgia_sp., Alcyonium_sp.), \n\n(Isidella_sp., Lepidisis_alapa, Isidid_n.sp.A), \n\n(Corallum_ducale, Paragorgia_sp., Corallum_n.sp.),\n\nIsidid_s.sp.B, \n\n(Narella_bowersi, Narella_n.sp), \nChrysogorgia_chryseis), \n\nRenilla_muelleri), \n\n((Cerianthus_borealis, Cerianthropsis_americanus), \n(((Corynactis_californica, Enallopsammia_rostrata), Favia_fragum), \n(((Antipath_sp.B, Antipath_sp.A), Scichopathes_spiessi), \n(Anthopleura_elegansissima, (\"Orange\"_anemone, Hormathiid_anemone)))))),\n\n((Cassiopea_sp., Aurella_aurita), \n(Liriope_tetraphylla, Obelia_dichotoma)))\n"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 167,
+            "label": "Hexacorallia",
+            "dwc:scientificNameAuthorship": "Daly, M.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Generale Morphologie der Organismen.",
+                    "year": 1866,
+                    "authors": [
+                        {
+                            "name": "E. Haeckel",
+                            "alternate": [
+                                "Haeckel, E."
+                            ],
+                            "firstname": "E.",
+                            "lastname": "Haeckel"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Verlag von Georg Reimer",
+                    "city": "Berlin",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Nematostella vectensis Stephenson 1935 and all extant species that share a more recent common ancestor with Nematostella vectensis Stephenson 1935 than with Alcyonium digitatum Linnaeus 1758 (Octocorallia).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Nematostella vectensis Stephenson, 1935",
+                        "nameComplete": "Nematostella vectensis"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Alcyonium digitatum Linnaeus, 1758",
+                        "nameComplete": "Alcyonium digitatum"
+                    }
+                }
+            ]
+        }
+    ]
+}

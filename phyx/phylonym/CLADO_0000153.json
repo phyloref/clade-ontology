@@ -1,0 +1,164 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "New streptophyte green algae from terrestrial habitats and an assessment of the genus Interfilum (Klebsormidiophyceae, Streptophyta).",
+                "year": 2008,
+                "authors": [
+                    {
+                        "name": "T. I. Mikhailyuk",
+                        "alternate": [
+                            "Mikhailyuk , T. I."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Mikhailyuk",
+                        "middlename": "I."
+                    },
+                    {
+                        "name": "H. J. Sluiman",
+                        "alternate": [
+                            "Sluiman, H. J."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Sluiman",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "A. Massalski",
+                        "alternate": [
+                            "Massalski, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Massalski"
+                    },
+                    {
+                        "name": "O. Mudimu",
+                        "alternate": [
+                            "Mudimu, O."
+                        ],
+                        "firstname": "O.",
+                        "lastname": "Mudimu"
+                    },
+                    {
+                        "name": "E. M. Demchenko",
+                        "alternate": [
+                            "Demchenko, E. M."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Demchenko",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "S. Y. Kondratyuk",
+                        "alternate": [
+                            "Kondratyuk, S. Y."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Kondratyuk",
+                        "middlename": "Y."
+                    },
+                    {
+                        "name": "T. Friedl",
+                        "alternate": [
+                            "Friedl, T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Friedl"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "6",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.1529-8817.2008.00606"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "J. Phycol.",
+                    "volume": "44",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 153,
+            "label": "Klebsormidiophyceae",
+            "dwc:scientificNameAuthorship": "Hall, J. D., Delwiche, C. F., Karol, K. G.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Kingdoms, codes and classification.",
+                    "year": 1982,
+                    "authors": [
+                        {
+                            "name": "C. Jeffrey",
+                            "alternate": [
+                                "Jeffrey, C."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Jeffrey"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Kew Bulletin",
+                        "volume": "370",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The largest crown clade containing Klebsormidium flaccidum (Kützing) P. C. Silva, K. R. Mattox & W. H. Blackwell 1972 but not Coleochaete scutata Brébisson 1844 (Coleochaetophyceae), Spirogyra porticalis (O. F. Müller) Dumort. 1822, and Zygnema cruciatum (Vaucher) C. Agardh 1817 (the latter two specifiers representing Zygnematophyceae).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Klebsormidium flaccidum Silva and Mattox and Blackwell, 1972",
+                        "nameComplete": "Klebsormidium flaccidum"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Coleochaete scutata Brébisson, 1844",
+                        "nameComplete": "Coleochaete scutata"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Spirogyra porticalis Dumort., 1822",
+                        "nameComplete": "Spirogyra porticalis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Zygnema cruciatum Agardh, 1817",
+                        "nameComplete": "Zygnema cruciatum"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,135 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Progress and challenges toward developing a phylogeny and classification of the hornworts.",
+                "year": 2007,
+                "authors": [
+                    {
+                        "name": "R. J. Duff",
+                        "alternate": [
+                            "Duff, R. J."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Duff",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "J. C. Cargill",
+                        "alternate": [
+                            "Cargill, J. C."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Cargill",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "K. S. Renzaglia",
+                        "alternate": [
+                            "Renzaglia, K. S."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Renzaglia",
+                        "middlename": "S."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Bryologist",
+                    "volume": "110",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 12,
+            "label": "Anthocerotae",
+            "dwc:scientificNameAuthorship": "Mishler, B. D., Cargill, D. C., Villarreal, J. C., Renzaglia, K., Crandall-Stotler, B., Stotler, R.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book_section",
+                    "title": "Flora Novae-Zelandiae. Part II.",
+                    "section_title": "Hepaticae.",
+                    "year": 1855,
+                    "authors": [
+                        {
+                            "name": "W. Mitten",
+                            "alternate": [
+                                "Mitten, W."
+                            ],
+                            "firstname": "W.",
+                            "lastname": "Mitten"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "J. D. Hooker",
+                            "alternate": [
+                                "Hooker, J. D."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Hooker",
+                            "middlename": "D."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "Reeve Brothers",
+                    "city": "London",
+                    "pages": "125-172",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The largest crown clade containing Anthoceros punctatus L. 1753 but not Plagiochila adianthoides (Sw.) Lindenb. 1840 (Hepaticae), Sphagnum palustre L. 1753 (Musci), and Osmunda cinnamomea L. 1753 (Tracheophyta).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Anthoceros punctatus Linnaeus, 1753",
+                        "nameComplete": "Anthoceros punctatus"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Plagiochila adianthoides Lindenberg, 1840",
+                        "nameComplete": "Plagiochila adianthoides"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Sphagnum palustre Linnaeus, 1753",
+                        "nameComplete": "Sphagnum palustre"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Osmunda cinnamomea Linnaeus, 1753",
+                        "nameComplete": "Osmunda cinnamomea"
+                    }
+                }
+            ]
+        }
+    ]
+}

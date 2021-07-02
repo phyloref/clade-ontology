@@ -1,0 +1,109 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A combined approach to the phylogeny of Cephalopoda (Mollusca).",
+                "year": 2004,
+                "authors": [
+                    {
+                        "name": "A. R. Lindgren",
+                        "alternate": [
+                            "Lindgren, A. R."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Lindgren",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "G. Giribet",
+                        "alternate": [
+                            "Giribet, G."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Giribet"
+                    },
+                    {
+                        "name": "M. K. Nishiguchi",
+                        "alternate": [
+                            "Nishiguchi, M. K."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Nishiguchi",
+                        "middlename": "K."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "6",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.1096-0031.2004.00032"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Cladistics-the International Journal of Willi Hennig Society",
+                    "volume": "20",
+                    "identifier": []
+                }
+            },
+            "newick": "(Chaetoderma_nitidulum,(((((Japetella_diaphana,Opisthoteuthis_sp),((Bathypolypus_arcticus,(Benthoctopus_sp,(Eledone_cirrosa,((Ocythoe_tuberculata,Argonauta_nodosa),(Haliphron_sp,Haliphron_atlanticus))))),(Thaumeledone_guntheri,Graneledone_verrucosa))),((((Enoploteuthis_leptura,Abraliopsis_pfefferi),((Illex_coindeti,((Sthenoteuthis_oualaniensis,Ommastrephes_bartrami),Ornithoteuthis_antillarum)),((Leachia_atlantica,Cranchia_scabra),((((Sepiola_affinis,((Rossia_palpebrosa,Stoloteuthis_leucoptera),Heteroteuthis_hawaiiensis)),(Idiosepius_pygmaeus,(Sepia_officinalis,Sepiella_inermis))),(Sepioteuthis_lessoniana,(Loligo_pealei,Loligo_formosana))),((((Ancistrocheirus_lesueuri,Moroteuthis_knipovitchi),((Gonatus_fabricii,Gonatus_antarcticus),Architeuthis_dux)),((((Mastigoteuthis_magna,Mastigoteuthis_agassizii),Joubiniteuthis_portieri),(((Psychroteuthis_sp,Histioteuthis_hoylei),Brachioteuthis_sp),((Chiroteuthis_veranyi,Batoteuthis_skolops),(((Octopoteuthis_nielseni,Octopoteuthis_sicula),Lepidoteuthis_grimaldii),((Discoteuthis_laciniosa,Cycloteuthis_sirventi),(Neoteuthis_thielei,(Histioteuthis_reversa,Histioteuthis_corona))))))),(Chtenopteryx_sicula,(Spirula_spirula,Bathyteuthis_abyssicola)))),(Pyroteuthis_margaretifera,Pterygioteuthis_gemmata)))))),Vampyroteuthis_infernalis),(Stauroteuthis_syrtensis,Cirrothauma_murrayi))),(Nautilus_pompilius,Nautilus_scrobiculatus)),(Haliotis_tuberculata,((Entalina_tetragona,(Antalis_pilsbryi,Rhabdus_rectius)),((((Neotrigonia_margaritacea,((Cardita_calyculata,Arca_imbricata),Yoldia_limatula)),((Siphonaria_pectinata,Crepidula_fornicata),Theodoxus_fluviatilis)),((Acanthochitona_crinita,(Chiton_olivaceus,Stenoplax_alata)),Leptochiton_asellus)),(Epimenia_azuri,Helicoradomenia_sp))))))"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 138,
+            "label": "Cephalopoda",
+            "dwc:scientificNameAuthorship": "Anderson, F.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Lectures on Comparative Anatomy, translated from the French of G. Cuvier. 1. On the organs of motion.",
+                    "year": 1802,
+                    "authors": [
+                        {
+                            "name": "J. Macartney",
+                            "alternate": [
+                                "Macartney, J."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Macartney"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Oriental Press",
+                    "city": "London",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Nautilus pompilius Linnaeus 1758 and Sepia officinalis Linnaeus 1758 (Neocoleoidea).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Nautilus pompilius Linnaeus, 1758",
+                        "nameComplete": "Nautilus pompilius"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Sepia officinalis Linnaeus, 1758",
+                        "nameComplete": "Sepia officinalis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

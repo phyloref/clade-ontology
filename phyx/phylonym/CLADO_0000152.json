@@ -1,0 +1,131 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Phylogeny of the genus Coleochaete (Coleochaetales, Charophyta) and related taxa inferred by analysis of the chloroplast gene rbcL.",
+                "year": 2002,
+                "authors": [
+                    {
+                        "name": "C. F. Delwiche",
+                        "alternate": [
+                            "Delwiche, C. F."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Delwiche",
+                        "middlename": "F."
+                    },
+                    {
+                        "name": "K. G. Karol",
+                        "alternate": [
+                            "Karol, K. G."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Karol",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "M. T. Cimino",
+                        "alternate": [
+                            "Cimino, M. T."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Cimino",
+                        "middlename": "T."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1046/j.1529-8817.2002.01174"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "J. Phycol.",
+                    "volume": "38",
+                    "identifier": []
+                }
+            },
+            "newick": "(((((((((((((Oryza, Gnetum), Ginko), Isoetes), Angiopteris), (Megaceros, Anthoceros)), Mnium), \n(Marchantia, Sphaerocarpos)),\n(((Chara, Nitellopsis), Nitella), Tolypella)),\n\n((((((Coleochaete_orbicularis, Coleochaete_scutata), (Coleochaete_nitellarum, Coleochaete_sp._19b3)),\nColeochaete_sp._18a1),\n(Coleochaete_soluta, Coleochaete_pulvinata)),\n(Coleochaete_sieminskiana, Coleochaete_irregularis)),\n(Chaetospaeridium_ovalis, Chaetosphaeridium_globosum))),\n\n(((Zygnema, Mesotaenium), Spirogyra), (Gonatozygon, Desmidium))),\n\nChlorokybus),\n\n(Mesostigma_50.1, Mesostigma_296)),\n\n(((Mantoniella, Nephroselmis), (Chlorella, Ulva)), Bryopsis), Cyanophora)"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 152,
+            "label": "Coleochaetophyceae",
+            "dwc:scientificNameAuthorship": "Delwiche, C. F., Karol, K. G., Hall, J. D.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Kingdoms, codes and classification.",
+                    "year": 1982,
+                    "authors": [
+                        {
+                            "name": "C. Jeffrey",
+                            "alternate": [
+                                "Jeffrey, C."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Jeffrey"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "volume": "370",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The largest crown clade containing Coleochaete scutata Brébisson 1844 but not Marchantia polymorpha Linnaeus 1753 (Embryophyta), Chara vulgaris Linnaeus 1753 (Charophyceae), and Zygnema cruciatum (Vaucher) C. Agardh 1817 (Zygnematophyceae).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Coleochaete scutata Brébisson, 1844",
+                        "nameComplete": "Coleochaete scutata"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Marchantia polymorpha Linnaeus, 1753",
+                        "nameComplete": "Marchantia polymorpha"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Chara vulgaris Linnaeus, 1753",
+                        "nameComplete": "Chara vulgaris"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Zygnema cruciatum Agardh, 1817",
+                        "nameComplete": "Zygnema cruciatum"
+                    }
+                }
+            ]
+        }
+    ]
+}

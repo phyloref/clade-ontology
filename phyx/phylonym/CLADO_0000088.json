@@ -1,0 +1,175 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Observations on the structure of the Early Permian reptile Stereosternum temidum Cope.",
+                "year": 1999,
+                "authors": [
+                    {
+                        "name": "S. P. Modesto",
+                        "alternate": [
+                            "Modesto, S. P."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Modesto",
+                        "middlename": "P."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "4A",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Palaeontologica Africana",
+                    "volume": "35",
+                    "identifier": []
+                }
+            },
+            "newick": "(Seymouria, \n(Diadectidae, Limnoscelidae), \nSynapsida, \n(Captorhinidae, Paleothyris, Araeoscelidia, \nYounginiformes), \nMesosauridae, Millerettidae, Pareiasauria, \nProcolophonidae, Testudines)"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "A reevaluation of early amniote phylogeny.",
+                "year": 1995,
+                "authors": [
+                    {
+                        "name": "M. Laurin",
+                        "alternate": [
+                            "Laurin, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Laurin"
+                    },
+                    {
+                        "name": "R. R. Reisz",
+                        "alternate": [
+                            "Reisz, R. R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Reisz",
+                        "middlename": "R."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Zoological Journal of Linnaen Society",
+                    "volume": "113",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "book_section",
+                "title": "Major features of vertebrate evolution",
+                "section_title": "The diversification of the amniotes.",
+                "year": 1994,
+                "authors": [
+                    {
+                        "name": "J. Gauthier",
+                        "alternate": [
+                            "Gauthier, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Gauthier"
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "D. R. Prothero",
+                        "alternate": [
+                            "Prothero, D. R."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Prothero",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "R. M. Schoch",
+                        "alternate": [
+                            "Schoch, R. M."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Schoch",
+                        "middlename": "M."
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "The Paleontological Society",
+                "city": "Knoxville, TN",
+                "pages": "129-159",
+                "figure": "6-8",
+                "identifier": [],
+                "link": []
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 88,
+            "label": "Reptilia",
+            "dwc:scientificNameAuthorship": "Laurin, M., Reisz, R. R.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Systema naturae, 10th edition",
+                    "year": 1758,
+                    "authors": [
+                        {
+                            "name": "Linnaeus",
+                            "alternate": [
+                                "Linnaeus,"
+                            ],
+                            "lastname": "Linnaeus"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "city": "Stockholm",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing Testudo graeca Linnaeus 1758 (Testudines), Iguana iguana Linnaeus 1758 (Lepidosauria), and Crocodylus (originally Lacerta) niloticus Laurenti 1768 (Archosauria).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Testudo graeca Linnaeus, 1758",
+                        "nameComplete": "Testudo graeca"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Iguana iguana Linnaeus, 1758",
+                        "nameComplete": "Iguana iguana"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Crocodylus niloticus Laurenti, 1768",
+                        "nameComplete": "Crocodylus niloticus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

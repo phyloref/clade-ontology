@@ -1,0 +1,111 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A new superfamily classification of the Caridea (Crustacea: Pleocyemata) based on phylogenetic pattern.",
+                "year": 1990,
+                "authors": [
+                    {
+                        "name": "M. L. Christoffersen",
+                        "alternate": [
+                            "Christoffersen, M. L."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Christoffersen",
+                        "middlename": "L."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.1439-0469.1990.tb00369"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Zoological Systematics and Evolutionary Research",
+                    "volume": "28",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Phylogenetic relationships of hippolytid genera, with an assignment of new families for the Crangonoidea and Alpheoidea (Crustacea, Decapoda, Caridea).",
+                "year": 1987,
+                "authors": [
+                    {
+                        "name": "M. L. Christoffersen",
+                        "alternate": [
+                            "Christoffersen, M. L."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Christoffersen",
+                        "middlename": "L."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.1096-0031.1987.tb00898"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Cladistics",
+                    "volume": "3",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 163,
+            "label": "Prochelata",
+            "dwc:scientificNameAuthorship": "Christofferson, M. L.",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The most inclusive crown clade containing Crangon crangon (Linnaeus 1758) (Crangonoidea Haworth 1825 sensu Christoffersen, 1987, 1988, 1990) and Alpheus armillatus H. Milne Edwards 1837 (Alpheoidea Rafinesque 1815 sensu Christoffersen, 1987, 1990), but not Pandalus paucidens Miers 1881 (Pandaloidea Haworth 1825).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Crangon crangon Linnaeus, 1758",
+                        "nameComplete": "Crangon crangon"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Alpheus armillatus Edwards, 1837",
+                        "nameComplete": "Alpheus armillatus"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Pandalus paucidens Miers, 1881",
+                        "nameComplete": "Pandalus paucidens"
+                    }
+                }
+            ]
+        }
+    ]
+}

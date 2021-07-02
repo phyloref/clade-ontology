@@ -1,0 +1,176 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Seed plant relationships and the systematic position of Gnetales based on nuclear and chloroplast DNA: conflicting data, rooting problems, and the monophyly of conifers.",
+                "year": 2002,
+                "authors": [
+                    {
+                        "name": "C. Rydin",
+                        "alternate": [
+                            "Rydin, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Rydin"
+                    },
+                    {
+                        "name": "M. Källersjö",
+                        "alternate": [
+                            "Källersjö, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Källersjö"
+                    },
+                    {
+                        "name": "E. Friis",
+                        "alternate": [
+                            "Friis, E."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Friis"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1086/338321"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "International Journal of Plant Science",
+                    "volume": "163",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "New insights into the evolutionary history of Gnetum (Gnetales).",
+                "year": 2015,
+                "authors": [
+                    {
+                        "name": "C. Hou",
+                        "alternate": [
+                            "Hou, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Hou"
+                    },
+                    {
+                        "name": "A. M. Humphreys",
+                        "alternate": [
+                            "Humphreys, A. M."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Humphreys",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "O. Thureborn",
+                        "alternate": [
+                            "Thureborn, O."
+                        ],
+                        "firstname": "O.",
+                        "lastname": "Thureborn"
+                    },
+                    {
+                        "name": "C. Rydin",
+                        "alternate": [
+                            "Rydin, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Rydin"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.12705/642.12"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Taxon",
+                    "volume": "64",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 47,
+            "label": "Gnetophyta",
+            "dwc:scientificNameAuthorship": "Donoghue, M. J., Doyle, J. A., Cantino, P. D.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "A synopsis of plant phyla.",
+                    "year": 1907,
+                    "authors": [
+                        {
+                            "name": "C. E. Bessey",
+                            "alternate": [
+                                "Bessey, C. E."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Bessey",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "University [of Nebraska] Studies",
+                        "volume": "7",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing Gnetum gnemon Linnaeus 1767, Ephedra distachya Linnaeus 1753, and Welwitschia mirabilis J. D. Hooker 1862.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Gnetum gnemon Linnaeus, 1767",
+                        "nameComplete": "Gnetum gnemon"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Ephedra distachya Linnaeus, 1753",
+                        "nameComplete": "Ephedra distachya"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Welwitschia mirabilis Hooker, 1862",
+                        "nameComplete": "Welwitschia mirabilis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

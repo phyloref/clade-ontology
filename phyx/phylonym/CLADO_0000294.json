@@ -1,0 +1,231 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Deciphering and dating the red panda’s ancestry and early adaptive radiation of Musteloidea.",
+                "year": 2009,
+                "authors": [
+                    {
+                        "name": "J. J. Sato",
+                        "alternate": [
+                            "Sato, J. J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Sato",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "M. Wolsan",
+                        "alternate": [
+                            "Wolsan, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Wolsan"
+                    },
+                    {
+                        "name": "S. Minami",
+                        "alternate": [
+                            "Minami, S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Minami"
+                    },
+                    {
+                        "name": "T. Hosoda",
+                        "alternate": [
+                            "Hosoda, T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Hosoda"
+                    },
+                    {
+                        "name": "M. H. Sinaga",
+                        "alternate": [
+                            "Sinaga, M. H."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Sinaga",
+                        "middlename": "H."
+                    },
+                    {
+                        "name": "K. Hiyama",
+                        "alternate": [
+                            "Hiyama, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Hiyama"
+                    },
+                    {
+                        "name": "Y. Yamaguchi",
+                        "alternate": [
+                            "Yamaguchi, Y."
+                        ],
+                        "firstname": "Y.",
+                        "lastname": "Yamaguchi"
+                    },
+                    {
+                        "name": "H. Suzuki",
+                        "alternate": [
+                            "Suzuki, H."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Suzuki"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2009.08.019"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Mol. Phylogenet. Evolution.",
+                    "volume": "53",
+                    "identifier": []
+                }
+            },
+            "newick": "((((((((((((((((((((((Mustela_putorius, Mustela_furo), Mustela_eversmanii),\nMustela_sibirica), Mustela_itatsi), Mustea_lutreola), \n(Mustela_nivalis, Mustela_ataica)), Mustela_erminea),\nMustela_kathiah), (Mustea_nudipes, Mustela_strigidorsa)),\nNeovision_vision), ((Aonyx_cinerea, Enhydra_lutris), Lontra_canadensis)),\nMelogale_moschata), \n(((((((Martes_zibellina, Martes_melampus), Martes_americana), \nMartes_martes), Martes_foina), Martes_flavigula), Martes_pennanti),\nGulo_gulo)),\n((Meles_meles, Meles_anakuma), Arctonyx_collaris)),\nTaxidea_taxus), (Procyon_lotor, Procyon_cancrivorus)),\nAilurus_fulgens),\n(Mephitis_mepthitis, Mydaus_javanensis)),\n((Phoca_vitulina, Phoca_largha),\n(Callorhinus_ursinus, Eumetopias_jubatus))),\n((Melursus_ursinus, Ursus_thibetanus), Ursus_arctos)), \n(Canis_lupus, Vulpes_lagopus)), \n\n(((((Panthera_tigris, Panthera_onca), Panthera_leo), \nPanthera_pardus), ((Prionailurus_bengalensis, \nPrionailurus_iriomotensis), Leopardus_pardalis)),\nPaguma_larvata))"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "book_section",
+                "title": "The rise of placental mammals: origins and relationships of the major extant clades",
+                "section_title": "Carnivora",
+                "year": 2005,
+                "authors": [
+                    {
+                        "name": "J. J. Flynn",
+                        "alternate": [
+                            "Flynn, J. J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Flynn",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "G. D. Wesley-Hunt",
+                        "alternate": [
+                            "Wesley-Hunt, G. D."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Wesley-Hunt",
+                        "middlename": "D."
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "K. D. Rose",
+                        "alternate": [
+                            "Rose, K. D."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Rose",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "J. D. Archibald",
+                        "alternate": [
+                            "Archibald, J. D."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Archibald",
+                        "middlename": "D."
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "Johns Hopkins Univ. Press",
+                "city": "Baltimore",
+                "figure": "1",
+                "identifier": [],
+                "link": []
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 294,
+            "label": "Arctoidea",
+            "dwc:scientificNameAuthorship": "Wolsan, M., Bryant, H. N., Wyss, A. R.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "On the value of the characters of the base of the cranium in the classification of the order Carnivora, and on the systematic position of Bassaris and other disputed forms.",
+                    "year": 1869,
+                    "authors": [
+                        {
+                            "name": "W. H. Flower",
+                            "alternate": [
+                                "Flower, W. H."
+                            ],
+                            "firstname": "W.",
+                            "lastname": "Flower",
+                            "middlename": "H."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Proc. Zool. Soc. Lond.",
+                    "pages": "4-37",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing Ursus arctos Linnaeus 1758 (Ursidae), Mustela erminea Linnaeus 1758 (Mustelidae), Procyon lotor (Linnaeus 1758) (Procyonidae), Ailurus fulgens F. Cuvier 1825, and Mephitis mephitis (Schreber, 1776) (Mephitidae).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Ursus arctos Linnaeus, 1758",
+                        "nameComplete": "Ursus arctos"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Mustela erminea Linnaeus, 1758",
+                        "nameComplete": "Mustela erminea"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Procyon lotor Linnaeus, 1758",
+                        "nameComplete": "Procyon lotor"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Ailurus fulgens Cuvier, 1825",
+                        "nameComplete": "Ailurus fulgens"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Mephitis mephitis Schreber, 1776",
+                        "nameComplete": "Mephitis mephitis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

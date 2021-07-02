@@ -1,0 +1,175 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Pattern and timing of diversification of Cetartiodactyla (Mammalia, Laurasiatheria), as revealed by a comprehensive analysis of mitochondrial genomes.",
+                "year": 2012,
+                "authors": [
+                    {
+                        "name": "A. Hassanin",
+                        "alternate": [
+                            "Hassanin, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Hassanin"
+                    },
+                    {
+                        "name": "F. Delsuc",
+                        "alternate": [
+                            "Delsuc, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Delsuc"
+                    },
+                    {
+                        "name": "A. Ropiquet",
+                        "alternate": [
+                            "Ropiquet, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Ropiquet"
+                    },
+                    {
+                        "name": "C. Hammer",
+                        "alternate": [
+                            "Hammer, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Hammer"
+                    },
+                    {
+                        "name": "B. Jansen van Vuuren",
+                        "alternate": [
+                            "Jansen van Vuuren, B."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Jansen van Vuuren"
+                    },
+                    {
+                        "name": "C. Matthee",
+                        "alternate": [
+                            "Matthee, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Matthee"
+                    },
+                    {
+                        "name": "M. Ruiz-Garcia",
+                        "alternate": [
+                            "Ruiz-Garcia, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Ruiz-Garcia"
+                    },
+                    {
+                        "name": "F. Catzeflis",
+                        "alternate": [
+                            "Catzeflis, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Catzeflis"
+                    },
+                    {
+                        "name": "V. Areskoug",
+                        "alternate": [
+                            "Areskoug, V."
+                        ],
+                        "firstname": "V.",
+                        "lastname": "Areskoug"
+                    },
+                    {
+                        "name": "T. T. Nguyen",
+                        "alternate": [
+                            "Nguyen, T. T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Nguyen",
+                        "middlename": "T."
+                    },
+                    {
+                        "name": "A. Couloux",
+                        "alternate": [
+                            "Couloux, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Couloux"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.crvi.2011.11.002"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Comptes Rendus Biologies",
+                    "volume": "335",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 264,
+            "label": "Bovidae",
+            "dwc:scientificNameAuthorship": "Bibi, F., Vrba, E. S.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "On the natural arrangement of vertebrose animals.",
+                    "year": 1821,
+                    "authors": [
+                        {
+                            "name": "J. E. Gray",
+                            "alternate": [
+                                "Gray, J. E."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gray",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "London Medical Repository",
+                        "volume": "15",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing Bos taurus Linnaeus 1758 (Bovini) and Antilope cervicapra (Linnaeus 1758) (Antilopini).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Bos taurus Linnaeus, 1758",
+                        "nameComplete": "Bos taurus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Gazella dorcas Linnaeus, 1758",
+                        "nameComplete": "Gazella dorcas"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

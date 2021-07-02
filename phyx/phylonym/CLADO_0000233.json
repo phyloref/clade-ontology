@@ -1,0 +1,119 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Morphological and systematic reinterpretation of two enigmatic edrioasteroids (Echinodermata) from Canada.",
+                "year": 2006,
+                "authors": [
+                    {
+                        "name": "C. D. Sumrall",
+                        "alternate": [
+                            "Sumrall, C. D."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Sumrall",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "F. J. Gahn",
+                        "alternate": [
+                            "Gahn , F. J."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Gahn",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3.1",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Can. Jour. Earth Sci.",
+                    "volume": "43",
+                    "identifier": []
+                }
+            },
+            "newick": "(((((((((Carneyella, Foerstediscus), Isorophus, Isorophusella), Agelacrinites, \nThresherodiscus), Neoisorophusella), Postibulla), Lepidodiscus, Ulrichidiscus),\nCooperidiscus), Clavidiscus), (Lispidecodus, Giganticlavus, Hypsiclavus))"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 233,
+            "label": "Discocystinae",
+            "dwc:scientificNameAuthorship": "Sumrall, C. D.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Late Paleozoic edrioasteroids from the North American mid-continent.",
+                    "year": 1996,
+                    "authors": [
+                        {
+                            "name": "C. D. Sumrall",
+                            "alternate": [
+                                "Sumrall, C. D."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Sumrall",
+                            "middlename": "D."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "J. Paleo.",
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "J. Paleo.",
+                        "volume": "70",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The clade originating in the most recent common ancestor of Discocystis kaskaskiensis (Hall 1858), Clavidiscus laudoni (Bassler 1936), Hypsiclavus huntsvillensis Sumrall 1996, and Giganticlavus bennisoni Sumrall and Bowsher 1996.  This is a minimum-clade definition.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Discocystis kaskaskiensis Hall, 1858",
+                        "nameComplete": "Discocystis kaskaskiensis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Clavidiscus laudoni Bassler, 1936",
+                        "nameComplete": "Clavidiscus laudoni"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Hypsiclavus huntsvillensis Sumrall, 1996",
+                        "nameComplete": "Hypsiclavus huntsvillensis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Giganticlavus bennisoni Sumrall and Bowsher, 1996",
+                        "nameComplete": "Giganticlavus bennisoni"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

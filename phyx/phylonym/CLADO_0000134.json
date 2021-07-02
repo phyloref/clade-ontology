@@ -1,0 +1,172 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A nuclear phylogeny of the Florideophyceae (Rhodophyta) inferred from combined EF2, small subunit and large subunit ribosomal DNA: establishing the new red algal subclass Corallinophycidae.",
+                "year": 2007,
+                "authors": [
+                    {
+                        "name": "L. Le Gall",
+                        "alternate": [
+                            "Le Gall, L."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Le Gall"
+                    },
+                    {
+                        "name": "G. W. Saunders",
+                        "alternate": [
+                            "Saunders, G. W."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Saunders",
+                        "middlename": "W."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "4",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2006.11.012"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Mol. Phylogenet. Evol.",
+                    "volume": "43",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Molecular systematics of the Florideophyceae (Rhodophyta) using nuclear large and small subunit rDNA sequence data.",
+                "year": 2001,
+                "authors": [
+                    {
+                        "name": "J. T. Harper",
+                        "alternate": [
+                            "Harper, J. T."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Harper",
+                        "middlename": "T."
+                    },
+                    {
+                        "name": "G. W. Saunders",
+                        "alternate": [
+                            "Saunders, G. W."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Saunders",
+                        "middlename": "W."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1046/j.1529-8817.2001.00160"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "J. Phycol.",
+                    "volume": "37",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 134,
+            "label": "Nemaliophycidae",
+            "dwc:scientificNameAuthorship": "Saunders, G. W.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Annotations to a textbook of phycology.",
+                    "year": 1978,
+                    "authors": [
+                        {
+                            "name": "T. Christensen",
+                            "alternate": [
+                                "Christensen, T."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Christensen"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bot. Tidsskrift",
+                        "volume": "73",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The largest crown clade containing Nemalion lubricum Duby 1830 (=Nemalion helminthoides (Velley) Batters 1902) but not Ahnfeltia plicata (Hudson) Fries 1836, Chondrus crispus Stackhouse 1797, Corallina officinalis Linnaeus 1758, and Hildenbrandia rubra (Sommerfelt) Meneghini 1841.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Nemalion lubricum Duby, 1830",
+                        "nameComplete": "Nemalion lubricum"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Ahnfeltia plicata Fries, 1836",
+                        "nameComplete": "Ahnfeltia plicata"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Chondrus crispus Stackhouse, 1797",
+                        "nameComplete": "Chondrus crispus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Corallina officinalis Linnaeus, 1758",
+                        "nameComplete": "Corallina officinalis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Hildenbrandia rubra Meneghini, 1841",
+                        "nameComplete": "Hildenbrandia rubra"
+                    }
+                }
+            ]
+        }
+    ]
+}

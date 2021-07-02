@@ -1,0 +1,247 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Ribosomal RNA genes and deuterostome phylogeny revisited: More cyclostomes, elasmobranchs, reptiles, and a brittle star.",
+                "year": 2007,
+                "authors": [
+                    {
+                        "name": "J. Mallatt",
+                        "alternate": [
+                            "Mallatt, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Mallatt"
+                    },
+                    {
+                        "name": "C. J. Winchell",
+                        "alternate": [
+                            "Winchell, C. J."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Winchell",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2006.11.023"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Phylogenetic Evolution",
+                    "volume": "43",
+                    "identifier": []
+                }
+            },
+            "newick": "(((((Branchiostoma, \n(((Eptatretus, Myxine), (Petromyzon, Geotria)),\n((Lepidosiren, (Protopterus, Neoceratodus)), \n((Chrysemys, ((Homo, Canis, Rattus), (Gallus, Anolis))),\n((Latimeria, (Acipenser, (Polypterus, (Danio, (Oncorhynchus, Siniperca))))), \n((Ambystoma, (Xenopus, Rana)), (Hexanchus, (Triakis, (Hydrolagus, Raja))))))))),\n\n(((Florometra, \n((Cucumeria, (Arbacia, Strongylocentrotus)), (Ophiomyxa, Asterias))),\n\n((Cephalodiscus, (Saccoglossus, Harrimania)), \n(Ptychodera_flava, Ptychodera_sp.))))),\n\n((Oikopleura, (Styela, (Ciona, Thalia))))),\n\n(Priapulus, Limulus), (Placopecten, Proceraea)))"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Evaluating hypothesis of deuterostome phylogeny and chordate evolution with new LSU and SSU ribosomal DNA data.",
+                "year": 2002,
+                "authors": [
+                    {
+                        "name": "C.J. J. Winchell",
+                        "alternate": [
+                            "Winchell, C.J. J."
+                        ],
+                        "firstname": "C.J.",
+                        "lastname": "Winchell",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "J. Sullivan",
+                        "alternate": [
+                            "Sullivan, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Sullivan"
+                    },
+                    {
+                        "name": "C. B. Cameron",
+                        "alternate": [
+                            "Cameron, C. B."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Cameron",
+                        "middlename": "B."
+                    },
+                    {
+                        "name": "B. J. Swalla",
+                        "alternate": [
+                            "Swalla, B. J."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Swalla",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "J. Mallatt",
+                        "alternate": [
+                            "Mallatt, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Mallatt"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1093/oxfordjournals.molbev.a004134"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular biology evolution",
+                    "volume": "19",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "A phylogeny of the hemichordates based on morphological characters.",
+                "year": 2005,
+                "authors": [
+                    {
+                        "name": "C. B. Cameron",
+                        "alternate": [
+                            "Cameron, C. B."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Cameron",
+                        "middlename": "B."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1139/z04-190"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Canadian Journal of Zoology",
+                    "volume": "83(1)",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 6,
+            "label": "Ambulacraria",
+            "dwc:scientificNameAuthorship": "Cameron, C. B.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Uber die systematische Stellung von Balanoglossus.",
+                    "year": 1881,
+                    "authors": [
+                        {
+                            "name": "V. E. Metschnikoff",
+                            "alternate": [
+                                "Metschnikoff, V. E."
+                            ],
+                            "firstname": "V.",
+                            "lastname": "Metschnikoff",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Zool. Anz.",
+                        "volume": "4",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The crown clade originating in the most recent common ancestor of the hemichordates Cephalodiscus gracilis Harmer 1905, Saccoglossus pusillus Ritter 1902, and Ptychodera flava Eschscholtz 1825, and the echinoderms Florometra serratissima A. H. Clark 1907, Asterias amurensis Lutken 1871, Arbacia punctulata Lamarck 1816, and Cucumeria salva Lampert 1885.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Cephalodiscus gracilis Harmer, 1905",
+                        "nameComplete": "Cephalodiscus gracilis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Saccoglossus pusillus Ritter, 1902",
+                        "nameComplete": "Saccoglossus pusillus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Ptychodera flava Eschscholtz, 1825",
+                        "nameComplete": "Ptychodera flava"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Florometra serratissima Clark, 1907",
+                        "nameComplete": "Florometra serratissima"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Asterias amurensis Lutken, 1871",
+                        "nameComplete": "Asterias amurensis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Arbacia punctulata Lamarck, 1816",
+                        "nameComplete": "Arbacia punctulata"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Cucumeria salva Lampert, 1885",
+                        "nameComplete": "Cucumeria salva"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

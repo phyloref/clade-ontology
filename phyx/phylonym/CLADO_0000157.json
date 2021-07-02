@@ -1,0 +1,101 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A new rhamphorhynchid pterosaur from the Upper Jurassic of Xinjiang, China, and the phylogenetic relationships of basal pterosaurs.",
+                "year": 2014,
+                "authors": [
+                    {
+                        "name": "B. J. Andres",
+                        "alternate": [
+                            "Andres, B. J."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Andres",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "M. Clark",
+                        "alternate": [
+                            "Clark, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Clark"
+                    },
+                    {
+                        "name": "X. Xu",
+                        "alternate": [
+                            "Xu, X."
+                        ],
+                        "firstname": "X.",
+                        "lastname": "Xu"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1080/02724630903409220"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Vertebrate Paleontology",
+                    "volume": "30",
+                    "identifier": []
+                }
+            },
+            "newick": "(Ornithosuchus_longidens, Herrerasaurus_ischigualastensis,\n(Scleromochlus_taylori, \n(Preondactylus_buffarinii,\n((Eudimorphodon_ranzii, Austriadactylus_cristatus), \n(Peteinosaurus_zambelli, \n(Dimorphodon_macronyx, \n(Campylognathoides_liasicus,\n\n(\n(((((Sericipterus_wucaiwanensis,\nAngustinaripterus_longicephalus),\nHarpactognathus_gentryii),\n(Cacibupteryx_caribensis, \nRhamphorhynchus_muentsteri)),\nDorygnathus_banthensis),\nScaphognathus_crassirostris), \n(Sordes_pilosus,\n((((Jeholopterus_ningchengensis,\nDendrorhynchoides_curvidentatus), \nBatrachognathus_volans), \nAnurognathus_ammoni), \nPterodactyloidea))))))))))\n"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 157,
+            "label": "Pterosauria",
+            "dwc:scientificNameAuthorship": "Andres, B., Padian, K.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Report on British fossil reptiles, Part II.",
+                    "year": 1842,
+                    "authors": [
+                        {
+                            "name": "R. Owen",
+                            "alternate": [
+                                "Owen, R."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Owen"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Rep. Br. Ass. Advmnt. Sci.",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The clade characterized by the apomorphy fourth manual digit hypertrophied to support a wing membrane, as inherited by Pterodactylus antiquus (Soemmerring 1812).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Pterodactylus antiquus Soemmerring, 1812",
+                        "nameComplete": "Pterodactylus antiquus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

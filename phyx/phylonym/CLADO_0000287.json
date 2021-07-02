@@ -1,0 +1,95 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Osteological evidence for paraphyly of the avian order Caprimulgiformes (nightjars and allies).",
+                "year": 2002,
+                "authors": [
+                    {
+                        "name": "G. Mayr",
+                        "alternate": [
+                            "Mayr, G."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Mayr"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1007/BF0246546"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Ornithology",
+                    "volume": "143",
+                    "identifier": []
+                }
+            },
+            "newick": "(Steatornithidae, Podargidae, \n((Caprimulgidae, Nyctibiidae), \n(Aegothelidae, (Trochildae, (Hemiprocnidae, Apodidae)))))"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 287,
+            "label": "Daedalornithes",
+            "dwc:scientificNameAuthorship": "Sangster, G.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "A name for the clade formed by owlet-nightjars, swifts and hummingbirds (Aves)",
+                    "year": 2005,
+                    "authors": [
+                        {
+                            "name": "G. Sangster",
+                            "alternate": [
+                                "Sangster, G."
+                            ],
+                            "firstname": "G.",
+                            "lastname": "Sangster"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Zootaxa",
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Zootaxa",
+                        "volume": "799",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing Aegotheles (originally Caprimulgus) cristatus (Shaw 1790) (Aegothelidae) and Apus (originally Hirundo) apus (Linnaeus 1758) (Apodidae).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Aegotheles (originally Caprimulgus) cristatus Shaw, 1790",
+                        "nameComplete": "Aegotheles (originally Caprimulgus) cristatus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Apus (originally Hirundo) apus Linnaeus, 1758",
+                        "nameComplete": "Apus (originally Hirundo) apus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

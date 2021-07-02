@@ -1,0 +1,78 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Thecal designs in isorophinid edrioasteroids.",
+                "year": 1993,
+                "authors": [
+                    {
+                        "name": "C. D. Sumrall",
+                        "alternate": [
+                            "Sumrall, C. D."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Sumrall",
+                        "middlename": "D."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "10A",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.1502-3931.1993.tb01534"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Lethaia",
+                    "volume": "26",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 231,
+            "label": "Agelacrinitidae",
+            "dwc:scientificNameAuthorship": "Sumrall, C. D.",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The clade originating in the most recent common ancestor of Agelacrinites hamiltonensis Vanuxem 1842, Lepidodiscus squamosus (Meek and Worthen 1868), and Hypsiclavus huntsvillensis Sumrall 1996 (referred to as “Chester L. laudoni” in the reference phylogeny).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Agelacrinites hamiltonensis Vanuxem, 1842",
+                        "nameComplete": "Agelacrinites hamiltonensis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Lepidodiscus squamosus Meek and Worthen, 1868",
+                        "nameComplete": "Lepidodiscus squamosus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Hypsiclavus huntsvillensis Sumrall, 1996",
+                        "nameComplete": "Hypsiclavus huntsvillensis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

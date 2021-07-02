@@ -1,0 +1,109 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Ultrastructure of attachment specializations of hexapods (Arthropoda): evolutionary patterns inferred from a revised ordinal phylogeny.",
+                "year": 2001,
+                "authors": [
+                    {
+                        "name": "R. G. Beutel",
+                        "alternate": [
+                            "Beutel, R. G."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Beutel",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "S. Gorb",
+                        "alternate": [
+                            "Gorb, S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Gorb"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "12",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1046/j.1439-0469.2001.00155"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Systematics and Evolutionary Research",
+                    "volume": "39",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 177,
+            "label": "Insecta",
+            "dwc:scientificNameAuthorship": "Kjer, K. M., Holzenthal, R. W.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Systema Naturae per Regna tria Naturae, Secundum Classes, Ordines, Genera, Species, cum Characteribus, Differentiis, Synonymis, Locis. Tomus I. Editio decima, reformata.",
+                    "year": 1758,
+                    "edition": "10",
+                    "authors": [
+                        {
+                            "name": "C. Linnaeus",
+                            "alternate": [
+                                "Linnaeus, C."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Linnaeus"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Laurentii Salvii, Holmiae",
+                    "city": "Stockholm",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Petrobius brevistylis Carpenter 1913 (Archaeognatha), Tricholepidion gertschi Wygodzinsky 1961 (Dicondylia/Zygentoma), and Anax junius (Drury 1773) (Dicondylia/Pterygota/Odonata).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Petrobius brevistylis Carpenter, 1913",
+                        "nameComplete": "Petrobius brevistylis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Tricholepidion gertschi Wygodzinsky, 1961",
+                        "nameComplete": "Tricholepidion gertschi"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Anax junius Drury, 1773",
+                        "nameComplete": "Anax junius"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

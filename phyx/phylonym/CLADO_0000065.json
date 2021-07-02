@@ -1,0 +1,198 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Phylogenetic analyses of basal angiosperms based on nine plastid, mitochondrial, and nuclear genes.",
+                "year": 2005,
+                "authors": [
+                    {
+                        "name": "Y. L. Qiu",
+                        "alternate": [
+                            "Qiu, Y. L."
+                        ],
+                        "firstname": "Y.",
+                        "lastname": "Qiu",
+                        "middlename": "L."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1086/431800"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "International Journal of Plant Science",
+                    "volume": "166",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Angiosperm phylogeny: 17 genes, 640 taxa.",
+                "year": 2011,
+                "authors": [
+                    {
+                        "name": "D. E. Soltis",
+                        "alternate": [
+                            "Soltis, D. E."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Soltis",
+                        "middlename": "E."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1, 2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.3732/ajb.1000404"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "American Journal of Botany",
+                    "volume": "98",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Phylotranscriptomic analysis of the origin and early diversification of land plants.",
+                "year": 2014,
+                "authors": [
+                    {
+                        "name": "N. J. Wickett",
+                        "alternate": [
+                            "Wickett, N. J."
+                        ],
+                        "firstname": "N.",
+                        "lastname": "Wickett",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2, 3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1073/pnas.1323926111"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Proceedings of the National Academy of Sciences U. S. A.",
+                    "volume": "111",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 65,
+            "label": "Mesangiospermae",
+            "dwc:scientificNameAuthorship": "Donoghue, M. J., Doyle, J. A., Cantino, P. D.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Towards a phylogenetic nomenclature of Tracheophyta.",
+                    "year": 2007,
+                    "authors": [
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Doyle",
+                            "alternate": [
+                                "Doyle, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Doyle",
+                            "middlename": "A."
+                        },
+                        {
+                            "name": "S. W. Grahm",
+                            "alternate": [
+                                "Grahm, S. W."
+                            ],
+                            "firstname": "S.",
+                            "lastname": "Grahm",
+                            "middlename": "W."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Taxon",
+                        "volume": "56",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The largest crown clade containing Platanus occidentalis Linnaeus 1753 but not Amborella trichopoda Baillon 1869 and Nymphaea odorata Aiton 1789 (Nymphaeales) and Austrobaileya scandens C. T. White 1933 (Austrobaileyales).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Platanus occidentalis Linnaeus, 1753",
+                        "nameComplete": "Platanus occidentalis"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Amborella trichopoda Baillon, 1869",
+                        "nameComplete": "Amborella trichopoda"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Nymphaea odorata Aiton, 1789",
+                        "nameComplete": "Nymphaea odorata"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Austrobaileya scandens White, 1933",
+                        "nameComplete": "Austrobaileya scandens"
+                    }
+                }
+            ]
+        }
+    ]
+}

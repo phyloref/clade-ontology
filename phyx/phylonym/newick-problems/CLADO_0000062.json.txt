@@ -1,0 +1,523 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "The amphibian tree of life.",
+                "year": 2006,
+                "authors": [
+                    {
+                        "name": "D. R. Frost",
+                        "alternate": [
+                            "Frost, D. R."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Frost",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "T. Grant",
+                        "alternate": [
+                            "Grant, T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Grant"
+                    },
+                    {
+                        "name": "J. Faivovich",
+                        "alternate": [
+                            "Faivovich, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Faivovich"
+                    },
+                    {
+                        "name": "R. H. Bain",
+                        "alternate": [
+                            "Bain, R. H."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Bain",
+                        "middlename": "H."
+                    },
+                    {
+                        "name": "A. Haas",
+                        "alternate": [
+                            "Haas, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Haas"
+                    },
+                    {
+                        "name": "C. F. B. Haddad",
+                        "alternate": [
+                            "Haddad, C. F. B."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Haddad",
+                        "middlename": "F. B."
+                    },
+                    {
+                        "name": "R. O. de Sá",
+                        "alternate": [
+                            "de Sá, R. O."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "de Sá",
+                        "middlename": "O."
+                    },
+                    {
+                        "name": "A. Channing",
+                        "alternate": [
+                            "Channing, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Channing"
+                    },
+                    {
+                        "name": "M. Wilkinson",
+                        "alternate": [
+                            "Wilkinson, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Wilkinson"
+                    },
+                    {
+                        "name": "S. C. Donnellan",
+                        "alternate": [
+                            "Donnellan, S. C."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Donnellan",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "C. J. Raxworthy",
+                        "alternate": [
+                            "Raxworthy, C. J."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Raxworthy",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "J. A. Campbell",
+                        "alternate": [
+                            "Campbell, J. A."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Campbell",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "B. Blotto",
+                        "alternate": [
+                            "Blotto, B."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Blotto"
+                    },
+                    {
+                        "name": "P. Moler",
+                        "alternate": [
+                            "Moler, P."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Moler"
+                    },
+                    {
+                        "name": "R. C. Drewes",
+                        "alternate": [
+                            "Drewes, R. C."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Drewes",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "R. A. Nussbaum",
+                        "alternate": [
+                            "Nussbaum, R. A."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Nussbaum",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "J. D. Lynch",
+                        "alternate": [
+                            "Lynch, J. D."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Lynch",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "D. M. Green",
+                        "alternate": [
+                            "Green, D. M."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Green",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "W. C. Wheeler",
+                        "alternate": [
+                            "Wheeler, W. C."
+                        ],
+                        "firstname": "W.",
+                        "lastname": "Wheeler",
+                        "middlename": "C."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "50",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1206/0003-0090(2006)297[0001:TATOL]2.0.CO;2"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Bulletin of the American Museum of Natural History",
+                    "volume": "297",
+                    "identifier": []
+                }
+            },
+            "newick": "(Latimeria_chalumnae_1114,(((Didelphis_marsupialis_1092\n,Gazella_thomsoni_1093),((Alligator_sinensis_1090,Iguana_iguana_1001)\n,(Chelydra_serpentina_1091,Pelomedusa_subrufa_1051))),(((Epicrionops_sp_917\n,Rhinatrema_bivittatum_TJ29),((Ichthyophis_sp_TJ102\n,(Ichthyophis_peninsularis_878,Uraeotyphlus_narayani_882))\n,((Boulengerula_uluguruensis_879,Herpele_squalostoma_TJ122)\n,((Caecilia_tentaculata_TJ52,Typhlonectes_natans_877)\n,((Crotaphatrema_tchabalmbaboensis_TJ118,Scolecomorphus_vittatus_TJ104)\n,((Geotrypetes_seraphini_TJ103,(Dermophis_oaxacae_TJ99\n,Schistometopum_gregorii_881)),(Gegeneophis_ramaswamii\n,(Hypogeophis_rostratus_918,Siphonops_hardyi_880))))))))\n,((((Batrachuperus_pinchoni_TJ105,Ranodon_sibiricus)\n,(Cryptobranchus_alleganiensis_1050,(Andrias_davidianus\n,Andrias_japonicus_1059))),((((Necturus_alabamensis_938\n,Necturus_maculosus_TJ6),(Pseudobranchus_striatus_969,(Siren_intermedia\n,Siren_lacertina_968))),(((Dicamptodon_aterrimus_909\n,Dicamptodon_tenebrosus_1048),(Ambystoma_cingulatum_970\n,(Ambystoma_mexicanum_996,Ambystoma_tigrinum_TJ53)))\n,(Salamandra_salamandra_TJ88,((Pleurodeles_waltl_TJ91\n,Tylototriton_shanjing_TJ4),((Notophthalmus_viridiscens_TJ7,Taricha_sp_TJ90)\n,((Pachytriton_brevipes_TJ92,Paramesotriton_sp_TJ76),(Neurergus_crocatus\n,(Euproctus_asper,Triturus_sp_TJ89)))))))),(Rhyacotriton_cascadae_900\n,(Amphiuma_tridactylum_910,((Plethodon_dunni_1049,((Ensatina_eschscholtzii\n,Plethodon_jordani_915),(Aneides_hardii,((Desmognathus_quadramaculatus_1040\n,Desmognathus_wrighti),(Phaeognathus_hubrichti\n,(Hydromantes_platycephalus_1013,Speleomantes_italicus))))))\n,((Batrachoseps_attenuatus,Batrachoseps_wrightorum)\n,(Hemidactylum_scutatum_911,((Eurycea_wilderae_1041\n,Gyrinophilus_porphyriticus_1042),((Nototriton_abscondens,(Oedipina_uniformis\n,(Cryptotriton_alvarezdeltoroi,Dendrotriton_rabbi))),(Thorius_sp_TJ100\n,((Bolitoglossa_rufescens_TJ101,Parvimolge_townsendi),(Ixalotriton_niger\n,(Lineatriton_lineolus,Pseudoeurycea_conanti_TJ98)))))))))))))\n,((Ascaphus_truei_907,(Leiopelma_archeyi_998,Leiopelma_hochstetteri_999))\n,((Rhinophrynus_dorsalis_899,(Hymenochirus_boettgeri,((Pipa_carvalhoi_1038\n,Pipa_pipa_457),(Silurana_tropicalis_TJ128,(Xenopus_gilli_TJ9,Xenopus_laevis)\n)))),(((Alytes_obstetricans_902,(Discoglossus_galganoi_1029\n,Discoglossus_pictus_TJ83)),(Bombina_microdeladigitora_TJ54\n,(Bombina_orientalis_TJ80,(Bombina_bombina_1035,Bombina_variegata_1034))))\n,(((Pelodytes_puntatus_901,(Spea_hammondii_966,(Scaphiopus_couchii_937\n,Scaphiopus_holbrooki_943))),((Pelobates_cultripes,Pelobates_fuscus_903)\n,((Leptolalax_pelodytoides_TJ25,(Leptobrachium_chapaense_450\n,Leptobrachium_hasselti_1022)),((Megophrys_nasuta_TJ107\n,(Ophryophryne_microstoma_TJ36,Ophryophryne_poilani_TJ21))\n,(Brachytarsophrys_feae,(Xenophrys_major,Xenophrys_major_TJ19))))))\n,((Heleophryne_purcelli_633,Heleophryne_regis_906)\n,((((Kalophrynus_pleurostigma_933,(Synapturanus_mirandaribeiroi_530\n,((Micryletta_inornata,Phrynomantis_bifasciatus_941)\n,((((Hoplophryne_rogersi_TJ68,Ramanella_obscura),((Anodonthyla_montana\n,Platypelis_sp_TJ58),(Plethodontohyla_sp_TJ56,Stumpffia_sp_TJ59)))\n,((Ctenophryne_geayei_TJ27,Nelsonophryne_aequatorialis)\n,(Dasypops_schirchi_888,(Hamptophryne_boliviana_TJ86\n,(Elachistocleis_ovalis_TJ51,(Dermatonotus_muelleri_1185\n,(Gastrophryne_elegans_TJ74,Gastrophryne_olivacea_1053)))))))\n,((Scaphiophryne_marmorata_TJ57,(Kaloula_pulchra_TJ41,(Chaperina_fusca_932\n,(Calluella_guttulata_931,(Microhyla_heymonsi_TJ26,Microhyla_sp_TJ70)))))\n,(Dyscophus_guineti_TJ82,((Choerophryne_sp_991,Cophixalus_sphagnicola_990)\n,((Genyophryne_thomsoni_993,(Copiula_sp_992,Sphenophryne_sp_989))\n,(Liophryne_rhododactyla_983,(Aphantophryne_pansa_980,(Callulops_slateri\n,Oreophryne_brachypus_979))))))))))),((Hemisus_marmoratus_TJ78\n,(Breviceps_mossambicus_942,(Probreviceps_macrodactylus_TJ69\n,(Callulina_kisiwamsitu_TJ77,Callulina_kreffti)))),(((Acanthixalus_spinosus\n,(Kassina_senegalensis_TJ85,Phlyctimantis_leonardi_TJ119))\n,(Opisthothylax_immaculatus_962,(((Afrixalus_fornasinii_TJ44\n,Afrixalus_pygmaeus_1019),(Tachycnemis_seychellensis_TJ95\n,(Heterixalus_sp_TJ93,Heterixalus_tricolor))),(Cryptothylax_gresshoffi_959\n,((Alexteroon_obstetricans_960,Alexteroon_obstetricans_TJ109)\n,(Hyperolius_tuberilinguis_TJ43,(Hyperolius_alticola_1011\n,(Hyperolius_punticulatus_TJ35,Nesionixalus_thomensis_1017))))))))\n,((Leptopelis_argenteus_1012,(Leptopelis_bocagei_TJ67,(Leptopelis_sp_950\n,Leptopelis_vermiculatus_1026))),((Leptodactylodon_bicolor_TJ129\n,(Nyctibates_corrugatus_TJ126,(Astylosternus_schiotzi_TJ116\n,Trichobatrachus_robustus_TJ111))),(Scotobleps_gabonicus_TJ130\n,((Cardioglossa_gratiosa_964,Cardioglossa_leucomystax_845)\n,((Schoutedenella_sylvatica_844,Schoutedenella_taeniata_1018)\n,((Arthroleptis_tanneri_TJ75,Arthroleptis_variabilis_847)\n,(Schoutedenella_schubotzi_1021,Schoutedenella_xenodactyloides_TJ79))))))))))\n,((Ptychadena_mascareniensis_181,(Ptychadena_anchietae\n,Ptychadena_cooperi_588)),((Ingerana_baluensis_929,(Discodeles_guppyi_984\n,(Ceratobatrachus_guentheri_982,(Batrachylodes_vertebralis_994\n,(Platymantis_pelewensis_896,Platymantis_weberi_981))))),((Micrixalus_fuscus\n,Micrixalus_kottigeharensis),((((Phrynobatrachus_dendrobates_1015\n,Phrynodon_sandersoni_848),((Dimorphognathus_africanus_963\n,(Phrynobatrachus_auritus_849,Phrynobatrachus_natalensis_TJ61))\n,(Phrynobatrachus_calcaratus_1024,(Phrynobatrachus_dispar_1009\n,Phrynobatrachus_mababiensis_TJ72)))),(((Conraua_goliath_919\n,Conraua_robusta_TJ113),((Indirana_sp1_FB2000a,Indirana_sp2_FB2000b)\n,(Arthroleptides_sp_TJ62,(Petropedetes_palmipes_841,(Petropedetes_newtoni_965\n,(Petropedetes_cameronensis_843,Petropedetes_parkeri))))))\n,((Pyxicephalus_edulis_944,(Aubria_subsigillata_961\n,Aubria_subsigillata_TJ117)),(Tomopterna_delalandii_TJ5\n,((Arthroleptella_bicolor_591,Natalobatrachus_bonebergi)\n,((Afrana_fuscigula_590,(Afrana_angolensis_1014,Amietia_vertebralis_TJ45))\n,(Strongylopus_grayii_589,(Anhydrophryne_rattrayi,Cacosternum_platys_1045))))\n)))),(((Micrixalus_borealis_1020,(Occidozyga_baluensis_930\n,(Occidozyga_laevis_TJ12,Occidozyga_lima_1010))),((Limnonectes_kuhlii_TJ14\n,(Limnonectes_grunniens_986,(Limnonectes_blythi_TJ22,(Taylorana_limborgi\n,(Limnonectes_acanthi,(Limnonectes_heinrichi,Limnonectes_visayanus))))))\n,((Paa_verrucospinosa_TJ23,Quasipaa_exilispinosa_1030),(Nanorana_pleskei\n,((Fejervarya_cancrivorus,Fejervarya_limnocharis_TJ15)\n,((Sphaerotheca_breviceps_893,Sphaerotheca_pluvialis)\n,((Fejervarya_kirtisinghei,Fejervarya_syhadrensis),(Nannophrys_ceylonensis\n,(Euphlyctis_cyanophlyctis,(Hoplobatrachus_occipitalis_513\n,Hoplobatrachus_rugulosus_928)))))))))),((((Boophis_albilabris_185\n,Boophis_tephraeomystax_182),((Aglyptodactylus_madagascariensis_505\n,Laliostoma_labrosum_508),((Mantella_aurantiaca_238,Mantella_nigricans_204)\n,(Mantidactylus_cf_femoralis_187,Mantidactylus_peraccae_272))))\n,(Buergeria_japonica_502,(Philautus_gracilipes_446\n,((Chirixalus_eiffingeri_912,Chirixalus_idiooticus_500),(((Nyctixalus_905\n,Nyctixalus_pictus_920),(Philautus_rhododiscus_TJ37,Theloderma_corticale_445)\n),((Rhacophorus_annamensis_441,(Rhacophorus_bipunctatus_440\n,(Rhacophorus_calcaneus_TJ24,Rhacophorus_orlovi_443))),((Polypedates_cruciger\n,Polypedates_leucomystax_442),(Chirixalus_vittatus_921,(Chirixalus_doriae_922\n,Chiromantis_xerampelina_TJ42))))))))),((Lankanectes_corrugatus\n,(Nyctibatrachus_cf_aliciae,Nyctibatrachus_major)),(Staurois_tuberlinguis_927\n,((Sylvirana_guentheri_1052,(Hylarana_erythraea_925\n,Hylarana_taipehensis_TJ40)),(((Chalcorana_chalconota_926\n,(Amnirana_albilabris_TJ131,Amnirana_galamensis_512))\n,((Sylvirana_maosonensis_TJ18,Sylvirana_nigrovittata_TJ16)\n,(Sylvirana_temporalis,(Papurana_daemeli_985,Tylerana_arfaki_987))))\n,((Clinotarsus_curtipes,Meristogenys_orphnocnemis_934),(Glandirana_minima\n,((Amolops_hongkongensis,(Pelophylax_nigromaculata_924,Pelophylax_ridibunda))\n,(((Nidirana_adenopleura_908,Nidirana_chapaensis_TJ13)\n,((Amolops_chapaensis_TJ17,Odorrana_grahami_1025),(Huia_nasica_TJ11\n,Odorrana_livida_TJ38))),(((Amerana_mucosa_976,Aurorana_aurora_975)\n,(Pseudorana_johnsi_997,(Rana_japonica_923,(Pseudoamalops_sauteri_914\n,Rana_temporaria_916)))),((Aquarana_grylio_972,(Aquarana_heckscheri_977\n,(Aquarana_catesbeiana_1044,Aquarana_clamitans_971))),(Rana_sylvatica_TJ33\n,((Lithobates_palmipes_TJ28,(Sierrana_maculata_1076\n,Trypheropsis_warszewitschii_1043)),(Pantherana_capito_973\n,((Pantherana_chiricahuensis_1055,Pantherana_pipiens_913)\n,(Pantherana_berlandieri,(Pantherana_forreri_895\n,Pantherana_yavapaiensis_1057))))))))))))))))))))))),(((Nasikabatrachidae_sp\n,Nasikabatrachus_sahyadrensis),(Nesomantis_thomasseti_TJ96\n,Sooglossus_sechellensis_TJ94)),(((Caudiverbera_caudiverbera_TJ87\n,Telmatobufo_venustus_1131),((Kyarranus_sphagnicolus_1084\n,(Adelotus_brevis_1073,(((Neobatrachus_pictus_1070,Neobatrachus_sudelli_673)\n,(Notaden_melanoscaphus_1068,(Lechriodus_fletcheri_1065\n,Limnodynastes_ornatus_1064))),(Heleioporus_australiacus_1079\n,(Limnodynastes_dumerilli_1067,((Limnodynastes_depressus_1080\n,Limnodynastes_peronii_1032),(Limnodynastes_salmini\n,Megistolotis_lignarius_1069))))))),((Mixophyes_carbinensis_1086\n,Rheobatrachus_silus_1061),(Taudactylus_acutirostris_1062\n,(((Bryobatrachus_nimbus_1074,Crinia_signifera_978),(Paracrinia_haswelli_1077\n,(Assa_darlingtoni_1066,Geocrinia_victoriana_1072)))\n,((Spicospina_flammocaerulea_1075,Uperoleia_laevigata_1003)\n,((Pseudophryne_bibroni_677,Pseudophryne_coriacea_1082)\n,(Myobatachus_gouldii_1081,(Arenophryne_sp_1155,Metacrinia_nichollsi_1071))))\n))))),(Hemiphractus_helioi_467,((((Eleutherodactylus_binotatus_884\n,Ischnocnema_sp_521),(Barycholos_ternetzi_887,(Brachycephalus_ephippium_883\n,Eleutherodactylus_juipoca_886))),((Craugastor_pluvicanorus_TJ31\n,(Euhyas_planirostris_898,(Syrrhophus_marnockii_894,Syrrhophus_nitidus_1087))\n),((Phrynopus_sp_KU_202652,Phrynopus_sp_TJ30),(Craugastor_bufoniformis_954\n,((Craugastor_alfredi_1089,Craugastor_augusti_1056),(Craugastor_rhodopis_1088\n,(Craugastor_punctariolus_957,Craugastor_ranoides_897)))))))\n,((Cryptobatrachus_sp,Stefania_evansi_417),((Flectonotus_sp_690\n,(Gastrotheca_cf_marsupiata_317,Gastrotheca_fissipes_825))\n,(((((Agalychnis_calcarifer_1006,Phyllomedusa_vaillanti_103)\n,(Agalychnis_callidryas_TJ71,Phasmahyla_guttata_687)),((Litoria_meiriana_675\n,(Litoria_freycineti_672,Litoria_inermis_995)),(Nyctimistes_pulchra_676\n,((Litoria_nannotis_1000,Nyctimystes_dayi_1002),((Cyclorana_australis_674\n,Litoria_aurea_543),(Litoria_genimaculata_1004,Litoria_lesueurii_988))))))\n,(((Sphaenorhynchus_lacteus_138,(Scinax_garbei_90,Scinax_ruber_16))\n,((Hyloscirtus_armata_318,Hyloscirtus_palmeri_504),(Hypsiboas_granosus_416\n,((Aplastodiscus_perviridis_4,Hypsiboas_albomarginata_140)\n,(Hypsiboas_boans_486,Hypsiboas_multifasciata_102)))))\n,(((Scarthyla_goinorum_86,(Lysapsus_laevis_629,Pseudis_paradoxa_704))\n,(Dendropsophus_minutus_35,(Dendropsophus_marmoratus_468\n,(Dendropsophus_nana_172,Dendropsophus_parviceps_80))))\n,((Phyllodytes_luteolus_823,((Osteocephalus_cf_taurinus_410\n,Osteopilus_septentrionalis_139),(Argenteohyla_siemersi_pederseni_292\n,(Trachycephalus_jordani_540,Trachycephalus_venulosus_94))))\n,((Ecnomiohyla_miliaria_639,(Duellmanohyla_rufioculis_211\n,Ptychohyla_leonhardschultzei_796)),(Charadrahyla_nephila_551\n,(((Exerodonta_chimalapa_549,Plectrohyla_guatemalensis_802)\n,(Acris_crepitans_604,(Pseudacris_crucifer_638,Pseudacris_triseriata_833)))\n,((Hyla_arborea_871,Isthmohyla_rivularis_210),((Hyla_cinerea_207\n,Tlalocohyla_picta_658),(Smilisca_phaeota_459,(Anotheca_spinosa_552\n,Triprion_petasatus_458))))))))))),(((Allophryne_ruthveni_837\n,(Hyalinobatrachium_fleischmanni_TJ97,(Centrolene_prosoblepon_827\n,(Centrolene_geckoideum,Cochranella_bejaranoi_311))))\n,((Pleurodema_brachyops_630,(Edalorhina_perezi_531,Physalaemus_cuvieri_TJ65))\n,(Pseudopaludicola_sp_650,((Paratelmatobius_sp_891,Scythrophrys_sawayae_892)\n,((Adenomera_hylaedactyla_529,Lithodytes_lineatus_632)\n,(Leptodactylus_fuscus_TJ50,(Leptodactylus_ocellatus_568\n,Vanzolinius_discodactylus_TJ81))))))),(((Telmatobius_simonsi_314\n,(Telmatobius_cf_jahuira_313,Telmatobius_sp_315))\n,((Atelognatus_patagonicus_656,Batrachyla_leptopus_655)\n,(Lepidobatrachus_laevis_939,(Ceratophrys_cranwelli_539\n,Chacophrys_pierottii_1184)))),(((Crossodactylus_schmidti_149\n,(Hylodes_phyllodes_889,Megaelosia_goeldii_611))\n,((Cycloramphus_boraceiensis_890,Rhinoderma_darwinii_1115)\n,((Hylorina_sylvatica,(Alsodes_gargola_653,Eupsophus_calcaratus_657))\n,(Limnomedusa_macroglossa_681,(Proceratophrys_avelinoi_306\n,(Odontophrynus_achalensis_869,Odontophrynus_americanus_309))))))\n,((Thoropa_miliaris_1186,((Mannophryne_trinitatis_609\n,(Allobates_femoralis_394,Colostethus_undulatus_332))\n,((Ameerega_boulengeri_280,Phobobates_silverstonei_646)\n,(Phyllobates_lugubris_329,(Dendrobates_auratus_327,Minyobates_claudiae_324))\n))),(Melanophryniscus_klappenbachi_217,((Osornophryne_guacamayo\n,(Atelopus_zeteki_1039,(Atelopus_flavescens_1046,Atelopus_spumarius_1047)))\n,(Dendrophryniscus_minutus_532,((Bufo_guttatus_TJ2,Bufo_haematiticus_956)\n,((Wolterstorffina_parvipalmata_TJ110,(Werneria_mertensi_TJ114\n,(Nectophryne_afra_TJ124,Nectophryne_batesi_958))),((Bufo_asper_935\n,Pedostibes_hosei_953),((((Ansonia_longidigitata_TJ106,Ansonia_muelleri)\n,(Didynamipus_sjostedti,Nectophrynoides_tornieri_TJ60)),((Pelophryne_brevipes\n,(Bufo_margaritifer,Rhamphophryne_festae)),(Bufo_celebensis\n,(Bufo_galeatus_TJ20,(Bufo_biporcatus,Bufo_divergens_936)))))\n,((Bufo_viridis_1063,(Bufo_melanostictus_TJ10,(Bufo_lemur_1058\n,Schismaderma_carens_TJ73))),((Bufo_bufo,(Bufo_andrewsi_1016\n,Torrentophryne_aspinia)),(((Capensibufo_rosei,Capensibufo_tradouwi)\n,((Bufo_angusticeps,Stephopaedes_anotis),(Bufo_brauni_TJ63\n,(Bufo_tuberosus_TJ127,((Bufo_latifrons_TJ108,Bufo_maculatus_TJ34)\n,(Bufo_camerunensis_TJ121,(Bufo_gutturalis_TJ84,Bufo_regularis_952)))))))\n,((Bufo_boreas_967,(Bufo_punctatus_949,(Bufo_quercicus_940,(Bufo_cognatus_946\n,(Bufo_terrestris_945,Bufo_woodhousii_974))))),(((Bufo_alvarius_1054\n,Bufo_coniferus_955),(Bufo_mazatlanensis,Bufo_nebulifer))\n,(Bufo_variegatus_951,((Bufo_granulosus_TJ1,Bufo_spinulosus_433)\n,(Bufo_amboroensis_TJ32,(Bufo_arenarum_567,(Bufo_marinus_523\n,Bufo_paracnemis_564))))))))))))))))))))))))))))))))))))));\n(Latimeria_chalumnae_1114,(((Didelphis_marsupialis_1092\n,Gazella_thomsoni_1093),((Alligator_sinensis_1090,Iguana_iguana_1001)\n,(Chelydra_serpentina_1091,Pelomedusa_subrufa_1051))),(((Epicrionops_sp_917\n,Rhinatrema_bivittatum_TJ29),((Ichthyophis_sp_TJ102\n,(Ichthyophis_peninsularis_878,Uraeotyphlus_narayani_882))\n,((Boulengerula_uluguruensis_879,Herpele_squalostoma_TJ122)\n,((Caecilia_tentaculata_TJ52,Typhlonectes_natans_877)\n,((Crotaphatrema_tchabalmbaboensis_TJ118,Scolecomorphus_vittatus_TJ104)\n,((Geotrypetes_seraphini_TJ103,(Dermophis_oaxacae_TJ99\n,Schistometopum_gregorii_881)),(Gegeneophis_ramaswamii\n,(Hypogeophis_rostratus_918,Siphonops_hardyi_880))))))))\n,((((Batrachuperus_pinchoni_TJ105,Ranodon_sibiricus)\n,(Cryptobranchus_alleganiensis_1050,(Andrias_davidianus\n,Andrias_japonicus_1059))),((((Necturus_alabamensis_938\n,Necturus_maculosus_TJ6),(Pseudobranchus_striatus_969,(Siren_intermedia\n,Siren_lacertina_968))),(((Dicamptodon_aterrimus_909\n,Dicamptodon_tenebrosus_1048),(Ambystoma_cingulatum_970\n,(Ambystoma_mexicanum_996,Ambystoma_tigrinum_TJ53)))\n,(Salamandra_salamandra_TJ88,((Pleurodeles_waltl_TJ91\n,Tylototriton_shanjing_TJ4),((Notophthalmus_viridiscens_TJ7,Taricha_sp_TJ90)\n,((Pachytriton_brevipes_TJ92,Paramesotriton_sp_TJ76),(Neurergus_crocatus\n,(Euproctus_asper,Triturus_sp_TJ89)))))))),(Rhyacotriton_cascadae_900\n,(Amphiuma_tridactylum_910,((Plethodon_dunni_1049,((Ensatina_eschscholtzii\n,Plethodon_jordani_915),(Aneides_hardii,((Desmognathus_quadramaculatus_1040\n,Desmognathus_wrighti),(Phaeognathus_hubrichti\n,(Hydromantes_platycephalus_1013,Speleomantes_italicus))))))\n,((Batrachoseps_attenuatus,Batrachoseps_wrightorum)\n,(Hemidactylum_scutatum_911,((Eurycea_wilderae_1041\n,Gyrinophilus_porphyriticus_1042),((Nototriton_abscondens,(Oedipina_uniformis\n,(Cryptotriton_alvarezdeltoroi,Dendrotriton_rabbi))),(Thorius_sp_TJ100\n,((Bolitoglossa_rufescens_TJ101,Parvimolge_townsendi),(Ixalotriton_niger\n,(Lineatriton_lineolus,Pseudoeurycea_conanti_TJ98)))))))))))))\n,((Ascaphus_truei_907,(Leiopelma_archeyi_998,Leiopelma_hochstetteri_999))\n,((Rhinophrynus_dorsalis_899,(Hymenochirus_boettgeri,((Pipa_carvalhoi_1038\n,Pipa_pipa_457),(Silurana_tropicalis_TJ128,(Xenopus_gilli_TJ9,Xenopus_laevis)\n)))),(((Alytes_obstetricans_902,(Discoglossus_galganoi_1029\n,Discoglossus_pictus_TJ83)),(Bombina_microdeladigitora_TJ54\n,(Bombina_orientalis_TJ80,(Bombina_bombina_1035,Bombina_variegata_1034))))\n,(((Pelodytes_puntatus_901,(Spea_hammondii_966,(Scaphiopus_couchii_937\n,Scaphiopus_holbrooki_943))),((Pelobates_cultripes,Pelobates_fuscus_903)\n,((Leptolalax_pelodytoides_TJ25,(Leptobrachium_chapaense_450\n,Leptobrachium_hasselti_1022)),(Brachytarsophrys_feae,((Xenophrys_major\n,Xenophrys_major_TJ19),(Megophrys_nasuta_TJ107,(Ophryophryne_microstoma_TJ36\n,Ophryophryne_poilani_TJ21))))))),((Heleophryne_purcelli_633\n,Heleophryne_regis_906),((((Kalophrynus_pleurostigma_933\n,(Synapturanus_mirandaribeiroi_530,((Micryletta_inornata\n,Phrynomantis_bifasciatus_941),((((Hoplophryne_rogersi_TJ68\n,Ramanella_obscura),((Anodonthyla_montana,Platypelis_sp_TJ58)\n,(Plethodontohyla_sp_TJ56,Stumpffia_sp_TJ59))),((Ctenophryne_geayei_TJ27\n,Nelsonophryne_aequatorialis),(Dasypops_schirchi_888\n,(Hamptophryne_boliviana_TJ86,(Elachistocleis_ovalis_TJ51\n,(Dermatonotus_muelleri_1185,(Gastrophryne_elegans_TJ74\n,Gastrophryne_olivacea_1053))))))),((Scaphiophryne_marmorata_TJ57\n,(Kaloula_pulchra_TJ41,(Chaperina_fusca_932,(Calluella_guttulata_931\n,(Microhyla_heymonsi_TJ26,Microhyla_sp_TJ70))))),(Dyscophus_guineti_TJ82\n,((Choerophryne_sp_991,Cophixalus_sphagnicola_990),((Genyophryne_thomsoni_993\n,(Copiula_sp_992,Sphenophryne_sp_989)),(Liophryne_rhododactyla_983\n,(Aphantophryne_pansa_980,(Callulops_slateri,Oreophryne_brachypus_979))))))))\n))),((Hemisus_marmoratus_TJ78,(Breviceps_mossambicus_942\n,(Probreviceps_macrodactylus_TJ69,(Callulina_kisiwamsitu_TJ77\n,Callulina_kreffti)))),(((Acanthixalus_spinosus,(Kassina_senegalensis_TJ85\n,Phlyctimantis_leonardi_TJ119)),(Opisthothylax_immaculatus_962\n,(((Afrixalus_fornasinii_TJ44,Afrixalus_pygmaeus_1019)\n,(Tachycnemis_seychellensis_TJ95,(Heterixalus_sp_TJ93,Heterixalus_tricolor)))\n,(Cryptothylax_gresshoffi_959,((Alexteroon_obstetricans_960\n,Alexteroon_obstetricans_TJ109),(Hyperolius_tuberilinguis_TJ43\n,(Hyperolius_alticola_1011,(Hyperolius_punticulatus_TJ35\n,Nesionixalus_thomensis_1017)))))))),((Leptopelis_argenteus_1012\n,(Leptopelis_bocagei_TJ67,(Leptopelis_sp_950,Leptopelis_vermiculatus_1026)))\n,((Leptodactylodon_bicolor_TJ129,(Nyctibates_corrugatus_TJ126\n,(Astylosternus_schiotzi_TJ116,Trichobatrachus_robustus_TJ111)))\n,(Scotobleps_gabonicus_TJ130,((Cardioglossa_gratiosa_964\n,Cardioglossa_leucomystax_845),((Schoutedenella_sylvatica_844\n,Schoutedenella_taeniata_1018),((Arthroleptis_tanneri_TJ75\n,Arthroleptis_variabilis_847),(Schoutedenella_schubotzi_1021\n,Schoutedenella_xenodactyloides_TJ79))))))))))\n,((Ptychadena_mascareniensis_181,(Ptychadena_anchietae\n,Ptychadena_cooperi_588)),((Ingerana_baluensis_929,(Discodeles_guppyi_984\n,(Ceratobatrachus_guentheri_982,(Batrachylodes_vertebralis_994\n,(Platymantis_pelewensis_896,Platymantis_weberi_981))))),((Micrixalus_fuscus\n,Micrixalus_kottigeharensis),((((Phrynobatrachus_dendrobates_1015\n,Phrynodon_sandersoni_848),((Dimorphognathus_africanus_963\n,(Phrynobatrachus_auritus_849,Phrynobatrachus_natalensis_TJ61))\n,(Phrynobatrachus_calcaratus_1024,(Phrynobatrachus_dispar_1009\n,Phrynobatrachus_mababiensis_TJ72)))),(((Conraua_goliath_919\n,Conraua_robusta_TJ113),((Indirana_sp1_FB2000a,Indirana_sp2_FB2000b)\n,(Arthroleptides_sp_TJ62,(Petropedetes_palmipes_841,(Petropedetes_newtoni_965\n,(Petropedetes_cameronensis_843,Petropedetes_parkeri))))))\n,((Pyxicephalus_edulis_944,(Aubria_subsigillata_961\n,Aubria_subsigillata_TJ117)),(Tomopterna_delalandii_TJ5\n,((Arthroleptella_bicolor_591,Natalobatrachus_bonebergi)\n,((Afrana_fuscigula_590,(Afrana_angolensis_1014,Amietia_vertebralis_TJ45))\n,(Strongylopus_grayii_589,(Anhydrophryne_rattrayi,Cacosternum_platys_1045))))\n)))),(((Micrixalus_borealis_1020,(Occidozyga_baluensis_930\n,(Occidozyga_laevis_TJ12,Occidozyga_lima_1010))),((Limnonectes_kuhlii_TJ14\n,(Limnonectes_grunniens_986,(Limnonectes_blythi_TJ22,(Taylorana_limborgi\n,(Limnonectes_acanthi,(Limnonectes_heinrichi,Limnonectes_visayanus))))))\n,((Paa_verrucospinosa_TJ23,Quasipaa_exilispinosa_1030),(Nanorana_pleskei\n,((Fejervarya_cancrivorus,Fejervarya_limnocharis_TJ15)\n,((Sphaerotheca_breviceps_893,Sphaerotheca_pluvialis)\n,((Fejervarya_kirtisinghei,Fejervarya_syhadrensis),(Nannophrys_ceylonensis\n,(Euphlyctis_cyanophlyctis,(Hoplobatrachus_occipitalis_513\n,Hoplobatrachus_rugulosus_928)))))))))),((((Boophis_albilabris_185\n,Boophis_tephraeomystax_182),((Aglyptodactylus_madagascariensis_505\n,Laliostoma_labrosum_508),((Mantella_aurantiaca_238,Mantella_nigricans_204)\n,(Mantidactylus_cf_femoralis_187,Mantidactylus_peraccae_272))))\n,(Buergeria_japonica_502,(Philautus_gracilipes_446\n,((Chirixalus_eiffingeri_912,Chirixalus_idiooticus_500),(((Nyctixalus_905\n,Nyctixalus_pictus_920),(Philautus_rhododiscus_TJ37,Theloderma_corticale_445)\n),((Rhacophorus_annamensis_441,(Rhacophorus_bipunctatus_440\n,(Rhacophorus_calcaneus_TJ24,Rhacophorus_orlovi_443))),((Polypedates_cruciger\n,Polypedates_leucomystax_442),(Chirixalus_vittatus_921,(Chirixalus_doriae_922\n,Chiromantis_xerampelina_TJ42))))))))),((Lankanectes_corrugatus\n,(Nyctibatrachus_cf_aliciae,Nyctibatrachus_major)),(Staurois_tuberlinguis_927\n,((Sylvirana_guentheri_1052,(Hylarana_erythraea_925\n,Hylarana_taipehensis_TJ40)),(((Chalcorana_chalconota_926\n,(Amnirana_albilabris_TJ131,Amnirana_galamensis_512))\n,((Sylvirana_maosonensis_TJ18,Sylvirana_nigrovittata_TJ16)\n,(Sylvirana_temporalis,(Papurana_daemeli_985,Tylerana_arfaki_987))))\n,((Clinotarsus_curtipes,Meristogenys_orphnocnemis_934)\n,((Amolops_hongkongensis,(Pelophylax_nigromaculata_924,Pelophylax_ridibunda))\n,(Glandirana_minima,(((Nidirana_adenopleura_908,Nidirana_chapaensis_TJ13)\n,((Amolops_chapaensis_TJ17,Odorrana_grahami_1025),(Huia_nasica_TJ11\n,Odorrana_livida_TJ38))),(((Amerana_mucosa_976,Aurorana_aurora_975)\n,(Pseudorana_johnsi_997,(Rana_japonica_923,(Pseudoamalops_sauteri_914\n,Rana_temporaria_916)))),((Aquarana_grylio_972,(Aquarana_heckscheri_977\n,(Aquarana_catesbeiana_1044,Aquarana_clamitans_971))),(Rana_sylvatica_TJ33\n,((Lithobates_palmipes_TJ28,(Sierrana_maculata_1076\n,Trypheropsis_warszewitschii_1043)),(Pantherana_capito_973\n,((Pantherana_chiricahuensis_1055,Pantherana_pipiens_913)\n,(Pantherana_berlandieri,(Pantherana_forreri_895\n,Pantherana_yavapaiensis_1057))))))))))))))))))))))),(((Nasikabatrachidae_sp\n,Nasikabatrachus_sahyadrensis),(Nesomantis_thomasseti_TJ96\n,Sooglossus_sechellensis_TJ94)),(((Caudiverbera_caudiverbera_TJ87\n,Telmatobufo_venustus_1131),((Kyarranus_sphagnicolus_1084\n,(Adelotus_brevis_1073,(((Neobatrachus_pictus_1070,Neobatrachus_sudelli_673)\n,(Notaden_melanoscaphus_1068,(Lechriodus_fletcheri_1065\n,Limnodynastes_ornatus_1064))),(Heleioporus_australiacus_1079\n,(Limnodynastes_dumerilli_1067,((Limnodynastes_depressus_1080\n,Limnodynastes_peronii_1032),(Limnodynastes_salmini\n,Megistolotis_lignarius_1069))))))),((Mixophyes_carbinensis_1086\n,Rheobatrachus_silus_1061),(Taudactylus_acutirostris_1062\n,(((Bryobatrachus_nimbus_1074,Crinia_signifera_978),(Paracrinia_haswelli_1077\n,(Assa_darlingtoni_1066,Geocrinia_victoriana_1072)))\n,((Spicospina_flammocaerulea_1075,Uperoleia_laevigata_1003)\n,((Pseudophryne_bibroni_677,Pseudophryne_coriacea_1082)\n,(Myobatachus_gouldii_1081,(Arenophryne_sp_1155,Metacrinia_nichollsi_1071))))\n))))),(Hemiphractus_helioi_467,((((Eleutherodactylus_binotatus_884\n,Ischnocnema_sp_521),(Barycholos_ternetzi_887,(Brachycephalus_ephippium_883\n,Eleutherodactylus_juipoca_886))),((Craugastor_pluvicanorus_TJ31\n,(Euhyas_planirostris_898,(Syrrhophus_marnockii_894,Syrrhophus_nitidus_1087))\n),((Phrynopus_sp_KU_202652,Phrynopus_sp_TJ30),(Craugastor_bufoniformis_954\n,((Craugastor_alfredi_1089,Craugastor_augusti_1056),(Craugastor_rhodopis_1088\n,(Craugastor_punctariolus_957,Craugastor_ranoides_897)))))))\n,((Cryptobatrachus_sp,Stefania_evansi_417),((Flectonotus_sp_690\n,(Gastrotheca_cf_marsupiata_317,Gastrotheca_fissipes_825))\n,(((((Agalychnis_calcarifer_1006,Phyllomedusa_vaillanti_103)\n,(Agalychnis_callidryas_TJ71,Phasmahyla_guttata_687)),((Litoria_meiriana_675\n,(Litoria_freycineti_672,Litoria_inermis_995)),(Nyctimistes_pulchra_676\n,((Litoria_nannotis_1000,Nyctimystes_dayi_1002),((Cyclorana_australis_674\n,Litoria_aurea_543),(Litoria_genimaculata_1004,Litoria_lesueurii_988))))))\n,(((Sphaenorhynchus_lacteus_138,(Scinax_garbei_90,Scinax_ruber_16))\n,((Hyloscirtus_armata_318,Hyloscirtus_palmeri_504),(Hypsiboas_granosus_416\n,((Aplastodiscus_perviridis_4,Hypsiboas_albomarginata_140)\n,(Hypsiboas_boans_486,Hypsiboas_multifasciata_102)))))\n,(((Scarthyla_goinorum_86,(Lysapsus_laevis_629,Pseudis_paradoxa_704))\n,(Dendropsophus_minutus_35,(Dendropsophus_marmoratus_468\n,(Dendropsophus_nana_172,Dendropsophus_parviceps_80))))\n,((Phyllodytes_luteolus_823,((Osteocephalus_cf_taurinus_410\n,Osteopilus_septentrionalis_139),(Argenteohyla_siemersi_pederseni_292\n,(Trachycephalus_jordani_540,Trachycephalus_venulosus_94))))\n,((Ecnomiohyla_miliaria_639,(Duellmanohyla_rufioculis_211\n,Ptychohyla_leonhardschultzei_796)),(Charadrahyla_nephila_551\n,(((Exerodonta_chimalapa_549,Plectrohyla_guatemalensis_802)\n,(Acris_crepitans_604,(Pseudacris_crucifer_638,Pseudacris_triseriata_833)))\n,((Hyla_arborea_871,Isthmohyla_rivularis_210),((Hyla_cinerea_207\n,Tlalocohyla_picta_658),(Smilisca_phaeota_459,(Anotheca_spinosa_552\n,Triprion_petasatus_458))))))))))),(((Allophryne_ruthveni_837\n,(Hyalinobatrachium_fleischmanni_TJ97,(Centrolene_prosoblepon_827\n,(Centrolene_geckoideum,Cochranella_bejaranoi_311))))\n,((Pleurodema_brachyops_630,(Edalorhina_perezi_531,Physalaemus_cuvieri_TJ65))\n,(Pseudopaludicola_sp_650,((Paratelmatobius_sp_891,Scythrophrys_sawayae_892)\n,((Adenomera_hylaedactyla_529,Lithodytes_lineatus_632)\n,(Leptodactylus_fuscus_TJ50,(Leptodactylus_ocellatus_568\n,Vanzolinius_discodactylus_TJ81))))))),(((Telmatobius_simonsi_314\n,(Telmatobius_cf_jahuira_313,Telmatobius_sp_315))\n,((Atelognatus_patagonicus_656,Batrachyla_leptopus_655)\n,(Lepidobatrachus_laevis_939,(Ceratophrys_cranwelli_539\n,Chacophrys_pierottii_1184)))),(((Crossodactylus_schmidti_149\n,(Hylodes_phyllodes_889,Megaelosia_goeldii_611))\n,((Cycloramphus_boraceiensis_890,Rhinoderma_darwinii_1115)\n,((Hylorina_sylvatica,(Alsodes_gargola_653,Eupsophus_calcaratus_657))\n,(Limnomedusa_macroglossa_681,(Proceratophrys_avelinoi_306\n,(Odontophrynus_achalensis_869,Odontophrynus_americanus_309))))))\n,((Thoropa_miliaris_1186,((Mannophryne_trinitatis_609\n,(Allobates_femoralis_394,Colostethus_undulatus_332))\n,((Ameerega_boulengeri_280,Phobobates_silverstonei_646)\n,(Phyllobates_lugubris_329,(Dendrobates_auratus_327,Minyobates_claudiae_324))\n))),(Melanophryniscus_klappenbachi_217,((Osornophryne_guacamayo\n,(Atelopus_zeteki_1039,(Atelopus_flavescens_1046,Atelopus_spumarius_1047)))\n,(Dendrophryniscus_minutus_532,((Bufo_guttatus_TJ2,Bufo_haematiticus_956)\n,((Wolterstorffina_parvipalmata_TJ110,(Werneria_mertensi_TJ114\n,(Nectophryne_afra_TJ124,Nectophryne_batesi_958))),((Bufo_asper_935\n,Pedostibes_hosei_953),((((Ansonia_longidigitata_TJ106,Ansonia_muelleri)\n,(Didynamipus_sjostedti,Nectophrynoides_tornieri_TJ60)),((Pelophryne_brevipes\n,(Bufo_margaritifer,Rhamphophryne_festae)),(Bufo_celebensis\n,(Bufo_galeatus_TJ20,(Bufo_biporcatus,Bufo_divergens_936)))))\n,((Bufo_viridis_1063,(Bufo_melanostictus_TJ10,(Bufo_lemur_1058\n,Schismaderma_carens_TJ73))),((Bufo_bufo,(Bufo_andrewsi_1016\n,Torrentophryne_aspinia)),(((Capensibufo_rosei,Capensibufo_tradouwi)\n,((Bufo_angusticeps,Stephopaedes_anotis),(Bufo_brauni_TJ63\n,(Bufo_tuberosus_TJ127,((Bufo_latifrons_TJ108,Bufo_maculatus_TJ34)\n,(Bufo_camerunensis_TJ121,(Bufo_gutturalis_TJ84,Bufo_regularis_952)))))))\n,((Bufo_boreas_967,(Bufo_punctatus_949,(Bufo_quercicus_940,(Bufo_cognatus_946\n,(Bufo_terrestris_945,Bufo_woodhousii_974))))),(((Bufo_alvarius_1054\n,Bufo_coniferus_955),(Bufo_mazatlanensis,Bufo_nebulifer))\n,(Bufo_variegatus_951,((Bufo_granulosus_TJ1,Bufo_spinulosus_433)\n,(Bufo_amboroensis_TJ32,(Bufo_arenarum_567,(Bufo_marinus_523\n,Bufo_paracnemis_564))))))))))))))))))))))))))))))))))))));\n(Latimeria_chalumnae_1114,(((Didelphis_marsupialis_1092\n,Gazella_thomsoni_1093),((Alligator_sinensis_1090,Iguana_iguana_1001)\n,(Chelydra_serpentina_1091,Pelomedusa_subrufa_1051))),(((Epicrionops_sp_917\n,Rhinatrema_bivittatum_TJ29),((Ichthyophis_sp_TJ102\n,(Ichthyophis_peninsularis_878,Uraeotyphlus_narayani_882))\n,((Boulengerula_uluguruensis_879,Herpele_squalostoma_TJ122)\n,((Caecilia_tentaculata_TJ52,Typhlonectes_natans_877)\n,((Crotaphatrema_tchabalmbaboensis_TJ118,Scolecomorphus_vittatus_TJ104)\n,((Geotrypetes_seraphini_TJ103,(Dermophis_oaxacae_TJ99\n,Schistometopum_gregorii_881)),(Gegeneophis_ramaswamii\n,(Hypogeophis_rostratus_918,Siphonops_hardyi_880))))))))\n,((((Batrachuperus_pinchoni_TJ105,Ranodon_sibiricus)\n,(Cryptobranchus_alleganiensis_1050,(Andrias_davidianus\n,Andrias_japonicus_1059))),((((Necturus_alabamensis_938\n,Necturus_maculosus_TJ6),(Pseudobranchus_striatus_969,(Siren_intermedia\n,Siren_lacertina_968))),(((Dicamptodon_aterrimus_909\n,Dicamptodon_tenebrosus_1048),(Ambystoma_cingulatum_970\n,(Ambystoma_mexicanum_996,Ambystoma_tigrinum_TJ53)))\n,(Salamandra_salamandra_TJ88,((Pleurodeles_waltl_TJ91\n,Tylototriton_shanjing_TJ4),((Notophthalmus_viridiscens_TJ7,Taricha_sp_TJ90)\n,((Pachytriton_brevipes_TJ92,Paramesotriton_sp_TJ76),(Neurergus_crocatus\n,(Euproctus_asper,Triturus_sp_TJ89)))))))),(Rhyacotriton_cascadae_900\n,(Amphiuma_tridactylum_910,((Plethodon_dunni_1049,((Ensatina_eschscholtzii\n,Plethodon_jordani_915),(Aneides_hardii,((Desmognathus_quadramaculatus_1040\n,Desmognathus_wrighti),(Phaeognathus_hubrichti\n,(Hydromantes_platycephalus_1013,Speleomantes_italicus))))))\n,((Batrachoseps_attenuatus,Batrachoseps_wrightorum)\n,(Hemidactylum_scutatum_911,((Eurycea_wilderae_1041\n,Gyrinophilus_porphyriticus_1042),((Nototriton_abscondens,(Oedipina_uniformis\n,(Cryptotriton_alvarezdeltoroi,Dendrotriton_rabbi))),(Thorius_sp_TJ100\n,((Bolitoglossa_rufescens_TJ101,Parvimolge_townsendi),(Ixalotriton_niger\n,(Lineatriton_lineolus,Pseudoeurycea_conanti_TJ98)))))))))))))\n,((Ascaphus_truei_907,(Leiopelma_archeyi_998,Leiopelma_hochstetteri_999))\n,((Rhinophrynus_dorsalis_899,(Hymenochirus_boettgeri,((Pipa_carvalhoi_1038\n,Pipa_pipa_457),(Silurana_tropicalis_TJ128,(Xenopus_gilli_TJ9,Xenopus_laevis)\n)))),(((Alytes_obstetricans_902,(Discoglossus_galganoi_1029\n,Discoglossus_pictus_TJ83)),(Bombina_microdeladigitora_TJ54\n,(Bombina_orientalis_TJ80,(Bombina_bombina_1035,Bombina_variegata_1034))))\n,(((Pelodytes_puntatus_901,(Spea_hammondii_966,(Scaphiopus_couchii_937\n,Scaphiopus_holbrooki_943))),((Pelobates_cultripes,Pelobates_fuscus_903)\n,((Leptolalax_pelodytoides_TJ25,(Leptobrachium_chapaense_450\n,Leptobrachium_hasselti_1022)),((Megophrys_nasuta_TJ107\n,(Ophryophryne_microstoma_TJ36,Ophryophryne_poilani_TJ21))\n,(Brachytarsophrys_feae,(Xenophrys_major,Xenophrys_major_TJ19))))))\n,((Heleophryne_purcelli_633,Heleophryne_regis_906)\n,((((Kalophrynus_pleurostigma_933,(Synapturanus_mirandaribeiroi_530\n,((Micryletta_inornata,Phrynomantis_bifasciatus_941)\n,((((Hoplophryne_rogersi_TJ68,Ramanella_obscura),((Anodonthyla_montana\n,Platypelis_sp_TJ58),(Plethodontohyla_sp_TJ56,Stumpffia_sp_TJ59)))\n,((Ctenophryne_geayei_TJ27,Nelsonophryne_aequatorialis)\n,(Dasypops_schirchi_888,(Hamptophryne_boliviana_TJ86\n,(Elachistocleis_ovalis_TJ51,(Dermatonotus_muelleri_1185\n,(Gastrophryne_elegans_TJ74,Gastrophryne_olivacea_1053)))))))\n,((Scaphiophryne_marmorata_TJ57,(Kaloula_pulchra_TJ41,(Chaperina_fusca_932\n,(Calluella_guttulata_931,(Microhyla_heymonsi_TJ26,Microhyla_sp_TJ70)))))\n,(Dyscophus_guineti_TJ82,((Choerophryne_sp_991,Cophixalus_sphagnicola_990)\n,((Genyophryne_thomsoni_993,(Copiula_sp_992,Sphenophryne_sp_989))\n,(Liophryne_rhododactyla_983,(Aphantophryne_pansa_980,(Callulops_slateri\n,Oreophryne_brachypus_979))))))))))),((Hemisus_marmoratus_TJ78\n,(Breviceps_mossambicus_942,(Probreviceps_macrodactylus_TJ69\n,(Callulina_kisiwamsitu_TJ77,Callulina_kreffti)))),(((Acanthixalus_spinosus\n,(Kassina_senegalensis_TJ85,Phlyctimantis_leonardi_TJ119))\n,(Opisthothylax_immaculatus_962,(((Afrixalus_fornasinii_TJ44\n,Afrixalus_pygmaeus_1019),(Tachycnemis_seychellensis_TJ95\n,(Heterixalus_sp_TJ93,Heterixalus_tricolor))),(Cryptothylax_gresshoffi_959\n,((Alexteroon_obstetricans_960,Alexteroon_obstetricans_TJ109)\n,(Hyperolius_tuberilinguis_TJ43,(Hyperolius_alticola_1011\n,(Hyperolius_punticulatus_TJ35,Nesionixalus_thomensis_1017))))))))\n,((Leptopelis_argenteus_1012,(Leptopelis_bocagei_TJ67,(Leptopelis_sp_950\n,Leptopelis_vermiculatus_1026))),((Leptodactylodon_bicolor_TJ129\n,(Nyctibates_corrugatus_TJ126,(Astylosternus_schiotzi_TJ116\n,Trichobatrachus_robustus_TJ111))),(Scotobleps_gabonicus_TJ130\n,((Cardioglossa_gratiosa_964,Cardioglossa_leucomystax_845)\n,((Schoutedenella_sylvatica_844,Schoutedenella_taeniata_1018)\n,((Arthroleptis_tanneri_TJ75,Arthroleptis_variabilis_847)\n,(Schoutedenella_schubotzi_1021,Schoutedenella_xenodactyloides_TJ79))))))))))\n,((Ptychadena_mascareniensis_181,(Ptychadena_anchietae\n,Ptychadena_cooperi_588)),((Ingerana_baluensis_929,(Discodeles_guppyi_984\n,(Ceratobatrachus_guentheri_982,(Batrachylodes_vertebralis_994\n,(Platymantis_pelewensis_896,Platymantis_weberi_981))))),((Micrixalus_fuscus\n,Micrixalus_kottigeharensis),((((Phrynobatrachus_dendrobates_1015\n,Phrynodon_sandersoni_848),((Dimorphognathus_africanus_963\n,(Phrynobatrachus_auritus_849,Phrynobatrachus_natalensis_TJ61))\n,(Phrynobatrachus_calcaratus_1024,(Phrynobatrachus_dispar_1009\n,Phrynobatrachus_mababiensis_TJ72)))),(((Conraua_goliath_919\n,Conraua_robusta_TJ113),((Indirana_sp1_FB2000a,Indirana_sp2_FB2000b)\n,(Arthroleptides_sp_TJ62,(Petropedetes_palmipes_841,(Petropedetes_newtoni_965\n,(Petropedetes_cameronensis_843,Petropedetes_parkeri))))))\n,((Pyxicephalus_edulis_944,(Aubria_subsigillata_961\n,Aubria_subsigillata_TJ117)),(Tomopterna_delalandii_TJ5\n,((Arthroleptella_bicolor_591,Natalobatrachus_bonebergi)\n,((Afrana_fuscigula_590,(Afrana_angolensis_1014,Amietia_vertebralis_TJ45))\n,(Strongylopus_grayii_589,(Anhydrophryne_rattrayi,Cacosternum_platys_1045))))\n)))),(((Micrixalus_borealis_1020,(Occidozyga_baluensis_930\n,(Occidozyga_laevis_TJ12,Occidozyga_lima_1010))),((Limnonectes_kuhlii_TJ14\n,(Limnonectes_grunniens_986,(Limnonectes_blythi_TJ22,(Taylorana_limborgi\n,(Limnonectes_acanthi,(Limnonectes_heinrichi,Limnonectes_visayanus))))))\n,((Paa_verrucospinosa_TJ23,Quasipaa_exilispinosa_1030),(Nanorana_pleskei\n,((Fejervarya_cancrivorus,Fejervarya_limnocharis_TJ15)\n,((Sphaerotheca_breviceps_893,Sphaerotheca_pluvialis)\n,((Fejervarya_kirtisinghei,Fejervarya_syhadrensis),(Nannophrys_ceylonensis\n,(Euphlyctis_cyanophlyctis,(Hoplobatrachus_occipitalis_513\n,Hoplobatrachus_rugulosus_928)))))))))),((((Boophis_albilabris_185\n,Boophis_tephraeomystax_182),((Aglyptodactylus_madagascariensis_505\n,Laliostoma_labrosum_508),((Mantella_aurantiaca_238,Mantella_nigricans_204)\n,(Mantidactylus_cf_femoralis_187,Mantidactylus_peraccae_272))))\n,(Buergeria_japonica_502,(Philautus_gracilipes_446\n,((Chirixalus_eiffingeri_912,Chirixalus_idiooticus_500),(((Nyctixalus_905\n,Nyctixalus_pictus_920),(Philautus_rhododiscus_TJ37,Theloderma_corticale_445)\n),((Rhacophorus_annamensis_441,(Rhacophorus_bipunctatus_440\n,(Rhacophorus_calcaneus_TJ24,Rhacophorus_orlovi_443))),((Polypedates_cruciger\n,Polypedates_leucomystax_442),(Chirixalus_vittatus_921,(Chirixalus_doriae_922\n,Chiromantis_xerampelina_TJ42))))))))),((Lankanectes_corrugatus\n,(Nyctibatrachus_cf_aliciae,Nyctibatrachus_major)),(Staurois_tuberlinguis_927\n,((Sylvirana_guentheri_1052,(Hylarana_erythraea_925\n,Hylarana_taipehensis_TJ40)),(((Chalcorana_chalconota_926\n,(Amnirana_albilabris_TJ131,Amnirana_galamensis_512))\n,((Sylvirana_maosonensis_TJ18,Sylvirana_nigrovittata_TJ16)\n,(Sylvirana_temporalis,(Papurana_daemeli_985,Tylerana_arfaki_987))))\n,((Clinotarsus_curtipes,Meristogenys_orphnocnemis_934)\n,((Amolops_hongkongensis,(Pelophylax_nigromaculata_924,Pelophylax_ridibunda))\n,(Glandirana_minima,(((Nidirana_adenopleura_908,Nidirana_chapaensis_TJ13)\n,((Amolops_chapaensis_TJ17,Odorrana_grahami_1025),(Huia_nasica_TJ11\n,Odorrana_livida_TJ38))),(((Amerana_mucosa_976,Aurorana_aurora_975)\n,(Pseudorana_johnsi_997,(Rana_japonica_923,(Pseudoamalops_sauteri_914\n,Rana_temporaria_916)))),((Aquarana_grylio_972,(Aquarana_heckscheri_977\n,(Aquarana_catesbeiana_1044,Aquarana_clamitans_971))),(Rana_sylvatica_TJ33\n,((Lithobates_palmipes_TJ28,(Sierrana_maculata_1076\n,Trypheropsis_warszewitschii_1043)),(Pantherana_capito_973\n,((Pantherana_chiricahuensis_1055,Pantherana_pipiens_913)\n,(Pantherana_berlandieri,(Pantherana_forreri_895\n,Pantherana_yavapaiensis_1057))))))))))))))))))))))),(((Nasikabatrachidae_sp\n,Nasikabatrachus_sahyadrensis),(Nesomantis_thomasseti_TJ96\n,Sooglossus_sechellensis_TJ94)),(((Caudiverbera_caudiverbera_TJ87\n,Telmatobufo_venustus_1131),((Kyarranus_sphagnicolus_1084\n,(Adelotus_brevis_1073,(((Neobatrachus_pictus_1070,Neobatrachus_sudelli_673)\n,(Notaden_melanoscaphus_1068,(Lechriodus_fletcheri_1065\n,Limnodynastes_ornatus_1064))),(Heleioporus_australiacus_1079\n,(Limnodynastes_dumerilli_1067,((Limnodynastes_depressus_1080\n,Limnodynastes_peronii_1032),(Limnodynastes_salmini\n,Megistolotis_lignarius_1069))))))),((Mixophyes_carbinensis_1086\n,Rheobatrachus_silus_1061),(Taudactylus_acutirostris_1062\n,(((Bryobatrachus_nimbus_1074,Crinia_signifera_978),(Paracrinia_haswelli_1077\n,(Assa_darlingtoni_1066,Geocrinia_victoriana_1072)))\n,((Spicospina_flammocaerulea_1075,Uperoleia_laevigata_1003)\n,((Pseudophryne_bibroni_677,Pseudophryne_coriacea_1082)\n,(Myobatachus_gouldii_1081,(Arenophryne_sp_1155,Metacrinia_nichollsi_1071))))\n))))),(Hemiphractus_helioi_467,((((Eleutherodactylus_binotatus_884\n,Ischnocnema_sp_521),(Barycholos_ternetzi_887,(Brachycephalus_ephippium_883\n,Eleutherodactylus_juipoca_886))),((Craugastor_pluvicanorus_TJ31\n,(Euhyas_planirostris_898,(Syrrhophus_marnockii_894,Syrrhophus_nitidus_1087))\n),((Phrynopus_sp_KU_202652,Phrynopus_sp_TJ30),(Craugastor_bufoniformis_954\n,((Craugastor_alfredi_1089,Craugastor_augusti_1056),(Craugastor_rhodopis_1088\n,(Craugastor_punctariolus_957,Craugastor_ranoides_897)))))))\n,((Cryptobatrachus_sp,Stefania_evansi_417),((Flectonotus_sp_690\n,(Gastrotheca_cf_marsupiata_317,Gastrotheca_fissipes_825))\n,(((((Agalychnis_calcarifer_1006,Phyllomedusa_vaillanti_103)\n,(Agalychnis_callidryas_TJ71,Phasmahyla_guttata_687)),((Litoria_meiriana_675\n,(Litoria_freycineti_672,Litoria_inermis_995)),(Nyctimistes_pulchra_676\n,((Litoria_nannotis_1000,Nyctimystes_dayi_1002),((Cyclorana_australis_674\n,Litoria_aurea_543),(Litoria_genimaculata_1004,Litoria_lesueurii_988))))))\n,(((Sphaenorhynchus_lacteus_138,(Scinax_garbei_90,Scinax_ruber_16))\n,((Hyloscirtus_armata_318,Hyloscirtus_palmeri_504),(Hypsiboas_granosus_416\n,((Aplastodiscus_perviridis_4,Hypsiboas_albomarginata_140)\n,(Hypsiboas_boans_486,Hypsiboas_multifasciata_102)))))\n,(((Scarthyla_goinorum_86,(Lysapsus_laevis_629,Pseudis_paradoxa_704))\n,(Dendropsophus_minutus_35,(Dendropsophus_marmoratus_468\n,(Dendropsophus_nana_172,Dendropsophus_parviceps_80))))\n,((Phyllodytes_luteolus_823,((Osteocephalus_cf_taurinus_410\n,Osteopilus_septentrionalis_139),(Argenteohyla_siemersi_pederseni_292\n,(Trachycephalus_jordani_540,Trachycephalus_venulosus_94))))\n,((Ecnomiohyla_miliaria_639,(Duellmanohyla_rufioculis_211\n,Ptychohyla_leonhardschultzei_796)),(Charadrahyla_nephila_551\n,(((Exerodonta_chimalapa_549,Plectrohyla_guatemalensis_802)\n,(Acris_crepitans_604,(Pseudacris_crucifer_638,Pseudacris_triseriata_833)))\n,((Hyla_arborea_871,Isthmohyla_rivularis_210),((Hyla_cinerea_207\n,Tlalocohyla_picta_658),(Smilisca_phaeota_459,(Anotheca_spinosa_552\n,Triprion_petasatus_458))))))))))),(((Allophryne_ruthveni_837\n,(Hyalinobatrachium_fleischmanni_TJ97,(Centrolene_prosoblepon_827\n,(Centrolene_geckoideum,Cochranella_bejaranoi_311))))\n,((Pleurodema_brachyops_630,(Edalorhina_perezi_531,Physalaemus_cuvieri_TJ65))\n,(Pseudopaludicola_sp_650,((Paratelmatobius_sp_891,Scythrophrys_sawayae_892)\n,((Adenomera_hylaedactyla_529,Lithodytes_lineatus_632)\n,(Leptodactylus_fuscus_TJ50,(Leptodactylus_ocellatus_568\n,Vanzolinius_discodactylus_TJ81))))))),(((Telmatobius_simonsi_314\n,(Telmatobius_cf_jahuira_313,Telmatobius_sp_315))\n,((Atelognatus_patagonicus_656,Batrachyla_leptopus_655)\n,(Lepidobatrachus_laevis_939,(Ceratophrys_cranwelli_539\n,Chacophrys_pierottii_1184)))),(((Crossodactylus_schmidti_149\n,(Hylodes_phyllodes_889,Megaelosia_goeldii_611))\n,((Cycloramphus_boraceiensis_890,Rhinoderma_darwinii_1115)\n,((Hylorina_sylvatica,(Alsodes_gargola_653,Eupsophus_calcaratus_657))\n,(Limnomedusa_macroglossa_681,(Proceratophrys_avelinoi_306\n,(Odontophrynus_achalensis_869,Odontophrynus_americanus_309))))))\n,((Thoropa_miliaris_1186,((Mannophryne_trinitatis_609\n,(Allobates_femoralis_394,Colostethus_undulatus_332))\n,((Ameerega_boulengeri_280,Phobobates_silverstonei_646)\n,(Phyllobates_lugubris_329,(Dendrobates_auratus_327,Minyobates_claudiae_324))\n))),(Melanophryniscus_klappenbachi_217,((Osornophryne_guacamayo\n,(Atelopus_zeteki_1039,(Atelopus_flavescens_1046,Atelopus_spumarius_1047)))\n,(Dendrophryniscus_minutus_532,((Bufo_guttatus_TJ2,Bufo_haematiticus_956)\n,((Wolterstorffina_parvipalmata_TJ110,(Werneria_mertensi_TJ114\n,(Nectophryne_afra_TJ124,Nectophryne_batesi_958))),((Bufo_asper_935\n,Pedostibes_hosei_953),((((Ansonia_longidigitata_TJ106,Ansonia_muelleri)\n,(Didynamipus_sjostedti,Nectophrynoides_tornieri_TJ60)),((Pelophryne_brevipes\n,(Bufo_margaritifer,Rhamphophryne_festae)),(Bufo_celebensis\n,(Bufo_galeatus_TJ20,(Bufo_biporcatus,Bufo_divergens_936)))))\n,((Bufo_viridis_1063,(Bufo_melanostictus_TJ10,(Bufo_lemur_1058\n,Schismaderma_carens_TJ73))),((Bufo_bufo,(Bufo_andrewsi_1016\n,Torrentophryne_aspinia)),(((Capensibufo_rosei,Capensibufo_tradouwi)\n,((Bufo_angusticeps,Stephopaedes_anotis),(Bufo_brauni_TJ63\n,(Bufo_tuberosus_TJ127,((Bufo_latifrons_TJ108,Bufo_maculatus_TJ34)\n,(Bufo_camerunensis_TJ121,(Bufo_gutturalis_TJ84,Bufo_regularis_952)))))))\n,((Bufo_boreas_967,(Bufo_punctatus_949,(Bufo_quercicus_940,(Bufo_cognatus_946\n,(Bufo_terrestris_945,Bufo_woodhousii_974))))),(((Bufo_alvarius_1054\n,Bufo_coniferus_955),(Bufo_mazatlanensis,Bufo_nebulifer))\n,(Bufo_variegatus_951,((Bufo_granulosus_TJ1,Bufo_spinulosus_433)\n,(Bufo_amboroensis_TJ32,(Bufo_arenarum_567,(Bufo_marinus_523\n,Bufo_paracnemis_564))))))))))))))))))))))))))))))))))))));\n(Latimeria_chalumnae_1114,(((Didelphis_marsupialis_1092\n,Gazella_thomsoni_1093),((Alligator_sinensis_1090,Iguana_iguana_1001)\n,(Chelydra_serpentina_1091,Pelomedusa_subrufa_1051))),(((Epicrionops_sp_917\n,Rhinatrema_bivittatum_TJ29),((Ichthyophis_sp_TJ102\n,(Ichthyophis_peninsularis_878,Uraeotyphlus_narayani_882))\n,((Boulengerula_uluguruensis_879,Herpele_squalostoma_TJ122)\n,((Caecilia_tentaculata_TJ52,Typhlonectes_natans_877)\n,((Crotaphatrema_tchabalmbaboensis_TJ118,Scolecomorphus_vittatus_TJ104)\n,((Geotrypetes_seraphini_TJ103,(Dermophis_oaxacae_TJ99\n,Schistometopum_gregorii_881)),(Gegeneophis_ramaswamii\n,(Hypogeophis_rostratus_918,Siphonops_hardyi_880))))))))\n,((((Batrachuperus_pinchoni_TJ105,Ranodon_sibiricus)\n,(Cryptobranchus_alleganiensis_1050,(Andrias_davidianus\n,Andrias_japonicus_1059))),((((Necturus_alabamensis_938\n,Necturus_maculosus_TJ6),(Pseudobranchus_striatus_969,(Siren_intermedia\n,Siren_lacertina_968))),(((Dicamptodon_aterrimus_909\n,Dicamptodon_tenebrosus_1048),(Ambystoma_cingulatum_970\n,(Ambystoma_mexicanum_996,Ambystoma_tigrinum_TJ53)))\n,(Salamandra_salamandra_TJ88,((Pleurodeles_waltl_TJ91\n,Tylototriton_shanjing_TJ4),((Notophthalmus_viridiscens_TJ7,Taricha_sp_TJ90)\n,((Pachytriton_brevipes_TJ92,Paramesotriton_sp_TJ76),(Neurergus_crocatus\n,(Euproctus_asper,Triturus_sp_TJ89)))))))),(Rhyacotriton_cascadae_900\n,(Amphiuma_tridactylum_910,((Plethodon_dunni_1049,((Ensatina_eschscholtzii\n,Plethodon_jordani_915),(Aneides_hardii,((Desmognathus_quadramaculatus_1040\n,Desmognathus_wrighti),(Phaeognathus_hubrichti\n,(Hydromantes_platycephalus_1013,Speleomantes_italicus))))))\n,((Batrachoseps_attenuatus,Batrachoseps_wrightorum)\n,(Hemidactylum_scutatum_911,((Eurycea_wilderae_1041\n,Gyrinophilus_porphyriticus_1042),((Nototriton_abscondens,(Oedipina_uniformis\n,(Cryptotriton_alvarezdeltoroi,Dendrotriton_rabbi))),(Thorius_sp_TJ100\n,((Bolitoglossa_rufescens_TJ101,Parvimolge_townsendi),(Ixalotriton_niger\n,(Lineatriton_lineolus,Pseudoeurycea_conanti_TJ98)))))))))))))\n,((Ascaphus_truei_907,(Leiopelma_archeyi_998,Leiopelma_hochstetteri_999))\n,((Rhinophrynus_dorsalis_899,(Hymenochirus_boettgeri,((Pipa_carvalhoi_1038\n,Pipa_pipa_457),(Silurana_tropicalis_TJ128,(Xenopus_gilli_TJ9,Xenopus_laevis)\n)))),(((Alytes_obstetricans_902,(Discoglossus_galganoi_1029\n,Discoglossus_pictus_TJ83)),(Bombina_microdeladigitora_TJ54\n,(Bombina_orientalis_TJ80,(Bombina_bombina_1035,Bombina_variegata_1034))))\n,(((Pelodytes_puntatus_901,(Spea_hammondii_966,(Scaphiopus_couchii_937\n,Scaphiopus_holbrooki_943))),((Pelobates_cultripes,Pelobates_fuscus_903)\n,((Leptolalax_pelodytoides_TJ25,(Leptobrachium_chapaense_450\n,Leptobrachium_hasselti_1022)),(Brachytarsophrys_feae,((Xenophrys_major\n,Xenophrys_major_TJ19),(Megophrys_nasuta_TJ107,(Ophryophryne_microstoma_TJ36\n,Ophryophryne_poilani_TJ21))))))),((Heleophryne_purcelli_633\n,Heleophryne_regis_906),((((Kalophrynus_pleurostigma_933\n,(Synapturanus_mirandaribeiroi_530,((Micryletta_inornata\n,Phrynomantis_bifasciatus_941),((((Hoplophryne_rogersi_TJ68\n,Ramanella_obscura),((Anodonthyla_montana,Platypelis_sp_TJ58)\n,(Plethodontohyla_sp_TJ56,Stumpffia_sp_TJ59))),((Ctenophryne_geayei_TJ27\n,Nelsonophryne_aequatorialis),(Dasypops_schirchi_888\n,(Hamptophryne_boliviana_TJ86,(Elachistocleis_ovalis_TJ51\n,(Dermatonotus_muelleri_1185,(Gastrophryne_elegans_TJ74\n,Gastrophryne_olivacea_1053))))))),((Scaphiophryne_marmorata_TJ57\n,(Kaloula_pulchra_TJ41,(Chaperina_fusca_932,(Calluella_guttulata_931\n,(Microhyla_heymonsi_TJ26,Microhyla_sp_TJ70))))),(Dyscophus_guineti_TJ82\n,((Choerophryne_sp_991,Cophixalus_sphagnicola_990),((Genyophryne_thomsoni_993\n,(Copiula_sp_992,Sphenophryne_sp_989)),(Liophryne_rhododactyla_983\n,(Aphantophryne_pansa_980,(Callulops_slateri,Oreophryne_brachypus_979))))))))\n))),((Hemisus_marmoratus_TJ78,(Breviceps_mossambicus_942\n,(Probreviceps_macrodactylus_TJ69,(Callulina_kisiwamsitu_TJ77\n,Callulina_kreffti)))),(((Acanthixalus_spinosus,(Kassina_senegalensis_TJ85\n,Phlyctimantis_leonardi_TJ119)),(Opisthothylax_immaculatus_962\n,(((Afrixalus_fornasinii_TJ44,Afrixalus_pygmaeus_1019)\n,(Tachycnemis_seychellensis_TJ95,(Heterixalus_sp_TJ93,Heterixalus_tricolor)))\n,(Cryptothylax_gresshoffi_959,((Alexteroon_obstetricans_960\n,Alexteroon_obstetricans_TJ109),(Hyperolius_tuberilinguis_TJ43\n,(Hyperolius_alticola_1011,(Hyperolius_punticulatus_TJ35\n,Nesionixalus_thomensis_1017)))))))),((Leptopelis_argenteus_1012\n,(Leptopelis_bocagei_TJ67,(Leptopelis_sp_950,Leptopelis_vermiculatus_1026)))\n,((Leptodactylodon_bicolor_TJ129,(Nyctibates_corrugatus_TJ126\n,(Astylosternus_schiotzi_TJ116,Trichobatrachus_robustus_TJ111)))\n,(Scotobleps_gabonicus_TJ130,((Cardioglossa_gratiosa_964\n,Cardioglossa_leucomystax_845),((Schoutedenella_sylvatica_844\n,Schoutedenella_taeniata_1018),((Arthroleptis_tanneri_TJ75\n,Arthroleptis_variabilis_847),(Schoutedenella_schubotzi_1021\n,Schoutedenella_xenodactyloides_TJ79))))))))))\n,((Ptychadena_mascareniensis_181,(Ptychadena_anchietae\n,Ptychadena_cooperi_588)),((Ingerana_baluensis_929,(Discodeles_guppyi_984\n,(Ceratobatrachus_guentheri_982,(Batrachylodes_vertebralis_994\n,(Platymantis_pelewensis_896,Platymantis_weberi_981))))),((Micrixalus_fuscus\n,Micrixalus_kottigeharensis),((((Phrynobatrachus_dendrobates_1015\n,Phrynodon_sandersoni_848),((Dimorphognathus_africanus_963\n,(Phrynobatrachus_auritus_849,Phrynobatrachus_natalensis_TJ61))\n,(Phrynobatrachus_calcaratus_1024,(Phrynobatrachus_dispar_1009\n,Phrynobatrachus_mababiensis_TJ72)))),(((Conraua_goliath_919\n,Conraua_robusta_TJ113),((Indirana_sp1_FB2000a,Indirana_sp2_FB2000b)\n,(Arthroleptides_sp_TJ62,(Petropedetes_palmipes_841,(Petropedetes_newtoni_965\n,(Petropedetes_cameronensis_843,Petropedetes_parkeri))))))\n,((Pyxicephalus_edulis_944,(Aubria_subsigillata_961\n,Aubria_subsigillata_TJ117)),(Tomopterna_delalandii_TJ5\n,((Arthroleptella_bicolor_591,Natalobatrachus_bonebergi)\n,((Afrana_fuscigula_590,(Afrana_angolensis_1014,Amietia_vertebralis_TJ45))\n,(Strongylopus_grayii_589,(Anhydrophryne_rattrayi,Cacosternum_platys_1045))))\n)))),(((Micrixalus_borealis_1020,(Occidozyga_baluensis_930\n,(Occidozyga_laevis_TJ12,Occidozyga_lima_1010))),((Limnonectes_kuhlii_TJ14\n,(Limnonectes_grunniens_986,(Limnonectes_blythi_TJ22,(Taylorana_limborgi\n,(Limnonectes_acanthi,(Limnonectes_heinrichi,Limnonectes_visayanus))))))\n,((Paa_verrucospinosa_TJ23,Quasipaa_exilispinosa_1030),(Nanorana_pleskei\n,((Fejervarya_cancrivorus,Fejervarya_limnocharis_TJ15)\n,((Sphaerotheca_breviceps_893,Sphaerotheca_pluvialis)\n,((Fejervarya_kirtisinghei,Fejervarya_syhadrensis),(Nannophrys_ceylonensis\n,(Euphlyctis_cyanophlyctis,(Hoplobatrachus_occipitalis_513\n,Hoplobatrachus_rugulosus_928)))))))))),((((Boophis_albilabris_185\n,Boophis_tephraeomystax_182),((Aglyptodactylus_madagascariensis_505\n,Laliostoma_labrosum_508),((Mantella_aurantiaca_238,Mantella_nigricans_204)\n,(Mantidactylus_cf_femoralis_187,Mantidactylus_peraccae_272))))\n,(Buergeria_japonica_502,(Philautus_gracilipes_446\n,((Chirixalus_eiffingeri_912,Chirixalus_idiooticus_500),(((Nyctixalus_905\n,Nyctixalus_pictus_920),(Philautus_rhododiscus_TJ37,Theloderma_corticale_445)\n),((Rhacophorus_annamensis_441,(Rhacophorus_bipunctatus_440\n,(Rhacophorus_calcaneus_TJ24,Rhacophorus_orlovi_443))),((Polypedates_cruciger\n,Polypedates_leucomystax_442),(Chirixalus_vittatus_921,(Chirixalus_doriae_922\n,Chiromantis_xerampelina_TJ42))))))))),((Lankanectes_corrugatus\n,(Nyctibatrachus_cf_aliciae,Nyctibatrachus_major)),(Staurois_tuberlinguis_927\n,((Sylvirana_guentheri_1052,(Hylarana_erythraea_925\n,Hylarana_taipehensis_TJ40)),(((Chalcorana_chalconota_926\n,(Amnirana_albilabris_TJ131,Amnirana_galamensis_512))\n,((Sylvirana_maosonensis_TJ18,Sylvirana_nigrovittata_TJ16)\n,(Sylvirana_temporalis,(Papurana_daemeli_985,Tylerana_arfaki_987))))\n,((Clinotarsus_curtipes,Meristogenys_orphnocnemis_934),(Glandirana_minima\n,((Amolops_hongkongensis,(Pelophylax_nigromaculata_924,Pelophylax_ridibunda))\n,(((Nidirana_adenopleura_908,Nidirana_chapaensis_TJ13)\n,((Amolops_chapaensis_TJ17,Odorrana_grahami_1025),(Huia_nasica_TJ11\n,Odorrana_livida_TJ38))),(((Amerana_mucosa_976,Aurorana_aurora_975)\n,(Pseudorana_johnsi_997,(Rana_japonica_923,(Pseudoamalops_sauteri_914\n,Rana_temporaria_916)))),((Aquarana_grylio_972,(Aquarana_heckscheri_977\n,(Aquarana_catesbeiana_1044,Aquarana_clamitans_971))),(Rana_sylvatica_TJ33\n,((Lithobates_palmipes_TJ28,(Sierrana_maculata_1076\n,Trypheropsis_warszewitschii_1043)),(Pantherana_capito_973\n,((Pantherana_chiricahuensis_1055,Pantherana_pipiens_913)\n,(Pantherana_berlandieri,(Pantherana_forreri_895\n,Pantherana_yavapaiensis_1057))))))))))))))))))))))),(((Nasikabatrachidae_sp\n,Nasikabatrachus_sahyadrensis),(Nesomantis_thomasseti_TJ96\n,Sooglossus_sechellensis_TJ94)),(((Caudiverbera_caudiverbera_TJ87\n,Telmatobufo_venustus_1131),((Kyarranus_sphagnicolus_1084\n,(Adelotus_brevis_1073,(((Neobatrachus_pictus_1070,Neobatrachus_sudelli_673)\n,(Notaden_melanoscaphus_1068,(Lechriodus_fletcheri_1065\n,Limnodynastes_ornatus_1064))),(Heleioporus_australiacus_1079\n,(Limnodynastes_dumerilli_1067,((Limnodynastes_depressus_1080\n,Limnodynastes_peronii_1032),(Limnodynastes_salmini\n,Megistolotis_lignarius_1069))))))),((Mixophyes_carbinensis_1086\n,Rheobatrachus_silus_1061),(Taudactylus_acutirostris_1062\n,(((Bryobatrachus_nimbus_1074,Crinia_signifera_978),(Paracrinia_haswelli_1077\n,(Assa_darlingtoni_1066,Geocrinia_victoriana_1072)))\n,((Spicospina_flammocaerulea_1075,Uperoleia_laevigata_1003)\n,((Pseudophryne_bibroni_677,Pseudophryne_coriacea_1082)\n,(Myobatachus_gouldii_1081,(Arenophryne_sp_1155,Metacrinia_nichollsi_1071))))\n))))),(Hemiphractus_helioi_467,((((Eleutherodactylus_binotatus_884\n,Ischnocnema_sp_521),(Barycholos_ternetzi_887,(Brachycephalus_ephippium_883\n,Eleutherodactylus_juipoca_886))),((Craugastor_pluvicanorus_TJ31\n,(Euhyas_planirostris_898,(Syrrhophus_marnockii_894,Syrrhophus_nitidus_1087))\n),((Phrynopus_sp_KU_202652,Phrynopus_sp_TJ30),(Craugastor_bufoniformis_954\n,((Craugastor_alfredi_1089,Craugastor_augusti_1056),(Craugastor_rhodopis_1088\n,(Craugastor_punctariolus_957,Craugastor_ranoides_897)))))))\n,((Cryptobatrachus_sp,Stefania_evansi_417),((Flectonotus_sp_690\n,(Gastrotheca_cf_marsupiata_317,Gastrotheca_fissipes_825))\n,(((((Agalychnis_calcarifer_1006,Phyllomedusa_vaillanti_103)\n,(Agalychnis_callidryas_TJ71,Phasmahyla_guttata_687)),((Litoria_meiriana_675\n,(Litoria_freycineti_672,Litoria_inermis_995)),(Nyctimistes_pulchra_676\n,((Litoria_nannotis_1000,Nyctimystes_dayi_1002),((Cyclorana_australis_674\n,Litoria_aurea_543),(Litoria_genimaculata_1004,Litoria_lesueurii_988))))))\n,(((Sphaenorhynchus_lacteus_138,(Scinax_garbei_90,Scinax_ruber_16))\n,((Hyloscirtus_armata_318,Hyloscirtus_palmeri_504),(Hypsiboas_granosus_416\n,((Aplastodiscus_perviridis_4,Hypsiboas_albomarginata_140)\n,(Hypsiboas_boans_486,Hypsiboas_multifasciata_102)))))\n,(((Scarthyla_goinorum_86,(Lysapsus_laevis_629,Pseudis_paradoxa_704))\n,(Dendropsophus_minutus_35,(Dendropsophus_marmoratus_468\n,(Dendropsophus_nana_172,Dendropsophus_parviceps_80))))\n,((Phyllodytes_luteolus_823,((Osteocephalus_cf_taurinus_410\n,Osteopilus_septentrionalis_139),(Argenteohyla_siemersi_pederseni_292\n,(Trachycephalus_jordani_540,Trachycephalus_venulosus_94))))\n,((Ecnomiohyla_miliaria_639,(Duellmanohyla_rufioculis_211\n,Ptychohyla_leonhardschultzei_796)),(Charadrahyla_nephila_551\n,(((Exerodonta_chimalapa_549,Plectrohyla_guatemalensis_802)\n,(Acris_crepitans_604,(Pseudacris_crucifer_638,Pseudacris_triseriata_833)))\n,((Hyla_arborea_871,Isthmohyla_rivularis_210),((Hyla_cinerea_207\n,Tlalocohyla_picta_658),(Smilisca_phaeota_459,(Anotheca_spinosa_552\n,Triprion_petasatus_458))))))))))),(((Allophryne_ruthveni_837\n,(Hyalinobatrachium_fleischmanni_TJ97,(Centrolene_prosoblepon_827\n,(Centrolene_geckoideum,Cochranella_bejaranoi_311))))\n,((Pleurodema_brachyops_630,(Edalorhina_perezi_531,Physalaemus_cuvieri_TJ65))\n,(Pseudopaludicola_sp_650,((Paratelmatobius_sp_891,Scythrophrys_sawayae_892)\n,((Adenomera_hylaedactyla_529,Lithodytes_lineatus_632)\n,(Leptodactylus_fuscus_TJ50,(Leptodactylus_ocellatus_568\n,Vanzolinius_discodactylus_TJ81))))))),(((Telmatobius_simonsi_314\n,(Telmatobius_cf_jahuira_313,Telmatobius_sp_315))\n,((Atelognatus_patagonicus_656,Batrachyla_leptopus_655)\n,(Lepidobatrachus_laevis_939,(Ceratophrys_cranwelli_539\n,Chacophrys_pierottii_1184)))),(((Crossodactylus_schmidti_149\n,(Hylodes_phyllodes_889,Megaelosia_goeldii_611))\n,((Cycloramphus_boraceiensis_890,Rhinoderma_darwinii_1115)\n,((Hylorina_sylvatica,(Alsodes_gargola_653,Eupsophus_calcaratus_657))\n,(Limnomedusa_macroglossa_681,(Proceratophrys_avelinoi_306\n,(Odontophrynus_achalensis_869,Odontophrynus_americanus_309))))))\n,((Thoropa_miliaris_1186,((Mannophryne_trinitatis_609\n,(Allobates_femoralis_394,Colostethus_undulatus_332))\n,((Ameerega_boulengeri_280,Phobobates_silverstonei_646)\n,(Phyllobates_lugubris_329,(Dendrobates_auratus_327,Minyobates_claudiae_324))\n))),(Melanophryniscus_klappenbachi_217,((Osornophryne_guacamayo\n,(Atelopus_zeteki_1039,(Atelopus_flavescens_1046,Atelopus_spumarius_1047)))\n,(Dendrophryniscus_minutus_532,((Bufo_guttatus_TJ2,Bufo_haematiticus_956)\n,((Wolterstorffina_parvipalmata_TJ110,(Werneria_mertensi_TJ114\n,(Nectophryne_afra_TJ124,Nectophryne_batesi_958))),((Bufo_asper_935\n,Pedostibes_hosei_953),((((Ansonia_longidigitata_TJ106,Ansonia_muelleri)\n,(Didynamipus_sjostedti,Nectophrynoides_tornieri_TJ60)),((Pelophryne_brevipes\n,(Bufo_margaritifer,Rhamphophryne_festae)),(Bufo_celebensis\n,(Bufo_galeatus_TJ20,(Bufo_biporcatus,Bufo_divergens_936)))))\n,((Bufo_viridis_1063,(Bufo_melanostictus_TJ10,(Bufo_lemur_1058\n,Schismaderma_carens_TJ73))),((Bufo_bufo,(Bufo_andrewsi_1016\n,Torrentophryne_aspinia)),(((Capensibufo_rosei,Capensibufo_tradouwi)\n,((Bufo_angusticeps,Stephopaedes_anotis),(Bufo_brauni_TJ63\n,(Bufo_tuberosus_TJ127,((Bufo_latifrons_TJ108,Bufo_maculatus_TJ34)\n,(Bufo_camerunensis_TJ121,(Bufo_gutturalis_TJ84,Bufo_regularis_952)))))))\n,((Bufo_boreas_967,(Bufo_punctatus_949,(Bufo_quercicus_940,(Bufo_cognatus_946\n,(Bufo_terrestris_945,Bufo_woodhousii_974))))),(((Bufo_alvarius_1054\n,Bufo_coniferus_955),(Bufo_mazatlanensis,Bufo_nebulifer))\n,(Bufo_variegatus_951,((Bufo_granulosus_TJ1,Bufo_spinulosus_433)\n,(Bufo_amboroensis_TJ32,(Bufo_arenarum_567,(Bufo_marinus_523\n,Bufo_paracnemis_564))))))))))))))))))))))))))))))))))))))\n\n"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Cranial morphology and affinities of Microbrachis, and a reappraisal of the phylogeny and lifestyle of the first amphibians.",
+                "year": 2004,
+                "authors": [
+                    {
+                        "name": "G. Vallin",
+                        "alternate": [
+                            "Vallin, G."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Vallin"
+                    },
+                    {
+                        "name": "M. Laurin",
+                        "alternate": [
+                            "Laurin, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Laurin"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "6",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1671/5.1"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Vertebrate Paleontology",
+                    "volume": "24",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Initial diversification of living amphibians predated the breakup of Pangaea.",
+                "year": 2005,
+                "authors": [
+                    {
+                        "name": "D. San Mauro",
+                        "alternate": [
+                            "San Mauro, D."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "San Mauro"
+                    },
+                    {
+                        "name": "M. Vences",
+                        "alternate": [
+                            "Vences, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Vences"
+                    },
+                    {
+                        "name": "M. Alcobendas",
+                        "alternate": [
+                            "Alcobendas, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Alcobendas"
+                    },
+                    {
+                        "name": "R. Zardoya",
+                        "alternate": [
+                            "Zardoya, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Zardoya"
+                    },
+                    {
+                        "name": "A. Meyer",
+                        "alternate": [
+                            "Meyer, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Meyer"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1086/429523"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "American Society of Naturalists",
+                    "volume": "165",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Global patterns of diversification in the history of modern amphibians.",
+                "year": 2007,
+                "authors": [
+                    {
+                        "name": "K. Roelants",
+                        "alternate": [
+                            "Roelants, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Roelants"
+                    },
+                    {
+                        "name": "D. J. Gower",
+                        "alternate": [
+                            "Gower, D. J."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Gower",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "M. Wilkinson",
+                        "alternate": [
+                            "Wilkinson, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Wilkinson"
+                    },
+                    {
+                        "name": "S. P. Loader",
+                        "alternate": [
+                            "Loader, S. P."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Loader",
+                        "middlename": "P."
+                    },
+                    {
+                        "name": "S. D. Biju",
+                        "alternate": [
+                            "Biju, S. D."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Biju",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "K. Guillaume",
+                        "alternate": [
+                            "Guillaume, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Guillaume"
+                    },
+                    {
+                        "name": "L. Moriau",
+                        "alternate": [
+                            "Moriau, L."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Moriau"
+                    },
+                    {
+                        "name": "F. Bossuyt",
+                        "alternate": [
+                            "Bossuyt, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Bossuyt"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1073/pnas.0608378104"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Proceedings of the National Academy of Sciences",
+                    "volume": "104",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Cranial morphology and affinities of Microbrachis, and a reappraisal of the phylogeny and lifestyle of the first amphibians.",
+                "year": 2004,
+                "authors": [
+                    {
+                        "name": "G. Vallin",
+                        "alternate": [
+                            "Vallin, G."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Vallin"
+                    },
+                    {
+                        "name": "M. Laurin",
+                        "alternate": [
+                            "Laurin, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Laurin"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "6",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "J. Vertebr. Paleontol.",
+                    "volume": "24",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 62,
+            "label": "Lissamphibia",
+            "dwc:scientificNameAuthorship": "Laurin, M., Arntzen, J. W., Báez, A. M., Bauer, A. M., Damiani, R., Evans, S. E., Kupfer, A., Larson, A., Marjanović, D., Müller, H., Olsson, L., Rage, J. C., Walsh, D.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Generelle Morphologie der Organismen. Allgemeine Grundzüge der organischen Formen-Wissenschaft, mechanisch begründet durch die von Charles Darwin reformirte Descendenz-Theorie.",
+                    "year": 1866,
+                    "authors": [
+                        {
+                            "name": "E. Haeckel",
+                            "alternate": [
+                                "Haeckel, E."
+                            ],
+                            "firstname": "E.",
+                            "lastname": "Haeckel"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Georg Reimer",
+                    "city": "Berlin",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing Caecilia tentaculata Linnaeus 1758, Andrias japonicus (Temminck 1836), Siren lacertina Österdam 1766, and Rana temporaria Linnaeus 1758 but not Homo sapiens Linnaeus 1758 or Eryops megacephalus Cope 1877 or Diplocaulus salamandroides Cope 1877.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Caecilia tentaculata 1758",
+                        "nameComplete": "Caecilia tentaculata"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Andrias japonicus 1836",
+                        "nameComplete": "Andrias japonicus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Siren lacertina 1766",
+                        "nameComplete": "Siren lacertina"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Rana temporaria 1758",
+                        "nameComplete": "Rana temporaria"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Homo sapiens 1758",
+                        "nameComplete": "Homo sapiens"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Eryops megacephalus 1877",
+                        "nameComplete": "Eryops megacephalus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Diplocaulus salamandroides 1877",
+                        "nameComplete": "Diplocaulus salamandroides"
+                    }
+                }
+            ]
+        }
+    ]
+}

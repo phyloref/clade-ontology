@@ -1,0 +1,544 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Lophotrochozoa internal phylogeny: new insights from an up-to-date analysis of nuclear ribosomal genes.",
+                "year": 2009,
+                "authors": [
+                    {
+                        "name": "J. Paps",
+                        "alternate": [
+                            "Paps, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Paps"
+                    },
+                    {
+                        "name": "J. Baguna",
+                        "alternate": [
+                            "Baguna, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Baguna"
+                    },
+                    {
+                        "name": "M. Riutort",
+                        "alternate": [
+                            "Riutort, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Riutort"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1098/rspb.2008.1574"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Proceedings of the Royal Society",
+                    "volume": "B276",
+                    "identifier": []
+                }
+            },
+            "newick": "(CNIDARIA3:0.03485041731313285457,(((ACOELA3:0.29314582156593421702,(ACOELA1:0.07298017587390623340,ACOELA2:0.19329053942142207512)100:0.31884546063856994413)100:0.17189908285049262937,((((UROCHORDAT:0.11222169070905722854,CEPHALOCHO:0.10571060162124165660)92:0.02365779241974874311,((VERTEBRAT1:0.04504888806708896160,(VERTEBRAT6:0.02255026531519822852,((VERTEBRAT2:0.01789679788423719983,((VERTEBRAT4:0.01230467461265537070,VERTEBRAT7:0.01840582942304114580)100:0.01828751279358442616,VERTEBRAT3:0.01942977022974452100)67:0.00560367554474193973)73:0.01043642383073981571,VERTEBRAT5:0.03865570205184921948)72:0.00850257983936249413)93:0.01938986530218691356)100:0.11936433529475155846,(((ECHINODER3:0.02823513923679492332,ECHINODER1:0.02159572172556747938)100:0.01851825891722209613,((ECHINODER2:0.02689959755664909219,ECHINODER4:0.03132002412535660196)100:0.04304113930601492777,(ECHINODER5:0.04321430494413498746,ECHINODER6:0.01229116400499781145)100:0.04872227088108479348)100:0.03220059131550492837)100:0.04478692912468491133,(HEMICHORD4:0.04419096779892590227,(HEMICHORD3:0.10503980346275894331,(HEMICHORD2:0.02435899295645355470,HEMICHORD1:0.07131865566062331463)100:0.02626717996498933658)94:0.01867267711217268644)100:0.03818840082970399730)100:0.02764024595518375579)65:0.01382951634455335463)42:0.00790180109829068979,(((GNATHOSTO2:0.24801161422611747720,(GNATHOSTO1:0.09526446397183489789,GNATHOSTO3:0.04843715288917615353)100:0.14187881900090756893)99:0.08154075218098101596,((((((NEMERTEA3:0.01081258972652614225,NEMERTEA1:0.07064630927932100124)95:0.03618615833393917097,(NEMERTEA4:0.08269976447642259088,NEMERTEA2:0.02109443650437003298)54:0.00777181745955227068)100:0.04118466662070602302,((((SIPUNCULI1:0.03117380458282935710,SIPUNCULI2:0.09508371309915428227)100:0.06185956395022507159,((ANNELIDA1:0.10432075825053600815,(ANNELIDA3:0.03569830625309818734,ANNELIDA2:0.06733468971698702843)94:0.01158599729083397735)57:0.00949728659644493052,ANNELIDA4:0.07986022654829059986)100:0.00953224419124596573)77:0.00997881553143236712,(ECHIURA1:0.02310351995892623994,(ECHIURA2:0.00000146355466591663,ECHIURA3:0.00109204531229296496)100:0.01480600573686330530)100:0.05661373844749507944)49:0.00668297593248459113,(((MOLLUSCA2:0.00785592157697048883,MOLLUSCA5:0.00622537082931532305)100:0.03450812360187676536,((MOLLUSCA4:0.04204131518286974983,MOLLUSCA1:0.02190215989785900333)98:0.01817039897859933431,MOLLUSCA3:0.04222643615711110104)90:0.00652270227705125522)80:0.01149046808197073423,((PHORONIDA2:0.00639398864364102825,PHORONIDA1:0.00743426560738617414)100:0.03306791648102273828,(BRACHIOPO1:0.03318605680895732324,(BRACHIOPO3:0.00587473710415867701,BRACHIOPO2:0.02190911914731857174)100:0.01954161727133456317)100:0.00897511041543298457)72:0.00549748527802457199)24:0.00160244799948583883)32:0.00282469147456285326)65:0.00814900967425382164,(((RHABDITOP1:0.09037711784182392294,((RHABDITOP6:0.03473496907190831706,((RHABDITOP5:0.02241529972757385844,RHABDITOP2:0.08228448309820698969)73:0.01149445842004085533,(RHABDITOP4:0.08434433438043488496,(RHABDITOP7:0.13758704357141213204,RHABDITOP3:0.11275032648029852111)96:0.02750704029526044453)61:0.01143509850849014006)98:0.01718109402593509874)97:0.04838905879086345674,RHABDITOP8:0.10286022646999415375)97:0.01375725402291094399)100:0.03615555885589127882,(CATENULID2:0.10737060636470334429,CATENULID1:0.12607722576100427458)100:0.07709151163952271402)94:0.02228438347555758425,(BRYOZOA2:0.23010907154919718609,(CYCLIOPHOR:0.15196455188709706574,ENTOPROCTA:0.07518254242193485315)92:0.02502979107589365163)19:0.00845473593543189308)15:0.01203766974852530855)9:0.01475477200848946541,(GASTROTR_7:0.18342351692456523859,(((ROTIFERA4:0.02500489553726713970,((ROTIFERA1:0.02304613328465897337,(ROTIFERA3:0.01724612800786102032,ROTIFERA2:0.00203993176736236900)51:0.00243463739359317706)55:0.00550083926034951841,ROTIFERA5:0.05582018530708602461)75:0.00542871648854899129)100:0.04706113240003476084,(ACANTOCEP1:0.19839370949217843831,(ACANTOCEP2:0.01965077651370617309,ACANTOCEP3:0.01497187065272985972)100:0.05784570425283376560)100:0.31649852096430358683)79:0.02295133323099934550,MICROGNATH:0.14375296196459272369)77:0.01543646692428126896)26:0.01968871164692906697)6:0.00557116874526912813,(GASTROTR_2:0.14208299293989404277,GASTROTR10:0.19521707656074943626)63:0.03230913501570684826)56:0.00777980029020135938)53:0.00529047746307348063,((((NEMATODA2:0.07729505439274664269,NEMATODA3:0.17583243191956191009)97:0.06081162317538980899,NEMATODA1:0.13225100765346348153)100:0.08013840111408283839,(TARDIGRADA:0.19172076325277900843,(((ART_CHE1:0.03925118496551580766,ART_CHE2:0.03445177605222853046)98:0.01450736946580428663,((ART_MYR3:0.10023113805073775862,(ART_MYR2:0.02384041667838460513,ART_MYR1:0.01926192867830449004)100:0.02483466013374842699)88:0.01482619426712365567,(ART_PYC2:0.01440762832741061643,ART_PYC1:0.02119179861290185554)100:0.06117194980260585307)62:0.00427075825363303074)72:0.01228620963085595534,(ART_CRU1:0.14449523860816393395,((ART_HEX1:0.06362411866368457292,ART_HEX2:0.05003244300406808204)100:0.05003941083638942244,ART_CRU2:0.14697816935299021224)86:0.02285651876318157277)100:0.05120340554696412722)78:0.01086249664413102382)85:0.02145437825056628611)24:0.01188753545434578437,(((CHAETOGNA2:0.01610993866840945699,CHAETOGNA1:0.00688145049605203875)100:0.39823782343572083908,(KINORHYNCH:0.12767198130429022185,(PRIAPULID2:0.02844528607296753497,PRIAPULID1:0.02777266546778283871)99:0.01346451663258079086)91:0.01645236208985336249)36:0.00486127232392563353,(NEMATOMOR2:0.01522384947649447519,(NEMATOMOR3:0.01099266135995608656,NEMATOMOR1:0.02136648084738891618)82:0.00597798864514550478)100:0.16530210335056272353)15:0.00410450391243630600)44:0.01093432137893970632)64:0.02901602286833818850)50:0.03373407207966443166,NEMERTODER:0.27852710923013024313)99:0.05463941369065397624)100:0.14779941380285313568,(CNIDARIA1:0.02896964689834372053,(CNIDARIA6:0.06543885455286269082,(CNIDARIA2:0.02775869143545847684,(CNIDARIA4:0.03180937488238239075,CNIDARIA5:0.05337029359088757419)96:0.01367076996997505269)95:0.01098132255470798437)98:0.01812908976864149521)97:0.01319450482902373434)86:0.01504828141199161633,CNIDARIA7:0.04244573034795726812);\n"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Animal phylogeny and the ancestry of bilaterians: inferences from morphology and 18S rDNA gene sequences.",
+                "year": 2001,
+                "authors": [
+                    {
+                        "name": "K. J. Peterson",
+                        "alternate": [
+                            "Peterson, K. J."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Peterson",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "D. J. Eernisse",
+                        "alternate": [
+                            "Eernisse, D. J."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Eernisse",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2 and 3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1046/j.1525-142x.2001.003003170"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Evolution and Development",
+                    "volume": "3",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "The new view of animal phylogeny.",
+                "year": 2004,
+                "authors": [
+                    {
+                        "name": "K. M. Halanych",
+                        "alternate": [
+                            "Halanych, K. M."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Halanych",
+                        "middlename": "M."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1146/annurev.ecolsys.35.112202.130124"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Annual Review of Ecology, Evolution, and Systematics",
+                    "volume": "35",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Assessing the root of bilaterian animals with scalable phylogenomic methods.",
+                "year": 2009,
+                "authors": [
+                    {
+                        "name": "A. Hejnol",
+                        "alternate": [
+                            "Hejnol, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Hejnol"
+                    },
+                    {
+                        "name": "M. Obst",
+                        "alternate": [
+                            "Obst, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Obst"
+                    },
+                    {
+                        "name": "A. Stamatakis",
+                        "alternate": [
+                            "Stamatakis, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Stamatakis"
+                    },
+                    {
+                        "name": "M. Ott",
+                        "alternate": [
+                            "Ott, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Ott"
+                    },
+                    {
+                        "name": "G. W. Rouse",
+                        "alternate": [
+                            "Rouse, G. W."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Rouse",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "G. D. Edgecombe",
+                        "alternate": [
+                            "Edgecombe, G. D."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Edgecombe",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "P. Martinez",
+                        "alternate": [
+                            "Martinez, P."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Martinez"
+                    },
+                    {
+                        "name": "J. Baguna",
+                        "alternate": [
+                            "Baguna, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Baguna"
+                    },
+                    {
+                        "name": "X. Bailly",
+                        "alternate": [
+                            "Bailly, X."
+                        ],
+                        "firstname": "X.",
+                        "lastname": "Bailly"
+                    },
+                    {
+                        "name": "U. Jondelius",
+                        "alternate": [
+                            "Jondelius, U."
+                        ],
+                        "firstname": "U.",
+                        "lastname": "Jondelius"
+                    },
+                    {
+                        "name": "M. Wiens",
+                        "alternate": [
+                            "Wiens, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Wiens"
+                    },
+                    {
+                        "name": "W. E. G. Muller",
+                        "alternate": [
+                            "Muller, W. E. G."
+                        ],
+                        "firstname": "W. E.",
+                        "lastname": "Muller",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "E. Seaver",
+                        "alternate": [
+                            "Seaver, E."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Seaver"
+                    },
+                    {
+                        "name": "W. C. Wheeler",
+                        "alternate": [
+                            "Wheeler, W. C."
+                        ],
+                        "firstname": "W.",
+                        "lastname": "Wheeler",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "M. Q. Martindale",
+                        "alternate": [
+                            "Martindale, M. Q."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Martindale",
+                        "middlename": "Q."
+                    },
+                    {
+                        "name": "G. Giribet",
+                        "alternate": [
+                            "Giribet, G."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Giribet"
+                    },
+                    {
+                        "name": "C. W. Dunn",
+                        "alternate": [
+                            "Dunn, C. W."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Dunn",
+                        "middlename": "W."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1098/rspb.2009.0896"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Proceedings of the Royal Society",
+                    "volume": "276",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "The genome of the ctenophore Mnemiopsis leidyi and its implications for cell type evolution.",
+                "year": 2013,
+                "authors": [
+                    {
+                        "name": "J. F. Ryan",
+                        "alternate": [
+                            "Ryan, J. F."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Ryan",
+                        "middlename": "F."
+                    },
+                    {
+                        "name": "K. Pang",
+                        "alternate": [
+                            "Pang, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Pang"
+                    },
+                    {
+                        "name": "C. E. Schnitzler",
+                        "alternate": [
+                            "Schnitzler, C. E."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Schnitzler",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "A. D. Nguyen",
+                        "alternate": [
+                            "Nguyen, A. D."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Nguyen",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "R. T. Moreland",
+                        "alternate": [
+                            "Moreland, R. T."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Moreland",
+                        "middlename": "T."
+                    },
+                    {
+                        "name": "D. K. Simmons",
+                        "alternate": [
+                            "Simmons, D. K."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Simmons",
+                        "middlename": "K."
+                    },
+                    {
+                        "name": "B. J. Koch",
+                        "alternate": [
+                            "Koch, B. J."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Koch",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "W. R. Francis",
+                        "alternate": [
+                            "Francis, W. R."
+                        ],
+                        "firstname": "W.",
+                        "lastname": "Francis",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "P. Havlak",
+                        "alternate": [
+                            "Havlak, P."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Havlak"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Science",
+                    "volume": "342",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Error, signal, and the placement of Ctenophora sister to all other animals.",
+                "year": 2015,
+                "authors": [
+                    {
+                        "name": "N. V. Whelan",
+                        "alternate": [
+                            "Whelan, N. V."
+                        ],
+                        "firstname": "N.",
+                        "lastname": "Whelan",
+                        "middlename": "V."
+                    },
+                    {
+                        "name": "K. M. Kocot",
+                        "alternate": [
+                            "Kocot, K. M."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Kocot",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "L. L. Moroz",
+                        "alternate": [
+                            "Moroz, L. L."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Moroz",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "K. M. Halanych",
+                        "alternate": [
+                            "Halanych, K. M."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Halanych",
+                        "middlename": "M."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1073/pnas.1503453112"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Proceedings of the National Academy of Science U. S. A.",
+                    "volume": "112",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 188,
+            "label": "Bilateria",
+            "dwc:scientificNameAuthorship": "Lake, J. A., Garey, J. R., Servin, J. A., Halanych, K. M.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Lehrbuch der Zoologie 1.",
+                    "year": 1888,
+                    "authors": [
+                        {
+                            "name": "B. Hatschek",
+                            "alternate": [
+                                "Hatschek, B."
+                            ],
+                            "firstname": "B.",
+                            "lastname": "Hatschek"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Gustav Fischer",
+                    "city": "Jena",
+                    "pages": "1-114",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The largest crown clade containing Strongylocentrotus purpuratus (Stimpson 1857) (Deuterostomia, Echinodermata), Drosophila melanogaster Meigen 1830 (Ecdysozoa, Arthropoda), Capitella teleta Blake, Grassle & Eckelbarger 2009 (Lophotrochozoa, Annelida), and Paratomella rubra Rieger & Ott 1971 (Acoelomorpha, Acoela), but not Hydra vulgaris Pallas 1766 (Cnidaria) and Pleurobrachia bachei A. Agassiz 1860 (Ctenophora).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Strongylocentrotus purpuratus 1857",
+                        "nameComplete": "Strongylocentrotus purpuratus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Drosophila melanogaster 1830",
+                        "nameComplete": "Drosophila melanogaster"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Capitella teleta 2009",
+                        "nameComplete": "Capitella teleta"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Paratomella rubra 1971",
+                        "nameComplete": "Paratomella rubra"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Pleurobrachia bachei 1860",
+                        "nameComplete": "Pleurobrachia bachei"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Hydra vulgaris 1766",
+                        "nameComplete": "Hydra vulgaris"
+                    }
+                }
+            ]
+        }
+    ]
+}

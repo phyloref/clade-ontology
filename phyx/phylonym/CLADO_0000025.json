@@ -1,0 +1,159 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Phylogenetic position of a whale-fall lancelet (Cephalochordata) inferred from whole mitochondrial genome sequences.",
+                "year": 2007,
+                "authors": [
+                    {
+                        "name": "T. Kon",
+                        "alternate": [
+                            "Kon, T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Kon"
+                    },
+                    {
+                        "name": "M. Nohara",
+                        "alternate": [
+                            "Nohara, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Nohara"
+                    },
+                    {
+                        "name": "Y. Yamanoue",
+                        "alternate": [
+                            "Yamanoue, Y."
+                        ],
+                        "firstname": "Y.",
+                        "lastname": "Yamanoue"
+                    },
+                    {
+                        "name": "Y. Fujiwara",
+                        "alternate": [
+                            "Fujiwara, Y."
+                        ],
+                        "firstname": "Y.",
+                        "lastname": "Fujiwara"
+                    },
+                    {
+                        "name": "M. Nishida",
+                        "alternate": [
+                            "Nishida, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Nishida"
+                    },
+                    {
+                        "name": "T. Nishikawa",
+                        "alternate": [
+                            "Nishikawa, T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Nishikawa"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1186/1471-2148-7-127"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "BMC Evolutionary Biology",
+                    "volume": "7",
+                    "identifier": []
+                }
+            },
+            "newick": "(Balanoglossus_carnosus, ((Scyliorhinus_canicula, Petromyzon_marinus),\n(\n(Asymmetron_inferum, Asymmetron_lucayanum), \n(Epigonichthys_maldivensis, (Branchiostoma_belcheri, (Branchiostoma_lanceolatum, Branchiostoma_floridae))))))\n"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 25,
+            "label": "Cephalochordata",
+            "dwc:scientificNameAuthorship": "Cameron, C. B.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "On the archetype and homologies of the vertebrate skeleton.  Report of the British Association for the Advancement of Science",
+                    "year": 1846,
+                    "authors": [
+                        {
+                            "name": "R. Owen",
+                            "alternate": [
+                                "Owen, R."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Owen"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "city": "Southampton",
+                    "pages": "169-340",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The largest crown clade containing Branchiostoma lanceolatum Pallas 1744 but not Petromyzon marinus Linnaeus 1758 (Vertebrata) and Ciona intestinalis Linnaeus 1767 (Tunicata) and Strongylocentrotus purpuratus Stimpson 1857 (Echinodermata) and Ptychodera flava Eschscholtz 1825 (Hemichordata).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Branchiostoma lanceolatum Pallas, 1744",
+                        "nameComplete": "Branchiostoma lanceolatum"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Petromyzon marinus Linnaeus, 1758",
+                        "nameComplete": "Petromyzon marinus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Ciona intestinalis Linnaeus, 1767",
+                        "nameComplete": "Ciona intestinalis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Strongylocentrotus purpuratus Stimpson, 1857",
+                        "nameComplete": "Strongylocentrotus purpuratus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Ptychodera flava Eschscholtz, 1825",
+                        "nameComplete": "Ptychodera flava"
+                    }
+                }
+            ]
+        }
+    ]
+}

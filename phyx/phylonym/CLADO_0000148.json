@@ -1,0 +1,125 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Evidence for Gondwanan vicariance in an ancient clade of gecko lizards.",
+                "authors": [
+                    {
+                        "name": "T. Gamble",
+                        "alternate": [
+                            "Gamble, T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Gamble"
+                    },
+                    {
+                        "name": "A. M. Bauer",
+                        "alternate": [
+                            "Bauer, A. M."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Bauer",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "E. Greenbaum",
+                        "alternate": [
+                            "Greenbaum, E."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Greenbaum"
+                    },
+                    {
+                        "name": "T. R. Jackman",
+                        "alternate": [
+                            "Jackman, T. R."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Jackman",
+                        "middlename": "R."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.1365-2699.2007.01770"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Biogeography",
+                    "volume": "35",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 148,
+            "label": "Gekkota",
+            "dwc:scientificNameAuthorship": "Bauer, A. M.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Classification of the lizards.",
+                    "year": 1923,
+                    "authors": [
+                        {
+                            "name": "C. L. Camp",
+                            "alternate": [
+                                "Camp, C. L."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Camp",
+                            "middlename": "L."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": ". Bull. Amer. Mus. Nat. Hist.",
+                    "pages": "289-481",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Gekko (originally Lacerta) gecko Linnaeus 1758, Eublepharis (originally Cyrtodactylus) macularius Blyth 1854 [1855], and Pygopus (originally Cryptodelma) nigriceps Fischer 1882.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Gekko (originally Lacerta) gecko Linnaeus, 1758",
+                        "nameComplete": "Gekko (originally Lacerta) gecko"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Eublepharis (originally Cyrtodactylus) macularius Blyth, 1854",
+                        "nameComplete": "Eublepharis (originally Cyrtodactylus) macularius"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Pygopus (originally Cryptodelma) nigriceps Fischer, 1882",
+                        "nameComplete": "Pygopus (originally Cryptodelma) nigriceps"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

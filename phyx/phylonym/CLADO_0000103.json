@@ -1,0 +1,381 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Phylogeny and megasystematics of phagotrophic heterokonts (Kingdom Chromista).",
+                "year": 2006,
+                "authors": [
+                    {
+                        "name": "T. Cavalier-Smith",
+                        "alternate": [
+                            "Cavalier-Smith, T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Cavalier-Smith"
+                    },
+                    {
+                        "name": "E. E. Chao",
+                        "alternate": [
+                            "Chao, E. E."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Chao",
+                        "middlename": "E."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1007/s00239-004-0353-8"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Molecular Evolution",
+                    "volume": "62",
+                    "identifier": []
+                }
+            },
+            "newick": "(((((((((((((((Fucus_distinchus, Silvetia_babingtonii), \n((Sargassum_macroparpum, Coccophora_langsdorfii), Ectocarpus_siliculosus)),\n((((Zonaria_crenata, Distromium_decumbens), \n((Dictyopteris_punctata, Dictyota_dichotoma), Srypopodium_sp)), \nPadina_crassa), Lobospira_bicuspidata)), \n(Schizocladia_ischiensis, Phaeothamnion_confervicola)), \n\n(Vaucheria_bursata, (Heterococcus_caespitosus,\n(((Pleurochloris_meiringensis, Botrydiopsis_intercedens), \n(Heterothrix_debilis, (Tribonema_intermistuma, Botrydium_stoloniferum))),\nPsuedopleurochoris_antarctica, Mischococcus_sphaerocephalus)))), \n\n(Giraudyopsis_stellifera, Antarctosaccion_applanatum)), \n\n((\n(((Glossomastix_chrysoplasta, Phaeomanas_parva), Polypodochrysis_teissieri),\nPinguiochrysis_pyriformis), \n\n((((Pulvinaria_sp, Sarcinochrysis_marina), Aureoumbra_lagunensis), \n(Pelagomonas_calceolata, Aureococcus_anophagefferens)),\n\n((Florenciella_parvula, (Dictyocha_fibula, Dictyocha_speculum)),\n\n((Rhizochromulina_cf_marina, Ciliophrys_infusionum),\n(((Pteridomonas_danica, Apedinella_radians), Helicopedinella_tricostata), \nPseudopedinella_elastica))))),\n\n((Vacuolaria_virescens, Chattonella_subsalsa), Heterosigma_carterae))),\n\n(((((((((((((Spumella_danica, Spumella_elongata), Uroglena_americana), Ochromonas_provasolii), \n(Spumella_onliqua, (Spumella_sp_I5G, Spumella_sp_SpiG, Spumella_sp_37G))),\n\n((Chrysolepidomonas_dendrolepidota, (Ochromonas_moestrapi, Chymosys_sp)),\nDinobryon_sertularia)),\n\n(Epipyxis_aurea, (Poterioochromonas_malhamensis, \n((Ochromonas_sp_brown_tide, Ochromonas_danica), Ochromonas_sphaerocystis)))), \n\nChrysonephele_palustris), \n\n(\n((Chrysocapsa_vernalis, (Hibberdia_magna, Chromophyton_rosanoffi)), \nPhacoplaca_thallosa),\n\n(Cyclonexis_annularis, \n((((Chrysosaccus_sp, Chromulina_chromophila), Chrysosphaera_parvula),\nLagynion_scherffelii), Ochromonas_tuberculata)))),\n\n(Tessellaria_volvocina, (Synura_mammilosa, Mallomonas_akrokomos))), \n\n(((Paraphysomonas_bandiensis, \n(((Paraphysomonas_imperforata, Paraphysomonas_foraminifera)), Paraphysomonas_sp)),\n(Paraphysomonas_vestita_PV10, Paraphysomonas_vestita_SOTON_1)),\nParaphysomonas_butcheri)),\n\n(Oikomonas_sp_SA1, \n(((Oikomonas_sp_SA2, Oikomonas_mutabilis), \n(Chrysamoeba_pyrenoidifera, Chrysamoeba_mukokonia)),\nChromulina_nebulosa))), \n\n(Chlamydomyxa_labyrinthuloides, Picophagus_glagellatus)),\n\n((Eustigmatos_magna, Pseudocharaciopsis), \n(Monodopsis_subterranea, Nannochloropsis_oceanica)))),\n\n((Bolidomonas_pacifica, (Bolidomonas_mediterranea, Bolidomonas_pacifica_var_eleuthera)),\n\n(((((((((Skeletonema_costatum, Thalassiosira_rotula), Thalassiosira_guillardii),\n(Lauderia_borealis, Porosira_glacialis)),\n(Cymatosira_belgica, Papilocellulus_elegans)), \n((Chaetoceros_rostratus, Chaetoceros), \n((Chaetoceros_sp1, Chaetoceros_sp), Eucampia_antarctica))),\n(Odontella_sinensis, (Dirylum_brighswellii, Lithodesmium_undulatum))),\n\n(((Asterionellopsis_kariana, Rhaphoneis_belgicae), \n(Gomphonema_parvulum, (Eunotia_pectinalis, \n((Navicula_cryptocephala_var_veneta, ((Phaeodactylum_tricornutum, Eolimna_minima), \n(Eolimna_subminuscula_Amphora_montana))), \nNirzchia_apiculata)))), \n(Diatoma_hyemalis, Fragilaria_striatula))),\n\n(Melosira_varians, Aulacoseira_distans)),\n\n((Actinocyclus_curvatulus, Coscinodiscus_radiatus), Corethron_criophilum)))),\n\n(((Rhizidiomyces_apophysatus, Hyphochytrium_catenoides), Pirsonia_diadema), \n(Developayella_elegans, \n(((((Lagenidium_giganteum, Pythium_monospermum, Phytophthora_undulata), \nApodachlya_branchynema), \n(Achlya_bisexualis, Saprolegnia_ferax)), CCCW73_environmental_clone), \nEurychasma_dicksonii)))),\n\n((environmental_clone_AF372754, OLI51105_environmental_clone_AF167414), \n(Actinosphaerium_eichornii, (Proteromonas_lacertae,\n(((Blastocystis_hominis, Blastocystis_sp_rat), \n((Blastocystis_sp_chicken, Blastocystis_sp_duck), Blastocystis_sp_turkey)),\n(Blastocystis_hominis_Thailand, Blastocystis_sp_pig)))))),\n\n(\n((((((((Adriamonas_peritocrescens, Siluania_monomastiga), Paramonas_globosa), \nNerada_mexicana), \n(Symbiomonas_scintillans, \n(Cafeteria_roenbergensis, Cafeteria_sp_EPM1))),\n(Bicosoeca_petiolata, Bicosoeca_vicillans)), \n((Caecitellus_parvulus_ATCC50061, Caecitellus_parvulus_SA),\n((Caecitellus_parvulus_Millport, Caecitellus_parvulus_Bamfield),\nCaecitellus_parvulus_NBH4))),\nBoroka_karpovii), \n((marine_gliding_biciliate, Wobblia_lunata), Placidia_cafeteriopsis)),\n\n((((((Aplanochytrium_kerguelense, Labyrinthuloides_minuta),\n(Labyrinthula_sp_LAN-1565, Labyrinthula_sp_L59)), \n(Thraustochytrium_multirudimentale, (Schizochytrium_minutum, \nThraustochytriideae_sp7-5))),\n\n((((((Ulkenia_visurgensis, Japonochytrium_sp), \n(Traustrochytriidae_sp_M4-10, Labyrinthuloides_haliotidis)), \nUlkenia_radiata), Thraustochyyrium_aureum), Thraustochytrium_aggregatum),\n(Thraustochyriidae_sp_BS2, \n(Thraustochytrium_pachydermum, Labyrinthuloid_quahog_parasite)))),\n\nenvironmental_clone_AY381171), \n\n((environmental_clone_AY381207, \n(environmental_clone_AY129067, environmental_clone_AY129061, \nenvironmental_clone_129064)), \nenvironmental_clone_AY381196)))),\n\n((Diacronema_vlkianum, Pavlova_aff_salina), \n(((Coccolithus_pelagicus, Emiliania_huxleyi), \n((Chrysochromulina_Kappa, Prymnesium_patelliferum), Imantonia_rotunda)), \nPhaeocystis_pouchetii))), \n\n(((Goniomonas_sp_SA, Goniomonas_sp_Medlin), \n(Goniomonas_truncata_SA, Goniomonas_truncata)), \n\n(((((((Hemiselmis_virescens, Komma_caudata), Chroomonas_mesostigmatica),\nFalcomonas_daucoides), Geminigera_cryophila), \n(Rhodomonas_abbreviata, Proteomonas_sulcata)), Guillardia_theta), \n(Cryptomonas_ovata, Cryptomonas_sp)))),\n\n((((((Saitoella_complicata, (Schizosaccharomyces_pombe, \n(Neurospora_crassa, Saccharomyces_cerevisiae))), \n(Boletus_santanas, Tilletia_caries)),\n(Geosiphon_pyriforme, Glomus_Mossae)), \n\n(zygomycete_fungus_NOT_Opalina_ranarum, zygomycete_fungus_NOT_Cepedea_virguloidea)),\n\n(Chytridium_confervae, ((Basidiobolus_ranarum, Spizellomyces_acuminatus),\nNeocallimastix_frontalis))), \n\n(Smittium_culisetae, Allomyces_macrogynus)))\n"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Seven gene phylogeny of heterokonts.",
+                "year": 2009,
+                "authors": [
+                    {
+                        "name": "I. Riisberg",
+                        "alternate": [
+                            "Riisberg , I."
+                        ],
+                        "firstname": "I.",
+                        "lastname": "Riisberg"
+                    },
+                    {
+                        "name": "R. J. Orr",
+                        "alternate": [
+                            "Orr, R. J."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Orr",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "R. Kluge",
+                        "alternate": [
+                            "Kluge, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Kluge"
+                    },
+                    {
+                        "name": "K. Shalchian-Tabrizi",
+                        "alternate": [
+                            "Shalchian-Tabrizi, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Shalchian-Tabrizi"
+                    },
+                    {
+                        "name": "H. A. Bowers",
+                        "alternate": [
+                            "Bowers, H. A."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Bowers",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "V. Patil",
+                        "alternate": [
+                            "Patil, V."
+                        ],
+                        "firstname": "V.",
+                        "lastname": "Patil"
+                    },
+                    {
+                        "name": "B. Edvardsen",
+                        "alternate": [
+                            "Edvardsen, B."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Edvardsen"
+                    },
+                    {
+                        "name": "K. S. Jakobsen",
+                        "alternate": [
+                            "Jakobsen, K. S."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Jakobsen",
+                        "middlename": "S."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.protis.2008.11.004"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Protist",
+                    "volume": "160",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Evolutionary relationships among the eukaryotic crown taxa taking into account site-to-site rate variation in 18S rRNA.",
+                "year": 1997,
+                "authors": [
+                    {
+                        "name": "Y. van de Peer",
+                        "alternate": [
+                            "van de Peer, Y."
+                        ],
+                        "firstname": "Y.",
+                        "lastname": "van de Peer"
+                    },
+                    {
+                        "name": "R. De Watcher",
+                        "alternate": [
+                            "De Watcher, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "De Watcher"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2, 4",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1007/PL00006266"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Molecular Ecology",
+                    "volume": "45",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Morphological identities of two different marine stramenopile environmental sequence clades: Bicosoeca kenaiensis (Hilliard, 1971) and Cantina marsupialis (Larsen and Patterson, 1990) gen. nov., comb. nov.",
+                "year": 2015,
+                "authors": [
+                    {
+                        "name": "N. Yubuki",
+                        "alternate": [
+                            "Yubuki , N."
+                        ],
+                        "firstname": "N.",
+                        "lastname": "Yubuki"
+                    },
+                    {
+                        "name": "T. Pánek",
+                        "alternate": [
+                            "Pánek, T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Pánek"
+                    },
+                    {
+                        "name": "A. Yabuki",
+                        "alternate": [
+                            "Yabuki, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Yabuki"
+                    },
+                    {
+                        "name": "I. Čepička",
+                        "alternate": [
+                            "Čepička, I."
+                        ],
+                        "firstname": "I.",
+                        "lastname": "Čepička"
+                    },
+                    {
+                        "name": "K. Takishita",
+                        "alternate": [
+                            "Takishita, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Takishita"
+                    },
+                    {
+                        "name": "Y. Inagaki",
+                        "alternate": [
+                            "Inagaki, Y."
+                        ],
+                        "firstname": "Y.",
+                        "lastname": "Inagaki"
+                    },
+                    {
+                        "name": "B. S. Leander",
+                        "alternate": [
+                            "Leander, B. S."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Leander",
+                        "middlename": "S."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "5",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/jeu.12207"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Eukaryotic Microbiology",
+                    "volume": "62",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Pseudophyllomitus vesiculosus (Larsen and Patterson 1990) Lee, 2002, a poorly studied phagotrophic biflagellate is the first characterized member of stramenopile environmental clade MAST-6.",
+                "year": 2017,
+                "authors": [
+                    {
+                        "name": "T. Shiratori",
+                        "alternate": [
+                            "Shiratori , T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Shiratori"
+                    },
+                    {
+                        "name": "R. Thakur",
+                        "alternate": [
+                            "Thakur, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Thakur"
+                    },
+                    {
+                        "name": "K. Ishida",
+                        "alternate": [
+                            "Ishida, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Ishida"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "6",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.protis.2017.06.004"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Protist",
+                    "volume": "168",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 103,
+            "label": "Stramenopila",
+            "dwc:scientificNameAuthorship": "Simpson, A. G. B., Dunthorn, M.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Introductory mycology.",
+                    "section_title": "Introductory mycology.",
+                    "year": 1996,
+                    "edition": "4",
+                    "authors": [
+                        {
+                            "name": "C. J. Alexopoulos",
+                            "alternate": [
+                                "Alexopoulos, C. J."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Alexopoulos",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "C. W. Mims",
+                            "alternate": [
+                                "Mims, C. W."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Mims",
+                            "middlename": "W."
+                        },
+                        {
+                            "name": "M. Blackwell",
+                            "alternate": [
+                                "Blackwell, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Blackwell"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "John Wiley & Sons, Inc",
+                    "city": "New York",
+                    "pages": "868",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The crown clade for which flagellar retronemes (tripartite, rigid, hollow flagellar hairs, arrayed in such a way as to cause ‘reversed’ fluid flow or locomotion), as inherited by Ochromonas danica Pringsheim 1955, is an apomorphy relative to other crown clades, provided that it does not include Tetrahymena thermophila Nanney and McCoy 1976 (Alveolata) and Bigelowiella natans Moestrup and Sengco 2001 (Rhizaria).",
+            "internalSpecifiers": [],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Tetrahymena thermophila Nanney and McCoy, 1976",
+                        "nameComplete": "Tetrahymena thermophila"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Bigelowiella natans Moestrup and Sengco, 2001",
+                        "nameComplete": "Bigelowiella natans"
+                    }
+                }
+            ]
+        }
+    ]
+}

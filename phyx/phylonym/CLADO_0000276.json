@@ -1,0 +1,132 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Multilocus phylogeny and statistical biogeography clarify the evolutionary history of major lineages of turtles.",
+                "year": 2017,
+                "authors": [
+                    {
+                        "name": "A. G. Pereira",
+                        "alternate": [
+                            "Pereira, A. G."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Pereira",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "J. Sterli",
+                        "alternate": [
+                            "Sterli, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Sterli"
+                    },
+                    {
+                        "name": "F. R. R. Moreira",
+                        "alternate": [
+                            "Moreira, F. R. R."
+                        ],
+                        "firstname": "F. R.",
+                        "lastname": "Moreira",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "C. G. Schrago",
+                        "alternate": [
+                            "Schrago, C. G."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Schrago",
+                        "middlename": "G."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "publisher": "Molecular Phylogenetics and Evolution",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2017.05.008"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Phylogenetics and Evolution",
+                    "volume": "113",
+                    "identifier": []
+                }
+            },
+            "newick": "(((((((((((((Acanthochelys_pallidipectoris, \nAcanthochelys_spixii), Acanthochelys_macrocephala), \nAcanthochelyx_radiolata), \nPlatemyx_platycephala), Platemys_platycephala), \n\n((Rhinemys_rufipes, \n(Mesoclemmys_tuberculata, Mesoclemmys_vanderhaeg)),\n(Mesoclemmys_raniceps, Mesoclemmys_heliostemma))),\n\n(Phrynops_geoffroanus, Phyrnops_williamsi)),\n\n(((Mesoclemmys_nasuta, Mesoclemmys_gibba),\nPhrynops_hilarii), \n(Mesoclemmys_dahli, Mesoclemmys_zuliae))),\n\nChelus_fimbriatus),\n\nHydromedusa_maximiliani), Hydromedusa_tectifera), \n\n(((\n(Chelodina_parkeri, Chelodina_longicollis),\n(Chelodina_oblonga, \n(Chelodina_mccordi, \n((Chelodina_novaeguineae, Chelodina_reimanni),\nChelodina_pritchardi)))), \n\n((Flaviemys_purvisi, \n(((\n((Emydura_macquarii, Emydura_victoriae),\n(Emydura_tanybaraga, Emydura_subglobosa)),\n(Myuchelys_georgesi, \n(Myuchelys_bellii, Myuchelys_latisternum))),\n(Elseya_albagula, \n((Elseya_branderhorsti, Elseya_novaeguineae),\n(Elseya_lavarackorum,\n(Elseya_irwini, Elseya_dentata))))),\n(Elusor_macrurus, Rheodytes_leukops))),\nPseudemydura_umbrina)))),\n\n(\n((((Podocnemis_vogli, (Podocnemi_sextuberculata, \n(Podocnemis_unifilis, (Podocnemis_lewyana, \nPodocnemis_erythrocephala)))),\nPodocnemis_expansa),\nErymnochelys_madagascariensis),\nPeltocephalus_dumerilianus),\n\n((((((Pelusios_bechuanicus, Pelusios_upembae), \nPelusios_subniger), Pelusios_sinuatus),\n\n(((((Pelusios_niger, Pelusios_cupulatta),\n\n(((Pelusios_williamsi, Pelusios_castanoides),\n(Pelusios_carinatus, Pelusios_rhodesianus)),\n\n((Pelusios_castaneus, Pelusios_chapini), \n(Pelusios_broadleyi, Pelusios_adansonii)))), \nPelusios_nanus), Pelusios_gabonensis))), \nPelusios_marani), Pelusios_subrufa)))\n\n\n"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 276,
+            "label": "Pleurodira",
+            "dwc:scientificNameAuthorship": "Joyce, W. G., Parham, J. F., Anquetin, J., Claude, J., Danilov, I. G., Iverson, J. B., Kear, B., Lyson, T. R., Rabi, M., Sterli, J.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Third contribution to the herpetology of tropical America.",
+                    "year": 1865,
+                    "authors": [
+                        {
+                            "name": "E. D. Cope",
+                            "alternate": [
+                                "Cope, E. D."
+                            ],
+                            "firstname": "E.",
+                            "lastname": "Cope",
+                            "middlename": "D."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Proceedings of the Academy of Natural Sciences of Philadelphia",
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Proceedings of the Academy of Natural Sciences of Philadelphia",
+                        "volume": "1865",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing the chelid Chelus (originally Testudo) fimbriatus Schneider 1783 the pelomedusid Pelomedusa (originally Testudo) subrufa Bonnaterre 1789 and the podocnemid Podocnemis (originally Emys) expansa Schweigger 1812.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Chelus (originally Testudo) fimbriatus Schneider, 1783",
+                        "nameComplete": "Chelus (originally Testudo) fimbriatus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Pelomedusa (originally Testudo) subrufa Bonnaterre, 1789",
+                        "nameComplete": "Pelomedusa (originally Testudo) subrufa"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Podocnemis (originally Emys) expansa Schweigger, 1812",
+                        "nameComplete": "Podocnemis (originally Emys) expansa"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

@@ -1,0 +1,109 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Molecular phylogeny of the Arctoidea (Carnivora): effect of missing data on supertree and supermatrix analyses of multiple gene data sets.",
+                "year": 2006,
+                "authors": [
+                    {
+                        "name": "T. L. Fulton",
+                        "alternate": [
+                            "Fulton, T. L."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Fulton",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "C. Strobeck",
+                        "alternate": [
+                            "Strobeck, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Strobeck"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2006.05.025"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Mol. Phylogenet. Evol.",
+                    "volume": "41",
+                    "identifier": []
+                }
+            },
+            "newick": "(((((((((Brown_bear, Polar_bear), (American_black_bear, Asiatic_black_bear)),\nSloth_bear), Sun_bear), Spectacled_bear), Giant_panda), \n\n((((((((Raccoon, Crab-eating_raccoon), Ringtail), \n(White-nosed_coati, Coati)), Kinkajou), \n\n((((((((((Sea_otter, Spotted_necked_otter), \n((African_clawless_otter, Oriental_small-clawed_otter), Eurasian_otter)), \n\n(N.A._river_otter, (Marine_otter, Neotropical_otter))), \nGiant_otter),\n(Grison, Zorilla)),\n\n((American_mink, Long-tailed_weasel), (Ermine, \n((((Ferret, European_polecat), Siberian_weasel, Steppe_polecat, Japanese_weasel),\nEuropean_mink), \n(Least_weasel, Mountain_weasel))))),\n\nChinese_ferret_badger), \n\n(Fisher, \n(((((American_marten, Pine_marten), Sable, Beech_marten, Japanese_marten), \nWolverine), Yellow-throated_marten), Tayra))),\n\n((European_badger, Japanese_badger), Hog-nosed_badger)), \n\nAmerican_badger)), \n\nRed_panda), \n\n((Striped_skunk, Western_spotted_skunk), Hog-nosed_skunk)),\n\n(\n((((South_American_fur_seal, New_Zealand_fur_seal), \n(South_American_sea_lion, Antarctic_fur_seal)), Stellers_sea_lion),\nWalrus), \n(\n((((Hooded_seal, (Grey_seal, Caspian_seal)), \n(Harbor_seal, Spotted_seal)), \nHarp_seal), Bearded_seal), \n\n(((((Leopard_seal, Weddell_seal), Crabeater_seal), Ross_seal), \nNorthern_elephant_seal), (Hawaiian_monk_seal, Mediterranean_monk_seal)))))),\n\n((Dog, Wolf), (Arctic_fox, Swift_fox))),\n\n(Cat, ((Lynx_Bobcat), (Cougar, (Siberian_tiger, African_lion)))))\n\n\n"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 271,
+            "label": "Pinnipedia",
+            "dwc:scientificNameAuthorship": "Wolsan, M., Wyss, A. R., Berta, A., Flynn, J. J.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Prodromus systematis mammalium et avium additis terminis zoographicis utriusque classis, eorumque versione germanica.",
+                    "year": 1811,
+                    "authors": [
+                        {
+                            "name": "C. Illiger",
+                            "alternate": [
+                                "Illiger, C."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Illiger"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "C. Salfeld",
+                    "city": "Berlin",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing Phoca vitulina Linnaeus 1758 (Phocidae), Odobenus rosmarus (Linnaeus 1758), and Otaria byronia (de Blainville 1820) (Otariidae).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Phoca vitulina Linnaeus, 1758",
+                        "nameComplete": "Phoca vitulina"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Odobenus rosmarus Linnaeus, 1758",
+                        "nameComplete": "Odobenus rosmarus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Otaria byronia de Blainville, 1820",
+                        "nameComplete": "Otaria byronia"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

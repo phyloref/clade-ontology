@@ -1,0 +1,250 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "More characters or more taxa for a robust phylogeny - Case study from the coffee family (Rubiaceae).",
+                "year": 1999,
+                "authors": [
+                    {
+                        "name": "B. Bremer",
+                        "alternate": [
+                            "Bremer, B."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Bremer"
+                    },
+                    {
+                        "name": "R. K. Jansen",
+                        "alternate": [
+                            "Jansen, R. K."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Jansen",
+                        "middlename": "K."
+                    },
+                    {
+                        "name": "B. Oxelman",
+                        "alternate": [
+                            "Oxelman, B."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Oxelman"
+                    },
+                    {
+                        "name": "M. Backlund",
+                        "alternate": [
+                            "Backlund, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Backlund"
+                    },
+                    {
+                        "name": "H. Lantz",
+                        "alternate": [
+                            "Lantz, H."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Lantz"
+                    },
+                    {
+                        "name": "K. J. Kim",
+                        "alternate": [
+                            "Kim, K. J."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Kim",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "5",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "0.1080/106351599260085"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Systematic Biology",
+                    "volume": "48",
+                    "identifier": []
+                }
+            },
+            "newick": "(((Alstonia, Kopsia),\n(Gelsemium, Mostuea), \n(Anthocleista, Gentiana), \n(Antonia, \n((Spigelia, Strychnos), (Geniostoma, Logania)))), \n\n(Coptosapelta, \n\n(Luculia, \n\n(Ophiorrhiza, Pauridiantha, \n((Morinda, Psychotria),\n(Danais, (Carphalea, Pentas), \n(Anthospermum, (Oldenlandia, Spermacoce))))),\n\n((Cephalanthus, Cinchona, Hilia, \n(Guettarda, (Rogiera, Rondeletia)),\n(Strumpfia, (Exostema, (Chiococca, Erithalis)))),\n\n(((Pseudomuss, \n(Mussaenda_arcuata, Mussaenda_erythrophylla)),\n((Alberta, (Coffea, Gardenia)),\n(Scyphiphora, (Ixora, Vangueria)))),\n\n(Alseis, Calycophyllum, Condaminea, Emmenopterys, \nPentagonia, Pinckneya, Pogonopus, Rustia, Simira, Capirona, \n(Chimarrhis, Warszewiczia)))))))"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Time tree of Rubiaceae: Phylogeny and dating the family, subfamilies, and tribes.",
+                "year": 2009,
+                "authors": [
+                    {
+                        "name": "B. Bremer",
+                        "alternate": [
+                            "Bremer, B."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Bremer"
+                    },
+                    {
+                        "name": "T. Eriksson",
+                        "alternate": [
+                            "Eriksson, T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Eriksson"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "5, 6",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1086/599077"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "International Journal of Plant Science",
+                    "volume": "170",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Conflicting results from mitochondrial genomic data challenge current views of Rubiaceae phylogeny.",
+                "year": 2017,
+                "authors": [
+                    {
+                        "name": "C. Rydin",
+                        "alternate": [
+                            "Rydin, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Rydin"
+                    },
+                    {
+                        "name": "N. Wikström",
+                        "alternate": [
+                            "Wikström, N."
+                        ],
+                        "firstname": "N.",
+                        "lastname": "Wikström"
+                    },
+                    {
+                        "name": "B. Bremer",
+                        "alternate": [
+                            "Bremer, B."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Bremer"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "0.3732/ajb.1700255"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "American Journal of Botany",
+                    "volume": "104",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 91,
+            "label": "Rubiaceae",
+            "dwc:scientificNameAuthorship": "Bremer, B., Eriksson, T.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Genera plantarum secundum ordines naturales disposita.",
+                    "year": 1789,
+                    "authors": [
+                        {
+                            "name": "A. L. de Jussieu",
+                            "alternate": [
+                                "de Jussieu, A. L."
+                            ],
+                            "firstname": "A.",
+                            "lastname": "de Jussieu",
+                            "middlename": "L."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Herissant & Barrois",
+                    "city": "Paris",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The largest crown clade containing Rubia tinctorum Linnaeus 1753 but not Alstonia scholaris (Linnaeus) Robert Brown 1810 and Gentiana procera Holm 1901 and Gelsemium sempervirens (Linnaeus) Saint-Hilaire 1805 and Logania vaginalis Ferdinand Mueller 1868.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Rubia tinctorum Linnaeus, 1753",
+                        "nameComplete": "Rubia tinctorum"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Alstonia scholaris Brown, 1810",
+                        "nameComplete": "Alstonia scholaris"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Gentiana procera Holm, 1901",
+                        "nameComplete": "Gentiana procera"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Gelsemium sempervirens Saint-Hilaire, 1805",
+                        "nameComplete": "Gelsemium sempervirens"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Logania vaginalis Mueller, 1868",
+                        "nameComplete": "Logania vaginalis"
+                    }
+                }
+            ]
+        }
+    ]
+}

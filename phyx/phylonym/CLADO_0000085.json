@@ -1,0 +1,159 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Gondwanan evolution of the grass alliance of families (Poales).",
+                "year": 2002,
+                "authors": [
+                    {
+                        "name": "K. Bremer",
+                        "alternate": [
+                            "Bremer, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Bremer"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.0014-3820.2002.tb01451.x"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Evolution",
+                    "volume": "56",
+                    "identifier": []
+                }
+            },
+            "newick": "(Calectasia, \n\n(\n(Spathanthus, (Rapatea, (Schoenocephalium, \n(Kunhardtia, Stegolepis)))),\n\n(\n((Sparganium, Typha), \n(Tillandsia, Hechtia, \n(Puya, Catopsis, (Aechmea, Ananas)))),\n\n(\n(Prionium, Thurnia),\n(Luzula, (Juncus, (Distichia, \n(Marsippospermum, Rostkovia)))),\n\n((Coleochola, Cyperus),\n((Lepironia, (Chorizandra, Chrysithrix)),\n(Mapania, (Hypolytrum_bullatum, Hypolytrum_nemorum)))),\n\n((\n((Abolboda, Orectanthe), \n(Xyris_capensis, Xyris_involucrata)), \n(Mesanthemum, \n((Eriocaulon, Lachnocaulon), \n(Syngonathus, Paepalanthus, Tonina)))),\n(\n(Anarthria, (Hopkinsia, Lyginia), \n((Elegia, Restio), \n((Eurychorda, Dapsilanthus),\n(Lepyrodia, Calorophus), \n(Sporadanthus, Centrolepis)))),\n\n(Flagellaria, \n(Joinvillea, \n\n((Ecdeiocolea, Georgeantha), \n\n((Anomochloa, Streptochaeta),\n\n(Pharus, \n\n((Guaduella, Puelia), \n\n((Bambusa, Oryza), (Arundo, Zea))))))))))))))"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Large multi-gene phylogenetic trees of the grasses (Poaceae): Progress towards complete tribal and generic level sampling.",
+                "year": 2008,
+                "authors": [
+                    {
+                        "name": "Y. Bouchenak-Khelladi",
+                        "alternate": [
+                            "Bouchenak-Khelladi, Y."
+                        ],
+                        "firstname": "Y.",
+                        "lastname": "Bouchenak-Khelladi"
+                    },
+                    {
+                        "name": "N. Salamin",
+                        "alternate": [
+                            "Salamin, N."
+                        ],
+                        "firstname": "N.",
+                        "lastname": "Salamin"
+                    },
+                    {
+                        "name": "V. Savolainen",
+                        "alternate": [
+                            "Savolainen, V."
+                        ],
+                        "firstname": "V.",
+                        "lastname": "Savolainen"
+                    },
+                    {
+                        "name": "F. Forest",
+                        "alternate": [
+                            "Forest, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Forest"
+                    },
+                    {
+                        "name": "M. van der Bank",
+                        "alternate": [
+                            "van der Bank, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "van der Bank"
+                    },
+                    {
+                        "name": "M. W. Chase",
+                        "alternate": [
+                            "Chase, M. W."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Chase",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "T. R. Hodkinson",
+                        "alternate": [
+                            "Hodkinson, T. R."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Hodkinson",
+                        "middlename": "R."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2008.01.035"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Phylogenetics and Evolution",
+                    "volume": "47",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 85,
+            "label": "Poineae",
+            "dwc:scientificNameAuthorship": "Saarela, J. M., Graham, S. W.",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing Poa pratensis Linnaeus 1753 (Poaceae), Flagellaria indica Linnaeus 1753 (Flagellariaceae), and Restio paludosus Pillans 1922 (Restionaceae).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Poa pratensis Linnaeus, 1753",
+                        "nameComplete": "Poa pratensis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Flagellaria indica Linnaeus, 1753",
+                        "nameComplete": "Flagellaria indica"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Restio paludosus Pillans, 1922",
+                        "nameComplete": "Restio paludosus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

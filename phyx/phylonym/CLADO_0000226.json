@@ -1,0 +1,111 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Amniote phylogeny and the importance of fossils.",
+                "year": 1988,
+                "authors": [
+                    {
+                        "name": "J. A. Gauthier",
+                        "alternate": [
+                            "Gauthier, J. A."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Gauthier",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "A. G. Kluge",
+                        "alternate": [
+                            "Kluge, A. G."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Kluge",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "T. B. Rowe",
+                        "alternate": [
+                            "Rowe, T. B."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Rowe",
+                        "middlename": "B."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.1096-0031.1988.tb00514"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Cladistics",
+                    "volume": "4",
+                    "identifier": []
+                }
+            },
+            "newick": "((((((((((((Ornithosuchia, Pseudosuchia), Proterochampsidae),\nErythrosuchidae), Proterosuchidae), Protorosauria), Choristodera), Trilophosaurus), Rhynchosauria),\nLepidosauromorpha), Araeoscelidia), (Testudines, Captorhinidae)),\n(((((((((((((((Mammalia, Morganucodontidae), Tritylodontidae), Exaeretodon), Diademodon), Thrinaxodon),\nProcynosuchus), Therocephalia), Dicynodontia), Gorgonopsia), Dinocephalia), Biarmosuchia), Sphenacodontinae),\nEdaphosaurus), Ophiacodon), Casea))"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 226,
+            "label": "Therapsida",
+            "dwc:scientificNameAuthorship": "Rowe, T. B.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "On the use of the term Anomodontia.",
+                    "year": 1905,
+                    "authors": [
+                        {
+                            "name": "R. Broom",
+                            "alternate": [
+                                "Broom, R."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Broom"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Records of the Albany Museum",
+                    "city": "Grahmstown (South Africa)",
+                    "pages": "266-269",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest clade containing Thrinaxodon liorhinus Seeley 1894a (Cynodontia, this volume) and Biarmosuchus tener Chudinov 1960 (Biarmosuchia).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Thrinaxodon liorhinus Seeley, 1894a",
+                        "nameComplete": "Thrinaxodon liorhinus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Biarmosuchus tener Chudinov, 1960",
+                        "nameComplete": "Biarmosuchus tener"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

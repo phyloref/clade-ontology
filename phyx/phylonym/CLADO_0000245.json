@@ -1,0 +1,110 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Morphological and systematic reinterpretation of two enigmatic edrioasteroids (Echinodermata) from Canada.",
+                "year": 2006,
+                "authors": [
+                    {
+                        "name": "Sumrall",
+                        "alternate": [
+                            "Sumrall,"
+                        ],
+                        "lastname": "Sumrall"
+                    },
+                    {
+                        "name": "Gahn",
+                        "alternate": [
+                            "Gahn,"
+                        ],
+                        "lastname": "Gahn"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3.1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1139/e05-114"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Can. Jour. Earth Sci.",
+                    "volume": "43",
+                    "identifier": []
+                }
+            },
+            "newick": "(((((((((Carneyella, Foerstediscus), Isorophus, Isorophusella), Agelacrinites, \nThresherodiscus), Neoisorophusella), Postibulla), Lepidodiscus, Ulrichidiscus),\nCooperidiscus), Clavidiscus), (Lispidecodus, Giganticlavus, Hypsiclavus))"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 245,
+            "label": "Isorophina",
+            "dwc:scientificNameAuthorship": "Sumrall, C. D.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "A Study of North American Edrioasteroidea.",
+                    "year": 1976,
+                    "authors": [
+                        {
+                            "name": "B. M. Bell",
+                            "alternate": [
+                                "Bell, B. M."
+                            ],
+                            "firstname": "B.",
+                            "lastname": "Bell",
+                            "middlename": "M."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "New York St. Mus. Mem.",
+                        "volume": "21",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The clade originating in the most recent common ancestor of Isorophus cincinnatiensis (Roemer 1851), Agelacrinites hamiltonensis Vanuxem 1842, and Hypsiclavus huntsvillensis Sumrall 1996.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Isorophus cincinnatiensis Roemer, 1851",
+                        "nameComplete": "Isorophus cincinnatiensis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Agelacrinites hamiltonensis Vanuxem, 1842",
+                        "nameComplete": "Agelacrinites hamiltonensis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Hypsiclavus huntsvillensis Sumrall, 1996",
+                        "nameComplete": "Hypsiclavus huntsvillensis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

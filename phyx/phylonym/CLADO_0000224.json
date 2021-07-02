@@ -1,0 +1,162 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Amniote phylogeny and the importance of fossils.",
+                "authors": [
+                    {
+                        "name": "J. A. Gauthier",
+                        "alternate": [
+                            "Gauthier, J. A."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Gauthier",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "A. G. Kluge",
+                        "alternate": [
+                            "Kluge, A. G."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Kluge",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "T. B. Rowe",
+                        "alternate": [
+                            "Rowe, T. B."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Rowe",
+                        "middlename": "B."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.1096-0031.1988.tb00514"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Cladistics",
+                    "volume": "4",
+                    "identifier": []
+                }
+            },
+            "newick": "((((((((((((Ornithosuchia, Pseudosuchia), Proterochampsidae),\nErythrosuchidae), Proterosuchidae), Protorosauria), Choristodera), Trilophosaurus), Rhynchosauria),\nLepidosauromorpha), Araeoscelidia), (Testudines, Captorhinidae)),\n(((((((((((((((Mammalia, Morganucodontidae), Tritylodontidae), Exaeretodon), Diademodon), Thrinaxodon),\nProcynosuchus), Therocephalia), Dicynodontia), Gorgonopsia), Dinocephalia), Biarmosuchia), Sphenacodontinae),\nEdaphosaurus), Ophiacodon), Casea))\n\n"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "book_section",
+                "title": "The phylogeny and classification of the tetrapods, Amphibians, reptiles and birds",
+                "section_title": "The early evolution of the Amniota.",
+                "authors": [
+                    {
+                        "name": "J. Gauthier",
+                        "alternate": [
+                            "Gauthier, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Gauthier"
+                    },
+                    {
+                        "name": "A. G. Kluge",
+                        "alternate": [
+                            "Kluge, A. G."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Kluge",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "T. B. Rowe",
+                        "alternate": [
+                            "Rowe, T. B."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Rowe",
+                        "middlename": "B."
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "M. Benton",
+                        "alternate": [
+                            "Benton, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Benton"
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "Clarendon Press",
+                "city": "Oxford",
+                "pages": "103-155",
+                "identifier": [],
+                "link": []
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 224,
+            "label": "Pan-Mammalia",
+            "dwc:scientificNameAuthorship": "Rowe, T. B.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book_section",
+                    "title": "Assembling the tree of life",
+                    "section_title": "Chordate phylogeny and development",
+                    "year": 2004,
+                    "authors": [
+                        {
+                            "name": "T. B. Rowe",
+                            "alternate": [
+                                "Rowe, T. B."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Rowe",
+                            "middlename": "B."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "J. Cracraft",
+                            "alternate": [
+                                "Cracraft, J."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Cracraft"
+                        },
+                        {
+                            "name": "M. J. Donoghue",
+                            "alternate": [
+                                "Donoghue, M. J."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Donoghue",
+                            "middlename": "J."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "Oxford University Press",
+                    "city": "Oxford",
+                    "pages": "384-409",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The total clade of the crown clade Mammalia Linnaeus 1758.",
+            "internalSpecifiers": [],
+            "externalSpecifiers": []
+        }
+    ]
+}

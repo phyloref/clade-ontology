@@ -1,0 +1,196 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Molecular systematic analyses indicate that the enigmatic Apophlaea is a member of the Hildenbrandiales (Rhodophyta, Florideophycidae).",
+                "year": 1999,
+                "authors": [
+                    {
+                        "name": "G. W. Saunders",
+                        "alternate": [
+                            "Saunders, G. W."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Saunders",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "J. C. Bailey",
+                        "alternate": [
+                            "Bailey, J. C."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Bailey",
+                        "middlename": "C."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1046/j.1529-8817.1999.3510171"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "J. Phycol.",
+                    "volume": "35",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "A nuclear phylogeny of the Florideophyceae (Rhodophyta) inferred from combined EF2, small subunit and large subunit ribosomal DNA: establishing the new red algal subclass Corallinophycidae.",
+                "year": 2007,
+                "authors": [
+                    {
+                        "name": "L. Le Gall",
+                        "alternate": [
+                            "Le Gall, L."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Le Gall"
+                    },
+                    {
+                        "name": "G. W. Saunders",
+                        "alternate": [
+                            "Saunders, G. W."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Saunders",
+                        "middlename": "W."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "4",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2006.11.012"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Mol. Phylogenet. Evol.",
+                    "volume": "43",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 133,
+            "label": "Hildenbrandiales",
+            "dwc:scientificNameAuthorship": "Saunders, G. W.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Ultrastructural observations of tetrasporangia and conceptacles in Hildenbrandia (Rhodophyta, Hildenbrandiales).",
+                    "year": 1982,
+                    "authors": [
+                        {
+                            "name": "C. M. Pueschel",
+                            "alternate": [
+                                "Pueschel, C. M."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Pueschel",
+                            "middlename": "M."
+                        },
+                        {
+                            "name": "K. M. Cole",
+                            "alternate": [
+                                "Cole, K. M."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "Cole",
+                            "middlename": "M."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.1080/00071618200650331"
+                        }
+                    ],
+                    "link": [],
+                    "journal": {
+                        "name": "Br. Phycol. J.",
+                        "volume": "17",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "the largest crown clade containing Hildenbrandia prototypus Nardo 1834 (= Hildenbrandia rubra (Sommerfelt) Meneghini 1841) but not Ahnfeltia plicata (Hudson) Fries 1836, Chondrus crispus Stackhouse 1797, Corallina officinalis Linnaeus 1758, and Palmaria palmata (Linnaeus) Kuntze 1891.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Hildenbrandia prototypus Nardo, 1834",
+                        "nameComplete": "Hildenbrandia prototypus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Hildenbrandia rubra Meneghini, 1841",
+                        "nameComplete": "Hildenbrandia rubra"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Ahnfeltia plicata Fries, 1836",
+                        "nameComplete": "Ahnfeltia plicata"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Chondrus crispus Stackhouse, 1797",
+                        "nameComplete": "Chondrus crispus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Corallina officinalis Linnaeus, 1758",
+                        "nameComplete": "Corallina officinalis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Palmaria palmata Kuntze, 1891",
+                        "nameComplete": "Palmaria palmata"
+                    }
+                }
+            ]
+        }
+    ]
+}

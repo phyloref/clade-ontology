@@ -1,0 +1,136 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Multilocus phylogeny and statistical biogeography clarify the evolutionary history of major lineages of turtles.",
+                "year": 2017,
+                "authors": [
+                    {
+                        "name": "A. G. Pereira",
+                        "alternate": [
+                            "Pereira, A. G."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Pereira",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "J. Sterli",
+                        "alternate": [
+                            "Sterli, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Sterli"
+                    },
+                    {
+                        "name": "F. R. R. Moreira",
+                        "alternate": [
+                            "Moreira, F. R. R."
+                        ],
+                        "firstname": "F. R.",
+                        "lastname": "Moreira",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "C. G. Schrago",
+                        "alternate": [
+                            "Schrago, C. G."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Schrago",
+                        "middlename": "G."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2017.05.008"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Phylogenetics and Evolution",
+                    "volume": "113",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 274,
+            "label": "Testudines",
+            "dwc:scientificNameAuthorship": "Joyce, W. G., Parham, J. F., Anquetin, J., Claude, J., Danilov, I. G., Iverson, J. B., Kear, B., Lyson, T. R., Rabi, M., Sterli, J.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Versuch einer Anleitung, zur Kenntniß und Geschichte der Thiere und Mineralien.",
+                    "year": 1788,
+                    "authors": [
+                        {
+                            "name": "A. J. G. C. Batsch",
+                            "alternate": [
+                                "Batsch, A. J. G. C."
+                            ],
+                            "firstname": "A.",
+                            "lastname": "Batsch",
+                            "middlename": "J. G. C."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Akademische Buchhandlung",
+                    "city": "Jena",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing the pleurodire Chelus (originally Testudo) fimbriatus Schneider 1783, the trionychian Trionyx (originally Testudo) triunguis Forskål 1775, the americhelydian Chelonia (originally Testudo) mydas Linnaeus 1758, and the testudinoid Testudo graeca Linnaeus 1758.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Chelus (originally Testudo) fimbriatus Schneider, 1783",
+                        "nameComplete": "Chelus (originally Testudo) fimbriatus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Trionyx (originally Testudo) triunguis Forskål, 1775",
+                        "nameComplete": "Trionyx (originally Testudo) triunguis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Chelonia (originally Testudo) mydas Linnaeus, 1758",
+                        "nameComplete": "Chelonia (originally Testudo) mydas"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Testudo graeca Linnaeus, 1758",
+                        "nameComplete": "Testudo graeca"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}
