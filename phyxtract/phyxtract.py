@@ -86,7 +86,7 @@ for phylogeny in phylogenies:
         citation = expand_arrays(citation)
         if 'z_dois001' in citation:
             citation['2_doi'] = citation['z_dois001']
-        citation['4_title'] = citation['title']
+        citation['4_title'] = citation.get('title') or ''
         citations.append(citation)
     if 'phylogenyCitation' in phylogeny:
         citation = phylogeny['phylogenyCitation']
@@ -96,7 +96,7 @@ for phylogeny in phylogenies:
         citation = expand_arrays(citation)
         if 'z_dois001' in citation:
             citation['2_doi'] = citation['z_dois001']
-        citation['4_title'] = citation['title']
+        citation['4_title'] = citation.get('title') or ''
         citations.append(citation)
 
 # Display citations.
