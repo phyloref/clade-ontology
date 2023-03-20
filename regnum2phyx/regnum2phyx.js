@@ -10,17 +10,10 @@
  * PhyloRegnum can be accessed at http://app.phyloregnum.org
  */
 
-// We currently produce Phyx files in v0.2.0 format. If this changes, please
+// We currently produce Phyx files in v1.0.0 format. If this changes, please
 // update this here.
-const PHYX_CONTEXT_URL = 'http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json';
-
-// Some constants for nomenclatural codes. We should really export these in Phyx
-// (see https://github.com/phyloref/phyx.js/issues/44)
-const NAME_IN_UNKNOWN_CODE = 'http://purl.obolibrary.org/obo/NOMEN_0000036';
-const ICZN_NAME = 'http://purl.obolibrary.org/obo/NOMEN_0000107';
-const ICN_NAME = 'http://purl.obolibrary.org/obo/NOMEN_0000109';
-// const ICNP_NAME = 'http://purl.obolibrary.org/obo/NOMEN_0000110';
-// const ICTV_NAME = 'http://purl.obolibrary.org/obo/NOMEN_0000111';
+// TODO: why isn't this in @phyloref/phyx?
+const PHYX_CONTEXT_URL = 'http://www.phyloref.org/phyx.js/context/v1.0.0/phyx.json';
 
 // Load necessary modules.
 const fs = require('fs');
@@ -29,6 +22,9 @@ const yargs = require('yargs');
 const {
   has, keys, pickBy, isEmpty,
 } = require('lodash');
+
+// Import the Phyx library.
+const phyx = require('@phyloref/phyx');
 
 // Helper functions.
 function convertAuthorsIntoStrings(authors, lastNameFirst = true) {
@@ -203,6 +199,11 @@ let countErrors = 0;
 dump.forEach((entry, index) => {
   const phylorefLabel = entry.name.trim();
 
+  // Come up with the identifier for this file.
+  const fileIndex =  entry.id.padStart(6, '0') || `${index + 1}`.padStart(6, '0');
+  const filePrefix = argv.filenamePrefix || 'CLADO_';
+  const identifier = `${fileIndex}${filePrefix}`;
+
   // Make sure we don't have multiple phyloreferences with the same label, since
   // we name the file after the phyloreference being produced.
   if (has(phyxProduced, phylorefLabel)) {
@@ -230,13 +231,13 @@ dump.forEach((entry, index) => {
 
   // Create an object describing this phyloreference.
   const phylorefTemplate = pickBy({
-    regnumId: entry.id,
+    '@id': identifier, // TODO: add IRI stem
     label: phylorefLabel,
-    'dwc:scientificNameAuthorship': (convertAuthorsIntoStrings(entry.authors)).join(', '),
-    'dwc:namePublishedIn': convertCitationsToBibJSON(entry.citations.preexisting),
-    'obo:IAO_0000119': // IAO:definition source (http://purl.obolibrary.org/obo/IAO_0000119)
+    scientificNameAuthorship: (convertAuthorsIntoStrings(entry.authors)).join(', '),
+    namePublishedIn: convertCitationsToBibJSON(entry.citations.preexisting),
+    definitionSource: // IAO:definition source (http://purl.obolibrary.org/obo/IAO_0000119)
       convertCitationsToBibJSON(entry.citations.definitional),
-    cladeDefinition: (entry.definition || '').trim(),
+    definition: (entry.definition || '').trim(),
     internalSpecifiers: [],
     externalSpecifiers: [],
   });
@@ -268,19 +269,19 @@ dump.forEach((entry, index) => {
     const specifierAuthors = (specifier.displayAuths || '').trim();
     const specifierCode = (specifier.specifier_code || '').trim();
 
-    let nomenCode = NAME_IN_UNKNOWN_CODE;
+    let nomenCode = phyx.TaxonNameWrapper.NAME_IN_UNKNOWN_CODE;
     // As of the May 14, 2020 Regnum dump, only ICZN and ICBN
     // are used as pre-existing codes. I'll add ICNP and ICTV
     // as well once we need them.
     switch (specifierCode) {
       case 'ICZN':
-        nomenCode = ICZN_NAME;
+        nomenCode = phyx.TaxonNameWrapper.ICZN_CODE;
         break;
       case 'ICBN':
-        nomenCode = ICN_NAME;
+        nomenCode = phyx.TaxonNameWrapper.ICN_CODE;
         break;
       case '':
-        nomenCode = NAME_IN_UNKNOWN_CODE;
+        nomenCode = phyx.TaxonNameWrapper.NAME_IN_UNKNOWN_CODE;
         break;
       default:
         throw new Error(`Unknown specifier_code: '${specifierCode}'`);
@@ -319,8 +320,6 @@ dump.forEach((entry, index) => {
   });
 
   // Write out Phyx file for this phyloreference.
-  const fileIndex = `${index + 1}`.padStart(6, '0');
-  const filePrefix = argv.filenamePrefix || '';
   let phyxFilename;
   if (argv.filenames === 'label') {
     // Use the phyloref label.
