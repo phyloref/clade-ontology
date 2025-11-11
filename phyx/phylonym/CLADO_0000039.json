@@ -1,0 +1,298 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A phylogeny of the hemichordates based on morphological characters.",
+                "year": 2005,
+                "authors": [
+                    {
+                        "name": "C. B. Cameron",
+                        "alternate": [
+                            "Cameron, C. B."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Cameron",
+                        "middlename": "B."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "5",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1139/z04-190"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Canadian Journal of Zoology",
+                    "volume": "83",
+                    "identifier": []
+                }
+            },
+            "newick": "(Cnidaria, \n((Polychaeta, Sipuncula),\n\n(((Crinoidea, (Asteroidea, (Ophuroidea, (Echinoidea, Holothuroidea)))),\n\n((Rhabdopleura, Cephalodiscus),\n\n(Protoglossus, Saccoflossus, Harrimania, Stereobalanus, Xenopleura, Saxipendium, \n((Spengelia, Schizocardium, Glandiceps, Willeyia), (Balangoglossus, Ptychodera, Glossobalanus))))),\n\n(Tunicata, (Cephalochordata, Vertebrata)))))"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Evaluating hypothesis of deuterostome phylogeny and chordate evolution with new LSU and SSU ribosomal DNA data.",
+                "year": 2002,
+                "authors": [
+                    {
+                        "name": "C. J. Winchell",
+                        "alternate": [
+                            "Winchell, C. J."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Winchell",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "J. Sullivan",
+                        "alternate": [
+                            "Sullivan, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Sullivan"
+                    },
+                    {
+                        "name": "C. B. Cameron",
+                        "alternate": [
+                            "Cameron, C. B."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Cameron",
+                        "middlename": "B."
+                    },
+                    {
+                        "name": "B. J. Swalla",
+                        "alternate": [
+                            "Swalla, B. J."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Swalla",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "J. Mallatt",
+                        "alternate": [
+                            "Mallatt, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Mallatt"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1093/oxfordjournals.molbev.a004134"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Biology and Evolution",
+                    "volume": "19",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Diversification of acorn worms (Hemichordata, Enteropneusta) revealed in the deep sea.",
+                "year": 2011,
+                "authors": [
+                    {
+                        "name": "K. J. Osborn",
+                        "alternate": [
+                            "Osborn, K. J."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Osborn",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "L. A. Kuhnz",
+                        "alternate": [
+                            "Kuhnz, L. A."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Kuhnz",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "I. G. Priede",
+                        "alternate": [
+                            "Priede, I. G."
+                        ],
+                        "firstname": "I.",
+                        "lastname": "Priede",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "M. Urata",
+                        "alternate": [
+                            "Urata, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Urata"
+                    },
+                    {
+                        "name": "A. V. Gebruk",
+                        "alternate": [
+                            "Gebruk, A. V."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Gebruk",
+                        "middlename": "V."
+                    },
+                    {
+                        "name": "N. D. Holland",
+                        "alternate": [
+                            "Holland, N. D."
+                        ],
+                        "firstname": "N.",
+                        "lastname": "Holland",
+                        "middlename": "D."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "4",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1098/rspb.2011.1916"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Proceedings of the Royal Society of London B Biological Sciences",
+                    "volume": "279",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 39,
+            "label": "Enteropneusta",
+            "dwc:scientificNameAuthorship": "Cameron, C. B.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Grundzüge der vergleichenden Anatomie. 2. umgearb. Auflage. Mit 319 Holzschnitten.",
+                    "year": 1870,
+                    "authors": [
+                        {
+                            "name": "C. Gegenbaur",
+                            "alternate": [
+                                "Gegenbaur, C."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Gegenbaur"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "city": "Leipzig",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Ptychodera flava Eschscholtz 1825, Harrimania kupfferi von Willemoes-Suhm 1871, Saccoglossus kowalevskii Agassiz 1873, Glandiceps hacksi Marion 1885, Stereobalanus canadensis Spengel 1893, Protoglossus koehleri Caullery and Mesnil 1900, Xenopleura vivipara Gilchrist 1925, Saxipendium coronatum Woodwick & Sensenbaugh 1985, and Tergivelum baldwinae Holland et al. 2009.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Ptychodera flava Eschscholtz, 1825",
+                        "nameComplete": "Ptychodera flava"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Harrimania kupfferi von Willemoes-Suhm, 1871",
+                        "nameComplete": "Harrimania kupfferi"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Saccoglossus kowalevskii Agassiz, 1873",
+                        "nameComplete": "Saccoglossus kowalevskii"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Glandiceps hacksi Marion, 1885",
+                        "nameComplete": "Glandiceps hacksi"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Stereobalanus canadensis Spengel, 1893",
+                        "nameComplete": "Stereobalanus canadensis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Protoglossus koehleri Caullery and Mesnil, 1900",
+                        "nameComplete": "Protoglossus koehleri"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Xenopleura vivipara Gilchrist, 1925",
+                        "nameComplete": "Xenopleura vivipara"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Saxipendium coronatum Woodwick and Sensenbaugh, 1985",
+                        "nameComplete": "Saxipendium coronatum"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Tergivelum baldwinae Holland, 2009",
+                        "nameComplete": "Tergivelum baldwinae"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

@@ -1,0 +1,111 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Basal archosaurs: phylogenetic relationships and functional implications. Society of Vertebrate Paleontology Memoir 2, J.",
+                "year": 1991,
+                "authors": [
+                    {
+                        "name": "P. C. Sereno",
+                        "alternate": [
+                            "Sereno, P. C."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Sereno",
+                        "middlename": "C."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "26A",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1080/02724634.1991.10011426"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Vertebrate Paleontology",
+                    "volume": "11",
+                    "identifier": []
+                }
+            },
+            "newick": "(Proterosuchus, Erythrosuchidae, Euparkeria, \nProterochampsidae, \n(Suchia, (Ornithosuchus, Riojasuchus),\nParasuchia), \n(Pterosauria, Scleromochlus), \nDinosauromorpha)"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 149,
+            "label": "Pterosauromorpha",
+            "dwc:scientificNameAuthorship": "Andres, B., Padian, K.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Handbook of paleozoology.",
+                    "year": 1986,
+                    "authors": [
+                        {
+                            "name": "E. Kuhn-Schnyder",
+                            "alternate": [
+                                "Kuhn-Schnyder, E."
+                            ],
+                            "firstname": "E.",
+                            "lastname": "Kuhn-Schnyder"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "H. Rieber",
+                            "alternate": [
+                                "Rieber, H."
+                            ],
+                            "firstname": "H.",
+                            "lastname": "Rieber"
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "The John Hopkins University Press",
+                    "city": "Baltimore",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The clade consisting of Pterodactylus antiquus (Soemmerring 1812) (Pterosauria) and all organisms or species that share a more recent common ancestor with it than with Alligator (originally Crocodilus) mississippiensis Daudin 1802 (Suchia/Crocodylia) and Compsognathus longipes Wagner 1859 (Dinosauromorpha/ Dinosauria).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Pterodactylus antiquus Soemmerring, 1812",
+                        "nameComplete": "Pterodactylus antiquus"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Alligator (originally Crocodilus) mississippiensis Daudin, 1802",
+                        "nameComplete": "Alligator (originally Crocodilus) mississippiensis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Compsognathus longipes Wagner, 1859",
+                        "nameComplete": "Compsognathus longipes"
+                    }
+                }
+            ]
+        }
+    ]
+}

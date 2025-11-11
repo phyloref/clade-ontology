@@ -1,0 +1,410 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Relationships of Cetacea (Artiodactyla) among mammals: Increased taxon sampling alters interpretations of key fossils and character evolution.",
+                "year": 2009,
+                "edition": "4",
+                "authors": [
+                    {
+                        "name": "M. Spaulding",
+                        "alternate": [
+                            "Spaulding, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Spaulding"
+                    },
+                    {
+                        "name": "M. A. O'Leary",
+                        "alternate": [
+                            "O'Leary, M. A."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "O'Leary",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "J. Gatesy",
+                        "alternate": [
+                            "Gatesy, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Gatesy"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1371/journal.pone.0007062"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "PloS One",
+                    "volume": "9",
+                    "identifier": []
+                }
+            },
+            "newick": "(((((((((((((((((((((((Delphinidae, Monodontidae), (Inia_geoffrensis, Pontoporia_blainvillei)),\nZiphiidae), Physeteridae), Mysticeti), Basilosaurus), Dorudon_atrox),\n(Artiocetus_clavis, Rodhocetus_balochistanensis)), Pakicetidae), \nAmbulocetus_natans), Indohyus_indirae),\n((Diacodexis_pakistanensis, Diacodexis_North_American), Helohyus_plicodon)),\n((Hippopotamus_amphibius, Choeropsis_liberiensis), Merycopotamus_dissimilis)),\n((Archaeotherium, Brachyhyops_wyomingensis), Archaenodon_uintensis, Andrewsarchus_mongoliensis)),\nSiamotherium_krabiense),\n\n((((((((Bos_taurus, Ovis), (Moschus, Leptomeryx)), (Odocoileus, Cervus)), Giraffidae),\nAntilocapra_americana), Tragulus), (Libycosaurus_petrocchii, Protoceras_celer)),\n(Elomeryx, Bothriogenys))),\n\n((((((Babyrousa_babyrussa, Hylochoerus_meinertzhageni), Potamochoerus_porcus), Sus_scrofa),\nTayassu_tajacu), Xenohyus_venitor), Perchoerus)),\n\n(((((Camelus, Lama), Poebrotherium), Cainotherium), (Agriochoerus, Merycoidodon_sp.)),\nGobiohyus_orientalis, Microbunodon_minimum, Anthracokeryx_ulnifer)),\n\n(((Rhinocerotidae, Tapirus), Equus), Hyracotherium)),\n\n((Hyposodus, Protungulatum), Phenacodus, Eoconodon_heilprinianus)),\n\n((((Pachyaena_ossifraga, Harpagolestes_orientalis), Dissacus_praenuntius), \nSinonyx_jiashanensis, Mesonyx_obtusidens, Dissacus_zanabazari, Harpagolestes_uintensis),\nHapalodectes_hetangensis)),\n\n((((Ailurus_fulgens, Canis), (Nandinia_binotata, Felis)), Vulpavus_profectus),\n(((Hyaenodon, Patriofelis), Thinocyon), Sinopa))),\n\nErinaceus), Orycteropus_afer)\n"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "book_section",
+                "title": "The evolution of Artiodactyla",
+                "section_title": "Phylogenetic relationships of cetaceans to terrestrial artiodactyls.",
+                "year": 2007,
+                "authors": [
+                    {
+                        "name": "J. H. Geisler",
+                        "alternate": [
+                            "Geisler , J. H."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Geisler",
+                        "middlename": "H."
+                    },
+                    {
+                        "name": "J. M. Theodor",
+                        "alternate": [
+                            "Theodor, J. M."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Theodor",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "M. D. Uhen",
+                        "alternate": [
+                            "Uhen, M. D."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Uhen",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "S. E. Foss",
+                        "alternate": [
+                            "Foss, S. E."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Foss",
+                        "middlename": "E."
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "D. R. Prothero",
+                        "alternate": [
+                            "Prothero, D. R."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Prothero",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "S. E. Foss",
+                        "alternate": [
+                            "Foss, S. E."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Foss",
+                        "middlename": "E."
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "Johns Hopkins University Press",
+                "city": "Baltimore",
+                "pages": "19-31",
+                "figure": "3.2",
+                "identifier": [],
+                "link": []
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "book_section",
+                "title": "The evolution of Artiodactyla",
+                "section_title": "Molecular phylogeny of terrestrial artiodactyls: conflicts and resolution.",
+                "year": 2007,
+                "authors": [
+                    {
+                        "name": "J. D. Marcot",
+                        "alternate": [
+                            "Marcot, J. D."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Marcot",
+                        "middlename": "D."
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "D. R. Prothero",
+                        "alternate": [
+                            "Prothero, D. R."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Prothero",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "S. E. Foss",
+                        "alternate": [
+                            "Foss, S. E."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Foss",
+                        "middlename": "E."
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "Johns Hopkins University Press",
+                "city": "Baltimore",
+                "pages": "4-18",
+                "figure": "2.1",
+                "identifier": [],
+                "link": []
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Impact of increased character sampling on the phylogeny of Cetartiodactyla (Mammalia): combined analysis including fossils.",
+                "year": 2008,
+                "authors": [
+                    {
+                        "name": "M. A. O'Leary",
+                        "alternate": [
+                            "O'Leary, M. A."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "O'Leary",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "J. Gatesy",
+                        "alternate": [
+                            "Gatesy, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Gatesy"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "4, 5",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "/10.1111/j.1096-0031.2007.00187.x"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Cladistics",
+                    "volume": "23",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Pattern and timing of diversification of Cetartiodactyla (Mammalia, Laurasiatheria), as revealed by a comprehensive analysis of mitochondrial genomes.",
+                "year": 2012,
+                "authors": [
+                    {
+                        "name": "A. Hassanin",
+                        "alternate": [
+                            "Hassanin, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Hassanin"
+                    },
+                    {
+                        "name": "F. Delsuc",
+                        "alternate": [
+                            "Delsuc, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Delsuc"
+                    },
+                    {
+                        "name": "A. Ropiquet",
+                        "alternate": [
+                            "Ropiquet, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Ropiquet"
+                    },
+                    {
+                        "name": "C. Hammer",
+                        "alternate": [
+                            "Hammer, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Hammer"
+                    },
+                    {
+                        "name": "B. van Vuuren",
+                        "alternate": [
+                            "van Vuuren, B."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "van Vuuren"
+                    },
+                    {
+                        "name": "C. Matthee",
+                        "alternate": [
+                            "Matthee, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Matthee"
+                    },
+                    {
+                        "name": "M. Ruiz-Garcia",
+                        "alternate": [
+                            "Ruiz-Garcia, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Ruiz-Garcia"
+                    },
+                    {
+                        "name": "F. Catzeflis",
+                        "alternate": [
+                            "Catzeflis, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Catzeflis"
+                    },
+                    {
+                        "name": "V. Areskoug",
+                        "alternate": [
+                            "Areskoug, V."
+                        ],
+                        "firstname": "V.",
+                        "lastname": "Areskoug"
+                    },
+                    {
+                        "name": "T. Nguyen",
+                        "alternate": [
+                            "Nguyen, T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Nguyen"
+                    },
+                    {
+                        "name": "A. Couloux",
+                        "alternate": [
+                            "Couloux, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Couloux"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2012",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.crvi.2011.11.002"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "C. R. Biologies",
+                    "volume": "335",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 293,
+            "label": "Artiodactyla",
+            "dwc:scientificNameAuthorship": "O'Leary, M. A., Orliac, M. J., Spaulding, M., Gatesy, J. E.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Description of teeth and portions of jaws of two extinct anthracotherioid quadrupeds (Hyopotamus vectianus and Hyop. bovinus) discovered by the Marchioness of Hastings in the Eocene deposits on the NW coast of the Isle of Wight: with an attempt to develope Cuvier's idea of the classification of pachyderms by the number of their toes.",
+                    "year": 1848,
+                    "authors": [
+                        {
+                            "name": "R. Owen",
+                            "alternate": [
+                                "Owen, R."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Owen"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "M. J. Benton",
+                            "alternate": [
+                                "Benton, M. J."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Benton",
+                            "middlename": "J."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "Clarendon Press",
+                    "city": "London",
+                    "pages": "201-234",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The least inclusive crown clade containing Camelus dromedarius Linnaeus 1758 (Camelidae), Hippopotamus amphibius Linnaeus 1758 (Hippopotamidae), Sus scrofa Linnaeus 1758 (Suidae), and Bos primigenius Bojanus 1827 (Bovidae).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Camelus dromedarius 1758",
+                        "nameComplete": "Camelus dromedarius"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Hippopotamus amphibius 1758",
+                        "nameComplete": "Hippopotamus amphibius"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Sus scrofa 1758",
+                        "nameComplete": "Sus scrofa"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Bos primigenius 1827",
+                        "nameComplete": "Bos primigenius"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

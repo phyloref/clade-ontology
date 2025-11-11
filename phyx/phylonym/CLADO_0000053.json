@@ -1,0 +1,128 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Insights into the evolution of nuclear dualism in the ciliates revealed by phylogenetic analysis of rRNA sequences.",
+                "year": 1996,
+                "authors": [
+                    {
+                        "name": "B. Hammerschmidt",
+                        "alternate": [
+                            "Hammerschmidt , B."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Hammerschmidt"
+                    },
+                    {
+                        "name": "M. Schlegel",
+                        "alternate": [
+                            "Schlegel, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Schlegel"
+                    },
+                    {
+                        "name": "D. Lynn",
+                        "alternate": [
+                            "Lynn, D."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Lynn"
+                    },
+                    {
+                        "name": "D. D. Leipe",
+                        "alternate": [
+                            "Leipe, D. D."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Leipe",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "M. L. Sogin",
+                        "alternate": [
+                            "Sogin, M. L."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Sogin",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "I. B. Raikov",
+                        "alternate": [
+                            "Raikov, I. B."
+                        ],
+                        "firstname": "I.",
+                        "lastname": "Raikov",
+                        "middlename": "B."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.1550-7408.1996.tb01396.x"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Eukaryotic Microbiology",
+                    "volume": "43",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 53,
+            "label": "Intramacronucleata",
+            "dwc:scientificNameAuthorship": "Lynn, D. J., Dunthorn, M.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "My journey in ciliate systematics.",
+                    "year": 1996,
+                    "authors": [
+                        {
+                            "name": "D. H. Lynn",
+                            "alternate": [
+                                "Lynn, D. H."
+                            ],
+                            "firstname": "D.",
+                            "lastname": "Lynn",
+                            "middlename": "H."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "J.  Eukaryot. Microbiol.",
+                        "volume": "43",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The crown clade for which intramacronuclear microtubules (as described under Diagnostic Apomorphies), as inherited by Tetrahymena thermophila Nanney and McCoy 1976, is an apomorphy relative to other crown clades.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Tetrahymena thermophila Nanney and McCoy, 1976",
+                        "nameComplete": "Tetrahymena thermophila"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

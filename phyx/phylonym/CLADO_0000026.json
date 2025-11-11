@@ -1,0 +1,200 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Gain and loss of elongation factor genes in green algae.",
+                "year": 2009,
+                "authors": [
+                    {
+                        "name": "E. Cocquyt",
+                        "alternate": [
+                            "Cocquyt, E."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Cocquyt"
+                    },
+                    {
+                        "name": "H. Verbruggen",
+                        "alternate": [
+                            "Verbruggen, H."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Verbruggen"
+                    },
+                    {
+                        "name": "F. Leliaert",
+                        "alternate": [
+                            "Leliaert, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Leliaert"
+                    },
+                    {
+                        "name": "F. W. Zechman",
+                        "alternate": [
+                            "Zechman, F. W."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Zechman",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "K. Sabbe",
+                        "alternate": [
+                            "Sabbe, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Sabbe"
+                    },
+                    {
+                        "name": "O. De Clerck",
+                        "alternate": [
+                            "De Clerck, O."
+                        ],
+                        "firstname": "O.",
+                        "lastname": "De Clerck"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1186/1471-2148-9-39"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "BMC Evolutionary Biology",
+                    "volume": "9",
+                    "identifier": []
+                }
+            },
+            "newick": "(Cyanophora_paradoxa,\n\n(((Cyanidioschyzon_merolae, (Porphyra_yezoensis, \n(Gracilaria_spp, Chondrus_crispus)))),\n\n(((((Chlorokybus_atmophyticus, Mesostigma_viride),\n(Entransia_fimbriata, (Spirogyra_spp, (Chara_connivens,\n(Physcomitrella_patens,\n((((Actinidia_spp, Cichorium_intybus), Arabidopsis_thaliana),\n(Oryza_sativa, Triticum_aestivum)))))))))),\n\n((Nephroselmis_olivacea, (Micromonas_pusilla, Ostreococcus_tauri)),\n\n(Tetraselmis_spp, \n\n((Chlorella_vulgaris, Prototheca_wickerhamii),\n\n(((Scenedesmus_obliquus, (Chlamydomonas_reinhardtii, Pleodorina_spp)),\nChlorococcum_echinozygotum),\n\n((Ignatius_tetrasporus, (Bolbocoleon_piliferum, \n((Ulva_fenestrata, Ulva_intestinalis), Arcochaete_repens))),\n\n(((Bornetella_spp, Acetabularia_spp), (Ostreobium_quekettii, \n(Bryopsis_spp, Codium_platylobium))),\n\n(Ernodesmis_verticillata, (Cladophora_coelothrix, (Dictyosphaeria_cavernosa,\n((Phyllodictyon_pulcherrimum, Boodlea_composita), Valonia_utricularis)))))))))))))\n"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "The closest living relatives of land plants.",
+                "year": 2001,
+                "authors": [
+                    {
+                        "name": "K. G. Karol",
+                        "alternate": [
+                            "Karol, K. G."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Karol",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "R. M. McCourt",
+                        "alternate": [
+                            "McCourt, R. M."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "McCourt",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "M. T. Cimino",
+                        "alternate": [
+                            "Cimino, M. T."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Cimino",
+                        "middlename": "T."
+                    },
+                    {
+                        "name": "C. F. Delwiche",
+                        "alternate": [
+                            "Delwiche, C. F."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Delwiche",
+                        "middlename": "F."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1126/science.1065156"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Science",
+                    "volume": "294",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 26,
+            "label": "Charophyta",
+            "dwc:scientificNameAuthorship": "Karol, K. G., McCourt, R. M., Mishler, B. D., Delwiche, C. F., Hall, J. D.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Kryptogamen-Flora von Deutschland, Oesterreich und der Schweiz",
+                    "year": 1897,
+                    "authors": [
+                        {
+                            "name": "Migula",
+                            "alternate": [
+                                "Migula,"
+                            ],
+                            "lastname": "Migula"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "Rabenhorst",
+                            "alternate": [
+                                "Rabenhorst,"
+                            ],
+                            "lastname": "Rabenhorst"
+                        }
+                    ],
+                    "series_editors": [],
+                    "city": "Leipzig",
+                    "pages": "1-765",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The largest crown clade containing Chara vulgaris Linnaeus 1753 but not Chlamydomonas reinhardti P. C. A. Dangeard 1891 (Chlorophyta).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Chara vulgaris Linnaeus, 1753",
+                        "nameComplete": "Chara vulgaris"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Chlamydomonas reinhardti Dangeard, 1891",
+                        "nameComplete": "Chlamydomonas reinhardti"
+                    }
+                }
+            ]
+        }
+    ]
+}

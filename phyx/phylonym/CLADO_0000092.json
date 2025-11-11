@@ -1,0 +1,200 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Phylogenomics reveals a new ‘megagroup’including most photosynthetic eukaryotes.",
+                "year": 2008,
+                "authors": [
+                    {
+                        "name": "F. Burki",
+                        "alternate": [
+                            "Burki, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Burki"
+                    },
+                    {
+                        "name": "K. Shalchian-Tabrizi",
+                        "alternate": [
+                            "Shalchian-Tabrizi , K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Shalchian-Tabrizi"
+                    },
+                    {
+                        "name": "J. Pawlowski",
+                        "alternate": [
+                            "Pawlowski, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Pawlowski"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1098/rsbl.2008.0224"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Biology Letters",
+                    "volume": "4",
+                    "identifier": []
+                }
+            },
+            "newick": "(((((((((Alexandrium, (Karenia, Karlodinium)),\nOxyrrhis), Perkinsus), \n(Cryptosporidium, ((Eimeria, Toxoplasma), \n(Plasmodium, Theileria)))),\n\n(Paramecium, Tetrahymena)), \n\n(((Aureococcus, (Phaeodactylum, Thalassiosira)), \nPhytophthora), Blastocystis)), \n\n((Bigelowiella, (Cercomonas, Gymnophrys)), \n(Quinqueloculina, Reticulomyxa))), \n\n((((((((Arabidopsis, Brassica), (Oryza, Sorghum)), Pinus), \nPhyscomitrella), \n((Chlamydomonas, Volvox), Ostreococcus)),\n(Galdieria, (Gracilaria, Porphyra))), \n(Cyanophora, Glaucocystis)), \n(((Emiliania, Isochrysis), Pavlova), Guillardia))),\n\n(((Hartmannela, Acanthamoeba), (Dictyostelium, Mastigamoeba)),\n((((Cryptococcus, Ustilago), \n(Neurospora, Schizosaccharomyces)), Phycomyces), \n\n(((Drosophila, (Gallus, (Homo, Mus))), \n(Nematostella, Trichoplax)),\nMonosiga))),\n\n(((Euglena, (Leishmania, Trypanosoma)), \n(Naegleria, (Sawyeria, Stachyamoeba))),\n\n((Histiona, Reclinomonas), Jakoba)))"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 92,
+            "label": "Sar",
+            "dwc:scientificNameAuthorship": "Simpson, A. G. B., Dunthorn, M.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "The revised classification of eukaryotes.",
+                    "year": 2012,
+                    "authors": [
+                        {
+                            "name": "S. M. Adl",
+                            "alternate": [
+                                "Adl, S. M."
+                            ],
+                            "firstname": "S.",
+                            "lastname": "Adl",
+                            "middlename": "M."
+                        },
+                        {
+                            "name": "A. G. B. Simpson",
+                            "alternate": [
+                                "Simpson, A. G. B."
+                            ],
+                            "firstname": "A. G.",
+                            "lastname": "Simpson",
+                            "middlename": "B."
+                        },
+                        {
+                            "name": "C. E. Lane",
+                            "alternate": [
+                                "Lane, C. E."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Lane",
+                            "middlename": "E."
+                        },
+                        {
+                            "name": "J. Lukes",
+                            "alternate": [
+                                "Lukes, J."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Lukes"
+                        },
+                        {
+                            "name": "D. Bass",
+                            "alternate": [
+                                "Bass, D."
+                            ],
+                            "firstname": "D.",
+                            "lastname": "Bass"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "J. Eukaryot. Microbiol.",
+                        "volume": "59",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing Bigelowiella natans Moestrup & Sengco 2001 (Rhizaria), Tetrahymena thermophila Nanney & McCoy 1976 (Alveolata), and Thalassiosira pseudonana Cleve 1873 (Stramenopila) but not Homo sapiens Linnaeus 1758 (Opisthokonta) or Dictyostelium discoideum Raper 1935 (Amoebozoa) and Arabidopsis thaliana (Linnaeus) Heynhold 1842 (Archaeplastida) or Euglena gracilis Klebs 1883 (Excavata) or Emiliania huxleyi (Lohmann) Hay & Mohler in Hay et al. 1967 (Haptophyta).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Bigelowiella natans Moestrup, 2001",
+                        "nameComplete": "Bigelowiella natans"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Tetrahymena thermophila Nanney, 1976",
+                        "nameComplete": "Tetrahymena thermophila"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Thalassiosira pseudonana Cleve, 1873",
+                        "nameComplete": "Thalassiosira pseudonana"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Emiliania huxleyi Hay, 1967",
+                        "nameComplete": "Emiliania huxleyi"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Homo sapiens Linnaeus, 1758",
+                        "nameComplete": "Homo sapiens"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Dictyostelium discoideum Raper, 1935",
+                        "nameComplete": "Dictyostelium discoideum"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Arabidopsis thaliana Heynhold, 1842",
+                        "nameComplete": "Arabidopsis thaliana"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Euglena gracilis Klebbs, 1883",
+                        "nameComplete": "Euglena gracilis"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,152 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Cranial morphology and affinities of Microbrachis, and a reappraisal of the phylogeny and lifestyle of the first amphibians.",
+                "year": 2004,
+                "authors": [
+                    {
+                        "name": "G. Vallin",
+                        "alternate": [
+                            "Vallin, G."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Vallin"
+                    },
+                    {
+                        "name": "M. Laurin",
+                        "alternate": [
+                            "Laurin, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Laurin"
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "G. Vallin",
+                        "alternate": [
+                            "Vallin, G."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Vallin"
+                    },
+                    {
+                        "name": "M. Laurin",
+                        "alternate": [
+                            "Laurin, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Laurin"
+                    }
+                ],
+                "series_editors": [],
+                "figure": "6",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1671/5.1"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Vertebrate Paleontology",
+                    "volume": "24",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 9,
+            "label": "Amphibia",
+            "dwc:scientificNameAuthorship": "Laurin, M., Arntzen, J. W., Báez, A. M., Bauer, A. M., Damiani, R., Evans, S. E., Kupfer, A., Larson, A., Marjanović, D., Müller, H., Olsson, L., Rage, J. C., Walsh, D.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Systema naturae per regna tria naturae, secundum classes, ordines, genera, species, cum characteribus, differentiis, synonymis, locis. Tomus I. Editio decima, reformata.",
+                    "year": 1758,
+                    "authors": [
+                        {
+                            "name": "C. Linnaeus",
+                            "alternate": [
+                                "Linnaeus, C."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Linnaeus"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Laurentius Salvius",
+                    "city": "Stockholm",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The largest total clade containing Caecilia tentaculata Linnaeus 1758 (Gymnophiona), Siren lacertina Österdam 1766 (Sirenidae), Andrias japonicus (Temminck 1836), Proteus anguinus Laurenti 1768 (Proteidae), and Rana temporaria Linnaeus 1758 (Anura) but not Homo sapiens Linnaeus 1758 (Synapsida).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Caecilia tentaculata Linnaeus, 1758",
+                        "nameComplete": "Caecilia tentaculata"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Siren lacertina Österdam, 1766",
+                        "nameComplete": "Siren lacertina"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Andrias japonicus Temminck, 1836",
+                        "nameComplete": "Andrias japonicus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Proteus anguinus Laurenti, 1768",
+                        "nameComplete": "Proteus anguinus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Rana temporaria Linnaeus, 1758",
+                        "nameComplete": "Rana temporaria"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Homo sapiens Linnaeus, 1758",
+                        "nameComplete": "Homo sapiens"
+                    }
+                }
+            ]
+        }
+    ]
+}

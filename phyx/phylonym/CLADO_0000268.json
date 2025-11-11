@@ -1,0 +1,136 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Molecular phylogeny of the Carnivora (Mammalia): assessing the impact of increased sampling on resolving enigmatic relationships.",
+                "year": 2005,
+                "authors": [
+                    {
+                        "name": "J. J. Flynn",
+                        "alternate": [
+                            "Flynn, J. J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Flynn",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "J. A. Finarelli",
+                        "alternate": [
+                            "Finarelli, J. A."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Finarelli",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "S. Zehr",
+                        "alternate": [
+                            "Zehr, S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Zehr"
+                    },
+                    {
+                        "name": "J. Hsu",
+                        "alternate": [
+                            "Hsu, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Hsu"
+                    },
+                    {
+                        "name": "M. A. Nedbal",
+                        "alternate": [
+                            "Nedbal, M. A."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Nedbal",
+                        "middlename": "A."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "5",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1080/10635150590923326"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Syst. Biol.",
+                    "volume": "54",
+                    "identifier": []
+                }
+            },
+            "newick": "((Nandina, (Felidae, (Viverridae, (Hyaenidae, (Herpestidae, Malagasy_carnivorans))))),\n\n(Canidae, (Ursidae, ((Phocidae, (Otaridae, Odobenidae)),\n\n(Ailurus, (Mephitidae, (Procyonidae, (Basal/Other_mustelids, Martes-group, (Mustela, Lutrinae)))))))))"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 268,
+            "label": "Carnivora",
+            "dwc:scientificNameAuthorship": "Flynn, J. J., Wyss, A. R., Wolsan, M.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "An analysis of the natural classifications of Mammalia for the use of students and travelers.",
+                    "year": 1821,
+                    "authors": [
+                        {
+                            "name": "T. Bowdich",
+                            "alternate": [
+                                "Bowdich, T."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Bowdich"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "J. Smith",
+                    "city": "Paris",
+                    "pages": "115+[31]",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The least inclusive crown clade containing Panthera leo Linnaeus 1758 (Felidae), Canis lupus Linnaeus 1758 (Canidae), and Phoca vitulina Linnaeus 1758 (Phocidae).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Panthera leo Linnaeus, 1758",
+                        "nameComplete": "Panthera leo"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Canis lupus Linnaeus, 1758",
+                        "nameComplete": "Canis lupus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Phoca vitulina Linnaeus, 1758",
+                        "nameComplete": "Phoca vitulina"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

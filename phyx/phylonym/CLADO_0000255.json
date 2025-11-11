@@ -1,0 +1,81 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "The braincase and jaws of a Devonian ‘acanthodian’ and modern gnathostome origins.",
+                "year": 2009,
+                "authors": [
+                    {
+                        "name": "Brazeau",
+                        "alternate": [
+                            "Brazeau,"
+                        ],
+                        "lastname": "Brazeau"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1038/nature07436"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Nature",
+                    "volume": "457",
+                    "identifier": []
+                }
+            },
+            "newick": "(((((((((((((Acanthodes:1.0,Homalacanthus:1.0):1.0,Cheiracanthus:2.0):1.0,Mesacanthus:3.0,Promesacanthus:3.0):1.0,Cassidiceps:4.0):1.0,Euthacanthus:5.0):1.0,(Ischnacanthus:1.0,Poracanthodes:1.0):5.0):1.0,((((Cheirolepis:1.0,Howqualepis:1.0,Mimia:1.0):1.0,(Onychodus:1.0,Porolepis:1.0,Psarolepis:1.0):1.0):1.0,Ligulalepis:3.0):1.0,Dialipina:4.0):3.0):1.0,(((((Akmonistion:1.0,Cladoselache:1.0):1.0,Cladodoides:2.0,Doliodus:2.0,Hamiltonichthys:2.0,Obtusacanthus:2.0,Orthacanthus:2.0,Pucapampella:2.0,'\"Tamiobatis\"':2.0):1.0,Kathemacanthus:3.0):1.0,Brochoadmones:4.0):1.0,((Brachyacanthus:1.0,Parexus:1.0):1.0,Climatius:2.0):3.0,Ptomacanthus:5.0):3.0,Culmacanthus:8.0,((Diplacanthus:1.0,Gladiobranchus:1.0):1.0,Tetanopsyrus:2.0):6.0):1.0,((Buchanosteus:1.0,Coccosteus:1.0):1.0,Dicksonosteus:2.0):7.0):1.0,Brindabellaspis:10.0,((Campbellodus:1.0,Rhamphodopsis:1.0):1.0,Macropetalichthys:2.0):8.0):1.0,(Bothriolepis:1.0,Pterichthyodes:1.0):10.0):1.0,Osteostraci:12.0):1.0,Galeaspida:13.0);"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 255,
+            "label": "Gnathostomata",
+            "dwc:scientificNameAuthorship": "Downs, J. P.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Grundriss der Vergleichenden Anatomie",
+                    "year": 1874,
+                    "authors": [
+                        {
+                            "name": "C. Gegenbaur",
+                            "alternate": [
+                                "Gegenbaur, C."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Gegenbaur"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Wilhelm Engelmann",
+                    "city": "Leipzig",
+                    "pages": "655",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The most inclusive crown clade whose members exhibit jaws synapomorphic with those in Scyliorhinus canicula Linnaeus 1758 (Chondrichthyes).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Scyliorhinus canicula Linnaeus, 1758",
+                        "nameComplete": "Scyliorhinus canicula"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

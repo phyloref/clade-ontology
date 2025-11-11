@@ -1,0 +1,172 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Dinosaurs and the Cretaceous Terrestrial Revolution.",
+                "year": 2008,
+                "authors": [
+                    {
+                        "name": "G. T. Lloyd",
+                        "alternate": [
+                            "Lloyd, G. T."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Lloyd",
+                        "middlename": "T."
+                    },
+                    {
+                        "name": "K. E. Davis",
+                        "alternate": [
+                            "Davis, K. E."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Davis",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "D. Pisani",
+                        "alternate": [
+                            "Pisani, D."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Pisani"
+                    },
+                    {
+                        "name": "J. E. Tarver",
+                        "alternate": [
+                            "Tarver, J. E."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Tarver",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "M. Ruta",
+                        "alternate": [
+                            "Ruta, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Ruta"
+                    },
+                    {
+                        "name": "M. Sakamoto",
+                        "alternate": [
+                            "Sakamoto, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Sakamoto"
+                    },
+                    {
+                        "name": "D. W. E. Hone",
+                        "alternate": [
+                            "Hone, D. W. E."
+                        ],
+                        "firstname": "D. W.",
+                        "lastname": "Hone",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "R. Jennings",
+                        "alternate": [
+                            "Jennings, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Jennings"
+                    },
+                    {
+                        "name": "M. J. Benton",
+                        "alternate": [
+                            "Benton, M. J."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Benton",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1098/rspb.2008.0715"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Proceedings of the Royal Society of London B",
+                    "volume": "275",
+                    "identifier": []
+                }
+            },
+            "newick": "((Basal_Ornithischia, ((Basal_Thyreophora, \n((Huayangosaurus_taibaii, Stegosauridae), (Struthiosaurus_austriacus, Ankylosauria))),\n(Stormbergia_dangershoeki, ((Heterodontosauridae, (Pachycephalosauria, \n(Basal_Ceratopsia, (Avaceratops_lammersi, Ceratopsidae)))),\n\n(Basal_Euornithopoda, (Dryosauridae, (Camptosaurus_dispar, \n(Basal_Iguanodontoidea, Euhadrosauria)))))))),\n\n((Basal_Sauropodomorpha, (Prosauropoda, (Basal_Sauropoda, Neosauropoda))), \n(Basal_Theropoda, (Coelophysoidea, (Neoceratosauria, (Szechuanoraptor_zigongensis, \n(Megalosauroidea, (Carnosauria, (Basal_Neotetanurae, \n((Siamotyrannus_isanensis, Tyrannosauroidea), (Compsognathoidea,\n(Scipionyx_samniticus, (Basal_Coelurosauria, (Ornithomimosauria, \n(Basal_Maniraptora, (Oviraptorosauria, \n(Alvarezsauridae, (Gugyedong_maniraptoran, (Protarchaeopteryx_robusta, \nEumaniraptora)))))))))))))))))))"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 194,
+            "label": "Dinosauria",
+            "dwc:scientificNameAuthorship": "Langer, M. C., Novas, F. E., Bittencourt, J., Ezcurra, M. D., Gauthier, J. A.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Report on British fossil reptiles. Part II.",
+                    "year": 1842,
+                    "authors": [
+                        {
+                            "name": "R. Owen",
+                            "alternate": [
+                                "Owen, R."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Owen"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Rep. Br. Assoc. Adv. Sci.",
+                        "volume": "11",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest clade containing Iguanodon bernissartensis Boulenger in Beneden 1881 (Ornithischia: Euornithopoda), Megalosaurus bucklandii Mantell 1827 (Theropoda: Megalosauroidea) and Cetiosaurus oxoniensis Phillips 1871 (Sauropodomorpha).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Iguanodon bernissartensis Beneden, 1881",
+                        "nameComplete": "Iguanodon bernissartensis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Megalosaurus bucklandii Mantell, 1827",
+                        "nameComplete": "Megalosaurus bucklandii"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Cetiosaurus oxoniensis Phillips, 1871",
+                        "nameComplete": "Cetiosaurus oxoniensis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

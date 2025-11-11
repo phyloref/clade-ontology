@@ -1,0 +1,100 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Definition, diagnosis and origin of Mammalia.",
+                "year": 1988,
+                "authors": [
+                    {
+                        "name": "T. B. Rowe",
+                        "alternate": [
+                            "Rowe, T. B."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Rowe",
+                        "middlename": "B."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1080/02724634.1988.10011708"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Vertebrate Paleontology",
+                    "volume": "8",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 220,
+            "label": "Mammalia",
+            "dwc:scientificNameAuthorship": "Rowe, T.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Systema naturae per regna tria naturae, secundum classes, ordines, genera, species, cum characteribus, differentiis, synonymis, locis.  Tomus I. Editio decima.",
+                    "year": 1758,
+                    "authors": [
+                        {
+                            "name": "C. Linnaeus",
+                            "alternate": [
+                                "Linnaeus, C."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Linnaeus"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Laurentius Salvius",
+                    "city": "Stockholm",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing Homo sapiens Linnaeus 1758 (Placentalia), Didelphis marsupialis Linnaeus 1758 (Marsupialia), and Tachyglossus aculeatus (Shaw 1792) (Monotremata).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Homo sapiens Linnaeus, 1758",
+                        "nameComplete": "Homo sapiens"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Didelphis marsupialis Linnaeus, 1758",
+                        "nameComplete": "Didelphis marsupialis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Tachyglossus aculeatus Shaw, 1792",
+                        "nameComplete": "Tachyglossus aculeatus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

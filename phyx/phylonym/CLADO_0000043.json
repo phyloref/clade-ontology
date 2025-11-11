@@ -1,0 +1,555 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Horsetails and ferns are a monophyletic group and the closest living relatives to seed plants.",
+                "year": 2001,
+                "authors": [
+                    {
+                        "name": "K. M. Pryer",
+                        "alternate": [
+                            "Pryer, K. M."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Pryer",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "H. Schneider",
+                        "alternate": [
+                            "Schneider, H."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Schneider"
+                    },
+                    {
+                        "name": "A. R. Smith",
+                        "alternate": [
+                            "Smith, A. R."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Smith",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "R. Cranfill",
+                        "alternate": [
+                            "Cranfill, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Cranfill"
+                    },
+                    {
+                        "name": "P. G. Wolf",
+                        "alternate": [
+                            "Wolf, P. G."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Wolf",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "J. S. Hunt",
+                        "alternate": [
+                            "Hunt, J. S."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Hunt",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "S. D. Sipes",
+                        "alternate": [
+                            "Sipes, S. D."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Sipes",
+                        "middlename": "D."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1038/35054555"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Nature",
+                    "volume": "409",
+                    "identifier": []
+                }
+            },
+            "newick": "((((((((((((Pteridium, Blechnum), \n((Dicksonia, Plagiogyria), Cyathea)), \n(Marsilea, Salvinia)), \nLygodium),\n(Phanerosorus, Gleichenia)), \nHymenophyllum), \nOsmunda), \n((Equisetum_1, Equisetum_2),\n((Angiopteris, Marattia), Danaea))),\n\n((Ophioglossum, Botrychium), (Psilotum, Tmesipteris))), \n\n(((Gnetum, Pinus), (Cycas, Ginkgo)), \n(Austrobaileya, Chloranthus))), \n\n((Selaginella, Isoetes), Huperia)), \n\n((Polytrichum, Sphagnum), (Marchantia, Haplomitrium)),\n\nAnthoceros)"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "book",
+                "title": "The origin and early diversification of land plants—a cladistic study.",
+                "year": 1997,
+                "authors": [
+                    {
+                        "name": "P. Kenrick",
+                        "alternate": [
+                            "Kenrick, P."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Kenrick"
+                    },
+                    {
+                        "name": "P. R. Crane",
+                        "alternate": [
+                            "Crane, P. R."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Crane",
+                        "middlename": "R."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "publisher": "Smithsonian Institution Press",
+                "city": "Washington, D. C.",
+                "figure": "7.10",
+                "identifier": [],
+                "link": []
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Phylogeny and evolution of ferns (monilophytes) with a focus on the early leptosporangiate divergences.",
+                "year": 2004,
+                "authors": [
+                    {
+                        "name": "K. M. Pryer",
+                        "alternate": [
+                            "Pryer, K. M."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Pryer",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "E. Schuettpelz",
+                        "alternate": [
+                            "Schuettpelz, E."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Schuettpelz"
+                    },
+                    {
+                        "name": "P. G. Wolf",
+                        "alternate": [
+                            "Wolf, P. G."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Wolf",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "H. Schneider",
+                        "alternate": [
+                            "Schneider, H."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Schneider"
+                    },
+                    {
+                        "name": "A. R. Smith",
+                        "alternate": [
+                            "Smith, A. R."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Smith",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "R. Cranfill",
+                        "alternate": [
+                            "Cranfill, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Cranfill"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.3732/ajb.91.10.1582"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "American Journal of Botany",
+                    "volume": "91",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "A nonflowering land plant phylogeny inferred from nucleotide sequences of seven chloroplast, mitochondrial, and nuclear genes.",
+                "year": 2007,
+                "authors": [
+                    {
+                        "name": "Y. L. Qiu",
+                        "alternate": [
+                            "Qiu, Y. L."
+                        ],
+                        "firstname": "Y.",
+                        "lastname": "Qiu",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "L. Li",
+                        "alternate": [
+                            "Li, L."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Li"
+                    },
+                    {
+                        "name": "B. Wang",
+                        "alternate": [
+                            "Wang, B."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Wang"
+                    },
+                    {
+                        "name": "Z. Chen",
+                        "alternate": [
+                            "Chen, Z."
+                        ],
+                        "firstname": "Z.",
+                        "lastname": "Chen"
+                    },
+                    {
+                        "name": "O. Dombrovska",
+                        "alternate": [
+                            "Dombrovska, O."
+                        ],
+                        "firstname": "O.",
+                        "lastname": "Dombrovska"
+                    },
+                    {
+                        "name": "J. Lee",
+                        "alternate": [
+                            "Lee, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Lee"
+                    },
+                    {
+                        "name": "L. Kent",
+                        "alternate": [
+                            "Kent, L."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Kent"
+                    },
+                    {
+                        "name": "R. Li",
+                        "alternate": [
+                            "Li, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Li"
+                    },
+                    {
+                        "name": "R. W. Jobson",
+                        "alternate": [
+                            "Jobson, R. W."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Jobson",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "T. A. Hendry",
+                        "alternate": [
+                            "Hendry, T. A."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Hendry",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "D. W. Taylor",
+                        "alternate": [
+                            "Taylor, D. W."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Taylor",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "C. M. Testa",
+                        "alternate": [
+                            "Testa, C. M."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Testa",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "M. Ambros",
+                        "alternate": [
+                            "Ambros, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Ambros"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1086/513474"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "International Journal of Plant Science",
+                    "volume": "168",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Is morphology really at odds with molecules in estimating fern phylogeny?",
+                "year": 2009,
+                "authors": [
+                    {
+                        "name": "H. Schneider",
+                        "alternate": [
+                            "Schneider, H."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Schneider"
+                    },
+                    {
+                        "name": "A. R. Smith",
+                        "alternate": [
+                            "Smith, A. R."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Smith",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "K. M. Pryer",
+                        "alternate": [
+                            "Pryer, K. M."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Pryer",
+                        "middlename": "M."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1 and 2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1600/036364409789271209"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Systematic Botany",
+                    "volume": "34",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "From algae to angiosperms—inferring the phylogeny of green plants (Viridiplantae) from 360 plastid genomes.",
+                "year": 2014,
+                "authors": [
+                    {
+                        "name": "B. R. Ruhfel",
+                        "alternate": [
+                            "Ruhfel, B. R."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Ruhfel",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "M. A. Gitzendanner",
+                        "alternate": [
+                            "Gitzendanner, M. A."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Gitzendanner",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "P. S. Soltis",
+                        "alternate": [
+                            "Soltis, P. S."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Soltis",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "D. E. Soltis",
+                        "alternate": [
+                            "Soltis, D. E."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Soltis",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "J. G. Burleigh",
+                        "alternate": [
+                            "Burleigh, J. G."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Burleigh",
+                        "middlename": "G."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "6 and 7",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1186/1471-2148-14-23"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "BMC Evolutionary Biology",
+                    "volume": "14",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Phylotranscriptomic analysis of the origin and early diversification of land plants.",
+                "year": 2014,
+                "authors": [
+                    {
+                        "name": "N. J. Wickett",
+                        "alternate": [
+                            "Wickett, N. J."
+                        ],
+                        "firstname": "N.",
+                        "lastname": "Wickett",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2 and 3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1073/pnas.1323926111"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Proceedings of the National Academy of Science U. S. A.",
+                    "volume": "111",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 43,
+            "label": "Euphyllophyta",
+            "dwc:scientificNameAuthorship": "Cantino, P.  D., Donoghue, M. J.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "The tree of life—a phylogenetic classification.",
+                    "year": 2006,
+                    "authors": [
+                        {
+                            "name": "G. Lecointre",
+                            "alternate": [
+                                "Lecointre, G."
+                            ],
+                            "firstname": "G.",
+                            "lastname": "Lecointre"
+                        },
+                        {
+                            "name": "H. Le Guyader",
+                            "alternate": [
+                                "Le Guyader, H."
+                            ],
+                            "firstname": "H.",
+                            "lastname": "Le Guyader"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Belknap Press",
+                    "city": "Cambridge",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The largest crown clade containing Ginkgo biloba Linnaeus 1771 (Spermatophyta) and Pteridium aquilinum (Linnaeus) Kuhn 1879 (originally described as Pteris aquilina Linnaeus 1753) (Leptosporangiatae), but not Selaginella apoda (Linnaeus) Spring 1840 (originally described as Lycopodium apodum Linnaeus 1753) (Lycopodiophyta).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Ginkgo biloba Linnaeus, 1771",
+                        "nameComplete": "Ginkgo biloba"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Pteridium aquilinum Kuhn, 1879",
+                        "nameComplete": "Pteridium aquilinum"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Selaginella apoda Spring, 1840",
+                        "nameComplete": "Selaginella apoda"
+                    }
+                }
+            ]
+        }
+    ]
+}

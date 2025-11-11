@@ -1,0 +1,703 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Gunnerales are sister to other core eudicots: implications for the evolution of pentamery.",
+                "year": 2003,
+                "authors": [
+                    {
+                        "name": "D. E. Soltis",
+                        "alternate": [
+                            "Soltis, D. E."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Soltis",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "A. E. Senters",
+                        "alternate": [
+                            "Senters, A. E."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Senters",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "M. Zanis",
+                        "alternate": [
+                            "Zanis, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Zanis"
+                    },
+                    {
+                        "name": "S. Kim",
+                        "alternate": [
+                            "Kim, S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Kim"
+                    },
+                    {
+                        "name": "J. D. Thompson",
+                        "alternate": [
+                            "Thompson, J. D."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Thompson",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "P. S. Soltis",
+                        "alternate": [
+                            "Soltis, P. S."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Soltis",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "L. P. Ronse de Craene",
+                        "alternate": [
+                            "Ronse de Craene, L. P."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Ronse de Craene",
+                        "middlename": "P."
+                    },
+                    {
+                        "name": "P. K. Endress",
+                        "alternate": [
+                            "Endress, P. K."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Endress",
+                        "middlename": "K."
+                    },
+                    {
+                        "name": "J. S. Farris",
+                        "alternate": [
+                            "Farris, J. S."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Farris",
+                        "middlename": "S."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.3732/ajb.90.3.461"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "American Journal of Botany",
+                    "volume": "90",
+                    "identifier": []
+                }
+            },
+            "newick": "((((((((\n(((((Dillenia, \n((((Tamarix, Drosera), (Polygonum, Plumbago)), \n(Triphyophullum, Nepenthes)),\n(((Stellaria, Celosia), \n(((Mirabilis, Phytolacca), (Pereskia, Portulaca)), Mollugo)), \nAsteropeia))),\n\n((((Altingia, Liquidambar), \n((((((((Haloragis, Myriophyllum), Penthorum), Tetracarpaea),\n(((Dudleya, Sedum), Kalanchoe), Crassula)),\nPaeonia), Ribes),\n\n(((Peltoboykinia, \n(Heuchera, Saxifraga)), Sullivantia), \n(Itea, Pterostemon))), \nCercidiphyllum)),\n\n(((Corylopsis, Hamamelis), Disanthus), Exbucklandia)), \n\nDaphniphyllum)), \n\n(Leea, Vitis)), \n\n((\n(((((Celtis, Morus), Zelkova),\n((Shepherdia, Eleaganus), Ceanothus)), \n(Photinia, Spiraea)), \n((((Juglans, Myrica), Alnus), Chrysolepis),\n((Curcurbita, Begonia), Corynocarpus))), \n\n(\n((((((Hippocratea, Brexia), Euonymus), Stackhousia), \nParnassia), Krameria), Afrostyrax), \n\n(((Idesia, Populus), \n((Chrysobalanus, Medusagyne),\n(((Hypericum, Euphorbia), Reinwardtia), Androstachys))), \n(((Sloanea, Elaeocarpus), Eucryphia), \n(Averrhoa, Oxalis))))),\n\n((((Viviana, Greyia), (Terminalia, \n(Clarkia, Lythrum))), \n(Crossosoma, Staphylea)), \n\n((((((Bombax, Ochroma), (Durio, Sterculia)),\n((Neurada, Thymelea), Bixa)), \n(((Citrix, Sweitenia), Bursera), \n(Aesculus, Cupaniopsis))),\n((((Capparis, Brassica), Floerkia), Tropaeolum), Carica)), \nTapiscia)))), \n((Schoepfia, (((Eubrachion, Osyris), Viscum), Ophilia)),\n(((Philadelphus, Petalonyx), (Alangiuim, Cornus)),\n\n(\n((((((Anagallis, Androsace), Clavija), Maesa), \n(Tetramerista, Impatiens)), \n((Gilia, Idria), \n(Styrax, Halesia), (Galax, Sarracenia))), Manilkara),\n\n(\n((((((Rhynchoglossum, Veronica), (((Justicia, Barleria), Myoporum),\n(Verbena, Verbascum))), Olea), \n\n((((((Nicotiana, Lycopersicon), Petunia), Schizanthus), \n(Convolvulus, Borago)), (Montinia, Hydrolea)), \n(Nerium, Exacum))), Vahlia), Garrya),\n\n(((((((Helianthus, Tragopogon), Bamedesia), Boopsis), \n(Menyanthes, Nymphioides)), ((Corokia, Phelline), Donatia)),\n((Codonopsis, Campanula), Roussea)), \n((((Pittosporum, (Panax, Hedera)), (Apium, Delarbrea)), \nGriselinea), \n((((Scabiosa, Dipsacus), Symphoricarpos), Abelia), \nValeriana)),\n((Gonocaryum, Irvingbaileyea), Ilex))))))),\n\n(Aextoxicon, Berberidopsis)), \n\n(Gunnera, Myrothamnus)), \n\n(Tetracentron, Trochodendron)),\n\n((Buxus, Pachysandra), Didymeles)),\n\n(Meliosoma, Sabia)),\n\n(Platanus, (Nelumbo, Lambertia))), \n\n((((Akebia, Sinofranchetia), Decaisnea), (Circaester, Kingdonia)), \n((Menispermum, Tinospora), ((Caulophyllum, Nandinia),\n((((Coptis, Xanthorrihiza), Ranunculus), Hydrastis), \nGlaucidium))))), \n\n(Amborella, Cabomba), \n(Magnolia, (Chloranthus, Hedyosmum)))\n\n"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Inferring phylogenies with incomplete data sets: a 5-gene, 567-taxon analysis of angiosperms.",
+                "year": 2009,
+                "edition": "9",
+                "authors": [
+                    {
+                        "name": "J. G. Burleigh",
+                        "alternate": [
+                            "Burleigh, J. G."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Burleigh",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "K. W. Hilu",
+                        "alternate": [
+                            "Hilu, K. W."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Hilu",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "D. E. Soltis",
+                        "alternate": [
+                            "Soltis, D. E."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Soltis",
+                        "middlename": "E."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1186/1471-2148-9-61"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "http://www.biomedcentral.com/1471-2148/9/61"
+                    }
+                ],
+                "journal": {
+                    "name": "BMC Evolution. Biol.",
+                    "volume": "61",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Phylogeny of basal eudicots based on three molecular data sets: atpB, rbcL, and 18S nuclear ribosomal DNA sequences.",
+                "year": 1999,
+                "authors": [
+                    {
+                        "name": "S. B. Hoot",
+                        "alternate": [
+                            "Hoot, S. B."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Hoot",
+                        "middlename": "B."
+                    },
+                    {
+                        "name": "S. Magallon",
+                        "alternate": [
+                            "Magallon, S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Magallon"
+                    },
+                    {
+                        "name": "P. R. Crane",
+                        "alternate": [
+                            "Crane, P. R."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Crane",
+                        "middlename": "R."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.2307/2666215"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Ann. Mo. Bot. Gard.",
+                    "volume": "86",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Phylogenetics of flowering plants based on combined analysis of plastid atpB and rbcL gene sequences.",
+                "year": 2000,
+                "authors": [
+                    {
+                        "name": "V. Savolainen",
+                        "alternate": [
+                            "Savolainen, V."
+                        ],
+                        "firstname": "V.",
+                        "lastname": "Savolainen"
+                    },
+                    {
+                        "name": "M. W. Chase",
+                        "alternate": [
+                            "Chase, M. W."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Chase",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "S. B. Hoot",
+                        "alternate": [
+                            "Hoot, S. B."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Hoot",
+                        "middlename": "B."
+                    },
+                    {
+                        "name": "C. M. Morton",
+                        "alternate": [
+                            "Morton, C. M."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Morton",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "D. E. Soltis",
+                        "alternate": [
+                            "Soltis, D. E."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Soltis",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "C. Bayer",
+                        "alternate": [
+                            "Bayer, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Bayer"
+                    },
+                    {
+                        "name": "M. F. Fay",
+                        "alternate": [
+                            "Fay, M. F."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Fay",
+                        "middlename": "F."
+                    },
+                    {
+                        "name": "A. Y. de Bruijn",
+                        "alternate": [
+                            "de Bruijn, A. Y."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "de Bruijn",
+                        "middlename": "Y."
+                    },
+                    {
+                        "name": "S. Sullivan",
+                        "alternate": [
+                            "Sullivan, S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Sullivan"
+                    },
+                    {
+                        "name": "Y. L. Qiu",
+                        "alternate": [
+                            "Qiu, Y. L."
+                        ],
+                        "firstname": "Y.",
+                        "lastname": "Qiu",
+                        "middlename": "L."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1093/sysbio/49.2.306"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Syst. Biol.",
+                    "volume": "49",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "A 567-taxon data set for angiosperms: The challenges posed by Bayesian analyses of large data sets.",
+                "year": 2007,
+                "authors": [
+                    {
+                        "name": "D. E. Soltis",
+                        "alternate": [
+                            "Soltis, D. E."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Soltis",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "M. A. Gitzendanner",
+                        "alternate": [
+                            "Gitzendanner, M. A."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Gitzendanner",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "P. S. Soltis",
+                        "alternate": [
+                            "Soltis, P. S."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Soltis",
+                        "middlename": "S."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1086/509788"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Int. J. Plant Sci.",
+                    "volume": "168",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Angiosperm phylogeny based on matK sequence information.",
+                "year": 2003,
+                "authors": [
+                    {
+                        "name": "K. W. Hilu",
+                        "alternate": [
+                            "Hilu, K. W."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Hilu",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "T. Borsch",
+                        "alternate": [
+                            "Borsch, T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Borsch"
+                    },
+                    {
+                        "name": "K. Muller",
+                        "alternate": [
+                            "Muller, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Muller"
+                    },
+                    {
+                        "name": "D. E. Soltis",
+                        "alternate": [
+                            "Soltis, D. E."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Soltis",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "P. S. Soltis",
+                        "alternate": [
+                            "Soltis, P. S."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Soltis",
+                        "middlename": "S."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.3732/ajb.90.12.1758"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "American Journal of Botany",
+                    "volume": "90",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Mitochondrial matR sequences help to resolved deep phylogenetic relationships in rosids.",
+                "year": 2007,
+                "authors": [
+                    {
+                        "name": "X. Y. Zhu",
+                        "alternate": [
+                            "Zhu, X. Y."
+                        ],
+                        "firstname": "X.",
+                        "lastname": "Zhu",
+                        "middlename": "Y."
+                    },
+                    {
+                        "name": "M. W. Chase",
+                        "alternate": [
+                            "Chase, M. W."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Chase",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "Y. L. Qiu",
+                        "alternate": [
+                            "Qiu, Y. L."
+                        ],
+                        "firstname": "Y.",
+                        "lastname": "Qiu",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "H. Z. Kong",
+                        "alternate": [
+                            "Kong, H. Z."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Kong",
+                        "middlename": "Z."
+                    },
+                    {
+                        "name": "D. L. Dilcher",
+                        "alternate": [
+                            "Dilcher, D. L."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Dilcher",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "J. H. Li",
+                        "alternate": [
+                            "Li, J. H."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Li",
+                        "middlename": "H."
+                    },
+                    {
+                        "name": "Z. D. Chen",
+                        "alternate": [
+                            "Chen, Z. D."
+                        ],
+                        "firstname": "Z.",
+                        "lastname": "Chen",
+                        "middlename": "D."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1186/1471-2148-7-217"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "http://www.biomedcentral.com/ 1471-2148/7/217"
+                    }
+                ],
+                "journal": {
+                    "name": "BMC Evol. Biol.",
+                    "volume": "7",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 117,
+            "label": "Pentapetalae",
+            "dwc:scientificNameAuthorship": "Soltis, D. E., Soltis, P. S., Judd, W. S.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Towards a phylogenetic nomenclature of Tracheophyta.",
+                    "year": 2007,
+                    "authors": [
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Doyle",
+                            "alternate": [
+                                "Doyle, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Doyle",
+                            "middlename": "A."
+                        },
+                        {
+                            "name": "S. W. Graham",
+                            "alternate": [
+                                "Graham, S. W."
+                            ],
+                            "firstname": "S.",
+                            "lastname": "Graham",
+                            "middlename": "W."
+                        },
+                        {
+                            "name": "W. S. Judd",
+                            "alternate": [
+                                "Judd, W. S."
+                            ],
+                            "firstname": "W.",
+                            "lastname": "Judd",
+                            "middlename": "S."
+                        },
+                        {
+                            "name": "R. G. Olmstead",
+                            "alternate": [
+                                "Olmstead, R. G."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Olmstead",
+                            "middlename": "G."
+                        },
+                        {
+                            "name": "D. E. Soltis",
+                            "alternate": [
+                                "Soltis, D. E."
+                            ],
+                            "firstname": "D.",
+                            "lastname": "Soltis",
+                            "middlename": "E."
+                        },
+                        {
+                            "name": "P. S. Soltis",
+                            "alternate": [
+                                "Soltis, P. S."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Soltis",
+                            "middlename": "S."
+                        },
+                        {
+                            "name": "M. J. Donoghue",
+                            "alternate": [
+                                "Donoghue, M. J."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Donoghue",
+                            "middlename": "J."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Taxon",
+                        "volume": "56",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing Gunnera perpensa L. 1767 (Gunnerales), Viscum album L. 1753 (Santalales), Berberidopsis corallina Hook. f. 1862 (Berberidopsidales), Stellaria media (L.) Cirillo 1784 (Caryophyllales), Dillenia indica L. 1753 (Dilleniaceae), Saxifraga mertensiana Bong. 1835 (Saxifragales), Vitis aestivalis Michx. 1803 (Vitaceae), Photinia x fraseri Dress 1961 (Rosidae), and Helianthus annuus L. 1753 (Asteridae).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Viscum album Linnaeus, 1753",
+                        "nameComplete": "Viscum album"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Berberidopsis corallina Hook, 1862",
+                        "nameComplete": "Berberidopsis corallina"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Stellaria media Cirillo, 1784",
+                        "nameComplete": "Stellaria media"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Dillenia indica Linnaeus, 1753",
+                        "nameComplete": "Dillenia indica"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Saxifraga mertensiana Bong., 1835",
+                        "nameComplete": "Saxifraga mertensiana"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Vitis aestivalis Michx., 1803",
+                        "nameComplete": "Vitis aestivalis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Photinia x fraseri Dress, 1961",
+                        "nameComplete": "Photinia x fraseri"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Helianthus annuus Linnaeus, 1753",
+                        "nameComplete": "Helianthus annuus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

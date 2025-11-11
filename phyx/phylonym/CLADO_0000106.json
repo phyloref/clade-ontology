@@ -1,0 +1,126 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Cranial morphology and affinities of Microbrachis, and a reappraisal of the phylogeny and lifestyle of the first amphibians.",
+                "year": 2004,
+                "authors": [
+                    {
+                        "name": "G. Vallin",
+                        "alternate": [
+                            "Vallin, G."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Vallin"
+                    },
+                    {
+                        "name": "M. Laurin",
+                        "alternate": [
+                            "Laurin, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Laurin"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "6",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1671/5.1"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Vertebrate Paleontology",
+                    "volume": "24",
+                    "identifier": []
+                }
+            },
+            "newick": "(Euparkeria,(Teleocrater,((Marasuchus,(Asilisaurus,Buriolestes,Eodromaeus,Eoraptor,Lewisuchus,Pisanosaurus,Sacisaurus,Silesaurus,(((Zuolong,(Chilesaurus,((((Monolophosaurus,((Acrocanthosaurus,Sinraptor_dongi),(Allosaurus_fragilis,Neovenator))),(Condorraptor,Piatnitzkysaurus)),(Eustreptospondylus,Megalosaurus)),(Aorun,Bicentenaria,Compsognathus_corallestri,Sinocalliopteryx,Sinosauropteryx,(Coelurus,(Ornitholestes,(((Jianchangosaurus,(Haplocheirus,(Alvarezsaurus,Patagonykus))),((Fukuivenator,(((Aurornis,Serikornis,(Anchiornis_type,Anchiornis_LPMB00169)),(Archaeopteryx,(Rahonavis,(Balaur,((Sapeornis,(Confuciusornis,(Apsaravis,Archaeornithura,Chongmingia,Cruralispennia,Gansus_yumenensis,Hongshanornis,Ichthyornis,Iteravis,Parahongshanornis,Patagopteryx,Pengornis,Piscivoravis,Protopteryx,Vorona,Yanornis,Yixianornis,Zhongjianornis,(Archaeorhynchus,Schizooura),(Bohaiornis,(Sulcavis,Zhouornis)),(Hesperornis,(Meleagris,Vegavis))))),(Jixiangornis,Shenzhouraptor))))),(Xiaotingia,(Epidendrosaurus,(Epidexipteryx,Yi)))),((Jianianhualong,(Sinusonasus,(Gobivenator,Sinornithoides,Zanabazar))),(Sinovenator,(Jinfengopteryx,Mei)))),((Buitreraptor,Unenlagia_comahuensis),(Halszkaraptor,Mahakala)),(Microraptor,(Deinonychus,Velociraptor_mongoliensis))),(((Similicaudipteryx,(Caudipteryx,(Anzu,Khaan))),(Incisivosaurus,Protarchaeopteryx)),(Beipiaosaurus,Falcarius)))),(Nqwebasaurus,(Pelecanimimus,(Harpymimus,Shenzhousaurus)))))),(Guanlong,Tanycolagreus,(Eotyrannus,(Tyrannosaurus,(Gualicho,(Australovenator,Megaraptor))))))))),(Berberosaurus,(Ceratosaurus,(Eoabelisaurus,((Elaphrosaurus,Limusaurus),(Majungasaurus,Masiakasaurus)))))),((Liliensternus,(Coelophysis_rhodesiensis,Syntarsus_kayentakatae)),(Cryolophosaurus,Dilophosaurus))),(Daemonosaurus,Staurikosaurus,Tawa,(Herrerasaurus,Sanjuansaurus)),(Guaibasaurus,(Plateosaurus,Saturnalia)),(Heterodontosaurus,Tianyulong))),(Dromomeron,Lagerpeton))));\n"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 106,
+            "label": "Tetrapoda",
+            "dwc:scientificNameAuthorship": "Laurin, M.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Elementarcus der Zootomie in fünfzen Vorlesungen.",
+                    "year": 1896,
+                    "authors": [
+                        {
+                            "name": "B. Hatschek",
+                            "alternate": [
+                                "Hatschek, B."
+                            ],
+                            "firstname": "B.",
+                            "lastname": "Hatschek"
+                        },
+                        {
+                            "name": "C. J. Cori",
+                            "alternate": [
+                                "Cori, C. J."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Cori",
+                            "middlename": "J."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Gustav Fischer",
+                    "city": "Jena",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "Tetrapoda is the smallest crown clade containing Homo sapiens Linnaeus 1758 (Synapsida), Caecilia tentaculata Linnaeus 1758 (Ichthyophiidae is the closest relative in the reference pylogeny), Siren lacertina Österdam 1766 (Sirenidae), and Pipa pipa Linnaeus 1758 (Pipidae).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Homo sapiens Linnaeus, 1758",
+                        "nameComplete": "Homo sapiens"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Caecilia tentaculata Linnaeus, 1758",
+                        "nameComplete": "Caecilia tentaculata"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Siren lacertina Österdam, 1766",
+                        "nameComplete": "Siren lacertina"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Pipa pipa Linnaeus, 1758",
+                        "nameComplete": "Pipa pipa"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

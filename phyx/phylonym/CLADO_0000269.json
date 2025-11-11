@@ -1,0 +1,175 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Deciphering and dating the red panda’s ancestry and early adaptive radiation of Musteloidea.",
+                "year": 2009,
+                "authors": [
+                    {
+                        "name": "J. J. Sato",
+                        "alternate": [
+                            "Sato, J. J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Sato",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "M. Wolsan",
+                        "alternate": [
+                            "Wolsan, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Wolsan"
+                    },
+                    {
+                        "name": "S. Minami",
+                        "alternate": [
+                            "Minami, S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Minami"
+                    },
+                    {
+                        "name": "T. Hosoda",
+                        "alternate": [
+                            "Hosoda, T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Hosoda"
+                    },
+                    {
+                        "name": "M. H. Sinaga",
+                        "alternate": [
+                            "Sinaga, M. H."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Sinaga",
+                        "middlename": "H."
+                    },
+                    {
+                        "name": "K. Hiyama",
+                        "alternate": [
+                            "Hiyama, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Hiyama"
+                    },
+                    {
+                        "name": "Y. Yamaguchi",
+                        "alternate": [
+                            "Yamaguchi, Y."
+                        ],
+                        "firstname": "Y.",
+                        "lastname": "Yamaguchi"
+                    },
+                    {
+                        "name": "H. Suzuki",
+                        "alternate": [
+                            "Suzuki, H."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Suzuki"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2009.08.019"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Mol. Phylogenet. Evol.",
+                    "volume": "53",
+                    "identifier": []
+                }
+            },
+            "newick": "((((((((((((((((((((((Mustela_putorius, Mustela_furo), Mustela_eversmanii),\nMustela_sibirica), Mustela_itatsi), Mustea_lutreola), \n(Mustela_nivalis, Mustela_ataica)), Mustela_erminea),\nMustela_kathiah), (Mustea_nudipes, Mustela_strigidorsa)),\nNeovision_vision), ((Aonyx_cinerea, Enhydra_lutris), Lontra_canadensis)),\nMelogale_moschata), \n(((((((Martes_zibellina, Martes_melampus), Martes_americana), \nMartes_martes), Martes_foina), Martes_flavigula), Martes_pennanti),\nGulo_gulo)),\n((Meles_meles, Meles_anakuma), Arctonyx_collaris)),\nTaxidea_taxus), (Procyon_lotor, Procyon_cancrivorus)),\nAilurus_fulgens),\n(Mephitis_mepthitis, Mydaus_javanensis)),\n((Phoca_vitulina, Phoca_largha),\n(Callorhinus_ursinus, Eumetopias_jubatus))),\n((Melursus_ursinus, Ursus_thibetanus), Ursus_arctos)), \n(Canis_lupus, Vulpes_lagopus)), \n\n(((((Panthera_tigris, Panthera_onca), Panthera_leo), \nPanthera_pardus), ((Prionailurus_bengalensis, \nPrionailurus_iriomotensis), Leopardus_pardalis)),\nPaguma_larvata))"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Molecular phylogeny of the Carnivora (Mammalia): assessing the impact of increased sampling on resolving enigmatic relationships.",
+                "year": 2005,
+                "authors": [
+                    {
+                        "name": "J. J. Flynn",
+                        "alternate": [
+                            "Flynn, J. J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Flynn",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "J. A. Finarelli",
+                        "alternate": [
+                            "Finarelli, J. A."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Finarelli",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "S. Zehr",
+                        "alternate": [
+                            "Zehr, S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Zehr"
+                    },
+                    {
+                        "name": "J. Hsu",
+                        "alternate": [
+                            "Hsu, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Hsu"
+                    },
+                    {
+                        "name": "M. A. Nedbal",
+                        "alternate": [
+                            "Nedbal, M. A."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Nedbal",
+                        "middlename": "A."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1080/10635150590923326"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Syst. Biol.",
+                    "volume": "54",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 269,
+            "label": "Pan-Arctoidea",
+            "dwc:scientificNameAuthorship": "Wolsan, M., Bryant, H. N., Flynn, J. J., Wyss, A. R.",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The total clade of Arctoidea.",
+            "internalSpecifiers": [],
+            "externalSpecifiers": []
+        }
+    ]
+}

@@ -1,0 +1,169 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A combined approach to the phylogeny of Cephalopoda (Mollusca).",
+                "year": 2004,
+                "authors": [
+                    {
+                        "name": "A. R. Lindgren",
+                        "alternate": [
+                            "Lindgren, A. R."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Lindgren",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "G. Giribet",
+                        "alternate": [
+                            "Giribet, G."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Giribet"
+                    },
+                    {
+                        "name": "M. K. Nishiguchi",
+                        "alternate": [
+                            "Nishiguchi, M. K."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Nishiguchi",
+                        "middlename": "K."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.1096-0031.2004.00032"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Cladistics",
+                    "volume": "20",
+                    "identifier": []
+                }
+            },
+            "newick": "((((1:100.000000,((2:100.000000,3:100.000000):57.090000,(4:100.000000,5:100.000000,(6:100.000000,7:100.000000):85.349998):88.419998):59.790001):96.000000,(12:100.000000,(13:100.000000,14:100.000000,15:100.000000):86.000000):99.930000):52.439999,(16:100.000000,17:100.000000,18:100.000000):96.959999):58.330002,((8:100.000000,10:100.000000):60.939999,9:100.000000,11:100.000000):99.860001,((19:100.000000,20:100.000000):98.029999,((((21:100.000000,(22:100.000000,23:100.000000):69.000000):99.709999,((24:100.000000,25:100.000000,26:100.000000,28:100.000000):79.610001,27:100.000000,29:100.000000,30:100.000000,31:100.000000,32:100.000000,33:100.000000):65.370003):67.500000,34:100.000000):77.599998,(35:100.000000,36:100.000000):79.599998,(37:100.000000,39:100.000000,40:100.000000):62.189999,38:100.000000,41:100.000000,42:100.000000,(43:100.000000,44:100.000000,45:100.000000):58.400002,(46:100.000000,47:100.000000):65.889999,48:100.000000,(49:100.000000,51:100.000000,66:100.000000,68:100.000000,69:100.000000):57.939999,50:100.000000,(52:100.000000,53:100.000000):89.129997,(54:100.000000,55:100.000000):69.459999,(56:100.000000,((57:100.000000,58:100.000000):63.919998,60:100.000000):68.980003,59:100.000000):83.709999,(61:100.000000,62:100.000000):81.839996,(63:100.000000,64:100.000000,65:100.000000):86.019997,67:100.000000,70:100.000000,(71:100.000000,72:100.000000):85.959999,(73:100.000000,74:100.000000,75:100.000000,76:100.000000):52.549999,77:100.000000,78:100.000000):85.889999):99.389999);\n"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Co-estimation of phylogeny and divergence times of Argonautoidea using relaxed phylogenetics.",
+                "year": 2010,
+                "authors": [
+                    {
+                        "name": "J. Strugnell",
+                        "alternate": [
+                            "Strugnell, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Strugnell"
+                    },
+                    {
+                        "name": "A. L. Allcock",
+                        "alternate": [
+                            "Allcock, A. L."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Allcock",
+                        "middlename": "L."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2009.11.017"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Phylogenetic  and Evolution",
+                    "volume": "54",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 143,
+            "label": "Vampyroteuthis",
+            "dwc:scientificNameAuthorship": "Anderson, F.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Aus den Tiefen des Weltmeeres",
+                    "year": 1903,
+                    "edition": "2",
+                    "authors": [
+                        {
+                            "name": "C. Chun",
+                            "alternate": [
+                                "Chun, C."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Chun"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Verlag Gustav Fischer",
+                    "city": "Jena, Germany",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The most inclusive crown clade containing Vampyroteuthis infernalis Chun 1903 but not Argonauta argo Linnaeus 1758 (Octopoda/Incirrata) and Stauroteuthis syrtensis Verrill 1879 (Octopoda /Cirrata) and Sepia officinalis Linnaeus 1758 (Decapodiformes).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Vampyroteuthis infernalis Chun, 1903",
+                        "nameComplete": "Vampyroteuthis infernalis"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Argonauta argo Linnaeus, 1758",
+                        "nameComplete": "Argonauta argo"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Stauroteuthis syrtensis Verrill, 1879",
+                        "nameComplete": "Stauroteuthis syrtensis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Sepia officinalis Linnaeus, 1758",
+                        "nameComplete": "Sepia officinalis"
+                    }
+                }
+            ]
+        }
+    ]
+}

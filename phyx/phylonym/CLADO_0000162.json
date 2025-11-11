@@ -1,0 +1,136 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A new superfamily classification of the Caridea (Crustacea: Pleocyemata) based on phylogenetic pattern.",
+                "year": 1990,
+                "authors": [
+                    {
+                        "name": "M. L. Christoffersen",
+                        "alternate": [
+                            "Christoffersen, M. L."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Christoffersen",
+                        "middlename": "L."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.1439-0469.1990.tb00369"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Zoological Systematics and Evolutionary Research",
+                    "volume": "28",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Phylogenetic relationships of hippolytid genera, with an assignment of new families for the Crangonoidea and Alpheoidea (Crustacea, Decapoda, Caridea).",
+                "year": 1987,
+                "authors": [
+                    {
+                        "name": "M. L. Christoffersen",
+                        "alternate": [
+                            "Christoffersen, M. L."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Christoffersen",
+                        "middlename": "L."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.1096-0031.1987.tb00898"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Cladistics",
+                    "volume": "3",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 162,
+            "label": "Polycarpidea",
+            "dwc:scientificNameAuthorship": "Christoffersen, M. L.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Report on the Crustacea Macrura collected by H. M. S. Challenger during the years 1873-1876",
+                    "year": 1888,
+                    "authors": [
+                        {
+                            "name": "C. S. Bate",
+                            "alternate": [
+                                "Bate, C. S."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Bate",
+                            "middlename": "S."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Rep. Scient. Res. Explor. Voy.",
+                        "volume": "24",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Plesionika martia (A. Milne Edwards 1883) (Pandaloidea), Philocheras gorei (Dardeau 1980) (Crangonoidea) and Merhippolyte agulhasensis Bate 1888 (Alpheoidea), provided that the multiarticulate second pereiopod shared by those taxa represents a single evolutionary origin.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Plesionika martia Edwards, 1883",
+                        "nameComplete": "Plesionika martia"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Philocheras gorei Dardeau, 1980",
+                        "nameComplete": "Philocheras gorei"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Merhippolyte agulhasensis Bate, 1888",
+                        "nameComplete": "Merhippolyte agulhasensis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

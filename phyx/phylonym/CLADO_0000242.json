@@ -1,0 +1,69 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Nematode small subunit phylogeny correlates with alignment parameters.",
+                "year": 2006,
+                "authors": [
+                    {
+                        "name": "A. B. Smythe",
+                        "alternate": [
+                            "Smythe, A. B."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Smythe",
+                        "middlename": "B."
+                    },
+                    {
+                        "name": "M. J. Sanderson",
+                        "alternate": [
+                            "Sanderson, M. J."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Sanderson",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "S. A. Nadler",
+                        "alternate": [
+                            "Nadler, S. A."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Nadler",
+                        "middlename": "A."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "7",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "0.1080/10635150601089001"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Systematic Biology",
+                    "volume": "55",
+                    "identifier": []
+                }
+            },
+            "newick": "((((((((Adenophorea, (Diplolaimelloides_meyli, Daptonema_procerus)), \n((((Uncultured_nematode, Xyzzors_sp.), (Metachromadora_sp.,\n((Chromadoropsis_vivipara, Desmodora_ovigera), Acanthopharynx_micans))),\n\n((((Laxus_cosmopolitus, Laxus_oneistus), Catanema_sp, Stilbonema_majum), \n((Eubostrichus_parasitiferus, Eubostrichus_topiarius), Eubostrichus_dianae)), \nLeptonemella_sp.)), \n(Praeacanthonchus_sp., Paracanthonchus_caecus))),\n\n(\n(((Paratrichodorus_pachydermus, Paratrichodorus_anemones), \nTrichodorus_primitivus), Prismatolaimus_intermedius),\n(((Adoncholaimus_sp., Pontonema_vulgare), \n(Enoplus_brevis, Enoplus_meridionalis)), Trefusia_zostericola))),\n\n((Longidorus_elongatus, Xiphinema_rivesi), \n(Mylonchulus_arenicolus, Mermis_nigrescens))),\n\n(Trichuris_muris, Trichinella_spiralis)), \n\n(Chordodes_morgani, Gordius_aquaticus)), \n\nBrachionus_plicatilis), Priapulus_caudatus)\n\n\n"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 242,
+            "label": "Pan-Nematoda",
+            "dwc:scientificNameAuthorship": "Smythe, A. B.",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The total clade of the crown clade Nematoda.",
+            "internalSpecifiers": [],
+            "externalSpecifiers": []
+        }
+    ]
+}

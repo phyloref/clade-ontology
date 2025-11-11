@@ -1,0 +1,239 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A new basal sauropodiform from South Africa and the phylogenetic relationships of basal sauropodomorphs.",
+                "year": 2015,
+                "authors": [
+                    {
+                        "name": "A. Otero",
+                        "alternate": [
+                            "Otero, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Otero"
+                    },
+                    {
+                        "name": "E. Krupandan",
+                        "alternate": [
+                            "Krupandan, E."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Krupandan"
+                    },
+                    {
+                        "name": "D. Pol",
+                        "alternate": [
+                            "Pol, D."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Pol"
+                    },
+                    {
+                        "name": "A. Chinsamy",
+                        "alternate": [
+                            "Chinsamy, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Chinsamy"
+                    },
+                    {
+                        "name": "J. Choiniere",
+                        "alternate": [
+                            "Choiniere, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Choiniere"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "17",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/zoj.12320"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Zoological Journal of the Linnean Society",
+                    "volume": "174",
+                    "identifier": []
+                }
+            },
+            "newick": "(Euparkeria, (Crurotarsi, (Marasuchus, (Silesaurus, (Ornithischia, \n((Herrerasaurus, Staurikosaurus), (Eoraptor, \n((Agnosphitys, (Guaibasaurus, (Chindesaurus, Neotheropoda))),\n((Saturnalia, Chromogisaurus), (Pantydraco, (Thecodontosaurus, \n(Efraasia, (Plateosauravus, \n(Ruehelia, (Unaysaurus, (P_gracilis, (P_ingens, P_engelthardti)))),\n((Eucnemosaurus, Riojasaurus), \n(Sarahsaurus, \n(((Lufengosaurus, Glacialisaurus, Coloradisaurus),\n(Massospondylus, (Adeopapposaurus, Leyesaurus))),\n(Jingshanosaurus, (Yunnanosaurus, (Seitaad, (Anchisaurus, \n(Mussaurus, \n(Aardonyx, Leonerasaurus, Sefapanosaurus,\n(Melanorosaurus, \n((Antetonitrus, Lessemsaurus),\n(Blikanasaurus, (Gongxianosaurus, \n(Isanosaurus, Tazoudasaurus, Vulcanodon, \n((Bapapasaurus, Patagosaurus),\n(Shunosaurus, \n((Cetiosaurus, Neosauropoda), \n(Mamenchisaurus, Omeisaurus)))))))))))))))))))))))))))))))"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Dinosaurs and the Cretaceous terrestrial revolution.",
+                "year": 2008,
+                "authors": [
+                    {
+                        "name": "G. T. Lloyd",
+                        "alternate": [
+                            "Lloyd, G. T."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Lloyd",
+                        "middlename": "T."
+                    },
+                    {
+                        "name": "K. E. Davis",
+                        "alternate": [
+                            "Davis, K. E."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Davis",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "D. Pisani",
+                        "alternate": [
+                            "Pisani, D."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Pisani"
+                    },
+                    {
+                        "name": "J. E. Tarver",
+                        "alternate": [
+                            "Tarver, J. E."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Tarver",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "M. Ruta",
+                        "alternate": [
+                            "Ruta, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Ruta"
+                    },
+                    {
+                        "name": "M. Sakamoto",
+                        "alternate": [
+                            "Sakamoto, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Sakamoto"
+                    },
+                    {
+                        "name": "D. W. E. Hone",
+                        "alternate": [
+                            "Hone, D. W. E."
+                        ],
+                        "firstname": "D. W.",
+                        "lastname": "Hone",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "R. Jennings",
+                        "alternate": [
+                            "Jennings, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Jennings"
+                    },
+                    {
+                        "name": "M. J. Benton",
+                        "alternate": [
+                            "Benton, M. J."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Benton",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1098/rspb.2008.0715"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Proceedings of the Royal Society of London B: Biological Sciences",
+                    "volume": "275",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 295,
+            "label": "Sauropodomorpha",
+            "dwc:scientificNameAuthorship": "Fabbri, M., Tschopp, E., McPhee, B., Nesbitt, S., Pol, D., Langer, M.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Die fossile Reptile-Ordnung Saurischia, ihre Entwicklung und Geschichte",
+                    "year": 1932,
+                    "edition": "1",
+                    "authors": [
+                        {
+                            "name": "F. R. von Huene",
+                            "alternate": [
+                                "von Huene, F. R."
+                            ],
+                            "firstname": "F.",
+                            "lastname": "von Huene",
+                            "middlename": "R."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Monographien zur Geologie und Palaeontologie",
+                        "volume": "4",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The largest clade containing Saltasaurus loricatus Bonaparte and Powell 1980 (Sauropodomorpha/Neosauropoda) but not Allosaurus fragilis Marsh 1877 (Neotheropoda) and Iguanodon bernissartensis Boulenger in Beneden 1881 (Ornithischia).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Saltasaurus loricatus Bonaparte and Powell, 1980",
+                        "nameComplete": "Saltasaurus loricatus"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Allosaurus fragilis Marsh, 1877",
+                        "nameComplete": "Allosaurus fragilis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Iguanodon bernissartensis Boulenger, 1881",
+                        "nameComplete": "Iguanodon bernissartensis"
+                    }
+                }
+            ]
+        }
+    ]
+}

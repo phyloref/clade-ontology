@@ -1,0 +1,140 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "The first report of South American edrioasteroids and the paleoecology and ontogeny of rhenopyrgid echinoderms.",
+                "year": 2013,
+                "authors": [
+                    {
+                        "name": "C. D. Sumrall",
+                        "alternate": [
+                            "Sumrall, C. D."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Sumrall",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "S. Heredia",
+                        "alternate": [
+                            "Heredia, S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Heredia"
+                    },
+                    {
+                        "name": "C. M. Rodriguez",
+                        "alternate": [
+                            "Rodriguez, C. M."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Rodriguez",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "A. I. Mestre",
+                        "alternate": [
+                            "Mestre, A. I."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Mestre",
+                        "middlename": "I."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2A",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.4202/app.2011.0120"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Acta Palaeontol. Pol.",
+                    "volume": "58",
+                    "identifier": []
+                }
+            },
+            "newick": "(Kailidiscus, \n((Paredriophus, (Cyathotheca, Lampteroblastus, Rhenopyrgus)),\n((Isorophus, Carneyella), Argodiscus)))"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 229,
+            "label": "Edrioasterida",
+            "dwc:scientificNameAuthorship": "Sumrall, C. D.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "A Study of North American Edrioasteroidea.",
+                    "year": 1976,
+                    "authors": [
+                        {
+                            "name": "B. M. Bell",
+                            "alternate": [
+                                "Bell, B. M."
+                            ],
+                            "firstname": "B.",
+                            "lastname": "Bell",
+                            "middlename": "M."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "New York St. Mus. Mem.",
+                        "volume": "21",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The clade originating in the most recent common ancestor of Edrioaster bigsbyi (Billings) 1857, Cyathotheca suecica Jaekel 1927, Lampteroblastus hintzei Guensburg and Sprinkle 1994 and Rhenopyrgus piojoensis Sumrall et al. 2013.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Edrioaster bigsbyi Billings, 1857",
+                        "nameComplete": "Edrioaster bigsbyi"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Cyathotheca suecica Jaekel, 1927",
+                        "nameComplete": "Cyathotheca suecica"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Lampteroblastus hintzei Guensburg and Sprinkle, 1994",
+                        "nameComplete": "Lampteroblastus hintzei"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Rhenopyrgus piojoensis Sumrall, 2013",
+                        "nameComplete": "Rhenopyrgus piojoensis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

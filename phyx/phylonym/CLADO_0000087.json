@@ -1,0 +1,146 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A phylogeny of the hemichordates based on morphological characters.",
+                "year": 2005,
+                "edition": "83",
+                "authors": [
+                    {
+                        "name": "C. B. Cameron",
+                        "alternate": [
+                            "Cameron, C. B."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Cameron",
+                        "middlename": "B."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "5",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1139/z04-190"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Canadian Journal of Zoology",
+                    "volume": "1",
+                    "identifier": []
+                }
+            },
+            "newick": "(Cnidaria, \n((Polychaeta, Sipuncula),\n\n(((Crinoidea, (Asteroidea, (Ophuroidea, (Echinoidea, Holothuroidea)))),\n\n((Rhabdopleura, Cephalodiscus),\n\n(Protoglossus, Saccoflossus, Harrimania, Stereobalanus, Xenopleura, Saxipendium, \n((Spengelia, Schizocardium, Glandiceps, Willeyia), (Balangoglossus, Ptychodera, Glossobalanus))))),\n\n(Tunicata, (Cephalochordata, Vertebrata)))))"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Evaluating hypothesis of deuterostome phylogeny and chordate evolution with new LSU and SSU ribosomal DNA data.",
+                "year": 2002,
+                "authors": [
+                    {
+                        "name": "C. J. Winchell",
+                        "alternate": [
+                            "Winchell, C. J."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Winchell",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "J. Sullivan",
+                        "alternate": [
+                            "Sullivan, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Sullivan"
+                    },
+                    {
+                        "name": "C. B. Cameron",
+                        "alternate": [
+                            "Cameron, C. B."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Cameron",
+                        "middlename": "B."
+                    },
+                    {
+                        "name": "B. J. Swalla",
+                        "alternate": [
+                            "Swalla, B. J."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Swalla",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "J. Mallatt",
+                        "alternate": [
+                            "Mallatt, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Mallatt"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1093/oxfordjournals.molbev.a004134"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Biology Evolution",
+                    "volume": "19",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 87,
+            "label": "Pterobranchia",
+            "dwc:scientificNameAuthorship": "Melchin, M., Cameron, C. B.",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing Rhabdopleura normani Allman 1869, Cephalodiscus dodecalophus M’Intosh 1882, and Atubaria heterolopha Sato 1935.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Rhabdopleura normani Allman, 1869",
+                        "nameComplete": "Rhabdopleura normani"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Cephalodiscus dodecalophus M'Intosh, 1882",
+                        "nameComplete": "Cephalodiscus dodecalophus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Atubaria heterolopha Sato, 1935",
+                        "nameComplete": "Atubaria heterolopha"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

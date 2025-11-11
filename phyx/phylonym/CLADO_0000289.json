@@ -1,0 +1,200 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Arthropod relationships revealed by phylogenomic analysis of nuclear protein-coding sequences.",
+                "year": 2010,
+                "authors": [
+                    {
+                        "name": "J. C. Regier",
+                        "alternate": [
+                            "Regier, J. C."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Regier",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "J. W. Shultz",
+                        "alternate": [
+                            "Shultz, J. W."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Shultz",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "A. Zwick",
+                        "alternate": [
+                            "Zwick, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Zwick"
+                    },
+                    {
+                        "name": "A. Hussey",
+                        "alternate": [
+                            "Hussey, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Hussey"
+                    },
+                    {
+                        "name": "B. Ball",
+                        "alternate": [
+                            "Ball, B."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Ball"
+                    },
+                    {
+                        "name": "R. Wetzer",
+                        "alternate": [
+                            "Wetzer, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Wetzer"
+                    },
+                    {
+                        "name": "J. W. Martin",
+                        "alternate": [
+                            "Martin, J. W."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Martin",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "C. QW. Cunningham",
+                        "alternate": [
+                            "Cunningham, C. QW."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Cunningham",
+                        "middlename": "QW."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1038/nature08742"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Nature",
+                    "volume": "463",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Phylogeny of Branchiopoda (Crustacea) based on a combined analysis of morphological data and six molecular loci.",
+                "year": 2007,
+                "authors": [
+                    {
+                        "name": "S. Richter",
+                        "alternate": [
+                            "Richter, S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Richter"
+                    },
+                    {
+                        "name": "J. Olesen",
+                        "alternate": [
+                            "Olesen, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Olesen"
+                    },
+                    {
+                        "name": "W. C. Wheeler",
+                        "alternate": [
+                            "Wheeler, W. C."
+                        ],
+                        "firstname": "W.",
+                        "lastname": "Wheeler",
+                        "middlename": "C."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "8",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.1096-0031.2007.00148.x"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Cladistics",
+                    "volume": "23",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 289,
+            "label": "Branchiopoda",
+            "dwc:scientificNameAuthorship": "Hegna, T. A., Olesen, J.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Système des animaux sans vertèbres.",
+                    "year": 1801,
+                    "authors": [
+                        {
+                            "name": "J. B. Lamarck",
+                            "alternate": [
+                                "Lamarck, J. B."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Lamarck",
+                            "middlename": "B."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Déterville",
+                    "city": "Paris",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing Artemia salina (originally Cancer salinus) (Linnaeus 1758) and Daphnia magna Straus 1820.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Artemia salina Linneaus, 1758",
+                        "nameComplete": "Artemia salina"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Daphnia magna Straus, 1820",
+                        "nameComplete": "Daphnia magna"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

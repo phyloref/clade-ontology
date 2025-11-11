@@ -1,0 +1,136 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Molecular evidence that phoronids are a subtaxon of brachiopods (Brachiopoda: Phoronata) and that genetic divergence of metazoan phyla began long before the early Cambrian.",
+                "year": 2005,
+                "authors": [
+                    {
+                        "name": "B. L. Cohen",
+                        "alternate": [
+                            "Cohen, B. L."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Cohen",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "A. Weydmann",
+                        "alternate": [
+                            "Weydmann, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Weydmann"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ode.2004.12.002"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Organisms Diversity & Evolution",
+                    "volume": "5(4)",
+                    "identifier": []
+                }
+            },
+            "newick": "((((((Discinisca_cf._tenuis_Africa, Discinisca_cf._tenuis_SAmerica),\n(Glottidia_pyramidata, Lingula_cf._anatina)),\n\n(Novocrania_anomala, Craniid)),\n\n(Phoronid, Phoronis_hippocrepia)),\n\n((Terebratalia_transversa, Terebratulina_retusa), \n(Eohemithiris_grayii, Notosaria_nigricans))),\n\n((Chiton, Pectinid)))"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 144,
+            "label": "Brachiopoda",
+            "dwc:scientificNameAuthorship": "Carlson, S. J., Cohen, B. L.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Zoologie analytique, ou méthode naturelle de Classification des animaux.",
+                    "year": 1805,
+                    "authors": [
+                        {
+                            "name": "A. Dumeril",
+                            "alternate": [
+                                "Dumeril, A."
+                            ],
+                            "firstname": "A.",
+                            "lastname": "Dumeril"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "city": "Paris",
+                    "pages": "xxiv+344, 171 in particular",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The least inclusive crown clade containing Lingula anatina Lamarck 1801 (Linguloidea), Discinisca (originally Orbicula) tenuis (Sowerby 1847) (Discinoidea), Novocrania (originally Patella) anomala (Müller 1776) (Craniida), Notosaria (originally Terebratula) nigricans (Sowerby 1846) (Rhynchonellida), Terebratalia (originally Terebratula) transversa (Sowerby 1846) (Terebratulida), and Thecidellina blochmanni Dall 1920 (Thecideida).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Lingula anatina Lamarck, 1801",
+                        "nameComplete": "Lingula anatina"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Discinisca (originally Orbicula) tenuis Sowerby, 1847",
+                        "nameComplete": "Discinisca (originally Orbicula) tenuis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Novocrania (originally Patella) anomala Müller, 1776",
+                        "nameComplete": "Novocrania (originally Patella) anomala"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Notosaria (originally Terebratula) nigricans Sowerby, 1846",
+                        "nameComplete": "Notosaria (originally Terebratula) nigricans"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Terebratalia (originally Terebratula) transversa Sowerby, 1846",
+                        "nameComplete": "Terebratalia (originally Terebratula) transversa"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Thecidellina blochmanni Dall, 1920",
+                        "nameComplete": "Thecidellina blochmanni"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

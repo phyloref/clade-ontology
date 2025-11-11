@@ -1,0 +1,652 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Molecular phylogenetics and patterns of floral evolution in the Ericales.",
+                "year": 2005,
+                "authors": [
+                    {
+                        "name": "J. Schönenberger",
+                        "alternate": [
+                            "Schönenberger , J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Schönenberger"
+                    },
+                    {
+                        "name": "A. A. Anderberg",
+                        "alternate": [
+                            "Anderberg, A. A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Anderberg",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "K. J. Sytsma",
+                        "alternate": [
+                            "Sytsma, K. J."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Sytsma",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1086/427198"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "International Journal of Plant Science",
+                    "volume": "166",
+                    "identifier": []
+                }
+            },
+            "newick": "(Hydrangea:15.0,(Cornus:14.0,((Aucuba:1.0,Ilex:1.0):12.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):8.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):7.0,(((((((((Palaquium:1.0,Manilkara:1.0):1.0,Monotheca:2.0):1.0,Madhuca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):1.0,((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):3.0):2.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):5.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:16.0,(Cornus:15.0,((Aucuba:1.0,Ilex:1.0):13.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):9.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):8.0,((((((((Palaquium:1.0,Manilkara:1.0):1.0,Monotheca:2.0):1.0,Madhuca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):4.0,(((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):5.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):6.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:15.0,(Cornus:14.0,((Aucuba:1.0,Ilex:1.0):12.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):8.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):7.0,((((((((Palaquium:1.0,Manilkara:1.0):1.0,(Monotheca:1.0,Madhuca:1.0):1.0):1.0,Pouteria:3.0):1.0,Sarcosperma:4.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):3.0):1.0,((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):2.0):3.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):5.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:15.0,(Cornus:14.0,((Aucuba:1.0,Ilex:1.0):12.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):8.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):7.0,(((((((((Palaquium:1.0,Manilkara:1.0):1.0,Madhuca:2.0):1.0,Monotheca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):1.0,((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):3.0):2.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):5.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:15.0,(Cornus:14.0,((Aucuba:1.0,Ilex:1.0):12.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):8.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):7.0,((((((((Palaquium:2.0,(Monotheca:1.0,Manilkara:1.0):1.0):1.0,Madhuca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):1.0,((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):3.0):2.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):5.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:16.0,(Cornus:15.0,((Aucuba:1.0,Ilex:1.0):13.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):9.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):8.0,(((((((Palaquium:1.0,Manilkara:1.0):1.0,(Monotheca:1.0,Madhuca:1.0):1.0):1.0,Pouteria:3.0):1.0,Sarcosperma:4.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):3.0):5.0,(((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):5.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):6.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:16.0,(Cornus:15.0,((Aucuba:1.0,Ilex:1.0):13.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):9.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):8.0,((((((((Palaquium:1.0,Manilkara:1.0):1.0,Madhuca:2.0):1.0,Monotheca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):4.0,(((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):5.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):6.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:16.0,(Cornus:15.0,((Aucuba:1.0,Ilex:1.0):13.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):9.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):8.0,(((((((Palaquium:2.0,(Monotheca:1.0,Manilkara:1.0):1.0):1.0,Madhuca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):4.0,(((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):5.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):6.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:16.0,(Cornus:15.0,((Aucuba:1.0,Ilex:1.0):13.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):9.0,(((FouquieriaC:1.0,FouquieriaF:1.0):2.0,((Polemonium:1.0,Acanthogilia:1.0):1.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0):9.0,((((((((Palaquium:1.0,Manilkara:1.0):1.0,Madhuca:2.0):1.0,Monotheca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):4.0,(((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):5.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):6.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:15.0,(Cornus:14.0,((Aucuba:1.0,Ilex:1.0):12.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):8.0,(((FouquieriaC:1.0,FouquieriaF:1.0):2.0,((Polemonium:1.0,Acanthogilia:1.0):1.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0):8.0,(((((((((Palaquium:1.0,Manilkara:1.0):1.0,Madhuca:2.0):1.0,Monotheca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):1.0,((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):3.0):2.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):5.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:16.0,(Cornus:15.0,((Aucuba:1.0,Ilex:1.0):13.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):9.0,(((FouquieriaC:1.0,FouquieriaF:1.0):2.0,((Polemonium:1.0,Acanthogilia:1.0):1.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0):9.0,(((((((Palaquium:1.0,Manilkara:1.0):1.0,(Monotheca:1.0,Madhuca:1.0):1.0):1.0,Pouteria:3.0):1.0,Sarcosperma:4.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):3.0):5.0,(((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):5.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):6.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:17.0,(Cornus:16.0,((Aucuba:1.0,Ilex:1.0):14.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):10.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):9.0,((((((((Palaquium:1.0,Manilkara:1.0):1.0,Monotheca:2.0):1.0,Madhuca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):5.0,(((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):6.0,(((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):3.0):1.0,(((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):6.0):1.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):7.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:15.0,(Cornus:14.0,((Aucuba:1.0,Ilex:1.0):12.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):8.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):7.0,((((((((Palaquium:2.0,(Monotheca:1.0,Manilkara:1.0):1.0):1.0,Madhuca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):1.0,((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):3.0):2.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,ShortiaU:1.0):1.0,Diapensia:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):5.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:17.0,(Cornus:16.0,((Aucuba:1.0,Ilex:1.0):14.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):10.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):9.0,((((((((Palaquium:2.0,(Monotheca:1.0,Manilkara:1.0):1.0):1.0,Madhuca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):4.0,(((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):5.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,(((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):5.0):1.0):1.0):1.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):6.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):7.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:17.0,(Cornus:16.0,((Aucuba:1.0,Ilex:1.0):14.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):10.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):9.0,((((((((Palaquium:1.0,Manilkara:1.0):1.0,Madhuca:2.0):1.0,Monotheca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):5.0,(((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):6.0,(((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,(((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):5.0):1.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):4.0):1.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):7.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:16.0,(Cornus:15.0,((Aucuba:1.0,Ilex:1.0):13.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):9.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):8.0,(((((((Palaquium:1.0,Manilkara:1.0):1.0,Madhuca:2.0):1.0,Monotheca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):1.0):5.0,(((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):8.0,(((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):5.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:15.0,(Cornus:14.0,((Aucuba:1.0,Ilex:1.0):12.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):8.0,(((FouquieriaC:1.0,FouquieriaF:1.0):2.0,((Polemonium:1.0,Acanthogilia:1.0):1.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0):8.0,((((((((Palaquium:2.0,(Monotheca:1.0,Manilkara:1.0):1.0):1.0,Madhuca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):1.0,((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):3.0):2.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):5.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:15.0,(Cornus:14.0,((Aucuba:1.0,Ilex:1.0):12.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):8.0,(((FouquieriaC:1.0,FouquieriaF:1.0):2.0,((Polemonium:1.0,Acanthogilia:1.0):1.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0):8.0,((((((((Palaquium:1.0,Manilkara:1.0):1.0,(Monotheca:1.0,Madhuca:1.0):1.0):1.0,Pouteria:3.0):1.0,Sarcosperma:4.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):3.0):1.0,((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):2.0):3.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):5.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:17.0,(Cornus:16.0,((Aucuba:1.0,Ilex:1.0):14.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):10.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):9.0,(((((((Palaquium:1.0,Manilkara:1.0):1.0,(Monotheca:1.0,Madhuca:1.0):1.0):1.0,Pouteria:3.0):1.0,Sarcosperma:4.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):3.0):6.0,(((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):6.0,(((Actinidia:1.0,Roridula:1.0):7.0,((Heliamphora:1.0,Sarracenia:1.0):6.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):3.0):1.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):7.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:16.0,(Cornus:15.0,((Aucuba:1.0,Ilex:1.0):13.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):9.0,((((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):7.0,((((((((Palaquium:1.0,Manilkara:1.0):1.0,Madhuca:2.0):1.0,Monotheca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):3.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0,((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):6.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):7.0):1.0):1.0):1.0):1.0);(Hydrangea:16.0,(Cornus:15.0,((Aucuba:1.0,Ilex:1.0):13.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):9.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):8.0,((((((((Palaquium:2.0,(Monotheca:1.0,Manilkara:1.0):1.0):1.0,Madhuca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):3.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0,((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):6.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):6.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:15.0,(Cornus:14.0,((Aucuba:1.0,Ilex:1.0):12.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,(Marcgravia:1.0,Norantea:1.0):2.0):1.0,Impatiens:4.0):8.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):7.0,(((((((((Palaquium:1.0,Manilkara:1.0):1.0,Madhuca:2.0):1.0,Monotheca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):1.0,((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):3.0):2.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):5.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:16.0,(Cornus:15.0,((Aucuba:1.0,Ilex:1.0):13.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):9.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):8.0,((((((((Palaquium:1.0,Manilkara:1.0):1.0,Madhuca:2.0):1.0,Monotheca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):4.0,(((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):5.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,ShortiaU:1.0):1.0,Diapensia:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):6.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:15.0,(Cornus:14.0,((Aucuba:1.0,Ilex:1.0):12.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):8.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):7.0,(((((((((Palaquium:1.0,Manilkara:1.0):1.0,Madhuca:2.0):1.0,Monotheca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):1.0,((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):3.0):2.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,ShortiaU:1.0):1.0,Diapensia:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):5.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:16.0,(Cornus:15.0,((Aucuba:1.0,Ilex:1.0):13.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):9.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):8.0,((((((((Palaquium:1.0,Manilkara:1.0):1.0,Madhuca:2.0):1.0,Monotheca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):4.0,((((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,Ficalhoa:4.0):1.0,Sladenia:5.0):4.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):6.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:15.0,(Cornus:14.0,((Aucuba:1.0,Ilex:1.0):12.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):8.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):7.0,(((((((((Palaquium:1.0,Manilkara:1.0):1.0,Monotheca:2.0):1.0,Madhuca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):1.0,(((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,Ficalhoa:4.0):1.0,Sladenia:5.0):2.0):2.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):5.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:14.0,(Cornus:13.0,((Aucuba:1.0,Ilex:1.0):11.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):7.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):6.0,((((((((Palaquium:1.0,Manilkara:1.0):1.0,Madhuca:2.0):1.0,Monotheca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):2.0,(((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):3.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0,(((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):3.0,(((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:15.0,(Cornus:14.0,((Aucuba:1.0,Ilex:1.0):12.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):8.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):7.0,(((((((Palaquium:1.0,Manilkara:1.0):1.0,Monotheca:2.0):1.0,Madhuca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):1.0):4.0,((((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):3.0,((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):1.0):4.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:15.0,(Cornus:14.0,((Aucuba:1.0,Ilex:1.0):12.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):8.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):7.0,((((((((Palaquium:1.0,Manilkara:1.0):1.0,Madhuca:2.0):1.0,Monotheca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,(((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):3.0,((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):1.0):1.0):3.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):5.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:15.0,(Cornus:14.0,((Aucuba:1.0,Ilex:1.0):12.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):8.0,((((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):2.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):1.0):5.0,(((((((Palaquium:1.0,Manilkara:1.0):1.0,Madhuca:2.0):1.0,Monotheca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):4.0,(((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):5.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:15.0,(Cornus:14.0,((Aucuba:1.0,Ilex:1.0):12.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):8.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):7.0,(((((((((Palaquium:1.0,Manilkara:1.0):1.0,Madhuca:2.0):1.0,Monotheca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):2.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):5.0):2.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):5.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:15.0,(Cornus:14.0,((Aucuba:1.0,Ilex:1.0):12.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):8.0,(((FouquieriaC:1.0,FouquieriaF:1.0):2.0,((Polemonium:1.0,Acanthogilia:1.0):1.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0):8.0,(((((((((Palaquium:1.0,Manilkara:1.0):1.0,Monotheca:2.0):1.0,Madhuca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):1.0,((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):3.0):2.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):5.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:15.0,(Cornus:14.0,((Aucuba:1.0,Ilex:1.0):12.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):8.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):7.0,(((((((((Palaquium:1.0,Monotheca:1.0):1.0,Manilkara:2.0):1.0,Madhuca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):1.0,((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):3.0):2.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):5.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:16.0,(Cornus:15.0,((Aucuba:1.0,Ilex:1.0):13.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):9.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):8.0,((((((((Palaquium:1.0,Manilkara:1.0):1.0,Madhuca:2.0):1.0,Monotheca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):4.0,((((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):4.0,(((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):3.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):6.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:16.0,(Cornus:15.0,((Aucuba:1.0,Ilex:1.0):13.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):9.0,(((FouquieriaC:1.0,FouquieriaF:1.0):2.0,((Polemonium:1.0,Acanthogilia:1.0):1.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0):9.0,((((((((Palaquium:1.0,Manilkara:1.0):1.0,Monotheca:2.0):1.0,Madhuca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):4.0,(((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):5.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):6.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:16.0,(Cornus:15.0,((Aucuba:1.0,Ilex:1.0):13.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):9.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):8.0,(((((((((Palaquium:1.0,Manilkara:1.0):1.0,Monotheca:2.0):1.0,Madhuca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):1.0,((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):3.0):3.0,(((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):3.0):1.0,(((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):6.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):6.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:16.0,(Cornus:15.0,((Aucuba:1.0,Ilex:1.0):13.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):9.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):8.0,(((((((((Palaquium:1.0,Manilkara:1.0):1.0,Madhuca:2.0):1.0,Monotheca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):1.0,((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):3.0):3.0,(((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):3.0):1.0,(((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):6.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):6.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:17.0,(Cornus:16.0,((Aucuba:1.0,Ilex:1.0):14.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):10.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):9.0,((((((((Palaquium:1.0,Manilkara:1.0):1.0,Madhuca:2.0):1.0,Monotheca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):5.0,(((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):6.0,(((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):3.0):1.0,(((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):6.0):1.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):7.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:15.0,(Cornus:14.0,((Aucuba:1.0,Ilex:1.0):12.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):8.0,((((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):6.0,((((((((Palaquium:1.0,Manilkara:1.0):1.0,Madhuca:2.0):1.0,Monotheca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):1.0,((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):3.0):2.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):6.0):1.0):1.0):1.0):1.0);(Hydrangea:17.0,(Cornus:16.0,((Aucuba:1.0,Ilex:1.0):14.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):10.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):9.0,(((((((((Palaquium:1.0,Manilkara:1.0):1.0,Madhuca:2.0):1.0,Monotheca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):4.0,(((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,(((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):5.0):1.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):4.0):1.0):1.0,((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):7.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):7.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:16.0,(Cornus:15.0,((Aucuba:1.0,Ilex:1.0):13.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):9.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):8.0,(((((((Palaquium:1.0,Manilkara:1.0):1.0,Madhuca:2.0):1.0,Monotheca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):5.0,((((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):5.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):5.0):1.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:16.0,(Cornus:15.0,((Aucuba:1.0,Ilex:1.0):13.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):9.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):8.0,(((((((((Palaquium:1.0,Manilkara:1.0):1.0,Madhuca:2.0):1.0,Monotheca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):1.0,((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):3.0):3.0,(((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,(((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):5.0):1.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):4.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):6.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:15.0,(Cornus:14.0,((Aucuba:1.0,Ilex:1.0):12.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,(Marcgravia:1.0,Norantea:1.0):2.0):1.0,Impatiens:4.0):8.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):7.0,((((((((Palaquium:1.0,Manilkara:1.0):1.0,(Monotheca:1.0,Madhuca:1.0):1.0):1.0,Pouteria:3.0):1.0,Sarcosperma:4.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):3.0):1.0,((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):2.0):3.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):5.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:16.0,(Cornus:15.0,((Aucuba:1.0,Ilex:1.0):13.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):9.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):8.0,((((((((Palaquium:1.0,Monotheca:1.0):1.0,Manilkara:2.0):1.0,Madhuca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):4.0,(((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):5.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):6.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:16.0,(Cornus:15.0,((Aucuba:1.0,Ilex:1.0):13.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):9.0,((((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):7.0,((((((Palaquium:1.0,Manilkara:1.0):1.0,(Monotheca:1.0,Madhuca:1.0):1.0):1.0,Pouteria:3.0):1.0,Sarcosperma:4.0):2.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):1.0):4.0,(((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):5.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0):1.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):10.0):1.0):1.0):1.0):1.0);(Hydrangea:16.0,(Cornus:15.0,((Aucuba:1.0,Ilex:1.0):13.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):9.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):8.0,((((((((Palaquium:1.0,Manilkara:1.0):1.0,(Monotheca:1.0,Madhuca:1.0):1.0):1.0,Pouteria:3.0):1.0,Sarcosperma:4.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):3.0):4.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0,((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):6.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):6.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:17.0,(Cornus:16.0,((Aucuba:1.0,Ilex:1.0):14.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):10.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):9.0,((((((((Palaquium:1.0,Manilkara:1.0):1.0,Madhuca:2.0):1.0,Monotheca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):5.0,(((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):6.0,(((Actinidia:1.0,Roridula:1.0):7.0,((Heliamphora:1.0,Sarracenia:1.0):6.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):3.0):1.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):7.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:16.0,(Cornus:15.0,((Aucuba:1.0,Ilex:1.0):13.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):9.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):8.0,((((((((Palaquium:2.0,(Monotheca:1.0,Manilkara:1.0):1.0):1.0,Madhuca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):1.0,((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):3.0):3.0,(((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):3.0):1.0,(((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):6.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):6.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:17.0,(Cornus:16.0,((Aucuba:1.0,Ilex:1.0):14.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):10.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):9.0,(((((((Palaquium:2.0,(Monotheca:1.0,Manilkara:1.0):1.0):1.0,Madhuca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):5.0,(((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):6.0,(((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):3.0):1.0,(((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):6.0):1.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):7.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:16.0,(Cornus:15.0,((Aucuba:1.0,Ilex:1.0):13.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):9.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):8.0,(((((((((Palaquium:1.0,Manilkara:1.0):1.0,Monotheca:2.0):1.0,Madhuca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):1.0,((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):3.0):3.0,(((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,(((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):5.0):1.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):4.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):6.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:16.0,(Cornus:15.0,((Aucuba:1.0,Ilex:1.0):13.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):9.0,((((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):7.0,(((((((Palaquium:2.0,(Monotheca:1.0,Manilkara:1.0):1.0):1.0,Madhuca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):2.0):3.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):5.0):1.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):10.0):1.0):1.0):1.0):1.0);(Hydrangea:14.0,(Cornus:13.0,((Aucuba:1.0,Ilex:1.0):11.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):7.0,(((((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):3.0,(((((Palaquium:2.0,(Monotheca:1.0,Manilkara:1.0):1.0):1.0,Madhuca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):1.0):1.0):2.0,((((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):3.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):1.0):1.0,(((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):8.0):1.0):1.0):1.0):1.0);(Hydrangea:16.0,(Cornus:15.0,((Aucuba:1.0,Ilex:1.0):13.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):9.0,(((FouquieriaC:1.0,FouquieriaF:1.0):2.0,((Polemonium:1.0,Acanthogilia:1.0):1.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0):9.0,(((((((Palaquium:2.0,(Monotheca:1.0,Manilkara:1.0):1.0):1.0,Madhuca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):4.0,(((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):5.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):6.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:14.0,(Cornus:13.0,((Aucuba:1.0,Ilex:1.0):11.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):7.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):6.0,((((((((Palaquium:2.0,(Monotheca:1.0,Manilkara:1.0):1.0):1.0,Madhuca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):4.0):1.0,((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):3.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0,(((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):3.0,(((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0);(Hydrangea:17.0,(Cornus:16.0,((Aucuba:1.0,Ilex:1.0):14.0,((((Pelliciera:2.0,(Tetramerista:1.0,Pentamerista:1.0):1.0):1.0,Impatiens:3.0):1.0,(Marcgravia:1.0,Norantea:1.0):3.0):10.0,(((FouquieriaC:1.0,FouquieriaF:1.0):3.0,((Polemonium:2.0,(Cantua:1.0,Cobaea:1.0):1.0):1.0,Acanthogilia:3.0):1.0):9.0,((((((((Palaquium:2.0,(Monotheca:1.0,Manilkara:1.0):1.0):1.0,Madhuca:3.0):1.0,Pouteria:4.0):1.0,Sarcosperma:5.0):4.0,((((Actinidia:1.0,Roridula:1.0):1.0,(Heliamphora:1.0,Sarracenia:1.0):1.0):5.0,(Clethra:6.0,(Cyrilla:5.0,(Enkianthus:4.0,(Chimaphila:3.0,((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,((SymplocosZ:1.0,Symplocos:1.0):4.0,((Styrax:2.0,(Halesia:1.0,Bruinsmia:1.0):1.0):2.0,(Galax:3.0,((ShortiaS:1.0,Diapensia:1.0):1.0,ShortiaU:2.0):1.0):1.0):1.0):1.0):2.0):1.0):1.0,((((Cleyera:1.0,Eurya:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):6.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):9.0):1.0,((Lissocarpa:1.0,Diospyros:1.0):4.0,(((Samolus:1.0,Clavjia:1.0):2.0,(Primula:2.0,(Myrsine:1.0,Lysimachia:1.0):1.0):1.0):1.0,Maesa:4.0):1.0):7.0):1.0):1.0):1.0):1.0):1.0);((((((((((((((((Empetrum:1.0,Rhododendron:1.0):1.0,Vaccinium:2.0):1.0,Chimaphila:3.0):1.0,Enkianthus:4.0):1.0,Cyrilla:5.0):1.0,Clethra:6.0):1.0,((Heliamphora:1.0,Sarracenia:1.0):1.0,(Actinidia:1.0,Roridula:1.0):1.0):5.0):1.0,((((Camellia:1.0,Laplacea:1.0):1.0,Gordonia:2.0):1.0,Schima:3.0):3.0,(((((Diapensia:1.0,ShortiaS:1.0):1.0,ShortiaU:2.0):1.0,Galax:3.0):1.0,((Halesia:1.0,Bruinsmia:1.0):1.0,Styrax:2.0):2.0):1.0,(SymplocosZ:1.0,Symplocos:1.0):4.0):1.0):2.0):1.0,((((Eurya:1.0,Cleyera:1.0):1.0,Ternstroemia:2.0):1.0,Pentaphylax:3.0):1.0,(Ficalhoa:1.0,Sladenia:1.0):3.0):5.0):1.0,(((((Palaquium:1.0,Manilkara:1.0):1.0,(Madhuca:1.0,Monotheca:1.0):1.0):1.0,Pouteria:3.0):1.0,Sarcosperma:4.0):2.0,(((((Myrsine:1.0,Lysimachia:1.0):1.0,Primula:2.0):1.0,(Samolus:1.0,Clavjia:1.0):2.0):1.0,Maesa:4.0):1.0,(Lissocarpa:1.0,Diospyros:1.0):4.0):1.0):4.0):1.0,((((Cantua:1.0,Cobaea:1.0):1.0,Polemonium:2.0):1.0,Acanthogilia:3.0):1.0,(FouquieriaC:1.0,FouquieriaF:1.0):3.0):7.0):1.0,((Barringtonia:1.0,Couroupita:1.0):1.0,Napoleonaea:2.0):10.0):1.0,((Marcgravia:1.0,Norantea:1.0):3.0,(((Tetramerista:1.0,Pentamerista:1.0):1.0,Pelliciera:2.0):1.0,Impatiens:3.0):1.0):9.0):1.0,(Aucuba:1.0,Ilex:1.0):13.0):1.0,Hydrangea:15.0):1.0,Cornus:16.0);"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Angiosperm phylogeny inferred from 18S rDNA, rbcL, and atpB sequences.",
+                "year": 2000,
+                "authors": [
+                    {
+                        "name": "D. E. Soltis",
+                        "alternate": [
+                            "Soltis, D. E."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Soltis",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "P. S. Soltis",
+                        "alternate": [
+                            "Soltis, P. S."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Soltis",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "M. W. Chase",
+                        "alternate": [
+                            "Chase, M. W."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Chase",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "M. E. Mort",
+                        "alternate": [
+                            "Mort, M. E."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Mort",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "D. C. Albach",
+                        "alternate": [
+                            "Albach, D. C."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Albach",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "M. Zanis",
+                        "alternate": [
+                            "Zanis, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Zanis"
+                    },
+                    {
+                        "name": "V. Savolainen",
+                        "alternate": [
+                            "Savolainen, V."
+                        ],
+                        "firstname": "V.",
+                        "lastname": "Savolainen"
+                    },
+                    {
+                        "name": "W. H. Hahn",
+                        "alternate": [
+                            "Hahn, W. H."
+                        ],
+                        "firstname": "W.",
+                        "lastname": "Hahn",
+                        "middlename": "H."
+                    },
+                    {
+                        "name": "S. B. Hoot",
+                        "alternate": [
+                            "Hoot, S. B."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Hoot",
+                        "middlename": "B."
+                    },
+                    {
+                        "name": "M. F. Fay",
+                        "alternate": [
+                            "Fay, M. F."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Fay",
+                        "middlename": "F."
+                    },
+                    {
+                        "name": "M. Axtell",
+                        "alternate": [
+                            "Axtell, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Axtell"
+                    },
+                    {
+                        "name": "S. M. Swensen",
+                        "alternate": [
+                            "Swensen, S. M."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Swensen",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "L. M. Prince",
+                        "alternate": [
+                            "Prince, L. M."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Prince",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "W. J. Kress",
+                        "alternate": [
+                            "Kress, W. J."
+                        ],
+                        "firstname": "W.",
+                        "lastname": "Kress",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "K. C. Nixon",
+                        "alternate": [
+                            "Nixon, K. C."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Nixon",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "J. S. Farris",
+                        "alternate": [
+                            "Farris, J. S."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Farris",
+                        "middlename": "S."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "10",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.1095-8339.2000.tb01588.x"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Botanical Journal of Linnean Society",
+                    "volume": "133",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Phylogeny of the eudicots: A nearly complete familial analysis based on rbcL gene sequences.",
+                "authors": [
+                    {
+                        "name": "V. Savolainen",
+                        "alternate": [
+                            "Savolainen , V."
+                        ],
+                        "firstname": "V.",
+                        "lastname": "Savolainen"
+                    },
+                    {
+                        "name": "M. F. Fay",
+                        "alternate": [
+                            "Fay, M. F."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Fay",
+                        "middlename": "F."
+                    },
+                    {
+                        "name": "D. C. Albach",
+                        "alternate": [
+                            "Albach, D. C."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Albach",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "A. Backlund",
+                        "alternate": [
+                            "Backlund, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Backlund"
+                    },
+                    {
+                        "name": "M. van der Bank",
+                        "alternate": [
+                            "van der Bank, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "van der Bank"
+                    },
+                    {
+                        "name": "K. M. Cameron",
+                        "alternate": [
+                            "Cameron, K. M."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Cameron",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "S. A. Johnson",
+                        "alternate": [
+                            "Johnson, S. A."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Johnson",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "M. D. Lledo",
+                        "alternate": [
+                            "Lledo, M. D."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Lledo",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "J. C. Pintaud",
+                        "alternate": [
+                            "Pintaud, J. C."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Pintaud",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "M. Powell",
+                        "alternate": [
+                            "Powell, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Powell"
+                    },
+                    {
+                        "name": "M. C. Sheahan",
+                        "alternate": [
+                            "Sheahan, M. C."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Sheahan",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "D. E. Soltis",
+                        "alternate": [
+                            "Soltis, D. E."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Soltis",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "P. S. Soltis",
+                        "alternate": [
+                            "Soltis, P. S."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Soltis",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "P. Weston",
+                        "alternate": [
+                            "Weston, P."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Weston"
+                    },
+                    {
+                        "name": "W. M. Whitten",
+                        "alternate": [
+                            "Whitten, W. M."
+                        ],
+                        "firstname": "W.",
+                        "lastname": "Whitten",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "K. J. Wurdack",
+                        "alternate": [
+                            "Wurdack, K. J."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Wurdack",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "M. W. Chase",
+                        "alternate": [
+                            "Chase, M. W."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Chase",
+                        "middlename": "W."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "8",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.2307/4115644"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Kew Bulletin",
+                    "volume": "55",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Phylogenetic analysis of asterids based on sequences of four genes.",
+                "year": 2001,
+                "authors": [
+                    {
+                        "name": "D. C. Albach",
+                        "alternate": [
+                            "Albach, D. C."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Albach",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "P. S. Soltis",
+                        "alternate": [
+                            "Soltis, P. S."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Soltis",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "D. E. Soltis",
+                        "alternate": [
+                            "Soltis, D. E."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Soltis",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "R. G. Olmstead",
+                        "alternate": [
+                            "Olmstead, R. G."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Olmstead",
+                        "middlename": "G."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.2307/2666224"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Annals of the Missouri Botanical Garden",
+                    "volume": "88",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Phylogenetic relationships in the order Ericales s.l.: analyses of molecular data from five genes from the plastid and mitochondrial genomes.",
+                "year": 2002,
+                "authors": [
+                    {
+                        "name": "A. A. Anderberg",
+                        "alternate": [
+                            "Anderberg, A. A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Anderberg",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "C. Rydin",
+                        "alternate": [
+                            "Rydin, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Rydin"
+                    },
+                    {
+                        "name": "M. Källersjö",
+                        "alternate": [
+                            "Källersjö, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Källersjö"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.3732/ajb.89.4.677"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "American Journal of Botany",
+                    "volume": "89",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Phylogenetics of asterids based on 3 coding and 3 non-coding chloroplast DNA markers and utility of non-coding DNA at higher taxonomic levels.",
+                "year": 2002,
+                "authors": [
+                    {
+                        "name": "B. Bremer",
+                        "alternate": [
+                            "Bremer, B."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Bremer"
+                    },
+                    {
+                        "name": "K. Bremer",
+                        "alternate": [
+                            "Bremer, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Bremer"
+                    },
+                    {
+                        "name": "N. Heidari",
+                        "alternate": [
+                            "Heidari, N."
+                        ],
+                        "firstname": "N.",
+                        "lastname": "Heidari"
+                    },
+                    {
+                        "name": "P. Erixon",
+                        "alternate": [
+                            "Erixon, P."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Erixon"
+                    },
+                    {
+                        "name": "R. G. Olmstead",
+                        "alternate": [
+                            "Olmstead, R. G."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Olmstead",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "A. A. Anderberg",
+                        "alternate": [
+                            "Anderberg, A. A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Anderberg",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "M. Källersjö",
+                        "alternate": [
+                            "Källersjö, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Källersjö"
+                    },
+                    {
+                        "name": "E. Barkhordarian",
+                        "alternate": [
+                            "Barkhordarian, E."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Barkhordarian"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/S1055-7903(02)00240-3"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Journal of Phylogenetic Evolution",
+                    "volume": "24",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 41,
+            "label": "Ericales",
+            "dwc:scientificNameAuthorship": "Judd, W. S., Kron, K. A.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Přirozenosti Rostlin.",
+                    "year": 1820,
+                    "authors": [
+                        {
+                            "name": "F. Bercht",
+                            "alternate": [
+                                "Bercht, F."
+                            ],
+                            "firstname": "F.",
+                            "lastname": "Bercht"
+                        },
+                        {
+                            "name": "J. S. Presl.",
+                            "alternate": [
+                                "Presl., J. S."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Presl.",
+                            "middlename": "S."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "city": "Praha",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing Impatiens capensis Meerb. 1794 and Erica cinerea L. 1753.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Impatiens capensis 1794",
+                        "nameComplete": "Impatiens capensis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Erica cinerea 1753",
+                        "nameComplete": "Erica cinerea"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

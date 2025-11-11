@@ -1,0 +1,119 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Molecular phylogeny of treeshrews (Mammalia: Scandentia) and the timescale of diversification in Southeast Asia.",
+                "year": 2011,
+                "authors": [
+                    {
+                        "name": "T. E. Roberts",
+                        "alternate": [
+                            "Roberts, T. E."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Roberts",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "H. C. Lanier",
+                        "alternate": [
+                            "Lanier, H. C."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Lanier",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "E. J. Stargis",
+                        "alternate": [
+                            "Stargis, E. J."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Stargis",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "L. E. Olson",
+                        "alternate": [
+                            "Olson, L. E."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Olson",
+                        "middlename": "E."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2011.04.021"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Phylogenetic and Evolution",
+                    "volume": "60",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 291,
+            "label": "Scandentia",
+            "dwc:scientificNameAuthorship": "Sargis, E. J.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Die Säugethiere in Abbildungen nach der Natur.",
+                    "year": 1855,
+                    "authors": [
+                        {
+                            "name": "J. A. Wagner",
+                            "alternate": [
+                                "Wagner, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Wagner",
+                            "middlename": "A."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Weiger",
+                    "city": "Leipzig",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Ptilocercus lowii Gray 1848 and Tupaia (originally Sorex) glis (Diard 1820).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Ptilocercus lowii Gary, 1848",
+                        "nameComplete": "Ptilocercus lowii"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Tupaia (originally Sorex) glis Diard, 1820",
+                        "nameComplete": "Tupaia (originally Sorex) glis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

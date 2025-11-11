@@ -1,0 +1,129 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Molecular phylogeny of the Carnivora (Mammalia): assessing the impact of increased sampling on resolving enigmatic relationships.",
+                "year": 2005,
+                "authors": [
+                    {
+                        "name": "J. J. Flynn",
+                        "alternate": [
+                            "Flynn, J. J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Flynn",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "J. A. Finarelli",
+                        "alternate": [
+                            "Finarelli, J. A."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Finarelli",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "S. Zehr",
+                        "alternate": [
+                            "Zehr, S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Zehr"
+                    },
+                    {
+                        "name": "J. Hsu",
+                        "alternate": [
+                            "Hsu, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Hsu"
+                    },
+                    {
+                        "name": "M. A. Nedbal",
+                        "alternate": [
+                            "Nedbal, M. A."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Nedbal",
+                        "middlename": "A."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1080/10635150590923326"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Systematic Biology",
+                    "volume": "54",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 44,
+            "label": "Feliformia",
+            "dwc:scientificNameAuthorship": "Wolsan, M., Flynn, J. J., Wyss, A. R.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Bemerkungen über das Raubtiersystem.",
+                    "year": 1945,
+                    "authors": [
+                        {
+                            "name": "M. Kretzoi",
+                            "alternate": [
+                                "Kretzoi, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Kretzoi"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Ann. Hist.-Nat. Mus. Natl. Hung.",
+                        "volume": "38",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The largest crown clade containing Felis silvestris Schreber 1777 (Felidae) but not Canis lupus Linnaeus 1758 (Canidae).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Felis silvestris Schreber, 1777",
+                        "nameComplete": "Felis silvestris"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Canis lupus Linnaeus, 1758",
+                        "nameComplete": "Canis lupus"
+                    }
+                }
+            ]
+        }
+    ]
+}

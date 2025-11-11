@@ -1,0 +1,130 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Interrelationships of the ostariophysan fishes (Teleostei).",
+                "year": 1981,
+                "authors": [
+                    {
+                        "name": "S. V. Fink",
+                        "alternate": [
+                            "Fink, S. V."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Fink",
+                        "middlename": "V."
+                    },
+                    {
+                        "name": "W. L. Fink",
+                        "alternate": [
+                            "Fink, W. L."
+                        ],
+                        "firstname": "W.",
+                        "lastname": "Fink",
+                        "middlename": "L."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.1096-3642.1981.tb01575"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Zoological Journal of Linnaean Society",
+                    "volume": "72",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 196,
+            "label": "Ostariophysi",
+            "dwc:scientificNameAuthorship": "Lundberg, J. G.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Beitrage zur vergleichenden Anatomie der Fische: III. Das Cranium der Characiniden nebst allgemeinen Bemerkungen über die mit einen Weber'schen Apparat versehenen Physostomenfamilien.",
+                    "year": 1885,
+                    "authors": [
+                        {
+                            "name": "M. Sagemehl",
+                            "alternate": [
+                                "Sagemehl, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Sagemehl"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Gegenbauers Morphologisches Jahrbuch",
+                        "volume": "10",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Gonorynchus (originally Cyprinus) gonorynchus (Linnaeus 1766) (Gonorynchiformes), Cyprinus carpio Linnaeus 1758 (Cypriniformes), Charax (originally Salmo) gibbosus (Linnaeus 1758) (Characiformes), Gymnotus carapo Linnaeus 1758 (Gymnotiformes; Gymnotoidei on the reference phylogeny) and Silurus glanis Linnaeus 1758 (Siluriformes; Siluroidei on the reference phylogeny).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Gonorynchus (originally Cyprinus) gonorynchus Linnaeus, 1766",
+                        "nameComplete": "Gonorynchus (originally Cyprinus) gonorynchus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Cyprinus carpio Linnaeus, 1758",
+                        "nameComplete": "Cyprinus carpio"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Charax (originally Salmo) gibbosus Linnaeus, 1758",
+                        "nameComplete": "Charax (originally Salmo) gibbosus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Gymnotus carapo Linnaeus, 1758",
+                        "nameComplete": "Gymnotus carapo"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Silurus glanis Linnaeus, 1758",
+                        "nameComplete": "Silurus glanis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

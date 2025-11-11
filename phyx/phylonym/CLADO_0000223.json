@@ -1,0 +1,123 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "The oldest platypus, and its bearing on divergence timing of the platypus and echidna clades.",
+                "year": 2008,
+                "authors": [
+                    {
+                        "name": "T. Rowe",
+                        "alternate": [
+                            "Rowe, T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Rowe"
+                    },
+                    {
+                        "name": "T. H. Rich",
+                        "alternate": [
+                            "Rich, T. H."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Rich",
+                        "middlename": "H."
+                    },
+                    {
+                        "name": "P. Vickers-Rich",
+                        "alternate": [
+                            "Vickers-Rich, P."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Vickers-Rich"
+                    },
+                    {
+                        "name": "M. Springer",
+                        "alternate": [
+                            "Springer, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Springer"
+                    },
+                    {
+                        "name": "M. O. Woodburne",
+                        "alternate": [
+                            "Woodburne, M. O."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Woodburne",
+                        "middlename": "O."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "5",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1073/pnas.0706385105"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Proceedings of the National Academy of Science U. S. A.",
+                    "volume": "105",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 223,
+            "label": "Monotremata",
+            "dwc:scientificNameAuthorship": "Rowe, T. B., Bhullar, B. A. S., Wallace, R. V. S.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Enchiridion generum animalium.",
+                    "year": 1823,
+                    "authors": [
+                        {
+                            "name": "G. Fischer",
+                            "alternate": [
+                                "Fischer, G."
+                            ],
+                            "firstname": "G.",
+                            "lastname": "Fischer"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "city": "Moscow",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Tachyglossus aculeatus (Shaw 1792) and Ornithorhynchus anatinus (Shaw 1799).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Tachyglossus aculeatus Shaw, 1792",
+                        "nameComplete": "Tachyglossus aculeatus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Ornithorhynchus anatinus Shaw, 1799",
+                        "nameComplete": "Ornithorhynchus anatinus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

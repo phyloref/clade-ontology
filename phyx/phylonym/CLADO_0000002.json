@@ -1,0 +1,91 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Higher level phylogeny and evolutionary trends in Campanulaceae subfam. Lobelioideae: Molecular signal overshadows morphology.",
+                "year": 2008,
+                "authors": [
+                    {
+                        "name": "A. Antonelli",
+                        "alternate": [
+                            "Antonelli, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Antonelli"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2007.06.015"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Phylogenetics and Evolution",
+                    "volume": "46",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 2,
+            "label": "Lobelioideae",
+            "dwc:scientificNameAuthorship": "Cellinese, N.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Outlines of botany",
+                    "year": 1835,
+                    "authors": [
+                        {
+                            "name": "G. T. Burnett",
+                            "alternate": [
+                                "Burnett, G. T."
+                            ],
+                            "firstname": "G.",
+                            "lastname": "Burnett",
+                            "middlename": "T."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Renshaw",
+                    "city": "London",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Lobelia cardinalis Linnaeus 1753 and Lobelia coronopifolia Linnaeus 1753.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Lobelia cardinalis Linnaeus, 1753",
+                        "nameComplete": "Lobelia cardinalis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Lobelia coronopifolia Linnaeus, 1753",
+                        "nameComplete": "Lobelia coronopifolia"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

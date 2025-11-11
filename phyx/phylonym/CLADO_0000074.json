@@ -1,0 +1,180 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Cranial morphology and affinities of Microbrachis, and a reappraisal of the phylogeny and lifestyle of the first amphibians.",
+                "year": 2004,
+                "authors": [
+                    {
+                        "name": "G. Vallin",
+                        "alternate": [
+                            "Vallin, G."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Vallin"
+                    },
+                    {
+                        "name": "M. Laurin",
+                        "alternate": [
+                            "Laurin, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Laurin"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "6",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1671/5.1"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Vertebrate Paleontology",
+                    "volume": "24",
+                    "identifier": []
+                }
+            },
+            "newick": "(Osteolepiformes, (Panderichthyidae, (Acanthostega, (Ichthyostega, \n(Tulerpeton, ((Crassigyrinus, Baphetidae), (Colosteidae, \n(\n(Dendrerpeton, (Eryops, (Ecolsonia, ((Tersomius, Apateon), (Amphibamus, Doleserpeton))))),\n\n((Proterogyrinus, Archeria), Gephyrostegidae,\n\n((Kotlassia, (Seymouria, Ariekanerpeton)),\n\n(\n((Aistopoda, Adelogyrinidae), (Nectridea, ((Microbrachis, Utaherpeton), \n(Pantylus, (Cardiocephalus, (Rhynchonkos, (Brachystelechidae, \n(Lysorophia, \n((Triadobatrachus, (Discoglossidae, Pipidae)), \n((Karaurus, Hynobiidae), (Proteidae, (Sirenidae, (Eocaecilia, \n(Rhinatrematidae, Ichthyophiidae)))))))))))))),\n\nWestlothiana, \n\n(Solendonsaurus, ((Limnoscelis, Diadectes), (Synapsida, (Captorhinidae, Procolophonidae)))))\n))))))))))"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "A large-scale phylogeny of Amphibia including over 2800 species, and a revised classification of extant frogs, salamanders, and caecilians.",
+                "year": 2011,
+                "authors": [
+                    {
+                        "name": "R. A. Pyron",
+                        "alternate": [
+                            "Pyron, R. A."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Pyron",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "J. J. Wiens",
+                        "alternate": [
+                            "Wiens, J. J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Wiens",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2011.06.012"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Phylogenetics and Evolution",
+                    "volume": "61",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 74,
+            "label": "Pan-Amniota",
+            "dwc:scientificNameAuthorship": "Laurin, M., Smithson, T. R.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book_section",
+                    "title": "Assembling the tree of life.",
+                    "section_title": "Chordate phylogeny and development.",
+                    "year": 2004,
+                    "authors": [
+                        {
+                            "name": "T. Rowe",
+                            "alternate": [
+                                "Rowe, T."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Rowe"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "J. Cracraft",
+                            "alternate": [
+                                "Cracraft, J."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Cracraft"
+                        },
+                        {
+                            "name": "M. J. Donoghue",
+                            "alternate": [
+                                "Donoghue, M. J."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Donoghue",
+                            "middlename": "J."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "Oxford University Press.",
+                    "city": "Oxford",
+                    "pages": "384-409",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The largest total clade containing Homo sapiens Linnaeus 1758 (Amniota) but not Pipa pipa Linnaeus 1758 (Pipidae), Caecilia tentaculata Linnaeus 1758, and Siren lacertina Österdam 1766 (Sirenidae).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Homo sapiens Linnaeus, 1758",
+                        "nameComplete": "Homo sapiens"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Pipa pipa Linnaeus, 1758",
+                        "nameComplete": "Pipa pipa"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Caecilia tentaculata Linnaeus, 1758",
+                        "nameComplete": "Caecilia tentaculata"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Siren lacertina Österdam, 1766",
+                        "nameComplete": "Siren lacertina"
+                    }
+                }
+            ]
+        }
+    ]
+}

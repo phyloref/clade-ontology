@@ -1,0 +1,201 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Molecular phylogenetics of the Siphonophora (Cnidaria), with implications for the evolution of functional specialization.",
+                "year": 2005,
+                "authors": [
+                    {
+                        "name": "C. W. Dunn",
+                        "alternate": [
+                            "Dunn, C. W."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Dunn",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "P. R. Pugh",
+                        "alternate": [
+                            "Pugh, P. R."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Pugh",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "S. H. D. Haddock",
+                        "alternate": [
+                            "Haddock, S. H. D."
+                        ],
+                        "firstname": "S. H.",
+                        "lastname": "Haddock",
+                        "middlename": "D."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "6",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1080/10635150500354837"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Systematic biology",
+                    "volume": "54",
+                    "identifier": []
+                }
+            },
+            "newick": "(Staurocladia_wellingtoni, \n(Porpita_porpita, Velella_velella),\n(Hydra, \n((Rhizophysa_eysenhardti, \n(Physalia_physalis, Rhizophysa_filiformis)),\n((\n(Apolemia_sp_1, Apolemia_sp_4), \n(Apolemia_sp_2, Apolemia_sp_3)),\n(Stephanomia_amphytridis, Cordagalma_cordiforme, \nStephalia_dilata, Erenna_sp,\n(Bargmannia_amoena, Bargmannia_elongata),\n\n(\n(Physophora_hydrostatica, (Forskalia_tholoides, \n((Forskalia_asymmetrica, Forkalia_formosa),\n((Forskalia_edwardsi_Pac_1, Forskalia_edwardsi_Pac_2),\nForskalia_edwardsi_Atl)))),\n\n((Nanomia_bijua_Atl, Nanomia_bijua_bijuga_Pac), \n((Halistemma_rubrum_Pac, (Halistemma_rubrum_Med, \nHalistemma_rubrum_Atl)),\n(Agalma_clausi, \n((Agalma_elegans_Atl, Agalma_elegans_Pac),\n(Agalma_okeni, \n(Athorybia_rosacea_Atl, Athorybia_rosacea_Pac))))))),\n\n((Praya_dubia, (Nectadamas_diomedeae, Nectopyramis_natans)),\n\n((Craseoa_lathetica, \n((Gymnopraia_lapislazula, Rosacea_flaccida),\n(Vogtia_pentacantha, (Vogtia_glabra, \n(Hippopodius_hippopus_Atl, Hippopodius_hippopus_Pac))))),\n\n(Clausophyid_sp_1, \n\n((Chuniphyes_multidentata, Clausophyes_ovata),\n\n(Sphaeronectes_gracilis, \n\n((Chelophyes_appendiculata, \n(Diphyes_dispar, Abylopsis_tetragona)),\n(Muggiaea_atlantica, (Lensia_conoidea, \n(Sulculeolaria_quadrivalvis_Atl, \nSulculeolaria_quadrivalvis_Pac))))))))))))))\n\n"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Medusozoan phylogeny and character evolution clarified by new large and small subunit rDNA data and an assessment of the utility of phylogenetic mixture models.",
+                "authors": [
+                    {
+                        "name": "A. G. Collins",
+                        "alternate": [
+                            "Collins, A. G."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Collins",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "P. Schuchert",
+                        "alternate": [
+                            "Schuchert, P."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Schuchert"
+                    },
+                    {
+                        "name": "A. C. Marques",
+                        "alternate": [
+                            "Marques, A. C."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Marques",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "T. Jankowski",
+                        "alternate": [
+                            "Jankowski, T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Jankowski"
+                    },
+                    {
+                        "name": "M. Medina",
+                        "alternate": [
+                            "Medina, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Medina"
+                    },
+                    {
+                        "name": "B. Schierwater",
+                        "alternate": [
+                            "Schierwater, B."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Schierwater"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3, 6",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1080/10635150500433615"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Systematic Biology",
+                    "volume": "55",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 170,
+            "label": "Siphonophora",
+            "dwc:scientificNameAuthorship": "Dunn, C. W.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "System der Acalephen.",
+                    "year": 1829,
+                    "authors": [
+                        {
+                            "name": "F. Eschscholtz",
+                            "alternate": [
+                                "Eschscholtz , F."
+                            ],
+                            "firstname": "F.",
+                            "lastname": "Eschscholtz"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "city": "Berlin",
+                    "pages": "1-190",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Physalia physalis Linnaeus 1758, Physophora hydrostatica Forskål 1775, Apolemia uvaria (Lesueur, ?1811), and Praya dubia Quoy & Gaimard 1833.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Physalia physalis Linnaeus, 1758",
+                        "nameComplete": "Physalia physalis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Physophora hydrostatica Forskal, 1775",
+                        "nameComplete": "Physophora hydrostatica"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Apolemia uvaria Lesuer, 1811",
+                        "nameComplete": "Apolemia uvaria"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Praya dubia Quoy and Gaimard, 1883",
+                        "nameComplete": "Praya dubia"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

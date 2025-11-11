@@ -1,0 +1,189 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Defining the major lineages of red algae (Rhodophyta).",
+                "year": 2006,
+                "authors": [
+                    {
+                        "name": "H. S. Yoon",
+                        "alternate": [
+                            "Yoon, H. S."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Yoon",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "K. M. Muller",
+                        "alternate": [
+                            "Muller, K. M."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Muller",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "R. G. Sheath",
+                        "alternate": [
+                            "Sheath, R. G."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Sheath",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "F. D. Ott",
+                        "alternate": [
+                            "Ott, F. D."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Ott",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "D. Bhattacharya",
+                        "alternate": [
+                            "Bhattacharya, D."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Bhattacharya"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "J. Phycol.",
+                    "volume": "42",
+                    "identifier": []
+                }
+            },
+            "newick": "((((((((Bangia_atropurpurea, Porphyra_purpurea), \n(Chondrus_crispus, Palmaria_palmata)), \n(Dixoniella_grisea, Rhodella_violacea)), \n\n(((Stylonema_alsidii, Rhodosorus_marinus), Bangiopsis_subsmplex),\n(Compsopogon_coeruleus, Rhodochaete_parvula))),\n\n(Flintiella_sanguinaria, Porphyridum_aerugineum)),\n\n((Cyanidium_caldarium, Cyanidioschzon_merolae), Galdieria_sulphuraria)),\n\n(((((((Arabidopsis_thaliana, Zea_mays), Pinus_thunbergii), \nPsilotum_nudum), (Anthoceros_formosae, Marchantia_polymorpha)),\nChaetosphaeridium_globosum), \n((Chlamydomonas_reinhardtii, Chlorella_vulgaris), Mesostigma_viride)),\n\n(Cyanophora_paradoxa, Glaucocystis_nostochinearum))),\n\n((Nostoc_sp., Thermosynechococcus_elongatus), Synechocystis_sp.))"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Ribosomal DNA phylogeny of the Bangiophycidae (Rhodophyta) and the origin of secondary plastids.",
+                "year": 2001,
+                "authors": [
+                    {
+                        "name": "K. M. Müller",
+                        "alternate": [
+                            "Müller , K. M."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Müller",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "M. C. Oliveira",
+                        "alternate": [
+                            "Oliveira, M. C."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Oliveira",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "R. G. Sheath",
+                        "alternate": [
+                            "Sheath, R. G."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Sheath",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "D. Bhattacharya",
+                        "alternate": [
+                            "Bhattacharya, D."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Bhattacharya"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Am. J. Bot.",
+                    "volume": "88",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 128,
+            "label": "Eurhodophytina",
+            "dwc:scientificNameAuthorship": "Saunders, G. W.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Assessing red algal supraordinal diversity and taxonomy in the context of contemporary systematic data.",
+                    "year": 2004,
+                    "authors": [
+                        {
+                            "name": "G. W. Saunders",
+                            "alternate": [
+                                "Saunders, G. W."
+                            ],
+                            "firstname": "G.",
+                            "lastname": "Saunders",
+                            "middlename": "W."
+                        },
+                        {
+                            "name": "M. H. Hommersand",
+                            "alternate": [
+                                "Hommersand, M. H."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Hommersand",
+                            "middlename": "H."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Am. J. Bot.",
+                        "volume": "91",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "the crown clade originating in the most recent common ancestor of Bangia fuscopurpurea (Dillwyn) Lyngbye 1819 and Palmaria palmata (Linnaeus) Kuntze 1891.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Bangia fuscopurpurea Lyngbye, 1819",
+                        "nameComplete": "Bangia fuscopurpurea"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Palmaria palmata Kuntze, 1891",
+                        "nameComplete": "Palmaria palmata"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

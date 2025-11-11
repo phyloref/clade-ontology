@@ -1,0 +1,213 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Phylogenomic analyses support the monophyly of Excavata and resolve relationships among eukaryotic “supergroups”.",
+                "year": 2009,
+                "authors": [
+                    {
+                        "name": "V. Hampl",
+                        "alternate": [
+                            "Hampl, V."
+                        ],
+                        "firstname": "V.",
+                        "lastname": "Hampl"
+                    },
+                    {
+                        "name": "L. Hug",
+                        "alternate": [
+                            "Hug, L."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Hug"
+                    },
+                    {
+                        "name": "J. W. Leigh",
+                        "alternate": [
+                            "Leigh, J. W."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Leigh",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "J. B. Dacks",
+                        "alternate": [
+                            "Dacks, J. B."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Dacks",
+                        "middlename": "B."
+                    },
+                    {
+                        "name": "B. F. Lang",
+                        "alternate": [
+                            "Lang, B. F."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Lang",
+                        "middlename": "F."
+                    },
+                    {
+                        "name": "A. G. B. Simpson",
+                        "alternate": [
+                            "Simpson, A. G. B."
+                        ],
+                        "firstname": "A. G.",
+                        "lastname": "Simpson",
+                        "middlename": "B."
+                    },
+                    {
+                        "name": "A. J. Roger",
+                        "alternate": [
+                            "Roger, A. J."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Roger",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1073/pnas.0807880106"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Proceedings of the National Academy of Sciences U. S. A.",
+                    "volume": "106",
+                    "identifier": []
+                }
+            },
+            "newick": "((((Acanthamoeba_sp., Mastigamoeba_balamuthi), \n(Physarum_polycephalum, Dictyostelium_discoideum)), \n\n((Blastocladiella_sp., Ustilago_maydis), \n((Proterospongia_sp., Monosiga_sp.), (Drosophila_melanogaster, Homosapiens)))),\n\n((Malawimonas_californiana, Malawimonas_jakobiformis),\n\n(\n(((Monocercomonoides_sp., Trimastix_pyriformis), \n(Trichomonas_vaginalis, (Spironucleus_barkhanus, Giardia_intestinalis))),\n\n((Andalucia_incarcerata, (Jakoba_bahamensis, (Jakoba_libera, \n(Seculamonas_ecuadoriensis, (Histiona_aroides, Reclinommonas_americana))))), \n((Naegleria_sp., (Sawyeria_marylandensis, Stachyamoeba_lipophora)), \n(Euglena_gracilis, (Trypanosoma_sp., Leishmania_sp.))))),\n\n(\n((Glaucocystis_nostochinearum, Cyanophora_paradoxa),\n((Oryza_sativa, (Micromonas_sp., Chlamydomonas_reinhardtii)), \n(Chondrus_crispus, Porphyra_sp.), (Pavlova_lutheri, Emiliana_huxley))),\n\n((Bigelowiella_nutans, Cercomonas_longicauda), \n((Blastocystis_hominis, (Thallassiosira_pseudonana, Phytophtora_sp.)), \n((Oxytricha_trifallax, Tetrahymena_sp.), \n(Toxoplasma_gondii, (Alexandrium_tamarense, Amphidinium_carterae)))))))))"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Mitochondrial genome evolution and a novel RNA editing system in deep-branching heteroloboseids.",
+                "year": 2017,
+                "authors": [
+                    {
+                        "name": "J. Yang",
+                        "alternate": [
+                            "Yang, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Yang"
+                    },
+                    {
+                        "name": "T. Harding",
+                        "alternate": [
+                            "Harding, T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Harding"
+                    },
+                    {
+                        "name": "R. Kamikawa",
+                        "alternate": [
+                            "Kamikawa, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Kamikawa"
+                    },
+                    {
+                        "name": "A. G.  B.  Simpson",
+                        "alternate": [
+                            "Simpson, A. G.  B."
+                        ],
+                        "firstname": "A. G.",
+                        "lastname": "Simpson",
+                        "middlename": "B."
+                    },
+                    {
+                        "name": "A. J. Roger",
+                        "alternate": [
+                            "Roger, A. J."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Roger",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1093/gbe/evx086"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Genome Biological Evolution",
+                    "volume": "9",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 36,
+            "label": "Discicristata",
+            "dwc:scientificNameAuthorship": "Simpson, A.  G. B.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "A revised six-kingdom system of life.",
+                    "year": 1998,
+                    "authors": [
+                        {
+                            "name": "T. Cavalier-Smith",
+                            "alternate": [
+                                "Cavalier-Smith, T."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Cavalier-Smith"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Biol. Rev.",
+                        "volume": "73",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing Euglena gracilis Klebs 1883 (Euglenozoa) and Naegleria gruberi (Schardinger) Alexeieff 1912 (Heterolobosea).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Euglena gracilis Klebs, 1883",
+                        "nameComplete": "Euglena gracilis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Naegleria gruberi Alexeieff, 1912",
+                        "nameComplete": "Naegleria gruberi"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

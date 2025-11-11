@@ -1,0 +1,115 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Simplification as a trend in synapsid cranial evolution.",
+                "year": 2001,
+                "authors": [
+                    {
+                        "name": "C. A. Sidor",
+                        "alternate": [
+                            "Sidor, C. A."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Sidor",
+                        "middlename": "A."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.0014-3820.2001.tb00663.x"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Evolution",
+                    "volume": "55",
+                    "identifier": []
+                }
+            },
+            "newick": "(\n((Aelurosaurus, Arctognathus), \nCephalicustriodes, Cyonosaurus, Leontocephalus, Scylacops, \n(Arctops, (Lycaenops, (Prorubidgea, (Dinogorgon, Rubidgea)))),\nAloposaurus, Goergonops), \n\n(((Hofmeyeria, ((Moschorhinus, Euchambersia, Olivieria),\n(((Theriognathus, Moschowhaitsia), Ictidosuchoides, Viatkosuchus), \n(Regisaurus, (Ericiolacerta, \n(Bauria, Watsoniella, Microgomphodon)))))), \nLycosuchus, Glanosuchus, Chthonosaurus, Ptomalestes), \n\n(Dvinia, (Procynosuchus, \n((Cynosaurus, (new_galesaurid, Galesaurus)), \n\n(Platycraniellus, Thrinaxodon, Bolotridon, \n\n((Cynognathus, (Diademodon, (Trirachodon, (Luangwa, (Massetognathus, \n((Exaeretodon, Gomphodontosuchus), (Oligokyphus, (Tritylodon, \n(Kayentatherium, (Bienotherium, (Bienotheroides, Bocatherium))))))))))),\n\n(BP/1/2669, (Ecteninion, \n((Aleodon, Belesodon, (Probelesodon-lew, Probelesodon-san)), \n(Probainognathus, (Pachygenelus, (Sinoconodon, (Morganucodon, \n(Ornithorhynchus, (Didelphis, Homo))))))))))))))))"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 290,
+            "label": "Synapsida",
+            "dwc:scientificNameAuthorship": "Laurin, M., Reisz, R. R.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "The reptilian subclasses Diapsida and Synapsida and the early history of the Diaptosauria.",
+                    "year": 1903,
+                    "authors": [
+                        {
+                            "name": "H. F. Osborn",
+                            "alternate": [
+                                "Osborn, H. F."
+                            ],
+                            "firstname": "H.",
+                            "lastname": "Osborn",
+                            "middlename": "F."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Mem. Am. Mus. Nat. Hist.",
+                        "volume": "1",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The largest clade that includes Cynognathus crateronotus Seeley 1895 but not Testudo graeca Linnaeus 1758, Iguana iguana (Linnaeus 1758), and Crocodilus niloticus Laurenti 1768.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Cynognathus crateronotus Seeley, 1895",
+                        "nameComplete": "Cynognathus crateronotus"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Testudo graeca Linneaus, 1758",
+                        "nameComplete": "Testudo graeca"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Iguana iguana Linneaus, 1758",
+                        "nameComplete": "Iguana iguana"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Crocodilus niloticus Laurenti, 1758",
+                        "nameComplete": "Crocodilus niloticus"
+                    }
+                }
+            ]
+        }
+    ]
+}

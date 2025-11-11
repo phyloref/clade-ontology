@@ -1,0 +1,116 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Systematics and evolution of the Miocene three-horned palaeomerycid ruminants (Mammalia, Cetartiodactyla).",
+                "year": 2015,
+                "authors": [
+                    {
+                        "name": "I. M. Sanchez",
+                        "alternate": [
+                            "Sanchez, I. M."
+                        ],
+                        "firstname": "I.",
+                        "lastname": "Sanchez",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "J. L. Cantalapiedra",
+                        "alternate": [
+                            "Cantalapiedra, J. L."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Cantalapiedra",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "M. Rios",
+                        "alternate": [
+                            "Rios, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Rios"
+                    },
+                    {
+                        "name": "V. Quiralte",
+                        "alternate": [
+                            "Quiralte, V."
+                        ],
+                        "firstname": "V.",
+                        "lastname": "Quiralte"
+                    },
+                    {
+                        "name": "J. Morales",
+                        "alternate": [
+                            "Morales, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Morales"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "9",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1371/journal.pone.0143034"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "PLoS ONE",
+                    "volume": "10",
+                    "identifier": []
+                }
+            },
+            "newick": "(Hyemoschus, (Gelocus, (Amphitragulus, \n\n(((Propalaeoryx, (Amphelomeryx, (Triceromeryx, Xenokeryx))),\n(Prolibytherium, (Orangemeryx, Giraffa))),\n\n(\n((Namibiomeryx, (Blastomeryx, Dremotherium)), ((Cranioceras, Sinclairomeryx), (Capreolus, Muntiacus))),\n(Sperrgebietomeryx, ((Merycodus, (Stockoceros, Antilocapra)),\n((Hispanomeryx, (Micromeryx, (Moschus_grandeavus, Moschus))),\n(Namacerus, Eudorcas)))))))))"
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 263,
+            "label": "Cavicornia",
+            "dwc:scientificNameAuthorship": "Bibi, F., Vrba, E. S.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Prodromus Systematis Mammalium et Avium: Additis Terminis Zoographicis Utriusque Classis.",
+                    "year": 1811,
+                    "authors": [
+                        {
+                            "name": "C. Illiger",
+                            "alternate": [
+                                "Illiger, C."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Illiger"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Berolini Sumptibus C. Salfield",
+                    "pages": "301-336",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The artiodactyl clade for which frontal bones with permanent, unbranched, and paired horn cores, as inherited by Bos taurus Linnaeus 1758, is an apomorphy.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Bos taurus Linnaeus, 1758",
+                        "nameComplete": "Bos taurus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}
