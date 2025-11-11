@@ -15,9 +15,9 @@ Once pytest and all other required libraries are installed, you can execute all 
 
 ## Data workflow
 
-Curated phyloreferences produced by the [Curation Tool] as Phyloreference eXchange (PHYX) files are currently stored in the [`phyx`] directory (see [Brochu 2003] as an example). When executed as a test suite, these files are converted into the Web Ontology Language (OWL) in the following steps:
+Curated phyloreferences produced by [Klados] (a phyloreference authoring tool) as Phyloreference eXchange ([PHYX]) files are currently stored in the [`phyx`] directory (see [Brochu 2003] as an example). When executed as a test suite, these files are converted into the Web Ontology Language (OWL) in the following steps:
 
-1. PHYX files are converted to JSON-LD files using the `phyx.js` library from the [Curation Tool]. This tool translates phylogenies stored in [the Newick format] into a series of statements describing individual nodes and their relationships, and translates phyloreferences into OWL class restrictions that describes the nodes they resolve to.
+1. PHYX files are converted to JSON-LD files using the [`phyx.js`] library. This tool translates phylogenies stored in [the Newick format] into a series of statements describing individual nodes and their relationships, and translates phyloreferences into OWL class restrictions that describes the nodes they resolve to.
 2. You may need to convert the produced JSON-LD files into RDF/XML using any standards-compliant converter, such as [`rdfpipe`], a part of the [`rdflib`] library.
 3. Any compliant [OWL 2 DL reasoner] should be able to reason over this OWL file, whether represented in JSON-LD or RDF/XML. Phyloreference classes will include all the nodes that they resolve to. In the test suite for the Clade Ontology, we use [`jphyloref`], a Java application that uses the [JFact++ OWL reasoner] to reason over input OWL or JSON-LD files. `jphyloref` can also read the annotations that indicate where each phyloreference was expected to resolve on any of the included phylogenies, and test whether phyloreferences resolved to the expected nodes.
 
@@ -31,8 +31,10 @@ We initially developed the Clade Ontology in Python before replacing it with a N
 [MIT license]: ./LICENSE
 [Node.js]: http://nodejs.org/
 [Java]: https://java.com/
-[Curation Tool]: https://github.com/phyloref/curation-tool
+[Klados]: https://github.com/phyloref/klados
 [`phyx`]: ./phyx/
+[`phyx.js`]: https://github.com/phyloref/phyx.js
+[PHYX]: https://doi.org/10.7717/peerj.12618
 [Brochu 2003]: ./phyx/from_papers/Brochu%202003/paper.json
 [the Newick format]: https://en.wikipedia.org/wiki/Newick_format
 [`rdfpipe`]: http://rdflib.readthedocs.io/en/stable/apidocs/rdflib.tools.html#module-rdflib.tools.rdfpipe
