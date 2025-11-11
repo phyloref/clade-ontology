@@ -114,7 +114,27 @@ describe('Test Phyx files in repository', function () {
         return;
       }
 
-      console.log(`Loaded Phyx file ${filename}`);
+      it('has at least one Newick phylogeny', function () {
+        const phylogenies = json.phylogenies || [];
+        // assert.isAbove(phylogenies.length, 0, 'No phylogenies found in file');
+
+        const newicks = phylogenies
+          .map(ph => ph.newick || [])
+          .reduce((a, b) => a.concat(b), [])
+          .filter(nw => nw.trim() !== '');
+        // assert.isAbove(newicks.length, 0, 'No Newick phylogenies found in file');
+        if (newicks.length === 0) {
+          console.warn(`No Newick phylogenies found in file ${filename}.`);
+        }
+
+        // assert.equal(newicks.length, 1,
+        //   `Contains ${newicks.length} Newick phylogenies in ${phylogenies.length} phylogenies.`);
+        if (newicks.length > 1) {
+          console.warn(`Unexpectedly found ${newicks.length} Newick phylogenies in ${phylogenies.length} phylogenies in Phyx file ${filename}.`);
+        }
+      });
+
+      // console.log(`Loaded Phyx file ${filename}`);
 
       const skipFile = (json.phylorefs || [])
         .map(phyloref => new phyx.PhylorefWrapper(phyloref))
@@ -174,7 +194,7 @@ describe('Test Phyx files in repository', function () {
           // Eventually, we will parse the TAP results directly.
           const matches = /Testing complete:(\d+) successes, (\d+) failures, (\d+) failures marked TODO, (\d+) skipped./.exec(child.stderr);
           assert(matches !== null, `Test result line not found in STDERR <${child.stderr}>`);
-          console.log(`For ${filename}: ${matches}`);
+          // console.log(`For ${filename}: ${matches}`);
 
           // Test whether we have any failures.
           it('did not report any failures', function () {

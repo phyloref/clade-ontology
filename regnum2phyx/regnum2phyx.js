@@ -31,22 +31,28 @@ const {
 } = require('lodash');
 
 // Helper functions.
-function convertAuthorsIntoStrings(authors, lastNameFirst = true) {
+function convertAuthorsIntoStrings(authors, lastNameStatus = 'first') {
   // Given a list of authors with first_name, middle_name and last_name properties,
   // return a list of author names with a single name.
   //
-  // We combine author names in two possible ways:
-  //  If lastNameFirst is true: $last_name $first_name $middle_name
-  //  If lastNameFirst is false: $first_name $middle_name $last_name
+  // We combine author names in three possible ways:
+  //  If lastNameStatus is 'first': $last_name $first_name $middle_name
+  //  If lastNameStatus is 'only': $last_name
+  //  Any other value: $first_name $middle_name $last_name
   // The middle name will be ignored if it is blank or not present.
 
-  if (lastNameFirst) {
+  if (lastNameStatus === 'first') {
     // Use "last first middle".
     return authors.map(author => (
       `${author.last_name || ''}, ${author.first_name || ''}${
         ((has(author, 'middle_name') && author.middle_name.trim() !== '') ? ` ${author.middle_name}` : '')
       }`.trim()
     )).filter(name => name !== '');
+  }
+
+  if (lastNameStatus === 'only') {
+    // Use "last".
+    return authors.map(author => `${author.last_name || ''}`.trim()).filter(name => name !== '');
   }
 
   // Use "first middle last".
@@ -65,10 +71,10 @@ function convertAuthorsIntoBibJSON(authors) {
     .filter(author => author.last_name)
     .map(author => pickBy({ // lodash.pickBy will remove empty keys from the object.
       // We store the author name as first_name middle_name last_name
-      name: convertAuthorsIntoStrings([author], false).join(),
+      name: convertAuthorsIntoStrings([author], 'last').join(' and '),
       alternate: [
         // We store an alternate author name as last_name, first_name middle_name.
-        convertAuthorsIntoStrings([author], true).join(),
+        convertAuthorsIntoStrings([author], 'first').join(' and '),
       ],
       firstname: (author.first_name || '').trim(),
       lastname: (author.last_name || '').trim(),
@@ -183,6 +189,11 @@ const argv = yargs
       'regnum-id',
     ],
   })
+  .option('digits', {
+    describe: 'Number of digits to put into CLADO name',
+    type: 'number',
+    default: 7,
+  })
   .option('filename-prefix', {
     describe: 'Choose the prefix for the filename being generated',
     string: true,
@@ -232,7 +243,7 @@ dump.forEach((entry, index) => {
   const phylorefTemplate = pickBy({
     regnumId: entry.id,
     label: phylorefLabel,
-    'dwc:scientificNameAuthorship': (convertAuthorsIntoStrings(entry.authors)).join(', '),
+    'dwc:scientificNameAuthorship': (convertAuthorsIntoStrings(entry.authors)).join(' and '),
     'dwc:namePublishedIn': convertCitationsToBibJSON(entry.citations.preexisting),
     'obo:IAO_0000119': // IAO:definition source (http://purl.obolibrary.org/obo/IAO_0000119)
       convertCitationsToBibJSON(entry.citations.definitional),
@@ -265,7 +276,7 @@ dump.forEach((entry, index) => {
 
     // Set up specifier name, authorship and nomenclatural code.
     const specifierName = (specifier.specifier_name || '').trim();
-    const specifierAuthors = (specifier.displayAuths || '').trim();
+    const specifierAuthors = convertAuthorsIntoStrings(specifier.authors, 'only').join(' and ');
     const specifierCode = (specifier.specifier_code || '').trim();
 
     let nomenCode = NAME_IN_UNKNOWN_CODE;
@@ -319,7 +330,7 @@ dump.forEach((entry, index) => {
   });
 
   // Write out Phyx file for this phyloreference.
-  const fileIndex = `${index + 1}`.padStart(6, '0');
+  const fileIndex = `${index + 1}`.padStart(argv.digits, '0');
   const filePrefix = argv.filenamePrefix || '';
   let phyxFilename;
   if (argv.filenames === 'label') {
@@ -327,7 +338,7 @@ dump.forEach((entry, index) => {
     phyxFilename = path.join(argv.outputDir, `${phylorefLabel}.json`);
   } else if (argv.filenames === 'regnum-id') {
     // Use the regnum id.
-    if (entry.id) phyxFilename = path.join(argv.outputDir, `REGNUM_${(`${entry.id}`).padStart(6, '0')}.json`);
+    if (entry.id) phyxFilename = path.join(argv.outputDir, `CLADO_${(`${entry.id}`).padStart(argv.digits, '0')}.json`);
     else phyxFilename = path.join(argv.outputDir, `${filePrefix}${fileIndex}.json`);
   } else {
     // Default to just the number of the sequence.
