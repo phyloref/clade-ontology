@@ -265,12 +265,19 @@ dump.forEach((entry, index) => {
 
   // Convert each specifier into one
   (entry.specifiers || []).forEach((specifier) => {
-    const kind = specifier.specifier_kind || '';
+    const kind = specifier.specifier_kind || '(empty)';
     let addTo = [];
     if (kind.startsWith('internal')) addTo = phylorefTemplate.internalSpecifiers;
     else if (kind.startsWith('external')) addTo = phylorefTemplate.externalSpecifiers;
-    else {
-      process.stderr.write(`Unknown specifier type: '${kind}' for phyloreference '${phylorefLabel}'.\n`);
+    else if (specifier.specifier_type === 'apomorphy') {
+      process.stderr.write('Apomorphy specifiers are not currently supported.\n');
+    } else {
+      if (specifier.specifier_type === 'crown') {
+        process.stderr.write('Crown specifiers are not supported.\n');
+      } else {
+        process.stderr.write(`Odd specifier: ${JSON.stringify(specifier, null, 2)}\n`);
+        process.stderr.write(`Unknown specifier type: '${kind}' for phyloreference '${phylorefLabel}'.\n`);
+      }
       countErrors += 1;
     }
 
