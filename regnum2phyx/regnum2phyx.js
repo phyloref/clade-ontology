@@ -217,7 +217,7 @@ dump.forEach((entry, index) => {
   // Make sure we don't have multiple phyloreferences with the same label, since
   // we name the file after the phyloreference being produced.
   if (has(phyxProduced, phylorefLabel)) {
-    process.stderr.write(`Duplicate phyloreference label '${phylorefLabel}', skipping.`);
+    process.stderr.write(`Duplicate phyloreference label '${phylorefLabel}', skipping.\n`);
     countErrors += 1;
     return;
   }
