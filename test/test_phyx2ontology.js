@@ -5,8 +5,8 @@
 const BASE_DIR = 'phyx/';
 
 // Node libraries.
-const ChildProcess = require('child_process');
-const fs = require('fs');
+const ChildProcess = require('node:child_process');
+const fs = require('node:fs');
 
 // Javascript libraries.
 const tmp = require('tmp');
@@ -26,15 +26,15 @@ describe('Executing phyx2ontology.js on all current Phyx files', function () {
     shell: true,
   });
 
-  it('should execute successfully', function () {
+  it('should execute successfully', () => {
     assert.isNull(child.signal, `Terminated because of signal ${child.signal}`);
     assert.equal(child.status, 0, 'Exit value should be zero');
   });
 
-  it('should produce valid JSON output', function () {
+  it('should produce valid JSON output', () => {
     const jsonContent = fs.readFileSync(tmpfilename, { encoding: 'utf8' });
     let json = [];
-    assert.doesNotThrow(function () {
+    assert.doesNotThrow(() => {
       json = JSON.parse(jsonContent);
     }, SyntaxError);
     assert.isNotEmpty(json, 'Produced JSON should not be empty');
