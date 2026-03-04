@@ -27,7 +27,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const yargs = require('yargs');
 const {
-  has, keys, pickBy, isEmpty,
+  has, pickBy, isEmpty,
 } = require('lodash');
 
 // Helper functions.
@@ -82,7 +82,7 @@ function convertAuthorsIntoBibJSON(authors) {
     }));
 }
 
-function convertCitationsToBibJSON(citation) {
+function convertCitationsToBibJSON(citation, issues = []) {
   // Convert a citation from its Regnum representation into the
   // BibJSON format (http://okfnlabs.org/bibjson/). We use this rather than
   // CSL-JSON (https://github.com/citation-style-language/schema) because it's
@@ -92,7 +92,7 @@ function convertCitationsToBibJSON(citation) {
   if (!citation) return [];
   if (Array.isArray(citation)) {
     // If given an array of citation objects, convert each one separately.
-    return citation.map(c => convertCitationsToBibJSON(c))
+    return citation.map(c => convertCitationsToBibJSON(c, issues))
       .reduce((acc, val) => acc.concat(val), []);
   }
 
@@ -163,7 +163,7 @@ function convertCitationsToBibJSON(citation) {
     // Since we've moved pages and ISBN into journal, we don't also need it in the main entry.
     if (has(entry, 'pages')) entry.pages = undefined;
   } else {
-    process.stderr.write(`Unknown citation type: '${type}', using anyway.`);
+    issues.push(`Unknown citation type: '${type}', using anyway.`);
   }
 
   return [entry];
@@ -198,6 +198,10 @@ const argv = yargs
     describe: 'Choose the prefix for the filename being generated',
     string: true,
   })
+  .option('report', {
+    describe: 'Path to write a CSV report of all processed phyloreferences',
+    string: true,
+  })
   .help('h')
   .alias('h', 'help')
   .argv;
@@ -207,18 +211,38 @@ const dump = JSON.parse(fs.readFileSync(argv._[0], 'utf8'));
 
 // This dump consists of multiple named phylogenetic clade definitions,
 // each of which should be written out to a separate file.
-const phyxProduced = {};
-let countErrors = 0;
+const phyxProduced = {};  // keeps phylorefLabel → entry for O(1) duplicate detection
+const results = [];
+
+// Helper to escape a value for CSV output.
+function escapeCSV(field) {
+  const str = String(field == null ? '' : field);
+  if (str.includes(',') || str.includes('"') || str.includes('\n')) {
+    return `"${str.replace(/"/g, '""')}"`;
+  }
+  return str;
+}
 
 // Loop through all phylorefs in the database dump.
 dump.forEach((entry, index) => {
   const phylorefLabel = entry.name.trim();
+  const entryIssues = [];
+  const result = {
+    regnumId: entry.id,
+    label: phylorefLabel,
+    status: 'success',
+    outputFile: null,
+    internalSpecifiers: [],
+    externalSpecifiers: [],
+    issues: entryIssues,
+  };
 
   // Make sure we don't have multiple phyloreferences with the same label, since
   // we name the file after the phyloreference being produced.
   if (has(phyxProduced, phylorefLabel)) {
-    process.stderr.write(`Duplicate phyloreference label '${phylorefLabel}', skipping.\n`);
-    countErrors += 1;
+    entryIssues.push(`Duplicate phyloreference label '${phylorefLabel}', skipping.`);
+    result.status = 'skipped';
+    results.push(result);
     return;
   }
 
@@ -230,11 +254,11 @@ dump.forEach((entry, index) => {
     // year, we can use it to check whether the "description" citation(s) are
     // empty or contain an actual citation. In the latter case, we throw an Error
     // so we fail with an error.
-    const descriptionCitations = convertCitationsToBibJSON(entry.citations.description);
+    const descriptionCitations = convertCitationsToBibJSON(entry.citations.description, entryIssues);
 
     if (descriptionCitations.length > 0) {
       throw new Error(`Citation of type 'description' found in entry: ${
-        JSON.stringify(convertCitationsToBibJSON(entry.citations.definitional), null, 4)
+        JSON.stringify(convertCitationsToBibJSON(entry.citations.definitional, entryIssues), null, 4)
       }`);
     }
   }
@@ -244,19 +268,19 @@ dump.forEach((entry, index) => {
     regnumId: entry.id,
     label: phylorefLabel,
     'dwc:scientificNameAuthorship': (convertAuthorsIntoStrings(entry.authors)).join(' and '),
-    'dwc:namePublishedIn': convertCitationsToBibJSON(entry.citations.preexisting),
+    'dwc:namePublishedIn': convertCitationsToBibJSON(entry.citations.preexisting, entryIssues),
     'obo:IAO_0000119': // IAO:definition source (http://purl.obolibrary.org/obo/IAO_0000119)
-      convertCitationsToBibJSON(entry.citations.definitional),
+      convertCitationsToBibJSON(entry.citations.definitional, entryIssues),
     cladeDefinition: (entry.definition || '').trim(),
     internalSpecifiers: [],
     externalSpecifiers: [],
   });
 
   // Do we have any phylogenies to save?
-  const primaryPhylogenyCitation = convertCitationsToBibJSON(entry.citations.primary_phylogeny).map(
+  const primaryPhylogenyCitation = convertCitationsToBibJSON(entry.citations.primary_phylogeny, entryIssues).map(
     phylogeny => pickBy({ primaryPhylogenyCitation: phylogeny })
   );
-  const phylogenyCitation = convertCitationsToBibJSON(entry.citations.phylogeny).map(
+  const phylogenyCitation = convertCitationsToBibJSON(entry.citations.phylogeny, entryIssues).map(
     phylogeny => pickBy({ phylogenyCitation: phylogeny })
   );
   const phylogenies = primaryPhylogenyCitation.concat(phylogenyCitation).filter(
@@ -270,15 +294,16 @@ dump.forEach((entry, index) => {
     if (kind.startsWith('internal')) addTo = phylorefTemplate.internalSpecifiers;
     else if (kind.startsWith('external')) addTo = phylorefTemplate.externalSpecifiers;
     else if (specifier.specifier_type === 'apomorphy') {
-      process.stderr.write('Apomorphy specifiers are not currently supported.\n');
+      entryIssues.push('Apomorphy specifiers are not currently supported.');
+      if (result.status === 'success') result.status = 'warning';
     } else {
       if (specifier.specifier_type === 'crown') {
-        process.stderr.write('Crown specifiers are not supported.\n');
+        entryIssues.push('Crown specifiers are not supported.');
       } else {
-        process.stderr.write(`Odd specifier: ${JSON.stringify(specifier, null, 2)}\n`);
-        process.stderr.write(`Unknown specifier type: '${kind}' for phyloreference '${phylorefLabel}'.\n`);
+        entryIssues.push(`Odd specifier: ${JSON.stringify(specifier, null, 2)}`);
+        entryIssues.push(`Unknown specifier type: '${kind}' for phyloreference '${phylorefLabel}'.`);
       }
-      countErrors += 1;
+      result.status = 'warning';
     }
 
     // Set up specifier name, authorship and nomenclatural code.
@@ -353,14 +378,67 @@ dump.forEach((entry, index) => {
   }
   fs.writeFileSync(phyxFilename, JSON.stringify(phyxTemplate, null, 4));
 
+  // Record output file and specifier labels for the report.
+  result.outputFile = phyxFilename;
+  result.internalSpecifiers = phylorefTemplate.internalSpecifiers.map(s => s.hasName.label);
+  result.externalSpecifiers = phylorefTemplate.externalSpecifiers.map(s => s.hasName.label);
+
   // Save for later use if needed.
   phyxProduced[phylorefLabel] = entry;
+  results.push(result);
 });
 
-// If there were any errors, report this and exit with a failure code.
+// Print attributed issues to stderr (only entries with problems).
+for (const r of results) {
+  if (r.issues.length === 0) continue;
+  const id = r.regnumId != null ? ` (regnum ID ${r.regnumId})` : '';
+  process.stderr.write(`${r.status === 'skipped' ? 'Skipped' : 'Warning in'} '${r.label}'${id}:\n`);
+  for (const issue of r.issues) {
+    process.stderr.write(`  - ${issue}\n`);
+  }
+}
+
+// Write CSV report if --report was given.
+if (argv.report) {
+  const maxInternal = Math.max(0, ...results.map(r => r.internalSpecifiers.length));
+  const maxExternal = Math.max(0, ...results.map(r => r.externalSpecifiers.length));
+
+  const internalCols = Array.from({ length: maxInternal }, (_, i) => `internal_specifier_${i + 1}`);
+  const externalCols = Array.from({ length: maxExternal }, (_, i) => `external_specifier_${i + 1}`);
+
+  const header = [
+    'regnum_id', 'label', 'status', 'output_file',
+    'num_internal_specifiers', 'num_external_specifiers',
+    ...internalCols, ...externalCols,
+    'issues',
+  ];
+
+  const rows = results.map(r => {
+    const internalFields = Array.from({ length: maxInternal }, (_, i) => r.internalSpecifiers[i] || '');
+    const externalFields = Array.from({ length: maxExternal }, (_, i) => r.externalSpecifiers[i] || '');
+    return [
+      r.regnumId, r.label, r.status, r.outputFile || '',
+      r.internalSpecifiers.length, r.externalSpecifiers.length,
+      ...internalFields, ...externalFields,
+      r.issues.join('; '),
+    ].map(escapeCSV).join(',');
+  });
+
+  fs.writeFileSync(argv.report, `${[header.join(','), ...rows].join('\n')}\n`);
+}
+
+// Final summary and exit.
+const successCount = results.filter(r => r.status === 'success').length;
+const warningCount = results.filter(r => r.status === 'warning').length;
+const skippedCount = results.filter(r => r.status === 'skipped').length;
+const countErrors = warningCount + skippedCount;
+
 if (countErrors > 0) {
+  process.stderr.write(
+    `Processed ${results.length} entries: ${successCount} written successfully, ${skippedCount} skipped, ${warningCount} written with issues.\n`,
+  );
   process.stderr.write(`${countErrors} errors occurred while processing database dump.\n`);
   process.exit(1);
 } else {
-  process.stdout.write(`${keys(phyxProduced).length} Phyx files produced successfully.\n`);
+  process.stdout.write(`${successCount} Phyx files produced successfully.\n`);
 }
