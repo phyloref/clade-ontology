@@ -16,8 +16,8 @@ const MAX_INTERNAL_SPECIFIERS = process.env.MAX_INTERNAL_SPECIFIERS || 7;
 const MAX_EXTERNAL_SPECIFIERS = process.env.MAX_EXTERNAL_SPECIFIERS || 10;
 
 // Load necessary modules.
-const fs = require('fs');
-const path = require('path');
+const fs = require('node:fs');
+const path = require('node:path');
 const yargs = require('yargs');
 
 // Load phyx.js, our PHYX library.
@@ -111,8 +111,8 @@ const jsons = phyxFiles
 /* Convert every phyloreference (from every Phyx file) into a JSON-LD object. */
 const phylorefsByLabel = {};
 const phylorefs = [];
-jsons.forEach((phyxFile) => {
-  phyxFile.phylorefs.forEach((phyloref) => {
+for (const phyxFile of jsons) {
+  for (const phyloref of phyxFile.phylorefs) {
     // Convert phyloreference to JSON-LD.
     entityIndex += 1;
     const phylorefWrapper = new phyx.PhylorefWrapper(phyloref);
@@ -122,13 +122,13 @@ jsons.forEach((phyxFile) => {
       console.warn(`Phyloreference ${phylorefWrapper.label} has `
         + `${phylorefWrapper.internalSpecifiers.length} internal specifiers but `
         + `the limit is ${MAX_INTERNAL_SPECIFIERS}`);
-      return;
+      continue;
     }
     if (phylorefWrapper.externalSpecifiers.length > MAX_EXTERNAL_SPECIFIERS) {
       console.warn(`Phyloreference ${phylorefWrapper.label} has `
         + `${phylorefWrapper.externalSpecifiers.length} external specifiers but `
         + `the limit is ${MAX_EXTERNAL_SPECIFIERS}`);
-      return;
+      continue;
     }
 
     // Convert to OWL/JSON-LD.
@@ -143,13 +143,13 @@ jsons.forEach((phyxFile) => {
     // Set a JSON-LD context so this block can be interpreted in isolation.
     jsonld['@context'] = PHYX_CONTEXT_JSON;
     phylorefs.push(jsonld);
-  });
-});
+  }
+}
 
 /* Convert every phylogeny (from every Phyx file) into a JSON-LD object. */
 const phylogenies = [];
-jsons.forEach((phyxFile) => {
-  phyxFile.phylogenies.forEach((phylogeny) => {
+for (const phyxFile of jsons) {
+  for (const phylogeny of phyxFile.phylogenies) {
     // Convert phylogenies into JSON-LD.
     entityIndex += 1;
     const phylogenyAsJSONLD = new phyx.PhylogenyWrapper(phylogeny)
@@ -158,8 +158,8 @@ jsons.forEach((phyxFile) => {
     // Set a '@context' so it can be interpreted from other objects in the output file.
     phylogenyAsJSONLD['@context'] = PHYX_CONTEXT_JSON;
     phylogenies.push(phylogenyAsJSONLD);
-  });
-});
+  }
+}
 
 /* Construct an object to represent the Clade Ontology itself. */
 let cladeOntologyObjects = [

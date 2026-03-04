@@ -23,8 +23,8 @@ const ICN_NAME = 'http://purl.obolibrary.org/obo/NOMEN_0000109';
 // const ICTV_NAME = 'http://purl.obolibrary.org/obo/NOMEN_0000111';
 
 // Load necessary modules.
-const fs = require('fs');
-const path = require('path');
+const fs = require('node:fs');
+const path = require('node:path');
 const yargs = require('yargs');
 const {
   has, keys, pickBy, isEmpty,
@@ -161,7 +161,7 @@ function convertCitationsToBibJSON(citation) {
     });
 
     // Since we've moved pages and ISBN into journal, we don't also need it in the main entry.
-    if (has(entry, 'pages')) delete entry.pages;
+    if (has(entry, 'pages')) entry.pages = undefined;
   } else {
     process.stderr.write(`Unknown citation type: '${type}', using anyway.`);
   }
@@ -264,7 +264,7 @@ dump.forEach((entry, index) => {
   );
 
   // Convert each specifier into one
-  (entry.specifiers || []).forEach((specifier) => {
+  for (const specifier of (entry.specifiers || [])) {
     const kind = specifier.specifier_kind || '(empty)';
     let addTo = [];
     if (kind.startsWith('internal')) addTo = phylorefTemplate.internalSpecifiers;
@@ -327,7 +327,7 @@ dump.forEach((entry, index) => {
     };
 
     addTo.push(specifierTemplate);
-  });
+  }
 
   // Prepare a simple Phyx file template.
   const phyxTemplate = pickBy({

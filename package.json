@@ -5,7 +5,7 @@
   "main": "index.js",
   "directories": {},
   "scripts": {
-    "lint": "eslint \"test/**/*.js\" \"phyx2ontology/**/*.js\" \"regnum2phyx/**/*.js\"",
+    "lint": "biome lint test/ phyx2ontology/ regnum2phyx/",
     "pretest": "npm run lint",
     "test": "mocha --recursive",
     "mocha": "mocha",
@@ -15,7 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/phyloref/clade-ontology.git"
   },
-  "author": "",
+  "author": "Gaurav Vaidya <gaurav@ggvaidya.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/phyloref/clade-ontology/issues"
@@ -27,14 +27,10 @@
     "yargs": "^18.0.0"
   },
   "devDependencies": {
-    "ajv": "^8.18.0",
-    "chai": "^6.2.2",
-    "eslint": "^10.0.2",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-json": "^4.0.1",
-    "eslint-plugin-mocha": "^11.2.0",
-    "mocha": "^11.7.5",
-    "tmp": "^0.2.5"
+    "@biomejs/biome": "1.9.4",
+    "ajv": "^6.10.0",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "tmp": "^0.1.0"
   }
 }
