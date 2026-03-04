@@ -3,8 +3,8 @@
  */
 
 // Javascript libraries.
-const ChildProcess = require('child_process');
-const fs = require('fs');
+const ChildProcess = require('node:child_process');
+const fs = require('node:fs');
 
 const tmp = require('tmp');
 const chai = require('chai');
@@ -19,9 +19,9 @@ function loadJSON(filename) {
   return JSON.parse(content);
 }
 
-describe('Test regnum2phyx.js', function () {
-  fs.readdirSync(`${__dirname}/examples`).forEach(function (filename) {
-    describe(`Processing example Regnum dump: ${filename}`, function () {
+describe('Test regnum2phyx.js', () => {
+  for (const filename of fs.readdirSync(`${__dirname}/examples`)) {
+    describe(`Processing example Regnum dump: ${filename}`, () => {
       const filepath = `${__dirname}/examples/${filename}`;
 
       // We only test '.json' files.
@@ -47,7 +47,7 @@ describe('Test regnum2phyx.js', function () {
         }
       );
 
-      it('could be executed by regnum2phyx.js', function () {
+      it('could be executed by regnum2phyx.js', () => {
         expect(child.stderr).to.be.empty;
         expect(child.stdout).to.match(/^(\d+) Phyx files produced successfully.\n$/);
         expect(child.status).to.equal(0);
@@ -59,17 +59,17 @@ describe('Test regnum2phyx.js', function () {
       const producedFiles = fs.readdirSync(`${tmpdirname}`);
       const expectedFiles = fs.readdirSync(`${__dirname}/expected/${basename}`);
 
-      it('should produce the expected files', function () {
+      it('should produce the expected files', () => {
         expect(producedFiles).to.deep.equal(expectedFiles);
         expect(producedFiles).to.not.be.empty;
       });
 
-      producedFiles.forEach(function (producedFile) {
-        describe(`Testing produced file ${producedFile}`, function () {
+      for (const producedFile of producedFiles) {
+        describe(`Testing produced file ${producedFile}`, () => {
           const producedPhyx = loadJSON(`${tmpdirname}/${producedFile}`);
           const expectedPhyx = loadJSON(`${__dirname}/expected/${basename}/${producedFile}`);
 
-          it('should be identical to expected', function () {
+          it('should be identical to expected', () => {
             expect(producedPhyx).to.deep.equal(expectedPhyx);
           });
 
@@ -80,14 +80,14 @@ describe('Test regnum2phyx.js', function () {
           const phyxSchema = ajvInstance.compile(phyxSchemaJSON);
           const result = phyxSchema(producedPhyx);
 
-          it('should validate against the Phyx JSON Schema', function () {
-            (phyxSchema.errors || []).forEach(function (error) {
+          it('should validate against the Phyx JSON Schema', () => {
+            for (const error of (phyxSchema.errors || [])) {
               assert.fail(ajvInstance.errorsText([error]));
-            });
+            }
             expect(result).is.true;
           });
         });
-      });
+      }
     });
-  });
+  }
 });

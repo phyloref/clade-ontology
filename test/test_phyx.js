@@ -17,9 +17,9 @@ const BASE_DIR = 'phyx/';
 const phyx = require('@phyloref/phyx');
 
 // Javascript libraries.
-const ChildProcess = require('child_process');
-const fs = require('fs');
-const path = require('path');
+const ChildProcess = require('node:child_process');
+const fs = require('node:fs');
+const path = require('node:path');
 
 const Ajv = require('ajv');
 const chai = require('chai');
@@ -57,7 +57,7 @@ const phyxSchema = ajvInstance.compile(phyxSchemaJSON);
  * to get that list before we start testing.
  */
 function findPhyxFiles(dirPath) {
-  return fs.readdirSync(dirPath).map(function (filename) {
+  return fs.readdirSync(dirPath).map((filename) => {
     const filePath = path.join(dirPath, filename);
 
     if (fs.lstatSync(filePath).isDirectory()) {
@@ -72,12 +72,12 @@ function findPhyxFiles(dirPath) {
   }).reduce((x, y) => x.concat(y), []); // This flattens the list of results.
 }
 
-describe('Test Phyx files in repository', function () {
+describe('Test Phyx files in repository', () => {
   // Test each input file.
-  findPhyxFiles(BASE_DIR).forEach(function (filename) {
-    describe(`Phyx file: ${filename}`, function () {
+  for (const filename of findPhyxFiles(BASE_DIR)) {
+    describe(`Phyx file: ${filename}`, () => {
       // Make sure the file to test isn't empty.
-      it('is not empty', function () {
+      it('is not empty', () => {
         const stats = fs.lstatSync(filename);
         assert.notEqual(stats.size, 0);
       });
@@ -95,7 +95,7 @@ describe('Test Phyx files in repository', function () {
       const phyxContent = data.toString('utf-8');
       const json = JSON.parse(phyxContent);
       // Remove the .skip once the Phyx files pass validation.
-      it.skip('should validate against the Phyx JSON Schema', function () {
+      it.skip('should validate against the Phyx JSON Schema', () => {
         const result = phyxSchema(json);
         const errorStrings = (phyxSchema.errors || []).map(err => ajvInstance.errorsText([err]));
         assert.deepEqual(errorStrings, []);
@@ -108,13 +108,13 @@ describe('Test Phyx files in repository', function () {
       try {
         wrappedPhyx = new phyx.PhyxWrapper(json);
       } catch (ex) {
-        it('Exception thrown while loading Phyx to JSON-LD', function () {
+        it('Exception thrown while loading Phyx to JSON-LD', () => {
           throw ex;
         });
         return;
       }
 
-      it('has at least one Newick phylogeny', function () {
+      it('has at least one Newick phylogeny', () => {
         const phylogenies = json.phylogenies || [];
         // assert.isAbove(phylogenies.length, 0, 'No phylogenies found in file');
 
@@ -166,7 +166,7 @@ describe('Test Phyx files in repository', function () {
         const jsonld = JSON.stringify(wrappedPhyx.asJSONLD());
 
         // Make sure the produced JSON-LD is not empty.
-        it('produced a non-empty JSON-LD ontology without throwing an exception', function () {
+        it('produced a non-empty JSON-LD ontology without throwing an exception', () => {
           assert.isNotEmpty(jsonld);
         });
 
@@ -198,12 +198,12 @@ describe('Test Phyx files in repository', function () {
           // console.log(`For ${filename}: ${matches}`);
 
           // Test whether we have any failures.
-          it('did not report any failures', function () {
+          it('did not report any failures', () => {
             const failures = matches[2];
             assert.equal(failures, 0, `${failures} failures occurred during testing`);
           });
 
-          describe('test the results of resolution', function () {
+          describe('test the results of resolution', () => {
             // Look for TODOs or skipped tests.
             const successes = matches[1];
             const todos = matches[3];
@@ -226,18 +226,18 @@ describe('Test Phyx files in repository', function () {
             // We could have zero failures but also zero successes. A Phyx file
             // without any failures, TODOs or any successes in the Clade Ontology
             // should be reported as a failure.
-            it('had at least one success', function () {
+            it('had at least one success', () => {
               assert.isAbove(successes, 0, 'No successes occurred during testing');
             });
 
             // On the off chance that all of the above made sense but the exit code didn't,
             // we'll check that here.
-            it('passed testing in JPhyloRef', function () {
+            it('passed testing in JPhyloRef', () => {
               assert.equal(child.status, 0, 'Exit code from JPhyloRef was not zero');
             });
           });
         }
       }
     });
-  });
+  }
 });
