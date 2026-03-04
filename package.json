@@ -9,7 +9,8 @@
     "pretest": "npm run lint",
     "test": "mocha --recursive",
     "mocha": "mocha",
-    "build-ontology": "node phyx2ontology/phyx2ontology.js phyx/ > CLADO.json"
+    "build-ontology": "node phyx2ontology/phyx2ontology.js phyx/ > CLADO.json",
+    "regnum2phyx": "node regnum2phyx/regnum2phyx.js"
   },
   "repository": {
     "type": "git",
