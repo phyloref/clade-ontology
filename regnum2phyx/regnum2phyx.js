@@ -161,7 +161,7 @@ function convertCitationsToBibJSON(citation) {
     });
 
     // Since we've moved pages and ISBN into journal, we don't also need it in the main entry.
-    if (has(entry, 'pages')) delete entry.pages;
+    if (has(entry, 'pages')) entry.pages = undefined;
   } else {
     process.stderr.write(`Unknown citation type: '${type}', using anyway.`);
   }
