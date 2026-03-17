@@ -172,7 +172,7 @@ function convertCitationsToBibJSON(citation, issues = []) {
 // Command line application starts here.
 
 // Read command-line arguments.
-const argv = yargs
+const argv = yargs(process.argv.slice(2))
   .usage('Usage: $0 <JSON file to process> -o <directory to write files to>')
   .demandCommand(1, 1) // Make sure there's one and only one file to convert.
   .option('output-dir', {
