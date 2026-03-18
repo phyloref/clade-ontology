@@ -10,12 +10,21 @@
  * PhyloRegnum can be accessed at http://app.phyloregnum.org
  */
 
-// We currently produce Phyx files in v0.2.0 format. If this changes, please
-// update this here.
-const PHYX_CONTEXT_URL = 'http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json';
+// Load phyx.js classes for building phyloreferences and specifiers.
+// We import each class directly from its source file rather than from the package
+// index, because the index pulls in PhyxWrapper → jsonld, which is incompatible
+// with Node.js v14+ (ESM/apply issue).
+const { TaxonConceptWrapper } = require('@phyloref/phyx/src/wrappers/TaxonConceptWrapper');
+const { TaxonNameWrapper } = require('@phyloref/phyx/src/wrappers/TaxonNameWrapper');
+const { CitationWrapper } = require('@phyloref/phyx/src/wrappers/CitationWrapper');
+const { PhylorefWrapper } = require('@phyloref/phyx/src/wrappers/PhylorefWrapper');
+// owlterms provides shared IRI constants (including the Phyx context URL).
+const owlterms = require('@phyloref/phyx/src/utils/owlterms');
 
-// Some constants for nomenclatural codes. We should really export these in Phyx
-// (see https://github.com/phyloref/phyx.js/issues/44)
+// Nomenclatural codes from the NOMEN ontology. These differ from the
+// TaxonName-ontology IRIs in phyx.js (owlterms.ICZN_CODE etc.); we keep the
+// NOMEN IRIs here so that output stays consistent with existing phyx/ files.
+// See https://github.com/phyloref/phyx.js/issues/44 for the planned unification.
 const NAME_IN_UNKNOWN_CODE = 'http://purl.obolibrary.org/obo/NOMEN_0000036';
 const ICZN_NAME = 'http://purl.obolibrary.org/obo/NOMEN_0000107';
 const ICN_NAME = 'http://purl.obolibrary.org/obo/NOMEN_0000109';
@@ -69,7 +78,7 @@ function convertAuthorsIntoBibJSON(authors) {
   // last name will be ignored.
   return authors
     .filter(author => author.last_name)
-    .map(author => pickBy({ // lodash.pickBy will remove empty keys from the object.
+    .map(author => CitationWrapper.normalize({ // removes empty fields
       // We store the author name as first_name middle_name last_name
       name: convertAuthorsIntoStrings([author], 'last').join(' and '),
       alternate: [
@@ -117,8 +126,8 @@ function convertCitationsToBibJSON(citation, issues = []) {
   const urls = [];
   if (citation.url) urls.push({ url: citation.url });
 
-  // lodash.pickBy will remove empty keys from the object.
-  const entry = pickBy({
+  // CitationWrapper.normalize() removes empty/falsy keys, equivalent to lodash.pickBy().
+  const entry = CitationWrapper.normalize({
     type,
     title: (citation.title || '').trim(),
     section_title: (citation.section_title || '').trim(),
@@ -153,15 +162,15 @@ function convertCitationsToBibJSON(citation, issues = []) {
 
     // In BibJSON (http://okfnlabs.org/bibjson/), the journal name, volume, number
     // and pages should go into the 'journal' object.
-    entry.journal = pickBy({
+    entry.journal = CitationWrapper.normalize({
       name: (citation.journal || '').trim(),
       volume: (citation.volume || '').trim(),
       number: (citation.number || '').trim(),
       identifier: journalIdentifiers,
     });
 
-    // Since we've moved pages and ISBN into journal, we don't also need it in the main entry.
-    if (has(entry, 'pages')) entry.pages = undefined;
+    // Pages belong in the journal object for articles, not the outer entry.
+    entry.pages = undefined;
   } else {
     issues.push(`Unknown citation type: '${type}', using anyway.`);
   }
@@ -269,8 +278,9 @@ dump.forEach((entry, index) => {
     }
   }
 
-  // Create an object describing this phyloreference.
-  const phylorefTemplate = pickBy({
+  // Create an object describing this phyloreference, then wrap it with
+  // PhylorefWrapper so that specifiers can be managed via the library API.
+  const phylorefWrapper = new PhylorefWrapper(pickBy({
     regnumId: entry.id,
     label: phylorefLabel,
     'dwc:scientificNameAuthorship': (convertAuthorsIntoStrings(entry.authors)).join(' and '),
@@ -280,7 +290,7 @@ dump.forEach((entry, index) => {
     cladeDefinition: (entry.definition || '').trim(),
     internalSpecifiers: [],
     externalSpecifiers: [],
-  });
+  }));
 
   // Do we have any phylogenies to save?
   const primaryPhylogenyCitation = convertCitationsToBibJSON(entry.citations.primary_phylogeny, entryIssues).map(
@@ -297,8 +307,8 @@ dump.forEach((entry, index) => {
   for (const specifier of (entry.specifiers || [])) {
     const kind = specifier.specifier_kind || '(empty)';
     let addTo = [];
-    if (kind.startsWith('internal')) addTo = phylorefTemplate.internalSpecifiers;
-    else if (kind.startsWith('external')) addTo = phylorefTemplate.externalSpecifiers;
+    if (kind.startsWith('internal')) addTo = phylorefWrapper.internalSpecifiers;
+    else if (kind.startsWith('external')) addTo = phylorefWrapper.externalSpecifiers;
     else if (specifier.specifier_type === 'apomorphy') {
       entryIssues.push('Apomorphy specifiers are not currently supported.');
       if (result.status === 'success') result.status = 'warning';
@@ -347,24 +357,25 @@ dump.forEach((entry, index) => {
     // Write out a scientificName that includes the specifier name as well as its
     // nomenclatural authority, if present.
     const scname = `${specifierName} ${specifierAuthority}`.trim();
-    const specifierTemplate = {
-      '@type': 'http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept',
-      hasName: {
-        '@type': 'http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName',
-        nomenclaturalCode: nomenCode,
-        label: scname,
-        nameComplete: specifierName,
-      },
-    };
+
+    // Use TaxonConceptWrapper.wrapTaxonName() to construct the specifier object,
+    // using TaxonNameWrapper.TYPE_TAXON_NAME for the taxon name @type.
+    const specifierTemplate = TaxonConceptWrapper.wrapTaxonName({
+      '@type': TaxonNameWrapper.TYPE_TAXON_NAME,
+      nomenclaturalCode: nomenCode,
+      label: scname,
+      nameComplete: specifierName,
+    });
 
     addTo.push(specifierTemplate);
   }
 
   // Prepare a simple Phyx file template.
+  // owlterms.PHYX_CONTEXT_JSON provides the canonical context URL from the library.
   const phyxTemplate = pickBy({
-    '@context': PHYX_CONTEXT_URL,
+    '@context': owlterms.PHYX_CONTEXT_JSON,
     phylogenies,
-    phylorefs: [phylorefTemplate],
+    phylorefs: [phylorefWrapper.phyloref],
   });
 
   // Write out Phyx file for this phyloreference.
@@ -386,8 +397,8 @@ dump.forEach((entry, index) => {
 
   // Record output file and specifier labels for the report.
   result.outputFile = phyxFilename;
-  result.internalSpecifiers = phylorefTemplate.internalSpecifiers.map(s => s.hasName.label);
-  result.externalSpecifiers = phylorefTemplate.externalSpecifiers.map(s => s.hasName.label);
+  result.internalSpecifiers = phylorefWrapper.internalSpecifiers.map(s => s.hasName.label);
+  result.externalSpecifiers = phylorefWrapper.externalSpecifiers.map(s => s.hasName.label);
 
   // Save for later use if needed.
   phyxProduced[phylorefLabel] = entry;
