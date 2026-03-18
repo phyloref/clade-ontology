@@ -5,6 +5,7 @@
 // Javascript libraries.
 const ChildProcess = require('node:child_process');
 const fs = require('node:fs');
+const path = require('node:path');
 
 const tmp = require('tmp');
 const chai = require('chai');
@@ -30,8 +31,9 @@ describe('Test regnum2phyx.js', () => {
         return;
       }
 
-      // Create a temporary directory to make files into.
-      const tmpdirname = tmp.dirSync().name;
+      // Create a temporary directory and use a non-existing subdirectory as the
+      // output path, so regnum2phyx.js can create it (it errors if it already exists).
+      const tmpdirname = path.join(tmp.dirSync().name, 'output');
 
       // Run phyx2regnum.js on it.
       const child = ChildProcess.spawnSync(
