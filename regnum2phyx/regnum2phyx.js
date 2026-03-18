@@ -223,6 +223,12 @@ function escapeCSV(field) {
   return str;
 }
 
+// Create the output directory if it doesn't exist.
+if (fs.existsSync(argv.outputDir)) {
+  throw new Error(`Output directory ${argv.outputDir} already exists!`);
+}
+fs.mkdirSync(argv.outputDir);
+
 // Loop through all phylorefs in the database dump.
 dump.forEach((entry, index) => {
   const phylorefLabel = entry.name.trim();
