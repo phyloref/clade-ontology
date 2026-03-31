@@ -44,6 +44,15 @@ node regnum2phyx/regnum2phyx.js dump.json -o output_dir/
 node regnum2phyx/regnum2phyx.js dump.json -o output_dir/ --filenames regnum-id
 ```
 
+**Update phyx/phylonym/ from a new Regnum dump:**
+```bash
+# Stage merged output for review (default — safe):
+npm run update-phylonym -- data/dump.json --report data/merge_report.csv
+
+# Accept the staged merge (replaces phyx/phylonym/):
+npm run update-phylonym -- data/dump.json --accept
+```
+
 ## Architecture
 
 ### Data Pipeline

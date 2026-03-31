@@ -199,39 +199,73 @@ data) and the merged `phylogenies` array.
 | `match_methods` | Methods used: `doi`, `title+year`, `position-fallback` |
 | `issues` | Warnings (semicolon-separated) |
 
-## Workflow for merging a new Regnum dump
+## update-phylonym.js
 
-This is the recommended workflow for incorporating a new Regnum dump into the
-curated Phylonym PHYX files. It is designed to be repeatable for future dumps.
+Orchestrates the full update of `phyx/phylonym/` in one command: runs the merge,
+verifies newick preservation, and optionally does the directory swap.
 
-### Step 1: Run the merge
+### Usage
 
 ```bash
+node regnum2phyx/update-phylonym.js <dump.json> [options]
+npm run update-phylonym -- <dump.json> [options]
+```
+
+### Options
+
+| Option | Default | Description |
+|--------|---------|-------------|
+| `--old-dir` | `phyx/phylonym/` | Directory with existing curated PHYX files |
+| `--work-dir` | `phyx/phylonym-merged/` | Staging directory for merged output |
+| `--report` | — | CSV report path (passed to merge-phylonym.js) |
+| `--digits` | `7` | CLADO filename padding (passed to merge-phylonym.js) |
+| `--accept` | false | Replace `--old-dir` with `--work-dir` after verification |
+| `--no-backup` | — | Skip backup of `--old-dir` when `--accept` is used |
+| `--dry-run` | false | Pass `--dry-run` to merge-phylonym.js; no files written |
+
+### Workflow for merging a new Regnum dump
+
+```bash
+# Step 1: Stage merged output for review (safe — no changes to phyx/phylonym/).
+# Runs merge-phylonym.js, verifies all newicks preserved, then prints review
+# instructions. Aborts with exit code 1 if any newicks are lost.
+npm run update-phylonym -- data/regnum_submissions_2026mar4.json \
+  --report data/merge_report.csv
+
+# Step 2: Review the staged output.
+# Key checks: Newicks lost = 0, Orphan count = 0,
+# no issues or label_changed=true in the CSV report.
+diff -rq phyx/phylonym/ phyx/phylonym-merged/ | head -20
+diff phyx/phylonym/CLADO_0000045.json phyx/phylonym-merged/CLADO_0000045.json
+
+# Step 3: Accept the merge (replaces phyx/phylonym/, keeps a backup).
+# If work-dir already exists from Step 1, it is reused (no re-merge).
+npm run update-phylonym -- data/regnum_submissions_2026mar4.json --accept
+
+# Step 4: Validate and commit.
+npm test
+git add phyx/phylonym/
+git commit -m "Update phylonym PHYX files from YYYY-MM-DD Regnum dump"
+```
+
+For future dumps: repeat from Step 1, using the current `phyx/phylonym/` as
+`--old-dir` (the default). The merged output becomes the new "old" for the next
+iteration.
+
+### Manual workflow (fallback)
+
+If you prefer to run each step individually — or need to understand what the
+orchestrator does — here are the equivalent manual commands:
+
+```bash
+# Run the merge
 node regnum2phyx/merge-phylonym.js \
   data/regnum_submissions_2026mar4.json \
   --old-dir phyx/phylonym/ \
   -o phyx/phylonym-merged/ \
   --report data/merge_report.csv
-```
 
-### Step 2: Review the output
-
-Check the merge summary printed to stderr. Key things to verify:
-- `Newicks lost` should be **0**.
-- `Orphan` count should be **0** (unless entries were removed from the dump).
-- Look at the CSV report for any `issues` column entries or `label_changed=true`.
-
-```bash
-# Quick structural comparison
-diff -rq phyx/phylonym/ phyx/phylonym-merged/ | head -20
-
-# Spot-check a specific merged file
-diff phyx/phylonym/CLADO_0000045.json phyx/phylonym-merged/CLADO_0000045.json
-```
-
-### Step 3: Verify newick preservation
-
-```bash
+# Verify newick preservation
 node -e "
 const fs = require('fs');
 const old = 'phyx/phylonym', merged = 'phyx/phylonym-merged';
@@ -248,29 +282,16 @@ for (const f of fs.readdirSync(old).filter(f => f.match(/CLADO_\d+\.json$/))) {
 }
 console.log('Preserved:', preserved, 'Lost:', lost);
 "
-```
 
-### Step 4: Replace and validate
-
-```bash
+# Replace and validate
 mv phyx/phylonym phyx/phylonym-backup
 mv phyx/phylonym-merged phyx/phylonym
 npm test
-```
 
-### Step 5: Commit
-
-```bash
+# Commit
 git add phyx/phylonym/
 git commit -m "Update phylonym PHYX files from YYYY-MM-DD Regnum dump"
 ```
-
-### For future dumps
-
-Repeat from Step 1, using the current `phyx/phylonym/` as `--old-dir`. The
-merged files become the new "old" for the next iteration. The merge script is
-idempotent with respect to newick preservation -- running it repeatedly with the
-same dump and old directory produces the same output.
 
 ## Current status (2026-03-04 dump)
 
