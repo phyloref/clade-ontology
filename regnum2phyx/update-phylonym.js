@@ -28,9 +28,9 @@ function verifyNewicks(oldDir, workDir) {
   const lostFiles = [];
 
   for (const f of files) {
-    const oldData = JSON.parse(fs.readFileSync(path.join(oldDir, f), 'utf8'));
     const workPath = path.join(workDir, f);
     if (!fs.existsSync(workPath)) continue;
+    const oldData = JSON.parse(fs.readFileSync(path.join(oldDir, f), 'utf8'));
     const workData = JSON.parse(fs.readFileSync(workPath, 'utf8'));
     const workPhylogenies = workData.phylogenies || [];
 

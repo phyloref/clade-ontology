@@ -175,7 +175,6 @@ function mergePhyxFile(oldPhyx, newPhyx) {
   }
 
   // Append unmatched old phylogenies (manually added, preserve entirely).
-  const newicksLost = 0;
   for (const oi of unmatchedOld) {
     const oldPhylogeny = oldPhylogenies[oi];
     if (oldPhylogeny.newick) {
@@ -204,7 +203,6 @@ function mergePhyxFile(oldPhyx, newPhyx) {
       newPhylogenies: newPhylogenies.length,
       mergedPhylogenies: mergedPhylogenies.length,
       newicksPreserved,
-      newicksLost,
       manualPhylogeniesPreserved,
       matchMethods: [...new Set(matchMethods)],
       labelOld: oldLabel,
@@ -224,7 +222,6 @@ function scanDirectory(dir) {
   const files = fs.readdirSync(dir).filter(f => /^CLADO_\d+\.json$/.test(f));
   for (const filename of files) {
     const match = filename.match(/^CLADO_(\d+)\.json$/);
-    if (!match) continue;
     const regnumId = Number.parseInt(match[1], 10);
     const data = loadJSON(path.join(dir, filename));
     map.set(regnumId, { filename, data });
@@ -327,7 +324,6 @@ let countNew = 0;
 let countMerged = 0;
 let countOrphan = 0;
 let totalNewicksPreserved = 0;
-let totalNewicksLost = 0;
 
 for (const regnumId of sortedIds) {
   const hasOld = oldFiles.has(regnumId);
@@ -337,11 +333,11 @@ for (const regnumId of sortedIds) {
   if (hasNew && !hasOld) {
     // NEW_ONLY: copy fresh file as-is.
     countNew++;
+    const newData = newFiles.get(regnumId).data;
     if (!argv.dryRun) {
-      const newData = newFiles.get(regnumId).data;
       fs.writeFileSync(path.join(outputDir, filename), JSON.stringify(newData, null, 4));
     }
-    const newLabel = (newFiles.get(regnumId).data.phylorefs || [])[0]?.label || '';
+    const newLabel = (newData.phylorefs || [])[0]?.label || '';
     reportRows.push({
       regnumId,
       filename,
@@ -350,10 +346,9 @@ for (const regnumId of sortedIds) {
       labelNew: newLabel,
       labelChanged: false,
       oldPhylogenies: 0,
-      newPhylogenies: (newFiles.get(regnumId).data.phylogenies || []).length,
-      mergedPhylogenies: (newFiles.get(regnumId).data.phylogenies || []).length,
+      newPhylogenies: (newData.phylogenies || []).length,
+      mergedPhylogenies: (newData.phylogenies || []).length,
       newicksPreserved: 0,
-      newicksLost: 0,
       manualPhylogeniesPreserved: 0,
       matchMethods: '',
       issues: '',
@@ -361,11 +356,11 @@ for (const regnumId of sortedIds) {
   } else if (hasOld && !hasNew) {
     // OLD_ONLY (should not occur): copy old file unchanged.
     countOrphan++;
+    const oldData = oldFiles.get(regnumId).data;
     if (!argv.dryRun) {
-      const oldData = oldFiles.get(regnumId).data;
       fs.writeFileSync(path.join(outputDir, filename), JSON.stringify(oldData, null, 4));
     }
-    const oldLabel = (oldFiles.get(regnumId).data.phylorefs || [])[0]?.label || '';
+    const oldLabel = (oldData.phylorefs || [])[0]?.label || '';
     reportRows.push({
       regnumId,
       filename,
@@ -373,11 +368,10 @@ for (const regnumId of sortedIds) {
       labelOld: oldLabel,
       labelNew: '',
       labelChanged: false,
-      oldPhylogenies: (oldFiles.get(regnumId).data.phylogenies || []).length,
+      oldPhylogenies: (oldData.phylogenies || []).length,
       newPhylogenies: 0,
-      mergedPhylogenies: (oldFiles.get(regnumId).data.phylogenies || []).length,
+      mergedPhylogenies: (oldData.phylogenies || []).length,
       newicksPreserved: 0,
-      newicksLost: 0,
       manualPhylogeniesPreserved: 0,
       matchMethods: '',
       issues: 'Old file not found in new dump',
@@ -394,7 +388,6 @@ for (const regnumId of sortedIds) {
     }
 
     totalNewicksPreserved += stats.newicksPreserved;
-    totalNewicksLost += stats.newicksLost;
 
     reportRows.push({
       regnumId,
@@ -407,7 +400,6 @@ for (const regnumId of sortedIds) {
       newPhylogenies: stats.newPhylogenies,
       mergedPhylogenies: stats.mergedPhylogenies,
       newicksPreserved: stats.newicksPreserved,
-      newicksLost: stats.newicksLost,
       manualPhylogeniesPreserved: stats.manualPhylogeniesPreserved,
       matchMethods: stats.matchMethods.join(';'),
       issues: stats.issues.join('; '),
@@ -428,14 +420,13 @@ if (argv.report) {
     'regnum_id', 'clado_filename', 'action',
     'label_old', 'label_new', 'label_changed',
     'old_phylogenies', 'new_phylogenies', 'merged_phylogenies',
-    'newicks_preserved', 'newicks_lost',
-    'manual_phylogenies_preserved', 'match_methods', 'issues',
+    'newicks_preserved', 'manual_phylogenies_preserved', 'match_methods', 'issues',
   ];
   const csvRows = reportRows.map(r => [
     r.regnumId, r.filename, r.action,
     r.labelOld, r.labelNew, r.labelChanged,
     r.oldPhylogenies, r.newPhylogenies, r.mergedPhylogenies,
-    r.newicksPreserved, r.newicksLost,
+    r.newicksPreserved,
     r.manualPhylogeniesPreserved, r.matchMethods, r.issues,
   ].map(escapeCSV).join(','));
   fs.writeFileSync(argv.report, `${[header.join(','), ...csvRows].join('\n')}\n`);
@@ -449,10 +440,6 @@ process.stderr.write(`  New:    ${countNew}\n`);
 process.stderr.write(`  Orphan: ${countOrphan}\n`);
 process.stderr.write(`  Total:  ${sortedIds.length}\n`);
 process.stderr.write(`  Newicks preserved: ${totalNewicksPreserved}\n`);
-process.stderr.write(`  Newicks lost:      ${totalNewicksLost}\n`);
-if (totalNewicksLost > 0) {
-  process.stderr.write(`  WARNING: ${totalNewicksLost} newick(s) were lost!\n`);
-}
 if (countOrphan > 0) {
   process.stderr.write(`  WARNING: ${countOrphan} old file(s) not found in new dump.\n`);
 }
