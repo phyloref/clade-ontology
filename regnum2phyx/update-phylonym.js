@@ -18,11 +18,35 @@ const yargs = require('yargs');
 // ── Helpers ──
 
 /**
+ * Find all CLADO PHYX files in dir, including CLADO_*.json at top level and
+ * CLADO_*.json or CLADO_*.json.txt one level deep in subdirs. Returns paths
+ * relative to dir, so the same relative path can be re-checked under workDir.
+ */
+function findCladoPhyxFiles(dir) {
+  const results = [];
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+  for (const entry of entries) {
+    if (entry.isFile() && /^CLADO_\d+\.json$/.test(entry.name)) {
+      results.push(entry.name);
+    } else if (entry.isDirectory()) {
+      const subdir = path.join(dir, entry.name);
+      for (const sub of fs.readdirSync(subdir)) {
+        if (/^CLADO_\d+\.json(?:\.txt)?$/.test(sub)) {
+          results.push(path.join(entry.name, sub));
+        }
+      }
+    }
+  }
+  return results;
+}
+
+/**
  * Verify that every newick string in oldDir is present in the corresponding
- * file in workDir. Returns counts and a list of files where newicks were lost.
+ * file in workDir. Walks subdirs as well so newicks stored in
+ * newick-problems/ and newick-recursion-error/ are also checked.
  */
 function verifyNewicks(oldDir, workDir) {
-  const files = fs.readdirSync(oldDir).filter(f => /^CLADO_\d+\.json$/.test(f));
+  const files = findCladoPhyxFiles(oldDir);
   let preserved = 0;
   let lost = 0;
   const lostFiles = [];
@@ -156,8 +180,8 @@ process.stderr.write(`  Newicks preserved: ${preserved}  Lost: ${lost}\n\n`);
 
 // ── Phase 3: Summary and next steps ──
 
-const workFiles = fs.readdirSync(workDir).filter(f => /^CLADO_\d+\.json$/.test(f)).length;
-const oldFiles = fs.readdirSync(oldDir).filter(f => /^CLADO_\d+\.json$/.test(f)).length;
+const workFiles = findCladoPhyxFiles(workDir).length;
+const oldFiles = findCladoPhyxFiles(oldDir).length;
 
 process.stderr.write("=== Summary ===\n");
 process.stderr.write(`  Old directory: ${oldFiles} files in ${oldDir}\n`);

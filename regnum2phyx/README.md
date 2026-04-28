@@ -10,14 +10,34 @@ phyloreference definitions, specifiers, and phylogeny citations). The
 `phyx/phylonym/` directory contains curated PHYX files that were originally
 generated from a PhyloRegnum database dump, then manually enhanced in the
 [Klados](https://github.com/phyloref/klados) editor. The main manual additions
-are **newick phylogeny strings** attached to phylogeny citation entries (160 of
-270 files have them, all on `primaryPhylogenyCitation` entries).
+are **newick phylogeny strings** attached to phylogeny citation entries.
 
 PhyloRegnum periodically produces updated database dumps (JSON arrays of
 phyloreference entries with specifiers, citations, and definitions). When a new
 dump arrives, PHYX files must be regenerated to pick up changes, but manual
 curation work -- especially newick strings -- must be preserved. This will happen
 3-5 more times before publication.
+
+### Directory layout in `phyx/phylonym/`
+
+The merge treats this whole tree as the curated input:
+
+- `phyx/phylonym/CLADO_NNNNNNN.json` -- the working PHYX file for each
+  phyloreference. Test-runnable.
+- `phyx/phylonym/newick-problems/CLADO_NNNNNNN.json.txt` -- archival copies
+  whose newicks the test suite skips (the `.json.txt` extension keeps them
+  out of the standard `*.json` glob).
+- `phyx/phylonym/newick-recursion-error/CLADO_NNNNNNN.json.txt` -- copies
+  whose newicks crash the parser; also test-skipped.
+- `phyx/phylonym/scripts/` -- ad-hoc helper scripts (`phyx2owl.js`,
+  `phyxfix.js`).
+
+A regnum ID may appear in **both** the root and a subdir (the root copy is
+the working version with a cleaned newick; the subdir copy is the archival
+version with the original problematic newick). The merge updates each file
+independently in place: phyloref metadata is refreshed from the new dump,
+each file's own newick is preserved, and the duplicate is flagged in the
+CSV report.
 
 Two scripts address this workflow:
 
@@ -151,13 +171,20 @@ The script runs in four phases:
 directory. The exit code 1 from regnum2phyx.js (due to apomorphy/crown specifier
 warnings) is expected and handled gracefully.
 
-**Phase 2 -- Load and classify.** Scans both the old directory and the temp
-directory for `CLADO_*.json` files. Extracts the Regnum ID from each filename
-and classifies every ID as:
-- **NEW_ONLY** -- present in the dump but not in the old directory.
+**Phase 2 -- Load and classify.** Walks the old directory: top-level
+`CLADO_*.json` and one-level-deep `CLADO_*.json` / `CLADO_*.json.txt` in
+subdirs are all collected. Each old file becomes its own merge target
+(carried by its full path relative to the old dir), so duplicate regnum IDs
+across root + subdir each produce their own merged output. The temp
+directory (the fresh dump output) is scanned at the top level only. Every
+regnum ID is classified as:
+- **NEW_ONLY** -- present in the dump but not in the old directory. Output
+  is written at the root as `CLADO_NNNNNNN.json`.
 - **OLD_ONLY** (orphan) -- present in the old directory but not in the dump
-  (should not normally occur).
-- **BOTH** -- present in both; needs merging.
+  (should not normally occur). Output is written at the same relative path
+  as in the old directory.
+- **BOTH** -- present in both; needs merging. Each old entry (one or more
+  per ID, allowing duplicates) gets its own merged output at its old path.
 
 **Phase 3 -- Merge.** For each BOTH entry, phylogenies are matched between old
 and new files using a three-tier cascade:
@@ -176,16 +203,21 @@ Unmatched old phylogenies (which may contain manually added newicks) are appende
 at the end to ensure zero newick loss.
 
 The merged file uses `@context` and `phylorefs` from the new file (latest dump
-data) and the merged `phylogenies` array.
+data) and the merged `phylogenies` array. After merging the PHYX files, any
+non-CLADO files in the old directory tree (e.g. `scripts/phyx2owl.js`) are
+copied through verbatim to the output, so accepting the merge does not silently
+drop unrelated curation artifacts.
 
-**Phase 4 -- Report.** Writes a CSV report and prints a summary to stderr.
+**Phase 4 -- Report.** Writes a CSV report (one row per output file, so a
+duplicate ID across root + subdir produces two rows with the same `regnum_id`
+and an `issues` note recording the other path) and prints a summary to stderr.
 
 ### CSV report columns
 
 | Column | Description |
 |--------|-------------|
-| `regnum_id` | Regnum database ID |
-| `clado_filename` | e.g. `CLADO_0000002.json` |
+| `regnum_id` | Regnum database ID (may appear on multiple rows when an ID exists at multiple paths in the old dir) |
+| `clado_filename` | Path of the output file, relative to the output directory (e.g. `CLADO_0000002.json` or `newick-problems/CLADO_0000041.json.txt`) |
 | `action` | `new`, `merged`, or `orphan` |
 | `label_old` | Phyloref label from old file |
 | `label_new` | Phyloref label from new dump |
@@ -265,15 +297,28 @@ node regnum2phyx/merge-phylonym.js \
   -o phyx/phylonym-merged/ \
   --report data/merge_report.csv
 
-# Verify newick preservation
+# Verify newick preservation (walks root + one-level subdirs so
+# newick-problems/ and newick-recursion-error/ are also checked).
 node -e "
-const fs = require('fs');
+const fs = require('fs'), path = require('path');
 const old = 'phyx/phylonym', merged = 'phyx/phylonym-merged';
+function findFiles(dir) {
+  const out = [];
+  for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+    if (e.isFile() && /^CLADO_\d+\.json\$/.test(e.name)) out.push(e.name);
+    else if (e.isDirectory()) {
+      for (const s of fs.readdirSync(path.join(dir, e.name)))
+        if (/^CLADO_\d+\.json(\.txt)?\$/.test(s)) out.push(path.join(e.name, s));
+    }
+  }
+  return out;
+}
 let preserved = 0, lost = 0;
-for (const f of fs.readdirSync(old).filter(f => f.match(/CLADO_\d+\.json$/))) {
-  const o = JSON.parse(fs.readFileSync(old + '/' + f, 'utf8'));
-  if (!fs.existsSync(merged + '/' + f)) continue;
-  const m = JSON.parse(fs.readFileSync(merged + '/' + f, 'utf8'));
+for (const f of findFiles(old)) {
+  const o = JSON.parse(fs.readFileSync(path.join(old, f), 'utf8'));
+  const mPath = path.join(merged, f);
+  if (!fs.existsSync(mPath)) continue;
+  const m = JSON.parse(fs.readFileSync(mPath, 'utf8'));
   for (const p of o.phylogenies || []) {
     if (!p.newick) continue;
     if ((m.phylogenies || []).some(mp => mp.newick === p.newick)) preserved++;
@@ -293,24 +338,21 @@ git add phyx/phylonym/
 git commit -m "Update phylonym PHYX files from YYYY-MM-DD Regnum dump"
 ```
 
-## Current status (2026-03-04 dump)
+## Current status (2026-04-28 dump)
 
-Running `merge-phylonym.js` against `data/regnum_submissions_2026mar4.json`
-with the 270 existing curated files produces:
+Running `merge-phylonym.js` against `data/regnum_submissions_2026apr28.json`
+with the 287 existing curated files (270 root `.json` + 17 subdir `.json.txt`
+in `newick-problems/` and `newick-recursion-error/`) produces:
 
 | Metric | Value |
 |--------|-------|
-| Merged files (old + new) | 270 |
-| New files (dump only) | 839 |
+| Merged files (old + new) | 287 (3 IDs duplicated across root + subdir) |
+| New files (dump only) | 826 |
 | Orphaned files | 0 |
-| Total output files | 1,109 |
-| Newicks preserved | 160 / 160 |
+| Total output files | 1,113 |
+| Newicks preserved | 177 / 177 |
 | Newicks lost | 0 |
-| Entries skipped (duplicate labels) | 18 |
-
-The 18 skipped entries are duplicates in the dump (e.g. multiple Regnum entries
-with the label "Lognkosauria") that `regnum2phyx.js` skips. This means 1,127
-dump entries produce 1,109 unique files.
+| Entries skipped (duplicate labels) | 19 |
 
 ## Limitations and future improvements
 

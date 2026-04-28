@@ -214,19 +214,78 @@ function mergePhyxFile(oldPhyx, newPhyx) {
 }
 
 /**
- * Scan a directory for CLADO_*.json files and return a Map of regnumId → { filename, data }.
- * The regnumId is extracted from the filename (CLADO_NNNNNNN.json → number).
+ * Scan a directory for CLADO PHYX files and return a Map of
+ * regnumId → Entry[]. Each Entry is { filename, relativePath, data }.
+ *
+ * Picks up CLADO_NNNNNNN.json at the top level and CLADO_NNNNNNN.json or
+ * CLADO_NNNNNNN.json.txt one level deep in subdirectories. The .json.txt
+ * extension is a curation convention used to mark phyloreferences whose
+ * newicks the test suite skips (e.g. parser-crashing inputs in
+ * newick-recursion-error/); its content is still valid PHYX JSON.
+ *
+ * The same regnum ID may appear at multiple paths (e.g. a working copy at
+ * the root and an archival copy in a subdir with a different newick); each
+ * such file is recorded as a separate entry so the merge can update both
+ * files independently and keep diffs clean.
  */
 function scanDirectory(dir) {
   const map = new Map();
-  const files = fs.readdirSync(dir).filter(f => /^CLADO_\d+\.json$/.test(f));
-  for (const filename of files) {
-    const match = filename.match(/^CLADO_(\d+)\.json$/);
-    const regnumId = Number.parseInt(match[1], 10);
-    const data = loadJSON(path.join(dir, filename));
-    map.set(regnumId, { filename, data });
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+
+  function record(regnumId, filename, relativePath, fullPath) {
+    const data = loadJSON(fullPath);
+    const list = map.get(regnumId) || [];
+    list.push({ filename, relativePath, data });
+    map.set(regnumId, list);
   }
+
+  for (const entry of entries) {
+    if (entry.isFile()) {
+      const m = entry.name.match(/^CLADO_(\d+)\.json$/);
+      if (!m) continue;
+      const regnumId = Number.parseInt(m[1], 10);
+      record(regnumId, entry.name, entry.name, path.join(dir, entry.name));
+    }
+  }
+
+  for (const entry of entries) {
+    if (!entry.isDirectory()) continue;
+    const subdir = path.join(dir, entry.name);
+    for (const sub of fs.readdirSync(subdir)) {
+      const m = sub.match(/^CLADO_(\d+)\.json(?:\.txt)?$/);
+      if (!m) continue;
+      const regnumId = Number.parseInt(m[1], 10);
+      record(regnumId, sub, path.join(entry.name, sub), path.join(subdir, sub));
+    }
+  }
+
   return map;
+}
+
+/**
+ * Copy through any non-CLADO file in the old directory tree (e.g. helper
+ * scripts in subdirs) to the output directory, preserving relative layout.
+ * This keeps the merge "directory-replacement-safe": anything the merge
+ * doesn't touch is carried over verbatim, so accepting the merge doesn't
+ * silently drop unrelated curation artifacts.
+ */
+function copyThroughNonClado(oldDir, outputDir) {
+  for (const entry of fs.readdirSync(oldDir, { withFileTypes: true })) {
+    if (entry.isFile()) {
+      // Skip top-level CLADO files; merge handles them.
+      if (/^CLADO_\d+\.json$/.test(entry.name)) continue;
+      fs.copyFileSync(path.join(oldDir, entry.name), path.join(outputDir, entry.name));
+    } else if (entry.isDirectory()) {
+      const srcSub = path.join(oldDir, entry.name);
+      const dstSub = path.join(outputDir, entry.name);
+      if (!fs.existsSync(dstSub)) fs.mkdirSync(dstSub, { recursive: true });
+      for (const sub of fs.readdirSync(srcSub)) {
+        // Skip CLADO PHYX files in subdirs; merge handles them.
+        if (/^CLADO_\d+\.json(?:\.txt)?$/.test(sub)) continue;
+        fs.copyFileSync(path.join(srcSub, sub), path.join(dstSub, sub));
+      }
+    }
+  }
 }
 
 // ── CLI + main ──
@@ -311,7 +370,16 @@ const newFiles = scanDirectory(tmpDir);
 const allIds = new Set([...oldFiles.keys(), ...newFiles.keys()]);
 const sortedIds = [...allIds].sort((a, b) => a - b);
 
-process.stderr.write(`  Old files: ${oldFiles.size}, New files: ${newFiles.size}, Union: ${sortedIds.length}\n`);
+function countEntries(filesMap) {
+  let total = 0;
+  for (const arr of filesMap.values()) total += arr.length;
+  return total;
+}
+process.stderr.write(
+  `  Old: ${countEntries(oldFiles)} files (${oldFiles.size} unique IDs), `
+  + `New: ${countEntries(newFiles)} files (${newFiles.size} unique IDs), `
+  + `Union of IDs: ${sortedIds.length}\n`,
+);
 
 // Phase 3: Merge.
 process.stderr.write("Phase 3: Merging...\n");
@@ -325,22 +393,33 @@ let countMerged = 0;
 let countOrphan = 0;
 let totalNewicksPreserved = 0;
 
-for (const regnumId of sortedIds) {
-  const hasOld = oldFiles.has(regnumId);
-  const hasNew = newFiles.has(regnumId);
-  const filename = `CLADO_${String(regnumId).padStart(digits, '0')}.json`;
+function writeOutputFile(relativePath, data) {
+  const outPath = path.join(outputDir, relativePath);
+  const outSubdir = path.dirname(outPath);
+  if (!fs.existsSync(outSubdir)) fs.mkdirSync(outSubdir, { recursive: true });
+  fs.writeFileSync(outPath, JSON.stringify(data, null, 4));
+}
 
-  if (hasNew && !hasOld) {
-    // NEW_ONLY: copy fresh file as-is.
+for (const regnumId of sortedIds) {
+  const oldEntries = oldFiles.get(regnumId) || [];
+  const newEntries = newFiles.get(regnumId) || [];
+  const newData = newEntries.length > 0 ? newEntries[0].data : null;
+  const defaultFilename = `CLADO_${String(regnumId).padStart(digits, '0')}.json`;
+  const duplicateNote = oldEntries.length > 1
+    ? `Regnum ID present at ${oldEntries.length} paths in old dir: `
+      + `${oldEntries.map(e => e.relativePath).join(', ')}`
+    : null;
+
+  if (newData && oldEntries.length === 0) {
+    // NEW_ONLY: copy fresh file as-is to the root.
     countNew++;
-    const newData = newFiles.get(regnumId).data;
     if (!argv.dryRun) {
-      fs.writeFileSync(path.join(outputDir, filename), JSON.stringify(newData, null, 4));
+      writeOutputFile(defaultFilename, newData);
     }
     const newLabel = (newData.phylorefs || [])[0]?.label || '';
     reportRows.push({
       regnumId,
-      filename,
+      filename: defaultFilename,
       action: 'new',
       labelOld: '',
       labelNew: newLabel,
@@ -353,45 +432,56 @@ for (const regnumId of sortedIds) {
       matchMethods: '',
       issues: '',
     });
-  } else if (hasOld && !hasNew) {
-    // OLD_ONLY (should not occur): copy old file unchanged.
-    countOrphan++;
-    const oldData = oldFiles.get(regnumId).data;
-    if (!argv.dryRun) {
-      fs.writeFileSync(path.join(outputDir, filename), JSON.stringify(oldData, null, 4));
+    continue;
+  }
+
+  // For each old entry (one or more — duplicates kept and merged independently),
+  // emit either an orphan (no new data) or a merged file at the entry's path.
+  for (const oldEntry of oldEntries) {
+    if (!newData) {
+      // OLD_ONLY: copy old file unchanged at its old location.
+      countOrphan++;
+      if (!argv.dryRun) {
+        writeOutputFile(oldEntry.relativePath, oldEntry.data);
+      }
+      const oldLabel = (oldEntry.data.phylorefs || [])[0]?.label || '';
+      const issues = ['Old file not found in new dump'];
+      if (duplicateNote) issues.push(duplicateNote);
+      reportRows.push({
+        regnumId,
+        filename: oldEntry.relativePath,
+        action: 'orphan',
+        labelOld: oldLabel,
+        labelNew: '',
+        labelChanged: false,
+        oldPhylogenies: (oldEntry.data.phylogenies || []).length,
+        newPhylogenies: 0,
+        mergedPhylogenies: (oldEntry.data.phylogenies || []).length,
+        newicksPreserved: 0,
+        manualPhylogeniesPreserved: 0,
+        matchMethods: '',
+        issues: issues.join('; '),
+      });
+      continue;
     }
-    const oldLabel = (oldData.phylorefs || [])[0]?.label || '';
-    reportRows.push({
-      regnumId,
-      filename,
-      action: 'orphan',
-      labelOld: oldLabel,
-      labelNew: '',
-      labelChanged: false,
-      oldPhylogenies: (oldData.phylogenies || []).length,
-      newPhylogenies: 0,
-      mergedPhylogenies: (oldData.phylogenies || []).length,
-      newicksPreserved: 0,
-      manualPhylogeniesPreserved: 0,
-      matchMethods: '',
-      issues: 'Old file not found in new dump',
-    });
-  } else {
-    // BOTH: merge.
+
+    // BOTH: merge. Output goes to the old entry's location, so subdir/.json.txt
+    // archival copies stay in their subdir; root .json files stay at root.
     countMerged++;
-    const oldData = oldFiles.get(regnumId).data;
-    const newData = newFiles.get(regnumId).data;
-    const { mergedPhyx, stats } = mergePhyxFile(oldData, newData);
+    const { mergedPhyx, stats } = mergePhyxFile(oldEntry.data, newData);
 
     if (!argv.dryRun) {
-      fs.writeFileSync(path.join(outputDir, filename), JSON.stringify(mergedPhyx, null, 4));
+      writeOutputFile(oldEntry.relativePath, mergedPhyx);
     }
 
     totalNewicksPreserved += stats.newicksPreserved;
 
+    const issues = [...stats.issues];
+    if (duplicateNote) issues.push(duplicateNote);
+
     reportRows.push({
       regnumId,
-      filename,
+      filename: oldEntry.relativePath,
       action: 'merged',
       labelOld: stats.labelOld,
       labelNew: stats.labelNew,
@@ -402,9 +492,15 @@ for (const regnumId of sortedIds) {
       newicksPreserved: stats.newicksPreserved,
       manualPhylogeniesPreserved: stats.manualPhylogeniesPreserved,
       matchMethods: stats.matchMethods.join(';'),
-      issues: stats.issues.join('; '),
+      issues: issues.join('; '),
     });
   }
+}
+
+// Carry through helper scripts, READMEs, and other non-CLADO artifacts that
+// live alongside the PHYX files in the old directory.
+if (!argv.dryRun) {
+  copyThroughNonClado(oldDir, outputDir);
 }
 
 // Clean up temp directory.
