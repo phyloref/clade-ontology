@@ -1,0 +1,126 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Enter the dragons: the phylogeny of Azhdarchoidea (Pterosauria: Pterodactyloidea) and the evolution of giant size in pterosaurs",
+                "year": 2025,
+                "authors": [
+                    {
+                        "name": "Henry N. Thomas",
+                        "alternate": [
+                            "Thomas, Henry N."
+                        ],
+                        "firstname": "Henry",
+                        "lastname": "Thomas",
+                        "middlename": "N."
+                    },
+                    {
+                        "name": "Skye N. McDavid",
+                        "alternate": [
+                            "McDavid, Skye N."
+                        ],
+                        "firstname": "Skye",
+                        "lastname": "McDavid",
+                        "middlename": "N."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "4",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1080/14772019.2025.2569368"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "https://www.tandfonline.com/doi/full/10.1080/14772019.2025.2569368"
+                    }
+                ],
+                "journal": {
+                    "name": "Journal of Systematic Palaeontology",
+                    "volume": "23",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 1179,
+            "label": "Serpennata",
+            "dwc:scientificNameAuthorship": "Thomas, Henry N. and McDavid, Skye N.",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Enter the dragons: the phylogeny of Azhdarchoidea (Pterosauria: Pterodactyloidea) and the evolution of giant size in pterosaurs",
+                    "year": 2025,
+                    "authors": [
+                        {
+                            "name": "Henry N. Thomas",
+                            "alternate": [
+                                "Thomas, Henry N."
+                            ],
+                            "firstname": "Henry",
+                            "lastname": "Thomas",
+                            "middlename": "N."
+                        },
+                        {
+                            "name": "Skye N. McDavid",
+                            "alternate": [
+                                "McDavid, Skye N."
+                            ],
+                            "firstname": "Skye",
+                            "lastname": "McDavid",
+                            "middlename": "N."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.1080/14772019.2025.2569368"
+                        }
+                    ],
+                    "link": [
+                        {
+                            "url": "https://www.tandfonline.com/doi/full/10.1080/14772019.2025.2569368"
+                        }
+                    ],
+                    "journal": {
+                        "name": "Journal of Systemic Palaeontology",
+                        "volume": "23",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The least inclusive clade containing Quetzalcoatlus northropi Lawson, 1975b and Arambourgiania philadelphiae (Arambourg, 1959).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Quetzalcoatlus northropi Lawson, 1975",
+                        "nameComplete": "Quetzalcoatlus northropi"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Arambourgiania philadelphiae Arambourg, 1959",
+                        "nameComplete": "Arambourgiania philadelphiae"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

@@ -1,0 +1,147 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Angiosperm phylogeny: 17 genes, 640 taxa",
+                "year": 2011,
+                "authors": [
+                    {
+                        "name": "D E Soltis",
+                        "alternate": [
+                            "Soltis, D E"
+                        ],
+                        "firstname": "D",
+                        "lastname": "Soltis",
+                        "middlename": "E"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2G",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "https://doi.org/10.3732/ajb.1000404"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "American Journal of Botany",
+                    "volume": "98",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 1201,
+            "label": "Caprifoliaceae",
+            "dwc:scientificNameAuthorship": "Donoghue, Michael J",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Genera Plantarum",
+                    "year": 1789,
+                    "authors": [
+                        {
+                            "name": "J L Jussieu",
+                            "alternate": [
+                                "Jussieu, J L"
+                            ],
+                            "firstname": "J",
+                            "lastname": "Jussieu",
+                            "middlename": "L"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Herissant et Barrois",
+                    "city": "Paris",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic definitions for Dipsacales, Adoxaceae, and Caprifoliaceae",
+                    "year": 2026,
+                    "edition": "002",
+                    "authors": [
+                        {
+                            "name": "Michael J Donoghue",
+                            "alternate": [
+                                "Donoghue, Michael J"
+                            ],
+                            "firstname": "Michael",
+                            "lastname": "Donoghue",
+                            "middlename": "J"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "figure": "5",
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of Phylogenetic Nomenclature",
+                        "volume": "2",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The smallest crown clade including Lonicera xylosteum L., Diervilla lonicera Miller, Linnaea borealis L., Valeriana pyrenaica L., and Dipsacus fullonum L.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Lonicera xylosteum Linnaeus, 1753",
+                        "nameComplete": "Lonicera xylosteum"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Diervilla lonicera Miller, 1768",
+                        "nameComplete": "Diervilla lonicera"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Linnaea borealis Linnaeus, 1753",
+                        "nameComplete": "Linnaea borealis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Valeriana pyrenaica Linnaeus, 1753",
+                        "nameComplete": "Valeriana pyrenaica"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Dipsacus fullonum Linnaeus, 1753",
+                        "nameComplete": "Dipsacus fullonum"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

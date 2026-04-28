@@ -172,7 +172,59 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Proteorhodophytina",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "G. W. Saunders",
+                            "alternate": [
+                                "Saunders, G. W."
+                            ],
+                            "firstname": "G.",
+                            "lastname": "Saunders",
+                            "middlename": "W."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "141-142",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The crown clade originating in the most recent common ancestor of Bangiopsis subsimplex (Montagne) F. Schmitz 1896, Corynoplastis japonica Yokoyama, J. L. Scott, G. C. Zuccarello, M. Kajikawa, Y. Hara & J. A. West 2009, Porphyridium cruentum (S.F. Gray) Nägeli 1849 (= Porphyridium purpureum (Bory de Saint-Vincent) K. M. Drew & R. Ross 1965), and Rhodochaete pulchella Thuret ex Bornet 1892.",
             "internalSpecifiers": [
                 {
@@ -180,35 +232,8 @@
                     "hasName": {
                         "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Bangiopsis subsimplex 1896",
+                        "label": "Bangiopsis subsimplex Schmitz, 1896",
                         "nameComplete": "Bangiopsis subsimplex"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Corynoplastis japonica 2009",
-                        "nameComplete": "Corynoplastis japonica"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Porphyridium cruentum 1849",
-                        "nameComplete": "Porphyridium cruentum"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Rhodochaete pulchella 1892",
-                        "nameComplete": "Rhodochaete pulchella"
                     }
                 }
             ],

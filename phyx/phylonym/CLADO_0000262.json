@@ -86,9 +86,69 @@
         {
             "regnumId": 262,
             "label": "Pan-Bovidae",
-            "dwc:scientificNameAuthorship": "Bibi, F., Vrba, E. S.",
+            "dwc:scientificNameAuthorship": "Bibi, F. and Vrba, E. S.",
             "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Pan-Bovidae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "F. Bibi",
+                            "alternate": [
+                                "Bibi, F."
+                            ],
+                            "firstname": "F.",
+                            "lastname": "Bibi"
+                        },
+                        {
+                            "name": "E. S. Vrba",
+                            "alternate": [
+                                "Vrba, E. S."
+                            ],
+                            "firstname": "E.",
+                            "lastname": "Vrba",
+                            "middlename": "S."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "963-964",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The total clade of the crown clade Bovidae.",
             "internalSpecifiers": [],
             "externalSpecifiers": []

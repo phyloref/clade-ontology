@@ -65,7 +65,7 @@
         {
             "regnumId": 240,
             "label": "Yinpterochiroptera",
-            "dwc:scientificNameAuthorship": "Cirranello, A. L., Simmons, N. B., Gunnell, G. F.",
+            "dwc:scientificNameAuthorship": "Cirranello, A. L. and Simmons, N. B. and Gunnell, G. F.",
             "dwc:namePublishedIn": [
                 {
                     "type": "article",
@@ -128,7 +128,77 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Yinpterochiroptera",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "A. L. Cirranello",
+                            "alternate": [
+                                "Cirranello, A. L."
+                            ],
+                            "firstname": "A.",
+                            "lastname": "Cirranello",
+                            "middlename": "L."
+                        },
+                        {
+                            "name": "N. B. Simmons",
+                            "alternate": [
+                                "Simmons, N. B."
+                            ],
+                            "firstname": "N.",
+                            "lastname": "Simmons",
+                            "middlename": "B."
+                        },
+                        {
+                            "name": "G. F. Gunnell",
+                            "alternate": [
+                                "Gunnell, G. F."
+                            ],
+                            "firstname": "G.",
+                            "lastname": "Gunnell",
+                            "middlename": "F."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "931-935",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The crown clade originating in the most recent common ancestor of Pteropus vampyrus (Linnaeus 1758) (Pteropodidae) and all extant species that share a more recent common ancestor with Pteropus vampyrus Linnaeus 1758 (Pteropodidae) and Rhinolophus ferrumequinum (Schreber 1774) (Rhinolophoidea) than with Vespertilio murinus Linnaeus 1758 (Vespertilionoidea).",
             "internalSpecifiers": [
                 {
@@ -139,28 +209,9 @@
                         "label": "Pteropus vampyrus Linnaeus, 1758",
                         "nameComplete": "Pteropus vampyrus"
                     }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Rhinolophus ferrumequinum Schreber, 1774",
-                        "nameComplete": "Rhinolophus ferrumequinum"
-                    }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Vespertilio murinus Linnaeus, 1758",
-                        "nameComplete": "Vespertilio murinus"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

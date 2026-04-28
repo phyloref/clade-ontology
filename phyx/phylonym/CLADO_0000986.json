@@ -1,0 +1,215 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "New anatomical information on Araripesuchus buitreraensis with implications for the systematics of Uruguaysuchidae (Crocodyliforms, Notosuchia)",
+                "year": 2020,
+                "authors": [
+                    {
+                        "name": "Fernández Dumont",
+                        "alternate": [
+                            "Fernández Dumont,"
+                        ],
+                        "lastname": "Fernández Dumont"
+                    },
+                    {
+                        "name": "Bona",
+                        "alternate": [
+                            "Bona,"
+                        ],
+                        "lastname": "Bona"
+                    },
+                    {
+                        "name": "Pol",
+                        "alternate": [
+                            "Pol,"
+                        ],
+                        "lastname": "Pol"
+                    },
+                    {
+                        "name": "Apesteguía",
+                        "alternate": [
+                            "Apesteguía,"
+                        ],
+                        "lastname": "Apesteguía"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "7",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Cretaceous Research",
+                    "volume": "113",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "A new specimen of Uruguaysuchus aznarezi (Crocodyliformes: Notosuchia) from the Cretaceous of Uruguay and its phylogenetic relationships",
+                "year": 2011,
+                "authors": [
+                    {
+                        "name": "Soto",
+                        "alternate": [
+                            "Soto,"
+                        ],
+                        "lastname": "Soto"
+                    },
+                    {
+                        "name": "Pol",
+                        "alternate": [
+                            "Pol,"
+                        ],
+                        "lastname": "Pol"
+                    },
+                    {
+                        "name": "Perea",
+                        "alternate": [
+                            "Perea,"
+                        ],
+                        "lastname": "Perea"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "15",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Zoological Journal of the Linnean Society",
+                    "volume": "163",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 986,
+            "label": "Uruguaysuchidae",
+            "dwc:scientificNameAuthorship": "Leardi, Juan Martín and Pol, and Montefeltro, and Marinho, and Ruiz, and Bravo, and Pinheiro, and Godoy, and Nicholl, and Lecuona, and Larsson,",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": ". Los Notosuchia del Cretácico de América del Sur como un nuevo Infraorden de los Mesosuchia (Crocodilia)",
+                    "year": 1971,
+                    "authors": [
+                        {
+                            "name": "Zulma Gasparini",
+                            "alternate": [
+                                "Gasparini, Zulma"
+                            ],
+                            "firstname": "Zulma",
+                            "lastname": "Gasparini"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Ameghiniana",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic nomenclature of Notosuchia (Crocodylomorpha; Crocodyliformes)",
+                    "year": 2024,
+                    "edition": "In press",
+                    "authors": [
+                        {
+                            "name": "Leardi",
+                            "alternate": [
+                                "Leardi,"
+                            ],
+                            "lastname": "Leardi"
+                        },
+                        {
+                            "name": "et al",
+                            "alternate": [
+                                "et al,"
+                            ],
+                            "lastname": "et al"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of Phylogenetic Nomenclature",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The most inclusive clade containing Uruguaysuchus aznarezi Rusconi 1933 (proxy: Araripesuchus gomesii Price 1959) but not Baurusuchus pachecoi (Price 1945), Peirosaurus torminni Price 1955 (proxy: Lomasuchus palpebrosus Gasparini, Chiappe and Fernández 1991), Mahajangasuchus insignis Buckley and Brochu 1999, Notosuchus terrestris Woodward 1896, and Crocodylus niloticus Laurenti 1768. This is a maximum-clade definition. The proxies are not specifiers but can be used in place of the specifiers for which they are proxies on phylogenies from which those specifiers are absent (see Methods).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Uruguaysuchus azanarezi Rusconi, 1933",
+                        "nameComplete": "Uruguaysuchus azanarezi"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Baurusuchus pachecoi Price, 1945",
+                        "nameComplete": "Baurusuchus pachecoi"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Peirosaurus torminni Price, 1955",
+                        "nameComplete": "Peirosaurus torminni"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Mahajangasuchus insignis Buckley and Brochu, 1999",
+                        "nameComplete": "Mahajangasuchus insignis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Notosuchus terresitris Woodward, 1896",
+                        "nameComplete": "Notosuchus terresitris"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Crocodylus niloticus Laurenti, 1768",
+                        "nameComplete": "Crocodylus niloticus"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -2,91 +2,6 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
     "phylogenies": [
         {
-            "primaryPhylogenyCitation": {
-                "type": "book_section",
-                "title": "A phylogenetic analysis of Lepidosauromorpha. In the phylogenetic relationships of the lizard families.",
-                "section_title": "The phylogenetic relationships of the lizard families.",
-                "year": 1988,
-                "authors": [
-                    {
-                        "name": "J. Gauthier",
-                        "alternate": [
-                            "Gauthier, J."
-                        ],
-                        "firstname": "J.",
-                        "lastname": "Gauthier"
-                    },
-                    {
-                        "name": "K. de Queiroz",
-                        "alternate": [
-                            "de Queiroz, K."
-                        ],
-                        "firstname": "K.",
-                        "lastname": "de Queiroz"
-                    },
-                    {
-                        "name": "R. Estes",
-                        "alternate": [
-                            "Estes, R."
-                        ],
-                        "firstname": "R.",
-                        "lastname": "Estes"
-                    }
-                ],
-                "editors": [
-                    {
-                        "name": "R. Estes",
-                        "alternate": [
-                            "Estes, R."
-                        ],
-                        "firstname": "R.",
-                        "lastname": "Estes"
-                    },
-                    {
-                        "name": "G. Pregill",
-                        "alternate": [
-                            "Pregill, G."
-                        ],
-                        "firstname": "G.",
-                        "lastname": "Pregill"
-                    }
-                ],
-                "series_editors": [],
-                "publisher": "Stanford University Press",
-                "city": "Palo Alto",
-                "pages": "15-98",
-                "figure": "3",
-                "identifier": [],
-                "link": []
-            },
-            "newick": "((((((((((((Ornithosuchia, Pseudosuchia), Proterochampsidae),\nErythrosuchidae), Proterosuchidae), Protorosauria), Choristodera), Trilophosaurus), Rhynchosauria),\nLepidosauromorpha), Araeoscelidia), (Testudines, Captorhinidae)),\n(((((((((((((((Mammalia, Morganucodontidae), Tritylodontidae), Exaeretodon), Diademodon), Thrinaxodon),\nProcynosuchus), Therocephalia), Dicynodontia), Gorgonopsia), Dinocephalia), Biarmosuchia), Sphenacodontinae),\nEdaphosaurus), Ophiacodon), Casea))\n\n"
-        },
-        {
-            "phylogenyCitation": {
-                "type": "book_section",
-                "title": "A cladistic analysis of the higher systematic categories of the Diapsida.",
-                "year": 1984,
-                "authors": [
-                    {
-                        "name": "J. Gauthier",
-                        "alternate": [
-                            "Gauthier, J."
-                        ],
-                        "firstname": "J.",
-                        "lastname": "Gauthier"
-                    }
-                ],
-                "editors": [],
-                "series_editors": [],
-                "publisher": "University Microfilms International",
-                "city": "Ann Arbor",
-                "pages": "vii + 564",
-                "figure": "22-29",
-                "identifier": [],
-                "link": []
-            }
-        },
-        {
             "phylogenyCitation": {
                 "type": "article",
                 "title": "Molecular systematics of primary reptilian lineages and the tuatara mitochondrial genome.",
@@ -504,13 +419,98 @@
                     "identifier": []
                 }
             }
+        },
+        {
+            "primaryPhylogenyCitation": {
+                "type": "book_section",
+                "title": "A phylogenetic analysis of Lepidosauromorpha. In the phylogenetic relationships of the lizard families.",
+                "section_title": "The phylogenetic relationships of the lizard families.",
+                "year": 1988,
+                "authors": [
+                    {
+                        "name": "J. Gauthier",
+                        "alternate": [
+                            "Gauthier, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Gauthier"
+                    },
+                    {
+                        "name": "K. de Queiroz",
+                        "alternate": [
+                            "de Queiroz, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "de Queiroz"
+                    },
+                    {
+                        "name": "R. Estes",
+                        "alternate": [
+                            "Estes, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Estes"
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "R. Estes",
+                        "alternate": [
+                            "Estes, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Estes"
+                    },
+                    {
+                        "name": "G. Pregill",
+                        "alternate": [
+                            "Pregill, G."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Pregill"
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "Stanford University Press",
+                "city": "Palo Alto",
+                "pages": "15-98",
+                "figure": "3",
+                "identifier": [],
+                "link": []
+            },
+            "newick": "((((((((((((Ornithosuchia, Pseudosuchia), Proterochampsidae),\nErythrosuchidae), Proterosuchidae), Protorosauria), Choristodera), Trilophosaurus), Rhynchosauria),\nLepidosauromorpha), Araeoscelidia), (Testudines, Captorhinidae)),\n(((((((((((((((Mammalia, Morganucodontidae), Tritylodontidae), Exaeretodon), Diademodon), Thrinaxodon),\nProcynosuchus), Therocephalia), Dicynodontia), Gorgonopsia), Dinocephalia), Biarmosuchia), Sphenacodontinae),\nEdaphosaurus), Ophiacodon), Casea))\n\n"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "book_section",
+                "title": "A cladistic analysis of the higher systematic categories of the Diapsida.",
+                "year": 1984,
+                "authors": [
+                    {
+                        "name": "J. Gauthier",
+                        "alternate": [
+                            "Gauthier, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Gauthier"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "publisher": "University Microfilms International",
+                "city": "Ann Arbor",
+                "pages": "vii + 564",
+                "figure": "22-29",
+                "identifier": [],
+                "link": []
+            }
         }
     ],
     "phylorefs": [
         {
             "regnumId": 173,
             "label": "Archosauria",
-            "dwc:scientificNameAuthorship": "Gauthier, J. A., Padian, K.",
+            "dwc:scientificNameAuthorship": "Gauthier, J. A. and Padian, K.",
             "dwc:namePublishedIn": [
                 {
                     "type": "article",
@@ -538,7 +538,67 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Archosauria",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "J. A. Gautheir",
+                            "alternate": [
+                                "Gautheir, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gautheir",
+                            "middlename": "A."
+                        },
+                        {
+                            "name": "K. Padian",
+                            "alternate": [
+                                "Padian, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "Padian"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "1187-1193",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The smallest crown clade containing Alligator (originally Crocodilus) mississippiensis (Daudin 1802) (Crocodylia) and Compsognathus longipes Wagner 1859 (Dinosauria).",
             "internalSpecifiers": [
                 {
@@ -548,15 +608,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Alligator (originally Crocodilus) mississippiensis Daudin, 1802",
                         "nameComplete": "Alligator (originally Crocodilus) mississippiensis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Compsognathus longipes Wagner, 1859",
-                        "nameComplete": "Compsognathus longipes"
                     }
                 }
             ],

@@ -1,0 +1,137 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Towards a phylogenetic taxonomy of sturgeons (Acipenseriformes: Acipenseridae)",
+                "authors": [
+                    {
+                        "name": "Chase D. Brownstein",
+                        "alternate": [
+                            "Brownstein, Chase D."
+                        ],
+                        "firstname": "Chase",
+                        "lastname": "Brownstein",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "Thomas J. Near",
+                        "alternate": [
+                            "Near, Thomas J."
+                        ],
+                        "firstname": "Thomas",
+                        "lastname": "Near",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Bulletin of the Peabody Museum of Natural History",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 1079,
+            "label": "Acipenseridae",
+            "dwc:scientificNameAuthorship": "Brownstein, Chase D. and Near, Thomas J.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Saggio di una distribuzione metodica degli animali vertebrati",
+                    "year": 1831,
+                    "authors": [
+                        {
+                            "name": "C. L. Bonaparte",
+                            "alternate": [
+                                "Bonaparte, C. L."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Bonaparte",
+                            "middlename": "L."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Giornale Arcadico di Scienze Lettere ed Arti",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Towards a phylogenetic taxonomy of sturgeons (Acipenseriformes: Acipenseridae)",
+                    "authors": [
+                        {
+                            "name": "Chase D. Brownstein",
+                            "alternate": [
+                                "Brownstein, Chase D."
+                            ],
+                            "firstname": "Chase",
+                            "lastname": "Brownstein",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "Thomas J. Near",
+                            "alternate": [
+                                "Near, Thomas J."
+                            ],
+                            "firstname": "Thomas",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The least inclusive crown clade that contains Acipenser sturio Linnaeus 1758, Sinosturio dabryanus (Duméril 1869), and Huso huso (Linnaeus 1758). This is a minimum-crown-clade definition.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Acipenser sturio Linnaeus, 1758",
+                        "nameComplete": "Acipenser sturio"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Sinosturio dabryanus Duméril, 1869",
+                        "nameComplete": "Sinosturio dabryanus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Huso huso Linnaeus, 1758",
+                        "nameComplete": "Huso huso"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

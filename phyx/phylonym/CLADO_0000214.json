@@ -2,6 +2,40 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
     "phylogenies": [
         {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Heads and tails: a chordate phylogeny.",
+                "year": 1986,
+                "edition": "2",
+                "authors": [
+                    {
+                        "name": "J. G. Maisey",
+                        "alternate": [
+                            "Maisey, J. G."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Maisey",
+                        "middlename": "G."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "5",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.1096-0031.1986.tb00462"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Cladistics",
+                    "volume": "3",
+                    "identifier": []
+                }
+            }
+        },
+        {
             "primaryPhylogenyCitation": {
                 "type": "book",
                 "title": "The origin of higher clades.",
@@ -227,40 +261,6 @@
         },
         {
             "phylogenyCitation": {
-                "type": "article",
-                "title": "Heads and tails: a chordate phylogeny.",
-                "year": 1986,
-                "edition": "2",
-                "authors": [
-                    {
-                        "name": "J. G. Maisey",
-                        "alternate": [
-                            "Maisey, J. G."
-                        ],
-                        "firstname": "J.",
-                        "lastname": "Maisey",
-                        "middlename": "G."
-                    }
-                ],
-                "editors": [],
-                "series_editors": [],
-                "figure": "5",
-                "identifier": [
-                    {
-                        "type": "doi",
-                        "id": "10.1111/j.1096-0031.1986.tb00462"
-                    }
-                ],
-                "link": [],
-                "journal": {
-                    "name": "Cladistics",
-                    "volume": "3",
-                    "identifier": []
-                }
-            }
-        },
-        {
-            "phylogenyCitation": {
                 "type": "book_section",
                 "title": "Bony fishes. In Major features of vertebrate evolution.",
                 "year": 1994,
@@ -352,7 +352,7 @@
         {
             "regnumId": 214,
             "label": "Osteichthyes",
-            "dwc:scientificNameAuthorship": "Moore, J. A., Near, T. J.",
+            "dwc:scientificNameAuthorship": "Moore, J. A. and Near, T. J.",
             "dwc:namePublishedIn": [
                 {
                     "type": "article",
@@ -380,7 +380,68 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Osteichthyes",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "J. A. Moore",
+                            "alternate": [
+                                "Moore, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Moore",
+                            "middlename": "A."
+                        },
+                        {
+                            "name": "T. J. Near",
+                            "alternate": [
+                                "Near, T. J."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "685-689",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The least inclusive crown clade that contains Latimeria chalumnae Smith 1939, Neoceratodus forsteri (Krefft 1870), Polypterus bichir Lacepede 1803, Acipenser sturio Linnaeus 1758, Lepisosteus osseus (Linnaeus 1758), Amia calva Linnaeus 1766, and Perca fluviatilis Linnaeus 1758.",
             "internalSpecifiers": [
                 {
@@ -390,60 +451,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Latimeria chalumnae Smith, 1939",
                         "nameComplete": "Latimeria chalumnae"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Neoceratodus forsteri Krefft, 1870",
-                        "nameComplete": "Neoceratodus forsteri"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Polypterus bichir Lacepede, 1803",
-                        "nameComplete": "Polypterus bichir"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Acipenser sturio Linnaeus, 1758",
-                        "nameComplete": "Acipenser sturio"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Lepisosteus osseus Linnaeus, 1758",
-                        "nameComplete": "Lepisosteus osseus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Amia calva Linnaeus, 1766",
-                        "nameComplete": "Amia calva"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Perca fluviatilis Linnaeus, 1758",
-                        "nameComplete": "Perca fluviatilis"
                     }
                 }
             ],

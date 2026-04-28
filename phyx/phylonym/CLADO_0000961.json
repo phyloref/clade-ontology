@@ -1,0 +1,162 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Multi-locus fossil-calibrated phylogeny of Atheriniformes (Teleostei, Ovalentaria)",
+                "year": 2015,
+                "authors": [
+                    {
+                        "name": "D. Campanella",
+                        "alternate": [
+                            "Campanella, D."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Campanella"
+                    },
+                    {
+                        "name": "L. C. Hughes",
+                        "alternate": [
+                            "Hughes, L. C."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Hughes",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "P. J. Unmack",
+                        "alternate": [
+                            "Unmack, P. J."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Unmack",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "D. D. Bloom",
+                        "alternate": [
+                            "Bloom, D. D."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Bloom",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "K. R. Piller",
+                        "alternate": [
+                            "Piller, K. R."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Piller",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "G. Ortí",
+                        "alternate": [
+                            "Ortí, G."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Ortí"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2015.03.001"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Phylogenetics and Evolution",
+                    "volume": "86",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 961,
+            "label": "Atherinoidea",
+            "dwc:scientificNameAuthorship": "Thacker, C. E. and Near, T. J.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "The relationships and taxonomic position of the halfbeaks, killifishes, silversides and their relatives",
+                    "year": 1964,
+                    "authors": [
+                        {
+                            "name": "D. E. Rosen",
+                            "alternate": [
+                                "Rosen, D. E."
+                            ],
+                            "firstname": "D.",
+                            "lastname": "Rosen",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the American Museum of Natural History",
+                        "volume": "127",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
+                    "authors": [
+                        {
+                            "name": "T. J. Near",
+                            "alternate": [
+                                "Near, T. J."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "C. E. Thacker",
+                            "alternate": [
+                                "Thacker, C. E."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The least inclusive crown clade that contains Atherinella panamensis Steindachner 1875, Atherinopsis californiensis Girrard 1854, Atherina presbyter Cuvier 1829, and Atherion elymus Jordan and Starks 1901.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Atherinella panamensis Steindachner, 1875",
+                        "nameComplete": "Atherinella panamensis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

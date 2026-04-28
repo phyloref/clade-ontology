@@ -1,0 +1,165 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Spiny Tails and Clades: A Fully Sampled Phylogeny of Hoplocercine Lizards (Iguanidae: Hoplocercinae) and its Taxonomic and Nomenclatural Implications",
+                "year": 2023,
+                "authors": [
+                    {
+                        "name": "Omar Torres-Carvajal",
+                        "alternate": [
+                            "Torres-Carvajal, Omar"
+                        ],
+                        "firstname": "Omar",
+                        "lastname": "Torres-Carvajal"
+                    },
+                    {
+                        "name": "Fernanda P. Werneck",
+                        "alternate": [
+                            "Werneck, Fernanda P."
+                        ],
+                        "firstname": "Fernanda",
+                        "lastname": "Werneck",
+                        "middlename": "P."
+                    },
+                    {
+                        "name": "Igor Yuri Fernandes",
+                        "alternate": [
+                            "Fernandes, Igor Yuri"
+                        ],
+                        "firstname": "Igor",
+                        "lastname": "Fernandes",
+                        "middlename": "Yuri"
+                    },
+                    {
+                        "name": "Kevin de Queiroz",
+                        "alternate": [
+                            "de Queiroz, Kevin"
+                        ],
+                        "firstname": "Kevin",
+                        "lastname": "de Queiroz"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "https://doi.org/10.11646/bpn.1.1.2"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Bulletin of Phylogenetic Nomenclature",
+                    "volume": "1",
+                    "identifier": [
+                        {
+                            "type": "isbn",
+                            "id": "2815-9233 (print), 2815-9241 (online)"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 808,
+            "label": "Hoplocercus",
+            "dwc:scientificNameAuthorship": "Torres-Carvajal, Omar and Werneck, Fernanda P. and Fernandes, Igor Yuri and de Queiroz, Kevin",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Systema Reptilium",
+                    "year": 1843,
+                    "authors": [
+                        {
+                            "name": "Leopoldo Fitzinger",
+                            "alternate": [
+                                "Fitzinger, Leopoldo"
+                            ],
+                            "firstname": "Leopoldo",
+                            "lastname": "Fitzinger"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Braumüller et Seidel",
+                    "city": "Vindobonae",
+                    "pages": "106+vi",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Spiny Tails and Clades: A Fully Sampled Phylogeny of Hoplocercine Lizards (Iguanidae: Hoplocercinae) and its Taxonomic and Nomenclatural Implications",
+                    "year": 2023,
+                    "authors": [
+                        {
+                            "name": "Omar Torres-Carvajal",
+                            "alternate": [
+                                "Torres-Carvajal, Omar"
+                            ],
+                            "firstname": "Omar",
+                            "lastname": "Torres-Carvajal"
+                        },
+                        {
+                            "name": "Fernanda P. Werneck",
+                            "alternate": [
+                                "Werneck, Fernanda P."
+                            ],
+                            "firstname": "Fernanda",
+                            "lastname": "Werneck",
+                            "middlename": "P."
+                        },
+                        {
+                            "name": "Igor Yuri Fernandes",
+                            "alternate": [
+                                "Fernandes, Igor Yuri"
+                            ],
+                            "firstname": "Igor",
+                            "lastname": "Fernandes",
+                            "middlename": "Yuri"
+                        },
+                        {
+                            "name": "Kevin de Queiroz",
+                            "alternate": [
+                                "de Queiroz, Kevin"
+                            ],
+                            "firstname": "Kevin",
+                            "lastname": "de Queiroz"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "figure": "2",
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "https://doi.org/10.11646/bpn.1.1.2"
+                        }
+                    ],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of Phylogenetic Nomenclature",
+                        "volume": "1",
+                        "identifier": [
+                            {
+                                "type": "isbn",
+                                "id": "2815-9233 (print), 2815-9241 (online)"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "cladeDefinition": "The crown clade for which any of the following character states is an apomorphy relative to other crown clades: depressed (maximum width > height at same level as maximum width, spines excluded), short tail (tail length < snout-vent length) with enlarged spinous scales dorsally and laterally that are at least twice as large in area as ventral scales, as inherited by Hoplocercus spinosus Fitzinger 1843.",
+            "internalSpecifiers": [],
+            "externalSpecifiers": []
+        }
+    ]
+}

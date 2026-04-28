@@ -1,0 +1,159 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Phylogeny of the owlet-nightjars (Aves: Aegothelidae) based on mitochondrial DNA sequence",
+                "year": 2003,
+                "authors": [
+                    {
+                        "name": "John P. Dumbacher",
+                        "alternate": [
+                            "Dumbacher, John P."
+                        ],
+                        "firstname": "John",
+                        "lastname": "Dumbacher",
+                        "middlename": "P."
+                    },
+                    {
+                        "name": "Thane K. Pratt",
+                        "alternate": [
+                            "Pratt, Thane K."
+                        ],
+                        "firstname": "Thane",
+                        "lastname": "Pratt",
+                        "middlename": "K."
+                    },
+                    {
+                        "name": "Robert C. Fleischer",
+                        "alternate": [
+                            "Fleischer, Robert C."
+                        ],
+                        "firstname": "Robert",
+                        "lastname": "Fleischer",
+                        "middlename": "C."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1b",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/S1055-7903(03)00135-0"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "https://www.sciencedirect.com/science/article/pii/S1055790303001350"
+                    }
+                ],
+                "journal": {
+                    "name": "Molecular Phylogenetics and Evolution",
+                    "volume": "29",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 398,
+            "label": "Aegotheles",
+            "dwc:scientificNameAuthorship": "Chen, Albert and Field, Daniel J.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "A description of the Australian birds in the collection of the Linnean Society; with an attempt at arranging them according to their natural affinities",
+                    "year": 1827,
+                    "authors": [
+                        {
+                            "name": "Nicholas Aylward Vigors",
+                            "alternate": [
+                                "Vigors, Nicholas Aylward"
+                            ],
+                            "firstname": "Nicholas",
+                            "lastname": "Vigors",
+                            "middlename": "Aylward"
+                        },
+                        {
+                            "name": "Thomas Horsfield",
+                            "alternate": [
+                                "Horsfield, Thomas"
+                            ],
+                            "firstname": "Thomas",
+                            "lastname": "Horsfield"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Transactions of the Linnean Society of London",
+                        "volume": "15",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic definitions for Caprimulgimorphae (Aves) and major constituent clades under the International Code of Phylogenetic Nomenclature",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "Albert Chen",
+                            "alternate": [
+                                "Chen, Albert"
+                            ],
+                            "firstname": "Albert",
+                            "lastname": "Chen"
+                        },
+                        {
+                            "name": "Daniel J. Field",
+                            "alternate": [
+                                "Field, Daniel J."
+                            ],
+                            "firstname": "Daniel",
+                            "lastname": "Field",
+                            "middlename": "J."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.26049/VZ70-4-2020-03"
+                        }
+                    ],
+                    "link": [
+                        {
+                            "url": "https://www.senckenberg.de/de/wissenschaft/publikationen/wissenschaftliche-zeitschriften/vertebrate-zoology/archiv/vz-70-4-03/"
+                        }
+                    ],
+                    "journal": {
+                        "name": "Vertebrate Zoology",
+                        "volume": "70",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The smallest crown clade containing Aegotheles savesi Layard & Layard, 1881, Aegotheles insignis Salvadori, 1875, and Aegotheles (originally Caprimulgus) cristatus (Shaw, 1790).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Aegotheles savesi Layard and Layard, 1881",
+                        "nameComplete": "Aegotheles savesi"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

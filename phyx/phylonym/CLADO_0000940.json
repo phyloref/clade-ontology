@@ -1,0 +1,145 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Phylogenetic relationships among fishes in the Order Zeiformes based on molecular and morphological data",
+                "year": 2018,
+                "authors": [
+                    {
+                        "name": "T. C. Grande",
+                        "alternate": [
+                            "Grande, T. C."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Grande",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "W. C. Borden",
+                        "alternate": [
+                            "Borden, W. C."
+                        ],
+                        "firstname": "W.",
+                        "lastname": "Borden",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "M. V.H. Wilson",
+                        "alternate": [
+                            "Wilson, M. V.H."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Wilson",
+                        "middlename": "V.H."
+                    },
+                    {
+                        "name": "L. Scarpitta",
+                        "alternate": [
+                            "Scarpitta, L."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Scarpitta"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1643/CG-17-594"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Copeia",
+                    "volume": "106",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 940,
+            "label": "Zeiformes",
+            "dwc:scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "A classification of fish-like vertebrates",
+                    "year": 1937,
+                    "authors": [
+                        {
+                            "name": "L. S. Berg",
+                            "alternate": [
+                                "Berg, L. S."
+                            ],
+                            "firstname": "L.",
+                            "lastname": "Berg",
+                            "middlename": "S."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin de L’Acadèmie des Sciences de L’URSS, Classe des Sciences mathématiques et naturelles",
+                        "volume": "1937",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
+                    "authors": [
+                        {
+                            "name": "T. J. Near",
+                            "alternate": [
+                                "Near, T. J."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "C. E. Thacker",
+                            "alternate": [
+                                "Thacker, C. E."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The least inclusive crown clade that contains Zeus faber Linnaeus 1758, Cyttus australis (Richardson 1843), Cyttopsis rosea (Lowe 1843), and Macrurocyttus acanthopodus (Fowler 1933).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Zeus faber Linnaeus, 1758",
+                        "nameComplete": "Zeus faber"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

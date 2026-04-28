@@ -1,0 +1,77 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [],
+    "phylorefs": [
+        {
+            "regnumId": 985,
+            "label": "Proterochersidae",
+            "dwc:scientificNameAuthorship": "Szczygielski, Tomasz and Dróżdż, Dawid and Chanthasit, Phornphen and Manitkoon, Sita and Ditbanjong, Pitaksit",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Die Familien der Reptilien",
+                    "year": 1923,
+                    "authors": [
+                        {
+                            "name": "Franz Nopcsa",
+                            "alternate": [
+                                "Nopcsa, Franz"
+                            ],
+                            "firstname": "Franz",
+                            "lastname": "Nopcsa"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Verlag von Gebrüder Borntraeger",
+                    "city": "Berlin",
+                    "pages": "210",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The largest clade containing Proterochersis robusta Fraas, 1913 but not Proganochelys quenstedtii Baur, 1887, Australochelys africanus Gaffney and Kitching, 1994 and Testudines Batsch, 1788 sensu ITNC et al., 2020b.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Proterochersis robusta Fraas, 1913",
+                        "nameComplete": "Proterochersis robusta"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Proganochelys quenstedtii Baur, 1887",
+                        "nameComplete": "Proganochelys quenstedtii"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Australochelys africanus Gaffney and Kitching, 1994",
+                        "nameComplete": "Australochelys africanus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Testudines Batsch, 1788",
+                        "nameComplete": "Testudines"
+                    }
+                }
+            ]
+        }
+    ]
+}

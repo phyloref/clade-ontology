@@ -1,0 +1,126 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Prolonged morphological expansion of spiny-rayed fishes following the end-Cretaceous",
+                "year": 2022,
+                "authors": [
+                    {
+                        "name": "A. Ghezelayagh",
+                        "alternate": [
+                            "Ghezelayagh, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Ghezelayagh"
+                    },
+                    {
+                        "name": "et al.",
+                        "alternate": [
+                            "al., et"
+                        ],
+                        "firstname": "et",
+                        "lastname": "al."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "S12-S13",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1038/s41559-022-01801-3"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Nature Ecology & Evolution",
+                    "volume": "6",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 967,
+            "label": "Anabantoidei",
+            "dwc:scientificNameAuthorship": "Thacker, C. E. and Near, T. J.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Classification of fishes both Recent and fossil",
+                    "year": 1940,
+                    "authors": [
+                        {
+                            "name": "L. S. Berg",
+                            "alternate": [
+                                "Berg, L. S."
+                            ],
+                            "firstname": "L.",
+                            "lastname": "Berg",
+                            "middlename": "S."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Travaux de l'Institute de l'Academie des Sciences de l'URSS",
+                        "volume": "5",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
+                    "authors": [
+                        {
+                            "name": "T. J. Near",
+                            "alternate": [
+                                "Near, T. J."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "C. E. Thacker",
+                            "alternate": [
+                                "Thacker, C. E."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Nature Ecology & Evolution",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The least inclusive crown clade that contains Channa argus (Cantor 1842), Badis badis (Hamilton 1822), and Anabas testudineus (Bloch 1792).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Channa argus Cantor, 1842",
+                        "nameComplete": "Channa argus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

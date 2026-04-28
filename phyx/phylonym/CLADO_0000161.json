@@ -347,7 +347,7 @@
         {
             "regnumId": 161,
             "label": "Malvidae",
-            "dwc:scientificNameAuthorship": "Judd, W. S., Soltis, D. E., Soltis, P. S., Cantino, P. D.",
+            "dwc:scientificNameAuthorship": "Judd, W. S. and Soltis, D. E. and Soltis, P. S. and Cantino, P. D.",
             "dwc:namePublishedIn": [
                 {
                     "type": "article",
@@ -438,7 +438,86 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Malvidae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "W. S. Juss",
+                            "alternate": [
+                                "Juss, W. S."
+                            ],
+                            "firstname": "W.",
+                            "lastname": "Juss",
+                            "middlename": "S."
+                        },
+                        {
+                            "name": "D. E. Soltis",
+                            "alternate": [
+                                "Soltis, D. E."
+                            ],
+                            "firstname": "D.",
+                            "lastname": "Soltis",
+                            "middlename": "E."
+                        },
+                        {
+                            "name": "P. S. Soltis",
+                            "alternate": [
+                                "Soltis, P. S."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Soltis",
+                            "middlename": "S."
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "331-334",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The largest crown clade containing Malva sylvestris L. 1753 (Malvales) but not Vicia faba L. 1753 (Fabidae).",
             "internalSpecifiers": [
                 {
@@ -451,17 +530,7 @@
                     }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Vicia faba Linnaeus, 1753",
-                        "nameComplete": "Vicia faba"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

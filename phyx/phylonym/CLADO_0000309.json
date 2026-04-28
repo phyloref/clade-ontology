@@ -1,0 +1,163 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Interrogating genomic-scale data for Squamata (lizards, snakes, and amphisbaenians) shows no support for key traditional morphological relationships.",
+                "year": 2020,
+                "edition": "69",
+                "authors": [
+                    {
+                        "name": "F. T. Burbrink",
+                        "alternate": [
+                            "Burbrink, F. T."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Burbrink",
+                        "middlename": "T."
+                    },
+                    {
+                        "name": "F. G. Grazziotin",
+                        "alternate": [
+                            "Grazziotin, F. G."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Grazziotin",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "R. A. Pyron",
+                        "alternate": [
+                            "Pyron, R. A."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Pyron",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "D. Cundall",
+                        "alternate": [
+                            "Cundall, D."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Cundall"
+                    },
+                    {
+                        "name": "S. Donnellan",
+                        "alternate": [
+                            "Donnellan, S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Donnellan"
+                    },
+                    {
+                        "name": "F. Irish",
+                        "alternate": [
+                            "Irish, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Irish"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "S7",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1093/sysbio/syz062"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Systematic Biology",
+                    "volume": "3",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 309,
+            "label": "Constrictores",
+            "dwc:scientificNameAuthorship": "Georgalis, G. L. and Smith, K. T.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book_section",
+                    "title": "Suite du 1er. memoire sur la classification des reptiles. Ord. II. Squammata mihi",
+                    "section_title": "Sect. II. Ophidii. Ord. III. Ophidii.",
+                    "year": 1811,
+                    "edition": "16",
+                    "authors": [
+                        {
+                            "name": "M. Oppel",
+                            "alternate": [
+                                "Oppel, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Oppel"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Annales du Museum d'histoire Naturelle",
+                    "city": "Paris",
+                    "pages": "376-393",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Constrictores Oppel, 1811 - the available name for the taxonomic group uniting boas and pythons",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "G. L. Georgalis",
+                            "alternate": [
+                                "Georgalis, G. L."
+                            ],
+                            "firstname": "G.",
+                            "lastname": "Georgalis",
+                            "middlename": "L."
+                        },
+                        {
+                            "name": "K. T. Smith",
+                            "alternate": [
+                                "Smith, K. T."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "Smith",
+                            "middlename": "T."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Vertebrate Zoology",
+                        "volume": "70",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The crown clade originating in the last common ancestor of Boa constrictor Linnaeus, 1758, and Python (originally Boa) regius (Shaw, 1802), provided that neither internal specifier is more closely related to any of the following species than to each other: Typhlops lumbricalis (Linnaeus, 1758), Leptotyphlops nigricans (Schlegel, 1837–1844), Anomalepis mexicanus Jan, 1860, Anilius scytale (Linnaeus, 1758), Uropeltis ceylanicus Cuvier, 1829, Cylindrophis ruffus (Laurenti, 1768), and Coluber constrictor Linnaeus, 1758.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Boa constrictor Linnaeus, 1758",
+                        "nameComplete": "Boa constrictor"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

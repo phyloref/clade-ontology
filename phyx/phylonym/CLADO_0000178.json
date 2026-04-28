@@ -2,84 +2,6 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
     "phylogenies": [
         {
-            "primaryPhylogenyCitation": {
-                "type": "book_section",
-                "title": "In Proc. 12th Int. Symp. Trichoptera",
-                "section_title": "An update on the phylogeny of caddisflies (Trichoptera).",
-                "authors": [
-                    {
-                        "name": "R. W.  Holzenthal",
-                        "alternate": [
-                            "Holzenthal , R. W."
-                        ],
-                        "firstname": "R.",
-                        "lastname": "Holzenthal",
-                        "middlename": "W."
-                    },
-                    {
-                        "name": "R. J. Blahnik",
-                        "alternate": [
-                            "Blahnik, R. J."
-                        ],
-                        "firstname": "R.",
-                        "lastname": "Blahnik",
-                        "middlename": "J."
-                    },
-                    {
-                        "name": "K. M. Kjer",
-                        "alternate": [
-                            "Kjer, K. M."
-                        ],
-                        "firstname": "K.",
-                        "lastname": "Kjer",
-                        "middlename": "M."
-                    },
-                    {
-                        "name": "A. P. Prather",
-                        "alternate": [
-                            "Prather, A. P."
-                        ],
-                        "firstname": "A.",
-                        "lastname": "Prather",
-                        "middlename": "P."
-                    }
-                ],
-                "editors": [
-                    {
-                        "name": "J. Bueno-Soria",
-                        "alternate": [
-                            "Bueno-Soria, J."
-                        ],
-                        "firstname": "J.",
-                        "lastname": "Bueno-Soria"
-                    },
-                    {
-                        "name": "R. Barba-Alvarez",
-                        "alternate": [
-                            "Barba-Alvarez, R."
-                        ],
-                        "firstname": "R.",
-                        "lastname": "Barba-Alvarez"
-                    },
-                    {
-                        "name": "B. Armitage",
-                        "alternate": [
-                            "Armitage, B."
-                        ],
-                        "firstname": "B.",
-                        "lastname": "Armitage"
-                    }
-                ],
-                "series_editors": [],
-                "publisher": "The Caddis Press",
-                "city": "Columbus, OH",
-                "pages": "143-153",
-                "figure": "1-10",
-                "identifier": [],
-                "link": []
-            }
-        },
-        {
             "phylogenyCitation": {
                 "type": "article",
                 "title": "Phylogeny of Trichoptera (caddisflies): Characterization of signal and noise within multiple datasets.",
@@ -180,13 +102,91 @@
                     "identifier": []
                 }
             }
+        },
+        {
+            "primaryPhylogenyCitation": {
+                "type": "book_section",
+                "title": "In Proc. 12th Int. Symp. Trichoptera",
+                "section_title": "An update on the phylogeny of caddisflies (Trichoptera).",
+                "authors": [
+                    {
+                        "name": "R. W.  Holzenthal",
+                        "alternate": [
+                            "Holzenthal , R. W."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Holzenthal",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "R. J. Blahnik",
+                        "alternate": [
+                            "Blahnik, R. J."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Blahnik",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "K. M. Kjer",
+                        "alternate": [
+                            "Kjer, K. M."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Kjer",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "A. P. Prather",
+                        "alternate": [
+                            "Prather, A. P."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Prather",
+                        "middlename": "P."
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "J. Bueno-Soria",
+                        "alternate": [
+                            "Bueno-Soria, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Bueno-Soria"
+                    },
+                    {
+                        "name": "R. Barba-Alvarez",
+                        "alternate": [
+                            "Barba-Alvarez, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Barba-Alvarez"
+                    },
+                    {
+                        "name": "B. Armitage",
+                        "alternate": [
+                            "Armitage, B."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Armitage"
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "The Caddis Press",
+                "city": "Columbus, OH",
+                "pages": "143-153",
+                "figure": "1-10",
+                "identifier": [],
+                "link": []
+            }
         }
     ],
     "phylorefs": [
         {
             "regnumId": 178,
             "label": "Trichoptera",
-            "dwc:scientificNameAuthorship": "Holzenthal, R. W., Kjer, K. M.",
+            "dwc:scientificNameAuthorship": "Holzenthal, R. W. and Kjer, K. M.",
             "dwc:namePublishedIn": [
                 {
                     "type": "article",
@@ -213,7 +213,68 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Trichoptera",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "R. W. Holzenthal",
+                            "alternate": [
+                                "Holzenthal, R. W."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Holzenthal",
+                            "middlename": "W."
+                        },
+                        {
+                            "name": "K. M. Kjer",
+                            "alternate": [
+                                "Kjer, K. M."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "Kjer",
+                            "middlename": "M."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "601-604",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The crown clade originating in the most recent common ancestor of Phyrganea grandis Linnaeus 1758 (Integripalpia, Plenitentoria [=Limnephiloidea], Phryganeidae) and all extant species that inherited both apneustic aquatic larval stages and the prelabio-hypopharyngeal lobe forming a “haustellum” in adults synapomorphic with those in P. grandis Linnaeus.",
             "internalSpecifiers": [],
             "externalSpecifiers": []

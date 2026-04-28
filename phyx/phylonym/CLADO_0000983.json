@@ -1,0 +1,125 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "The impact of paleoclimatic changes on body size evolution in marine fishes",
+                "year": 2022,
+                "authors": [
+                    {
+                        "name": "E. M. Troyer",
+                        "alternate": [
+                            "Troyer, E. M."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Troyer",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "et al.",
+                        "alternate": [
+                            "et al.,"
+                        ],
+                        "lastname": "et al."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "S2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1073/pnas.2122486119"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Proceedings of the National Academy of Sciences",
+                    "volume": "119",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 983,
+            "label": "Tetraodontoidei",
+            "dwc:scientificNameAuthorship": "Near, Thomas J. and Thacker, Christine E.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Systema Balistidorum, Ostracionidorum, Gymnodontidorumque revisum",
+                    "year": 1865,
+                    "authors": [
+                        {
+                            "name": "P. Bleeker",
+                            "alternate": [
+                                "Bleeker, P."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Bleeker"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Nederlandsch Tijdschrift voor de Dierkunde",
+                        "volume": "3",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
+                    "authors": [
+                        {
+                            "name": "Thomas J. Near",
+                            "alternate": [
+                                "Near, Thomas J."
+                            ],
+                            "firstname": "Thomas",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "Christine E. Thacker",
+                            "alternate": [
+                                "Thacker, Christine E."
+                            ],
+                            "firstname": "Christine",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The least inclusive crown clade that contains Mola mola (Linnaeus 1758), Takifugu rubripes (Temminck and Schlegel 1850), Ostracion cubicus Linnaeus 1758, and Balistes vetula Linnaeus 1758.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Mola mola Linnaeus, 1758",
+                        "nameComplete": "Mola mola"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

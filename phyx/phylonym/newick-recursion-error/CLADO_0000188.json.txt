@@ -294,6 +294,66 @@
         {
             "phylogenyCitation": {
                 "type": "article",
+                "title": "Error, signal, and the placement of Ctenophora sister to all other animals.",
+                "year": 2015,
+                "authors": [
+                    {
+                        "name": "N. V. Whelan",
+                        "alternate": [
+                            "Whelan, N. V."
+                        ],
+                        "firstname": "N.",
+                        "lastname": "Whelan",
+                        "middlename": "V."
+                    },
+                    {
+                        "name": "K. M. Kocot",
+                        "alternate": [
+                            "Kocot, K. M."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Kocot",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "L. L. Moroz",
+                        "alternate": [
+                            "Moroz, L. L."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Moroz",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "K. M. Halanych",
+                        "alternate": [
+                            "Halanych, K. M."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Halanych",
+                        "middlename": "M."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1073/pnas.1503453112"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Proceedings of the National Academy of Science U. S. A.",
+                    "volume": "112",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
                 "title": "The genome of the ctenophore Mnemiopsis leidyi and its implications for cell type evolution.",
                 "year": 2013,
                 "authors": [
@@ -388,73 +448,13 @@
                     "identifier": []
                 }
             }
-        },
-        {
-            "phylogenyCitation": {
-                "type": "article",
-                "title": "Error, signal, and the placement of Ctenophora sister to all other animals.",
-                "year": 2015,
-                "authors": [
-                    {
-                        "name": "N. V. Whelan",
-                        "alternate": [
-                            "Whelan, N. V."
-                        ],
-                        "firstname": "N.",
-                        "lastname": "Whelan",
-                        "middlename": "V."
-                    },
-                    {
-                        "name": "K. M. Kocot",
-                        "alternate": [
-                            "Kocot, K. M."
-                        ],
-                        "firstname": "K.",
-                        "lastname": "Kocot",
-                        "middlename": "M."
-                    },
-                    {
-                        "name": "L. L. Moroz",
-                        "alternate": [
-                            "Moroz, L. L."
-                        ],
-                        "firstname": "L.",
-                        "lastname": "Moroz",
-                        "middlename": "L."
-                    },
-                    {
-                        "name": "K. M. Halanych",
-                        "alternate": [
-                            "Halanych, K. M."
-                        ],
-                        "firstname": "K.",
-                        "lastname": "Halanych",
-                        "middlename": "M."
-                    }
-                ],
-                "editors": [],
-                "series_editors": [],
-                "figure": "3",
-                "identifier": [
-                    {
-                        "type": "doi",
-                        "id": "10.1073/pnas.1503453112"
-                    }
-                ],
-                "link": [],
-                "journal": {
-                    "name": "Proceedings of the National Academy of Science U. S. A.",
-                    "volume": "112",
-                    "identifier": []
-                }
-            }
         }
     ],
     "phylorefs": [
         {
             "regnumId": 188,
             "label": "Bilateria",
-            "dwc:scientificNameAuthorship": "Lake, J. A., Garey, J. R., Servin, J. A., Halanych, K. M.",
+            "dwc:scientificNameAuthorship": "Lake, J. A. and Garey, J. R. and Servin, J. A. and Halanych, K. M.",
             "dwc:namePublishedIn": [
                 {
                     "type": "book",
@@ -479,7 +479,86 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Bilateria",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "J. A. Lake",
+                            "alternate": [
+                                "Lake, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Lake",
+                            "middlename": "A."
+                        },
+                        {
+                            "name": "J. R. Garey",
+                            "alternate": [
+                                "Garey, J. R."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Garey",
+                            "middlename": "R."
+                        },
+                        {
+                            "name": "J. A. Servin",
+                            "alternate": [
+                                "Servin, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Servin",
+                            "middlename": "A."
+                        },
+                        {
+                            "name": "K. M. Halanych",
+                            "alternate": [
+                                "Halanych, K. M."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "Halanych",
+                            "middlename": "M."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "493-495",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The largest crown clade containing Strongylocentrotus purpuratus (Stimpson 1857) (Deuterostomia, Echinodermata), Drosophila melanogaster Meigen 1830 (Ecdysozoa, Arthropoda), Capitella teleta Blake, Grassle & Eckelbarger 2009 (Lophotrochozoa, Annelida), and Paratomella rubra Rieger & Ott 1971 (Acoelomorpha, Acoela), but not Hydra vulgaris Pallas 1766 (Cnidaria) and Pleurobrachia bachei A. Agassiz 1860 (Ctenophora).",
             "internalSpecifiers": [
                 {
@@ -487,58 +566,12 @@
                     "hasName": {
                         "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Strongylocentrotus purpuratus 1857",
+                        "label": "Strongylocentrotus purpuratus Stimpson, 1857",
                         "nameComplete": "Strongylocentrotus purpuratus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Drosophila melanogaster 1830",
-                        "nameComplete": "Drosophila melanogaster"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Capitella teleta 2009",
-                        "nameComplete": "Capitella teleta"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Paratomella rubra 1971",
-                        "nameComplete": "Paratomella rubra"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Pleurobrachia bachei 1860",
-                        "nameComplete": "Pleurobrachia bachei"
                     }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Hydra vulgaris 1766",
-                        "nameComplete": "Hydra vulgaris"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

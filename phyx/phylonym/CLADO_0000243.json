@@ -81,7 +81,59 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Echinodermata",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "C. D. Sumrall",
+                            "alternate": [
+                                "Sumrall, C. D."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Sumrall",
+                            "middlename": "D."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "645-647",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The crown clade originating in the most recent common ancestor of Asterias forbesi (Desor 1848) (Asteroidea), Ophioderma brevispinum (Say 1825) (Ophiuroidea), Strongylocentrotus purpuratus (Stimpson 1857) (Echinoidea), Cucumaria miniata (Brandt 1835) (Holothuroidea), Metacrinus rotundus Carpenter 1885 (Crinoidea) and Xyloplax janetae Mah 2006 (Concentricycloidea).",
             "internalSpecifiers": [
                 {
@@ -90,71 +142,8 @@
                         "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Asterias forbesi Desor, 1848",
-                        "nameComplete": "Asterias forbesi",
-                        "genusPart": "Asterias",
-                        "specificEpithet": "forbesi"
-                    },
-                    "label": "Asterias forbesi 1848"
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Ophioderma brevispinum Say, 1825",
-                        "nameComplete": "Ophioderma brevispinum",
-                        "genusPart": "Ophioderma",
-                        "specificEpithet": "brevispinum"
-                    },
-                    "label": "Ophioderma brevispinum 1825"
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Strongylocentrotus purpuratus Stimpson, 1857",
-                        "nameComplete": "Strongylocentrotus purpuratus",
-                        "genusPart": "Strongylocentrotus",
-                        "specificEpithet": "purpuratus"
-                    },
-                    "label": "Strongylocentrotus purpuratus 1857"
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Cucumaria miniata Brandt, 1835",
-                        "nameComplete": "Cucumaria miniata",
-                        "genusPart": "Cucumaria",
-                        "specificEpithet": "miniata"
-                    },
-                    "label": "Cucumaria miniata 1835"
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Metacrinus rotundus Carpenter, 1885",
-                        "nameComplete": "Metacrinus rotundus",
-                        "genusPart": "Metacrinus",
-                        "specificEpithet": "rotundus"
-                    },
-                    "label": "Metacrinus rotundus 1885"
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Xyloplax janetae Mah, 2006",
-                        "nameComplete": "Xyloplax janetae",
-                        "genusPart": "Xyloplax",
-                        "specificEpithet": "janetae"
-                    },
-                    "label": "Xyloplax janetae 2006"
+                        "nameComplete": "Asterias forbesi"
+                    }
                 }
             ],
             "externalSpecifiers": []

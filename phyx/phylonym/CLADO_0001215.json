@@ -1,0 +1,170 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "The systematics and nomenclature of Tethysuchia (Archosauria, Crocodylomorpha) under the International Code of Phylogenetic Nomenclature",
+                "authors": [
+                    {
+                        "name": "Stéphane Jouve",
+                        "alternate": [
+                            "Jouve, Stéphane"
+                        ],
+                        "firstname": "Stéphane",
+                        "lastname": "Jouve"
+                    },
+                    {
+                        "name": "Mark T. Young",
+                        "alternate": [
+                            "Young, Mark T."
+                        ],
+                        "firstname": "Mark",
+                        "lastname": "Young",
+                        "middlename": "T."
+                    },
+                    {
+                        "name": "Alexander K. Hastings",
+                        "alternate": [
+                            "Hastings, Alexander K."
+                        ],
+                        "firstname": "Alexander",
+                        "lastname": "Hastings",
+                        "middlename": "K."
+                    },
+                    {
+                        "name": "Khalafallah Salih",
+                        "alternate": [
+                            "Salih, Khalafallah"
+                        ],
+                        "firstname": "Khalafallah",
+                        "lastname": "Salih"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Zoological Journal of the Linnean Society",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 1215,
+            "label": "Phosphatosaurinae",
+            "dwc:scientificNameAuthorship": "Jouve, Stéphane and Young, Mark T. and Hastings, Alexander K. and Salih, Khalafallah",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Les crocodiliens paléogènes du Tilemsi (Mali): un aperçu systématique",
+                    "year": 1980,
+                    "authors": [
+                        {
+                            "name": "Eric Buffetaut",
+                            "alternate": [
+                                "Buffetaut, Eric"
+                            ],
+                            "firstname": "Eric",
+                            "lastname": "Buffetaut"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Palaeovertebrata",
+                        "volume": "1980",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "The systematics and nomenclature of Tethysuchia (Archosauria, Crocodylomorpha) under the International Code of Phylogenetic Nomenclature",
+                    "authors": [
+                        {
+                            "name": "Stéphane Jouve",
+                            "alternate": [
+                                "Jouve, Stéphane"
+                            ],
+                            "firstname": "Stéphane",
+                            "lastname": "Jouve"
+                        },
+                        {
+                            "name": "Mark T. Young",
+                            "alternate": [
+                                "Young, Mark T."
+                            ],
+                            "firstname": "Mark",
+                            "lastname": "Young",
+                            "middlename": "T."
+                        },
+                        {
+                            "name": "Alexander K. Hastings",
+                            "alternate": [
+                                "Hastings, Alexander K."
+                            ],
+                            "firstname": "Alexander",
+                            "lastname": "Hastings",
+                            "middlename": "K."
+                        },
+                        {
+                            "name": "Khalafallah Salih",
+                            "alternate": [
+                                "Salih, Khalafallah"
+                            ],
+                            "firstname": "Khalafallah",
+                            "lastname": "Salih"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Zoological Journal of the Linnean Society",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "Phosphatosaurinae is the largest clade within Dyrosauridae containing Phosphatosaurus gavialoides Bergounioux 1955, but not Dyrosaurus phosphaticus (Thomas 1893) and Rhabdognathus aslerensis Jouve 2007.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Phosphatosaurus gavialoides Bergounioux, 1955",
+                        "nameComplete": "Phosphatosaurus gavialoides"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Dyrosaurus phosphaticus Thomas, 1893",
+                        "nameComplete": "Dyrosaurus phosphaticus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Rhabdognathus aslerensis Jouve, 2007",
+                        "nameComplete": "Rhabdognathus aslerensis"
+                    }
+                }
+            ]
+        }
+    ]
+}

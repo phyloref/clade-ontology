@@ -1,0 +1,118 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Testing a time hypothesis in the biogeography of the arowana genus Scleropages (Osteoglossidae)",
+                "year": 2015,
+                "authors": [
+                    {
+                        "name": "S. Lavoué",
+                        "alternate": [
+                            "Lavoué, S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Lavoué"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/jbi.12585"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Biogeography",
+                    "volume": "42",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 897,
+            "label": "Osteoglossidae",
+            "dwc:scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Specchio generale del sistema ittiologico",
+                    "year": 1845,
+                    "authors": [
+                        {
+                            "name": "C. L. Bonaparte",
+                            "alternate": [
+                                "Bonaparte, C. L."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Bonaparte",
+                            "middlename": "L."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Atti della sesta Riunione degli Scienziati Italiani",
+                        "volume": "6",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogeny and classification of Actinopterygii",
+                    "authors": [
+                        {
+                            "name": "Thomas J. Near",
+                            "alternate": [
+                                "Near, Thomas J."
+                            ],
+                            "firstname": "Thomas",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "Christine E. Thacker",
+                            "alternate": [
+                                "Thacker, Christine E."
+                            ],
+                            "firstname": "Christine",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The least inclusive crown clade that contains Osteoglossum bicirrhosum (Cuvier 1829) and Heterotis niloticus (Cuvier 1829), but not Pantodon buchholzi Peters 1876.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Osteoglossum bicirrhosum Cuvier, 1829",
+                        "nameComplete": "Osteoglossum bicirrhosum"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

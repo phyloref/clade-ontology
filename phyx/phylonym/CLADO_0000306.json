@@ -1,0 +1,217 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "book_section",
+                "title": "The Late Cretaceous pterosaur Quetzalcoatlus Lawson 1975 (Pterodactyloidea: Azhdarchoidea)",
+                "section_title": "Phylogenetic systematics of Quetzalcoatlus (Pterosauria: Azhdarchidae)",
+                "year": 2021,
+                "authors": [
+                    {
+                        "name": "Brian Andres",
+                        "alternate": [
+                            "Andres, Brian"
+                        ],
+                        "firstname": "Brian",
+                        "lastname": "Andres"
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "Kevin Padian",
+                        "alternate": [
+                            "Padian, Kevin"
+                        ],
+                        "firstname": "Kevin",
+                        "lastname": "Padian"
+                    },
+                    {
+                        "name": "Matthew Brown",
+                        "alternate": [
+                            "Brown, Matthew"
+                        ],
+                        "firstname": "Matthew",
+                        "lastname": "Brown"
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "Society of Vertebrate Paleontology",
+                "city": "McLean, VA",
+                "pages": "203–217",
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1080/02724634.2020.1801703"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "https://www.tandfonline.com/doi/full/10.1080/02724634.2020.1801703"
+                    }
+                ]
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "The Earliest Pterodactyloid and the Origin of the Group",
+                "year": 2014,
+                "authors": [
+                    {
+                        "name": "Brian Andres",
+                        "alternate": [
+                            "Andres, Brian"
+                        ],
+                        "firstname": "Brian",
+                        "lastname": "Andres"
+                    },
+                    {
+                        "name": "James M Clark",
+                        "alternate": [
+                            "Clark, James M"
+                        ],
+                        "firstname": "James",
+                        "lastname": "Clark",
+                        "middlename": "M"
+                    },
+                    {
+                        "name": "Xing Xu",
+                        "alternate": [
+                            "Xu, Xing"
+                        ],
+                        "firstname": "Xing",
+                        "lastname": "Xu"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.cub.2014.03.030"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "http://www.sciencedirect.com/science/article/pii/S0960982214003224"
+                    }
+                ],
+                "journal": {
+                    "name": "Current Biology",
+                    "volume": "24",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 306,
+            "label": "Preondactylia",
+            "dwc:scientificNameAuthorship": "Andres, Brian",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "The Earliest Pterodactyloid and the Origin of the Group",
+                    "year": 2014,
+                    "authors": [
+                        {
+                            "name": "Andres Brian",
+                            "alternate": [
+                                "Brian, Andres"
+                            ],
+                            "firstname": "Andres",
+                            "lastname": "Brian"
+                        },
+                        {
+                            "name": "James M Clark",
+                            "alternate": [
+                                "Clark, James M"
+                            ],
+                            "firstname": "James",
+                            "lastname": "Clark",
+                            "middlename": "M"
+                        },
+                        {
+                            "name": "Xing Xu",
+                            "alternate": [
+                                "Xu, Xing"
+                            ],
+                            "firstname": "Xing",
+                            "lastname": "Xu"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "figure": "3",
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.1016/j.cub.2014.03.030"
+                        }
+                    ],
+                    "link": [
+                        {
+                            "url": "http://www.sciencedirect.com/science/article/pii/S0960982214003224"
+                        }
+                    ],
+                    "journal": {
+                        "name": "Current Biology",
+                        "volume": "24",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic Taxonomy of the Pterosauria",
+                    "authors": [
+                        {
+                            "name": "Andres Andres",
+                            "alternate": [
+                                "Andres, Andres"
+                            ],
+                            "firstname": "Andres",
+                            "lastname": "Andres"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "figure": "1",
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of Phylogenetic Taxonomy",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "Least inclusive clade containing Preondactylus buffarinii Wild 1984 and Austriadactylus cristatus Dalla Vecchia et al. 2002.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Preondactylus buffarinii Wild, 1984",
+                        "nameComplete": "Preondactylus buffarinii"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Austriadactylus cristatus Dalla Vecchia and Wild and Hopf and Reitner, 2002",
+                        "nameComplete": "Austriadactylus cristatus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

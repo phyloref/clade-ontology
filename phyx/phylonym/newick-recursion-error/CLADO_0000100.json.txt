@@ -301,7 +301,7 @@
         {
             "regnumId": 100,
             "label": "Spermatophyta",
-            "dwc:scientificNameAuthorship": "Cantino, P. D., Doyle, J. A., Donoghue, M. J.",
+            "dwc:scientificNameAuthorship": "Cantino, P. D. and Doyle, J. A. and Donoghue, M. J.",
             "dwc:namePublishedIn": [
                 {
                     "type": "book",
@@ -334,7 +334,77 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Spermatophyta",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Doyle",
+                            "alternate": [
+                                "Doyle, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Doyle",
+                            "middlename": "A."
+                        },
+                        {
+                            "name": "M. J. Donoghue",
+                            "alternate": [
+                                "Donoghue, M. J."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Donoghue",
+                            "middlename": "J."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "259-261",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The smallest crown clade containing Magnolia tripetala (Linnaeus) Linnaeus 1759 (Angiospermae), Podocarpus macrophyllus (Thunberg) Sweet 1818 (Coniferae/Cupressophyta), Ginkgo biloba Linnaeus 1771, Cycas revoluta Thunberg 1782 (Cycadophyta), and Gnetum gnemon Linnaeus 1767 (Gnetophyta).",
             "internalSpecifiers": [
                 {
@@ -342,44 +412,8 @@
                     "hasName": {
                         "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Magnolia tripetala 1759",
+                        "label": "Magnolia tripetala Linnaeus, 1759",
                         "nameComplete": "Magnolia tripetala"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Podocarpus macrophyllus 1818",
-                        "nameComplete": "Podocarpus macrophyllus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Ginkgo biloba 1771",
-                        "nameComplete": "Ginkgo biloba"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Cycas revoluta 1782",
-                        "nameComplete": "Cycas revoluta"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Gnetum gnemon 1767",
-                        "nameComplete": "Gnetum gnemon"
                     }
                 }
             ],

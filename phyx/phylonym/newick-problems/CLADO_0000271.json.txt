@@ -48,7 +48,7 @@
         {
             "regnumId": 271,
             "label": "Pinnipedia",
-            "dwc:scientificNameAuthorship": "Wolsan, M., Wyss, A. R., Berta, A., Flynn, J. J.",
+            "dwc:scientificNameAuthorship": "Wolsan, M. and Wyss, A. R. and Berta, A. and Flynn, J. J.",
             "dwc:namePublishedIn": [
                 {
                     "type": "book",
@@ -72,7 +72,84 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Pinnipedia",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "M. Wolsan",
+                            "alternate": [
+                                "Wolsan, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Wolsan"
+                        },
+                        {
+                            "name": "A. R. Wyss",
+                            "alternate": [
+                                "Wyss, A. R."
+                            ],
+                            "firstname": "A.",
+                            "lastname": "Wyss",
+                            "middlename": "R."
+                        },
+                        {
+                            "name": "A. Berta",
+                            "alternate": [
+                                "Berta, A."
+                            ],
+                            "firstname": "A.",
+                            "lastname": "Berta"
+                        },
+                        {
+                            "name": "J. J. Flynn",
+                            "alternate": [
+                                "Flynn, J. J."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Flynn",
+                            "middlename": "J."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "1019-1024",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The smallest crown clade containing Phoca vitulina Linnaeus 1758 (Phocidae), Odobenus rosmarus (Linnaeus 1758), and Otaria byronia (de Blainville 1820) (Otariidae).",
             "internalSpecifiers": [
                 {
@@ -80,26 +157,8 @@
                     "hasName": {
                         "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Phoca vitulina 1758",
+                        "label": "Phoca vitulina Linnaeus, 1758",
                         "nameComplete": "Phoca vitulina"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Odobenus rosmarus 1758",
-                        "nameComplete": "Odobenus rosmarus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Otaria byronia 1820",
-                        "nameComplete": "Otaria byronia"
                     }
                 }
             ],

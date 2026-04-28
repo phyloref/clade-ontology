@@ -1,0 +1,157 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Phylogenetic analysis shows the general diversification pattern of deep-sea notacanthiforms (Teleostei: Elopomorpha)",
+                "year": 2018,
+                "authors": [
+                    {
+                        "name": "D. Barros-García",
+                        "alternate": [
+                            "Barros-García, D."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Barros-García"
+                    },
+                    {
+                        "name": "E. Froufe",
+                        "alternate": [
+                            "Froufe, E."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Froufe"
+                    },
+                    {
+                        "name": "R. Bañón",
+                        "alternate": [
+                            "Bañón, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Bañón"
+                    },
+                    {
+                        "name": "J. Carlos Arronte",
+                        "alternate": [
+                            "Carlos Arronte, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Carlos Arronte"
+                    },
+                    {
+                        "name": "A. de Carlos",
+                        "alternate": [
+                            "de Carlos, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "de Carlos"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2018.03.007"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Phylogenetics and Evolution",
+                    "volume": "124",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 886,
+            "label": "Notacanthiformes",
+            "dwc:scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book_section",
+                    "title": "A treatise on zoology, 9",
+                    "section_title": "Vertebrata Craniata. (First fascicle: cyclostomes and fishes)",
+                    "year": 1909,
+                    "authors": [
+                        {
+                            "name": "E. S. Goodrich",
+                            "alternate": [
+                                "Goodrich, E. S."
+                            ],
+                            "firstname": "E.",
+                            "lastname": "Goodrich",
+                            "middlename": "S."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "R. Lankester",
+                            "alternate": [
+                                "Lankester, R."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Lankester"
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "A. & C. Black",
+                    "city": "London",
+                    "pages": "416",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogeny and classification of Actinopterygii",
+                    "authors": [
+                        {
+                            "name": "Thomas J. Near",
+                            "alternate": [
+                                "Near, Thomas J."
+                            ],
+                            "firstname": "Thomas",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "Christine E. Thacker",
+                            "alternate": [
+                                "Thacker, Christine E."
+                            ],
+                            "firstname": "Christine",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The least inclusive crown clade that contains Notacanthus chemnitzii Bloch 1788 and Halosaurus ovenii Johnson 1863.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Notacanthus chemnitzii Bloch, 1788",
+                        "nameComplete": "Notacanthus chemnitzii"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

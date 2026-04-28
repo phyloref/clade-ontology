@@ -1,0 +1,175 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A basal iguanodontian (Ornithischia: Ornithopoda) from the Late Cretaceous of South America",
+                "year": 1996,
+                "authors": [
+                    {
+                        "name": "R. A. Coria",
+                        "alternate": [
+                            "Coria, R. A."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Coria",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "L. Salgado",
+                        "alternate": [
+                            "Salgado, L."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Salgado"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "13",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Vertebrate Paleontology",
+                    "volume": "16",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 612,
+            "label": "Euiguanodontia",
+            "dwc:scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "A basal iguanodontian (Ornithischia: Ornithopoda) from the Late Cretaceous of South America",
+                    "year": 1996,
+                    "authors": [
+                        {
+                            "name": "R. A. Coria",
+                            "alternate": [
+                                "Coria, R. A."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Coria",
+                            "middlename": "A."
+                        },
+                        {
+                            "name": "L. Salgado",
+                            "alternate": [
+                                "Salgado, L."
+                            ],
+                            "firstname": "L.",
+                            "lastname": "Salgado"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Journal of Vertebrate Paleontology",
+                        "volume": "16",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
+                    "year": 2021,
+                    "authors": [
+                        {
+                            "name": "Daniel Madzia",
+                            "alternate": [
+                                "Madzia, Daniel"
+                            ],
+                            "firstname": "Daniel",
+                            "lastname": "Madzia"
+                        },
+                        {
+                            "name": "Victoria M. Arbour",
+                            "alternate": [
+                                "Arbour, Victoria M."
+                            ],
+                            "firstname": "Victoria",
+                            "lastname": "Arbour",
+                            "middlename": "M."
+                        },
+                        {
+                            "name": "Clint A. Boyd",
+                            "alternate": [
+                                "Boyd, Clint A."
+                            ],
+                            "firstname": "Clint",
+                            "lastname": "Boyd",
+                            "middlename": "A."
+                        },
+                        {
+                            "name": "Andrew A. Farke",
+                            "alternate": [
+                                "Farke, Andrew A."
+                            ],
+                            "firstname": "Andrew",
+                            "lastname": "Farke",
+                            "middlename": "A."
+                        },
+                        {
+                            "name": "Penélope Cruzado-Caballero",
+                            "alternate": [
+                                "Cruzado-Caballero, Penélope"
+                            ],
+                            "firstname": "Penélope",
+                            "lastname": "Cruzado-Caballero"
+                        },
+                        {
+                            "name": "David C. Evans",
+                            "alternate": [
+                                "Evans, David C."
+                            ],
+                            "firstname": "David",
+                            "lastname": "Evans",
+                            "middlename": "C."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.7717/peerj.12362"
+                        }
+                    ],
+                    "link": [
+                        {
+                            "url": "https://doi.org/10.7717/peerj.12362"
+                        }
+                    ],
+                    "journal": {
+                        "name": "PeerJ",
+                        "volume": "9",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The smallest clade containing Camptosaurus dispar (Marsh, 1879), Dryosaurus altus (Marsh, 1878), and Gasparinisaura cincosaltensis Coria & Salgado, 1996, provided that it does not include Tenontosaurus tilletti Ostrom, 1970.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Camptosaurus dispar Marsh, 1879",
+                        "nameComplete": "Camptosaurus dispar"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

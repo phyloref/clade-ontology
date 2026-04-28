@@ -1,0 +1,100 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Prolonged morphological expansion of spiny-rayed fishes following the end-Cretaceous",
+                "year": 2022,
+                "authors": [
+                    {
+                        "name": "A. Ghezelayagh",
+                        "alternate": [
+                            "Ghezelayagh, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Ghezelayagh"
+                    },
+                    {
+                        "name": "et al.",
+                        "alternate": [
+                            "al., et"
+                        ],
+                        "firstname": "et",
+                        "lastname": "al."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "S11",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1038/s41559-022-01801-3"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Nature Ecology & Evolution",
+                    "volume": "6",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 957,
+            "label": "Blennioidei",
+            "dwc:scientificNameAuthorship": "Thacker, C. E. and Near, T. J.",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
+                    "authors": [
+                        {
+                            "name": "T. J. Near",
+                            "alternate": [
+                                "Near, T. J."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "C. E. Thacker",
+                            "alternate": [
+                                "Thacker, C. E."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The least inclusive crown clade that contains Lepidonectes corallicola (Kendall and Radcliffe 1912), Dactyloscopus lacteus (Myers and Wade 1946), and Gibbonsia metzi Hubbs 1927.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Lepidonectes corallicola Kendall and Radcliffe, 1912",
+                        "nameComplete": "Lepidonectes corallicola"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

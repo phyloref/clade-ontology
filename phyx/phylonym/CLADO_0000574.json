@@ -1,0 +1,142 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "On the pterosaur Aerotitan sudamericanus (Neuquén Basin, Upper Cretaceous of Argentina), with comments on azhdarchoid phylogeny and jaw anatomy",
+                "year": 2021,
+                "authors": [
+                    {
+                        "name": "Rodrigo Pêgas",
+                        "alternate": [
+                            "Pêgas, Rodrigo"
+                        ],
+                        "firstname": "Rodrigo",
+                        "lastname": "Pêgas"
+                    },
+                    {
+                        "name": "Borja Holgado",
+                        "alternate": [
+                            "Holgado, Borja"
+                        ],
+                        "firstname": "Borja",
+                        "lastname": "Holgado"
+                    },
+                    {
+                        "name": "Leonardo Ortiz-David",
+                        "alternate": [
+                            "Ortiz-David, Leonardo"
+                        ],
+                        "firstname": "Leonardo",
+                        "lastname": "Ortiz-David"
+                    },
+                    {
+                        "name": "Mattia Baiano",
+                        "alternate": [
+                            "Baiano, Mattia"
+                        ],
+                        "firstname": "Mattia",
+                        "lastname": "Baiano"
+                    },
+                    {
+                        "name": "Fabiana Costa",
+                        "alternate": [
+                            "Costa, Fabiana"
+                        ],
+                        "firstname": "Fabiana",
+                        "lastname": "Costa"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Cretaceous Research",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 574,
+            "label": "Azhdarchomorpha",
+            "dwc:scientificNameAuthorship": "Pêgas, Rodrigo Vargas and Holgado, Borja and Ortiz David, Leonardo and Baiano, Mattia and Costa, Fabiana Rodrigues",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "On the pterosaur Aerotitan sudamericanus (Neuquén Basin, Late Cretaceous of Argentina), with comments on azhdarchoid phylogeny and jaw anatomy",
+                    "year": 2021,
+                    "authors": [
+                        {
+                            "name": "Rodrigo Vargas  Pêgas",
+                            "alternate": [
+                                "Pêgas, Rodrigo Vargas"
+                            ],
+                            "firstname": "Rodrigo",
+                            "lastname": "Pêgas",
+                            "middlename": "Vargas"
+                        },
+                        {
+                            "name": "Borja Holgado",
+                            "alternate": [
+                                "Holgado, Borja"
+                            ],
+                            "firstname": "Borja",
+                            "lastname": "Holgado"
+                        },
+                        {
+                            "name": "Leonardo Ortiz David",
+                            "alternate": [
+                                "Ortiz David, Leonardo"
+                            ],
+                            "firstname": "Leonardo",
+                            "lastname": "Ortiz David"
+                        },
+                        {
+                            "name": "Mattia Baiano",
+                            "alternate": [
+                                "Baiano, Mattia"
+                            ],
+                            "firstname": "Mattia",
+                            "lastname": "Baiano"
+                        },
+                        {
+                            "name": "Fabiana Rodrigues Costa",
+                            "alternate": [
+                                "Costa, Fabiana Rodrigues"
+                            ],
+                            "firstname": "Fabiana",
+                            "lastname": "Costa",
+                            "middlename": "Rodrigues"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Cretaceous Research",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The most inclusive clade containing Azhdarcho lancicollis Nessov 1984 but not Thalassodromeus sethi Kellner & Campos 2002 or Tapejara wellnhoferi Kellner 1989.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Azhdarcho lancicollis Nesov, 1984",
+                        "nameComplete": "Azhdarcho lancicollis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

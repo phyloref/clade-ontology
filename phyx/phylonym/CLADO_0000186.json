@@ -66,7 +66,7 @@
         {
             "regnumId": 186,
             "label": "Opisthothelae",
-            "dwc:scientificNameAuthorship": "Kuntner, M., Agnarsson, I.",
+            "dwc:scientificNameAuthorship": "Kuntner, M. and Agnarsson, I.",
             "dwc:namePublishedIn": [
                 {
                     "type": "article",
@@ -94,7 +94,66 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Opisthothelae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "M. Kuntner",
+                            "alternate": [
+                                "Kuntner, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Kuntner"
+                        },
+                        {
+                            "name": "I. Agnarsson",
+                            "alternate": [
+                                "Agnarsson, I."
+                            ],
+                            "firstname": "I.",
+                            "lastname": "Agnarsson"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "619-620",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The crown clade for which a posteriorly positioned set of six or fewer spinnerets, as inherited by Araneus angulatus Clerck 1757 (Araneidae), is an apomorphy relative to other crown clades.",
             "internalSpecifiers": [],
             "externalSpecifiers": []

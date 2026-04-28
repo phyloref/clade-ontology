@@ -1,0 +1,36 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [],
+    "phylorefs": [
+        {
+            "regnumId": 1186,
+            "label": "Euctenochasmatoidea",
+            "dwc:scientificNameAuthorship": ",",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "Most inclusive clade containing Ctenochasma elegans but not Cycnorhamphus suevicus.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Ctenochasma elegans",
+                        "nameComplete": "Ctenochasma elegans"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Cycnorhamphus suevicus",
+                        "nameComplete": "Cycnorhamphus suevicus"
+                    }
+                }
+            ]
+        }
+    ]
+}

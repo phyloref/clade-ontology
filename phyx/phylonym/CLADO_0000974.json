@@ -1,0 +1,127 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "An inverse latitudinal gradient in speciation rate for marine fishes",
+                "year": 2018,
+                "authors": [
+                    {
+                        "name": "D. L. Rabosky",
+                        "alternate": [
+                            "Rabosky, D. L."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Rabosky",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "et al",
+                        "alternate": [
+                            "al, et"
+                        ],
+                        "firstname": "et",
+                        "lastname": "al"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "https://fishtreeoflife.org/taxonomy/order/Perciformes/",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1038/s41586-018-0273-1"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Nature",
+                    "volume": "559",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 974,
+            "label": "Gasterosteidae",
+            "dwc:scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Saggio di una distribuzione metodica degli animali vertebrati",
+                    "year": 1831,
+                    "authors": [
+                        {
+                            "name": "C. L. Bonaparte",
+                            "alternate": [
+                                "Bonaparte, C. L."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Bonaparte",
+                            "middlename": "L."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Giornale Arcadico di Scienze Lettere ed Arti",
+                        "volume": "52",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
+                    "authors": [
+                        {
+                            "name": "T. J. Near",
+                            "alternate": [
+                                "Near, T. J."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "C. E. Thacker",
+                            "alternate": [
+                                "Thacker, C. E."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The least inclusive crown lineage that contains Hypoptychus dybowskii Steindachner 1880, Aulichthys japonicus Brevoort in Gill 1862, Aulorhynchus flavidus Gill 1861, Gasterosteus aculeatus Linnaeus 1758, and Apeltes quadracus (Mitchill 1815).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Hypoptychus dybowskii Steindachner, 1880",
+                        "nameComplete": "Hypoptychus dybowskii"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

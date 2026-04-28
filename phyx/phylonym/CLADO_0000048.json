@@ -735,7 +735,7 @@
         {
             "regnumId": 48,
             "label": "Gunneridae",
-            "dwc:scientificNameAuthorship": "Soltis, D. E., Soltis, P. S., Judd, W. S.",
+            "dwc:scientificNameAuthorship": "Soltis, D. E. and Soltis, P. S. and Judd, W. S.",
             "dwc:namePublishedIn": [
                 {
                     "type": "article",
@@ -781,7 +781,77 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Gunneridae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "D. E. Soltis",
+                            "alternate": [
+                                "Soltis, D. E."
+                            ],
+                            "firstname": "D.",
+                            "lastname": "Soltis",
+                            "middlename": "E."
+                        },
+                        {
+                            "name": "P. S. Soltis",
+                            "alternate": [
+                                "Soltis, P. S."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Soltis",
+                            "middlename": "S."
+                        },
+                        {
+                            "name": "W. S. Judd",
+                            "alternate": [
+                                "Judd, W. S."
+                            ],
+                            "firstname": "W.",
+                            "lastname": "Judd",
+                            "middlename": "S."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "317-319",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The smallest crown clade containing Gunnera perpensa L. 1767 (Gunnerales), Viscum album L. 1753 (Santalales), Berberidopsis corallina Hook. f. 1862 (Berberidopsidales), Stellaria media (L.) Cirillo 1784 (Caryophyllales), Dillenia indica L. 1753 (Dilleniaceae), Saxifraga mertensiana Bong. 1835 (Saxifragales), Vitis aestivalis Michx. 1803 (Vitaceae), Photinia x fraseri Dress 1961 (Rosidae), and Helianthus annuus L. 1753 (Asteridae).",
             "internalSpecifiers": [
                 {
@@ -791,78 +861,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
                         "label": "Gunnera perpensa Linnaeus, 1767",
                         "nameComplete": "Gunnera perpensa"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Viscum album Linnaeus, 1753",
-                        "nameComplete": "Viscum album"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Berberidopsis corallina Hook, 1862",
-                        "nameComplete": "Berberidopsis corallina"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Stellaria media Cirillo, 1784",
-                        "nameComplete": "Stellaria media"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Dillenia indica Linnaeus, 1753",
-                        "nameComplete": "Dillenia indica"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Saxifraga mertensiana Bong., 1853",
-                        "nameComplete": "Saxifraga mertensiana"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Vitis aestivalis Michx., 1803",
-                        "nameComplete": "Vitis aestivalis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Photinia x fraseri Dress, 1961",
-                        "nameComplete": "Photinia x fraseri"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Helianthus annuus Linnaeus, 1753",
-                        "nameComplete": "Helianthus annuus"
                     }
                 }
             ],

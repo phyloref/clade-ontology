@@ -816,7 +816,7 @@
         {
             "regnumId": 46,
             "label": "Gentianales",
-            "dwc:scientificNameAuthorship": "Struwe, L., Frasier, C., Olmstead, R. G.",
+            "dwc:scientificNameAuthorship": "Struwe, L. and Frasier, C. and Olmstead, R. G.",
             "dwc:namePublishedIn": [
                 {
                     "type": "book",
@@ -840,7 +840,75 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Gentianales",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "L. Struwe",
+                            "alternate": [
+                                "Struwe, L."
+                            ],
+                            "firstname": "L.",
+                            "lastname": "Struwe"
+                        },
+                        {
+                            "name": "C. Frasier",
+                            "alternate": [
+                                "Frasier, C."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Frasier"
+                        },
+                        {
+                            "name": "R. G. Olmstead",
+                            "alternate": [
+                                "Olmstead, R. G."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Olmstead",
+                            "middlename": "G."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "397-399",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The least inclusive clade containing Gentiana lutea Linnaeus 1753 (Gentianaceae) and Cinchona pubescens Vahl 1790 (Rubiaceae).",
             "internalSpecifiers": [
                 {
@@ -850,15 +918,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
                         "label": "Gentiana lutea Linnaeus, 1753",
                         "nameComplete": "Gentiana lutea"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Cinchona pubescens Vahl, 1790",
-                        "nameComplete": "Cinchona pubescens"
                     }
                 }
             ],

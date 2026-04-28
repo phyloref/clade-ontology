@@ -1,0 +1,155 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A total evidence phylogenetic analysis of pinniped phylogeny and the possibility of parallel evolution within a monophyletic framework",
+                "year": 2020,
+                "authors": [
+                    {
+                        "name": "Ryan S Paterson",
+                        "alternate": [
+                            "Paterson, Ryan S"
+                        ],
+                        "firstname": "Ryan",
+                        "lastname": "Paterson",
+                        "middlename": "S"
+                    },
+                    {
+                        "name": "Natalia Rybczynski",
+                        "alternate": [
+                            "Rybczynski, Natalia"
+                        ],
+                        "firstname": "Natalia",
+                        "lastname": "Rybczynski"
+                    },
+                    {
+                        "name": "Naoki Kohno",
+                        "alternate": [
+                            "Kohno, Naoki"
+                        ],
+                        "firstname": "Naoki",
+                        "lastname": "Kohno"
+                    },
+                    {
+                        "name": "Hillary C Maddin",
+                        "alternate": [
+                            "Maddin, Hillary C"
+                        ],
+                        "firstname": "Hillary",
+                        "lastname": "Maddin",
+                        "middlename": "C"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.3389/fevo.2019.00457/full"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "https://www.frontiersin.org/articles/10.3389/fevo.2019.00457/full?utm_source=F-NTF&utm_medium=EMLX&utm_campaign=PRD_FEOPS_20170000_ARTICLE"
+                    }
+                ],
+                "journal": {
+                    "name": "Frontiers in Ecology and Evolution",
+                    "volume": "7",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 375,
+            "label": "Odobenidae",
+            "dwc:scientificNameAuthorship": "Biewer, Jacob N and Velez-Juarbe, Jorge and Parham, James F",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "History of North American Pinnipeds, a monograph of the walruses, sea-lions, sea-bears and seals of North America.",
+                    "year": 1880,
+                    "authors": [
+                        {
+                            "name": "Joel A Allen",
+                            "alternate": [
+                                "Allen, Joel A"
+                            ],
+                            "firstname": "Joel",
+                            "lastname": "Allen",
+                            "middlename": "A"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "U.S. Geological and Geographical Survey of the Territories Miscellaneous Publications",
+                        "volume": "12",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Insights on the dental evolution of walruses based on new fossil specimens from California",
+                    "authors": [
+                        {
+                            "name": "Jacob Biewer",
+                            "alternate": [
+                                "Biewer, Jacob"
+                            ],
+                            "firstname": "Jacob",
+                            "lastname": "Biewer"
+                        },
+                        {
+                            "name": "Jorge Velez-Juarbe",
+                            "alternate": [
+                                "Velez-Juarbe, Jorge"
+                            ],
+                            "firstname": "Jorge",
+                            "lastname": "Velez-Juarbe"
+                        },
+                        {
+                            "name": "James F Parham",
+                            "alternate": [
+                                "Parham, James F"
+                            ],
+                            "firstname": "James",
+                            "lastname": "Parham",
+                            "middlename": "F"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Journal of Vertebrate Paleontology",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The largest total clade including Odobenus rosmarus (Linnaeus, 1758) but not Phoca vitulina Linnaeus, 1758 or Otaria byronia (De Blainville, 1820).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Odobenus rosmarus Linnaeus, 1758",
+                        "nameComplete": "Odobenus rosmarus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

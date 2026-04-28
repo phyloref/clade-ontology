@@ -1,0 +1,156 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A multi-locus molecular timescale for the origin and diversification of eels (Order: Anguilliformes)",
+                "year": 2013,
+                "authors": [
+                    {
+                        "name": "F. Santini",
+                        "alternate": [
+                            "Santini, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Santini"
+                    },
+                    {
+                        "name": "X. H. Kong",
+                        "alternate": [
+                            "Kong, X. H."
+                        ],
+                        "firstname": "X.",
+                        "lastname": "Kong",
+                        "middlename": "H."
+                    },
+                    {
+                        "name": "L. Sorenson",
+                        "alternate": [
+                            "Sorenson, L."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Sorenson"
+                    },
+                    {
+                        "name": "G. Carnevale",
+                        "alternate": [
+                            "Carnevale, G."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Carnevale"
+                    },
+                    {
+                        "name": "R. S. Mehta",
+                        "alternate": [
+                            "Mehta, R. S."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Mehta",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "M. E. Alfaro",
+                        "alternate": [
+                            "Alfaro, M. E."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Alfaro",
+                        "middlename": "E."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/J.Ympev.2013.06.016"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Phylogenetics and Evolution",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 888,
+            "label": "Synaphobranchoidei",
+            "dwc:scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Atlas ichthyologique des Indes orientales néêrlandaises : publié sous les auspices du gouvernement colonial néêrlandais, Tome IV",
+                    "year": 1864,
+                    "authors": [
+                        {
+                            "name": "P. Bleeker",
+                            "alternate": [
+                                "Bleeker, P."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Bleeker"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Frédéric Muller",
+                    "city": "Amsterdam",
+                    "pages": "13",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetics and classification of Actinopterygii",
+                    "authors": [
+                        {
+                            "name": "Thomas J. Near",
+                            "alternate": [
+                                "Near, Thomas J."
+                            ],
+                            "firstname": "Thomas",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "Christine E. Thacker",
+                            "alternate": [
+                                "Thacker, Christine E."
+                            ],
+                            "firstname": "Christine",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The least inclusive crown clade that contains Synaphobranchus kaupi Johnson 1862, Simenchelys parasitica Gill in Bean and Goode 1879, and Protanguilla palau Johnson, Ida, and Sakaue 2012.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Synaphobranchus kaupi Johnson, 1862",
+                        "nameComplete": "Synaphobranchus kaupi"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

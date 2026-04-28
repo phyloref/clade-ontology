@@ -140,7 +140,7 @@
         {
             "regnumId": 26,
             "label": "Charophyta",
-            "dwc:scientificNameAuthorship": "Karol, K. G., McCourt, R. M., Mishler, B. D., Delwiche, C. F., Hall, J. D.",
+            "dwc:scientificNameAuthorship": "Karol, K. G. and McCourt, R. M. and Mishler, B. D. and Delwiche, C. F. and Hall, J. D.",
             "dwc:namePublishedIn": [
                 {
                     "type": "book",
@@ -171,7 +171,95 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Charophyta",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "K. G. Karol",
+                            "alternate": [
+                                "Karol, K. G."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "Karol",
+                            "middlename": "G."
+                        },
+                        {
+                            "name": "R. M. McCourt",
+                            "alternate": [
+                                "McCourt, R. M."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "McCourt",
+                            "middlename": "M."
+                        },
+                        {
+                            "name": "B. D. Mishler",
+                            "alternate": [
+                                "Mishler, B. D."
+                            ],
+                            "firstname": "B.",
+                            "lastname": "Mishler",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "C. F. Delwiche",
+                            "alternate": [
+                                "Delwiche, C. F."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Delwiche",
+                            "middlename": "F."
+                        },
+                        {
+                            "name": "J. D. Hall",
+                            "alternate": [
+                                "Hall, J. D."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Hall",
+                            "middlename": "D."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "187-189",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The largest crown clade containing Chara vulgaris Linnaeus 1753 but not Chlamydomonas reinhardti P. C. A. Dangeard 1891 (Chlorophyta).",
             "internalSpecifiers": [
                 {
@@ -184,17 +272,7 @@
                     }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Chlamydomonas reinhardti Dangeard, 1891",
-                        "nameComplete": "Chlamydomonas reinhardti"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

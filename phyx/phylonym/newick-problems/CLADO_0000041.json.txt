@@ -592,7 +592,7 @@
         {
             "regnumId": 41,
             "label": "Ericales",
-            "dwc:scientificNameAuthorship": "Judd, W. S., Kron, K. A.",
+            "dwc:scientificNameAuthorship": "Judd, W. S. and Kron, K. A.",
             "dwc:namePublishedIn": [
                 {
                     "type": "book",
@@ -624,7 +624,68 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Ericales",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "W. S. Judd",
+                            "alternate": [
+                                "Judd, W. S."
+                            ],
+                            "firstname": "W.",
+                            "lastname": "Judd",
+                            "middlename": "S."
+                        },
+                        {
+                            "name": "K. A. Kron",
+                            "alternate": [
+                                "Kron, K. A."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "Kron",
+                            "middlename": "A."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "361-364",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The smallest crown clade containing Impatiens capensis Meerb. 1794 and Erica cinerea L. 1753.",
             "internalSpecifiers": [
                 {
@@ -632,17 +693,8 @@
                     "hasName": {
                         "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Impatiens capensis 1794",
+                        "label": "Impatiens capensis Meerburgh, 1794",
                         "nameComplete": "Impatiens capensis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Erica cinerea 1753",
-                        "nameComplete": "Erica cinerea"
                     }
                 }
             ],

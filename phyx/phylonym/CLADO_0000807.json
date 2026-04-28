@@ -1,0 +1,183 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Spiny Tails and Clades: A Fully Sampled Phylogeny of Hoplocercine Lizards (Iguanidae: Hoplocercinae) and its Taxonomic and Nomenclatural Implications",
+                "year": 2023,
+                "authors": [
+                    {
+                        "name": "Omar Torres-Carvajal",
+                        "alternate": [
+                            "Torres-Carvajal, Omar"
+                        ],
+                        "firstname": "Omar",
+                        "lastname": "Torres-Carvajal"
+                    },
+                    {
+                        "name": "Fernanda P. Werneck",
+                        "alternate": [
+                            "Werneck, Fernanda P."
+                        ],
+                        "firstname": "Fernanda",
+                        "lastname": "Werneck",
+                        "middlename": "P."
+                    },
+                    {
+                        "name": "Igor Yuri Fernandes",
+                        "alternate": [
+                            "Fernandes, Igor Yuri"
+                        ],
+                        "firstname": "Igor",
+                        "lastname": "Fernandes",
+                        "middlename": "Yuri"
+                    },
+                    {
+                        "name": "Kevin de Queiroz",
+                        "alternate": [
+                            "de Queiroz, Kevin"
+                        ],
+                        "firstname": "Kevin",
+                        "lastname": "de Queiroz"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "https://doi.org/10.11646/bpn.1.1.2"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Bulletin of Phylogenetic Nomenclature",
+                    "volume": "1",
+                    "identifier": [
+                        {
+                            "type": "isbn",
+                            "id": "2815-9233 (print), 2815-9241 (online)"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 807,
+            "label": "Hoplocercinae",
+            "dwc:scientificNameAuthorship": "Torres-Carvajal, Omar and Werneck, Fernanda P. and Fernandes, Igor Yuri and de Queiroz, Kevin",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Lizards of the Families Priscagamidae and Hoplocercidae (Sauria, Iguania): Phylogenetic Position and New Representatives from the Late Cretaceous of Mongolia",
+                    "year": 1996,
+                    "authors": [
+                        {
+                            "name": "V. R. Alifanov",
+                            "alternate": [
+                                "Alifanov, V. R."
+                            ],
+                            "firstname": "V.",
+                            "lastname": "Alifanov",
+                            "middlename": "R."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Paleontological Journal",
+                        "volume": "30",
+                        "identifier": [
+                            {
+                                "type": "isbn",
+                                "id": "0031-0301"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Spiny Tails and Clades: A Fully Sampled Phylogeny of Hoplocercine Lizards (Iguanidae: Hoplocercinae) and its Taxonomic and Nomenclatural Implications",
+                    "year": 2023,
+                    "authors": [
+                        {
+                            "name": "Omar Torres-Carvajal",
+                            "alternate": [
+                                "Torres-Carvajal, Omar"
+                            ],
+                            "firstname": "Omar",
+                            "lastname": "Torres-Carvajal"
+                        },
+                        {
+                            "name": "Fernanda P. Werneck",
+                            "alternate": [
+                                "Werneck, Fernanda P."
+                            ],
+                            "firstname": "Fernanda",
+                            "lastname": "Werneck",
+                            "middlename": "P."
+                        },
+                        {
+                            "name": "Igor Yuri Fernandes",
+                            "alternate": [
+                                "Fernandes, Igor Yuri"
+                            ],
+                            "firstname": "Igor",
+                            "lastname": "Fernandes",
+                            "middlename": "Yuri"
+                        },
+                        {
+                            "name": "Kevin de Queiroz",
+                            "alternate": [
+                                "de Queiroz, Kevin"
+                            ],
+                            "firstname": "Kevin",
+                            "lastname": "de Queiroz"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "figure": "2",
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "https://doi.org/10.11646/bpn.1.1.2"
+                        }
+                    ],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of Phylogenetic Nomenclature",
+                        "volume": "1",
+                        "identifier": [
+                            {
+                                "type": "isbn",
+                                "id": "2815-9233 (print), 2815-9241 (online)"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "cladeDefinition": "The smallest crown clade including Hoplocercus spinosus Fitzinger 1843, Enyalioides/Morunasaurus groi (Dunn 1933), Enyalioides heterolepis (Bocourt 1874), E. oshaughnessyi (Boulenger 1881), and Enyalioides/Zimiamviasaurus annularis (O’Shaughnessy 1881).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Hoplocercus spinosus Fitzinger, 1843",
+                        "nameComplete": "Hoplocercus spinosus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

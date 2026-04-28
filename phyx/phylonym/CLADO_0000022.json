@@ -107,7 +107,7 @@
         {
             "regnumId": 22,
             "label": "Bignoniaceae",
-            "dwc:scientificNameAuthorship": "Olmstead, R. G., Lohmann, L. G.",
+            "dwc:scientificNameAuthorship": "Olmstead, R. G. and Lohmann, L. G.",
             "dwc:namePublishedIn": [
                 {
                     "type": "book",
@@ -129,7 +129,68 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Bignoniaceae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "R. G. Olmstead",
+                            "alternate": [
+                                "Olmstead, R. G."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Olmstead",
+                            "middlename": "G."
+                        },
+                        {
+                            "name": "L. G. Lohmann",
+                            "alternate": [
+                                "Lohmann, L. G."
+                            ],
+                            "firstname": "L.",
+                            "lastname": "Lohmann",
+                            "middlename": "G."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "417-422",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The least inclusive clade containing Bignonia capreolata Linnaeus 1753, Jacaranda mimosifolia D. Don 1822, and Eccremocarpus scaber Ruiz & Pavon 1794.",
             "internalSpecifiers": [
                 {
@@ -139,24 +200,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
                         "label": "Bignonia capreolata Linnaeus, 1753",
                         "nameComplete": "Bignonia capreolata"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Jacaranda mimosifolia Don, 1822",
-                        "nameComplete": "Jacaranda mimosifolia"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Eccremocarpus scaber Ruiz Lopez and Pavon, 1794",
-                        "nameComplete": "Eccremocarpus scaber"
                     }
                 }
             ],

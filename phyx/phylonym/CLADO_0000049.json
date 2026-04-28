@@ -249,7 +249,67 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Hemichordata",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "C. B. Cameron",
+                            "alternate": [
+                                "Cameron, C. B."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Cameron",
+                            "middlename": "B."
+                        },
+                        {
+                            "name": "E. Bell",
+                            "alternate": [
+                                "Bell, E."
+                            ],
+                            "firstname": "E.",
+                            "lastname": "Bell"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "631-632",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The smallest crown clade containing Cephalodiscus gracilis Harmer 1905 and Ptychodera flava Eschscholtz 1825.",
             "internalSpecifiers": [
                 {
@@ -259,15 +319,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Cephalodiscus gracilis Harmer, 1905",
                         "nameComplete": "Cephalodiscus gracilis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Ptychodera flava Eschscholtz, 1825",
-                        "nameComplete": "Ptychodera flava"
                     }
                 }
             ],

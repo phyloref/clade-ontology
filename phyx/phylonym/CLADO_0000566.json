@@ -1,0 +1,90 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [],
+    "phylorefs": [
+        {
+            "regnumId": 566,
+            "label": "Strombidae",
+            "dwc:scientificNameAuthorship": "Maxwell, Stephen J and Rymer, Tasmin L",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book_section",
+                    "title": "Analyse de la Nature, ou tableau de l’Univers et des Corps Organise´es",
+                    "year": 1815,
+                    "authors": [
+                        {
+                            "name": "C S Rafinesque",
+                            "alternate": [
+                                "Rafinesque, C S"
+                            ],
+                            "firstname": "C",
+                            "lastname": "Rafinesque",
+                            "middlename": "S"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "L’ Imprimeriede Jean Barravecchi",
+                    "city": "Palermo",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Are the ICZN and PhyloCode that incompatible? A summary of the shifts in Stromboidean taxonomy and the definition of two new subfamilies in Stromboidae (Mollusca, Neostromboidae)",
+                    "year": 2021,
+                    "authors": [
+                        {
+                            "name": "Stephen J Maxwell",
+                            "alternate": [
+                                "Maxwell, Stephen J"
+                            ],
+                            "firstname": "Stephen",
+                            "lastname": "Maxwell",
+                            "middlename": "J"
+                        },
+                        {
+                            "name": "Tasmin L Rymer",
+                            "alternate": [
+                                "Rymer, Tasmin L"
+                            ],
+                            "firstname": "Tasmin",
+                            "lastname": "Rymer",
+                            "middlename": "L"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "figure": "2",
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "The Festivus",
+                        "volume": "53",
+                        "identifier": [
+                            {
+                                "type": "isbn",
+                                "id": "0738-9388"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "cladeDefinition": "The clade is nested within Neostromboidae, with the characteristics outlined in the diagnosis, and contains taxa more closely related to Aliger gigas (Linné, 1758) (Neoaligerinae n. subfam.) and Strombus urceus (Linné, 1758) (Neostrombinae n. subfam.) than to Terebellum terebellum (Linné, 1758) (Seraphsidae) and Tibia fusus (Linné, 1758)(Rostellariidae).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Strombus gigas Linnaeus, 1758",
+                        "nameComplete": "Strombus gigas"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

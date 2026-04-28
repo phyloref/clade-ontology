@@ -1,0 +1,156 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "3D skull modelling and description of a new baurusuchid (Crocodyliformes, Mesoeucrocodylia) from the Late Cretaceous (Bauru Basin) of Brazil",
+                "year": 2020,
+                "authors": [
+                    {
+                        "name": "Gustavo Darlin",
+                        "alternate": [
+                            "Darlin, Gustavo"
+                        ],
+                        "firstname": "Gustavo",
+                        "lastname": "Darlin"
+                    },
+                    {
+                        "name": "Max Langer",
+                        "alternate": [
+                            "Langer, Max"
+                        ],
+                        "firstname": "Max",
+                        "lastname": "Langer"
+                    },
+                    {
+                        "name": "Felipe Montefeltro",
+                        "alternate": [
+                            "Montefeltro, Felipe"
+                        ],
+                        "firstname": "Felipe",
+                        "lastname": "Montefeltro"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "45",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Anatomy",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 413,
+            "label": "Pissarrachampsinae",
+            "dwc:scientificNameAuthorship": "Darlin, Gustavo and Langer, Max and Montefeltro, Felipe",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "A New Baurusuchid (Crocodyliformes, Mesoeucrocodylia) from the Late Cretaceous of Brazil and the Phylogeny of Baurusuchidae",
+                    "year": 2011,
+                    "edition": "6",
+                    "authors": [
+                        {
+                            "name": "Felipe Montefeltro",
+                            "alternate": [
+                                "Montefeltro, Felipe"
+                            ],
+                            "firstname": "Felipe",
+                            "lastname": "Montefeltro"
+                        },
+                        {
+                            "name": "Hans Larsson",
+                            "alternate": [
+                                "Larsson, Hans"
+                            ],
+                            "firstname": "Hans",
+                            "lastname": "Larsson"
+                        },
+                        {
+                            "name": "Max Langer",
+                            "alternate": [
+                                "Langer, Max"
+                            ],
+                            "firstname": "Max",
+                            "lastname": "Langer"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "PLOsONE",
+                        "volume": "7",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "3D skull modelling and description of a new baurusuchid (Crocodyliformes, Mesoeucrocodylia) from the Late Cretaceous (Bauru Basin) of Brazil",
+                    "year": 2021,
+                    "authors": [
+                        {
+                            "name": "Gustavo Darlin",
+                            "alternate": [
+                                "Darlin, Gustavo"
+                            ],
+                            "firstname": "Gustavo",
+                            "lastname": "Darlin"
+                        },
+                        {
+                            "name": "Max Langer",
+                            "alternate": [
+                                "Langer, Max"
+                            ],
+                            "firstname": "Max",
+                            "lastname": "Langer"
+                        },
+                        {
+                            "name": "Felipe Montefeltro",
+                            "alternate": [
+                                "Montefeltro, Felipe"
+                            ],
+                            "firstname": "Felipe",
+                            "lastname": "Montefeltro"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.1111/joa.13442"
+                        }
+                    ],
+                    "link": [],
+                    "journal": {
+                        "name": "Journal of Anatomy",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The most inclusive clade containing Pissarrachampsa sera Montefeltro, Larsson & Langer 2011, but not Baurusuchus pachecoi Price 1945 (Baurusuchinae).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Pissarrachampsa sera Montefeltro and Larsson and Langer, 2011",
+                        "nameComplete": "Pissarrachampsa sera"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

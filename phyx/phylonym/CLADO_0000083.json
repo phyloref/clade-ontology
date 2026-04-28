@@ -90,7 +90,7 @@
         {
             "regnumId": 83,
             "label": "Pan-Tracheophyta",
-            "dwc:scientificNameAuthorship": "Cantino, P. D., Donoghue, M. J.",
+            "dwc:scientificNameAuthorship": "Cantino, P. D. and Donoghue, M. J.",
             "dwc:namePublishedIn": [
                 {
                     "type": "article",
@@ -181,7 +181,68 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Pan-Tracheophyta",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "M. J. Donoghue",
+                            "alternate": [
+                                "Donoghue, M. J."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Donoghue",
+                            "middlename": "J."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "227-228",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The total clade of the crown clade Tracheophyta. This is a crown-based total-clade definition.  Abbreviated definition:  total ∇ of Tracheophyta.",
             "internalSpecifiers": [],
             "externalSpecifiers": []

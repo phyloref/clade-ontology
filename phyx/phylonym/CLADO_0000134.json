@@ -116,7 +116,59 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Nemaliophycidae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "G. W. Saunders",
+                            "alternate": [
+                                "Saunders, G. W."
+                            ],
+                            "firstname": "G.",
+                            "lastname": "Saunders",
+                            "middlename": "W."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "167-169",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The largest crown clade containing Nemalion lubricum Duby 1830 (=Nemalion helminthoides (Velley) Batters 1902) but not Ahnfeltia plicata (Hudson) Fries 1836, Chondrus crispus Stackhouse 1797, Corallina officinalis Linnaeus 1758, and Hildenbrandia rubra (Sommerfelt) Meneghini 1841.",
             "internalSpecifiers": [
                 {
@@ -129,44 +181,7 @@
                     }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Ahnfeltia plicata Fries, 1836",
-                        "nameComplete": "Ahnfeltia plicata"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Chondrus crispus Stackhouse, 1797",
-                        "nameComplete": "Chondrus crispus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Corallina officinalis Linnaeus, 1758",
-                        "nameComplete": "Corallina officinalis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Hildenbrandia rubra Meneghini, 1841",
-                        "nameComplete": "Hildenbrandia rubra"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

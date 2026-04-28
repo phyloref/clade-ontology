@@ -51,7 +51,59 @@
             "label": "Lepidodiscina",
             "dwc:scientificNameAuthorship": "Sumrall, C. D.",
             "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Lepidodiscina",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "C. D. Sumrall",
+                            "alternate": [
+                                "Sumrall, C. D."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Sumrall",
+                            "middlename": "D."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "657-658",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The clade originating in the most recent common ancestor of Lepidodiscus squamosus (Meek and Worthen 1868), Ulrichidiscus pulaskiensis, (Miller and Gurley 1894) and Hypsiclavus huntsvillensis Sumrall 1996.",
             "internalSpecifiers": [
                 {
@@ -61,24 +113,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Lepidodiscus squamosus Meek and Worthen, 1868",
                         "nameComplete": "Lepidodiscus squamosus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Ulrichidiscus pulaskiensis Miller and Gurley, 1894",
-                        "nameComplete": "Ulrichidiscus pulaskiensis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Hypsiclavus huntsvillensis Sumrall, 1996",
-                        "nameComplete": "Hypsiclavus huntsvillensis"
                     }
                 }
             ],

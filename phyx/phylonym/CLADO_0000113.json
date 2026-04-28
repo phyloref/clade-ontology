@@ -93,7 +93,7 @@
         {
             "regnumId": 113,
             "label": "Aves",
-            "dwc:scientificNameAuthorship": "Clarke, J. A., Mindell, D. P., de Queiroz, K., Hanson, M., Norell, M. A., Gautheir, J. A.",
+            "dwc:scientificNameAuthorship": "Clarke, J. A. and Mindell, D. P. and de Queiroz, K. and Hanson, M. and Norell, M. A. and Gautheir, J. A.",
             "dwc:namePublishedIn": [
                 {
                     "type": "book",
@@ -117,7 +117,102 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Aves",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "J. A. Clarke",
+                            "alternate": [
+                                "Clarke, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Clarke",
+                            "middlename": "A."
+                        },
+                        {
+                            "name": "D. P. Mindell",
+                            "alternate": [
+                                "Mindell, D. P."
+                            ],
+                            "firstname": "D.",
+                            "lastname": "Mindell",
+                            "middlename": "P."
+                        },
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "M. Hanson",
+                            "alternate": [
+                                "Hanson, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Hanson"
+                        },
+                        {
+                            "name": "M. A. Norell",
+                            "alternate": [
+                                "Norell, M. A."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Norell",
+                            "middlename": "A."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "1247-1253",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The smallest crown clade containing Struthio camelus Linnaeus 1758 (Palaeognathae), Tinamus (originally Tetrao) major (Gmelin 1789) (Palaeognathae: Tinamidae), Phasianus colchicus Linnaeus 1758 (Neognathae: Galloanserae: Galliformes), and Vultur gryphus Linnaeus 1758 (Neognathae: Neoaves: Accipitriformes).",
             "internalSpecifiers": [
                 {
@@ -127,33 +222,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Struthio camelus Linnaeus, 1758",
                         "nameComplete": "Struthio camelus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Tinamus (originally Tetrao) major Gmelin, 1789",
-                        "nameComplete": "Tinamus (originally Tetrao) major"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Phasianus colchicus Linnaeus, 1758",
-                        "nameComplete": "Phasianus colchicus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Vultur gryphus Linnaeus, 1758",
-                        "nameComplete": "Vultur gryphus"
                     }
                 }
             ],

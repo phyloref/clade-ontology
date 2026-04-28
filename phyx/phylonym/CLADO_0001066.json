@@ -1,0 +1,143 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "On the systematics and phylogenetic nomenclature of the Ornithocheiriformes (Pterosauria, Pteranodontoidea)",
+                "year": 2025,
+                "authors": [
+                    {
+                        "name": "R. Pêgas",
+                        "alternate": [
+                            "Pêgas, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Pêgas"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Palaeontologia Electronica",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 1066,
+            "label": "Anhanguerinae",
+            "dwc:scientificNameAuthorship": "Pêgas, R.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "On a new crested pterodactyloid from the Early Cretaceous of the Iberian Peninsula and the radiation of the clade Anhangueria.",
+                    "year": 2019,
+                    "authors": [
+                        {
+                            "name": "B. Holgado",
+                            "alternate": [
+                                "Holgado, B."
+                            ],
+                            "firstname": "B.",
+                            "lastname": "Holgado"
+                        },
+                        {
+                            "name": "R. Pêgas",
+                            "alternate": [
+                                "Pêgas, R."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Pêgas"
+                        },
+                        {
+                            "name": "J. Canudo",
+                            "alternate": [
+                                "Canudo, J."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Canudo"
+                        },
+                        {
+                            "name": "J. Fortuny",
+                            "alternate": [
+                                "Fortuny, J."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Fortuny"
+                        },
+                        {
+                            "name": "T. Rodrigues",
+                            "alternate": [
+                                "Rodrigues, T."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Rodrigues"
+                        },
+                        {
+                            "name": "J. Company",
+                            "alternate": [
+                                "Company, J."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Company"
+                        },
+                        {
+                            "name": "A. Kellner",
+                            "alternate": [
+                                "Kellner, A."
+                            ],
+                            "firstname": "A.",
+                            "lastname": "Kellner"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Scientific Reports",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The most inclusive clade that includes Anhanguera blittersdorffi Campos and Kellner, 1985 but not Coloborhynchus clavirostris Owen, 1874 or Tropeognathus mesembrinus Wellnhofer, 1987.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Anhanguera blittersdorffi Campos and Kellner, 1985",
+                        "nameComplete": "Anhanguera blittersdorffi"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Coloborhynchus clavirostris Owen, 1874",
+                        "nameComplete": "Coloborhynchus clavirostris"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Tropeognathus mesembrinus Wellnhofer, 1987",
+                        "nameComplete": "Tropeognathus mesembrinus"
+                    }
+                }
+            ]
+        }
+    ]
+}

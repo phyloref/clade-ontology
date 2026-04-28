@@ -212,7 +212,7 @@
         {
             "regnumId": 259,
             "label": "Primates",
-            "dwc:scientificNameAuthorship": "Gunnell, G. F., Yoder, A. D.",
+            "dwc:scientificNameAuthorship": "Gunnell, G. F. and Yoder, A. D.",
             "dwc:namePublishedIn": [
                 {
                     "type": "book",
@@ -236,7 +236,68 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Primates",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "G. F. Gunnell",
+                            "alternate": [
+                                "Gunnell, G. F."
+                            ],
+                            "firstname": "G.",
+                            "lastname": "Gunnell",
+                            "middlename": "F."
+                        },
+                        {
+                            "name": "A. D. Yoder",
+                            "alternate": [
+                                "Yoder, A. D."
+                            ],
+                            "firstname": "A.",
+                            "lastname": "Yoder",
+                            "middlename": "D."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "907-913",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The smallest crown clade containing Lemur catta Linnaeus 1758 (Lemuridae), Loris (originally Lemur) tardigradus (Linnaeus 1758) (Lorisidae), Tarsius (originally Lemur) tarsier (Erxleben 1777) (Tarsiidae) and Homo sapiens Linnaeus 1758 (Hominidae).",
             "internalSpecifiers": [
                 {
@@ -246,33 +307,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Lemur catta Linnaeus, 1758",
                         "nameComplete": "Lemur catta"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Loris tardigradus Linnaeus, 1758",
-                        "nameComplete": "Loris tardigradus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Tarsius tarsier Erxleben, 1777",
-                        "nameComplete": "Tarsius tarsier"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Homo sapiens Linnaeus, 1758",
-                        "nameComplete": "Homo sapiens"
                     }
                 }
             ],

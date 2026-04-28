@@ -98,7 +98,7 @@
         {
             "regnumId": 32,
             "label": "Convolvulaceae",
-            "dwc:scientificNameAuthorship": "Stefanović , S., Olmstead, R. G.",
+            "dwc:scientificNameAuthorship": "Stefanović , S. and Olmstead, R. G.",
             "dwc:namePublishedIn": [
                 {
                     "type": "book",
@@ -122,7 +122,67 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Convolvulaceae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "S. Stefanovic",
+                            "alternate": [
+                                "Stefanovic, S."
+                            ],
+                            "firstname": "S.",
+                            "lastname": "Stefanovic"
+                        },
+                        {
+                            "name": "R. G. Olmstead",
+                            "alternate": [
+                                "Olmstead, R. G."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Olmstead",
+                            "middlename": "G."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "411-412",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The least inclusive clade containing Convolvulus arvensis Linnaeus 1753 and Humbertia madagascariensis Lamarck 1786.",
             "internalSpecifiers": [
                 {
@@ -132,15 +192,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
                         "label": "Convolvulus arvensis Linnaeus, 1753",
                         "nameComplete": "Convolvulus arvensis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Humbertia madagascariensis Lamarck, 1786",
-                        "nameComplete": "Humbertia madagascariensis"
                     }
                 }
             ],

@@ -37,6 +37,39 @@
         {
             "phylogenyCitation": {
                 "type": "article",
+                "title": "Integrating molecular phylogenetic and paleobotanical evidence on origin of the flower.",
+                "year": 2008,
+                "authors": [
+                    {
+                        "name": "J. A. Doyle",
+                        "alternate": [
+                            "Doyle, J. A."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Doyle",
+                        "middlename": "A."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1086/589887"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "International Journal of Plant Science",
+                    "volume": "169",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
                 "title": "Lignophyte phylogeny and the evolution of spermatophytes: a numerical cladistic analysis.",
                 "year": 1994,
                 "authors": [
@@ -69,46 +102,13 @@
                     "identifier": []
                 }
             }
-        },
-        {
-            "phylogenyCitation": {
-                "type": "article",
-                "title": "Integrating molecular phylogenetic and paleobotanical evidence on origin of the flower.",
-                "year": 2008,
-                "authors": [
-                    {
-                        "name": "J. A. Doyle",
-                        "alternate": [
-                            "Doyle, J. A."
-                        ],
-                        "firstname": "J.",
-                        "lastname": "Doyle",
-                        "middlename": "A."
-                    }
-                ],
-                "editors": [],
-                "series_editors": [],
-                "figure": "3",
-                "identifier": [
-                    {
-                        "type": "doi",
-                        "id": "10.1086/589887"
-                    }
-                ],
-                "link": [],
-                "journal": {
-                    "name": "International Journal of Plant Science",
-                    "volume": "169",
-                    "identifier": []
-                }
-            }
         }
     ],
     "phylorefs": [
         {
             "regnumId": 80,
             "label": "Pan-Gnetophyta",
-            "dwc:scientificNameAuthorship": "Doyle, J. A., Donoghue, M. J., Cantino, P. D.",
+            "dwc:scientificNameAuthorship": "Doyle, J. A. and Donoghue, M. J. and Cantino, P. D.",
             "dwc:namePublishedIn": [
                 {
                     "type": "article",
@@ -199,7 +199,77 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Pan-Gnetophyta",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "J. A. Doyle",
+                            "alternate": [
+                                "Doyle, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Doyle",
+                            "middlename": "A."
+                        },
+                        {
+                            "name": "M. J. Donoghue",
+                            "alternate": [
+                                "Donoghue, M. J."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Donoghue",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "263-264",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The total clade of the crown clade Gnetophyta.  This is a crown-based total-clade definition. Abbreviated definition: total ∇ of Gnetophyta.",
             "internalSpecifiers": [],
             "externalSpecifiers": []

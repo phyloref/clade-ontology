@@ -53,41 +53,6 @@
         {
             "phylogenyCitation": {
                 "type": "article",
-                "title": "Phylogeny of Isoëtes (Lycopsida): Resolving basal relationships using rbcL sequences.",
-                "year": 2002,
-                "authors": [
-                    {
-                        "name": "C. Rydin",
-                        "alternate": [
-                            "Rydin, C."
-                        ],
-                        "firstname": "C.",
-                        "lastname": "Rydin"
-                    },
-                    {
-                        "name": "N. Wikström",
-                        "alternate": [
-                            "Wikström, N."
-                        ],
-                        "firstname": "N.",
-                        "lastname": "Wikström"
-                    }
-                ],
-                "editors": [],
-                "series_editors": [],
-                "figure": "2",
-                "identifier": [],
-                "link": [],
-                "journal": {
-                    "name": "Taxon",
-                    "volume": "51",
-                    "identifier": []
-                }
-            }
-        },
-        {
-            "phylogenyCitation": {
-                "type": "article",
                 "title": "Phylogeny and evolution of ferns (monilophytes) with a focus on the early leptosporangiate divergences.",
                 "authors": [
                     {
@@ -384,13 +349,48 @@
                     "identifier": []
                 }
             }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Phylogeny of Isoëtes (Lycopsida): Resolving basal relationships using rbcL sequences.",
+                "year": 2002,
+                "authors": [
+                    {
+                        "name": "C. Rydin",
+                        "alternate": [
+                            "Rydin, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Rydin"
+                    },
+                    {
+                        "name": "N. Wikström",
+                        "alternate": [
+                            "Wikström, N."
+                        ],
+                        "firstname": "N.",
+                        "lastname": "Wikström"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Taxon",
+                    "volume": "51",
+                    "identifier": []
+                }
+            }
         }
     ],
     "phylorefs": [
         {
             "regnumId": 160,
             "label": "Lycopodiophyta",
-            "dwc:scientificNameAuthorship": "Cantino, P. D., Donoghue, M. J.",
+            "dwc:scientificNameAuthorship": "Cantino, P. D. and Donoghue, M. J.",
             "dwc:namePublishedIn": [
                 {
                     "type": "article",
@@ -433,7 +433,68 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Lycopodiophyta",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "M. J. Donoghue",
+                            "alternate": [
+                                "Donoghue, M. J."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Donoghue",
+                            "middlename": "J."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "237-240",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The smallest crown clade containing Lycopodium clavatum Linnaeus 1753, Huperzia selago (Linnaeus) Schrank & Martius 1829 (originally described as Lycopodium selago Linnaeus 1753), Isoetes lacustris Linnaeus 1753, and Selaginella apoda (Linnaeus) Spring 1840 (originally described as Lycopodium apodum Linnaeus 1753).",
             "internalSpecifiers": [
                 {
@@ -443,33 +504,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
                         "label": "Lycopodium clavatum Linnaeus, 1753",
                         "nameComplete": "Lycopodium clavatum"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Huperzia selago Schrank and Martius, 1829",
-                        "nameComplete": "Huperzia selago"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Isoetes lacustris Linnaeus, 1753",
-                        "nameComplete": "Isoetes lacustris"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Selaginella apoda Spring, 1840",
-                        "nameComplete": "Selaginella apoda"
                     }
                 }
             ],

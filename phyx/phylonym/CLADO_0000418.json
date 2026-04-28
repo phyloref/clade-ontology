@@ -1,0 +1,178 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A new species of Caipirasuchus (Notosuchia, Sphagesauridae) from the Late Cretaceous of Brazil and the evolutionary history of Sphagesauria",
+                "year": 2020,
+                "authors": [
+                    {
+                        "name": "Juan Ruiz",
+                        "alternate": [
+                            "Ruiz, Juan"
+                        ],
+                        "firstname": "Juan",
+                        "lastname": "Ruiz"
+                    },
+                    {
+                        "name": "Mario Bronzati",
+                        "alternate": [
+                            "Bronzati, Mario"
+                        ],
+                        "firstname": "Mario",
+                        "lastname": "Bronzati"
+                    },
+                    {
+                        "name": "Gabriel Matins",
+                        "alternate": [
+                            "Matins, Gabriel"
+                        ],
+                        "firstname": "Gabriel",
+                        "lastname": "Matins"
+                    },
+                    {
+                        "name": "Kawan Martins",
+                        "alternate": [
+                            "Martins, Kawan"
+                        ],
+                        "firstname": "Kawan",
+                        "lastname": "Martins"
+                    },
+                    {
+                        "name": "Marcos Queiroz",
+                        "alternate": [
+                            "Queiroz, Marcos"
+                        ],
+                        "firstname": "Marcos",
+                        "lastname": "Queiroz"
+                    },
+                    {
+                        "name": "Max Langer",
+                        "alternate": [
+                            "Langer, Max"
+                        ],
+                        "firstname": "Max",
+                        "lastname": "Langer"
+                    },
+                    {
+                        "name": "Felipe Montefeltro",
+                        "alternate": [
+                            "Montefeltro, Felipe"
+                        ],
+                        "firstname": "Felipe",
+                        "lastname": "Montefeltro"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "7",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Systematic Palaeontology",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 418,
+            "label": "Eunotosuchia",
+            "dwc:scientificNameAuthorship": "Ruiz, Juan and Bronzati, Mario and Ferreira, Gabriel and Martins, Kawan and Queiroz, Marcos and Langer, Max and Montefeltro, Felipe",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "A new species of Caipirasuchus (Notosuchia, Sphagesauridae) from the Late Cretaceous of Brazil and the evolutionary history of Sphagesauria",
+                    "year": 2021,
+                    "authors": [
+                        {
+                            "name": "Juan Ruiz",
+                            "alternate": [
+                                "Ruiz, Juan"
+                            ],
+                            "firstname": "Juan",
+                            "lastname": "Ruiz"
+                        },
+                        {
+                            "name": "Mario Bronzati",
+                            "alternate": [
+                                "Bronzati, Mario"
+                            ],
+                            "firstname": "Mario",
+                            "lastname": "Bronzati"
+                        },
+                        {
+                            "name": "Gabriel Ferreira",
+                            "alternate": [
+                                "Ferreira, Gabriel"
+                            ],
+                            "firstname": "Gabriel",
+                            "lastname": "Ferreira"
+                        },
+                        {
+                            "name": "Kawan Martins",
+                            "alternate": [
+                                "Martins, Kawan"
+                            ],
+                            "firstname": "Kawan",
+                            "lastname": "Martins"
+                        },
+                        {
+                            "name": "Marcos Queiroz",
+                            "alternate": [
+                                "Queiroz, Marcos"
+                            ],
+                            "firstname": "Marcos",
+                            "lastname": "Queiroz"
+                        },
+                        {
+                            "name": "Max Langer",
+                            "alternate": [
+                                "Langer, Max"
+                            ],
+                            "firstname": "Max",
+                            "lastname": "Langer"
+                        },
+                        {
+                            "name": "Felipe Montefeltro",
+                            "alternate": [
+                                "Montefeltro, Felipe"
+                            ],
+                            "firstname": "Felipe",
+                            "lastname": "Montefeltro"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.1080/14772019.2021.1888815."
+                        }
+                    ],
+                    "link": [],
+                    "journal": {
+                        "name": "Journal of Systematic Palaeontology",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The least inclusive clade containing Notosuchus terrestris Woodward 1896, Uruguaysuchus aznarezi Rusconi 1933, and Araripesuchus gomesi Price 1959, but not Crocodylus niloticus Laurenti 1768 (Crocodylia). This is a minimum-clade definition.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Notosuchus terrestris Woodward, 1896",
+                        "nameComplete": "Notosuchus terrestris"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

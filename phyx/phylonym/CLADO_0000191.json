@@ -387,7 +387,7 @@
         {
             "regnumId": 191,
             "label": "Lophotrochozoa",
-            "dwc:scientificNameAuthorship": "Halanych, K. M., Garey, J. R., Servin, J. A., Lake, J. A.",
+            "dwc:scientificNameAuthorship": "Halanych, K. M. and Garey, J. R. and Servin, J. A. and Lake, J. A.",
             "dwc:namePublishedIn": [
                 {
                     "type": "article",
@@ -460,7 +460,86 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Lophotrochozoa",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "K. M. Halanych",
+                            "alternate": [
+                                "Halanych, K. M."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "Halanych",
+                            "middlename": "M."
+                        },
+                        {
+                            "name": "J. R. Garey",
+                            "alternate": [
+                                "Garey, J. R."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Garey",
+                            "middlename": "R."
+                        },
+                        {
+                            "name": "J. A. Servin",
+                            "alternate": [
+                                "Servin, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Servin",
+                            "middlename": "A."
+                        },
+                        {
+                            "name": "J. A. Lake",
+                            "alternate": [
+                                "Lake, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Lake",
+                            "middlename": "A."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "503-506",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The largest crown clade containing Glycera americana Leidy, 1855 (Annelida), Placopecten magellanicus (Gmelin 1791) (Mollusca), Phoronis vancouverensis Pixell 1912 (Phoronida), Terebratalia transversa (Sowerby 1846) (Brachiopoda), and Plumatella repens (Linnaeus 1758) (Bryozoa), but not Drosophila melanogaster Meigen 1830 (Arthropoda, Insecta), Caenorhabiditis elegans (Maupas 1900) (Nematoda) and Strongylocentrotus purpuratus (Stimpson 1857) (Deuterostomia, Echinodermata).",
             "internalSpecifiers": [
                 {
@@ -471,73 +550,9 @@
                         "label": "Glycera americana Leidy, 1855",
                         "nameComplete": "Glycera americana"
                     }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Placopecten magellanicus Gmelin, 1791",
-                        "nameComplete": "Placopecten magellanicus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Phoronis vancouverensis Pixell, 1912",
-                        "nameComplete": "Phoronis vancouverensis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Terebratalia transversa Sowerby, 1846",
-                        "nameComplete": "Terebratalia transversa"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Plumatella repens Linnaeus, 1758",
-                        "nameComplete": "Plumatella repens"
-                    }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Drosophila melanogaster Meigen, 1830",
-                        "nameComplete": "Drosophila melanogaster"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Caenorhabiditis elegans Maupas, 1900",
-                        "nameComplete": "Caenorhabiditis elegans"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Strongylocentrotus purpuratus Stimpson, 1857",
-                        "nameComplete": "Strongylocentrotus purpuratus"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

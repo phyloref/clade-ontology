@@ -915,7 +915,7 @@
         {
             "regnumId": 45,
             "label": "Fungi",
-            "dwc:scientificNameAuthorship": "Hibbett, D. S., Blackwell, M., James, T., Spatafora, J. W., Taylor, J. W., Vilgalys, R.",
+            "dwc:scientificNameAuthorship": "Hibbett, D. S. and Blackwell, M. and James, T. and Spatafora, J. W. and Taylor, J. W. and Vilgalys, R.",
             "dwc:namePublishedIn": [
                 {
                     "type": "book",
@@ -947,7 +947,101 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Fungi",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "D. S. Hibbett",
+                            "alternate": [
+                                "Hibbett, D. S."
+                            ],
+                            "firstname": "D.",
+                            "lastname": "Hibbett",
+                            "middlename": "S."
+                        },
+                        {
+                            "name": "M. Blackwell",
+                            "alternate": [
+                                "Blackwell, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Blackwell"
+                        },
+                        {
+                            "name": "T. James",
+                            "alternate": [
+                                "James, T."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "James"
+                        },
+                        {
+                            "name": "J. W. Spatafora",
+                            "alternate": [
+                                "Spatafora, J. W."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Spatafora",
+                            "middlename": "W."
+                        },
+                        {
+                            "name": "J. W. Taylor",
+                            "alternate": [
+                                "Taylor, J. W."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Taylor",
+                            "middlename": "W."
+                        },
+                        {
+                            "name": "R. Vilgalys",
+                            "alternate": [
+                                "Vilgalys, R."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Vilgalys"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "109-113",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The smallest crown clade containing Rozella allomycis F.K. Faust 1937, Batrachochytrium dendrobatidis Longcore, Pessier & D.K. Nichols 1999, Allomyces arbusculus E.J. Butler 1911, Entomophthora muscae (Cohn) Fresen. 1856, Coemansia reversa Tiegh. & G. Le Monn. 1873, Rhizophagus intraradices (N.C. Schenck & G.S. Sm.) C. Walker & A. Schüßler 2010 [the name Glomus intraradices is used on the primary reference phylogeny], Rhizopus oryzae Went & Prins. Geerl. 1895, Saccharomyces cerevisiae Meyen 1838, and Coprinopsis cinerea (Schaeff.) Redhead, Vilgalys & Moncalvo 2001.",
             "internalSpecifiers": [
                 {
@@ -957,78 +1051,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
                         "label": "Rozella allomycis Faust, 1937",
                         "nameComplete": "Rozella allomycis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Batrachochytrium dendrobatidis Longcore and Pessier and Nichols, 1999",
-                        "nameComplete": "Batrachochytrium dendrobatidis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Allomyces arbusculus Butler, 1911",
-                        "nameComplete": "Allomyces arbusculus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Entomophthora muscae Fresen, 1856",
-                        "nameComplete": "Entomophthora muscae"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Coemansia reversa Le Monn and Teigh, 1873",
-                        "nameComplete": "Coemansia reversa"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Rhizophagus intraradices Walker and Schüßler, 2010",
-                        "nameComplete": "Rhizophagus intraradices"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Rhizopus oryzae Went and Prins. Geerl., 1895",
-                        "nameComplete": "Rhizopus oryzae"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Saccharomyces cerevisiae Meyen, 1838",
-                        "nameComplete": "Saccharomyces cerevisiae"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Coprinopsis cinerea Redhead and Vilgalys and Moncalvo, 2001",
-                        "nameComplete": "Coprinopsis cinerea"
                     }
                 }
             ],

@@ -1,0 +1,164 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Cleaners among wrasses: phylogenetics and evolutionary patterns of cleaning behavior within Labridae",
+                "year": 2016,
+                "authors": [
+                    {
+                        "name": "V. B. Baliga",
+                        "alternate": [
+                            "Baliga, V. B."
+                        ],
+                        "firstname": "V.",
+                        "lastname": "Baliga",
+                        "middlename": "B."
+                    },
+                    {
+                        "name": "C. J. Law",
+                        "alternate": [
+                            "Law, C. J."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Law",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2015.09.006"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Phylogenetics and Evolution",
+                    "volume": "94",
+                    "identifier": [
+                        {
+                            "type": "isbn",
+                            "id": "1055-7903"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 1157,
+            "label": "Labrinae",
+            "dwc:scientificNameAuthorship": "Near, T. J. and Brownstein, C. D. and Thacker, C. E. and Wainwright, P. C.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Families and subfamiles of fishes",
+                    "year": 1893,
+                    "authors": [
+                        {
+                            "name": "T. Gill",
+                            "alternate": [
+                                "Gill, T."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Gill"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Memoirs of the National Academy of Sciences",
+                        "volume": "6",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic taxonomy of wrasses and parrotfishes (Labridae)",
+                    "authors": [
+                        {
+                            "name": "T. J. Near",
+                            "alternate": [
+                                "Near, T. J."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "C. D. Brownstein",
+                            "alternate": [
+                                "Brownstein, C. D."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Brownstein",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "C. E. Thacker",
+                            "alternate": [
+                                "Thacker, C. E."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        },
+                        {
+                            "name": "P. C. Wainwright",
+                            "alternate": [
+                                "Wainwright, P. C."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Wainwright",
+                            "middlename": "C."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": [
+                            {
+                                "type": "isbn",
+                                "id": "2162-4135"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "cladeDefinition": "The least inclusive crown clade that contains Labrus mixtus Linnaeus 1758 and Symphodus rostratus (Bloch 1791).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Labrus mixtus Linnaeus, 1758",
+                        "nameComplete": "Labrus mixtus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Symphodus rostratus Bloch, 1791",
+                        "nameComplete": "Symphodus rostratus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

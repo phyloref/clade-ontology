@@ -1,0 +1,124 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Prolonged morphological expansion of spiny-rayed fishes following the end-Cretaceous",
+                "year": 2022,
+                "authors": [
+                    {
+                        "name": "A. Ghezelayagh",
+                        "alternate": [
+                            "Ghezelayagh, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Ghezelayagh"
+                    },
+                    {
+                        "name": "et al.",
+                        "alternate": [
+                            "et al.,"
+                        ],
+                        "lastname": "et al."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "S23",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1038/s41559-022-01801-3"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Nature Ecology & Evolution",
+                    "volume": "6",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 981,
+            "label": "Acanthuroidei",
+            "dwc:scientificNameAuthorship": "Near, Thomas J. and Thacker, Christine E.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Enumeratio specierum piscium hucusque in Archipelago indico observatarum, adjectis habitationibusque, ubi descriptiones earum recentiores reperiuntur, nec non speciebus Musei Bleekeriani Bengalensibus, Japonicis, Capensibus Tasmanicisque",
+                    "year": 1859,
+                    "authors": [
+                        {
+                            "name": "P. Bleeker",
+                            "alternate": [
+                                "Bleeker, P."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Bleeker"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Acta Societatis Scientiarum Indo-Neerlandensis",
+                        "volume": "6",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
+                    "authors": [
+                        {
+                            "name": "Thomas J. Near",
+                            "alternate": [
+                                "Near, Thomas J."
+                            ],
+                            "firstname": "Thomas",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "Christine E. Thacker",
+                            "alternate": [
+                                "Thacker, Christine E."
+                            ],
+                            "firstname": "Christine",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The least inclusive crown clade containing Acanthurus lineatus (Linnaeus 1758), Zanclus cornutus (Linnaeus 1758), and Luvarus imperialis Rafinesque 1810.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Acanthurus lineatus Linnaeus, 1758",
+                        "nameComplete": "Acanthurus lineatus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

@@ -1,0 +1,199 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "book_section",
+                "title": "The Late Cretaceous pterosaur Quetzalcoatlus Lawson 1975 (Pterodactyloidea: Azhdarchoidea)",
+                "section_title": "Phylogenetic systematics of Quetzalcoatlus (Pterosauria: Azhdarchidae)",
+                "year": 2021,
+                "authors": [
+                    {
+                        "name": "Brian Andres",
+                        "alternate": [
+                            "Andres, Brian"
+                        ],
+                        "firstname": "Brian",
+                        "lastname": "Andres"
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "Kevin Padian",
+                        "alternate": [
+                            "Padian, Kevin"
+                        ],
+                        "firstname": "Kevin",
+                        "lastname": "Padian"
+                    },
+                    {
+                        "name": "MAthew Brown",
+                        "alternate": [
+                            "Brown, MAthew"
+                        ],
+                        "firstname": "MAthew",
+                        "lastname": "Brown"
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "Society of Vertebrate Paleontology",
+                "city": "McLean, VA",
+                "pages": "203–217",
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1080/02724634.2020.1801703"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "https://www.tandfonline.com/doi/full/10.1080/02724634.2020.1801703"
+                    }
+                ]
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "The earliest pterodactyloid and the origin of the group",
+                "year": 2014,
+                "authors": [
+                    {
+                        "name": "Brian Andres",
+                        "alternate": [
+                            "Andres, Brian"
+                        ],
+                        "firstname": "Brian",
+                        "lastname": "Andres"
+                    },
+                    {
+                        "name": "James Clark",
+                        "alternate": [
+                            "Clark, James"
+                        ],
+                        "firstname": "James",
+                        "lastname": "Clark"
+                    },
+                    {
+                        "name": "Xing Xu",
+                        "alternate": [
+                            "Xu, Xing"
+                        ],
+                        "firstname": "Xing",
+                        "lastname": "Xu"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.cub.2014.03.030"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "http://www.sciencedirect.com/science/article/pii/S0960982214003224"
+                    }
+                ],
+                "journal": {
+                    "name": "Current Biology",
+                    "volume": "24",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 357,
+            "label": "Tapejaridae",
+            "dwc:scientificNameAuthorship": "Andres, Brian",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "A new edentate pterosaur of the Lower Cretaceous from the Araripe Basin, Northeast Brazil",
+                    "year": 1989,
+                    "authors": [
+                        {
+                            "name": "Alexander Wilhelm Armin Kellner",
+                            "alternate": [
+                                "Kellner, Alexander Wilhelm Armin"
+                            ],
+                            "firstname": "Alexander",
+                            "lastname": "Kellner",
+                            "middlename": "Wilhelm Armin"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [
+                        {
+                            "url": "https://pascal-francis.inist.fr/vibad/index.php?action=getRecordDetail&idt=19371510"
+                        }
+                    ],
+                    "journal": {
+                        "name": "Anais da Academia Brasileira de Ciências",
+                        "volume": "61",
+                        "identifier": [
+                            {
+                                "type": "isbn",
+                                "id": "0001-3765"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic Taxonomy of the Pterosauria",
+                    "authors": [
+                        {
+                            "name": "Brian Andres",
+                            "alternate": [
+                                "Andres, Brian"
+                            ],
+                            "firstname": "Brian",
+                            "lastname": "Andres"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "figure": "1",
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of Phylogenetic Taxonomy",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "Least inclusive clade containing Tapejara wellnhoferi Kellner 1989, and Sinopterus dongi Wang and Zhou 2003.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Tapejara wellnhoferi Kellner, 1989",
+                        "nameComplete": "Tapejara wellnhoferi"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Sinopterus dongi Wang and Zhou, 2003",
+                        "nameComplete": "Sinopterus dongi"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

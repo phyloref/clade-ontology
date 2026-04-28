@@ -1,0 +1,193 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Resolution of ray-finned fish phylogeny and timing of diversification",
+                "year": 2012,
+                "authors": [
+                    {
+                        "name": "T. J. Near",
+                        "alternate": [
+                            "Near, T. J."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Near",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "R. I. Eytan",
+                        "alternate": [
+                            "Eytan, R. I."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Eytan",
+                        "middlename": "I."
+                    },
+                    {
+                        "name": "A. Dornburg",
+                        "alternate": [
+                            "Dornburg, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Dornburg"
+                    },
+                    {
+                        "name": "K. L. Kuhn",
+                        "alternate": [
+                            "Kuhn, K. L."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Kuhn",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "J. A. Moore",
+                        "alternate": [
+                            "Moore, J. A."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Moore",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "M. P. Davis",
+                        "alternate": [
+                            "Davis, M. P."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Davis",
+                        "middlename": "P."
+                    },
+                    {
+                        "name": "P. C. Wainwright",
+                        "alternate": [
+                            "Wainwright, P. C."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Wainwright",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "M. Friedman",
+                        "alternate": [
+                            "Friedman, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Friedman"
+                    },
+                    {
+                        "name": "W. L. Smith",
+                        "alternate": [
+                            "Smith, W. L."
+                        ],
+                        "firstname": "W.",
+                        "lastname": "Smith",
+                        "middlename": "L."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1073/Pnas.1206625109"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Proceedings of the National Academy of Sciences",
+                    "volume": "109",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 925,
+            "label": "Osmeriformes",
+            "dwc:scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Relationships of the osmeroid fishes and the use of reductive characters in phylogenetic analysis",
+                    "year": 1991,
+                    "authors": [
+                        {
+                            "name": "D. P. Begle",
+                            "alternate": [
+                                "Begle, D. P."
+                            ],
+                            "firstname": "D.",
+                            "lastname": "Begle",
+                            "middlename": "P."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.1093/sysbio/40.1.33"
+                        }
+                    ],
+                    "link": [],
+                    "journal": {
+                        "name": "Systematic Zoology",
+                        "volume": "40",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
+                    "authors": [
+                        {
+                            "name": "Thomas J. Near",
+                            "alternate": [
+                                "Near, Thomas J."
+                            ],
+                            "firstname": "Thomas",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "Christine E. Thacker",
+                            "alternate": [
+                                "Thacker, Christine E."
+                            ],
+                            "firstname": "Christine",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The least inclusive crown clade that contains Osmerus mordax (Mitchill 1814) and Retropinna semoni (Weber 1895).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Osmerus mordax Mitchill, 1814",
+                        "nameComplete": "Osmerus mordax"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

@@ -178,7 +178,7 @@
         {
             "regnumId": 11,
             "label": "Angiospermae",
-            "dwc:scientificNameAuthorship": "Cantino, P. D., Doyle, J. A., Donoghue, M. J.",
+            "dwc:scientificNameAuthorship": "Cantino, P. D. and Doyle, J. A. and Donoghue, M. J.",
             "dwc:namePublishedIn": [
                 {
                     "type": "book",
@@ -203,7 +203,77 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Angiospermae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Doyle",
+                            "alternate": [
+                                "Doyle, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Doyle",
+                            "middlename": "A."
+                        },
+                        {
+                            "name": "M. J. Donoghue",
+                            "alternate": [
+                                "Donoghue, M. J."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Donoghue",
+                            "middlename": "J."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "283-287",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The largest crown clade containing Liquidambar styraciflua Linnaeus 1753 but not Cycas revoluta Thunberg 1782 (Cycadophyta) and Ginkgo biloba Linnaeus 1771 and Gnetum gnemon Linnaeus 1767 (Gnetophyta) and Pinus strobus Linnaeus 1753 (Coniferae).",
             "internalSpecifiers": [
                 {
@@ -216,44 +286,7 @@
                     }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Cycas revoluta Thunberg, 1782",
-                        "nameComplete": "Cycas revoluta"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Ginkgo biloba Linnaeus, 1771",
-                        "nameComplete": "Ginkgo biloba"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Gnetum gnemon Linnaeus, 1767",
-                        "nameComplete": "Gnetum gnemon"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Pinus strobus Linnaeus, 1753",
-                        "nameComplete": "Pinus strobus"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

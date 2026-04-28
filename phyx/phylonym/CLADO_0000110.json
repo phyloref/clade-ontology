@@ -108,7 +108,7 @@
                 "identifier": [
                     {
                         "type": "doi",
-                        "id": "10.1111/j.1529-8817.2010.00900"
+                        "id": "https://doi.org/10.1111/j.1529-8817.2010.00900.x"
                     }
                 ],
                 "link": [],
@@ -184,7 +184,7 @@
         {
             "regnumId": 110,
             "label": "Viridiplantae",
-            "dwc:scientificNameAuthorship": "Mishler, B. D., Hall, J. D., McCourt, R. M., Karol, K. G., Delwiche, C. F., Lewis, L. A.",
+            "dwc:scientificNameAuthorship": "Mishler, B. D. and Hall, J. D. and McCourt, R. M. and Karol, K. G. and Delwiche, C. F. and Lewis, L. A.",
             "dwc:namePublishedIn": [
                 {
                     "type": "article",
@@ -211,7 +211,104 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Viridiplantae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "B. D. Mishler",
+                            "alternate": [
+                                "Mishler, B. D."
+                            ],
+                            "firstname": "B.",
+                            "lastname": "Mishler",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. D. Hall",
+                            "alternate": [
+                                "Hall, J. D."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Hall",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "R. M. McCourt",
+                            "alternate": [
+                                "McCourt, R. M."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "McCourt",
+                            "middlename": "M."
+                        },
+                        {
+                            "name": "K. G. Karol",
+                            "alternate": [
+                                "Karol, K. G."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "Karol",
+                            "middlename": "G."
+                        },
+                        {
+                            "name": "C. F. Delwiche",
+                            "alternate": [
+                                "Delwiche, C. F."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Delwiche",
+                            "middlename": "F."
+                        },
+                        {
+                            "name": "L. A. Lewis",
+                            "alternate": [
+                                "Lewis, L. A."
+                            ],
+                            "firstname": "L.",
+                            "lastname": "Lewis",
+                            "middlename": "A."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "179-182",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The smallest crown clade containing Arabidopsis thaliana (Linnaeus) Heynh. 1842, Chlamydomonas reinhardtii P. A. Dangeard 1888, Ulva intestinalis Linnaeus 1753, Palmophyllum umbracola W.A. Nelson & K.G. Ryan 1986, Nephroselmis olivacea F. Stein 1878, and Mesostigma viride Lauterborn 1894.",
             "internalSpecifiers": [
                 {

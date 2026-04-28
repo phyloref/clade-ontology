@@ -46,9 +46,78 @@
         {
             "regnumId": 267,
             "label": "Pan-Carnivora",
-            "dwc:scientificNameAuthorship": "Flynn, J. J., Wyss, A. R., Wolsan, M.",
+            "dwc:scientificNameAuthorship": "Flynn, J. J. and Wyss, A. R. and Wolsan, M.",
             "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Pan-Carnivora",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "J. J. Flynn",
+                            "alternate": [
+                                "Flynn, J. J."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Flynn",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "A. R. Wyss",
+                            "alternate": [
+                                "Wyss, A. R."
+                            ],
+                            "firstname": "A.",
+                            "lastname": "Wyss",
+                            "middlename": "R."
+                        },
+                        {
+                            "name": "M. Wolsan",
+                            "alternate": [
+                                "Wolsan, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Wolsan"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "979-982",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The total clade composed of the crown clade Carnivora and all extinct organisms or species sharing a more recent common ancestor with Carnivora than with any extant organisms or species that are not members of Carnivora.",
             "internalSpecifiers": [],
             "externalSpecifiers": []

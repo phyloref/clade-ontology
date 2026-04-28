@@ -1,0 +1,157 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Phylogenetic relationships of the Papuan Swiftlet Aerodramus papuensis and implications for the evolution of avian echolocation",
+                "year": 2005,
+                "authors": [
+                    {
+                        "name": "J. Jordan Price",
+                        "alternate": [
+                            "Price, J. Jordan"
+                        ],
+                        "firstname": "J. Jordan",
+                        "lastname": "Price"
+                    },
+                    {
+                        "name": "Kevin P. Johnson",
+                        "alternate": [
+                            "Johnson, Kevin P."
+                        ],
+                        "firstname": "Kevin",
+                        "lastname": "Johnson",
+                        "middlename": "P."
+                    },
+                    {
+                        "name": "Sarah E. Bush",
+                        "alternate": [
+                            "Bush, Sarah E."
+                        ],
+                        "firstname": "Sarah",
+                        "lastname": "Bush",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "Dale H. Clayton",
+                        "alternate": [
+                            "Clayton, Dale H."
+                        ],
+                        "firstname": "Dale",
+                        "lastname": "Clayton",
+                        "middlename": "H."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.1474-919X.2005.00467.x"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1474-919X.2005.00467.x"
+                    }
+                ],
+                "journal": {
+                    "name": "Ibis",
+                    "volume": "147",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 402,
+            "label": "Apodidae",
+            "dwc:scientificNameAuthorship": "Chen, Albert and Field, Daniel J.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Contributions à la faune ornithologique de l'Europe occidentale",
+                    "year": 1887,
+                    "authors": [
+                        {
+                            "name": "Léon Olphe-Galliard",
+                            "alternate": [
+                                "Olphe-Galliard, Léon"
+                            ],
+                            "firstname": "Léon",
+                            "lastname": "Olphe-Galliard"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "L. Lasserre",
+                    "city": "Bayonne",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic definitions for Caprimulgimorphae (Aves) and major constituent clades under the International Code of Phylogenetic Nomenclature",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "Albert Chen",
+                            "alternate": [
+                                "Chen, Albert"
+                            ],
+                            "firstname": "Albert",
+                            "lastname": "Chen"
+                        },
+                        {
+                            "name": "Daniel J. Field",
+                            "alternate": [
+                                "Field, Daniel J."
+                            ],
+                            "firstname": "Daniel",
+                            "lastname": "Field",
+                            "middlename": "J."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "L. Lasserre",
+                    "city": "Bayonne",
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.26049/VZ70-4-2020-03"
+                        }
+                    ],
+                    "link": [
+                        {
+                            "url": "https://www.senckenberg.de/de/wissenschaft/publikationen/wissenschaftliche-zeitschriften/vertebrate-zoology/archiv/vz-70-4-03/"
+                        }
+                    ],
+                    "journal": {
+                        "name": "Vertebrate Zoology",
+                        "volume": "70",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The smallest crown clade containing Cypseloides fumigatus (originally Hemiprocne fumigata Streubel, 1848), Streptoprocne (originally Hirundo) zonaris (Shaw, 1796), Collocalia (originally Hirundo) esculenta (Linnaeus, 1758), Chaetura (originally Hirundo) pelagica (Linnaeus, 1758), and Apus (originally Hirundo) apus (Linnaeus, 1758).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Cypseloides (originally Hemiprocne) fumigatus Streubel, 1848",
+                        "nameComplete": "Cypseloides (originally Hemiprocne) fumigatus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

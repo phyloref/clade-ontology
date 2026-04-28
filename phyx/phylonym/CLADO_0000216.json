@@ -2,34 +2,6 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
     "phylogenies": [
         {
-            "primaryPhylogenyCitation": {
-                "type": "article",
-                "title": "The assembly of the avian body plan: a 160-million-year-long process.",
-                "year": 2018,
-                "edition": "57",
-                "authors": [
-                    {
-                        "name": "A. Cau",
-                        "alternate": [
-                            "Cau, A."
-                        ],
-                        "firstname": "A.",
-                        "lastname": "Cau"
-                    }
-                ],
-                "editors": [],
-                "series_editors": [],
-                "figure": "3",
-                "identifier": [],
-                "link": [],
-                "journal": {
-                    "name": "Bollettino della Società Paleontologica Italiana",
-                    "volume": "1",
-                    "identifier": []
-                }
-            }
-        },
-        {
             "phylogenyCitation": {
                 "type": "article",
                 "title": "The early evolution of archosaurs: relationships and the origin of major clades.",
@@ -162,13 +134,41 @@
                     "identifier": []
                 }
             }
+        },
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "The assembly of the avian body plan: a 160-million-year-long process.",
+                "year": 2018,
+                "edition": "57",
+                "authors": [
+                    {
+                        "name": "A. Cau",
+                        "alternate": [
+                            "Cau, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Cau"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Bollettino della Società Paleontologica Italiana",
+                    "volume": "1",
+                    "identifier": []
+                }
+            }
         }
     ],
     "phylorefs": [
         {
             "regnumId": 216,
             "label": "Theropoda",
-            "dwc:scientificNameAuthorship": "Naish, D., Cau, A., Holtz, T. R., Fabbri, M., Gauthier, J. A.",
+            "dwc:scientificNameAuthorship": "Naish, D. and Cau, A. and Holtz, T. R. and Fabbri, M. and Gauthier, J. A.",
             "dwc:namePublishedIn": [
                 {
                     "type": "article",
@@ -198,7 +198,92 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Theropoda",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "D. Naish",
+                            "alternate": [
+                                "Naish, D."
+                            ],
+                            "firstname": "D.",
+                            "lastname": "Naish"
+                        },
+                        {
+                            "name": "A. Cau",
+                            "alternate": [
+                                "Cau, A."
+                            ],
+                            "firstname": "A.",
+                            "lastname": "Cau"
+                        },
+                        {
+                            "name": "T. R. Holtz",
+                            "alternate": [
+                                "Holtz, T. R."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Holtz",
+                            "middlename": "R."
+                        },
+                        {
+                            "name": "M. Fabbri",
+                            "alternate": [
+                                "Fabbri, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Fabbri"
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "1235-1246",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The largest clade containing Allosaurus fragilis Marsh 1877 (Theropoda) but neither Plateosaurus engelhardti Meyer 1837 (Sauropodomorpha) nor Heterodontosaurus tucki Crompton and Charig 1962 (Ornithischia).",
             "internalSpecifiers": [
                 {
@@ -211,26 +296,7 @@
                     }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Plateosaurus engelhardti Meyer, 1837",
-                        "nameComplete": "Plateosaurus engelhardti"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Heterodontosaurus tucki Crompton and Charig, 1962",
-                        "nameComplete": "Heterodontosaurus tucki"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

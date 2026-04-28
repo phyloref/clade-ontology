@@ -308,7 +308,7 @@
         {
             "regnumId": 103,
             "label": "Stramenopila",
-            "dwc:scientificNameAuthorship": "Simpson, A. G. B., Dunthorn, M.",
+            "dwc:scientificNameAuthorship": "Simpson, A. G. B. and Dunthorn, M.",
             "dwc:namePublishedIn": [
                 {
                     "type": "book",
@@ -353,29 +353,62 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Stramenopila",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "A. G.  B.  Simpson",
+                            "alternate": [
+                                "Simpson, A. G.  B."
+                            ],
+                            "firstname": "A. G.",
+                            "lastname": "Simpson",
+                            "middlename": "B."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "55-59",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The crown clade for which flagellar retronemes (tripartite, rigid, hollow flagellar hairs, arrayed in such a way as to cause ‘reversed’ fluid flow or locomotion), as inherited by Ochromonas danica Pringsheim 1955, is an apomorphy relative to other crown clades, provided that it does not include Tetrahymena thermophila Nanney and McCoy 1976 (Alveolata) and Bigelowiella natans Moestrup and Sengco 2001 (Rhizaria).",
             "internalSpecifiers": [],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Tetrahymena thermophila Nanney and McCoy, 1976",
-                        "nameComplete": "Tetrahymena thermophila"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Bigelowiella natans Moestrup and Sengco, 2001",
-                        "nameComplete": "Bigelowiella natans"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

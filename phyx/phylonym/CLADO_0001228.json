@@ -1,0 +1,88 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [],
+    "phylorefs": [
+        {
+            "regnumId": 1228,
+            "label": "Daspletosaurini",
+            "dwc:scientificNameAuthorship": "Napoli, James G and Zanno, Lindsay E",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "A new tyrannosaurine (Theropoda: Tyrannosauridae) from the Campanian Foremost Formation of Alberta, Canada, provides insight into the evolution and biogeography of tyrannosaurids",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "Jared T Voris",
+                            "alternate": [
+                                "Voris, Jared T"
+                            ],
+                            "firstname": "Jared",
+                            "lastname": "Voris",
+                            "middlename": "T"
+                        },
+                        {
+                            "name": "Francois Therrien",
+                            "alternate": [
+                                "Therrien, Francois"
+                            ],
+                            "firstname": "Francois",
+                            "lastname": "Therrien"
+                        },
+                        {
+                            "name": "Darla K. Zelenitsky",
+                            "alternate": [
+                                "Zelenitsky, Darla K."
+                            ],
+                            "firstname": "Darla",
+                            "lastname": "Zelenitsky",
+                            "middlename": "K."
+                        },
+                        {
+                            "name": "Caleb M Brown",
+                            "alternate": [
+                                "Brown, Caleb M"
+                            ],
+                            "firstname": "Caleb",
+                            "lastname": "Brown",
+                            "middlename": "M"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Cretaceous Research",
+                        "volume": "110",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The largest clade containing Daspletosaurus torosus Russell 1970 but not Tyrannosaurus rex Osborn 1905.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Daspletosaurus torosus Russell, 1970",
+                        "nameComplete": "Daspletosaurus torosus"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Tyrannosaurus rex Osborn, 1905",
+                        "nameComplete": "Tyrannosaurus rex"
+                    }
+                }
+            ]
+        }
+    ]
+}

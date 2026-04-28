@@ -1,0 +1,216 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "An inverse latitudinal gradient in speciation rate for marine fishes",
+                "year": 2018,
+                "authors": [
+                    {
+                        "name": "D. L. Rabosky",
+                        "alternate": [
+                            "Rabosky, D. L."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Rabosky",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "J. Chang",
+                        "alternate": [
+                            "Chang, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Chang"
+                    },
+                    {
+                        "name": "P. O. Title",
+                        "alternate": [
+                            "Title, P. O."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Title",
+                        "middlename": "O."
+                    },
+                    {
+                        "name": "P. F. Cowman",
+                        "alternate": [
+                            "Cowman, P. F."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Cowman",
+                        "middlename": "F."
+                    },
+                    {
+                        "name": "L. Sallan",
+                        "alternate": [
+                            "Sallan, L."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Sallan"
+                    },
+                    {
+                        "name": "M. Friedman",
+                        "alternate": [
+                            "Friedman, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Friedman"
+                    },
+                    {
+                        "name": "K. Kaschner",
+                        "alternate": [
+                            "Kaschner, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Kaschner"
+                    },
+                    {
+                        "name": "C. Garilao",
+                        "alternate": [
+                            "Garilao, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Garilao"
+                    },
+                    {
+                        "name": "T. J. Near",
+                        "alternate": [
+                            "Near, T. J."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Near",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "M. Coll",
+                        "alternate": [
+                            "Coll, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Coll"
+                    },
+                    {
+                        "name": "M. E. Alfaro",
+                        "alternate": [
+                            "Alfaro, M. E."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Alfaro",
+                        "middlename": "E."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1038/s41586-018-0273-1"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Nature",
+                    "volume": "559",
+                    "identifier": [
+                        {
+                            "type": "isbn",
+                            "id": "1476-4687"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 922,
+            "label": "Stomiiformes",
+            "dwc:scientificNameAuthorship": "Near, Thomas J. and Thacker, Christine E.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Relationships of the stomiiform fishes (Teleostei), with a description of Diplophos",
+                    "year": 1982,
+                    "authors": [
+                        {
+                            "name": "W. L. Fink",
+                            "alternate": [
+                                "Fink, W. L."
+                            ],
+                            "firstname": "W.",
+                            "lastname": "Fink",
+                            "middlename": "L."
+                        },
+                        {
+                            "name": "S. H. Weitzman",
+                            "alternate": [
+                                "Weitzman, S. H."
+                            ],
+                            "firstname": "S.",
+                            "lastname": "Weitzman",
+                            "middlename": "H."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Museum of Comparative Zoology",
+                        "volume": "150",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
+                    "authors": [
+                        {
+                            "name": "Thomas J. Near",
+                            "alternate": [
+                                "Near, Thomas J."
+                            ],
+                            "firstname": "Thomas",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "Christine E. Thacker",
+                            "alternate": [
+                                "Thacker, Christine E."
+                            ],
+                            "firstname": "Christine",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The least inclusive crown clade that contains Stomias boa (Linnaeus 1758), Gonostoma denudatum Rafinesque 1810, Sternoptyx diaphana Hermann 1781, and Vinciguerria nimbaria (Jordan and Williams in Jordan and Starks 1895).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Stomias boa Linnaeus, 1758",
+                        "nameComplete": "Stomias boa"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

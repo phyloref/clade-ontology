@@ -1,0 +1,182 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Gradual Assembly of Avian Body Plan Culminated in Rapid Rates of Evolution across the Dinosaur-Bird Transition",
+                "year": 2014,
+                "authors": [
+                    {
+                        "name": "Stephen Brusatte",
+                        "alternate": [
+                            "Brusatte, Stephen"
+                        ],
+                        "firstname": "Stephen",
+                        "lastname": "Brusatte"
+                    },
+                    {
+                        "name": "Graeme Lloyd",
+                        "alternate": [
+                            "Lloyd, Graeme"
+                        ],
+                        "firstname": "Graeme",
+                        "lastname": "Lloyd"
+                    },
+                    {
+                        "name": "Steve Wang",
+                        "alternate": [
+                            "Wang, Steve"
+                        ],
+                        "firstname": "Steve",
+                        "lastname": "Wang"
+                    },
+                    {
+                        "name": "Mark Norell",
+                        "alternate": [
+                            "Norell, Mark"
+                        ],
+                        "firstname": "Mark",
+                        "lastname": "Norell"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "doi.org/10.1016/j.cub.2014.08.034"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Current Biology",
+                    "volume": "20",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 1170,
+            "label": "Maniraptoromorpha",
+            "dwc:scientificNameAuthorship": "Delcourt, Rafael and Grillo, Orlando and Hendrickx, Christophe and Kellermann, Maximilian and Langer, Max",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "The assembly of the avian body plan: a 160-million-year long proces",
+                    "year": 2018,
+                    "edition": "57",
+                    "authors": [
+                        {
+                            "name": "Andrea Cau",
+                            "alternate": [
+                                "Cau, Andrea"
+                            ],
+                            "firstname": "Andrea",
+                            "lastname": "Cau"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "figure": "3",
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bollettino della Società Paleontologica Italiana",
+                        "volume": "1",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "The coelurosaur theropods of the Romualdo Formation, Early Cretaceous (Aptian) of Brazil: Santanaraptor placidus meets Mirischia asymmetrica",
+                    "year": 2025,
+                    "edition": "2025",
+                    "authors": [
+                        {
+                            "name": "Rafael Delcourt",
+                            "alternate": [
+                                "Delcourt, Rafael"
+                            ],
+                            "firstname": "Rafael",
+                            "lastname": "Delcourt"
+                        },
+                        {
+                            "name": "Orlando Grillo",
+                            "alternate": [
+                                "Grillo, Orlando"
+                            ],
+                            "firstname": "Orlando",
+                            "lastname": "Grillo"
+                        },
+                        {
+                            "name": "Christophe Hendrickx",
+                            "alternate": [
+                                "Hendrickx, Christophe"
+                            ],
+                            "firstname": "Christophe",
+                            "lastname": "Hendrickx"
+                        },
+                        {
+                            "name": "Maximilian Kellermann",
+                            "alternate": [
+                                "Kellermann, Maximilian"
+                            ],
+                            "firstname": "Maximilian",
+                            "lastname": "Kellermann"
+                        },
+                        {
+                            "name": "Max Langer",
+                            "alternate": [
+                                "Langer, Max"
+                            ],
+                            "firstname": "Max",
+                            "lastname": "Langer"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.1002/ar.70085"
+                        }
+                    ],
+                    "link": [],
+                    "journal": {
+                        "name": "The Anatomical Record",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The largest clade containing Vultur gryphus Carolus Linnaeus 1758, but not Tyrannosaurus rex Osborn 1905",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Vultur gryphus Linnaeus, 1758",
+                        "nameComplete": "Vultur gryphus"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Tyrannosaurus rex Osborn, 1905",
+                        "nameComplete": "Tyrannosaurus rex"
+                    }
+                }
+            ]
+        }
+    ]
+}

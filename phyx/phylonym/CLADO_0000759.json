@@ -1,0 +1,107 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "The phylogenetics of Teleosauroidea (Crocodylomorpha, Thalattosuchia) and implications for their ecology and evolution",
+                "year": 2020,
+                "authors": [
+                    {
+                        "name": "Michela M Johnson",
+                        "alternate": [
+                            "Johnson, Michela M"
+                        ],
+                        "firstname": "Michela",
+                        "lastname": "Johnson",
+                        "middlename": "M"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "59–61, 63-64",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.7717/peerj.9808"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "PeerJ",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 759,
+            "label": "Machimosaurinae",
+            "dwc:scientificNameAuthorship": "Johnson, Michela M and Young, Mark T and Brusatte, Stephen L",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "The phylogenetics of Teleosauroidea (Crocodylomorpha, Thalattosuchia) and implications for their ecology and evolution",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "Michela M Johnson",
+                            "alternate": [
+                                "Johnson, Michela M"
+                            ],
+                            "firstname": "Michela",
+                            "lastname": "Johnson",
+                            "middlename": "M"
+                        },
+                        {
+                            "name": "Mark T Young",
+                            "alternate": [
+                                "Young, Mark T"
+                            ],
+                            "firstname": "Mark",
+                            "lastname": "Young",
+                            "middlename": "T"
+                        },
+                        {
+                            "name": "Stephen L Brusatte",
+                            "alternate": [
+                                "Brusatte, Stephen L"
+                            ],
+                            "firstname": "Stephen",
+                            "lastname": "Brusatte",
+                            "middlename": "L"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.7717/peerj.9808"
+                        }
+                    ],
+                    "link": [],
+                    "journal": {
+                        "name": "PeerJ",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The largest clade within Teleosauroidea containing Machimosaurus hugii (von Meyer 1837) but  not Macrospondylus bollensis (Jaeger 1828), Deslongchampsina larteti (Eudes-Deslongchamps 1866), and Charitomenosuchus leedsi (Andrews 1909).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Machimosaurus hugii von Meyer, 1837",
+                        "nameComplete": "Machimosaurus hugii"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

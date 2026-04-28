@@ -72,7 +72,7 @@
         {
             "regnumId": 223,
             "label": "Monotremata",
-            "dwc:scientificNameAuthorship": "Rowe, T. B., Bhullar, B. A. S., Wallace, R. V. S.",
+            "dwc:scientificNameAuthorship": "Rowe, T. B. and Bhullar, B. A. S. and Wallace, R. V. S.",
             "dwc:namePublishedIn": [
                 {
                     "type": "book",
@@ -95,7 +95,77 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Monotremata",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "T. B. Rowe",
+                            "alternate": [
+                                "Rowe, T. B."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Rowe",
+                            "middlename": "B."
+                        },
+                        {
+                            "name": "B. A.S. Bhullar",
+                            "alternate": [
+                                "Bhullar, B. A.S."
+                            ],
+                            "firstname": "B.",
+                            "lastname": "Bhullar",
+                            "middlename": "A.S."
+                        },
+                        {
+                            "name": "R. V. S. Wallace",
+                            "alternate": [
+                                "Wallace, R. V. S."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Wallace",
+                            "middlename": "V. S."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "875-889",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The crown clade originating in the most recent common ancestor of Tachyglossus aculeatus (Shaw 1792) and Ornithorhynchus anatinus (Shaw 1799).",
             "internalSpecifiers": [
                 {
@@ -105,15 +175,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Tachyglossus aculeatus Shaw, 1792",
                         "nameComplete": "Tachyglossus aculeatus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Ornithorhynchus anatinus Shaw, 1799",
-                        "nameComplete": "Ornithorhynchus anatinus"
                     }
                 }
             ],

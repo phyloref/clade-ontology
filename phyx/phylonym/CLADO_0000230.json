@@ -104,7 +104,59 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Isorophida",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "C. D. Sumrall",
+                            "alternate": [
+                                "Sumrall, C. D."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Sumrall",
+                            "middlename": "D."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "651-652",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The clade originating in the most recent common ancestor of Streptaster vorticellatus (Hall 1866), Argodiscus espilezorum Sumrall and Zamora 2011, Carneyella pilea (Hall 1866), Isorophus cincinnatiensis (Roemer 1851), and Agelacrinites hamiltonensis Vanuxem 1842.",
             "internalSpecifiers": [
                 {
@@ -114,42 +166,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Streptaster vorticellatus Hall, 1866",
                         "nameComplete": "Streptaster vorticellatus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Argodiscus espilezorum Sumrall and Zamora, 2011",
-                        "nameComplete": "Argodiscus espilezorum"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Carneyella pilea Hall, 1866",
-                        "nameComplete": "Carneyella pilea"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Isorophus cincinnatiensis Roemer, 1851",
-                        "nameComplete": "Isorophus cincinnatiensis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Agelacrinites hamiltonensis Vanuxem, 1842",
-                        "nameComplete": "Agelacrinites hamiltonensis"
                     }
                 }
             ],

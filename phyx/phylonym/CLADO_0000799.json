@@ -1,0 +1,122 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "The phylogenetics of Teleosauroidea (Crocodylomorpha, Thalattosuchia) and implications for their ecology and evolution",
+                "year": 2020,
+                "authors": [
+                    {
+                        "name": "M M Johnson",
+                        "alternate": [
+                            "Johnson, M M"
+                        ],
+                        "firstname": "M",
+                        "lastname": "Johnson",
+                        "middlename": "M"
+                    },
+                    {
+                        "name": "M T Young",
+                        "alternate": [
+                            "Young, M T"
+                        ],
+                        "firstname": "M",
+                        "lastname": "Young",
+                        "middlename": "T"
+                    },
+                    {
+                        "name": "S L Brusatte",
+                        "alternate": [
+                            "Brusatte, S L"
+                        ],
+                        "firstname": "S",
+                        "lastname": "Brusatte",
+                        "middlename": "L"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "59-61, 63 and 64",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "PeerJ",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 799,
+            "label": "Teleosaurinae",
+            "dwc:scientificNameAuthorship": "Bonaparte, C L",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Synopsis vertebratorum systematis",
+                    "year": 1838,
+                    "authors": [
+                        {
+                            "name": "C L Bonaparte",
+                            "alternate": [
+                                "Bonaparte, C L"
+                            ],
+                            "firstname": "C",
+                            "lastname": "Bonaparte",
+                            "middlename": "L"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Nuovi annali delle scienze naturali",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Synopsis vertebratorum systematis",
+                    "year": 1838,
+                    "authors": [
+                        {
+                            "name": "C L Bonaparte",
+                            "alternate": [
+                                "Bonaparte, C L"
+                            ],
+                            "firstname": "C",
+                            "lastname": "Bonaparte",
+                            "middlename": "L"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Nuovi annali delle scienze naturali",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The largest clade within Teleosauroidea containing Teleosaurus cadomensis (Lamouroux 1820) but not Aeolodon priscus (von Sömmerring 1814).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Teleosaurus cadomensis Lamouroux, 1820",
+                        "nameComplete": "Teleosaurus cadomensis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

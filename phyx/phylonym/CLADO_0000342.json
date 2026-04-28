@@ -1,0 +1,207 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "book_section",
+                "title": "The Late Cretaceous pterosaur Quetzalcoatlus Lawson 1975 (Pterodactyloidea: Azhdarchoidea).",
+                "section_title": "Phylogenetic systematics of Quetzalcoatlus (Pterosauria: Azhdarchidae)",
+                "year": 2021,
+                "authors": [
+                    {
+                        "name": "Brian Andres",
+                        "alternate": [
+                            "Andres, Brian"
+                        ],
+                        "firstname": "Brian",
+                        "lastname": "Andres"
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "Kevin Padian",
+                        "alternate": [
+                            "Padian, Kevin"
+                        ],
+                        "firstname": "Kevin",
+                        "lastname": "Padian"
+                    },
+                    {
+                        "name": "Matthew Brown",
+                        "alternate": [
+                            "Brown, Matthew"
+                        ],
+                        "firstname": "Matthew",
+                        "lastname": "Brown"
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "Society of Vertebrate Paleontology",
+                "city": "McLean, VA",
+                "pages": "203–217",
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1080/02724634.2020.1801703"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "https://www.tandfonline.com/doi/full/10.1080/02724634.2020.1801703"
+                    }
+                ]
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "The Earliest Pterodactyloid and the Origin of the Group",
+                "year": 2014,
+                "authors": [
+                    {
+                        "name": "Brian Andres",
+                        "alternate": [
+                            "Andres, Brian"
+                        ],
+                        "firstname": "Brian",
+                        "lastname": "Andres"
+                    },
+                    {
+                        "name": "James M Clark",
+                        "alternate": [
+                            "Clark, James M"
+                        ],
+                        "firstname": "James",
+                        "lastname": "Clark",
+                        "middlename": "M"
+                    },
+                    {
+                        "name": "Xing Xu",
+                        "alternate": [
+                            "Xu, Xing"
+                        ],
+                        "firstname": "Xing",
+                        "lastname": "Xu"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.cub.2014.03.030"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "http://www.sciencedirect.com/science/article/pii/S0960982214003224"
+                    }
+                ],
+                "journal": {
+                    "name": "Current Biology",
+                    "volume": "24",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 342,
+            "label": "Nyctosauridae",
+            "dwc:scientificNameAuthorship": "Andres, Brian",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "A manual of palaeontology for the use of students: with a general introduction on the principles of palæontology",
+                    "year": 1889,
+                    "edition": "Third",
+                    "authors": [
+                        {
+                            "name": "Henry Alleyne Nicholson",
+                            "alternate": [
+                                "Nicholson, Henry Alleyne"
+                            ],
+                            "firstname": "Henry",
+                            "lastname": "Nicholson",
+                            "middlename": "Alleyne"
+                        },
+                        {
+                            "name": "Richard Lydekker",
+                            "alternate": [
+                                "Lydekker, Richard"
+                            ],
+                            "firstname": "Richard",
+                            "lastname": "Lydekker"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "William Blackwood and Sons",
+                    "city": "Edinburgh and London",
+                    "pages": "1624",
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.5962/bhl.title.61545"
+                        }
+                    ],
+                    "link": [
+                        {
+                            "url": "https://www.biodiversitylibrary.org/bibliography/61545#/summary"
+                        }
+                    ]
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic Taxonomy of the Pterosauria",
+                    "authors": [
+                        {
+                            "name": "Brian Andres",
+                            "alternate": [
+                                "Andres, Brian"
+                            ],
+                            "firstname": "Brian",
+                            "lastname": "Andres"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "figure": "1",
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of Phylogenetic Taxonomy",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "Least inclusive clade containing Nyctosaurus gracilis (Marsh, 1876) and Muzquizopteryx cohuilensis Frey et al., 2006.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Nyctosaurus gracilis Marsh, 1876",
+                        "nameComplete": "Nyctosaurus gracilis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Muzquizopteryx cohuilensis Frey and Buchy and Stinnesbeck and González and di Stefano, 2006",
+                        "nameComplete": "Muzquizopteryx cohuilensis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

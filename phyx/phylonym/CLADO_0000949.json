@@ -1,0 +1,135 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Prolonged morphological expansion of spiny-rayed fishes following the end-Cretaceous",
+                "year": 2022,
+                "authors": [
+                    {
+                        "name": "A. Ghezelayagh",
+                        "alternate": [
+                            "Ghezelayagh, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Ghezelayagh"
+                    },
+                    {
+                        "name": "et al.",
+                        "alternate": [
+                            "al., et"
+                        ],
+                        "firstname": "et",
+                        "lastname": "al."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "S3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1038/s41559-022-01801-3"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Nature Ecology & Evolution",
+                    "volume": "6",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 949,
+            "label": "Bythitoidei",
+            "dwc:scientificNameAuthorship": "Thacker, C. E. and Near, T. J.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Guide to the identififcation of genera of the fish order Ophidiiformes with a tentative classification of the order",
+                    "year": 1978,
+                    "authors": [
+                        {
+                            "name": "D. M. Cohen",
+                            "alternate": [
+                                "Cohen, D. M."
+                            ],
+                            "firstname": "D.",
+                            "lastname": "Cohen",
+                            "middlename": "M."
+                        },
+                        {
+                            "name": "J. G. Nielsen",
+                            "alternate": [
+                                "Nielsen, J. G."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Nielsen",
+                            "middlename": "G."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "NOAA Technical Report NMFS Circular",
+                        "volume": "417",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
+                    "authors": [
+                        {
+                            "name": "T. J. Near",
+                            "alternate": [
+                                "Near, T. J."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "C. E. Thacker",
+                            "alternate": [
+                                "Thacker, C. E."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The least inclusive crown clade that contains Dinematichthys iluocoeteoides Bleeker 1855 and Aphyonus gelatinosus Günther 1878.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Dinematichthys iluocoeteoides Bleeker, 1855",
+                        "nameComplete": "Dinematichthys iluocoeteoides"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

@@ -1,0 +1,206 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "The systematics and nomenclature of Tethysuchia (Archosauria, Crocodylomorpha) under the International Code of Phylogenetic Nomenclature",
+                "authors": [
+                    {
+                        "name": "Stéphane Jouve",
+                        "alternate": [
+                            "Jouve, Stéphane"
+                        ],
+                        "firstname": "Stéphane",
+                        "lastname": "Jouve"
+                    },
+                    {
+                        "name": "Mark T. Young",
+                        "alternate": [
+                            "Young, Mark T."
+                        ],
+                        "firstname": "Mark",
+                        "lastname": "Young",
+                        "middlename": "T."
+                    },
+                    {
+                        "name": "Alexander K. Hastings",
+                        "alternate": [
+                            "Hastings, Alexander K."
+                        ],
+                        "firstname": "Alexander",
+                        "lastname": "Hastings",
+                        "middlename": "K."
+                    },
+                    {
+                        "name": "Khalafallah Salih",
+                        "alternate": [
+                            "Salih, Khalafallah"
+                        ],
+                        "firstname": "Khalafallah",
+                        "lastname": "Salih"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Zoological Journal of the Linnean Society",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 1214,
+            "label": "Dyrosauridae",
+            "dwc:scientificNameAuthorship": "Jouve, Stéphane and Young, Mark T. and Hastings, Alexander K. and Salih, Khalafallah",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Nuovi rettili degli strati a fosfato della Tunisia",
+                    "year": 1903,
+                    "authors": [
+                        {
+                            "name": "G. de Stefano",
+                            "alternate": [
+                                "de Stefano, G."
+                            ],
+                            "firstname": "G.",
+                            "lastname": "de Stefano"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bollettino delle Societa Geologica Italiana",
+                        "volume": "22",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "The systematics and nomenclature of Tethysuchia (Archosauria, Crocodylomorpha) under the International Code of Phylogenetic Nomenclature",
+                    "authors": [
+                        {
+                            "name": "Stéphane Jouve",
+                            "alternate": [
+                                "Jouve, Stéphane"
+                            ],
+                            "firstname": "Stéphane",
+                            "lastname": "Jouve"
+                        },
+                        {
+                            "name": "Mark T. Young",
+                            "alternate": [
+                                "Young, Mark T."
+                            ],
+                            "firstname": "Mark",
+                            "lastname": "Young",
+                            "middlename": "T."
+                        },
+                        {
+                            "name": "Alexander K. Hastings",
+                            "alternate": [
+                                "Hastings, Alexander K."
+                            ],
+                            "firstname": "Alexander",
+                            "lastname": "Hastings",
+                            "middlename": "K."
+                        },
+                        {
+                            "name": "Khalafallah Salih",
+                            "alternate": [
+                                "Salih, Khalafallah"
+                            ],
+                            "firstname": "Khalafallah",
+                            "lastname": "Salih"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Zoological Journal of the Linnean Society",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "Dyrosauridae is the smallest clade within Crocodylomorpha containing Dyrosaurus phosphaticus (Thomas 1893), Chenanisuchus lateroculi Jouve et al. 2005a, Anthracosuchus balrogus, and Phosphatosaurus gavialoides Bergounioux 1955, but not Elosuchus cherifiensis (Lavocat 1955), Vectisuchus leptognathus Buffetaut and Hutt 1980, and Pholidosaurus schaumburgensis von Meyer 1841.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Dyrosaurus phosphaticus Thomas, 1893",
+                        "nameComplete": "Dyrosaurus phosphaticus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Chenanisuchus lateroculi Jouve and Bouya and Amaghzaz, 2005",
+                        "nameComplete": "Chenanisuchus lateroculi"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Anthracosuchus balrogus Hastings and Bloch and Jaramillo, 2015",
+                        "nameComplete": "Anthracosuchus balrogus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Phosphatosaurus gavialoides Bergounioux, 1955",
+                        "nameComplete": "Phosphatosaurus gavialoides"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Elosuchus cherifiensis Lavocat, 1955",
+                        "nameComplete": "Elosuchus cherifiensis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Vectisuchus leptognathus Buffetaut and Hutt, 1980",
+                        "nameComplete": "Vectisuchus leptognathus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Pholidosaurus schaumburgensis von Meyer, 1841",
+                        "nameComplete": "Pholidosaurus schaumburgensis"
+                    }
+                }
+            ]
+        }
+    ]
+}

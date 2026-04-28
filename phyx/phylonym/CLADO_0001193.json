@@ -1,0 +1,234 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A new species of the Late Jurassic pachycormiform fish Orthocormus and comments on the beta taxonomy and phylogenetic systematics of the Pachycormiformes",
+                "year": 2026,
+                "authors": [
+                    {
+                        "name": "Alina Kanarkina",
+                        "alternate": [
+                            "Kanarkina, Alina"
+                        ],
+                        "firstname": "Alina",
+                        "lastname": "Kanarkina"
+                    },
+                    {
+                        "name": "Nikolay G Zverkov",
+                        "alternate": [
+                            "Zverkov, Nikolay G"
+                        ],
+                        "firstname": "Nikolay",
+                        "lastname": "Zverkov",
+                        "middlename": "G"
+                    },
+                    {
+                        "name": "Dmitry V Varenov",
+                        "alternate": [
+                            "Varenov, Dmitry V"
+                        ],
+                        "firstname": "Dmitry",
+                        "lastname": "Varenov",
+                        "middlename": "V"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "10",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "https://doi.org/10.1093/zoolinnean/zlag009"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Zoological Journal of the Linnean Society",
+                    "volume": "206",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Parallel evolutionary trajectories underlie the origin of giant suspension-feeding whales and bony fishes",
+                "year": 2012,
+                "authors": [
+                    {
+                        "name": "Matt Friedman",
+                        "alternate": [
+                            "Friedman, Matt"
+                        ],
+                        "firstname": "Matt",
+                        "lastname": "Friedman"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2a",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "https://doi.org/10.1098/rspb.2011.1381"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Proceedings of the Royal Society B",
+                    "volume": "279",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 1193,
+            "label": "Pachycorminae",
+            "dwc:scientificNameAuthorship": "Kanarkina, Alina and Zverkov, Nikolay G and Varenov, Dmitry V",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book_section",
+                    "title": "A manual of Palæontology for the use of students, with a general introduction on the principles of palaeontology. Volume II.",
+                    "section_title": "Part III. Palaeozoology. Vertebrata",
+                    "year": 1889,
+                    "edition": "3",
+                    "authors": [
+                        {
+                            "name": "R Lydekker",
+                            "alternate": [
+                                "Lydekker, R"
+                            ],
+                            "firstname": "R",
+                            "lastname": "Lydekker"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "H A Nicholson",
+                            "alternate": [
+                                "Nicholson, H A"
+                            ],
+                            "firstname": "H",
+                            "lastname": "Nicholson",
+                            "middlename": "A"
+                        },
+                        {
+                            "name": "R Lydekker",
+                            "alternate": [
+                                "Lydekker, R"
+                            ],
+                            "firstname": "R",
+                            "lastname": "Lydekker"
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "Blackwood and Sons",
+                    "city": "Edinburgh/London",
+                    "pages": "889–1474",
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "https://doi.org/10.5962/bhl.title.61545"
+                        }
+                    ],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "A new species of the Late Jurassic pachycormiform fish Orthocormus and comments on the beta taxonomy and phylogenetic systematics of the Pachycormiformes",
+                    "year": 2026,
+                    "authors": [
+                        {
+                            "name": "Alina Kanarkina",
+                            "alternate": [
+                                "Kanarkina, Alina"
+                            ],
+                            "firstname": "Alina",
+                            "lastname": "Kanarkina"
+                        },
+                        {
+                            "name": "Nikolay G Zverkov",
+                            "alternate": [
+                                "Zverkov, Nikolay G"
+                            ],
+                            "firstname": "Nikolay",
+                            "lastname": "Zverkov",
+                            "middlename": "G"
+                        },
+                        {
+                            "name": "Dmitry V Varenov",
+                            "alternate": [
+                                "Varenov, Dmitry V"
+                            ],
+                            "firstname": "Dmitry",
+                            "lastname": "Varenov",
+                            "middlename": "V"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "figure": "10",
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "https://doi.org/10.1093/zoolinnean/zlag009"
+                        }
+                    ],
+                    "link": [],
+                    "journal": {
+                        "name": "Zoological Journal of the Linnean Society",
+                        "volume": "206",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The largest clade containing Pachycormus macropterus (Blainville, 1818), but not Asthenocormus titanius (Wagner, 1863), or Bonnerichthys gladius (Cope, 1873), or Protosphyraena ferox Leidy, 1857.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Pachycormus macropterus de Blainville, 1818",
+                        "nameComplete": "Pachycormus macropterus"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Asthenocormus titanius Wagner, 1863",
+                        "nameComplete": "Asthenocormus titanius"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Bonnerichthys gladius Cope, 1873",
+                        "nameComplete": "Bonnerichthys gladius"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Protosphyraena ferox Leidy, 1857",
+                        "nameComplete": "Protosphyraena ferox"
+                    }
+                }
+            ]
+        }
+    ]
+}

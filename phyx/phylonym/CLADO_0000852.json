@@ -1,0 +1,159 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Resolving the genera Aloysia and Acantholippia within the tribe Lantaneae (Verbenaceae), using chloroplast and nuclear sequence data",
+                "year": 2014,
+                "authors": [
+                    {
+                        "name": "Patricia Lu-Irving",
+                        "alternate": [
+                            "Lu-Irving, Patricia"
+                        ],
+                        "firstname": "Patricia",
+                        "lastname": "Lu-Irving"
+                    },
+                    {
+                        "name": "Nataly O'Leary",
+                        "alternate": [
+                            "O'Leary, Nataly"
+                        ],
+                        "firstname": "Nataly",
+                        "lastname": "O'Leary"
+                    },
+                    {
+                        "name": "Anna O'Brien",
+                        "alternate": [
+                            "O'Brien, Anna"
+                        ],
+                        "firstname": "Anna",
+                        "lastname": "O'Brien"
+                    },
+                    {
+                        "name": "Richard G Olmstead",
+                        "alternate": [
+                            "Olmstead, Richard G"
+                        ],
+                        "firstname": "Richard",
+                        "lastname": "Olmstead",
+                        "middlename": "G"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "4",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Systematic Botany",
+                    "volume": "39",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 852,
+            "label": "Aloysia",
+            "dwc:scientificNameAuthorship": "O'Leary, Nataly and Olmstead, Richard G",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Parte Práct. Bot.",
+                    "year": 1784,
+                    "authors": [
+                        {
+                            "name": "Antonio Palau",
+                            "alternate": [
+                                "Palau, Antonio"
+                            ],
+                            "firstname": "Antonio",
+                            "lastname": "Palau"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "pages": "767",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Making Lantaneae (Verbenaceae) taxonomy useful: A phylogenetic classification",
+                    "year": 2023,
+                    "authors": [
+                        {
+                            "name": "Nataly O'Leary",
+                            "alternate": [
+                                "O'Leary, Nataly"
+                            ],
+                            "firstname": "Nataly",
+                            "lastname": "O'Leary"
+                        },
+                        {
+                            "name": "Patricia Lu-Irving",
+                            "alternate": [
+                                "Lu-Irving, Patricia"
+                            ],
+                            "firstname": "Patricia",
+                            "lastname": "Lu-Irving"
+                        },
+                        {
+                            "name": "Richard G Olmstead",
+                            "alternate": [
+                                "Olmstead, Richard G"
+                            ],
+                            "firstname": "Richard",
+                            "lastname": "Olmstead",
+                            "middlename": "G"
+                        },
+                        {
+                            "name": "et al.",
+                            "alternate": [
+                                "et al.,"
+                            ],
+                            "lastname": "et al."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "figure": "1",
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Taxon",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The maximum crown clade containing Aloysia citrodora Paláu 1784, but not Lantana camara L. 1753",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Aloysia citrodora Palau, 1784",
+                        "nameComplete": "Aloysia citrodora"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Lantana camara Linnaeus, 1753",
+                        "nameComplete": "Lantana camara"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,152 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Spiny Tails and Clades: A Fully Sampled Phylogeny of Hoplocercine Lizards (Iguanidae: Hoplocercinae) and its Taxonomic and Nomenclatural Implications",
+                "year": 2023,
+                "authors": [
+                    {
+                        "name": "Omar Torres-Carvajal",
+                        "alternate": [
+                            "Torres-Carvajal, Omar"
+                        ],
+                        "firstname": "Omar",
+                        "lastname": "Torres-Carvajal"
+                    },
+                    {
+                        "name": "Fernanda P. Werneck",
+                        "alternate": [
+                            "Werneck, Fernanda P."
+                        ],
+                        "firstname": "Fernanda",
+                        "lastname": "Werneck",
+                        "middlename": "P."
+                    },
+                    {
+                        "name": "Igor Yuri Fernandes",
+                        "alternate": [
+                            "Fernandes, Igor Yuri"
+                        ],
+                        "firstname": "Igor",
+                        "lastname": "Fernandes",
+                        "middlename": "Yuri"
+                    },
+                    {
+                        "name": "Kevin de Queiroz",
+                        "alternate": [
+                            "de Queiroz, Kevin"
+                        ],
+                        "firstname": "Kevin",
+                        "lastname": "de Queiroz"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "https://doi.org/10.11646/bpn.1.1.2"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Bulletin of Phylogenetic Nomenclature",
+                    "volume": "1",
+                    "identifier": [
+                        {
+                            "type": "isbn",
+                            "id": "2815-9233 (print), 2815-9241 (online)"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 806,
+            "label": "Zimiamviasaurus",
+            "dwc:scientificNameAuthorship": "Torres-Carvajal, Omar and Werneck, Fernanda P. and Fernandes, Igor Yuri and de Queiroz, Kevin",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Spiny Tails and Clades: A Fully Sampled Phylogeny of Hoplocercine Lizards (Iguanidae: Hoplocercinae) and its Taxonomic and Nomenclatural Implications",
+                    "year": 2023,
+                    "authors": [
+                        {
+                            "name": "Omar Torres-Carvajal",
+                            "alternate": [
+                                "Torres-Carvajal, Omar"
+                            ],
+                            "firstname": "Omar",
+                            "lastname": "Torres-Carvajal"
+                        },
+                        {
+                            "name": "Fernanda P. Werneck",
+                            "alternate": [
+                                "Werneck, Fernanda P."
+                            ],
+                            "firstname": "Fernanda",
+                            "lastname": "Werneck",
+                            "middlename": "P."
+                        },
+                        {
+                            "name": "Igor Yuri Fernandes",
+                            "alternate": [
+                                "Fernandes, Igor Yuri"
+                            ],
+                            "firstname": "Igor",
+                            "lastname": "Fernandes",
+                            "middlename": "Yuri"
+                        },
+                        {
+                            "name": "Kevin de Queiroz",
+                            "alternate": [
+                                "de Queiroz, Kevin"
+                            ],
+                            "firstname": "Kevin",
+                            "lastname": "de Queiroz"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "figure": "2",
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "https://doi.org/10.11646/bpn.1.1.2"
+                        }
+                    ],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of Phylogenetic Nomenclature",
+                        "volume": "1",
+                        "identifier": [
+                            {
+                                "type": "isbn",
+                                "id": "2815-9233 (print), 2815-9241 (online)"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "cladeDefinition": "The largest crown clade including Enyalioides/Zimiamviasaurus annularis (O’Shaughnessy 1881) and excluding Enyalioides/Morunasaurus groi Dunn 1933 and Enyalioides oshaughnessyi (Boulenger 1881) and Enyalioides palpebralis (Boulenger 1883) and Enyalioides microlepis (O’Shaughnessyi 1881).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Enyalioides annularis O'Shaughnessyi, 1881",
+                        "nameComplete": "Enyalioides annularis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

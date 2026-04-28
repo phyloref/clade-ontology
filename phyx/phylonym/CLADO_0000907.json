@@ -1,0 +1,194 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Resolving deep nodes in an ancient radiation of Neotropical fishes in the presence of conflicting signals from incomplete lineage sorting",
+                "year": 2018,
+                "authors": [
+                    {
+                        "name": "F. Alda",
+                        "alternate": [
+                            "Alda, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Alda"
+                    },
+                    {
+                        "name": "V. A. Tagliacollo",
+                        "alternate": [
+                            "Tagliacollo, V. A."
+                        ],
+                        "firstname": "V.",
+                        "lastname": "Tagliacollo",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "M. J. Bernt",
+                        "alternate": [
+                            "Bernt, M. J."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Bernt",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "B. T. Waltz",
+                        "alternate": [
+                            "Waltz, B. T."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Waltz",
+                        "middlename": "T."
+                    },
+                    {
+                        "name": "W. B. Ludt",
+                        "alternate": [
+                            "Ludt, W. B."
+                        ],
+                        "firstname": "W.",
+                        "lastname": "Ludt",
+                        "middlename": "B."
+                    },
+                    {
+                        "name": "B. C. Faircloth",
+                        "alternate": [
+                            "Faircloth, B. C."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Faircloth",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "M. E. Alfaro",
+                        "alternate": [
+                            "Alfaro, M. E."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Alfaro",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "J. S. Albert",
+                        "alternate": [
+                            "Albert, J. S."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Albert",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "P. Chakrabarty",
+                        "alternate": [
+                            "Chakrabarty, P."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Chakrabarty"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1093/sysbio/syy085"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Systematic Biology",
+                    "volume": "68",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 907,
+            "label": "Gymnotiformes",
+            "dwc:scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "The classification of the teleostean fishes of the Order Ostariophysi.-1. Cyprinoidea",
+                    "year": 1911,
+                    "authors": [
+                        {
+                            "name": "C. T. Regan",
+                            "alternate": [
+                                "Regan, C. T."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Regan",
+                            "middlename": "T."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.1080/00222931108692993"
+                        }
+                    ],
+                    "link": [],
+                    "journal": {
+                        "name": "Annals and Magazine of Natural History",
+                        "volume": "(8), 8",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogeny and classification of Actinopterygii",
+                    "authors": [
+                        {
+                            "name": "Thomas J. Near",
+                            "alternate": [
+                                "Near, Thomas J."
+                            ],
+                            "firstname": "Thomas",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "Christine E. Thacker",
+                            "alternate": [
+                                "Thacker, Christine E."
+                            ],
+                            "firstname": "Christine",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The least inclusive crown clade that contains Gymnotus pantherinus (Steindachner 1908), Apteronotus albifrons (Linnaeus 1766), and Sternopygus macrurus (Bloch and Schneider 1801).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Gymnotus pantherinus Steindachner, 1908",
+                        "nameComplete": "Gymnotus pantherinus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

@@ -1,0 +1,96 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [],
+    "phylorefs": [
+        {
+            "regnumId": 694,
+            "label": "Unenlagiinia",
+            "dwc:scientificNameAuthorship": "Brum, Arthur and Pêgas, Rodrigo Vargas and Bandeira, Kamila and Souza, Lucy and Campos, Diogenes and Kellner, Alexander",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "A NEW UNENLAGIINE (THEROPODA, DROMAEOSAURIDAE) FROM THE UPPER CRETACEOUS OF BRAZIL",
+                    "year": 2021,
+                    "authors": [
+                        {
+                            "name": "Arthur Brum",
+                            "alternate": [
+                                "Brum, Arthur"
+                            ],
+                            "firstname": "Arthur",
+                            "lastname": "Brum"
+                        },
+                        {
+                            "name": "Rodrigo Vargas Pêgas",
+                            "alternate": [
+                                "Pêgas, Rodrigo Vargas"
+                            ],
+                            "firstname": "Rodrigo",
+                            "lastname": "Pêgas",
+                            "middlename": "Vargas"
+                        },
+                        {
+                            "name": "Kamila Bandeira",
+                            "alternate": [
+                                "Bandeira, Kamila"
+                            ],
+                            "firstname": "Kamila",
+                            "lastname": "Bandeira"
+                        },
+                        {
+                            "name": "Lucy Souza",
+                            "alternate": [
+                                "Souza, Lucy"
+                            ],
+                            "firstname": "Lucy",
+                            "lastname": "Souza"
+                        },
+                        {
+                            "name": "Diogenes Campos",
+                            "alternate": [
+                                "Campos, Diogenes"
+                            ],
+                            "firstname": "Diogenes",
+                            "lastname": "Campos"
+                        },
+                        {
+                            "name": "Alexander Kellner",
+                            "alternate": [
+                                "Kellner, Alexander"
+                            ],
+                            "firstname": "Alexander",
+                            "lastname": "Kellner"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.1002/spp2.1375"
+                        }
+                    ],
+                    "link": [],
+                    "journal": {
+                        "name": "Papers in Palaeontology",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The most inclusive clade containing all species closer to Unenlagia comahuensis Novas & Puerta, 1997 and Halszkaraptor escuilliei Cau et al., 2017 than to Microraptor zhaoianus (Sloan, 1999) or Dromaeosaurus albertensis Matthew & Brown, 1922.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Unenlagia comahuensis",
+                        "nameComplete": "Unenlagia comahuensis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

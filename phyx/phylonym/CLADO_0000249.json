@@ -251,7 +251,7 @@
         {
             "regnumId": 249,
             "label": "Cupressophyta",
-            "dwc:scientificNameAuthorship": "Graham, S. W., Cantino, P. D., Donoghue, M. J.",
+            "dwc:scientificNameAuthorship": "Graham, S. W. and Cantino, P. D. and Donoghue, M. J.",
             "dwc:namePublishedIn": [
                 {
                     "type": "article",
@@ -315,7 +315,77 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Cupressophyta",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "S. W. Graham",
+                            "alternate": [
+                                "Graham, S. W."
+                            ],
+                            "firstname": "S.",
+                            "lastname": "Graham",
+                            "middlename": "W."
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "M. J. Donoghue",
+                            "alternate": [
+                                "Donoghue, M. J."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Donoghue",
+                            "middlename": "J."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "275-277",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The smallest crown clade containing Cupressus sempervirens L. 1753 and Podocarpus macrophyllus (Thunb.) Sweet 1818, but not Gnetum gnemon L. 1767 or Pinus strobus L. 1753.",
             "internalSpecifiers": [
                 {
@@ -326,37 +396,9 @@
                         "label": "Cupressus sempervirens Linnnaeus, 1753",
                         "nameComplete": "Cupressus sempervirens"
                     }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Podocarpus macrophyllus Sweet, 1818",
-                        "nameComplete": "Podocarpus macrophyllus"
-                    }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Gnetum gnemon Linnaeus, 1767",
-                        "nameComplete": "Gnetum gnemon"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Pinus strobus Linnaeus, 1753",
-                        "nameComplete": "Pinus strobus"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

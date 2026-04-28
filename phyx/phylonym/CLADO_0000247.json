@@ -227,6 +227,47 @@
         {
             "phylogenyCitation": {
                 "type": "article",
+                "title": "Phylogeny and phylogenetic nomenclature of the Campanulidae based on an expanded sample of genes and taxa.",
+                "year": 2010,
+                "authors": [
+                    {
+                        "name": "D. C. Tank",
+                        "alternate": [
+                            "Tank, D. C."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Tank",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "M. J. Donoghue",
+                        "alternate": [
+                            "Donoghue, M. J."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Donoghue",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1600/036364410791638306"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Systematic Botany",
+                    "volume": "35",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
                 "title": "Toward a resolution of campanulid phylogeny, with special reference to the placement of Dipsacales.",
                 "year": 2008,
                 "authors": [
@@ -268,54 +309,13 @@
                     "identifier": []
                 }
             }
-        },
-        {
-            "phylogenyCitation": {
-                "type": "article",
-                "title": "Phylogeny and phylogenetic nomenclature of the Campanulidae based on an expanded sample of genes and taxa.",
-                "year": 2010,
-                "authors": [
-                    {
-                        "name": "D. C. Tank",
-                        "alternate": [
-                            "Tank, D. C."
-                        ],
-                        "firstname": "D.",
-                        "lastname": "Tank",
-                        "middlename": "C."
-                    },
-                    {
-                        "name": "M. J. Donoghue",
-                        "alternate": [
-                            "Donoghue, M. J."
-                        ],
-                        "firstname": "M.",
-                        "lastname": "Donoghue",
-                        "middlename": "J."
-                    }
-                ],
-                "editors": [],
-                "series_editors": [],
-                "identifier": [
-                    {
-                        "type": "doi",
-                        "id": "10.1600/036364410791638306"
-                    }
-                ],
-                "link": [],
-                "journal": {
-                    "name": "Systematic Botany",
-                    "volume": "35",
-                    "identifier": []
-                }
-            }
         }
     ],
     "phylorefs": [
         {
             "regnumId": 247,
             "label": "Apiidae",
-            "dwc:scientificNameAuthorship": "Donoghue, M. J., Cantino, P. D.",
+            "dwc:scientificNameAuthorship": "Donoghue, M. J. and Cantino, P. D.",
             "dwc:namePublishedIn": [
                 {
                     "type": "article",
@@ -406,7 +406,68 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Apiidae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "M. J. Donoghue",
+                            "alternate": [
+                                "Donoghue, M. J."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Donoghue",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "377-379",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The largest crown clade containing Apium graveolens Linnaeus 1753 (Apiales), Helianthus annuus Linnaeus 1753 (Asterales), and Dipsacus sativus (Linnaeus) Honckeny 1782 (originally described as Dipsacus fullonum var. sativus Linnaeus 1763) (Dipsacales), but not Ilex crenata Thunberg 1784 (Aquifoliales) and Lamium purpureum Linnaeus 1753 (Lamiidae).",
             "internalSpecifiers": [
                 {
@@ -417,46 +478,9 @@
                         "label": "Apium graveolens Linnaeus, 1753",
                         "nameComplete": "Apium graveolens"
                     }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Helianthus annuus Linnaeus, 1753",
-                        "nameComplete": "Helianthus annuus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Dipsacus sativus Honckeny, 1782",
-                        "nameComplete": "Dipsacus sativus"
-                    }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Ilex crenata Thunberg, 1784",
-                        "nameComplete": "Ilex crenata"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Lamium purpureum Linnaeus, 1753",
-                        "nameComplete": "Lamium purpureum"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

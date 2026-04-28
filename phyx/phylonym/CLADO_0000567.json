@@ -1,0 +1,53 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [],
+    "phylorefs": [
+        {
+            "regnumId": 567,
+            "label": "Neostrombinae",
+            "dwc:scientificNameAuthorship": "Maxwell, Stephen J and Rymer, Tasmin L",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Are the ICZN and PhyloCode that incompatible? A summary of the shifts in Stromboidean taxonomy and the definition of two new subfamilies in Stromboidae (Mollusca, Neostromboidae)",
+                    "year": 2021,
+                    "authors": [
+                        {
+                            "name": "Stephen J Maxwell",
+                            "alternate": [
+                                "Maxwell, Stephen J"
+                            ],
+                            "firstname": "Stephen",
+                            "lastname": "Maxwell",
+                            "middlename": "J"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "figure": "3",
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "The Festivus",
+                        "volume": "53",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "Contains all recent and ancestors of Dolominini Dekkers and Maxwell, 2020 and Neostrombini Liverani, Dekkers and Maxwell, 2021 and does not include those ancestors more closely related to members of Neoaligerinae n. subfam.(",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Strombus pulchellus Reeve, 1851",
+                        "nameComplete": "Strombus pulchellus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

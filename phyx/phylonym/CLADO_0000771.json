@@ -1,0 +1,85 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Phylogenetic systematics of Quetzalcoatlus Lawson 1975 (Pterosauria: Azhdarchoidea)",
+                "year": 2021,
+                "authors": [
+                    {
+                        "name": "Brian Andres",
+                        "alternate": [
+                            "Andres, Brian"
+                        ],
+                        "firstname": "Brian",
+                        "lastname": "Andres"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1080/02724634.2020.1801703"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "https://doi.org/10.1080/02724634.2020.1801703"
+                    }
+                ],
+                "journal": {
+                    "name": "Journal of Vertebrate Paleontology",
+                    "volume": "supplement 2 to Journal of Vertebrate Paleontology 41",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 771,
+            "label": "Azhdarchiformes",
+            "dwc:scientificNameAuthorship": "Andres, Brian",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic Taxonomy of the Pterosauria",
+                    "authors": [
+                        {
+                            "name": "Brian Andres",
+                            "alternate": [
+                                "Andres, Brian"
+                            ],
+                            "firstname": "Brian",
+                            "lastname": "Andres"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of Phylogenetic Taxonomy",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "Most inclusive clade containing Quetzalcoatlus northropi Lawson, 1975, but not Chaoyangopterus zhangi Wang and Zhou, 2003.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Quetzalcoatlus northropi Lawson, 1975",
+                        "nameComplete": "Quetzalcoatlus northropi"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

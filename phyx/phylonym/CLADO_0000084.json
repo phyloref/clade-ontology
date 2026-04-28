@@ -508,7 +508,7 @@
         {
             "regnumId": 84,
             "label": "Petrosaviidae",
-            "dwc:scientificNameAuthorship": "Graham, S. W., Judd, W. S., Iles, W. J.D.",
+            "dwc:scientificNameAuthorship": "Graham, S. W. and Judd, W. S. and Iles, W. J.D.",
             "dwc:namePublishedIn": [
                 {
                     "type": "article",
@@ -599,7 +599,77 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Petrosaviidae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "S. W. Graham",
+                            "alternate": [
+                                "Graham, S. W."
+                            ],
+                            "firstname": "S.",
+                            "lastname": "Graham",
+                            "middlename": "W."
+                        },
+                        {
+                            "name": "W. S. Judd",
+                            "alternate": [
+                                "Judd, W. S."
+                            ],
+                            "firstname": "W.",
+                            "lastname": "Judd",
+                            "middlename": "S."
+                        },
+                        {
+                            "name": "W. J. D. Iles",
+                            "alternate": [
+                                "Iles, W. J. D."
+                            ],
+                            "firstname": "W.",
+                            "lastname": "Iles",
+                            "middlename": "J. D."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "301-302",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The smallest crown clade containing Lilium candidum L. 1753 and Petrosavia stellaris Becc. 1871, but not Acorus calamus L. 1753 or Alisma plantago-aquatica L. 1753.",
             "internalSpecifiers": [
                 {
@@ -610,37 +680,9 @@
                         "label": "Lilium candidum Linnaeus, 1753",
                         "nameComplete": "Lilium candidum"
                     }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Petrosavia stellaris Becc., 1871",
-                        "nameComplete": "Petrosavia stellaris"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Alisma plantago-aquatica Linnaeus, 1753",
-                        "nameComplete": "Alisma plantago-aquatica"
-                    }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Acorus calamus Linnaeus, 1753",
-                        "nameComplete": "Acorus calamus"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

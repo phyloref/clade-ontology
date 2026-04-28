@@ -58,7 +58,7 @@
         {
             "regnumId": 152,
             "label": "Coleochaetophyceae",
-            "dwc:scientificNameAuthorship": "Delwiche, C. F., Karol, K. G., Hall, J. D.",
+            "dwc:scientificNameAuthorship": "Delwiche, C. F. and Karol, K. G. and Hall, J. D.",
             "dwc:namePublishedIn": [
                 {
                     "type": "article",
@@ -84,7 +84,68 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Coleochaetophyceae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "C. F. Delwiche",
+                            "alternate": [
+                                "Delwiche, C. F."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Delwiche",
+                            "middlename": "F."
+                        },
+                        {
+                            "name": "K. G. Karol",
+                            "alternate": [
+                                "Karol, K. G."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "Karol",
+                            "middlename": "G."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "203-204",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The largest crown clade containing Coleochaete scutata Brébisson 1844 but not Marchantia polymorpha Linnaeus 1753 (Embryophyta), Chara vulgaris Linnaeus 1753 (Charophyceae), and Zygnema cruciatum (Vaucher) C. Agardh 1817 (Zygnematophyceae).",
             "internalSpecifiers": [
                 {
@@ -97,35 +158,7 @@
                     }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Marchantia polymorpha Linnaeus, 1753",
-                        "nameComplete": "Marchantia polymorpha"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Chara vulgaris Linnaeus, 1753",
-                        "nameComplete": "Chara vulgaris"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Zygnema cruciatum Agardh, 1817",
-                        "nameComplete": "Zygnema cruciatum"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

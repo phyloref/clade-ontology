@@ -155,7 +155,7 @@
         {
             "regnumId": 202,
             "label": "Demospongiae",
-            "dwc:scientificNameAuthorship": "Boury-Esnault, N., Manuel, M.",
+            "dwc:scientificNameAuthorship": "Boury-Esnault, N. and Manuel, M.",
             "dwc:namePublishedIn": [
                 {
                     "type": "article",
@@ -184,7 +184,66 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Demospongiae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "N. Boury-Esnault",
+                            "alternate": [
+                                "Boury-Esnault, N."
+                            ],
+                            "firstname": "N.",
+                            "lastname": "Boury-Esnault"
+                        },
+                        {
+                            "name": "M. Manuel",
+                            "alternate": [
+                                "Manuel, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Manuel"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "443-446",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The least inclusive crown clade containing Spongia officinalis Linnaeus 1759 (Keratosa), Chondrosia reniformis Nardo 1847 (Myxospongiae), Haliclona mediterranea Griessinger 1971 (Haploscleromorpha) and Axinella polypoides Schmidt 1862 (Democlavia).",
             "internalSpecifiers": [
                 {
@@ -194,33 +253,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Spongia officinalis Linnaeus, 1759",
                         "nameComplete": "Spongia officinalis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Chondrosia reniformis Nardo, 1847",
-                        "nameComplete": "Chondrosia reniformis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Haliclona mediterranea Griessinger, 1971",
-                        "nameComplete": "Haliclona mediterranea"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Axinella polypoides Schmidt, 1862",
-                        "nameComplete": "Axinella polypoides"
                     }
                 }
             ],

@@ -65,7 +65,7 @@
         {
             "regnumId": 274,
             "label": "Testudines",
-            "dwc:scientificNameAuthorship": "Joyce, W. G., Parham, J. F., Anquetin, J., Claude, J., Danilov, I. G., Iverson, J. B., Kear, B., Lyson, T. R., Rabi, M., Sterli, J.",
+            "dwc:scientificNameAuthorship": "Joyce, W. G. and Parham, J. F. and Anquetin, J. and Claude, J. and Danilov, I. G. and Iverson, J. B. and Kear, B. and Lyson, T. R. and Rabi, M. and Sterli, J.",
             "dwc:namePublishedIn": [
                 {
                     "type": "book",
@@ -90,7 +90,135 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Testudines",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "W. G. Joyce",
+                            "alternate": [
+                                "Joyce, W. G."
+                            ],
+                            "firstname": "W.",
+                            "lastname": "Joyce",
+                            "middlename": "G."
+                        },
+                        {
+                            "name": "J. F. Parham",
+                            "alternate": [
+                                "Parham, J. F."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Parham",
+                            "middlename": "F."
+                        },
+                        {
+                            "name": "J. Anquetin",
+                            "alternate": [
+                                "Anquetin, J."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Anquetin"
+                        },
+                        {
+                            "name": "J. Claude",
+                            "alternate": [
+                                "Claude, J."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Claude"
+                        },
+                        {
+                            "name": "I. G. Danilov",
+                            "alternate": [
+                                "Danilov, I. G."
+                            ],
+                            "firstname": "I.",
+                            "lastname": "Danilov",
+                            "middlename": "G."
+                        },
+                        {
+                            "name": "J. B. Iverson",
+                            "alternate": [
+                                "Iverson, J. B."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Iverson",
+                            "middlename": "B."
+                        },
+                        {
+                            "name": "B. Kear",
+                            "alternate": [
+                                "Kear, B."
+                            ],
+                            "firstname": "B.",
+                            "lastname": "Kear"
+                        },
+                        {
+                            "name": "T. R. Lyson",
+                            "alternate": [
+                                "Lyson, T. R."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Lyson",
+                            "middlename": "R."
+                        },
+                        {
+                            "name": "M. Rabi",
+                            "alternate": [
+                                "Rabi, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Rabi"
+                        },
+                        {
+                            "name": "J. Sterli",
+                            "alternate": [
+                                "Sterli, J."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Sterli"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "1049-1051",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The smallest crown clade containing the pleurodire Chelus (originally Testudo) fimbriatus Schneider 1783, the trionychian Trionyx (originally Testudo) triunguis Forskål 1775, the americhelydian Chelonia (originally Testudo) mydas Linnaeus 1758, and the testudinoid Testudo graeca Linnaeus 1758.",
             "internalSpecifiers": [
                 {
@@ -100,33 +228,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Chelus (originally Testudo) fimbriatus Schneider, 1783",
                         "nameComplete": "Chelus (originally Testudo) fimbriatus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Trionyx (originally Testudo) triunguis Forskål, 1775",
-                        "nameComplete": "Trionyx (originally Testudo) triunguis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Chelonia (originally Testudo) mydas Linnaeus, 1758",
-                        "nameComplete": "Chelonia (originally Testudo) mydas"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Testudo graeca Linnaeus, 1758",
-                        "nameComplete": "Testudo graeca"
                     }
                 }
             ],

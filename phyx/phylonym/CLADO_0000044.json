@@ -73,7 +73,7 @@
         {
             "regnumId": 44,
             "label": "Feliformia",
-            "dwc:scientificNameAuthorship": "Wolsan, M., Flynn, J. J., Wyss, A. R.",
+            "dwc:scientificNameAuthorship": "Wolsan, M. and Flynn, J. J. and Wyss, A. R.",
             "dwc:namePublishedIn": [
                 {
                     "type": "article",
@@ -100,7 +100,76 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Feliformia",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "M. Wolsan",
+                            "alternate": [
+                                "Wolsan, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Wolsan"
+                        },
+                        {
+                            "name": "J. J. Flynn",
+                            "alternate": [
+                                "Flynn, J. J."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Flynn",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "A. R. Wyss",
+                            "alternate": [
+                                "Wyss, A. R."
+                            ],
+                            "firstname": "A.",
+                            "lastname": "Wyss",
+                            "middlename": "R."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "993-998",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The largest crown clade containing Felis silvestris Schreber 1777 (Felidae) but not Canis lupus Linnaeus 1758 (Canidae).",
             "internalSpecifiers": [
                 {
@@ -113,17 +182,7 @@
                     }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Canis lupus Linnaeus, 1758",
-                        "nameComplete": "Canis lupus"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

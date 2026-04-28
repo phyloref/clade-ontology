@@ -2,79 +2,6 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
     "phylogenies": [
         {
-            "primaryPhylogenyCitation": {
-                "type": "article",
-                "title": "Unraveling the evolutionary history of the liverworts (Marchantiophyta): multiple taxa, genomes and analyses.",
-                "year": 2006,
-                "authors": [
-                    {
-                        "name": "L. L. Forrest",
-                        "alternate": [
-                            "Forrest, L. L."
-                        ],
-                        "firstname": "L.",
-                        "lastname": "Forrest",
-                        "middlename": "L."
-                    },
-                    {
-                        "name": "E. C. Davis",
-                        "alternate": [
-                            "Davis, E. C."
-                        ],
-                        "firstname": "E.",
-                        "lastname": "Davis",
-                        "middlename": "C."
-                    },
-                    {
-                        "name": "D. G. Long",
-                        "alternate": [
-                            "Long, D. G."
-                        ],
-                        "firstname": "D.",
-                        "lastname": "Long",
-                        "middlename": "G."
-                    },
-                    {
-                        "name": "B. J. Crandall-Stotler",
-                        "alternate": [
-                            "Crandall-Stotler, B. J."
-                        ],
-                        "firstname": "B.",
-                        "lastname": "Crandall-Stotler",
-                        "middlename": "J."
-                    },
-                    {
-                        "name": "A. Clarke",
-                        "alternate": [
-                            "Clarke, A."
-                        ],
-                        "firstname": "A.",
-                        "lastname": "Clarke"
-                    },
-                    {
-                        "name": "M. L. Hollingsworth",
-                        "alternate": [
-                            "Hollingsworth, M. L."
-                        ],
-                        "firstname": "M.",
-                        "lastname": "Hollingsworth",
-                        "middlename": "L."
-                    }
-                ],
-                "editors": [],
-                "series_editors": [],
-                "figure": "1",
-                "identifier": [],
-                "link": [],
-                "journal": {
-                    "name": "Bryologist",
-                    "volume": "109",
-                    "identifier": []
-                }
-            },
-            "newick": "(((((((Leafy_II, Leafy_I), (Simple_thalloids_II, Pleuroziaceae)), \nSimple_thalloids_I), \n(Complex_thalloids, Blasiaceae)), \n(Haplomitriaceae, Treubiaceae)), \n((Hornworts, Tracheophytes), Mosses)), \nAlgae)"
-        },
-        {
             "phylogenyCitation": {
                 "type": "article",
                 "title": "The deepest divergences in land plants inferred from phylogenomic evidence.",
@@ -272,13 +199,86 @@
                     "identifier": []
                 }
             }
+        },
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Unraveling the evolutionary history of the liverworts (Marchantiophyta): multiple taxa, genomes and analyses.",
+                "year": 2006,
+                "authors": [
+                    {
+                        "name": "L. L. Forrest",
+                        "alternate": [
+                            "Forrest, L. L."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Forrest",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "E. C. Davis",
+                        "alternate": [
+                            "Davis, E. C."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Davis",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "D. G. Long",
+                        "alternate": [
+                            "Long, D. G."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Long",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "B. J. Crandall-Stotler",
+                        "alternate": [
+                            "Crandall-Stotler, B. J."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Crandall-Stotler",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "A. Clarke",
+                        "alternate": [
+                            "Clarke, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Clarke"
+                    },
+                    {
+                        "name": "M. L. Hollingsworth",
+                        "alternate": [
+                            "Hollingsworth, M. L."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Hollingsworth",
+                        "middlename": "L."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Bryologist",
+                    "volume": "109",
+                    "identifier": []
+                }
+            },
+            "newick": "(((((((Leafy_II, Leafy_I), (Simple_thalloids_II, Pleuroziaceae)), \nSimple_thalloids_I), \n(Complex_thalloids, Blasiaceae)), \n(Haplomitriaceae, Treubiaceae)), \n((Hornworts, Tracheophytes), Mosses)), \nAlgae)"
         }
     ],
     "phylorefs": [
         {
             "regnumId": 50,
             "label": "Hepaticae",
-            "dwc:scientificNameAuthorship": "Mishler, B. D., Crandall-Stotler, B., Stotler, R., Forrest, L.",
+            "dwc:scientificNameAuthorship": "Mishler, B. D. and Crandall-Stotler, B. and Stotler, R. and Forrest, L.",
             "dwc:namePublishedIn": [
                 {
                     "type": "book",
@@ -303,7 +303,83 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Hepaticae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "B. D. Mishler",
+                            "alternate": [
+                                "Mishler, B. D."
+                            ],
+                            "firstname": "B.",
+                            "lastname": "Mishler",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "L. Forrest",
+                            "alternate": [
+                                "Forrest, L."
+                            ],
+                            "firstname": "L.",
+                            "lastname": "Forrest"
+                        },
+                        {
+                            "name": "B. Crandall-Stotler",
+                            "alternate": [
+                                "Crandall-Stotler, B."
+                            ],
+                            "firstname": "B.",
+                            "lastname": "Crandall-Stotler"
+                        },
+                        {
+                            "name": "R. Stotler",
+                            "alternate": [
+                                "Stotler, R."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Stotler"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "215-217",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The largest crown clade containing Marchantia polymorpha L. 1753 but not Anthoceros punctatus L. 1753 (Anthocerotae), Sphagnum palustre L. 1753 (Musci), and Equisetum telmateia Ehrh. 1783 (Tracheophyta).",
             "internalSpecifiers": [
                 {
@@ -316,35 +392,7 @@
                     }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Anthoceros punctatus Linnaeus, 1753",
-                        "nameComplete": "Anthoceros punctatus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Sphagnum palustre Linnaeus, 1753",
-                        "nameComplete": "Sphagnum palustre"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Equisetum telmateia Ehrh., 1783",
-                        "nameComplete": "Equisetum telmateia"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

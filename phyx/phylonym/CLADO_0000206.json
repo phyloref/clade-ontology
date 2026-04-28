@@ -2,76 +2,6 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
     "phylogenies": [
         {
-            "primaryPhylogenyCitation": {
-                "type": "book",
-                "title": "The origin of higher clades.",
-                "year": 2007,
-                "authors": [
-                    {
-                        "name": "R. Diogo",
-                        "alternate": [
-                            "Diogo, R."
-                        ],
-                        "firstname": "R.",
-                        "lastname": "Diogo"
-                    }
-                ],
-                "editors": [],
-                "series_editors": [],
-                "publisher": "Science Publishers",
-                "city": "Enfield, New Hampshire",
-                "figure": "3 and 4",
-                "identifier": [],
-                "link": []
-            },
-            "newick": "((Osteoglossiformes, Hiodontiformes),\n\n((Elopiformes, (Albuliformes, (Notacanthiformes, (Anguiliformes, Saccopharyngiformes)))),\n\n(((Denticipitoidei, (Clupeoidea, Engrauloidea, Pristigasteroidea)),\n(Gonorynchiformes, (Cypriniformes, (Characiformes, (Gymnotiformes, Siluriformes))))),\n\n((Esociformes, (Ateleopodiformes, Stomiiformes, (Ctenosquamata, Aulopiformes))),\n((Alepocephaloidea, Argentinoidea), (Salmoniformes, (Osmeroidea, Galaxoidea)))))))"
-        },
-        {
-            "phylogenyCitation": {
-                "type": "book_section",
-                "title": "Major features of vertebrate evolution",
-                "section_title": "Bony fishes",
-                "year": 1994,
-                "authors": [
-                    {
-                        "name": "C. Patterson",
-                        "alternate": [
-                            "Patterson, C."
-                        ],
-                        "firstname": "C.",
-                        "lastname": "Patterson"
-                    }
-                ],
-                "editors": [
-                    {
-                        "name": "D. R. Prothero",
-                        "alternate": [
-                            "Prothero, D. R."
-                        ],
-                        "firstname": "D.",
-                        "lastname": "Prothero",
-                        "middlename": "R."
-                    },
-                    {
-                        "name": "R. M. Schoch",
-                        "alternate": [
-                            "Schoch, R. M."
-                        ],
-                        "firstname": "R.",
-                        "lastname": "Schoch",
-                        "middlename": "M."
-                    }
-                ],
-                "series_editors": [],
-                "publisher": "Paleontological Society",
-                "city": "Knoxville",
-                "pages": "57-84",
-                "figure": "1",
-                "identifier": [],
-                "link": []
-            }
-        },
-        {
             "phylogenyCitation": {
                 "type": "article",
                 "title": "Heads and tails.",
@@ -102,101 +32,6 @@
                     "volume": "2(3)",
                     "identifier": []
                 }
-            }
-        },
-        {
-            "phylogenyCitation": {
-                "type": "book",
-                "title": "Fishes of the World, 4th edition.",
-                "year": 2006,
-                "authors": [
-                    {
-                        "name": "J. Nelson",
-                        "alternate": [
-                            "Nelson, J."
-                        ],
-                        "firstname": "J.",
-                        "lastname": "Nelson"
-                    }
-                ],
-                "editors": [],
-                "series_editors": [],
-                "publisher": "John Wiley and Sons",
-                "city": "New York",
-                "pages": "87",
-                "identifier": [],
-                "link": []
-            }
-        },
-        {
-            "phylogenyCitation": {
-                "type": "book_section",
-                "title": "Gnathostome fishes. In Assembling the tree of life.",
-                "year": 2004,
-                "authors": [
-                    {
-                        "name": "M. L. J. Stiassny",
-                        "alternate": [
-                            "Stiassny , M. L. J."
-                        ],
-                        "firstname": "M. L.",
-                        "lastname": "Stiassny",
-                        "middlename": "J."
-                    },
-                    {
-                        "name": "E. O. Wiley",
-                        "alternate": [
-                            "Wiley, E. O."
-                        ],
-                        "firstname": "E.",
-                        "lastname": "Wiley",
-                        "middlename": "O."
-                    },
-                    {
-                        "name": "G. D. Johnson",
-                        "alternate": [
-                            "Johnson, G. D."
-                        ],
-                        "firstname": "G.",
-                        "lastname": "Johnson",
-                        "middlename": "D."
-                    },
-                    {
-                        "name": "M. R. de Carvalho",
-                        "alternate": [
-                            "de Carvalho, M. R."
-                        ],
-                        "firstname": "M.",
-                        "lastname": "de Carvalho",
-                        "middlename": "R."
-                    }
-                ],
-                "editors": [
-                    {
-                        "name": "M. J. Donoghue",
-                        "alternate": [
-                            "Donoghue, M. J."
-                        ],
-                        "firstname": "M.",
-                        "lastname": "Donoghue",
-                        "middlename": "J."
-                    },
-                    {
-                        "name": "J. Cracraft",
-                        "alternate": [
-                            "Cracraft, J."
-                        ],
-                        "firstname": "J.",
-                        "lastname": "Cracraft"
-                    }
-                ],
-                "series_editors": [],
-                "publisher": "Oxford University Press",
-                "city": "Oxford",
-                "pages": "410-429",
-                "figure": "24.1",
-                "identifier": [],
-                "link": []
             }
         },
         {
@@ -302,13 +137,178 @@
                     "identifier": []
                 }
             }
+        },
+        {
+            "primaryPhylogenyCitation": {
+                "type": "book",
+                "title": "The origin of higher clades.",
+                "year": 2007,
+                "authors": [
+                    {
+                        "name": "R. Diogo",
+                        "alternate": [
+                            "Diogo, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Diogo"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "publisher": "Science Publishers",
+                "city": "Enfield, New Hampshire",
+                "figure": "3 and 4",
+                "identifier": [],
+                "link": []
+            },
+            "newick": "((Osteoglossiformes, Hiodontiformes),\n\n((Elopiformes, (Albuliformes, (Notacanthiformes, (Anguiliformes, Saccopharyngiformes)))),\n\n(((Denticipitoidei, (Clupeoidea, Engrauloidea, Pristigasteroidea)),\n(Gonorynchiformes, (Cypriniformes, (Characiformes, (Gymnotiformes, Siluriformes))))),\n\n((Esociformes, (Ateleopodiformes, Stomiiformes, (Ctenosquamata, Aulopiformes))),\n((Alepocephaloidea, Argentinoidea), (Salmoniformes, (Osmeroidea, Galaxoidea)))))))"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "book_section",
+                "title": "Major features of vertebrate evolution",
+                "section_title": "Bony fishes",
+                "year": 1994,
+                "authors": [
+                    {
+                        "name": "C. Patterson",
+                        "alternate": [
+                            "Patterson, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Patterson"
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "D. R. Prothero",
+                        "alternate": [
+                            "Prothero, D. R."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Prothero",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "R. M. Schoch",
+                        "alternate": [
+                            "Schoch, R. M."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Schoch",
+                        "middlename": "M."
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "Paleontological Society",
+                "city": "Knoxville",
+                "pages": "57-84",
+                "figure": "1",
+                "identifier": [],
+                "link": []
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "book",
+                "title": "Fishes of the World, 4th edition.",
+                "year": 2006,
+                "authors": [
+                    {
+                        "name": "J. Nelson",
+                        "alternate": [
+                            "Nelson, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Nelson"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "publisher": "John Wiley and Sons",
+                "city": "New York",
+                "pages": "87",
+                "identifier": [],
+                "link": []
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "book_section",
+                "title": "Gnathostome fishes. In Assembling the tree of life.",
+                "year": 2004,
+                "authors": [
+                    {
+                        "name": "M. L. J. Stiassny",
+                        "alternate": [
+                            "Stiassny , M. L. J."
+                        ],
+                        "firstname": "M. L.",
+                        "lastname": "Stiassny",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "E. O. Wiley",
+                        "alternate": [
+                            "Wiley, E. O."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Wiley",
+                        "middlename": "O."
+                    },
+                    {
+                        "name": "G. D. Johnson",
+                        "alternate": [
+                            "Johnson, G. D."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Johnson",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "M. R. de Carvalho",
+                        "alternate": [
+                            "de Carvalho, M. R."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "de Carvalho",
+                        "middlename": "R."
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "M. J. Donoghue",
+                        "alternate": [
+                            "Donoghue, M. J."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Donoghue",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "J. Cracraft",
+                        "alternate": [
+                            "Cracraft, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Cracraft"
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "Oxford University Press",
+                "city": "Oxford",
+                "pages": "410-429",
+                "figure": "24.1",
+                "identifier": [],
+                "link": []
+            }
         }
     ],
     "phylorefs": [
         {
             "regnumId": 206,
             "label": "Actinopterygii",
-            "dwc:scientificNameAuthorship": "Moore, J. A., Near, T. J.",
+            "dwc:scientificNameAuthorship": "Moore, J. A. and Near, T. J.",
             "dwc:namePublishedIn": [
                 {
                     "type": "book",
@@ -333,7 +333,68 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Actinopterygii",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "J. A. Moore",
+                            "alternate": [
+                                "Moore, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Moore",
+                            "middlename": "A."
+                        },
+                        {
+                            "name": "T. J. Near",
+                            "alternate": [
+                                "Near, T. J."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "695-699",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The least inclusive crown clade that contains Polypterus bichir Lacepede 1803, Acipenser sturio Linnaeus 1758, Psephurus gladius (Martens 1862), Lepisosteus osseus (Linnaeus 1758), Amia calva Linnaeus 1766, and Perca fluviatilis Linnaeus 1758.",
             "internalSpecifiers": [
                 {
@@ -343,51 +404,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Polypterus bichir Lacepede, 1803",
                         "nameComplete": "Polypterus bichir"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Acipenser sturio Linnaeus, 1758",
-                        "nameComplete": "Acipenser sturio"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Psephurus gladius Marens, 1862",
-                        "nameComplete": "Psephurus gladius"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Lepisosteus osseus Linnaeus, 1758",
-                        "nameComplete": "Lepisosteus osseus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Amia calva Linnaeus, 1766",
-                        "nameComplete": "Amia calva"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Perca fluviatilis Linnaeus, 1758",
-                        "nameComplete": "Perca fluviatilis"
                     }
                 }
             ],

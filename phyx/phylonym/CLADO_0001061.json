@@ -1,0 +1,127 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "On the systematics and phylogenetic nomenclature of the Ornithocheiriformes (Pterosauria, Pteranodontoidea)",
+                "year": 2025,
+                "authors": [
+                    {
+                        "name": "Rodrigo Pêgas",
+                        "alternate": [
+                            "Pêgas, Rodrigo"
+                        ],
+                        "firstname": "Rodrigo",
+                        "lastname": "Pêgas"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Palaeontologia Electronica",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 1061,
+            "label": "Anhangueria",
+            "dwc:scientificNameAuthorship": "Pêgas, R.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Taxonomic review of the Ornithocheirus complex (Pterosauria) from the Cretaceous of England",
+                    "year": 2013,
+                    "authors": [
+                        {
+                            "name": "Taissa Rodrigues",
+                            "alternate": [
+                                "Rodrigues, Taissa"
+                            ],
+                            "firstname": "Taissa",
+                            "lastname": "Rodrigues"
+                        },
+                        {
+                            "name": "Alexander Kellner",
+                            "alternate": [
+                                "Kellner, Alexander"
+                            ],
+                            "firstname": "Alexander",
+                            "lastname": "Kellner"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Zookeys",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "On the systematics and phylogenetic nomenclature of the Ornithocheiriformes (Pterosauria, Pteranodontoidea)",
+                    "year": 2025,
+                    "authors": [
+                        {
+                            "name": "R. Pêgas",
+                            "alternate": [
+                                "Pêgas, R."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Pêgas"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Palaeontologia Electronica",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The most inclusive clade that includes Anhanguera blittersdorffi Campos & Kellner, 1985 but not Cimoliopterus cuvieri (Bowerbank, 1851) or Targaryendraco wiedenrothi (Wild, 1990).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Anhanguera blittersdorffi Kellner and Campos, 1985",
+                        "nameComplete": "Anhanguera blittersdorffi"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Cimoliopterus cuvieri (Bowerbank), 1851",
+                        "nameComplete": "Cimoliopterus cuvieri"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Targaryendraco wiedenrothi (Wild), 1990",
+                        "nameComplete": "Targaryendraco wiedenrothi"
+                    }
+                }
+            ]
+        }
+    ]
+}

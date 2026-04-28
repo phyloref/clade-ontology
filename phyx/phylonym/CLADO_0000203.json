@@ -234,7 +234,7 @@
         {
             "regnumId": 203,
             "label": "Homoscleromorpha",
-            "dwc:scientificNameAuthorship": "Boury-Esnault, N., Manuel, M.",
+            "dwc:scientificNameAuthorship": "Boury-Esnault, N. and Manuel, M.",
             "dwc:namePublishedIn": [
                 {
                     "type": "book",
@@ -258,7 +258,66 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Homoscleromorpha",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "N. Boury-Esnault",
+                            "alternate": [
+                                "Boury-Esnault, N."
+                            ],
+                            "firstname": "N.",
+                            "lastname": "Boury-Esnault"
+                        },
+                        {
+                            "name": "M. Manuel",
+                            "alternate": [
+                                "Manuel, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Manuel"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "449-451",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The most inclusive crown clade containing Oscarella lobularis (Schmidt 1862) but not Spongia officinalis Linnaeus 1759 (Demospongiae) and Oopsacas minuta Topsent 1927 (Hexactinellida) and Grantia compressa (Fabricius 1780) (Calcispongia).",
             "internalSpecifiers": [
                 {
@@ -271,35 +330,7 @@
                     }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Spongia officinalis Linnaeus, 1759",
-                        "nameComplete": "Spongia officinalis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Oopsacas minuta Topsent, 1927",
-                        "nameComplete": "Oopsacas minuta"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Grantia compressa Fabricius, 1780",
-                        "nameComplete": "Grantia compressa"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

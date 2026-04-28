@@ -1,0 +1,159 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "On the systematics and phylogenetic nomenclature of the Ornithocheiriformes (Pterosauria, Pteranodontoidea)",
+                "year": 2025,
+                "authors": [
+                    {
+                        "name": "R. Pêgas",
+                        "alternate": [
+                            "Pêgas, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Pêgas"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Palaeontologia Electronica",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 1065,
+            "label": "Coloborhynchinae",
+            "dwc:scientificNameAuthorship": "Pêgas, R.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "On a new crested pterodactyloid from the Early Cretaceous of the Iberian Peninsula and the radiation of the clade Anhangueria.",
+                    "year": 2019,
+                    "authors": [
+                        {
+                            "name": "Holgado",
+                            "alternate": [
+                                "Holgado,"
+                            ],
+                            "lastname": "Holgado"
+                        },
+                        {
+                            "name": "Pêgas",
+                            "alternate": [
+                                "Pêgas,"
+                            ],
+                            "lastname": "Pêgas"
+                        },
+                        {
+                            "name": "Canudo",
+                            "alternate": [
+                                "Canudo,"
+                            ],
+                            "lastname": "Canudo"
+                        },
+                        {
+                            "name": "Fortuny",
+                            "alternate": [
+                                "Fortuny,"
+                            ],
+                            "lastname": "Fortuny"
+                        },
+                        {
+                            "name": "Rodrigues",
+                            "alternate": [
+                                "Rodrigues,"
+                            ],
+                            "lastname": "Rodrigues"
+                        },
+                        {
+                            "name": "Company",
+                            "alternate": [
+                                "Company,"
+                            ],
+                            "lastname": "Company"
+                        },
+                        {
+                            "name": "Kellner",
+                            "alternate": [
+                                "Kellner,"
+                            ],
+                            "lastname": "Kellner"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "On the systematics and phylogenetic nomenclature of the Ornithocheiriformes (Pterosauria, Pteranodontoidea)",
+                    "year": 2025,
+                    "authors": [
+                        {
+                            "name": "R. Pêgas",
+                            "alternate": [
+                                "Pêgas, R."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Pêgas"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Palaeontologia Electronica",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The most inclusive clade that includes Coloborhynchus clavirostris Owen, 1874, but not Tropeognathus mesembrinus Wellnhofer, 1987 or Anhanguera blittersdorffi Campos and Kellner, 1985.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Coloborhynchus clavirostris Owen, 1874",
+                        "nameComplete": "Coloborhynchus clavirostris"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Tropeognathus mesembrinus Wellnhofer, 1987",
+                        "nameComplete": "Tropeognathus mesembrinus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Anhanguera blittersdorffi Campos and Kellner, 1985",
+                        "nameComplete": "Anhanguera blittersdorffi"
+                    }
+                }
+            ]
+        }
+    ]
+}

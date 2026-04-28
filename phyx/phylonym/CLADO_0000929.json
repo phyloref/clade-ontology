@@ -1,0 +1,215 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Resolution of ray-finned fish phylogeny and timing of diversification",
+                "year": 2012,
+                "authors": [
+                    {
+                        "name": "T. J. Near",
+                        "alternate": [
+                            "Near, T. J."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Near",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "R. I. Eytan",
+                        "alternate": [
+                            "Eytan, R. I."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Eytan",
+                        "middlename": "I."
+                    },
+                    {
+                        "name": "A. Dornburg",
+                        "alternate": [
+                            "Dornburg, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Dornburg"
+                    },
+                    {
+                        "name": "K. L. Kuhn",
+                        "alternate": [
+                            "Kuhn, K. L."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Kuhn",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "J. A. Moore",
+                        "alternate": [
+                            "Moore, J. A."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Moore",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "M. P. Davis",
+                        "alternate": [
+                            "Davis, M. P."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Davis",
+                        "middlename": "P."
+                    },
+                    {
+                        "name": "P. C. Wainwright",
+                        "alternate": [
+                            "Wainwright, P. C."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Wainwright",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "M. Friedman",
+                        "alternate": [
+                            "Friedman, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Friedman"
+                    },
+                    {
+                        "name": "W. L. Smith",
+                        "alternate": [
+                            "Smith, W. L."
+                        ],
+                        "firstname": "W.",
+                        "lastname": "Smith",
+                        "middlename": "L."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1 & S1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1073/Pnas.1206625109"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Proceedings of the National Academy of Sciences of the United States of America",
+                    "volume": "109",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 929,
+            "label": "Ctenosquamata",
+            "dwc:scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book_section",
+                    "title": "Interrelationships of fishes",
+                    "section_title": "Interrelationships of higher euteleostean fishes",
+                    "year": 1973,
+                    "authors": [
+                        {
+                            "name": "D. E. Rosen",
+                            "alternate": [
+                                "Rosen, D. E."
+                            ],
+                            "firstname": "D.",
+                            "lastname": "Rosen",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "P. H. Greenwood",
+                            "alternate": [
+                                "Greenwood, P. H."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Greenwood",
+                            "middlename": "H."
+                        },
+                        {
+                            "name": "R. S. Miles",
+                            "alternate": [
+                                "Miles, R. S."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Miles",
+                            "middlename": "S."
+                        },
+                        {
+                            "name": "C. Patterson",
+                            "alternate": [
+                                "Patterson, C."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Patterson"
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "Academic Press",
+                    "city": "London",
+                    "pages": "397-513",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
+                    "authors": [
+                        {
+                            "name": "T. J. Near",
+                            "alternate": [
+                                "Near, T. J."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "C. E. Thacker",
+                            "alternate": [
+                                "Thacker, C. E."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The least inclusive crown clade that contains Scopelengys tristis Alcock 1890 and Micropterus salmoides (Lacépède 1802).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Scopelengys tristis Alcock, 1890",
+                        "nameComplete": "Scopelengys tristis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

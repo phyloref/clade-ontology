@@ -1,0 +1,124 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "An inverse latitudinal gradient in speciation rate for marine fishes",
+                "year": 2018,
+                "authors": [
+                    {
+                        "name": "D. L. Rabosky",
+                        "alternate": [
+                            "Rabosky, D. L."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Rabosky",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "et al.",
+                        "alternate": [
+                            "et al.,"
+                        ],
+                        "lastname": "et al."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1038/s41586-018-0273-1"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Nature",
+                    "volume": "559",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 1000,
+            "label": "Belonoidei",
+            "dwc:scientificNameAuthorship": "Thacker, C. E. and Near, T. J.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Liste commentée des poissons signalés dans l’Atlantique tropico-oriental nord, du Cap Spartel au Cap Roxo, suivie d’un bref aperçu sur leur répartition bathymétrique et géographique",
+                    "year": 1959,
+                    "authors": [
+                        {
+                            "name": "E. Postel",
+                            "alternate": [
+                                "Postel, E."
+                            ],
+                            "firstname": "E.",
+                            "lastname": "Postel"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin de la Société Scientifique de Bretagne",
+                        "volume": "34",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
+                    "authors": [
+                        {
+                            "name": "T. J. Near",
+                            "alternate": [
+                                "Near, T. J."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "C. E. Thacker",
+                            "alternate": [
+                                "Thacker, C. E."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The least inclusive crown clade that contains Adrianichthys oophorus (Kottelat 1990), Xenentodon cancila (Hamilton 1822), Hemiramphus far (Farbricius in Niebuhr 1775), and Belone belone (Linneaus 1761)",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Adrianichthys oophorus Kottelat, 1990",
+                        "nameComplete": "Adrianichthys oophorus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

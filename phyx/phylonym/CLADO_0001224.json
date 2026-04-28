@@ -1,0 +1,63 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [],
+    "phylorefs": [
+        {
+            "regnumId": 1224,
+            "label": "Bistahieversorini",
+            "dwc:scientificNameAuthorship": "Napoli, James G and Zanno, Lindsay E",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The most inclusive clade containing Bistahieversor sealeyi Carr and Williamson 2009 but not but not Albertosaurus sarcophagus Osborn 1905, Alioramus remotus Kurzanov 1976, Daspletosaurus torosus Russell 1970, and Tyrannosaurus rex Osborn 1905.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Bistahieversor sealeyi Carr and Williamson, 2010",
+                        "nameComplete": "Bistahieversor sealeyi"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Albertosaurus sarcophagus Osborn, 1905",
+                        "nameComplete": "Albertosaurus sarcophagus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Alioramus remotus Kurzanov, 1976",
+                        "nameComplete": "Alioramus remotus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Daspletosaurus torosus Russell, 1970",
+                        "nameComplete": "Daspletosaurus torosus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Tyrannosaurus rex Osborn, 1905",
+                        "nameComplete": "Tyrannosaurus rex"
+                    }
+                }
+            ]
+        }
+    ]
+}

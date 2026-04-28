@@ -1,0 +1,125 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Prolonged morphological expansion of spiny-rayed fishes following the end-Cretaceous",
+                "year": 2022,
+                "authors": [
+                    {
+                        "name": "A. Ghezelayagh",
+                        "alternate": [
+                            "Ghezelayagh, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Ghezelayagh"
+                    },
+                    {
+                        "name": "et al.",
+                        "alternate": [
+                            "et al.,"
+                        ],
+                        "lastname": "et al."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "S22-S25",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1038/s41559-022-01801-3"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Nature Ecology & Evolution",
+                    "volume": "6",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 980,
+            "label": "Acanthuriformes",
+            "dwc:scientificNameAuthorship": "Near, Thomas J. and Thacker, Christine E.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "A classification of fishes including families and genera as far as known",
+                    "year": 1923,
+                    "authors": [
+                        {
+                            "name": "D. S. Jordan",
+                            "alternate": [
+                                "Jordan, D. S."
+                            ],
+                            "firstname": "D.",
+                            "lastname": "Jordan",
+                            "middlename": "S."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Stanford University Publications University Series Biological Sciences",
+                        "volume": "3",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
+                    "authors": [
+                        {
+                            "name": "Thomas J. Near",
+                            "alternate": [
+                                "Near, Thomas J."
+                            ],
+                            "firstname": "Thomas",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "Chrstine E. Thacker",
+                            "alternate": [
+                                "Thacker, Chrstine E."
+                            ],
+                            "firstname": "Chrstine",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The least inclusive crown clade that contains Morone saxatilis (Walbaum 1792), Acanthurus lineatus (Linnaeus 1758), Sparus auratus Linnaeus 1758, Canthigaster figueiredoi Moura and Castro 2002, and Lophius gastrophysus Miranda Ribeiro 1915.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Morone saxatilis Walbaum, 1792",
+                        "nameComplete": "Morone saxatilis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

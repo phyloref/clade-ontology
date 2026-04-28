@@ -1,0 +1,119 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Azhdarchid pterosaur diversity in the Bayanshiree Formation, Upper Cretaceous of the Gobi Desert, Mongolia",
+                "year": 2025,
+                "authors": [
+                    {
+                        "name": "Pêgas",
+                        "alternate": [
+                            "Pêgas,"
+                        ],
+                        "lastname": "Pêgas"
+                    },
+                    {
+                        "name": "Zhou",
+                        "alternate": [
+                            "Zhou,"
+                        ],
+                        "lastname": "Zhou"
+                    },
+                    {
+                        "name": "Kobayashi",
+                        "alternate": [
+                            "Kobayashi,"
+                        ],
+                        "lastname": "Kobayashi"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 1047,
+            "label": "Quetzalcoatlini",
+            "dwc:scientificNameAuthorship": "Pêgas, and Zhou, and Kobayashi,",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Azhdarchid pterosaur diversity in the Bayanshiree Formation, Upper Cretaceous of the Gobi Desert, Mongolia",
+                    "year": 2025,
+                    "authors": [
+                        {
+                            "name": "Pêgas",
+                            "alternate": [
+                                "Pêgas,"
+                            ],
+                            "lastname": "Pêgas"
+                        },
+                        {
+                            "name": "Zhou",
+                            "alternate": [
+                                "Zhou,"
+                            ],
+                            "lastname": "Zhou"
+                        },
+                        {
+                            "name": "Kobayashi",
+                            "alternate": [
+                                "Kobayashi,"
+                            ],
+                            "lastname": "Kobayashi"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "Max ∇ (Quetzalcoatlus northropi Lawson, 1975 ~ Hatzegopteryx thambema Buffetaut, Grigorescu & Csiki, 2002, Azhdarcho lancicollis Nessov, 1984).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Quetzalcoatlus northropi Lawson, 1975",
+                        "nameComplete": "Quetzalcoatlus northropi"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Hatzegopteryx thambema Buffetaut and Grigorescu and Csiki, 2002",
+                        "nameComplete": "Hatzegopteryx thambema"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Azhdarcho lancicollis Nessov, 1984",
+                        "nameComplete": "Azhdarcho lancicollis"
+                    }
+                }
+            ]
+        }
+    ]
+}

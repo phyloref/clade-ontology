@@ -1,0 +1,98 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Eolacertidae: a new extinct clade of lizards from the Palaeogene; with comments on the origin of the dominant European reptile group – Lacertidae",
+                "year": 2018,
+                "authors": [
+                    {
+                        "name": "Andrej  Čerňanský",
+                        "alternate": [
+                            "Čerňanský, Andrej"
+                        ],
+                        "firstname": "Andrej",
+                        "lastname": "Čerňanský"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "13-14",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "https://doi.org/10.1080/08912963.2017.1327530"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Historical Biology",
+                    "volume": "30",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 1050,
+            "label": "Eolacertidae",
+            "dwc:scientificNameAuthorship": "Čerňanský, Andrej and Smith, Krister T.",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Eolacertidae: a new extinct clade of lizards from the Palaeogene; with comments on the origin of the dominant European reptile group – Lacertidae",
+                    "year": 2018,
+                    "authors": [
+                        {
+                            "name": "Andrej Čerňanský",
+                            "alternate": [
+                                "Čerňanský, Andrej"
+                            ],
+                            "firstname": "Andrej",
+                            "lastname": "Čerňanský"
+                        },
+                        {
+                            "name": "Krister Smith",
+                            "alternate": [
+                                "Smith, Krister"
+                            ],
+                            "firstname": "Krister",
+                            "lastname": "Smith"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "figure": "1-12",
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "https://doi.org/10.1080/08912963.2017.1327530"
+                        }
+                    ],
+                    "link": [],
+                    "journal": {
+                        "name": "Historical Biology",
+                        "volume": "30",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The most inclusive clade containing Eolacerta\nrobusta Nöth, 1940 but not Lacerta viridis Linneaus, 1758 or\nany other extant squamate",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Eolacerta robusta Nöth, 1940",
+                        "nameComplete": "Eolacerta robusta"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

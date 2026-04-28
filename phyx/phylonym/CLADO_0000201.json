@@ -434,7 +434,7 @@
         {
             "regnumId": 201,
             "label": "Porifera",
-            "dwc:scientificNameAuthorship": "Manuel, M., Boury-Esnault, N.",
+            "dwc:scientificNameAuthorship": "Manuel, M. and Boury-Esnault, N.",
             "dwc:namePublishedIn": [
                 {
                     "type": "book_section",
@@ -461,7 +461,66 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Porifera",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "M. Manuel",
+                            "alternate": [
+                                "Manuel, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Manuel"
+                        },
+                        {
+                            "name": "N. Boury-Esnault",
+                            "alternate": [
+                                "Boury-Esnault, N."
+                            ],
+                            "firstname": "N.",
+                            "lastname": "Boury-Esnault"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "439-442",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The least inclusive crown clade containing Carteriospongia foliacens (Pallas 1766) (Demospongiae), Oopsacas minuta Topsent 1927 (Hexactinellida), Oscarella lobularis (Schmidt 1862) (Homoscleromorpha), and Sycon raphanus Schmidt 1862 (Calcispongia).",
             "internalSpecifiers": [
                 {
@@ -471,33 +530,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Carteriospongia foliacens Pallas, 1766",
                         "nameComplete": "Carteriospongia foliacens"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Oopsacas minuta Topsent, 1927",
-                        "nameComplete": "Oopsacas minuta"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Oscarella lobularis Schmidt, 1862",
-                        "nameComplete": "Oscarella lobularis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Sycon raphanus Schmidt, 1862",
-                        "nameComplete": "Sycon raphanus"
                     }
                 }
             ],

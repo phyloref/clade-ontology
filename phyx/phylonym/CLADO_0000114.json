@@ -2,66 +2,6 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
     "phylogenies": [
         {
-            "primaryPhylogenyCitation": {
-                "type": "book_section",
-                "title": "Phylogenetic relationships of the lizard families",
-                "section_title": "A phylogenetic analysis of Lepidosauromorpha.",
-                "year": 1988,
-                "authors": [
-                    {
-                        "name": "J. Gauthier",
-                        "alternate": [
-                            "Gauthier , J."
-                        ],
-                        "firstname": "J.",
-                        "lastname": "Gauthier"
-                    },
-                    {
-                        "name": "R. Estes",
-                        "alternate": [
-                            "Estes, R."
-                        ],
-                        "firstname": "R.",
-                        "lastname": "Estes"
-                    },
-                    {
-                        "name": "K. de Queiroz",
-                        "alternate": [
-                            "de Queiroz, K."
-                        ],
-                        "firstname": "K.",
-                        "lastname": "de Queiroz"
-                    }
-                ],
-                "editors": [
-                    {
-                        "name": "R. Estes",
-                        "alternate": [
-                            "Estes, R."
-                        ],
-                        "firstname": "R.",
-                        "lastname": "Estes"
-                    },
-                    {
-                        "name": "G. Pregill",
-                        "alternate": [
-                            "Pregill, G."
-                        ],
-                        "firstname": "G.",
-                        "lastname": "Pregill"
-                    }
-                ],
-                "series_editors": [],
-                "publisher": "Stanford University Press",
-                "city": "Stanford, California",
-                "pages": "15-98",
-                "figure": "3",
-                "identifier": [],
-                "link": []
-            },
-            "newick": "(((Chamaeleontidae, Agamidae), Iguanidae),\n\n(Gekkonidae, Pygopdidae), \n\nDibamidae, Amphisbaenia, Serpentes, \n\n((Gymnophthalmidae, Teiidae), Lacertidae, Xantusiidae, (Scincidae, Cordylidae)),\n\n(Anguidae, Xenosauridae),\n\nHelodermatidae, Lanthanotus, Varanus)"
-        },
-        {
             "phylogenyCitation": {
                 "type": "article",
                 "title": "The origin and early evolution of Sauria: reassessing the Permian saurian fossil record and the timing of the crocodile-lizard divergence.",
@@ -154,6 +94,66 @@
                     "identifier": []
                 }
             }
+        },
+        {
+            "primaryPhylogenyCitation": {
+                "type": "book_section",
+                "title": "Phylogenetic relationships of the lizard families",
+                "section_title": "A phylogenetic analysis of Lepidosauromorpha.",
+                "year": 1988,
+                "authors": [
+                    {
+                        "name": "J. Gauthier",
+                        "alternate": [
+                            "Gauthier , J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Gauthier"
+                    },
+                    {
+                        "name": "R. Estes",
+                        "alternate": [
+                            "Estes, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Estes"
+                    },
+                    {
+                        "name": "K. de Queiroz",
+                        "alternate": [
+                            "de Queiroz, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "de Queiroz"
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "R. Estes",
+                        "alternate": [
+                            "Estes, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Estes"
+                    },
+                    {
+                        "name": "G. Pregill",
+                        "alternate": [
+                            "Pregill, G."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Pregill"
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "Stanford University Press",
+                "city": "Stanford, California",
+                "pages": "15-98",
+                "figure": "3",
+                "identifier": [],
+                "link": []
+            },
+            "newick": "(((Chamaeleontidae, Agamidae), Iguanidae),\n\n(Gekkonidae, Pygopdidae), \n\nDibamidae, Amphisbaenia, Serpentes, \n\n((Gymnophthalmidae, Teiidae), Lacertidae, Xantusiidae, (Scincidae, Cordylidae)),\n\n(Anguidae, Xenosauridae),\n\nHelodermatidae, Lanthanotus, Varanus)"
         },
         {
             "phylogenyCitation": {
@@ -254,7 +254,7 @@
         {
             "regnumId": 114,
             "label": "Sauria",
-            "dwc:scientificNameAuthorship": "Gautheir, J. A., de Queiroz, K.",
+            "dwc:scientificNameAuthorship": "Gautheir, J. A. and de Queiroz, K.",
             "dwc:namePublishedIn": [
                 {
                     "type": "book",
@@ -278,7 +278,67 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Sauria",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        },
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "1065-1073",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The smallest crown clade containing Alligator (originally Crocodilus) mississippiensis (Daudin 1802) (Crocodylia), Sphenodon (originally Hatteria) punctatus (Gray 1842), and Lacerta agilis Linnaeus 1758 (Squamata), but neither Testudo graeca Linnaeus 1758 (Testudines) nor Homo sapiens Linnaeus 1758 (Mammalia).",
             "internalSpecifiers": [
                 {
@@ -289,46 +349,9 @@
                         "label": "Alligator (originally Crocodilus) mississippiensis Daudin, 1802",
                         "nameComplete": "Alligator (originally Crocodilus) mississippiensis"
                     }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Sphenodon (originally Hatteria) punctatus Gray, 1842",
-                        "nameComplete": "Sphenodon (originally Hatteria) punctatus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Lacerta agilis Linnaeus, 1758",
-                        "nameComplete": "Lacerta agilis"
-                    }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Testudo graeca Linnaeus, 1758",
-                        "nameComplete": "Testudo graeca"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Homo sapiens Linneus, 1758",
-                        "nameComplete": "Homo sapiens"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

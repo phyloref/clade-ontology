@@ -1,0 +1,158 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Towards a phylogenetic taxonomy of sturgeons (Acipenseriformes: Acipenseridae)",
+                "authors": [
+                    {
+                        "name": "Chase D. Brownstein",
+                        "alternate": [
+                            "Brownstein, Chase D."
+                        ],
+                        "firstname": "Chase",
+                        "lastname": "Brownstein",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "Thomas J. Near",
+                        "alternate": [
+                            "Near, Thomas J."
+                        ],
+                        "firstname": "Thomas",
+                        "lastname": "Near",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "5",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Bulletin of the Peabody Museum of Natural History",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 1082,
+            "label": "Huso",
+            "dwc:scientificNameAuthorship": "Brownstein, Chase D. and Near, Thomas J.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Medizinische Zoologie, oder getreue Darstellung und Beschreibung der Thiere, die in der Arzneimittellehre in Betracht kommen, in systematischer Folge herausgegeben, Volume 2",
+                    "year": 1833,
+                    "authors": [
+                        {
+                            "name": "J. F. Brandt",
+                            "alternate": [
+                                "Brandt, J. F."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Brandt",
+                            "middlename": "F."
+                        },
+                        {
+                            "name": "J. T.C. Ratzeburg",
+                            "alternate": [
+                                "Ratzeburg, J. T.C."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Ratzeburg",
+                            "middlename": "T.C."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "A. Hirschwald",
+                    "city": "Berlin",
+                    "pages": "364",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Towards a phylogenetic taxonomy of sturgeons (Acipenseriformes: Acipenseridae)",
+                    "authors": [
+                        {
+                            "name": "Chase D. Brownstein",
+                            "alternate": [
+                                "Brownstein, Chase D."
+                            ],
+                            "firstname": "Chase",
+                            "lastname": "Brownstein",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "Thomas J. Near",
+                            "alternate": [
+                                "Near, Thomas J."
+                            ],
+                            "firstname": "Thomas",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "J. T. C. Ratzeburg",
+                            "alternate": [
+                                "Ratzeburg, J. T. C."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Ratzeburg",
+                            "middlename": "T. C."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "A. Hirschwald",
+                    "city": "Berlin",
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The least inclusive crown clade that contains Huso huso (Linnaeus 1758), Huso fulvescens (Rafinesque 1817), and Huso gueldenstaedtii (Brandt and Ratzeburg 1833). This is a minimum-crown-clade definition.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Huso huso Linnaeus, 1758",
+                        "nameComplete": "Huso huso"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Huso fulvescens Rafinesque, 1817",
+                        "nameComplete": "Huso fulvescens"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Huso gueldenstaedtii Brandt and Ratzeburg, 1833",
+                        "nameComplete": "Huso gueldenstaedtii"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

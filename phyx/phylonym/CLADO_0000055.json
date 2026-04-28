@@ -101,7 +101,7 @@
         {
             "regnumId": 55,
             "label": "Labiatae",
-            "dwc:scientificNameAuthorship": "Cantino, P. D., Olmstead, R. G.",
+            "dwc:scientificNameAuthorship": "Cantino, P. D. and Olmstead, R. G.",
             "dwc:namePublishedIn": [
                 {
                     "type": "book",
@@ -126,7 +126,68 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Labiatae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "R. G. Olmstead",
+                            "alternate": [
+                                "Olmstead, R. G."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Olmstead",
+                            "middlename": "G."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "423-426",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The smallest crown clade containing Lamium album L. 1753 (Perolamiina/Lamioideae/Lamieae), Ajuga reptans L. 1753 (Ajugoideae), Premna microphylla Turcz. 1863 (Premnoideae), Tectona grandis L.f. 1782, Glechoma hederacea L. 1753 (Nepetoideae), Vitex agnus-castus L. 1753 (Viticoideae), Congea tomentosa Roxb. 1820 (Symphorematoideae), Callicarpa dichotoma (Lour.) K. Koch 1872, and Prostanthera rotundifolia R. Br. 1810 (Prostantheroideae).",
             "internalSpecifiers": [
                 {
@@ -136,78 +197,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
                         "label": "Lamium album Linnaeus, 1753",
                         "nameComplete": "Lamium album"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Ajuga reptans Linnaeus, 1753",
-                        "nameComplete": "Ajuga reptans"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Premna microphylla Turcz, 1863",
-                        "nameComplete": "Premna microphylla"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Tectona grandis Linnaeus, 1782",
-                        "nameComplete": "Tectona grandis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Vitex agnus-castus Linnaeus, 1753",
-                        "nameComplete": "Vitex agnus-castus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Congea tomentosa Roxb, 1820",
-                        "nameComplete": "Congea tomentosa"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Callicarpa dichotoma Koch, 1872",
-                        "nameComplete": "Callicarpa dichotoma"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Prostanthera rotundifolia Br., 1810",
-                        "nameComplete": "Prostanthera rotundifolia"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Glechoma hederacea Linnaeus, 1753",
-                        "nameComplete": "Glechoma hederacea"
                     }
                 }
             ],

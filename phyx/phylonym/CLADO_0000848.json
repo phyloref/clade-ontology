@@ -1,0 +1,195 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Systematic assessment of the Panopeidae and broader Eubrachyura (Decapoda: Brachyura) using mitochondrial genomics",
+                "year": 2021,
+                "authors": [
+                    {
+                        "name": "Lucas A. Jennings",
+                        "alternate": [
+                            "Jennings, Lucas A."
+                        ],
+                        "firstname": "Lucas",
+                        "lastname": "Jennings",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "April M.H. Blakeslee",
+                        "alternate": [
+                            "Blakeslee, April M.H."
+                        ],
+                        "firstname": "April",
+                        "lastname": "Blakeslee",
+                        "middlename": "M.H."
+                    },
+                    {
+                        "name": "Krista  A. McCoy",
+                        "alternate": [
+                            "McCoy, Krista  A."
+                        ],
+                        "firstname": "Krista",
+                        "lastname": "McCoy",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "Donald  C.  Behringer",
+                        "alternate": [
+                            "Behringer, Donald  C."
+                        ],
+                        "firstname": "Donald",
+                        "lastname": "Behringer",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "Jamie  Bojko",
+                        "alternate": [
+                            "Bojko, Jamie"
+                        ],
+                        "firstname": "Jamie",
+                        "lastname": "Bojko"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.3897/asp.79.e70234"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "https://thescholarship.ecu.edu/bitstream/handle/10342/10766/JenningsSystematicAssessmentofthePanopeidaeandBroaderEubrachyura.pdf?sequence=1"
+                    }
+                ],
+                "journal": {
+                    "name": "Arthropod Systematics & Phylogeny",
+                    "volume": "79",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Phylogenomic analyses of brachyuran crabs support early divergence of primary freshwater crabs",
+                "year": 2019,
+                "authors": [
+                    {
+                        "name": "Ka Yan Ma",
+                        "alternate": [
+                            "Ma, Ka Yan"
+                        ],
+                        "firstname": "Ka",
+                        "lastname": "Ma",
+                        "middlename": "Yan"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2019.02.001"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Phylogenetics and Evolution",
+                    "volume": "135",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "The complete mitochondrial genome of Sesarmops sinensis reveals gene rearrangements and phylogenetic relationships in Brachyura",
+                "year": 2017,
+                "edition": "12",
+                "authors": [
+                    {
+                        "name": "Bo-Pin Tang",
+                        "alternate": [
+                            "Tang, Bo-Pin"
+                        ],
+                        "firstname": "Bo-Pin",
+                        "lastname": "Tang"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1371/journal.pone.0179800"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0179800"
+                    }
+                ],
+                "journal": {
+                    "name": "PLOS ONE",
+                    "volume": "6",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 848,
+            "label": "Heterotremata D Guinot, 1977 [L. A. Jennings et al.] converted clade name",
+            "dwc:scientificNameAuthorship": "Jennings, Lucas A. and Blakeslee, April M.H. and McCoy, Krista  A. and Bojko, Jamie and Behringer , Donald  C.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Propositions pour une nouvelle classification des Crustacés Décapodes Brachyoures",
+                    "year": 1977,
+                    "edition": "285",
+                    "authors": [
+                        {
+                            "name": "Danièle Guinot",
+                            "alternate": [
+                                "Guinot, Danièle"
+                            ],
+                            "firstname": "Danièle",
+                            "lastname": "Guinot"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Comptes Rendus Hebdomadaires des Séances de l'Académie des Sciences",
+                        "volume": "10",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The most inclusive crown clade containing Callinectes sapidus (Rathbun 1896), and Orithyia sinica (Linnaeus 1771) including all the species that share a more recent common ancestor with them than with Chiromantes haematocheir (De Haan 1833) and Sinopotamon yaanense (Chung & Ts’ao 1962).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Callinectes sapidus Rathbun, 1896",
+                        "nameComplete": "Callinectes sapidus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

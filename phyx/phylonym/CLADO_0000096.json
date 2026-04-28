@@ -2,33 +2,6 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
     "phylogenies": [
         {
-            "primaryPhylogenyCitation": {
-                "type": "book_section",
-                "title": "Boine snake phylogeny and research cycles.",
-                "section_title": "Misc. Publ. Mus. Zool.",
-                "year": 1991,
-                "authors": [
-                    {
-                        "name": "A. G. Kluge",
-                        "alternate": [
-                            "Kluge, A. G."
-                        ],
-                        "firstname": "A.",
-                        "lastname": "Kluge",
-                        "middlename": "G."
-                    }
-                ],
-                "editors": [],
-                "series_editors": [],
-                "publisher": "Univ. Mich.",
-                "pages": "1-58",
-                "figure": "4",
-                "identifier": [],
-                "link": []
-            },
-            "newick": "(Scolecophidia, Dinilysia, (Anilius, (Cylindrophis, uropeltines)),\nXenopeltis, Loxocemus, (erycines, (pythonines, boines)), \n((Ungaliophis, Exiliboa), (Tropidophis, Trachyboa)), \n(Bolyeria, Casarea), Acrochordus, higher_snakes)"
-        },
-        {
             "phylogenyCitation": {
                 "type": "article",
                 "title": "The systematic relationships of the snake genus Anomochilus.",
@@ -118,6 +91,33 @@
             }
         },
         {
+            "primaryPhylogenyCitation": {
+                "type": "book_section",
+                "title": "Boine snake phylogeny and research cycles.",
+                "section_title": "Misc. Publ. Mus. Zool.",
+                "year": 1991,
+                "authors": [
+                    {
+                        "name": "A. G. Kluge",
+                        "alternate": [
+                            "Kluge, A. G."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Kluge",
+                        "middlename": "G."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "publisher": "Univ. Mich.",
+                "pages": "1-58",
+                "figure": "4",
+                "identifier": [],
+                "link": []
+            },
+            "newick": "(Scolecophidia, Dinilysia, (Anilius, (Cylindrophis, uropeltines)),\nXenopeltis, Loxocemus, (erycines, (pythonines, boines)), \n((Ungaliophis, Exiliboa), (Tropidophis, Trachyboa)), \n(Bolyeria, Casarea), Acrochordus, higher_snakes)"
+        },
+        {
             "phylogenyCitation": {
                 "type": "article",
                 "title": "Assembling the squamate tree of life: perspectives from the phenotype and the fossil record.",
@@ -203,7 +203,7 @@
         {
             "regnumId": 96,
             "label": "Serpentes",
-            "dwc:scientificNameAuthorship": "Head, J., de Querioz, K., Greene, H.",
+            "dwc:scientificNameAuthorship": "Head, J. and de Querioz, K. and Greene, H.",
             "dwc:namePublishedIn": [
                 {
                     "type": "book",
@@ -228,7 +228,74 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Serpentes",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "J. Head",
+                            "alternate": [
+                                "Head, J."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Head"
+                        },
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "H. Greene",
+                            "alternate": [
+                                "Greene, H."
+                            ],
+                            "firstname": "H.",
+                            "lastname": "Greene"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "1135-1143",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "Serpentes refers to the crown clade originating in the most recent common ancestor of Anomalepis mexicanus Jan 1860 (Scolecophidia: Anomalepididae), Rena dulcis Baird & Girard 1853 (Scolecophidia: Leptotyphlopidae), Typhlops linneolatus Jan 1863 (Scolecophidia: Typhlopidae), Anilius (originally Anguis) scytale (Linnaeus 1758) (Alethinophidia: Anilioidea), and Coluber constrictor Linnaeus 1758 (Alethinophidia: Caenophidia).",
             "internalSpecifiers": [
                 {
@@ -238,42 +305,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Anomalepis mexicanus Jan, 1860",
                         "nameComplete": "Anomalepis mexicanus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Rena dulcis Girard and Baird, 1853",
-                        "nameComplete": "Rena dulcis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Typhlops linneolatus Jan, 1863",
-                        "nameComplete": "Typhlops linneolatus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Anilius (originally Anguis) scytale Linnaeus, 1758",
-                        "nameComplete": "Anilius (originally Anguis) scytale"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Coluber constrictor Linnaeus, 1758",
-                        "nameComplete": "Coluber constrictor"
                     }
                 }
             ],

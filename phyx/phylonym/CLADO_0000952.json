@@ -1,0 +1,125 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Prolonged morphological expansion of spiny-rayed fishes following the end-Cretaceous",
+                "year": 2022,
+                "authors": [
+                    {
+                        "name": "A. Ghezelayagh",
+                        "alternate": [
+                            "Ghezelayagh, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Ghezelayagh"
+                    },
+                    {
+                        "name": "et al.",
+                        "alternate": [
+                            "al., et"
+                        ],
+                        "firstname": "et",
+                        "lastname": "al."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "S4",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1038/s41559-022-01801-3"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Nature Ecology & Evolution",
+                    "volume": "6",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 952,
+            "label": "Gobioidei",
+            "dwc:scientificNameAuthorship": "Thacker, C. E. and Near, T. J.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Bijdrage tot de kennis der ichthyologische fauna van het eiland Madura, met beschrijving van eenige nieuwe soorten",
+                    "year": 1849,
+                    "authors": [
+                        {
+                            "name": "P. Bleeker",
+                            "alternate": [
+                                "Bleeker, P."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Bleeker"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Verhandelingen van het Bataviaasch Genootschap van Kunsten en Wetenschappen",
+                        "volume": "22 (8)",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
+                    "authors": [
+                        {
+                            "name": "T. J. Near",
+                            "alternate": [
+                                "Near, T. J."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "C. E. Thacker",
+                            "alternate": [
+                                "Thacker, C. E."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The least inclusive crown clade that contains Lythrypnus dalli (Gilbert 1890), Periophthalmus barbarus (Linnaeus 1766), Eleotris pisonis (Gmelin 1789), Milyeringa veritas Whitley 1945, and Rhyacichthys aspro (Valenciennes in Cuvier and Valenciennes 1837).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Lythrypnus dalli Gilbert, 1890",
+                        "nameComplete": "Lythrypnus dalli"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

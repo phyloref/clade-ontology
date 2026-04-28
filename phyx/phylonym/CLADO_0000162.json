@@ -99,7 +99,59 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Polycarpidea",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "M. L. Christoffersen",
+                            "alternate": [
+                                "Christoffersen, M. L."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Christoffersen",
+                            "middlename": "L."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "605-608",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The crown clade originating in the most recent common ancestor of Plesionika martia (A. Milne Edwards 1883) (Pandaloidea), Philocheras gorei (Dardeau 1980) (Crangonoidea) and Merhippolyte agulhasensis Bate 1888 (Alpheoidea), provided that the multiarticulate second pereiopod shared by those taxa represents a single evolutionary origin.",
             "internalSpecifiers": [
                 {
@@ -109,24 +161,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Plesionika martia Edwards, 1883",
                         "nameComplete": "Plesionika martia"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Philocheras gorei Dardeau, 1980",
-                        "nameComplete": "Philocheras gorei"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Merhippolyte agulhasensis Bate, 1888",
-                        "nameComplete": "Merhippolyte agulhasensis"
                     }
                 }
             ],

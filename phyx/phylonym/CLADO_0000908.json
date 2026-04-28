@@ -1,0 +1,141 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Are characiform fishes Gondwanan in origin? Insights from a time-scaled molecular phylogeny of the Citharinoidei (Ostariophysi: Characiformes)",
+                "year": 2013,
+                "authors": [
+                    {
+                        "name": "J. Arroyave",
+                        "alternate": [
+                            "Arroyave, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Arroyave"
+                    },
+                    {
+                        "name": "J. S.S. Denton",
+                        "alternate": [
+                            "Denton, J. S.S."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Denton",
+                        "middlename": "S.S."
+                    },
+                    {
+                        "name": "M. L.J. Stiassny",
+                        "alternate": [
+                            "Stiassny, M. L.J."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Stiassny",
+                        "middlename": "L.J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "4",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1371/journal.pone.0077269"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Plos One",
+                    "volume": "8",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 908,
+            "label": "Cithariniformes",
+            "dwc:scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Combined phylogeny of ray-finned fishes (Actinopterygii) and the use of morphological characters in large-scale analyses",
+                    "year": 2017,
+                    "authors": [
+                        {
+                            "name": "J. M. Mirande",
+                            "alternate": [
+                                "Mirande, J. M."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Mirande",
+                            "middlename": "M."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.1111/cla.12171"
+                        }
+                    ],
+                    "link": [],
+                    "journal": {
+                        "name": "Cladistics",
+                        "volume": "33",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogeny and classification of Actinopterygii",
+                    "authors": [
+                        {
+                            "name": "Thomas J. Near",
+                            "alternate": [
+                                "Near, Thomas J."
+                            ],
+                            "firstname": "Thomas",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "Christine E. Thacker",
+                            "alternate": [
+                                "Thacker, Christine E."
+                            ],
+                            "firstname": "Christine",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The least inclusive crown clade that contains Citharinus citharus (Geoffroy St. Hilaire 1802) and Distichodus mossambicus Peters 1852.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Citharinus citharus Geoffroy St. Hilaire, 1802",
+                        "nameComplete": "Citharinus citharus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

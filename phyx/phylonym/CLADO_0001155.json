@@ -1,0 +1,192 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Relationships of the temperate Australasian labrid fish tribe Odacini (Perciformes; Teleostei)",
+                "year": 2004,
+                "authors": [
+                    {
+                        "name": "K. D. Clements",
+                        "alternate": [
+                            "Clements, K. D."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Clements",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "M. E. Alfaro",
+                        "alternate": [
+                            "Alfaro, M. E."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Alfaro",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "J. L. Fessler",
+                        "alternate": [
+                            "Fessler, J. L."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Fessler",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "M. W. Westneat",
+                        "alternate": [
+                            "Westneat, M. W."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Westneat",
+                        "middlename": "W."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "Fig. 3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2004.02.003"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Phylogenetics and Evolution",
+                    "volume": "32",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 1155,
+            "label": "Odacini",
+            "dwc:scientificNameAuthorship": "Near, Thomas J. and Brownstein, Chase D. and Thacker, Christine E. and Wainwright, Peter C.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Revision of the labrid fish genus Pseudolabrus and allied genera",
+                    "year": 1988,
+                    "authors": [
+                        {
+                            "name": "B. C. Russell",
+                            "alternate": [
+                                "Russell, B. C."
+                            ],
+                            "firstname": "B.",
+                            "lastname": "Russell",
+                            "middlename": "C."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.3853/j.0812-7387.9.1988.95"
+                        }
+                    ],
+                    "link": [],
+                    "journal": {
+                        "name": "Records of the Australian Museum Supplement",
+                        "volume": "9",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic taxonomy of wrasses and parrotfishes (Labridae)",
+                    "authors": [
+                        {
+                            "name": "T. J. Near",
+                            "alternate": [
+                                "Near, T. J."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "C. D. Brownstein",
+                            "alternate": [
+                                "Brownstein, C. D."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Brownstein",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "C. E. Thacker",
+                            "alternate": [
+                                "Thacker, C. E."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        },
+                        {
+                            "name": "P. C. Wainwright",
+                            "alternate": [
+                                "Wainwright, P. C."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Wainwright",
+                            "middlename": "C."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": [
+                            {
+                                "type": "isbn",
+                                "id": "2162-4135"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "cladeDefinition": "The least inclusive crown clade that contains Odax pullus (Forster in Bloch and Schneider 1801), Heteroscarus acroptilus (Richardson 1846), and Neoodax balteatus (Valenciennes in Cuvier and Valenciennes 1840).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Odax pullus Forster, 1801",
+                        "nameComplete": "Odax pullus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Heteroscarus acroptilus Richardson, 1846",
+                        "nameComplete": "Heteroscarus acroptilus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Neoodax balteatus Valenciennes, 1840",
+                        "nameComplete": "Neoodax balteatus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

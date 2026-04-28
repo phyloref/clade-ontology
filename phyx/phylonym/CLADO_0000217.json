@@ -755,7 +755,7 @@
         {
             "regnumId": 217,
             "label": "Gentianidae",
-            "dwc:scientificNameAuthorship": "Olmstead, R. G., Judd, W. S., Cantino, P. D.",
+            "dwc:scientificNameAuthorship": "Olmstead, R. G. and Judd, W. S. and Cantino, P. D.",
             "dwc:namePublishedIn": [
                 {
                     "type": "article",
@@ -847,7 +847,77 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Gentianidae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "R. G. Olmstead",
+                            "alternate": [
+                                "Olmstead, R. G."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Olmstead",
+                            "middlename": "G."
+                        },
+                        {
+                            "name": "W. S. Judd",
+                            "alternate": [
+                                "Judd, W. S."
+                            ],
+                            "firstname": "W.",
+                            "lastname": "Judd",
+                            "middlename": "S."
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "371-372",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The smallest crown clade containing Gentiana lutea Linnaeus 1753 (Lamiidae) and Campanula elatines Linnaeus 1759 (Campanulidae).",
             "internalSpecifiers": [
                 {
@@ -857,15 +927,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
                         "label": "Gentiana lutea Linnaeus, 1753",
                         "nameComplete": "Gentiana lutea"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Campanula elatines Linnaeus, 1759",
-                        "nameComplete": "Campanula elatines"
                     }
                 }
             ],

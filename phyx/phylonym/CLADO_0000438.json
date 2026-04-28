@@ -1,0 +1,203 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Reassessment of Aeolosaurus maximus, a titanosaur dinosaur from the Late Cretaceous of southeastern Brazil",
+                "year": 2021,
+                "authors": [
+                    {
+                        "name": "Julian Silva Junior",
+                        "alternate": [
+                            "Silva Junior, Julian"
+                        ],
+                        "firstname": "Julian",
+                        "lastname": "Silva Junior"
+                    },
+                    {
+                        "name": "Agustín Martinelli",
+                        "alternate": [
+                            "Martinelli, Agustín"
+                        ],
+                        "firstname": "Agustín",
+                        "lastname": "Martinelli"
+                    },
+                    {
+                        "name": "Fabiano Iori",
+                        "alternate": [
+                            "Iori, Fabiano"
+                        ],
+                        "firstname": "Fabiano",
+                        "lastname": "Iori"
+                    },
+                    {
+                        "name": "Martín Hechenleitner",
+                        "alternate": [
+                            "Hechenleitner, Martín"
+                        ],
+                        "firstname": "Martín",
+                        "lastname": "Hechenleitner"
+                    },
+                    {
+                        "name": "Thiago Marinho",
+                        "alternate": [
+                            "Marinho, Thiago"
+                        ],
+                        "firstname": "Thiago",
+                        "lastname": "Marinho"
+                    },
+                    {
+                        "name": "Max Langer",
+                        "alternate": [
+                            "Langer, Max"
+                        ],
+                        "firstname": "Max",
+                        "lastname": "Langer"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Historical Biology",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 438,
+            "label": "Titanosauriformes",
+            "dwc:scientificNameAuthorship": "Silva Junior, Julian and Martinelli, Agustín and Iori, Fabiano and Hechenleitner, Martín and Marinho, Thiago and Langer, Max",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Evolution of titanosaurid sauropods: Phytogenetic analysis based on the postcranial evidence",
+                    "year": 1997,
+                    "edition": "34",
+                    "authors": [
+                        {
+                            "name": "Leonardo Salgado",
+                            "alternate": [
+                                "Salgado, Leonardo"
+                            ],
+                            "firstname": "Leonardo",
+                            "lastname": "Salgado"
+                        },
+                        {
+                            "name": "Rodolfo Coria",
+                            "alternate": [
+                                "Coria , Rodolfo"
+                            ],
+                            "firstname": "Rodolfo",
+                            "lastname": "Coria"
+                        },
+                        {
+                            "name": "Jorge Calvo",
+                            "alternate": [
+                                "Calvo, Jorge"
+                            ],
+                            "firstname": "Jorge",
+                            "lastname": "Calvo"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Ameghiniana",
+                        "volume": "1",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Reassessment of Aeolosaurus maximus, a titanosaur dinosaur from the Late Cretaceous of southeastern Brazil",
+                    "year": 2021,
+                    "authors": [
+                        {
+                            "name": "Julian Silva Junior",
+                            "alternate": [
+                                "Silva Junior, Julian"
+                            ],
+                            "firstname": "Julian",
+                            "lastname": "Silva Junior"
+                        },
+                        {
+                            "name": "Agustín Martinelli",
+                            "alternate": [
+                                "Martinelli, Agustín"
+                            ],
+                            "firstname": "Agustín",
+                            "lastname": "Martinelli"
+                        },
+                        {
+                            "name": "Fabiano Iori",
+                            "alternate": [
+                                "Iori, Fabiano"
+                            ],
+                            "firstname": "Fabiano",
+                            "lastname": "Iori"
+                        },
+                        {
+                            "name": "Martín Hechenleitner",
+                            "alternate": [
+                                "Hechenleitner, Martín"
+                            ],
+                            "firstname": "Martín",
+                            "lastname": "Hechenleitner"
+                        },
+                        {
+                            "name": "Thiago Marinho",
+                            "alternate": [
+                                "Marinho , Thiago"
+                            ],
+                            "firstname": "Thiago",
+                            "lastname": "Marinho"
+                        },
+                        {
+                            "name": "Max Langer",
+                            "alternate": [
+                                "Langer, Max"
+                            ],
+                            "firstname": "Max",
+                            "lastname": "Langer"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "0.1080/08912963.2021.1920016"
+                        }
+                    ],
+                    "link": [],
+                    "journal": {
+                        "name": "Historical Biology",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The least inclusive clade containing Giraffatitan (originally Brachiosaurus) brancai Janensch, 1914, and Saltasaurus loricatus Bonaparte and Powell, 1980.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Saltasaurus loricatus Bonaparte and Powell, 1980",
+                        "nameComplete": "Saltasaurus loricatus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

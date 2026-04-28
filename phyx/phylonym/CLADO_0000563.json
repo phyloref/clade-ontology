@@ -1,0 +1,105 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [],
+    "phylorefs": [
+        {
+            "regnumId": 563,
+            "label": "Terestrombus",
+            "dwc:scientificNameAuthorship": "Liverani, Virgilio and Dekkers, Aart M and Maxwell, Stephen J",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Terestrombus and Tridentarius, new genera of Indo-Pacific Strombidae (Gastropoda), with comments on included taxa and on shell characters in Strombidae",
+                    "year": 2002,
+                    "authors": [
+                        {
+                            "name": "G C Kronenberg",
+                            "alternate": [
+                                "Kronenberg, G C"
+                            ],
+                            "firstname": "G",
+                            "lastname": "Kronenberg",
+                            "middlename": "C"
+                        },
+                        {
+                            "name": "G J Vermeij",
+                            "alternate": [
+                                "Vermeij, G J"
+                            ],
+                            "firstname": "G",
+                            "lastname": "Vermeij",
+                            "middlename": "J"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Vita Malacologia",
+                        "volume": "1",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Resolving phylogenetic and classical nomenclature: A Revision of Canarium Schumacher,1817 (Mollusca, Neostromboidae, Strombidae)",
+                    "year": 2021,
+                    "authors": [
+                        {
+                            "name": "Virgilio Liverani",
+                            "alternate": [
+                                "Liverani, Virgilio"
+                            ],
+                            "firstname": "Virgilio",
+                            "lastname": "Liverani"
+                        },
+                        {
+                            "name": "Aart M Dekkers",
+                            "alternate": [
+                                "Dekkers, Aart M"
+                            ],
+                            "firstname": "Aart",
+                            "lastname": "Dekkers",
+                            "middlename": "M"
+                        },
+                        {
+                            "name": "Stephen J Maxwell",
+                            "alternate": [
+                                "Maxwell, Stephen J"
+                            ],
+                            "firstname": "Stephen",
+                            "lastname": "Maxwell",
+                            "middlename": "J"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "figure": "1",
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "The Festivus",
+                        "volume": "53",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The clade has the characteristics outlined in the diagnosis, and contains Lambis fragilis Röding, 1798 and taxa more closely related to it than to other members of the Neostrombini n. tribe.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Lambis fragilis Roding, 1798",
+                        "nameComplete": "Lambis fragilis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

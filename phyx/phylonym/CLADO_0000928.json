@@ -1,0 +1,147 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "book_section",
+                "title": "Origin and phylogenetic interrelationships of teleosts",
+                "section_title": "Evolutionary relationships of the Aulopiformes (Euteleostei: Cyclosquamata): a molecular and total evidence approach",
+                "year": 2010,
+                "authors": [
+                    {
+                        "name": "M. P. Davis",
+                        "alternate": [
+                            "Davis, M. P."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Davis",
+                        "middlename": "P."
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "J. S. Nelson",
+                        "alternate": [
+                            "Nelson, J. S."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Nelson",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "H. -P. Schultze",
+                        "alternate": [
+                            "Schultze, H. -P."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Schultze",
+                        "middlename": "-P."
+                    },
+                    {
+                        "name": "M. V.H. Wilson",
+                        "alternate": [
+                            "Wilson, M. V.H."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Wilson",
+                        "middlename": "V.H."
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "Verlag Dr. Friedrich Pfeil",
+                "city": "München",
+                "pages": "431-470",
+                "identifier": [],
+                "link": []
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 928,
+            "label": "Aulopiformes",
+            "dwc:scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book_section",
+                    "title": "Interrelationships of fishes",
+                    "section_title": "Interrelationships of higher euteleostean fishes",
+                    "year": 1973,
+                    "authors": [
+                        {
+                            "name": "D. E. Rosen",
+                            "alternate": [
+                                "Rosen, D. E."
+                            ],
+                            "firstname": "D.",
+                            "lastname": "Rosen",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "P. H. Greenwood",
+                            "alternate": [
+                                "Greenwood, P. H."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Greenwood",
+                            "middlename": "H."
+                        },
+                        {
+                            "name": "R. S. Miles",
+                            "alternate": [
+                                "Miles, R. S."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Miles",
+                            "middlename": "S."
+                        },
+                        {
+                            "name": "C. Patterson",
+                            "alternate": [
+                                "Patterson, C."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Patterson"
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "Academic Press",
+                    "city": "London",
+                    "pages": "397-513",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
+                    "authors": [],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The least inclusive crown clade that contains Synodus variegatus (Lacepède 1803) and Alepisaurus ferox Lowe 1833.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Synodus variegatus Lacépède, 1803",
+                        "nameComplete": "Synodus variegatus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

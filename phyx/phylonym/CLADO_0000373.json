@@ -1,0 +1,162 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Phylogenetic systematics of Quetzalcoatlus (Pterosauria: Azhdarchidae)",
+                "year": 2021,
+                "authors": [
+                    {
+                        "name": "Brian Andres",
+                        "alternate": [
+                            "Andres, Brian"
+                        ],
+                        "firstname": "Brian",
+                        "lastname": "Andres"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Society of Vertebrate Paleontology Memoir 19",
+                    "volume": "supplement to Journal of Vertebrate Paleontology 40",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "The earliest pterodactyloid and the origin of the group",
+                "year": 2014,
+                "authors": [
+                    {
+                        "name": "Brian Andres",
+                        "alternate": [
+                            "Andres, Brian"
+                        ],
+                        "firstname": "Brian",
+                        "lastname": "Andres"
+                    },
+                    {
+                        "name": "James M Clark",
+                        "alternate": [
+                            "Clark, James M"
+                        ],
+                        "firstname": "James",
+                        "lastname": "Clark",
+                        "middlename": "M"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.cub.2014.03.030"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "http://dx.doi.org/10.1016/j.cub.2014.03.030"
+                    }
+                ],
+                "journal": {
+                    "name": "Current Biology",
+                    "volume": "24",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 373,
+            "label": "Quetzalcoatlus",
+            "dwc:scientificNameAuthorship": "Andres, Brian",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Could pterosaurs fly?",
+                    "year": 1975,
+                    "authors": [
+                        {
+                            "name": "Douglas Allan Lawson",
+                            "alternate": [
+                                "Lawson, Douglas Allan"
+                            ],
+                            "firstname": "Douglas",
+                            "lastname": "Lawson",
+                            "middlename": "Allan"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [
+                        {
+                            "url": "http://www.jstor.org/stable/1741028"
+                        }
+                    ],
+                    "journal": {
+                        "name": "Science",
+                        "volume": "188",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic Taxonomy of the Pterosauria",
+                    "authors": [
+                        {
+                            "name": "Brian Andres",
+                            "alternate": [
+                                "Andres, Brian"
+                            ],
+                            "firstname": "Brian",
+                            "lastname": "Andres"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "figure": "1",
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of Phylogenetic Taxonomy",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "Least inclusive clade containing Quetzalcoatlus northropi Lawson 1975 and Quetzalcoatlus lawsoni Andres and Langston 2021.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Quetzalcoatlus lawsoni Andres and Langston, 2021",
+                        "nameComplete": "Quetzalcoatlus lawsoni"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Quetzalcoatlus northropi Lawson, 1975",
+                        "nameComplete": "Quetzalcoatlus northropi"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

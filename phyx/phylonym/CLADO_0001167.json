@@ -1,0 +1,111 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [],
+    "phylorefs": [
+        {
+            "regnumId": 1167,
+            "label": "Proganochelyidae",
+            "dwc:scientificNameAuthorship": "Szczygielski, Tomasz and Dróżdż, Dawid",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "The fossil turtles of North America",
+                    "year": 1908,
+                    "authors": [
+                        {
+                            "name": "O. P. Hay",
+                            "alternate": [
+                                "Hay, O. P."
+                            ],
+                            "firstname": "O.",
+                            "lastname": "Hay",
+                            "middlename": "P."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Carnegie Institution",
+                    "city": "Washington D.C.",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Triassic turtles (Testudinata: Proterochersidae and Proganochelyidae) of Greenland",
+                    "year": 2016,
+                    "authors": [
+                        {
+                            "name": "Tomasz Szczygielski",
+                            "alternate": [
+                                "Szczygielski, Tomasz"
+                            ],
+                            "firstname": "Tomasz",
+                            "lastname": "Szczygielski"
+                        },
+                        {
+                            "name": "Dawid Dróżdż",
+                            "alternate": [
+                                "Dróżdż, Dawid"
+                            ],
+                            "firstname": "Dawid",
+                            "lastname": "Dróżdż"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "figure": "59",
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Zoological Journal of the Linnean Society",
+                        "volume": "206",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The largest clade containing Proganochelys quenstedtii Baur, 1887 but not Proterochersis robusta Fraas, 1913, Australochelys africanus Gaffney & Kitching, 1994, and Testudines Batsch, 1788 sensu International Turtle Nomenclature Committee et al., 2020b.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Proganochelys quenstedtii Baur, 1887",
+                        "nameComplete": "Proganochelys quenstedtii"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Proterochersis robusta Fraas, 1913",
+                        "nameComplete": "Proterochersis robusta"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Australochelys africanus Gaffney and Kitching, 1994",
+                        "nameComplete": "Australochelys africanus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Testudines Batsch, 1788",
+                        "nameComplete": "Testudines"
+                    }
+                }
+            ]
+        }
+    ]
+}

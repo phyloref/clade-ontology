@@ -1,0 +1,128 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A phylogenetic analysis of the major groups of catfishes (Teleostei: Siluriformes) using rag1 and rag2 nuclear gene sequences",
+                "year": 2006,
+                "authors": [
+                    {
+                        "name": "J. P. Sullivan",
+                        "alternate": [
+                            "Sullivan, J. P."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Sullivan",
+                        "middlename": "P."
+                    },
+                    {
+                        "name": "J. G. Lundberg",
+                        "alternate": [
+                            "Lundberg, J. G."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Lundberg",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "M. Hardman",
+                        "alternate": [
+                            "Hardman, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Hardman"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Phylogenetics and Evolution",
+                    "volume": "41",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 909,
+            "label": "Loricarioidei",
+            "dwc:scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Ichthyologiae archipelagi Indici prodromus. vol 1. Siluri",
+                    "year": 1858,
+                    "authors": [
+                        {
+                            "name": "P. Bleeker",
+                            "alternate": [
+                                "Bleeker, P."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Bleeker"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Lange",
+                    "city": "Batavia",
+                    "pages": "370",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Phylogeny and classification of Actinopterygii",
+                    "authors": [
+                        {
+                            "name": "Thomas J. Near",
+                            "alternate": [
+                                "Near, Thomas J."
+                            ],
+                            "firstname": "Thomas",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "Christine E. Thacker",
+                            "alternate": [
+                                "Thacker, Christine E."
+                            ],
+                            "firstname": "Christine",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The least inclusive crown clade that contains Nematogenys inermis (Guichenot 1848), Loricaria simillima Regan 1904, and Trichomycterus guianense (Eigenmann 1909).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Nematogenys inermis Guichenot, 1848",
+                        "nameComplete": "Nematogenys inermis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

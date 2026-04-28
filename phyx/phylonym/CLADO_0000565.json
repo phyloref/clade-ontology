@@ -1,0 +1,93 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [],
+    "phylorefs": [
+        {
+            "regnumId": 565,
+            "label": "Neostromboidae",
+            "dwc:scientificNameAuthorship": "Maxwell, Stephen J and Rymer, Tasmin L",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Recognising and defining a new crown clade within STROMBOIDEA Rafinesque, 1815 (MOLLUSCA, GASTROPODA).",
+                    "year": 2019,
+                    "authors": [
+                        {
+                            "name": "Stephen J Maxwell",
+                            "alternate": [
+                                "Maxwell, Stephen J"
+                            ],
+                            "firstname": "Stephen",
+                            "lastname": "Maxwell",
+                            "middlename": "J"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "ZooKeys",
+                        "volume": "867",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "Are the ICZN and PhyloCode that incompatible? A summary of the shifts in Stromboidean taxonomy and the definition of two new subfamilies in Stromboidae (Mollusca, Neostromboidae)",
+                    "year": 2021,
+                    "authors": [
+                        {
+                            "name": "Stephen J Maxwell",
+                            "alternate": [
+                                "Maxwell, Stephen J"
+                            ],
+                            "firstname": "Stephen",
+                            "lastname": "Maxwell",
+                            "middlename": "J"
+                        },
+                        {
+                            "name": "Tasmin L Rymer",
+                            "alternate": [
+                                "Rymer, Tasmin L"
+                            ],
+                            "firstname": "Tasmin",
+                            "lastname": "Rymer",
+                            "middlename": "L"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "figure": "2",
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "The Festivus",
+                        "volume": "53",
+                        "identifier": [
+                            {
+                                "type": "isbn",
+                                "id": "0738-9388"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "cladeDefinition": "The clade is nested within Stromboidea, with the characteristics outlined in the diagnosis, and contains taxa more closely related to Strombus pugilis Linné, 1758 (Strombidae), Terebellum terebellum (Linné, 1758) (Seraphsidae) and Tibia fusus (Linné, 1758) (Rostellariidae) than Struthiolariidae Gabb, 1868 and Aporrhaidae Gray, 1850",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Strombus pugilis Linnaeus, 1758",
+                        "nameComplete": "Strombus pugilis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

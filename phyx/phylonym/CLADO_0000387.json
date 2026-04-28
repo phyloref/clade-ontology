@@ -1,0 +1,160 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Phylogenetic relationships of the paraphyletic ‘caprimulgiform’ birds (nightjars and allies)",
+                "year": 2010,
+                "authors": [
+                    {
+                        "name": "Gerald Mayr",
+                        "alternate": [
+                            "Mayr, Gerald"
+                        ],
+                        "firstname": "Gerald",
+                        "lastname": "Mayr"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.1439-0469.2009.00552.x"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1439-0469.2009.00552.x"
+                    }
+                ],
+                "journal": {
+                    "name": "Journal of Zoological Systematics and Evolutionary Research",
+                    "volume": "48",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Fossil evidence of wing shape in a stem relative of swifts and hummingbirds (Aves, Pan-Apodiformes)",
+                "year": 2013,
+                "authors": [
+                    {
+                        "name": "Daniel T. Ksepka",
+                        "alternate": [
+                            "Ksepka, Daniel T."
+                        ],
+                        "firstname": "Daniel",
+                        "lastname": "Ksepka",
+                        "middlename": "T."
+                    },
+                    {
+                        "name": "Julia A. Clarke",
+                        "alternate": [
+                            "Clarke, Julia A."
+                        ],
+                        "firstname": "Julia",
+                        "lastname": "Clarke",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "Sterling J. Nesbitt",
+                        "alternate": [
+                            "Nesbitt, Sterling J."
+                        ],
+                        "firstname": "Sterling",
+                        "lastname": "Nesbitt",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "Felicia B. Kulp",
+                        "alternate": [
+                            "Kulp, Felicia B."
+                        ],
+                        "firstname": "Felicia",
+                        "lastname": "Kulp",
+                        "middlename": "B."
+                    },
+                    {
+                        "name": "Lance Grande",
+                        "alternate": [
+                            "Grande, Lance"
+                        ],
+                        "firstname": "Lance",
+                        "lastname": "Grande"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1098/rspb.2013.0580"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "https://royalsocietypublishing.org/doi/full/10.1098/rspb.2013.0580"
+                    }
+                ],
+                "journal": {
+                    "name": "Proceedings of the Royal Society B",
+                    "volume": "280",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 387,
+            "label": "Caprimulgi",
+            "dwc:scientificNameAuthorship": "Chen, Albert and Field, Daniel J.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "A revised catalog of the birds ascertained to occur in Illinois",
+                    "year": 1881,
+                    "authors": [
+                        {
+                            "name": "Robert Ridgway",
+                            "alternate": [
+                                "Ridgway, Robert"
+                            ],
+                            "firstname": "Robert",
+                            "lastname": "Ridgway"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Illinois State Laboratory of Natural History",
+                        "volume": "4",
+                        "identifier": []
+                    }
+                }
+            ],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The smallest crown clade containing Caprimulgus europaeus Linnaeus, 1758 (Caprimulgidae) and Nyctibius (originally Caprimulgus) grandis (Gmelin, 1789) (Nyctibiidae) but not Steatornis caripensis Humboldt, 1817 (Steatornithidae), Podargus (originally Caprimulgus) strigoides (Latham, 1801) (Podargidae), Aegotheles (originally Caprimulgus) cristatus (Shaw, 1790) (Aegothelidae), and Apus (originally Hirundo) apus (Linnaeus, 1758) (Apodiformes).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Caprimulgus europaeus Linnaeus, 1758",
+                        "nameComplete": "Caprimulgus europaeus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

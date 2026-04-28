@@ -1,0 +1,195 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Evolutionary history of woodpeckers and allies (Aves: Picidae): Placing key taxa on the phylogenetic tree.",
+                "year": 2006,
+                "authors": [
+                    {
+                        "name": "B. W. Benz",
+                        "alternate": [
+                            "Benz, B. W."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Benz",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "M. B. Robbins",
+                        "alternate": [
+                            "Robbins, M. B."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Robbins",
+                        "middlename": "B."
+                    },
+                    {
+                        "name": "A. T. Peterson",
+                        "alternate": [
+                            "Peterson, A. T."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Peterson",
+                        "middlename": "T."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2006.02.021"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Mol. Phylogen. Evol.",
+                    "volume": "40",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "A phylogenetic analysis of woodpeckers and their allies using 12S, Cyt b, and COI nucleotide sequences (class Aves; order Piciformes).",
+                "year": 2005,
+                "authors": [
+                    {
+                        "name": "D. M. Webb",
+                        "alternate": [
+                            "Webb, D. M."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Webb",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "W. S. Moore",
+                        "alternate": [
+                            "Moore, W. S."
+                        ],
+                        "firstname": "W.",
+                        "lastname": "Moore",
+                        "middlename": "S."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "4",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2005.03.015"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Phylogenetic Evolution",
+                    "volume": "36",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "regnumId": 285,
+            "label": "Picidae",
+            "dwc:scientificNameAuthorship": "Sangster, G.",
+            "dwc:namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Eleventh room. In Synopsis of the contents of the British Museum",
+                    "year": 1820,
+                    "edition": "17",
+                    "authors": [
+                        {
+                            "name": "W. E. Leach",
+                            "alternate": [
+                                "Leach, W. E."
+                            ],
+                            "firstname": "W.",
+                            "lastname": "Leach",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "British Museum (Natural History)",
+                    "city": "London",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Picidae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "G. Sangster",
+                            "alternate": [
+                                "Sangster, G."
+                            ],
+                            "firstname": "G.",
+                            "lastname": "Sangster"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "1281-1283",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "cladeDefinition": "The smallest crown clade containing Jynx torquilla Linnaeus 1758 and Picus viridis Linnaeus 1758.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Jynx torquilla Linnaeus, 1758",
+                        "nameComplete": "Jynx torquilla"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

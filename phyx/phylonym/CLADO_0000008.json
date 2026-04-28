@@ -415,7 +415,7 @@
         {
             "regnumId": 8,
             "label": "Amorphea",
-            "dwc:scientificNameAuthorship": "Simpson, A.G. B., Medina, M., Adl, S.M.",
+            "dwc:scientificNameAuthorship": "Simpson, A.G. B. and Medina, M. and Adl, S.M.",
             "dwc:namePublishedIn": [
                 {
                     "type": "article",
@@ -482,7 +482,76 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Amorphea",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "A. G. B. Simpson",
+                            "alternate": [
+                                "Simpson, A. G. B."
+                            ],
+                            "firstname": "A. G.",
+                            "lastname": "Simpson",
+                            "middlename": "B."
+                        },
+                        {
+                            "name": "M. Medina",
+                            "alternate": [
+                                "Medina, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Medina"
+                        },
+                        {
+                            "name": "S. M. Adl",
+                            "alternate": [
+                                "Adl, S. M."
+                            ],
+                            "firstname": "S.",
+                            "lastname": "Adl",
+                            "middlename": "M."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "97-101",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The smallest crown clade containing Homo sapiens Linnaeus 1758 and Neurospora crassa Shear and Dodge 1927 and Dictyostelium discoideum Raper 1935 but not Arabidopsis thaliana (Linnaeus) Heynhold, 1842 (Archaeplastida) or Tetrahymena thermophila Nanney and McCoy, 1976 (Alveolata) or Thalassiosira pseudonana Hasle and Hiemdal 1970 (Stramenopila) or Bigelowiella natans Moestrup and Sengco 2001 (Rhizaria) or Euglena gracilis Klebs 1883 (Discoba) or Emiliania huxleyi (Lohmann) Hay and Mohler 1967 (Haptophyta).",
             "internalSpecifiers": [
                 {
@@ -493,82 +562,9 @@
                         "label": "Homo sapiens Linnaeus, 1758",
                         "nameComplete": "Homo sapiens"
                     }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Neurospora crassa Shear and Dodge, 1927",
-                        "nameComplete": "Neurospora crassa"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Dictyostelium discoideum Raper, 1935",
-                        "nameComplete": "Dictyostelium discoideum"
-                    }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Arabidopsis thaliana Heynhold, 1842",
-                        "nameComplete": "Arabidopsis thaliana"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "(Archaeplastida) or Tetrahymena thermophila Nanney and McCoy, 1976",
-                        "nameComplete": "(Archaeplastida) or Tetrahymena thermophila"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Thalassiosira pseudonana Hasle and Hiemdal, 1970",
-                        "nameComplete": "Thalassiosira pseudonana"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Bigelowiella natans Moestrup and Sengco, 2001",
-                        "nameComplete": "Bigelowiella natans"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Euglena gracilis Klebs, 1883",
-                        "nameComplete": "Euglena gracilis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Emiliania huxleyi Hay and Mohler, 1967",
-                        "nameComplete": "Emiliania huxleyi"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

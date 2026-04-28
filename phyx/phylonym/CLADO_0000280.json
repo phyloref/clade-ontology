@@ -58,7 +58,58 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Cuculidae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "G. Sangster",
+                            "alternate": [
+                                "Sangster, G."
+                            ],
+                            "firstname": "G.",
+                            "lastname": "Sangster"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "1259-1263",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
             "cladeDefinition": "The smallest crown clade containing Carpococcyx (originally Calobates) radiceus (Temminck 1832) and Centropus (originally Cuculus) senegalensis (Linnaeus 1766) and Crotophaga ani Linnaeus 1758 and Cuculus canorus Linnaeus 1758 and Neomorphus (originally Coccyzus) geoffroyi (Temminck 1820) and Piaya cayana (originally Cuculus cayanus) (Linnaeus 1758).",
             "internalSpecifiers": [
                 {
@@ -68,51 +119,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Carpococcyx (originally Calobates) radiceus Temminck, 1832",
                         "nameComplete": "Carpococcyx (originally Calobates) radiceus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Centropus (originally Cuculus) senegalensis Linnaeus, 1766",
-                        "nameComplete": "Centropus (originally Cuculus) senegalensis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Crotophaga ani Linnaeus, 1758",
-                        "nameComplete": "Crotophaga ani"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Cuculus canorus Linnaues, 1758",
-                        "nameComplete": "Cuculus canorus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Neomorphus (originally Coccyzus) geoffroyi Temminck, 1820",
-                        "nameComplete": "Neomorphus (originally Coccyzus) geoffroyi"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Piaya cayana Linnaeus, 1758",
-                        "nameComplete": "Piaya cayana"
                     }
                 }
             ],

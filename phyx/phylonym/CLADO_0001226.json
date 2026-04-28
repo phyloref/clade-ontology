@@ -1,0 +1,36 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [],
+    "phylorefs": [
+        {
+            "regnumId": 1226,
+            "label": "Tyrannosaurinae",
+            "dwc:scientificNameAuthorship": "Napoli, James G and Zanno, Lindsay E",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [],
+            "cladeDefinition": "The most inclusive clade containing Tyrannosaurus rex Osborn 1905 but not Albertosaurus sarcophagus Osborn 1905.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Tyrannosaurus rex Osborn, 1905",
+                        "nameComplete": "Tyrannosaurus rex"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Albertosaurus sarcophagus Osborn, 1905",
+                        "nameComplete": "Albertosaurus sarcophagus"
+                    }
+                }
+            ]
+        }
+    ]
+}

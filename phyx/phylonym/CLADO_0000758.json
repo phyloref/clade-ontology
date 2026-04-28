@@ -1,0 +1,76 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "phylogenies": [],
+    "phylorefs": [
+        {
+            "regnumId": 758,
+            "label": "Aeolodontini",
+            "dwc:scientificNameAuthorship": "Johnson, Michela M and Young, Mark T and Brignon, Arnaud and Brusatte, Stephen L",
+            "dwc:namePublishedIn": [],
+            "obo:IAO_0000119": [
+                {
+                    "type": "article",
+                    "title": "ADDITION TO ‘THE PHYLOGENETICS OF TELEOSAUROIDEA (CROCODYLOMORPHA; THALATTOSUCHIA) AND IMPLICATIONS FOR THEIR ECOLOGY AND EVOLUTION'",
+                    "year": 2022,
+                    "authors": [
+                        {
+                            "name": "Michela M Johnson",
+                            "alternate": [
+                                "Johnson, Michela M"
+                            ],
+                            "firstname": "Michela",
+                            "lastname": "Johnson",
+                            "middlename": "M"
+                        },
+                        {
+                            "name": "Mark T Youn",
+                            "alternate": [
+                                "Youn, Mark T"
+                            ],
+                            "firstname": "Mark",
+                            "lastname": "Youn",
+                            "middlename": "T"
+                        },
+                        {
+                            "name": "Arnaud Brignon",
+                            "alternate": [
+                                "Brignon, Arnaud"
+                            ],
+                            "firstname": "Arnaud",
+                            "lastname": "Brignon"
+                        },
+                        {
+                            "name": "Stephen L Brusatte",
+                            "alternate": [
+                                "Brusatte, Stephen L"
+                            ],
+                            "firstname": "Stephen",
+                            "lastname": "Brusatte",
+                            "middlename": "L"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "identifier": []
+                    }
+                }
+            ],
+            "cladeDefinition": "The largest clade within Teleosauroidea containing Aeolodon priscus (von Sömmerring 1814) but not Steneosaurus megistorhynchus (Eudes-Deslongchamps 1866) and Teleosaurus cadomensis (Lamouroux 1820). This is a maximum-clade, or stem-based, definition.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Mycterosuchus nasutus Andrews, 1913",
+                        "nameComplete": "Mycterosuchus nasutus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}
