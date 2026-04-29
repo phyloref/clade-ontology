@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -55,10 +55,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 219,
+            "curatorNotes": "Regnum ID: '219'",
             "label": "Cynodontia",
-            "dwc:scientificNameAuthorship": "Rowe, T. B.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Rowe, T. B.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Paleontology or a systematic summary of extinct animals and their geological relations.",
@@ -82,7 +82,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -135,7 +135,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The clade possessing the apomorphy occlusal triconodont molariform postcanine teeth—i.e., the crowns of the molariform postcanine teeth have three principal cusps aligned longitudinally (or further modifications of this condition) and the upper and lower molariform teeth occlude, at least irregularly—as inherited by Thrinaxodon liorhinus Seeley 1894a.",
+            "definition": "The clade possessing the apomorphy occlusal triconodont molariform postcanine teeth—i.e., the crowns of the molariform postcanine teeth have three principal cusps aligned longitudinally (or further modifications of this condition) and the upper and lower molariform teeth occlude, at least irregularly—as inherited by Thrinaxodon liorhinus Seeley 1894a.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

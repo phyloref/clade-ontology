@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -142,11 +142,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 866,
+            "curatorNotes": "Regnum ID: '866'",
             "label": "Centrolantaneae",
-            "dwc:scientificNameAuthorship": "O'Leary, Nataly and Olmstead, Richard G",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "O'Leary, Nataly and Olmstead, Richard G",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Making Lantaneae taxonomy useful: A phylogenetic classification",
@@ -195,7 +195,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The maximum crown clade containing Lantana camara L., 1753, but not Lippia thymoides Mart. & Schauer 1847 and Lippia rubella (Moldenke) T.R.S. Silva 2002 and Phyla nodiflora (L.) Greene 1899.",
+            "definition": "The maximum crown clade containing Lantana camara L., 1753, but not Lippia thymoides Mart. & Schauer 1847 and Lippia rubella (Moldenke) T.R.S. Silva 2002 and Phyla nodiflora (L.) Greene 1899.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

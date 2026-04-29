@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -55,10 +55,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 139,
+            "curatorNotes": "Regnum ID: '139'",
             "label": "Decapodiformes",
-            "dwc:scientificNameAuthorship": "Anderson, F.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Anderson, F.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "The evolution of coleoid cephalopods and their present biodiversity and ecology.",
@@ -102,7 +102,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -154,7 +154,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The crown clade for which a pair of tentacles, as inherited by Sepia officinalis Linnaeus 1758 (Sepiidae), is an apomorphy relative to other crown clades.  Tentacles are modified fourth arms that consist of an elongate elastic stalk (circular or tetrahedral in cross-section) with a distal oval, usually widened club (Nesis, 1987; Roper et al., 1984).  The tentacle stalk is either suckerless or bears only minute suckers; the club bears suckers and occasionally hooks.",
+            "definition": "The crown clade for which a pair of tentacles, as inherited by Sepia officinalis Linnaeus 1758 (Sepiidae), is an apomorphy relative to other crown clades.  Tentacles are modified fourth arms that consist of an elongate elastic stalk (circular or tetrahedral in cross-section) with a distal oval, usually widened club (Nesis, 1987; Roper et al., 1984).  The tentacle stalk is either suckerless or bears only minute suckers; the club bears suckers and occasionally hooks.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

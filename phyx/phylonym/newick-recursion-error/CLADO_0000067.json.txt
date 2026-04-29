@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -390,11 +390,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 67,
+            "curatorNotes": "Regnum ID: '67'",
             "label": "Monilophyta",
-            "dwc:scientificNameAuthorship": "Doyle, J. A. and Cantino, P. D. and Donoghue, M. J.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Doyle, J. A. and Cantino, P. D. and Donoghue, M. J.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -465,7 +465,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The largest crown clade containing Pteridium aquilinum (Linnaeus) Kuhn 1879 (originally Pteris aquilina) (Leptosporangiatae) and Equisetum hyemale Linnaeus 1753 but not Oryza sativa Linnaeus 1753 (Spermatophyta) or Huperzia lucidula (Michaux) Trevisan de Saint-Léon 1875 (originally Lycopodium lucidulum) (Lycopodiophyta).",
+            "definition": "The largest crown clade containing Pteridium aquilinum (Linnaeus) Kuhn 1879 (originally Pteris aquilina) (Leptosporangiatae) and Equisetum hyemale Linnaeus 1753 but not Oryza sativa Linnaeus 1753 (Spermatophyta) or Huperzia lucidula (Michaux) Trevisan de Saint-Léon 1875 (originally Lycopodium lucidulum) (Lycopodiophyta).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

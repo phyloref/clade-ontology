@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -99,10 +99,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 872,
+            "curatorNotes": "Regnum ID: '872'",
             "label": "Lantana",
-            "dwc:scientificNameAuthorship": "O'Leary, Nataly and Olmstead, Richard G",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "O'Leary, Nataly and Olmstead, Richard G",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Species Planetarium",
@@ -124,8 +124,8 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The maximum crown clade containing Lantana camara L. 1753, but not Lippia americana L. 1753 and Lippia umbellata Cav. 1793 and Lippia asperrima Cham. 1832 and Aloysia barbata (Brandegee) Moldenke 1940.",
+            "definitionSource": [],
+            "definition": "The maximum crown clade containing Lantana camara L. 1753, but not Lippia americana L. 1753 and Lippia umbellata Cav. 1793 and Lippia asperrima Cham. 1832 and Aloysia barbata (Brandegee) Moldenke 1940.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

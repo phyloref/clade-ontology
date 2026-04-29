@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -86,10 +86,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 827,
+            "curatorNotes": "Regnum ID: '827'",
             "label": "Kraniopsis",
-            "dwc:scientificNameAuthorship": "Du, Zhi  Yuan and Xiang, Qiu Yun and Soltis, Douglas E. and Soltis, Pamela S.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Du, Zhi  Yuan and Xiang, Qiu Yun and Soltis, Douglas E. and Soltis, Pamela S.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Alsographia Americana",
@@ -112,7 +112,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "An updated phylogeny, biogeography, and PhyloCode-based classification of Cornaceae based on three sets of genomic data",
@@ -195,7 +195,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The phylogenetic definition of Kraniopsis is the smallest crown clade containing Cornus alba Linnaeus 1767, C. sanguinea Linnaeus 1753, C. macrophylla N. Wallich 1820, C. amomum P. Miller 1768, C. glabrata G. Bentham 1844, C. hemsleyi C. K. Schneider & W. Wangerin 1909, C. racemosa Lamarck 1786, and C. wilsoniana W. Wangerin 1908.",
+            "definition": "The phylogenetic definition of Kraniopsis is the smallest crown clade containing Cornus alba Linnaeus 1767, C. sanguinea Linnaeus 1753, C. macrophylla N. Wallich 1820, C. amomum P. Miller 1768, C. glabrata G. Bentham 1844, C. hemsleyi C. K. Schneider & W. Wangerin 1909, C. racemosa Lamarck 1786, and C. wilsoniana W. Wangerin 1908.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

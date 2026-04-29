@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -221,10 +221,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1141,
+            "curatorNotes": "Regnum ID: '1141'",
             "label": "Melongena",
-            "dwc:scientificNameAuthorship": "Gagnon, Edeline and Knapp, Sandra",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Gagnon, Edeline and Knapp, Sandra",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "The Gardeners' Dictionary",
@@ -248,7 +248,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new phylogeny and phylogenetic classification for Solanaceae",
@@ -356,7 +356,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The minimum crown clade including Solanum melongena Linnaeus 1753 and Solanum agnewiorum Vorontsova 2010.",
+            "definition": "The minimum crown clade including Solanum melongena Linnaeus 1753 and Solanum agnewiorum Vorontsova 2010.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

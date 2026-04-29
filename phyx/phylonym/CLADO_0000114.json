@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -252,10 +252,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 114,
+            "curatorNotes": "Regnum ID: '114'",
             "label": "Sauria",
-            "dwc:scientificNameAuthorship": "Gautheir, J. A. and de Queiroz, K.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Gautheir, J. A. and de Queiroz, K.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Lectures on comparative anatomy. Translated by William Ross under the inspection of James MaCartney.",
@@ -278,7 +278,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -339,7 +339,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Alligator (originally Crocodilus) mississippiensis (Daudin 1802) (Crocodylia), Sphenodon (originally Hatteria) punctatus (Gray 1842), and Lacerta agilis Linnaeus 1758 (Squamata), but neither Testudo graeca Linnaeus 1758 (Testudines) nor Homo sapiens Linnaeus 1758 (Mammalia).",
+            "definition": "The smallest crown clade containing Alligator (originally Crocodilus) mississippiensis (Daudin 1802) (Crocodylia), Sphenodon (originally Hatteria) punctatus (Gray 1842), and Lacerta agilis Linnaeus 1758 (Squamata), but neither Testudo graeca Linnaeus 1758 (Testudines) nor Homo sapiens Linnaeus 1758 (Mammalia).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

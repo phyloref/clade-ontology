@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -79,10 +79,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 889,
+            "curatorNotes": "Regnum ID: '889'",
             "label": "Anguilloidei",
-            "dwc:scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Enumeratio specierum piscium hucusque in Archipelago indico observatarum, adjectis habitationibusque, ubi descriptiones earum recentiores reperiuntur, nec non speciebus Musei Bleekeriani Bengalensibus, Japonicis, Capensibus Tasmanicisque.",
@@ -108,7 +108,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetics and classification of Actinopterygii",
@@ -142,7 +142,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Anguilla rostrata (Lesueur 1817), Moringua microchir Bleeker 1853, Serrivomer beanii Gill and Ryder 1883, and Saccopharynx ampullaceus (Harwood 1827).",
+            "definition": "The least inclusive crown clade that contains Anguilla rostrata (Lesueur 1817), Moringua microchir Bleeker 1853, Serrivomer beanii Gill and Ryder 1883, and Saccopharynx ampullaceus (Harwood 1827).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

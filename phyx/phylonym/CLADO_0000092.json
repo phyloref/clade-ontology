@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -53,10 +53,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 92,
+            "curatorNotes": "Regnum ID: '92'",
             "label": "Sar",
-            "dwc:scientificNameAuthorship": "Simpson, A. G. B. and Dunthorn, M.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Simpson, A. G. B. and Dunthorn, M.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "The revised classification of eukaryotes.",
@@ -117,7 +117,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -178,7 +178,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Bigelowiella natans Moestrup & Sengco 2001 (Rhizaria), Tetrahymena thermophila Nanney & McCoy 1976 (Alveolata), and Thalassiosira pseudonana Cleve 1873 (Stramenopila) but not Homo sapiens Linnaeus 1758 (Opisthokonta) or Dictyostelium discoideum Raper 1935 (Amoebozoa) and Arabidopsis thaliana (Linnaeus) Heynhold 1842 (Archaeplastida) or Euglena gracilis Klebs 1883 (Excavata) or Emiliania huxleyi (Lohmann) Hay & Mohler in Hay et al. 1967 (Haptophyta).",
+            "definition": "The smallest crown clade containing Bigelowiella natans Moestrup & Sengco 2001 (Rhizaria), Tetrahymena thermophila Nanney & McCoy 1976 (Alveolata), and Thalassiosira pseudonana Cleve 1873 (Stramenopila) but not Homo sapiens Linnaeus 1758 (Opisthokonta) or Dictyostelium discoideum Raper 1935 (Amoebozoa) and Arabidopsis thaliana (Linnaeus) Heynhold 1842 (Archaeplastida) or Euglena gracilis Klebs 1883 (Excavata) or Emiliania huxleyi (Lohmann) Hay & Mohler in Hay et al. 1967 (Haptophyta).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

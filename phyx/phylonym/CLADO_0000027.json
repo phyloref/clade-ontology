@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -77,10 +77,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 27,
+            "curatorNotes": "Regnum ID: '27'",
             "label": "Chlorophyta",
-            "dwc:scientificNameAuthorship": "Hall, J. D. and Lewis, L. A. and McCourt, R. M. and Delwiche, C. F. and Mishler, B. and Karol, K. G.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Hall, J. D. and Lewis, L. A. and McCourt, R. M. and Delwiche, C. F. and Mishler, B. and Karol, K. G.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Das Pflanzenreich in seinen natürlichen Classen und Familien entwickelt und durch mehr als tausend in Kupfer gestochene übersichtlich-bildliche Darstellungen fur Anfänger und Freunde der Botanik.",
@@ -102,7 +102,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -199,7 +199,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The largest crown clade containing Chlamydomonas reinhardti P. C. A. Dangeard 1891 but not Chara vulgaris Linnaeus 1753.",
+            "definition": "The largest crown clade containing Chlamydomonas reinhardti P. C. A. Dangeard 1891 but not Chara vulgaris Linnaeus 1753.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

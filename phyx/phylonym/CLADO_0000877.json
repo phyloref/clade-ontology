@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -99,10 +99,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 877,
+            "curatorNotes": "Regnum ID: '877'",
             "label": "Goniostachyum",
-            "dwc:scientificNameAuthorship": "O'Leary, Nataly and Olmstead, Richard G",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "O'Leary, Nataly and Olmstead, Richard G",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Prodromus",
@@ -134,7 +134,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Making Lantaneae taxonomy useful: A phylogenetic classification",
@@ -176,7 +176,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The clade characterized by tetrastichous floral bracts as inherited by Lippia origanoides Kunth 1817. This is an apomorphy-based definition.",
+            "definition": "The clade characterized by tetrastichous floral bracts as inherited by Lippia origanoides Kunth 1817. This is an apomorphy-based definition.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

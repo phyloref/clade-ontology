@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -144,10 +144,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1192,
+            "curatorNotes": "Regnum ID: '1192'",
             "label": "Protosphyraenidae",
-            "dwc:scientificNameAuthorship": "Kanarkina, Alina and Zverkov, Nikolay G and Varenov, Dmitry V",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Kanarkina, Alina and Zverkov, Nikolay G and Varenov, Dmitry V",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A synopsis of the vertebrate fossils of the English Chalk",
@@ -179,7 +179,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new species of the Late Jurassic pachycormiform fish Orthocormus and comments on the beta taxonomy and phylogenetic systematics of the Pachycormiformes",
@@ -228,7 +228,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade containing Protosphyraena ferox Leidy, 1857, but not Pachycormus macropterus (Blainville, 1818) or Asthenocormus titanius (Wagner, 1863).",
+            "definition": "The largest clade containing Protosphyraena ferox Leidy, 1857, but not Pachycormus macropterus (Blainville, 1818) or Asthenocormus titanius (Wagner, 1863).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

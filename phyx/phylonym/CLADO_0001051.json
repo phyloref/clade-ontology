@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -146,11 +146,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1051,
+            "curatorNotes": "Regnum ID: '1051'",
             "label": "Lacertidae",
-            "dwc:scientificNameAuthorship": "Oppel, Nicolaus Michael",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Oppel, Nicolaus Michael",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "book",
                     "title": "Die Ordnungen, Familien und Gattungen der Reptilien als Prodrom einer Naturgeschichte derselben",
@@ -179,7 +179,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The most recent common ancestor of extant taxa currently assigned to Lacertidae and all of its descendants.",
+            "definition": "The most recent common ancestor of extant taxa currently assigned to Lacertidae and all of its descendants.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -506,10 +506,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 84,
+            "curatorNotes": "Regnum ID: '84'",
             "label": "Petrosaviidae",
-            "dwc:scientificNameAuthorship": "Graham, S. W. and Judd, W. S. and Iles, W. J.D.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Graham, S. W. and Judd, W. S. and Iles, W. J.D.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Towards a phylogenetic nomenclature of Tracheophyta.",
@@ -599,7 +599,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -670,7 +670,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Lilium candidum L. 1753 and Petrosavia stellaris Becc. 1871, but not Acorus calamus L. 1753 or Alisma plantago-aquatica L. 1753.",
+            "definition": "The smallest crown clade containing Lilium candidum L. 1753 and Petrosavia stellaris Becc. 1871, but not Acorus calamus L. 1753 or Alisma plantago-aquatica L. 1753.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

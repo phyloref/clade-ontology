@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -224,10 +224,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 21,
+            "curatorNotes": "Regnum ID: '21'",
             "label": "Campanuloideae",
-            "dwc:scientificNameAuthorship": "Cellinese, N.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Cellinese, N.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Outlines of botany.",
@@ -251,7 +251,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -303,7 +303,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Campanula latifolia Linnaeus 1753, Wahlenbergia linifolia A. de Candolle 1830, and Platycodon grandiflorus (Jacquin) A. de Candolle 1830.",
+            "definition": "The crown clade originating in the most recent common ancestor of Campanula latifolia Linnaeus 1753, Wahlenbergia linifolia A. de Candolle 1830, and Platycodon grandiflorus (Jacquin) A. de Candolle 1830.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -79,10 +79,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 169,
+            "curatorNotes": "Regnum ID: '169'",
             "label": "Hydroidolina",
-            "dwc:scientificNameAuthorship": "Collins, A. G. and Dunn, C. W.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Collins, A. G. and Dunn, C. W.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Towards understanding the phylogenetic history of Hydrozoa: Hypothesis testing with 18S gene sequence data.",
@@ -109,7 +109,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -171,7 +171,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The most inclusive crown clade containing Hydra vulgaris (Pallas 1766) but not Solmissus marshalli A. Agassiz and Mayer 1902 (Trachylina).",
+            "definition": "The most inclusive crown clade containing Hydra vulgaris (Pallas 1766) but not Solmissus marshalli A. Agassiz and Mayer 1902 (Trachylina).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

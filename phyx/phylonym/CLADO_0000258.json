@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -65,11 +65,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 258,
+            "curatorNotes": "Regnum ID: '258'",
             "label": "Pan-Primates",
-            "dwc:scientificNameAuthorship": "Chester, S. G. B. and Sargis, E. J.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Chester, S. G. B. and Sargis, E. J.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -131,7 +131,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The total clade composed of the crown clade Primates and all extinct organisms or species that share a more recent common ancestor with Primates than with any extant organisms or species that are not members of Primates.",
+            "definition": "The total clade composed of the crown clade Primates and all extinct organisms or species that share a more recent common ancestor with Primates than with any extant organisms or species that are not members of Primates.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

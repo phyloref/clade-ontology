@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -157,10 +157,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 86,
+            "curatorNotes": "Regnum ID: '86'",
             "label": "Postciliodesmatophora",
-            "dwc:scientificNameAuthorship": "Dunthorn, M. and Lynn, D. H.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Dunthorn, M. and Lynn, D. H.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Ectoplasmic fibrillar system of Infusoria and its role for the understanding of their phylogeny.",
@@ -196,7 +196,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -257,7 +257,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Blepharisma americanum Suzuki 1954 and Loxodes striatus (Engelmann 1862).",
+            "definition": "The smallest crown clade containing Blepharisma americanum Suzuki 1954 and Loxodes striatus (Engelmann 1862).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

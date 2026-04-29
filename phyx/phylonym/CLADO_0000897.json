@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -36,10 +36,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 897,
+            "curatorNotes": "Regnum ID: '897'",
             "label": "Osteoglossidae",
-            "dwc:scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Specchio generale del sistema ittiologico",
@@ -66,7 +66,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogeny and classification of Actinopterygii",
@@ -100,7 +100,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Osteoglossum bicirrhosum (Cuvier 1829) and Heterotis niloticus (Cuvier 1829), but not Pantodon buchholzi Peters 1876.",
+            "definition": "The least inclusive crown clade that contains Osteoglossum bicirrhosum (Cuvier 1829) and Heterotis niloticus (Cuvier 1829), but not Pantodon buchholzi Peters 1876.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -44,10 +44,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 965,
+            "curatorNotes": "Regnum ID: '965'",
             "label": "Synbranchiformes",
-            "dwc:scientificNameAuthorship": "Thacker, C. E. and Near, T. J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Thacker, C. E. and Near, T. J.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Phyletic studies of teleostean fishes, with a provisional classification of living forms",
@@ -101,7 +101,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
@@ -135,7 +135,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Indostomus paradoxus Prashad and Mukerji 1929, Synbranchus marmoratus Bloch 1795, Mastacembelus mastacembelus (Banks and Solander in Russell 1794), Channa argus (Cantor 1842), Badis badis (Hamilton 1822), and Anabas testudineus (Bloch 1792).",
+            "definition": "The least inclusive crown clade that contains Indostomus paradoxus Prashad and Mukerji 1929, Synbranchus marmoratus Bloch 1795, Mastacembelus mastacembelus (Banks and Solander in Russell 1794), Channa argus (Cantor 1842), Badis badis (Hamilton 1822), and Anabas testudineus (Bloch 1792).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

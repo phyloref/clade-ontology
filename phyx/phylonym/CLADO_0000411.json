@@ -1,12 +1,12 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [],
     "phylorefs": [
         {
-            "regnumId": 411,
+            "curatorNotes": "Regnum ID: '411'",
             "label": "Baurusuchidae",
-            "dwc:scientificNameAuthorship": "Darlin, Gustavo and Langer, Max and Montefeltro, Felipe",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Darlin, Gustavo and Langer, Max and Montefeltro, Felipe",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A new reptil from the Cretaceous of Brazil",
@@ -32,7 +32,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "3D skull modelling and description of a new baurusuchid (Crocodyliformes, Mesoeucrocodylia) from the Late Cretaceous (Bauru Basin) of Brazil",
@@ -78,7 +78,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive clade containing Cynodontosuchus rothi Woodward 1896, Pissarrachampsa sera Montefeltro, Larsson & Langer 2011, and Baurusuchus pachecoi Price 1945.",
+            "definition": "The least inclusive clade containing Cynodontosuchus rothi Woodward 1896, Pissarrachampsa sera Montefeltro, Larsson & Langer 2011, and Baurusuchus pachecoi Price 1945.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

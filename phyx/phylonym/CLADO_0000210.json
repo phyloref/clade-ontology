@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -361,10 +361,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 210,
+            "curatorNotes": "Regnum ID: '210'",
             "label": "Neopterygii",
-            "dwc:scientificNameAuthorship": "Moore, J. A. and Near, T. J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Moore, J. A. and Near, T. J.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "The skeleton of Lepidosteus, with remarks on the origin and evolution of the lower neopterygian fishes.",
@@ -391,7 +391,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -453,7 +453,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade containing Lepisosteus osseus (Linnaeus 1758), Amia calva Linnaeus 1766, and Perca fluviatilis Linnaeus 1758.",
+            "definition": "The least inclusive crown clade containing Lepisosteus osseus (Linnaeus 1758), Amia calva Linnaeus 1766, and Perca fluviatilis Linnaeus 1758.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

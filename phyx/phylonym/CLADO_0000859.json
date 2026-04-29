@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -99,11 +99,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 859,
+            "curatorNotes": "Regnum ID: '859'",
             "label": "Hololippia",
-            "dwc:scientificNameAuthorship": "O'Leary, Nataly and Olmstead, Richard G",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "O'Leary, Nataly and Olmstead, Richard G",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Making Lantaneae taxonomy useful: A phylogenetic classification",
@@ -152,7 +152,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The maximum crown clade containing Lantana camara L., 1753, but not Troncosoa seriphioides (A. Gray) N. O’Leary & P. Moroni 2023",
+            "definition": "The maximum crown clade containing Lantana camara L., 1753, but not Troncosoa seriphioides (A. Gray) N. O’Leary & P. Moroni 2023",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

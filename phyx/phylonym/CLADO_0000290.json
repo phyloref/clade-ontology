@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -38,10 +38,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 290,
+            "curatorNotes": "Regnum ID: '290'",
             "label": "Synapsida",
-            "dwc:scientificNameAuthorship": "Laurin, M. and Reisz, R. R.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Laurin, M. and Reisz, R. R.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "The reptilian subclasses Diapsida and Synapsida and the early history of the Diaptosauria.",
@@ -68,7 +68,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -129,7 +129,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The largest clade that includes Cynognathus crateronotus Seeley 1895 but not Testudo graeca Linnaeus 1758, Iguana iguana (Linnaeus 1758), and Crocodilus niloticus Laurenti 1768.",
+            "definition": "The largest clade that includes Cynognathus crateronotus Seeley 1895 but not Testudo graeca Linnaeus 1758, Iguana iguana (Linnaeus 1758), and Crocodilus niloticus Laurenti 1768.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

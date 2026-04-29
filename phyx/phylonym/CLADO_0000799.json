@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -49,10 +49,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 799,
+            "curatorNotes": "Regnum ID: '799'",
             "label": "Teleosaurinae",
-            "dwc:scientificNameAuthorship": "Bonaparte, C L",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Bonaparte, C L",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Synopsis vertebratorum systematis",
@@ -78,7 +78,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Synopsis vertebratorum systematis",
@@ -104,7 +104,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade within Teleosauroidea containing Teleosaurus cadomensis (Lamouroux 1820) but not Aeolodon priscus (von Sömmerring 1814).",
+            "definition": "The largest clade within Teleosauroidea containing Teleosaurus cadomensis (Lamouroux 1820) but not Aeolodon priscus (von Sömmerring 1814).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

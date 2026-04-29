@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -258,11 +258,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 760,
+            "curatorNotes": "Regnum ID: '760'",
             "label": "Amphiactinaria",
-            "dwc:scientificNameAuthorship": "Shɨshkin-Skarð, Yegor",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Shɨshkin-Skarð, Yegor",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Sherbetra nom. n. (gen.) pro Trisulcus Popofsky 1913 non Hitchcock 1865 (Amphiactinaria nom. clad. n., Polycystina, Rhizaria), with six new combinations",
@@ -303,7 +303,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The clade is characterised by the apomorphy of skeleton spicule(s) composed of the median bar (MB) with branches at both ends, as inherited by Cycladophora cornuta (Bailey 1856) Kruglikova 1969 (Osh129; GenBank IDs: of SSU rDNA sequence—MK396919; of LSU rDNA sequence—MK396960; the trait is illustrated by Fig. S1 of Sandin et al. 2019).",
+            "definition": "The clade is characterised by the apomorphy of skeleton spicule(s) composed of the median bar (MB) with branches at both ends, as inherited by Cycladophora cornuta (Bailey 1856) Kruglikova 1969 (Osh129; GenBank IDs: of SSU rDNA sequence—MK396919; of LSU rDNA sequence—MK396960; the trait is illustrated by Fig. S1 of Sandin et al. 2019).",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

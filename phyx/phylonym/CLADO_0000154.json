@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -238,10 +238,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 154,
+            "curatorNotes": "Regnum ID: '154'",
             "label": "Zygnematophyceae",
-            "dwc:scientificNameAuthorship": "Hall, J. D. and McCourt, R. M. and Karol, K. G.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Hall, J. D. and McCourt, R. M. and Karol, K. G.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Algae. An introduction to phycology.",
@@ -282,7 +282,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -353,7 +353,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The largest crown clade containing Zygnema cruciatum (Vaucher) C. Agardh 1817 but not Marchantia polymorpha Linnaeus 1753 (Embryophyta), Chara vulgaris Linnaeus 1753 (Charophyceae), Coleochaete scutata Brébisson 1844 (Coleochaetophyceae), Entransia fimbriata E. O. Hughes 1943, and Klebsormidium flaccidum (Kützing) Silva, Mattox and Blackwell 1972 (Klebsormidiophyceae).",
+            "definition": "The largest crown clade containing Zygnema cruciatum (Vaucher) C. Agardh 1817 but not Marchantia polymorpha Linnaeus 1753 (Embryophyta), Chara vulgaris Linnaeus 1753 (Charophyceae), Coleochaete scutata Brébisson 1844 (Coleochaetophyceae), Entransia fimbriata E. O. Hughes 1943, and Klebsormidium flaccidum (Kützing) Silva, Mattox and Blackwell 1972 (Klebsormidiophyceae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

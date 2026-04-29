@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -45,10 +45,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 4,
+            "curatorNotes": "Regnum ID: '4'",
             "label": "Acrodonta",
-            "dwc:scientificNameAuthorship": "Schulte, II, J.  A. and de Queiroz, K. and Torres-Carvajal, O.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Schulte, II, J.  A. and de Queiroz, K. and Torres-Carvajal, O.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "On two Specimens of Saurian Reptiles sent to the Society by Mr. Cuming",
@@ -76,7 +76,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -145,7 +145,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Agama (originally Lacerta) agama (Linnaeus 1758), Chamaeleo (originally Lacerta) chamaeleon (Linnaeus 1758), Uromastyx (originally Lacerta) aegyptia (Forsskål 1775) and Leiolepis guttata Cuvier 1829.",
+            "definition": "The crown clade originating in the most recent common ancestor of Agama (originally Lacerta) agama (Linnaeus 1758), Chamaeleo (originally Lacerta) chamaeleon (Linnaeus 1758), Uromastyx (originally Lacerta) aegyptia (Forsskål 1775) and Leiolepis guttata Cuvier 1829.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

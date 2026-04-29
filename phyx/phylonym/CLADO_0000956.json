@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -44,11 +44,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 956,
+            "curatorNotes": "Regnum ID: '956'",
             "label": "Blenniiformes",
-            "dwc:scientificNameAuthorship": "Thacker, C. E. and Near, T. J.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Thacker, C. E. and Near, T. J.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
@@ -82,7 +82,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Atherina presbyter Cuvier 1829, Lamprologus callipterus Boulenger 1906, Chromis chromis (Linnaeus 1758), Crenimugil crenilabis (Forsskål in Niebuhr 1775), Embiotoca jacksoni Agassiz 1853, Gobiesox maeandricus (Girard 1858a), Scartella cristata (Linnaeus 1758), and Gibbonsia metzi Hubbs 1926.",
+            "definition": "The least inclusive crown clade that contains Atherina presbyter Cuvier 1829, Lamprologus callipterus Boulenger 1906, Chromis chromis (Linnaeus 1758), Crenimugil crenilabis (Forsskål in Niebuhr 1775), Embiotoca jacksoni Agassiz 1853, Gobiesox maeandricus (Girard 1858a), Scartella cristata (Linnaeus 1758), and Gibbonsia metzi Hubbs 1926.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

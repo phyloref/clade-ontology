@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -41,11 +41,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1047,
+            "curatorNotes": "Regnum ID: '1047'",
             "label": "Quetzalcoatlini",
-            "dwc:scientificNameAuthorship": "Pêgas, and Zhou, and Kobayashi,",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Pêgas, and Zhou, and Kobayashi,",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Azhdarchid pterosaur diversity in the Bayanshiree Formation, Upper Cretaceous of the Gobi Desert, Mongolia",
@@ -82,7 +82,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "Max ∇ (Quetzalcoatlus northropi Lawson, 1975 ~ Hatzegopteryx thambema Buffetaut, Grigorescu & Csiki, 2002, Azhdarcho lancicollis Nessov, 1984).",
+            "definition": "Max ∇ (Quetzalcoatlus northropi Lawson, 1975 ~ Hatzegopteryx thambema Buffetaut, Grigorescu & Csiki, 2002, Azhdarcho lancicollis Nessov, 1984).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

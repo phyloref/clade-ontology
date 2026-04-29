@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -428,10 +428,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 298,
+            "curatorNotes": "Regnum ID: '298'",
             "label": "Biota",
-            "dwc:scientificNameAuthorship": "Wiemann, J. and de Queiroz, K. and Rowe, T. B. and Planavsky, N. J. and Anderson, R. P. and Gogarten, J. P. and Turner, P. E. and Gauthier, J. A.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Wiemann, J. and de Queiroz, K. and Rowe, T. B. and Planavsky, N. J. and Anderson, R. P. and Gogarten, J. P. and Turner, P. E. and Gauthier, J. A.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "The general case of phylogenetic definitions, alternate classes of definitions, and the phylogenetic definition of Life.",
@@ -459,7 +459,7 @@
                     ]
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -573,7 +573,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The largest crown clade containing Homo sapiens Linnaeus 1758.",
+            "definition": "The largest crown clade containing Homo sapiens Linnaeus 1758.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

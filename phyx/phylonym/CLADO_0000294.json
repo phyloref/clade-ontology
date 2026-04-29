@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -149,10 +149,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 294,
+            "curatorNotes": "Regnum ID: '294'",
             "label": "Arctoidea",
-            "dwc:scientificNameAuthorship": "Wolsan, M. and Bryant, H. N. and Wyss, A. R.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Wolsan, M. and Bryant, H. N. and Wyss, A. R.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "On the value of the characters of the base of the cranium in the classification of the order Carnivora, and on the systematic position of Bassaris and other disputed forms.",
@@ -176,7 +176,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -255,7 +255,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Ursus arctos Linnaeus 1758 (Ursidae), Mustela erminea Linnaeus 1758 (Mustelidae), Procyon lotor (Linnaeus 1758) (Procyonidae), Ailurus fulgens F. Cuvier 1825, and Mephitis mephitis (Schreber, 1776) (Mephitidae).",
+            "definition": "The smallest crown clade containing Ursus arctos Linnaeus 1758 (Ursidae), Mustela erminea Linnaeus 1758 (Mustelidae), Procyon lotor (Linnaeus 1758) (Procyonidae), Ailurus fulgens F. Cuvier 1825, and Mephitis mephitis (Schreber, 1776) (Mephitidae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

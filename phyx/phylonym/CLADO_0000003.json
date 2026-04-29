@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -297,10 +297,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 3,
+            "curatorNotes": "Regnum ID: '3'",
             "label": "Alveolata",
-            "dwc:scientificNameAuthorship": "Simpson, A. G.B. and Leander, B. S. and Dunthorn, M.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Simpson, A. G.B. and Leander, B. S. and Dunthorn, M.",
+            "namePublishedIn": [
                 {
                     "type": "book_section",
                     "title": "Cell diversification in heterotrophic flagellates",
@@ -342,7 +342,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -412,7 +412,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Alexandrium tamarense (Lebour 1925) Balech 1992 (Dinoflagellata), Tetrahymena thermophila Nanney & McCoy 1976 (Ciliophora), and Toxoplasma gondii (Nicolle & Manceaux 1908) Nicolle & Manceaux 1909 (Apicomplexa).",
+            "definition": "The smallest crown clade containing Alexandrium tamarense (Lebour 1925) Balech 1992 (Dinoflagellata), Tetrahymena thermophila Nanney & McCoy 1976 (Ciliophora), and Toxoplasma gondii (Nicolle & Manceaux 1908) Nicolle & Manceaux 1909 (Apicomplexa).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

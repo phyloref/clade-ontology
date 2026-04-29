@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -105,10 +105,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1033,
+            "curatorNotes": "Regnum ID: '1033'",
             "label": "Prionodontia",
-            "dwc:scientificNameAuthorship": "Fonseca, André O. and Reid, Iain J. and Venner, Alexander and Duncan, Ruairidh J. and Garcia, Mauricio S. and Müller, Rodrigo T.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Fonseca, André O. and Reid, Iain J. and Venner, Alexander and Duncan, Ruairidh J. and Garcia, Mauricio S. and Müller, Rodrigo T.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Taxonomic, palaeobiological and evolutionary implications of a phylogenetic hypothesis for Ornithischia (Archosauria: Dinosauria)",
@@ -171,7 +171,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A Comprehensive Phylogenetic Analysis on Early Ornithischian Evolution",
@@ -247,7 +247,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The smallest clade containing Echinodon becklesii Owen, 1861a, Iguanodon bernissartensis Boulenger in Beneden, 1881, and Scelidosaurus harrisonii Owen, 1861b.",
+            "definition": "The smallest clade containing Echinodon becklesii Owen, 1861a, Iguanodon bernissartensis Boulenger in Beneden, 1881, and Scelidosaurus harrisonii Owen, 1861b.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

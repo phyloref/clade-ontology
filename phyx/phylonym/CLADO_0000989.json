@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -209,10 +209,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 989,
+            "curatorNotes": "Regnum ID: '989'",
             "label": "Peirosauridae",
-            "dwc:scientificNameAuthorship": "Leardi, Juan Martín and Pol, and Montefeltro, and Marinho, and Ruiz, and Bravo, and Pinheiro, and Godoy, and Nicholl, and Lecuona, and Larsson,",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Leardi, Juan Martín and Pol, and Montefeltro, and Marinho, and Ruiz, and Bravo, and Pinheiro, and Godoy, and Nicholl, and Lecuona, and Larsson,",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Una nueva familia de cocodrilos zifodontes cretácicos de América del Sur",
@@ -237,8 +237,8 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The most inclusive clade containing Peirosaurus torminni Price 1955 (proxies: Lomasuchus palpebrosus Gasparini, Chiappe and Fernández 1991 and Uberabasuchus terrificus Carvalho, Ribeiro and Avila 2004) but not Uruguaysuchus aznarezi Rusconi 1933, Mahajangasuchus insignis Buckley and Brochu 1999, Itasuchus jesuinoi Price 1955 and Sebecus icaeorhinus Simpson 1937. This is a maximum-clade definition. The proxies are not specifiers but can be used in place of the specifier for which they are proxies on phylogenies from which that specifier is absent (see Methods).",
+            "definitionSource": [],
+            "definition": "The most inclusive clade containing Peirosaurus torminni Price 1955 (proxies: Lomasuchus palpebrosus Gasparini, Chiappe and Fernández 1991 and Uberabasuchus terrificus Carvalho, Ribeiro and Avila 2004) but not Uruguaysuchus aznarezi Rusconi 1933, Mahajangasuchus insignis Buckley and Brochu 1999, Itasuchus jesuinoi Price 1955 and Sebecus icaeorhinus Simpson 1937. This is a maximum-clade definition. The proxies are not specifiers but can be used in place of the specifier for which they are proxies on phylogenies from which that specifier is absent (see Methods).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

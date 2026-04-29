@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -413,10 +413,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 8,
+            "curatorNotes": "Regnum ID: '8'",
             "label": "Amorphea",
-            "dwc:scientificNameAuthorship": "Simpson, A.G. B. and Medina, M. and Adl, S.M.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Simpson, A.G. B. and Medina, M. and Adl, S.M.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "The revised classification of eukaryotes.",
@@ -482,7 +482,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -552,7 +552,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Homo sapiens Linnaeus 1758 and Neurospora crassa Shear and Dodge 1927 and Dictyostelium discoideum Raper 1935 but not Arabidopsis thaliana (Linnaeus) Heynhold, 1842 (Archaeplastida) or Tetrahymena thermophila Nanney and McCoy, 1976 (Alveolata) or Thalassiosira pseudonana Hasle and Hiemdal 1970 (Stramenopila) or Bigelowiella natans Moestrup and Sengco 2001 (Rhizaria) or Euglena gracilis Klebs 1883 (Discoba) or Emiliania huxleyi (Lohmann) Hay and Mohler 1967 (Haptophyta).",
+            "definition": "The smallest crown clade containing Homo sapiens Linnaeus 1758 and Neurospora crassa Shear and Dodge 1927 and Dictyostelium discoideum Raper 1935 but not Arabidopsis thaliana (Linnaeus) Heynhold, 1842 (Archaeplastida) or Tetrahymena thermophila Nanney and McCoy, 1976 (Alveolata) or Thalassiosira pseudonana Hasle and Hiemdal 1970 (Stramenopila) or Bigelowiella natans Moestrup and Sengco 2001 (Rhizaria) or Euglena gracilis Klebs 1883 (Discoba) or Emiliania huxleyi (Lohmann) Hay and Mohler 1967 (Haptophyta).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

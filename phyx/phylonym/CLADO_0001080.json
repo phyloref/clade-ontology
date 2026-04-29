@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -39,10 +39,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1080,
+            "curatorNotes": "Regnum ID: '1080'",
             "label": "Acipenser",
-            "dwc:scientificNameAuthorship": "Brownstein, Chase D. and Near, Thomas J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Brownstein, Chase D. and Near, Thomas J.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Systema Naturae, Ed. X. (Systema naturae per regna tria naturae, secundum classes, ordines, genera, species, cum characteribus, differentiis, synonymis, locis. Tomus I. Editio decima, reformata",
@@ -66,7 +66,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Towards a phylogenetic taxonomy of sturgeons (Acipenseriformes: Acipenseridae)",
@@ -100,7 +100,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Acipenser sturio Linnaeus 1758, Acipenser oxyrinchus Mitchill 1815, and Acipenser desotoi Vladykov 1955. This is a minimum-crown-clade definition.",
+            "definition": "The least inclusive crown clade that contains Acipenser sturio Linnaeus 1758, Acipenser oxyrinchus Mitchill 1815, and Acipenser desotoi Vladykov 1955. This is a minimum-crown-clade definition.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -46,10 +46,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 413,
+            "curatorNotes": "Regnum ID: '413'",
             "label": "Pissarrachampsinae",
-            "dwc:scientificNameAuthorship": "Darlin, Gustavo and Langer, Max and Montefeltro, Felipe",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Darlin, Gustavo and Langer, Max and Montefeltro, Felipe",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A New Baurusuchid (Crocodyliformes, Mesoeucrocodylia) from the Late Cretaceous of Brazil and the Phylogeny of Baurusuchidae",
@@ -92,7 +92,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "3D skull modelling and description of a new baurusuchid (Crocodyliformes, Mesoeucrocodylia) from the Late Cretaceous (Bauru Basin) of Brazil",
@@ -138,7 +138,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The most inclusive clade containing Pissarrachampsa sera Montefeltro, Larsson & Langer 2011, but not Baurusuchus pachecoi Price 1945 (Baurusuchinae).",
+            "definition": "The most inclusive clade containing Pissarrachampsa sera Montefeltro, Larsson & Langer 2011, but not Baurusuchus pachecoi Price 1945 (Baurusuchinae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

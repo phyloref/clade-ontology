@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -97,10 +97,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 285,
+            "curatorNotes": "Regnum ID: '285'",
             "label": "Picidae",
-            "dwc:scientificNameAuthorship": "Sangster, G.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Sangster, G.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Eleventh room. In Synopsis of the contents of the British Museum",
@@ -125,7 +125,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -177,7 +177,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Jynx torquilla Linnaeus 1758 and Picus viridis Linnaeus 1758.",
+            "definition": "The smallest crown clade containing Jynx torquilla Linnaeus 1758 and Picus viridis Linnaeus 1758.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

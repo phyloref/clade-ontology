@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -175,10 +175,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 299,
+            "curatorNotes": "Regnum ID: '299'",
             "label": "Pan-Biota",
-            "dwc:scientificNameAuthorship": "Weiman, J. and de Queiroz, K. and Rowe, T.  B. and Planavsky, N.  J. and Anderson, R.  P. and Gogarten, J.  P. and Turner, P.  E. and Gauthier, J.  A.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Weiman, J. and de Queiroz, K. and Rowe, T.  B. and Planavsky, N.  J. and Anderson, R.  P. and Gogarten, J.  P. and Turner, P.  E. and Gauthier, J.  A.",
+            "namePublishedIn": [
                 {
                     "type": "book_section",
                     "title": "Abstracts of the First International Phylogenetic Nomenclature Meeting",
@@ -205,7 +205,7 @@
                     ]
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -319,7 +319,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The total clade of the crown clade Biota.",
+            "definition": "The total clade of the crown clade Biota.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

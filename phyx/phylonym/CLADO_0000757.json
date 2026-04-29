@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -54,11 +54,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 757,
+            "curatorNotes": "Regnum ID: '757'",
             "label": "Machimosauridae",
-            "dwc:scientificNameAuthorship": "Johnson, Michela  M and Young, Mark T and Brusatte, Stephen L",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Johnson, Michela  M and Young, Mark T and Brusatte, Stephen L",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "The phylogenetics of Teleosauroidea (Crocodylomorpha, Thalattosuchia) and implications for their ecology and evolution",
@@ -107,7 +107,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade within Teleosauroidea containing Machimosaurus hugii (von Meyer 1837) but not Teleosaurus cadomensis (Lamouroux 1820).",
+            "definition": "The largest clade within Teleosauroidea containing Machimosaurus hugii (von Meyer 1837) but not Teleosaurus cadomensis (Lamouroux 1820).",
             "internalSpecifiers": [],
             "externalSpecifiers": [
                 {

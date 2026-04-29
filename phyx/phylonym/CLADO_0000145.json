@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -346,11 +346,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 145,
+            "curatorNotes": "Regnum ID: '145'",
             "label": "Neoarticulata",
-            "dwc:scientificNameAuthorship": "Carlson, S. J. and Cohen, B. L.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Carlson, S. J. and Cohen, B. L.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -412,7 +412,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade containing Notosaria (originally Terebratula) nigricans (Sowerby 1846) (Rhynchonellida), Terebratalia (originally Terebratula) transversa (Sowerby 1846) (Terebratellidina), Terebratulina (originally Anomia) retusa (Linnaeus 1758) (Terebratulidina) and Thecidellina blochmanni Dall 1920 (Thecideida).",
+            "definition": "The least inclusive crown clade containing Notosaria (originally Terebratula) nigricans (Sowerby 1846) (Rhynchonellida), Terebratalia (originally Terebratula) transversa (Sowerby 1846) (Terebratellidina), Terebratulina (originally Anomia) retusa (Linnaeus 1758) (Terebratulidina) and Thecidellina blochmanni Dall 1920 (Thecideida).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

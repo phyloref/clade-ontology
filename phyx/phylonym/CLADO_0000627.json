@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -301,11 +301,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 627,
+            "curatorNotes": "Regnum ID: '627'",
             "label": "Iguanodontidae",
-            "dwc:scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
@@ -384,7 +384,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade containing Iguanodon bernissartensis Boulenger in Beneden, 1881 but not Hadrosaurus foulkii Leidy, 1858.",
+            "definition": "The largest clade containing Iguanodon bernissartensis Boulenger in Beneden, 1881 but not Hadrosaurus foulkii Leidy, 1858.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

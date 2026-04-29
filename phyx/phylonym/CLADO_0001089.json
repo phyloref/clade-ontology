@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -54,10 +54,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1089,
+            "curatorNotes": "Regnum ID: '1089'",
             "label": "Dermochelyinae",
-            "dwc:scientificNameAuthorship": "Gentry, Andrew D. and Burns, Michael E. and Ebersole, Jun A. and Gregson, Kimberly A. and Martinez, Emma C. and Parham, James F.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Gentry, Andrew D. and Burns, Michael E. and Ebersole, Jun A. and Gregson, Kimberly A. and Martinez, Emma C. and Parham, James F.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Paleocene turtles from the Aquia and Brightseat formations, with a discussion of their bearing on sea turtle evolution and phylogeny",
@@ -84,7 +84,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new leatherback marine turtle from the lower Oligocene of Alabama, USA, and a phylogenetic nomenclature for Dermochelyidae",
@@ -128,7 +128,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The clade for which a mosaic carapace, as inherited by the extant leatherback Dermochelys coriacea (Vandelli, 1761), is an apomorphy.",
+            "definition": "The clade for which a mosaic carapace, as inherited by the extant leatherback Dermochelys coriacea (Vandelli, 1761), is an apomorphy.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

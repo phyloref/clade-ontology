@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -71,10 +71,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 44,
+            "curatorNotes": "Regnum ID: '44'",
             "label": "Feliformia",
-            "dwc:scientificNameAuthorship": "Wolsan, M. and Flynn, J. J. and Wyss, A. R.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Wolsan, M. and Flynn, J. J. and Wyss, A. R.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Bemerkungen über das Raubtiersystem.",
@@ -100,7 +100,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -170,7 +170,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The largest crown clade containing Felis silvestris Schreber 1777 (Felidae) but not Canis lupus Linnaeus 1758 (Canidae).",
+            "definition": "The largest crown clade containing Felis silvestris Schreber 1777 (Felidae) but not Canis lupus Linnaeus 1758 (Canidae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

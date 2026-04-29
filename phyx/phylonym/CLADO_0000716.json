@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -177,10 +177,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 716,
+            "curatorNotes": "Regnum ID: '716'",
             "label": "Australaves",
-            "dwc:scientificNameAuthorship": "Sangster, George and Braun, Edward L and Johansson, Ulf S and Kimball, Rebecca T and Mayr, Gerald and Suh, Alexander",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Sangster, George and Braun, Edward L and Johansson, Ulf S and Kimball, Rebecca T and Mayr, Gerald and Suh, Alexander",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Evolution of terrestrial birds in three continents: biogeography and parallel radiations.",
@@ -207,8 +207,8 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The least inclusive crown clade containing Palamedea (now Cariama) cristata Linnaeus, 1766 (Cariamiformes) and Fringilla domestica (now Passer domesticus) Linnaeus, 1758 (Passeriformes).",
+            "definitionSource": [],
+            "definition": "The least inclusive crown clade containing Palamedea (now Cariama) cristata Linnaeus, 1766 (Cariamiformes) and Fringilla domestica (now Passer domesticus) Linnaeus, 1758 (Passeriformes).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

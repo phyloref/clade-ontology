@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -210,10 +210,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1135,
+            "curatorNotes": "Regnum ID: '1135'",
             "label": "Brevantherum",
-            "dwc:scientificNameAuthorship": "Giacomin, Leandro and Bohs, Lynn",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Giacomin, Leandro and Bohs, Lynn",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Die Haararten der Gattung Solanum L. und ihre taxonomische Verwertung",
@@ -238,7 +238,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new phylogeny and phylogenetic classification for Solanaceae",
@@ -355,7 +355,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The maximum crown clade containing Solanum erianthum D. Don 1825 but not Solanum betaceum Cavanilles 1799, Solanum graveolens Bunbury 1841, Solanum aphyodendron S.Knapp 1985, Solanum havanense Jacquin 1794, and Solanum wendlandii J.D. Hooker 1887.",
+            "definition": "The maximum crown clade containing Solanum erianthum D. Don 1825 but not Solanum betaceum Cavanilles 1799, Solanum graveolens Bunbury 1841, Solanum aphyodendron S.Knapp 1985, Solanum havanense Jacquin 1794, and Solanum wendlandii J.D. Hooker 1887.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

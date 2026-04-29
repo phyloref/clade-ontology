@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -47,10 +47,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 327,
+            "curatorNotes": "Regnum ID: '327'",
             "label": "Neodobenia",
-            "dwc:scientificNameAuthorship": "Biewer, Jacob N and Velez-Juarbe, Jorge and Parham, James F",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Biewer, Jacob N and Velez-Juarbe, Jorge and Parham, James F",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A new tuskless walrus from the Miocene of Orange County, California, with comments on the diversity and taxonomy of odobenids",
@@ -110,7 +110,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Insights on the dental evolution of walruses based on new fossil specimens from California",
@@ -153,7 +153,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The smallest clade that includes Odobenus rosmarus (Linnaeus, 1758), Dusignathus seftoni Deméré, 1994, and Gomphotaria pugnax Barnes and Raschke, 1991.",
+            "definition": "The smallest clade that includes Odobenus rosmarus (Linnaeus, 1758), Dusignathus seftoni Deméré, 1994, and Gomphotaria pugnax Barnes and Raschke, 1991.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

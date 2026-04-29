@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -55,11 +55,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 228,
+            "curatorNotes": "Regnum ID: '228'",
             "label": "Pan-Echinodermata",
-            "dwc:scientificNameAuthorship": "Sumrall, C. D.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Sumrall, C. D.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -112,7 +112,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The total clade of the crown clade Echinodermata.",
+            "definition": "The total clade of the crown clade Echinodermata.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

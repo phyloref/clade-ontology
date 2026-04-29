@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -81,11 +81,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 416,
+            "curatorNotes": "Regnum ID: '416'",
             "label": "Feraequornithes",
-            "dwc:scientificNameAuthorship": "Sangster, George and Mayr, Gerald",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Sangster, George and Mayr, Gerald",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A name for the clade formed by Procellariiformes, Sphenisciformes, Ciconiiformes, Suliformes and Pelecaniformes",
@@ -119,7 +119,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least-inclusive crown clade containing Pelecanus onocrotalus Linnaeus, 1758 and Procellaria aequinoctialis Linnaeus, 1758.",
+            "definition": "The least-inclusive crown clade containing Pelecanus onocrotalus Linnaeus, 1758 and Procellaria aequinoctialis Linnaeus, 1758.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

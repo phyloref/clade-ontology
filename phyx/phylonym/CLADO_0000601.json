@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -237,10 +237,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 601,
+            "curatorNotes": "Regnum ID: '601'",
             "label": "Ceratopsoidea",
-            "dwc:scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Bibliography and catalogue of the Fossil Vertebrata of North America",
@@ -267,7 +267,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
@@ -346,7 +346,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade containing Ceratops montanus Marsh, 1888 and Triceratops horridus Marsh, 1889 but not Protoceratops andrewsi Granger & Gregory, 1923.",
+            "definition": "The largest clade containing Ceratops montanus Marsh, 1888 and Triceratops horridus Marsh, 1889 but not Protoceratops andrewsi Granger & Gregory, 1923.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

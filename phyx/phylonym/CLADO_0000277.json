@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -62,10 +62,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 277,
+            "curatorNotes": "Regnum ID: '277'",
             "label": "Pan-Cryptodira",
-            "dwc:scientificNameAuthorship": "Joyce, W. G. and Parham, J. F. and Anquetin, J. and Claude, J. and Danilov, I. G. and Iverson, J. B. and Kear, B. and Lyson, T. R. and Rabi, M. and Sterli, J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Joyce, W. G. and Parham, J. F. and Anquetin, J. and Claude, J. and Danilov, I. G. and Iverson, J. B. and Kear, B. and Lyson, T. R. and Rabi, M. and Sterli, J.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Developing a protocol for the conversion of rank-based taxon names to phylogenetically defined clade names, as exemplified by turtles.",
@@ -115,7 +115,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -244,7 +244,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The total clade of crown clade Cryptodira.",
+            "definition": "The total clade of crown clade Cryptodira.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

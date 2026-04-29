@@ -1,12 +1,12 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [],
     "phylorefs": [
         {
-            "regnumId": 1228,
+            "curatorNotes": "Regnum ID: '1228'",
             "label": "Daspletosaurini",
-            "dwc:scientificNameAuthorship": "Napoli, James G and Zanno, Lindsay E",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Napoli, James G and Zanno, Lindsay E",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A new tyrannosaurine (Theropoda: Tyrannosauridae) from the Campanian Foremost Formation of Alberta, Canada, provides insight into the evolution and biogeography of tyrannosaurids",
@@ -59,8 +59,8 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The largest clade containing Daspletosaurus torosus Russell 1970 but not Tyrannosaurus rex Osborn 1905.",
+            "definitionSource": [],
+            "definition": "The largest clade containing Daspletosaurus torosus Russell 1970 but not Tyrannosaurus rex Osborn 1905.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

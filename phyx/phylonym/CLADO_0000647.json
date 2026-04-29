@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -215,10 +215,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 647,
+            "curatorNotes": "Regnum ID: '647'",
             "label": "Protoceratopsidae",
-            "dwc:scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Protoceratops andrewsi, a pre-ceratopsian dinosaur from Mongolia, with an appendix on the structural relationships of the Protoceratops beds",
@@ -253,7 +253,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
@@ -332,7 +332,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade containing Protoceratops andrewsi Granger & Gregory, 1923 but not Ceratops montanus Marsh, 1888, Leptoceratops gracilis Brown, 1914b, and Triceratops horridus Marsh, 1889.",
+            "definition": "The largest clade containing Protoceratops andrewsi Granger & Gregory, 1923 but not Ceratops montanus Marsh, 1888, Leptoceratops gracilis Brown, 1914b, and Triceratops horridus Marsh, 1889.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

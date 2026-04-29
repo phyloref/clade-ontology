@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -234,10 +234,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 692,
+            "curatorNotes": "Regnum ID: '692'",
             "label": "Triceratopsini",
-            "dwc:scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Titanoceratops ouranos, a giant horned dinosaur from the late Campanian of New Mexico",
@@ -264,7 +264,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
@@ -343,7 +343,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade containing Triceratops horridus Marsh, 1889 but not Anchiceratops ornatus Brown, 1914c and Arrhinoceratops brachyops Parks, 1925.",
+            "definition": "The largest clade containing Triceratops horridus Marsh, 1889 but not Anchiceratops ornatus Brown, 1914c and Arrhinoceratops brachyops Parks, 1925.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

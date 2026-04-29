@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -41,10 +41,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 587,
+            "curatorNotes": "Regnum ID: '587'",
             "label": "Dolomena",
-            "dwc:scientificNameAuthorship": "Maxwell, S J",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Maxwell, S J",
+            "namePublishedIn": [
                 {
                     "type": "book_section",
                     "title": "Gastropoda Teil 1: Allgemeiner Teil und Prosobranchia",
@@ -79,7 +79,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Registration of Neostromboidae Clades in the RegNum of the PhyloCode, and Errata",
@@ -116,7 +116,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The maximum clade consisting of Dolomena pulchella (Reeve,1851) and all species that share a more recent common ancestor with them than with Labiostrombus epidromis (Linné, 1758), Ministrombu  s minimus (Linné, 1771), Amabiliplicatus plicatus (Röding,1798),  Dominus labiosus (Wood, 1828), Pacificus dilatatus (Swainson, 1821), Doxander vittatus (Linné, 1758), Neodilatilabrum marginatum (Linné, 1758), Mirabilistrombus listeri (Gray, 1852), Neostrombus fusiformis (Sowerby II, 1842) or Laevistrombus vanikorensis (Quoy & Gaimard, 1834).",
+            "definition": "The maximum clade consisting of Dolomena pulchella (Reeve,1851) and all species that share a more recent common ancestor with them than with Labiostrombus epidromis (Linné, 1758), Ministrombu  s minimus (Linné, 1771), Amabiliplicatus plicatus (Röding,1798),  Dominus labiosus (Wood, 1828), Pacificus dilatatus (Swainson, 1821), Doxander vittatus (Linné, 1758), Neodilatilabrum marginatum (Linné, 1758), Mirabilistrombus listeri (Gray, 1852), Neostrombus fusiformis (Sowerby II, 1842) or Laevistrombus vanikorensis (Quoy & Gaimard, 1834).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

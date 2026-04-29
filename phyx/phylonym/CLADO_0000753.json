@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -361,11 +361,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 753,
+            "curatorNotes": "Regnum ID: '753'",
             "label": "Neoclavifera",
-            "dwc:scientificNameAuthorship": "Béthoux, Olivier",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Béthoux, Olivier",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Ovipositor and mouthparts in a fossil insect support a novel ecological role for early orthopterans in 300 million years old forests",
@@ -430,7 +430,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "Species that evolved from the hypothetical ancestral species in which the character state ‘in female ovipositor, occurrence of a locking mechanism composed of a rhachis on gonostylus IX and of an aulax on gonapophysis IX’ (also called ‘secondary olistheter’; as opposed to ‘in female ovipositor, absence of a locking mechanism composed of a rhachis on gonostylus IX and of an aulax on gonapophysis IX’), as exhibited by linderi Dufour, 1861 (currently assigned to Dolichopoda Bolívar, 1880) and artinii Griffini, 1913 (currently assigned to Homogryllacris Liu, 2007), was acquired",
+            "definition": "Species that evolved from the hypothetical ancestral species in which the character state ‘in female ovipositor, occurrence of a locking mechanism composed of a rhachis on gonostylus IX and of an aulax on gonapophysis IX’ (also called ‘secondary olistheter’; as opposed to ‘in female ovipositor, absence of a locking mechanism composed of a rhachis on gonostylus IX and of an aulax on gonapophysis IX’), as exhibited by linderi Dufour, 1861 (currently assigned to Dolichopoda Bolívar, 1880) and artinii Griffini, 1913 (currently assigned to Homogryllacris Liu, 2007), was acquired",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -109,10 +109,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 47,
+            "curatorNotes": "Regnum ID: '47'",
             "label": "Gnetophyta",
-            "dwc:scientificNameAuthorship": "Donoghue, M. J. and Doyle, J. A. and Cantino, P. D.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Donoghue, M. J. and Doyle, J. A. and Cantino, P. D.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A synopsis of plant phyla.",
@@ -139,7 +139,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -210,7 +210,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Gnetum gnemon Linnaeus 1767, Ephedra distachya Linnaeus 1753, and Welwitschia mirabilis J. D. Hooker 1862.",
+            "definition": "The smallest crown clade containing Gnetum gnemon Linnaeus 1767, Ephedra distachya Linnaeus 1753, and Welwitschia mirabilis J. D. Hooker 1862.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

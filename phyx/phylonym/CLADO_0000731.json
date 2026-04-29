@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -36,11 +36,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 731,
+            "curatorNotes": "Regnum ID: '731'",
             "label": "Neoxenophoroidae",
-            "dwc:scientificNameAuthorship": "Maxwell, Stephen J",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Maxwell, Stephen J",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Recognising and defining new crown clades in Stromboidea Rafinesque, 1815 (Mollusca: Gastropoda)",
@@ -72,7 +72,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The total clade of the largest crown clade containing Xenophora conchyliophora (Born, 1780) and not Strombus pugilis Linné, 1758, Terebellum terebellum (Linné, 1758), Tibia fusus (Linné, 1758), Struthiolaria papulosa (Martyn, 1784), Aporrhais pespelecani (Linné, 1758)",
+            "definition": "The total clade of the largest crown clade containing Xenophora conchyliophora (Born, 1780) and not Strombus pugilis Linné, 1758, Terebellum terebellum (Linné, 1758), Tibia fusus (Linné, 1758), Struthiolaria papulosa (Martyn, 1784), Aporrhais pespelecani (Linné, 1758)",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

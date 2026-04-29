@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -89,10 +89,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 54,
+            "curatorNotes": "Regnum ID: '54'",
             "label": "Kalyptorhynchia",
-            "dwc:scientificNameAuthorship": "Artois, T.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Artois, T.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Marine Turbellarien Orotavas und der Küsten Europas. Ergebnisse einiger, mit Unterstützung der kaiserlichen Akademie der Wissenschaften in Wien (aus dem Legate Wedl) in den Jahren 1902 und 1903 unternommenStudienreise. II. Rhabdocoela.",
@@ -118,7 +118,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -170,7 +170,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "the largest crown clade containing Polycystis naegelii Kölliker 1845 but not Provortex balticus (Schultze 1851) Graff 1882 and Mariplanella frisia Ax and Heller 1970.",
+            "definition": "the largest crown clade containing Polycystis naegelii Kölliker 1845 but not Provortex balticus (Schultze 1851) Graff 1882 and Mariplanella frisia Ax and Heller 1970.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

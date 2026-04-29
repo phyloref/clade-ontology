@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -201,10 +201,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 653,
+            "curatorNotes": "Regnum ID: '653'",
             "label": "Stegosauria",
-            "dwc:scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A new order of extinct Reptilia (Stegosauria) from the Jurassic of the Rocky Mountains",
@@ -231,7 +231,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
@@ -310,7 +310,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade containing Stegosaurus stenops Marsh, 1887 but not Ankylosaurus magniventris Brown, 1908.",
+            "definition": "The largest clade containing Stegosaurus stenops Marsh, 1887 but not Ankylosaurus magniventris Brown, 1908.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

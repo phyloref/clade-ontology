@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -193,10 +193,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 628,
+            "curatorNotes": "Regnum ID: '628'",
             "label": "Jeholosauridae",
-            "dwc:scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Postcranial anatomy of Jeholosaurus shangyuanensis (Dinosauria, Ornithischia) from the Lower Cretaceous Yixian Formation of China",
@@ -248,7 +248,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
@@ -318,7 +318,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade outside Hypsilophodontidae or Thescelosauridae containing Jeholosaurus shangyuanensis Xu, Wang & You, 2000 but not Hypsilophodon foxii Huxley, 1869, Iguanodon bernissartensis Boulenger in Beneden, 1881, Pachycephalosaurus wyomingensis (Gilmore, 1931), Thescelosaurus neglectus Gilmore, 1913, and Triceratops horridus Marsh, 1889",
+            "definition": "The largest clade outside Hypsilophodontidae or Thescelosauridae containing Jeholosaurus shangyuanensis Xu, Wang & You, 2000 but not Hypsilophodon foxii Huxley, 1869, Iguanodon bernissartensis Boulenger in Beneden, 1881, Pachycephalosaurus wyomingensis (Gilmore, 1931), Thescelosaurus neglectus Gilmore, 1913, and Triceratops horridus Marsh, 1889",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

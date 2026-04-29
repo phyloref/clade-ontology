@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -201,10 +201,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 96,
+            "curatorNotes": "Regnum ID: '96'",
             "label": "Serpentes",
-            "dwc:scientificNameAuthorship": "Head, J. and de Querioz, K. and Greene, H.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Head, J. and de Querioz, K. and Greene, H.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Systema naturae per regna tria naturae, secundum classes, ordines, genera, species, cum characteribus, differentiis, synonymis, locis. Ed. 10, Tom. 1-2.",
@@ -228,7 +228,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -296,7 +296,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "Serpentes refers to the crown clade originating in the most recent common ancestor of Anomalepis mexicanus Jan 1860 (Scolecophidia: Anomalepididae), Rena dulcis Baird & Girard 1853 (Scolecophidia: Leptotyphlopidae), Typhlops linneolatus Jan 1863 (Scolecophidia: Typhlopidae), Anilius (originally Anguis) scytale (Linnaeus 1758) (Alethinophidia: Anilioidea), and Coluber constrictor Linnaeus 1758 (Alethinophidia: Caenophidia).",
+            "definition": "Serpentes refers to the crown clade originating in the most recent common ancestor of Anomalepis mexicanus Jan 1860 (Scolecophidia: Anomalepididae), Rena dulcis Baird & Girard 1853 (Scolecophidia: Leptotyphlopidae), Typhlops linneolatus Jan 1863 (Scolecophidia: Typhlopidae), Anilius (originally Anguis) scytale (Linnaeus 1758) (Alethinophidia: Anilioidea), and Coluber constrictor Linnaeus 1758 (Alethinophidia: Caenophidia).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

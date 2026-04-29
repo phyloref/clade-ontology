@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -78,10 +78,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 417,
+            "curatorNotes": "Regnum ID: '417'",
             "label": "Notosuchia",
-            "dwc:scientificNameAuthorship": "Ruiz, Juan and Bronzati, Mario and Ferreira, Gabriel and Martins, Kawan and Queiroz, Marcos and Langer, Max and Montefeltro, Felipe",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Ruiz, Juan and Bronzati, Mario and Ferreira, Gabriel and Martins, Kawan and Queiroz, Marcos and Langer, Max and Montefeltro, Felipe",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Los Notosuchia del Cretácico de América del Sur como un nuevo infraorden de los Mesosuchia (Crocodilia).",
@@ -108,7 +108,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new species of Caipirasuchus (Notosuchia, Sphagesauridae) from the Late Cretaceous of Brazil and the evolutionary history of Sphagesauria",
@@ -186,7 +186,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The most inclusive clade containing Notosuchus terrestris Woodward 1896, but not Crocodylus niloticus Laurenti 1768 (Crocodylia). This is a maximum clade definition.",
+            "definition": "The most inclusive clade containing Notosuchus terrestris Woodward 1896, but not Crocodylus niloticus Laurenti 1768 (Crocodylia). This is a maximum clade definition.",
             "internalSpecifiers": [],
             "externalSpecifiers": [
                 {

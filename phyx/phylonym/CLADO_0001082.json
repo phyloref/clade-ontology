@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -39,10 +39,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1082,
+            "curatorNotes": "Regnum ID: '1082'",
             "label": "Huso",
-            "dwc:scientificNameAuthorship": "Brownstein, Chase D. and Near, Thomas J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Brownstein, Chase D. and Near, Thomas J.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Medizinische Zoologie, oder getreue Darstellung und Beschreibung der Thiere, die in der Arzneimittellehre in Betracht kommen, in systematischer Folge herausgegeben, Volume 2",
@@ -76,7 +76,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Towards a phylogenetic taxonomy of sturgeons (Acipenseriformes: Acipenseridae)",
@@ -122,7 +122,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Huso huso (Linnaeus 1758), Huso fulvescens (Rafinesque 1817), and Huso gueldenstaedtii (Brandt and Ratzeburg 1833). This is a minimum-crown-clade definition.",
+            "definition": "The least inclusive crown clade that contains Huso huso (Linnaeus 1758), Huso fulvescens (Rafinesque 1817), and Huso gueldenstaedtii (Brandt and Ratzeburg 1833). This is a minimum-crown-clade definition.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

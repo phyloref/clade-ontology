@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -397,10 +397,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 66,
+            "curatorNotes": "Regnum ID: '66'",
             "label": "Metamonada",
-            "dwc:scientificNameAuthorship": "Simpson, A. G. B.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Simpson, A. G. B.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Eukaryotes with no mitochondria",
@@ -426,7 +426,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -479,7 +479,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Paratrimastix pyriformis (Klebs, 1893) Zhang et al. 2015, Trichomonas vaginalis Donné 1836, and Spironucleus barkhanus Sterud et al. 1997, provided that the clade does not include any organisms with mitochondria capable of oxidative phosphorylation (e.g. Malawimonas jakobiformis O’Kelly and Nerad, 1999).",
+            "definition": "The smallest crown clade containing Paratrimastix pyriformis (Klebs, 1893) Zhang et al. 2015, Trichomonas vaginalis Donné 1836, and Spironucleus barkhanus Sterud et al. 1997, provided that the clade does not include any organisms with mitochondria capable of oxidative phosphorylation (e.g. Malawimonas jakobiformis O’Kelly and Nerad, 1999).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

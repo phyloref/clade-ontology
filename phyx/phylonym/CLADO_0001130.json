@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -62,11 +62,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1130,
+            "curatorNotes": "Regnum ID: '1130'",
             "label": "Pinnatifida",
-            "dwc:scientificNameAuthorship": "Knapp, Sandra and Bohs, Lynn",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Knapp, Sandra and Bohs, Lynn",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new phylogeny and phylogenetic classification for Solanaceae",
@@ -183,7 +183,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The minimum crown clade containing Solanum tuberosum Linnaeus 1753, Solanum lycopersicum Linnaeus 1753, Solanum muricatum Aiton 1789, Solanum etuberosum Lindley 1834, Solanum sodiroi Bitter 1912, Solanum suaveolens Kunth & C.D. Bouché 1848, Solanum sanctae-marthae Bitter 1913, Solanum oxycoccoides Bitter 1919, Solanum mite Ruiz & Pavón 1799, and Solanum trifolium Dunal 1852.",
+            "definition": "The minimum crown clade containing Solanum tuberosum Linnaeus 1753, Solanum lycopersicum Linnaeus 1753, Solanum muricatum Aiton 1789, Solanum etuberosum Lindley 1834, Solanum sodiroi Bitter 1912, Solanum suaveolens Kunth & C.D. Bouché 1848, Solanum sanctae-marthae Bitter 1913, Solanum oxycoccoides Bitter 1919, Solanum mite Ruiz & Pavón 1799, and Solanum trifolium Dunal 1852.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

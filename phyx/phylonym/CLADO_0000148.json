@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -61,10 +61,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 148,
+            "curatorNotes": "Regnum ID: '148'",
             "label": "Gekkota",
-            "dwc:scientificNameAuthorship": "Bauer, A. M.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Bauer, A. M.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Classification of the lizards.",
@@ -88,7 +88,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -141,7 +141,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Gekko (originally Lacerta) gecko Linnaeus 1758, Eublepharis (originally Cyrtodactylus) macularius Blyth 1854 [1855], and Pygopus (originally Cryptodelma) nigriceps Fischer 1882.",
+            "definition": "The crown clade originating in the most recent common ancestor of Gekko (originally Lacerta) gecko Linnaeus 1758, Eublepharis (originally Cyrtodactylus) macularius Blyth 1854 [1855], and Pygopus (originally Cryptodelma) nigriceps Fischer 1882.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

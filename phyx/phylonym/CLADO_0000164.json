@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -69,10 +69,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 164,
+            "curatorNotes": "Regnum ID: '164'",
             "label": "Anthozoa",
-            "dwc:scientificNameAuthorship": "Daly, M.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Daly, M.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Die Corallienthiere des rothen Meeres.",
@@ -96,7 +96,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -148,7 +148,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The most inclusive crown clade containing both Nematostella vectensis Stephenson 1935 (Hexacorallia) and Alcyonium digitatum Linnaeus 1758 (Octocorallia) but not Hydra vulgaris (Pallas 1766) (Hydrozoa).",
+            "definition": "The most inclusive crown clade containing both Nematostella vectensis Stephenson 1935 (Hexacorallia) and Alcyonium digitatum Linnaeus 1758 (Octocorallia) but not Hydra vulgaris (Pallas 1766) (Hydrozoa).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

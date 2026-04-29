@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -251,10 +251,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 279,
+            "curatorNotes": "Regnum ID: '279'",
             "label": "Galloanserae",
-            "dwc:scientificNameAuthorship": "Mindell, D. P.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Mindell, D. P.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A classification of the living birds of the world based on DNA-DNA hybridization studies.",
@@ -298,7 +298,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -351,7 +351,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Gallus (originally Phasianus) gallus (Linnaeus 1758) (Galliformes) and Anser (originally Anas) anser (Linnaeus 1758) (Anseriformes).",
+            "definition": "The smallest crown clade containing Gallus (originally Phasianus) gallus (Linnaeus 1758) (Galliformes) and Anser (originally Anas) anser (Linnaeus 1758) (Anseriformes).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

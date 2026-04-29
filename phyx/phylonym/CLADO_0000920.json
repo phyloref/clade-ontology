@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -107,10 +107,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 920,
+            "curatorNotes": "Regnum ID: '920'",
             "label": "Stomiatii",
-            "dwc:scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "The tree of life and a new classification of bony fishes",
@@ -335,7 +335,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
@@ -369,7 +369,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Osmerus mordax (Mitchill 1814) and Stomias boa (Linnaeus 1758).",
+            "definition": "The least inclusive crown clade that contains Osmerus mordax (Mitchill 1814) and Stomias boa (Linnaeus 1758).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

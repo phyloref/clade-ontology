@@ -1,13 +1,13 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [],
     "phylorefs": [
         {
-            "regnumId": 425,
+            "curatorNotes": "Regnum ID: '425'",
             "label": "Supraocotea",
-            "dwc:scientificNameAuthorship": "Penagos Zuluaga, Juan Carlos and van der Werff, Henk",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Penagos Zuluaga, Juan Carlos and van der Werff, Henk",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Resolved phylogenetic relationships in the Ocotea complex (Supraocotea) facilitate phylogenetic classification and studies of character evolution",
@@ -92,7 +92,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The maximum crown clade containing Ocotea tomentella Sandwith, 1935, and Ocotea arenaria van der Werff, 2003, and Aniba cinnamomiflora C.K. Allen, 1964, and Licaria multinervis H.W. Kurz, 2000, but not Aiouea saligna Meisn., 1864, and not Persea americana Mill., 1768.",
+            "definition": "The maximum crown clade containing Ocotea tomentella Sandwith, 1935, and Ocotea arenaria van der Werff, 2003, and Aniba cinnamomiflora C.K. Allen, 1964, and Licaria multinervis H.W. Kurz, 2000, but not Aiouea saligna Meisn., 1864, and not Persea americana Mill., 1768.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

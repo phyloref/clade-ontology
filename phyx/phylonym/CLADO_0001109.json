@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -139,10 +139,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1109,
+            "curatorNotes": "Regnum ID: '1109'",
             "label": "Cestreae",
-            "dwc:scientificNameAuthorship": "Olmstead, Richard G. and Deanna, Rocio",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Olmstead, Richard G. and Deanna, Rocio",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Analyse des familles des plantes.",
@@ -167,7 +167,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new phylogeny and phylogenetic classification for Solanaceae",
@@ -284,7 +284,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The maximum crown clade containing Cestrum nocturnum Linnaeus 1753 (Cestrum aurantiacum Lindley 1844), but not Browallia americana Linnaeus 1753 and Protoschwenkia mandonii Solereder 1898 and Salpiglossis sinuata Ruiz & Pavón 1794.",
+            "definition": "The maximum crown clade containing Cestrum nocturnum Linnaeus 1753 (Cestrum aurantiacum Lindley 1844), but not Browallia americana Linnaeus 1753 and Protoschwenkia mandonii Solereder 1898 and Salpiglossis sinuata Ruiz & Pavón 1794.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

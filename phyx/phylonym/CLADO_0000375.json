@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -66,10 +66,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 375,
+            "curatorNotes": "Regnum ID: '375'",
             "label": "Odobenidae",
-            "dwc:scientificNameAuthorship": "Biewer, Jacob N and Velez-Juarbe, Jorge and Parham, James F",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Biewer, Jacob N and Velez-Juarbe, Jorge and Parham, James F",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "History of North American Pinnipeds, a monograph of the walruses, sea-lions, sea-bears and seals of North America.",
@@ -96,7 +96,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Insights on the dental evolution of walruses based on new fossil specimens from California",
@@ -137,7 +137,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest total clade including Odobenus rosmarus (Linnaeus, 1758) but not Phoca vitulina Linnaeus, 1758 or Otaria byronia (De Blainville, 1820).",
+            "definition": "The largest total clade including Odobenus rosmarus (Linnaeus, 1758) but not Phoca vitulina Linnaeus, 1758 or Otaria byronia (De Blainville, 1820).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

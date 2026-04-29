@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -144,10 +144,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1163,
+            "curatorNotes": "Regnum ID: '1163'",
             "label": "Pseudolabrinae",
-            "dwc:scientificNameAuthorship": "Near, Thomas J. and Brownstein, Chase D. and Thacker, Christine E. and Wainwright, Peter C.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Near, Thomas J. and Brownstein, Chase D. and Thacker, Christine E. and Wainwright, Peter C.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Families and subfamiles of fishes",
@@ -173,7 +173,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic taxonomy of wrasses and parrotfishes (Labridae)",
@@ -230,7 +230,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Pseudolabrus luculentus (Richardson 1848), Pictilabrus laticlavius (Richardson 1840), and Doratonotus megalepis (Günther 1862).",
+            "definition": "The least inclusive crown clade that contains Pseudolabrus luculentus (Richardson 1848), Pictilabrus laticlavius (Richardson 1840), and Doratonotus megalepis (Günther 1862).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

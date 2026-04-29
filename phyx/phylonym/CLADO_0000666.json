@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -64,10 +64,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 666,
+            "curatorNotes": "Regnum ID: '666'",
             "label": "Aligerina",
-            "dwc:scientificNameAuthorship": "Maxwell, S J",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Maxwell, S J",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Towards Resolving the American and West African Strombidae (Mollusca: Gastropoda: Neostromboidae) Using Integrated Taxonomy.",
@@ -126,7 +126,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Registration of Neostromboidae Clades in the RegNum of the PhyloCode, and Errata",
@@ -163,7 +163,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The maximum clade consisting of Aliger gallus (Linné, 1758), Lobatus raninus (Gmelin, 1791), Macrostrombus costatus (Gmelin, 1791), Edpetuchistrombus aldrichi (Dall, 1890), Titanostrombus goliath (Schröter,1805) and all species that share a more recent common ancestor with them than Thetystrombus latus (Gmelin, 1791), Persististrombus granulatus (Swainson, 1822) or Antestrombus chipolanus (Dall, 1890).",
+            "definition": "The maximum clade consisting of Aliger gallus (Linné, 1758), Lobatus raninus (Gmelin, 1791), Macrostrombus costatus (Gmelin, 1791), Edpetuchistrombus aldrichi (Dall, 1890), Titanostrombus goliath (Schröter,1805) and all species that share a more recent common ancestor with them than Thetystrombus latus (Gmelin, 1791), Persististrombus granulatus (Swainson, 1822) or Antestrombus chipolanus (Dall, 1890).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

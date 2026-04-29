@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -70,10 +70,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 551,
+            "curatorNotes": "Regnum ID: '551'",
             "label": "Colossosauria",
-            "dwc:scientificNameAuthorship": "Silva Junior, Julian and Martinelli, Agustín and Iori, Fabiano and Marinho, Thiago and Hechenleitner, Martín and Langer, Max",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Silva Junior, Julian and Martinelli, Agustín and Iori, Fabiano and Marinho, Thiago and Hechenleitner, Martín and Langer, Max",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "An overview of the appendicular skeletal anatomy of South American titanosaurian sauropods, with definition of a newly recognized clade",
@@ -140,7 +140,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Reassessment of Aeolosaurus maximus, a titanosaur dinosaur from the Late Cretaceous of Southeastern Brazil.",
@@ -210,7 +210,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade containing Mendozarasaurus neguyelap González Riga, 2003, but not Saltasaurus loricatus Bonaparte and Powell, 1980, or Epachthosaurus sciuttoi Powell, 1990.",
+            "definition": "The largest clade containing Mendozarasaurus neguyelap González Riga, 2003, but not Saltasaurus loricatus Bonaparte and Powell, 1980, or Epachthosaurus sciuttoi Powell, 1990.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

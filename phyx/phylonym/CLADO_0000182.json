@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -64,10 +64,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 182,
+            "curatorNotes": "Regnum ID: '182'",
             "label": "Araneae",
-            "dwc:scientificNameAuthorship": "Agnarsson, I. and Kuntner, M.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Agnarsson, I. and Kuntner, M.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Systema Naturae, Ed. X. (Systema naturae per regna tria naturae, secundum classes, ordines, genera, species, cum characteribus, differentiis, synonymis, locis. Tomus I. Editio decima, reformata.)",
@@ -89,7 +89,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -149,7 +149,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The crown clade for which male pedipalps modified as secondary sperm transfer organs (e.g. Foelix 2011, Fig. 7.10), as inherited by Araneus angulatus Clerck 1757 (Araneidae), is an apomorphy relative to other crown clades.",
+            "definition": "The crown clade for which male pedipalps modified as secondary sperm transfer organs (e.g. Foelix 2011, Fig. 7.10), as inherited by Araneus angulatus Clerck 1757 (Araneidae), is an apomorphy relative to other crown clades.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -46,11 +46,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 415,
+            "curatorNotes": "Regnum ID: '415'",
             "label": "Panhynobia",
-            "dwc:scientificNameAuthorship": "JIA, JIA and ANDERSON, JASON S. and GAO, KE-QIN",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "JIA, JIA and ANDERSON, JASON S. and GAO, KE-QIN",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Middle Jurassic stem hynobiid from China shed new light on the evolution of basal salamanders",
@@ -102,7 +102,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest total clade containing Neimengtriton daohugouensis, com. nov. (Middle Jurassic); Linglongtriton daxishanensis (Late Jurassic); and Liaoxitriton zhongjiani, Nuominerpeton aquilonaris, and Regalerpeton weichangensis (all Early Cretaceous) and Hynobius (extant), but not Andrias (extant) and Cryptobranchus (extant).",
+            "definition": "The largest total clade containing Neimengtriton daohugouensis, com. nov. (Middle Jurassic); Linglongtriton daxishanensis (Late Jurassic); and Liaoxitriton zhongjiani, Nuominerpeton aquilonaris, and Regalerpeton weichangensis (all Early Cretaceous) and Hynobius (extant), but not Andrias (extant) and Cryptobranchus (extant).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

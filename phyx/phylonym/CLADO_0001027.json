@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -27,11 +27,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1027,
+            "curatorNotes": "Regnum ID: '1027'",
             "label": "Tanysauria",
-            "dwc:scientificNameAuthorship": "Spiekman, Stephan N. and Ezcurra, Martín D. and Rytel, Adam and Wang, Wei and Mujal, Eudald and Buchwitz, Michael and Schoch, Rainer R.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Spiekman, Stephan N. and Ezcurra, Martín D. and Rytel, Adam and Wang, Wei and Mujal, Eudald and Buchwitz, Michael and Schoch, Rainer R.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A redescription of Trachelosaurus fischeri from the Buntsandstein (Middle Triassic) of Bernburg, Germany:, the first European Dinocephalosaurus-like marine reptile and its systematic implications for long-necked early archosauromorphs",
@@ -105,7 +105,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "All taxa more closely related to Tanystropheus longobardicus (Bassani, 1886), Dinocephalosaurus orientalis Li, 2003, and Trachelosaurus fischeri Broili, 1918 than to Protorosaurus speneri von Meyer, 1832, Prolacerta broomi Parrington, 1935, Mesosuchus browni Watson, 1912, Azendohsaurus madagaskarensis Flynn et al., 2010, or Proterosuchus fergusi Broom, 1903.",
+            "definition": "All taxa more closely related to Tanystropheus longobardicus (Bassani, 1886), Dinocephalosaurus orientalis Li, 2003, and Trachelosaurus fischeri Broili, 1918 than to Protorosaurus speneri von Meyer, 1832, Prolacerta broomi Parrington, 1935, Mesosuchus browni Watson, 1912, Azendohsaurus madagaskarensis Flynn et al., 2010, or Proterosuchus fergusi Broom, 1903.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -54,10 +54,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 569,
+            "curatorNotes": "Regnum ID: '569'",
             "label": "Canarium",
-            "dwc:scientificNameAuthorship": "Maxwell, Stephen John",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Maxwell, Stephen John",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Essai d'un Nouveau Système des Habitations des vers Testacés",
@@ -81,7 +81,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Registration of Neostromboidae Clades in the RegNum of the PhyloCode, and Errata",
@@ -118,7 +118,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The maximum clade consisting of Canarium urceus (Linné, 1758) and all species that share a more recent common ancestor with them than with Tridentatarius dentatus (Linné, 1758), Terestrombus fragilis (Röding,1798),  Maculastrombus maculatus (Sowerby II, 1842) or Neostrombus fusiformis (Sowerby II, 1842).",
+            "definition": "The maximum clade consisting of Canarium urceus (Linné, 1758) and all species that share a more recent common ancestor with them than with Tridentatarius dentatus (Linné, 1758), Terestrombus fragilis (Röding,1798),  Maculastrombus maculatus (Sowerby II, 1842) or Neostrombus fusiformis (Sowerby II, 1842).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

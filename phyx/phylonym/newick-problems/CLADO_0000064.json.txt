@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -1063,10 +1063,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 64,
+            "curatorNotes": "Regnum ID: '64'",
             "label": "Magnoliidae",
-            "dwc:scientificNameAuthorship": "Judd, W. S. and Soltis, P. S. and Soltis, D. E.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Judd, W. S. and Soltis, P. S. and Soltis, D. E.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Sistema I filogeniia tesvetkovykh rastenii (Systema et phylogenia magnoliophytorum).",
@@ -1088,7 +1088,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -1159,7 +1159,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Canella winterana (L.) Gaertn. 1788 (Canellales), Magnolia virginiana L. 1753 (Magnoliales), Cinnamomum camphora (L.) T. Nees & C. H. Eberm. 1831 (Laurales), and Piper betle L. 1753 (Piperales).",
+            "definition": "The smallest crown clade containing Canella winterana (L.) Gaertn. 1788 (Canellales), Magnolia virginiana L. 1753 (Magnoliales), Cinnamomum camphora (L.) T. Nees & C. H. Eberm. 1831 (Laurales), and Piper betle L. 1753 (Piperales).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

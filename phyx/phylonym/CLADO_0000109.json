@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -296,10 +296,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 109,
+            "curatorNotes": "Regnum ID: '109'",
             "label": "Tunicata",
-            "dwc:scientificNameAuthorship": "Cameron, C. B.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Cameron, C. B.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Histoire Naturelle des Animaux sans Vertebrates. Tome III. Tuniciers.",
@@ -324,7 +324,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -386,7 +386,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The crown clade for which a tunic, as inherited by Ciona intestinalis Linnaeus 1767, is an apomorphy relative to other crown clades.  The tunic is a covering that surrounds the mantle and organs of the animal and is composed of cellulose and protein.",
+            "definition": "The crown clade for which a tunic, as inherited by Ciona intestinalis Linnaeus 1767, is an apomorphy relative to other crown clades.  The tunic is a covering that surrounds the mantle and organs of the animal and is composed of cellulose and protein.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

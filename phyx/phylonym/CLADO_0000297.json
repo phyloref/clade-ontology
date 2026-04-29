@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -302,11 +302,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 297,
+            "curatorNotes": "Regnum ID: '297'",
             "label": "Foraminifera",
-            "dwc:scientificNameAuthorship": "Richardson, S. L. and Lipps, J. H.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Richardson, S. L. and Lipps, J. H.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -368,7 +368,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Bulimina marginata d’Orbigny 1826 (Globothalamea) and all extant organisms or species that inherited granuloreticulose pseudopodia synapomorphic with those in Bulimina marginata d’Orbigny 1826.",
+            "definition": "The crown clade originating in the most recent common ancestor of Bulimina marginata d’Orbigny 1826 (Globothalamea) and all extant organisms or species that inherited granuloreticulose pseudopodia synapomorphic with those in Bulimina marginata d’Orbigny 1826.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

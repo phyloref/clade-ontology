@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -212,11 +212,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 422,
+            "curatorNotes": "Regnum ID: '422'",
             "label": "Sedentaves",
-            "dwc:scientificNameAuthorship": "Chen, Albert and Field, Daniel J.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Chen, Albert and Field, Daniel J.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic definitions for Caprimulgimorphae (Aves) and major constituent clades under the International Code of Phylogenetic Nomenclature",
@@ -260,7 +260,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Steatornis caripensis Humboldt, 1817 (Steatornithiformes) and Nyctibius (originally Caprimulgus) grandis (Gmelin,\n1789) (Nyctibiiformes) but not Caprimulgus europaeus Linnaeus, 1758 (Caprimulgiformes), Podargus (originally Caprimulgus) strigoides (Latham, 1801) (Podargiformes), Aegotheles (originally Caprimulgus) cristatus (Shaw, 1790) (Aegotheliformes), and Apus (originally Hirundo) apus (Linnaeus, 1758) (Apodiformes).",
+            "definition": "The smallest crown clade containing Steatornis caripensis Humboldt, 1817 (Steatornithiformes) and Nyctibius (originally Caprimulgus) grandis (Gmelin,\n1789) (Nyctibiiformes) but not Caprimulgus europaeus Linnaeus, 1758 (Caprimulgiformes), Podargus (originally Caprimulgus) strigoides (Latham, 1801) (Podargiformes), Aegotheles (originally Caprimulgus) cristatus (Shaw, 1790) (Aegotheliformes), and Apus (originally Hirundo) apus (Linnaeus, 1758) (Apodiformes).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

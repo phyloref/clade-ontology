@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -175,10 +175,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 696,
+            "curatorNotes": "Regnum ID: '696'",
             "label": "Notopalaeognathae",
-            "dwc:scientificNameAuthorship": "Sangster, George and Braun, Edward L. and Johansson, Ulf S. and Kimball, Rebecca T. and Mayr, Gerald and Suh, Alexander",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Sangster, George and Braun, Edward L. and Johansson, Ulf S. and Kimball, Rebecca T. and Mayr, Gerald and Suh, Alexander",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Parsimony and model-based analyses of indels in avian nuclear genes reveal congruent and incongruent phylogenetic signals",
@@ -338,8 +338,8 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The least inclusive crown clade containing Struthio americanus (now Rhea americana) Linnaeus, 1758 (Rheiformes), Tetrao major (now Tinamus major) Gmelin, 1789 (Tinamiformes) and Apteryx australis Shaw, 1813 (Apterygiformes).",
+            "definitionSource": [],
+            "definition": "The least inclusive crown clade containing Struthio americanus (now Rhea americana) Linnaeus, 1758 (Rheiformes), Tetrao major (now Tinamus major) Gmelin, 1789 (Tinamiformes) and Apteryx australis Shaw, 1813 (Apterygiformes).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

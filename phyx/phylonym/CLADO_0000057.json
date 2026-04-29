@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -195,10 +195,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 57,
+            "curatorNotes": "Regnum ID: '57'",
             "label": "Lamiales",
-            "dwc:scientificNameAuthorship": "Olmstead, R. G. and Tank, D. C.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Olmstead, R. G. and Tank, D. C.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Remarks on the affinities of Lythraceae and Vochyaceae.",
@@ -221,7 +221,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -283,7 +283,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The least inclusive clade containing Lamium album L. 1753, Olea europaea L. 1753, and Plocosperma buxifolium Benth. 1876.",
+            "definition": "The least inclusive clade containing Lamium album L. 1753, Olea europaea L. 1753, and Plocosperma buxifolium Benth. 1876.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

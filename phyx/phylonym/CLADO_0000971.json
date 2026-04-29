@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -44,10 +44,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 971,
+            "curatorNotes": "Regnum ID: '971'",
             "label": "Scorpaenoidei",
-            "dwc:scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Enumeratio specierum piscium hucusque in Archipelago indico observatarum, adjectis habitationibusque, ubi descriptiones earum recentiores reperiuntur, nec non speciebus Musei Bleekeriani Bengalensibus, Japonicis, Capensibus Tasmanicisque",
@@ -73,7 +73,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
@@ -107,7 +107,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Platycephalus indicus (Linnaeus 1758), Normanichthys crockeri Clark 1937, Sebastes norvegicus (Ascanius 1772), Cottus carolinae (Gill 1861b), and Zoarces elongatus Kner 1868.",
+            "definition": "The least inclusive crown clade that contains Platycephalus indicus (Linnaeus 1758), Normanichthys crockeri Clark 1937, Sebastes norvegicus (Ascanius 1772), Cottus carolinae (Gill 1861b), and Zoarces elongatus Kner 1868.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

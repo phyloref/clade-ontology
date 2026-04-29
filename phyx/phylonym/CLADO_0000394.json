@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -58,10 +58,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 394,
+            "curatorNotes": "Regnum ID: '394'",
             "label": "Nyctibiidae",
-            "dwc:scientificNameAuthorship": "Chen, Albert and Field, Daniel J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Chen, Albert and Field, Daniel J.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "A Review of Recent Attempts to Classify Birds",
@@ -85,7 +85,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic definitions for Caprimulgimorphae (Aves) and major constituent clades under the International Code of Phylogenetic Nomenclature",
@@ -129,7 +129,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Phyllaemulor (originally Nyctibius) bracteatus (Gould in Yarrell, 1846), Nyctibius (originally Caprimulgus) grandis (Gmelin, 1789), and Nyctibius (originally Caprimulgus) griseus (Gmelin, 1789).",
+            "definition": "The smallest crown clade containing Phyllaemulor (originally Nyctibius) bracteatus (Gould in Yarrell, 1846), Nyctibius (originally Caprimulgus) grandis (Gmelin, 1789), and Nyctibius (originally Caprimulgus) griseus (Gmelin, 1789).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

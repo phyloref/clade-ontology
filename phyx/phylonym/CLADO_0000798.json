@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -49,10 +49,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 798,
+            "curatorNotes": "Regnum ID: '798'",
             "label": "Machimosaurini",
-            "dwc:scientificNameAuthorship": "Jouve, S and Mennecart, B and Douteau, J and Jalil, N-E",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Jouve, S and Mennecart, B and Douteau, J and Jalil, N-E",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "The oldest durophagous teleosauroid (Crocodylomorpha, Thalattosuchia) from the lower Bathonian of central High Atlas, Morocco.",
@@ -102,7 +102,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "The oldest durophagous teleosauroid (Crocodylomorpha, Thalattosuchia) from the lower Bathonian of central High Atlas, Morocco.",
@@ -152,7 +152,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade within Teleosauroidea containing Machimosaurus hugii (von Meyer 1837) but not Neosteneosaurus edwardsi (Eudes-Deslongchamps 1868)",
+            "definition": "The largest clade within Teleosauroidea containing Machimosaurus hugii (von Meyer 1837) but not Neosteneosaurus edwardsi (Eudes-Deslongchamps 1868)",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

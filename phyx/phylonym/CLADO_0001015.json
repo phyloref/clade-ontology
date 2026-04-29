@@ -1,12 +1,12 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [],
     "phylorefs": [
         {
-            "regnumId": 1015,
+            "curatorNotes": "Regnum ID: '1015'",
             "label": "Metriorhynchoidea",
-            "dwc:scientificNameAuthorship": "Young, M T and Wilberg, E W and Johnson, M M and Herrera, Y and Andrade, M B and Brignon, A and Sachs, S and Abel, P and Foffa, D and Fernández, M and Vignaud, P and Cowgill, T and Brusatte, S L",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Young, M T and Wilberg, E W and Johnson, M M and Herrera, Y and Andrade, M B and Brignon, A and Sachs, S and Abel, P and Foffa, D and Fernández, M and Vignaud, P and Cowgill, T and Brusatte, S L",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "The tetrapod reptiles of Ceylon",
@@ -30,7 +30,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "The history, systematics, and nomenclature of Thalattosuchia (Archosauria: Crocodylomorpha)",
@@ -161,7 +161,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade within Thalattosuchia containing Metriorhynchus brevirostris (Holl, 1829) but not Teleosaurus cadomensis (Lamouroux, 1820) and Macrospondylus bollensis (Jäger, 1828).",
+            "definition": "The largest clade within Thalattosuchia containing Metriorhynchus brevirostris (Holl, 1829) but not Teleosaurus cadomensis (Lamouroux, 1820) and Macrospondylus bollensis (Jäger, 1828).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

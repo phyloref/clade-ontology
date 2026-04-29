@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -388,10 +388,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 160,
+            "curatorNotes": "Regnum ID: '160'",
             "label": "Lycopodiophyta",
-            "dwc:scientificNameAuthorship": "Cantino, P. D. and Donoghue, M. J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Cantino, P. D. and Donoghue, M. J.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "On the higher taxa of Embryobionta.",
@@ -433,7 +433,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -495,7 +495,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Lycopodium clavatum Linnaeus 1753, Huperzia selago (Linnaeus) Schrank & Martius 1829 (originally described as Lycopodium selago Linnaeus 1753), Isoetes lacustris Linnaeus 1753, and Selaginella apoda (Linnaeus) Spring 1840 (originally described as Lycopodium apodum Linnaeus 1753).",
+            "definition": "The smallest crown clade containing Lycopodium clavatum Linnaeus 1753, Huperzia selago (Linnaeus) Schrank & Martius 1829 (originally described as Lycopodium selago Linnaeus 1753), Isoetes lacustris Linnaeus 1753, and Selaginella apoda (Linnaeus) Spring 1840 (originally described as Lycopodium apodum Linnaeus 1753).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

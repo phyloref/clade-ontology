@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -177,10 +177,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 695,
+            "curatorNotes": "Regnum ID: '695'",
             "label": "Palaeognathae",
-            "dwc:scientificNameAuthorship": "Sangster, George and Braun, Edward L. and Johansson, Ulf S. and Kimball, Rebecca T. and May, Gerald and Suh, Alexander",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Sangster, George and Braun, Edward L. and Johansson, Ulf S. and Kimball, Rebecca T. and May, Gerald and Suh, Alexander",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "On the morphology and phylogeny of the Palaeognathae (Ratitae and Crypturi) and Neognathae (Carinatae).",
@@ -207,8 +207,8 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The least inclusive crown clade containing Tetrao major (now Tinamus major) Gmelin, 1789 (Tinamiformes) and Struthio camelus Linnaeus, 1758 (Struthioniformes).",
+            "definitionSource": [],
+            "definition": "The least inclusive crown clade containing Tetrao major (now Tinamus major) Gmelin, 1789 (Tinamiformes) and Struthio camelus Linnaeus, 1758 (Struthioniformes).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

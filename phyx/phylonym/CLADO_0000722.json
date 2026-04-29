@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -134,10 +134,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 722,
+            "curatorNotes": "Regnum ID: '722'",
             "label": "Saltasaurinae",
-            "dwc:scientificNameAuthorship": "Navarro, Bruno A. and Ghilardi, Aline M. and Aureliano, Tito and Díez Díaz, Verónica and Bandeira, Kamila L. N. and Cattaruzzi, André G. S. and Iori, Fabiano V. and Martine, Ariel M. and Carvalho, Alberto B. and Anelli, Luiz E. and Fernandes, Marcelo A. and Zaher, Hussam",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Navarro, Bruno A. and Ghilardi, Aline M. and Aureliano, Tito and Díez Díaz, Verónica and Bandeira, Kamila L. N. and Cattaruzzi, André G. S. and Iori, Fabiano V. and Martine, Ariel M. and Carvalho, Alberto B. and Anelli, Luiz E. and Fernandes, Marcelo A. and Zaher, Hussam",
+            "namePublishedIn": [
                 {
                     "type": "book_section",
                     "title": "Los Dinosaurios",
@@ -180,7 +180,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new nanoid-titanosaur from the Upper Cretaceous of Brazil",
@@ -310,7 +310,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive clade containing Saltasaurus loricatus Bonaparte & Powell 1980 but not Opisthocoelicaudia skarzynskii Borsuk Białynicka 1977.",
+            "definition": "The least inclusive clade containing Saltasaurus loricatus Bonaparte & Powell 1980 but not Opisthocoelicaudia skarzynskii Borsuk Białynicka 1977.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -159,10 +159,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1189,
+            "curatorNotes": "Regnum ID: '1189'",
             "label": "Pachycormiformes",
-            "dwc:scientificNameAuthorship": "Kanarkina, Alina and Zverkov, Nikolay G and Varenov, Dmitry V",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Kanarkina, Alina and Zverkov, Nikolay G and Varenov, Dmitry V",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A classification of fish-like vertebrates",
@@ -189,7 +189,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new species of the Late Jurassic pachycormiform fish Orthocormus and comments on the beta taxonomy and phylogenetic systematics of the Pachycormiformes",
@@ -243,7 +243,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade containing Pachycormus macropterus (Blainville, 1818), Asthenocormus titanius (Wagner, 1863), Bonnerichthys gladius (Cope, 1873), Euthynotus incognitus (de Blainville, 1818), and Protosphyraena ferox Leidy, 1857, but not Aspidorhynchus acutirostris (Blainville, 1818), Amia calva Linnaeus, 1766, or Elops saurus Linnaeus, 1766",
+            "definition": "The largest clade containing Pachycormus macropterus (Blainville, 1818), Asthenocormus titanius (Wagner, 1863), Bonnerichthys gladius (Cope, 1873), Euthynotus incognitus (de Blainville, 1818), and Protosphyraena ferox Leidy, 1857, but not Aspidorhynchus acutirostris (Blainville, 1818), Amia calva Linnaeus, 1766, or Elops saurus Linnaeus, 1766",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

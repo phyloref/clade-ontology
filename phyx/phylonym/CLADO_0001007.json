@@ -1,12 +1,12 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [],
     "phylorefs": [
         {
-            "regnumId": 1007,
+            "curatorNotes": "Regnum ID: '1007'",
             "label": "Wukongopterinae",
-            "dwc:scientificNameAuthorship": "Andres, Brian",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Andres, Brian",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A new darwinopteran pterosaur reveals arborealism and an opposed thumb",
@@ -131,7 +131,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic Taxonomy of the Pterosauria",
@@ -156,7 +156,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "Zhou et al. (2021) erected the Wukongopterinae with the same definition provided here, a type genus, some synapomorphies, and the putative content of Wukongopterus, Darwinopterus, and Cuspicephalus.  Cuspicephalus scarfi Martill and Etches 2013 is now recognized to be sister group to Germanodactylus, but otherwise the circumscription is the same.  This clade holds the lion share of the species of the Darwinoptera due to the large number species in Darwinopterus.  This is due to the four species referred to the genus Darwinopterus, but also two other species recovered within Darwinopterus that should be referred to that genus.  This has led to the unusual situation in which there are two D. linglongtaensis species: the original D. linglongtaensis Wang et al. 2010 but also “Archaeoistiodactylus” linglongtaensis Lü and Fucha, 2010.  To avoid confusion, “Archaeoistiodactylus” is currently maintained but in quotes.  The number of Darwinopterus species, and maybe Darwinoptera species, is almost certainly too large and some of these species should be synonymized.  \n\tThe Wukongopterinae varies in content but is consistent across the few phylogenetic analyses in which it appears (Cheng et al., 2016; Andres, 2021; Wei et al., 2021; Zhou et al., 2021; Zhou, 2023; Pêgas, 2024; Thomas et al., 2025).  The analyses that recover a paraphyletic Wukongopteridae result in a Wukongopterinae that just contains W. lii (Wang et al., 2017; Hone et al., 2024).",
+            "definition": "Zhou et al. (2021) erected the Wukongopterinae with the same definition provided here, a type genus, some synapomorphies, and the putative content of Wukongopterus, Darwinopterus, and Cuspicephalus.  Cuspicephalus scarfi Martill and Etches 2013 is now recognized to be sister group to Germanodactylus, but otherwise the circumscription is the same.  This clade holds the lion share of the species of the Darwinoptera due to the large number species in Darwinopterus.  This is due to the four species referred to the genus Darwinopterus, but also two other species recovered within Darwinopterus that should be referred to that genus.  This has led to the unusual situation in which there are two D. linglongtaensis species: the original D. linglongtaensis Wang et al. 2010 but also “Archaeoistiodactylus” linglongtaensis Lü and Fucha, 2010.  To avoid confusion, “Archaeoistiodactylus” is currently maintained but in quotes.  The number of Darwinopterus species, and maybe Darwinoptera species, is almost certainly too large and some of these species should be synonymized.  \n\tThe Wukongopterinae varies in content but is consistent across the few phylogenetic analyses in which it appears (Cheng et al., 2016; Andres, 2021; Wei et al., 2021; Zhou et al., 2021; Zhou, 2023; Pêgas, 2024; Thomas et al., 2025).  The analyses that recover a paraphyletic Wukongopteridae result in a Wukongopterinae that just contains W. lii (Wang et al., 2017; Hone et al., 2024).",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

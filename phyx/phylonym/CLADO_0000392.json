@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -212,10 +212,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 392,
+            "curatorNotes": "Regnum ID: '392'",
             "label": "Steatornis",
-            "dwc:scientificNameAuthorship": "Chen, Albert and Field, Daniel J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Chen, Albert and Field, Daniel J.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Voyage aux régions équinoxiales du nouveau continent",
@@ -255,7 +255,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic definitions for Caprimulgimorphae (Aves) and major constituent clades under the International Code of Phylogenetic Nomenclature",
@@ -299,7 +299,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The smallest clade containing Steatornis caripensis Humboldt, 1817.",
+            "definition": "The smallest clade containing Steatornis caripensis Humboldt, 1817.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

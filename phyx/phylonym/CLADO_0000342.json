@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -109,10 +109,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 342,
+            "curatorNotes": "Regnum ID: '342'",
             "label": "Nyctosauridae",
-            "dwc:scientificNameAuthorship": "Andres, Brian",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Andres, Brian",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "A manual of palaeontology for the use of students: with a general introduction on the principles of palæontology",
@@ -155,7 +155,7 @@
                     ]
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic Taxonomy of the Pterosauria",
@@ -180,7 +180,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "Least inclusive clade containing Nyctosaurus gracilis (Marsh, 1876) and Muzquizopteryx cohuilensis Frey et al., 2006.",
+            "definition": "Least inclusive clade containing Nyctosaurus gracilis (Marsh, 1876) and Muzquizopteryx cohuilensis Frey et al., 2006.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

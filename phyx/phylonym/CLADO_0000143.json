@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -95,10 +95,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 143,
+            "curatorNotes": "Regnum ID: '143'",
             "label": "Vampyroteuthis",
-            "dwc:scientificNameAuthorship": "Anderson, F.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Anderson, F.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Aus den Tiefen des Weltmeeres",
@@ -122,7 +122,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -174,7 +174,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The most inclusive crown clade containing Vampyroteuthis infernalis Chun 1903 but not Argonauta argo Linnaeus 1758 (Octopoda/Incirrata) and Stauroteuthis syrtensis Verrill 1879 (Octopoda /Cirrata) and Sepia officinalis Linnaeus 1758 (Decapodiformes).",
+            "definition": "The most inclusive crown clade containing Vampyroteuthis infernalis Chun 1903 but not Argonauta argo Linnaeus 1758 (Octopoda/Incirrata) and Stauroteuthis syrtensis Verrill 1879 (Octopoda /Cirrata) and Sepia officinalis Linnaeus 1758 (Decapodiformes).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

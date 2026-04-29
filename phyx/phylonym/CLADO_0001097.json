@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -733,11 +733,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1097,
+            "curatorNotes": "Regnum ID: '1097'",
             "label": "Neostegosauria",
-            "dwc:scientificNameAuthorship": "Sánchez-Fenollosa, Sergio and Cobos, Alberto",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Sánchez-Fenollosa, Sergio and Cobos, Alberto",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "New insights into the phylogeny and skull evolution of stegosaurian dinosaurs: An extraordinary cranium from the European Late Jurassic (Dinosauria: Stegosauria)",
@@ -777,7 +777,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The smallest clade containing Kentrosaurus aethiopicus Hennig, 1915a, Dacentrurus armatus Owen, 1875, and Stegosaurus stenops Marsh, 1887",
+            "definition": "The smallest clade containing Kentrosaurus aethiopicus Hennig, 1915a, Dacentrurus armatus Owen, 1875, and Stegosaurus stenops Marsh, 1887",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

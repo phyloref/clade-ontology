@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -206,11 +206,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 424,
+            "curatorNotes": "Regnum ID: '424'",
             "label": "Helheim",
-            "dwc:scientificNameAuthorship": "Shɨshkin, Yegor",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Shɨshkin, Yegor",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "The Smallest Known Heliozoan Microheliella maris geminga ssp. n. (Diaphoretickes, Helheim tax. n.—microhelids plus cryptists).",
@@ -256,7 +256,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "max ∇ (Palpitomonas bilix Yabuki & Ishida in pr. et al., 2010 & Hemiarma marina Shiratori et Ishida, 2016 & Goniomonas avonlea Kim et Archibald, 2013 ~ Yogsothoth knorrus Shɨshkin et Zlatogursky in pr. et al., 2018 ∨ Arabidopsis thaliana (L.) Heynhold in Holl et Heynhold, 1842 ∨ Glaucocystis bhattacharyae Takahashi et Nozaki in pr. et al., 2016 ∨ Rhodelphis marinus Tikhonenkov et al. in Gawryluk et Tikhonenkov et al., 2019).",
+            "definition": "max ∇ (Palpitomonas bilix Yabuki & Ishida in pr. et al., 2010 & Hemiarma marina Shiratori et Ishida, 2016 & Goniomonas avonlea Kim et Archibald, 2013 ~ Yogsothoth knorrus Shɨshkin et Zlatogursky in pr. et al., 2018 ∨ Arabidopsis thaliana (L.) Heynhold in Holl et Heynhold, 1842 ∨ Glaucocystis bhattacharyae Takahashi et Nozaki in pr. et al., 2016 ∨ Rhodelphis marinus Tikhonenkov et al. in Gawryluk et Tikhonenkov et al., 2019).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

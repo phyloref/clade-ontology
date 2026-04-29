@@ -1,13 +1,13 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [],
     "phylorefs": [
         {
-            "regnumId": 428,
+            "curatorNotes": "Regnum ID: '428'",
             "label": "Praelicaria",
-            "dwc:scientificNameAuthorship": "Penagos Zuluaga, Juan Carlos and van der Werff, Henk",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Penagos Zuluaga, Juan Carlos and van der Werff, Henk",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Resolved phylogenetic relationships in the Ocotea complex (Supraocotea) facilitate phylogenetic classification and studies of character evolution",
@@ -92,7 +92,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The maximum crown clade containing Aniba cinnamomiflora C.K. Allen, 1964, and Licaria martiniana (Mez) Kosterm.,1937, and Licaria pucheri (Ruiz & Pav.) Kosterm., 1937, and Licaria multinervis H.W. Kurz, 2000, and Mespilodaphne quixos (Lam.) Rohwer, 2019, but not Ocotea malcomberi van der Werff, 1996, not Umbellularia californica (Hook. & Arn.) Nutt., 1842, not Ocotea tomentella Sandwith, 1935, not Ocotea arenaria van der Werff, 2003, and not Aiouea saligna Meisn., 1864.",
+            "definition": "The maximum crown clade containing Aniba cinnamomiflora C.K. Allen, 1964, and Licaria martiniana (Mez) Kosterm.,1937, and Licaria pucheri (Ruiz & Pav.) Kosterm., 1937, and Licaria multinervis H.W. Kurz, 2000, and Mespilodaphne quixos (Lam.) Rohwer, 2019, but not Ocotea malcomberi van der Werff, 1996, not Umbellularia californica (Hook. & Arn.) Nutt., 1842, not Ocotea tomentella Sandwith, 1935, not Ocotea arenaria van der Werff, 2003, and not Aiouea saligna Meisn., 1864.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

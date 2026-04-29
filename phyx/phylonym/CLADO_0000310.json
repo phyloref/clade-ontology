@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -101,10 +101,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 310,
+            "curatorNotes": "Regnum ID: '310'",
             "label": "Raeticodactylidae",
-            "dwc:scientificNameAuthorship": "Andres, Brian",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Andres, Brian",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "The Earliest Pterodactyloid and the Origin of the Group",
@@ -157,7 +157,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic Taxonomy of the Pterosauria",
@@ -181,7 +181,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "Most inclusive clade containing Raeticodactylus filisurensis Stecher 2008, but not Eudimorphodon ranzii Zambelli 1973.",
+            "definition": "Most inclusive clade containing Raeticodactylus filisurensis Stecher 2008, but not Eudimorphodon ranzii Zambelli 1973.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

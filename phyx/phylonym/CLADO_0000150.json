@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -65,10 +65,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 150,
+            "curatorNotes": "Regnum ID: '150'",
             "label": "Phragmoplastophyta",
-            "dwc:scientificNameAuthorship": "Hall, J. D. and McCourt, R. M. and Delwiche, C. F. and Mishler, B. D. and Karol, K. G.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Hall, J. D. and McCourt, R. M. and Delwiche, C. F. and Mishler, B. D. and Karol, K. G.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "The tree of life.",
@@ -99,7 +99,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -188,7 +188,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Arabidopsis thaliana (Linnaeus) Heynh. 1842 (Embryophyta), Chara vulgaris Linnaeus 1753 (Charophyceae), Coleochaete scutata Brébisson 1844 (Coleochaetophyceae), and Zygnema cruciatum (Vaucher) C. Agardh 1817 (Zygnematophyceae).",
+            "definition": "The crown clade originating in the most recent common ancestor of Arabidopsis thaliana (Linnaeus) Heynh. 1842 (Embryophyta), Chara vulgaris Linnaeus 1753 (Charophyceae), Coleochaete scutata Brébisson 1844 (Coleochaetophyceae), and Zygnema cruciatum (Vaucher) C. Agardh 1817 (Zygnematophyceae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

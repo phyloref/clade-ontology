@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -38,10 +38,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1079,
+            "curatorNotes": "Regnum ID: '1079'",
             "label": "Acipenseridae",
-            "dwc:scientificNameAuthorship": "Brownstein, Chase D. and Near, Thomas J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Brownstein, Chase D. and Near, Thomas J.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Saggio di una distribuzione metodica degli animali vertebrati",
@@ -67,7 +67,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Towards a phylogenetic taxonomy of sturgeons (Acipenseriformes: Acipenseridae)",
@@ -101,7 +101,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Acipenser sturio Linnaeus 1758, Sinosturio dabryanus (Duméril 1869), and Huso huso (Linnaeus 1758). This is a minimum-crown-clade definition.",
+            "definition": "The least inclusive crown clade that contains Acipenser sturio Linnaeus 1758, Sinosturio dabryanus (Duméril 1869), and Huso huso (Linnaeus 1758). This is a minimum-crown-clade definition.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

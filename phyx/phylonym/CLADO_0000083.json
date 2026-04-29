@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -88,10 +88,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 83,
+            "curatorNotes": "Regnum ID: '83'",
             "label": "Pan-Tracheophyta",
-            "dwc:scientificNameAuthorship": "Cantino, P. D. and Donoghue, M. J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Cantino, P. D. and Donoghue, M. J.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Towards a phylogenetic nomenclature of Tracheophyta.",
@@ -181,7 +181,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -243,7 +243,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The total clade of the crown clade Tracheophyta. This is a crown-based total-clade definition.  Abbreviated definition:  total ∇ of Tracheophyta.",
+            "definition": "The total clade of the crown clade Tracheophyta. This is a crown-based total-clade definition.  Abbreviated definition:  total ∇ of Tracheophyta.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

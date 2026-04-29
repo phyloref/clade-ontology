@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -44,11 +44,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 957,
+            "curatorNotes": "Regnum ID: '957'",
             "label": "Blennioidei",
-            "dwc:scientificNameAuthorship": "Thacker, C. E. and Near, T. J.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Thacker, C. E. and Near, T. J.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
@@ -82,7 +82,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Lepidonectes corallicola (Kendall and Radcliffe 1912), Dactyloscopus lacteus (Myers and Wade 1946), and Gibbonsia metzi Hubbs 1927.",
+            "definition": "The least inclusive crown clade that contains Lepidonectes corallicola (Kendall and Radcliffe 1912), Dactyloscopus lacteus (Myers and Wade 1946), and Gibbonsia metzi Hubbs 1927.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -164,10 +164,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 120,
+            "curatorNotes": "Regnum ID: '120'",
             "label": "Diapsida",
-            "dwc:scientificNameAuthorship": "Gauthier, J. A. and de Queiroz, K.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Gauthier, J. A. and de Queiroz, K.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "On the primary division of the Reptilia into two sub-classes, Synapsida and Diapsida.",
@@ -195,7 +195,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -256,7 +256,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The clade characterized by the apomorphy ‘upper and lower temporal fenestrae’, as inherited by Sphenodon (Hatteria) punctatus (Gray 1842) (Rhynchocephalia).",
+            "definition": "The clade characterized by the apomorphy ‘upper and lower temporal fenestrae’, as inherited by Sphenodon (Hatteria) punctatus (Gray 1842) (Rhynchocephalia).",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

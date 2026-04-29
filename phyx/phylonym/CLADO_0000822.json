@@ -1,13 +1,13 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [],
     "phylorefs": [
         {
-            "regnumId": 822,
+            "curatorNotes": "Regnum ID: '822'",
             "label": "Eutapejaria",
-            "dwc:scientificNameAuthorship": "Pêgas, Rodrigo V. and Zhou, Xuanyu and Jin, Xingsheng and Wang, Kai and Ma, Waisum",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Pêgas, Rodrigo V. and Zhou, Xuanyu and Jin, Xingsheng and Wang, Kai and Ma, Waisum",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A taxonomic revision of the Sinopterus complex (Pterosauria, Tapejaridae) from the Early Cretaceous Jehol Biota, with the new genus Huaxiadraco",
@@ -70,7 +70,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The most inclusive clade containing Tapejara wellnhoferi Kellner, 1989 but not Caupedactylus ybaka Kellner, 2013.",
+            "definition": "The most inclusive clade containing Tapejara wellnhoferi Kellner, 1989 but not Caupedactylus ybaka Kellner, 2013.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

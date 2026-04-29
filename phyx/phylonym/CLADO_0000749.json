@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -241,10 +241,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 749,
+            "curatorNotes": "Regnum ID: '749'",
             "label": "Pachycephalosaurini",
-            "dwc:scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Revision of the dinosaur Stegoceras Lambe (Ornithischia, Pachycephalosauridae)",
@@ -271,7 +271,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
@@ -350,7 +350,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade containing Pachycephalosaurus wyomingensis (Gilmore, 1931) but not Prenocephale prenes Marya\u0001nska & Osmólska, 1974 and Sphaerotholus goodwini Williamson & Carr, 2003.",
+            "definition": "The largest clade containing Pachycephalosaurus wyomingensis (Gilmore, 1931) but not Prenocephale prenes Marya\u0001nska & Osmólska, 1974 and Sphaerotholus goodwini Williamson & Carr, 2003.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -73,10 +73,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 119,
+            "curatorNotes": "Regnum ID: '119'",
             "label": "Cyanidiales",
-            "dwc:scientificNameAuthorship": "Saunders, G. W.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Saunders, G. W.",
+            "namePublishedIn": [
                 {
                     "type": "book_section",
                     "title": "Botanik. Bind II. Systematisk botanik Nr. 2. I Kommission hos Munksgaard",
@@ -126,7 +126,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -179,7 +179,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The largest crown clade containing Cyanidium caldarium (J. Tilden) Geitler 1933 and Galdieria sulphuraria (Galdieri) Merola in Merola et al. 1981 but not Compsopogon caeruleus (C. Agardh) Montagne 1846.",
+            "definition": "The largest crown clade containing Cyanidium caldarium (J. Tilden) Geitler 1933 and Galdieria sulphuraria (Galdieri) Merola in Merola et al. 1981 but not Compsopogon caeruleus (C. Agardh) Montagne 1846.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

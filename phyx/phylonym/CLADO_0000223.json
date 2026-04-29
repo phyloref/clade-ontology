@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -70,10 +70,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 223,
+            "curatorNotes": "Regnum ID: '223'",
             "label": "Monotremata",
-            "dwc:scientificNameAuthorship": "Rowe, T. B. and Bhullar, B. A. S. and Wallace, R. V. S.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Rowe, T. B. and Bhullar, B. A. S. and Wallace, R. V. S.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Enchiridion generum animalium.",
@@ -95,7 +95,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -166,7 +166,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Tachyglossus aculeatus (Shaw 1792) and Ornithorhynchus anatinus (Shaw 1799).",
+            "definition": "The crown clade originating in the most recent common ancestor of Tachyglossus aculeatus (Shaw 1792) and Ornithorhynchus anatinus (Shaw 1799).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

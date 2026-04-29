@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -231,10 +231,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 634,
+            "curatorNotes": "Regnum ID: '634'",
             "label": "Neoceratopsia",
-            "dwc:scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Phylogeny of the bird-hipped dinosaurs",
@@ -261,7 +261,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
@@ -340,7 +340,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade containing Triceratops horridus Marsh, 1889 but not Chaoyangsaurus youngi Zhao, Cheng & Xu, 1999 and Psittacosaurus mongoliensis Osborn, 1923",
+            "definition": "The largest clade containing Triceratops horridus Marsh, 1889 but not Chaoyangsaurus youngi Zhao, Cheng & Xu, 1999 and Psittacosaurus mongoliensis Osborn, 1923",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

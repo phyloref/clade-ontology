@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -137,11 +137,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 209,
+            "curatorNotes": "Regnum ID: '209'",
             "label": "Pan-Actinopteri",
-            "dwc:scientificNameAuthorship": "Moore, J. A. and Near, T. J.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Moore, J. A. and Near, T. J.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -203,7 +203,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The total clade of the crown clade Actinopteri.",
+            "definition": "The total clade of the crown clade Actinopteri.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

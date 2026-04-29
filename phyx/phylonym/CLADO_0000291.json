@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -64,10 +64,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 291,
+            "curatorNotes": "Regnum ID: '291'",
             "label": "Scandentia",
-            "dwc:scientificNameAuthorship": "Sargis, E. J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Sargis, E. J.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Die Säugethiere in Abbildungen nach der Natur.",
@@ -91,7 +91,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -144,7 +144,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Ptilocercus lowii Gray 1848 and Tupaia (originally Sorex) glis (Diard 1820).",
+            "definition": "The crown clade originating in the most recent common ancestor of Ptilocercus lowii Gray 1848 and Tupaia (originally Sorex) glis (Diard 1820).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

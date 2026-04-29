@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -134,11 +134,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 225,
+            "curatorNotes": "Regnum ID: '225'",
             "label": "Pan-Monotremata",
-            "dwc:scientificNameAuthorship": "Rowe, T. B. and Bhullar, B. A. and Wallace, R. V.S.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Rowe, T. B. and Bhullar, B. A. and Wallace, R. V.S.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -209,7 +209,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The total clade of the crown clade Monotremata.",
+            "definition": "The total clade of the crown clade Monotremata.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

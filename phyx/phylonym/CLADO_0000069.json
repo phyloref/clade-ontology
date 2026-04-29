@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -257,10 +257,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 69,
+            "curatorNotes": "Regnum ID: '69'",
             "label": "Musci",
-            "dwc:scientificNameAuthorship": "Mishler, B. D. and Newton, A. E. and Bell, N. and Crandall-Stotler, B. and Stotler, R.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Mishler, B. D. and Newton, A. E. and Bell, N. and Crandall-Stotler, B. and Stotler, R.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Genera plantarum.",
@@ -284,7 +284,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -370,7 +370,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The largest crown clade containing Sphagnum palustre L. 1753 but not Marchantia polymorpha L. 1753 (Hepaticae), Anthoceros punctatus L. 1753 (Anthocerotae), and Zea mays L. 1753 (Tracheophyta).",
+            "definition": "The largest crown clade containing Sphagnum palustre L. 1753 but not Marchantia polymorpha L. 1753 (Hepaticae), Anthoceros punctatus L. 1753 (Anthocerotae), and Zea mays L. 1753 (Tracheophyta).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

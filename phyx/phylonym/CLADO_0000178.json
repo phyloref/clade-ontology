@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -184,10 +184,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 178,
+            "curatorNotes": "Regnum ID: '178'",
             "label": "Trichoptera",
-            "dwc:scientificNameAuthorship": "Holzenthal, R. W. and Kjer, K. M.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Holzenthal, R. W. and Kjer, K. M.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Strepsiptera, a new order of insects proposed; and the characters of the order, with those of its genera, laid down.",
@@ -213,7 +213,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -275,7 +275,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Phyrganea grandis Linnaeus 1758 (Integripalpia, Plenitentoria [=Limnephiloidea], Phryganeidae) and all extant species that inherited both apneustic aquatic larval stages and the prelabio-hypopharyngeal lobe forming a “haustellum” in adults synapomorphic with those in P. grandis Linnaeus.",
+            "definition": "The crown clade originating in the most recent common ancestor of Phyrganea grandis Linnaeus 1758 (Integripalpia, Plenitentoria [=Limnephiloidea], Phryganeidae) and all extant species that inherited both apneustic aquatic larval stages and the prelabio-hypopharyngeal lobe forming a “haustellum” in adults synapomorphic with those in P. grandis Linnaeus.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

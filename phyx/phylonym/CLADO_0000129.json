@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -132,10 +132,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 129,
+            "curatorNotes": "Regnum ID: '129'",
             "label": "Bangiales",
-            "dwc:scientificNameAuthorship": "Saunders, G. W.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Saunders, G. W.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Die neuern Algensysteme und Versuch zur Begründung eines eigenen Systems der Algae und Florideen.",
@@ -158,7 +158,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -211,7 +211,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The largest crown clade containing Bangia fuscopurpurea (Dillwyn) Lyngbye 1819 but not Palmaria palmata (Linnaeus) Kuntze 1891.",
+            "definition": "The largest crown clade containing Bangia fuscopurpurea (Dillwyn) Lyngbye 1819 but not Palmaria palmata (Linnaeus) Kuntze 1891.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

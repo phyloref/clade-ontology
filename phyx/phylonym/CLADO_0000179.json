@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -37,11 +37,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 179,
+            "curatorNotes": "Regnum ID: '179'",
             "label": "Pan-Acrodonta",
-            "dwc:scientificNameAuthorship": "Smith, Krister T.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Smith, Krister T.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -94,7 +94,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The total clade of the crown clade Acrodonta.",
+            "definition": "The total clade of the crown clade Acrodonta.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

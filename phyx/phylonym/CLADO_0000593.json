@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -111,10 +111,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 593,
+            "curatorNotes": "Regnum ID: '593'",
             "label": "Aralosaurini",
-            "dwc:scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Diversity, Relationships, and Biogeography of the Lambeosaurine Dinosaurs from the European Archipelago, with Description of the New Aralosaurin Canardia garonnensis",
@@ -165,7 +165,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
@@ -244,7 +244,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade containing Aralosaurus tuberiferus Rozhdestvensky, 1968 and Canardia garonnensis Prieto-Márquez et al., 2013 but not Lambeosaurus lambei Parks, 1923, Parasaurolophus walkeri Parks, 1922, and Tsintaosaurus spinorhinus Young, 1958",
+            "definition": "The largest clade containing Aralosaurus tuberiferus Rozhdestvensky, 1968 and Canardia garonnensis Prieto-Márquez et al., 2013 but not Lambeosaurus lambei Parks, 1923, Parasaurolophus walkeri Parks, 1922, and Tsintaosaurus spinorhinus Young, 1958",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

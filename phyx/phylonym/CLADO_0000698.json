@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -165,12 +165,12 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 698,
+            "curatorNotes": "Regnum ID: '698'",
             "label": "Dinocrypturi",
-            "dwc:scientificNameAuthorship": "Sangster, George and Braun, Edward L and Johansson, Ulf S and Kimball, Rebecca T and Mayr, Gerald and Suh, Alexander",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The smallest clade containing Tetrao major (now Tinamus major) Gmelin, 1789 (Tinamiformes) and Dinornis Novae-Zealandiae (now Dinornis novaezealandiae) Owen, 1843 (Dinornithiformes).",
+            "scientificNameAuthorship": "Sangster, George and Braun, Edward L and Johansson, Ulf S and Kimball, Rebecca T and Mayr, Gerald and Suh, Alexander",
+            "namePublishedIn": [],
+            "definitionSource": [],
+            "definition": "The smallest clade containing Tetrao major (now Tinamus major) Gmelin, 1789 (Tinamiformes) and Dinornis Novae-Zealandiae (now Dinornis novaezealandiae) Owen, 1843 (Dinornithiformes).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

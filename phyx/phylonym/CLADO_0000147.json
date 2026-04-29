@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -293,11 +293,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 147,
+            "curatorNotes": "Regnum ID: '147'",
             "label": "Pan-Neoarticulata",
-            "dwc:scientificNameAuthorship": "Carlson, S. J. and Cohen, B. L.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Carlson, S. J. and Cohen, B. L.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -359,7 +359,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The total clade of the crown clade Neoarticulata.",
+            "definition": "The total clade of the crown clade Neoarticulata.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

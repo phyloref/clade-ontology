@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -444,10 +444,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 650,
+            "curatorNotes": "Regnum ID: '650'",
             "label": "Saurolophinae",
-            "dwc:scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Panélope and Evans, David C.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Panélope and Evans, David C.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Corythosaurus casuarius, a new crested dinosaur from the Belly River Cretaceous, with provisional classification of the family Trachodontidae",
@@ -473,7 +473,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
@@ -552,7 +552,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade containing Saurolophus osborni Brown, 1912 but not Lambeosaurus lambei Parks, 1923, provided that it does not include Hadrosaurus foulkii Leidy, 1858.",
+            "definition": "The largest clade containing Saurolophus osborni Brown, 1912 but not Lambeosaurus lambei Parks, 1923, provided that it does not include Hadrosaurus foulkii Leidy, 1858.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

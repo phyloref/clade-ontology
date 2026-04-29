@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -133,10 +133,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1210,
+            "curatorNotes": "Regnum ID: '1210'",
             "label": "Coelognathosuchia",
-            "dwc:scientificNameAuthorship": "Jouve, Stéphane and Young, Mark T. and Hastings, Alexander K. and Salih, Khalafallah",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Jouve, Stéphane and Young, Mark T. and Hastings, Alexander K. and Salih, Khalafallah",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A large pholidosaurid in the Phu Kradung Formation of north-eastern Thailand",
@@ -192,7 +192,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "The systematics and nomenclature of Tethysuchia (Archosauria, Crocodylomorpha) under the International Code of Phylogenetic Nomenclature",
@@ -242,7 +242,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "Coelognathosuchia is the largest clade within Crocodylomorpha containing Sunosuchus junggarensis Wu et al. 1996, Goniopholis simus, Pholidosaurus schaumburgensis von Meyer 1841, and Dyrosaurus phosphaticus (Thomas 1893), but not Bernissartia fagesii Dollo 1883, Crocodylus niloticus (Laurenti 1768), and Thalattosuchus superciliosus (Blainville 1853).",
+            "definition": "Coelognathosuchia is the largest clade within Crocodylomorpha containing Sunosuchus junggarensis Wu et al. 1996, Goniopholis simus, Pholidosaurus schaumburgensis von Meyer 1841, and Dyrosaurus phosphaticus (Thomas 1893), but not Bernissartia fagesii Dollo 1883, Crocodylus niloticus (Laurenti 1768), and Thalattosuchus superciliosus (Blainville 1853).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

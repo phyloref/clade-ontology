@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -319,11 +319,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1231,
+            "curatorNotes": "Regnum ID: '1231'",
             "label": "Pan-Perissodactyla",
-            "dwc:scientificNameAuthorship": "Welker, Frido and Collins, Matthew J. and Thomas, Jessica A. and Wadsley, Marc and Brace, Selina and Cappellini, Enrico and Turvey, Samuel T. and Reguero, Marcelo and Gelfo, Javier N. and Kramarz, Alejandro and Burger, Joachim and Thomas-Oates, Jane and Ashford, David A. and Ashton, Peter D. and Roswell, Keri and Porter, Duncan M. and Kessler, Benedikt and Fischer, Roman and Baessmann, Carsten and Kaspar, Stephanie and Olsen, Jesper V. and Kiley, Patrick and Elliott, James  A. and Kelstrup, Chrstian  D. and Mullin, Victoria and Hofreiter, Michael and Willerslev, Eske and Hublin, Jean-Jaques and Orlando, Ludovico and Barnes, Ian and MacPhee, Ross D.E.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Welker, Frido and Collins, Matthew J. and Thomas, Jessica A. and Wadsley, Marc and Brace, Selina and Cappellini, Enrico and Turvey, Samuel T. and Reguero, Marcelo and Gelfo, Javier N. and Kramarz, Alejandro and Burger, Joachim and Thomas-Oates, Jane and Ashford, David A. and Ashton, Peter D. and Roswell, Keri and Porter, Duncan M. and Kessler, Benedikt and Fischer, Roman and Baessmann, Carsten and Kaspar, Stephanie and Olsen, Jesper V. and Kiley, Patrick and Elliott, James  A. and Kelstrup, Chrstian  D. and Mullin, Victoria and Hofreiter, Michael and Willerslev, Eske and Hublin, Jean-Jaques and Orlando, Ludovico and Barnes, Ian and MacPhee, Ross D.E.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Ancient proteins resolve the evolutionary history of Darwin’s South American ungulates",
@@ -611,7 +611,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The total clade is composed of Perissodactyla and all taxa that share a more recent common ancestor with Perissodactyla than with any extant organism not included in Perissodactyla.",
+            "definition": "The total clade is composed of Perissodactyla and all taxa that share a more recent common ancestor with Perissodactyla than with any extant organism not included in Perissodactyla.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -182,10 +182,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 39,
+            "curatorNotes": "Regnum ID: '39'",
             "label": "Enteropneusta",
-            "dwc:scientificNameAuthorship": "Cameron, C. B.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Cameron, C. B.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Grundzüge der vergleichenden Anatomie. 2. umgearb. Auflage. Mit 319 Holzschnitten.",
@@ -207,7 +207,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -268,7 +268,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Ptychodera flava Eschscholtz 1825, Harrimania kupfferi von Willemoes-Suhm 1871, Saccoglossus kowalevskii Agassiz 1873, Glandiceps hacksi Marion 1885, Stereobalanus canadensis Spengel 1893, Protoglossus koehleri Caullery and Mesnil 1900, Xenopleura vivipara Gilchrist 1925, Saxipendium coronatum Woodwick & Sensenbaugh 1985, and Tergivelum baldwinae Holland et al. 2009.",
+            "definition": "The crown clade originating in the most recent common ancestor of Ptychodera flava Eschscholtz 1825, Harrimania kupfferi von Willemoes-Suhm 1871, Saccoglossus kowalevskii Agassiz 1873, Glandiceps hacksi Marion 1885, Stereobalanus canadensis Spengel 1893, Protoglossus koehleri Caullery and Mesnil 1900, Xenopleura vivipara Gilchrist 1925, Saxipendium coronatum Woodwick & Sensenbaugh 1985, and Tergivelum baldwinae Holland et al. 2009.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

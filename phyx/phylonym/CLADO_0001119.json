@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -247,10 +247,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1119,
+            "curatorNotes": "Regnum ID: '1119'",
             "label": "Hyoscyameae",
-            "dwc:scientificNameAuthorship": "Olmstead, Richard G. and Särkinen, Tiina",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Olmstead, Richard G. and Särkinen, Tiina",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Genera plantarum secundum ordines naturales deposita",
@@ -274,7 +274,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new phylogeny and phylogenetic classification for Solanaceae",
@@ -391,7 +391,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The mimimum crown clade containing Atropa bella-donna Linnaeus 1753 and Hyoscyamus niger Linnaeus 1753.",
+            "definition": "The mimimum crown clade containing Atropa bella-donna Linnaeus 1753 and Hyoscyamus niger Linnaeus 1753.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

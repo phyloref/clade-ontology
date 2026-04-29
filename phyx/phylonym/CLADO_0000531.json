@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -50,10 +50,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 531,
+            "curatorNotes": "Regnum ID: '531'",
             "label": "Ctenochelyidae",
-            "dwc:scientificNameAuthorship": "Joyce, Walter G. and Anquetin, Jérémy and Cadena, Edwin-Alberto and Claude, Julien and Danilov, Igor G. and Evers, Serjoscha W. and Ferreira, Gabriel S. and Gentry, Andrew D. and Georgalis, Georgios L. and Lyson, Tyler R. and Pérez-García, Adán and Rabi, Márton and Sterli, Juliana and Vitek, Natasha S. and Parham, James  F.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Joyce, Walter G. and Anquetin, Jérémy and Cadena, Edwin-Alberto and Claude, Julien and Danilov, Igor G. and Evers, Serjoscha W. and Ferreira, Gabriel S. and Gentry, Andrew D. and Georgalis, Georgios L. and Lyson, Tyler R. and Pérez-García, Adán and Rabi, Márton and Sterli, Juliana and Vitek, Natasha S. and Parham, James  F.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "The oldest true sea turtle of the world, Oertelia gigantea (Oertel, 1914) n. gen. from the Aptian of Kastendamm near Hanover, Germany",
@@ -96,7 +96,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A nomenclature for fossil and living turtles using phylogenetically defined clade names",
@@ -248,7 +248,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest extinct clade containing Ctenochelys (orig. Toxochelys) stenoporus (Hay, 1905b), but not the cheloniid Chelonia (orig. Testudo) mydas (Linnaeus, 1758), the dermochelyid Dermochelys (orig. Testudo) coriacea (Vandelli, 1761), the pan-chelonioid Toxochelys latiremis Cope, 1873b, or Protostega gigas Cope, 1872b.",
+            "definition": "The largest extinct clade containing Ctenochelys (orig. Toxochelys) stenoporus (Hay, 1905b), but not the cheloniid Chelonia (orig. Testudo) mydas (Linnaeus, 1758), the dermochelyid Dermochelys (orig. Testudo) coriacea (Vandelli, 1761), the pan-chelonioid Toxochelys latiremis Cope, 1873b, or Protostega gigas Cope, 1872b.",
             "internalSpecifiers": [],
             "externalSpecifiers": [
                 {

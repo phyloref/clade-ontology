@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -483,10 +483,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 43,
+            "curatorNotes": "Regnum ID: '43'",
             "label": "Euphyllophyta",
-            "dwc:scientificNameAuthorship": "Cantino, P.  D. and Donoghue, M. J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Cantino, P.  D. and Donoghue, M. J.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "The tree of life—a phylogenetic classification.",
@@ -517,7 +517,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -579,7 +579,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The largest crown clade containing Ginkgo biloba Linnaeus 1771 (Spermatophyta) and Pteridium aquilinum (Linnaeus) Kuhn 1879 (originally described as Pteris aquilina Linnaeus 1753) (Leptosporangiatae), but not Selaginella apoda (Linnaeus) Spring 1840 (originally described as Lycopodium apodum Linnaeus 1753) (Lycopodiophyta).",
+            "definition": "The largest crown clade containing Ginkgo biloba Linnaeus 1771 (Spermatophyta) and Pteridium aquilinum (Linnaeus) Kuhn 1879 (originally described as Pteris aquilina Linnaeus 1753) (Leptosporangiatae), but not Selaginella apoda (Linnaeus) Spring 1840 (originally described as Lycopodium apodum Linnaeus 1753) (Lycopodiophyta).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

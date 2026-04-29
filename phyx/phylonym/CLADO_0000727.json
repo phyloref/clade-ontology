@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -134,10 +134,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 727,
+            "curatorNotes": "Regnum ID: '727'",
             "label": "Lirainosaurinae",
-            "dwc:scientificNameAuthorship": "Navarro, Bruno A. and Ghilardi, Aline M. and Aureliano, Tito and Díez Díaz, Verónica and Bandeira, Kamila L. N. and Cattaruzzi, André G. S. and Iori, Fabiano V. and Martine, Ariel M. and Carvalho, Alberto B. and Anelli, Luiz E. and Fernandes, Marcelo A. and Zaher, Hussam",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Navarro, Bruno A. and Ghilardi, Aline M. and Aureliano, Tito and Díez Díaz, Verónica and Bandeira, Kamila L. N. and Cattaruzzi, André G. S. and Iori, Fabiano V. and Martine, Ariel M. and Carvalho, Alberto B. and Anelli, Luiz E. and Fernandes, Marcelo A. and Zaher, Hussam",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "The titanosaurian dinosaur Atsinganosaurus velauciensis (Sauropoda) from the Upper Cretaceous of southern France: New materials, phylogenetic affinities, and palaeobiogeographical implications",
@@ -226,7 +226,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new nanoid-titanosaur from the Upper Cretaceous of Brazil",
@@ -356,7 +356,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The node encompassing the most recent common ancestor of Ampelosaurus atacis Le Loeuff 1995, Lirainosaurus astibiae Sanz et al. 1999, and all of its descendants.",
+            "definition": "The node encompassing the most recent common ancestor of Ampelosaurus atacis Le Loeuff 1995, Lirainosaurus astibiae Sanz et al. 1999, and all of its descendants.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

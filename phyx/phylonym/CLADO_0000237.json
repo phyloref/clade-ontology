@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -64,11 +64,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 237,
+            "curatorNotes": "Regnum ID: '237'",
             "label": "Apo-Chiroptera",
-            "dwc:scientificNameAuthorship": "Cirranello, A. L. and Simmons, N. B. and Gunnell, G. F.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Cirranello, A. L. and Simmons, N. B. and Gunnell, G. F.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -139,7 +139,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The clade for which the unique modifications of the hand, forearm, humerus, scapula, hip, and ankle (see Diagnostic Apomorphies) associated with flapping flight, as inherited by Vespertilio murinus Linnaeus 1758, are apomorphies.",
+            "definition": "The clade for which the unique modifications of the hand, forearm, humerus, scapula, hip, and ankle (see Diagnostic Apomorphies) associated with flapping flight, as inherited by Vespertilio murinus Linnaeus 1758, are apomorphies.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

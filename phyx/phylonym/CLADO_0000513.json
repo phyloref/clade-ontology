@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -31,10 +31,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 513,
+            "curatorNotes": "Regnum ID: '513'",
             "label": "Pan-Testudona",
-            "dwc:scientificNameAuthorship": "Joyce, Walter G. and Anquetin, Jérémy and Cadena, Edwin-Alberto and Claude, Julien and Danilov, Igor G. and Evers, Serjoscha W. and Ferreira, Gabriel S. and Gentry, Andrew D. and Georgalis, Georgios L. and Lyson, Tyler R. and Pérez-García, Adán and Rabi, Márton and Sterli, Juliana and Vitek, Natasha S. and Parham, James  F.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Joyce, Walter G. and Anquetin, Jérémy and Cadena, Edwin-Alberto and Claude, Julien and Danilov, Igor G. and Evers, Serjoscha W. and Ferreira, Gabriel S. and Gentry, Andrew D. and Georgalis, Georgios L. and Lyson, Tyler R. and Pérez-García, Adán and Rabi, Márton and Sterli, Juliana and Vitek, Natasha S. and Parham, James  F.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "The phylogeny of Mediterranean tortoises and their close relatives based on complete mitochondrial genome sequences from museum specimens",
@@ -113,7 +113,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A nomenclature for fossil and living turtles using phylogenetically defined clade names",
@@ -265,7 +265,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The total clade of crown clade Testudona.",
+            "definition": "The total clade of crown clade Testudona.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

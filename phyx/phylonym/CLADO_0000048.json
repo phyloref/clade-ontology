@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -733,10 +733,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 48,
+            "curatorNotes": "Regnum ID: '48'",
             "label": "Gunneridae",
-            "dwc:scientificNameAuthorship": "Soltis, D. E. and Soltis, P. S. and Judd, W. S.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Soltis, D. E. and Soltis, P. S. and Judd, W. S.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Towards a phylogenetic nomenclature of Tracheophyta.",
@@ -781,7 +781,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -852,7 +852,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Gunnera perpensa L. 1767 (Gunnerales), Viscum album L. 1753 (Santalales), Berberidopsis corallina Hook. f. 1862 (Berberidopsidales), Stellaria media (L.) Cirillo 1784 (Caryophyllales), Dillenia indica L. 1753 (Dilleniaceae), Saxifraga mertensiana Bong. 1835 (Saxifragales), Vitis aestivalis Michx. 1803 (Vitaceae), Photinia x fraseri Dress 1961 (Rosidae), and Helianthus annuus L. 1753 (Asteridae).",
+            "definition": "The smallest crown clade containing Gunnera perpensa L. 1767 (Gunnerales), Viscum album L. 1753 (Santalales), Berberidopsis corallina Hook. f. 1862 (Berberidopsidales), Stellaria media (L.) Cirillo 1784 (Caryophyllales), Dillenia indica L. 1753 (Dilleniaceae), Saxifraga mertensiana Bong. 1835 (Saxifragales), Vitis aestivalis Michx. 1803 (Vitaceae), Photinia x fraseri Dress 1961 (Rosidae), and Helianthus annuus L. 1753 (Asteridae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

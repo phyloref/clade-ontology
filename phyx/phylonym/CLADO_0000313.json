@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -108,10 +108,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 313,
+            "curatorNotes": "Regnum ID: '313'",
             "label": "Novialoidea",
-            "dwc:scientificNameAuthorship": "Andres, Brian",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Andres, Brian",
+            "namePublishedIn": [
                 {
                     "type": "book_section",
                     "title": "Evolution and Palaeobiology of Pterosaurs",
@@ -163,7 +163,7 @@
                     ]
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic Taxonomy of the Pterosauria",
@@ -188,7 +188,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "Least inclusive clade containing Campylognathoides zitteli (Plieninger, 1894) and Quetzalcoatlus northropi Lawson 1975.",
+            "definition": "Least inclusive clade containing Campylognathoides zitteli (Plieninger, 1894) and Quetzalcoatlus northropi Lawson 1975.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

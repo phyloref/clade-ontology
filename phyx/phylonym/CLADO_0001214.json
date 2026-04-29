@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -54,10 +54,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1214,
+            "curatorNotes": "Regnum ID: '1214'",
             "label": "Dyrosauridae",
-            "dwc:scientificNameAuthorship": "Jouve, Stéphane and Young, Mark T. and Hastings, Alexander K. and Salih, Khalafallah",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Jouve, Stéphane and Young, Mark T. and Hastings, Alexander K. and Salih, Khalafallah",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Nuovi rettili degli strati a fosfato della Tunisia",
@@ -83,7 +83,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "The systematics and nomenclature of Tethysuchia (Archosauria, Crocodylomorpha) under the International Code of Phylogenetic Nomenclature",
@@ -133,7 +133,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "Dyrosauridae is the smallest clade within Crocodylomorpha containing Dyrosaurus phosphaticus (Thomas 1893), Chenanisuchus lateroculi Jouve et al. 2005a, Anthracosuchus balrogus, and Phosphatosaurus gavialoides Bergounioux 1955, but not Elosuchus cherifiensis (Lavocat 1955), Vectisuchus leptognathus Buffetaut and Hutt 1980, and Pholidosaurus schaumburgensis von Meyer 1841.",
+            "definition": "Dyrosauridae is the smallest clade within Crocodylomorpha containing Dyrosaurus phosphaticus (Thomas 1893), Chenanisuchus lateroculi Jouve et al. 2005a, Anthracosuchus balrogus, and Phosphatosaurus gavialoides Bergounioux 1955, but not Elosuchus cherifiensis (Lavocat 1955), Vectisuchus leptognathus Buffetaut and Hutt 1980, and Pholidosaurus schaumburgensis von Meyer 1841.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

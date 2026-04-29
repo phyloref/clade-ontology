@@ -1,12 +1,12 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [],
     "phylorefs": [
         {
-            "regnumId": 985,
+            "curatorNotes": "Regnum ID: '985'",
             "label": "Proterochersidae",
-            "dwc:scientificNameAuthorship": "Szczygielski, Tomasz and Dróżdż, Dawid and Chanthasit, Phornphen and Manitkoon, Sita and Ditbanjong, Pitaksit",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Szczygielski, Tomasz and Dróżdż, Dawid and Chanthasit, Phornphen and Manitkoon, Sita and Ditbanjong, Pitaksit",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Die Familien der Reptilien",
@@ -30,8 +30,8 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The largest clade containing Proterochersis robusta Fraas, 1913 but not Proganochelys quenstedtii Baur, 1887, Australochelys africanus Gaffney and Kitching, 1994 and Testudines Batsch, 1788 sensu ITNC et al., 2020b.",
+            "definitionSource": [],
+            "definition": "The largest clade containing Proterochersis robusta Fraas, 1913 but not Proganochelys quenstedtii Baur, 1887, Australochelys africanus Gaffney and Kitching, 1994 and Testudines Batsch, 1788 sensu ITNC et al., 2020b.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

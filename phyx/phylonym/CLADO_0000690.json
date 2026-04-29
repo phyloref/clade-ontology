@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -328,10 +328,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 690,
+            "curatorNotes": "Regnum ID: '690'",
             "label": "Pachyrhinosaurini",
-            "dwc:scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A new Maastrichtian species of the centrosaurine ceratopsid Pachyrhinosaurus from the North Slope of Alaska",
@@ -367,7 +367,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
@@ -446,7 +446,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade containing Pachyrhinosaurus canadensis Sternberg, 1950 but not Centrosaurus apertus Lambe, 1905.",
+            "definition": "The largest clade containing Pachyrhinosaurus canadensis Sternberg, 1950 but not Centrosaurus apertus Lambe, 1905.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

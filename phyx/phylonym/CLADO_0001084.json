@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -30,10 +30,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1084,
+            "curatorNotes": "Regnum ID: '1084'",
             "label": "Pseudoscaphirhynchus",
-            "dwc:scientificNameAuthorship": "Near, T. J. and Brownstein, C. D.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Near, T. J. and Brownstein, C. D.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Pseudoscaphirhynchus rossikowi n. gen. et spec.",
@@ -59,7 +59,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Towards a phylogenetic taxonomy of sturgeons (Acipenseriformes: Acipenseridae)",
@@ -93,7 +93,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Pseudoscaphirhynchus fedtschenkoi (Kessler 1872), Pseudoscaphirhynchus hermanni (Kessler 1877), and Pseudoscaphirhynchus kaufmanni (Kessler 1877). This is a minimum-crown-clade definition.",
+            "definition": "The least inclusive crown clade that contains Pseudoscaphirhynchus fedtschenkoi (Kessler 1872), Pseudoscaphirhynchus hermanni (Kessler 1877), and Pseudoscaphirhynchus kaufmanni (Kessler 1877). This is a minimum-crown-clade definition.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

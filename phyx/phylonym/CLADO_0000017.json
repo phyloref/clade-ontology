@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -502,10 +502,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 17,
+            "curatorNotes": "Regnum ID: '17'",
             "label": "Ascomycota",
-            "dwc:scientificNameAuthorship": "Spatafora, J. W. and Blackwell, M. and Taylor, J. W.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Spatafora, J. W. and Blackwell, M. and Taylor, J. W.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Morphology of plants.",
@@ -530,7 +530,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -600,7 +600,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The largest crown clade containing Taphrina deformans (Berk.) Tul. 1866, but not Puccinia graminis Pers. 1794, Ustilago tritici (Bjerk.) E. Rostrup 1890, Agaricus bisporus (J.E. Lange) Imbach 1946, and Entorrhiza casparyana (Magnus) Lagerb. 1888.",
+            "definition": "The largest crown clade containing Taphrina deformans (Berk.) Tul. 1866, but not Puccinia graminis Pers. 1794, Ustilago tritici (Bjerk.) E. Rostrup 1890, Agaricus bisporus (J.E. Lange) Imbach 1946, and Entorrhiza casparyana (Magnus) Lagerb. 1888.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

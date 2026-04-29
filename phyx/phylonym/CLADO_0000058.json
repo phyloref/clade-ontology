@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -245,10 +245,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 58,
+            "curatorNotes": "Regnum ID: '58'",
             "label": "Lamianae",
-            "dwc:scientificNameAuthorship": "Olmstead, R. G. and Judd, W. S.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Olmstead, R. G. and Judd, W. S.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "A system and phylogeny of the flowering plants.",
@@ -271,7 +271,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -333,7 +333,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The least inclusive clade containing Lamium album Linnaeus 1753 (Lamiales), Solanum lycopersicum Linnaeus 1753 (Solanales), Gentiana procera T. Holm 1901 (Gentianales), Borago officinalis Linnaeus 1753 (Boraginaceae), and Vahlia capensis (Linnaeus f.) Thunberg 1782 (Vahliaceae).",
+            "definition": "The least inclusive clade containing Lamium album Linnaeus 1753 (Lamiales), Solanum lycopersicum Linnaeus 1753 (Solanales), Gentiana procera T. Holm 1901 (Gentianales), Borago officinalis Linnaeus 1753 (Boraginaceae), and Vahlia capensis (Linnaeus f.) Thunberg 1782 (Vahliaceae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -40,10 +40,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1056,
+            "curatorNotes": "Regnum ID: '1056'",
             "label": "Sulcimentisauria",
-            "dwc:scientificNameAuthorship": "Fonseca, André O. and Reid, Iain J. and Venner, Alexander and Duncan, Ruairidh J. and Garcia, Mauricio S. and Müller, Rodrigo T.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Fonseca, André O. and Reid, Iain J. and Venner, Alexander and Duncan, Ruairidh J. and Garcia, Mauricio S. and Müller, Rodrigo T.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Non-dinosaurian dinosauromorphs from the Chinle Formation (Upper Triassic) of the Eagle Basin, northern Colorado: Dromomeron romeri (Lagerpetidae) and a new taxon, Kwanasaurus williamparkeri (Silesauridae)",
@@ -78,7 +78,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A Comprehensive Phylogenetic Analysis on Early Ornithischian Evolution",
@@ -154,7 +154,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade within Silesauridae containing Silesaurus opolensis Dzik, 2003 but not Asilisaurus kongwe Nesbitt et al. 2010.",
+            "definition": "The largest clade within Silesauridae containing Silesaurus opolensis Dzik, 2003 but not Asilisaurus kongwe Nesbitt et al. 2010.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -139,10 +139,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1158,
+            "curatorNotes": "Regnum ID: '1158'",
             "label": "Cheilininae",
-            "dwc:scientificNameAuthorship": "Near, Thomas J. and Brownstein, Chase D. and Thacker, Christine E. and Wainwright, Peter C.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Near, Thomas J. and Brownstein, Chase D. and Thacker, Christine E. and Wainwright, Peter C.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "The classification of the percoid fishes",
@@ -174,7 +174,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic taxonomy of wrasses and parrotfishes (Labridae)",
@@ -231,7 +231,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Cheilinus trilobatus Lacépède 1801, Epibulus insidiator (Pallas 1770), and Oxycheilinus arenatus (Valenciennes in Cuvier and Valenciennes 1840).",
+            "definition": "The least inclusive crown clade that contains Cheilinus trilobatus Lacépède 1801, Epibulus insidiator (Pallas 1770), and Oxycheilinus arenatus (Valenciennes in Cuvier and Valenciennes 1840).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

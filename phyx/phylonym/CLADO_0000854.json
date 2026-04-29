@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -108,11 +108,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 854,
+            "curatorNotes": "Regnum ID: '854'",
             "label": "Citrodorae",
-            "dwc:scientificNameAuthorship": "O'Leary, Nataly and Olmstead, Richard G",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "O'Leary, Nataly and Olmstead, Richard G",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Making Lantaneae (Verbenaceae) taxonomy useful: A phylogenetic classification",
@@ -162,7 +162,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The maximum crown clade containing Aloysia citrodora Paláu 1784, but not Aloysia trifida (Gay) Lu-Irving & N. O’Leary 2014 and Aloysia gratissima (Gillies & Hook.) Tronc. 1962 and Aloysia polystachya (Griseb.) Moldenke 1940, and Aloysia salsoloides (Griseb.) Lu-Irving & N. O’Leary 2014",
+            "definition": "The maximum crown clade containing Aloysia citrodora Paláu 1784, but not Aloysia trifida (Gay) Lu-Irving & N. O’Leary 2014 and Aloysia gratissima (Gillies & Hook.) Tronc. 1962 and Aloysia polystachya (Griseb.) Moldenke 1940, and Aloysia salsoloides (Griseb.) Lu-Irving & N. O’Leary 2014",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

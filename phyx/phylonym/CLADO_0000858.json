@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -158,10 +158,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 858,
+            "curatorNotes": "Regnum ID: '858'",
             "label": "Troncosoa",
-            "dwc:scientificNameAuthorship": "O'Leary, Nataly and Olmstead, Richard G",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "O'Leary, Nataly and Olmstead, Richard G",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Salimenaea and Troncosoa (Lantaneae, Verbenaceae), two new monotypic genera from southern South America.",
@@ -219,7 +219,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Making Lantaneae taxonomy useful: A phylogenetic classification",
@@ -268,7 +268,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The maximum crown clade containing Troncosoa seriphioides (A. Gray) N. O’Leary & P. Moroni 2023, but not Salimenaea integrifolia (Griseb.) N. O’Leary & P. Moroni 2023 and Lippia dulcis Trevir. 1826 and Burroughsia fastigiata (Brandegee) Moldenke 1940 and Lantana camara L. 1753",
+            "definition": "The maximum crown clade containing Troncosoa seriphioides (A. Gray) N. O’Leary & P. Moroni 2023, but not Salimenaea integrifolia (Griseb.) N. O’Leary & P. Moroni 2023 and Lippia dulcis Trevir. 1826 and Burroughsia fastigiata (Brandegee) Moldenke 1940 and Lantana camara L. 1753",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

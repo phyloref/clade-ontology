@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -77,10 +77,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1114,
+            "curatorNotes": "Regnum ID: '1114'",
             "label": "Nicotianoideae",
-            "dwc:scientificNameAuthorship": "Olmstead, Richard G. and Deanna, Rocio",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Olmstead, Richard G. and Deanna, Rocio",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Contributions to the botany of South America",
@@ -106,7 +106,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new phylogeny and phylogenetic classification for Solanaceae",
@@ -223,7 +223,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The maximum crown clade containing Nicotiana tabacum Linnaeus 1753, but not Solanum nigrum Linnaeus 1753.",
+            "definition": "The maximum crown clade containing Nicotiana tabacum Linnaeus 1753, but not Solanum nigrum Linnaeus 1753.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

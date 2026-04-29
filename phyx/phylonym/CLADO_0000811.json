@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -37,11 +37,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 811,
+            "curatorNotes": "Regnum ID: '811'",
             "label": "Pipinomorpha",
-            "dwc:scientificNameAuthorship": "Lemierre, and Bailon, and Folie, and Laurin,",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Lemierre, and Bailon, and Folie, and Laurin,",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new pipid from the Cretaceous of Africa (In Becetèn, Niger) and early evolution of the Pipidae",
@@ -74,7 +74,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "Pipinomorpha is the largest clade that includes Pipa pipa Linnaeus 1758 but not Xenopus laevis Daudin 1802.",
+            "definition": "Pipinomorpha is the largest clade that includes Pipa pipa Linnaeus 1758 but not Xenopus laevis Daudin 1802.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

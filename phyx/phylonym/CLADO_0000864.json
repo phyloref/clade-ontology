@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -106,10 +106,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 864,
+            "curatorNotes": "Regnum ID: '864'",
             "label": "Dipterocalyx",
-            "dwc:scientificNameAuthorship": "O'Leary, Nataly and Olmstead, Richard G",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "O'Leary, Nataly and Olmstead, Richard G",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "De plantis in Expeditione Romanzoffiana observatis dicunt. Verbenaceae",
@@ -135,7 +135,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Making Lantaneae taxonomy useful: A phylogenetic classification",
@@ -177,7 +177,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The maximum crown clade containing Lippia hirta (Cham.) Meisn. ex. Walp. 1845 (the species Lippia rubella ((Moldenke) T. Silva 2002 included in the primary reference phylogeny is considered to be the most closely related to L. hirta [Troncoso, 1974; Múlgura & al., 1998]), but not Lippia thymoides Mart. & Schauer 1847 and Lantana camara L. 1753 and Phyla nodiflora (L.) Greene 1899.",
+            "definition": "The maximum crown clade containing Lippia hirta (Cham.) Meisn. ex. Walp. 1845 (the species Lippia rubella ((Moldenke) T. Silva 2002 included in the primary reference phylogeny is considered to be the most closely related to L. hirta [Troncoso, 1974; Múlgura & al., 1998]), but not Lippia thymoides Mart. & Schauer 1847 and Lantana camara L. 1753 and Phyla nodiflora (L.) Greene 1899.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

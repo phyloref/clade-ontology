@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -127,10 +127,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 205,
+            "curatorNotes": "Regnum ID: '205'",
             "label": "Hexactinellida",
-            "dwc:scientificNameAuthorship": "Manuel, M. and Boury-Esnault, N.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Manuel, M. and Boury-Esnault, N.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Grundzüge einer Spongien-fauna des Atlantischen Gebietes.",
@@ -153,7 +153,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -213,7 +213,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The most inclusive crown clade containing Oopsacas minuta Topsent 1927 but not Oscarella lobularis (Schmidt 1862) (Homoscleromorpha) and Spongia officinalis Linnaeus 1759 (Demospongiae) and Grantia compressa (Fabricius 1780) (Calcispongia ≈ Calcarea in the reference phylogeny).",
+            "definition": "The most inclusive crown clade containing Oopsacas minuta Topsent 1927 but not Oscarella lobularis (Schmidt 1862) (Homoscleromorpha) and Spongia officinalis Linnaeus 1759 (Demospongiae) and Grantia compressa (Fabricius 1780) (Calcispongia ≈ Calcarea in the reference phylogeny).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

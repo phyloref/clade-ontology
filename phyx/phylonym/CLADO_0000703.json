@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -173,10 +173,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 703,
+            "curatorNotes": "Regnum ID: '703'",
             "label": "Musophagotides",
-            "dwc:scientificNameAuthorship": "Sangster, George and Braun, Edward L and Johansson, Ulf S and Kimball, Rebecca T and Mayr, Gerald and Suh, Alexander",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Sangster, George and Braun, Edward L and Johansson, Ulf S and Kimball, Rebecca T and Mayr, Gerald and Suh, Alexander",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Whole-genome analyses resolve early branches in the tree of life of modern birds",
@@ -253,8 +253,8 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The least inclusive crown clade containing Otis tarda Linnaeus, 1758 (Otidiformes) and Musophaga violacea Isert, 1789 (Musophagiformes) but not Ardea Grus (now Grus grus) Linnaeus, 1758 (Gruiformes) or Mesites variegata (now Mesitornis variegatus) I. Geoffroy Saint-Hilaire, 1838 (Mesitornithiformes).",
+            "definitionSource": [],
+            "definition": "The least inclusive crown clade containing Otis tarda Linnaeus, 1758 (Otidiformes) and Musophaga violacea Isert, 1789 (Musophagiformes) but not Ardea Grus (now Grus grus) Linnaeus, 1758 (Gruiformes) or Mesites variegata (now Mesitornis variegatus) I. Geoffroy Saint-Hilaire, 1838 (Mesitornithiformes).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

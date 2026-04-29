@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -29,10 +29,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1062,
+            "curatorNotes": "Regnum ID: '1062'",
             "label": "Hamipteridae",
-            "dwc:scientificNameAuthorship": "Pêgas, R.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Pêgas, R.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "On a new crested pterodactyloid from the Early Cretaceous of the Iberian Peninsula and the radiation of the clade Anhangueria.",
@@ -97,7 +97,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "On the systematics and phylogenetic nomenclature of the Ornithocheiriformes (Pterosauria, Pteranodontoidea)",
@@ -122,7 +122,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The most inclusive clade that includes Hamipterus tianshanensis Wang et al., 2014 but not Anhanguera blittersdorffi Campos & Kellner, 1985, Cimoliopterus cuvieri (Bowerbank, 1851), or Targaryendraco wiedenrothi (Wild, 1990).",
+            "definition": "The most inclusive clade that includes Hamipterus tianshanensis Wang et al., 2014 but not Anhanguera blittersdorffi Campos & Kellner, 1985, Cimoliopterus cuvieri (Bowerbank, 1851), or Targaryendraco wiedenrothi (Wild, 1990).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

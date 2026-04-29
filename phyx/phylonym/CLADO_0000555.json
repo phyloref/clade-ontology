@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -198,10 +198,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 555,
+            "curatorNotes": "Regnum ID: '555'",
             "label": "Ichthyornithes",
-            "dwc:scientificNameAuthorship": "Benito, Juan and Chen, Albert and Wilson, Laura E. and Bhullar, Bhart-Anjan S. and Burnham, David and Field, Daniel J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Benito, Juan and Chen, Albert and Wilson, Laura E. and Bhullar, Bhart-Anjan S. and Burnham, David and Field, Daniel J.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "On a new subclass of fossil birds (Odontornithes)",
@@ -237,7 +237,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Forty new specimens of Ichthyornis provide unprecedented insight into the postcranial morphology of crownward stem group birds",
@@ -315,7 +315,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade containing Ichthyornis dispar Marsh, 1872a but not Hesperornis regalis Marsh, 1872b and Vultur gryphus Linnaeus, 1758 (Aves or Neornithes).",
+            "definition": "The largest clade containing Ichthyornis dispar Marsh, 1872a but not Hesperornis regalis Marsh, 1872b and Vultur gryphus Linnaeus, 1758 (Aves or Neornithes).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -61,10 +61,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 576,
+            "curatorNotes": "Regnum ID: '576'",
             "label": "Alanqidae",
-            "dwc:scientificNameAuthorship": "Pêgas, Rodrigo Vargas and Holgado, Borja and Ortiz David, Leonardo and Baiano, Mattia and Costa, Fabiana",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Pêgas, Rodrigo Vargas and Holgado, Borja and Ortiz David, Leonardo and Baiano, Mattia and Costa, Fabiana",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A New Pterosaur (Pterodactyloidea: Azhdarchidae) from the Upper Cretaceous of Morocco",
@@ -121,8 +121,8 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The most inclusive clade containing Alanqa\nsaharica Ibrahim et al., 2010 but not Chaoyangopterus zhangi Wang\nand Zhou 2003 or Azhdarcho lancicollis Nessov 1984.",
+            "definitionSource": [],
+            "definition": "The most inclusive clade containing Alanqa\nsaharica Ibrahim et al., 2010 but not Chaoyangopterus zhangi Wang\nand Zhou 2003 or Azhdarcho lancicollis Nessov 1984.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

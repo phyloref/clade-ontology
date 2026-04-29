@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -201,10 +201,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 933,
+            "curatorNotes": "Regnum ID: '933'",
             "label": "Paracanthopterygii",
-            "dwc:scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Phyletic studies of teleostean fishes, with a provisional classification of living forms",
@@ -258,7 +258,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
@@ -292,7 +292,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Polymixia lowei Günther 1859:17, Percopsis omiscomaycus (Walbaum 1792), Zeus faber Linnaeus 1758, Stylephorus chordatus Shaw 1791, and Gadus morhua Linnaeus 1758.",
+            "definition": "The least inclusive crown clade that contains Polymixia lowei Günther 1859:17, Percopsis omiscomaycus (Walbaum 1792), Zeus faber Linnaeus 1758, Stylephorus chordatus Shaw 1791, and Gadus morhua Linnaeus 1758.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

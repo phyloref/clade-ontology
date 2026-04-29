@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -47,11 +47,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 253,
+            "curatorNotes": "Regnum ID: '253'",
             "label": "Pan-Gnathostomata",
-            "dwc:scientificNameAuthorship": "Downs, J. P.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Downs, J. P.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -104,7 +104,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The total clade of the crown clade Gnathostomata.",
+            "definition": "The total clade of the crown clade Gnathostomata.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -57,10 +57,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1128,
+            "curatorNotes": "Regnum ID: '1128'",
             "label": "Regmandra",
-            "dwc:scientificNameAuthorship": "Bohs, Lynn and Särkinen, Tiina",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Bohs, Lynn and Särkinen, Tiina",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Prodromus systematis naturalis regni vegetabilis",
@@ -98,7 +98,7 @@
                     ]
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new phylogeny and phylogenetic classification for Solanaceae",
@@ -214,7 +214,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The minimum crown clade containing S. multifidum Lamarck 1794 and Solanum montanum Linnaeus 1753.",
+            "definition": "The minimum crown clade containing S. multifidum Lamarck 1794 and Solanum montanum Linnaeus 1753.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

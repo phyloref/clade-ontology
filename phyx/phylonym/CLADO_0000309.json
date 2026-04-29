@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -80,10 +80,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 309,
+            "curatorNotes": "Regnum ID: '309'",
             "label": "Constrictores",
-            "dwc:scientificNameAuthorship": "Georgalis, G. L. and Smith, K. T.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Georgalis, G. L. and Smith, K. T.",
+            "namePublishedIn": [
                 {
                     "type": "book_section",
                     "title": "Suite du 1er. memoire sur la classification des reptiles. Ord. II. Squammata mihi",
@@ -109,7 +109,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Constrictores Oppel, 1811 - the available name for the taxonomic group uniting boas and pythons",
@@ -145,7 +145,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The crown clade originating in the last common ancestor of Boa constrictor Linnaeus, 1758, and Python (originally Boa) regius (Shaw, 1802), provided that neither internal specifier is more closely related to any of the following species than to each other: Typhlops lumbricalis (Linnaeus, 1758), Leptotyphlops nigricans (Schlegel, 1837–1844), Anomalepis mexicanus Jan, 1860, Anilius scytale (Linnaeus, 1758), Uropeltis ceylanicus Cuvier, 1829, Cylindrophis ruffus (Laurenti, 1768), and Coluber constrictor Linnaeus, 1758.",
+            "definition": "The crown clade originating in the last common ancestor of Boa constrictor Linnaeus, 1758, and Python (originally Boa) regius (Shaw, 1802), provided that neither internal specifier is more closely related to any of the following species than to each other: Typhlops lumbricalis (Linnaeus, 1758), Leptotyphlops nigricans (Schlegel, 1837–1844), Anomalepis mexicanus Jan, 1860, Anilius scytale (Linnaeus, 1758), Uropeltis ceylanicus Cuvier, 1829, Cylindrophis ruffus (Laurenti, 1768), and Coluber constrictor Linnaeus, 1758.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

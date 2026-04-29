@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -212,10 +212,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 992,
+            "curatorNotes": "Regnum ID: '992'",
             "label": "Sphagesaurinae",
-            "dwc:scientificNameAuthorship": "Leardi, Juan Martín and Pol, and Montefeltro, and Marinho, and Ruiz, and Bravo, and Pinheiro, and Godoy, and Nicholl, and Lecuona, and Larsson,",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Leardi, Juan Martín and Pol, and Montefeltro, and Marinho, and Ruiz, and Bravo, and Pinheiro, and Godoy, and Nicholl, and Lecuona, and Larsson,",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "The first notosuchian crocodyliform from the Araçatuba Formation (Bauru Group, Paraná Basin), and diversification of sphagesaurians",
@@ -289,7 +289,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic nomenclature of Notosuchia (Crocodylomorpha; Crocodyliformes)",
@@ -321,7 +321,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The most inclusive clade within Sphagesauridae including Sphagesaurus huenei Price 1950 but not Notosuchus terrestris Woodward 1896, Caipirasuchus paulistanus Iori and Carvalho 2011, and Yacarerani boliviensis Novas et al. 2009. This is a maximum-clade definition.",
+            "definition": "The most inclusive clade within Sphagesauridae including Sphagesaurus huenei Price 1950 but not Notosuchus terrestris Woodward 1896, Caipirasuchus paulistanus Iori and Carvalho 2011, and Yacarerani boliviensis Novas et al. 2009. This is a maximum-clade definition.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

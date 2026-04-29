@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -146,10 +146,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 281,
+            "curatorNotes": "Regnum ID: '281'",
             "label": "Mirandornithes",
-            "dwc:scientificNameAuthorship": "Sangster, G.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Sangster, G.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A name for the flamingo-grebe clade.",
@@ -175,7 +175,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -227,7 +227,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Phoenicopterus chilensis Molina 1782 and Podiceps (originally Colymbus) auritus (Linnaeus 1758).",
+            "definition": "The smallest crown clade containing Phoenicopterus chilensis Molina 1782 and Podiceps (originally Colymbus) auritus (Linnaeus 1758).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

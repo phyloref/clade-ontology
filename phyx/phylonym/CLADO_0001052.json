@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -40,11 +40,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1052,
+            "curatorNotes": "Regnum ID: '1052'",
             "label": "Eolacertiformes",
-            "dwc:scientificNameAuthorship": "Čerňanský, Andrej and Vasilyan, David",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Čerňanský, Andrej and Vasilyan, David",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Roots of the European Cenozoic ecosystems: lizards from the Paleocene (~MP 5) of Walbeck in Germany",
@@ -77,7 +77,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The most recent common ancestor of eolacertids and lacertids and all of its descendants. Abbreviated definition: Eolacertiformes =˂ ∇ Eolacerta robusta Nöth, 1940 & Lacerta viridis\n(Laurenti, 1768).",
+            "definition": "The most recent common ancestor of eolacertids and lacertids and all of its descendants. Abbreviated definition: Eolacertiformes =˂ ∇ Eolacerta robusta Nöth, 1940 & Lacerta viridis\n(Laurenti, 1768).",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

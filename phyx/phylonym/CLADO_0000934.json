@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -70,10 +70,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 934,
+            "curatorNotes": "Regnum ID: '934'",
             "label": "Percopsiformes",
-            "dwc:scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Classification of fishes, both Recent and fossil",
@@ -100,7 +100,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
@@ -134,7 +134,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Percopsis omiscomaycus (Walbaum 1792), Aphredoderus sayanus (Gilliams 1824), and Chologaster cornuta Agassiz 1853.",
+            "definition": "The least inclusive crown clade that contains Percopsis omiscomaycus (Walbaum 1792), Aphredoderus sayanus (Gilliams 1824), and Chologaster cornuta Agassiz 1853.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

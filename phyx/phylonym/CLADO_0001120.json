@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -261,10 +261,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1120,
+            "curatorNotes": "Regnum ID: '1120'",
             "label": "Hyoscyaminae",
-            "dwc:scientificNameAuthorship": "Särkinen, Tiina and Olmstead, Richard G.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Särkinen, Tiina and Olmstead, Richard G.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Achilles Richard's Grundriß der Botanik und der Pflanzenphysiologie",
@@ -298,7 +298,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new phylogeny and phylogenetic classification for Solanaceae",
@@ -415,7 +415,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The maximum crown clade containing Hyoscyamus niger Linnaeus 1753, but not Atropa bella-donna Linnaeus 1753.",
+            "definition": "The maximum crown clade containing Hyoscyamus niger Linnaeus 1753, but not Atropa bella-donna Linnaeus 1753.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

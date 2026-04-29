@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -54,10 +54,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 908,
+            "curatorNotes": "Regnum ID: '908'",
             "label": "Cithariniformes",
-            "dwc:scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Combined phylogeny of ray-finned fishes (Actinopterygii) and the use of morphological characters in large-scale analyses",
@@ -89,7 +89,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogeny and classification of Actinopterygii",
@@ -123,7 +123,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Citharinus citharus (Geoffroy St. Hilaire 1802) and Distichodus mossambicus Peters 1852.",
+            "definition": "The least inclusive crown clade that contains Citharinus citharus (Geoffroy St. Hilaire 1802) and Distichodus mossambicus Peters 1852.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

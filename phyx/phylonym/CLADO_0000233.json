@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -42,10 +42,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 233,
+            "curatorNotes": "Regnum ID: '233'",
             "label": "Discocystinae",
-            "dwc:scientificNameAuthorship": "Sumrall, C. D.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Sumrall, C. D.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Late Paleozoic edrioasteroids from the North American mid-continent.",
@@ -73,7 +73,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -126,7 +126,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The clade originating in the most recent common ancestor of Discocystis kaskaskiensis (Hall 1858), Clavidiscus laudoni (Bassler 1936), Hypsiclavus huntsvillensis Sumrall 1996, and Giganticlavus bennisoni Sumrall and Bowsher 1996.  This is a minimum-clade definition.",
+            "definition": "The clade originating in the most recent common ancestor of Discocystis kaskaskiensis (Hall 1858), Clavidiscus laudoni (Bassler 1936), Hypsiclavus huntsvillensis Sumrall 1996, and Giganticlavus bennisoni Sumrall and Bowsher 1996.  This is a minimum-clade definition.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

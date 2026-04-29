@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -39,10 +39,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1176,
+            "curatorNotes": "Regnum ID: '1176'",
             "label": "Eutyrannosauria",
-            "dwc:scientificNameAuthorship": "Delcourt, Rafael and Grillo, Orlando and Hendrickx, Christophe and Kellermann, Maxmilian and Langer, Max",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Delcourt, Rafael and Grillo, Orlando and Hendrickx, Christophe and Kellermann, Maxmilian and Langer, Max",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Tyrannosauroids from the Southern Hemisphere: Implications for biogeography, evolution, and taxonomy",
@@ -81,7 +81,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "The coelurosaur theropods of the Romualdo Formation, Early Cretaceous (Aptian) of Brazil: Santanaraptor placidus meets Mirischia asymmetrica",
@@ -144,7 +144,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive clade containing Tyrannosaurus rex Osborn, 1905 and Dryptosaurus aquilunguis Cope, 1866",
+            "definition": "The least inclusive clade containing Tyrannosaurus rex Osborn, 1905 and Dryptosaurus aquilunguis Cope, 1866",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

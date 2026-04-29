@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -192,10 +192,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 649,
+            "curatorNotes": "Regnum ID: '649'",
             "label": "Rhabdodontomorpha",
-            "dwc:scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "An unexpected early rhabdodontid from Europe (Lower Cretaceous of Salas de los Infantes, Burgos Province, Spain) and a re-examination of Basal Iguanodontian Relationships",
@@ -255,7 +255,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
@@ -334,7 +334,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade containing Rhabdodon priscus Matheron, 1869 but not Hypsilophodon foxii Huxley, 1869 and Iguanodon bernissartensis Boulenger in Beneden, 1881.",
+            "definition": "The largest clade containing Rhabdodon priscus Matheron, 1869 but not Hypsilophodon foxii Huxley, 1869 and Iguanodon bernissartensis Boulenger in Beneden, 1881.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

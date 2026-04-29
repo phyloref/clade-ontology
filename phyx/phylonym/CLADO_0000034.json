@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -369,10 +369,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 34,
+            "curatorNotes": "Regnum ID: '34'",
             "label": "Deuterostomia",
-            "dwc:scientificNameAuthorship": "Garey, J. R. and Cameron, C. B. and Halanych, K. M. and Servin, J. A. and Lake, J. A.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Garey, J. R. and Cameron, C. B. and Halanych, K. M. and Servin, J. A. and Lake, J. A.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Die systematische Einteilung des Tierreichs.",
@@ -398,7 +398,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -487,7 +487,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The largest crown clade containing Strongylocentrotus purpuratus Stimpson 1857 (Echinodermata, Echinoidea) and Homo sapiens Linnaeus 1758 (Chordata, Vertebrata) but not Drosophila melanogaster Meigen 1830 (Arthropoda, Insecta) and Capitella teleta Blake, Grassle & Eckelbarger 2009 (Annelida, Polychaeta).",
+            "definition": "The largest crown clade containing Strongylocentrotus purpuratus Stimpson 1857 (Echinodermata, Echinoidea) and Homo sapiens Linnaeus 1758 (Chordata, Vertebrata) but not Drosophila melanogaster Meigen 1830 (Arthropoda, Insecta) and Capitella teleta Blake, Grassle & Eckelbarger 2009 (Annelida, Polychaeta).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

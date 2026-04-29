@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -141,10 +141,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 847,
+            "curatorNotes": "Regnum ID: '847'",
             "label": "Thoracotremata B. Guinot, 1977 [L. A. Jennings et al. 2023] converted clade name",
-            "dwc:scientificNameAuthorship": "Jennings, Lucas A and Blakeslee, April M.H. and McCoy, Krista  A. and Bojko, Jamie and Behringer, Donald C.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Jennings, Lucas A and Blakeslee, April M.H. and McCoy, Krista  A. and Bojko, Jamie and Behringer, Donald C.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Principes d'une classification évolutive des Crustacés Décapodes Brachyoures",
@@ -169,7 +169,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Systematic assessment of the Panopeidae and broader Eubrachyura (Decapoda: Brachyura) using mitochondrial genomics",
@@ -241,7 +241,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The crown clade including the most recent ancestors of Chiromantes haematocheir (De Haan 1833) and all extant organisms and species that inherited the genital openings on the sternum in both male and female crabs synapomorphic with those in Chiromantes haematocheir (De Haan 1833).",
+            "definition": "The crown clade including the most recent ancestors of Chiromantes haematocheir (De Haan 1833) and all extant organisms and species that inherited the genital openings on the sternum in both male and female crabs synapomorphic with those in Chiromantes haematocheir (De Haan 1833).",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

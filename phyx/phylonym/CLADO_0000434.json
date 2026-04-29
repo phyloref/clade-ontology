@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -70,10 +70,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 434,
+            "curatorNotes": "Regnum ID: '434'",
             "label": "Rinconsauria",
-            "dwc:scientificNameAuthorship": "Silva Júnior, Julian and Martinelli, Agustín and Iori, Fabiano and Hechenleitner, Martín and Marinho, Thiago and Langer, Max",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Silva Júnior, Julian and Martinelli, Agustín and Iori, Fabiano and Hechenleitner, Martín and Marinho, Thiago and Langer, Max",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A new titanosaur sauropod from the Late Cretaceous of Neuquén, Patagonia, Argentina",
@@ -116,7 +116,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Reassessment of Aeolosaurus maximus, a titanosaur dinosaur from the Late Cretaceous of southeastern Brazil",
@@ -186,7 +186,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive clade containing Rinconsaurus caudamirus Calvo & González-Riga, 2003, and Muyelensaurus pecheni Calvo, González-Riga & Porfiri, 2007.",
+            "definition": "The least inclusive clade containing Rinconsaurus caudamirus Calvo & González-Riga, 2003, and Muyelensaurus pecheni Calvo, González-Riga & Porfiri, 2007.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

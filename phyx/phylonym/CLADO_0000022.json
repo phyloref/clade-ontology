@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -105,10 +105,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 22,
+            "curatorNotes": "Regnum ID: '22'",
             "label": "Bignoniaceae",
-            "dwc:scientificNameAuthorship": "Olmstead, R. G. and Lohmann, L. G.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Olmstead, R. G. and Lohmann, L. G.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Genera plantarum",
@@ -129,7 +129,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -191,7 +191,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The least inclusive clade containing Bignonia capreolata Linnaeus 1753, Jacaranda mimosifolia D. Don 1822, and Eccremocarpus scaber Ruiz & Pavon 1794.",
+            "definition": "The least inclusive clade containing Bignonia capreolata Linnaeus 1753, Jacaranda mimosifolia D. Don 1822, and Eccremocarpus scaber Ruiz & Pavon 1794.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

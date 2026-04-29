@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -206,10 +206,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1131,
+            "curatorNotes": "Regnum ID: '1131'",
             "label": "Lycopersicon",
-            "dwc:scientificNameAuthorship": "Olmstead, Richard G. and Bohs, Lynn",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Olmstead, Richard G. and Bohs, Lynn",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "The Gardeners' Dictionary",
@@ -233,7 +233,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new phylogeny and phylogenetic classification for Solanaceae",
@@ -350,7 +350,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The minimum crown clade containing Solanum lycopersicum Linnaeus 1753 and Solanum lycopersicoides Dunal 1852.",
+            "definition": "The minimum crown clade containing Solanum lycopersicum Linnaeus 1753 and Solanum lycopersicoides Dunal 1852.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

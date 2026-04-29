@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -99,10 +99,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 55,
+            "curatorNotes": "Regnum ID: '55'",
             "label": "Labiatae",
-            "dwc:scientificNameAuthorship": "Cantino, P. D. and Olmstead, R. G.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Cantino, P. D. and Olmstead, R. G.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Familles des plantes. Part 2.",
@@ -126,7 +126,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -188,7 +188,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Lamium album L. 1753 (Perolamiina/Lamioideae/Lamieae), Ajuga reptans L. 1753 (Ajugoideae), Premna microphylla Turcz. 1863 (Premnoideae), Tectona grandis L.f. 1782, Glechoma hederacea L. 1753 (Nepetoideae), Vitex agnus-castus L. 1753 (Viticoideae), Congea tomentosa Roxb. 1820 (Symphorematoideae), Callicarpa dichotoma (Lour.) K. Koch 1872, and Prostanthera rotundifolia R. Br. 1810 (Prostantheroideae).",
+            "definition": "The smallest crown clade containing Lamium album L. 1753 (Perolamiina/Lamioideae/Lamieae), Ajuga reptans L. 1753 (Ajugoideae), Premna microphylla Turcz. 1863 (Premnoideae), Tectona grandis L.f. 1782, Glechoma hederacea L. 1753 (Nepetoideae), Vitex agnus-castus L. 1753 (Viticoideae), Congea tomentosa Roxb. 1820 (Symphorematoideae), Callicarpa dichotoma (Lour.) K. Koch 1872, and Prostanthera rotundifolia R. Br. 1810 (Prostantheroideae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

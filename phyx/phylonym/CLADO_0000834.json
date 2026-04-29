@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -86,11 +86,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 834,
+            "curatorNotes": "Regnum ID: '834'",
             "label": "Bractipetaloides",
-            "dwc:scientificNameAuthorship": "Du, Zhi Yuan and Xiang, Qiu Yun and Soltis, Douglas E. and Soltis, Pamela S.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Du, Zhi Yuan and Xiang, Qiu Yun and Soltis, Douglas E. and Soltis, Pamela S.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "An updated phylogeny, biogeography, and PhyloCode-based classification of Cornaceae based on three sets of genomic data",
@@ -173,7 +173,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The phylogenetic definition of Bractipetaloides is the smallest crown clade containing Cornus canadensis Linnaeus 1753 and Cornus florida Linnaeus 1753.",
+            "definition": "The phylogenetic definition of Bractipetaloides is the smallest crown clade containing Cornus canadensis Linnaeus 1753 and Cornus florida Linnaeus 1753.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

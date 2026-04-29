@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -199,11 +199,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 882,
+            "curatorNotes": "Regnum ID: '882'",
             "label": "Oseanacephala",
-            "dwc:scientificNameAuthorship": "Thacker, C. E. and Near, T. J.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Thacker, C. E. and Near, T. J.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogeny and classification of Actinopterygii",
@@ -237,7 +237,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Anguilla rostrata (Lesueur 1817) and Osteoglossum bicirrhosum (Cuvier 1829), but not Engraulis encrasicolus (Linnaeus 1758) or Perca fluviatilis Linnaeus 1758.",
+            "definition": "The least inclusive crown clade that contains Anguilla rostrata (Lesueur 1817) and Osteoglossum bicirrhosum (Cuvier 1829), but not Engraulis encrasicolus (Linnaeus 1758) or Perca fluviatilis Linnaeus 1758.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

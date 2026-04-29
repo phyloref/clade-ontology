@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -47,11 +47,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 557,
+            "curatorNotes": "Regnum ID: '557'",
             "label": "Erebor",
-            "dwc:scientificNameAuthorship": "Shɨshkin, Yegor",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Shɨshkin, Yegor",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "The smallest known heliozoans are the Erebor lineage (nom. clad. n.) inside Microheliella maris (Eukaryota, Diaphoretickes), with the amendation of M. maris diagnosis and description of Berkeleyaesol magnus gen. n., comb. n. (Eukaryota, insertae sedis)",
@@ -93,7 +93,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "the clade characterised by the apomorphy of the second helix of 15th hairpin of SSU rRNA derived compared to other Microhelida in the same or more degree as in Microheliella maris ZI172 strain (see Fig. 4; the same numeration as in Shɨshkin et al., 2018[19] (at doi.org/10.1016/j.protis.2018.06.003) was used), as inherited by the specimens of Microheliella maris ZI172 strain studied here.",
+            "definition": "the clade characterised by the apomorphy of the second helix of 15th hairpin of SSU rRNA derived compared to other Microhelida in the same or more degree as in Microheliella maris ZI172 strain (see Fig. 4; the same numeration as in Shɨshkin et al., 2018[19] (at doi.org/10.1016/j.protis.2018.06.003) was used), as inherited by the specimens of Microheliella maris ZI172 strain studied here.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

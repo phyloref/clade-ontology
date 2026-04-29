@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -144,10 +144,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1164,
+            "curatorNotes": "Regnum ID: '1164'",
             "label": "Julidinae",
-            "dwc:scientificNameAuthorship": "Near, Thomas J. and Brownstein, Chase D. and Thacker, Christine E. and Wainwright, Peter C.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Near, Thomas J. and Brownstein, Chase D. and Thacker, Christine E. and Wainwright, Peter C.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Notes on the labroids of the western coast of North America",
@@ -173,7 +173,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic taxonomy of wrasses and parrotfishes (Labridae)",
@@ -230,7 +230,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Julis julis (Linnaeus 1758) and Gomphosus caeruleus Lacépède 1801.",
+            "definition": "The least inclusive crown clade that contains Julis julis (Linnaeus 1758) and Gomphosus caeruleus Lacépède 1801.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

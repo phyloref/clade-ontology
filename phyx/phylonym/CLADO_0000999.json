@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -43,10 +43,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 999,
+            "curatorNotes": "Regnum ID: '999'",
             "label": "Atheriniformes",
-            "dwc:scientificNameAuthorship": "Thacker, C. E. and Near, T. J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Thacker, C. E. and Near, T. J.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Catálogo de los peces de Menorca",
@@ -73,7 +73,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
@@ -107,7 +107,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Oryzias latipes (Temminck and Schlegel 1846), Atherina hepsetus Linnaeus 1758, and Cyprinodon variegatus Lacepède 1803.",
+            "definition": "The least inclusive crown clade that contains Oryzias latipes (Temminck and Schlegel 1846), Atherina hepsetus Linnaeus 1758, and Cyprinodon variegatus Lacepède 1803.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

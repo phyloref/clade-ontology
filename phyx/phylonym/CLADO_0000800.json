@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -49,10 +49,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 800,
+            "curatorNotes": "Regnum ID: '800'",
             "label": "Teleosauridae",
-            "dwc:scientificNameAuthorship": "Geoffroy Saint-Hilaire, E",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Geoffroy Saint-Hilaire, E",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Recherches sur de grands sauriens trouvés al’état fossile aux confins maritimes de la Basse-Normandie, attribués d’abord au Crocodile, puis déterminés sous les noms de Teleosaurus et Steneosaurus",
@@ -77,7 +77,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Recherches sur de grands sauriens trouvés al’état fossile aux confins maritimes de la Basse-Normandie, attribués d’abord au Crocodile, puis déterminés sous les noms de Teleosaurus et Steneosaurus",
@@ -102,7 +102,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade within Teleosauroidea containing Teleosaurus cadomensis (Lamouroux 1820) but not Machimosaurus hugii (von Meyer 1837).",
+            "definition": "The largest clade within Teleosauroidea containing Teleosaurus cadomensis (Lamouroux 1820) but not Machimosaurus hugii (von Meyer 1837).",
             "internalSpecifiers": [],
             "externalSpecifiers": [
                 {

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -58,10 +58,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 500,
+            "curatorNotes": "Regnum ID: '500'",
             "label": "Cyclanorbinae",
-            "dwc:scientificNameAuthorship": "Joyce, Walter G. and Anquetin, Jérémy and Cadena, Edwin-Alberto and Claude, Julien and Danilov, Igor G. and Evers, Serjoscha W. and Ferreira, Gabriel S. and Gentry, Andrew D. and Georgalis, Georgios L. and Lyson, Tyler R. and Pérez-García, Adán and Rabi, Márton and Sterli, Juliana and Vitek, Natasha S. and Parham, James  F.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Joyce, Walter G. and Anquetin, Jérémy and Cadena, Edwin-Alberto and Claude, Julien and Danilov, Igor G. and Evers, Serjoscha W. and Ferreira, Gabriel S. and Gentry, Andrew D. and Georgalis, Georgios L. and Lyson, Tyler R. and Pérez-García, Adán and Rabi, Márton and Sterli, Juliana and Vitek, Natasha S. and Parham, James  F.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Catalogue of the fossil Reptilia and Amphibia in the British Museum. Part III. Chelonia",
@@ -84,7 +84,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A nomenclature for fossil and living turtles using phylogenetically defined clade names",
@@ -236,7 +236,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest crown clade containing Cyclanorbis (orig. Cryptopus) senegalensis (Duméril and Bibron, 1835), but not the trionychine Trionyx (orig. Testudo) triunguis (Forskål, 1775).",
+            "definition": "The largest crown clade containing Cyclanorbis (orig. Cryptopus) senegalensis (Duméril and Bibron, 1835), but not the trionychine Trionyx (orig. Testudo) triunguis (Forskål, 1775).",
             "internalSpecifiers": [],
             "externalSpecifiers": [
                 {

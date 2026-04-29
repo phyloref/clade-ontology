@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -115,11 +115,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1054,
+            "curatorNotes": "Regnum ID: '1054'",
             "label": "Tenuivenaptera",
-            "dwc:scientificNameAuthorship": "Béthoux, Olivier and Cui, Yingying and Wipfler, Benjamin",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Béthoux, Olivier and Cui, Yingying and Wipfler, Benjamin",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A winged relative of ice crawlers in amber bridges the cryptic extant Xenonomia and a rich fossil record",
@@ -229,7 +229,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "Species that evolved from the hypothetical ancestral species in which the character state ‘in forewing, posterior branch of the median vein (MP) desclerotized, from its origin, or\nnearby, to its first fork, or nearby’ (as opposed to ‘in forewing, posterior branch of the median vein (MP), from its origin, or nearby, to its first fork, or nearby, sclerotized as other main veins in the same wing area’), as exhibited by ornatum Sellards, 1909 (currently assigned to the genus Liomopterum Sellards, 1909) and minor Ren & Aristov, 2011 (currently assigned to the genus Aristoviblattogryllus Cui, Béthoux, Yang & Ren, 2023), was acquired.",
+            "definition": "Species that evolved from the hypothetical ancestral species in which the character state ‘in forewing, posterior branch of the median vein (MP) desclerotized, from its origin, or\nnearby, to its first fork, or nearby’ (as opposed to ‘in forewing, posterior branch of the median vein (MP), from its origin, or nearby, to its first fork, or nearby, sclerotized as other main veins in the same wing area’), as exhibited by ornatum Sellards, 1909 (currently assigned to the genus Liomopterum Sellards, 1909) and minor Ren & Aristov, 2011 (currently assigned to the genus Aristoviblattogryllus Cui, Béthoux, Yang & Ren, 2023), was acquired.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

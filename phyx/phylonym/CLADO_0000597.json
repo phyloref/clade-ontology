@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -245,10 +245,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 597,
+            "curatorNotes": "Regnum ID: '597'",
             "label": "Cerapoda",
-            "dwc:scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Phylogeny of the bird-hipped dinosaurs",
@@ -275,7 +275,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
@@ -354,7 +354,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The smallest clade containing Iguanodon bernissartensis Boulenger in Beneden, 1881, Pachycephalosaurus wyomingensis (Gilmore, 1931), and Triceratops horridus Marsh,\n1889.",
+            "definition": "The smallest clade containing Iguanodon bernissartensis Boulenger in Beneden, 1881, Pachycephalosaurus wyomingensis (Gilmore, 1931), and Triceratops horridus Marsh,\n1889.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -129,10 +129,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 42,
+            "curatorNotes": "Regnum ID: '42'",
             "label": "Eukarya",
-            "dwc:scientificNameAuthorship": "Simpson, A. G. B.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Simpson, A. G. B.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Nucleotide sequence of a DNA region comprising the gene for elongation  factor l (EF-l) from the ultrathermophilic archaeote Pyrococcus woesei: phylogenetic implications.",
@@ -158,7 +158,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -211,7 +211,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The crown clade for which the possession of nuclei, bounded by nuclear envelopes that include nuclear pores, as inherited by Homo sapiens Linnaeus 1758, is an apomorphy relative to other crown clades.",
+            "definition": "The crown clade for which the possession of nuclei, bounded by nuclear envelopes that include nuclear pores, as inherited by Homo sapiens Linnaeus 1758, is an apomorphy relative to other crown clades.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

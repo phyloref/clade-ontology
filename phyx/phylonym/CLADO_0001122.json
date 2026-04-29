@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -143,10 +143,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1122,
+            "curatorNotes": "Regnum ID: '1122'",
             "label": "Solandreae",
-            "dwc:scientificNameAuthorship": "Orejuela, Andres and Olmstead, Richard G.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Orejuela, Andres and Olmstead, Richard G.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Observations upon several genera hitherto placed in Solanaceae, and upon others intermediate between that family and the Scrophulariaceae",
@@ -172,7 +172,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new phylogeny and phylogenetic classification for Solanaceae",
@@ -289,7 +289,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The minimum crown clade containing Solandra grandiflora O. Swartz 1787, Schultesianthus leucanthus (J. Donnell Smith) A. T. Hunziker 1977, Juanulloa parasitica Ruiz & Pavón 1794, and Doselia lopezii (Hunziker) A.Orejuela & Särkinen 2022.",
+            "definition": "The minimum crown clade containing Solandra grandiflora O. Swartz 1787, Schultesianthus leucanthus (J. Donnell Smith) A. T. Hunziker 1977, Juanulloa parasitica Ruiz & Pavón 1794, and Doselia lopezii (Hunziker) A.Orejuela & Särkinen 2022.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

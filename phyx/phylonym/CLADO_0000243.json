@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -55,10 +55,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 243,
+            "curatorNotes": "Regnum ID: '243'",
             "label": "Echinodermata",
-            "dwc:scientificNameAuthorship": "Sumrall, C. D.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Sumrall, C. D.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Ordre naturel des oursins de mer et fossiles, avec des observations sur les piquants des oursins de mer et quelques remarques sur les bélemnites.",
@@ -81,7 +81,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -134,7 +134,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Asterias forbesi (Desor 1848) (Asteroidea), Ophioderma brevispinum (Say 1825) (Ophiuroidea), Strongylocentrotus purpuratus (Stimpson 1857) (Echinoidea), Cucumaria miniata (Brandt 1835) (Holothuroidea), Metacrinus rotundus Carpenter 1885 (Crinoidea) and Xyloplax janetae Mah 2006 (Concentricycloidea).",
+            "definition": "The crown clade originating in the most recent common ancestor of Asterias forbesi (Desor 1848) (Asteroidea), Ophioderma brevispinum (Say 1825) (Ophiuroidea), Strongylocentrotus purpuratus (Stimpson 1857) (Echinoidea), Cucumaria miniata (Brandt 1835) (Holothuroidea), Metacrinus rotundus Carpenter 1885 (Crinoidea) and Xyloplax janetae Mah 2006 (Concentricycloidea).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

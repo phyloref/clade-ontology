@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -81,11 +81,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1034,
+            "curatorNotes": "Regnum ID: '1034'",
             "label": "Pyrodontia",
-            "dwc:scientificNameAuthorship": "Fonseca, André O. and Reid, Iain J. and Venner, Alexander and Duncan, Ruairidh J. and Garcia, Mauricio S. and Müller, Rodrigo T.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Fonseca, André O. and Reid, Iain J. and Venner, Alexander and Duncan, Ruairidh J. and Garcia, Mauricio S. and Müller, Rodrigo T.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A comprehensive phylogenetic analysis on early ornithischian evolution",
@@ -161,7 +161,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The smallest clade containing Ceratops montanus Marsh, 1888, Iguanodon bernissartensis Boulenger in Beneden, 1881, Pachycephalosaurus (originally Troodon) wyomingensis (Gilmore, 1931), and Thescelosaurus neglectus Gilmore, 1913. This is a minimum-clade definition.",
+            "definition": "The smallest clade containing Ceratops montanus Marsh, 1888, Iguanodon bernissartensis Boulenger in Beneden, 1881, Pachycephalosaurus (originally Troodon) wyomingensis (Gilmore, 1931), and Thescelosaurus neglectus Gilmore, 1913. This is a minimum-clade definition.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

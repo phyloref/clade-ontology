@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -108,11 +108,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 900,
+            "curatorNotes": "Regnum ID: '900'",
             "label": "Clupeiformes",
-            "dwc:scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogeny and classification of Actinopterygii",
@@ -146,7 +146,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Denticeps clupeoides Clausen 1959, Clupea harengus Linnaeus 1758, and Engaulis encrasicolus (Linnaeus 1758).",
+            "definition": "The least inclusive crown clade that contains Denticeps clupeoides Clausen 1959, Clupea harengus Linnaeus 1758, and Engaulis encrasicolus (Linnaeus 1758).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

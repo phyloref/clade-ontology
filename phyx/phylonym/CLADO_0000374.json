@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -46,10 +46,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 374,
+            "curatorNotes": "Regnum ID: '374'",
             "label": "Dusignathinae",
-            "dwc:scientificNameAuthorship": "Biewer, Jacob N and Velez-Juarbe, Jorge and Parham, James F",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Biewer, Jacob N and Velez-Juarbe, Jorge and Parham, James F",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "The Mio-Pliocene pinniped Imagotaria",
@@ -76,7 +76,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Insights on the dental evolution of walruses based on new fossil specimens from California",
@@ -119,7 +119,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade including Dusignathus santacruzensis Kellogg, 1927 but not Odobenus rosmarus (Linnaeus, 1758).",
+            "definition": "The largest clade including Dusignathus santacruzensis Kellogg, 1927 but not Odobenus rosmarus (Linnaeus, 1758).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

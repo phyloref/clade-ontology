@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -32,10 +32,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 495,
+            "curatorNotes": "Regnum ID: '495'",
             "label": "Carettochelyidae",
-            "dwc:scientificNameAuthorship": "Joyce, Walter G. and Anquetin, Jérémy and Cadena, Edwin-Alberto and Claude, Julien and Danilov, Igor G. and Evers, Serjoscha W. and Ferreira, Gabriel S. and Gentry, Andrew D. and Georgalis, Georgios L. and Lyson, Tyler R. and Pérez-García, Adán and Rabi, Márton and Sterli, Juliana and Vitek, Natasha S. and Parham, James  F.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Joyce, Walter G. and Anquetin, Jérémy and Cadena, Edwin-Alberto and Claude, Julien and Danilov, Igor G. and Evers, Serjoscha W. and Ferreira, Gabriel S. and Gentry, Andrew D. and Georgalis, Georgios L. and Lyson, Tyler R. and Pérez-García, Adán and Rabi, Márton and Sterli, Juliana and Vitek, Natasha S. and Parham, James  F.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A remarkable tortoise",
@@ -61,7 +61,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A nomenclature for fossil and living turtles using phylogenetically defined clade names",
@@ -213,7 +213,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade containing Carettochelys insculpta Ramsay, 1887, but not the trionychid Trionyx (orig. Testudo) triunguis (Forskål, 1775).",
+            "definition": "The largest clade containing Carettochelys insculpta Ramsay, 1887, but not the trionychid Trionyx (orig. Testudo) triunguis (Forskål, 1775).",
             "internalSpecifiers": [],
             "externalSpecifiers": [
                 {

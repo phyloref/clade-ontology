@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -144,10 +144,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1153,
+            "curatorNotes": "Regnum ID: '1153'",
             "label": "Hypsigenyinae",
-            "dwc:scientificNameAuthorship": "Near, Thomas J. and Brownstein, Chase D. and Thacker, Chrstine E. and Wainwright, Peter C.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Near, Thomas J. and Brownstein, Chase D. and Thacker, Chrstine E. and Wainwright, Peter C.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A review of the tuskfishes, genus Choerodon (Labridae, Perciformes), with descriptions of three new species",
@@ -184,7 +184,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic taxonomy of wrasses and parrotfishes (Labridae)",
@@ -241,7 +241,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Lachnolaimus maximus (Walbaum 1792), Odax pullus (Forster in Bloch and Schneider 1801), and Bodianus rufus (Linnaeus 1758)",
+            "definition": "The least inclusive crown clade that contains Lachnolaimus maximus (Walbaum 1792), Odax pullus (Forster in Bloch and Schneider 1801), and Bodianus rufus (Linnaeus 1758)",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

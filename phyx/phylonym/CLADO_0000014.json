@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -87,10 +87,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 14,
+            "curatorNotes": "Regnum ID: '14'",
             "label": "Apo-Spermatophyta",
-            "dwc:scientificNameAuthorship": "Cantino, P. D. and Doyle, J. A. and Donoghue, M. J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Cantino, P. D. and Doyle, J. A. and Donoghue, M. J.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Towards a phylogenetic nomenclature of Tracheophyta.",
@@ -180,7 +180,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -251,7 +251,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The clade characterized by seeds as inherited by Magnolia tripetala (Linnaeus) Linnaeus 1759 (Angiospermae), Podocarpus macrophyllus (Thunberg) Sweet 1818 (Coniferae), Ginkgo biloba Linnaeus 1771, Cycas revoluta Thunberg 1782 (Cycadophyta), and Gnetum gnemon Linnaeus 1767 (Gnetophyta).",
+            "definition": "The clade characterized by seeds as inherited by Magnolia tripetala (Linnaeus) Linnaeus 1759 (Angiospermae), Podocarpus macrophyllus (Thunberg) Sweet 1818 (Coniferae), Ginkgo biloba Linnaeus 1771, Cycas revoluta Thunberg 1782 (Cycadophyta), and Gnetum gnemon Linnaeus 1767 (Gnetophyta).",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

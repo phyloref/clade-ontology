@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -189,10 +189,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 775,
+            "curatorNotes": "Regnum ID: '775'",
             "label": "Macropodiformes",
-            "dwc:scientificNameAuthorship": "Kear, Benjamin P and Westerman, Michael",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Kear, Benjamin P and Westerman, Michael",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "DNA-hybridisation Studies of Marsupials and their Implications for Metatherian Classification",
@@ -246,7 +246,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Mitogenome of the Extinct Desert ‘Rat-Kangaroo’ Times the Adaptation to Aridity in Macropodoids",
@@ -311,7 +311,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The most inclusive clade including Balbaroo nalima Hypsiprymnodon moschatus, Potorous tridactylus and Macropus giganteus, but excluding Cercartetus concinnus and Phalanger orientalis",
+            "definition": "The most inclusive clade including Balbaroo nalima Hypsiprymnodon moschatus, Potorous tridactylus and Macropus giganteus, but excluding Cercartetus concinnus and Phalanger orientalis",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

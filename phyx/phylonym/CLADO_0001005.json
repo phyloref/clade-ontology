@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -53,11 +53,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1005,
+            "curatorNotes": "Regnum ID: '1005'",
             "label": "Hemihegetotheriomorpha",
-            "dwc:scientificNameAuthorship": "Seoane, Federico Damián and Cerdeño, Esperanza and Gaetano, Leandro Carlos",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Seoane, Federico Damián and Cerdeño, Esperanza and Gaetano, Leandro Carlos",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Reassessment of Tegehotherium burmeisteri Ameghino 1903–1904 (Notoungulata, Hegetotheriidae) and a new phylogenetic analysis of Hegetotheriidae",
@@ -105,7 +105,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade containing Hemihegetotherium trilobus Croft and Anaya, 2006 and Hemihegetotherium achathaleptum Rovereto, 1914 but not Hegetotherium mirabile Ameghino, 1887 or Prohegetotherium sculptum Ameghino, 1897.",
+            "definition": "The largest clade containing Hemihegetotherium trilobus Croft and Anaya, 2006 and Hemihegetotherium achathaleptum Rovereto, 1914 but not Hegetotherium mirabile Ameghino, 1887 or Prohegetotherium sculptum Ameghino, 1897.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

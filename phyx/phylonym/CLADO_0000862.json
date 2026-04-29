@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -149,10 +149,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 862,
+            "curatorNotes": "Regnum ID: '862'",
             "label": "Phyla",
-            "dwc:scientificNameAuthorship": "O'Leary, Nataly and Olmstead, Richard G",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "O'Leary, Nataly and Olmstead, Richard G",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Flora cochinchinensis",
@@ -174,7 +174,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Making Lantaneae taxonomy useful: A phylogenetic classification",
@@ -223,7 +223,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The maximum crown clade including Phyla nodiflora (L.) Greene 1899, but not Burroughsia fastigiata (Brandegee) Moldenke 1940 and Lippia dulcis Trevir.1826 and Salimenaea integrifolia (Griseb.) N. O’Leary & P. Moroni 2023 and Lantana camara L. 1753.",
+            "definition": "The maximum crown clade including Phyla nodiflora (L.) Greene 1899, but not Burroughsia fastigiata (Brandegee) Moldenke 1940 and Lippia dulcis Trevir.1826 and Salimenaea integrifolia (Griseb.) N. O’Leary & P. Moroni 2023 and Lantana camara L. 1753.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

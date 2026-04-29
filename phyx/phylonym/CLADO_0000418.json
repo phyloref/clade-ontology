@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -78,11 +78,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 418,
+            "curatorNotes": "Regnum ID: '418'",
             "label": "Eunotosuchia",
-            "dwc:scientificNameAuthorship": "Ruiz, Juan and Bronzati, Mario and Ferreira, Gabriel and Martins, Kawan and Queiroz, Marcos and Langer, Max and Montefeltro, Felipe",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Ruiz, Juan and Bronzati, Mario and Ferreira, Gabriel and Martins, Kawan and Queiroz, Marcos and Langer, Max and Montefeltro, Felipe",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new species of Caipirasuchus (Notosuchia, Sphagesauridae) from the Late Cretaceous of Brazil and the evolutionary history of Sphagesauria",
@@ -160,7 +160,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive clade containing Notosuchus terrestris Woodward 1896, Uruguaysuchus aznarezi Rusconi 1933, and Araripesuchus gomesi Price 1959, but not Crocodylus niloticus Laurenti 1768 (Crocodylia). This is a minimum-clade definition.",
+            "definition": "The least inclusive clade containing Notosuchus terrestris Woodward 1896, Uruguaysuchus aznarezi Rusconi 1933, and Araripesuchus gomesi Price 1959, but not Crocodylus niloticus Laurenti 1768 (Crocodylia). This is a minimum-clade definition.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -376,10 +376,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1071,
+            "curatorNotes": "Regnum ID: '1071'",
             "label": "Marlierea",
-            "dwc:scientificNameAuthorship": "Gaem, Paulo Henrique and Lucas, Eve",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Gaem, Paulo Henrique and Lucas, Eve",
+            "namePublishedIn": [
                 {
                     "type": "book_section",
                     "title": "Flora Brasiliae Meridionalis",
@@ -413,7 +413,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A taxonomic revision of the Marlierea clade (Myrcia sect. Aulomyrcia, Myrtaceae)",
@@ -485,7 +485,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The clade originating in the ancestor in which the “hyper-hypanthium” anthesis type, as described by Vasconcelos et al. (2017) and inherited by Myrcia neotomentosa E. Lucas & C. E. Wilson 2016 [≡ Marlierea tomentosa Cambess. 1833], evolved. This clade approximates the definition of Marlierea Cambess. of Berg (1857; 1859).",
+            "definition": "The clade originating in the ancestor in which the “hyper-hypanthium” anthesis type, as described by Vasconcelos et al. (2017) and inherited by Myrcia neotomentosa E. Lucas & C. E. Wilson 2016 [≡ Marlierea tomentosa Cambess. 1833], evolved. This clade approximates the definition of Marlierea Cambess. of Berg (1857; 1859).",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -84,10 +84,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1121,
+            "curatorNotes": "Regnum ID: '1121'",
             "label": "Lyciina",
-            "dwc:scientificNameAuthorship": "Olmstead, Richard G. and Deanna, Rocio",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Olmstead, Richard G. and Deanna, Rocio",
+            "namePublishedIn": [
                 {
                     "type": "book_section",
                     "title": "Solanaceae VI: Genomics meets biodiversity. Proceedings of the Sixth International Solanaceae Conference",
@@ -164,7 +164,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new phylogeny and phylogenetic classification for Solanaceae",
@@ -281,7 +281,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The minimum crown clade containing Lycium afrum Linnaeus 1753, Nolana humifusa (Gouan) I.M.Johnston, and Sclerophylax spinescens Miers 1848.",
+            "definition": "The minimum crown clade containing Lycium afrum Linnaeus 1753, Nolana humifusa (Gouan) I.M.Johnston, and Sclerophylax spinescens Miers 1848.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

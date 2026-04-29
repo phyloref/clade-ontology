@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -29,10 +29,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1061,
+            "curatorNotes": "Regnum ID: '1061'",
             "label": "Anhangueria",
-            "dwc:scientificNameAuthorship": "Pêgas, R.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Pêgas, R.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Taxonomic review of the Ornithocheirus complex (Pterosauria) from the Cretaceous of England",
@@ -65,7 +65,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "On the systematics and phylogenetic nomenclature of the Ornithocheiriformes (Pterosauria, Pteranodontoidea)",
@@ -90,7 +90,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The most inclusive clade that includes Anhanguera blittersdorffi Campos & Kellner, 1985 but not Cimoliopterus cuvieri (Bowerbank, 1851) or Targaryendraco wiedenrothi (Wild, 1990).",
+            "definition": "The most inclusive clade that includes Anhanguera blittersdorffi Campos & Kellner, 1985 but not Cimoliopterus cuvieri (Bowerbank, 1851) or Targaryendraco wiedenrothi (Wild, 1990).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

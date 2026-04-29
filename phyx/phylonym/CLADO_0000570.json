@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -75,11 +75,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 570,
+            "curatorNotes": "Regnum ID: '570'",
             "label": "Sahonachelyidae",
-            "dwc:scientificNameAuthorship": "Joyce, Water G. and Rollot, Yann and Evers, Serjoscha W. and Lyson, Tyler R. and Rahantarisoa, Lydia J. and Krause, David W.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Joyce, Water G. and Rollot, Yann and Evers, Serjoscha W. and Lyson, Tyler R. and Rahantarisoa, Lydia J. and Krause, David W.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new pelomedusoid turtle, Sahonachelys mailakavava, from the Late Cretaceous of Madagascar provides evidence for convergent evolution of specialized suction feeding among pleurodires",
@@ -149,7 +149,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest extinct clade containing Sahonachelys mailakavava gen. et sp. nov.",
+            "definition": "The largest extinct clade containing Sahonachelys mailakavava gen. et sp. nov.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

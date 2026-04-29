@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -86,10 +86,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 829,
+            "curatorNotes": "Regnum ID: '829'",
             "label": "Yinquania",
-            "dwc:scientificNameAuthorship": "Du, Zhi Yuan and Xiang, Qiu Yun and Soltis, Douglas E. and Soltis, Pamela S.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Du, Zhi Yuan and Xiang, Qiu Yun and Soltis, Douglas E. and Soltis, Pamela S.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A new genus of Cornaceae from China",
@@ -117,7 +117,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "An updated phylogeny, biogeography, and PhyloCode-based classification of Cornaceae based on three sets of genomic data",
@@ -200,7 +200,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Cornus oblonga N. Wallich 1820 (including Yinquania muchuanensis Z. Y. Zhu 1984), C. peruviana J. F. Macbride 1929, and C. parviflora S. S. Chien 1931.",
+            "definition": "The smallest crown clade containing Cornus oblonga N. Wallich 1820 (including Yinquania muchuanensis Z. Y. Zhu 1984), C. peruviana J. F. Macbride 1929, and C. parviflora S. S. Chien 1931.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

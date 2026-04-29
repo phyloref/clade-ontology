@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -83,11 +83,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1147,
+            "curatorNotes": "Regnum ID: '1147'",
             "label": "Caimanini",
-            "dwc:scientificNameAuthorship": "Cidade, Giovanne M. and Godoy, Pedro L. and Amavet, Patricia and Cossette, Adam and Solórzano, Andrés and Bona, Paula and Angulo-Bedoya, Mónica and Balaguera-Reina, Sergio A. and Rabi, Márton and Farias, Izeni Pires and Figueiredo, Rodrigo G. and Ezcurra, Martin D. and Bittencourt, Pedro S. and Brochu, Christopher A. and Roberto, Igor J.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Cidade, Giovanne M. and Godoy, Pedro L. and Amavet, Patricia and Cossette, Adam and Solórzano, Andrés and Bona, Paula and Angulo-Bedoya, Mónica and Balaguera-Reina, Sergio A. and Rabi, Márton and Farias, Izeni Pires and Figueiredo, Rodrigo G. and Ezcurra, Martin D. and Bittencourt, Pedro S. and Brochu, Christopher A. and Roberto, Igor J.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "The phylogenetic nomenclature of Caimaninae (Crocodylia: Alligatoroidea)",
@@ -248,7 +248,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of of Caiman crocodilus (Linnaeus, 1758), Caiman latirostris (Daudin, 1802), Caiman yacare (Daudin, 1802), Melanosuchus niger (Spix, 1825), Paleosuchus palpebrosus (Cuvier, 1807) and Paleosuchus trigonatus (Schneider, 1801).",
+            "definition": "The crown clade originating in the most recent common ancestor of of Caiman crocodilus (Linnaeus, 1758), Caiman latirostris (Daudin, 1802), Caiman yacare (Daudin, 1802), Melanosuchus niger (Spix, 1825), Paleosuchus palpebrosus (Cuvier, 1807) and Paleosuchus trigonatus (Schneider, 1801).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

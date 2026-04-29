@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -107,10 +107,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 907,
+            "curatorNotes": "Regnum ID: '907'",
             "label": "Gymnotiformes",
-            "dwc:scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "The classification of the teleostean fishes of the Order Ostariophysi.-1. Cyprinoidea",
@@ -142,7 +142,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogeny and classification of Actinopterygii",
@@ -176,7 +176,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Gymnotus pantherinus (Steindachner 1908), Apteronotus albifrons (Linnaeus 1766), and Sternopygus macrurus (Bloch and Schneider 1801).",
+            "definition": "The least inclusive crown clade that contains Gymnotus pantherinus (Steindachner 1908), Apteronotus albifrons (Linnaeus 1766), and Sternopygus macrurus (Bloch and Schneider 1801).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

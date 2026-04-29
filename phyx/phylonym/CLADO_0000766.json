@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -107,10 +107,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 766,
+            "curatorNotes": "Regnum ID: '766'",
             "label": "Batrachognathinae",
-            "dwc:scientificNameAuthorship": "Andres, Brian",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Andres, Brian",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "The soft tissue of Jeholopterus (Pterosauria, Anurognathidae, Batrachognathinae) and the structure of the pterosaur wing membrane",
@@ -146,7 +146,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic Taxonomy of the Pterosauria",
@@ -170,7 +170,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "Most inclusive clade containing Batrachognathus volans Rjabinin, 1948, but not Anurognathus ammoni Döderlein, 1923.",
+            "definition": "Most inclusive clade containing Batrachognathus volans Rjabinin, 1948, but not Anurognathus ammoni Döderlein, 1923.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

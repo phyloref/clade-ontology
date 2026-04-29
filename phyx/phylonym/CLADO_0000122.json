@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -186,11 +186,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 122,
+            "curatorNotes": "Regnum ID: '122'",
             "label": "Pan-Squamata",
-            "dwc:scientificNameAuthorship": "Gauthier, J. A. and de Queiroz, K.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Gauthier, J. A. and de Queiroz, K.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -251,7 +251,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The total clade of the crown clade Squamata.",
+            "definition": "The total clade of the crown clade Squamata.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

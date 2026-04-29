@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -112,10 +112,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 386,
+            "curatorNotes": "Regnum ID: '386'",
             "label": "Cypselomorphae",
-            "dwc:scientificNameAuthorship": "Chen, Albert and Field, Daniel J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Chen, Albert and Field, Daniel J.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "On the classification of birds: and on the taxonomic value of the modifications of certain of the cranial bones observable in that class",
@@ -142,7 +142,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic definitions for Caprimulgimorphae (Aves) and major constituent clades under the International Code of Phylogenetic Nomenclature",
@@ -186,7 +186,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The total clade containing Caprimulgus europaeus Linnaeus, 1758 (Caprimulgidae), Nyctibius (originally Caprimulgus) grandis (Gmelin, 1789) (Nyctibiidae), Aegotheles (originally Caprimulgus) cristatus (Shaw, 1790) (Aegothelidae), and Apus (originally Hirundo) apus (Linnaeus, 1758) (Apodiformes) but not Steatornis caripensis Humboldt, 1817 (Steatornithidae) and Podargus (originally Caprimulgus) strigoides (Latham, 1801) (Podargidae).",
+            "definition": "The total clade containing Caprimulgus europaeus Linnaeus, 1758 (Caprimulgidae), Nyctibius (originally Caprimulgus) grandis (Gmelin, 1789) (Nyctibiidae), Aegotheles (originally Caprimulgus) cristatus (Shaw, 1790) (Aegothelidae), and Apus (originally Hirundo) apus (Linnaeus, 1758) (Apodiformes) but not Steatornis caripensis Humboldt, 1817 (Steatornithidae) and Podargus (originally Caprimulgus) strigoides (Latham, 1801) (Podargidae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

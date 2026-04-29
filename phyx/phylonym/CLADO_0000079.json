@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -132,11 +132,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 79,
+            "curatorNotes": "Regnum ID: '79'",
             "label": "Pan-Feliformia",
-            "dwc:scientificNameAuthorship": "Wolsan, M. and Flynn, J. J. and Wyss, A. R.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Wolsan, M. and Flynn, J. J. and Wyss, A. R.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -206,7 +206,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The total clade of the crown clade Feliformia. Abbreviated definition: total  of Feliformia.",
+            "definition": "The total clade of the crown clade Feliformia. Abbreviated definition: total  of Feliformia.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

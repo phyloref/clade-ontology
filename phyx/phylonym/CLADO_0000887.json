@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -79,10 +79,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 887,
+            "curatorNotes": "Regnum ID: '887'",
             "label": "Anguilliformes",
-            "dwc:scientificNameAuthorship": "Near, T J. and Thacker, C. E.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Near, T J. and Thacker, C. E.",
+            "namePublishedIn": [
                 {
                     "type": "book_section",
                     "title": "A treatise on zoology, 9",
@@ -117,7 +117,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetics and classification of Actinopterygii",
@@ -151,7 +151,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Myroconger compressus Günther 1870, Gymnothorax formosus Bleeker 1864, Protanguilla palau Johnson, Ida, and Sakaue 2012, Synaphobranchus kaupi Johnson 1862, and Anguilla rostrata (Lesueur 1817).",
+            "definition": "The least inclusive crown clade that contains Myroconger compressus Günther 1870, Gymnothorax formosus Bleeker 1864, Protanguilla palau Johnson, Ida, and Sakaue 2012, Synaphobranchus kaupi Johnson 1862, and Anguilla rostrata (Lesueur 1817).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

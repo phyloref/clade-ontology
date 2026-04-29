@@ -1,12 +1,12 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [],
     "phylorefs": [
         {
-            "regnumId": 565,
+            "curatorNotes": "Regnum ID: '565'",
             "label": "Neostromboidae",
-            "dwc:scientificNameAuthorship": "Maxwell, Stephen J and Rymer, Tasmin L",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Maxwell, Stephen J and Rymer, Tasmin L",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Recognising and defining a new crown clade within STROMBOIDEA Rafinesque, 1815 (MOLLUSCA, GASTROPODA).",
@@ -33,7 +33,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Are the ICZN and PhyloCode that incompatible? A summary of the shifts in Stromboidean taxonomy and the definition of two new subfamilies in Stromboidae (Mollusca, Neostromboidae)",
@@ -75,7 +75,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The clade is nested within Stromboidea, with the characteristics outlined in the diagnosis, and contains taxa more closely related to Strombus pugilis Linné, 1758 (Strombidae), Terebellum terebellum (Linné, 1758) (Seraphsidae) and Tibia fusus (Linné, 1758) (Rostellariidae) than Struthiolariidae Gabb, 1868 and Aporrhaidae Gray, 1850",
+            "definition": "The clade is nested within Stromboidea, with the characteristics outlined in the diagnosis, and contains taxa more closely related to Strombus pugilis Linné, 1758 (Strombidae), Terebellum terebellum (Linné, 1758) (Seraphsidae) and Tibia fusus (Linné, 1758) (Rostellariidae) than Struthiolariidae Gabb, 1868 and Aporrhaidae Gray, 1850",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

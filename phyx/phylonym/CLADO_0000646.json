@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -316,10 +316,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 646,
+            "curatorNotes": "Regnum ID: '646'",
             "label": "Polacanthinae",
-            "dwc:scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
+            "namePublishedIn": [
                 {
                     "type": "book_section",
                     "title": "Traité de Paléontologie, Tome 5",
@@ -362,7 +362,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
@@ -441,7 +441,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade within Ankylosauridae or Nodosauridae containing Polacanthus foxii Owen in Anonymous, 1865 but not Ankylosaurus magniventris Brown, 1908 and Nodosaurus textilis Marsh, 1889.",
+            "definition": "The largest clade within Ankylosauridae or Nodosauridae containing Polacanthus foxii Owen in Anonymous, 1865 but not Ankylosaurus magniventris Brown, 1908 and Nodosaurus textilis Marsh, 1889.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

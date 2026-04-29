@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -75,10 +75,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 396,
+            "curatorNotes": "Regnum ID: '396'",
             "label": "Podargidae",
-            "dwc:scientificNameAuthorship": "Chen, Albert and Field, Daniel J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Chen, Albert and Field, Daniel J.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Remarks on the present state of the Systema Avium",
@@ -135,7 +135,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic definitions for Caprimulgimorphae (Aves) and major constituent clades under the International Code of Phylogenetic Nomenclature",
@@ -179,7 +179,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Rigidipenna inexpectata (originally Podargus inexpectatus Hartert in Sclater, 1901), Podargus (originally Caprimulgus) strigoides (Latham, 1801), and Batrachostomus (originally Podargus) auritus (Gray in Griffth, 1829).",
+            "definition": "The smallest crown clade containing Rigidipenna inexpectata (originally Podargus inexpectatus Hartert in Sclater, 1901), Podargus (originally Caprimulgus) strigoides (Latham, 1801), and Batrachostomus (originally Podargus) auritus (Gray in Griffth, 1829).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

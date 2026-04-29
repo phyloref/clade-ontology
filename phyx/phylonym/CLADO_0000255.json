@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -35,10 +35,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 255,
+            "curatorNotes": "Regnum ID: '255'",
             "label": "Gnathostomata",
-            "dwc:scientificNameAuthorship": "Downs, J. P.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Downs, J. P.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Grundriss der Vergleichenden Anatomie",
@@ -62,7 +62,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -115,7 +115,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The most inclusive crown clade whose members exhibit jaws synapomorphic with those in Scyliorhinus canicula Linnaeus 1758 (Chondrichthyes).",
+            "definition": "The most inclusive crown clade whose members exhibit jaws synapomorphic with those in Scyliorhinus canicula Linnaeus 1758 (Chondrichthyes).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

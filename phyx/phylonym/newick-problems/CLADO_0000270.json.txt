@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -46,11 +46,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 270,
+            "curatorNotes": "Regnum ID: '270'",
             "label": "Pan-Pinnipedia",
-            "dwc:scientificNameAuthorship": "Wolsan, M. and Wyss, A. R. and Berta, A. and Flynn, J. J.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Wolsan, M. and Wyss, A. R. and Berta, A. and Flynn, J. J.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -128,7 +128,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The total clade of the crown clade Pinnipedia.",
+            "definition": "The total clade of the crown clade Pinnipedia.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

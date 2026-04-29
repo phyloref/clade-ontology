@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -67,10 +67,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 808,
+            "curatorNotes": "Regnum ID: '808'",
             "label": "Hoplocercus",
-            "dwc:scientificNameAuthorship": "Torres-Carvajal, Omar and Werneck, Fernanda P. and Fernandes, Igor Yuri and de Queiroz, Kevin",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Torres-Carvajal, Omar and Werneck, Fernanda P. and Fernandes, Igor Yuri and de Queiroz, Kevin",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Systema Reptilium",
@@ -94,7 +94,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Spiny Tails and Clades: A Fully Sampled Phylogeny of Hoplocercine Lizards (Iguanidae: Hoplocercinae) and its Taxonomic and Nomenclatural Implications",
@@ -157,7 +157,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The crown clade for which any of the following character states is an apomorphy relative to other crown clades: depressed (maximum width > height at same level as maximum width, spines excluded), short tail (tail length < snout-vent length) with enlarged spinous scales dorsally and laterally that are at least twice as large in area as ventral scales, as inherited by Hoplocercus spinosus Fitzinger 1843.",
+            "definition": "The crown clade for which any of the following character states is an apomorphy relative to other crown clades: depressed (maximum width > height at same level as maximum width, spines excluded), short tail (tail length < snout-vent length) with enlarged spinous scales dorsally and laterally that are at least twice as large in area as ventral scales, as inherited by Hoplocercus spinosus Fitzinger 1843.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -148,10 +148,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1105,
+            "curatorNotes": "Regnum ID: '1105'",
             "label": "Goetzeinae",
-            "dwc:scientificNameAuthorship": "Olmstead, Richard G. and Deanna, Rocio",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Olmstead, Richard G. and Deanna, Rocio",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Die Naturlichen Pflanzenfamilien",
@@ -192,7 +192,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new phylogeny and phylogenetic classification for Solanaceae",
@@ -309,7 +309,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The minimum crown clade containing Goetzea elegans Wydler 1830, Coelonerurum ferrugineum (Sprengel) Urban 1899, Espadaea amoena A.Richard 1850, and Henoonia myrtifolia Grisebach 1866.",
+            "definition": "The minimum crown clade containing Goetzea elegans Wydler 1830, Coelonerurum ferrugineum (Sprengel) Urban 1899, Espadaea amoena A.Richard 1850, and Henoonia myrtifolia Grisebach 1866.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

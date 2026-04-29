@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -116,11 +116,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1085,
+            "curatorNotes": "Regnum ID: '1085'",
             "label": "Parapleurota",
-            "dwc:scientificNameAuthorship": "Jenkins, Xavier A and Benson, Roger BJ and Ford, David P and Browning, Claire and Fernandez, Vincent and Dollman, Kathleen and Gomes, Timothy and Griffiths, Elizabeth and Choiniere, Jonah N and Peecook, Brandon R",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Jenkins, Xavier A and Benson, Roger BJ and Ford, David P and Browning, Claire and Fernandez, Vincent and Dollman, Kathleen and Gomes, Timothy and Griffiths, Elizabeth and Choiniere, Jonah N and Peecook, Brandon R",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Evolutionary assembly of crown reptile anatomy clarified by late Paleozoic relatives of Neodiapsida",
@@ -232,7 +232,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "All taxa closer to Milleretta rubidgei Broom 1948 and Youngina capensis Broom 1914, than to Petrolacosaurus kansensis Peabody 1952, Orovenator mayorum Reisz et al. 2011, Procolophon trigoniceps Owen 1876, or Mesosaurus tenuidens Gervais 1865.",
+            "definition": "All taxa closer to Milleretta rubidgei Broom 1948 and Youngina capensis Broom 1914, than to Petrolacosaurus kansensis Peabody 1952, Orovenator mayorum Reisz et al. 2011, Procolophon trigoniceps Owen 1876, or Mesosaurus tenuidens Gervais 1865.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

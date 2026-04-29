@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -37,10 +37,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 171,
+            "curatorNotes": "Regnum ID: '171'",
             "label": "Medusozoa",
-            "dwc:scientificNameAuthorship": "Collins, A. G. and Dunn, C. W.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Collins, A. G. and Dunn, C. W.",
+            "namePublishedIn": [
                 {
                     "type": "book_section",
                     "title": "Biology and Systematics of Colonial Organisms",
@@ -84,7 +84,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -146,7 +146,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade containing Chironex fleckeri Southcott 1956, Hydra vulgaris (Pallas 1766), Atolla vanhoeffeni Russell 1957, and Craterolophus convolvulus (Johnston 1835).",
+            "definition": "The least inclusive crown clade containing Chironex fleckeri Southcott 1956, Hydra vulgaris (Pallas 1766), Atolla vanhoeffeni Russell 1957, and Craterolophus convolvulus (Johnston 1835).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

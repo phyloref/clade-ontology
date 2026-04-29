@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -210,10 +210,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 642,
+            "curatorNotes": "Regnum ID: '642'",
             "label": "Pachycephalosauria",
-            "dwc:scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Panélope and Evans, David C.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Panélope and Evans, David C.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Pachycephalosauria, a new suborder of ornithischian dinosaurs",
@@ -247,7 +247,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
@@ -326,7 +326,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade containing Pachycephalosaurus wyomingensis (Gilmore, 1931) but not Ceratops montanus Marsh, 1888 and Triceratops horridus Marsh, 1889.",
+            "definition": "The largest clade containing Pachycephalosaurus wyomingensis (Gilmore, 1931) but not Ceratops montanus Marsh, 1888 and Triceratops horridus Marsh, 1889.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

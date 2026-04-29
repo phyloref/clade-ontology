@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -69,11 +69,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 163,
+            "curatorNotes": "Regnum ID: '163'",
             "label": "Prochelata",
-            "dwc:scientificNameAuthorship": "Christofferson, M. L.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Christofferson, M. L.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -126,7 +126,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The most inclusive crown clade containing Crangon crangon (Linnaeus 1758) (Crangonoidea Haworth 1825 sensu Christoffersen, 1987, 1988, 1990) and Alpheus armillatus H. Milne Edwards 1837 (Alpheoidea Rafinesque 1815 sensu Christoffersen, 1987, 1990), but not Pandalus paucidens Miers 1881 (Pandaloidea Haworth 1825).",
+            "definition": "The most inclusive crown clade containing Crangon crangon (Linnaeus 1758) (Crangonoidea Haworth 1825 sensu Christoffersen, 1987, 1988, 1990) and Alpheus armillatus H. Milne Edwards 1837 (Alpheoidea Rafinesque 1815 sensu Christoffersen, 1987, 1990), but not Pandalus paucidens Miers 1881 (Pandaloidea Haworth 1825).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

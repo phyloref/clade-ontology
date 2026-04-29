@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -205,10 +205,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 73,
+            "curatorNotes": "Regnum ID: '73'",
             "label": "Orobanchaceae",
-            "dwc:scientificNameAuthorship": "Tank, D. C. and Wolfe, A. D. and Mathews, S. and Olmstead, R. G.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Tank, D. C. and Wolfe, A. D. and Mathews, S. and Olmstead, R. G.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Tableau du règne végétal selon la méthode de Jussieu vol. 2",
@@ -233,7 +233,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -274,7 +274,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The largest crown clade containing Orobanche major L. 1753, but not Phryma leptostachya L. 1753 and Paulownia tomentosa (Thunb.) Steud. 1841 and Mazus japonicus (Thunb.) Kuntze 1891.",
+            "definition": "The largest crown clade containing Orobanche major L. 1753, but not Phryma leptostachya L. 1753 and Paulownia tomentosa (Thunb.) Steud. 1841 and Mazus japonicus (Thunb.) Kuntze 1891.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

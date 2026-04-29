@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -54,11 +54,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 256,
+            "curatorNotes": "Regnum ID: '256'",
             "label": "Pan-Xenarthra",
-            "dwc:scientificNameAuthorship": "Shockey, B. J.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Shockey, B. J.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -111,7 +111,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The total clade of the crown clade Xenarthra.",
+            "definition": "The total clade of the crown clade Xenarthra.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

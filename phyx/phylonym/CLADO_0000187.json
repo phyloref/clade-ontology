@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -64,10 +64,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 187,
+            "curatorNotes": "Regnum ID: '187'",
             "label": "Orbiculariae",
-            "dwc:scientificNameAuthorship": "Kuntner, M. and Agnarsson, I.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Kuntner, M. and Agnarsson, I.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Faune parisienne. Insectes. ou Histoire abrégée des insectes de environs de Paris.",
@@ -91,7 +91,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -132,7 +132,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The crown clade for which orbweb building behaviors (e.g., frame, radius, and sticky-spiral construction behaviors and their derivatives), as inherited by Araneus angulatus Clerck 1757 (Araneidae) and either Uloborus walckenaerius Latreille 1806 (Uloboridae) or Deinopis lamia MacLeay 1839 (Deinopidae) or both of those species, are apomorphies relative to other crown clades (see Comments).",
+            "definition": "The crown clade for which orbweb building behaviors (e.g., frame, radius, and sticky-spiral construction behaviors and their derivatives), as inherited by Araneus angulatus Clerck 1757 (Araneidae) and either Uloborus walckenaerius Latreille 1806 (Uloboridae) or Deinopis lamia MacLeay 1839 (Deinopidae) or both of those species, are apomorphies relative to other crown clades (see Comments).",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

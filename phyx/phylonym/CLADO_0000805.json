@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -67,10 +67,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 805,
+            "curatorNotes": "Regnum ID: '805'",
             "label": "Morunasaurus",
-            "dwc:scientificNameAuthorship": "Torres-Carvajal, Omar and Werneck, Fernanda P. and Fernandes, Igor Yuri and de Queiroz, Kevin",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Torres-Carvajal, Omar and Werneck, Fernanda P. and Fernandes, Igor Yuri and de Queiroz, Kevin",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Amphibians and reptiles from El Valle de Anton, Panama.",
@@ -97,7 +97,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Spiny Tails and Clades: A Fully Sampled Phylogeny of Hoplocercine Lizards (Iguanidae: Hoplocercinae) and its Taxonomic and Nomenclatural Implications",
@@ -160,7 +160,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The crown clade for which having the posterior whorl of each caudal segment composed of greatly enlarged, projecting, spinous scales at least two times as large in area as the scales of the immediately anterior whorl, as inherited by Morunasaurus groi Dunn 1933, is an apomorphy relative to other crown clades.",
+            "definition": "The crown clade for which having the posterior whorl of each caudal segment composed of greatly enlarged, projecting, spinous scales at least two times as large in area as the scales of the immediately anterior whorl, as inherited by Morunasaurus groi Dunn 1933, is an apomorphy relative to other crown clades.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

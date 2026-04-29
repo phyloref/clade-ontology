@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -63,10 +63,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 273,
+            "curatorNotes": "Regnum ID: '273'",
             "label": "Testudinata",
-            "dwc:scientificNameAuthorship": "Joyce, W. G. and Parham, J. F. and Anquetin, J. and Claude, J. and Danilov, I. G. and Iverson, J. B. and Kear, B. and Lyson, T. R. and Rabi, M. and Sterli, J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Joyce, W. G. and Parham, J. F. and Anquetin, J. and Claude, J. and Danilov, I. G. and Iverson, J. B. and Kear, B. and Lyson, T. R. and Rabi, M. and Sterli, J.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Klassification und kurze Geschichte der Vierfüßigen Thiere (translation by F. D. Behn).",
@@ -90,7 +90,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -219,7 +219,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The apomorphy-based clade name, for which a complete turtle shell, as inherited by Testudo graeca Linnaeus 1758 is an apomorphy. A 'complete turtle shell' is herein defined as a composite structure consisting of a carapace with interlocking costals, neurals, peripherals, and a nuchal, together with the plastron comprising interlocking epi-, hyo-, meso- (lost in Testudo graeca), hypo-, xiphiplastra and an entoplastron.",
+            "definition": "The apomorphy-based clade name, for which a complete turtle shell, as inherited by Testudo graeca Linnaeus 1758 is an apomorphy. A 'complete turtle shell' is herein defined as a composite structure consisting of a carapace with interlocking costals, neurals, peripherals, and a nuchal, together with the plastron comprising interlocking epi-, hyo-, meso- (lost in Testudo graeca), hypo-, xiphiplastra and an entoplastron.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -306,10 +306,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 103,
+            "curatorNotes": "Regnum ID: '103'",
             "label": "Stramenopila",
-            "dwc:scientificNameAuthorship": "Simpson, A. G. B. and Dunthorn, M.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Simpson, A. G. B. and Dunthorn, M.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Introductory mycology.",
@@ -353,7 +353,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -406,7 +406,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The crown clade for which flagellar retronemes (tripartite, rigid, hollow flagellar hairs, arrayed in such a way as to cause ‘reversed’ fluid flow or locomotion), as inherited by Ochromonas danica Pringsheim 1955, is an apomorphy relative to other crown clades, provided that it does not include Tetrahymena thermophila Nanney and McCoy 1976 (Alveolata) and Bigelowiella natans Moestrup and Sengco 2001 (Rhizaria).",
+            "definition": "The crown clade for which flagellar retronemes (tripartite, rigid, hollow flagellar hairs, arrayed in such a way as to cause ‘reversed’ fluid flow or locomotion), as inherited by Ochromonas danica Pringsheim 1955, is an apomorphy relative to other crown clades, provided that it does not include Tetrahymena thermophila Nanney and McCoy 1976 (Alveolata) and Bigelowiella natans Moestrup and Sengco 2001 (Rhizaria).",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

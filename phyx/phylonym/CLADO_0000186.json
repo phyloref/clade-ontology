@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -64,10 +64,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 186,
+            "curatorNotes": "Regnum ID: '186'",
             "label": "Opisthothelae",
-            "dwc:scientificNameAuthorship": "Kuntner, M. and Agnarsson, I.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Kuntner, M. and Agnarsson, I.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Liphistius and its bearing upon the classification of spiders.",
@@ -94,7 +94,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -154,7 +154,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The crown clade for which a posteriorly positioned set of six or fewer spinnerets, as inherited by Araneus angulatus Clerck 1757 (Araneidae), is an apomorphy relative to other crown clades.",
+            "definition": "The crown clade for which a posteriorly positioned set of six or fewer spinnerets, as inherited by Araneus angulatus Clerck 1757 (Araneidae), is an apomorphy relative to other crown clades.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

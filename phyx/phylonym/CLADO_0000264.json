@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -117,10 +117,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 264,
+            "curatorNotes": "Regnum ID: '264'",
             "label": "Bovidae",
-            "dwc:scientificNameAuthorship": "Bibi, F. and Vrba, E. S.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Bibi, F. and Vrba, E. S.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "On the natural arrangement of vertebrose animals.",
@@ -147,7 +147,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -208,7 +208,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Bos taurus Linnaeus 1758 (Bovini) and Antilope cervicapra (Linnaeus 1758) (Antilopini).",
+            "definition": "The smallest crown clade containing Bos taurus Linnaeus 1758 (Bovini) and Antilope cervicapra (Linnaeus 1758) (Antilopini).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

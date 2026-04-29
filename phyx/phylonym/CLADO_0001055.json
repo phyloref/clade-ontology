@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -115,11 +115,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1055,
+            "curatorNotes": "Regnum ID: '1055'",
             "label": "Icaroptera",
-            "dwc:scientificNameAuthorship": "Béthoux, Olivier and Cui, Yingying and Wipfler, Benjamin",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Béthoux, Olivier and Cui, Yingying and Wipfler, Benjamin",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A winged relative of ice crawlers in amber bridges the cryptic extant Xenonomia and a rich fossil record",
@@ -230,7 +230,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "Species that evolved from the hypothetical ancestral species in which the character state ‘wings absent’ (as opposed to ‘wings present’), as exhibited by campodeiformis Walker, 1914 (currently assigned to the genus Grylloblatta Walker, 1914) and niponensis Caudell & King, 1924 (currently assigned to the genus Galloisiana Caudell & King, 1924), was acquired.",
+            "definition": "Species that evolved from the hypothetical ancestral species in which the character state ‘wings absent’ (as opposed to ‘wings present’), as exhibited by campodeiformis Walker, 1914 (currently assigned to the genus Grylloblatta Walker, 1914) and niponensis Caudell & King, 1924 (currently assigned to the genus Galloisiana Caudell & King, 1924), was acquired.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

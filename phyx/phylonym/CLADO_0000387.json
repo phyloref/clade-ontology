@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -112,10 +112,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 387,
+            "curatorNotes": "Regnum ID: '387'",
             "label": "Caprimulgi",
-            "dwc:scientificNameAuthorship": "Chen, Albert and Field, Daniel J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Chen, Albert and Field, Daniel J.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A revised catalog of the birds ascertained to occur in Illinois",
@@ -141,8 +141,8 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The smallest crown clade containing Caprimulgus europaeus Linnaeus, 1758 (Caprimulgidae) and Nyctibius (originally Caprimulgus) grandis (Gmelin, 1789) (Nyctibiidae) but not Steatornis caripensis Humboldt, 1817 (Steatornithidae), Podargus (originally Caprimulgus) strigoides (Latham, 1801) (Podargidae), Aegotheles (originally Caprimulgus) cristatus (Shaw, 1790) (Aegothelidae), and Apus (originally Hirundo) apus (Linnaeus, 1758) (Apodiformes).",
+            "definitionSource": [],
+            "definition": "The smallest crown clade containing Caprimulgus europaeus Linnaeus, 1758 (Caprimulgidae) and Nyctibius (originally Caprimulgus) grandis (Gmelin, 1789) (Nyctibiidae) but not Steatornis caripensis Humboldt, 1817 (Steatornithidae), Podargus (originally Caprimulgus) strigoides (Latham, 1801) (Podargidae), Aegotheles (originally Caprimulgus) cristatus (Shaw, 1790) (Aegothelidae), and Apus (originally Hirundo) apus (Linnaeus, 1758) (Apodiformes).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

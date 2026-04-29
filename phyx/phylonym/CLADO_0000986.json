@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -91,10 +91,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 986,
+            "curatorNotes": "Regnum ID: '986'",
             "label": "Uruguaysuchidae",
-            "dwc:scientificNameAuthorship": "Leardi, Juan Martín and Pol, and Montefeltro, and Marinho, and Ruiz, and Bravo, and Pinheiro, and Godoy, and Nicholl, and Lecuona, and Larsson,",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Leardi, Juan Martín and Pol, and Montefeltro, and Marinho, and Ruiz, and Bravo, and Pinheiro, and Godoy, and Nicholl, and Lecuona, and Larsson,",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": ". Los Notosuchia del Cretácico de América del Sur como un nuevo Infraorden de los Mesosuchia (Crocodilia)",
@@ -119,7 +119,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic nomenclature of Notosuchia (Crocodylomorpha; Crocodyliformes)",
@@ -151,7 +151,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The most inclusive clade containing Uruguaysuchus aznarezi Rusconi 1933 (proxy: Araripesuchus gomesii Price 1959) but not Baurusuchus pachecoi (Price 1945), Peirosaurus torminni Price 1955 (proxy: Lomasuchus palpebrosus Gasparini, Chiappe and Fernández 1991), Mahajangasuchus insignis Buckley and Brochu 1999, Notosuchus terrestris Woodward 1896, and Crocodylus niloticus Laurenti 1768. This is a maximum-clade definition. The proxies are not specifiers but can be used in place of the specifiers for which they are proxies on phylogenies from which those specifiers are absent (see Methods).",
+            "definition": "The most inclusive clade containing Uruguaysuchus aznarezi Rusconi 1933 (proxy: Araripesuchus gomesii Price 1959) but not Baurusuchus pachecoi (Price 1945), Peirosaurus torminni Price 1955 (proxy: Lomasuchus palpebrosus Gasparini, Chiappe and Fernández 1991), Mahajangasuchus insignis Buckley and Brochu 1999, Notosuchus terrestris Woodward 1896, and Crocodylus niloticus Laurenti 1768. This is a maximum-clade definition. The proxies are not specifiers but can be used in place of the specifiers for which they are proxies on phylogenies from which those specifiers are absent (see Methods).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

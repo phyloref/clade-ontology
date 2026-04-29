@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -132,10 +132,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 126,
+            "curatorNotes": "Regnum ID: '126'",
             "label": "Rhodellophyceae",
-            "dwc:scientificNameAuthorship": "Saunders, G. W.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Saunders, G. W.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A revised six-kingdom system of life.",
@@ -161,7 +161,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -214,7 +214,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The largest crown clade containing Rhodella maculata L. Evans 1970 but not Bangia fuscopurpurea (Dillwyn) Lyngbye 1819, Compsopogon caeruleus (C. Agardh) Montagne 1846, Porphyridium aerugineum Geitler 1923, Rhodochaete pulchella Thuret ex Bornet 1892 and Stylonema cornu-cervi Reinsch 1875.",
+            "definition": "The largest crown clade containing Rhodella maculata L. Evans 1970 but not Bangia fuscopurpurea (Dillwyn) Lyngbye 1819, Compsopogon caeruleus (C. Agardh) Montagne 1846, Porphyridium aerugineum Geitler 1923, Rhodochaete pulchella Thuret ex Bornet 1892 and Stylonema cornu-cervi Reinsch 1875.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -142,10 +142,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 697,
+            "curatorNotes": "Regnum ID: '697'",
             "label": "Novaeratitae",
-            "dwc:scientificNameAuthorship": "Sangster, George and Braun, Edward L and Johansson, Ulf S and Kimball, Rebecca T and Mayr, Gerald and Suh, Alexander",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Sangster, George and Braun, Edward L and Johansson, Ulf S and Kimball, Rebecca T and Mayr, Gerald and Suh, Alexander",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Parsimony and model-based analyses of indels in avian nuclear genes reveal congruent and incongruent phylogenetic signals",
@@ -305,8 +305,8 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The least inclusive crown clade containing Apteryx australis Shaw, 1813 (Apterygiformes) and Struthio Casuarius (now Casuarius casuarius) Linnaeus, 1758 (Casuariiformes). This is a minimum-crown-clade definition. Abbreviated definition: min crown ∇ (Apteryx australis Shaw, 1813 & Casuarius casuarius (Linnaeus, 1758)).",
+            "definitionSource": [],
+            "definition": "The least inclusive crown clade containing Apteryx australis Shaw, 1813 (Apterygiformes) and Struthio Casuarius (now Casuarius casuarius) Linnaeus, 1758 (Casuariiformes). This is a minimum-crown-clade definition. Abbreviated definition: min crown ∇ (Apteryx australis Shaw, 1813 & Casuarius casuarius (Linnaeus, 1758)).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

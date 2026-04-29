@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -193,10 +193,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 994,
+            "curatorNotes": "Regnum ID: '994'",
             "label": "Sebecosuchia",
-            "dwc:scientificNameAuthorship": "Leardi, Juan Martín and Pol, and Montefeltro, and Marinho, and Ruiz, and Bravo, and Pinheiro, and Godoy, and Nicholl, and Lecuona, and Larsson,",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Leardi, Juan Martín and Pol, and Montefeltro, and Marinho, and Ruiz, and Bravo, and Pinheiro, and Godoy, and Nicholl, and Lecuona, and Larsson,",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "New reptiles from the Eocene of South America",
@@ -221,7 +221,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic nomenclature of Notosuchia (Crocodylomorpha; Crocodyliformes)",
@@ -253,7 +253,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive clade containing Sebecus icaeorhinus Simpson 1937 and Baurusuchus pachecoi Price 1945 but not Araripesuchus gomesii Price 1959 or Montealtosuchus arrudacamposi Carvalho et al. 2007 or Crocodylus niloticus Laurenti 1768 (Crocodylia). This is a minimum-clade definition with external specifiers.",
+            "definition": "The least inclusive clade containing Sebecus icaeorhinus Simpson 1937 and Baurusuchus pachecoi Price 1945 but not Araripesuchus gomesii Price 1959 or Montealtosuchus arrudacamposi Carvalho et al. 2007 or Crocodylus niloticus Laurenti 1768 (Crocodylia). This is a minimum-clade definition with external specifiers.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

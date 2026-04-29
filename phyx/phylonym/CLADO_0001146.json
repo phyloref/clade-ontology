@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -55,11 +55,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1146,
+            "curatorNotes": "Regnum ID: '1146'",
             "label": "Bottosauria",
-            "dwc:scientificNameAuthorship": "Cidade, Giovanne M. and Godoy, Pedro L. and Amavet, Patricia and Cossette, Adam and Solórzano, Andrés and Bona, Paula and Angulo-Bedoya, Mónica and Balaguera-Reina, Sergio  A. and Rabi, Márton and Farias, Izeni Pires and Figueiredo, Rodrigo G. and Ezcurra, Martin D. and Bittencourt, Pedro S. and Brochu, Christopher A. and Roberto, Igor J.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Cidade, Giovanne M. and Godoy, Pedro L. and Amavet, Patricia and Cossette, Adam and Solórzano, Andrés and Bona, Paula and Angulo-Bedoya, Mónica and Balaguera-Reina, Sergio  A. and Rabi, Márton and Farias, Izeni Pires and Figueiredo, Rodrigo G. and Ezcurra, Martin D. and Bittencourt, Pedro S. and Brochu, Christopher A. and Roberto, Igor J.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "The phylogenetic nomenclature of Caimaninae (Crocodylia: Alligatoroidea), Historical Biology, DOI: 10.1080/08912963.2026.2614968",
@@ -220,7 +220,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The clade consisting of Bottosaurus harlani Agassiz, 1849 and all organisms or species that share a more recent common ancestor with Bottosaurus harlani Agassiz, 1849 than with Caiman crocodilus (Linnaeus, 1758), Caiman latirostris (Daudin, 1802), Eocaiman cavernensis Simpson, 1933, Mourasuchus atopus (Langston, 1965) and Purussaurus brasiliensis Barbosa-Rodrigues, 1892.",
+            "definition": "The clade consisting of Bottosaurus harlani Agassiz, 1849 and all organisms or species that share a more recent common ancestor with Bottosaurus harlani Agassiz, 1849 than with Caiman crocodilus (Linnaeus, 1758), Caiman latirostris (Daudin, 1802), Eocaiman cavernensis Simpson, 1933, Mourasuchus atopus (Langston, 1965) and Purussaurus brasiliensis Barbosa-Rodrigues, 1892.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

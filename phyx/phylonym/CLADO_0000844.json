@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -62,11 +62,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 844,
+            "curatorNotes": "Regnum ID: '844'",
             "label": "Peperomia",
-            "dwc:scientificNameAuthorship": "Jiménez, José Esteban",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Jiménez, José Esteban",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A revised infrageneric classification of the genus Peperomia (Piperaceae)",
@@ -165,7 +165,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The smallest clade containing Peperomia espinosa Yuncker (1950), Peperomia foliiflora Ruiz & Pav. (1798) and Peperomia glabella Dietr. (1831). This is a minimum-crown clade definition.",
+            "definition": "The smallest clade containing Peperomia espinosa Yuncker (1950), Peperomia foliiflora Ruiz & Pav. (1798) and Peperomia glabella Dietr. (1831). This is a minimum-crown clade definition.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -57,10 +57,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1037,
+            "curatorNotes": "Regnum ID: '1037'",
             "label": "Scelidosauridae",
-            "dwc:scientificNameAuthorship": "Fonseca, André O. and Reid, Iain J. and Venner, Alexander and Duncan, Ruairidh J. and Garcia, Mauricio S. and Müller, Rodrigo T.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Fonseca, André O. and Reid, Iain J. and Venner, Alexander and Duncan, Ruairidh J. and Garcia, Mauricio S. and Müller, Rodrigo T.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Synopsis of the Extinct Batrachia, Reptilia and Aves of North America",
@@ -87,7 +87,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A Comprehensive Phylogenetic Analysis on Early Ornithischian Evolution",
@@ -163,7 +163,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade containing Scelidosaurus harrisonii Owen, 1861b but not Ankylosaurus magniventris Brown, 1908 and Stegosaurus stenops Marsh, 1887.",
+            "definition": "The largest clade containing Scelidosaurus harrisonii Owen, 1861b but not Ankylosaurus magniventris Brown, 1908 and Stegosaurus stenops Marsh, 1887.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

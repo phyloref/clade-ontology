@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -339,10 +339,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 40,
+            "curatorNotes": "Regnum ID: '40'",
             "label": "Ericaceae",
-            "dwc:scientificNameAuthorship": "Judd, W. S. and Kron, K. A.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Judd, W. S. and Kron, K. A.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Genera plantarum.",
@@ -363,7 +363,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -425,7 +425,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Enkianthus campanulatus G. Nicholson 1884, Pyrola rotundifolia L. 1753, Hypopitys monotropa Crantz 1766, Arctostaphylos uva-ursi (L.) Spreng. 1825, and Erica cinerea L. 1753.",
+            "definition": "The smallest crown clade containing Enkianthus campanulatus G. Nicholson 1884, Pyrola rotundifolia L. 1753, Hypopitys monotropa Crantz 1766, Arctostaphylos uva-ursi (L.) Spreng. 1825, and Erica cinerea L. 1753.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

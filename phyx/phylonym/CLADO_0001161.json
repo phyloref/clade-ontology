@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -144,11 +144,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1161,
+            "curatorNotes": "Regnum ID: '1161'",
             "label": "Sparisomatini",
-            "dwc:scientificNameAuthorship": "Near, Thomas J. and Brownstein, Chase D. and Thacker, Christine E. and Wainwright, Peter C.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Near, Thomas J. and Brownstein, Chase D. and Thacker, Christine E. and Wainwright, Peter C.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic taxonomy of wrasses and parrotfishes (Labridae)",
@@ -205,7 +205,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Cryptotomus roseus Cope 1871, Leptoscarus vaigiensis (Quoy and Gaimard 1824), and Sparisoma chrysopterum (Bloch and Schneider 1801).",
+            "definition": "The least inclusive crown clade that contains Cryptotomus roseus Cope 1871, Leptoscarus vaigiensis (Quoy and Gaimard 1824), and Sparisoma chrysopterum (Bloch and Schneider 1801).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

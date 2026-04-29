@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -188,10 +188,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 18,
+            "curatorNotes": "Regnum ID: '18'",
             "label": "Asteridae",
-            "dwc:scientificNameAuthorship": "Olmstead, R. G. and Judd, W. S.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Olmstead, R. G. and Judd, W. S.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Sistema i filogeniia tsvetkovykh rastenii (systema et phylogenia magnoliophytorum).",
@@ -215,7 +215,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -277,7 +277,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The least inclusive clade containing Lamium purpureum Linnaeus 1753 (Lamiidae/Lamiales), Cornus mas Linnaeus 1753 (Cornales), Aster amellus Linnaeus 1753 (Campanulidae/Asterales), and Arbutus unedo Linnaeus 1753 (Ericales).",
+            "definition": "The least inclusive clade containing Lamium purpureum Linnaeus 1753 (Lamiidae/Lamiales), Cornus mas Linnaeus 1753 (Cornales), Aster amellus Linnaeus 1753 (Campanulidae/Asterales), and Arbutus unedo Linnaeus 1753 (Ericales).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

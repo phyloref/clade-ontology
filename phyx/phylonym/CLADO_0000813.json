@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -36,12 +36,12 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 813,
+            "curatorNotes": "Regnum ID: '813'",
             "label": "Gondwanamorpha",
-            "dwc:scientificNameAuthorship": "Lemierre, and Bailon, and Folie, and Laurin,",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The smallest clade that includes Shelania pascuali, Pipa pipa, Hymenochirus boettgeri, Xenopus laevis and Silurana tropicalis.",
+            "scientificNameAuthorship": "Lemierre, and Bailon, and Folie, and Laurin,",
+            "namePublishedIn": [],
+            "definitionSource": [],
+            "definition": "The smallest clade that includes Shelania pascuali, Pipa pipa, Hymenochirus boettgeri, Xenopus laevis and Silurana tropicalis.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

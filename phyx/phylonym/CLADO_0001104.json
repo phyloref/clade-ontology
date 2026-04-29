@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -188,10 +188,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1104,
+            "curatorNotes": "Regnum ID: '1104'",
             "label": "Goetzeoideae",
-            "dwc:scientificNameAuthorship": "Olmstead, Richard and Deanna, Rocio",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Olmstead, Richard and Deanna, Rocio",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "An updated classification of the Class Magnoliopsida (“Angiospermae”)",
@@ -231,7 +231,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new phylogeny and phylogenetic classification for Solanaceae",
@@ -348,7 +348,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The minimum crown clade containing Goetzea elegans Wydler 1830, Metternichia principis J.C. Mikan 1823, and Tsoala pubiflora Bosser & D'Arcy 1992.",
+            "definition": "The minimum crown clade containing Goetzea elegans Wydler 1830, Metternichia principis J.C. Mikan 1823, and Tsoala pubiflora Bosser & D'Arcy 1992.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

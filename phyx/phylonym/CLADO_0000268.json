@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -72,10 +72,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 268,
+            "curatorNotes": "Regnum ID: '268'",
             "label": "Carnivora",
-            "dwc:scientificNameAuthorship": "Flynn, J. J. and Wyss, A. R. and Wolsan, M.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Flynn, J. J. and Wyss, A. R. and Wolsan, M.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "An analysis of the natural classifications of Mammalia for the use of students and travelers.",
@@ -99,7 +99,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -169,7 +169,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade containing Panthera leo Linnaeus 1758 (Felidae), Canis lupus Linnaeus 1758 (Canidae), and Phoca vitulina Linnaeus 1758 (Phocidae).",
+            "definition": "The least inclusive crown clade containing Panthera leo Linnaeus 1758 (Felidae), Canis lupus Linnaeus 1758 (Canidae), and Phoca vitulina Linnaeus 1758 (Phocidae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -45,11 +45,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1078,
+            "curatorNotes": "Regnum ID: '1078'",
             "label": "Brachychampsini",
-            "dwc:scientificNameAuthorship": "Cossette, Adam P. and Tarailo, David. A.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Cossette, Adam P. and Tarailo, David. A.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "CROCODYLIAN DIVERSITY DURING THE EARLY EOCENE CLIMATIC OPTIMUM IN THE GOLDEN VALLEY FORMATION OF NORTH DAKOTA, U.S.A.",
@@ -88,7 +88,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade of alligatorids more closely related to Brachychampsa montana Gilmore 1911 than to Caiman crocodilus (Linnaeus 1758) or Alligator mississippiensis (Daudin 1802).",
+            "definition": "The largest clade of alligatorids more closely related to Brachychampsa montana Gilmore 1911 than to Caiman crocodilus (Linnaeus 1758) or Alligator mississippiensis (Daudin 1802).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

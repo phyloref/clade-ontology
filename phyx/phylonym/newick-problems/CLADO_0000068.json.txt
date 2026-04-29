@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -1424,10 +1424,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 68,
+            "curatorNotes": "Regnum ID: '68'",
             "label": "Monocotyledoneae",
-            "dwc:scientificNameAuthorship": "Judd, W. S. and Soltis, P. S. and Soltis, D. E. and Graham, S. W.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Judd, W. S. and Soltis, P. S. and Soltis, D. E. and Graham, S. W.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Regni vegetabilis systema naturale",
@@ -1451,7 +1451,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -1531,7 +1531,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Acorus calamus Linnaeus 1753, Gymnostachys anceps Robert Brown 1810 (Alismatales), and Lilium superbum Linnaeus 1762 (Liliales).",
+            "definition": "The smallest crown clade containing Acorus calamus Linnaeus 1753, Gymnostachys anceps Robert Brown 1810 (Alismatales), and Lilium superbum Linnaeus 1762 (Liliales).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -177,10 +177,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 706,
+            "curatorNotes": "Regnum ID: '706'",
             "label": "Aequornithes",
-            "dwc:scientificNameAuthorship": "Sangster, George and Braun, Edward L and Johansson, Ulf S and Kimball, Rebecca T. and Mayr, Gerald and Suh, Alexander",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Sangster, George and Braun, Edward L and Johansson, Ulf S and Kimball, Rebecca T. and Mayr, Gerald and Suh, Alexander",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Metaves, Mirandornithes, Strisores and other novelties – a critical review of the higher-level phylogeny of neornithine birds.",
@@ -206,8 +206,8 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The least inclusive crown clade containing Pelecanus onocrotalus Linnaeus, 1758 (Pelecaniformes) and Colymbus Immer (now Gavia immer) Brünnich, 1764 (Gaviiformes).",
+            "definitionSource": [],
+            "definition": "The least inclusive crown clade containing Pelecanus onocrotalus Linnaeus, 1758 (Pelecaniformes) and Colymbus Immer (now Gavia immer) Brünnich, 1764 (Gaviiformes).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

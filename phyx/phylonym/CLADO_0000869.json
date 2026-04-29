@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -99,10 +99,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 869,
+            "curatorNotes": "Regnum ID: '869'",
             "label": "Callioreas",
-            "dwc:scientificNameAuthorship": "O'Leary, Nataly and Olmstead, Richard G",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "O'Leary, Nataly and Olmstead, Richard G",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "De plantis in Expeditione Romanzoffiana observatis dicunt. Verbenaceae.",
@@ -128,7 +128,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Making Lantaneae taxonomy useful: A phylogenetic classification",
@@ -170,7 +170,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The maximum crown clade containing Lantana trifolia L. 1753, but not Lippia aristata Schauer 1847 and Lippia macrophylla Cham. 1832 and Lippia lasiocalycina Cham. 1832 and Lantana camara L. 1753.",
+            "definition": "The maximum crown clade containing Lantana trifolia L. 1753, but not Lippia aristata Schauer 1847 and Lippia macrophylla Cham. 1832 and Lippia lasiocalycina Cham. 1832 and Lantana camara L. 1753.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -134,10 +134,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 729,
+            "curatorNotes": "Regnum ID: '729'",
             "label": "Eutitanosauria",
-            "dwc:scientificNameAuthorship": "Navarro, Bruno A. and Ghilardi, Aline M. and Aureliano, Tito and Díez Díaz, Verónica and Bandeira, Kamila L. N. and Cattaruzzi, André G. S. and Iori, Fabiano V. and Martine, Ariel M. and Barbosa, Alberto B. and Anelli, Luiz E. and Fernandes, Marcelo A. and Zaher, Hussam",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Navarro, Bruno A. and Ghilardi, Aline M. and Aureliano, Tito and Díez Díaz, Verónica and Bandeira, Kamila L. N. and Cattaruzzi, André G. S. and Iori, Fabiano V. and Martine, Ariel M. and Barbosa, Alberto B. and Anelli, Luiz E. and Fernandes, Marcelo A. and Zaher, Hussam",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Sauropod remains from the Upper Cretaceous of Laño (Northecentral Spain). Titanosaur phylogenetic relationships",
@@ -204,7 +204,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new nanoid-titanosaur from the Upper Cretaceous of Brazil",
@@ -279,7 +279,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive clade containing Saltasaurus loricatus Bonaparte & Powell 1980 but not Epachthosaurus sciuttoi Powell 1990.",
+            "definition": "The least inclusive clade containing Saltasaurus loricatus Bonaparte & Powell 1980 but not Epachthosaurus sciuttoi Powell 1990.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

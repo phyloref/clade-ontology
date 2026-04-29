@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -249,10 +249,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 249,
+            "curatorNotes": "Regnum ID: '249'",
             "label": "Cupressophyta",
-            "dwc:scientificNameAuthorship": "Graham, S. W. and Cantino, P. D. and Donoghue, M. J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Graham, S. W. and Cantino, P. D. and Donoghue, M. J.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Towards a phylogenetic nomenclature of Tracheophyta.",
@@ -315,7 +315,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -386,7 +386,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Cupressus sempervirens L. 1753 and Podocarpus macrophyllus (Thunb.) Sweet 1818, but not Gnetum gnemon L. 1767 or Pinus strobus L. 1753.",
+            "definition": "The smallest crown clade containing Cupressus sempervirens L. 1753 and Podocarpus macrophyllus (Thunb.) Sweet 1818, but not Gnetum gnemon L. 1767 or Pinus strobus L. 1753.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

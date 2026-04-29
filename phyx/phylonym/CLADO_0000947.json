@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -201,10 +201,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 947,
+            "curatorNotes": "Regnum ID: '947'",
             "label": "Percomorpha",
-            "dwc:scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Some remarks on the fossil fishes of Mount Lebanon, Syria",
@@ -236,7 +236,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
@@ -270,7 +270,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Carapus bermudensis (Jones 1874), and Micropterus salmoides (Lacépède 1802), but not Diretmoides parini Post and Quéro 1981 nor Beryx decadactylus Cuvier 1829 in Cuvier and Valenciennes (1829).",
+            "definition": "The least inclusive crown clade that contains Carapus bermudensis (Jones 1874), and Micropterus salmoides (Lacépède 1802), but not Diretmoides parini Post and Quéro 1981 nor Beryx decadactylus Cuvier 1829 in Cuvier and Valenciennes (1829).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

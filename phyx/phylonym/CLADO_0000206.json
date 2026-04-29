@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -306,10 +306,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 206,
+            "curatorNotes": "Regnum ID: '206'",
             "label": "Actinopterygii",
-            "dwc:scientificNameAuthorship": "Moore, J. A. and Near, T. J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Moore, J. A. and Near, T. J.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Catalogue of fossil fishes in the British Museum (Natural History)",
@@ -333,7 +333,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -395,7 +395,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Polypterus bichir Lacepede 1803, Acipenser sturio Linnaeus 1758, Psephurus gladius (Martens 1862), Lepisosteus osseus (Linnaeus 1758), Amia calva Linnaeus 1766, and Perca fluviatilis Linnaeus 1758.",
+            "definition": "The least inclusive crown clade that contains Polypterus bichir Lacepede 1803, Acipenser sturio Linnaeus 1758, Psephurus gladius (Martens 1862), Lepisosteus osseus (Linnaeus 1758), Amia calva Linnaeus 1766, and Perca fluviatilis Linnaeus 1758.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

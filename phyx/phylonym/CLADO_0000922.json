@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -125,10 +125,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 922,
+            "curatorNotes": "Regnum ID: '922'",
             "label": "Stomiiformes",
-            "dwc:scientificNameAuthorship": "Near, Thomas J. and Thacker, Christine E.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Near, Thomas J. and Thacker, Christine E.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Relationships of the stomiiform fishes (Teleostei), with a description of Diplophos",
@@ -164,7 +164,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
@@ -198,7 +198,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Stomias boa (Linnaeus 1758), Gonostoma denudatum Rafinesque 1810, Sternoptyx diaphana Hermann 1781, and Vinciguerria nimbaria (Jordan and Williams in Jordan and Starks 1895).",
+            "definition": "The least inclusive crown clade that contains Stomias boa (Linnaeus 1758), Gonostoma denudatum Rafinesque 1810, Sternoptyx diaphana Hermann 1781, and Vinciguerria nimbaria (Jordan and Williams in Jordan and Starks 1895).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

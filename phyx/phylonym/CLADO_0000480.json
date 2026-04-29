@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -57,11 +57,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 480,
+            "curatorNotes": "Regnum ID: '480'",
             "label": "Bothremydidae",
-            "dwc:scientificNameAuthorship": "Joyce, Walter G. and Anquetin, Jérémy and Cadena, Edwin-Alberto and Claude, Julien and Danilov, Igor G. and Evers, Serjoscha W. and Ferreira, Gabriel S. and Gentry, Andrew D. and Georgalis, Georgios L. and Lyson, Tyler R. and Pérez-García, Adán and Rabi, Márton and Sterli, Juliana and Vitek, Natasha S. and Parham, James  F.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Joyce, Walter G. and Anquetin, Jérémy and Cadena, Edwin-Alberto and Claude, Julien and Danilov, Igor G. and Evers, Serjoscha W. and Ferreira, Gabriel S. and Gentry, Andrew D. and Georgalis, Georgios L. and Lyson, Tyler R. and Pérez-García, Adán and Rabi, Márton and Sterli, Juliana and Vitek, Natasha S. and Parham, James  F.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A nomenclature for fossil and living turtles using phylogenetically defined clade names",
@@ -213,7 +213,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest extinct clade containing Bothremys cookii Leidy, 1865.",
+            "definition": "The largest extinct clade containing Bothremys cookii Leidy, 1865.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

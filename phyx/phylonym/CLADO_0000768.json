@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -55,11 +55,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 768,
+            "curatorNotes": "Regnum ID: '768'",
             "label": "Nyctosauromorpha",
-            "dwc:scientificNameAuthorship": "Andres, Brian",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Andres, Brian",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic Taxonomy of the Pterosauria",
@@ -83,7 +83,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "Most inclusive clade containing Nyctosaurus gracilis (Marsh, 1876) but not Pteranodon longiceps Marsh 1876.",
+            "definition": "Most inclusive clade containing Nyctosaurus gracilis (Marsh, 1876) but not Pteranodon longiceps Marsh 1876.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

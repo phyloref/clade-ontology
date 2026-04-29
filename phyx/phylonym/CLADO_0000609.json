@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -237,10 +237,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 609,
+            "curatorNotes": "Regnum ID: '609'",
             "label": "Elasmaria",
-            "dwc:scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Discovery of a new ornithopod dinosaur from the Portezuelo Formation (Upper Cretaceous), Neuquén, Patagonia, Argentina",
@@ -285,7 +285,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
@@ -364,7 +364,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The smallest clade containing Macrogryphosaurus gondwanicus Calvo, Porfiri & Novas, 2007 and Talenkauen santacrucensis Novas, Cambiaso & Ambrosio, 2004, provided that it does not include Hypsilophodon foxii Huxley, 1869, Iguanodon bernissartensis Boulenger in Beneden, 1881, or Thescelosaurus neglectus Gilmore, 1913.",
+            "definition": "The smallest clade containing Macrogryphosaurus gondwanicus Calvo, Porfiri & Novas, 2007 and Talenkauen santacrucensis Novas, Cambiaso & Ambrosio, 2004, provided that it does not include Hypsilophodon foxii Huxley, 1869, Iguanodon bernissartensis Boulenger in Beneden, 1881, or Thescelosaurus neglectus Gilmore, 1913.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

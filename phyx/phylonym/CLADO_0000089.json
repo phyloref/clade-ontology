@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -230,10 +230,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 89,
+            "curatorNotes": "Regnum ID: '89'",
             "label": "Rhabdocoela",
-            "dwc:scientificNameAuthorship": "Artois, T.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Artois, T.",
+            "namePublishedIn": [
                 {
                     "type": "book_section",
                     "title": "in Symbolae Physicae II. Phytozoa Turbellaria",
@@ -277,7 +277,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -329,7 +329,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "the smallest crown clade containing Polycystis naegelii Kölliker 1845, Provortex balticus (Schultze 1851) Graff 1882, and Mariplanella frisia Ax and Heller 1970.",
+            "definition": "the smallest crown clade containing Polycystis naegelii Kölliker 1845, Provortex balticus (Schultze 1851) Graff 1882, and Mariplanella frisia Ax and Heller 1970.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

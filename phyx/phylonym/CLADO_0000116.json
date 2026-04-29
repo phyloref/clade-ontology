@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -125,10 +125,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 116,
+            "curatorNotes": "Regnum ID: '116'",
             "label": "Euglenozoa",
-            "dwc:scientificNameAuthorship": "Simpson, A. G. B.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Simpson, A. G. B.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Eukaryote kingdoms: seven or nine?",
@@ -155,7 +155,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -208,7 +208,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The crown clade for which paraxonemal rods, as inherited by Entosiphon sulcatum (Dujardin) Stein 1878, are an apomorphy relative to other crown clades.  Heteromorphic in this sense specifically means with a three-dimensional lattice appearance in the posterior/ventral flagellum (flagellum 1) and a tubular/whorled appearance in the anterior/dorsal flagellum (flagellum 2).",
+            "definition": "The crown clade for which paraxonemal rods, as inherited by Entosiphon sulcatum (Dujardin) Stein 1878, are an apomorphy relative to other crown clades.  Heteromorphic in this sense specifically means with a three-dimensional lattice appearance in the posterior/ventral flagellum (flagellum 1) and a tubular/whorled appearance in the anterior/dorsal flagellum (flagellum 2).",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

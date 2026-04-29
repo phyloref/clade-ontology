@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -177,10 +177,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 705,
+            "curatorNotes": "Regnum ID: '705'",
             "label": "Phaethontimorphae",
-            "dwc:scientificNameAuthorship": "Sangster, George and Braun, Edward L and Johansson, Ulf S and Kimball, Rebecca T and Mayr, Gerald and Suh, Alexander",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Sangster, George and Braun, Edward L and Johansson, Ulf S and Kimball, Rebecca T and Mayr, Gerald and Suh, Alexander",
+            "namePublishedIn": [
                 {
                     "type": "book_section",
                     "title": "The Howard and Moore complete checklist of the birds of the world. Fourth edition, vol. 1: Non-passerines",
@@ -225,8 +225,8 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The least inclusive crown clade containing Phaёthon (now Phaethon) aethereus Linnaeus, 1758 (Phaethontiformes), Eurypyga helias Pallas, 1781 and Rhynochetos jubatus J. Verreaux and Des Murs, 1860.",
+            "definitionSource": [],
+            "definition": "The least inclusive crown clade containing Phaёthon (now Phaethon) aethereus Linnaeus, 1758 (Phaethontiformes), Eurypyga helias Pallas, 1781 and Rhynochetos jubatus J. Verreaux and Des Murs, 1860.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -61,11 +61,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 574,
+            "curatorNotes": "Regnum ID: '574'",
             "label": "Azhdarchomorpha",
-            "dwc:scientificNameAuthorship": "Pêgas, Rodrigo Vargas and Holgado, Borja and Ortiz David, Leonardo and Baiano, Mattia and Costa, Fabiana Rodrigues",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Pêgas, Rodrigo Vargas and Holgado, Borja and Ortiz David, Leonardo and Baiano, Mattia and Costa, Fabiana Rodrigues",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "On the pterosaur Aerotitan sudamericanus (Neuquén Basin, Late Cretaceous of Argentina), with comments on azhdarchoid phylogeny and jaw anatomy",
@@ -124,7 +124,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The most inclusive clade containing Azhdarcho lancicollis Nessov 1984 but not Thalassodromeus sethi Kellner & Campos 2002 or Tapejara wellnhoferi Kellner 1989.",
+            "definition": "The most inclusive clade containing Azhdarcho lancicollis Nessov 1984 but not Thalassodromeus sethi Kellner & Campos 2002 or Tapejara wellnhoferi Kellner 1989.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

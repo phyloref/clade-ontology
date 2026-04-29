@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -58,10 +58,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 471,
+            "curatorNotes": "Regnum ID: '471'",
             "label": "Chelodininae",
-            "dwc:scientificNameAuthorship": "Joyce, Walter G. and Anquetin, Jérémy and Cadena, Edwin-Alberto and Claude, Julien and Danilov, Igor G. and Evers, Serjoscha W. and Ferreira, Gabriel S. and Gentry, Andrew D. and Georgalis, Georgios L. and Lyson, Tyler R. and Pérez-García, Adán and Rabi, Márton and Sterli, Juliana and Vitek, Natasha S. and Parham, James  F.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Joyce, Walter G. and Anquetin, Jérémy and Cadena, Edwin-Alberto and Claude, Julien and Danilov, Igor G. and Evers, Serjoscha W. and Ferreira, Gabriel S. and Gentry, Andrew D. and Georgalis, Georgios L. and Lyson, Tyler R. and Pérez-García, Adán and Rabi, Márton and Sterli, Juliana and Vitek, Natasha S. and Parham, James  F.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A phylogeny for side-necked turtles (Chelonia: Pleurodira) based on mitochondrial and nuclear gene sequence variation",
@@ -121,7 +121,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A nomenclature for fossil and living turtles using phylogenetically defined clade names",
@@ -273,7 +273,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest crown clade containing Chelodina (orig. Testudo) longicollis (Shaw, 1794), but not Chelus (orig. Testudo) fimbriata (Schneider, 1783), Emydura (orig. Chelys) macquarii (Gray, 1831c), Hydromedusa maximiliani (Mikan, 1825), or Pseudemydura umbrina Siebenrock, 1901.",
+            "definition": "The largest crown clade containing Chelodina (orig. Testudo) longicollis (Shaw, 1794), but not Chelus (orig. Testudo) fimbriata (Schneider, 1783), Emydura (orig. Chelys) macquarii (Gray, 1831c), Hydromedusa maximiliani (Mikan, 1825), or Pseudemydura umbrina Siebenrock, 1901.",
             "internalSpecifiers": [],
             "externalSpecifiers": [
                 {

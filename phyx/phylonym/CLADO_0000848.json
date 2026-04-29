@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -146,10 +146,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 848,
+            "curatorNotes": "Regnum ID: '848'",
             "label": "Heterotremata D Guinot, 1977 [L. A. Jennings et al.] converted clade name",
-            "dwc:scientificNameAuthorship": "Jennings, Lucas A. and Blakeslee, April M.H. and McCoy, Krista  A. and Bojko, Jamie and Behringer , Donald  C.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Jennings, Lucas A. and Blakeslee, April M.H. and McCoy, Krista  A. and Bojko, Jamie and Behringer , Donald  C.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Propositions pour une nouvelle classification des Crustacés Décapodes Brachyoures",
@@ -176,8 +176,8 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The most inclusive crown clade containing Callinectes sapidus (Rathbun 1896), and Orithyia sinica (Linnaeus 1771) including all the species that share a more recent common ancestor with them than with Chiromantes haematocheir (De Haan 1833) and Sinopotamon yaanense (Chung & Ts’ao 1962).",
+            "definitionSource": [],
+            "definition": "The most inclusive crown clade containing Callinectes sapidus (Rathbun 1896), and Orithyia sinica (Linnaeus 1771) including all the species that share a more recent common ancestor with them than with Chiromantes haematocheir (De Haan 1833) and Sinopotamon yaanense (Chung & Ts’ao 1962).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

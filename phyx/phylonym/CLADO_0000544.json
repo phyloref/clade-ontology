@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -50,10 +50,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 544,
+            "curatorNotes": "Regnum ID: '544'",
             "label": "Dermatemydidae",
-            "dwc:scientificNameAuthorship": "Joyce, Walter G. and Anquetin, Jérémy and Cadena, Edwin-Alberto and Claude, Julien and Danilov, Igor G. and Evers, Serjoscha W. and Ferreira, Gabriel S. and Gentry, Andrew D. and Georgalis, Georgios L. and Lyson, Tyler R. and Pérez-García, Adán and Rabi, Márton and Sterli, Juliana and Vitek, Natasha S. and Parham, James  F.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Joyce, Walter G. and Anquetin, Jérémy and Cadena, Edwin-Alberto and Claude, Julien and Danilov, Igor G. and Evers, Serjoscha W. and Ferreira, Gabriel S. and Gentry, Andrew D. and Georgalis, Georgios L. and Lyson, Tyler R. and Pérez-García, Adán and Rabi, Márton and Sterli, Juliana and Vitek, Natasha S. and Parham, James  F.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Osteologische Notizen über Reptilien (Fortsetzung III).",
@@ -79,7 +79,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A nomenclature for fossil and living turtles using phylogenetically defined clade names",
@@ -231,7 +231,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade containing Dermatemys mawii Gray, 1847, but not the kinosternid Kinosternon (orig. Testudo) scorpioides (Linnaeus, 1766) or the chelydrid Chelydra (orig. Testudo) serpentina (Linnaeus, 1758).",
+            "definition": "The largest clade containing Dermatemys mawii Gray, 1847, but not the kinosternid Kinosternon (orig. Testudo) scorpioides (Linnaeus, 1766) or the chelydrid Chelydra (orig. Testudo) serpentina (Linnaeus, 1758).",
             "internalSpecifiers": [],
             "externalSpecifiers": [
                 {

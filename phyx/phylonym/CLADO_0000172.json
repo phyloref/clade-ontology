@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -228,10 +228,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 172,
+            "curatorNotes": "Regnum ID: '172'",
             "label": "Octocorallia",
-            "dwc:scientificNameAuthorship": "Daly, M. and McFadden, C. S.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Daly, M. and McFadden, C. S.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Generale Morphologie der Organismen.",
@@ -254,7 +254,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -315,7 +315,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Alcyonium digitatum Linnaeus 1758 and all extant species that share a more recent common ancestor with Alcyonium digitatum Linnaeus 1758 than with Nematostella vectensis Stephenson 1935 (Hexacorallia).",
+            "definition": "The crown clade originating in the most recent common ancestor of Alcyonium digitatum Linnaeus 1758 and all extant species that share a more recent common ancestor with Alcyonium digitatum Linnaeus 1758 than with Nematostella vectensis Stephenson 1935 (Hexacorallia).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

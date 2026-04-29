@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -39,10 +39,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1081,
+            "curatorNotes": "Regnum ID: '1081'",
             "label": "Sinosturio",
-            "dwc:scientificNameAuthorship": "Near, Thomas J. and Brownstein, Chase D.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Near, Thomas J. and Brownstein, Chase D.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Die Morphogenie der ältesten Wirbeltiere: mit 130 Textabbildungen und 14 Tafeln / von Otto Jaekel; nach seinem Tode herausgegeben von Johannes Weigelt",
@@ -75,7 +75,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Towards a phylogenetic taxonomy of sturgeons (Acipenseriformes: Acipenseridae)",
@@ -109,7 +109,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Sinosturio dabryanus (Duméril 1869), Sinosturio transmontanus (Richardson 1836), and Sinosturio medirostris (Ayers 1854). This is a minimum-crown-clade definition.",
+            "definition": "The least inclusive crown clade that contains Sinosturio dabryanus (Duméril 1869), Sinosturio transmontanus (Richardson 1836), and Sinosturio medirostris (Ayers 1854). This is a minimum-crown-clade definition.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

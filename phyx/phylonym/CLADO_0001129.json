@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -246,11 +246,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1129,
+            "curatorNotes": "Regnum ID: '1129'",
             "label": "Peregrina",
-            "dwc:scientificNameAuthorship": "Knapp, Sandra and Gagnon, Edeline",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Knapp, Sandra and Gagnon, Edeline",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new phylogeny and phylogenetic classification for Solanaceae",
@@ -368,7 +368,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The maximum crown clade containing Solanum terminale Forsskal 1775, but not Solanum montanum Linnaeus 1753, Solanum nigrum Linnaeus 1753, Solanum dulcamara Linnaeus 1753, and Solanum tuberosum Linnaeus 1753.",
+            "definition": "The maximum crown clade containing Solanum terminale Forsskal 1775, but not Solanum montanum Linnaeus 1753, Solanum nigrum Linnaeus 1753, Solanum dulcamara Linnaeus 1753, and Solanum tuberosum Linnaeus 1753.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

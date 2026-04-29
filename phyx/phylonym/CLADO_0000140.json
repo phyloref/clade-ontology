@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -96,10 +96,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 140,
+            "curatorNotes": "Regnum ID: '140'",
             "label": "Nautilus",
-            "dwc:scientificNameAuthorship": "Anderson, F.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Anderson, F.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Systema naturae per regna tria naturae, secundum classes, ordines, genera, species, cum characteribus, differentiis, synonymis, locis. Tomus I. Editio decima, reformata.",
@@ -123,7 +123,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -175,7 +175,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Nautilus pompilius Linnaeus 1758, Nautilus perforatus Conrad, 1847 and Nautilus scrobiculatus Lightfoot 1786.",
+            "definition": "The crown clade originating in the most recent common ancestor of Nautilus pompilius Linnaeus 1758, Nautilus perforatus Conrad, 1847 and Nautilus scrobiculatus Lightfoot 1786.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

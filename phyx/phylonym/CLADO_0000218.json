@@ -1,12 +1,12 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [],
     "phylorefs": [
         {
-            "regnumId": 218,
+            "curatorNotes": "Regnum ID: '218'",
             "label": "Annelida",
-            "dwc:scientificNameAuthorship": "Pleijel, F. and Rouse, G. W.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Pleijel, F. and Rouse, G. W.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Discours d'ouverture, prononcé le 27 floréal an 10, au Muséum d’Histoire naturelle.",
@@ -30,7 +30,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -91,7 +91,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade containing (in order of appearance on the reference phylogeny) Eulalia viridis (Linnaeus, 1767) (Phyllodocidae), Riftia pachyptila Jones, 1981 (Siboglinidae), Aeolosoma hemprichi Ehrenberg, 1828, Chaetopterus variopedatus (Renier, 1804), Eurythoe complanata (Pallas, 1766) (Amphinomidae), Notomastus latericeus M. Sars, 1851 (Capitellidae), Ophelina acuminata Ørsted, 1843,(Opheliidae), Cirratulus cirratus (O.F. Müller, 1776), Pectinaria regalis Verrill, 1901, Arenicola marina (Linnaeus, 1758), Terebellides stroemi M. Sars, 1835 (Terebelliformia), Flabelligera affinis (M. Sars, 1829), Scoloplos armiger (O.F. Müller, 1776) (Orbiniidae), Sabellaria alveolata (Linnaeus, 1767), Harmothoe imbricata (Linnaeus, 1767) (Aphroditiformia), Scalibregma inflatum Rathke, 1843, Nereis pelagica Linnaeus, 1758, Eunice pennata (O.F. Müller, 1776), Sabella pavonina Savigny, 1822, Polydora ciliata (Johnston, 1838) (Spionidae), Capilloventer australis Erséus, 1993 (incertae sedis), Lumbricus terrestris Linnaeus, 1758 (Clitellata), and Hirudo medicinalis Linnaeus, 1758.",
+            "definition": "The least inclusive crown clade containing (in order of appearance on the reference phylogeny) Eulalia viridis (Linnaeus, 1767) (Phyllodocidae), Riftia pachyptila Jones, 1981 (Siboglinidae), Aeolosoma hemprichi Ehrenberg, 1828, Chaetopterus variopedatus (Renier, 1804), Eurythoe complanata (Pallas, 1766) (Amphinomidae), Notomastus latericeus M. Sars, 1851 (Capitellidae), Ophelina acuminata Ørsted, 1843,(Opheliidae), Cirratulus cirratus (O.F. Müller, 1776), Pectinaria regalis Verrill, 1901, Arenicola marina (Linnaeus, 1758), Terebellides stroemi M. Sars, 1835 (Terebelliformia), Flabelligera affinis (M. Sars, 1829), Scoloplos armiger (O.F. Müller, 1776) (Orbiniidae), Sabellaria alveolata (Linnaeus, 1767), Harmothoe imbricata (Linnaeus, 1767) (Aphroditiformia), Scalibregma inflatum Rathke, 1843, Nereis pelagica Linnaeus, 1758, Eunice pennata (O.F. Müller, 1776), Sabella pavonina Savigny, 1822, Polydora ciliata (Johnston, 1838) (Spionidae), Capilloventer australis Erséus, 1993 (incertae sedis), Lumbricus terrestris Linnaeus, 1758 (Clitellata), and Hirudo medicinalis Linnaeus, 1758.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

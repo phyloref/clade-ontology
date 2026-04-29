@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -132,10 +132,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 156,
+            "curatorNotes": "Regnum ID: '156'",
             "label": "Porphyridiophyceae",
-            "dwc:scientificNameAuthorship": "Saunders, G. W.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Saunders, G. W.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Defining the major lineages of red algae (Rhodophyta).",
@@ -197,7 +197,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -250,7 +250,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The largest crown clade containing Porphyridium cruentum (S.F. Gray) Nägeli 1849 (= Porphyridium purpureum (Bory de Saint-Vincent) K.M. Drew & R. Ross 1965) but not Bangia fuscopurpurea (Dillwyn) Lyngbye 1819, Compsopogon caeruleus (C. Agardh) Montagne 1846, Rhodella maculata L. Evans 1970, Rhodochaete pulchella Thuret ex Bornet 1892 and Stylonema alsidii (Zanardini) K.M. Drew 1956.",
+            "definition": "The largest crown clade containing Porphyridium cruentum (S.F. Gray) Nägeli 1849 (= Porphyridium purpureum (Bory de Saint-Vincent) K.M. Drew & R. Ross 1965) but not Bangia fuscopurpurea (Dillwyn) Lyngbye 1819, Compsopogon caeruleus (C. Agardh) Montagne 1846, Rhodella maculata L. Evans 1970, Rhodochaete pulchella Thuret ex Bornet 1892 and Stylonema alsidii (Zanardini) K.M. Drew 1956.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

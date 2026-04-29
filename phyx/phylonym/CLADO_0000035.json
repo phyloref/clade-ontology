@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -440,10 +440,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 35,
+            "curatorNotes": "Regnum ID: '35'",
             "label": "Dikarya",
-            "dwc:scientificNameAuthorship": "Hibbett, D. S. and Blackwell, M. and James, T. and Spatafora, J. W. and Taylor, J. W. and Vilgalys, R.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Hibbett, D. S. and Blackwell, M. and James, T. and Spatafora, J. W. and Taylor, J. W. and Vilgalys, R.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A higher-level phylogenetic classification of the Fungi.",
@@ -487,7 +487,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -582,7 +582,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Coprinopsis cinerea (Schaeff.) Redhead, Vilgalys & Moncalvo 2001 (Basidiomycota/Agaricomycotina), Saccharomyces cerevisiae Meyen 1838 (Ascomycota), and Entorrhiza casparyana (Magnus) Lagerb. 1888 (Entorrhizomycota).",
+            "definition": "The smallest crown clade containing Coprinopsis cinerea (Schaeff.) Redhead, Vilgalys & Moncalvo 2001 (Basidiomycota/Agaricomycotina), Saccharomyces cerevisiae Meyen 1838 (Ascomycota), and Entorrhiza casparyana (Magnus) Lagerb. 1888 (Entorrhizomycota).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

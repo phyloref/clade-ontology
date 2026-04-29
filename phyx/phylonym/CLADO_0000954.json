@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -44,10 +44,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 954,
+            "curatorNotes": "Regnum ID: '954'",
             "label": "Scombriformes",
-            "dwc:scientificNameAuthorship": "Thacker, C. E. and Near, T. J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Thacker, C. E. and Near, T. J.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Vertebrata Craniata. (First fascicle: cyclostomes and fishes)",
@@ -81,7 +81,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
@@ -115,7 +115,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Arripis trutta (Bloch and Schneider 1801), Icosteus aenigmaticus Lockington 1880, Scomber scombrus Linnaeus 1758, Brama japonica Hilgendorf 1878, and Trichiurus lepturus Linnaeus 1758.",
+            "definition": "The least inclusive crown clade that contains Arripis trutta (Bloch and Schneider 1801), Icosteus aenigmaticus Lockington 1880, Scomber scombrus Linnaeus 1758, Brama japonica Hilgendorf 1878, and Trichiurus lepturus Linnaeus 1758.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

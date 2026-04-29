@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -155,10 +155,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 552,
+            "curatorNotes": "Regnum ID: '552'",
             "label": "Avialae",
-            "dwc:scientificNameAuthorship": "Benito, Juan and Chen, Albert and Wilson, Laura E. and Bhullar, Bhart-Anjan S. and Burnham, David and Field, Daniel J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Benito, Juan and Chen, Albert and Wilson, Laura E. and Bhullar, Bhart-Anjan S. and Burnham, David and Field, Daniel J.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Saurischian monophyly and the origin of birds",
@@ -183,7 +183,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Forty new specimens of Ichthyornis provide unprecedented insight into the postcranial morphology of crownward stem group birds",
@@ -261,7 +261,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade containing Vultur gryphus Linnaeus, 1758 (Aves sensu Clarke et al., 2020 or Neornithes) but not Dromaeosaurus albertensis Matthew & Brown, 1922 (Dromaeosauridae) and Saurornithoides mongoliensis Osborn, 1924 (Troodontidae).",
+            "definition": "The largest clade containing Vultur gryphus Linnaeus, 1758 (Aves sensu Clarke et al., 2020 or Neornithes) but not Dromaeosaurus albertensis Matthew & Brown, 1922 (Dromaeosauridae) and Saurornithoides mongoliensis Osborn, 1924 (Troodontidae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

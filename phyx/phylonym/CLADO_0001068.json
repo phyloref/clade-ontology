@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -27,12 +27,12 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1068,
+            "curatorNotes": "Regnum ID: '1068'",
             "label": "Ludodactylini",
-            "dwc:scientificNameAuthorship": "Pêgas, Rodrigo",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The most inclusive clade that includes Anhanguera blittersdorffi Campos & Kellner, 1985 but not Coloborhynchus clavirostris Owen, 1874 or Tropeognathus mesembrinus Wellnhofer, 1987.",
+            "scientificNameAuthorship": "Pêgas, Rodrigo",
+            "namePublishedIn": [],
+            "definitionSource": [],
+            "definition": "The most inclusive clade that includes Anhanguera blittersdorffi Campos & Kellner, 1985 but not Coloborhynchus clavirostris Owen, 1874 or Tropeognathus mesembrinus Wellnhofer, 1987.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

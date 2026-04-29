@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -52,11 +52,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1143,
+            "curatorNotes": "Regnum ID: '1143'",
             "label": "Phacodus arghiusi",
-            "dwc:scientificNameAuthorship": "Trif, Nicolae and Szabó, Márton",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Trif, Nicolae and Szabó, Márton",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A revision of the pycnodont genus Phacodus and the description of a new species, Phacodus arghiusi sp. nov., from the Eocene of the Transylvanian Basin, Romania",
@@ -98,7 +98,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "Diagnosis: A species of Phacodus with enameloid protuberances positioned along the edge of the occlusal surface, on all sides of the teeth.",
+            "definition": "Diagnosis: A species of Phacodus with enameloid protuberances positioned along the edge of the occlusal surface, on all sides of the teeth.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

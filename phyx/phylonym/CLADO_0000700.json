@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -124,10 +124,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 700,
+            "curatorNotes": "Regnum ID: '700'",
             "label": "Neoaves",
-            "dwc:scientificNameAuthorship": "Sangster, George and Braun, Edward L and Johansson, Ulf S and Kimball, Rebecca T and Mayr, Gerald and Suh, Alexander",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Sangster, George and Braun, Edward L and Johansson, Ulf S and Kimball, Rebecca T and Mayr, Gerald and Suh, Alexander",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A classification of the living birds of the world based on DNA-DNA hybridization studies",
@@ -172,8 +172,8 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The largest crown clade including Fringilla domestica (now Passer domesticus) Linnaeus, 1758 (Passeriformes) but not Phasianus gallus (now Gallus gallus) Linnaeus, 1758 (Galliformes).",
+            "definitionSource": [],
+            "definition": "The largest crown clade including Fringilla domestica (now Passer domesticus) Linnaeus, 1758 (Passeriformes) but not Phasianus gallus (now Gallus gallus) Linnaeus, 1758 (Galliformes).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -217,10 +217,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 130,
+            "curatorNotes": "Regnum ID: '130'",
             "label": "Florideophyceae",
-            "dwc:scientificNameAuthorship": "Saunders, G. W.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Saunders, G. W.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": ". The divisions and classes of plants.",
@@ -243,7 +243,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -284,7 +284,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Ahnfeltia plicata (Hudson) Fries 1836 (Ahnfeltiophycidae), Chondrus crispus Stackhouse 1797 (Rhodymeniophycidae), Corallina officinalis Linnaeus 1758 (Corallinophycidae), Hildenbrandia rubra (Sommerfelt) Meneghini 1841 (Hildenbrandiales) and Palmaria palmata (Linnaeus) Kuntze 1891(Nemaliophycidae).",
+            "definition": "The crown clade originating in the most recent common ancestor of Ahnfeltia plicata (Hudson) Fries 1836 (Ahnfeltiophycidae), Chondrus crispus Stackhouse 1797 (Rhodymeniophycidae), Corallina officinalis Linnaeus 1758 (Corallinophycidae), Hildenbrandia rubra (Sommerfelt) Meneghini 1841 (Hildenbrandiales) and Palmaria palmata (Linnaeus) Kuntze 1891(Nemaliophycidae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

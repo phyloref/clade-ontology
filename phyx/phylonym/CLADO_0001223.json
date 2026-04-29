@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -124,10 +124,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1223,
+            "curatorNotes": "Regnum ID: '1223'",
             "label": "Teratophoneini",
-            "dwc:scientificNameAuthorship": "Napoli, James G and Zanno, Lindsay E",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Napoli, James G and Zanno, Lindsay E",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Reanalysis of a dataset refutes claims of anagenesis within Tyrannosaurus-line tyrannosaurines",
@@ -161,8 +161,8 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The most inclusive clade containing Teratophoneus curriei Carr et al. 2011 but not Albertosaurus sarcophagus Osborn 1905, Alioramus remotus Kurzanov 1976, Daspletosaurus torosus Russell 1970, and Tyrannosaurus rex Osborn 1905.",
+            "definitionSource": [],
+            "definition": "The most inclusive clade containing Teratophoneus curriei Carr et al. 2011 but not Albertosaurus sarcophagus Osborn 1905, Alioramus remotus Kurzanov 1976, Daspletosaurus torosus Russell 1970, and Tyrannosaurus rex Osborn 1905.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

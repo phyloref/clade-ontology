@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -117,10 +117,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 265,
+            "curatorNotes": "Regnum ID: '265'",
             "label": "Bovinae",
-            "dwc:scientificNameAuthorship": "Bibi, F. and Vrba, E. S.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Bibi, F. and Vrba, E. S.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Smithsonian Miscellaneous Collections",
@@ -143,7 +143,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -184,7 +184,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Bos taurus Linnaeus 1758 (Bovini) and all extant taxa that share a more recent common ancestor with Bos taurus than with Antilope cervicapra (Linnaeus 1758) (Antilopini).",
+            "definition": "The crown clade originating in the most recent common ancestor of Bos taurus Linnaeus 1758 (Bovini) and all extant taxa that share a more recent common ancestor with Bos taurus than with Antilope cervicapra (Linnaeus 1758) (Antilopini).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

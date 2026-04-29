@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -41,11 +41,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1045,
+            "curatorNotes": "Regnum ID: '1045'",
             "label": "Quetzalcoatlida",
-            "dwc:scientificNameAuthorship": "Pêgas, and Zhou, and Kobayashi,",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Pêgas, and Zhou, and Kobayashi,",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Azhdarchid pterosaur diversity in the Bayanshiree Formation, Upper Cretaceous of the Gobi Desert, Mongolia",
@@ -82,7 +82,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "∇ apo piriform/clithridiate neural canal opening [Quetzalcoatlus lawsoni Andres & Langston, 2021].",
+            "definition": "∇ apo piriform/clithridiate neural canal opening [Quetzalcoatlus lawsoni Andres & Langston, 2021].",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

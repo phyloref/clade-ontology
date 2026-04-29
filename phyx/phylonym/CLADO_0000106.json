@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -45,10 +45,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 106,
+            "curatorNotes": "Regnum ID: '106'",
             "label": "Tetrapoda",
-            "dwc:scientificNameAuthorship": "Laurin, M.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Laurin, M.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Elementarcus der Zootomie in fünfzen Vorlesungen.",
@@ -80,7 +80,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -132,7 +132,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "Tetrapoda is the smallest crown clade containing Homo sapiens Linnaeus 1758 (Synapsida), Caecilia tentaculata Linnaeus 1758 (Ichthyophiidae is the closest relative in the reference pylogeny), Siren lacertina Österdam 1766 (Sirenidae), and Pipa pipa Linnaeus 1758 (Pipidae).",
+            "definition": "Tetrapoda is the smallest crown clade containing Homo sapiens Linnaeus 1758 (Synapsida), Caecilia tentaculata Linnaeus 1758 (Ichthyophiidae is the closest relative in the reference pylogeny), Siren lacertina Österdam 1766 (Sirenidae), and Pipa pipa Linnaeus 1758 (Pipidae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

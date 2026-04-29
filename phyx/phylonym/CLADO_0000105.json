@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -235,10 +235,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 105,
+            "curatorNotes": "Regnum ID: '105'",
             "label": "Superrosidae",
-            "dwc:scientificNameAuthorship": "Judd, W. S. and Soltis, D. E. and Soltis, P. S.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Judd, W. S. and Soltis, D. E. and Soltis, P. S.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Angiosperm phylogeny:  17-genes, 640 taxa.",
@@ -281,7 +281,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -352,7 +352,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The largest crown clade containing Rosa cinnamomea L. 1753 (Rosidae/Rosales) but not Aster amellus L. 1753 (Asteridae/Asterales).",
+            "definition": "The largest crown clade containing Rosa cinnamomea L. 1753 (Rosidae/Rosales) but not Aster amellus L. 1753 (Asteridae/Asterales).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

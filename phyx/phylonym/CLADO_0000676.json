@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -50,11 +50,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 676,
+            "curatorNotes": "Regnum ID: '676'",
             "label": "Seraphsinae",
-            "dwc:scientificNameAuthorship": "Maxwell, S J and Rymer, T L and Congdon, B C",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Maxwell, S J and Rymer, T L and Congdon, B C",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Resolving phylogenetic and classical nomenclature: A revision of Seraphsidae Jung, 1974 (Gastropoda: Neostromboidae)",
@@ -100,7 +100,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The maximum clade consisting of Seraphs sopitus Brander, 1766 and all species that share a more recent common ancestor with it than with Mauryna plicata (d’Archiac & Haime, 1853), Paraseraphs tetanus Jung, 1974 or Terebellum terebellum (Linnaeus, 1758).",
+            "definition": "The maximum clade consisting of Seraphs sopitus Brander, 1766 and all species that share a more recent common ancestor with it than with Mauryna plicata (d’Archiac & Haime, 1853), Paraseraphs tetanus Jung, 1974 or Terebellum terebellum (Linnaeus, 1758).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -140,11 +140,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1156,
+            "curatorNotes": "Regnum ID: '1156'",
             "label": "Cirrhilabrinae",
-            "dwc:scientificNameAuthorship": "Near, Thomas J. and Brownstein, Chase D. and Thacker, Christine E. and Wainwright, Peter C.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Near, Thomas J. and Brownstein, Chase D. and Thacker, Christine E. and Wainwright, Peter C.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic taxonomy of wrasses and parrotfishes (Labridae)",
@@ -201,7 +201,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Cirrhilabrus temminckii Bleeker 1853d and Pseudocheilinops ataenia Schultz 1960 in Schultz et al. (1960).",
+            "definition": "The least inclusive crown clade that contains Cirrhilabrus temminckii Bleeker 1853d and Pseudocheilinops ataenia Schultz 1960 in Schultz et al. (1960).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

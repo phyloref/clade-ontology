@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -128,10 +128,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 283,
+            "curatorNotes": "Regnum ID: '283'",
             "label": "Procellariiformes",
-            "dwc:scientificNameAuthorship": "Sangster, G.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Sangster, G.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Untersuchungen zur Morphologie und Systematik der Vögel zugleich ein Beitrag zur Anatomie der Stütz- und Bewegungsorgane",
@@ -154,7 +154,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -206,7 +206,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Procellaria aequinoctialis Linnaeus 1758, Diomedea exulans Linnaeus 1758, Pelecanoides urinatrix (originally Procellaria urinatrix) (Gmelin 1789), Hydrobates pelagicus (originally Procellaria pelagica) (Linnaeus 1758) and Oceanites oceanicus (originally Procellaria oceanica) (Kuhl 1820).",
+            "definition": "The smallest crown clade containing Procellaria aequinoctialis Linnaeus 1758, Diomedea exulans Linnaeus 1758, Pelecanoides urinatrix (originally Procellaria urinatrix) (Gmelin 1789), Hydrobates pelagicus (originally Procellaria pelagica) (Linnaeus 1758) and Oceanites oceanicus (originally Procellaria oceanica) (Kuhl 1820).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

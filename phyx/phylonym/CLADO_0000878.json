@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -201,10 +201,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 878,
+            "curatorNotes": "Regnum ID: '878'",
             "label": "Nashia",
-            "dwc:scientificNameAuthorship": "O'Leary, Nataly and Olmstead, Richard G",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "O'Leary, Nataly and Olmstead, Richard G",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Praenunciae Bahamenses. - I. Contributions to a flora of the Bahamian archipelago",
@@ -230,7 +230,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Making Lantaneae taxonomy useful: A phylogenetic classification",
@@ -279,7 +279,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The maximum crown clade containing Nashia inaguensis Millsp. 1906, but not Lippia dominguensis Moldenke 1947 and Lippia turbinata Griseb. 1847 and Lippia hermannioides Cham.1832 and Lippia rhodocnemis Mart. & Schauer 1847 and Lippia raoniana P.H. Cardoso & Salimena 2021 and Lippia origanoides Kunth 1817 and Lippia rehmannii H. Pearson 1901 and Lantana camara L. 1753.",
+            "definition": "The maximum crown clade containing Nashia inaguensis Millsp. 1906, but not Lippia dominguensis Moldenke 1947 and Lippia turbinata Griseb. 1847 and Lippia hermannioides Cham.1832 and Lippia rhodocnemis Mart. & Schauer 1847 and Lippia raoniana P.H. Cardoso & Salimena 2021 and Lippia origanoides Kunth 1817 and Lippia rehmannii H. Pearson 1901 and Lantana camara L. 1753.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

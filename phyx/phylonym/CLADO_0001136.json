@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -57,10 +57,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1136,
+            "curatorNotes": "Regnum ID: '1136'",
             "label": "Cyphomandra",
-            "dwc:scientificNameAuthorship": "Bohs, Lynn",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Bohs, Lynn",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "De Cyphomandra, novo Solanacearum genere tropicae Americae",
@@ -90,7 +90,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new phylogeny and phylogenetic classification for Solanaceae",
@@ -207,7 +207,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The maximum crown clade containing Solanum betaceum Cavanilles 1799, but not Solanum aphyodendron S.Knapp 1985, Solanum erianthum D.Don 1825, and Solanum wendlandii J.D. Hooker 1887.",
+            "definition": "The maximum crown clade containing Solanum betaceum Cavanilles 1799, but not Solanum aphyodendron S.Knapp 1985, Solanum erianthum D.Don 1825, and Solanum wendlandii J.D. Hooker 1887.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -45,10 +45,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 974,
+            "curatorNotes": "Regnum ID: '974'",
             "label": "Gasterosteidae",
-            "dwc:scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Saggio di una distribuzione metodica degli animali vertebrati",
@@ -75,7 +75,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
@@ -109,7 +109,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown lineage that contains Hypoptychus dybowskii Steindachner 1880, Aulichthys japonicus Brevoort in Gill 1862, Aulorhynchus flavidus Gill 1861, Gasterosteus aculeatus Linnaeus 1758, and Apeltes quadracus (Mitchill 1815).",
+            "definition": "The least inclusive crown lineage that contains Hypoptychus dybowskii Steindachner 1880, Aulichthys japonicus Brevoort in Gill 1862, Aulorhynchus flavidus Gill 1861, Gasterosteus aculeatus Linnaeus 1758, and Apeltes quadracus (Mitchill 1815).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

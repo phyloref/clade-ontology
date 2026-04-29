@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -37,10 +37,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 287,
+            "curatorNotes": "Regnum ID: '287'",
             "label": "Daedalornithes",
-            "dwc:scientificNameAuthorship": "Sangster, G.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Sangster, G.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A name for the clade formed by owlet-nightjars, swifts and hummingbirds (Aves)",
@@ -67,7 +67,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -119,7 +119,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Aegotheles (originally Caprimulgus) cristatus (Shaw 1790) (Aegothelidae) and Apus (originally Hirundo) apus (Linnaeus 1758) (Apodidae).",
+            "definition": "The smallest crown clade containing Aegotheles (originally Caprimulgus) cristatus (Shaw 1790) (Aegothelidae) and Apus (originally Hirundo) apus (Linnaeus 1758) (Apodidae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

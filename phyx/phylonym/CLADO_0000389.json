@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -161,10 +161,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 389,
+            "curatorNotes": "Regnum ID: '389'",
             "label": "Caprimulgidae",
-            "dwc:scientificNameAuthorship": "Chen, Albert and Field, Daniel J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Chen, Albert and Field, Daniel J.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Observations on the natural affinities that connect the orders and families of birds",
@@ -200,7 +200,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic definitions for Caprimulgimorphae (Aves) and major constituent clades under the International Code of Phylogenetic Nomenclature",
@@ -244,7 +244,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Eurostopodus (originally Caprimulgus) mystacalis (Temminck, 1826), Lyncornis (originally Caprimulgus) macrotis (Vigors in Kirby, 1831), and Caprimulgus europaeus Linnaeus, 1758.",
+            "definition": "The smallest crown clade containing Eurostopodus (originally Caprimulgus) mystacalis (Temminck, 1826), Lyncornis (originally Caprimulgus) macrotis (Vigors in Kirby, 1831), and Caprimulgus europaeus Linnaeus, 1758.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

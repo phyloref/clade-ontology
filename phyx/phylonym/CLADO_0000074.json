@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -87,10 +87,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 74,
+            "curatorNotes": "Regnum ID: '74'",
             "label": "Pan-Amniota",
-            "dwc:scientificNameAuthorship": "Laurin, M. and Smithson, T. R.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Laurin, M. and Smithson, T. R.",
+            "namePublishedIn": [
                 {
                     "type": "book_section",
                     "title": "Assembling the tree of life.",
@@ -133,7 +133,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -194,7 +194,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The largest total clade containing Homo sapiens Linnaeus 1758 (Amniota) but not Pipa pipa Linnaeus 1758 (Pipidae), Caecilia tentaculata Linnaeus 1758, and Siren lacertina Österdam 1766 (Sirenidae).",
+            "definition": "The largest total clade containing Homo sapiens Linnaeus 1758 (Amniota) but not Pipa pipa Linnaeus 1758 (Pipidae), Caecilia tentaculata Linnaeus 1758, and Siren lacertina Österdam 1766 (Sirenidae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

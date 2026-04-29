@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -67,10 +67,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 807,
+            "curatorNotes": "Regnum ID: '807'",
             "label": "Hoplocercinae",
-            "dwc:scientificNameAuthorship": "Torres-Carvajal, Omar and Werneck, Fernanda P. and Fernandes, Igor Yuri and de Queiroz, Kevin",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Torres-Carvajal, Omar and Werneck, Fernanda P. and Fernandes, Igor Yuri and de Queiroz, Kevin",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Lizards of the Families Priscagamidae and Hoplocercidae (Sauria, Iguania): Phylogenetic Position and New Representatives from the Late Cretaceous of Mongolia",
@@ -102,7 +102,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Spiny Tails and Clades: A Fully Sampled Phylogeny of Hoplocercine Lizards (Iguanidae: Hoplocercinae) and its Taxonomic and Nomenclatural Implications",
@@ -165,7 +165,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The smallest crown clade including Hoplocercus spinosus Fitzinger 1843, Enyalioides/Morunasaurus groi (Dunn 1933), Enyalioides heterolepis (Bocourt 1874), E. oshaughnessyi (Boulenger 1881), and Enyalioides/Zimiamviasaurus annularis (O’Shaughnessy 1881).",
+            "definition": "The smallest crown clade including Hoplocercus spinosus Fitzinger 1843, Enyalioides/Morunasaurus groi (Dunn 1933), Enyalioides heterolepis (Bocourt 1874), E. oshaughnessyi (Boulenger 1881), and Enyalioides/Zimiamviasaurus annularis (O’Shaughnessy 1881).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

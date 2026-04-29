@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -44,10 +44,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 949,
+            "curatorNotes": "Regnum ID: '949'",
             "label": "Bythitoidei",
-            "dwc:scientificNameAuthorship": "Thacker, C. E. and Near, T. J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Thacker, C. E. and Near, T. J.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Guide to the identififcation of genera of the fish order Ophidiiformes with a tentative classification of the order",
@@ -83,7 +83,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
@@ -117,7 +117,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Dinematichthys iluocoeteoides Bleeker 1855 and Aphyonus gelatinosus Günther 1878.",
+            "definition": "The least inclusive crown clade that contains Dinematichthys iluocoeteoides Bleeker 1855 and Aphyonus gelatinosus Günther 1878.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

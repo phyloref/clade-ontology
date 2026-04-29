@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -30,10 +30,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 344,
+            "curatorNotes": "Regnum ID: '344'",
             "label": "Lonchodectidae",
-            "dwc:scientificNameAuthorship": "Andres, Brian",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Andres, Brian",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "On the ornithosaurian Ornithocheirus, with a review of the specimens from the Cambridge Greensand in the Sedgwick Museum, Cambridge",
@@ -60,7 +60,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic Taxonomy of the Pterosauria",
@@ -85,7 +85,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "Least inclusive clade containing Lonchodectes compressirostris (Owen, 1851) and Lonchodraco giganteus (Bowerbank, 1846).",
+            "definition": "Least inclusive clade containing Lonchodectes compressirostris (Owen, 1851) and Lonchodraco giganteus (Bowerbank, 1846).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -51,10 +51,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1157,
+            "curatorNotes": "Regnum ID: '1157'",
             "label": "Labrinae",
-            "dwc:scientificNameAuthorship": "Near, T. J. and Brownstein, C. D. and Thacker, C. E. and Wainwright, P. C.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Near, T. J. and Brownstein, C. D. and Thacker, C. E. and Wainwright, P. C.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Families and subfamiles of fishes",
@@ -80,7 +80,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic taxonomy of wrasses and parrotfishes (Labridae)",
@@ -137,7 +137,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Labrus mixtus Linnaeus 1758 and Symphodus rostratus (Bloch 1791).",
+            "definition": "The least inclusive crown clade that contains Labrus mixtus Linnaeus 1758 and Symphodus rostratus (Bloch 1791).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -197,10 +197,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1126,
+            "curatorNotes": "Regnum ID: '1126'",
             "label": "Solanum",
-            "dwc:scientificNameAuthorship": "Bohs, Lynn and Knapp, Sandra and Giacomin, Leandro and Särkinen, Tiina",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Bohs, Lynn and Knapp, Sandra and Giacomin, Leandro and Särkinen, Tiina",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Species Planetarium, Vol. 1",
@@ -224,7 +224,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new phylogeny and phylogenetic classification for Solanaceae",
@@ -341,7 +341,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The maximum crown clade containing Solanum nigrum Linnaeus 1753 and not Jaltomata procumbens (Cavanilles) J.L. Gentry 1973, Capsicum annuum Linnaeus 1753, Salpichroa origanifolia (Lam.) Baillon 1888, and Physalis pubescens Linnaeus 1753.",
+            "definition": "The maximum crown clade containing Solanum nigrum Linnaeus 1753 and not Jaltomata procumbens (Cavanilles) J.L. Gentry 1973, Capsicum annuum Linnaeus 1753, Salpichroa origanifolia (Lam.) Baillon 1888, and Physalis pubescens Linnaeus 1753.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

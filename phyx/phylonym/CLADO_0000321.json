@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -108,10 +108,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 321,
+            "curatorNotes": "Regnum ID: '321'",
             "label": "Monofenestrata",
-            "dwc:scientificNameAuthorship": "Andres, Brian",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Andres, Brian",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Evidence for modular evolution in a long-tailed pterosaur with a pterodactyloid skull",
@@ -179,7 +179,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic Taxonomy of the Pterosauria",
@@ -204,7 +204,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "Most inclusive clade exhibiting confluent external naris and antorbital fenestra {nasoantorbital fenestra} synapomorphic with that in Pterodactylus antiquus (Sömmerring, 1812).",
+            "definition": "Most inclusive clade exhibiting confluent external naris and antorbital fenestra {nasoantorbital fenestra} synapomorphic with that in Pterodactylus antiquus (Sömmerring, 1812).",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

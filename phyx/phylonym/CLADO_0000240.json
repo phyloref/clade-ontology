@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -63,10 +63,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 240,
+            "curatorNotes": "Regnum ID: '240'",
             "label": "Yinpterochiroptera",
-            "dwc:scientificNameAuthorship": "Cirranello, A. L. and Simmons, N. B. and Gunnell, G. F.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Cirranello, A. L. and Simmons, N. B. and Gunnell, G. F.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Integrated fossil and molecular data reconstruct bat echolocation.",
@@ -128,7 +128,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -199,7 +199,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Pteropus vampyrus (Linnaeus 1758) (Pteropodidae) and all extant species that share a more recent common ancestor with Pteropus vampyrus Linnaeus 1758 (Pteropodidae) and Rhinolophus ferrumequinum (Schreber 1774) (Rhinolophoidea) than with Vespertilio murinus Linnaeus 1758 (Vespertilionoidea).",
+            "definition": "The crown clade originating in the most recent common ancestor of Pteropus vampyrus (Linnaeus 1758) (Pteropodidae) and all extant species that share a more recent common ancestor with Pteropus vampyrus Linnaeus 1758 (Pteropodidae) and Rhinolophus ferrumequinum (Schreber 1774) (Rhinolophoidea) than with Vespertilio murinus Linnaeus 1758 (Vespertilionoidea).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

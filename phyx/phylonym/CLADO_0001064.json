@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -29,10 +29,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1064,
+            "curatorNotes": "Regnum ID: '1064'",
             "label": "Tropeognathinae",
-            "dwc:scientificNameAuthorship": "Pêgas, R.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Pêgas, R.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A taxonomic and phylogenetic review of the anhanguerid pterosaur group Coloborhynchinae and the new clade Tropeognathinae.",
@@ -62,7 +62,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "On the systematics and phylogenetic nomenclature of the Ornithocheiriformes (Pterosauria, Pteranodontoidea)",
@@ -87,7 +87,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The most inclusive clade that includes Tropeognathus mesembrinus Wellnhofer, 1987, but not Anhanguera blittersdorffi Campos & Kellner, 1985 or Coloborhynchus clavirostris Owen, 1874.",
+            "definition": "The most inclusive clade that includes Tropeognathus mesembrinus Wellnhofer, 1987, but not Anhanguera blittersdorffi Campos & Kellner, 1985 or Coloborhynchus clavirostris Owen, 1874.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,12 +1,12 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [],
     "phylorefs": [
         {
-            "regnumId": 453,
+            "curatorNotes": "Regnum ID: '453'",
             "label": "Macrobaenidae",
-            "dwc:scientificNameAuthorship": "Joyce, Walter G. and Anquetin, Jérémy and Cadena, Edwin-Alberto and Claude, Julien and Danilov, Igor G. and Evers, Serjoscha W. and Ferreira, Gabriel S. and Gentry, Andrew D. and Georgalis, Georgios L. and Lyson, Tyler R. and Pérez-García, Adán and Rabi, Márton and Sterli, Juliana and Vitek, Natasha S. and Parham, James  F.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Joyce, Walter G. and Anquetin, Jérémy and Cadena, Edwin-Alberto and Claude, Julien and Danilov, Igor G. and Evers, Serjoscha W. and Ferreira, Gabriel S. and Gentry, Andrew D. and Georgalis, Georgios L. and Lyson, Tyler R. and Pérez-García, Adán and Rabi, Márton and Sterli, Juliana and Vitek, Natasha S. and Parham, James  F.",
+            "namePublishedIn": [
                 {
                     "type": "book_section",
                     "title": "Fundamentals of paleontology; amphibians, reptiles and birds [in Russian]",
@@ -51,7 +51,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A nomenclature for fossil and living turtles using phylogenetically defined clade names",
@@ -203,7 +203,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest extinct clade containing Macrobaena mongolica Tatarinov, 1959, but not the thalassochelydian Eurysternum wagleri Meyer, 1839, the sinemydid Sinemys lens Wiman, 1930, the xinjiangchelyid Xinjiangchelys junggarensis Ye, 1986, the sandownid Sandownia harrisi Meylan et al., 2000, or the protostegid Protostega gigas Cope, 1872b.",
+            "definition": "The largest extinct clade containing Macrobaena mongolica Tatarinov, 1959, but not the thalassochelydian Eurysternum wagleri Meyer, 1839, the sinemydid Sinemys lens Wiman, 1930, the xinjiangchelyid Xinjiangchelys junggarensis Ye, 1986, the sandownid Sandownia harrisi Meylan et al., 2000, or the protostegid Protostega gigas Cope, 1872b.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

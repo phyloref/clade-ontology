@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -428,10 +428,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 24,
+            "curatorNotes": "Regnum ID: '24'",
             "label": "Caryophyllales",
-            "dwc:scientificNameAuthorship": "Soltis, P. S. and Judd, W. S. and Soltis, D. E.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Soltis, P. S. and Judd, W. S. and Soltis, D. E.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Lehrbuch der Naturgeschicte des Pflanzenreichs.  Freiburg im Breisgau, Verlag von Friedrich Wagner.",
@@ -453,7 +453,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -524,7 +524,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Dianthus caryophyllus L. 1753 (Caryophyllaceae), Polygonum sachalinense F. Schmidt ex Maxim. 1859 (Polygonaceae), Simmondsia chinensis (Link) C.K. Schneid. 1907 (Simmondsiaceae), and Rhabdodendron amazonicum (Spruce ex Benth.) Huber 1909 (Rhabdodendraceae).",
+            "definition": "The smallest crown clade containing Dianthus caryophyllus L. 1753 (Caryophyllaceae), Polygonum sachalinense F. Schmidt ex Maxim. 1859 (Polygonaceae), Simmondsia chinensis (Link) C.K. Schneid. 1907 (Simmondsiaceae), and Rhabdodendron amazonicum (Spruce ex Benth.) Huber 1909 (Rhabdodendraceae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

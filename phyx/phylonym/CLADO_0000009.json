@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -61,10 +61,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 9,
+            "curatorNotes": "Regnum ID: '9'",
             "label": "Amphibia",
-            "dwc:scientificNameAuthorship": "Laurin, M. and Arntzen, J. W. and Báez, A. M. and Bauer, A. M. and Damiani, R. and Evans, S. E. and Kupfer, A. and Larson, A. and Marjanović, D. and Müller, H. and Olsson, L. and Rage, J. C. and Walsh, D.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Laurin, M. and Arntzen, J. W. and Báez, A. M. and Bauer, A. M. and Damiani, R. and Evans, S. E. and Kupfer, A. and Larson, A. and Marjanović, D. and Müller, H. and Olsson, L. and Rage, J. C. and Walsh, D.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Systema naturae per regna tria naturae, secundum classes, ordines, genera, species, cum characteribus, differentiis, synonymis, locis. Tomus I. Editio decima, reformata.",
@@ -87,7 +87,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -240,7 +240,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The largest total clade containing Caecilia tentaculata Linnaeus 1758 (Gymnophiona), Siren lacertina Österdam 1766 (Sirenidae), Andrias japonicus (Temminck 1836), Proteus anguinus Laurenti 1768 (Proteidae), and Rana temporaria Linnaeus 1758 (Anura) but not Homo sapiens Linnaeus 1758 (Synapsida).",
+            "definition": "The largest total clade containing Caecilia tentaculata Linnaeus 1758 (Gymnophiona), Siren lacertina Österdam 1766 (Sirenidae), Andrias japonicus (Temminck 1836), Proteus anguinus Laurenti 1768 (Proteidae), and Rana temporaria Linnaeus 1758 (Anura) but not Homo sapiens Linnaeus 1758 (Synapsida).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

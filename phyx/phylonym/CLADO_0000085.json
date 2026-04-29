@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -118,11 +118,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 85,
+            "curatorNotes": "Regnum ID: '85'",
             "label": "Poineae",
-            "dwc:scientificNameAuthorship": "Saarela, J. M. and Graham, S. W.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Saarela, J. M. and Graham, S. W.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -184,7 +184,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Poa pratensis Linnaeus 1753 (Poaceae), Flagellaria indica Linnaeus 1753 (Flagellariaceae), and Restio paludosus Pillans 1922 (Restionaceae).",
+            "definition": "The smallest crown clade containing Poa pratensis Linnaeus 1753 (Poaceae), Flagellaria indica Linnaeus 1753 (Flagellariaceae), and Restio paludosus Pillans 1922 (Restionaceae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

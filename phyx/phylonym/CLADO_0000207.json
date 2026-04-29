@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -210,10 +210,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 207,
+            "curatorNotes": "Regnum ID: '207'",
             "label": "Pan-Actinopterygii",
-            "dwc:scientificNameAuthorship": "Moore, J. A. and Near, T. J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Moore, J. A. and Near, T. J.",
+            "namePublishedIn": [
                 {
                     "type": "book_section",
                     "title": "Assembling the tree of life.",
@@ -256,7 +256,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -318,7 +318,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The total clade of the crown clade Actinopterygii.",
+            "definition": "The total clade of the crown clade Actinopterygii.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

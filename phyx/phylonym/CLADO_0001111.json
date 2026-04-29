@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -193,11 +193,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1111,
+            "curatorNotes": "Regnum ID: '1111'",
             "label": "Petuniina",
-            "dwc:scientificNameAuthorship": "Smith, Stacey D. and Olmstead, Richard G.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Smith, Stacey D. and Olmstead, Richard G.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new phylogeny and phylogenetic classification for Solanaceae",
@@ -314,7 +314,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The minimum crown clade containing Petunia axillaris (Lamarck) Britton, Sterns, and Poggenburg 1888, Fabiana imbricata Ruiz & Pavon 1799, and Calibrachoa parviflora (Jussieu) D'Arcy 1989.",
+            "definition": "The minimum crown clade containing Petunia axillaris (Lamarck) Britton, Sterns, and Poggenburg 1888, Fabiana imbricata Ruiz & Pavon 1799, and Calibrachoa parviflora (Jussieu) D'Arcy 1989.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

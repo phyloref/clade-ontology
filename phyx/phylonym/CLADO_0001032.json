@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -267,10 +267,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1032,
+            "curatorNotes": "Regnum ID: '1032'",
             "label": "Parankylosauria",
-            "dwc:scientificNameAuthorship": "Fonseca, André O. and Reid, Iain J. and Venner, Alexander and Duncan, Ruairidh J. and Garcia, Mauricio S. and Müller, Rodrigo T.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Fonseca, André O. and Reid, Iain J. and Venner, Alexander and Duncan, Ruairidh J. and Garcia, Mauricio S. and Müller, Rodrigo T.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Bizarre tail weaponry in a transitional ankylosaur from subantarctic Chile",
@@ -455,7 +455,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A Comprehensive Phylogenetic Analysis on Early Ornithischian Evolution",
@@ -531,7 +531,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade containing Stegouros elengassen Soto-Acuña et al., 2021 but not Ankylosaurus magniventris Brown, 1908 and Nodosaurus textilis Marsh, 1889.",
+            "definition": "The largest clade containing Stegouros elengassen Soto-Acuña et al., 2021 but not Ankylosaurus magniventris Brown, 1908 and Nodosaurus textilis Marsh, 1889.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

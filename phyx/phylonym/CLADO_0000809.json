@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -149,10 +149,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 809,
+            "curatorNotes": "Regnum ID: '809'",
             "label": "Pipidae",
-            "dwc:scientificNameAuthorship": "Lemierre, Alfred and Bailon, Salvador and Folie, Annelise and Laurin, Michel",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Lemierre, Alfred and Bailon, Salvador and Folie, Annelise and Laurin, Michel",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A synopsis of the genera of reptiles and amphibia, with a description of some new species",
@@ -178,7 +178,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new pipid from the Cretaceous of Africa (In Becetén, Niger) and early evolution of the Pipidae",
@@ -228,7 +228,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "Pipidae is the smallest clade that includes Xenopus laevis Wagler 1827 and Pipa pipa Linnaeus 1758",
+            "definition": "Pipidae is the smallest clade that includes Xenopus laevis Wagler 1827 and Pipa pipa Linnaeus 1758",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

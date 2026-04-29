@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -44,10 +44,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 97,
+            "curatorNotes": "Regnum ID: '97'",
             "label": "Seymouriamorpha",
-            "dwc:scientificNameAuthorship": "Laurin, M. and Klembara, J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Laurin, M. and Klembara, J.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A sketch classification of the pre-Jurassic tetrapod vertebrates.",
@@ -73,7 +73,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -133,7 +133,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The largest clade containing Seymouria baylorensis Broili 1904 but not Homo sapiens Linnaeus 1758 (Synapsida), Procolophon trigoniceps Owen 1876, Anthracosaurus russelli Huxley 1863 (Embolomeri), Eryops megacephalus Cope 1877 (Temnospondyli), Gephyrostegus bohemicus Jaekel 1902 (Gephryostegidae), Solenodonsaurus janenschi Broili 1924, and Diadectes sideropelicus Cope 1878 (Diadectomorpha).",
+            "definition": "The largest clade containing Seymouria baylorensis Broili 1904 but not Homo sapiens Linnaeus 1758 (Synapsida), Procolophon trigoniceps Owen 1876, Anthracosaurus russelli Huxley 1863 (Embolomeri), Eryops megacephalus Cope 1877 (Temnospondyli), Gephyrostegus bohemicus Jaekel 1902 (Gephryostegidae), Solenodonsaurus janenschi Broili 1924, and Diadectes sideropelicus Cope 1878 (Diadectomorpha).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

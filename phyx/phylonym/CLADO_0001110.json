@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -136,10 +136,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1110,
+            "curatorNotes": "Regnum ID: '1110'",
             "label": "Petunieae",
-            "dwc:scientificNameAuthorship": "Smith, Stacey D. and Olmstead, Richard G.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Smith, Stacey D. and Olmstead, Richard G.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Characteres essentiales familiarum ac tribuum regni vegetabilis et amphorganici ad leges tetractydis naturae conscripti accedit enumeratio generum magis notorum et organographiae supplementum",
@@ -162,7 +162,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new phylogeny and phylogenetic classification for Solanaceae",
@@ -279,7 +279,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The minimum crown clade containing Petunia axillaris (Lamarck) Britton, Sterns & Poggenburg 1888 and Brunfelsia americana Linnaeus 1753.",
+            "definition": "The minimum crown clade containing Petunia axillaris (Lamarck) Britton, Sterns & Poggenburg 1888 and Brunfelsia americana Linnaeus 1753.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -43,10 +43,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 245,
+            "curatorNotes": "Regnum ID: '245'",
             "label": "Isorophina",
-            "dwc:scientificNameAuthorship": "Sumrall, C. D.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Sumrall, C. D.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A Study of North American Edrioasteroidea.",
@@ -73,7 +73,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -126,7 +126,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The clade originating in the most recent common ancestor of Isorophus cincinnatiensis (Roemer 1851), Agelacrinites hamiltonensis Vanuxem 1842, and Hypsiclavus huntsvillensis Sumrall 1996.",
+            "definition": "The clade originating in the most recent common ancestor of Isorophus cincinnatiensis (Roemer 1851), Agelacrinites hamiltonensis Vanuxem 1842, and Hypsiclavus huntsvillensis Sumrall 1996.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

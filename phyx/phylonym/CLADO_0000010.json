@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -71,10 +71,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 10,
+            "curatorNotes": "Regnum ID: '10'",
             "label": "Amphisbaenia",
-            "dwc:scientificNameAuthorship": "Kearney , M. and de Querioz, K.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Kearney , M. and de Querioz, K.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Catalogue of the tortoises, crocodiles, and amphisbaenians in the collection of the British Museum.",
@@ -98,7 +98,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -158,7 +158,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The largest crown clade containing Amphisbaena fuliginosa Linnaeus 1758 (Amphisbaenidae) but not Lacerta agilis Linnaeus 1758 (Lacertidae) and Teius (Lacerta) teyou (Daudin 1802) (Teioidea) and Dibamus novaeguineae Duméril and Bibron 1839 (Dibamidae) and Coluber constrictor Linnaeus 1758 (Serpentes).",
+            "definition": "The largest crown clade containing Amphisbaena fuliginosa Linnaeus 1758 (Amphisbaenidae) but not Lacerta agilis Linnaeus 1758 (Lacertidae) and Teius (Lacerta) teyou (Daudin 1802) (Teioidea) and Dibamus novaeguineae Duméril and Bibron 1839 (Dibamidae) and Coluber constrictor Linnaeus 1758 (Serpentes).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

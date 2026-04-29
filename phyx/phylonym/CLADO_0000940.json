@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -63,10 +63,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 940,
+            "curatorNotes": "Regnum ID: '940'",
             "label": "Zeiformes",
-            "dwc:scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A classification of fish-like vertebrates",
@@ -93,7 +93,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
@@ -127,7 +127,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Zeus faber Linnaeus 1758, Cyttus australis (Richardson 1843), Cyttopsis rosea (Lowe 1843), and Macrurocyttus acanthopodus (Fowler 1933).",
+            "definition": "The least inclusive crown clade that contains Zeus faber Linnaeus 1758, Cyttus australis (Richardson 1843), Cyttopsis rosea (Lowe 1843), and Macrurocyttus acanthopodus (Fowler 1933).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -39,10 +39,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1083,
+            "curatorNotes": "Regnum ID: '1083'",
             "label": "Scaphirhynchus",
-            "dwc:scientificNameAuthorship": "Brownstein, C. D. and Near, T. J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Brownstein, C. D. and Near, T. J.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Scaphirhynchus, eine neue Fischgattung aus der Ordnung der Chondropterygier mit freien Kiemen",
@@ -69,7 +69,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Towards a phylogenetic taxonomy of sturgeons (Acipenseriformes: Acipenseridae)",
@@ -103,7 +103,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Scaphirhynchus platorynchus (Rafinesque 1820), Scaphirhynchus albus (Forbes and Richardson 1905), and Scaphirhynchus suttkusi Williams and Clemmer 1991. This is a minimum-crown-clade definition.",
+            "definition": "The least inclusive crown clade that contains Scaphirhynchus platorynchus (Rafinesque 1820), Scaphirhynchus albus (Forbes and Richardson 1905), and Scaphirhynchus suttkusi Williams and Clemmer 1991. This is a minimum-crown-clade definition.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -166,10 +166,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 405,
+            "curatorNotes": "Regnum ID: '405'",
             "label": "Ornithodira",
-            "dwc:scientificNameAuthorship": "Ezcurra, Martín and Nesbitt, Sterling and Bronzati, Mario and Dalla Vecchia, Fabio and Agnolin, Federico and Benson, Roger and Egli, Federico and Cabreira, Sergio and Evers, Serjoscha and Gentil, Adriel and Irmis, Randall and Martinelli, Agustín and Novas, Fernando and Silva, Lúcio and Smith, Nathan and Stocker, Michelle and Turner, Alan and Langer, Max",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Ezcurra, Martín and Nesbitt, Sterling and Bronzati, Mario and Dalla Vecchia, Fabio and Agnolin, Federico and Benson, Roger and Egli, Federico and Cabreira, Sergio and Evers, Serjoscha and Gentil, Adriel and Irmis, Randall and Martinelli, Agustín and Novas, Fernando and Silva, Lúcio and Smith, Nathan and Stocker, Michelle and Turner, Alan and Langer, Max",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Saurischian monophyly and the origin of birds.",
@@ -195,7 +195,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Enigmatic dinosaur precursors bridge the gap to the origin of Pterosauria",
@@ -356,7 +356,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive clade containing Compsognathus longipes Wagner, 1859 (Dinosauria) and Pterodactylus (originally Ornithocephalus) antiquus (Sömmerring, 1812) (Pterosauria), but not Alligator (originally Crocodilus) mississippiensis (Daudin, 1802) (Crocodylia).",
+            "definition": "The least inclusive clade containing Compsognathus longipes Wagner, 1859 (Dinosauria) and Pterodactylus (originally Ornithocephalus) antiquus (Sömmerring, 1812) (Pterosauria), but not Alligator (originally Crocodilus) mississippiensis (Daudin, 1802) (Crocodylia).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

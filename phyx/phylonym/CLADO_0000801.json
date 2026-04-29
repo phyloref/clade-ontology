@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -49,10 +49,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 801,
+            "curatorNotes": "Regnum ID: '801'",
             "label": "Teleosauroidea",
-            "dwc:scientificNameAuthorship": "Delfino, M and Sasso, C",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Delfino, M and Sasso, C",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Recherches sur de grands sauriens trouvés al’état fossile aux confins maritimes de la Basse-Normandie, attribués d’abord au Crocodile, puis déterminés sous les noms de Teleosaurus et Steneosaurus",
@@ -77,7 +77,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Marine reptiles (Thalattosuchia) from the Early Jurassic of Lombardy (northern Italy)",
@@ -110,7 +110,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade within Thalattosuchia containing Teleosaurus cadomensis (Lamouroux, 1820), but not Metriorhynchus brevirostris (Holl, 1829) (Metriorhynchoidea).",
+            "definition": "The largest clade within Thalattosuchia containing Teleosaurus cadomensis (Lamouroux, 1820), but not Metriorhynchus brevirostris (Holl, 1829) (Metriorhynchoidea).",
             "internalSpecifiers": [],
             "externalSpecifiers": [
                 {

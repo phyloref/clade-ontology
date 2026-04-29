@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -77,10 +77,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 888,
+            "curatorNotes": "Regnum ID: '888'",
             "label": "Synaphobranchoidei",
-            "dwc:scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Atlas ichthyologique des Indes orientales néêrlandaises : publié sous les auspices du gouvernement colonial néêrlandais, Tome IV",
@@ -104,7 +104,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetics and classification of Actinopterygii",
@@ -138,7 +138,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Synaphobranchus kaupi Johnson 1862, Simenchelys parasitica Gill in Bean and Goode 1879, and Protanguilla palau Johnson, Ida, and Sakaue 2012.",
+            "definition": "The least inclusive crown clade that contains Synaphobranchus kaupi Johnson 1862, Simenchelys parasitica Gill in Bean and Goode 1879, and Protanguilla palau Johnson, Ida, and Sakaue 2012.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

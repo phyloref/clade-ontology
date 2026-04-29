@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -125,10 +125,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1118,
+            "curatorNotes": "Regnum ID: '1118'",
             "label": "Atropina",
-            "dwc:scientificNameAuthorship": "Olmstead, Richard G. and Deanna, Rocio",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Olmstead, Richard G. and Deanna, Rocio",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A molecular phylogeny of the Solanaceae",
@@ -198,7 +198,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new phylogeny and phylogenetic classification for Solanaceae",
@@ -315,7 +315,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The minimum crown clade containing Atropa bella-donna Linnaeus 1753, Hyoscyamus niger Linnaeus 1753, Lycium afrum Linnaeus 1753, Jaborosa integrifolia Lamarck 1789, Latua pubiflora (Grisebach) Baillon 1888.",
+            "definition": "The minimum crown clade containing Atropa bella-donna Linnaeus 1753, Hyoscyamus niger Linnaeus 1753, Lycium afrum Linnaeus 1753, Jaborosa integrifolia Lamarck 1789, Latua pubiflora (Grisebach) Baillon 1888.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

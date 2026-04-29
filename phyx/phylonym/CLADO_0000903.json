@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -53,10 +53,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 903,
+            "curatorNotes": "Regnum ID: '903'",
             "label": "Gonorynchiformes",
-            "dwc:scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Phyletic studies of teleostean fishes, with a provisional classification of living forms",
@@ -110,7 +110,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogeny and classification of Actinopterygii",
@@ -144,7 +144,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Gonorynchus greyi (Richardson 1845), Chanos chanos [Fabricus in Neibhur (ex Forsskål) 1775], and Kneria paucisquamata Poll and Stewart 1975.",
+            "definition": "The least inclusive crown clade that contains Gonorynchus greyi (Richardson 1845), Chanos chanos [Fabricus in Neibhur (ex Forsskål) 1775], and Kneria paucisquamata Poll and Stewart 1975.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

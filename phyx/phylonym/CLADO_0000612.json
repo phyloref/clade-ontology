@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -40,10 +40,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 612,
+            "curatorNotes": "Regnum ID: '612'",
             "label": "Euiguanodontia",
-            "dwc:scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A basal iguanodontian (Ornithischia: Ornithopoda) from the Late Cretaceous of South America",
@@ -78,7 +78,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
@@ -157,7 +157,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The smallest clade containing Camptosaurus dispar (Marsh, 1879), Dryosaurus altus (Marsh, 1878), and Gasparinisaura cincosaltensis Coria & Salgado, 1996, provided that it does not include Tenontosaurus tilletti Ostrom, 1970.",
+            "definition": "The smallest clade containing Camptosaurus dispar (Marsh, 1879), Dryosaurus altus (Marsh, 1878), and Gasparinisaura cincosaltensis Coria & Salgado, 1996, provided that it does not include Tenontosaurus tilletti Ostrom, 1970.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

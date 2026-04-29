@@ -1,13 +1,13 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [],
     "phylorefs": [
         {
-            "regnumId": 568,
+            "curatorNotes": "Regnum ID: '568'",
             "label": "Neoaligerinae",
-            "dwc:scientificNameAuthorship": "Maxwell, Stephen J and Rymer, Tasmin L",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Maxwell, Stephen J and Rymer, Tasmin L",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Are the ICZN and PhyloCode that incompatible? A summary of the shifts in Stromboidean taxonomy and the definition of two new subfamilies in Stromboidae (Mollusca, Neostromboidae)",
@@ -49,7 +49,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "Contains all recent taxa of the most common ancestors of Aligerini Maxwell, Dekkers, Rymer and Congdon, 2020 and Persististrombini Maxwell, Dekkers, Rymer and Congdon, 2020 and does not include those ancestors more closely related to members of Neostrombinae n. subfam",
+            "definition": "Contains all recent taxa of the most common ancestors of Aligerini Maxwell, Dekkers, Rymer and Congdon, 2020 and Persististrombini Maxwell, Dekkers, Rymer and Congdon, 2020 and does not include those ancestors more closely related to members of Neostrombinae n. subfam",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

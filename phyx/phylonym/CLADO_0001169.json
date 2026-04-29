@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -60,10 +60,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1169,
+            "curatorNotes": "Regnum ID: '1169'",
             "label": "Tyrannoraptora",
-            "dwc:scientificNameAuthorship": "Delcourt, Rafael and Grillo, Orlando and Hendrickx, Christophe and Kellermann, Maximilian and Rauhut, Oliver and Langer, Max",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Delcourt, Rafael and Grillo, Orlando and Hendrickx, Christophe and Kellermann, Maximilian and Rauhut, Oliver and Langer, Max",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "The Evolution of Dinosaurs",
@@ -89,8 +89,8 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The least inclusive clade containing Vultur gryphus Linnaeus 1758 and Tyrannosaurus rex Osborn 1905",
+            "definitionSource": [],
+            "definition": "The least inclusive clade containing Vultur gryphus Linnaeus 1758 and Tyrannosaurus rex Osborn 1905",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

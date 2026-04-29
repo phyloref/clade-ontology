@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -1168,10 +1168,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 383,
+            "curatorNotes": "Regnum ID: '383'",
             "label": "Caprimulgimorphae",
-            "dwc:scientificNameAuthorship": "Chen, Albert and Field, Daniel J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Chen, Albert and Field, Daniel J.",
+            "namePublishedIn": [
                 {
                     "type": "book_section",
                     "title": "The Howard and Moore Complete Checklist of Birds of the World",
@@ -1215,7 +1215,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic definitions for Caprimulgimorphae (Aves) and major constituent clades under the International Code of Phylogenetic Nomenclature",
@@ -1259,7 +1259,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The total clade containing Caprimulgus europaeus Linnaeus, 1758 (Caprimulgidae), Steatornis caripensis Humboldt, 1817 (Steatornithidae), Nyctibius (originally Caprimulgus) grandis (Gmelin, 1789) (Nyctibiidae), Podargus (originally Caprimulgus) strigoides (Latham, 1801) (Podargidae), Aegotheles (originally Caprimulgus) cristatus (Shaw in White, 1790) (Aegothelidae), and Apus (originally Hirundo) apus (Linnaeus, 1758) (Apodiformes) but not Phoenicopterus ruber Linnaeus, 1758 (Mirandornithes or Phoenicopterimorphae), Columba oenas Linnaeus, 1758 (Columbimorphae), Otis tarda Linnaeus, 1758 (Otidimorphae), Musophaga (originally Tauraco) violacea (Isert, 1788) (Otidimorphae), Opisthocomus (originally Phasianus) hoazin (Statius Müller, 1776) (Opisthocomiformes), Grus (originally Ardea) grus (Linnaeus, 1758) (Gruiformes), Charadrius hiaticula Linnaeus, 1758 (Charadriiformes), Phaethon aethereus Linnaeus, 1758 (Phaethontimorphae), Procellaria aequinoctialis Linnaeus, 1758 (Aequornithes), and Vultur gryphus Linnaeus, 1758 (Telluraves).",
+            "definition": "The total clade containing Caprimulgus europaeus Linnaeus, 1758 (Caprimulgidae), Steatornis caripensis Humboldt, 1817 (Steatornithidae), Nyctibius (originally Caprimulgus) grandis (Gmelin, 1789) (Nyctibiidae), Podargus (originally Caprimulgus) strigoides (Latham, 1801) (Podargidae), Aegotheles (originally Caprimulgus) cristatus (Shaw in White, 1790) (Aegothelidae), and Apus (originally Hirundo) apus (Linnaeus, 1758) (Apodiformes) but not Phoenicopterus ruber Linnaeus, 1758 (Mirandornithes or Phoenicopterimorphae), Columba oenas Linnaeus, 1758 (Columbimorphae), Otis tarda Linnaeus, 1758 (Otidimorphae), Musophaga (originally Tauraco) violacea (Isert, 1788) (Otidimorphae), Opisthocomus (originally Phasianus) hoazin (Statius Müller, 1776) (Opisthocomiformes), Grus (originally Ardea) grus (Linnaeus, 1758) (Gruiformes), Charadrius hiaticula Linnaeus, 1758 (Charadriiformes), Phaethon aethereus Linnaeus, 1758 (Phaethontimorphae), Procellaria aequinoctialis Linnaeus, 1758 (Aequornithes), and Vultur gryphus Linnaeus, 1758 (Telluraves).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

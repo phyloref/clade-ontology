@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -327,10 +327,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 293,
+            "curatorNotes": "Regnum ID: '293'",
             "label": "Artiodactyla",
-            "dwc:scientificNameAuthorship": "O'Leary, M. A. and Orliac, M. J. and Spaulding, M. and Gatesy, J. E.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "O'Leary, M. A. and Orliac, M. J. and Spaulding, M. and Gatesy, J. E.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Description of teeth and portions of jaws of two extinct anthracotherioid quadrupeds (Hyopotamus vectianus and Hyop. bovinus) discovered by the Marchioness of Hastings in the Eocene deposits on the NW coast of the Isle of Wight: with an attempt to develope Cuvier's idea of the classification of pachyderms by the number of their toes.",
@@ -364,7 +364,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -442,7 +442,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade containing Camelus dromedarius Linnaeus 1758 (Camelidae), Hippopotamus amphibius Linnaeus 1758 (Hippopotamidae), Sus scrofa Linnaeus 1758 (Suidae), and Bos primigenius Bojanus 1827 (Bovidae).",
+            "definition": "The least inclusive crown clade containing Camelus dromedarius Linnaeus 1758 (Camelidae), Hippopotamus amphibius Linnaeus 1758 (Hippopotamidae), Sus scrofa Linnaeus 1758 (Suidae), and Bos primigenius Bojanus 1827 (Bovidae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

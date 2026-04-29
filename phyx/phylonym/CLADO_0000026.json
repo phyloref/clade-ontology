@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -138,10 +138,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 26,
+            "curatorNotes": "Regnum ID: '26'",
             "label": "Charophyta",
-            "dwc:scientificNameAuthorship": "Karol, K. G. and McCourt, R. M. and Mishler, B. D. and Delwiche, C. F. and Hall, J. D.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Karol, K. G. and McCourt, R. M. and Mishler, B. D. and Delwiche, C. F. and Hall, J. D.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Kryptogamen-Flora von Deutschland, Oesterreich und der Schweiz",
@@ -171,7 +171,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -260,7 +260,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The largest crown clade containing Chara vulgaris Linnaeus 1753 but not Chlamydomonas reinhardti P. C. A. Dangeard 1891 (Chlorophyta).",
+            "definition": "The largest crown clade containing Chara vulgaris Linnaeus 1753 but not Chlamydomonas reinhardti P. C. A. Dangeard 1891 (Chlorophyta).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

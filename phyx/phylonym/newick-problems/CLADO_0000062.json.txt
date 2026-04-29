@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -423,10 +423,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 62,
+            "curatorNotes": "Regnum ID: '62'",
             "label": "Lissamphibia",
-            "dwc:scientificNameAuthorship": "Laurin, M. and Arntzen, J. W. and Báez, A. M. and Bauer, A. M. and Damiani, R. and Evans, S. E. and Kupfer, A. and Larson, A. and Marjanović, D. and Müller, H. and Olsson, L. and Rage, J. C. and Walsh, D.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Laurin, M. and Arntzen, J. W. and Báez, A. M. and Bauer, A. M. and Damiani, R. and Evans, S. E. and Kupfer, A. and Larson, A. and Marjanović, D. and Müller, H. and Olsson, L. and Rage, J. C. and Walsh, D.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Generelle Morphologie der Organismen. Allgemeine Grundzüge der organischen Formen-Wissenschaft, mechanisch begründet durch die von Charles Darwin reformirte Descendenz-Theorie.",
@@ -449,7 +449,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -602,7 +602,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Caecilia tentaculata Linnaeus 1758, Andrias japonicus (Temminck 1836), Siren lacertina Österdam 1766, and Rana temporaria Linnaeus 1758 but not Homo sapiens Linnaeus 1758 or Eryops megacephalus Cope 1877 or Diplocaulus salamandroides Cope 1877.",
+            "definition": "The smallest crown clade containing Caecilia tentaculata Linnaeus 1758, Andrias japonicus (Temminck 1836), Siren lacertina Österdam 1766, and Rana temporaria Linnaeus 1758 but not Homo sapiens Linnaeus 1758 or Eryops megacephalus Cope 1877 or Diplocaulus salamandroides Cope 1877.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

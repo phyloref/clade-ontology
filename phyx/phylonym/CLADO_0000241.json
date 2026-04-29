@@ -1,12 +1,12 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [],
     "phylorefs": [
         {
-            "regnumId": 241,
+            "curatorNotes": "Regnum ID: '241'",
             "label": "Nematoda",
-            "dwc:scientificNameAuthorship": "Smythe, A. B.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Smythe, A. B.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Revision der Nematoden. Sitzungber. d. Kaiserl. Akad. d. Wissensch.",
@@ -32,7 +32,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",

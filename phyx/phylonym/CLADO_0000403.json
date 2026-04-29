@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -94,10 +94,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 403,
+            "curatorNotes": "Regnum ID: '403'",
             "label": "Urticalean",
-            "dwc:scientificNameAuthorship": "Gaglioti, Andre Luiz",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Gaglioti, Andre Luiz",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Urticalean Rosids: Circumscription, Rosid Ancestry, and Phylogenetics Based on rbcL, trnL-F, and ndhF Sequences",
@@ -187,7 +187,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "A Taxonomic Revision of the Genus Pourouma (Urticaceae)",
@@ -230,7 +230,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "Urticalean Rosids",
+            "definition": "Urticalean Rosids",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

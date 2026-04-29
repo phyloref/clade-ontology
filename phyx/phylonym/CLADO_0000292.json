@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -343,10 +343,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 292,
+            "curatorNotes": "Regnum ID: '292'",
             "label": "Ungulata",
-            "dwc:scientificNameAuthorship": "Archibald, J. D.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Archibald, J. D.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Systema Naturae per Regna tria Naturae, secundum Classes, Ordines, Genera, Species, cum Charcateribus, Differentiis, Synonymis, Locis",
@@ -368,7 +368,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -421,7 +421,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade containing of Bos primigenius Bojanus 1827 (= Bos taurus Linnaeus 1758; Artiodactyla) and Equus ferus Boddaert 1785 (= Equus caballus Linnaeus 1758; Perissodactyla), provided that this clade does not include Felis silvestris Schreber 1777 (= Felis catus Linnaeus 1758; Carnivora), Manis pentadactyla Linnaeus 1758 (Pholidota), Vespertilio murinus Linnaeus 1758 (Chiroptera), or Erinaceus europaeus Linnaeus 1758 (Lipotyphla).",
+            "definition": "The least inclusive crown clade containing of Bos primigenius Bojanus 1827 (= Bos taurus Linnaeus 1758; Artiodactyla) and Equus ferus Boddaert 1785 (= Equus caballus Linnaeus 1758; Perissodactyla), provided that this clade does not include Felis silvestris Schreber 1777 (= Felis catus Linnaeus 1758; Carnivora), Manis pentadactyla Linnaeus 1758 (Pholidota), Vespertilio murinus Linnaeus 1758 (Chiroptera), or Erinaceus europaeus Linnaeus 1758 (Lipotyphla).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

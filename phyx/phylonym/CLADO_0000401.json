@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -212,10 +212,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 401,
+            "curatorNotes": "Regnum ID: '401'",
             "label": "Hemiprocne",
-            "dwc:scientificNameAuthorship": "Chen, Albert and Field, Daniel J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Chen, Albert and Field, Daniel J.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Observationes de avium arteria carotide communi",
@@ -239,7 +239,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic definitions for Caprimulgimorphae (Aves) and major constituent clades under the International Code of Phylogenetic Nomenclature",
@@ -283,7 +283,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest crown clade containing Hemiprocne (originally Hirundo) longipennis (Rafnesque, 1802) (Hemiprocnidae) but not Apus (originally Hirundo) apus (Linnaeus, 1758) (Apodidae).",
+            "definition": "The largest crown clade containing Hemiprocne (originally Hirundo) longipennis (Rafnesque, 1802) (Hemiprocnidae) but not Apus (originally Hirundo) apus (Linnaeus, 1758) (Apodidae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

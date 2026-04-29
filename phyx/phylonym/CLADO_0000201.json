@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -432,10 +432,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 201,
+            "curatorNotes": "Regnum ID: '201'",
             "label": "Porifera",
-            "dwc:scientificNameAuthorship": "Manuel, M. and Boury-Esnault, N.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Manuel, M. and Boury-Esnault, N.",
+            "namePublishedIn": [
                 {
                     "type": "book_section",
                     "title": "The Cyclopaedia of Anatomy and Physiology",
@@ -461,7 +461,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -521,7 +521,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade containing Carteriospongia foliacens (Pallas 1766) (Demospongiae), Oopsacas minuta Topsent 1927 (Hexactinellida), Oscarella lobularis (Schmidt 1862) (Homoscleromorpha), and Sycon raphanus Schmidt 1862 (Calcispongia).",
+            "definition": "The least inclusive crown clade containing Carteriospongia foliacens (Pallas 1766) (Demospongiae), Oopsacas minuta Topsent 1927 (Hexactinellida), Oscarella lobularis (Schmidt 1862) (Homoscleromorpha), and Sycon raphanus Schmidt 1862 (Calcispongia).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

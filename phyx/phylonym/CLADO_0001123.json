@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -117,10 +117,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1123,
+            "curatorNotes": "Regnum ID: '1123'",
             "label": "Datureae",
-            "dwc:scientificNameAuthorship": "Smith, Stacey D. and Olmstead, Richard G.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Smith, Stacey D. and Olmstead, Richard G.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Analyse des familles des plantes.",
@@ -145,7 +145,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new phylogeny and phylogenetic classification for Solanaceae",
@@ -262,7 +262,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The minimum crown clade containing Datura stramonium Linnaeus 1753, Brugmansia candida Persoon 1805, Trompettia cardenasianm (Hunziker) J.Dupin 2018.",
+            "definition": "The minimum crown clade containing Datura stramonium Linnaeus 1753, Brugmansia candida Persoon 1805, Trompettia cardenasianm (Hunziker) J.Dupin 2018.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

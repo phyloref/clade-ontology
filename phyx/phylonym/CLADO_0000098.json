@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -269,10 +269,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 98,
+            "curatorNotes": "Regnum ID: '98'",
             "label": "Solanaceae",
-            "dwc:scientificNameAuthorship": "Olmstead, R. G.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Olmstead, R. G.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Genera plantarum.",
@@ -295,7 +295,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -348,7 +348,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The least inclusive clade containing Solanum nigrum Linnaeus 1753, Schizanthus pinnatus Ruiz et Pavon 1794, Goetzea elegans Wydler 1830, Duckeodendron cestroides Kuhlmann 1925, Schwenckia lateriflora (Vahl) Carvalho (originally described as Chaetochilus lateriflorus Vahl) 1969, Salpiglossis sinuata Ruiz et Pavon 1794, Benthamiella skottsbergii Soriano, and Petunia axillaris (Lam.) Britton, Stearns, and Poggenb. 1888.",
+            "definition": "The least inclusive clade containing Solanum nigrum Linnaeus 1753, Schizanthus pinnatus Ruiz et Pavon 1794, Goetzea elegans Wydler 1830, Duckeodendron cestroides Kuhlmann 1925, Schwenckia lateriflora (Vahl) Carvalho (originally described as Chaetochilus lateriflorus Vahl) 1969, Salpiglossis sinuata Ruiz et Pavon 1794, Benthamiella skottsbergii Soriano, and Petunia axillaris (Lam.) Britton, Stearns, and Poggenb. 1888.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

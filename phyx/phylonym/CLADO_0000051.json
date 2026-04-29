@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -64,10 +64,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 51,
+            "curatorNotes": "Regnum ID: '51'",
             "label": "Iguania",
-            "dwc:scientificNameAuthorship": "de Queiroz, K. and Torres-Carvajal, O. and Schulte, II, James A.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "de Queiroz, K. and Torres-Carvajal, O. and Schulte, II, James A.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "On the characters of the higher groups of Reptilia Squamata and especially of the Diploglossa.",
@@ -94,7 +94,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -163,7 +163,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The largest crown clade containing Iguana (Lacerta) iguana (Linnaeus 1758) (Iguanidae), Agama (Lacerta) agama (Linnaeus 1758) (Agamidae), and Chamaeleo (Lacerta) chamaeleon (Linnaeus 1758) (Chamaeleontidae), but not Lacerta agilis Linnaeus 1758 (Lacertidae), Scincus (Lacerta) scincus (Linnaeus 1758) (Scincidae), Anguis fragilis Linnaeus 1758 (Anguidae) and Coluber constrictor Linnaeus 1758.",
+            "definition": "The largest crown clade containing Iguana (Lacerta) iguana (Linnaeus 1758) (Iguanidae), Agama (Lacerta) agama (Linnaeus 1758) (Agamidae), and Chamaeleo (Lacerta) chamaeleon (Linnaeus 1758) (Chamaeleontidae), but not Lacerta agilis Linnaeus 1758 (Lacertidae), Scincus (Lacerta) scincus (Linnaeus 1758) (Scincidae), Anguis fragilis Linnaeus 1758 (Anguidae) and Coluber constrictor Linnaeus 1758.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

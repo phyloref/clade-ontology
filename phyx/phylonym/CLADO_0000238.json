@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -64,10 +64,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 238,
+            "curatorNotes": "Regnum ID: '238'",
             "label": "Chiroptera",
-            "dwc:scientificNameAuthorship": "Cirranello, A. L. and Simmons, N. B. and Gunnell, G. F.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Cirranello, A. L. and Simmons, N. B. and Gunnell, G. F.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Handbuch der Naturgeschichte. Mit Kupfern.",
@@ -92,7 +92,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -163,7 +163,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Pteropus vampyrus (Linnaeus 1758) (Pteropodidae), Rhinolophus ferrumequinum (Schreber 1774) (Rhinolophoidea), and Vespertilio murinus Linnaeus 1758 (Vespertilionoidea).",
+            "definition": "The crown clade originating in the most recent common ancestor of Pteropus vampyrus (Linnaeus 1758) (Pteropodidae), Rhinolophus ferrumequinum (Schreber 1774) (Rhinolophoidea), and Vespertilio murinus Linnaeus 1758 (Vespertilionoidea).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

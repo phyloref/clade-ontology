@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -153,10 +153,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 202,
+            "curatorNotes": "Regnum ID: '202'",
             "label": "Demospongiae",
-            "dwc:scientificNameAuthorship": "Boury-Esnault, N. and Manuel, M.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Boury-Esnault, N. and Manuel, M.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A Classification of the Sponges.",
@@ -184,7 +184,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -244,7 +244,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade containing Spongia officinalis Linnaeus 1759 (Keratosa), Chondrosia reniformis Nardo 1847 (Myxospongiae), Haliclona mediterranea Griessinger 1971 (Haploscleromorpha) and Axinella polypoides Schmidt 1862 (Democlavia).",
+            "definition": "The least inclusive crown clade containing Spongia officinalis Linnaeus 1759 (Keratosa), Chondrosia reniformis Nardo 1847 (Myxospongiae), Haliclona mediterranea Griessinger 1971 (Haploscleromorpha) and Axinella polypoides Schmidt 1862 (Democlavia).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

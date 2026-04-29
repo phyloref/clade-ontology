@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -53,10 +53,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 16,
+            "curatorNotes": "Regnum ID: '16'",
             "label": "Archaeplastida",
-            "dwc:scientificNameAuthorship": "Simpson, A. G. B.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Simpson, A. G. B.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "The new higher level classification of eukaryotes with emphasis on the taxonomy of protists.",
@@ -88,7 +88,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -141,7 +141,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The crown clade for which possession of primary plastids, as inherited by Arabidopsis thaliana (Linnaeus) Heynhold 1842, is an apomorphy relative to other crown clades, provided that it includes Galdieria sulphuraria (Galdieri) Merola in Merola et al. 1981 (Rhodoplantae) and excludes Homo sapiens Linnaeus 1758.  In this definition, \"plastids\" refers to the organelles also known as chloroplasts in the broadest sense, that is, all homologous organelles irrespective of appearance or function; \"an apomorphy\" means it stems directly from the same event of primary endosymbiosis and does not include later origin through a subsequent event of secondary endosymbiosis.",
+            "definition": "The crown clade for which possession of primary plastids, as inherited by Arabidopsis thaliana (Linnaeus) Heynhold 1842, is an apomorphy relative to other crown clades, provided that it includes Galdieria sulphuraria (Galdieri) Merola in Merola et al. 1981 (Rhodoplantae) and excludes Homo sapiens Linnaeus 1758.  In this definition, \"plastids\" refers to the organelles also known as chloroplasts in the broadest sense, that is, all homologous organelles irrespective of appearance or function; \"an apomorphy\" means it stems directly from the same event of primary endosymbiosis and does not include later origin through a subsequent event of secondary endosymbiosis.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

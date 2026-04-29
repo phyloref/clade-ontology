@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -159,11 +159,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 755,
+            "curatorNotes": "Regnum ID: '755'",
             "label": "Deltafrons",
-            "dwc:scientificNameAuthorship": "Guillaume, Alexandre R. D. and Natário, Carlos and Moreno-Azanza, Miguel and Mateus, Octávio",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Guillaume, Alexandre R. D. and Natário, Carlos and Moreno-Azanza, Miguel and Mateus, Octávio",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Plasticity in the frontal of Albanerpetidae (Lissamphibia; Allocaudata): quest for the hidden diversity in the Upper Jurassic of Portugal",
@@ -213,7 +213,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade that includes Albanerpeton inexpectatum and Albanerpeton arthridion but not Celtedens megacephalum neither Anoualerpeton unicum.",
+            "definition": "The largest clade that includes Albanerpeton inexpectatum and Albanerpeton arthridion but not Celtedens megacephalum neither Anoualerpeton unicum.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

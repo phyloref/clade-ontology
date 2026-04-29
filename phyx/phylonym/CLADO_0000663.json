@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -64,10 +64,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 663,
+            "curatorNotes": "Regnum ID: '663'",
             "label": "Persististrombus",
-            "dwc:scientificNameAuthorship": "Maxwell, S J",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Maxwell, S J",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Genera of American strombid gastropods (Gastropoda: Strombidae) and remarks on their phylogeny",
@@ -103,7 +103,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Registration of Neostromboidae Clades in the RegNum of the PhyloCode, and Errata",
@@ -140,7 +140,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The maximum clade consisting of Persististrombus granulatus (Swainson, 1822) and Persististrombus nodosa (Borson, 1820) and all species that share a more recent common ancestor with them than Thetystrombus latus (Gmelin, 1791), Thetystrombus exbonellii Sacco, 1893, Antestrombus chipolanus Dall, 1890 or Edpetuchistrombus aldrichi Dall, 1890.",
+            "definition": "The maximum clade consisting of Persististrombus granulatus (Swainson, 1822) and Persististrombus nodosa (Borson, 1820) and all species that share a more recent common ancestor with them than Thetystrombus latus (Gmelin, 1791), Thetystrombus exbonellii Sacco, 1893, Antestrombus chipolanus Dall, 1890 or Edpetuchistrombus aldrichi Dall, 1890.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

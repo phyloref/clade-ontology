@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -177,12 +177,12 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 704,
+            "curatorNotes": "Regnum ID: '704'",
             "label": "Phaethoquornithes",
-            "dwc:scientificNameAuthorship": "Sangster, George and Braun, Edward L and Johansson, Ulf S and Kimball, Rebecca T and Mayr, Gerald and Suh, Alexander",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The least inclusive crown clade containing Phaёthon (now Phaethon) aethereus Linnaeus, 1758 (Phaethontiformes) and Pelecanus onocrotalus Linnaeus, 1758 (Pelecaniformes) but not Hirundo (now Apus) apus Linnaeus, 1758 (Strisores), Charadrius hiaticula Linnaeus, 1758 (Charadriiformes) or Musophaga violacea Isert, 1789 (Musophagiformes) or Fringilla domestica (now Passer domesticus) Linnaeus, 1758 (Passeriformes).",
+            "scientificNameAuthorship": "Sangster, George and Braun, Edward L and Johansson, Ulf S and Kimball, Rebecca T and Mayr, Gerald and Suh, Alexander",
+            "namePublishedIn": [],
+            "definitionSource": [],
+            "definition": "The least inclusive crown clade containing Phaёthon (now Phaethon) aethereus Linnaeus, 1758 (Phaethontiformes) and Pelecanus onocrotalus Linnaeus, 1758 (Pelecaniformes) but not Hirundo (now Apus) apus Linnaeus, 1758 (Strisores), Charadrius hiaticula Linnaeus, 1758 (Charadriiformes) or Musophaga violacea Isert, 1789 (Musophagiformes) or Fringilla domestica (now Passer domesticus) Linnaeus, 1758 (Passeriformes).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

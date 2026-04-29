@@ -1,12 +1,12 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [],
     "phylorefs": [
         {
-            "regnumId": 1166,
+            "curatorNotes": "Regnum ID: '1166'",
             "label": "Australochelyidae",
-            "dwc:scientificNameAuthorship": "Szczygielski, Tomasz and Dróżdż, Dawid",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Szczygielski, Tomasz and Dróżdż, Dawid",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "The most ancient African turtle",
@@ -47,7 +47,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Triassic turtles (Testudinata: Proterochersidae and Proganochelyidae) of Greenland",
@@ -82,7 +82,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade containing Australochelys africanus Gaffney & Kitching, 1994 but not Proganochelys quenstedtii Baur, 1887, Proterochersis robusta Fraas, 1913, and Testudines Batsch, 1788 sensu International Turtle Nomenclature Committee et al., 2020b.",
+            "definition": "The largest clade containing Australochelys africanus Gaffney & Kitching, 1994 but not Proganochelys quenstedtii Baur, 1887, Proterochersis robusta Fraas, 1913, and Testudines Batsch, 1788 sensu International Turtle Nomenclature Committee et al., 2020b.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

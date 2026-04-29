@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -56,10 +56,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 850,
+            "curatorNotes": "Regnum ID: '850'",
             "label": "Lantaneae",
-            "dwc:scientificNameAuthorship": "O'Leary, Nataly and Olmstead, Richard G",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "O'Leary, Nataly and Olmstead, Richard G",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Genera Plantarum Supplementum Secundum",
@@ -82,7 +82,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Making Lantaneae (Verbenaceae) taxonomy useful: A phylogenetic classification",
@@ -125,7 +125,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The minimum crown clade containing Lantana camara L. 1753, Aloysia citrodora Paláu 1784, and Aloysia salsoloides (Griseb.) Lu-Irving & N. O’Leary 2014.",
+            "definition": "The minimum crown clade containing Lantana camara L. 1753, Aloysia citrodora Paláu 1784, and Aloysia salsoloides (Griseb.) Lu-Irving & N. O’Leary 2014.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

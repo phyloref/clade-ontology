@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -64,10 +64,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 52,
+            "curatorNotes": "Regnum ID: '52'",
             "label": "Iguanidae",
-            "dwc:scientificNameAuthorship": "Torres-Carvajal, O. and de Queiroz, K. and Schulte, II, J. A.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Torres-Carvajal, O. and de Queiroz, K. and Schulte, II, J. A.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "On a new genus of Iguanidae.",
@@ -93,7 +93,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -162,7 +162,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The largest crown clade containing Iguana (Lacerta) iguana (Linnaeus 1758) (Iguanidae), but not Agama (Lacerta) agama (Linnaeus 1758) (Agamidae) and Chamaeleo (Lacerta) chamaeleon (Linnaeus 1758) (Chamaeleonidae).",
+            "definition": "The largest crown clade containing Iguana (Lacerta) iguana (Linnaeus 1758) (Iguanidae), but not Agama (Lacerta) agama (Linnaeus 1758) (Agamidae) and Chamaeleo (Lacerta) chamaeleon (Linnaeus 1758) (Chamaeleonidae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

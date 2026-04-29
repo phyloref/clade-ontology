@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -44,10 +44,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 953,
+            "curatorNotes": "Regnum ID: '953'",
             "label": "Apogonoidei",
-            "dwc:scientificNameAuthorship": "Thacker, C. E. and Near, T. J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Thacker, C. E. and Near, T. J.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Catalogue of the acanthopterygian fishes in the collection of the British Museum, Vol. 1",
@@ -70,7 +70,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
@@ -104,7 +104,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Kurtus indicus Bloch 1786, Pseudamia gelatinosa Smith 1955, and Cheilodipterus quinquelineatus Cuvier 1828 in Cuvier and Valenciennes (1828).",
+            "definition": "The least inclusive crown clade that contains Kurtus indicus Bloch 1786, Pseudamia gelatinosa Smith 1955, and Cheilodipterus quinquelineatus Cuvier 1828 in Cuvier and Valenciennes (1828).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

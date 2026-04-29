@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -48,11 +48,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1209,
+            "curatorNotes": "Regnum ID: '1209'",
             "label": "Stenorhynchosuchia",
-            "dwc:scientificNameAuthorship": "Jouve, Stéphane and Young, Mark Thomas and Hastings, Alexander K. and Salih, Khalafallah",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Jouve, Stéphane and Young, Mark Thomas and Hastings, Alexander K. and Salih, Khalafallah",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "The systematics and nomenclature of Tethysuchia (Archosauria, Crocodylomorpha) under the International Code of Phylogenetic Nomenclature",
@@ -102,7 +102,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "Stenorhynchosuchia is the largest clade within Crocodylomorpha containing Dyrosaurus phosphaticus (Thomas Philippe 1893), Pholidosaurus schaumburgensis von Meyer 1841, Macrospondylus bollensis (Jäger 1928), Thalattosuchus superciliosus (Blainville 1853), but not Protosuchus richardsoni Brown 1933, Goniopholis simus Owen 1878, Antheophthalmosuchus hooleyi Salisbury and Naish 2011, or Crocodylus niloticus (Laurent 1768).",
+            "definition": "Stenorhynchosuchia is the largest clade within Crocodylomorpha containing Dyrosaurus phosphaticus (Thomas Philippe 1893), Pholidosaurus schaumburgensis von Meyer 1841, Macrospondylus bollensis (Jäger 1928), Thalattosuchus superciliosus (Blainville 1853), but not Protosuchus richardsoni Brown 1933, Goniopholis simus Owen 1878, Antheophthalmosuchus hooleyi Salisbury and Naish 2011, or Crocodylus niloticus (Laurent 1768).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -56,11 +56,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 350,
+            "curatorNotes": "Regnum ID: '350'",
             "label": "Ornithocheiriformes",
-            "dwc:scientificNameAuthorship": "Andres, Brian",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Andres, Brian",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic Taxonomy of the Pterosauria",
@@ -85,7 +85,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "Most inclusive clade containing Ornithocheirus simus (Owen, 1861) but not Istiodactylus latidens (Seeley, 1901).",
+            "definition": "Most inclusive clade containing Ornithocheirus simus (Owen, 1861) but not Istiodactylus latidens (Seeley, 1901).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

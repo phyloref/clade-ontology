@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -91,10 +91,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 365,
+            "curatorNotes": "Regnum ID: '365'",
             "label": "Noripterinae",
-            "dwc:scientificNameAuthorship": "Andres, Brian",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Andres, Brian",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "The Earliest Pterodactyloid and the Origin of the Group",
@@ -147,7 +147,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic Taxonomy of the Pterosauria",
@@ -172,7 +172,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "Most inclusive clade containing Noripterus complicidens Young 1973, but not Dsungaripterus weii Young 1964.",
+            "definition": "Most inclusive clade containing Noripterus complicidens Young 1973, but not Dsungaripterus weii Young 1964.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

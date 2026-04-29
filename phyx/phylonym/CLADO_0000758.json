@@ -1,13 +1,13 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [],
     "phylorefs": [
         {
-            "regnumId": 758,
+            "curatorNotes": "Regnum ID: '758'",
             "label": "Aeolodontini",
-            "dwc:scientificNameAuthorship": "Johnson, Michela M and Young, Mark T and Brignon, Arnaud and Brusatte, Stephen L",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Johnson, Michela M and Young, Mark T and Brignon, Arnaud and Brusatte, Stephen L",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "ADDITION TO ‘THE PHYLOGENETICS OF TELEOSAUROIDEA (CROCODYLOMORPHA; THALATTOSUCHIA) AND IMPLICATIONS FOR THEIR ECOLOGY AND EVOLUTION'",
@@ -58,7 +58,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade within Teleosauroidea containing Aeolodon priscus (von Sömmerring 1814) but not Steneosaurus megistorhynchus (Eudes-Deslongchamps 1866) and Teleosaurus cadomensis (Lamouroux 1820). This is a maximum-clade, or stem-based, definition.",
+            "definition": "The largest clade within Teleosauroidea containing Aeolodon priscus (von Sömmerring 1814) but not Steneosaurus megistorhynchus (Eudes-Deslongchamps 1866) and Teleosaurus cadomensis (Lamouroux 1820). This is a maximum-clade, or stem-based, definition.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -28,11 +28,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1042,
+            "curatorNotes": "Regnum ID: '1042'",
             "label": "Tapejariformes",
-            "dwc:scientificNameAuthorship": "Pêgas, Rodrigo",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Pêgas, Rodrigo",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A taxonomic note on the tapejarid pterosaurs from the Pterosaur Graveyard site (Caiuá Group, ?Early Cretaceous of Southern Brazil): evidence for the presence of two species",
@@ -56,7 +56,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The clade characterized by a downturned rostrum synapomorphic with that of Tapejara wellnhoferi Kellner 1989 (apomorphy-based).",
+            "definition": "The clade characterized by a downturned rostrum synapomorphic with that of Tapejara wellnhoferi Kellner 1989 (apomorphy-based).",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

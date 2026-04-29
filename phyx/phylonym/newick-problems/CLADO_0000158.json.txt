@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -54,10 +54,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 158,
+            "curatorNotes": "Regnum ID: '158'",
             "label": "Pterodactyloidea",
-            "dwc:scientificNameAuthorship": "Andres, B. and Padian, K.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Andres, B. and Padian, K.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Beiträge zur Kenntnis der Flugsaurier.",
@@ -80,7 +80,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -140,7 +140,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The clade characterized by the apomorphy elongate wing metacarpal that is at least 80 percent as long as the humerus (at adult stage), as inherited by Pterodactylus antiquus (Soemmerring 1812).",
+            "definition": "The clade characterized by the apomorphy elongate wing metacarpal that is at least 80 percent as long as the humerus (at adult stage), as inherited by Pterodactylus antiquus (Soemmerring 1812).",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

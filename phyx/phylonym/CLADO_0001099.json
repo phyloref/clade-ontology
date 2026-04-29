@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -1108,10 +1108,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1099,
+            "curatorNotes": "Regnum ID: '1099'",
             "label": "Dacentrurinae",
-            "dwc:scientificNameAuthorship": "Sánchez-Fenollosa, Sergio and Cobos, Alberto",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Sánchez-Fenollosa, Sergio and Cobos, Alberto",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A new long–necked “sauropod mimic” stegosaur and the evolution of the plated dinosaurs",
@@ -1160,7 +1160,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "New insights into the phylogeny and skull evolution of stegosaurian dinosaurs: An extraordinary cranium from the European Late Jurassic (Dinosauria: Stegosauria)",
@@ -1200,7 +1200,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade containing Dacentrurus armatus Owen, 1875 but not Stegosaurus stenops Marsh, 1887",
+            "definition": "The largest clade containing Dacentrurus armatus Owen, 1875 but not Stegosaurus stenops Marsh, 1887",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -118,10 +118,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1116,
+            "curatorNotes": "Regnum ID: '1116'",
             "label": "Solanoideae",
-            "dwc:scientificNameAuthorship": "Olmstead, Richard G. and Deanna, Rocio",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Olmstead, Richard G. and Deanna, Rocio",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Outlines of botany: including a general history of the vegetable kingdom, in which plants are arranged according to the system of natural affinities",
@@ -145,7 +145,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new phylogeny and phylogenetic classification for Solanaceae",
@@ -262,7 +262,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The maximum crown clade containing Solanum nigrum Linnaeus 1753, but not Nicotiana tabacum Linnaeus 1753.",
+            "definition": "The maximum crown clade containing Solanum nigrum Linnaeus 1753, but not Nicotiana tabacum Linnaeus 1753.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

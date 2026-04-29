@@ -1,12 +1,12 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [],
     "phylorefs": [
         {
-            "regnumId": 1219,
+            "curatorNotes": "Regnum ID: '1219'",
             "label": "Tyrannosauria",
-            "dwc:scientificNameAuthorship": "Napoli, James G and Zanno, Lindsay E",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Napoli, James G and Zanno, Lindsay E",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "The origin and evolution of the tyrannosaurids, part 2",
@@ -30,8 +30,8 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The most inclusive clade containing Tyrannosaurus rex Osborn 1905 but not Proceratosaurus bradleyi Woodward 1910.",
+            "definitionSource": [],
+            "definition": "The most inclusive clade containing Tyrannosaurus rex Osborn 1905 but not Proceratosaurus bradleyi Woodward 1910.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

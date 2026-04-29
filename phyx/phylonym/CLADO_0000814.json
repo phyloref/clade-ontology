@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -29,11 +29,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 814,
+            "curatorNotes": "Regnum ID: '814'",
             "label": "Shelaniinae",
-            "dwc:scientificNameAuthorship": "Lemierre, and Bailon, and Folie, and Laurin,",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Lemierre, and Bailon, and Folie, and Laurin,",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new pipid from the Cretaceous of Africa (In Becet en, Niger) and early evolution of the Pipidae",
@@ -50,7 +50,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade that includes Shelania pascuali but not Pipa pipa, Hymenochirus boettgeri, Silurana tropicalis, and Xenopus laevis.",
+            "definition": "The largest clade that includes Shelania pascuali but not Pipa pipa, Hymenochirus boettgeri, Silurana tropicalis, and Xenopus laevis.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

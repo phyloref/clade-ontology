@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -103,10 +103,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 65,
+            "curatorNotes": "Regnum ID: '65'",
             "label": "Mesangiospermae",
-            "dwc:scientificNameAuthorship": "Donoghue, M. J. and Doyle, J. A. and Cantino, P. D.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Donoghue, M. J. and Doyle, J. A. and Cantino, P. D.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Towards a phylogenetic nomenclature of Tracheophyta.",
@@ -151,7 +151,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -222,7 +222,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The largest crown clade containing Platanus occidentalis Linnaeus 1753 but not Amborella trichopoda Baillon 1869 and Nymphaea odorata Aiton 1789 (Nymphaeales) and Austrobaileya scandens C. T. White 1933 (Austrobaileyales).",
+            "definition": "The largest crown clade containing Platanus occidentalis Linnaeus 1753 but not Amborella trichopoda Baillon 1869 and Nymphaea odorata Aiton 1789 (Nymphaeales) and Austrobaileya scandens C. T. White 1933 (Austrobaileyales).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -43,10 +43,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 962,
+            "curatorNotes": "Regnum ID: '962'",
             "label": "Carangiformes",
-            "dwc:scientificNameAuthorship": "Thacker, C. E. and Near, T. J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Thacker, C. E. and Near, T. J.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A classification of fishes including families and genera as far as known",
@@ -73,7 +73,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
@@ -88,7 +88,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Centropomus medius Günther 1864, Polynemus melanochir Valenciennes in Cuvier and Valenciennes (1831), Psettodes ereumei (Bloch and Schneider 1801), Pleuronichthys cornutus (Temminck and Schlegel 1846), Xiphias gladius Linnaeus 1758, and Caranx melampygus Cuvier in Cuvier and Valenciennes (1833).",
+            "definition": "The least inclusive crown clade that contains Centropomus medius Günther 1864, Polynemus melanochir Valenciennes in Cuvier and Valenciennes (1831), Psettodes ereumei (Bloch and Schneider 1801), Pleuronichthys cornutus (Temminck and Schlegel 1846), Xiphias gladius Linnaeus 1758, and Caranx melampygus Cuvier in Cuvier and Valenciennes (1833).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

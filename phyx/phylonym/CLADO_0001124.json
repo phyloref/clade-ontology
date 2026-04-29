@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "phylogenyCitation": {
@@ -223,10 +223,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1124,
+            "curatorNotes": "Regnum ID: '1124'",
             "label": "Physalidae",
-            "dwc:scientificNameAuthorship": "Olmstead, Richard G. and Deanna, Rocio",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Olmstead, Richard G. and Deanna, Rocio",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Observations upon several genera hitherto placed in Solanaceae, and upon others intermediate between that family and the Scrophulariaceae",
@@ -252,7 +252,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new phylogeny and phylogenetic classification for Solanaceae",
@@ -369,7 +369,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The maximum crown clade containing Physalis pubescens Linnaeus 1753 (Physalis angulata Linnaeus 1753), but not Salpichroa glandulosa (Hook.) Miers 1845, Capsicum annuum Linnaeus 1753, Jaltomata procumbens (Cavanilles) J.L. Gentry 1973, and Solanum nigrum Linnaeus 1753.",
+            "definition": "The maximum crown clade containing Physalis pubescens Linnaeus 1753 (Physalis angulata Linnaeus 1753), but not Salpichroa glandulosa (Hook.) Miers 1845, Capsicum annuum Linnaeus 1753, Jaltomata procumbens (Cavanilles) J.L. Gentry 1973, and Solanum nigrum Linnaeus 1753.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

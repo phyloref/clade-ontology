@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -144,10 +144,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1194,
+            "curatorNotes": "Regnum ID: '1194'",
             "label": "Asthenocorminae",
-            "dwc:scientificNameAuthorship": "Kanarkina, Alina and Zverkov, Nikolay G and Varenov, Dmitry V",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Kanarkina, Alina and Zverkov, Nikolay G and Varenov, Dmitry V",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "A new large pachycormiform (Teleosteomorpha: Pachycormiformes) from the Lower Jurassic of Germany, with affinities to the suspension-feeding clade and comments on the gastrointestinal anatomy of pachycormid fishes",
@@ -205,7 +205,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new species of the Late Jurassic pachycormiform fish Orthocormus and comments on the beta taxonomy and phylogenetic systematics of the Pachycormiformes",
@@ -255,7 +255,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade containing Asthenocormus titanius (Wagner, 1863), but not Pachycormus macropterus (Blainville, 1818), Saurostomus esocinus Agassiz, 1843 or Germanostomus pectopteri Cooper et al., 2022.",
+            "definition": "The largest clade containing Asthenocormus titanius (Wagner, 1863), but not Pachycormus macropterus (Blainville, 1818), Saurostomus esocinus Agassiz, 1843 or Germanostomus pectopteri Cooper et al., 2022.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

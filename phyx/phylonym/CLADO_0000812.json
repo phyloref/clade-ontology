@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -37,11 +37,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 812,
+            "curatorNotes": "Regnum ID: '812'",
             "label": "Pipimorpha",
-            "dwc:scientificNameAuthorship": "Lemierre, and Bailon, and Folie, and Laurin,",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Lemierre, and Bailon, and Folie, and Laurin,",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new pipid from the Cretaceous of Africa (In Becetèn, Niger) and early evolution of the Pipidae",
@@ -73,7 +73,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The total clade composed of the crown clade Pipidae, and all extinct organisms or species that share a more recent common ancestor with Pipidae than with any extant taxa that are not members of Pipidae.",
+            "definition": "The total clade composed of the crown clade Pipidae, and all extinct organisms or species that share a more recent common ancestor with Pipidae than with any extant taxa that are not members of Pipidae.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

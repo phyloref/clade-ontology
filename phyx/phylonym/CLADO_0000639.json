@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -266,10 +266,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 639,
+            "curatorNotes": "Regnum ID: '639'",
             "label": "Ornithischia",
-            "dwc:scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "On the classification of the fossil animals commonly named Dinosauria",
@@ -296,7 +296,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
@@ -375,7 +375,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade containing Iguanodon bernissartensis Boulenger in Beneden, 1881 but not Allosaurus fragilis Marsh, 1877a and Camarasaurus supremus Cope, 1877.",
+            "definition": "The largest clade containing Iguanodon bernissartensis Boulenger in Beneden, 1881 but not Allosaurus fragilis Marsh, 1877a and Camarasaurus supremus Cope, 1877.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

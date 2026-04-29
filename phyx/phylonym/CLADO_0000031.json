@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -334,10 +334,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 31,
+            "curatorNotes": "Regnum ID: '31'",
             "label": "Coniferae",
-            "dwc:scientificNameAuthorship": "Doyle, J. A. and Cantino, P. D. and Donoghue, M. J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Doyle, J. A. and Cantino, P. D. and Donoghue, M. J.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Genera plantarum.",
@@ -360,7 +360,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -431,7 +431,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Pinus strobus Linnaeus 1753, Cupressus sempervirens Linnaeus 1753, Podocarpus macrophyllus (Thunberg) Sweet 1818 (originally described as Taxus macrophylla Thunberg 1783), and Taxus baccata Linnaeus 1753.",
+            "definition": "The smallest crown clade containing Pinus strobus Linnaeus 1753, Cupressus sempervirens Linnaeus 1753, Podocarpus macrophyllus (Thunberg) Sweet 1818 (originally described as Taxus macrophylla Thunberg 1783), and Taxus baccata Linnaeus 1753.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

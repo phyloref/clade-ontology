@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -43,10 +43,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 982,
+            "curatorNotes": "Regnum ID: '982'",
             "label": "Lophioidei",
-            "dwc:scientificNameAuthorship": "Near, Thomas J. and Thacker, Christine E.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Near, Thomas J. and Thacker, Christine E.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Enumeratio specierum piscium hucusque in Archipelago indico observatarum, adjectis habitationibusque, ubi descriptiones earum recentiores reperiuntur, nec non speciebus Musei Bleekeriani Bengalensibus, Japonicis, Capensibus Tasmanicisque",
@@ -72,7 +72,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
@@ -106,7 +106,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Lophius gastrophysus Miranda Ribeiro 1915, Ogcocephalus radiatus (Mitchill 1818), and Cryptopsaras couesii Gill 1883.",
+            "definition": "The least inclusive crown clade that contains Lophius gastrophysus Miranda Ribeiro 1915, Ogcocephalus radiatus (Mitchill 1818), and Cryptopsaras couesii Gill 1883.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

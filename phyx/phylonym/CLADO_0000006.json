@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -144,10 +144,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 6,
+            "curatorNotes": "Regnum ID: '6'",
             "label": "Ambulacraria",
-            "dwc:scientificNameAuthorship": "Cameron, C. B.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Cameron, C. B.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Uber die systematische Stellung von Balanoglossus.",
@@ -174,7 +174,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -235,7 +235,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of the hemichordates Cephalodiscus gracilis Harmer 1905, Saccoglossus pusillus Ritter 1902, and Ptychodera flava Eschscholtz 1825, and the echinoderms Florometra serratissima A. H. Clark 1907, Asterias amurensis Lutken 1871, Arbacia punctulata Lamarck 1816, and Cucumeria salva Lampert 1885.",
+            "definition": "The crown clade originating in the most recent common ancestor of the hemichordates Cephalodiscus gracilis Harmer 1905, Saccoglossus pusillus Ritter 1902, and Ptychodera flava Eschscholtz 1825, and the echinoderms Florometra serratissima A. H. Clark 1907, Asterias amurensis Lutken 1871, Arbacia punctulata Lamarck 1816, and Cucumeria salva Lampert 1885.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

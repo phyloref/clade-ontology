@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -56,11 +56,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 486,
+            "curatorNotes": "Regnum ID: '486'",
             "label": "Podocnemidinae",
-            "dwc:scientificNameAuthorship": "Joyce, Walter G. and Anquetin, Jérémy and Cadena, Edwin-Alberto and Claude, Julien and Danilov, Igor G. and Evers, Serjoscha W. and Ferreira, Gabriel S. and Gentry, Andrew D. and Georgalis, Georgios L. and Lyson, Tyler R. and Pérez-García, Adán and Rabi, Márton and Sterli, Juliana and Vitek, Natasha S. and Parham, James  F.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Joyce, Walter G. and Anquetin, Jérémy and Cadena, Edwin-Alberto and Claude, Julien and Danilov, Igor G. and Evers, Serjoscha W. and Ferreira, Gabriel S. and Gentry, Andrew D. and Georgalis, Georgios L. and Lyson, Tyler R. and Pérez-García, Adán and Rabi, Márton and Sterli, Juliana and Vitek, Natasha S. and Parham, James  F.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A nomenclature for fossil and living turtles using phylogenetically defined clade names",
@@ -212,7 +212,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade containing Podocnemis (orig. Emys) expansa (Schweigger, 1812), but not Erymnochelys (orig. Dumerilia) madagascariensis (Grandidier, 1867) or Peltocephalus (orig. Emys) dumerilianus (Schweigger, 1812).",
+            "definition": "The largest clade containing Podocnemis (orig. Emys) expansa (Schweigger, 1812), but not Erymnochelys (orig. Dumerilia) madagascariensis (Grandidier, 1867) or Peltocephalus (orig. Emys) dumerilianus (Schweigger, 1812).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

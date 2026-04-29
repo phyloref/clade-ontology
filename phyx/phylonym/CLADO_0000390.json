@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -212,10 +212,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 390,
+            "curatorNotes": "Regnum ID: '390'",
             "label": "Vanescaves",
-            "dwc:scientificNameAuthorship": "Chen, Albert and Field, Daniel J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Chen, Albert and Field, Daniel J.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Total-evidence framework reveals complex morphological evolution in nightbirds (Strisores)",
@@ -286,7 +286,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogenetic definitions for Caprimulgimorphae (Aves) and major constituent clades under the International Code of Phylogenetic Nomenclature",
@@ -330,7 +330,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Steatornis caripensis Humboldt, 1817 (Steatornithiformes), Nyctibius (originally Caprimulgus) grandis (Gmelin, 1789) (Nyctibiiformes), Podargus (originally Caprimulgus) strigoides (Latham, 1801) (Podargiformes), Aegotheles (originally Caprimulgus) cristatus (Shaw, 1790) (Aegotheliformes), and Apus (originally Hirundo) apus (Linnaeus, 1758) (Apodiformes) but not Caprimulgus europaeus Linnaeus, 1758 (Caprimulgiformes).",
+            "definition": "The smallest crown clade containing Steatornis caripensis Humboldt, 1817 (Steatornithiformes), Nyctibius (originally Caprimulgus) grandis (Gmelin, 1789) (Nyctibiiformes), Podargus (originally Caprimulgus) strigoides (Latham, 1801) (Podargiformes), Aegotheles (originally Caprimulgus) cristatus (Shaw, 1790) (Aegotheliformes), and Apus (originally Hirundo) apus (Linnaeus, 1758) (Apodiformes) but not Caprimulgus europaeus Linnaeus, 1758 (Caprimulgiformes).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

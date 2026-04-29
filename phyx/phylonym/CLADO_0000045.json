@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -913,10 +913,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 45,
+            "curatorNotes": "Regnum ID: '45'",
             "label": "Fungi",
-            "dwc:scientificNameAuthorship": "Hibbett, D. S. and Blackwell, M. and James, T. and Spatafora, J. W. and Taylor, J. W. and Vilgalys, R.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Hibbett, D. S. and Blackwell, M. and James, T. and Spatafora, J. W. and Taylor, J. W. and Vilgalys, R.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Die natürlichen Pflanzenfamilien. 1 (1).",
@@ -947,7 +947,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -1042,7 +1042,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The smallest crown clade containing Rozella allomycis F.K. Faust 1937, Batrachochytrium dendrobatidis Longcore, Pessier & D.K. Nichols 1999, Allomyces arbusculus E.J. Butler 1911, Entomophthora muscae (Cohn) Fresen. 1856, Coemansia reversa Tiegh. & G. Le Monn. 1873, Rhizophagus intraradices (N.C. Schenck & G.S. Sm.) C. Walker & A. Schüßler 2010 [the name Glomus intraradices is used on the primary reference phylogeny], Rhizopus oryzae Went & Prins. Geerl. 1895, Saccharomyces cerevisiae Meyen 1838, and Coprinopsis cinerea (Schaeff.) Redhead, Vilgalys & Moncalvo 2001.",
+            "definition": "The smallest crown clade containing Rozella allomycis F.K. Faust 1937, Batrachochytrium dendrobatidis Longcore, Pessier & D.K. Nichols 1999, Allomyces arbusculus E.J. Butler 1911, Entomophthora muscae (Cohn) Fresen. 1856, Coemansia reversa Tiegh. & G. Le Monn. 1873, Rhizophagus intraradices (N.C. Schenck & G.S. Sm.) C. Walker & A. Schüßler 2010 [the name Glomus intraradices is used on the primary reference phylogeny], Rhizopus oryzae Went & Prins. Geerl. 1895, Saccharomyces cerevisiae Meyen 1838, and Coprinopsis cinerea (Schaeff.) Redhead, Vilgalys & Moncalvo 2001.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

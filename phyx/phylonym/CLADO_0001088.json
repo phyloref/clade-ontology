@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -79,10 +79,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1088,
+            "curatorNotes": "Regnum ID: '1088'",
             "label": "Sebecoidea",
-            "dwc:scientificNameAuthorship": "Bravo, Gonzalo Gabriel and Pol, Diego and Leardi, Juan Martín and Krause, Marcelo J and Nicholl, Cecily and Rougier, Guillermo Walter and Mannion, Philip D",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Bravo, Gonzalo Gabriel and Pol, Diego and Leardi, Juan Martín and Krause, Marcelo J and Nicholl, Cecily and Rougier, Guillermo Walter and Mannion, Philip D",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "New reptiles from the Eocene of South America",
@@ -109,7 +109,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new notosuchian crocodyliform from the Early Paleocene of Patagonia and the survival of a large-bodied terrestrial lineage across the K–Pg mass extinction.",
@@ -184,7 +184,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The most inclusive group that contains Sebecus icaeorhinus Simpson, 1937, Iberosuchus macrodon Antunes, 1975, and Bergisuchus dietrichbergi Kuhn, 1968, but not Baurusuchus pachecoi Price, 1945, Mahajangasuchus insignis Buckley and Brochu, 1999, Montealtosuchus arrudacamposi Carvalho, de Vasconcellos, and Tavares, 2007, Peirosaurus torminni Price, 1955, Notosuchus terrestris Woodward, 1896, and Crocodylus niloticus Laurenti, 1768. This is a maximum clade definition.",
+            "definition": "The most inclusive group that contains Sebecus icaeorhinus Simpson, 1937, Iberosuchus macrodon Antunes, 1975, and Bergisuchus dietrichbergi Kuhn, 1968, but not Baurusuchus pachecoi Price, 1945, Mahajangasuchus insignis Buckley and Brochu, 1999, Montealtosuchus arrudacamposi Carvalho, de Vasconcellos, and Tavares, 2007, Peirosaurus torminni Price, 1955, Notosuchus terrestris Woodward, 1896, and Crocodylus niloticus Laurenti, 1768. This is a maximum clade definition.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -814,10 +814,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 46,
+            "curatorNotes": "Regnum ID: '46'",
             "label": "Gentianales",
-            "dwc:scientificNameAuthorship": "Struwe, L. and Frasier, C. and Olmstead, R. G.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Struwe, L. and Frasier, C. and Olmstead, R. G.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Nixus plantarum.",
@@ -840,7 +840,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -909,7 +909,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The least inclusive clade containing Gentiana lutea Linnaeus 1753 (Gentianaceae) and Cinchona pubescens Vahl 1790 (Rubiaceae).",
+            "definition": "The least inclusive clade containing Gentiana lutea Linnaeus 1753 (Gentianaceae) and Cinchona pubescens Vahl 1790 (Rubiaceae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

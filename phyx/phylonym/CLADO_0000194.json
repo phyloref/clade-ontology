@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -106,10 +106,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 194,
+            "curatorNotes": "Regnum ID: '194'",
             "label": "Dinosauria",
-            "dwc:scientificNameAuthorship": "Langer, M. C. and Novas, F. E. and Bittencourt, J. and Ezcurra, M. D. and Gauthier, J. A.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Langer, M. C. and Novas, F. E. and Bittencourt, J. and Ezcurra, M. D. and Gauthier, J. A.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Report on British fossil reptiles. Part II.",
@@ -135,7 +135,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -224,7 +224,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The smallest clade containing Iguanodon bernissartensis Boulenger in Beneden 1881 (Ornithischia: Euornithopoda), Megalosaurus bucklandii Mantell 1827 (Theropoda: Megalosauroidea) and Cetiosaurus oxoniensis Phillips 1871 (Sauropodomorpha).",
+            "definition": "The smallest clade containing Iguanodon bernissartensis Boulenger in Beneden 1881 (Ornithischia: Euornithopoda), Megalosaurus bucklandii Mantell 1827 (Theropoda: Megalosauroidea) and Cetiosaurus oxoniensis Phillips 1871 (Sauropodomorpha).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -114,10 +114,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1031,
+            "curatorNotes": "Regnum ID: '1031'",
             "label": "Parapredentata",
-            "dwc:scientificNameAuthorship": "Fonseca, André O. and Reid, Iain J. and Venner, Alexander and Duncan, Ruairidh J. and Garcia, Mauricio S. and Müller, Rodrigo T.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Fonseca, André O. and Reid, Iain J. and Venner, Alexander and Duncan, Ruairidh J. and Garcia, Mauricio S. and Müller, Rodrigo T.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Taxonomic, palaeobiological and evolutionary implications of a phylogenetic hypothesis for Ornithischia (Archosauria: Dinosauria)",
@@ -180,7 +180,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A Comprehensive Phylogenetic Analysis on Early Ornithischian Evolution",
@@ -256,7 +256,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The smallest clade within Ornithischia containing Iguanodon bernissartensis Boulenger in Beneden, 1881 and Silesaurus opolensis Dzik, 2003.",
+            "definition": "The smallest clade within Ornithischia containing Iguanodon bernissartensis Boulenger in Beneden, 1881 and Silesaurus opolensis Dzik, 2003.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

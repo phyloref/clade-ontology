@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -79,10 +79,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 53,
+            "curatorNotes": "Regnum ID: '53'",
             "label": "Intramacronucleata",
-            "dwc:scientificNameAuthorship": "Lynn, D. J. and Dunthorn, M.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Lynn, D. J. and Dunthorn, M.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "My journey in ciliate systematics.",
@@ -109,7 +109,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -170,7 +170,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The crown clade for which intramacronuclear microtubules (as described under Diagnostic Apomorphies), as inherited by Tetrahymena thermophila Nanney and McCoy 1976, is an apomorphy relative to other crown clades.",
+            "definition": "The crown clade for which intramacronuclear microtubules (as described under Diagnostic Apomorphies), as inherited by Tetrahymena thermophila Nanney and McCoy 1976, is an apomorphy relative to other crown clades.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

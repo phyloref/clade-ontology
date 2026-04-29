@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -166,10 +166,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 404,
+            "curatorNotes": "Regnum ID: '404'",
             "label": "Pan-Aves",
-            "dwc:scientificNameAuthorship": "Ezcurra, Martin and Nesbitt, Sterling and Bronzati, Mario and Dalla Vecchia, Fabio and Agnolin, Federico and Benson, Roger and Egli, Federico and Cabreira, Sergio and Evers, Serjoscha and Gentil, Adriel and Irmis, Randall and Martinelli, Agustín and Novas, Fernando and Silva, Lúcio and Smith, Nathan and Stocker, Michelle and Turner, Alan and Langer, Max",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Ezcurra, Martin and Nesbitt, Sterling and Bronzati, Mario and Dalla Vecchia, Fabio and Agnolin, Federico and Benson, Roger and Egli, Federico and Cabreira, Sergio and Evers, Serjoscha and Gentil, Adriel and Irmis, Randall and Martinelli, Agustín and Novas, Fernando and Silva, Lúcio and Smith, Nathan and Stocker, Michelle and Turner, Alan and Langer, Max",
+            "namePublishedIn": [
                 {
                     "type": "book_section",
                     "title": "New perspectives on the origin and early evolution of birds. Proceedings of the International Symposium in Honor of John H. Ostrom.",
@@ -219,7 +219,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Enigmatic dinosaur precursors bridge the gap to the origin of Pterosauria",
@@ -380,7 +380,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The most inclusive clade containing Vultur gryphus Linnaeus, 1758 (Aves), but not Crocodylus niloticus Laurenti, 1768 (Crocodylia)",
+            "definition": "The most inclusive clade containing Vultur gryphus Linnaeus, 1758 (Aves), but not Crocodylus niloticus Laurenti, 1768 (Crocodylia)",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -71,10 +71,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 263,
+            "curatorNotes": "Regnum ID: '263'",
             "label": "Cavicornia",
-            "dwc:scientificNameAuthorship": "Bibi, F. and Vrba, E. S.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Bibi, F. and Vrba, E. S.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Prodromus Systematis Mammalium et Avium: Additis Terminis Zoographicis Utriusque Classis.",
@@ -97,7 +97,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -158,7 +158,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The artiodactyl clade for which frontal bones with permanent, unbranched, and paired horn cores, as inherited by Bos taurus Linnaeus 1758, is an apomorphy.",
+            "definition": "The artiodactyl clade for which frontal bones with permanent, unbranched, and paired horn cores, as inherited by Bos taurus Linnaeus 1758, is an apomorphy.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

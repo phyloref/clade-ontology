@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -44,10 +44,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 998,
+            "curatorNotes": "Regnum ID: '998'",
             "label": "Ovalentaria",
-            "dwc:scientificNameAuthorship": "Smith, W. L. and Near, T. J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Smith, W. L. and Near, T. J.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
@@ -81,7 +81,7 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "The evolution of pharyngognathy: a phylogenetic and functional appraisal of the pharyngeal jaw key innovation in labroid fishes and beyond",
@@ -186,7 +186,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Ambassis urotaenia Bleeker 1852, Mugil cephalus Linnaeus 1758, Embiotoca lateralis Agassiz 1854, Pseudochromis fridmani Klausewitz 1968, Gobiesox maeandricus (Girard 1858), Gillellus semicinctus Gilbert 1890, Polycentrus schomburgkii Müller & Troschel 1848, Pholidichthys leucotaenia Bleeker 1856, Cichla temensis Humbolt in Humbolt and Valenciennes 1821, Labidesthes sicculus (Cope 1865), Gambusia affinis (Baird and Girard 1853), and Oryzias latipes (Temminck and Schlegel 1846).",
+            "definition": "The least inclusive crown clade that contains Ambassis urotaenia Bleeker 1852, Mugil cephalus Linnaeus 1758, Embiotoca lateralis Agassiz 1854, Pseudochromis fridmani Klausewitz 1968, Gobiesox maeandricus (Girard 1858), Gillellus semicinctus Gilbert 1890, Polycentrus schomburgkii Müller & Troschel 1848, Pholidichthys leucotaenia Bleeker 1856, Cichla temensis Humbolt in Humbolt and Valenciennes 1821, Labidesthes sicculus (Cope 1865), Gambusia affinis (Baird and Girard 1853), and Oryzias latipes (Temminck and Schlegel 1846).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

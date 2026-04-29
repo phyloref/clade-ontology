@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -79,10 +79,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 891,
+            "curatorNotes": "Regnum ID: '891'",
             "label": "Congroidei",
-            "dwc:scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Atlas ichthyologique des Indes orientales néêrlandaises : publié sous les auspices du gouvernement colonial néêrlandais, Tome IV",
@@ -106,7 +106,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "Phylogeny and classification of Actinopterygii",
@@ -140,7 +140,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive crown clade that contains Conger oceanicus (Mitchill 1818), Derichthys serpentinus Gill 1884, Heteroconger hassi (Klausewitz and Eibl-Eibesfeldt 1959), and Ophichthys zophochir Jordan and Gilbert 1882.",
+            "definition": "The least inclusive crown clade that contains Conger oceanicus (Mitchill 1818), Derichthys serpentinus Gill 1884, Heteroconger hassi (Klausewitz and Eibl-Eibesfeldt 1959), and Ophichthys zophochir Jordan and Gilbert 1882.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

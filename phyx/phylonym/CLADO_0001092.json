@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -74,11 +74,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 1092,
+            "curatorNotes": "Regnum ID: '1092'",
             "label": "Dermochelyini",
-            "dwc:scientificNameAuthorship": "Gentry, Andrew D. and Burns, Michael E. and Ebersole, Jun A. and Gregson, Kimberly A. and Martinez, Emma C. and Parham, James F.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Gentry, Andrew D. and Burns, Michael E. and Ebersole, Jun A. and Gregson, Kimberly A. and Martinez, Emma C. and Parham, James F.",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "A new leatherback marine turtle from the lower Oligocene of Alabama, USA, and a phylogenetic nomenclature for Dermochelyidae",
@@ -148,7 +148,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The largest clade containing the extant leatherback turtle Dermochelys coriacea (Vandelli, 1761) but not Ueloca colemanorum Gentry, Burns, Ebersole, Greyson, Martinez, and Parham, 2025.",
+            "definition": "The largest clade containing the extant leatherback turtle Dermochelys coriacea (Vandelli, 1761) but not Ueloca colemanorum Gentry, Burns, Ebersole, Greyson, Martinez, and Parham, 2025.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

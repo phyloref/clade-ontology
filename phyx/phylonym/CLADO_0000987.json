@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -146,11 +146,11 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 987,
+            "curatorNotes": "Regnum ID: '987'",
             "label": "Peirosauria",
-            "dwc:scientificNameAuthorship": "Leardi, Juan Martín and Pol, and Montefeltro, and Marinho, and Ruiz, and Bravo, and Pinheiro, and Godoy, and Nicholl, and Lecuona, and Larsson,",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [
+            "scientificNameAuthorship": "Leardi, Juan Martín and Pol, and Montefeltro, and Marinho, and Ruiz, and Bravo, and Pinheiro, and Godoy, and Nicholl, and Lecuona, and Larsson,",
+            "namePublishedIn": [],
+            "definitionSource": [
                 {
                     "type": "article",
                     "title": "phylogenetic nomenclature of Notosuchia (Crocodylomorpha; Crocodyliformes)",
@@ -182,7 +182,7 @@
                     }
                 }
             ],
-            "cladeDefinition": "The least inclusive clade containing Mahajangasuchus insignis Buckley and Brochu 1999, Peirosaurus torminni Price 1955, Lomasuchus palpebrosus Gasparini, Chiappe and Fernández 1991, and Itasuchus jesunoi Price 1955 provided that it does not include Sebecus icaeorhinus Simpson 1937. This is a minimum-clade definition.",
+            "definition": "The least inclusive clade containing Mahajangasuchus insignis Buckley and Brochu 1999, Peirosaurus torminni Price 1955, Lomasuchus palpebrosus Gasparini, Chiappe and Fernández 1991, and Itasuchus jesunoi Price 1955 provided that it does not include Sebecus icaeorhinus Simpson 1937. This is a minimum-clade definition.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

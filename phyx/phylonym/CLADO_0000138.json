@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -55,10 +55,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 138,
+            "curatorNotes": "Regnum ID: '138'",
             "label": "Cephalopoda",
-            "dwc:scientificNameAuthorship": "Anderson, F.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Anderson, F.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Lectures on Comparative Anatomy, translated from the French of G. Cuvier. 1. On the organs of motion.",
@@ -81,7 +81,7 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [
+            "definitionSource": [
                 {
                     "type": "book_section",
                     "title": "Phylonyms: A Companion to the PhyloCode",
@@ -133,7 +133,7 @@
                     "link": []
                 }
             ],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Nautilus pompilius Linnaeus 1758 and Sepia officinalis Linnaeus 1758 (Neocoleoidea).",
+            "definition": "The crown clade originating in the most recent common ancestor of Nautilus pompilius Linnaeus 1758 and Sepia officinalis Linnaeus 1758 (Neocoleoidea).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
