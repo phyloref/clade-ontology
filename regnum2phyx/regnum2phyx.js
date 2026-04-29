@@ -78,7 +78,7 @@ function convertAuthorsIntoBibJSON(authors) {
   // last name will be ignored.
   return authors
     .filter(author => author.last_name)
-    .map(author => CitationWrapper.normalize({ // removes empty fields
+    .map(author => pickBy({ // lodash.pickBy will remove empty keys from the object.
       // We store the author name as first_name middle_name last_name
       name: convertAuthorsIntoStrings([author], 'last').join(' and '),
       alternate: [
@@ -281,13 +281,12 @@ dump.forEach((entry, index) => {
   // Create an object describing this phyloreference, then wrap it with
   // PhylorefWrapper so that specifiers can be managed via the library API.
   const phylorefWrapper = new PhylorefWrapper(pickBy({
-    regnumId: entry.id,
+    curatorNotes: `Regnum ID: '${entry.id}'`,
     label: phylorefLabel,
-    'dwc:scientificNameAuthorship': (convertAuthorsIntoStrings(entry.authors)).join(' and '),
-    'dwc:namePublishedIn': convertCitationsToBibJSON(entry.citations.preexisting, entryIssues),
-    'obo:IAO_0000119': // IAO:definition source (http://purl.obolibrary.org/obo/IAO_0000119)
-      convertCitationsToBibJSON(entry.citations.definitional, entryIssues),
-    cladeDefinition: (entry.definition || '').trim(),
+    scientificNameAuthorship: (convertAuthorsIntoStrings(entry.authors)).join(' and '),
+    namePublishedIn: convertCitationsToBibJSON(entry.citations.preexisting, entryIssues),
+    definitionSource: convertCitationsToBibJSON(entry.citations.definitional, entryIssues),
+    definition: (entry.definition || '').trim(),
     internalSpecifiers: [],
     externalSpecifiers: [],
   }));
@@ -373,7 +372,8 @@ dump.forEach((entry, index) => {
   // Prepare a simple Phyx file template.
   // owlterms.PHYX_CONTEXT_JSON provides the canonical context URL from the library.
   const phyxTemplate = pickBy({
-    '@context': owlterms.PHYX_CONTEXT_JSON,
+    '@context': 'http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json',
+      // TODO: revert to owlterms.PHYX_CONTEXT_JSON once https://github.com/phyloref/phyx.js/pull/171 has been released.
     phylogenies,
     phylorefs: [phylorefWrapper.phyloref],
   });
