@@ -281,12 +281,12 @@ dump.forEach((entry, index) => {
   // Create an object describing this phyloreference, then wrap it with
   // PhylorefWrapper so that specifiers can be managed via the library API.
   const phylorefWrapper = new PhylorefWrapper(pickBy({
-    regnumId: entry.id,
+    curatorNotes: `Regnum ID: '${entry.id}'`,
     label: phylorefLabel,
-    'scientificNameAuthorship': (convertAuthorsIntoStrings(entry.authors)).join(' and '),
-    'namePublishedIn': convertCitationsToBibJSON(entry.citations.preexisting, entryIssues),
-    'definitionSource': convertCitationsToBibJSON(entry.citations.definitional, entryIssues),
-    cladeDefinition: (entry.definition || '').trim(),
+    scientificNameAuthorship: (convertAuthorsIntoStrings(entry.authors)).join(' and '),
+    namePublishedIn: convertCitationsToBibJSON(entry.citations.preexisting, entryIssues),
+    definitionSource: convertCitationsToBibJSON(entry.citations.definitional, entryIssues),
+    definition: (entry.definition || '').trim(),
     internalSpecifiers: [],
     externalSpecifiers: [],
   }));
