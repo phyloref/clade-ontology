@@ -283,10 +283,9 @@ dump.forEach((entry, index) => {
   const phylorefWrapper = new PhylorefWrapper(pickBy({
     regnumId: entry.id,
     label: phylorefLabel,
-    'dwc:scientificNameAuthorship': (convertAuthorsIntoStrings(entry.authors)).join(' and '),
-    'dwc:namePublishedIn': convertCitationsToBibJSON(entry.citations.preexisting, entryIssues),
-    'obo:IAO_0000119': // IAO:definition source (http://purl.obolibrary.org/obo/IAO_0000119)
-      convertCitationsToBibJSON(entry.citations.definitional, entryIssues),
+    'scientificNameAuthorship': (convertAuthorsIntoStrings(entry.authors)).join(' and '),
+    'namePublishedIn': convertCitationsToBibJSON(entry.citations.preexisting, entryIssues),
+    'definitionSource': convertCitationsToBibJSON(entry.citations.definitional, entryIssues),
     cladeDefinition: (entry.definition || '').trim(),
     internalSpecifiers: [],
     externalSpecifiers: [],
