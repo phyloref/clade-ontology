@@ -372,7 +372,8 @@ dump.forEach((entry, index) => {
   // Prepare a simple Phyx file template.
   // owlterms.PHYX_CONTEXT_JSON provides the canonical context URL from the library.
   const phyxTemplate = pickBy({
-    '@context': owlterms.PHYX_CONTEXT_JSON,
+    '@context': 'http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json',
+      // TODO: revert to owlterms.PHYX_CONTEXT_JSON once https://github.com/phyloref/phyx.js/pull/171 has been released.
     phylogenies,
     phylorefs: [phylorefWrapper.phyloref],
   });
