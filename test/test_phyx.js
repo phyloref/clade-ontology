@@ -162,11 +162,12 @@ describe('Test Phyx files in repository', () => {
         .reduce((a, b) => a || b, false);
 
       if (!skipFile) {
-        console.log(`Converting Phyx file ${filename} into JSON-LD`);
-        const jsonld = JSON.stringify(wrappedPhyx.asJSONLD());
+        let jsonld;
 
         // Make sure the produced JSON-LD is not empty.
         it('produced a non-empty JSON-LD ontology without throwing an exception', () => {
+          console.log(`Converting Phyx file ${filename} into JSON-LD`);
+          jsonld = JSON.stringify(wrappedPhyx.asJSONLD());
           assert.isNotEmpty(jsonld);
         });
 
