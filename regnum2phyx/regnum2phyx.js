@@ -78,7 +78,7 @@ function convertAuthorsIntoBibJSON(authors) {
   // last name will be ignored.
   return authors
     .filter(author => author.last_name)
-    .map(author => pickBy({ // lodash.pickBy will remove empty keys from the object.
+    .map(author => CitationWrapper.normalize({ // removes empty fields
       // We store the author name as first_name middle_name last_name
       name: convertAuthorsIntoStrings([author], 'last').join(' and '),
       alternate: [
