@@ -3,11 +3,7 @@
     "nomenclaturalCodes": {
       "type": "string",
       "enum": [
-        "http://rs.tdwg.org/ontology/voc/TaxonName#ICZN",
-        "http://rs.tdwg.org/ontology/voc/TaxonName#ICBN",
-        "http://ontology.phyloref.org/tcan.owl#ICNP",
-        "http://ontology.phyloref.org/tcan.owl#ICTV",
-        "http://rs.tdwg.org/ontology/voc/TaxonName#ICNCP"
+        "http://purl.obolibrary.org/obo/NOMEN_0000107"
       ]
     },
     "agent": {
@@ -66,6 +62,10 @@
         "year": {
           "type": "number",
           "description": "The year of publication."
+        },
+        "edition": {
+          "type": "string",
+          "description": "The edition of this publication, if applicable."
         },
         "authors": {
           "type": "array",
@@ -444,7 +444,6 @@
         "type": "object",
         "additionalProperties": true,
         "required": [
-          "newick"
         ],
         "properties": {
           "@id": {
@@ -505,11 +504,22 @@
           },
           "scientificNameAuthorship": {
             "description": "The authors who created this clade definition.",
-            "$ref": "#/definitions/citation"
+            "type": "string"
           },
           "namePublishedIn": {
             "description": "If the label is a scientific name, then this field records the publication in which that name was first published.",
-            "$ref": "#/definitions/citation"
+            "anyOf": [
+              {
+                "type": "array",
+                "minItems": 0,
+                "items": {
+                  "$ref": "#/definitions/citation"
+                }
+              },
+              {
+                "$ref": "#/definitions/citation"
+              }
+            ]
           },
           "definition": {
             "type": "string",
@@ -518,7 +528,15 @@
           },
           "definitionSource": {
             "description": "The publication in which this clade definition was first published.",
-            "$ref": "#/definitions/citation"
+            "anyOf": [{
+              "$ref": "#/definitions/citation"
+            }, {
+              "type": "array",
+              "minItems": 0,
+              "items": {
+                "$ref": "#/definitions/citation"
+              }
+            }]
           },
           "internalSpecifiers": {
             "type": "array",
