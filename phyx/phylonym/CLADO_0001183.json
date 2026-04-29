@@ -1,0 +1,54 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '1183'",
+            "label": "Euornithocheiroidea",
+            "scientificNameAuthorship": ",",
+            "namePublishedIn": [],
+            "definitionSource": [],
+            "definition": "Most inclusive clade containing Anhanguera blittersdorffi, Pteranodon longiceps and Quetzalcoatlus northropi, but not Dsungaripterus weii.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Anhanguera blittersdorffi",
+                        "nameComplete": "Anhanguera blittersdorffi"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Pteranodon longiceps",
+                        "nameComplete": "Pteranodon longiceps"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Quetzalcoatlus northropi",
+                        "nameComplete": "Quetzalcoatlus northropi"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Dsungaripterus weii",
+                        "nameComplete": "Dsungaripterus weii"
+                    }
+                }
+            ]
+        }
+    ]
+}

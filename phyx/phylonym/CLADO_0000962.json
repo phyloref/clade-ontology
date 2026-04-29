@@ -1,0 +1,106 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Prolonged morphological expansion of spiny-rayed fishes following the end-Cretaceous",
+                "year": 2022,
+                "authors": [
+                    {
+                        "name": "A. Ghezelayagh",
+                        "alternate": [
+                            "Ghezelayagh, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Ghezelayagh"
+                    },
+                    {
+                        "name": "et al.",
+                        "alternate": [
+                            "al., et"
+                        ],
+                        "firstname": "et",
+                        "lastname": "al."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1038/s41559-022-01801-3"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Nature Ecology & Evolution",
+                    "volume": "6",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '962'",
+            "label": "Carangiformes",
+            "scientificNameAuthorship": "Thacker, C. E. and Near, T. J.",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "A classification of fishes including families and genera as far as known",
+                    "year": 1923,
+                    "authors": [
+                        {
+                            "name": "D. S. Jordan",
+                            "alternate": [
+                                "Jordan, D. S."
+                            ],
+                            "firstname": "D.",
+                            "lastname": "Jordan",
+                            "middlename": "S."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Stanford University Publications University Series Biological Sciences",
+                        "volume": "3",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
+                    "authors": [],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The least inclusive crown clade that contains Centropomus medius Günther 1864, Polynemus melanochir Valenciennes in Cuvier and Valenciennes (1831), Psettodes ereumei (Bloch and Schneider 1801), Pleuronichthys cornutus (Temminck and Schlegel 1846), Xiphias gladius Linnaeus 1758, and Caranx melampygus Cuvier in Cuvier and Valenciennes (1833).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Centropomus medius Günther, 1864",
+                        "nameComplete": "Centropomus medius"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

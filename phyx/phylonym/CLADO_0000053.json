@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -79,10 +79,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 53,
+            "curatorNotes": "Regnum ID: '53'",
             "label": "Intramacronucleata",
-            "dwc:scientificNameAuthorship": "Lynn, D. J., Dunthorn, M.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Lynn, D. J. and Dunthorn, M.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "My journey in ciliate systematics.",
@@ -109,19 +109,69 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The crown clade for which intramacronuclear microtubules (as described under Diagnostic Apomorphies), as inherited by Tetrahymena thermophila Nanney and McCoy 1976, is an apomorphy relative to other crown clades.",
-            "internalSpecifiers": [
+            "definitionSource": [
                 {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Tetrahymena thermophila Nanney and McCoy, 1976",
-                        "nameComplete": "Tetrahymena thermophila"
-                    }
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Intramacronucleata",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "D. H. Lynn",
+                            "alternate": [
+                                "Lynn, D. H."
+                            ],
+                            "firstname": "D.",
+                            "lastname": "Lynn",
+                            "middlename": "H."
+                        },
+                        {
+                            "name": "M. Dunthorn",
+                            "alternate": [
+                                "Dunthorn, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Dunthorn"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "95-96",
+                    "identifier": [],
+                    "link": []
                 }
             ],
+            "definition": "The crown clade for which intramacronuclear microtubules (as described under Diagnostic Apomorphies), as inherited by Tetrahymena thermophila Nanney and McCoy 1976, is an apomorphy relative to other crown clades.",
+            "internalSpecifiers": [],
             "externalSpecifiers": []
         }
     ]

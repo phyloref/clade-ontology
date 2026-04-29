@@ -1,0 +1,59 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '1219'",
+            "label": "Tyrannosauria",
+            "scientificNameAuthorship": "Napoli, James G and Zanno, Lindsay E",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "The origin and evolution of the tyrannosaurids, part 2",
+                    "year": 1995,
+                    "authors": [
+                        {
+                            "name": "Olshevsky",
+                            "alternate": [
+                                "Olshevsky,"
+                            ],
+                            "lastname": "Olshevsky"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Kyoryugaku Saizensen",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [],
+            "definition": "The most inclusive clade containing Tyrannosaurus rex Osborn 1905 but not Proceratosaurus bradleyi Woodward 1910.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Tyrannosaurus rex Osborn, 1905",
+                        "nameComplete": "Tyrannosaurus rex"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Proceratosaurus bradleyi Woodward, 1910",
+                        "nameComplete": "Proceratosaurus bradleyi"
+                    }
+                }
+            ]
+        }
+    ]
+}

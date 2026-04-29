@@ -1,0 +1,124 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Angiosperm phylogeny: 17 genes, 640 taxa",
+                "year": 2011,
+                "authors": [
+                    {
+                        "name": "D E Soltis",
+                        "alternate": [
+                            "Soltis, D E"
+                        ],
+                        "firstname": "D",
+                        "lastname": "Soltis",
+                        "middlename": "E"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2G",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "American Journal of Botany",
+                    "volume": "98",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '1200'",
+            "label": "Adoxaceae",
+            "scientificNameAuthorship": "Donoghue, Michael  J",
+            "namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Preussische Pflanzengattungen",
+                    "year": 1839,
+                    "authors": [
+                        {
+                            "name": "E Meyer",
+                            "alternate": [
+                                "Meyer, E"
+                            ],
+                            "firstname": "E",
+                            "lastname": "Meyer"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Gräfe und Unzer",
+                    "city": "Königsberg",
+                    "pages": "198",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic definitions for Dipsacales, Adoxaceae, and Caprifoliaceae",
+                    "year": 2026,
+                    "edition": "002",
+                    "authors": [
+                        {
+                            "name": "Michael  J Donoghue",
+                            "alternate": [
+                                "Donoghue, Michael  J"
+                            ],
+                            "firstname": "Michael",
+                            "lastname": "Donoghue",
+                            "middlename": "J"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "figure": "5",
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of Phylogenetic Nomenclature",
+                        "volume": "2",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The smallest crown clade including Viburnum lantana L., Sambucus nigra L., and Adoxa moschatellina L.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Viburnum lantana Linnaeus, 1753",
+                        "nameComplete": "Viburnum lantana"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Sambucus nigra Linnaeus, 1753",
+                        "nameComplete": "Sambucus nigra"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Adoxa moschatellina Linnaeus, 1753",
+                        "nameComplete": "Adoxa moschatellina"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

@@ -1,0 +1,153 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Origins and relationships of the Pleuronectoidei: molecular and morphological analysis of living and fossil taxa",
+                "year": 2019,
+                "authors": [
+                    {
+                        "name": "M. A. Campbell",
+                        "alternate": [
+                            "Campbell, M. A."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Campbell",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "B. Chanet",
+                        "alternate": [
+                            "Chanet, B."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Chanet"
+                    },
+                    {
+                        "name": "J. -N. Chen",
+                        "alternate": [
+                            "Chen, J. -N."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Chen",
+                        "middlename": "-N."
+                    },
+                    {
+                        "name": "M. -Y. Lee",
+                        "alternate": [
+                            "Lee, M. -Y."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Lee",
+                        "middlename": "-Y."
+                    },
+                    {
+                        "name": "W. -J. Chen",
+                        "alternate": [
+                            "Chen, W. -J."
+                        ],
+                        "firstname": "W.",
+                        "lastname": "Chen",
+                        "middlename": "-J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/zsc.12372"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Zoologica Scripta",
+                    "volume": "48",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '963'",
+            "label": "Pleuronectoidei",
+            "scientificNameAuthorship": "Thacker, C. E. and Near, T. J.",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Bijdrage tot de kennis der ichthyologische fauna van het eiland Madura, met beschrijving van eenige nieuwe soorten",
+                    "year": 1849,
+                    "authors": [
+                        {
+                            "name": "P. Bleeker",
+                            "alternate": [
+                                "Bleeker, P."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Bleeker"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Verhandelingen van het Bataviaasch Genootschap van Kunsten en Wetenschappen",
+                        "volume": "22 (8)",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
+                    "authors": [
+                        {
+                            "name": "T. J. Near",
+                            "alternate": [
+                                "Near, T. J."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "C. E. Thacker",
+                            "alternate": [
+                                "Thacker, C. E."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The least inclusive crown clade that contains Psettodes ereumeri (Bloch and Schneider 1801), Citharus linguatula (Linnaeus 1758), Pleuronichthys cornutus (Temminck and Schlegel 1846), and Solea solea (Linnaeus 1758).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Psettodes ereumeri Bloch and Schneider, 1801",
+                        "nameComplete": "Psettodes ereumeri"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

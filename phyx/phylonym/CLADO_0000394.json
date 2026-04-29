@@ -1,0 +1,147 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Ultraconserved elements resolve the phylogeny of potoos (Aves: Nyctibiidae)",
+                "year": 2017,
+                "authors": [
+                    {
+                        "name": "Noor D. White",
+                        "alternate": [
+                            "White, Noor D."
+                        ],
+                        "firstname": "Noor",
+                        "lastname": "White",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "Charles Mitter",
+                        "alternate": [
+                            "Mitter, Charles"
+                        ],
+                        "firstname": "Charles",
+                        "lastname": "Mitter"
+                    },
+                    {
+                        "name": "Michael J. Braun",
+                        "alternate": [
+                            "Braun, Michael J."
+                        ],
+                        "firstname": "Michael",
+                        "lastname": "Braun",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/jav.01313"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/jav.01313"
+                    }
+                ],
+                "journal": {
+                    "name": "Journal of Avian Biology",
+                    "volume": "48",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '394'",
+            "label": "Nyctibiidae",
+            "scientificNameAuthorship": "Chen, Albert and Field, Daniel J.",
+            "namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "A Review of Recent Attempts to Classify Birds",
+                    "year": 1891,
+                    "authors": [
+                        {
+                            "name": "Richard Bowdler Sharpe",
+                            "alternate": [
+                                "Sharpe, Richard Bowdler"
+                            ],
+                            "firstname": "Richard",
+                            "lastname": "Sharpe",
+                            "middlename": "Bowdler"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Office of the Congress",
+                    "city": "Budapest",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic definitions for Caprimulgimorphae (Aves) and major constituent clades under the International Code of Phylogenetic Nomenclature",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "Albert Chen",
+                            "alternate": [
+                                "Chen, Albert"
+                            ],
+                            "firstname": "Albert",
+                            "lastname": "Chen"
+                        },
+                        {
+                            "name": "Daniel J. Field",
+                            "alternate": [
+                                "Field, Daniel J."
+                            ],
+                            "firstname": "Daniel",
+                            "lastname": "Field",
+                            "middlename": "J."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.26049/VZ70-4-2020-03"
+                        }
+                    ],
+                    "link": [
+                        {
+                            "url": "https://www.senckenberg.de/de/wissenschaft/publikationen/wissenschaftliche-zeitschriften/vertebrate-zoology/archiv/vz-70-4-03/"
+                        }
+                    ],
+                    "journal": {
+                        "name": "Vertebrate Zoology",
+                        "volume": "70",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The smallest crown clade containing Phyllaemulor (originally Nyctibius) bracteatus (Gould in Yarrell, 1846), Nyctibius (originally Caprimulgus) grandis (Gmelin, 1789), and Nyctibius (originally Caprimulgus) griseus (Gmelin, 1789).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Phyllaemulor (originally Nyctibius) bracteatus Gould, 1846",
+                        "nameComplete": "Phyllaemulor (originally Nyctibius) bracteatus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

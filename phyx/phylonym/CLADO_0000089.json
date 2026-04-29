@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -230,10 +230,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 89,
+            "curatorNotes": "Regnum ID: '89'",
             "label": "Rhabdocoela",
-            "dwc:scientificNameAuthorship": "Artois, T.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Artois, T.",
+            "namePublishedIn": [
                 {
                     "type": "book_section",
                     "title": "in Symbolae Physicae II. Phytozoa Turbellaria",
@@ -277,8 +277,59 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "the smallest crown clade containing Polycystis naegelii Kölliker 1845, Provortex balticus (Schultze 1851) Graff 1882, and Mariplanella frisia Ax and Heller 1970.",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Rhabdocoela",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "T. Artois",
+                            "alternate": [
+                                "Artois, T."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Artois"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "511-513",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "the smallest crown clade containing Polycystis naegelii Kölliker 1845, Provortex balticus (Schultze 1851) Graff 1882, and Mariplanella frisia Ax and Heller 1970.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -287,24 +338,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Polycystis naegelii Kölliker, 1845",
                         "nameComplete": "Polycystis naegelii"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Provortex balticus Graff, 1882",
-                        "nameComplete": "Provortex balticus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Mariplanella frisia Ax and Heller, 1970",
-                        "nameComplete": "Mariplanella frisia"
                     }
                 }
             ],

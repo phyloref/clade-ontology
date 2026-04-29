@@ -1,0 +1,187 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "book_section",
+                "title": "The Late Cretaceous pterosaur Quetzalcoatlus Lawson 1975 (Pterodactyloidea: Azhdarchoidea)",
+                "section_title": "Phylogenetic systematics of Quetzalcoatlus (Pterosauria: Azhdarchidae)",
+                "year": 2021,
+                "authors": [
+                    {
+                        "name": "Brian Andres",
+                        "alternate": [
+                            "Andres, Brian"
+                        ],
+                        "firstname": "Brian",
+                        "lastname": "Andres"
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "Kevin Padian",
+                        "alternate": [
+                            "Padian, Kevin"
+                        ],
+                        "firstname": "Kevin",
+                        "lastname": "Padian"
+                    },
+                    {
+                        "name": "Matthew Brown",
+                        "alternate": [
+                            "Brown, Matthew"
+                        ],
+                        "firstname": "Matthew",
+                        "lastname": "Brown"
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "Journal of Vertebrate Paleontology",
+                "city": "MacLean",
+                "pages": "203–217",
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1080/02724634.2020.1801703"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "https://www.tandfonline.com/doi/full/10.1080/02724634.2020.1801703"
+                    }
+                ]
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "The earliest pterodactyloid and the origin of the group",
+                "year": 2014,
+                "edition": "24",
+                "authors": [
+                    {
+                        "name": "Brian Andres",
+                        "alternate": [
+                            "Andres, Brian"
+                        ],
+                        "firstname": "Brian",
+                        "lastname": "Andres"
+                    },
+                    {
+                        "name": "James Clark",
+                        "alternate": [
+                            "Clark, James"
+                        ],
+                        "firstname": "James",
+                        "lastname": "Clark"
+                    },
+                    {
+                        "name": "Xing Xu",
+                        "alternate": [
+                            "Xu, Xing"
+                        ],
+                        "firstname": "Xing",
+                        "lastname": "Xu"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.cub.2014.03.030"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "http://www.sciencedirect.com/science/article/pii/S0960982214003224"
+                    }
+                ],
+                "journal": {
+                    "name": "Current Biology",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '333'",
+            "label": "Ctenochasmatidae",
+            "scientificNameAuthorship": "Andres, Brian",
+            "namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Die fossile Wirbeltierklasse Pterosauria",
+                    "year": 1967,
+                    "authors": [
+                        {
+                            "name": "Oskar Kuhn",
+                            "alternate": [
+                                "Kuhn, Oskar"
+                            ],
+                            "firstname": "Oskar",
+                            "lastname": "Kuhn"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Verlag Oeben",
+                    "city": "Krailling bei München",
+                    "pages": "52",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic Taxonomy of the Pterosauria",
+                    "authors": [
+                        {
+                            "name": "Brian Andres",
+                            "alternate": [
+                                "Andres, Brian"
+                            ],
+                            "firstname": "Brian",
+                            "lastname": "Andres"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "figure": "1",
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of Phylogenetic Taxonomy",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "Least inclusive clade containing Ctenochasma elegans (Wagner, 1861) and Gnathosaurus subulatus Meyer, 1834.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Ctenochasma elegans Wagner, 1861",
+                        "nameComplete": "Ctenochasma elegans"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Gnathosaurus subulatus Meyer, 1834",
+                        "nameComplete": "Gnathosaurus subulatus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

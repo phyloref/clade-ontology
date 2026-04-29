@@ -1,0 +1,122 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '1217'",
+            "label": "Proceratosauridae",
+            "scientificNameAuthorship": "Napoli, James G and Zanno, Lindsay E",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Cranial osteology and phylogenetic position of the theropod dinosaur Proceratosaurus bradleyi (Woodward, 1910) from the Middle Jurassic of England",
+                    "year": 2010,
+                    "authors": [
+                        {
+                            "name": "Oliver Rauhut",
+                            "alternate": [
+                                "Rauhut, Oliver"
+                            ],
+                            "firstname": "Oliver",
+                            "lastname": "Rauhut"
+                        },
+                        {
+                            "name": "Angela Milner",
+                            "alternate": [
+                                "Milner, Angela"
+                            ],
+                            "firstname": "Angela",
+                            "lastname": "Milner"
+                        },
+                        {
+                            "name": "Scott Moore-Fay",
+                            "alternate": [
+                                "Moore-Fay, Scott"
+                            ],
+                            "firstname": "Scott",
+                            "lastname": "Moore-Fay"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Zoological Journal of the Linnean Society",
+                        "volume": "158",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [],
+            "definition": "The most inclusive clade containing Proceratosaurus bradleyi (Woodward 1910), but not Tyrannosaurus rex Osborn 1905, Allosaurus fragilis Marsh 1877, Compsognathus longipes Wagner 1859, Coelurus fragilis Marsh 1879, Ornithomimus velox Marsh 1890, and Deinonychus antirrhopus Ostrom 1969.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Proceratosaurus bradleyi Woodward, 1910",
+                        "nameComplete": "Proceratosaurus bradleyi"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Tyrannosaurus rex Osborn, 1905",
+                        "nameComplete": "Tyrannosaurus rex"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Allosaurus fragilis Marsh, 1877",
+                        "nameComplete": "Allosaurus fragilis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Compsognathus longipes Wagner, 1859",
+                        "nameComplete": "Compsognathus longipes"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Coelurus fragilis Marsh, 1879",
+                        "nameComplete": "Coelurus fragilis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Ornithomimus velox Marsh, 1890",
+                        "nameComplete": "Ornithomimus velox"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Deinonychus antirrhopus Ostrom, 1969",
+                        "nameComplete": "Deinonychus antirrhopus"
+                    }
+                }
+            ]
+        }
+    ]
+}

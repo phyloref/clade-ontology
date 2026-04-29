@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -69,10 +69,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 164,
+            "curatorNotes": "Regnum ID: '164'",
             "label": "Anthozoa",
-            "dwc:scientificNameAuthorship": "Daly, M.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Daly, M.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Die Corallienthiere des rothen Meeres.",
@@ -96,8 +96,59 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The most inclusive crown clade containing both Nematostella vectensis Stephenson 1935 (Hexacorallia) and Alcyonium digitatum Linnaeus 1758 (Octocorallia) but not Hydra vulgaris (Pallas 1766) (Hydrozoa).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Anthozoa",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "M. Daly",
+                            "alternate": [
+                                "Daly, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Daly"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "461-465",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The most inclusive crown clade containing both Nematostella vectensis Stephenson 1935 (Hexacorallia) and Alcyonium digitatum Linnaeus 1758 (Octocorallia) but not Hydra vulgaris (Pallas 1766) (Hydrozoa).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -107,28 +158,9 @@
                         "label": "Nematostella vectensis Stephenson, 1935",
                         "nameComplete": "Nematostella vectensis"
                     }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Alcyonium digitatum Linnaeus, 1758",
-                        "nameComplete": "Alcyonium digitatum"
-                    }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Hydra vulgaris Pallas, 1766",
-                        "nameComplete": "Hydra vulgaris"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

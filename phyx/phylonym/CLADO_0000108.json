@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -79,10 +79,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 108,
+            "curatorNotes": "Regnum ID: '108'",
             "label": "Tricolpatae",
-            "dwc:scientificNameAuthorship": "Donoghue, M. J., Doyle, J. A., Cantino, P. D.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Donoghue, M. J. and Doyle, J. A. and Cantino, P. D.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Towards a phylogenetic nomenclature of Tracheophyta.",
@@ -145,8 +145,78 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The most inclusive clade exhibiting tricolpate (or derivative) pollen grains synapomorphic with those found in Platanus occidentalis Linnaeus 1753 (Eudicotyledoneae).  A tricolpate pollen grain is one having three elongate, furrow-like apertures (colpi) located at and oriented perpendicular to the equator.",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Tricolpatae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "M. J. Donoghue",
+                            "alternate": [
+                                "Donoghue, M. J."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Donoghue",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "J. A. Doyle",
+                            "alternate": [
+                                "Doyle, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Doyle",
+                            "middlename": "A."
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "311-312",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The most inclusive clade exhibiting tricolpate (or derivative) pollen grains synapomorphic with those found in Platanus occidentalis Linnaeus 1753 (Eudicotyledoneae).  A tricolpate pollen grain is one having three elongate, furrow-like apertures (colpi) located at and oriented perpendicular to the equator.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

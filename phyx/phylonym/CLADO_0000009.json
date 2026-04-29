@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -61,10 +61,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 9,
+            "curatorNotes": "Regnum ID: '9'",
             "label": "Amphibia",
-            "dwc:scientificNameAuthorship": "Laurin, M., Arntzen, J. W., Báez, A. M., Bauer, A. M., Damiani, R., Evans, S. E., Kupfer, A., Larson, A., Marjanović, D., Müller, H., Olsson, L., Rage, J. C., Walsh, D.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Laurin, M. and Arntzen, J. W. and Báez, A. M. and Bauer, A. M. and Damiani, R. and Evans, S. E. and Kupfer, A. and Larson, A. and Marjanović, D. and Müller, H. and Olsson, L. and Rage, J. C. and Walsh, D.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Systema naturae per regna tria naturae, secundum classes, ordines, genera, species, cum characteribus, differentiis, synonymis, locis. Tomus I. Editio decima, reformata.",
@@ -87,8 +87,160 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The largest total clade containing Caecilia tentaculata Linnaeus 1758 (Gymnophiona), Siren lacertina Österdam 1766 (Sirenidae), Andrias japonicus (Temminck 1836), Proteus anguinus Laurenti 1768 (Proteidae), and Rana temporaria Linnaeus 1758 (Anura) but not Homo sapiens Linnaeus 1758 (Synapsida).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Amphibia",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "M. Laurin",
+                            "alternate": [
+                                "Laurin, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Laurin"
+                        },
+                        {
+                            "name": "J. W. Arntzen",
+                            "alternate": [
+                                "Arntzen, J. W."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Arntzen",
+                            "middlename": "W."
+                        },
+                        {
+                            "name": "A. M. Baez",
+                            "alternate": [
+                                "Baez, A. M."
+                            ],
+                            "firstname": "A.",
+                            "lastname": "Baez",
+                            "middlename": "M."
+                        },
+                        {
+                            "name": "A. M. Bauer",
+                            "alternate": [
+                                "Bauer, A. M."
+                            ],
+                            "firstname": "A.",
+                            "lastname": "Bauer",
+                            "middlename": "M."
+                        },
+                        {
+                            "name": "R. Damiani",
+                            "alternate": [
+                                "Damiani, R."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Damiani"
+                        },
+                        {
+                            "name": "S. E. Evans",
+                            "alternate": [
+                                "Evans, S. E."
+                            ],
+                            "firstname": "S.",
+                            "lastname": "Evans",
+                            "middlename": "E."
+                        },
+                        {
+                            "name": "A. Kupfer",
+                            "alternate": [
+                                "Kupfer, A."
+                            ],
+                            "firstname": "A.",
+                            "lastname": "Kupfer"
+                        },
+                        {
+                            "name": "A. Larson",
+                            "alternate": [
+                                "Larson, A."
+                            ],
+                            "firstname": "A.",
+                            "lastname": "Larson"
+                        },
+                        {
+                            "name": "D. Marjanovic",
+                            "alternate": [
+                                "Marjanovic, D."
+                            ],
+                            "firstname": "D.",
+                            "lastname": "Marjanovic"
+                        },
+                        {
+                            "name": "H. Muller",
+                            "alternate": [
+                                "Muller, H."
+                            ],
+                            "firstname": "H.",
+                            "lastname": "Muller"
+                        },
+                        {
+                            "name": "L. Olsson",
+                            "alternate": [
+                                "Olsson, L."
+                            ],
+                            "firstname": "L.",
+                            "lastname": "Olsson"
+                        },
+                        {
+                            "name": "J. C. Rage",
+                            "alternate": [
+                                "Rage, J. C."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Rage",
+                            "middlename": "C."
+                        },
+                        {
+                            "name": "D. Walsh",
+                            "alternate": [
+                                "Walsh, D."
+                            ],
+                            "firstname": "D.",
+                            "lastname": "Walsh"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "765-771",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The largest total clade containing Caecilia tentaculata Linnaeus 1758 (Gymnophiona), Siren lacertina Österdam 1766 (Sirenidae), Andrias japonicus (Temminck 1836), Proteus anguinus Laurenti 1768 (Proteidae), and Rana temporaria Linnaeus 1758 (Anura) but not Homo sapiens Linnaeus 1758 (Synapsida).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -98,55 +250,9 @@
                         "label": "Caecilia tentaculata Linnaeus, 1758",
                         "nameComplete": "Caecilia tentaculata"
                     }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Siren lacertina Österdam, 1766",
-                        "nameComplete": "Siren lacertina"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Andrias japonicus Temminck, 1836",
-                        "nameComplete": "Andrias japonicus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Proteus anguinus Laurenti, 1768",
-                        "nameComplete": "Proteus anguinus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Rana temporaria Linnaeus, 1758",
-                        "nameComplete": "Rana temporaria"
-                    }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Homo sapiens Linnaeus, 1758",
-                        "nameComplete": "Homo sapiens"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -167,10 +167,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 91,
+            "curatorNotes": "Regnum ID: '91'",
             "label": "Rubiaceae",
-            "dwc:scientificNameAuthorship": "Bremer, B., Eriksson, T.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Bremer, B. and Eriksson, T.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Genera plantarum secundum ordines naturales disposita.",
@@ -194,8 +194,67 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The largest crown clade containing Rubia tinctorum Linnaeus 1753 but not Alstonia scholaris (Linnaeus) Robert Brown 1810 and Gentiana procera Holm 1901 and Gelsemium sempervirens (Linnaeus) Saint-Hilaire 1805 and Logania vaginalis Ferdinand Mueller 1868.",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Rubiaceae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "B. Bremer",
+                            "alternate": [
+                                "Bremer, B."
+                            ],
+                            "firstname": "B.",
+                            "lastname": "Bremer"
+                        },
+                        {
+                            "name": "T. Eriksson",
+                            "alternate": [
+                                "Eriksson, T."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Eriksson"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "401-402",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The largest crown clade containing Rubia tinctorum Linnaeus 1753 but not Alstonia scholaris (Linnaeus) Robert Brown 1810 and Gentiana procera Holm 1901 and Gelsemium sempervirens (Linnaeus) Saint-Hilaire 1805 and Logania vaginalis Ferdinand Mueller 1868.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -207,44 +266,7 @@
                     }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Alstonia scholaris Brown, 1810",
-                        "nameComplete": "Alstonia scholaris"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Gentiana procera Holm, 1901",
-                        "nameComplete": "Gentiana procera"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Gelsemium sempervirens Saint-Hilaire, 1805",
-                        "nameComplete": "Gelsemium sempervirens"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Logania vaginalis Mueller, 1868",
-                        "nameComplete": "Logania vaginalis"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

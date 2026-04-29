@@ -1,0 +1,198 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "book_section",
+                "title": "The Late Cretaceous pterosaur Quetzalcoatlus Lawson 1975 (Pterodactyloidea: Azhdarchoidea)",
+                "section_title": "Phylogenetic systematics of Quetzalcoatlus Lawson 1975 (Pterodactyloidea: Azhdarchoidea)",
+                "year": 2021,
+                "authors": [
+                    {
+                        "name": "Brian Andres",
+                        "alternate": [
+                            "Andres, Brian"
+                        ],
+                        "firstname": "Brian",
+                        "lastname": "Andres"
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "Kevin Padian",
+                        "alternate": [
+                            "Padian, Kevin"
+                        ],
+                        "firstname": "Kevin",
+                        "lastname": "Padian"
+                    },
+                    {
+                        "name": "Matthew Brown",
+                        "alternate": [
+                            "Brown, Matthew"
+                        ],
+                        "firstname": "Matthew",
+                        "lastname": "Brown"
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "Journal of Vertebrate Paleontology",
+                "city": "MacLean",
+                "pages": "203–217",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1080/02724634.2020.1801703"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "https://doi.org/10.1080/02724634.2020.1801703"
+                    }
+                ]
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "The earliest pterodactyloid and the origin of the group",
+                "year": 2014,
+                "authors": [
+                    {
+                        "name": "Brian Andres",
+                        "alternate": [
+                            "Andres, Brian"
+                        ],
+                        "firstname": "Brian",
+                        "lastname": "Andres"
+                    },
+                    {
+                        "name": "James Clark",
+                        "alternate": [
+                            "Clark, James"
+                        ],
+                        "firstname": "James",
+                        "lastname": "Clark"
+                    },
+                    {
+                        "name": "Xing Xu",
+                        "alternate": [
+                            "Xu, Xing"
+                        ],
+                        "firstname": "Xing",
+                        "lastname": "Xu"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.cub.2014.03.030"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "S0960982214003224"
+                    }
+                ],
+                "journal": {
+                    "name": "Current Biology",
+                    "volume": "24",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '766'",
+            "label": "Batrachognathinae",
+            "scientificNameAuthorship": "Andres, Brian",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "The soft tissue of Jeholopterus (Pterosauria, Anurognathidae, Batrachognathinae) and the structure of the pterosaur wing membrane",
+                    "year": 2010,
+                    "authors": [
+                        {
+                            "name": "Alexander Wilhelm Armin Kellner",
+                            "alternate": [
+                                "Kellner, Alexander Wilhelm Armin"
+                            ],
+                            "firstname": "Alexander",
+                            "lastname": "Kellner",
+                            "middlename": "Wilhelm Armin"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.1098/rspb.2009.0846"
+                        }
+                    ],
+                    "link": [
+                        {
+                            "url": "https://royalsocietypublishing.org/doi/full/10.1098/rspb.2009.0846#related-urls"
+                        }
+                    ],
+                    "journal": {
+                        "name": "Proceedings of the Royal Society B",
+                        "volume": "277",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic Taxonomy of the Pterosauria",
+                    "authors": [
+                        {
+                            "name": "Brian Andres",
+                            "alternate": [
+                                "Andres, Brian"
+                            ],
+                            "firstname": "Brian",
+                            "lastname": "Andres"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of Phylogenetic Taxonomy",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "Most inclusive clade containing Batrachognathus volans Rjabinin, 1948, but not Anurognathus ammoni Döderlein, 1923.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Batrachognathus volans Rjabinin, 1948",
+                        "nameComplete": "Batrachognathus volans"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Anurognathus ammoni Döderlein, 1923",
+                        "nameComplete": "Anurognathus ammoni"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -64,10 +64,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 52,
+            "curatorNotes": "Regnum ID: '52'",
             "label": "Iguanidae",
-            "dwc:scientificNameAuthorship": "Torres-Carvajal, O., de Queiroz, K., Schulte, II, J. A.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Torres-Carvajal, O. and de Queiroz, K. and Schulte, II, J. A.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "On a new genus of Iguanidae.",
@@ -93,8 +93,76 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The largest crown clade containing Iguana (Lacerta) iguana (Linnaeus 1758) (Iguanidae), but not Agama (Lacerta) agama (Linnaeus 1758) (Agamidae) and Chamaeleo (Lacerta) chamaeleon (Linnaeus 1758) (Chamaeleonidae).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Iguanidae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "O. Torres-Carvajal",
+                            "alternate": [
+                                "Torres-Carvajal, O."
+                            ],
+                            "firstname": "O.",
+                            "lastname": "Torres-Carvajal"
+                        },
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "J. S. Shulte",
+                            "alternate": [
+                                "Shulte, J. S."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Shulte",
+                            "middlename": "S."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "1159-1164",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The largest crown clade containing Iguana (Lacerta) iguana (Linnaeus 1758) (Iguanidae), but not Agama (Lacerta) agama (Linnaeus 1758) (Agamidae) and Chamaeleo (Lacerta) chamaeleon (Linnaeus 1758) (Chamaeleonidae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -106,26 +174,7 @@
                     }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Agama (Lacerta) agama Linnaeus, 1758",
-                        "nameComplete": "Agama (Lacerta) agama"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Chamaeleo (Lacerta) chamaeleon Linnaeus, 1758",
-                        "nameComplete": "Chamaeleo (Lacerta) chamaeleon"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

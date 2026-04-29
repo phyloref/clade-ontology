@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -53,10 +53,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 16,
+            "curatorNotes": "Regnum ID: '16'",
             "label": "Archaeplastida",
-            "dwc:scientificNameAuthorship": "Simpson, A. G. B.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Simpson, A. G. B.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "The new higher level classification of eukaryotes with emphasis on the taxonomy of protists.",
@@ -88,30 +88,62 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The crown clade for which possession of primary plastids, as inherited by Arabidopsis thaliana (Linnaeus) Heynhold 1842, is an apomorphy relative to other crown clades, provided that it includes Galdieria sulphuraria (Galdieri) Merola in Merola et al. 1981 (Rhodoplantae) and excludes Homo sapiens Linnaeus 1758.  In this definition, \"plastids\" refers to the organelles also known as chloroplasts in the broadest sense, that is, all homologous organelles irrespective of appearance or function; \"an apomorphy\" means it stems directly from the same event of primary endosymbiosis and does not include later origin through a subsequent event of secondary endosymbiosis.",
-            "internalSpecifiers": [
+            "definitionSource": [
                 {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Galdieria sulphuraria Merola, 1981",
-                        "nameComplete": "Galdieria sulphuraria"
-                    }
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Archaeplastida",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "A. G. B. Simpson",
+                            "alternate": [
+                                "Simpson, A. G. B."
+                            ],
+                            "firstname": "A. G.",
+                            "lastname": "Simpson",
+                            "middlename": "B."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "129-133",
+                    "identifier": [],
+                    "link": []
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Homo sapiens Linnaeus, 1758",
-                        "nameComplete": "Homo sapiens"
-                    }
-                }
-            ]
+            "definition": "The crown clade for which possession of primary plastids, as inherited by Arabidopsis thaliana (Linnaeus) Heynhold 1842, is an apomorphy relative to other crown clades, provided that it includes Galdieria sulphuraria (Galdieri) Merola in Merola et al. 1981 (Rhodoplantae) and excludes Homo sapiens Linnaeus 1758.  In this definition, \"plastids\" refers to the organelles also known as chloroplasts in the broadest sense, that is, all homologous organelles irrespective of appearance or function; \"an apomorphy\" means it stems directly from the same event of primary endosymbiosis and does not include later origin through a subsequent event of secondary endosymbiosis.",
+            "internalSpecifiers": [],
+            "externalSpecifiers": []
         }
     ]
 }

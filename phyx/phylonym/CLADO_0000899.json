@@ -1,0 +1,135 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Higher and lower-level relationships of the deep-sea fish order Alepocephaliformes (Teleostei: Otocephala) inferred from whole mitogenome sequences",
+                "year": 2009,
+                "authors": [
+                    {
+                        "name": "J. Y. Poulsen",
+                        "alternate": [
+                            "Poulsen, J. Y."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Poulsen",
+                        "middlename": "Y."
+                    },
+                    {
+                        "name": "P. R. Moller",
+                        "alternate": [
+                            "Moller, P. R."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Moller",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "S. Lavoué",
+                        "alternate": [
+                            "Lavoué, S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Lavoué"
+                    },
+                    {
+                        "name": "S. W. Knudsen",
+                        "alternate": [
+                            "Knudsen, S. W."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Knudsen",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "M. Nishida",
+                        "alternate": [
+                            "Nishida, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Nishida"
+                    },
+                    {
+                        "name": "M. Miya",
+                        "alternate": [
+                            "Miya, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Miya"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.1095-8312.2009.01323.x"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Biological Journal of the Linnean Society",
+                    "volume": "98",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '899'",
+            "label": "Otocephala",
+            "scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "namePublishedIn": [],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Phylogeny and classification of Actinopterygii",
+                    "authors": [
+                        {
+                            "name": "Thomas J. Near",
+                            "alternate": [
+                                "Near, Thomas J."
+                            ],
+                            "firstname": "Thomas",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "Christine E. Thacker",
+                            "alternate": [
+                                "Thacker, Christine E."
+                            ],
+                            "firstname": "Christine",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The least inclusive crown clade that contains Engraulis encrasicolus (Linnaeus 1758), Alepocephalus bairdii Goode and Bean 1879, Gonrynchus greyi (Richardson 1845), and Cyprinus carpio Linnaeus 1758.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Engraulis encrasicolus Linnaeus, 1758",
+                        "nameComplete": "Engraulis encrasicolus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

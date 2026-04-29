@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -236,6 +236,48 @@
         {
             "phylogenyCitation": {
                 "type": "article",
+                "title": "Phylogeny and phylogenetic nomenclature of the Campanulidae based on an expanded sample of genes and taxa.",
+                "year": 2010,
+                "authors": [
+                    {
+                        "name": "D. C. Tank",
+                        "alternate": [
+                            "Tank, D. C."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Tank",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "M. J. Donoghue",
+                        "alternate": [
+                            "Donoghue, M. J."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Donoghue",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1, 3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1600/036364410791638306"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Systematic Botany",
+                    "volume": "35",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
                 "title": "Toward a resolution of campanulid phylogeny, with special reference to the placement of Dipsacales.",
                 "year": 2008,
                 "authors": [
@@ -277,56 +319,14 @@
                     "identifier": []
                 }
             }
-        },
-        {
-            "phylogenyCitation": {
-                "type": "article",
-                "title": "Phylogeny and phylogenetic nomenclature of the Campanulidae based on an expanded sample of genes and taxa.",
-                "year": 2010,
-                "authors": [
-                    {
-                        "name": "D. C. Tank",
-                        "alternate": [
-                            "Tank, D. C."
-                        ],
-                        "firstname": "D.",
-                        "lastname": "Tank",
-                        "middlename": "C."
-                    },
-                    {
-                        "name": "M. J. Donoghue",
-                        "alternate": [
-                            "Donoghue, M. J."
-                        ],
-                        "firstname": "M.",
-                        "lastname": "Donoghue",
-                        "middlename": "J."
-                    }
-                ],
-                "editors": [],
-                "series_editors": [],
-                "figure": "1, 3",
-                "identifier": [
-                    {
-                        "type": "doi",
-                        "id": "10.1600/036364410791638306"
-                    }
-                ],
-                "link": [],
-                "journal": {
-                    "name": "Systematic Botany",
-                    "volume": "35",
-                    "identifier": []
-                }
-            }
         }
     ],
     "phylorefs": [
         {
-            "regnumId": 248,
+            "curatorNotes": "Regnum ID: '248'",
             "label": "Campanulidae",
-            "dwc:scientificNameAuthorship": "Donoghue, M. J., Cantino, P. D.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Donoghue, M. J. and Cantino, P. D.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Towards a phylogenetic nomenclature of Tracheophyta.",
@@ -416,8 +416,69 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The largest crown clade containing Campanula latifolia Linnaeus 1753 (Asterales) but not Lamium purpureum Linnaeus 1753 (Lamiidae/Lamiales) and Cornus mas Linnaeus 1753 (Cornales) and Erica carnea Linnaeus 1753 (Ericales/Ericaceae).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Campanulidae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "M. J. Donoghue",
+                            "alternate": [
+                                "Donoghue, M. J."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Donoghue",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "373-375",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The largest crown clade containing Campanula latifolia Linnaeus 1753 (Asterales) but not Lamium purpureum Linnaeus 1753 (Lamiidae/Lamiales) and Cornus mas Linnaeus 1753 (Cornales) and Erica carnea Linnaeus 1753 (Ericales/Ericaceae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -429,35 +490,7 @@
                     }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Lamium purpureum Linnaeus, 1753",
-                        "nameComplete": "Lamium purpureum"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Cornus mas Linnaeus, 1753",
-                        "nameComplete": "Cornus mas"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Erica carnea Linnaeus, 1753",
-                        "nameComplete": "Erica carnea"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

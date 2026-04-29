@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -42,10 +42,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 233,
+            "curatorNotes": "Regnum ID: '233'",
             "label": "Discocystinae",
-            "dwc:scientificNameAuthorship": "Sumrall, C. D.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Sumrall, C. D.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Late Paleozoic edrioasteroids from the North American mid-continent.",
@@ -73,8 +73,60 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The clade originating in the most recent common ancestor of Discocystis kaskaskiensis (Hall 1858), Clavidiscus laudoni (Bassler 1936), Hypsiclavus huntsvillensis Sumrall 1996, and Giganticlavus bennisoni Sumrall and Bowsher 1996.  This is a minimum-clade definition.",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Discocystinae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "C. D. Sumrall",
+                            "alternate": [
+                                "Sumrall, C. D."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Sumrall",
+                            "middlename": "D."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "659-660",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The clade originating in the most recent common ancestor of Discocystis kaskaskiensis (Hall 1858), Clavidiscus laudoni (Bassler 1936), Hypsiclavus huntsvillensis Sumrall 1996, and Giganticlavus bennisoni Sumrall and Bowsher 1996.  This is a minimum-clade definition.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -83,33 +135,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Discocystis kaskaskiensis Hall, 1858",
                         "nameComplete": "Discocystis kaskaskiensis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Clavidiscus laudoni Bassler, 1936",
-                        "nameComplete": "Clavidiscus laudoni"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Hypsiclavus huntsvillensis Sumrall, 1996",
-                        "nameComplete": "Hypsiclavus huntsvillensis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Giganticlavus bennisoni Sumrall and Bowsher, 1996",
-                        "nameComplete": "Giganticlavus bennisoni"
                     }
                 }
             ],

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -50,10 +50,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 12,
+            "curatorNotes": "Regnum ID: '12'",
             "label": "Anthocerotae",
-            "dwc:scientificNameAuthorship": "Mishler, B. D., Cargill, D. C., Villarreal, J. C., Renzaglia, K., Crandall-Stotler, B., Stotler, R.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Mishler, B. D. and Cargill, D. C. and Villarreal, J. C. and Renzaglia, K. and Crandall-Stotler, B. and Stotler, R.",
+            "namePublishedIn": [
                 {
                     "type": "book_section",
                     "title": "Flora Novae-Zelandiae. Part II.",
@@ -88,8 +88,102 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The largest crown clade containing Anthoceros punctatus L. 1753 but not Plagiochila adianthoides (Sw.) Lindenb. 1840 (Hepaticae), Sphagnum palustre L. 1753 (Musci), and Osmunda cinnamomea L. 1753 (Tracheophyta).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Anthocerotae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "B. D. Mishler",
+                            "alternate": [
+                                "Mishler, B. D."
+                            ],
+                            "firstname": "B.",
+                            "lastname": "Mishler",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "D. C. Cargill",
+                            "alternate": [
+                                "Cargill, D. C."
+                            ],
+                            "firstname": "D.",
+                            "lastname": "Cargill",
+                            "middlename": "C."
+                        },
+                        {
+                            "name": "J. C. Villarreal",
+                            "alternate": [
+                                "Villarreal, J. C."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Villarreal",
+                            "middlename": "C."
+                        },
+                        {
+                            "name": "K. Renzaglia",
+                            "alternate": [
+                                "Renzaglia, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "Renzaglia"
+                        },
+                        {
+                            "name": "B. Crandall-Stotler",
+                            "alternate": [
+                                "Crandall-Stotler, B."
+                            ],
+                            "firstname": "B.",
+                            "lastname": "Crandall-Stotler"
+                        },
+                        {
+                            "name": "R. Stotler",
+                            "alternate": [
+                                "Stotler, R."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Stotler"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "223-225",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The largest crown clade containing Anthoceros punctatus L. 1753 but not Plagiochila adianthoides (Sw.) Lindenb. 1840 (Hepaticae), Sphagnum palustre L. 1753 (Musci), and Osmunda cinnamomea L. 1753 (Tracheophyta).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -101,35 +195,7 @@
                     }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Plagiochila adianthoides Lindenberg, 1840",
-                        "nameComplete": "Plagiochila adianthoides"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Sphagnum palustre Linnaeus, 1753",
-                        "nameComplete": "Sphagnum palustre"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Osmunda cinnamomea Linnaeus, 1753",
-                        "nameComplete": "Osmunda cinnamomea"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

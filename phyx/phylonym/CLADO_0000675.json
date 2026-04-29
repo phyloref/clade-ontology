@@ -1,0 +1,153 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Recognising and defining a new crown clade within STROMBOIDEA Rafinesque, 1815 (MOLLUSCA, GASTROPODA).",
+                "year": 2019,
+                "authors": [
+                    {
+                        "name": "S J Maxwell",
+                        "alternate": [
+                            "Maxwell, S J"
+                        ],
+                        "firstname": "S",
+                        "lastname": "Maxwell",
+                        "middlename": "J"
+                    },
+                    {
+                        "name": "A M Dekkers",
+                        "alternate": [
+                            "Dekkers, A M"
+                        ],
+                        "firstname": "A",
+                        "lastname": "Dekkers",
+                        "middlename": "M"
+                    },
+                    {
+                        "name": "T L Rymer",
+                        "alternate": [
+                            "Rymer, T L"
+                        ],
+                        "firstname": "T",
+                        "lastname": "Rymer",
+                        "middlename": "L"
+                    },
+                    {
+                        "name": "B C Congdon",
+                        "alternate": [
+                            "Congdon, B C"
+                        ],
+                        "firstname": "B",
+                        "lastname": "Congdon",
+                        "middlename": "C"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "ZooKeys",
+                    "volume": "867",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '675'",
+            "label": "Seraphsidae",
+            "scientificNameAuthorship": "Maxwell, S J and Rymer, T L and Congdon, B C",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "A revision of the family Seraphsidae (Gastropoda: Strombacea)",
+                    "year": 1974,
+                    "edition": "8",
+                    "authors": [
+                        {
+                            "name": "P Jung",
+                            "alternate": [
+                                "Jung, P"
+                            ],
+                            "firstname": "P",
+                            "lastname": "Jung"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Palaeontographica Americana",
+                        "volume": "47",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Resolving phylogenetic and classical nomenclature: A revision of Seraphsidae Jung, 1974 (Gastropoda: Neostromboidae)",
+                    "year": 2021,
+                    "edition": "4990",
+                    "authors": [
+                        {
+                            "name": "Stephen J Maxwell",
+                            "alternate": [
+                                "Maxwell, Stephen J"
+                            ],
+                            "firstname": "Stephen",
+                            "lastname": "Maxwell",
+                            "middlename": "J"
+                        },
+                        {
+                            "name": "Tasmin L Rymer",
+                            "alternate": [
+                                "Rymer, Tasmin L"
+                            ],
+                            "firstname": "Tasmin",
+                            "lastname": "Rymer",
+                            "middlename": "L"
+                        },
+                        {
+                            "name": "Bradley C Congdon",
+                            "alternate": [
+                                "Congdon, Bradley C"
+                            ],
+                            "firstname": "Bradley",
+                            "lastname": "Congdon",
+                            "middlename": "C"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Zootaxa",
+                        "volume": "3",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The maximum clade consisting of Terebellum terebellum Linnaeus, 1758 and all species that share a more recent common ancestor with it than with Strombus pugilis Linnaeus, 1758, Tibia fusus (Linnaeus,1758), Struthiolaria papulosa (Martyn, 1784) or Aporrhais pespelecani (Linnaeus, 1758).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Terebellum terebellum Linné, 1758",
+                        "nameComplete": "Terebellum terebellum"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

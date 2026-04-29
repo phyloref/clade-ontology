@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -139,67 +139,6 @@
         },
         {
             "phylogenyCitation": {
-                "type": "book_section",
-                "title": "Genomics and evolution of microbial eukaryotes",
-                "section_title": "Molecular evolution of Foraminifera.",
-                "year": 2006,
-                "authors": [
-                    {
-                        "name": "S. S. Bowser",
-                        "alternate": [
-                            "Bowser, S. S."
-                        ],
-                        "firstname": "S.",
-                        "lastname": "Bowser",
-                        "middlename": "S."
-                    },
-                    {
-                        "name": "A. Habura",
-                        "alternate": [
-                            "Habura, A."
-                        ],
-                        "firstname": "A.",
-                        "lastname": "Habura"
-                    },
-                    {
-                        "name": "J. Pawlowski",
-                        "alternate": [
-                            "Pawlowski, J."
-                        ],
-                        "firstname": "J.",
-                        "lastname": "Pawlowski"
-                    }
-                ],
-                "editors": [
-                    {
-                        "name": "L. A. Katz",
-                        "alternate": [
-                            "Katz, L. A."
-                        ],
-                        "firstname": "L.",
-                        "lastname": "Katz",
-                        "middlename": "A."
-                    },
-                    {
-                        "name": "D. Bhattacharya",
-                        "alternate": [
-                            "Bhattacharya, D."
-                        ],
-                        "firstname": "D.",
-                        "lastname": "Bhattacharya"
-                    }
-                ],
-                "series_editors": [],
-                "publisher": "Oxford University Press",
-                "city": "Oxford",
-                "pages": "78-93",
-                "figure": "5.3",
-                "identifier": [],
-                "link": []
-            }
-        },
-        {
-            "phylogenyCitation": {
                 "type": "article",
                 "title": "The twilight of Heliozoa and rise of Rhizaria, an emerging supergroup of amoeboid eukaryotes.",
                 "year": 2004,
@@ -298,16 +237,138 @@
                     "identifier": []
                 }
             }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "book_section",
+                "title": "Genomics and evolution of microbial eukaryotes",
+                "section_title": "Molecular evolution of Foraminifera.",
+                "year": 2006,
+                "authors": [
+                    {
+                        "name": "S. S. Bowser",
+                        "alternate": [
+                            "Bowser, S. S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Bowser",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "A. Habura",
+                        "alternate": [
+                            "Habura, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Habura"
+                    },
+                    {
+                        "name": "J. Pawlowski",
+                        "alternate": [
+                            "Pawlowski, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Pawlowski"
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "L. A. Katz",
+                        "alternate": [
+                            "Katz, L. A."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Katz",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "D. Bhattacharya",
+                        "alternate": [
+                            "Bhattacharya, D."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Bhattacharya"
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "Oxford University Press",
+                "city": "Oxford",
+                "pages": "78-93",
+                "figure": "5.3",
+                "identifier": [],
+                "link": []
+            }
         }
     ],
     "phylorefs": [
         {
-            "regnumId": 297,
+            "curatorNotes": "Regnum ID: '297'",
             "label": "Foraminifera",
-            "dwc:scientificNameAuthorship": "Richardson, S. L., Lipps, J. H.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Bulimina marginata d’Orbigny 1826 (Globothalamea) and all extant organisms or species that inherited granuloreticulose pseudopodia synapomorphic with those in Bulimina marginata d’Orbigny 1826.",
+            "scientificNameAuthorship": "Richardson, S. L. and Lipps, J. H.",
+            "namePublishedIn": [],
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Foraminifera",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "S. L. Richardson",
+                            "alternate": [
+                                "Richardson, S. L."
+                            ],
+                            "firstname": "S.",
+                            "lastname": "Richardson",
+                            "middlename": "L."
+                        },
+                        {
+                            "name": "J. H. Lipps",
+                            "alternate": [
+                                "Lipps, J. H."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Lipps",
+                            "middlename": "H."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "67-83",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The crown clade originating in the most recent common ancestor of Bulimina marginata d’Orbigny 1826 (Globothalamea) and all extant organisms or species that inherited granuloreticulose pseudopodia synapomorphic with those in Bulimina marginata d’Orbigny 1826.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

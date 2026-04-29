@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -106,10 +106,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 195,
+            "curatorNotes": "Regnum ID: '195'",
             "label": "Saurischia",
-            "dwc:scientificNameAuthorship": "Gauthier, J. A., Langer, M. C., Novas, F. E., Bittencourt, J., Ezcurra, M. D.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Gauthier, J. A. and Langer, M. C. and Novas, F. E. and Bittencourt, J. and Ezcurra, M. D.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "On the classification of the fossil animals commonly named Dinosauria.",
@@ -133,8 +133,95 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The largest clade containing Allosaurus fragilis Marsh 1877 (Theropoda: Carnosauria) and Camarasaurus supremus Cope 1877 (Sauropodomorpha), but not Stegosaurus stenops Marsh 1887 (Ornithischia: Stegosauridae).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Saurischia",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        },
+                        {
+                            "name": "M. C. Langer",
+                            "alternate": [
+                                "Langer, M. C."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Langer",
+                            "middlename": "C."
+                        },
+                        {
+                            "name": "F. E. Novas",
+                            "alternate": [
+                                "Novas, F. E."
+                            ],
+                            "firstname": "F.",
+                            "lastname": "Novas",
+                            "middlename": "E."
+                        },
+                        {
+                            "name": "J. Bittencourt",
+                            "alternate": [
+                                "Bittencourt, J."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Bittencourt"
+                        },
+                        {
+                            "name": "M. D. Ezcurra",
+                            "alternate": [
+                                "Ezcurra, M. D."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Ezcurra",
+                            "middlename": "D."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "1219-1224",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The largest clade containing Allosaurus fragilis Marsh 1877 (Theropoda: Carnosauria) and Camarasaurus supremus Cope 1877 (Sauropodomorpha), but not Stegosaurus stenops Marsh 1887 (Ornithischia: Stegosauridae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -144,28 +231,9 @@
                         "label": "Allosaurus fragilis Marsh, 1887",
                         "nameComplete": "Allosaurus fragilis"
                     }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Camarasaurus supremus Cope, 1877",
-                        "nameComplete": "Camarasaurus supremus"
-                    }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Stegosaurus stenops Marsh, 1887",
-                        "nameComplete": "Stegosaurus stenops"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

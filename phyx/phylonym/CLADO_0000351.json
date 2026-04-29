@@ -1,0 +1,176 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "book_section",
+                "title": "The Late Cretaceous pterosaur Quetzalcoatlus Lawson 1975 (Pterodactyloidea: Azhdarchoidea)",
+                "section_title": "Phylogenetic systematics of Quetzalcoatlus (Pterosauria: Azhdarchidae)",
+                "year": 2021,
+                "authors": [
+                    {
+                        "name": "Brian Andres",
+                        "alternate": [
+                            "Andres, Brian"
+                        ],
+                        "firstname": "Brian",
+                        "lastname": "Andres"
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "Kevin Padian",
+                        "alternate": [
+                            "Padian, Kevin"
+                        ],
+                        "firstname": "Kevin",
+                        "lastname": "Padian"
+                    },
+                    {
+                        "name": "Matthew Brown",
+                        "alternate": [
+                            "Brown, Matthew"
+                        ],
+                        "firstname": "Matthew",
+                        "lastname": "Brown"
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "Society of Vertebrate Paleontology",
+                "city": "McLean, VA",
+                "pages": "203–217",
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1080/02724634.2020.1801703"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "https://www.tandfonline.com/doi/full/10.1080/02724634.2020.1801703"
+                    }
+                ]
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "The Earliest Pterodactyloid and the Origin of the Group",
+                "year": 2014,
+                "authors": [
+                    {
+                        "name": "Brian Andres",
+                        "alternate": [
+                            "Andres, Brian"
+                        ],
+                        "firstname": "Brian",
+                        "lastname": "Andres"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.cub.2014.03.030"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "http://www.sciencedirect.com/science/article/pii/S0960982214003224"
+                    }
+                ],
+                "journal": {
+                    "name": "Current Biology",
+                    "volume": "24",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '351'",
+            "label": "Ornithocheirae",
+            "scientificNameAuthorship": "Andres, Brian",
+            "namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "The Ornithosauria: An elementary study of the bones of pterodactyles, made from fossil remains found in the Cambridge Upper Greensand, and arranged in the Woodwardian Museum of the University of Cambridge",
+                    "year": 1870,
+                    "authors": [
+                        {
+                            "name": "Harry Govier Seeley",
+                            "alternate": [
+                                "Seeley, Harry Govier"
+                            ],
+                            "firstname": "Harry",
+                            "lastname": "Seeley",
+                            "middlename": "Govier"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Deighton, Bell, and Co.",
+                    "city": "Cambridge",
+                    "pages": "135",
+                    "identifier": [],
+                    "link": [
+                        {
+                            "url": "https://books.google.co.uk/books?hl=en&lr=&id=0M8yAQAAMAAJ&oi=fnd&pg=PR13&dq=The+Ornithosauria:+An+elementary+study+of+the+bones+of+pterodactyles,+made+from+fossil+remains+found+in+the+Cambridge+Upper+Greensand,+and+arranged+in+the+Woodwardian+Museum+of+the+University+of+Cambridge&ots=Pmz8znecHQ&sig=vnr46ULu5SFuf0j_T6ENxCrFihE#v=onepage&q=The%20Ornithosauria%3A%20An%20elementary%20study%20of%20the%20bones%20of%20pterodactyles%2C%20made%20from%20fossil%20remains%20found%20in%20the%20Cambridge%20Upper%20Greensand%2C%20and%20arranged%20in%20the%20Woodwardian%20Museum%20of%20the%20University%20of%20Cambridge&f=false"
+                        }
+                    ]
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic Taxonomy of the Pterosauria",
+                    "authors": [
+                        {
+                            "name": "Brian Andres",
+                            "alternate": [
+                                "Andres, Brian"
+                            ],
+                            "firstname": "Brian",
+                            "lastname": "Andres"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "figure": "1",
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of Phylogenetic Taxonomy",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "Least inclusive clade containing Ornithocheirus simus (Owen, 1861) and Anhanguera blittersdorffi Campos and Kellner 1985.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Ornithocheirus simus Owen, 1861",
+                        "nameComplete": "Ornithocheirus simus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Anhanguera blittersdorffi Campos and Kellner, 1985",
+                        "nameComplete": "Anhanguera blittersdorffi"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

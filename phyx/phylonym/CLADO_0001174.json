@@ -1,0 +1,221 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Juvenile specimen of Megaraptor (Dinosauria, Theropoda) sheds light about tyrannosauroid radiation",
+                "year": 2014,
+                "authors": [
+                    {
+                        "name": "Juan Porfiri",
+                        "alternate": [
+                            "Porfiri, Juan"
+                        ],
+                        "firstname": "Juan",
+                        "lastname": "Porfiri"
+                    },
+                    {
+                        "name": "Fernando Novas",
+                        "alternate": [
+                            "Novas, Fernando"
+                        ],
+                        "firstname": "Fernando",
+                        "lastname": "Novas"
+                    },
+                    {
+                        "name": "Jorge Calvo",
+                        "alternate": [
+                            "Calvo, Jorge"
+                        ],
+                        "firstname": "Jorge",
+                        "lastname": "Calvo"
+                    },
+                    {
+                        "name": "Federico Agnolín",
+                        "alternate": [
+                            "Agnolín, Federico"
+                        ],
+                        "firstname": "Federico",
+                        "lastname": "Agnolín"
+                    },
+                    {
+                        "name": "Martín Ezcurra",
+                        "alternate": [
+                            "Ezcurra, Martín"
+                        ],
+                        "firstname": "Martín",
+                        "lastname": "Ezcurra"
+                    },
+                    {
+                        "name": "Ignacio Cerda",
+                        "alternate": [
+                            "Cerda, Ignacio"
+                        ],
+                        "firstname": "Ignacio",
+                        "lastname": "Cerda"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "12",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Cretaceous Research",
+                    "volume": "51",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '1174'",
+            "label": "Megaraptora",
+            "scientificNameAuthorship": "Delcourt, Rafael and Grillo, Orlando and Hendrickx, Christophe and Kellermann, Maximilian and Langer, Max",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "A new clade of archaic large-bodied predatory dinosaurs (Theropoda: Allosauroidea) that survived to the latest Mesozoic",
+                    "year": 2010,
+                    "authors": [
+                        {
+                            "name": "Roger Benson",
+                            "alternate": [
+                                "Benson, Roger"
+                            ],
+                            "firstname": "Roger",
+                            "lastname": "Benson"
+                        },
+                        {
+                            "name": "Matthew Carrano",
+                            "alternate": [
+                                "Carrano, Matthew"
+                            ],
+                            "firstname": "Matthew",
+                            "lastname": "Carrano"
+                        },
+                        {
+                            "name": "Stephen Brusatte",
+                            "alternate": [
+                                "Brusatte, Stephen"
+                            ],
+                            "firstname": "Stephen",
+                            "lastname": "Brusatte"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.1007/s00114-009-0614-x"
+                        }
+                    ],
+                    "link": [],
+                    "journal": {
+                        "name": "Naturwissenschaften",
+                        "volume": "97",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "The coelurosaur theropods of the Romualdo Formation, Early Cretaceous (Aptian) of Brazil: Santanaraptor placidus meets Mirischia asymmetrica",
+                    "year": 2025,
+                    "edition": "2025",
+                    "authors": [
+                        {
+                            "name": "Rafael Delcourt",
+                            "alternate": [
+                                "Delcourt, Rafael"
+                            ],
+                            "firstname": "Rafael",
+                            "lastname": "Delcourt"
+                        },
+                        {
+                            "name": "Orlando Grillo",
+                            "alternate": [
+                                "Grillo, Orlando"
+                            ],
+                            "firstname": "Orlando",
+                            "lastname": "Grillo"
+                        },
+                        {
+                            "name": "Christophe Hendrickx",
+                            "alternate": [
+                                "Hendrickx, Christophe"
+                            ],
+                            "firstname": "Christophe",
+                            "lastname": "Hendrickx"
+                        },
+                        {
+                            "name": "Maximilian Kellermann",
+                            "alternate": [
+                                "Kellermann, Maximilian"
+                            ],
+                            "firstname": "Maximilian",
+                            "lastname": "Kellermann"
+                        },
+                        {
+                            "name": "Max Langer",
+                            "alternate": [
+                                "Langer, Max"
+                            ],
+                            "firstname": "Max",
+                            "lastname": "Langer"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.1002/ar.70085"
+                        }
+                    ],
+                    "link": [],
+                    "journal": {
+                        "name": "The Anatomical Record",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The largest clade containing Megaraptor namunhuaiquii Novas 1998, but not Tyrannosaurus rex Osborn 1905 or Allosaurus fragilis Marsh 1877",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Megaraptor namunhuaiquii Novas, 1998",
+                        "nameComplete": "Megaraptor namunhuaiquii"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Tyrannosaurus rex Osborn, 1905",
+                        "nameComplete": "Tyrannosaurus rex"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Allosaurus fragilis Marsh, 1877",
+                        "nameComplete": "Allosaurus fragilis"
+                    }
+                }
+            ]
+        }
+    ]
+}

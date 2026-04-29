@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -80,42 +80,6 @@
                 "journal": {
                     "name": "Canadian Journal of Earth Sciences",
                     "volume": "43",
-                    "identifier": []
-                }
-            }
-        },
-        {
-            "phylogenyCitation": {
-                "type": "article",
-                "title": "A new basal mosasauroid from the Cenomanian (U. Cretaceous) of Slovenia with a review of mosasauroid phylogeny and evolution.",
-                "year": 2007,
-                "authors": [
-                    {
-                        "name": "M. W. Caldwell",
-                        "alternate": [
-                            "Caldwell, M. W."
-                        ],
-                        "firstname": "M.",
-                        "lastname": "Caldwell",
-                        "middlename": "W."
-                    },
-                    {
-                        "name": "A. Palci",
-                        "alternate": [
-                            "Palci, A."
-                        ],
-                        "firstname": "A.",
-                        "lastname": "Palci"
-                    }
-                ],
-                "editors": [],
-                "series_editors": [],
-                "figure": "7, 8",
-                "identifier": [],
-                "link": [],
-                "journal": {
-                    "name": "Journal of Vertebrate Paleontology",
-                    "volume": "27",
                     "identifier": []
                 }
             }
@@ -271,14 +235,50 @@
                     "identifier": []
                 }
             }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "A new basal mosasauroid from the Cenomanian (U. Cretaceous) of Slovenia with a review of mosasauroid phylogeny and evolution.",
+                "year": 2007,
+                "authors": [
+                    {
+                        "name": "M. W. Caldwell",
+                        "alternate": [
+                            "Caldwell, M. W."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Caldwell",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "A. Palci",
+                        "alternate": [
+                            "Palci, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Palci"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "7, 8",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Vertebrate Paleontology",
+                    "volume": "27",
+                    "identifier": []
+                }
+            }
         }
     ],
     "phylorefs": [
         {
-            "regnumId": 200,
+            "curatorNotes": "Regnum ID: '200'",
             "label": "Mosasauridae",
-            "dwc:scientificNameAuthorship": "Madzia, D., Conrad, J. L.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Madzia, D. and Conrad, J. L.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Observations relatives aux Reptiles fossiles de France (deuxième partie).",
@@ -304,8 +304,68 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The least inclusive clade containing Mosasaurus hoffmanni Mantell 1829, Tylosaurus (originally Macrosaurus) proriger (Cope 1869a) Marsh 1872, and Halisaurus platyspondylus Marsh 1869.",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Mosasauridae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "D. Madzia",
+                            "alternate": [
+                                "Madzia, D."
+                            ],
+                            "firstname": "D.",
+                            "lastname": "Madzia"
+                        },
+                        {
+                            "name": "J. L. Conrad",
+                            "alternate": [
+                                "Conrad, J. L."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Conrad",
+                            "middlename": "L."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "1103-1107",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The least inclusive clade containing Mosasaurus hoffmanni Mantell 1829, Tylosaurus (originally Macrosaurus) proriger (Cope 1869a) Marsh 1872, and Halisaurus platyspondylus Marsh 1869.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -314,24 +374,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Mosasaurus hoffmanni Mantell, 1829",
                         "nameComplete": "Mosasaurus hoffmanni"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Tylosaurus (originally Macrosaurus) proriger Marsh, 1872",
-                        "nameComplete": "Tylosaurus (originally Macrosaurus) proriger"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Halisaurus platyspondylus Marsh, 1869",
-                        "nameComplete": "Halisaurus platyspondylus"
                     }
                 }
             ],

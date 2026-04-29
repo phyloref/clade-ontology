@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -53,10 +53,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 227,
+            "curatorNotes": "Regnum ID: '227'",
             "label": "Nematomorpha",
-            "dwc:scientificNameAuthorship": "Schmidt-Rhaesa, A.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Schmidt-Rhaesa, A.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Zur Morphologie der Gordiiden.",
@@ -81,8 +81,59 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Nectonema agile Verrill 1879, Gordius aquaticus Linnaeus 1758 (Gordiida), and Paragordius varius Leidy 1851 (Gordiida).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Nematomorpha",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "A. Schmidt-Rhaesa",
+                            "alternate": [
+                                "Schmidt-Rhaesa, A."
+                            ],
+                            "firstname": "A.",
+                            "lastname": "Schmidt-Rhaesa"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "575-576",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The crown clade originating in the most recent common ancestor of Nectonema agile Verrill 1879, Gordius aquaticus Linnaeus 1758 (Gordiida), and Paragordius varius Leidy 1851 (Gordiida).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -91,24 +142,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Nectonema agile Verrill, 1879",
                         "nameComplete": "Nectonema agile"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Gordius aquaticus Linnaeus, 1758",
-                        "nameComplete": "Gordius aquaticus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Paragordius varius Leidy, 1851",
-                        "nameComplete": "Paragordius varius"
                     }
                 }
             ],

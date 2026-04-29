@@ -1,0 +1,152 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Widespread sympatry in a species-rich clade of marine fishes (Carangoidei)",
+                "year": 2022,
+                "authors": [
+                    {
+                        "name": "J. R. Glass",
+                        "alternate": [
+                            "Glass, J. R."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Glass",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "R. C. Harrington",
+                        "alternate": [
+                            "Harrington, R. C."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Harrington",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "P. F. Cowman",
+                        "alternate": [
+                            "Cowman, P. F."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Cowman",
+                        "middlename": "F."
+                    },
+                    {
+                        "name": "B. C. Faircloth",
+                        "alternate": [
+                            "Faircloth, B. C."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Faircloth",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "T. J. Near",
+                        "alternate": [
+                            "Near, T. J."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Near",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1101/2022.09.26.509594"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "bioRxiv",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '964'",
+            "label": "Carangoidei",
+            "scientificNameAuthorship": "Thacker, C. E. and Near, T. J.",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Enumeratio specierum piscium hucusque in Archipelago indico observatarum, adjectis habitationibusque, ubi descriptiones earum recentiores reperiuntur, nec non speciebus Musei Bleekeriani Bengalensibus, Japonicis, Capensibus Tasmanicisque",
+                    "year": 1859,
+                    "authors": [
+                        {
+                            "name": "P. Bleeker",
+                            "alternate": [
+                                "Bleeker, P."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Bleeker"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Acta Societatis Scientiarum Indo-Neerlandensis",
+                        "volume": "6",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
+                    "authors": [
+                        {
+                            "name": "T. J. Near",
+                            "alternate": [
+                                "Near, T. J."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "C. E. Thacker",
+                            "alternate": [
+                                "Thacker, C. E."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The least inclusive crown clade that contains Leptobrama muelleri Steindachner 1878, Toxotes jaculatrix (Pallas 1769), Xiphias gladius Linnaeus 1758, Echeneis naucrates Linnaeus 1758, and Caranx melampygus Cuvier in Cuvier and Valenciennes (1833).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Leptobrama muelleri Steindachner, 1878",
+                        "nameComplete": "Leptobrama muelleri"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

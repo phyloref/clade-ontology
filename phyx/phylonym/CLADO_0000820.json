@@ -1,0 +1,174 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A taxonomic revision of the Sinopterus complex (Pterosauria, Tapejaridae) from the Early Cretaceous Jehol Biota, with the new genus Huaxiadraco",
+                "year": 2023,
+                "authors": [
+                    {
+                        "name": "Pêgas",
+                        "alternate": [
+                            "Pêgas,"
+                        ],
+                        "lastname": "Pêgas"
+                    },
+                    {
+                        "name": "Zhou",
+                        "alternate": [
+                            "Zhou,"
+                        ],
+                        "lastname": "Zhou"
+                    },
+                    {
+                        "name": "Jin",
+                        "alternate": [
+                            "Jin,"
+                        ],
+                        "lastname": "Jin"
+                    },
+                    {
+                        "name": "Wang",
+                        "alternate": [
+                            "Wang,"
+                        ],
+                        "lastname": "Wang"
+                    },
+                    {
+                        "name": "Ma",
+                        "alternate": [
+                            "Ma,"
+                        ],
+                        "lastname": "Ma"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '820'",
+            "label": "Tapejaroidea",
+            "scientificNameAuthorship": "Pêgas, Rodrigo and Zhou, Xuanyu and Jin, Xingsheng and Wang, Kai and Ma, Waisum",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Pterosaur phylogeny and comments on the evolutionary history of the group.",
+                    "year": 2003,
+                    "authors": [
+                        {
+                            "name": "Alexander Kellner",
+                            "alternate": [
+                                "Kellner, Alexander"
+                            ],
+                            "firstname": "Alexander",
+                            "lastname": "Kellner"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "A taxonomic revision of the Sinopterus complex (Pterosauria, Tapejaridae) from the Early Cretaceous Jehol Biota, with the new genus Huaxiadraco",
+                    "year": 2023,
+                    "authors": [
+                        {
+                            "name": "Rodrigo Pêgas",
+                            "alternate": [
+                                "Pêgas, Rodrigo"
+                            ],
+                            "firstname": "Rodrigo",
+                            "lastname": "Pêgas"
+                        },
+                        {
+                            "name": "Xuanyu Zhou",
+                            "alternate": [
+                                "Zhou, Xuanyu"
+                            ],
+                            "firstname": "Xuanyu",
+                            "lastname": "Zhou"
+                        },
+                        {
+                            "name": "Xingsheng Jin",
+                            "alternate": [
+                                "Jin, Xingsheng"
+                            ],
+                            "firstname": "Xingsheng",
+                            "lastname": "Jin"
+                        },
+                        {
+                            "name": "Kai Wang",
+                            "alternate": [
+                                "Wang, Kai"
+                            ],
+                            "firstname": "Kai",
+                            "lastname": "Wang"
+                        },
+                        {
+                            "name": "Waisum Ma",
+                            "alternate": [
+                                "Ma, Waisum"
+                            ],
+                            "firstname": "Waisum",
+                            "lastname": "Ma"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The least inclusive clade containing Tapejara wellnhoferi Kellner 1989, Quetzalcoatlus northropi Lawson 1975, and Dsungaripterus weii Young 1964.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Tapejara wellnhoferi Kellner, 1989",
+                        "nameComplete": "Tapejara wellnhoferi"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Quetzalcoatlus northropi Lawson, 1975",
+                        "nameComplete": "Quetzalcoatlus northropi"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Dsungaripterus weii Young, 1964",
+                        "nameComplete": "Dsungaripterus weii"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

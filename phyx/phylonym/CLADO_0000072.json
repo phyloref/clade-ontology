@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -367,10 +367,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 72,
+            "curatorNotes": "Regnum ID: '72'",
             "label": "Opisthokonta",
-            "dwc:scientificNameAuthorship": "Simpson, A. G. B., Medina, M.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Simpson, A. G. B. and Medina, M.",
+            "namePublishedIn": [
                 {
                     "type": "book_section",
                     "title": "Evolutionary biology of the fungi.",
@@ -423,8 +423,68 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The smallest crown clade containing Homo sapiens Linnaeus 1758 (Metazoa), Neurospora crassa Shear and Dodge 1927 (Fungi), and Monosiga ovata Saville Kent 1882 (Choanoflagellata) but not Dictyostelium discoideum Raper 1935 (Amoebozoa) or Arabidopsis thaliana (Linnaeus) Heynhold, 1842 (Archaeplastida).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Opisthokonta",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "A.G.  B.  Simpson",
+                            "alternate": [
+                                "Simpson, A.G.  B."
+                            ],
+                            "firstname": "A.G.",
+                            "lastname": "Simpson",
+                            "middlename": "B."
+                        },
+                        {
+                            "name": "M. Medina",
+                            "alternate": [
+                                "Medina, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Medina"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "103-108",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The smallest crown clade containing Homo sapiens Linnaeus 1758 (Metazoa), Neurospora crassa Shear and Dodge 1927 (Fungi), and Monosiga ovata Saville Kent 1882 (Choanoflagellata) but not Dictyostelium discoideum Raper 1935 (Amoebozoa) or Arabidopsis thaliana (Linnaeus) Heynhold, 1842 (Archaeplastida).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -434,46 +494,9 @@
                         "label": "Homo sapiens Linnaeus, 1758",
                         "nameComplete": "Homo sapiens"
                     }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Neurospora crassa Shear and Dodge, 1927",
-                        "nameComplete": "Neurospora crassa"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Monosiga ovata Kent, 1882",
-                        "nameComplete": "Monosiga ovata"
-                    }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Dictyostelium discoideum Raper, 1935",
-                        "nameComplete": "Dictyostelium discoideum"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Arabidopsis thaliana Heynhold, 1842",
-                        "nameComplete": "Arabidopsis thaliana"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

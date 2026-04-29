@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -132,10 +132,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 156,
+            "curatorNotes": "Regnum ID: '156'",
             "label": "Porphyridiophyceae",
-            "dwc:scientificNameAuthorship": "Saunders, G. W.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Saunders, G. W.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Defining the major lineages of red algae (Rhodophyta).",
@@ -197,8 +197,60 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The largest crown clade containing Porphyridium cruentum (S.F. Gray) Nägeli 1849 (= Porphyridium purpureum (Bory de Saint-Vincent) K.M. Drew & R. Ross 1965) but not Bangia fuscopurpurea (Dillwyn) Lyngbye 1819, Compsopogon caeruleus (C. Agardh) Montagne 1846, Rhodella maculata L. Evans 1970, Rhodochaete pulchella Thuret ex Bornet 1892 and Stylonema alsidii (Zanardini) K.M. Drew 1956.",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Porphyridiophyceae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "G. W. Saunders",
+                            "alternate": [
+                                "Saunders, G. W."
+                            ],
+                            "firstname": "G.",
+                            "lastname": "Saunders",
+                            "middlename": "W."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "147-149",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The largest crown clade containing Porphyridium cruentum (S.F. Gray) Nägeli 1849 (= Porphyridium purpureum (Bory de Saint-Vincent) K.M. Drew & R. Ross 1965) but not Bangia fuscopurpurea (Dillwyn) Lyngbye 1819, Compsopogon caeruleus (C. Agardh) Montagne 1846, Rhodella maculata L. Evans 1970, Rhodochaete pulchella Thuret ex Bornet 1892 and Stylonema alsidii (Zanardini) K.M. Drew 1956.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -210,53 +262,7 @@
                     }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Bangia fuscopurpurea Lyngbye, 1819",
-                        "nameComplete": "Bangia fuscopurpurea"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Compsopogon caeruleus Montagne, 1846",
-                        "nameComplete": "Compsopogon caeruleus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Rhodella maculata Evans, 1970",
-                        "nameComplete": "Rhodella maculata"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Rhodochaete pulchella Bornet, 1892",
-                        "nameComplete": "Rhodochaete pulchella"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Stylonema alsidii Drew, 1956",
-                        "nameComplete": "Stylonema alsidii"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

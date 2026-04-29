@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -36,10 +36,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 2,
+            "curatorNotes": "Regnum ID: '2'",
             "label": "Lobelioideae",
-            "dwc:scientificNameAuthorship": "Cellinese, N.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Cellinese, N.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Outlines of botany",
@@ -63,8 +63,59 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Lobelia cardinalis Linnaeus 1753 and Lobelia coronopifolia Linnaeus 1753.",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Lobelioideae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "N. Cellinese",
+                            "alternate": [
+                                "Cellinese, N."
+                            ],
+                            "firstname": "N.",
+                            "lastname": "Cellinese"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "387-388",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The crown clade originating in the most recent common ancestor of Lobelia cardinalis Linnaeus 1753 and Lobelia coronopifolia Linnaeus 1753.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -73,15 +124,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
                         "label": "Lobelia cardinalis Linnaeus, 1753",
                         "nameComplete": "Lobelia cardinalis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Lobelia coronopifolia Linnaeus, 1753",
-                        "nameComplete": "Lobelia coronopifolia"
                     }
                 }
             ],

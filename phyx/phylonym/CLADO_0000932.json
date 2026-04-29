@@ -1,0 +1,148 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "An r package and online resource for macroevolutionary studies using the ray-finned fish tree of life",
+                "year": 2019,
+                "authors": [
+                    {
+                        "name": "J. Chang",
+                        "alternate": [
+                            "Chang, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Chang"
+                    },
+                    {
+                        "name": "D. L. Rabosky",
+                        "alternate": [
+                            "Rabosky, D. L."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Rabosky",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "S. A. Smith",
+                        "alternate": [
+                            "Smith, S. A."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Smith",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "M. E. Alfaro",
+                        "alternate": [
+                            "Alfaro, M. E."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Alfaro",
+                        "middlename": "E."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/2041-210X.13182"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "https://fishtreeoflife.org/taxonomy/order/Lampridiformes/"
+                    }
+                ],
+                "journal": {
+                    "name": "Methods in Ecology and Evolution",
+                    "volume": "7",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '932'",
+            "label": "Lampriformes",
+            "scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "The grammar of family-group names as exemplified by those of fishes",
+                    "year": 1980,
+                    "authors": [
+                        {
+                            "name": "G. C. Steyskal",
+                            "alternate": [
+                                "Steyskal, G. C."
+                            ],
+                            "firstname": "G.",
+                            "lastname": "Steyskal",
+                            "middlename": "C."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Proceedings of the Biological Society of Washington (USA)",
+                        "volume": "93",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
+                    "authors": [
+                        {
+                            "name": "T. J. Near",
+                            "alternate": [
+                                "Near, T. J."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "C. E. Thacker",
+                            "alternate": [
+                                "Thacker, C. E."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The least inclusive crown clade that contains Lampris guttatus (Brünnich 1788), Metavelifer multiradiatus (Regan 1907a), and Regalecus russellii (Cuvier 1816), but not Stylephorus chordatus Shaw 1791.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Lampris guttatus Brünnich, 1788",
+                        "nameComplete": "Lampris guttatus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

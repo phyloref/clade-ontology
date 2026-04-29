@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -71,10 +71,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 10,
+            "curatorNotes": "Regnum ID: '10'",
             "label": "Amphisbaenia",
-            "dwc:scientificNameAuthorship": "Kearney , M., de Querioz, K.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Kearney , M. and de Querioz, K.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Catalogue of the tortoises, crocodiles, and amphisbaenians in the collection of the British Museum.",
@@ -98,8 +98,67 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The largest crown clade containing Amphisbaena fuliginosa Linnaeus 1758 (Amphisbaenidae) but not Lacerta agilis Linnaeus 1758 (Lacertidae) and Teius (Lacerta) teyou (Daudin 1802) (Teioidea) and Dibamus novaeguineae Duméril and Bibron 1839 (Dibamidae) and Coluber constrictor Linnaeus 1758 (Serpentes).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Amphisbaenia",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "M. Kearney",
+                            "alternate": [
+                                "Kearney, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Kearney"
+                        },
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "1123-1129",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The largest crown clade containing Amphisbaena fuliginosa Linnaeus 1758 (Amphisbaenidae) but not Lacerta agilis Linnaeus 1758 (Lacertidae) and Teius (Lacerta) teyou (Daudin 1802) (Teioidea) and Dibamus novaeguineae Duméril and Bibron 1839 (Dibamidae) and Coluber constrictor Linnaeus 1758 (Serpentes).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -111,44 +170,7 @@
                     }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Lacerta agilis Linnaeus, 1758",
-                        "nameComplete": "Lacerta agilis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Teius (Lacerta) teyou Daudin, 1802",
-                        "nameComplete": "Teius (Lacerta) teyou"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Dibamus novaeguineae Duméril and Bibron, 1839",
-                        "nameComplete": "Dibamus novaeguineae"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Coluber constrictor Linnaeus, 1758",
-                        "nameComplete": "Coluber constrictor"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

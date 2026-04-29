@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -69,12 +69,73 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 211,
+            "curatorNotes": "Regnum ID: '211'",
             "label": "Pan-Neopterygii",
-            "dwc:scientificNameAuthorship": "Moore, J. A., Near, T. J.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The total clade of the crown clade Neopterygii.",
+            "scientificNameAuthorship": "Moore, J. A. and Near, T. J.",
+            "namePublishedIn": [],
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Pan-Neopterygii",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "J. A. Moore",
+                            "alternate": [
+                                "Moore, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Moore",
+                            "middlename": "A."
+                        },
+                        {
+                            "name": "T. J. Near",
+                            "alternate": [
+                                "Near, T. J."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "709-710",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The total clade of the crown clade Neopterygii.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

@@ -1,0 +1,172 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Tyrannosauroids from the Southern Hemisphere: Implications for biogeography, evolution, and taxonomy",
+                "year": 2018,
+                "authors": [
+                    {
+                        "name": "Rafael Delcourt",
+                        "alternate": [
+                            "Delcourt, Rafael"
+                        ],
+                        "firstname": "Rafael",
+                        "lastname": "Delcourt"
+                    },
+                    {
+                        "name": "Orlando Grillo",
+                        "alternate": [
+                            "Grillo, Orlando"
+                        ],
+                        "firstname": "Orlando",
+                        "lastname": "Grillo"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Palaeogeography, Palaeoclimatology, Palaeoecology",
+                    "volume": "511",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '1176'",
+            "label": "Eutyrannosauria",
+            "scientificNameAuthorship": "Delcourt, Rafael and Grillo, Orlando and Hendrickx, Christophe and Kellermann, Maxmilian and Langer, Max",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Tyrannosauroids from the Southern Hemisphere: Implications for biogeography, evolution, and taxonomy",
+                    "year": 2018,
+                    "authors": [
+                        {
+                            "name": "Rafael Delcourt",
+                            "alternate": [
+                                "Delcourt, Rafael"
+                            ],
+                            "firstname": "Rafael",
+                            "lastname": "Delcourt"
+                        },
+                        {
+                            "name": "Orlando Grillo",
+                            "alternate": [
+                                "Grillo, Orlando"
+                            ],
+                            "firstname": "Orlando",
+                            "lastname": "Grillo"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "doi.org/10.1016/j.palaeo.2018.09.003"
+                        }
+                    ],
+                    "link": [],
+                    "journal": {
+                        "name": "Palaeogeography, Palaeoclimatology, Palaeoecology",
+                        "volume": "511",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "The coelurosaur theropods of the Romualdo Formation, Early Cretaceous (Aptian) of Brazil: Santanaraptor placidus meets Mirischia asymmetrica",
+                    "year": 2025,
+                    "edition": "2025",
+                    "authors": [
+                        {
+                            "name": "Rafael Delcourt",
+                            "alternate": [
+                                "Delcourt, Rafael"
+                            ],
+                            "firstname": "Rafael",
+                            "lastname": "Delcourt"
+                        },
+                        {
+                            "name": "Orlando Grillo",
+                            "alternate": [
+                                "Grillo, Orlando"
+                            ],
+                            "firstname": "Orlando",
+                            "lastname": "Grillo"
+                        },
+                        {
+                            "name": "Christophe Hendrickx",
+                            "alternate": [
+                                "Hendrickx, Christophe"
+                            ],
+                            "firstname": "Christophe",
+                            "lastname": "Hendrickx"
+                        },
+                        {
+                            "name": "Maxmilian Kellermann",
+                            "alternate": [
+                                "Kellermann, Maxmilian"
+                            ],
+                            "firstname": "Maxmilian",
+                            "lastname": "Kellermann"
+                        },
+                        {
+                            "name": "Max Langer",
+                            "alternate": [
+                                "Langer, Max"
+                            ],
+                            "firstname": "Max",
+                            "lastname": "Langer"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.1002/ar.70085"
+                        }
+                    ],
+                    "link": [],
+                    "journal": {
+                        "name": "The Anatomical Record",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The least inclusive clade containing Tyrannosaurus rex Osborn, 1905 and Dryptosaurus aquilunguis Cope, 1866",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Tyrannosaurus rex Osborn, 1905",
+                        "nameComplete": "Tyrannosaurus rex"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Megaraptor namunhuaiquii Novas, 1998",
+                        "nameComplete": "Megaraptor namunhuaiquii"
+                    }
+                }
+            ]
+        }
+    ]
+}

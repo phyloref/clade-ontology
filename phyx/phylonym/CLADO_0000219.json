@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -55,10 +55,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 219,
+            "curatorNotes": "Regnum ID: '219'",
             "label": "Cynodontia",
-            "dwc:scientificNameAuthorship": "Rowe, T. B.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Rowe, T. B.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Paleontology or a systematic summary of extinct animals and their geological relations.",
@@ -82,8 +82,60 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The clade possessing the apomorphy occlusal triconodont molariform postcanine teeth—i.e., the crowns of the molariform postcanine teeth have three principal cusps aligned longitudinally (or further modifications of this condition) and the upper and lower molariform teeth occlude, at least irregularly—as inherited by Thrinaxodon liorhinus Seeley 1894a.",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Cynodontia",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "T. B. Rowe",
+                            "alternate": [
+                                "Rowe, T. B."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Rowe",
+                            "middlename": "B."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "829-841",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The clade possessing the apomorphy occlusal triconodont molariform postcanine teeth—i.e., the crowns of the molariform postcanine teeth have three principal cusps aligned longitudinally (or further modifications of this condition) and the upper and lower molariform teeth occlude, at least irregularly—as inherited by Thrinaxodon liorhinus Seeley 1894a.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

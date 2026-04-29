@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -86,10 +86,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 15,
+            "curatorNotes": "Regnum ID: '15'",
             "label": "Apo-Tracheophyta",
-            "dwc:scientificNameAuthorship": "Cantino, P. D., Donoghue, M. J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Cantino, P. D. and Donoghue, M. J.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Towards a phylogenetic nomenclature of Tracheophyta.",
@@ -176,8 +176,69 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The clade characterized by the apomorphy tracheids (i.e., differentially thickened water-conducting cells) as inherited by Pinus sylvestris Linnaeus 1753.",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Apo-Tracheophyta",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "M. J. Donoghue",
+                            "alternate": [
+                                "Donoghue, M. J."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Donoghue",
+                            "middlename": "J."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "229-230",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The clade characterized by the apomorphy tracheids (i.e., differentially thickened water-conducting cells) as inherited by Pinus sylvestris Linnaeus 1753.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

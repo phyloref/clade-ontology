@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -397,10 +397,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 192,
+            "curatorNotes": "Regnum ID: '192'",
             "label": "Metazoa",
-            "dwc:scientificNameAuthorship": "Garey, J. R., Halanych, K. M.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Garey, J. R. and Halanych, K. M.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "The gastraea-theory, the phylogenetic classification of the animal kingdom and the homology of the germ-lamellae.",
@@ -426,8 +426,69 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The smallest crown clade containing Strongylocentrotus purpuratus (Stimpson 1857) (Deuterostomia, Echinodermata), Drosophila melanogaster Meigen 1830 (Ecdysozoa, Arthropoda), Capitella teleta Blake, Grassle & Eckelbarger 2009 (Lophotrochozoa, Annelida), Convolutriloba longifissura Bartolomaeus & Balzer 1997 (Acoelomorpha, Acoela), Hydra vulgaris Pallas 1766 (Cnidaria), Trichoplax adhaerens Schulze 1883 (Placozoa), Oscarella carmela Muricy & Pearse 2004 (Porifera), Amphimedon queenslandica Hooper & van Soest, 2006 (Porifera), and Mnemiopsis leidyi Agassiz 1865 (Ctenophora), but not Monosiga ovata Kent 1881 (Choanoflagellata).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Metazoa",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "J. R. Garey",
+                            "alternate": [
+                                "Garey, J. R."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Garey",
+                            "middlename": "R."
+                        },
+                        {
+                            "name": "K. M. Halanych",
+                            "alternate": [
+                                "Halanych, K. M."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "Halanych",
+                            "middlename": "M."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "435-437",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The smallest crown clade containing Strongylocentrotus purpuratus (Stimpson 1857) (Deuterostomia, Echinodermata), Drosophila melanogaster Meigen 1830 (Ecdysozoa, Arthropoda), Capitella teleta Blake, Grassle & Eckelbarger 2009 (Lophotrochozoa, Annelida), Convolutriloba longifissura Bartolomaeus & Balzer 1997 (Acoelomorpha, Acoela), Hydra vulgaris Pallas 1766 (Cnidaria), Trichoplax adhaerens Schulze 1883 (Placozoa), Oscarella carmela Muricy & Pearse 2004 (Porifera), Amphimedon queenslandica Hooper & van Soest, 2006 (Porifera), and Mnemiopsis leidyi Agassiz 1865 (Ctenophora), but not Monosiga ovata Kent 1881 (Choanoflagellata).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -436,78 +497,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Strongylocentrotus purpuratus Stimpson, 1857",
                         "nameComplete": "Strongylocentrotus purpuratus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Drosophila melanogaster Meigen, 1830",
-                        "nameComplete": "Drosophila melanogaster"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Capitella teleta Blake and Grassle and Eckelbarger, 2009",
-                        "nameComplete": "Capitella teleta"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Convolutriloba longifissura Bartolomaeus and Balzer, 1997",
-                        "nameComplete": "Convolutriloba longifissura"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Hydra vulgaris Pallas, 1766",
-                        "nameComplete": "Hydra vulgaris"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Trichoplax adhaerens Schulze, 1883",
-                        "nameComplete": "Trichoplax adhaerens"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Oscarella carmela Muricy and Pearse, 2004",
-                        "nameComplete": "Oscarella carmela"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Amphimedon queenslandica Hooper and van Soest, 2006",
-                        "nameComplete": "Amphimedon queenslandica"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Mnemiopsis leidyi Agassiz, 1865",
-                        "nameComplete": "Mnemiopsis leidyi"
                     }
                 }
             ],

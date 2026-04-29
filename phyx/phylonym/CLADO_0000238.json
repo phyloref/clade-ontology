@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -64,10 +64,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 238,
+            "curatorNotes": "Regnum ID: '238'",
             "label": "Chiroptera",
-            "dwc:scientificNameAuthorship": "Cirranello, A. L., Simmons, N. B., Gunnell, G. F.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Cirranello, A. L. and Simmons, N. B. and Gunnell, G. F.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Handbuch der Naturgeschichte. Mit Kupfern.",
@@ -92,8 +92,78 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Pteropus vampyrus (Linnaeus 1758) (Pteropodidae), Rhinolophus ferrumequinum (Schreber 1774) (Rhinolophoidea), and Vespertilio murinus Linnaeus 1758 (Vespertilionoidea).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Chiroptera",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "A. L. Cirranello",
+                            "alternate": [
+                                "Cirranello, A. L."
+                            ],
+                            "firstname": "A.",
+                            "lastname": "Cirranello",
+                            "middlename": "L."
+                        },
+                        {
+                            "name": "N. B. Simmons",
+                            "alternate": [
+                                "Simmons, N. B."
+                            ],
+                            "firstname": "N.",
+                            "lastname": "Simmons",
+                            "middlename": "B."
+                        },
+                        {
+                            "name": "G. F. Gunnell",
+                            "alternate": [
+                                "Gunnell, G. F."
+                            ],
+                            "firstname": "G.",
+                            "lastname": "Gunnell",
+                            "middlename": "F."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "923-930",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The crown clade originating in the most recent common ancestor of Pteropus vampyrus (Linnaeus 1758) (Pteropodidae), Rhinolophus ferrumequinum (Schreber 1774) (Rhinolophoidea), and Vespertilio murinus Linnaeus 1758 (Vespertilionoidea).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -102,24 +172,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Pteropus vampyrus Linnaeus, 1758",
                         "nameComplete": "Pteropus vampyrus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Rhinolophus ferrumequinum Schreber, 1744",
-                        "nameComplete": "Rhinolophus ferrumequinum"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Vespertilio murinus Linnaeus, 1758",
-                        "nameComplete": "Vespertilio murinus"
                     }
                 }
             ],

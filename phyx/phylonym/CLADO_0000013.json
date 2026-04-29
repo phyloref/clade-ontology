@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -39,10 +39,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 13,
+            "curatorNotes": "Regnum ID: '13'",
             "label": "Anthracosauria",
-            "dwc:scientificNameAuthorship": "Laurin, M., Smithson, T. R.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Laurin, M. and Smithson, T. R.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Some points of view concerning the evolution of the vertebrates and the classification of this group.",
@@ -68,8 +68,68 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The largest clade containing Anthracosaurus russelli Huxley 1863 (Embolomeri) but not Ascaphus truei Stejneger 1899 (closest to Discoglossidae and Pipidae in the reference phylogeny) and Eryops megacephalus Cope 1877 (Temnospondyli).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Anthracosauria",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "M. Laurin",
+                            "alternate": [
+                                "Laurin, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Laurin"
+                        },
+                        {
+                            "name": "T. R. Smithson",
+                            "alternate": [
+                                "Smithson, T. R."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Smithson",
+                            "middlename": "R."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "751-754",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The largest clade containing Anthracosaurus russelli Huxley 1863 (Embolomeri) but not Ascaphus truei Stejneger 1899 (closest to Discoglossidae and Pipidae in the reference phylogeny) and Eryops megacephalus Cope 1877 (Temnospondyli).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -81,26 +141,7 @@
                     }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Ascaphus truei Stejneger, 1899",
-                        "nameComplete": "Ascaphus truei"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Eryops megacephalus Cope, 1877",
-                        "nameComplete": "Eryops megacephalus"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

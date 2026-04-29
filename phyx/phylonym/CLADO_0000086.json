@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -157,10 +157,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 86,
+            "curatorNotes": "Regnum ID: '86'",
             "label": "Postciliodesmatophora",
-            "dwc:scientificNameAuthorship": "Dunthorn, M., Lynn, D. H.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Dunthorn, M. and Lynn, D. H.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Ectoplasmic fibrillar system of Infusoria and its role for the understanding of their phylogeny.",
@@ -196,8 +196,68 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The smallest crown clade containing Blepharisma americanum Suzuki 1954 and Loxodes striatus (Engelmann 1862).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Postciliodesmatophora",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "M. Dunthorn",
+                            "alternate": [
+                                "Dunthorn, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Dunthorn"
+                        },
+                        {
+                            "name": "D. H. Lynn",
+                            "alternate": [
+                                "Lynn, D. H."
+                            ],
+                            "firstname": "D.",
+                            "lastname": "Lynn",
+                            "middlename": "H."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "91",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The smallest crown clade containing Blepharisma americanum Suzuki 1954 and Loxodes striatus (Engelmann 1862).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -206,15 +266,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Blepharisma americanum Suzuki, 1954",
                         "nameComplete": "Blepharisma americanum"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Loxodes striatus Engelmann, 1862",
-                        "nameComplete": "Loxodes striatus"
                     }
                 }
             ],

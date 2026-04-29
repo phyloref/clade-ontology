@@ -1,0 +1,128 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '1166'",
+            "label": "Australochelyidae",
+            "scientificNameAuthorship": "Szczygielski, Tomasz and Dróżdż, Dawid",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "The most ancient African turtle",
+                    "year": 1994,
+                    "authors": [
+                        {
+                            "name": "Eugene S. Gaffney",
+                            "alternate": [
+                                "Gaffney, Eugene S."
+                            ],
+                            "firstname": "Eugene",
+                            "lastname": "Gaffney",
+                            "middlename": "S."
+                        },
+                        {
+                            "name": "J. W. Kitching",
+                            "alternate": [
+                                "Kitching, J. W."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Kitching",
+                            "middlename": "W."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.1038/369055a0"
+                        }
+                    ],
+                    "link": [],
+                    "journal": {
+                        "name": "Nature",
+                        "volume": "369",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Triassic turtles (Testudinata: Proterochersidae and Proganochelyidae) of Greenland",
+                    "year": 2016,
+                    "authors": [
+                        {
+                            "name": "Tomasz Szczygielski",
+                            "alternate": [
+                                "Szczygielski, Tomasz"
+                            ],
+                            "firstname": "Tomasz",
+                            "lastname": "Szczygielski"
+                        },
+                        {
+                            "name": "Dawid Dróżdż",
+                            "alternate": [
+                                "Dróżdż, Dawid"
+                            ],
+                            "firstname": "Dawid",
+                            "lastname": "Dróżdż"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "figure": "59",
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Zoological Journal of the Linnean Society",
+                        "volume": "206",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The largest clade containing Australochelys africanus Gaffney & Kitching, 1994 but not Proganochelys quenstedtii Baur, 1887, Proterochersis robusta Fraas, 1913, and Testudines Batsch, 1788 sensu International Turtle Nomenclature Committee et al., 2020b.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Australochelys africanus Gaffney and Kitching, 1994",
+                        "nameComplete": "Australochelys africanus"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Proganochelys quenstedtii Baur, 1887",
+                        "nameComplete": "Proganochelys quenstedtii"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Proterochersis robusta Baur, 1913",
+                        "nameComplete": "Proterochersis robusta"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Testudines Batsch, 1788",
+                        "nameComplete": "Testudines"
+                    }
+                }
+            ]
+        }
+    ]
+}

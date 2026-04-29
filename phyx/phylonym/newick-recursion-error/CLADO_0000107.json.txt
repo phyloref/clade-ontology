@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -137,6 +137,187 @@
         },
         {
             "phylogenyCitation": {
+                "type": "article",
+                "title": "The first complete chloroplast genome sequence of a lycophyte, Huperzia lucidula (Lycopodiaceae).",
+                "year": 2005,
+                "authors": [
+                    {
+                        "name": "P. G. Wolf",
+                        "alternate": [
+                            "Wolf, P. G."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Wolf",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "K. G. Karol",
+                        "alternate": [
+                            "Karol, K. G."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Karol",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "D. F. Mandoli",
+                        "alternate": [
+                            "Mandoli, D. F."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Mandoli",
+                        "middlename": "F."
+                    },
+                    {
+                        "name": "J. Keuhl",
+                        "alternate": [
+                            "Keuhl, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Keuhl"
+                    },
+                    {
+                        "name": "K. Arumuganathan",
+                        "alternate": [
+                            "Arumuganathan, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Arumuganathan"
+                    },
+                    {
+                        "name": "M. W. Ellis",
+                        "alternate": [
+                            "Ellis, M. W."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Ellis",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "B. D. Mishler",
+                        "alternate": [
+                            "Mishler, B. D."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Mishler",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "D. G. Kelch",
+                        "alternate": [
+                            "Kelch, D. G."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Kelch",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "R. G. Olmstead",
+                        "alternate": [
+                            "Olmstead, R. G."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Olmstead",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "J. L. Boore",
+                        "alternate": [
+                            "Boore, J. L."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Boore",
+                        "middlename": "L."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.gene.2005.01.018"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Gene (Amst.)",
+                    "volume": "350",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "From algae to angiosperms—inferring the phylogeny of green plants (Viridiplantae) from 360 plastid genomes.",
+                "year": 2014,
+                "authors": [
+                    {
+                        "name": "B. R. Ruhfel",
+                        "alternate": [
+                            "Ruhfel, B. R."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Ruhfel",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "M. A. Gitzendanner",
+                        "alternate": [
+                            "Gitzendanner, M. A."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Gitzendanner",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "P. S. Soltis",
+                        "alternate": [
+                            "Soltis, P. S."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Soltis",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "D. E. Soltis",
+                        "alternate": [
+                            "Soltis, D. E."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Soltis",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "J. G. Burleigh",
+                        "alternate": [
+                            "Burleigh, J. G."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Burleigh",
+                        "middlename": "G."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "5-7",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1186/1471-2148-14-23"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "BMC Evolutionary Biology",
+                    "volume": "14",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
                 "type": "book",
                 "title": "The origin and early diversification of land plants—a cladistic study.",
                 "year": 1997,
@@ -244,118 +425,6 @@
                 "journal": {
                     "name": "Nature",
                     "volume": "409",
-                    "identifier": []
-                }
-            }
-        },
-        {
-            "phylogenyCitation": {
-                "type": "article",
-                "title": "The first complete chloroplast genome sequence of a lycophyte, Huperzia lucidula (Lycopodiaceae).",
-                "year": 2005,
-                "authors": [
-                    {
-                        "name": "P. G. Wolf",
-                        "alternate": [
-                            "Wolf, P. G."
-                        ],
-                        "firstname": "P.",
-                        "lastname": "Wolf",
-                        "middlename": "G."
-                    },
-                    {
-                        "name": "K. G. Karol",
-                        "alternate": [
-                            "Karol, K. G."
-                        ],
-                        "firstname": "K.",
-                        "lastname": "Karol",
-                        "middlename": "G."
-                    },
-                    {
-                        "name": "D. F. Mandoli",
-                        "alternate": [
-                            "Mandoli, D. F."
-                        ],
-                        "firstname": "D.",
-                        "lastname": "Mandoli",
-                        "middlename": "F."
-                    },
-                    {
-                        "name": "J. Keuhl",
-                        "alternate": [
-                            "Keuhl, J."
-                        ],
-                        "firstname": "J.",
-                        "lastname": "Keuhl"
-                    },
-                    {
-                        "name": "K. Arumuganathan",
-                        "alternate": [
-                            "Arumuganathan, K."
-                        ],
-                        "firstname": "K.",
-                        "lastname": "Arumuganathan"
-                    },
-                    {
-                        "name": "M. W. Ellis",
-                        "alternate": [
-                            "Ellis, M. W."
-                        ],
-                        "firstname": "M.",
-                        "lastname": "Ellis",
-                        "middlename": "W."
-                    },
-                    {
-                        "name": "B. D. Mishler",
-                        "alternate": [
-                            "Mishler, B. D."
-                        ],
-                        "firstname": "B.",
-                        "lastname": "Mishler",
-                        "middlename": "D."
-                    },
-                    {
-                        "name": "D. G. Kelch",
-                        "alternate": [
-                            "Kelch, D. G."
-                        ],
-                        "firstname": "D.",
-                        "lastname": "Kelch",
-                        "middlename": "G."
-                    },
-                    {
-                        "name": "R. G. Olmstead",
-                        "alternate": [
-                            "Olmstead, R. G."
-                        ],
-                        "firstname": "R.",
-                        "lastname": "Olmstead",
-                        "middlename": "G."
-                    },
-                    {
-                        "name": "J. L. Boore",
-                        "alternate": [
-                            "Boore, J. L."
-                        ],
-                        "firstname": "J.",
-                        "lastname": "Boore",
-                        "middlename": "L."
-                    }
-                ],
-                "editors": [],
-                "series_editors": [],
-                "figure": "3",
-                "identifier": [
-                    {
-                        "type": "doi",
-                        "id": "10.1016/j.gene.2005.01.018"
-                    }
-                ],
-                "link": [],
-                "journal": {
-                    "name": "Gene (Amst.)",
-                    "volume": "350",
                     "identifier": []
                 }
             }
@@ -511,83 +580,14 @@
                     "identifier": []
                 }
             }
-        },
-        {
-            "phylogenyCitation": {
-                "type": "article",
-                "title": "From algae to angiosperms—inferring the phylogeny of green plants (Viridiplantae) from 360 plastid genomes.",
-                "year": 2014,
-                "authors": [
-                    {
-                        "name": "B. R. Ruhfel",
-                        "alternate": [
-                            "Ruhfel, B. R."
-                        ],
-                        "firstname": "B.",
-                        "lastname": "Ruhfel",
-                        "middlename": "R."
-                    },
-                    {
-                        "name": "M. A. Gitzendanner",
-                        "alternate": [
-                            "Gitzendanner, M. A."
-                        ],
-                        "firstname": "M.",
-                        "lastname": "Gitzendanner",
-                        "middlename": "A."
-                    },
-                    {
-                        "name": "P. S. Soltis",
-                        "alternate": [
-                            "Soltis, P. S."
-                        ],
-                        "firstname": "P.",
-                        "lastname": "Soltis",
-                        "middlename": "S."
-                    },
-                    {
-                        "name": "D. E. Soltis",
-                        "alternate": [
-                            "Soltis, D. E."
-                        ],
-                        "firstname": "D.",
-                        "lastname": "Soltis",
-                        "middlename": "E."
-                    },
-                    {
-                        "name": "J. G. Burleigh",
-                        "alternate": [
-                            "Burleigh, J. G."
-                        ],
-                        "firstname": "J.",
-                        "lastname": "Burleigh",
-                        "middlename": "G."
-                    }
-                ],
-                "editors": [],
-                "series_editors": [],
-                "figure": "5-7",
-                "identifier": [
-                    {
-                        "type": "doi",
-                        "id": "10.1186/1471-2148-14-23"
-                    }
-                ],
-                "link": [],
-                "journal": {
-                    "name": "BMC Evolutionary Biology",
-                    "volume": "14",
-                    "identifier": []
-                }
-            }
         }
     ],
     "phylorefs": [
         {
-            "regnumId": 107,
+            "curatorNotes": "Regnum ID: '107'",
             "label": "Tracheophyta",
-            "dwc:scientificNameAuthorship": "Cantino, P. D., Donoghue, M. J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Cantino, P. D. and Donoghue, M. J.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Botany: principles and problems.",
@@ -612,25 +612,77 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The smallest crown clade containing Magnolia tripetala (Linnaeus) Linnaeus 1759 (Euphyllophyta) and Lycopodium clavatum Linnaeus 1753 (Lycopodiophyta). This is a minimum-crown-clade definition.",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Tracheophyta",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "M. J. Donoghue",
+                            "alternate": [
+                                "Donoghue, M. J."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Donoghue",
+                            "middlename": "J."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "231-233",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The smallest crown clade containing Magnolia tripetala (Linnaeus) Linnaeus 1759 (Euphyllophyta) and Lycopodium clavatum Linnaeus 1753 (Lycopodiophyta). This is a minimum-crown-clade definition.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
                     "hasName": {
                         "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Magnolia tripetala 1759",
+                        "label": "Magnolia tripetala Linnaeus, 1759",
                         "nameComplete": "Magnolia tripetala"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Lycopodium clavatum 1753",
-                        "nameComplete": "Lycopodium clavatum"
                     }
                 }
             ],

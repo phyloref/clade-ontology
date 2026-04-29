@@ -53,7 +53,7 @@ function findPHYXFiles(dirPath) {
 }
 
 // Read command-line arguments.
-const argv = yargs.usage('Usage: $0 <directories or files to convert> [--no-phylogenies]')
+const argv = yargs(process.argv.slice(2)).usage('Usage: $0 <directories or files to convert> [--no-phylogenies]')
   .demandCommand(1) // Make sure there's at least one directory or file!
   .option('no-phylogenies', {
     // --no-phylogenies: Flag for turning off including phylogenies in the produced ontology.
@@ -132,7 +132,13 @@ for (const phyxFile of jsons) {
     }
 
     // Convert to OWL/JSON-LD.
-    const jsonld = phylorefWrapper.asJSONLD(getIdentifier(entityIndex));
+    let jsonld;
+    try {
+      jsonld = phylorefWrapper.asJSONLD(getIdentifier(entityIndex));
+    } catch (err) {
+      console.warn(`Skipping phyloreference ${phylorefWrapper.label}: ${err.message}`);
+      continue;
+    }
 
     // Record the label of the phylorefs. We'll need this to link phylogenies to
     // the phylorefs they expect to resolve to.

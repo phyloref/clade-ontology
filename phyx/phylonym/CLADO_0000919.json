@@ -1,0 +1,143 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Early-branching euteleost relationships: areas of congruence between concatenation and coalescent model inferences",
+                "year": 2017,
+                "authors": [
+                    {
+                        "name": "M. A. Campbell",
+                        "alternate": [
+                            "Campbell, M. A."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Campbell",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "M. E. Alfaro",
+                        "alternate": [
+                            "Alfaro, M. E."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Alfaro",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "M. Belasco",
+                        "alternate": [
+                            "Belasco, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Belasco"
+                    },
+                    {
+                        "name": "J. A. López",
+                        "alternate": [
+                            "López, J. A."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "López",
+                        "middlename": "A."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.7717/peerj.3548"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "PeerJ",
+                    "volume": "5",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '919'",
+            "label": "Esocidae",
+            "scientificNameAuthorship": "Near, Thomas J. and Thacker, Christine E.",
+            "namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Analyse de la nature, ou tableau de l'univers et des corps organisés",
+                    "year": 1815,
+                    "authors": [
+                        {
+                            "name": "C. S. Rafinesque",
+                            "alternate": [
+                                "Rafinesque, C. S."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Rafinesque",
+                            "middlename": "S."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Aux dépens de l'auteur",
+                    "city": "Palerme",
+                    "pages": "224",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
+                    "authors": [
+                        {
+                            "name": "T. J. Near",
+                            "alternate": [
+                                "Near, T. J."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "C. E. Thacker",
+                            "alternate": [
+                                "Thacker, C. E."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The least inclusive crown clade that contains Esox lucius Linnaeus 1758 and Umbra krameri Walbaum 1792.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Esox lucius Linnaeus, 1758",
+                        "nameComplete": "Esox lucius"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

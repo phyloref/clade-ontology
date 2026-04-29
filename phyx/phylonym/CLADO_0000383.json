@@ -1,0 +1,1277 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A comprehensive phylogeny of birds (Aves) using targeted next-generation DNA sequencing",
+                "year": 2015,
+                "authors": [
+                    {
+                        "name": "Richard O. Prum",
+                        "alternate": [
+                            "Prum, Richard O."
+                        ],
+                        "firstname": "Richard",
+                        "lastname": "Prum",
+                        "middlename": "O."
+                    },
+                    {
+                        "name": "Jacob S. Berv",
+                        "alternate": [
+                            "Berv, Jacob S."
+                        ],
+                        "firstname": "Jacob",
+                        "lastname": "Berv",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "Alex Dornburg",
+                        "alternate": [
+                            "Dornburg, Alex"
+                        ],
+                        "firstname": "Alex",
+                        "lastname": "Dornburg"
+                    },
+                    {
+                        "name": "Daniel J. Field",
+                        "alternate": [
+                            "Field, Daniel J."
+                        ],
+                        "firstname": "Daniel",
+                        "lastname": "Field",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "Jeffrey P. Townsend",
+                        "alternate": [
+                            "Townsend, Jeffrey P."
+                        ],
+                        "firstname": "Jeffrey",
+                        "lastname": "Townsend",
+                        "middlename": "P."
+                    },
+                    {
+                        "name": "Emily Moriarty Lemmon",
+                        "alternate": [
+                            "Lemmon, Emily Moriarty"
+                        ],
+                        "firstname": "Emily",
+                        "lastname": "Lemmon",
+                        "middlename": "Moriarty"
+                    },
+                    {
+                        "name": "Alan R. Lemmon",
+                        "alternate": [
+                            "Lemmon, Alan R."
+                        ],
+                        "firstname": "Alan",
+                        "lastname": "Lemmon",
+                        "middlename": "R."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1038/nature15697"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "https://www.nature.com/articles/nature15697"
+                    }
+                ],
+                "journal": {
+                    "name": "Nature",
+                    "volume": "526",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Whole-genome analyses resolve early branches in the tree of life of modern birds",
+                "year": 2014,
+                "authors": [
+                    {
+                        "name": "Erich D. Jarvis",
+                        "alternate": [
+                            "Jarvis, Erich D."
+                        ],
+                        "firstname": "Erich",
+                        "lastname": "Jarvis",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "Siavash Mirarab",
+                        "alternate": [
+                            "Mirarab, Siavash"
+                        ],
+                        "firstname": "Siavash",
+                        "lastname": "Mirarab"
+                    },
+                    {
+                        "name": "Andre J. Aberer",
+                        "alternate": [
+                            "Aberer, Andre J."
+                        ],
+                        "firstname": "Andre",
+                        "lastname": "Aberer",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "Bo Li",
+                        "alternate": [
+                            "Li, Bo"
+                        ],
+                        "firstname": "Bo",
+                        "lastname": "Li"
+                    },
+                    {
+                        "name": "Peter Houde",
+                        "alternate": [
+                            "Houde, Peter"
+                        ],
+                        "firstname": "Peter",
+                        "lastname": "Houde"
+                    },
+                    {
+                        "name": "Cai Li",
+                        "alternate": [
+                            "Li, Cai"
+                        ],
+                        "firstname": "Cai",
+                        "lastname": "Li"
+                    },
+                    {
+                        "name": "Simon Y. W. Ho",
+                        "alternate": [
+                            "Ho, Simon Y. W."
+                        ],
+                        "firstname": "Simon",
+                        "lastname": "Ho",
+                        "middlename": "Y. W."
+                    },
+                    {
+                        "name": "Brant C. Faircloth",
+                        "alternate": [
+                            "Faircloth, Brant C."
+                        ],
+                        "firstname": "Brant",
+                        "lastname": "Faircloth",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "Benoit Nabholz",
+                        "alternate": [
+                            "Nabholz, Benoit"
+                        ],
+                        "firstname": "Benoit",
+                        "lastname": "Nabholz"
+                    },
+                    {
+                        "name": "Jason T. Howard",
+                        "alternate": [
+                            "Howard, Jason T."
+                        ],
+                        "firstname": "Jason",
+                        "lastname": "Howard",
+                        "middlename": "T."
+                    },
+                    {
+                        "name": "Alexander Suh",
+                        "alternate": [
+                            "Suh, Alexander"
+                        ],
+                        "firstname": "Alexander",
+                        "lastname": "Suh"
+                    },
+                    {
+                        "name": "Claudia C. Weber",
+                        "alternate": [
+                            "Weber, Claudia C."
+                        ],
+                        "firstname": "Claudia",
+                        "lastname": "Weber",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "Rute R. da Fonseca",
+                        "alternate": [
+                            "da Fonseca, Rute R."
+                        ],
+                        "firstname": "Rute",
+                        "lastname": "da Fonseca",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "Jianwen Li",
+                        "alternate": [
+                            "Li, Jianwen"
+                        ],
+                        "firstname": "Jianwen",
+                        "lastname": "Li"
+                    },
+                    {
+                        "name": "Fang Zhang",
+                        "alternate": [
+                            "Zhang, Fang"
+                        ],
+                        "firstname": "Fang",
+                        "lastname": "Zhang"
+                    },
+                    {
+                        "name": "Hui Li",
+                        "alternate": [
+                            "Li, Hui"
+                        ],
+                        "firstname": "Hui",
+                        "lastname": "Li"
+                    },
+                    {
+                        "name": "Long Zhou",
+                        "alternate": [
+                            "Zhou, Long"
+                        ],
+                        "firstname": "Long",
+                        "lastname": "Zhou"
+                    },
+                    {
+                        "name": "Nitish Narula",
+                        "alternate": [
+                            "Narula, Nitish"
+                        ],
+                        "firstname": "Nitish",
+                        "lastname": "Narula"
+                    },
+                    {
+                        "name": "Liang Liu",
+                        "alternate": [
+                            "Liu, Liang"
+                        ],
+                        "firstname": "Liang",
+                        "lastname": "Liu"
+                    },
+                    {
+                        "name": "Ganesh Ganapathy",
+                        "alternate": [
+                            "Ganapathy, Ganesh"
+                        ],
+                        "firstname": "Ganesh",
+                        "lastname": "Ganapathy"
+                    },
+                    {
+                        "name": "Bastien Boussau",
+                        "alternate": [
+                            "Boussau, Bastien"
+                        ],
+                        "firstname": "Bastien",
+                        "lastname": "Boussau"
+                    },
+                    {
+                        "name": "Md. Shamsuzzoha Bayzid",
+                        "alternate": [
+                            "Bayzid, Md. Shamsuzzoha"
+                        ],
+                        "firstname": "Md. Shamsuzzoha",
+                        "lastname": "Bayzid"
+                    },
+                    {
+                        "name": "Volodymyr Zavidovych",
+                        "alternate": [
+                            "Zavidovych, Volodymyr"
+                        ],
+                        "firstname": "Volodymyr",
+                        "lastname": "Zavidovych"
+                    },
+                    {
+                        "name": "Sankar Subramanian",
+                        "alternate": [
+                            "Subramanian, Sankar"
+                        ],
+                        "firstname": "Sankar",
+                        "lastname": "Subramanian"
+                    },
+                    {
+                        "name": "Toni Gabaldón",
+                        "alternate": [
+                            "Gabaldón, Toni"
+                        ],
+                        "firstname": "Toni",
+                        "lastname": "Gabaldón"
+                    },
+                    {
+                        "name": "Salvador Capella-Gutiérrez",
+                        "alternate": [
+                            "Capella-Gutiérrez, Salvador"
+                        ],
+                        "firstname": "Salvador",
+                        "lastname": "Capella-Gutiérrez"
+                    },
+                    {
+                        "name": "Jaime Huerta-Cepas",
+                        "alternate": [
+                            "Huerta-Cepas, Jaime"
+                        ],
+                        "firstname": "Jaime",
+                        "lastname": "Huerta-Cepas"
+                    },
+                    {
+                        "name": "Bhanu Rekepalli",
+                        "alternate": [
+                            "Rekepalli, Bhanu"
+                        ],
+                        "firstname": "Bhanu",
+                        "lastname": "Rekepalli"
+                    },
+                    {
+                        "name": "Kasper Munch",
+                        "alternate": [
+                            "Munch, Kasper"
+                        ],
+                        "firstname": "Kasper",
+                        "lastname": "Munch"
+                    },
+                    {
+                        "name": "Mikkel Schierup",
+                        "alternate": [
+                            "Schierup, Mikkel"
+                        ],
+                        "firstname": "Mikkel",
+                        "lastname": "Schierup"
+                    },
+                    {
+                        "name": "Bent Lindow",
+                        "alternate": [
+                            "Lindow, Bent"
+                        ],
+                        "firstname": "Bent",
+                        "lastname": "Lindow"
+                    },
+                    {
+                        "name": "Wesley C. Warren",
+                        "alternate": [
+                            "Warren, Wesley C."
+                        ],
+                        "firstname": "Wesley",
+                        "lastname": "Warren",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "David Ray",
+                        "alternate": [
+                            "Ray, David"
+                        ],
+                        "firstname": "David",
+                        "lastname": "Ray"
+                    },
+                    {
+                        "name": "Richard E. Green",
+                        "alternate": [
+                            "Green, Richard E."
+                        ],
+                        "firstname": "Richard",
+                        "lastname": "Green",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "Michael W. Bruford",
+                        "alternate": [
+                            "Bruford, Michael W."
+                        ],
+                        "firstname": "Michael",
+                        "lastname": "Bruford",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "Xiangjiang Zhan",
+                        "alternate": [
+                            "Zhan, Xiangjiang"
+                        ],
+                        "firstname": "Xiangjiang",
+                        "lastname": "Zhan"
+                    },
+                    {
+                        "name": "Andrew Dixon",
+                        "alternate": [
+                            "Dixon, Andrew"
+                        ],
+                        "firstname": "Andrew",
+                        "lastname": "Dixon"
+                    },
+                    {
+                        "name": "Shengbin Li",
+                        "alternate": [
+                            "Li, Shengbin"
+                        ],
+                        "firstname": "Shengbin",
+                        "lastname": "Li"
+                    },
+                    {
+                        "name": "Ning Li",
+                        "alternate": [
+                            "Li, Ning"
+                        ],
+                        "firstname": "Ning",
+                        "lastname": "Li"
+                    },
+                    {
+                        "name": "Yinhua Huang",
+                        "alternate": [
+                            "Huang, Yinhua"
+                        ],
+                        "firstname": "Yinhua",
+                        "lastname": "Huang"
+                    },
+                    {
+                        "name": "Elizabeth P. Derryberry",
+                        "alternate": [
+                            "Derryberry, Elizabeth P."
+                        ],
+                        "firstname": "Elizabeth",
+                        "lastname": "Derryberry",
+                        "middlename": "P."
+                    },
+                    {
+                        "name": "Mads Frost Bertelsen",
+                        "alternate": [
+                            "Bertelsen, Mads Frost"
+                        ],
+                        "firstname": "Mads",
+                        "lastname": "Bertelsen",
+                        "middlename": "Frost"
+                    },
+                    {
+                        "name": "Frederick H. Sheldon",
+                        "alternate": [
+                            "Sheldon, Frederick H."
+                        ],
+                        "firstname": "Frederick",
+                        "lastname": "Sheldon",
+                        "middlename": "H."
+                    },
+                    {
+                        "name": "Robb T. Brumfield",
+                        "alternate": [
+                            "Brumfield, Robb T."
+                        ],
+                        "firstname": "Robb",
+                        "lastname": "Brumfield",
+                        "middlename": "T."
+                    },
+                    {
+                        "name": "Claudio V. Mello",
+                        "alternate": [
+                            "Mello, Claudio V."
+                        ],
+                        "firstname": "Claudio",
+                        "lastname": "Mello",
+                        "middlename": "V."
+                    },
+                    {
+                        "name": "Peter V. Lovell",
+                        "alternate": [
+                            "Lovell, Peter V."
+                        ],
+                        "firstname": "Peter",
+                        "lastname": "Lovell",
+                        "middlename": "V."
+                    },
+                    {
+                        "name": "Morgan Wirthlin",
+                        "alternate": [
+                            "Wirthlin, Morgan"
+                        ],
+                        "firstname": "Morgan",
+                        "lastname": "Wirthlin"
+                    },
+                    {
+                        "name": "Maria Paula Cruz Schneider",
+                        "alternate": [
+                            "Schneider, Maria Paula Cruz"
+                        ],
+                        "firstname": "Maria",
+                        "lastname": "Schneider",
+                        "middlename": "Paula Cruz"
+                    },
+                    {
+                        "name": "Francisco Prosdocimi",
+                        "alternate": [
+                            "Prosdocimi, Francisco"
+                        ],
+                        "firstname": "Francisco",
+                        "lastname": "Prosdocimi"
+                    },
+                    {
+                        "name": "José Alfredo Samaniego",
+                        "alternate": [
+                            "Samaniego, José Alfredo"
+                        ],
+                        "firstname": "José",
+                        "lastname": "Samaniego",
+                        "middlename": "Alfredo"
+                    },
+                    {
+                        "name": "Amhed Missael Vargas Velazquez",
+                        "alternate": [
+                            "Velazquez, Amhed Missael Vargas"
+                        ],
+                        "firstname": "Amhed",
+                        "lastname": "Velazquez",
+                        "middlename": "Missael Vargas"
+                    },
+                    {
+                        "name": "Alonzo Alfaro-Núñez",
+                        "alternate": [
+                            "Alfaro-Núñez, Alonzo"
+                        ],
+                        "firstname": "Alonzo",
+                        "lastname": "Alfaro-Núñez"
+                    },
+                    {
+                        "name": "Paula F. Campos",
+                        "alternate": [
+                            "Campos, Paula F."
+                        ],
+                        "firstname": "Paula",
+                        "lastname": "Campos",
+                        "middlename": "F."
+                    },
+                    {
+                        "name": "Bent Petersen",
+                        "alternate": [
+                            "Petersen, Bent"
+                        ],
+                        "firstname": "Bent",
+                        "lastname": "Petersen"
+                    },
+                    {
+                        "name": "Thomas Sicheritz-Ponten",
+                        "alternate": [
+                            "Sicheritz-Ponten, Thomas"
+                        ],
+                        "firstname": "Thomas",
+                        "lastname": "Sicheritz-Ponten"
+                    },
+                    {
+                        "name": "An Pas",
+                        "alternate": [
+                            "Pas, An"
+                        ],
+                        "firstname": "An",
+                        "lastname": "Pas"
+                    },
+                    {
+                        "name": "Tom Bailey",
+                        "alternate": [
+                            "Bailey, Tom"
+                        ],
+                        "firstname": "Tom",
+                        "lastname": "Bailey"
+                    },
+                    {
+                        "name": "Paul Scofield",
+                        "alternate": [
+                            "Scofield, Paul"
+                        ],
+                        "firstname": "Paul",
+                        "lastname": "Scofield"
+                    },
+                    {
+                        "name": "Michael Bunce",
+                        "alternate": [
+                            "Bunce, Michael"
+                        ],
+                        "firstname": "Michael",
+                        "lastname": "Bunce"
+                    },
+                    {
+                        "name": "David M. Lambert",
+                        "alternate": [
+                            "Lambert, David M."
+                        ],
+                        "firstname": "David",
+                        "lastname": "Lambert",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "Qi Zhou",
+                        "alternate": [
+                            "Zhou, Qi"
+                        ],
+                        "firstname": "Qi",
+                        "lastname": "Zhou"
+                    },
+                    {
+                        "name": "Polina Perelman",
+                        "alternate": [
+                            "Perelman, Polina"
+                        ],
+                        "firstname": "Polina",
+                        "lastname": "Perelman"
+                    },
+                    {
+                        "name": "Amy C. Driskell",
+                        "alternate": [
+                            "Driskell, Amy C."
+                        ],
+                        "firstname": "Amy",
+                        "lastname": "Driskell",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "Beth Shapiro",
+                        "alternate": [
+                            "Shapiro, Beth"
+                        ],
+                        "firstname": "Beth",
+                        "lastname": "Shapiro"
+                    },
+                    {
+                        "name": "Zijun Xiong",
+                        "alternate": [
+                            "Xiong, Zijun"
+                        ],
+                        "firstname": "Zijun",
+                        "lastname": "Xiong"
+                    },
+                    {
+                        "name": "Yongli Zeng",
+                        "alternate": [
+                            "Zeng, Yongli"
+                        ],
+                        "firstname": "Yongli",
+                        "lastname": "Zeng"
+                    },
+                    {
+                        "name": "Shiping Liu",
+                        "alternate": [
+                            "Liu, Shiping"
+                        ],
+                        "firstname": "Shiping",
+                        "lastname": "Liu"
+                    },
+                    {
+                        "name": "Zhenyu Li",
+                        "alternate": [
+                            "Li, Zhenyu"
+                        ],
+                        "firstname": "Zhenyu",
+                        "lastname": "Li"
+                    },
+                    {
+                        "name": "Binghang Liu",
+                        "alternate": [
+                            "Liu, Binghang"
+                        ],
+                        "firstname": "Binghang",
+                        "lastname": "Liu"
+                    },
+                    {
+                        "name": "Kui Wu",
+                        "alternate": [
+                            "Wu, Kui"
+                        ],
+                        "firstname": "Kui",
+                        "lastname": "Wu"
+                    },
+                    {
+                        "name": "Jin Xiao",
+                        "alternate": [
+                            "Xiao, Jin"
+                        ],
+                        "firstname": "Jin",
+                        "lastname": "Xiao"
+                    },
+                    {
+                        "name": "Xiong Yinqi",
+                        "alternate": [
+                            "Yinqi, Xiong"
+                        ],
+                        "firstname": "Xiong",
+                        "lastname": "Yinqi"
+                    },
+                    {
+                        "name": "Qiuemei Zheng",
+                        "alternate": [
+                            "Zheng, Qiuemei"
+                        ],
+                        "firstname": "Qiuemei",
+                        "lastname": "Zheng"
+                    },
+                    {
+                        "name": "Yong Zhang",
+                        "alternate": [
+                            "Zhang, Yong"
+                        ],
+                        "firstname": "Yong",
+                        "lastname": "Zhang"
+                    },
+                    {
+                        "name": "Huanming Yang",
+                        "alternate": [
+                            "Yang, Huanming"
+                        ],
+                        "firstname": "Huanming",
+                        "lastname": "Yang"
+                    },
+                    {
+                        "name": "Jian Wang",
+                        "alternate": [
+                            "Wang, Jian"
+                        ],
+                        "firstname": "Jian",
+                        "lastname": "Wang"
+                    },
+                    {
+                        "name": "Linnea Smeds",
+                        "alternate": [
+                            "Smeds, Linnea"
+                        ],
+                        "firstname": "Linnea",
+                        "lastname": "Smeds"
+                    },
+                    {
+                        "name": "Frank E. Rheindt",
+                        "alternate": [
+                            "Rheindt, Frank E."
+                        ],
+                        "firstname": "Frank",
+                        "lastname": "Rheindt",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "Michael Braun",
+                        "alternate": [
+                            "Braun, Michael"
+                        ],
+                        "firstname": "Michael",
+                        "lastname": "Braun"
+                    },
+                    {
+                        "name": "Jon Fjeldsa",
+                        "alternate": [
+                            "Fjeldsa, Jon"
+                        ],
+                        "firstname": "Jon",
+                        "lastname": "Fjeldsa"
+                    },
+                    {
+                        "name": "Ludovic Orlando",
+                        "alternate": [
+                            "Orlando, Ludovic"
+                        ],
+                        "firstname": "Ludovic",
+                        "lastname": "Orlando"
+                    },
+                    {
+                        "name": "F. Keith Barker",
+                        "alternate": [
+                            "Barker, F. Keith"
+                        ],
+                        "firstname": "F. Keith",
+                        "lastname": "Barker"
+                    },
+                    {
+                        "name": "Knud Andreas  Jønsson",
+                        "alternate": [
+                            "Jønsson, Knud Andreas"
+                        ],
+                        "firstname": "Knud",
+                        "lastname": "Jønsson",
+                        "middlename": "Andreas"
+                    },
+                    {
+                        "name": "Warren Johnson",
+                        "alternate": [
+                            "Johnson, Warren"
+                        ],
+                        "firstname": "Warren",
+                        "lastname": "Johnson"
+                    },
+                    {
+                        "name": "Klaus-Peter Koepfli",
+                        "alternate": [
+                            "Koepfli, Klaus-Peter"
+                        ],
+                        "firstname": "Klaus-Peter",
+                        "lastname": "Koepfli"
+                    },
+                    {
+                        "name": "Stephen O’Brien",
+                        "alternate": [
+                            "O’Brien, Stephen"
+                        ],
+                        "firstname": "Stephen",
+                        "lastname": "O’Brien"
+                    },
+                    {
+                        "name": "David Haussler",
+                        "alternate": [
+                            "Haussler, David"
+                        ],
+                        "firstname": "David",
+                        "lastname": "Haussler"
+                    },
+                    {
+                        "name": "Oliver A. Ryder",
+                        "alternate": [
+                            "Ryder, Oliver A."
+                        ],
+                        "firstname": "Oliver",
+                        "lastname": "Ryder",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "Carsten Rahbek",
+                        "alternate": [
+                            "Rahbek, Carsten"
+                        ],
+                        "firstname": "Carsten",
+                        "lastname": "Rahbek"
+                    },
+                    {
+                        "name": "Eske Willerslev",
+                        "alternate": [
+                            "Willerslev, Eske"
+                        ],
+                        "firstname": "Eske",
+                        "lastname": "Willerslev"
+                    },
+                    {
+                        "name": "Gary R. Graves",
+                        "alternate": [
+                            "Graves, Gary R."
+                        ],
+                        "firstname": "Gary",
+                        "lastname": "Graves",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "Travis C. Glenn",
+                        "alternate": [
+                            "Glenn, Travis C."
+                        ],
+                        "firstname": "Travis",
+                        "lastname": "Glenn",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "John McCormack",
+                        "alternate": [
+                            "McCormack, John"
+                        ],
+                        "firstname": "John",
+                        "lastname": "McCormack"
+                    },
+                    {
+                        "name": "Dave Burt",
+                        "alternate": [
+                            "Burt, Dave"
+                        ],
+                        "firstname": "Dave",
+                        "lastname": "Burt"
+                    },
+                    {
+                        "name": "Hans Ellegren",
+                        "alternate": [
+                            "Ellegren, Hans"
+                        ],
+                        "firstname": "Hans",
+                        "lastname": "Ellegren"
+                    },
+                    {
+                        "name": "Per Alström",
+                        "alternate": [
+                            "Alström, Per"
+                        ],
+                        "firstname": "Per",
+                        "lastname": "Alström"
+                    },
+                    {
+                        "name": "Scott V. Edwards",
+                        "alternate": [
+                            "Edwards, Scott V."
+                        ],
+                        "firstname": "Scott",
+                        "lastname": "Edwards",
+                        "middlename": "V."
+                    },
+                    {
+                        "name": "Alexandros Stamatakis",
+                        "alternate": [
+                            "Stamatakis, Alexandros"
+                        ],
+                        "firstname": "Alexandros",
+                        "lastname": "Stamatakis"
+                    },
+                    {
+                        "name": "David P. Mindell",
+                        "alternate": [
+                            "Mindell, David P."
+                        ],
+                        "firstname": "David",
+                        "lastname": "Mindell",
+                        "middlename": "P."
+                    },
+                    {
+                        "name": "Joel Cracraft",
+                        "alternate": [
+                            "Cracraft, Joel"
+                        ],
+                        "firstname": "Joel",
+                        "lastname": "Cracraft"
+                    },
+                    {
+                        "name": "Edward L. Braun",
+                        "alternate": [
+                            "Braun, Edward L."
+                        ],
+                        "firstname": "Edward",
+                        "lastname": "Braun",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "Tandy Warnow",
+                        "alternate": [
+                            "Warnow, Tandy"
+                        ],
+                        "firstname": "Tandy",
+                        "lastname": "Warnow"
+                    },
+                    {
+                        "name": "Wang Jun",
+                        "alternate": [
+                            "Jun, Wang"
+                        ],
+                        "firstname": "Wang",
+                        "lastname": "Jun"
+                    },
+                    {
+                        "name": "M. Thomas P. Gilbert",
+                        "alternate": [
+                            "Gilbert, M. Thomas P."
+                        ],
+                        "firstname": "M. Thomas",
+                        "lastname": "Gilbert",
+                        "middlename": "P."
+                    },
+                    {
+                        "name": "Guojie Zhang",
+                        "alternate": [
+                            "Zhang, Guojie"
+                        ],
+                        "firstname": "Guojie",
+                        "lastname": "Zhang"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1126/science.1253451"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "https://science.sciencemag.org/content/346/6215/1320"
+                    }
+                ],
+                "journal": {
+                    "name": "Science",
+                    "volume": "346",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Why do phylogenomic data sets yield conflicting trees? Data type influences the avian tree of life more than taxon sampling",
+                "year": 2017,
+                "authors": [
+                    {
+                        "name": "Sushma Reddy",
+                        "alternate": [
+                            "Reddy, Sushma"
+                        ],
+                        "firstname": "Sushma",
+                        "lastname": "Reddy"
+                    },
+                    {
+                        "name": "Rebecca T. Kimball",
+                        "alternate": [
+                            "Kimball, Rebecca T."
+                        ],
+                        "firstname": "Rebecca",
+                        "lastname": "Kimball",
+                        "middlename": "T."
+                    },
+                    {
+                        "name": "Akanksha Pandey",
+                        "alternate": [
+                            "Pandey, Akanksha"
+                        ],
+                        "firstname": "Akanksha",
+                        "lastname": "Pandey"
+                    },
+                    {
+                        "name": "Peter A. Hosner",
+                        "alternate": [
+                            "Hosner, Peter A."
+                        ],
+                        "firstname": "Peter",
+                        "lastname": "Hosner",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "Michael J. Braun",
+                        "alternate": [
+                            "Braun, Michael J."
+                        ],
+                        "firstname": "Michael",
+                        "lastname": "Braun",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "Shannon J. Hackett",
+                        "alternate": [
+                            "Hackett, Shannon J."
+                        ],
+                        "firstname": "Shannon",
+                        "lastname": "Hackett",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "Kin-Lan Han",
+                        "alternate": [
+                            "Han, Kin-Lan"
+                        ],
+                        "firstname": "Kin-Lan",
+                        "lastname": "Han"
+                    },
+                    {
+                        "name": "John Harshman",
+                        "alternate": [
+                            "Harshman, John"
+                        ],
+                        "firstname": "John",
+                        "lastname": "Harshman"
+                    },
+                    {
+                        "name": "Christopher J. Huddleston",
+                        "alternate": [
+                            "Huddleston, Christopher J."
+                        ],
+                        "firstname": "Christopher",
+                        "lastname": "Huddleston",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "Sarah Kingston",
+                        "alternate": [
+                            "Kingston, Sarah"
+                        ],
+                        "firstname": "Sarah",
+                        "lastname": "Kingston"
+                    },
+                    {
+                        "name": "Ben D. Marks",
+                        "alternate": [
+                            "Marks, Ben D."
+                        ],
+                        "firstname": "Ben",
+                        "lastname": "Marks",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "Kathleen J. Miglia",
+                        "alternate": [
+                            "Miglia, Kathleen J."
+                        ],
+                        "firstname": "Kathleen",
+                        "lastname": "Miglia",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "William S. Moore",
+                        "alternate": [
+                            "Moore, William S."
+                        ],
+                        "firstname": "William",
+                        "lastname": "Moore",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "Frederick H. Sheldon",
+                        "alternate": [
+                            "Sheldon, Frederick H."
+                        ],
+                        "firstname": "Frederick",
+                        "lastname": "Sheldon",
+                        "middlename": "H."
+                    },
+                    {
+                        "name": "Christopher C. Witt",
+                        "alternate": [
+                            "Witt, Christopher C."
+                        ],
+                        "firstname": "Christopher",
+                        "lastname": "Witt",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "Tamaki Yuri",
+                        "alternate": [
+                            "Yuri, Tamaki"
+                        ],
+                        "firstname": "Tamaki",
+                        "lastname": "Yuri"
+                    },
+                    {
+                        "name": "Edward L. Braun",
+                        "alternate": [
+                            "Braun, Edward L."
+                        ],
+                        "firstname": "Edward",
+                        "lastname": "Braun",
+                        "middlename": "L."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1093/sysbio/syx041"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "https://academic.oup.com/sysbio/article/66/5/857/3091102"
+                    }
+                ],
+                "journal": {
+                    "name": "Systematic Biology",
+                    "volume": "66",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '383'",
+            "label": "Caprimulgimorphae",
+            "scientificNameAuthorship": "Chen, Albert and Field, Daniel J.",
+            "namePublishedIn": [
+                {
+                    "type": "book_section",
+                    "title": "The Howard and Moore Complete Checklist of Birds of the World",
+                    "section_title": "Avian higher‐level relationships and classification: nonpasseriforms",
+                    "year": 2013,
+                    "authors": [
+                        {
+                            "name": "Joel Cracraft",
+                            "alternate": [
+                                "Cracraft, Joel"
+                            ],
+                            "firstname": "Joel",
+                            "lastname": "Cracraft"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "Edward C. Dickinson",
+                            "alternate": [
+                                "Dickinson, Edward C."
+                            ],
+                            "firstname": "Edward",
+                            "lastname": "Dickinson",
+                            "middlename": "C."
+                        },
+                        {
+                            "name": "James V. Remsen",
+                            "alternate": [
+                                "Remsen, James V."
+                            ],
+                            "firstname": "James",
+                            "lastname": "Remsen",
+                            "middlename": "V."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "Aves Press",
+                    "city": "Eastbourne",
+                    "pages": "xxi–xliii",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic definitions for Caprimulgimorphae (Aves) and major constituent clades under the International Code of Phylogenetic Nomenclature",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "Albert Chen",
+                            "alternate": [
+                                "Chen, Albert"
+                            ],
+                            "firstname": "Albert",
+                            "lastname": "Chen"
+                        },
+                        {
+                            "name": "Daniel J. Field",
+                            "alternate": [
+                                "Field, Daniel J."
+                            ],
+                            "firstname": "Daniel",
+                            "lastname": "Field",
+                            "middlename": "J."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.26049/VZ70-4-2020-03"
+                        }
+                    ],
+                    "link": [
+                        {
+                            "url": "https://www.senckenberg.de/de/wissenschaft/publikationen/wissenschaftliche-zeitschriften/vertebrate-zoology/archiv/vz-70-4-03/"
+                        }
+                    ],
+                    "journal": {
+                        "name": "Vertebrate Zoology",
+                        "volume": "70",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The total clade containing Caprimulgus europaeus Linnaeus, 1758 (Caprimulgidae), Steatornis caripensis Humboldt, 1817 (Steatornithidae), Nyctibius (originally Caprimulgus) grandis (Gmelin, 1789) (Nyctibiidae), Podargus (originally Caprimulgus) strigoides (Latham, 1801) (Podargidae), Aegotheles (originally Caprimulgus) cristatus (Shaw in White, 1790) (Aegothelidae), and Apus (originally Hirundo) apus (Linnaeus, 1758) (Apodiformes) but not Phoenicopterus ruber Linnaeus, 1758 (Mirandornithes or Phoenicopterimorphae), Columba oenas Linnaeus, 1758 (Columbimorphae), Otis tarda Linnaeus, 1758 (Otidimorphae), Musophaga (originally Tauraco) violacea (Isert, 1788) (Otidimorphae), Opisthocomus (originally Phasianus) hoazin (Statius Müller, 1776) (Opisthocomiformes), Grus (originally Ardea) grus (Linnaeus, 1758) (Gruiformes), Charadrius hiaticula Linnaeus, 1758 (Charadriiformes), Phaethon aethereus Linnaeus, 1758 (Phaethontimorphae), Procellaria aequinoctialis Linnaeus, 1758 (Aequornithes), and Vultur gryphus Linnaeus, 1758 (Telluraves).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Caprimulgus europaeus Linnaeus, 1758",
+                        "nameComplete": "Caprimulgus europaeus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

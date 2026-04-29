@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -117,10 +117,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 265,
+            "curatorNotes": "Regnum ID: '265'",
             "label": "Bovinae",
-            "dwc:scientificNameAuthorship": "Bibi, F., Vrba, E. S.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Bibi, F. and Vrba, E. S.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Smithsonian Miscellaneous Collections",
@@ -143,8 +143,48 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Bos taurus Linnaeus 1758 (Bovini) and all extant taxa that share a more recent common ancestor with Bos taurus than with Antilope cervicapra (Linnaeus 1758) (Antilopini).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "year": 2020,
+                    "authors": [],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The crown clade originating in the most recent common ancestor of Bos taurus Linnaeus 1758 (Bovini) and all extant taxa that share a more recent common ancestor with Bos taurus than with Antilope cervicapra (Linnaeus 1758) (Antilopini).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -156,17 +196,7 @@
                     }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Antilope cervicapra Linnaeus, 1758",
-                        "nameComplete": "Antilope cervicapra"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

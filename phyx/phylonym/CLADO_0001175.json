@@ -1,0 +1,168 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Tyrannosauroids from the Southern Hemisphere: Implications for biogeography, evolution, and taxonomy",
+                "year": 2018,
+                "authors": [
+                    {
+                        "name": "Rafael Delcourt",
+                        "alternate": [
+                            "Delcourt, Rafael"
+                        ],
+                        "firstname": "Rafael",
+                        "lastname": "Delcourt"
+                    },
+                    {
+                        "name": "Orlando Grillo",
+                        "alternate": [
+                            "Grillo, Orlando"
+                        ],
+                        "firstname": "Orlando",
+                        "lastname": "Grillo"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Palaeogeography, Palaeoclimatology, Palaeoecology",
+                    "volume": "511",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '1175'",
+            "label": "Tyrannosauroidea",
+            "scientificNameAuthorship": "Delcourt, Rafael and Grillo, Orlando and Hendrickx, Christophe and Kellermann, Maximilian and Langer, Max",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Tyrannosaurus, Upper Cretaceous carnivorous dinosaur (Second communication)",
+                    "year": 1906,
+                    "authors": [
+                        {
+                            "name": "Henry Osborn",
+                            "alternate": [
+                                "Osborn, Henry"
+                            ],
+                            "firstname": "Henry",
+                            "lastname": "Osborn"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the American Museum of Natural History",
+                        "volume": "22",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "The coelurosaur theropods of the Romualdo Formation, Early Cretaceous (Aptian) of Brazil: Santanaraptor placidus meets Mirischia asymmetrica",
+                    "year": 2025,
+                    "edition": "2025",
+                    "authors": [
+                        {
+                            "name": "Rafael Delcourt",
+                            "alternate": [
+                                "Delcourt, Rafael"
+                            ],
+                            "firstname": "Rafael",
+                            "lastname": "Delcourt"
+                        },
+                        {
+                            "name": "Orlando Grillo",
+                            "alternate": [
+                                "Grillo, Orlando"
+                            ],
+                            "firstname": "Orlando",
+                            "lastname": "Grillo"
+                        },
+                        {
+                            "name": "Christophe Hendrickx",
+                            "alternate": [
+                                "Hendrickx, Christophe"
+                            ],
+                            "firstname": "Christophe",
+                            "lastname": "Hendrickx"
+                        },
+                        {
+                            "name": "Maximilian Kellermann",
+                            "alternate": [
+                                "Kellermann, Maximilian"
+                            ],
+                            "firstname": "Maximilian",
+                            "lastname": "Kellermann"
+                        },
+                        {
+                            "name": "Max Langer",
+                            "alternate": [
+                                "Langer, Max"
+                            ],
+                            "firstname": "Max",
+                            "lastname": "Langer"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.1002/ar.70085"
+                        }
+                    ],
+                    "link": [],
+                    "journal": {
+                        "name": "The Anatomical Record",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The largest clade containing Tyrannosaurus rex Osborn 1905, but not Vultur gryphus Linnaeus 1758 or Ornithomimus velox Marsh 1890",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Tyrannosaurus rex Osborn, 1905",
+                        "nameComplete": "Tyrannosaurus rex"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Vultur gryphus Linnaeus, 1758",
+                        "nameComplete": "Vultur gryphus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Ornithomimus velox Marsh, 1890",
+                        "nameComplete": "Ornithomimus velox"
+                    }
+                }
+            ]
+        }
+    ]
+}

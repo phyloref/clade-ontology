@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -408,10 +408,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 90,
+            "curatorNotes": "Regnum ID: '90'",
             "label": "Rhizaria",
-            "dwc:scientificNameAuthorship": "Simpson, A. G. B.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Simpson, A. G. B.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "The phagotrophic origin of eukaryotes and phylogenetic classification of Protozoa.",
@@ -437,8 +437,60 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The smallest crown clade containing Bigelowiella natans Moestrup & Sengco 2001 (Filosa), Plasmodiophora brassicae Woronin 1877 (Phytomyxea), Reticulomyxa filosa Nauss 1949 (Retaria), Collozoum inerme (Müller 1855) Haeckel 1887 (Retaria), Gromia sphaerica Gooday, Bowser, Bett & Smith 2000 and Bonamia ostreae Pichot, Comps, Tigé, Grizel and Rabouin 1980 (Ascetosporea) but not Tetrahymena thermophila Nanney & McCoy, 1976 (Alveolata) or Thalassiosira pseudonana Cleve, 1873 (Stramenopila).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Rhizaria",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "A. G.  B.  Simpson",
+                            "alternate": [
+                                "Simpson, A. G.  B."
+                            ],
+                            "firstname": "A. G.",
+                            "lastname": "Simpson",
+                            "middlename": "B."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "61-65",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The smallest crown clade containing Bigelowiella natans Moestrup & Sengco 2001 (Filosa), Plasmodiophora brassicae Woronin 1877 (Phytomyxea), Reticulomyxa filosa Nauss 1949 (Retaria), Collozoum inerme (Müller 1855) Haeckel 1887 (Retaria), Gromia sphaerica Gooday, Bowser, Bett & Smith 2000 and Bonamia ostreae Pichot, Comps, Tigé, Grizel and Rabouin 1980 (Ascetosporea) but not Tetrahymena thermophila Nanney & McCoy, 1976 (Alveolata) or Thalassiosira pseudonana Cleve, 1873 (Stramenopila).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -448,73 +500,9 @@
                         "label": "Bigelowiella natans Moestrup, 2001",
                         "nameComplete": "Bigelowiella natans"
                     }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Plasmodiophora brassicae Woronin, 1877",
-                        "nameComplete": "Plasmodiophora brassicae"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Reticulomyxa filosa Nauss, 1949",
-                        "nameComplete": "Reticulomyxa filosa"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Collozoum inerme Haeckel, 1887",
-                        "nameComplete": "Collozoum inerme"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Gromia sphaerica Gooday, 2000",
-                        "nameComplete": "Gromia sphaerica"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Bonamia ostreae Pichot, 1980",
-                        "nameComplete": "Bonamia ostreae"
-                    }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Tetrahymena thermophila Nanney, 1976",
-                        "nameComplete": "Tetrahymena thermophila"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Thalassiosira pseudonana Cleve, 1873",
-                        "nameComplete": "Thalassiosira pseudonana"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

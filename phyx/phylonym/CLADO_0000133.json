@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -87,10 +87,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 133,
+            "curatorNotes": "Regnum ID: '133'",
             "label": "Hildenbrandiales",
-            "dwc:scientificNameAuthorship": "Saunders, G. W.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Saunders, G. W.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Ultrastructural observations of tetrasporangia and conceptacles in Hildenbrandia (Rhodophyta, Hildenbrandiales).",
@@ -131,8 +131,60 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "the largest crown clade containing Hildenbrandia prototypus Nardo 1834 (= Hildenbrandia rubra (Sommerfelt) Meneghini 1841) but not Ahnfeltia plicata (Hudson) Fries 1836, Chondrus crispus Stackhouse 1797, Corallina officinalis Linnaeus 1758, and Palmaria palmata (Linnaeus) Kuntze 1891.",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Hildenbrandiales",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "G. W. Saunders",
+                            "alternate": [
+                                "Saunders, G. W."
+                            ],
+                            "firstname": "G.",
+                            "lastname": "Saunders",
+                            "middlename": "W."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "165-166",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "the largest crown clade containing Hildenbrandia prototypus Nardo 1834 (= Hildenbrandia rubra (Sommerfelt) Meneghini 1841) but not Ahnfeltia plicata (Hudson) Fries 1836, Chondrus crispus Stackhouse 1797, Corallina officinalis Linnaeus 1758, and Palmaria palmata (Linnaeus) Kuntze 1891.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -142,55 +194,9 @@
                         "label": "Hildenbrandia prototypus Nardo, 1834",
                         "nameComplete": "Hildenbrandia prototypus"
                     }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Hildenbrandia rubra Meneghini, 1841",
-                        "nameComplete": "Hildenbrandia rubra"
-                    }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Ahnfeltia plicata Fries, 1836",
-                        "nameComplete": "Ahnfeltia plicata"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Chondrus crispus Stackhouse, 1797",
-                        "nameComplete": "Chondrus crispus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Corallina officinalis Linnaeus, 1758",
-                        "nameComplete": "Corallina officinalis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Palmaria palmata Kuntze, 1891",
-                        "nameComplete": "Palmaria palmata"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

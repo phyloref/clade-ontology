@@ -1,6 +1,78 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Amniote phylogeny and the importance of fossils.",
+                "edition": "4",
+                "authors": [
+                    {
+                        "name": "Gauthier",
+                        "alternate": [
+                            "Gauthier,"
+                        ],
+                        "lastname": "Gauthier"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.1096-0031.1988.tb00514"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Cladistics",
+                    "volume": "2",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "The phylogeny of early eureptiles: comparing parsimony and Bayesian approaches in the investigation of a basal fossil clade.",
+                "year": 2006,
+                "authors": [
+                    {
+                        "name": "J. Muller",
+                        "alternate": [
+                            "Muller, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Muller"
+                    },
+                    {
+                        "name": "R. R. Reisz",
+                        "alternate": [
+                            "Reisz, R. R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Reisz",
+                        "middlename": "R."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1080/10635150600755396"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Systematic Biology",
+                    "volume": "55",
+                    "identifier": []
+                }
+            }
+        },
         {
             "primaryPhylogenyCitation": {
                 "type": "article",
@@ -88,86 +160,14 @@
                 "identifier": [],
                 "link": []
             }
-        },
-        {
-            "phylogenyCitation": {
-                "type": "article",
-                "title": "Amniote phylogeny and the importance of fossils.",
-                "edition": "4",
-                "authors": [
-                    {
-                        "name": "Gauthier",
-                        "alternate": [
-                            "Gauthier,"
-                        ],
-                        "lastname": "Gauthier"
-                    }
-                ],
-                "editors": [],
-                "series_editors": [],
-                "figure": "3",
-                "identifier": [
-                    {
-                        "type": "doi",
-                        "id": "10.1111/j.1096-0031.1988.tb00514"
-                    }
-                ],
-                "link": [],
-                "journal": {
-                    "name": "Cladistics",
-                    "volume": "2",
-                    "identifier": []
-                }
-            }
-        },
-        {
-            "phylogenyCitation": {
-                "type": "article",
-                "title": "The phylogeny of early eureptiles: comparing parsimony and Bayesian approaches in the investigation of a basal fossil clade.",
-                "year": 2006,
-                "authors": [
-                    {
-                        "name": "J. Muller",
-                        "alternate": [
-                            "Muller, J."
-                        ],
-                        "firstname": "J.",
-                        "lastname": "Muller"
-                    },
-                    {
-                        "name": "R. R. Reisz",
-                        "alternate": [
-                            "Reisz, R. R."
-                        ],
-                        "firstname": "R.",
-                        "lastname": "Reisz",
-                        "middlename": "R."
-                    }
-                ],
-                "editors": [],
-                "series_editors": [],
-                "figure": "2",
-                "identifier": [
-                    {
-                        "type": "doi",
-                        "id": "10.1080/10635150600755396"
-                    }
-                ],
-                "link": [],
-                "journal": {
-                    "name": "Systematic Biology",
-                    "volume": "55",
-                    "identifier": []
-                }
-            }
         }
     ],
     "phylorefs": [
         {
-            "regnumId": 120,
+            "curatorNotes": "Regnum ID: '120'",
             "label": "Diapsida",
-            "dwc:scientificNameAuthorship": "Gauthier, J. A., de Queiroz, K.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Gauthier, J. A. and de Queiroz, K.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "On the primary division of the Reptilia into two sub-classes, Synapsida and Diapsida.",
@@ -195,8 +195,68 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The clade characterized by the apomorphy ‘upper and lower temporal fenestrae’, as inherited by Sphenodon (Hatteria) punctatus (Gray 1842) (Rhynchocephalia).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Diapsida",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        },
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "1032-1040",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The clade characterized by the apomorphy ‘upper and lower temporal fenestrae’, as inherited by Sphenodon (Hatteria) punctatus (Gray 1842) (Rhynchocephalia).",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

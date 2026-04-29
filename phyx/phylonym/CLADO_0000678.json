@@ -1,0 +1,141 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Resolving phylogenetic and classical nomenclature: A revision of Seraphsidae Jung, 1974 (Gastropoda: Neostromboidae)",
+                "year": 2021,
+                "edition": "4990",
+                "authors": [
+                    {
+                        "name": "S J Maxwe11",
+                        "alternate": [
+                            "Maxwe11, S J"
+                        ],
+                        "firstname": "S",
+                        "lastname": "Maxwe11",
+                        "middlename": "J"
+                    },
+                    {
+                        "name": "T L Rymer",
+                        "alternate": [
+                            "Rymer, T L"
+                        ],
+                        "firstname": "T",
+                        "lastname": "Rymer",
+                        "middlename": "L"
+                    },
+                    {
+                        "name": "B C Congdon",
+                        "alternate": [
+                            "Congdon, B C"
+                        ],
+                        "firstname": "B",
+                        "lastname": "Congdon",
+                        "middlename": "C"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Zootaxa",
+                    "volume": "3",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '678'",
+            "label": "Diameza",
+            "scientificNameAuthorship": "Maxwell, S J and Maxwell, T L and Congdon, B C",
+            "namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Description des Animaux sans Vertébres Découverts dans le Basin de Paris.",
+                    "year": 1865,
+                    "authors": [
+                        {
+                            "name": "G P Deshayes",
+                            "alternate": [
+                                "Deshayes, G P"
+                            ],
+                            "firstname": "G",
+                            "lastname": "Deshayes",
+                            "middlename": "P"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "city": "Paris",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Resolving phylogenetic and classical nomenclature: A revision of Seraphsidae Jung, 1974 (Gastropoda: Neostromboidae)",
+                    "year": 2021,
+                    "edition": "4990",
+                    "authors": [
+                        {
+                            "name": "Stephen J Maxwell",
+                            "alternate": [
+                                "Maxwell, Stephen J"
+                            ],
+                            "firstname": "Stephen",
+                            "lastname": "Maxwell",
+                            "middlename": "J"
+                        },
+                        {
+                            "name": "Tasmin L Rymer",
+                            "alternate": [
+                                "Rymer, Tasmin L"
+                            ],
+                            "firstname": "Tasmin",
+                            "lastname": "Rymer",
+                            "middlename": "L"
+                        },
+                        {
+                            "name": "Bradley C Congdon",
+                            "alternate": [
+                                "Congdon, Bradley C"
+                            ],
+                            "firstname": "Bradley",
+                            "lastname": "Congdon",
+                            "middlename": "C"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Zootaxa",
+                        "volume": "3",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The maximum clade consisting of Diameza fragilis (Defrance, 1825) and all species that share a more recent common ancestor with it than with Seraphs sopitus (Brander, 1766), Miniseraphs eratoides (Cossmann, 1889) or Terebellum terebellum (Linnaeus, 1758).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Diameza fragilis Defrance, 1825",
+                        "nameComplete": "Diameza fragilis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

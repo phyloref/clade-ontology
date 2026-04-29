@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -64,10 +64,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 276,
+            "curatorNotes": "Regnum ID: '276'",
             "label": "Pleurodira",
-            "dwc:scientificNameAuthorship": "Joyce, W. G., Parham, J. F., Anquetin, J., Claude, J., Danilov, I. G., Iverson, J. B., Kear, B., Lyson, T. R., Rabi, M., Sterli, J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Joyce, W. G. and Parham, J. F. and Anquetin, J. and Claude, J. and Danilov, I. G. and Iverson, J. B. and Kear, B. and Lyson, T. R. and Rabi, M. and Sterli, J.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Third contribution to the herpetology of tropical America.",
@@ -95,8 +95,136 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The smallest crown clade containing the chelid Chelus (originally Testudo) fimbriatus Schneider 1783 the pelomedusid Pelomedusa (originally Testudo) subrufa Bonnaterre 1789 and the podocnemid Podocnemis (originally Emys) expansa Schweigger 1812.",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Pleurodira",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "W. G. Joyce",
+                            "alternate": [
+                                "Joyce, W. G."
+                            ],
+                            "firstname": "W.",
+                            "lastname": "Joyce",
+                            "middlename": "G."
+                        },
+                        {
+                            "name": "J. F. Parham",
+                            "alternate": [
+                                "Parham, J. F."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Parham",
+                            "middlename": "F."
+                        },
+                        {
+                            "name": "J. Anquetin",
+                            "alternate": [
+                                "Anquetin, J."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Anquetin"
+                        },
+                        {
+                            "name": "J. Claude",
+                            "alternate": [
+                                "Claude, J."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Claude"
+                        },
+                        {
+                            "name": "I. G. Danilov",
+                            "alternate": [
+                                "Danilov, I. G."
+                            ],
+                            "firstname": "I.",
+                            "lastname": "Danilov",
+                            "middlename": "G."
+                        },
+                        {
+                            "name": "J.  B. Iverson",
+                            "alternate": [
+                                "Iverson, J.  B."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Iverson",
+                            "middlename": "B."
+                        },
+                        {
+                            "name": "B. Kear",
+                            "alternate": [
+                                "Kear, B."
+                            ],
+                            "firstname": "B.",
+                            "lastname": "Kear"
+                        },
+                        {
+                            "name": "T. R. Lyson",
+                            "alternate": [
+                                "Lyson, T. R."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Lyson",
+                            "middlename": "R."
+                        },
+                        {
+                            "name": "M. Rabi",
+                            "alternate": [
+                                "Rabi, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Rabi"
+                        },
+                        {
+                            "name": "J. Sterli",
+                            "alternate": [
+                                "Sterli, J."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Sterli"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "1055-1057",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The smallest crown clade containing the chelid Chelus (originally Testudo) fimbriatus Schneider 1783 the pelomedusid Pelomedusa (originally Testudo) subrufa Bonnaterre 1789 and the podocnemid Podocnemis (originally Emys) expansa Schweigger 1812.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -105,24 +233,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Chelus (originally Testudo) fimbriatus Schneider, 1783",
                         "nameComplete": "Chelus (originally Testudo) fimbriatus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Pelomedusa (originally Testudo) subrufa Bonnaterre, 1789",
-                        "nameComplete": "Pelomedusa (originally Testudo) subrufa"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Podocnemis (originally Emys) expansa Schweigger, 1812",
-                        "nameComplete": "Podocnemis (originally Emys) expansa"
                     }
                 }
             ],

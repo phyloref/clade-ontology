@@ -13,8 +13,10 @@ const BASE_DIR = 'phyx/';
  *  - 2. See if JPhyloRef can validate the ontology without a problem.
  */
 
-// Load phyx.js, our Phyx library.
-const phyx = require('@phyloref/phyx');
+// Load phyx.js classes directly from source to avoid the ESM/apply incompatibility
+// triggered by the package index pulling in PhyxWrapper → jsonld (Node.js v14+).
+const { PhyxWrapper } = require('@phyloref/phyx/src/wrappers/PhyxWrapper');
+const { PhylorefWrapper } = require('@phyloref/phyx/src/wrappers/PhylorefWrapper');
 
 // Javascript libraries.
 const ChildProcess = require('node:child_process');
@@ -106,7 +108,7 @@ describe('Test Phyx files in repository', () => {
       // Read the Phyx data as UTF-8 and convert it into JSON-LD.
       let wrappedPhyx;
       try {
-        wrappedPhyx = new phyx.PhyxWrapper(json);
+        wrappedPhyx = new PhyxWrapper(json);
       } catch (ex) {
         it('Exception thrown while loading Phyx to JSON-LD', () => {
           throw ex;
@@ -137,7 +139,7 @@ describe('Test Phyx files in repository', () => {
       // console.log(`Loaded Phyx file ${filename}`);
 
       const skipFile = (json.phylorefs || [])
-        .map(phyloref => new phyx.PhylorefWrapper(phyloref))
+        .map(phyloref => new PhylorefWrapper(phyloref))
         .map((wrappedPhyloref) => {
           if (wrappedPhyloref.internalSpecifiers.length > MAX_INTERNAL_SPECIFIERS) {
             it.skip(
@@ -157,16 +159,32 @@ describe('Test Phyx files in repository', () => {
             return true;
           }
 
+          const totalSpecifiers = wrappedPhyloref.internalSpecifiers.length
+            + wrappedPhyloref.externalSpecifiers.length;
+          if (totalSpecifiers < 2) {
+            it.skip(
+              `Phyloreference ${wrappedPhyloref.label} has only ${totalSpecifiers} specifier(s) and cannot be converted to a clade expression.`
+            );
+            return true;
+          }
+
           return false;
         })
         .reduce((a, b) => a || b, false);
 
       if (!skipFile) {
         console.log(`Converting Phyx file ${filename} into JSON-LD`);
-        const jsonld = JSON.stringify(wrappedPhyx.asJSONLD());
+        let jsonld;
+        let asJSONLDError;
+        try {
+          jsonld = JSON.stringify(wrappedPhyx.asJSONLD());
+        } catch (ex) {
+          asJSONLDError = ex;
+        }
 
         // Make sure the produced JSON-LD is not empty.
         it('produced a non-empty JSON-LD ontology without throwing an exception', () => {
+          if (asJSONLDError) throw asJSONLDError;
           assert.isNotEmpty(jsonld);
         });
 

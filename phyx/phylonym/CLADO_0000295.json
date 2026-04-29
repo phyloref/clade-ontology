@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -170,10 +170,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 295,
+            "curatorNotes": "Regnum ID: '295'",
             "label": "Sauropodomorpha",
-            "dwc:scientificNameAuthorship": "Fabbri, M., Tschopp, E., McPhee, B., Nesbitt, S., Pol, D., Langer, M.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Fabbri, M. and Tschopp, E. and McPhee, B. and Nesbitt, S. and Pol, D. and Langer, M.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Die fossile Reptile-Ordnung Saurischia, ihre Entwicklung und Geschichte",
@@ -201,8 +201,99 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The largest clade containing Saltasaurus loricatus Bonaparte and Powell 1980 (Sauropodomorpha/Neosauropoda) but not Allosaurus fragilis Marsh 1877 (Neotheropoda) and Iguanodon bernissartensis Boulenger in Beneden 1881 (Ornithischia).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Sauropodomorpha",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "M. Fabbri",
+                            "alternate": [
+                                "Fabbri, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Fabbri"
+                        },
+                        {
+                            "name": "E. Tschopp",
+                            "alternate": [
+                                "Tschopp, E."
+                            ],
+                            "firstname": "E.",
+                            "lastname": "Tschopp"
+                        },
+                        {
+                            "name": "B. McPhee",
+                            "alternate": [
+                                "McPhee, B."
+                            ],
+                            "firstname": "B.",
+                            "lastname": "McPhee"
+                        },
+                        {
+                            "name": "S. Nesbitt",
+                            "alternate": [
+                                "Nesbitt, S."
+                            ],
+                            "firstname": "S.",
+                            "lastname": "Nesbitt"
+                        },
+                        {
+                            "name": "D. Pol",
+                            "alternate": [
+                                "Pol, D."
+                            ],
+                            "firstname": "D.",
+                            "lastname": "Pol"
+                        },
+                        {
+                            "name": "M. Langer",
+                            "alternate": [
+                                "Langer, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Langer"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "1225-1234",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The largest clade containing Saltasaurus loricatus Bonaparte and Powell 1980 (Sauropodomorpha/Neosauropoda) but not Allosaurus fragilis Marsh 1877 (Neotheropoda) and Iguanodon bernissartensis Boulenger in Beneden 1881 (Ornithischia).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -214,26 +305,7 @@
                     }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Allosaurus fragilis Marsh, 1877",
-                        "nameComplete": "Allosaurus fragilis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Iguanodon bernissartensis Boulenger, 1881",
-                        "nameComplete": "Iguanodon bernissartensis"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

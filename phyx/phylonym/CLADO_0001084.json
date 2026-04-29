@@ -1,0 +1,129 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Towards a phylogenetic taxonomy of sturgeons (Acipenseriformes: Acipenseridae)",
+                "authors": [
+                    {
+                        "name": "C. D. Brownstein",
+                        "alternate": [
+                            "Brownstein, C. D."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Brownstein",
+                        "middlename": "D."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "5",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Bulletin of the Peabody Museum of Natural History",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '1084'",
+            "label": "Pseudoscaphirhynchus",
+            "scientificNameAuthorship": "Near, T. J. and Brownstein, C. D.",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Pseudoscaphirhynchus rossikowi n. gen. et spec.",
+                    "year": 1900,
+                    "authors": [
+                        {
+                            "name": "A. M. Nikolskii",
+                            "alternate": [
+                                "Nikolskii, A. M."
+                            ],
+                            "firstname": "A.",
+                            "lastname": "Nikolskii",
+                            "middlename": "M."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Ezhegodnik, Zoologicheskogo Muzeia, Sankt-Petersburg",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Towards a phylogenetic taxonomy of sturgeons (Acipenseriformes: Acipenseridae)",
+                    "authors": [
+                        {
+                            "name": "C. D. Brownstein",
+                            "alternate": [
+                                "Brownstein, C. D."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Brownstein",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "T. J. Near",
+                            "alternate": [
+                                "Near, T. J."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The least inclusive crown clade that contains Pseudoscaphirhynchus fedtschenkoi (Kessler 1872), Pseudoscaphirhynchus hermanni (Kessler 1877), and Pseudoscaphirhynchus kaufmanni (Kessler 1877). This is a minimum-crown-clade definition.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Pseudoscaphirhynchus fedtschenkoi Kessler, 1872",
+                        "nameComplete": "Pseudoscaphirhynchus fedtschenkoi"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Pseudoscaphirhynchus hermanni Kessler, 1877",
+                        "nameComplete": "Pseudoscaphirhynchus hermanni"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Pseudoscaphirhynchus kaufmanni Kessler, 1877",
+                        "nameComplete": "Pseudoscaphirhynchus kaufmanni"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

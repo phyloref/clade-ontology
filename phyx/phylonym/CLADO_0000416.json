@@ -1,0 +1,137 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "An unbiased molecular approach using 3’UTRs resolves the avian family-level tree of life",
+                "year": 2020,
+                "authors": [
+                    {
+                        "name": "H. Kuhl",
+                        "alternate": [
+                            "Kuhl, H."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Kuhl"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "Figure 3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "https://doi.org/10.1093/molbev/msaa191"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "https://academic.oup.com/mbe/advance-article/doi/10.1093/molbev/msaa191/5891114"
+                    }
+                ],
+                "journal": {
+                    "name": "Mol. Biol. Evol",
+                    "identifier": [
+                        {
+                            "type": "isbn",
+                            "id": "1537-1719"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "A comprehensive phylogeny of birds (Aves) using targeted next-generation DNA sequencing",
+                "year": 2015,
+                "authors": [
+                    {
+                        "name": "Richard O. Prum",
+                        "alternate": [
+                            "Prum, Richard O."
+                        ],
+                        "firstname": "Richard",
+                        "lastname": "Prum",
+                        "middlename": "O."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "Fig. 1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1038/nature15697"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "https://www.nature.com/articles/nature15697"
+                    }
+                ],
+                "journal": {
+                    "name": "Nature",
+                    "volume": "526",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '416'",
+            "label": "Feraequornithes",
+            "scientificNameAuthorship": "Sangster, George and Mayr, Gerald",
+            "namePublishedIn": [],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "A name for the clade formed by Procellariiformes, Sphenisciformes, Ciconiiformes, Suliformes and Pelecaniformes",
+                    "year": 2021,
+                    "authors": [
+                        {
+                            "name": "G. Sanger",
+                            "alternate": [
+                                "Sanger, G."
+                            ],
+                            "firstname": "G.",
+                            "lastname": "Sanger"
+                        },
+                        {
+                            "name": "G. Mayer",
+                            "alternate": [
+                                "Mayer, G."
+                            ],
+                            "firstname": "G.",
+                            "lastname": "Mayer"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Vertebrate Zoology",
+                        "volume": "71",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The least-inclusive crown clade containing Pelecanus onocrotalus Linnaeus, 1758 and Procellaria aequinoctialis Linnaeus, 1758.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Procellaria aequinoctialis Linnaeus, 1758",
+                        "nameComplete": "Procellaria aequinoctialis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

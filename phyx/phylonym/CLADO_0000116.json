@@ -1,58 +1,6 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
-        {
-            "primaryPhylogenyCitation": {
-                "type": "article",
-                "title": "Ribosomal RNA phylogeny of bodonid and diplonemid flagellates and the evolution of Euglenozoa.",
-                "year": 2004,
-                "authors": [
-                    {
-                        "name": "S. von der Heyden",
-                        "alternate": [
-                            "von der Heyden, S."
-                        ],
-                        "firstname": "S.",
-                        "lastname": "von der Heyden"
-                    },
-                    {
-                        "name": "E. E. Chao",
-                        "alternate": [
-                            "Chao, E. E."
-                        ],
-                        "firstname": "E.",
-                        "lastname": "Chao",
-                        "middlename": "E."
-                    },
-                    {
-                        "name": "K. Vickerman",
-                        "alternate": [
-                            "Vickerman, K."
-                        ],
-                        "firstname": "K.",
-                        "lastname": "Vickerman"
-                    },
-                    {
-                        "name": "T. Cavalier-Smith",
-                        "alternate": [
-                            "Cavalier-Smith, T."
-                        ],
-                        "firstname": "T.",
-                        "lastname": "Cavalier-Smith"
-                    }
-                ],
-                "editors": [],
-                "series_editors": [],
-                "figure": "1",
-                "identifier": [],
-                "link": [],
-                "journal": {
-                    "name": "J. Eukaryot. Microbiol.",
-                    "volume": "51",
-                    "identifier": []
-                }
-            }
-        },
         {
             "phylogenyCitation": {
                 "type": "article",
@@ -121,14 +69,66 @@
                     "identifier": []
                 }
             }
+        },
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Ribosomal RNA phylogeny of bodonid and diplonemid flagellates and the evolution of Euglenozoa.",
+                "year": 2004,
+                "authors": [
+                    {
+                        "name": "S. von der Heyden",
+                        "alternate": [
+                            "von der Heyden, S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "von der Heyden"
+                    },
+                    {
+                        "name": "E. E. Chao",
+                        "alternate": [
+                            "Chao, E. E."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Chao",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "K. Vickerman",
+                        "alternate": [
+                            "Vickerman, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Vickerman"
+                    },
+                    {
+                        "name": "T. Cavalier-Smith",
+                        "alternate": [
+                            "Cavalier-Smith, T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Cavalier-Smith"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "J. Eukaryot. Microbiol.",
+                    "volume": "51",
+                    "identifier": []
+                }
+            }
         }
     ],
     "phylorefs": [
         {
-            "regnumId": 116,
+            "curatorNotes": "Regnum ID: '116'",
             "label": "Euglenozoa",
-            "dwc:scientificNameAuthorship": "Simpson, A. G. B.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Simpson, A. G. B.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Eukaryote kingdoms: seven or nine?",
@@ -155,8 +155,60 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The crown clade for which paraxonemal rods, as inherited by Entosiphon sulcatum (Dujardin) Stein 1878, are an apomorphy relative to other crown clades.  Heteromorphic in this sense specifically means with a three-dimensional lattice appearance in the posterior/ventral flagellum (flagellum 1) and a tubular/whorled appearance in the anterior/dorsal flagellum (flagellum 2).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Euglenozoa",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "A. G.  B.  Simpson",
+                            "alternate": [
+                                "Simpson, A. G.  B."
+                            ],
+                            "firstname": "A. G.",
+                            "lastname": "Simpson",
+                            "middlename": "B."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "47-49",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The crown clade for which paraxonemal rods, as inherited by Entosiphon sulcatum (Dujardin) Stein 1878, are an apomorphy relative to other crown clades.  Heteromorphic in this sense specifically means with a three-dimensional lattice appearance in the posterior/ventral flagellum (flagellum 1) and a tubular/whorled appearance in the anterior/dorsal flagellum (flagellum 2).",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

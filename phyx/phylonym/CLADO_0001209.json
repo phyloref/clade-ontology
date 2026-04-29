@@ -1,0 +1,184 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "New Patagonian baurusuchids (Crocodylomorpha; Notosuchia) from the Bajo de la Carpa Formation (Upper Cretaceous; Neuquén, Argentina): New evidences of the early sebecosuchian diversification in Gondwana",
+                "year": 2018,
+                "authors": [
+                    {
+                        "name": "Juan Martín Leardi",
+                        "alternate": [
+                            "Leardi, Juan Martín"
+                        ],
+                        "firstname": "Juan",
+                        "lastname": "Leardi",
+                        "middlename": "Martín"
+                    },
+                    {
+                        "name": "Diego Pol",
+                        "alternate": [
+                            "Pol, Diego"
+                        ],
+                        "firstname": "Diego",
+                        "lastname": "Pol"
+                    },
+                    {
+                        "name": "Zulma Gasparini",
+                        "alternate": [
+                            "Gasparini, Zulma"
+                        ],
+                        "firstname": "Zulma",
+                        "lastname": "Gasparini"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2S",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Comptes Rendus Palevol",
+                    "volume": "17",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '1209'",
+            "label": "Stenorhynchosuchia",
+            "scientificNameAuthorship": "Jouve, Stéphane and Young, Mark Thomas and Hastings, Alexander K. and Salih, Khalafallah",
+            "namePublishedIn": [],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "The systematics and nomenclature of Tethysuchia (Archosauria, Crocodylomorpha) under the International Code of Phylogenetic Nomenclature",
+                    "authors": [
+                        {
+                            "name": "Stéphane Jouve",
+                            "alternate": [
+                                "Jouve, Stéphane"
+                            ],
+                            "firstname": "Stéphane",
+                            "lastname": "Jouve"
+                        },
+                        {
+                            "name": "Mark T. Young",
+                            "alternate": [
+                                "Young, Mark T."
+                            ],
+                            "firstname": "Mark",
+                            "lastname": "Young",
+                            "middlename": "T."
+                        },
+                        {
+                            "name": "Alexander K. Hastings",
+                            "alternate": [
+                                "Hastings, Alexander K."
+                            ],
+                            "firstname": "Alexander",
+                            "lastname": "Hastings",
+                            "middlename": "K."
+                        },
+                        {
+                            "name": "Khalafallah Salih",
+                            "alternate": [
+                                "Salih, Khalafallah"
+                            ],
+                            "firstname": "Khalafallah",
+                            "lastname": "Salih"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Zoological Journal of the Linnean Society",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "Stenorhynchosuchia is the largest clade within Crocodylomorpha containing Dyrosaurus phosphaticus (Thomas Philippe 1893), Pholidosaurus schaumburgensis von Meyer 1841, Macrospondylus bollensis (Jäger 1928), Thalattosuchus superciliosus (Blainville 1853), but not Protosuchus richardsoni Brown 1933, Goniopholis simus Owen 1878, Antheophthalmosuchus hooleyi Salisbury and Naish 2011, or Crocodylus niloticus (Laurent 1768).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Dyrosaurus phosphaticus Thomas, 1893",
+                        "nameComplete": "Dyrosaurus phosphaticus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Pholidosaurus schaumburgensis von Meyer, 1841",
+                        "nameComplete": "Pholidosaurus schaumburgensis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Macrospondylus bollensis Jäger, 1928",
+                        "nameComplete": "Macrospondylus bollensis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Thalattosuchus superciliosus de Blainville, 1853",
+                        "nameComplete": "Thalattosuchus superciliosus"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Protosuchus richardsoni Brown, 1933",
+                        "nameComplete": "Protosuchus richardsoni"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Goniopholis simus Owen, 1878",
+                        "nameComplete": "Goniopholis simus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Antheophthalmosuchus hooleyi Salisbury and Naish, 2011",
+                        "nameComplete": "Antheophthalmosuchus hooleyi"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Crocodylus niloticus Laurenti, 1768",
+                        "nameComplete": "Crocodylus niloticus"
+                    }
+                }
+            ]
+        }
+    ]
+}

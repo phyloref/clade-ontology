@@ -1,0 +1,64 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '1139'",
+            "label": "Nemorense",
+            "scientificNameAuthorship": "Bohs, Lynn",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Taxonomic studies in Solanum L. 1. Section Nemorense Child, sectio nova.",
+                    "year": 1983,
+                    "authors": [
+                        {
+                            "name": "A Child",
+                            "alternate": [
+                                "Child, A"
+                            ],
+                            "firstname": "A",
+                            "lastname": "Child"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [
+                        {
+                            "url": "https://doi.org/10.1002/fedr.19830940104 "
+                        }
+                    ],
+                    "journal": {
+                        "name": "Feddes Repertorium",
+                        "volume": "94",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [],
+            "definition": "The minimum crown clade containing Solanum nemorense Dunal 1813 and Solanum reptans Bunbury 1841.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Solanum nemorense Dunal, 1813",
+                        "nameComplete": "Solanum nemorense"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Solanum reptans Bunbury, 1841",
+                        "nameComplete": "Solanum reptans"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

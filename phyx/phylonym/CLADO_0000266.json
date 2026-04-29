@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -118,10 +118,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 266,
+            "curatorNotes": "Regnum ID: '266'",
             "label": "Antilopinae",
-            "dwc:scientificNameAuthorship": "Bibi, F., Vrba, E. S.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Bibi, F. and Vrba, E. S.",
+            "namePublishedIn": [
                 {
                     "type": "book_section",
                     "title": "Explorations and surveys for a railroad route from the Mississippi River to the Pacific Ocean.",
@@ -145,8 +145,68 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Antilope cervicapra (Linnaeus 1758) (Antilopini) and all extant bovids that share a more recent common ancestor with Antilope cervicapra than with Bos taurus Linnaeus 1758 (Bovini).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Antilopinae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "F. Bibi",
+                            "alternate": [
+                                "Bibi, F."
+                            ],
+                            "firstname": "F.",
+                            "lastname": "Bibi"
+                        },
+                        {
+                            "name": "E. S. Vrba",
+                            "alternate": [
+                                "Vrba, E. S."
+                            ],
+                            "firstname": "E.",
+                            "lastname": "Vrba",
+                            "middlename": "S."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "975-977",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The crown clade originating in the most recent common ancestor of Antilope cervicapra (Linnaeus 1758) (Antilopini) and all extant bovids that share a more recent common ancestor with Antilope cervicapra than with Bos taurus Linnaeus 1758 (Bovini).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -158,17 +218,7 @@
                     }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Bos taurus Linnaeus, 1758",
-                        "nameComplete": "Bos taurus"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

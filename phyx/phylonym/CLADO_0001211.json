@@ -1,0 +1,207 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "The systematics and nomenclature of Tethysuchia (Archosauria, Crocodylomorpha) under the International Code of Phylogenetic Nomenclature",
+                "authors": [
+                    {
+                        "name": "Stéphane Jouve",
+                        "alternate": [
+                            "Jouve, Stéphane"
+                        ],
+                        "firstname": "Stéphane",
+                        "lastname": "Jouve"
+                    },
+                    {
+                        "name": "Mark T. Young",
+                        "alternate": [
+                            "Young, Mark T."
+                        ],
+                        "firstname": "Mark",
+                        "lastname": "Young",
+                        "middlename": "T."
+                    },
+                    {
+                        "name": "Alexander K. Hastings",
+                        "alternate": [
+                            "Hastings, Alexander K."
+                        ],
+                        "firstname": "Alexander",
+                        "lastname": "Hastings",
+                        "middlename": "K."
+                    },
+                    {
+                        "name": "Khalafallah Salih",
+                        "alternate": [
+                            "Salih, Khalafallah"
+                        ],
+                        "firstname": "Khalafallah",
+                        "lastname": "Salih"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "Figs. 2-3",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Zoological Journal of the Linnean Society",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '1211'",
+            "label": "Tethysuchia",
+            "scientificNameAuthorship": "Jouve, Stéphane and Young, Mark T. and Hastings, Alexander K. and Salih, Khalafallah",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Radiation évolutive, paléoécologie et biogéographie des crocodiliens mésosuchiens.",
+                    "year": 1982,
+                    "authors": [
+                        {
+                            "name": "Eric Buffetaut",
+                            "alternate": [
+                                "Buffetaut, Eric"
+                            ],
+                            "firstname": "Eric",
+                            "lastname": "Buffetaut"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Mémoires de la Société Géologique de France",
+                        "volume": "New serie",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "The systematics and nomenclature of Tethysuchia (Archosauria, Crocodylomorpha) under the International Code of Phylogenetic Nomenclature",
+                    "authors": [
+                        {
+                            "name": "Stéphane Jouve",
+                            "alternate": [
+                                "Jouve, Stéphane"
+                            ],
+                            "firstname": "Stéphane",
+                            "lastname": "Jouve"
+                        },
+                        {
+                            "name": "Mark T. Young",
+                            "alternate": [
+                                "Young, Mark T."
+                            ],
+                            "firstname": "Mark",
+                            "lastname": "Young",
+                            "middlename": "T."
+                        },
+                        {
+                            "name": "Alexander K. Hastings",
+                            "alternate": [
+                                "Hastings, Alexander K."
+                            ],
+                            "firstname": "Alexander",
+                            "lastname": "Hastings",
+                            "middlename": "K."
+                        },
+                        {
+                            "name": "Khalafallah Salih",
+                            "alternate": [
+                                "Salih, Khalafallah"
+                            ],
+                            "firstname": "Khalafallah",
+                            "lastname": "Salih"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Zoological Journal of the Linnean Society",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "Tethysuchia is the largest clade within Crocodylomorpha containing Dyrosaurus phosphaticus (Thomas 1893), Elosuchus cherifiensis (Lavocat 1955), and Pholidosaurus schaumburgensis Meyer, 1841, but not Thalattosuchus superciliosus (Blainville 1853), Goniopholis crassidens Owen 1841, Anteophthalmosuchus hooleyi Salisbury and Naish 2011, or Crocodylus niloticus (Laurenti 1768).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Dyrosaurus phosphaticus Thomas, 1893",
+                        "nameComplete": "Dyrosaurus phosphaticus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Elosuchus cherifiensis Lavocat, 1955",
+                        "nameComplete": "Elosuchus cherifiensis"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Pholidosaurus schaumburgensis von Meyer, 1841",
+                        "nameComplete": "Pholidosaurus schaumburgensis"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Thalattosuchus superciliosus de Blainville, 1853",
+                        "nameComplete": "Thalattosuchus superciliosus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Goniopholis crassidens Owen, 1841",
+                        "nameComplete": "Goniopholis crassidens"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Anteophthalmosuchus hooleyi Salisbury and Naish, 2011",
+                        "nameComplete": "Anteophthalmosuchus hooleyi"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Crocodylus niloticus Laurenti, 1768",
+                        "nameComplete": "Crocodylus niloticus"
+                    }
+                }
+            ]
+        }
+    ]
+}

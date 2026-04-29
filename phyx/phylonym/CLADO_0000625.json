@@ -1,0 +1,182 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A new phylogeny of cerapodan dinosaurs",
+                "year": 2020,
+                "authors": [
+                    {
+                        "name": "P. E. Dieudonné",
+                        "alternate": [
+                            "Dieudonné, P. E."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Dieudonné",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "P. Cruzado-Caballero",
+                        "alternate": [
+                            "Cruzado-Caballero, P."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Cruzado-Caballero"
+                    },
+                    {
+                        "name": "P. Godefroit",
+                        "alternate": [
+                            "Godefroit, P."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Godefroit"
+                    },
+                    {
+                        "name": "T. Tortosa",
+                        "alternate": [
+                            "Tortosa, T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Tortosa"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Historical Biology",
+                    "volume": "33",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '625'",
+            "label": "Hypsilophodontidae",
+            "scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Première note sur les dinosaures de Bernissart",
+                    "year": 1882,
+                    "authors": [
+                        {
+                            "name": "L. Dollo",
+                            "alternate": [
+                                "Dollo, L."
+                            ],
+                            "firstname": "L.",
+                            "lastname": "Dollo"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin du Musée Royale d’Histoire Naturelle de Belgique",
+                        "volume": "1",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
+                    "year": 2021,
+                    "authors": [
+                        {
+                            "name": "Daniel Madzia",
+                            "alternate": [
+                                "Madzia, Daniel"
+                            ],
+                            "firstname": "Daniel",
+                            "lastname": "Madzia"
+                        },
+                        {
+                            "name": "Victoria M. Arbour",
+                            "alternate": [
+                                "Arbour, Victoria M."
+                            ],
+                            "firstname": "Victoria",
+                            "lastname": "Arbour",
+                            "middlename": "M."
+                        },
+                        {
+                            "name": "Clint A. Boyd",
+                            "alternate": [
+                                "Boyd, Clint A."
+                            ],
+                            "firstname": "Clint",
+                            "lastname": "Boyd",
+                            "middlename": "A."
+                        },
+                        {
+                            "name": "Andrew A. Farke",
+                            "alternate": [
+                                "Farke, Andrew A."
+                            ],
+                            "firstname": "Andrew",
+                            "lastname": "Farke",
+                            "middlename": "A."
+                        },
+                        {
+                            "name": "Penélope Cruzado-Caballero",
+                            "alternate": [
+                                "Cruzado-Caballero, Penélope"
+                            ],
+                            "firstname": "Penélope",
+                            "lastname": "Cruzado-Caballero"
+                        },
+                        {
+                            "name": "David C. Evans",
+                            "alternate": [
+                                "Evans, David C."
+                            ],
+                            "firstname": "David",
+                            "lastname": "Evans",
+                            "middlename": "C."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.7717/peerj.12362"
+                        }
+                    ],
+                    "link": [
+                        {
+                            "url": "https://doi.org/10.7717/peerj.12362"
+                        }
+                    ],
+                    "journal": {
+                        "name": "PeerJ",
+                        "volume": "9",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The largest clade containing Hypsilophodon foxii Huxley, 1869 but not Iguanodon bernissartensis Boulenger in Beneden, 1881 and Rhabdodon priscus Matheron, 1869.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Hypsilophodon foxii Huxley, 1869",
+                        "nameComplete": "Hypsilophodon foxii"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -679,10 +679,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 70,
+            "curatorNotes": "Regnum ID: '70'",
             "label": "Myrtales",
-            "dwc:scientificNameAuthorship": "Judd, W. S.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Judd, W. S.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Přirozenosti Rostlin.",
@@ -714,8 +714,60 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The smallest crown clade containing Terminalia catappa L. 1771 (Combretaceae), Lythrum salicaria Linnaeus 1753 (Lythraceae), Clidemia rubra (Aublet) Martius 1832 (Melastomataceae), and Myrtus communis Linnaeus 1753 (Myrtaceae).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Myrtales",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "W. S. Judd",
+                            "alternate": [
+                                "Judd, W. S."
+                            ],
+                            "firstname": "W.",
+                            "lastname": "Judd",
+                            "middlename": "S."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "335-338",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The smallest crown clade containing Terminalia catappa L. 1771 (Combretaceae), Lythrum salicaria Linnaeus 1753 (Lythraceae), Clidemia rubra (Aublet) Martius 1832 (Melastomataceae), and Myrtus communis Linnaeus 1753 (Myrtaceae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -724,33 +776,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
                         "label": "Terminalia catappa Linnaeus, 1771",
                         "nameComplete": "Terminalia catappa"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Lythrum salicaria Linnaeus, 1753",
-                        "nameComplete": "Lythrum salicaria"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Clidemia rubra Martius, 1832",
-                        "nameComplete": "Clidemia rubra"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Myrtus communis Linnaeus, 1753",
-                        "nameComplete": "Myrtus communis"
                     }
                 }
             ],

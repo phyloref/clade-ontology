@@ -1,0 +1,117 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Boom and bust: ancient and recent diversification in bichirs (Polypteridae: Actinopterygii), a relictual lineage of ray-finned fishes",
+                "year": 2014,
+                "authors": [
+                    {
+                        "name": "Thomas J. Near",
+                        "alternate": [
+                            "Near, Thomas J."
+                        ],
+                        "firstname": "Thomas",
+                        "lastname": "Near",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "Alex Dornburg",
+                        "alternate": [
+                            "Dornburg, Alex"
+                        ],
+                        "firstname": "Alex",
+                        "lastname": "Dornburg"
+                    },
+                    {
+                        "name": "M. Tokita",
+                        "alternate": [
+                            "Tokita, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Tokita"
+                    },
+                    {
+                        "name": "D. Suzuki",
+                        "alternate": [
+                            "Suzuki, D."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Suzuki"
+                    },
+                    {
+                        "name": "Matthew C. Brandley",
+                        "alternate": [
+                            "Brandley, Matthew C."
+                        ],
+                        "firstname": "Matthew",
+                        "lastname": "Brandley",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "Matt Friedman",
+                        "alternate": [
+                            "Friedman, Matt"
+                        ],
+                        "firstname": "Matt",
+                        "lastname": "Friedman"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/evo.12323"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Evolution",
+                    "volume": "68",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '851'",
+            "label": "Polypteridae",
+            "scientificNameAuthorship": "Near, Thomas J and Thacker, Christine E.",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Prodromus systematis ichthyologiae",
+                    "year": 1840,
+                    "authors": [],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Nuovi Annali delle Scienze naturali Bologna",
+                        "volume": "4",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [],
+            "definition": "The least inclusive clade that contains Erpetoichthys calabaricus Smith 1865:2 and Polypterus bichir Lacepède 1803.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Erpetoichthys calabaricus Smith, 1865",
+                        "nameComplete": "Erpetoichthys calabaricus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -30,56 +30,6 @@
                 "journal": {
                     "name": "Phil. Trans. Roy. Soc. Lond.: Biol. Sci.",
                     "volume": "354",
-                    "identifier": []
-                }
-            }
-        },
-        {
-            "phylogenyCitation": {
-                "type": "book",
-                "title": "Early vertebrates.",
-                "year": 1996,
-                "authors": [
-                    {
-                        "name": "P. Janvier",
-                        "alternate": [
-                            "Janvier, P."
-                        ],
-                        "firstname": "P.",
-                        "lastname": "Janvier"
-                    }
-                ],
-                "editors": [],
-                "series_editors": [],
-                "publisher": "Oxford University Press",
-                "city": "Oxford",
-                "figure": "4.70",
-                "identifier": [],
-                "link": []
-            }
-        },
-        {
-            "phylogenyCitation": {
-                "type": "article",
-                "title": "Osorioichthys marginis “Paléonisciforme” du Framennian de Belgique, et la phylogénie des actinoptérygiens dévoniens (Pisces).",
-                "year": 1997,
-                "authors": [
-                    {
-                        "name": "Taverne",
-                        "alternate": [
-                            "Taverne,"
-                        ],
-                        "lastname": "Taverne"
-                    }
-                ],
-                "editors": [],
-                "series_editors": [],
-                "figure": "14",
-                "identifier": [],
-                "link": [],
-                "journal": {
-                    "name": "Bull. Inst. Roy. Soc. Nat. Belgique, Ici. Terre",
-                    "volume": "67",
                     "identifier": []
                 }
             }
@@ -133,16 +83,127 @@
                     "identifier": []
                 }
             }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "book",
+                "title": "Early vertebrates.",
+                "year": 1996,
+                "authors": [
+                    {
+                        "name": "P. Janvier",
+                        "alternate": [
+                            "Janvier, P."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Janvier"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "publisher": "Oxford University Press",
+                "city": "Oxford",
+                "figure": "4.70",
+                "identifier": [],
+                "link": []
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "Osorioichthys marginis “Paléonisciforme” du Framennian de Belgique, et la phylogénie des actinoptérygiens dévoniens (Pisces).",
+                "year": 1997,
+                "authors": [
+                    {
+                        "name": "Taverne",
+                        "alternate": [
+                            "Taverne,"
+                        ],
+                        "lastname": "Taverne"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "14",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Bull. Inst. Roy. Soc. Nat. Belgique, Ici. Terre",
+                    "volume": "67",
+                    "identifier": []
+                }
+            }
         }
     ],
     "phylorefs": [
         {
-            "regnumId": 209,
+            "curatorNotes": "Regnum ID: '209'",
             "label": "Pan-Actinopteri",
-            "dwc:scientificNameAuthorship": "Moore, J. A., Near, T. J.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The total clade of the crown clade Actinopteri.",
+            "scientificNameAuthorship": "Moore, J. A. and Near, T. J.",
+            "namePublishedIn": [],
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Pan-Actinopteri",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "J. A. Moore",
+                            "alternate": [
+                                "Moore, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Moore",
+                            "middlename": "A."
+                        },
+                        {
+                            "name": "T. J. Near",
+                            "alternate": [
+                                "Near, T. J."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "701-703",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The total clade of the crown clade Actinopteri.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

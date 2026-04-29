@@ -1,105 +1,6 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
-        {
-            "primaryPhylogenyCitation": {
-                "type": "article",
-                "title": "Reconstructing the basal angiosperm phylogeny: evaluating information content of the mitochondrial genes.",
-                "year": 2006,
-                "authors": [
-                    {
-                        "name": "Y. L. Qiu",
-                        "alternate": [
-                            "Qiu, Y. L."
-                        ],
-                        "firstname": "Y.",
-                        "lastname": "Qiu",
-                        "middlename": "L."
-                    },
-                    {
-                        "name": "L. Li",
-                        "alternate": [
-                            "Li, L."
-                        ],
-                        "firstname": "L.",
-                        "lastname": "Li"
-                    },
-                    {
-                        "name": "T. A. Hendry",
-                        "alternate": [
-                            "Hendry, T. A."
-                        ],
-                        "firstname": "T.",
-                        "lastname": "Hendry",
-                        "middlename": "A."
-                    },
-                    {
-                        "name": "R. Li",
-                        "alternate": [
-                            "Li, R."
-                        ],
-                        "firstname": "R.",
-                        "lastname": "Li"
-                    },
-                    {
-                        "name": "D. W. Taylor",
-                        "alternate": [
-                            "Taylor, D. W."
-                        ],
-                        "firstname": "D.",
-                        "lastname": "Taylor",
-                        "middlename": "W."
-                    },
-                    {
-                        "name": "M. J. Issa",
-                        "alternate": [
-                            "Issa, M. J."
-                        ],
-                        "firstname": "M.",
-                        "lastname": "Issa",
-                        "middlename": "J."
-                    },
-                    {
-                        "name": "A. J. Ronen",
-                        "alternate": [
-                            "Ronen, A. J."
-                        ],
-                        "firstname": "A.",
-                        "lastname": "Ronen",
-                        "middlename": "J."
-                    },
-                    {
-                        "name": "M. L. Vekaria",
-                        "alternate": [
-                            "Vekaria, M. L."
-                        ],
-                        "firstname": "M.",
-                        "lastname": "Vekaria",
-                        "middlename": "L."
-                    },
-                    {
-                        "name": "A. M. White",
-                        "alternate": [
-                            "White, A. M."
-                        ],
-                        "firstname": "A.",
-                        "lastname": "White",
-                        "middlename": "M."
-                    }
-                ],
-                "editors": [],
-                "series_editors": [],
-                "figure": "1",
-                "identifier": [],
-                "link": [],
-                "journal": {
-                    "name": "Taxon",
-                    "volume": "55",
-                    "identifier": []
-                }
-            },
-            "newick": "(Magnolia:23.0,(((((((((((((((Cycas:1.0,Zamia:1.0):1.0,Ginkgo:2.0):2.0,(((Metasequoia:1.0,Podocarpus:1.0):1.0,(Gnetum:1.0,Welwitschia:1.0):1.0):1.0,Pinus:3.0):1.0):1.0,Amborella:5.0):1.0,((Nymphaea:1.0,Nuphar:1.0):1.0,(Brasenia:1.0,Cabomba:1.0):1.0):4.0):1.0,(((Illicium:2.0,(Kadsura:1.0,Schisandra:1.0):1.0):1.0,Trimenia:3.0):1.0,Austrobaileya:4.0):3.0):6.0,((Acorus_cal:1.0,Acorus_gra:1.0):11.0,((((Pleea:1.0,Tofieldia:1.0):4.0,(((Potamogeton:1.0,Zostera:1.0):1.0,Triglochin:2.0):2.0,(Butomus:3.0,((Alisma:1.0,Hydrocleys:1.0):1.0,(Najas:1.0,Hydrocharis:1.0):1.0):1.0):1.0):1.0):1.0,(Orontium:3.0,(Spathiphyllum:2.0,(Xanthosoma:1.0,Philodendron:1.0):1.0):1.0):3.0):5.0,((((Trillium:1.0,Alstroemeria:1.0):1.0,(Lilium:1.0,Smilax:1.0):1.0):7.0,((Chamaedorea:5.0,(((Philydrum:1.0,Tradescantia:1.0):1.0,(Strelitzia:1.0,Maranta:1.0):1.0):2.0,((Sparganium:1.0,Vriesea:1.0):2.0,((Cyperus:1.0,Oryza:1.0):1.0,Stegolepis:2.0):1.0):1.0):1.0):3.0,(((((((Lomandra:1.0,Beaucarnea:1.0):1.0,Asparagus:2.0):1.0,(Allium:1.0,Agave:1.0):2.0):1.0,Xanthorrhoea:4.0):1.0,Iris:5.0):1.0,Blandfordia:6.0):1.0,Oncidium:7.0):1.0):1.0):1.0,((Dioscorea:1.0,Tacca:1.0):1.0,(Croomia:1.0,Carludovica:1.0):1.0):8.0):1.0):1.0):1.0):1.0,((Ascarina:2.0,(Chloranthus:1.0,Sarcandra:1.0):1.0):1.0,Hedyosmum:3.0):11.0):2.0,((Ceratophyllum_dem:1.0,Ceratophyllum_sub:1.0):14.0,((((Dicentra:1.0,Sanguinaria:1.0):4.0,(((Lardizabala:1.0,Akebia:1.0):1.0,Sargentodoxa:2.0):2.0,((Cissampelos:1.0,Cocculus:1.0):2.0,((Mahonia:1.0,Podophyllum:1.0):1.0,(Ranunculus:1.0,Xanthorhiza:1.0):1.0):1.0):1.0):1.0):1.0,Euptelea:6.0):8.0,(((Nelumbo:4.0,(Platanus:3.0,((Petrophile:1.0,Persoonia:1.0):1.0,Grevillea:2.0):1.0):1.0):1.0,(Sabia:1.0,Meliosma:1.0):4.0):8.0,((Tetracentron:1.0,Trochodendron:1.0):11.0,(((Buxus:1.0,Pachysandra:1.0):1.0,Didymeles:2.0):9.0,((Gunnera:1.0,Dillenia:1.0):9.0,((Berberidopsis:8.0,(((Nepenthes:1.0,Polygonum:1.0):2.0,(Simmondsia:2.0,(Spinacia:1.0,Phytolacca:1.0):1.0):1.0):4.0,((Cornus:5.0,((Eucommia:3.0,(Nicotiana:2.0,(Lamium:1.0,Coffea:1.0):1.0):1.0):1.0,(Ilex:2.0,(Hedera:1.0,Helianthus:1.0):1.0):2.0):1.0):1.0,(Camellia:1.0,Impatiens:1.0):5.0):1.0):1.0):1.0,(((Leea:1.0,Vitis:1.0):5.0,((((Guaiacum:1.0,Oenothera:1.0):1.0,(Arabidopsis:1.0,Sterculia:1.0):1.0):2.0,((Nothofagus:1.0,Cercis:1.0):2.0,(Oxalis:2.0,(Euphorbia:1.0,Passiflora:1.0):1.0):1.0):1.0):1.0,Staphylea:5.0):1.0):1.0,(Hamamelis:1.0,Heuchera:1.0):6.0):2.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Drimys:1.0,Tasmannia:1.0):1.0,Takhtajania:2.0):1.0,(Canella:1.0,Cinnamodendron:1.0):2.0):2.0,(((Peperomia:1.0,Piper:1.0):2.0,((Anemopsis:1.0,Houttuynia:1.0):1.0,Saururus:2.0):1.0):1.0,((Lactoris:2.0,(Aristolochia:1.0,Thottea:1.0):1.0):1.0,(Asarum:1.0,Saruma:1.0):2.0):1.0):1.0):12.0):1.0,(((Calycanthus:1.0,Chimonanthus:1.0):1.0,Idiospermum:2.0):4.0,(((((Hedycarya:1.0,Hortonia:1.0):1.0,Peumus:2.0):1.0,(Hernandia:1.0,Gyrocarpus:1.0):2.0):1.0,(Cryptocarya:2.0,(Cinnamomum:1.0,Laurus:1.0):1.0):2.0):1.0,(Siparuna:3.0,((Atherosperma:1.0,Daphnandra:1.0):1.0,Doryphora:2.0):1.0):2.0):1.0):12.0):1.0,(Myristica:1.0,Mauloutchia:1.0):18.0):1.0,(Eupomatia:2.0,(Annona:1.0,Cananga:1.0):1.0):18.0):1.0,(Degeneria:1.0,Galbulimima:1.0):20.0):1.0,Liriodendron:22.0):1.0);(Magnolia:23.0,(((((((((((((((Cycas:1.0,Zamia:1.0):1.0,Ginkgo:2.0):2.0,(((Metasequoia:1.0,Podocarpus:1.0):1.0,(Gnetum:1.0,Welwitschia:1.0):1.0):1.0,Pinus:3.0):1.0):1.0,Amborella:5.0):1.0,((Nymphaea:1.0,Nuphar:1.0):1.0,(Brasenia:1.0,Cabomba:1.0):1.0):4.0):1.0,(((Illicium:2.0,(Kadsura:1.0,Schisandra:1.0):1.0):1.0,Trimenia:3.0):1.0,Austrobaileya:4.0):3.0):6.0,((Acorus_cal:1.0,Acorus_gra:1.0):11.0,((((Pleea:1.0,Tofieldia:1.0):4.0,(((Potamogeton:1.0,Zostera:1.0):1.0,Triglochin:2.0):2.0,(Butomus:3.0,((Alisma:1.0,Hydrocleys:1.0):1.0,(Najas:1.0,Hydrocharis:1.0):1.0):1.0):1.0):1.0):1.0,(Orontium:3.0,(Spathiphyllum:2.0,(Xanthosoma:1.0,Philodendron:1.0):1.0):1.0):3.0):5.0,((((Trillium:1.0,Alstroemeria:1.0):1.0,(Lilium:1.0,Smilax:1.0):1.0):7.0,((Chamaedorea:5.0,(((Philydrum:1.0,Tradescantia:1.0):1.0,(Strelitzia:1.0,Maranta:1.0):1.0):2.0,((Sparganium:1.0,Vriesea:1.0):2.0,((Cyperus:1.0,Oryza:1.0):1.0,Stegolepis:2.0):1.0):1.0):1.0):3.0,(((((((Lomandra:1.0,Beaucarnea:1.0):1.0,Asparagus:2.0):1.0,(Allium:1.0,Agave:1.0):2.0):1.0,Xanthorrhoea:4.0):1.0,Iris:5.0):1.0,Blandfordia:6.0):1.0,Oncidium:7.0):1.0):1.0):1.0,((Dioscorea:1.0,Tacca:1.0):1.0,(Croomia:1.0,Carludovica:1.0):1.0):8.0):1.0):1.0):1.0):1.0,((Ascarina:2.0,(Chloranthus:1.0,Sarcandra:1.0):1.0):1.0,Hedyosmum:3.0):11.0):2.0,((Ceratophyllum_dem:1.0,Ceratophyllum_sub:1.0):14.0,((((Dicentra:1.0,Sanguinaria:1.0):4.0,(((Lardizabala:1.0,Akebia:1.0):1.0,Sargentodoxa:2.0):2.0,((Cissampelos:1.0,Cocculus:1.0):2.0,((Mahonia:1.0,Podophyllum:1.0):1.0,(Ranunculus:1.0,Xanthorhiza:1.0):1.0):1.0):1.0):1.0):1.0,Euptelea:6.0):8.0,(((Nelumbo:4.0,(Platanus:3.0,((Petrophile:1.0,Persoonia:1.0):1.0,Grevillea:2.0):1.0):1.0):1.0,(Sabia:1.0,Meliosma:1.0):4.0):8.0,((Tetracentron:1.0,Trochodendron:1.0):11.0,(((Buxus:1.0,Pachysandra:1.0):1.0,Didymeles:2.0):9.0,((Gunnera:1.0,Dillenia:1.0):9.0,((Berberidopsis:8.0,(((Nepenthes:1.0,Polygonum:1.0):2.0,(Simmondsia:2.0,(Spinacia:1.0,Phytolacca:1.0):1.0):1.0):4.0,((Cornus:5.0,((Eucommia:3.0,(Nicotiana:2.0,(Lamium:1.0,Coffea:1.0):1.0):1.0):1.0,(Ilex:2.0,(Hedera:1.0,Helianthus:1.0):1.0):2.0):1.0):1.0,(Camellia:1.0,Impatiens:1.0):5.0):1.0):1.0):1.0,(((Leea:1.0,Vitis:1.0):5.0,(((Guaiacum:1.0,Oenothera:1.0):3.0,((Nothofagus:1.0,Cercis:1.0):2.0,(Oxalis:2.0,(Euphorbia:1.0,Passiflora:1.0):1.0):1.0):1.0):1.0,(Staphylea:2.0,(Arabidopsis:1.0,Sterculia:1.0):1.0):3.0):1.0):1.0,(Hamamelis:1.0,Heuchera:1.0):6.0):2.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Drimys:1.0,Tasmannia:1.0):1.0,Takhtajania:2.0):1.0,(Canella:1.0,Cinnamodendron:1.0):2.0):2.0,(((Peperomia:1.0,Piper:1.0):2.0,((Anemopsis:1.0,Houttuynia:1.0):1.0,Saururus:2.0):1.0):1.0,((Lactoris:2.0,(Aristolochia:1.0,Thottea:1.0):1.0):1.0,(Asarum:1.0,Saruma:1.0):2.0):1.0):1.0):12.0):1.0,(((Calycanthus:1.0,Chimonanthus:1.0):1.0,Idiospermum:2.0):4.0,(((((Hedycarya:1.0,Hortonia:1.0):1.0,Peumus:2.0):1.0,(Hernandia:1.0,Gyrocarpus:1.0):2.0):1.0,(Cryptocarya:2.0,(Cinnamomum:1.0,Laurus:1.0):1.0):2.0):1.0,(Siparuna:3.0,((Atherosperma:1.0,Daphnandra:1.0):1.0,Doryphora:2.0):1.0):2.0):1.0):12.0):1.0,(Myristica:1.0,Mauloutchia:1.0):18.0):1.0,(Eupomatia:2.0,(Annona:1.0,Cananga:1.0):1.0):18.0):1.0,(Degeneria:1.0,Galbulimima:1.0):20.0):1.0,Liriodendron:22.0):1.0);(Magnolia:23.0,(((((((((((((((Cycas:1.0,Zamia:1.0):1.0,Ginkgo:2.0):2.0,(((Metasequoia:1.0,Podocarpus:1.0):1.0,(Gnetum:1.0,Welwitschia:1.0):1.0):1.0,Pinus:3.0):1.0):1.0,Amborella:5.0):1.0,((Nymphaea:1.0,Nuphar:1.0):1.0,(Brasenia:1.0,Cabomba:1.0):1.0):4.0):1.0,(((Illicium:2.0,(Kadsura:1.0,Schisandra:1.0):1.0):1.0,Trimenia:3.0):1.0,Austrobaileya:4.0):3.0):1.0,(Ceratophyllum_dem:1.0,Ceratophyllum_sub:1.0):7.0):1.0,((Ascarina:2.0,(Chloranthus:1.0,Sarcandra:1.0):1.0):1.0,Hedyosmum:3.0):6.0):7.0,(((Acorus_cal:1.0,Acorus_gra:1.0):11.0,((((Pleea:1.0,Tofieldia:1.0):4.0,(((Potamogeton:1.0,Zostera:1.0):1.0,Triglochin:2.0):2.0,(Butomus:3.0,((Alisma:1.0,Hydrocleys:1.0):1.0,(Najas:1.0,Hydrocharis:1.0):1.0):1.0):1.0):1.0):1.0,(Orontium:3.0,(Spathiphyllum:2.0,(Xanthosoma:1.0,Philodendron:1.0):1.0):1.0):3.0):5.0,((((Trillium:1.0,Alstroemeria:1.0):1.0,(Lilium:1.0,Smilax:1.0):1.0):7.0,((Chamaedorea:5.0,(((Philydrum:1.0,Tradescantia:1.0):1.0,(Strelitzia:1.0,Maranta:1.0):1.0):2.0,((Sparganium:1.0,Vriesea:1.0):2.0,((Cyperus:1.0,Oryza:1.0):1.0,Stegolepis:2.0):1.0):1.0):1.0):3.0,(((((((Lomandra:1.0,Beaucarnea:1.0):1.0,Asparagus:2.0):1.0,(Allium:1.0,Agave:1.0):2.0):1.0,Xanthorrhoea:4.0):1.0,Iris:5.0):1.0,Blandfordia:6.0):1.0,Oncidium:7.0):1.0):1.0):1.0,((Dioscorea:1.0,Tacca:1.0):1.0,(Croomia:1.0,Carludovica:1.0):1.0):8.0):1.0):1.0):3.0,((((Dicentra:1.0,Sanguinaria:1.0):4.0,(((Lardizabala:1.0,Akebia:1.0):1.0,Sargentodoxa:2.0):2.0,((Cissampelos:1.0,Cocculus:1.0):2.0,((Mahonia:1.0,Podophyllum:1.0):1.0,(Ranunculus:1.0,Xanthorhiza:1.0):1.0):1.0):1.0):1.0):1.0,Euptelea:6.0):8.0,(((Nelumbo:4.0,(Platanus:3.0,((Petrophile:1.0,Persoonia:1.0):1.0,Grevillea:2.0):1.0):1.0):1.0,(Sabia:1.0,Meliosma:1.0):4.0):8.0,((Tetracentron:1.0,Trochodendron:1.0):11.0,(((Buxus:1.0,Pachysandra:1.0):1.0,Didymeles:2.0):9.0,((Gunnera:1.0,Dillenia:1.0):9.0,((Berberidopsis:8.0,(((Nepenthes:1.0,Polygonum:1.0):2.0,(Simmondsia:2.0,(Spinacia:1.0,Phytolacca:1.0):1.0):1.0):4.0,((Cornus:5.0,((Eucommia:3.0,(Nicotiana:2.0,(Lamium:1.0,Coffea:1.0):1.0):1.0):1.0,(Ilex:2.0,(Hedera:1.0,Helianthus:1.0):1.0):2.0):1.0):1.0,(Camellia:1.0,Impatiens:1.0):5.0):1.0):1.0):1.0,(((Leea:1.0,Vitis:1.0):5.0,((((Guaiacum:1.0,Oenothera:1.0):1.0,(Arabidopsis:1.0,Sterculia:1.0):1.0):2.0,((Nothofagus:1.0,Cercis:1.0):2.0,(Oxalis:2.0,(Euphorbia:1.0,Passiflora:1.0):1.0):1.0):1.0):1.0,Staphylea:5.0):1.0):1.0,(Hamamelis:1.0,Heuchera:1.0):6.0):2.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Drimys:1.0,Tasmannia:1.0):1.0,Takhtajania:2.0):1.0,(Canella:1.0,Cinnamodendron:1.0):2.0):2.0,(((Peperomia:1.0,Piper:1.0):2.0,((Anemopsis:1.0,Houttuynia:1.0):1.0,Saururus:2.0):1.0):1.0,((Lactoris:2.0,(Aristolochia:1.0,Thottea:1.0):1.0):1.0,(Asarum:1.0,Saruma:1.0):2.0):1.0):1.0):12.0):1.0,(((Calycanthus:1.0,Chimonanthus:1.0):1.0,Idiospermum:2.0):4.0,(((((Hedycarya:1.0,Hortonia:1.0):1.0,Peumus:2.0):1.0,(Hernandia:1.0,Gyrocarpus:1.0):2.0):1.0,(Cryptocarya:2.0,(Cinnamomum:1.0,Laurus:1.0):1.0):2.0):1.0,(Siparuna:3.0,((Atherosperma:1.0,Daphnandra:1.0):1.0,Doryphora:2.0):1.0):2.0):1.0):12.0):1.0,(Myristica:1.0,Mauloutchia:1.0):18.0):1.0,(Eupomatia:2.0,(Annona:1.0,Cananga:1.0):1.0):18.0):1.0,(Degeneria:1.0,Galbulimima:1.0):20.0):1.0,Liriodendron:22.0):1.0);"
-        },
         {
             "phylogenyCitation": {
                 "type": "article",
@@ -1059,14 +960,113 @@
                     "identifier": []
                 }
             }
+        },
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Reconstructing the basal angiosperm phylogeny: evaluating information content of the mitochondrial genes.",
+                "year": 2006,
+                "authors": [
+                    {
+                        "name": "Y. L. Qiu",
+                        "alternate": [
+                            "Qiu, Y. L."
+                        ],
+                        "firstname": "Y.",
+                        "lastname": "Qiu",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "L. Li",
+                        "alternate": [
+                            "Li, L."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Li"
+                    },
+                    {
+                        "name": "T. A. Hendry",
+                        "alternate": [
+                            "Hendry, T. A."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Hendry",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "R. Li",
+                        "alternate": [
+                            "Li, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Li"
+                    },
+                    {
+                        "name": "D. W. Taylor",
+                        "alternate": [
+                            "Taylor, D. W."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Taylor",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "M. J. Issa",
+                        "alternate": [
+                            "Issa, M. J."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Issa",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "A. J. Ronen",
+                        "alternate": [
+                            "Ronen, A. J."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Ronen",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "M. L. Vekaria",
+                        "alternate": [
+                            "Vekaria, M. L."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Vekaria",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "A. M. White",
+                        "alternate": [
+                            "White, A. M."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "White",
+                        "middlename": "M."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Taxon",
+                    "volume": "55",
+                    "identifier": []
+                }
+            },
+            "newick": "(Magnolia:23.0,(((((((((((((((Cycas:1.0,Zamia:1.0):1.0,Ginkgo:2.0):2.0,(((Metasequoia:1.0,Podocarpus:1.0):1.0,(Gnetum:1.0,Welwitschia:1.0):1.0):1.0,Pinus:3.0):1.0):1.0,Amborella:5.0):1.0,((Nymphaea:1.0,Nuphar:1.0):1.0,(Brasenia:1.0,Cabomba:1.0):1.0):4.0):1.0,(((Illicium:2.0,(Kadsura:1.0,Schisandra:1.0):1.0):1.0,Trimenia:3.0):1.0,Austrobaileya:4.0):3.0):6.0,((Acorus_cal:1.0,Acorus_gra:1.0):11.0,((((Pleea:1.0,Tofieldia:1.0):4.0,(((Potamogeton:1.0,Zostera:1.0):1.0,Triglochin:2.0):2.0,(Butomus:3.0,((Alisma:1.0,Hydrocleys:1.0):1.0,(Najas:1.0,Hydrocharis:1.0):1.0):1.0):1.0):1.0):1.0,(Orontium:3.0,(Spathiphyllum:2.0,(Xanthosoma:1.0,Philodendron:1.0):1.0):1.0):3.0):5.0,((((Trillium:1.0,Alstroemeria:1.0):1.0,(Lilium:1.0,Smilax:1.0):1.0):7.0,((Chamaedorea:5.0,(((Philydrum:1.0,Tradescantia:1.0):1.0,(Strelitzia:1.0,Maranta:1.0):1.0):2.0,((Sparganium:1.0,Vriesea:1.0):2.0,((Cyperus:1.0,Oryza:1.0):1.0,Stegolepis:2.0):1.0):1.0):1.0):3.0,(((((((Lomandra:1.0,Beaucarnea:1.0):1.0,Asparagus:2.0):1.0,(Allium:1.0,Agave:1.0):2.0):1.0,Xanthorrhoea:4.0):1.0,Iris:5.0):1.0,Blandfordia:6.0):1.0,Oncidium:7.0):1.0):1.0):1.0,((Dioscorea:1.0,Tacca:1.0):1.0,(Croomia:1.0,Carludovica:1.0):1.0):8.0):1.0):1.0):1.0):1.0,((Ascarina:2.0,(Chloranthus:1.0,Sarcandra:1.0):1.0):1.0,Hedyosmum:3.0):11.0):2.0,((Ceratophyllum_dem:1.0,Ceratophyllum_sub:1.0):14.0,((((Dicentra:1.0,Sanguinaria:1.0):4.0,(((Lardizabala:1.0,Akebia:1.0):1.0,Sargentodoxa:2.0):2.0,((Cissampelos:1.0,Cocculus:1.0):2.0,((Mahonia:1.0,Podophyllum:1.0):1.0,(Ranunculus:1.0,Xanthorhiza:1.0):1.0):1.0):1.0):1.0):1.0,Euptelea:6.0):8.0,(((Nelumbo:4.0,(Platanus:3.0,((Petrophile:1.0,Persoonia:1.0):1.0,Grevillea:2.0):1.0):1.0):1.0,(Sabia:1.0,Meliosma:1.0):4.0):8.0,((Tetracentron:1.0,Trochodendron:1.0):11.0,(((Buxus:1.0,Pachysandra:1.0):1.0,Didymeles:2.0):9.0,((Gunnera:1.0,Dillenia:1.0):9.0,((Berberidopsis:8.0,(((Nepenthes:1.0,Polygonum:1.0):2.0,(Simmondsia:2.0,(Spinacia:1.0,Phytolacca:1.0):1.0):1.0):4.0,((Cornus:5.0,((Eucommia:3.0,(Nicotiana:2.0,(Lamium:1.0,Coffea:1.0):1.0):1.0):1.0,(Ilex:2.0,(Hedera:1.0,Helianthus:1.0):1.0):2.0):1.0):1.0,(Camellia:1.0,Impatiens:1.0):5.0):1.0):1.0):1.0,(((Leea:1.0,Vitis:1.0):5.0,((((Guaiacum:1.0,Oenothera:1.0):1.0,(Arabidopsis:1.0,Sterculia:1.0):1.0):2.0,((Nothofagus:1.0,Cercis:1.0):2.0,(Oxalis:2.0,(Euphorbia:1.0,Passiflora:1.0):1.0):1.0):1.0):1.0,Staphylea:5.0):1.0):1.0,(Hamamelis:1.0,Heuchera:1.0):6.0):2.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Drimys:1.0,Tasmannia:1.0):1.0,Takhtajania:2.0):1.0,(Canella:1.0,Cinnamodendron:1.0):2.0):2.0,(((Peperomia:1.0,Piper:1.0):2.0,((Anemopsis:1.0,Houttuynia:1.0):1.0,Saururus:2.0):1.0):1.0,((Lactoris:2.0,(Aristolochia:1.0,Thottea:1.0):1.0):1.0,(Asarum:1.0,Saruma:1.0):2.0):1.0):1.0):12.0):1.0,(((Calycanthus:1.0,Chimonanthus:1.0):1.0,Idiospermum:2.0):4.0,(((((Hedycarya:1.0,Hortonia:1.0):1.0,Peumus:2.0):1.0,(Hernandia:1.0,Gyrocarpus:1.0):2.0):1.0,(Cryptocarya:2.0,(Cinnamomum:1.0,Laurus:1.0):1.0):2.0):1.0,(Siparuna:3.0,((Atherosperma:1.0,Daphnandra:1.0):1.0,Doryphora:2.0):1.0):2.0):1.0):12.0):1.0,(Myristica:1.0,Mauloutchia:1.0):18.0):1.0,(Eupomatia:2.0,(Annona:1.0,Cananga:1.0):1.0):18.0):1.0,(Degeneria:1.0,Galbulimima:1.0):20.0):1.0,Liriodendron:22.0):1.0);(Magnolia:23.0,(((((((((((((((Cycas:1.0,Zamia:1.0):1.0,Ginkgo:2.0):2.0,(((Metasequoia:1.0,Podocarpus:1.0):1.0,(Gnetum:1.0,Welwitschia:1.0):1.0):1.0,Pinus:3.0):1.0):1.0,Amborella:5.0):1.0,((Nymphaea:1.0,Nuphar:1.0):1.0,(Brasenia:1.0,Cabomba:1.0):1.0):4.0):1.0,(((Illicium:2.0,(Kadsura:1.0,Schisandra:1.0):1.0):1.0,Trimenia:3.0):1.0,Austrobaileya:4.0):3.0):6.0,((Acorus_cal:1.0,Acorus_gra:1.0):11.0,((((Pleea:1.0,Tofieldia:1.0):4.0,(((Potamogeton:1.0,Zostera:1.0):1.0,Triglochin:2.0):2.0,(Butomus:3.0,((Alisma:1.0,Hydrocleys:1.0):1.0,(Najas:1.0,Hydrocharis:1.0):1.0):1.0):1.0):1.0):1.0,(Orontium:3.0,(Spathiphyllum:2.0,(Xanthosoma:1.0,Philodendron:1.0):1.0):1.0):3.0):5.0,((((Trillium:1.0,Alstroemeria:1.0):1.0,(Lilium:1.0,Smilax:1.0):1.0):7.0,((Chamaedorea:5.0,(((Philydrum:1.0,Tradescantia:1.0):1.0,(Strelitzia:1.0,Maranta:1.0):1.0):2.0,((Sparganium:1.0,Vriesea:1.0):2.0,((Cyperus:1.0,Oryza:1.0):1.0,Stegolepis:2.0):1.0):1.0):1.0):3.0,(((((((Lomandra:1.0,Beaucarnea:1.0):1.0,Asparagus:2.0):1.0,(Allium:1.0,Agave:1.0):2.0):1.0,Xanthorrhoea:4.0):1.0,Iris:5.0):1.0,Blandfordia:6.0):1.0,Oncidium:7.0):1.0):1.0):1.0,((Dioscorea:1.0,Tacca:1.0):1.0,(Croomia:1.0,Carludovica:1.0):1.0):8.0):1.0):1.0):1.0):1.0,((Ascarina:2.0,(Chloranthus:1.0,Sarcandra:1.0):1.0):1.0,Hedyosmum:3.0):11.0):2.0,((Ceratophyllum_dem:1.0,Ceratophyllum_sub:1.0):14.0,((((Dicentra:1.0,Sanguinaria:1.0):4.0,(((Lardizabala:1.0,Akebia:1.0):1.0,Sargentodoxa:2.0):2.0,((Cissampelos:1.0,Cocculus:1.0):2.0,((Mahonia:1.0,Podophyllum:1.0):1.0,(Ranunculus:1.0,Xanthorhiza:1.0):1.0):1.0):1.0):1.0):1.0,Euptelea:6.0):8.0,(((Nelumbo:4.0,(Platanus:3.0,((Petrophile:1.0,Persoonia:1.0):1.0,Grevillea:2.0):1.0):1.0):1.0,(Sabia:1.0,Meliosma:1.0):4.0):8.0,((Tetracentron:1.0,Trochodendron:1.0):11.0,(((Buxus:1.0,Pachysandra:1.0):1.0,Didymeles:2.0):9.0,((Gunnera:1.0,Dillenia:1.0):9.0,((Berberidopsis:8.0,(((Nepenthes:1.0,Polygonum:1.0):2.0,(Simmondsia:2.0,(Spinacia:1.0,Phytolacca:1.0):1.0):1.0):4.0,((Cornus:5.0,((Eucommia:3.0,(Nicotiana:2.0,(Lamium:1.0,Coffea:1.0):1.0):1.0):1.0,(Ilex:2.0,(Hedera:1.0,Helianthus:1.0):1.0):2.0):1.0):1.0,(Camellia:1.0,Impatiens:1.0):5.0):1.0):1.0):1.0,(((Leea:1.0,Vitis:1.0):5.0,(((Guaiacum:1.0,Oenothera:1.0):3.0,((Nothofagus:1.0,Cercis:1.0):2.0,(Oxalis:2.0,(Euphorbia:1.0,Passiflora:1.0):1.0):1.0):1.0):1.0,(Staphylea:2.0,(Arabidopsis:1.0,Sterculia:1.0):1.0):3.0):1.0):1.0,(Hamamelis:1.0,Heuchera:1.0):6.0):2.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Drimys:1.0,Tasmannia:1.0):1.0,Takhtajania:2.0):1.0,(Canella:1.0,Cinnamodendron:1.0):2.0):2.0,(((Peperomia:1.0,Piper:1.0):2.0,((Anemopsis:1.0,Houttuynia:1.0):1.0,Saururus:2.0):1.0):1.0,((Lactoris:2.0,(Aristolochia:1.0,Thottea:1.0):1.0):1.0,(Asarum:1.0,Saruma:1.0):2.0):1.0):1.0):12.0):1.0,(((Calycanthus:1.0,Chimonanthus:1.0):1.0,Idiospermum:2.0):4.0,(((((Hedycarya:1.0,Hortonia:1.0):1.0,Peumus:2.0):1.0,(Hernandia:1.0,Gyrocarpus:1.0):2.0):1.0,(Cryptocarya:2.0,(Cinnamomum:1.0,Laurus:1.0):1.0):2.0):1.0,(Siparuna:3.0,((Atherosperma:1.0,Daphnandra:1.0):1.0,Doryphora:2.0):1.0):2.0):1.0):12.0):1.0,(Myristica:1.0,Mauloutchia:1.0):18.0):1.0,(Eupomatia:2.0,(Annona:1.0,Cananga:1.0):1.0):18.0):1.0,(Degeneria:1.0,Galbulimima:1.0):20.0):1.0,Liriodendron:22.0):1.0);(Magnolia:23.0,(((((((((((((((Cycas:1.0,Zamia:1.0):1.0,Ginkgo:2.0):2.0,(((Metasequoia:1.0,Podocarpus:1.0):1.0,(Gnetum:1.0,Welwitschia:1.0):1.0):1.0,Pinus:3.0):1.0):1.0,Amborella:5.0):1.0,((Nymphaea:1.0,Nuphar:1.0):1.0,(Brasenia:1.0,Cabomba:1.0):1.0):4.0):1.0,(((Illicium:2.0,(Kadsura:1.0,Schisandra:1.0):1.0):1.0,Trimenia:3.0):1.0,Austrobaileya:4.0):3.0):1.0,(Ceratophyllum_dem:1.0,Ceratophyllum_sub:1.0):7.0):1.0,((Ascarina:2.0,(Chloranthus:1.0,Sarcandra:1.0):1.0):1.0,Hedyosmum:3.0):6.0):7.0,(((Acorus_cal:1.0,Acorus_gra:1.0):11.0,((((Pleea:1.0,Tofieldia:1.0):4.0,(((Potamogeton:1.0,Zostera:1.0):1.0,Triglochin:2.0):2.0,(Butomus:3.0,((Alisma:1.0,Hydrocleys:1.0):1.0,(Najas:1.0,Hydrocharis:1.0):1.0):1.0):1.0):1.0):1.0,(Orontium:3.0,(Spathiphyllum:2.0,(Xanthosoma:1.0,Philodendron:1.0):1.0):1.0):3.0):5.0,((((Trillium:1.0,Alstroemeria:1.0):1.0,(Lilium:1.0,Smilax:1.0):1.0):7.0,((Chamaedorea:5.0,(((Philydrum:1.0,Tradescantia:1.0):1.0,(Strelitzia:1.0,Maranta:1.0):1.0):2.0,((Sparganium:1.0,Vriesea:1.0):2.0,((Cyperus:1.0,Oryza:1.0):1.0,Stegolepis:2.0):1.0):1.0):1.0):3.0,(((((((Lomandra:1.0,Beaucarnea:1.0):1.0,Asparagus:2.0):1.0,(Allium:1.0,Agave:1.0):2.0):1.0,Xanthorrhoea:4.0):1.0,Iris:5.0):1.0,Blandfordia:6.0):1.0,Oncidium:7.0):1.0):1.0):1.0,((Dioscorea:1.0,Tacca:1.0):1.0,(Croomia:1.0,Carludovica:1.0):1.0):8.0):1.0):1.0):3.0,((((Dicentra:1.0,Sanguinaria:1.0):4.0,(((Lardizabala:1.0,Akebia:1.0):1.0,Sargentodoxa:2.0):2.0,((Cissampelos:1.0,Cocculus:1.0):2.0,((Mahonia:1.0,Podophyllum:1.0):1.0,(Ranunculus:1.0,Xanthorhiza:1.0):1.0):1.0):1.0):1.0):1.0,Euptelea:6.0):8.0,(((Nelumbo:4.0,(Platanus:3.0,((Petrophile:1.0,Persoonia:1.0):1.0,Grevillea:2.0):1.0):1.0):1.0,(Sabia:1.0,Meliosma:1.0):4.0):8.0,((Tetracentron:1.0,Trochodendron:1.0):11.0,(((Buxus:1.0,Pachysandra:1.0):1.0,Didymeles:2.0):9.0,((Gunnera:1.0,Dillenia:1.0):9.0,((Berberidopsis:8.0,(((Nepenthes:1.0,Polygonum:1.0):2.0,(Simmondsia:2.0,(Spinacia:1.0,Phytolacca:1.0):1.0):1.0):4.0,((Cornus:5.0,((Eucommia:3.0,(Nicotiana:2.0,(Lamium:1.0,Coffea:1.0):1.0):1.0):1.0,(Ilex:2.0,(Hedera:1.0,Helianthus:1.0):1.0):2.0):1.0):1.0,(Camellia:1.0,Impatiens:1.0):5.0):1.0):1.0):1.0,(((Leea:1.0,Vitis:1.0):5.0,((((Guaiacum:1.0,Oenothera:1.0):1.0,(Arabidopsis:1.0,Sterculia:1.0):1.0):2.0,((Nothofagus:1.0,Cercis:1.0):2.0,(Oxalis:2.0,(Euphorbia:1.0,Passiflora:1.0):1.0):1.0):1.0):1.0,Staphylea:5.0):1.0):1.0,(Hamamelis:1.0,Heuchera:1.0):6.0):2.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0):1.0,((((Drimys:1.0,Tasmannia:1.0):1.0,Takhtajania:2.0):1.0,(Canella:1.0,Cinnamodendron:1.0):2.0):2.0,(((Peperomia:1.0,Piper:1.0):2.0,((Anemopsis:1.0,Houttuynia:1.0):1.0,Saururus:2.0):1.0):1.0,((Lactoris:2.0,(Aristolochia:1.0,Thottea:1.0):1.0):1.0,(Asarum:1.0,Saruma:1.0):2.0):1.0):1.0):12.0):1.0,(((Calycanthus:1.0,Chimonanthus:1.0):1.0,Idiospermum:2.0):4.0,(((((Hedycarya:1.0,Hortonia:1.0):1.0,Peumus:2.0):1.0,(Hernandia:1.0,Gyrocarpus:1.0):2.0):1.0,(Cryptocarya:2.0,(Cinnamomum:1.0,Laurus:1.0):1.0):2.0):1.0,(Siparuna:3.0,((Atherosperma:1.0,Daphnandra:1.0):1.0,Doryphora:2.0):1.0):2.0):1.0):12.0):1.0,(Myristica:1.0,Mauloutchia:1.0):18.0):1.0,(Eupomatia:2.0,(Annona:1.0,Cananga:1.0):1.0):18.0):1.0,(Degeneria:1.0,Galbulimima:1.0):20.0):1.0,Liriodendron:22.0):1.0);"
         }
     ],
     "phylorefs": [
         {
-            "regnumId": 64,
+            "curatorNotes": "Regnum ID: '64'",
             "label": "Magnoliidae",
-            "dwc:scientificNameAuthorship": "Judd, W. S., Soltis, P. S., Soltis, D. E.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Judd, W. S. and Soltis, P. S. and Soltis, D. E.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Sistema I filogeniia tesvetkovykh rastenii (Systema et phylogenia magnoliophytorum).",
@@ -1088,43 +1088,86 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The smallest crown clade containing Canella winterana (L.) Gaertn. 1788 (Canellales), Magnolia virginiana L. 1753 (Magnoliales), Cinnamomum camphora (L.) T. Nees & C. H. Eberm. 1831 (Laurales), and Piper betle L. 1753 (Piperales).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Magnoliidae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "W. S. Judd",
+                            "alternate": [
+                                "Judd, W. S."
+                            ],
+                            "firstname": "W.",
+                            "lastname": "Judd",
+                            "middlename": "S."
+                        },
+                        {
+                            "name": "P. S. Soltis",
+                            "alternate": [
+                                "Soltis, P. S."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Soltis",
+                            "middlename": "S."
+                        },
+                        {
+                            "name": "D. E. Soltis",
+                            "alternate": [
+                                "Soltis, D. E."
+                            ],
+                            "firstname": "D.",
+                            "lastname": "Soltis",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "293-295",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The smallest crown clade containing Canella winterana (L.) Gaertn. 1788 (Canellales), Magnolia virginiana L. 1753 (Magnoliales), Cinnamomum camphora (L.) T. Nees & C. H. Eberm. 1831 (Laurales), and Piper betle L. 1753 (Piperales).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
                     "hasName": {
                         "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Canella winterana 1788",
+                        "label": "Canella winterana Gaertn., 1788",
                         "nameComplete": "Canella winterana"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Magnolia virginiana 1753",
-                        "nameComplete": "Magnolia virginiana"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Cinnamomum camphora 1831",
-                        "nameComplete": "Cinnamomum camphora"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Piper betle 1753",
-                        "nameComplete": "Piper betle"
                     }
                 }
             ],

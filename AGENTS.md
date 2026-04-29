@@ -10,7 +10,7 @@ The Clade Ontology is an ontology of exemplar phyloreferences curated from peer-
 
 ```bash
 npm test           # Lint + run all Mocha tests (requires Node.js)
-npm run lint       # ESLint on test/, phyx2ontology/, and regnum2phyx/
+npm run lint       # Biome lint on test/, phyx2ontology/, and regnum2phyx/
 npm run mocha      # Run tests without linting
 npm run build-ontology  # Convert all phyx/ files into CLADO.json
 ```
@@ -44,6 +44,15 @@ node regnum2phyx/regnum2phyx.js dump.json -o output_dir/
 node regnum2phyx/regnum2phyx.js dump.json -o output_dir/ --filenames regnum-id
 ```
 
+**Update phyx/phylonym/ from a new Regnum dump:**
+```bash
+# Stage merged output for review (default — safe):
+npm run update-phylonym -- data/dump.json --report data/merge_report.csv
+
+# Accept the staged merge (replaces phyx/phylonym/):
+npm run update-phylonym -- data/dump.json --accept
+```
+
 ## Architecture
 
 ### Data Pipeline
@@ -59,10 +68,11 @@ PhyloRegnum DB dump (JSON)
 
 - **`phyx/`** — Curated PHYX files organized by source:
   - `from_papers/` — Phyloreferences from peer-reviewed papers (e.g., `Brochu 2003/`)
-  - `phylonym/` — Files from the PhyloNym database
+  - `phylonym/` — Files from the Phylonym database. Has subdirs `newick-problems/` and `newick-recursion-error/` containing archival copies as `CLADO_*.json.txt` (renamed extension keeps them out of the standard `*.json` glob so the test suite skips their newicks); a regnum ID may appear at both root and subdir paths. `scripts/` holds ad-hoc helpers.
   - `encrypted/` — Git-crypt encrypted files (skipped during processing)
 - **`phyx2ontology/phyx2ontology.js`** — Converts PHYX files to a single Clade Ontology JSON-LD. Reads PHYX files, wraps them via `@phyloref/phyx`, and emits JSON-LD to STDOUT.
 - **`regnum2phyx/regnum2phyx.js`** — Converts PhyloRegnum database dumps (JSON arrays) into individual PHYX files. Handles specifiers, citations (BibJSON format), and author formatting.
+- **`regnum2phyx/merge-phylonym.js`** + **`update-phylonym.js`** — Merge a new Regnum dump with the existing curated `phyx/phylonym/` tree, preserving newicks. Walks subdirs of the old directory; emits each old file (root or subdir) to its same relative path. See `regnum2phyx/README.md` for the full workflow.
 - **`test/`** — Mocha test suite:
   - `test_phyx.js` — Validates all PHYX files in `phyx/` (JSON schema + JSON-LD conversion). Skips git-crypt encrypted files.
   - `test_phyx2ontology.js` — Smoke-tests `phyx2ontology.js` execution on all Phyx files.
@@ -81,7 +91,7 @@ PHYX files are JSON with:
 
 ### Linting
 
-ESLint uses `airbnb-base` + `mocha` plugin. Trailing commas required on multiline arrays/objects (not functions). ES6 syntax.
+Biome (`@biomejs/biome`) is the linter; configuration is in `biome.json`. ES6 syntax.
 
 ### Git-Crypt
 

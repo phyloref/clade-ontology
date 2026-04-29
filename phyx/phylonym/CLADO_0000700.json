@@ -1,0 +1,191 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "An unbiased molecular approach using 3’UTRs resolves the avian family-level tree of life",
+                "year": 2021,
+                "authors": [
+                    {
+                        "name": "H Kuhl",
+                        "alternate": [
+                            "Kuhl, H"
+                        ],
+                        "firstname": "H",
+                        "lastname": "Kuhl"
+                    },
+                    {
+                        "name": "C Frankl-Vilches",
+                        "alternate": [
+                            "Frankl-Vilches , C"
+                        ],
+                        "firstname": "C",
+                        "lastname": "Frankl-Vilches"
+                    },
+                    {
+                        "name": "A Bakker",
+                        "alternate": [
+                            "Bakker , A"
+                        ],
+                        "firstname": "A",
+                        "lastname": "Bakker"
+                    },
+                    {
+                        "name": "G Mayr",
+                        "alternate": [
+                            "Mayr , G"
+                        ],
+                        "firstname": "G",
+                        "lastname": "Mayr"
+                    },
+                    {
+                        "name": "G Nikolaus",
+                        "alternate": [
+                            "Nikolaus , G"
+                        ],
+                        "firstname": "G",
+                        "lastname": "Nikolaus"
+                    },
+                    {
+                        "name": "S T Boerno",
+                        "alternate": [
+                            "Boerno , S T"
+                        ],
+                        "firstname": "S",
+                        "lastname": "Boerno",
+                        "middlename": "T"
+                    },
+                    {
+                        "name": "S Klages",
+                        "alternate": [
+                            "Klages , S"
+                        ],
+                        "firstname": "S",
+                        "lastname": "Klages"
+                    },
+                    {
+                        "name": "B Timmermann",
+                        "alternate": [
+                            "Timmermann , B"
+                        ],
+                        "firstname": "B",
+                        "lastname": "Timmermann"
+                    },
+                    {
+                        "name": "M Gahr",
+                        "alternate": [
+                            "Gahr , M"
+                        ],
+                        "firstname": "M",
+                        "lastname": "Gahr"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Mol Biol Evol",
+                    "volume": "38",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "A comprehensive phylogeny of birds (Aves) using targeted next-generation DNA sequencing",
+                "year": 2015,
+                "authors": [
+                    {
+                        "name": "R O Prum",
+                        "alternate": [
+                            "Prum , R O"
+                        ],
+                        "firstname": "R",
+                        "lastname": "Prum",
+                        "middlename": "O"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Nature",
+                    "volume": "526",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '700'",
+            "label": "Neoaves",
+            "scientificNameAuthorship": "Sangster, George and Braun, Edward L and Johansson, Ulf S and Kimball, Rebecca T and Mayr, Gerald and Suh, Alexander",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "A classification of the living birds of the world based on DNA-DNA hybridization studies",
+                    "year": 1988,
+                    "authors": [
+                        {
+                            "name": "C G Sibley",
+                            "alternate": [
+                                "Sibley , C G"
+                            ],
+                            "firstname": "C",
+                            "lastname": "Sibley",
+                            "middlename": "G"
+                        },
+                        {
+                            "name": "J E Ahlquist",
+                            "alternate": [
+                                "Ahlquist , J E"
+                            ],
+                            "firstname": "J",
+                            "lastname": "Ahlquist",
+                            "middlename": "E"
+                        },
+                        {
+                            "name": "B L Monroe",
+                            "alternate": [
+                                "Monroe, B L"
+                            ],
+                            "firstname": "B",
+                            "lastname": "Monroe",
+                            "middlename": "L"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Auk",
+                        "volume": "105",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [],
+            "definition": "The largest crown clade including Fringilla domestica (now Passer domesticus) Linnaeus, 1758 (Passeriformes) but not Phasianus gallus (now Gallus gallus) Linnaeus, 1758 (Galliformes).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Fringilla domestica (now Passer domesticus) Linnaeus, 1758",
+                        "nameComplete": "Fringilla domestica (now Passer domesticus)"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

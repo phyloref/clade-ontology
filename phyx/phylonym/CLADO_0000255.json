@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -35,10 +35,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 255,
+            "curatorNotes": "Regnum ID: '255'",
             "label": "Gnathostomata",
-            "dwc:scientificNameAuthorship": "Downs, J. P.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Downs, J. P.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Grundriss der Vergleichenden Anatomie",
@@ -62,8 +62,60 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The most inclusive crown clade whose members exhibit jaws synapomorphic with those in Scyliorhinus canicula Linnaeus 1758 (Chondrichthyes).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Gnathostomata",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "J. P. Downs",
+                            "alternate": [
+                                "Downs, J. P."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Downs",
+                            "middlename": "P."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "675-679",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The most inclusive crown clade whose members exhibit jaws synapomorphic with those in Scyliorhinus canicula Linnaeus 1758 (Chondrichthyes).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",

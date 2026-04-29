@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -96,10 +96,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 32,
+            "curatorNotes": "Regnum ID: '32'",
             "label": "Convolvulaceae",
-            "dwc:scientificNameAuthorship": "Stefanović , S., Olmstead, R. G.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Stefanović , S. and Olmstead, R. G.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Genera plantarum.",
@@ -122,8 +122,68 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The least inclusive clade containing Convolvulus arvensis Linnaeus 1753 and Humbertia madagascariensis Lamarck 1786.",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Convolvulaceae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "S. Stefanovic",
+                            "alternate": [
+                                "Stefanovic, S."
+                            ],
+                            "firstname": "S.",
+                            "lastname": "Stefanovic"
+                        },
+                        {
+                            "name": "R. G. Olmstead",
+                            "alternate": [
+                                "Olmstead, R. G."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Olmstead",
+                            "middlename": "G."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "411-412",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The least inclusive clade containing Convolvulus arvensis Linnaeus 1753 and Humbertia madagascariensis Lamarck 1786.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -132,15 +192,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
                         "label": "Convolvulus arvensis Linnaeus, 1753",
                         "nameComplete": "Convolvulus arvensis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Humbertia madagascariensis Lamarck, 1786",
-                        "nameComplete": "Humbertia madagascariensis"
                     }
                 }
             ],

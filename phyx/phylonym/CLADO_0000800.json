@@ -1,0 +1,120 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "The phylogenetics of Teleosauroidea (Crocodylomorpha, Thalattosuchia) and implications for their ecology and evolution",
+                "year": 2020,
+                "authors": [
+                    {
+                        "name": "M M Johnson",
+                        "alternate": [
+                            "Johnson, M M"
+                        ],
+                        "firstname": "M",
+                        "lastname": "Johnson",
+                        "middlename": "M"
+                    },
+                    {
+                        "name": "M T Young",
+                        "alternate": [
+                            "Young, M T"
+                        ],
+                        "firstname": "M",
+                        "lastname": "Young",
+                        "middlename": "T"
+                    },
+                    {
+                        "name": "S L Brusatte",
+                        "alternate": [
+                            "Brusatte, S L"
+                        ],
+                        "firstname": "S",
+                        "lastname": "Brusatte",
+                        "middlename": "L"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "59-61, 63 and 64",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "PeerJ",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '800'",
+            "label": "Teleosauridae",
+            "scientificNameAuthorship": "Geoffroy Saint-Hilaire, E",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Recherches sur de grands sauriens trouvés al’état fossile aux confins maritimes de la Basse-Normandie, attribués d’abord au Crocodile, puis déterminés sous les noms de Teleosaurus et Steneosaurus",
+                    "year": 1831,
+                    "authors": [
+                        {
+                            "name": "E Geoffroy Saint-Hilaire",
+                            "alternate": [
+                                "Geoffroy Saint-Hilaire, E"
+                            ],
+                            "firstname": "E",
+                            "lastname": "Geoffroy Saint-Hilaire"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Mémoires de l’Academie des sciences",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Recherches sur de grands sauriens trouvés al’état fossile aux confins maritimes de la Basse-Normandie, attribués d’abord au Crocodile, puis déterminés sous les noms de Teleosaurus et Steneosaurus",
+                    "year": 1831,
+                    "authors": [
+                        {
+                            "name": "E Geoffroy Saint-Hilaire",
+                            "alternate": [
+                                "Geoffroy Saint-Hilaire, E"
+                            ],
+                            "firstname": "E",
+                            "lastname": "Geoffroy Saint-Hilaire"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Mémoires de l’Academie des sciences",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The largest clade within Teleosauroidea containing Teleosaurus cadomensis (Lamouroux 1820) but not Machimosaurus hugii (von Meyer 1837).",
+            "internalSpecifiers": [],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Machimosaurus hugii von Meyer, 1837",
+                        "nameComplete": "Machimosaurus hugii"
+                    }
+                }
+            ]
+        }
+    ]
+}

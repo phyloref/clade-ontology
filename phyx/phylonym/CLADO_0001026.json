@@ -1,0 +1,57 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '1026'",
+            "label": "Crocodylia",
+            "scientificNameAuthorship": "Gmelin,",
+            "namePublishedIn": [],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic Approaches Toward Crocodylian History",
+                    "year": 2003,
+                    "authors": [
+                        {
+                            "name": "Christopher A. Brochu",
+                            "alternate": [
+                                "Brochu, Christopher A."
+                            ],
+                            "firstname": "Christopher",
+                            "lastname": "Brochu",
+                            "middlename": "A."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "https://doi.org/10.1146/annurev.earth.31.100901.141308"
+                        }
+                    ],
+                    "link": [],
+                    "journal": {
+                        "name": "Annual Review of Earth and Planetary Sciences",
+                        "volume": "31",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "Last common ancestor of Gavialis gangeticus, Alligator mississippiensis, and Crocodylus niloticus and all of its descendents",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Gavialis gangeticus",
+                        "nameComplete": "Gavialis gangeticus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

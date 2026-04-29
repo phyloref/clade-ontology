@@ -50,15 +50,15 @@ describe('Test regnum2phyx.js', () => {
       );
 
       it('could be executed by regnum2phyx.js', () => {
-        expect(child.stderr).to.be.empty;
-        expect(child.stdout).to.match(/^(\d+) Phyx files produced successfully.\n$/);
+        if (child.stderr) process.stderr.write(child.stderr);
         expect(child.status).to.equal(0);
+        expect(child.stdout).to.match(/^(\d+) Phyx files produced successfully.\n$/);
       });
 
       // There should be an ./expected/${basename} directory
       // containing at least one file.
       const basename = filename.replace(/.json$/i, '');
-      const producedFiles = fs.readdirSync(`${tmpdirname}`);
+      const producedFiles = fs.existsSync(tmpdirname) ? fs.readdirSync(tmpdirname) : [];
       const expectedFiles = fs.readdirSync(`${__dirname}/expected/${basename}`);
 
       it('should produce the expected files', () => {

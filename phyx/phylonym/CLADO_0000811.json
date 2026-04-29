@@ -1,0 +1,102 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A new pipid from the Cretaceous of Africa (In Becetèn, Niger) and early evolution of the Pipidae",
+                "year": 2023,
+                "authors": [
+                    {
+                        "name": "Lamierre",
+                        "alternate": [
+                            "Lamierre,"
+                        ],
+                        "lastname": "Lamierre"
+                    },
+                    {
+                        "name": "et al",
+                        "alternate": [
+                            "et al,"
+                        ],
+                        "lastname": "et al"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "8",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Systematic Palaeontology",
+                    "volume": "21",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '811'",
+            "label": "Pipinomorpha",
+            "scientificNameAuthorship": "Lemierre, and Bailon, and Folie, and Laurin,",
+            "namePublishedIn": [],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "A new pipid from the Cretaceous of Africa (In Becetèn, Niger) and early evolution of the Pipidae",
+                    "year": 2023,
+                    "authors": [
+                        {
+                            "name": "Alfred Lemierre",
+                            "alternate": [
+                                "Lemierre, Alfred"
+                            ],
+                            "firstname": "Alfred",
+                            "lastname": "Lemierre"
+                        },
+                        {
+                            "name": "et al",
+                            "alternate": [
+                                "et al,"
+                            ],
+                            "lastname": "et al"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Journal of Systematic Palaeontology",
+                        "volume": "21",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "Pipinomorpha is the largest clade that includes Pipa pipa Linnaeus 1758 but not Xenopus laevis Daudin 1802.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Pipa pipa Linnaeus, 1758",
+                        "nameComplete": "Pipa pipa"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Xenopus laevis Daudin, 1802",
+                        "nameComplete": "Xenopus laevis"
+                    }
+                }
+            ]
+        }
+    ]
+}

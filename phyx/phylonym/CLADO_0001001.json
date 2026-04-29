@@ -1,0 +1,144 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Investigating the utility of anchored hybrid enrichment data to investigate the relationships among the killifishes (Actinopterygii: Cyprinodontiformes), a globally distributed group of fishes",
+                "year": 2022,
+                "authors": [
+                    {
+                        "name": "K. R. Piller",
+                        "alternate": [
+                            "Piller, K. R."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Piller",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "E. Parker",
+                        "alternate": [
+                            "Parker, E."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Parker"
+                    },
+                    {
+                        "name": "A. R. Lemmon",
+                        "alternate": [
+                            "Lemmon, A. R."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Lemmon",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "E. M. Lemmon",
+                        "alternate": [
+                            "Lemmon, E. M."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Lemmon",
+                        "middlename": "M."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3-7",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2022.107482"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Phylogenetics and Evolution",
+                    "volume": "173",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '1001'",
+            "label": "Cyprinodontoidei",
+            "scientificNameAuthorship": "Thacker, C. E. and Near, T. J.",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Enumeratio specierum piscium hucusque in Archipelago indico observatarum, adjectis habitationibusque, ubi descriptiones earum recentiores reperiuntur, nec non speciebus Musei Bleekeriani Bengalensibus, Japonicis, Capensibus Tasmanicisque",
+                    "year": 1859,
+                    "authors": [
+                        {
+                            "name": "P. Bleeker",
+                            "alternate": [
+                                "Bleeker, P."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Bleeker"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Acta Societatis Scientiarum Indo-Neerlandensis",
+                        "volume": "6",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
+                    "authors": [
+                        {
+                            "name": "T. J. Near",
+                            "alternate": [
+                                "Near, T. J."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "C. E. Thacker",
+                            "alternate": [
+                                "Thacker, C. E."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "Cyprinodon variegatus Lacepède 1803, Poecilia velifera (Regan 1914), Pantanodon stuhlmanni (Ahl 1924), Austrolebias nigripinnis (Regan 1912), and Aplocheilus lineatus (Valenciennes in Cuvier and Valenciennes 1846)",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Cyprinodon variegatus Lacepède, 1803",
+                        "nameComplete": "Cyprinodon variegatus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

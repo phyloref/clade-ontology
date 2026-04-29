@@ -1,0 +1,194 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "An inverse latitudinal gradient in speciation rate for marine fishes",
+                "year": 2018,
+                "authors": [
+                    {
+                        "name": "D. L. Rabosky",
+                        "alternate": [
+                            "Rabosky, D. L."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Rabosky",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "J. Chang",
+                        "alternate": [
+                            "Chang, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Chang"
+                    },
+                    {
+                        "name": "P. O. Title",
+                        "alternate": [
+                            "Title, P. O."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Title",
+                        "middlename": "O."
+                    },
+                    {
+                        "name": "P. F. Cowman",
+                        "alternate": [
+                            "Cowman, P. F."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Cowman",
+                        "middlename": "F."
+                    },
+                    {
+                        "name": "L. Sallan",
+                        "alternate": [
+                            "Sallan, L."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Sallan"
+                    },
+                    {
+                        "name": "M. Friedman",
+                        "alternate": [
+                            "Friedman, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Friedman"
+                    },
+                    {
+                        "name": "K. Kaschner",
+                        "alternate": [
+                            "Kaschner, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Kaschner"
+                    },
+                    {
+                        "name": "C. Garilao",
+                        "alternate": [
+                            "Garilao, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Garilao"
+                    },
+                    {
+                        "name": "T. J. Near",
+                        "alternate": [
+                            "Near, T. J."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Near",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "M. Coll",
+                        "alternate": [
+                            "Coll, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Coll"
+                    },
+                    {
+                        "name": "M. E. Alfaro",
+                        "alternate": [
+                            "Alfaro, M. E."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Alfaro",
+                        "middlename": "E."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Nature",
+                    "volume": "559",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '910'",
+            "label": "Siluroidei",
+            "scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Ichthyologiae archipelagi Indici prodromus. vol 1. Siluri",
+                    "year": 1858,
+                    "authors": [
+                        {
+                            "name": "P. Bleeker",
+                            "alternate": [
+                                "Bleeker, P."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Bleeker"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Lange",
+                    "city": "Batavia",
+                    "pages": "370",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Phylogeny and classification of Actinopterygii",
+                    "authors": [
+                        {
+                            "name": "Thomas J. Near",
+                            "alternate": [
+                                "Near, Thomas J."
+                            ],
+                            "firstname": "Thomas",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "Christine E. Thacker",
+                            "alternate": [
+                                "Thacker, Christine E."
+                            ],
+                            "firstname": "Christine",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The least inclusive crown clade that contains Silurus glanis Linnaeus 1758, Cetopsis coecutiens (Lichtenstein 1819), and Pimelodus maculatus Lacepède 1803, but not Loricaria simillima Regan 1904 or Diplomystes nahuelbutaensis Arratia 1987.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Silurus glanis Linnaeus, 1758",
+                        "nameComplete": "Silurus glanis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

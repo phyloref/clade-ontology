@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -182,10 +182,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 39,
+            "curatorNotes": "Regnum ID: '39'",
             "label": "Enteropneusta",
-            "dwc:scientificNameAuthorship": "Cameron, C. B.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Cameron, C. B.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Grundzüge der vergleichenden Anatomie. 2. umgearb. Auflage. Mit 319 Holzschnitten.",
@@ -207,8 +207,68 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Ptychodera flava Eschscholtz 1825, Harrimania kupfferi von Willemoes-Suhm 1871, Saccoglossus kowalevskii Agassiz 1873, Glandiceps hacksi Marion 1885, Stereobalanus canadensis Spengel 1893, Protoglossus koehleri Caullery and Mesnil 1900, Xenopleura vivipara Gilchrist 1925, Saxipendium coronatum Woodwick & Sensenbaugh 1985, and Tergivelum baldwinae Holland et al. 2009.",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Enteropneusta",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "C. B. Cameron",
+                            "alternate": [
+                                "Cameron, C. B."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Cameron",
+                            "middlename": "B."
+                        },
+                        {
+                            "name": "N. Jabr",
+                            "alternate": [
+                                "Jabr, N."
+                            ],
+                            "firstname": "N.",
+                            "lastname": "Jabr"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "633-635",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The crown clade originating in the most recent common ancestor of Ptychodera flava Eschscholtz 1825, Harrimania kupfferi von Willemoes-Suhm 1871, Saccoglossus kowalevskii Agassiz 1873, Glandiceps hacksi Marion 1885, Stereobalanus canadensis Spengel 1893, Protoglossus koehleri Caullery and Mesnil 1900, Xenopleura vivipara Gilchrist 1925, Saxipendium coronatum Woodwick & Sensenbaugh 1985, and Tergivelum baldwinae Holland et al. 2009.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -217,78 +277,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Ptychodera flava Eschscholtz, 1825",
                         "nameComplete": "Ptychodera flava"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Harrimania kupfferi von Willemoes-Suhm, 1871",
-                        "nameComplete": "Harrimania kupfferi"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Saccoglossus kowalevskii Agassiz, 1873",
-                        "nameComplete": "Saccoglossus kowalevskii"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Glandiceps hacksi Marion, 1885",
-                        "nameComplete": "Glandiceps hacksi"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Stereobalanus canadensis Spengel, 1893",
-                        "nameComplete": "Stereobalanus canadensis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Protoglossus koehleri Caullery and Mesnil, 1900",
-                        "nameComplete": "Protoglossus koehleri"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Xenopleura vivipara Gilchrist, 1925",
-                        "nameComplete": "Xenopleura vivipara"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Saxipendium coronatum Woodwick and Sensenbaugh, 1985",
-                        "nameComplete": "Saxipendium coronatum"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Tergivelum baldwinae Holland, 2009",
-                        "nameComplete": "Tergivelum baldwinae"
                     }
                 }
             ],

@@ -1,6 +1,83 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "The Fungal Tree of Life: from molecular systematics to genome-scale phylogenies.",
+                "year": 2017,
+                "edition": "5",
+                "authors": [
+                    {
+                        "name": "J. W. Spatafora",
+                        "alternate": [
+                            "Spatafora, J. W."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Spatafora",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "M. C. Aime",
+                        "alternate": [
+                            "Aime, M. C."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Aime",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "I. V. Grigoriev",
+                        "alternate": [
+                            "Grigoriev, I. V."
+                        ],
+                        "firstname": "I.",
+                        "lastname": "Grigoriev",
+                        "middlename": "V."
+                    },
+                    {
+                        "name": "F. Martin",
+                        "alternate": [
+                            "Martin, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Martin"
+                    },
+                    {
+                        "name": "J. E. Stajich",
+                        "alternate": [
+                            "Stajich, J. E."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Stajich",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "M. Blackwell",
+                        "alternate": [
+                            "Blackwell, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Blackwell"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "doi:10.1128/microbiolspec.FUNK-0053–-2016"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Microbiology Spectrum",
+                    "volume": "5",
+                    "identifier": []
+                }
+            }
+        },
         {
             "primaryPhylogenyCitation": {
                 "type": "article",
@@ -364,83 +441,6 @@
         {
             "phylogenyCitation": {
                 "type": "article",
-                "title": "The Fungal Tree of Life: from molecular systematics to genome-scale phylogenies.",
-                "year": 2017,
-                "edition": "5",
-                "authors": [
-                    {
-                        "name": "J. W. Spatafora",
-                        "alternate": [
-                            "Spatafora, J. W."
-                        ],
-                        "firstname": "J.",
-                        "lastname": "Spatafora",
-                        "middlename": "W."
-                    },
-                    {
-                        "name": "M. C. Aime",
-                        "alternate": [
-                            "Aime, M. C."
-                        ],
-                        "firstname": "M.",
-                        "lastname": "Aime",
-                        "middlename": "C."
-                    },
-                    {
-                        "name": "I. V. Grigoriev",
-                        "alternate": [
-                            "Grigoriev, I. V."
-                        ],
-                        "firstname": "I.",
-                        "lastname": "Grigoriev",
-                        "middlename": "V."
-                    },
-                    {
-                        "name": "F. Martin",
-                        "alternate": [
-                            "Martin, F."
-                        ],
-                        "firstname": "F.",
-                        "lastname": "Martin"
-                    },
-                    {
-                        "name": "J. E. Stajich",
-                        "alternate": [
-                            "Stajich, J. E."
-                        ],
-                        "firstname": "J.",
-                        "lastname": "Stajich",
-                        "middlename": "E."
-                    },
-                    {
-                        "name": "M. Blackwell",
-                        "alternate": [
-                            "Blackwell, M."
-                        ],
-                        "firstname": "M.",
-                        "lastname": "Blackwell"
-                    }
-                ],
-                "editors": [],
-                "series_editors": [],
-                "figure": "1",
-                "identifier": [
-                    {
-                        "type": "doi",
-                        "id": "doi:10.1128/microbiolspec.FUNK-0053–-2016"
-                    }
-                ],
-                "link": [],
-                "journal": {
-                    "name": "Microbiology Spectrum",
-                    "volume": "5",
-                    "identifier": []
-                }
-            }
-        },
-        {
-            "phylogenyCitation": {
-                "type": "article",
                 "title": "A five-gene phylogenetic analysis of the Pezizomycotina.",
                 "year": 2006,
                 "authors": [
@@ -502,10 +502,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 17,
+            "curatorNotes": "Regnum ID: '17'",
             "label": "Ascomycota",
-            "dwc:scientificNameAuthorship": "Spatafora, J. W., Blackwell, M., Taylor, J. W.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Spatafora, J. W. and Blackwell, M. and Taylor, J. W.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Morphology of plants.",
@@ -530,8 +530,77 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The largest crown clade containing Taphrina deformans (Berk.) Tul. 1866, but not Puccinia graminis Pers. 1794, Ustilago tritici (Bjerk.) E. Rostrup 1890, Agaricus bisporus (J.E. Lange) Imbach 1946, and Entorrhiza casparyana (Magnus) Lagerb. 1888.",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Ascomycota",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "J. W. Spatafora",
+                            "alternate": [
+                                "Spatafora, J. W."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Spatafora",
+                            "middlename": "W."
+                        },
+                        {
+                            "name": "M. Blackwell",
+                            "alternate": [
+                                "Blackwell, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Blackwell"
+                        },
+                        {
+                            "name": "J. W. Taylor",
+                            "alternate": [
+                                "Taylor, J. W."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Taylor",
+                            "middlename": "W."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "123-126",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The largest crown clade containing Taphrina deformans (Berk.) Tul. 1866, but not Puccinia graminis Pers. 1794, Ustilago tritici (Bjerk.) E. Rostrup 1890, Agaricus bisporus (J.E. Lange) Imbach 1946, and Entorrhiza casparyana (Magnus) Lagerb. 1888.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -539,63 +608,11 @@
                         "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
                         "label": "Taphrina deformans Tulasne, 1866",
-                        "nameComplete": "Taphrina deformans",
-                        "genusPart": "Taphrina",
-                        "specificEpithet": "deformans"
-                    },
-                    "label": "Taphrina deformans 1866"
+                        "nameComplete": "Taphrina deformans"
+                    }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Puccinia graminis Persoon, 1794",
-                        "nameComplete": "Puccinia graminis",
-                        "genusPart": "Puccinia",
-                        "specificEpithet": "graminis"
-                    },
-                    "label": "Puccinia graminis 1794"
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Ustilago tritici Rostrup, 1890",
-                        "nameComplete": "Ustilago tritici",
-                        "genusPart": "Ustilago",
-                        "specificEpithet": "tritici"
-                    },
-                    "label": "Ustilago tritici 1890"
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Agaricus bisporus Imbach, 1946",
-                        "nameComplete": "Agaricus bisporus",
-                        "genusPart": "Agaricus",
-                        "specificEpithet": "bisporus"
-                    },
-                    "label": "Agaricus bisporus 1946"
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Entorrhiza casparyana Lagerberg, 1888",
-                        "nameComplete": "Entorrhiza casparyana",
-                        "genusPart": "Entorrhiza",
-                        "specificEpithet": "casparyana"
-                    },
-                    "label": "Entorrhiza casparyana 1888"
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

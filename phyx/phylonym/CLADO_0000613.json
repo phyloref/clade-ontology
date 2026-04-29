@@ -1,0 +1,159 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "The evolution of dinosaurs",
+                "year": 1999,
+                "authors": [
+                    {
+                        "name": "P. C. Sereno",
+                        "alternate": [
+                            "Sereno, P. C."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Sereno",
+                        "middlename": "C."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Science",
+                    "volume": "284",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '613'",
+            "label": "Euornithopoda",
+            "scientificNameAuthorship": "Madzia, Daniel and Arbour, Victoria M. and Boyd, Clint A. and Farke, Andrew A. and Cruzado-Caballero, Penélope and Evans, David C.",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Phylogeny of the bird-hipped dinosaurs",
+                    "year": 1986,
+                    "authors": [
+                        {
+                            "name": "P. C. Sereno",
+                            "alternate": [
+                                "Sereno, P. C."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Sereno",
+                            "middlename": "C."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "National Geographic Research",
+                        "volume": "2",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "The phylogenetic nomenclature of ornithischian dinosaurs",
+                    "year": 2021,
+                    "authors": [
+                        {
+                            "name": "Daniel Madzia",
+                            "alternate": [
+                                "Madzia, Daniel"
+                            ],
+                            "firstname": "Daniel",
+                            "lastname": "Madzia"
+                        },
+                        {
+                            "name": "Victoria M. Arbour",
+                            "alternate": [
+                                "Arbour, Victoria M."
+                            ],
+                            "firstname": "Victoria",
+                            "lastname": "Arbour",
+                            "middlename": "M."
+                        },
+                        {
+                            "name": "Clint A. Boyd",
+                            "alternate": [
+                                "Boyd, Clint A."
+                            ],
+                            "firstname": "Clint",
+                            "lastname": "Boyd",
+                            "middlename": "A."
+                        },
+                        {
+                            "name": "Andrew A. Farke",
+                            "alternate": [
+                                "Farke, Andrew A."
+                            ],
+                            "firstname": "Andrew",
+                            "lastname": "Farke",
+                            "middlename": "A."
+                        },
+                        {
+                            "name": "Penélope Cruzado-Caballero",
+                            "alternate": [
+                                "Cruzado-Caballero, Penélope"
+                            ],
+                            "firstname": "Penélope",
+                            "lastname": "Cruzado-Caballero"
+                        },
+                        {
+                            "name": "David C. Evans",
+                            "alternate": [
+                                "Evans, David C."
+                            ],
+                            "firstname": "David",
+                            "lastname": "Evans",
+                            "middlename": "C."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.7717/peerj.12362"
+                        }
+                    ],
+                    "link": [
+                        {
+                            "url": "https://doi.org/10.7717/peerj.12362"
+                        }
+                    ],
+                    "journal": {
+                        "name": "PeerJ",
+                        "volume": "9",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The largest clade within Ornithopoda containing Iguanodon bernissartensis Boulenger in Beneden, 1881 but not Heterodontosaurus tucki Crompton & Charig, 1962.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Iguanodon bernissartensis Boulenger, 1881",
+                        "nameComplete": "Iguanodon bernissartensis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

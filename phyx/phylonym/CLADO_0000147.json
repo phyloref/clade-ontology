@@ -1,96 +1,6 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
-        {
-            "primaryPhylogenyCitation": {
-                "type": "book_section",
-                "title": "Recent research on brachiopod evolution.  In Treatise on Invertebrate Paleontology",
-                "year": 2007,
-                "authors": [
-                    {
-                        "name": "S. J. Carlson",
-                        "alternate": [
-                            "Carlson, S. J."
-                        ],
-                        "firstname": "S.",
-                        "lastname": "Carlson",
-                        "middlename": "J."
-                    }
-                ],
-                "editors": [
-                    {
-                        "name": "P. A. Selden",
-                        "alternate": [
-                            "Selden, P. A."
-                        ],
-                        "firstname": "P.",
-                        "lastname": "Selden",
-                        "middlename": "A."
-                    }
-                ],
-                "series_editors": [],
-                "publisher": "Geological Society of America and University of Kansas Press, Boulder and Lawrence",
-                "pages": "2878-2900",
-                "figure": "1908",
-                "identifier": [],
-                "link": []
-            }
-        },
-        {
-            "phylogenyCitation": {
-                "type": "book_section",
-                "title": "Phylogenetic relationships among brachiopod higher taxa.",
-                "section_title": "Brachiopods Through Time",
-                "year": 1991,
-                "authors": [
-                    {
-                        "name": "S. J. Carlson",
-                        "alternate": [
-                            "Carlson, S. J."
-                        ],
-                        "firstname": "S.",
-                        "lastname": "Carlson",
-                        "middlename": "J."
-                    }
-                ],
-                "editors": [
-                    {
-                        "name": "D. I. MacKinnon",
-                        "alternate": [
-                            "MacKinnon, D. I."
-                        ],
-                        "firstname": "D.",
-                        "lastname": "MacKinnon",
-                        "middlename": "I."
-                    },
-                    {
-                        "name": "D. E. Lee",
-                        "alternate": [
-                            "Lee, D. E."
-                        ],
-                        "firstname": "D.",
-                        "lastname": "Lee",
-                        "middlename": "E."
-                    },
-                    {
-                        "name": "J. D. Campbell",
-                        "alternate": [
-                            "Campbell, J. D."
-                        ],
-                        "firstname": "J.",
-                        "lastname": "Campbell",
-                        "middlename": "D."
-                    }
-                ],
-                "series_editors": [],
-                "publisher": "A. A. Balkema",
-                "city": "Rotterdam",
-                "pages": "3-10",
-                "figure": "4",
-                "identifier": [],
-                "link": []
-            }
-        },
         {
             "phylogenyCitation": {
                 "type": "article",
@@ -189,6 +99,96 @@
                     "volume": "351",
                     "identifier": []
                 }
+            }
+        },
+        {
+            "primaryPhylogenyCitation": {
+                "type": "book_section",
+                "title": "Recent research on brachiopod evolution.  In Treatise on Invertebrate Paleontology",
+                "year": 2007,
+                "authors": [
+                    {
+                        "name": "S. J. Carlson",
+                        "alternate": [
+                            "Carlson, S. J."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Carlson",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "P. A. Selden",
+                        "alternate": [
+                            "Selden, P. A."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Selden",
+                        "middlename": "A."
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "Geological Society of America and University of Kansas Press, Boulder and Lawrence",
+                "pages": "2878-2900",
+                "figure": "1908",
+                "identifier": [],
+                "link": []
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "book_section",
+                "title": "Phylogenetic relationships among brachiopod higher taxa.",
+                "section_title": "Brachiopods Through Time",
+                "year": 1991,
+                "authors": [
+                    {
+                        "name": "S. J. Carlson",
+                        "alternate": [
+                            "Carlson, S. J."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Carlson",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "D. I. MacKinnon",
+                        "alternate": [
+                            "MacKinnon, D. I."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "MacKinnon",
+                        "middlename": "I."
+                    },
+                    {
+                        "name": "D. E. Lee",
+                        "alternate": [
+                            "Lee, D. E."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Lee",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "J. D. Campbell",
+                        "alternate": [
+                            "Campbell, J. D."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Campbell",
+                        "middlename": "D."
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "A. A. Balkema",
+                "city": "Rotterdam",
+                "pages": "3-10",
+                "figure": "4",
+                "identifier": [],
+                "link": []
             }
         },
         {
@@ -293,12 +293,73 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 147,
+            "curatorNotes": "Regnum ID: '147'",
             "label": "Pan-Neoarticulata",
-            "dwc:scientificNameAuthorship": "Carlson, S. J., Cohen, B. L.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The total clade of the crown clade Neoarticulata.",
+            "scientificNameAuthorship": "Carlson, S. J. and Cohen, B. L.",
+            "namePublishedIn": [],
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Pan-Neoarticulata",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "S. J. Carlson",
+                            "alternate": [
+                                "Carlson, S. J."
+                            ],
+                            "firstname": "S.",
+                            "lastname": "Carlson",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "B. L. Cohen",
+                            "alternate": [
+                                "Cohen, B. L."
+                            ],
+                            "firstname": "B.",
+                            "lastname": "Cohen",
+                            "middlename": "L."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "535-542",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The total clade of the crown clade Neoarticulata.",
             "internalSpecifiers": [],
             "externalSpecifiers": []
         }

@@ -1,0 +1,127 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Enter the dragons: the phylogeny of Azhdarchoidea (Pterosauria: Pterodactyloidea) and the evolution of giant size in pterosaurs",
+                "year": 2025,
+                "authors": [
+                    {
+                        "name": "Henry N. Thomas",
+                        "alternate": [
+                            "Thomas, Henry N."
+                        ],
+                        "firstname": "Henry",
+                        "lastname": "Thomas",
+                        "middlename": "N."
+                    },
+                    {
+                        "name": "Skye N. McDavid",
+                        "alternate": [
+                            "McDavid, Skye N."
+                        ],
+                        "firstname": "Skye",
+                        "lastname": "McDavid",
+                        "middlename": "N."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "4",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1080/14772019.2025.2569368"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "https://www.tandfonline.com/doi/full/10.1080/14772019.2025.2569368"
+                    }
+                ],
+                "journal": {
+                    "name": "Journal of Systematic Palaeontology",
+                    "volume": "23",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '1178'",
+            "label": "Shenzhoupterinae",
+            "scientificNameAuthorship": "Thomas, Henry N. and McDavid, Skye N.",
+            "namePublishedIn": [],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Enter the dragons: the phylogeny of Azhdarchoidea (Pterosauria: Pterodactyloidea) and the evolution of giant size in pterosaurs",
+                    "year": 2025,
+                    "authors": [
+                        {
+                            "name": "Henry N. Thomas",
+                            "alternate": [
+                                "Thomas, Henry N."
+                            ],
+                            "firstname": "Henry",
+                            "lastname": "Thomas",
+                            "middlename": "N."
+                        },
+                        {
+                            "name": "Skye N. McDavid",
+                            "alternate": [
+                                "McDavid, Skye N."
+                            ],
+                            "firstname": "Skye",
+                            "lastname": "McDavid",
+                            "middlename": "N."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.1080/14772019.2025.2569368"
+                        }
+                    ],
+                    "link": [
+                        {
+                            "url": "https://www.tandfonline.com/doi/full/10.1080/14772019.2025.2569368"
+                        }
+                    ],
+                    "journal": {
+                        "name": "Journal of Systematic Palaeontology",
+                        "volume": "23",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The most inclusive clade containing Shenzhoupterus chaoyangensis Lü, Unwin, Xu, & Zhang, 2008, but not Chaoyangopterus zhangi Wang & Zhou, 2003.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Shenzhoupterus chaoyangensis Lü and Unwin and Xu and Zhang, 2008",
+                        "nameComplete": "Shenzhoupterus chaoyangensis"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Chaoyangopterus zhangi Wang and Zhou, 2003",
+                        "nameComplete": "Chaoyangopterus zhangi"
+                    }
+                }
+            ]
+        }
+    ]
+}

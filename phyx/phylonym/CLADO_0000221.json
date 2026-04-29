@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -70,10 +70,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 221,
+            "curatorNotes": "Regnum ID: '221'",
             "label": "Mammaliaformes",
-            "dwc:scientificNameAuthorship": "Rowe, T. B.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Rowe, T. B.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Definition, diagnosis and origin of Mammalia.",
@@ -100,8 +100,60 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The smallest clade containing Homo sapiens Linnaeus 1758 (Mammalia) and Morganucodon oehleri Rigney 1963 (Morganucodontidae).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Mammaliaformes",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "T. B. Rowe",
+                            "alternate": [
+                                "Rowe, T. B."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Rowe",
+                            "middlename": "B."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "851-857",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The smallest clade containing Homo sapiens Linnaeus 1758 (Mammalia) and Morganucodon oehleri Rigney 1963 (Morganucodontidae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -110,15 +162,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Homo sapiens Linnaeus, 1758",
                         "nameComplete": "Homo sapiens"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Morganucodon oehleri Rigney, 1963",
-                        "nameComplete": "Morganucodon oehleri"
                     }
                 }
             ],

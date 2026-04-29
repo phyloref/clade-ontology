@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -33,10 +33,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 7,
+            "curatorNotes": "Regnum ID: '7'",
             "label": "Amniota",
-            "dwc:scientificNameAuthorship": "Laurin, M, Reisz, R. R.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Laurin, M and Reisz, R. R.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Generelle Morphologie der Organismen.",
@@ -59,8 +59,68 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The smallest crown clade containing Homo sapiens Linnaeus 1758 (Synapsida), Testudo graeca Linnaeus 1758 (Testudines), and Crocodylus (originally Lacerta) niloticus Laurenti 1768 (Diapsida; see Reference Phylogeny).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Amniota",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "M. Laurin",
+                            "alternate": [
+                                "Laurin, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Laurin"
+                        },
+                        {
+                            "name": "R. R. Reisz",
+                            "alternate": [
+                                "Reisz, R. R."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Reisz",
+                            "middlename": "R."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "793-797",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The smallest crown clade containing Homo sapiens Linnaeus 1758 (Synapsida), Testudo graeca Linnaeus 1758 (Testudines), and Crocodylus (originally Lacerta) niloticus Laurenti 1768 (Diapsida; see Reference Phylogeny).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -69,24 +129,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Homo sapiens Linnaeus, 1758",
                         "nameComplete": "Homo sapiens"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Testudo graeca Linnaeus, 1758",
-                        "nameComplete": "Testudo graeca"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Crocodylus (originally Lacerta) niloticus Laurenti, 1768",
-                        "nameComplete": "Crocodylus (originally Lacerta) niloticus"
                     }
                 }
             ],

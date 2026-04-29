@@ -1,0 +1,189 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Molecular phylogenetics of the Clupeiformes based on exon-capture data and a new classification of the order",
+                "year": 2022,
+                "authors": [
+                    {
+                        "name": "C. Wang",
+                        "alternate": [
+                            "Wang, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Wang"
+                    },
+                    {
+                        "name": "L. Purrafee Dizaj",
+                        "alternate": [
+                            "Purrafee Dizaj, L."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Purrafee Dizaj"
+                    },
+                    {
+                        "name": "J. Huang",
+                        "alternate": [
+                            "Huang, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Huang"
+                    },
+                    {
+                        "name": "K. Kumar",
+                        "alternate": [
+                            "Kumar, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Kumar"
+                    },
+                    {
+                        "name": "C. Kevrekidis",
+                        "alternate": [
+                            "Kevrekidis, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Kevrekidis"
+                    },
+                    {
+                        "name": "B. Reichenbacher",
+                        "alternate": [
+                            "Reichenbacher, B."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Reichenbacher"
+                    },
+                    {
+                        "name": "H. Reza Esmaeili",
+                        "alternate": [
+                            "Reza Esmaeili, H."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Reza Esmaeili"
+                    },
+                    {
+                        "name": "N. Straube",
+                        "alternate": [
+                            "Straube, N."
+                        ],
+                        "firstname": "N.",
+                        "lastname": "Straube"
+                    },
+                    {
+                        "name": "T. Moritz",
+                        "alternate": [
+                            "Moritz, T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Moritz"
+                    },
+                    {
+                        "name": "C. Li",
+                        "alternate": [
+                            "Li, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Li"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2022.107590"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Phylogenetics and Evolution",
+                    "volume": "175",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '901'",
+            "label": "Clupeoidei",
+            "scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Bijdrage tot de kennis der ichthyologische fauna van het eiland Madura, met beschrijving van eenige nieuwe soorten",
+                    "year": 1849,
+                    "authors": [
+                        {
+                            "name": "P. Bleeker",
+                            "alternate": [
+                                "Bleeker, P."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Bleeker"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Verhandelingen van het Bataviaasch Genootschap van Kunsten en Wetenschappen",
+                        "volume": "22 (8)",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Phylogeny and classification of Actinopterygii",
+                    "authors": [
+                        {
+                            "name": "Thomas J. Near",
+                            "alternate": [
+                                "Near, Thomas J."
+                            ],
+                            "firstname": "Thomas",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "Christine E. Thacker",
+                            "alternate": [
+                                "Thacker, Christine E."
+                            ],
+                            "firstname": "Christine",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The least inclusive crown clade that contains Spratelloides gracilis (Temminck and Schlegel 1846), Clupea harengus Linnaeus 1758, and Engaulis encrasicolus (Linnaeus 1758), but not Denticeps clupeoides Clausen 1959.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Spratelloides gracilis Temminck and Schlegel, 1846",
+                        "nameComplete": "Spratelloides gracilis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

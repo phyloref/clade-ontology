@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -96,10 +96,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 140,
+            "curatorNotes": "Regnum ID: '140'",
             "label": "Nautilus",
-            "dwc:scientificNameAuthorship": "Anderson, F.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Anderson, F.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Systema naturae per regna tria naturae, secundum classes, ordines, genera, species, cum characteribus, differentiis, synonymis, locis. Tomus I. Editio decima, reformata.",
@@ -123,8 +123,59 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Nautilus pompilius Linnaeus 1758, Nautilus perforatus Conrad, 1847 and Nautilus scrobiculatus Lightfoot 1786.",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Nautilus",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "F. Anderson",
+                            "alternate": [
+                                "Anderson, F."
+                            ],
+                            "firstname": "F.",
+                            "lastname": "Anderson"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "553-555",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The crown clade originating in the most recent common ancestor of Nautilus pompilius Linnaeus 1758, Nautilus perforatus Conrad, 1847 and Nautilus scrobiculatus Lightfoot 1786.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -133,24 +184,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Nautilus pompilius Linnaeus, 1758",
                         "nameComplete": "Nautilus pompilius"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Nautilus perforatus Conrad, 1847",
-                        "nameComplete": "Nautilus perforatus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Nautilus scrobiculatus Lightfoot, 1758",
-                        "nameComplete": "Nautilus scrobiculatus"
                     }
                 }
             ],

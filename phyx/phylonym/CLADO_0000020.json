@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -344,10 +344,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 20,
+            "curatorNotes": "Regnum ID: '20'",
             "label": "Campanulaceae",
-            "dwc:scientificNameAuthorship": "Cellinese, N., ,",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Cellinese, N.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Genera plantarum",
@@ -369,8 +369,59 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Campanula latifolia Linnaeus 1753 and all extant organisms or species that share a more recent common ancestor with Campanula latifolia than with Roussea simplex J. E. Smith 1789, Pentaphragma ellipticum Poulsen 1903, and Stylidium graminifolium Swartz ex Willdenow 1805.",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Campanulaceae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "N. Cellinese",
+                            "alternate": [
+                                "Cellinese, N."
+                            ],
+                            "firstname": "N.",
+                            "lastname": "Cellinese"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "381-383",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The crown clade originating in the most recent common ancestor of Campanula latifolia Linnaeus 1753 and all extant organisms or species that share a more recent common ancestor with Campanula latifolia than with Roussea simplex J. E. Smith 1789, Pentaphragma ellipticum Poulsen 1903, and Stylidium graminifolium Swartz ex Willdenow 1805.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -382,35 +433,7 @@
                     }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Roussea simplex Smith, 1789",
-                        "nameComplete": "Roussea simplex"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Pentaphragma ellipticum Poulsen, 1903",
-                        "nameComplete": "Pentaphragma ellipticum"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Stylidium graminifolium Swartz ex Willdenow, 1805",
-                        "nameComplete": "Stylidium graminifolium"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

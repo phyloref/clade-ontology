@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -428,10 +428,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 24,
+            "curatorNotes": "Regnum ID: '24'",
             "label": "Caryophyllales",
-            "dwc:scientificNameAuthorship": "Soltis, P. S., Judd, W. S., Soltis, D. E.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Soltis, P. S. and Judd, W. S. and Soltis, D. E.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Lehrbuch der Naturgeschicte des Pflanzenreichs.  Freiburg im Breisgau, Verlag von Friedrich Wagner.",
@@ -453,8 +453,78 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The smallest crown clade containing Dianthus caryophyllus L. 1753 (Caryophyllaceae), Polygonum sachalinense F. Schmidt ex Maxim. 1859 (Polygonaceae), Simmondsia chinensis (Link) C.K. Schneid. 1907 (Simmondsiaceae), and Rhabdodendron amazonicum (Spruce ex Benth.) Huber 1909 (Rhabdodendraceae).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Caryophyllales",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "P. S. Soltis",
+                            "alternate": [
+                                "Soltis, P. S."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Soltis",
+                            "middlename": "S."
+                        },
+                        {
+                            "name": "W. S. Judd",
+                            "alternate": [
+                                "Judd, W. S."
+                            ],
+                            "firstname": "W.",
+                            "lastname": "Judd",
+                            "middlename": "S."
+                        },
+                        {
+                            "name": "D. E. Soltis",
+                            "alternate": [
+                                "Soltis, D. E."
+                            ],
+                            "firstname": "D.",
+                            "lastname": "Soltis",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "353-356",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The smallest crown clade containing Dianthus caryophyllus L. 1753 (Caryophyllaceae), Polygonum sachalinense F. Schmidt ex Maxim. 1859 (Polygonaceae), Simmondsia chinensis (Link) C.K. Schneid. 1907 (Simmondsiaceae), and Rhabdodendron amazonicum (Spruce ex Benth.) Huber 1909 (Rhabdodendraceae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -463,33 +533,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
                         "label": "Dianthus caryophyllus Linnaeus, 1753",
                         "nameComplete": "Dianthus caryophyllus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Polygonum sachalinense Schmidt ex Maxim, 1859",
-                        "nameComplete": "Polygonum sachalinense"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Simmondsia chinensis Schneid., 1907",
-                        "nameComplete": "Simmondsia chinensis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Rhabdodendron amazonicum Huber, 1909",
-                        "nameComplete": "Rhabdodendron amazonicum"
                     }
                 }
             ],

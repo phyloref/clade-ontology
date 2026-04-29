@@ -1,0 +1,187 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "The systematics and nomenclature of Tethysuchia (Archosauria, Crocodylomorpha) under the International Code of Phylogenetic Nomenclature",
+                "authors": [
+                    {
+                        "name": "Stéphane Jouve",
+                        "alternate": [
+                            "Jouve, Stéphane"
+                        ],
+                        "firstname": "Stéphane",
+                        "lastname": "Jouve"
+                    },
+                    {
+                        "name": "Mark T. Young",
+                        "alternate": [
+                            "Young, Mark T."
+                        ],
+                        "firstname": "Mark",
+                        "lastname": "Young",
+                        "middlename": "T."
+                    },
+                    {
+                        "name": "Alexander K. Hastings",
+                        "alternate": [
+                            "Hastings, Alexander K."
+                        ],
+                        "firstname": "Alexander",
+                        "lastname": "Hastings",
+                        "middlename": "K."
+                    },
+                    {
+                        "name": "Khalafallah Salih",
+                        "alternate": [
+                            "Salih, Khalafallah"
+                        ],
+                        "firstname": "Khalafallah",
+                        "lastname": "Salih"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Zoological Journal of the Linnean Society",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '1216'",
+            "label": "Hyposaurinae",
+            "scientificNameAuthorship": "Jouve, Stéphane and Young, Mark T. and Hastings, Alexander K. and Salih, Khalafallah",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "The genera of reptiles",
+                    "year": 1928,
+                    "authors": [
+                        {
+                            "name": "F. Nopcsa",
+                            "alternate": [
+                                "Nopcsa, F."
+                            ],
+                            "firstname": "F.",
+                            "lastname": "Nopcsa"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Palaeobiologica",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "The systematics and nomenclature of Tethysuchia (Archosauria, Crocodylomorpha) under the International Code of Phylogenetic Nomenclature",
+                    "authors": [
+                        {
+                            "name": "Stéphane Jouve",
+                            "alternate": [
+                                "Jouve, Stéphane"
+                            ],
+                            "firstname": "Stéphane",
+                            "lastname": "Jouve"
+                        },
+                        {
+                            "name": "Mark T. Young",
+                            "alternate": [
+                                "Young, Mark T."
+                            ],
+                            "firstname": "Mark",
+                            "lastname": "Young",
+                            "middlename": "T."
+                        },
+                        {
+                            "name": "Alexander K. Hastings",
+                            "alternate": [
+                                "Hastings, Alexander K."
+                            ],
+                            "firstname": "Alexander",
+                            "lastname": "Hastings",
+                            "middlename": "K."
+                        },
+                        {
+                            "name": "Khalafallah Salih",
+                            "alternate": [
+                                "Salih, Khalafallah"
+                            ],
+                            "firstname": "Khalafallah",
+                            "lastname": "Salih"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Zoological Journal of the Linnean Society",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "Hyosaurinae is the largest clade within Dyrosauridae containing Dorbignysuchus niatu Jouve et al. 2021, Dyrosaurus phosphaticus (Thomas 1893) and Hyposaurus natator Troxell 1925, but not Rodeosuchus machukiru Jouve et al. 2021 or Phosphatosaurus gavialoides Bergounioux 1955.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Dorbignysuchus niatu Jouve and de Muizon and Cespedes-Paz and Sossa-Soruco and Knoll, 2021",
+                        "nameComplete": "Dorbignysuchus niatu"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Dyrosaurus phosphaticus Thomas, 1893",
+                        "nameComplete": "Dyrosaurus phosphaticus"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Hyposaurus natator Troxell, 1925",
+                        "nameComplete": "Hyposaurus natator"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Rodeosuchus machukiru Jouve and de Muizon and Cespedes-Paz and Sossa-Soruco and Knoll, 2021",
+                        "nameComplete": "Rodeosuchus machukiru"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Phosphatosaurus gavialoides Bergounioux, 1955",
+                        "nameComplete": "Phosphatosaurus gavialoides"
+                    }
+                }
+            ]
+        }
+    ]
+}

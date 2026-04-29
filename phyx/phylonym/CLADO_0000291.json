@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -64,10 +64,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 291,
+            "curatorNotes": "Regnum ID: '291'",
             "label": "Scandentia",
-            "dwc:scientificNameAuthorship": "Sargis, E. J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Sargis, E. J.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Die Säugethiere in Abbildungen nach der Natur.",
@@ -91,8 +91,60 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Ptilocercus lowii Gray 1848 and Tupaia (originally Sorex) glis (Diard 1820).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Scandentia",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "E. J. Sargis",
+                            "alternate": [
+                                "Sargis, E. J."
+                            ],
+                            "firstname": "E.",
+                            "lastname": "Sargis",
+                            "middlename": "J."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "899-902",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The crown clade originating in the most recent common ancestor of Ptilocercus lowii Gray 1848 and Tupaia (originally Sorex) glis (Diard 1820).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -101,15 +153,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Ptilocercus lowii Gary, 1848",
                         "nameComplete": "Ptilocercus lowii"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Tupaia (originally Sorex) glis Diard, 1820",
-                        "nameComplete": "Tupaia (originally Sorex) glis"
                     }
                 }
             ],

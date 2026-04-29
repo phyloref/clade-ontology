@@ -1,0 +1,96 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '411'",
+            "label": "Baurusuchidae",
+            "scientificNameAuthorship": "Darlin, Gustavo and Langer, Max and Montefeltro, Felipe",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "A new reptil from the Cretaceous of Brazil",
+                    "year": 1945,
+                    "edition": "25",
+                    "authors": [
+                        {
+                            "name": "Llewellyn  Price",
+                            "alternate": [
+                                "Price, Llewellyn"
+                            ],
+                            "firstname": "Llewellyn",
+                            "lastname": "Price"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Preliminary notes and studies from Ministério da Agricultura, Divisão de Geologia e Mineralogia",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "3D skull modelling and description of a new baurusuchid (Crocodyliformes, Mesoeucrocodylia) from the Late Cretaceous (Bauru Basin) of Brazil",
+                    "year": 2021,
+                    "authors": [
+                        {
+                            "name": "Gustavo Darlin",
+                            "alternate": [
+                                "Darlin, Gustavo"
+                            ],
+                            "firstname": "Gustavo",
+                            "lastname": "Darlin"
+                        },
+                        {
+                            "name": "Max Langer",
+                            "alternate": [
+                                "Langer, Max"
+                            ],
+                            "firstname": "Max",
+                            "lastname": "Langer"
+                        },
+                        {
+                            "name": "Felipe Montefeltro",
+                            "alternate": [
+                                "Montefeltro, Felipe"
+                            ],
+                            "firstname": "Felipe",
+                            "lastname": "Montefeltro"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.1111/joa.13442"
+                        }
+                    ],
+                    "link": [],
+                    "journal": {
+                        "name": "Journal of Anatomy",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The least inclusive clade containing Cynodontosuchus rothi Woodward 1896, Pissarrachampsa sera Montefeltro, Larsson & Langer 2011, and Baurusuchus pachecoi Price 1945.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Cynodontosuchus rothi Woodward, 1896",
+                        "nameComplete": "Cynodontosuchus rothi"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

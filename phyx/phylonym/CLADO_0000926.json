@@ -1,0 +1,188 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Resolution of ray-finned fish phylogeny and timing of diversification",
+                "year": 2012,
+                "authors": [
+                    {
+                        "name": "T. J. Near",
+                        "alternate": [
+                            "Near, T. J."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Near",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "R. I. Eytan",
+                        "alternate": [
+                            "Eytan, R. I."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Eytan",
+                        "middlename": "I."
+                    },
+                    {
+                        "name": "A. Dornburg",
+                        "alternate": [
+                            "Dornburg, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Dornburg"
+                    },
+                    {
+                        "name": "K. L. Kuhn",
+                        "alternate": [
+                            "Kuhn, K. L."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Kuhn",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "J. A. Moore",
+                        "alternate": [
+                            "Moore, J. A."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Moore",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "M. P. Davis",
+                        "alternate": [
+                            "Davis, M. P."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Davis",
+                        "middlename": "P."
+                    },
+                    {
+                        "name": "P. C. Wainwright",
+                        "alternate": [
+                            "Wainwright, P. C."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Wainwright",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "M. Friedman",
+                        "alternate": [
+                            "Friedman, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Friedman"
+                    },
+                    {
+                        "name": "W. L. Smith",
+                        "alternate": [
+                            "Smith, W. L."
+                        ],
+                        "firstname": "W.",
+                        "lastname": "Smith",
+                        "middlename": "L."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1073/Pnas.1206625109"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Proceedings of the National Academy of Sciences",
+                    "volume": "109",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '926'",
+            "label": "Neoteleostei",
+            "scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Gill arches and the phylogeny of fishes, with notes on the classification of vertebrates",
+                    "year": 1969,
+                    "authors": [
+                        {
+                            "name": "G. J. Nelson",
+                            "alternate": [
+                                "Nelson, G. J."
+                            ],
+                            "firstname": "G.",
+                            "lastname": "Nelson",
+                            "middlename": "J."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the American Museum of Natural History",
+                        "volume": "141",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic classification of living and fossil ray-finned fishes (Actinopterygii)",
+                    "authors": [
+                        {
+                            "name": "T. J. Near",
+                            "alternate": [
+                                "Near, T. J."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "C. E. Thacker",
+                            "alternate": [
+                                "Thacker, C. E."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The least inclusive crown clade that contains Ateleopus japonicus Bleeker 1853, Alepisaurus ferox Lowe 1833, Scopelengys tristis Alcock 1890, and Micropterus salmoides (Lacépède 1802), but not Stomias boa (Linnaeus 1758).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Ateleopus japonicus Bleeker, 1853",
+                        "nameComplete": "Ateleopus japonicus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

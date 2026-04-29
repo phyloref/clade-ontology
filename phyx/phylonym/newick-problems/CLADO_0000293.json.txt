@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -51,125 +51,6 @@
                 }
             },
             "newick": "(((((((((((((((((((((((Delphinidae, Monodontidae), (Inia_geoffrensis, Pontoporia_blainvillei)),\nZiphiidae), Physeteridae), Mysticeti), Basilosaurus), Dorudon_atrox),\n(Artiocetus_clavis, Rodhocetus_balochistanensis)), Pakicetidae), \nAmbulocetus_natans), Indohyus_indirae),\n((Diacodexis_pakistanensis, Diacodexis_North_American), Helohyus_plicodon)),\n((Hippopotamus_amphibius, Choeropsis_liberiensis), Merycopotamus_dissimilis)),\n((Archaeotherium, Brachyhyops_wyomingensis), Archaenodon_uintensis, Andrewsarchus_mongoliensis)),\nSiamotherium_krabiense),\n\n((((((((Bos_taurus, Ovis), (Moschus, Leptomeryx)), (Odocoileus, Cervus)), Giraffidae),\nAntilocapra_americana), Tragulus), (Libycosaurus_petrocchii, Protoceras_celer)),\n(Elomeryx, Bothriogenys))),\n\n((((((Babyrousa_babyrussa, Hylochoerus_meinertzhageni), Potamochoerus_porcus), Sus_scrofa),\nTayassu_tajacu), Xenohyus_venitor), Perchoerus)),\n\n(((((Camelus, Lama), Poebrotherium), Cainotherium), (Agriochoerus, Merycoidodon_sp.)),\nGobiohyus_orientalis, Microbunodon_minimum, Anthracokeryx_ulnifer)),\n\n(((Rhinocerotidae, Tapirus), Equus), Hyracotherium)),\n\n((Hyposodus, Protungulatum), Phenacodus, Eoconodon_heilprinianus)),\n\n((((Pachyaena_ossifraga, Harpagolestes_orientalis), Dissacus_praenuntius), \nSinonyx_jiashanensis, Mesonyx_obtusidens, Dissacus_zanabazari, Harpagolestes_uintensis),\nHapalodectes_hetangensis)),\n\n((((Ailurus_fulgens, Canis), (Nandinia_binotata, Felis)), Vulpavus_profectus),\n(((Hyaenodon, Patriofelis), Thinocyon), Sinopa))),\n\nErinaceus), Orycteropus_afer)\n"
-        },
-        {
-            "phylogenyCitation": {
-                "type": "book_section",
-                "title": "The evolution of Artiodactyla",
-                "section_title": "Phylogenetic relationships of cetaceans to terrestrial artiodactyls.",
-                "year": 2007,
-                "authors": [
-                    {
-                        "name": "J. H. Geisler",
-                        "alternate": [
-                            "Geisler , J. H."
-                        ],
-                        "firstname": "J.",
-                        "lastname": "Geisler",
-                        "middlename": "H."
-                    },
-                    {
-                        "name": "J. M. Theodor",
-                        "alternate": [
-                            "Theodor, J. M."
-                        ],
-                        "firstname": "J.",
-                        "lastname": "Theodor",
-                        "middlename": "M."
-                    },
-                    {
-                        "name": "M. D. Uhen",
-                        "alternate": [
-                            "Uhen, M. D."
-                        ],
-                        "firstname": "M.",
-                        "lastname": "Uhen",
-                        "middlename": "D."
-                    },
-                    {
-                        "name": "S. E. Foss",
-                        "alternate": [
-                            "Foss, S. E."
-                        ],
-                        "firstname": "S.",
-                        "lastname": "Foss",
-                        "middlename": "E."
-                    }
-                ],
-                "editors": [
-                    {
-                        "name": "D. R. Prothero",
-                        "alternate": [
-                            "Prothero, D. R."
-                        ],
-                        "firstname": "D.",
-                        "lastname": "Prothero",
-                        "middlename": "R."
-                    },
-                    {
-                        "name": "S. E. Foss",
-                        "alternate": [
-                            "Foss, S. E."
-                        ],
-                        "firstname": "S.",
-                        "lastname": "Foss",
-                        "middlename": "E."
-                    }
-                ],
-                "series_editors": [],
-                "publisher": "Johns Hopkins University Press",
-                "city": "Baltimore",
-                "pages": "19-31",
-                "figure": "3.2",
-                "identifier": [],
-                "link": []
-            }
-        },
-        {
-            "phylogenyCitation": {
-                "type": "book_section",
-                "title": "The evolution of Artiodactyla",
-                "section_title": "Molecular phylogeny of terrestrial artiodactyls: conflicts and resolution.",
-                "year": 2007,
-                "authors": [
-                    {
-                        "name": "J. D. Marcot",
-                        "alternate": [
-                            "Marcot, J. D."
-                        ],
-                        "firstname": "J.",
-                        "lastname": "Marcot",
-                        "middlename": "D."
-                    }
-                ],
-                "editors": [
-                    {
-                        "name": "D. R. Prothero",
-                        "alternate": [
-                            "Prothero, D. R."
-                        ],
-                        "firstname": "D.",
-                        "lastname": "Prothero",
-                        "middlename": "R."
-                    },
-                    {
-                        "name": "S. E. Foss",
-                        "alternate": [
-                            "Foss, S. E."
-                        ],
-                        "firstname": "S.",
-                        "lastname": "Foss",
-                        "middlename": "E."
-                    }
-                ],
-                "series_editors": [],
-                "publisher": "Johns Hopkins University Press",
-                "city": "Baltimore",
-                "pages": "4-18",
-                "figure": "2.1",
-                "identifier": [],
-                "link": []
-            }
         },
         {
             "phylogenyCitation": {
@@ -323,14 +204,133 @@
                     "identifier": []
                 }
             }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "book_section",
+                "title": "The evolution of Artiodactyla",
+                "section_title": "Phylogenetic relationships of cetaceans to terrestrial artiodactyls.",
+                "year": 2007,
+                "authors": [
+                    {
+                        "name": "J. H. Geisler",
+                        "alternate": [
+                            "Geisler , J. H."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Geisler",
+                        "middlename": "H."
+                    },
+                    {
+                        "name": "J. M. Theodor",
+                        "alternate": [
+                            "Theodor, J. M."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Theodor",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "M. D. Uhen",
+                        "alternate": [
+                            "Uhen, M. D."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Uhen",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "S. E. Foss",
+                        "alternate": [
+                            "Foss, S. E."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Foss",
+                        "middlename": "E."
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "D. R. Prothero",
+                        "alternate": [
+                            "Prothero, D. R."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Prothero",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "S. E. Foss",
+                        "alternate": [
+                            "Foss, S. E."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Foss",
+                        "middlename": "E."
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "Johns Hopkins University Press",
+                "city": "Baltimore",
+                "pages": "19-31",
+                "figure": "3.2",
+                "identifier": [],
+                "link": []
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "book_section",
+                "title": "The evolution of Artiodactyla",
+                "section_title": "Molecular phylogeny of terrestrial artiodactyls: conflicts and resolution.",
+                "year": 2007,
+                "authors": [
+                    {
+                        "name": "J. D. Marcot",
+                        "alternate": [
+                            "Marcot, J. D."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Marcot",
+                        "middlename": "D."
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "D. R. Prothero",
+                        "alternate": [
+                            "Prothero, D. R."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Prothero",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "S. E. Foss",
+                        "alternate": [
+                            "Foss, S. E."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Foss",
+                        "middlename": "E."
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "Johns Hopkins University Press",
+                "city": "Baltimore",
+                "pages": "4-18",
+                "figure": "2.1",
+                "identifier": [],
+                "link": []
+            }
         }
     ],
     "phylorefs": [
         {
-            "regnumId": 293,
+            "curatorNotes": "Regnum ID: '293'",
             "label": "Artiodactyla",
-            "dwc:scientificNameAuthorship": "O'Leary, M. A., Orliac, M. J., Spaulding, M., Gatesy, J. E.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "O'Leary, M. A. and Orliac, M. J. and Spaulding, M. and Gatesy, J. E.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Description of teeth and portions of jaws of two extinct anthracotherioid quadrupeds (Hyopotamus vectianus and Hyop. bovinus) discovered by the Marchioness of Hastings in the Eocene deposits on the NW coast of the Isle of Wight: with an attempt to develope Cuvier's idea of the classification of pachyderms by the number of their toes.",
@@ -364,43 +364,93 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The least inclusive crown clade containing Camelus dromedarius Linnaeus 1758 (Camelidae), Hippopotamus amphibius Linnaeus 1758 (Hippopotamidae), Sus scrofa Linnaeus 1758 (Suidae), and Bos primigenius Bojanus 1827 (Bovidae).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Artiodactyla",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "M. A. O'Leary",
+                            "alternate": [
+                                "O'Leary, M. A."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "O'Leary",
+                            "middlename": "A."
+                        },
+                        {
+                            "name": "M. J. Orliac",
+                            "alternate": [
+                                "Orliac, M. J."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Orliac",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "M. Spaulding",
+                            "alternate": [
+                                "Spaulding, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Spaulding"
+                        },
+                        {
+                            "name": "J. Gatesy",
+                            "alternate": [
+                                "Gatesy, J."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gatesy"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "494-954",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The least inclusive crown clade containing Camelus dromedarius Linnaeus 1758 (Camelidae), Hippopotamus amphibius Linnaeus 1758 (Hippopotamidae), Sus scrofa Linnaeus 1758 (Suidae), and Bos primigenius Bojanus 1827 (Bovidae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
                     "hasName": {
                         "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Camelus dromedarius 1758",
+                        "label": "Camelus dromedarius Linneaus, 1758",
                         "nameComplete": "Camelus dromedarius"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Hippopotamus amphibius 1758",
-                        "nameComplete": "Hippopotamus amphibius"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Sus scrofa 1758",
-                        "nameComplete": "Sus scrofa"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Bos primigenius 1827",
-                        "nameComplete": "Bos primigenius"
                     }
                 }
             ],

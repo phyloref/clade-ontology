@@ -1,0 +1,120 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '810'",
+            "label": "Xenopodinomorpha",
+            "scientificNameAuthorship": "Lemierre, Alfred and Bailon, Salvador and Folie, Annelise and Laurin, Michel",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "A new Paleogene pipid frog from northwestern Patagonia",
+                    "year": 2003,
+                    "authors": [
+                        {
+                            "name": "Ana Maria Baez",
+                            "alternate": [
+                                "Baez, Ana Maria"
+                            ],
+                            "firstname": "Ana",
+                            "lastname": "Baez",
+                            "middlename": "Maria"
+                        },
+                        {
+                            "name": "Lourdes A. Pugener",
+                            "alternate": [
+                                "Pugener, Lourdes A."
+                            ],
+                            "firstname": "Lourdes",
+                            "lastname": "Pugener",
+                            "middlename": "A."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Journal of Vertebrate Paleontology",
+                        "volume": "18",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "A new pipid from the Cretaceous of Africa (In Becetén, Niger) and early evolution of the Pipidae",
+                    "year": 2023,
+                    "authors": [
+                        {
+                            "name": "Alfred  Lemierre",
+                            "alternate": [
+                                "Lemierre, Alfred"
+                            ],
+                            "firstname": "Alfred",
+                            "lastname": "Lemierre"
+                        },
+                        {
+                            "name": "Salvador Bailon",
+                            "alternate": [
+                                "Bailon, Salvador"
+                            ],
+                            "firstname": "Salvador",
+                            "lastname": "Bailon"
+                        },
+                        {
+                            "name": "Annelise Folie",
+                            "alternate": [
+                                "Folie, Annelise"
+                            ],
+                            "firstname": "Annelise",
+                            "lastname": "Folie"
+                        },
+                        {
+                            "name": "Michel Laurin",
+                            "alternate": [
+                                "Laurin, Michel"
+                            ],
+                            "firstname": "Michel",
+                            "lastname": "Laurin"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Journal of Systematic Palaeontology",
+                        "volume": "21",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "Xenopodinomorpha is the largest clade that includes Xenopus laevis Daudin 1802 but not Pipa pipa Linnaeus 1758.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Xenopus laevis Daudin, 1802",
+                        "nameComplete": "Xenopus laevis"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Pipa pipa Linnaeus, 1758",
+                        "nameComplete": "Pipa pipa"
+                    }
+                }
+            ]
+        }
+    ]
+}

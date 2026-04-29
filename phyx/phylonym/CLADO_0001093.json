@@ -1,0 +1,117 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A global phylogeny of turtles reveals a burst of climate-associated diversification on continental margins",
+                "year": 2021,
+                "authors": [
+                    {
+                        "name": "R. C. Rhomson",
+                        "alternate": [
+                            "Rhomson, R. C."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Rhomson",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "P.  Q.  Spinks",
+                        "alternate": [
+                            "Spinks, P.  Q."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Spinks",
+                        "middlename": "Q."
+                    },
+                    {
+                        "name": "H. B.  Shaffer",
+                        "alternate": [
+                            "Shaffer, H. B."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Shaffer",
+                        "middlename": "B."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "Figure 1",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Proceedings of the National Academy of Sciences",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '1093'",
+            "label": "Amydini",
+            "scientificNameAuthorship": "Joyce, Walter G.",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Review of fossil trionychid localities in the Soviet Union.",
+                    "year": 1994,
+                    "authors": [
+                        {
+                            "name": "E.  G.  Kordikova",
+                            "alternate": [
+                                "Kordikova, E.  G."
+                            ],
+                            "firstname": "E.",
+                            "lastname": "Kordikova",
+                            "middlename": "G."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Courier Forschungs-Institut Senckenberg",
+                        "volume": "173",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [],
+            "definition": "The largest crown clade containing Amyda (orig. Testudo) cartilaginea (Boddaert, 1770), but not the apalonine Apalone (orig. Trionyx) spinifera (LeSueur 1827) or the chitrine Chitra (orig. Trionyx) indica (Gray, 1830).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Amyda (orig. Testudo) cartilaginea Boddaert, 1770",
+                        "nameComplete": "Amyda (orig. Testudo) cartilaginea"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Chitra (orig. Trionyx) indica Gray, 1830",
+                        "nameComplete": "Chitra (orig. Trionyx) indica"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Apalone (orig. Trionyx) spinifera LeSueur, 1827",
+                        "nameComplete": "Apalone (orig. Trionyx) spinifera"
+                    }
+                }
+            ]
+        }
+    ]
+}

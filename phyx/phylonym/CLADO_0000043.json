@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -86,39 +86,6 @@
                 }
             },
             "newick": "((((((((((((Pteridium, Blechnum), \n((Dicksonia, Plagiogyria), Cyathea)), \n(Marsilea, Salvinia)), \nLygodium),\n(Phanerosorus, Gleichenia)), \nHymenophyllum), \nOsmunda), \n((Equisetum_1, Equisetum_2),\n((Angiopteris, Marattia), Danaea))),\n\n((Ophioglossum, Botrychium), (Psilotum, Tmesipteris))), \n\n(((Gnetum, Pinus), (Cycas, Ginkgo)), \n(Austrobaileya, Chloranthus))), \n\n((Selaginella, Isoetes), Huperia)), \n\n((Polytrichum, Sphagnum), (Marchantia, Haplomitrium)),\n\nAnthoceros)"
-        },
-        {
-            "phylogenyCitation": {
-                "type": "book",
-                "title": "The origin and early diversification of land plants—a cladistic study.",
-                "year": 1997,
-                "authors": [
-                    {
-                        "name": "P. Kenrick",
-                        "alternate": [
-                            "Kenrick, P."
-                        ],
-                        "firstname": "P.",
-                        "lastname": "Kenrick"
-                    },
-                    {
-                        "name": "P. R. Crane",
-                        "alternate": [
-                            "Crane, P. R."
-                        ],
-                        "firstname": "P.",
-                        "lastname": "Crane",
-                        "middlename": "R."
-                    }
-                ],
-                "editors": [],
-                "series_editors": [],
-                "publisher": "Smithsonian Institution Press",
-                "city": "Washington, D. C.",
-                "figure": "7.10",
-                "identifier": [],
-                "link": []
-            }
         },
         {
             "phylogenyCitation": {
@@ -479,14 +446,47 @@
                     "identifier": []
                 }
             }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "book",
+                "title": "The origin and early diversification of land plants—a cladistic study.",
+                "year": 1997,
+                "authors": [
+                    {
+                        "name": "P. Kenrick",
+                        "alternate": [
+                            "Kenrick, P."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Kenrick"
+                    },
+                    {
+                        "name": "P. R. Crane",
+                        "alternate": [
+                            "Crane, P. R."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Crane",
+                        "middlename": "R."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "publisher": "Smithsonian Institution Press",
+                "city": "Washington, D. C.",
+                "figure": "7.10",
+                "identifier": [],
+                "link": []
+            }
         }
     ],
     "phylorefs": [
         {
-            "regnumId": 43,
+            "curatorNotes": "Regnum ID: '43'",
             "label": "Euphyllophyta",
-            "dwc:scientificNameAuthorship": "Cantino, P.  D., Donoghue, M. J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Cantino, P.  D. and Donoghue, M. J.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "The tree of life—a phylogenetic classification.",
@@ -517,8 +517,69 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The largest crown clade containing Ginkgo biloba Linnaeus 1771 (Spermatophyta) and Pteridium aquilinum (Linnaeus) Kuhn 1879 (originally described as Pteris aquilina Linnaeus 1753) (Leptosporangiatae), but not Selaginella apoda (Linnaeus) Spring 1840 (originally described as Lycopodium apodum Linnaeus 1753) (Lycopodiophyta).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Euphyllophyta",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "M. J. Donoghue",
+                            "alternate": [
+                                "Donoghue, M. J."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Donoghue",
+                            "middlename": "J."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "243-246",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The largest crown clade containing Ginkgo biloba Linnaeus 1771 (Spermatophyta) and Pteridium aquilinum (Linnaeus) Kuhn 1879 (originally described as Pteris aquilina Linnaeus 1753) (Leptosporangiatae), but not Selaginella apoda (Linnaeus) Spring 1840 (originally described as Lycopodium apodum Linnaeus 1753) (Lycopodiophyta).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -528,28 +589,9 @@
                         "label": "Ginkgo biloba Linnaeus, 1771",
                         "nameComplete": "Ginkgo biloba"
                     }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Pteridium aquilinum Kuhn, 1879",
-                        "nameComplete": "Pteridium aquilinum"
-                    }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Selaginella apoda Spring, 1840",
-                        "nameComplete": "Selaginella apoda"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

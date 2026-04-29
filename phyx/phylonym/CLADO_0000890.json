@@ -1,0 +1,127 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Phylogeny of moray eels (Anguilliformes: Muraenidae), with a revised classification of true eels (Teleostei: Elopomorpha: Anguilliformes)",
+                "year": 2013,
+                "authors": [
+                    {
+                        "name": "K. L. Tang",
+                        "alternate": [
+                            "Tang, K. L."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Tang",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "C. Fielitz",
+                        "alternate": [
+                            "Fielitz, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Fielitz"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.3109/19401736.2012.710226"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Mitochondrial DNA",
+                    "volume": "24",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '890'",
+            "label": "Muraenoidei",
+            "scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Ueber die Ausarbeitung einer Fauna des Erzherzogthumes Öesterreich, nebst einer systematischen Aufzählung der in diesem Lande vorkommenden Säugethiere, Reptilien und Fische, als Prodrum einer Fauna derfelben",
+                    "year": 1832,
+                    "authors": [
+                        {
+                            "name": "L. J.F.J. Fitzinger",
+                            "alternate": [
+                                "Fitzinger, L. J.F.J."
+                            ],
+                            "firstname": "L.",
+                            "lastname": "Fitzinger",
+                            "middlename": "J.F.J."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "city": "1832",
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Beiträge zur Landeskunde Österreichs unter der Enns, Wien",
+                        "volume": "1",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetics and classification of Actinopterygii",
+                    "authors": [
+                        {
+                            "name": "Thomas J. Near",
+                            "alternate": [
+                                "Near, Thomas J."
+                            ],
+                            "firstname": "Thomas",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "Christine E. Thacker",
+                            "alternate": [
+                                "Thacker, Christine E."
+                            ],
+                            "firstname": "Christine",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The least inclusive clade that contains Muraena helena Linnaeus 1758, Myroconger compressus Günther 1870, and Pythonichthys microphthalmus (Regan 1912).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Muraena helena Linnaeus, 1758",
+                        "nameComplete": "Muraena helena"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

@@ -1,31 +1,6 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
-        {
-            "primaryPhylogenyCitation": {
-                "type": "book",
-                "title": "The origin of higher clades.",
-                "year": 2007,
-                "authors": [
-                    {
-                        "name": "R. Diogo",
-                        "alternate": [
-                            "Diogo, R."
-                        ],
-                        "firstname": "R.",
-                        "lastname": "Diogo"
-                    }
-                ],
-                "editors": [],
-                "series_editors": [],
-                "publisher": "Science Publishers",
-                "city": "Enfield, New Hampshire",
-                "figure": "3 and 4",
-                "identifier": [],
-                "link": []
-            },
-            "newick": "((Osteoglossiformes, Hiodontiformes),\n\n((Elopiformes, (Albuliformes, (Notacanthiformes, (Anguiliformes, Saccopharyngiformes)))),\n\n(((Denticipitoidei, (Clupeoidea, Engrauloidea, Pristigasteroidea)),\n(Gonorynchiformes, (Cypriniformes, (Characiformes, (Gymnotiformes, Siluriformes))))),\n\n((Esociformes, (Ateleopodiformes, Stomiiformes, (Ctenosquamata, Aulopiformes))),\n((Alepocephaloidea, Argentinoidea), (Salmoniformes, (Osmeroidea, Galaxoidea)))))))"
-        },
         {
             "phylogenyCitation": {
                 "type": "article",
@@ -89,78 +64,6 @@
                     "volume": "2",
                     "identifier": []
                 }
-            }
-        },
-        {
-            "phylogenyCitation": {
-                "type": "book_section",
-                "title": "Assembling the tree of life",
-                "section_title": "Gnathostome fishes",
-                "year": 2004,
-                "authors": [
-                    {
-                        "name": "M. L. J. Stiassny",
-                        "alternate": [
-                            "Stiassny , M. L. J."
-                        ],
-                        "firstname": "M. L.",
-                        "lastname": "Stiassny",
-                        "middlename": "J."
-                    },
-                    {
-                        "name": "E. O. Wiley",
-                        "alternate": [
-                            "Wiley, E. O."
-                        ],
-                        "firstname": "E.",
-                        "lastname": "Wiley",
-                        "middlename": "O."
-                    },
-                    {
-                        "name": "G. D. Johnson",
-                        "alternate": [
-                            "Johnson, G. D."
-                        ],
-                        "firstname": "G.",
-                        "lastname": "Johnson",
-                        "middlename": "D."
-                    },
-                    {
-                        "name": "M. R. de Carvalho",
-                        "alternate": [
-                            "de Carvalho, M. R."
-                        ],
-                        "firstname": "M.",
-                        "lastname": "de Carvalho",
-                        "middlename": "R."
-                    }
-                ],
-                "editors": [
-                    {
-                        "name": "M. J. Donoghue",
-                        "alternate": [
-                            "Donoghue, M. J."
-                        ],
-                        "firstname": "M.",
-                        "lastname": "Donoghue",
-                        "middlename": "J."
-                    },
-                    {
-                        "name": "J. Cracraft",
-                        "alternate": [
-                            "Cracraft, J."
-                        ],
-                        "firstname": "J.",
-                        "lastname": "Cracraft"
-                    }
-                ],
-                "series_editors": [],
-                "publisher": "Oxford University Press",
-                "city": "Oxford",
-                "pages": "410-429",
-                "figure": "24.1",
-                "identifier": [],
-                "link": []
             }
         },
         {
@@ -265,14 +168,111 @@
                     "identifier": []
                 }
             }
+        },
+        {
+            "primaryPhylogenyCitation": {
+                "type": "book",
+                "title": "The origin of higher clades.",
+                "year": 2007,
+                "authors": [
+                    {
+                        "name": "R. Diogo",
+                        "alternate": [
+                            "Diogo, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Diogo"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "publisher": "Science Publishers",
+                "city": "Enfield, New Hampshire",
+                "figure": "3 and 4",
+                "identifier": [],
+                "link": []
+            },
+            "newick": "((Osteoglossiformes, Hiodontiformes),\n\n((Elopiformes, (Albuliformes, (Notacanthiformes, (Anguiliformes, Saccopharyngiformes)))),\n\n(((Denticipitoidei, (Clupeoidea, Engrauloidea, Pristigasteroidea)),\n(Gonorynchiformes, (Cypriniformes, (Characiformes, (Gymnotiformes, Siluriformes))))),\n\n((Esociformes, (Ateleopodiformes, Stomiiformes, (Ctenosquamata, Aulopiformes))),\n((Alepocephaloidea, Argentinoidea), (Salmoniformes, (Osmeroidea, Galaxoidea)))))))"
+        },
+        {
+            "phylogenyCitation": {
+                "type": "book_section",
+                "title": "Assembling the tree of life",
+                "section_title": "Gnathostome fishes",
+                "year": 2004,
+                "authors": [
+                    {
+                        "name": "M. L. J. Stiassny",
+                        "alternate": [
+                            "Stiassny , M. L. J."
+                        ],
+                        "firstname": "M. L.",
+                        "lastname": "Stiassny",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "E. O. Wiley",
+                        "alternate": [
+                            "Wiley, E. O."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Wiley",
+                        "middlename": "O."
+                    },
+                    {
+                        "name": "G. D. Johnson",
+                        "alternate": [
+                            "Johnson, G. D."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Johnson",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "M. R. de Carvalho",
+                        "alternate": [
+                            "de Carvalho, M. R."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "de Carvalho",
+                        "middlename": "R."
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "M. J. Donoghue",
+                        "alternate": [
+                            "Donoghue, M. J."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Donoghue",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "J. Cracraft",
+                        "alternate": [
+                            "Cracraft, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Cracraft"
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "Oxford University Press",
+                "city": "Oxford",
+                "pages": "410-429",
+                "figure": "24.1",
+                "identifier": [],
+                "link": []
+            }
         }
     ],
     "phylorefs": [
         {
-            "regnumId": 208,
+            "curatorNotes": "Regnum ID: '208'",
             "label": "Actinopteri",
-            "dwc:scientificNameAuthorship": "Moore, J. A., Near, T. J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Moore, J. A. and Near, T. J.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Observations on the systematic relations of the fishes.",
@@ -301,8 +301,69 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The least inclusive crown clade that contains Acipenser sturio Linnaeus 1758, Psephurus gladius (Martens 1862), Lepisosteus osseus (Linnaeus 1758), Amia calva Linnaeus 1766, and Perca fluviatilis Linnaeus 1758.",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Actinopteri",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "J. A. Moore",
+                            "alternate": [
+                                "Moore, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Moore",
+                            "middlename": "A."
+                        },
+                        {
+                            "name": "T. J. Near",
+                            "alternate": [
+                                "Near, T. J."
+                            ],
+                            "firstname": "T.",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "705-708",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The least inclusive crown clade that contains Acipenser sturio Linnaeus 1758, Psephurus gladius (Martens 1862), Lepisosteus osseus (Linnaeus 1758), Amia calva Linnaeus 1766, and Perca fluviatilis Linnaeus 1758.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -311,42 +372,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Acipenser sturio Linnaeus, 1758",
                         "nameComplete": "Acipenser sturio"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Psephurus gladius Martens, 1862",
-                        "nameComplete": "Psephurus gladius"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Lepisosteus osseus Linnaeus, 1758",
-                        "nameComplete": "Lepisosteus osseus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Amia calva Linnaeus, 1766",
-                        "nameComplete": "Amia calva"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Perca fluviatilis Linnaeus, 1758",
-                        "nameComplete": "Perca fluviatilis"
                     }
                 }
             ],

@@ -1,0 +1,148 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "book_section",
+                "title": "Origin and phylogenetic interrelationships of teleosts",
+                "section_title": "Structure and relationships of †Brannerion (Albuloidei), an Early Cretaceous teleost from Brazil",
+                "year": 2010,
+                "authors": [
+                    {
+                        "name": "P. L. Forey",
+                        "alternate": [
+                            "Forey, P. L."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Forey",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "J. G. Maisey",
+                        "alternate": [
+                            "Maisey, J. G."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Maisey",
+                        "middlename": "G."
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "J. S. Nelson",
+                        "alternate": [
+                            "Nelson, J. S."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Nelson",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "H. -P. Schultze",
+                        "alternate": [
+                            "Schultze, H. -P."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Schultze",
+                        "middlename": "-P."
+                    },
+                    {
+                        "name": "M. V.H. Wilson",
+                        "alternate": [
+                            "Wilson, M. V.H."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Wilson",
+                        "middlename": "V.H."
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "Dr. Friedrich Pfeil",
+                "city": "München",
+                "pages": "183-218, fig. 13",
+                "identifier": [],
+                "link": []
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '885'",
+            "label": "Albulidae",
+            "scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Bijdrage tot de kennis der ichthyologische fauna van het eiland Madura, met beschrijving van eenige nieuwe soorten",
+                    "year": 1849,
+                    "authors": [
+                        {
+                            "name": "P. Bleeker",
+                            "alternate": [
+                                "Bleeker, P."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Bleeker"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Verhandelingen van het Bataviaasch Genootschap van Kunsten en Wetenschappen",
+                        "volume": "22",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Phylogeny and classification of Actinopterygii",
+                    "authors": [
+                        {
+                            "name": "Thomas J. Near",
+                            "alternate": [
+                                "Near, Thomas J."
+                            ],
+                            "firstname": "Thomas",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "Christine E. Thacker",
+                            "alternate": [
+                                "Thacker, Christine E."
+                            ],
+                            "firstname": "Christine",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The least inclusive crown clade that contains Albula vulpes (Linnaeus 1758), Nemoossis belloci (Cadenat 1937), and Pterothrissus gissu Hilgendorf 1877.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Albula vulpes Linnaeus, 1758",
+                        "nameComplete": "Albula vulpes"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

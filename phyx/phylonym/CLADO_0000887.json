@@ -1,0 +1,169 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A multi-locus molecular timescale for the origin and diversification of eels (Order: Anguilliformes)",
+                "year": 2013,
+                "authors": [
+                    {
+                        "name": "F. Santini",
+                        "alternate": [
+                            "Santini, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Santini"
+                    },
+                    {
+                        "name": "X. H. Kong",
+                        "alternate": [
+                            "Kong, X. H."
+                        ],
+                        "firstname": "X.",
+                        "lastname": "Kong",
+                        "middlename": "H."
+                    },
+                    {
+                        "name": "L. Sorenson",
+                        "alternate": [
+                            "Sorenson, L."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Sorenson"
+                    },
+                    {
+                        "name": "G. Carnevale",
+                        "alternate": [
+                            "Carnevale, G."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Carnevale"
+                    },
+                    {
+                        "name": "R. S. Mehta",
+                        "alternate": [
+                            "Mehta, R. S."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Mehta",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "M. E. Alfaro",
+                        "alternate": [
+                            "Alfaro, M. E."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Alfaro",
+                        "middlename": "E."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/J.Ympev.2013.06.016"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Phylogenetics and Evolution",
+                    "volume": "69",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '887'",
+            "label": "Anguilliformes",
+            "scientificNameAuthorship": "Near, T J. and Thacker, C. E.",
+            "namePublishedIn": [
+                {
+                    "type": "book_section",
+                    "title": "A treatise on zoology, 9",
+                    "section_title": "Vertebrata Craniata. (First fascicle: cyclostomes and fishes)",
+                    "year": 1909,
+                    "authors": [
+                        {
+                            "name": "E. S. Goodrich",
+                            "alternate": [
+                                "Goodrich, E. S."
+                            ],
+                            "firstname": "E.",
+                            "lastname": "Goodrich",
+                            "middlename": "S."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "R. Lankester",
+                            "alternate": [
+                                "Lankester, R."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Lankester"
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "A. & C. Black",
+                    "city": "London",
+                    "pages": "403",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetics and classification of Actinopterygii",
+                    "authors": [
+                        {
+                            "name": "Thomas J. Near",
+                            "alternate": [
+                                "Near, Thomas J."
+                            ],
+                            "firstname": "Thomas",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "Christine E. Thacker",
+                            "alternate": [
+                                "Thacker, Christine E."
+                            ],
+                            "firstname": "Christine",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The least inclusive crown clade that contains Myroconger compressus Günther 1870, Gymnothorax formosus Bleeker 1864, Protanguilla palau Johnson, Ida, and Sakaue 2012, Synaphobranchus kaupi Johnson 1862, and Anguilla rostrata (Lesueur 1817).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Myroconger compressus Günther, 1870",
+                        "nameComplete": "Myroconger compressus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

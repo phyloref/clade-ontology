@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -65,10 +65,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 151,
+            "curatorNotes": "Regnum ID: '151'",
             "label": "Charophyceae",
-            "dwc:scientificNameAuthorship": "Karol, K. G., McCourt, R. M., Hall, J. D.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Karol, K. G. and McCourt, R. M. and Hall, J. D.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Cryptogamic botany, Algae and fungi",
@@ -92,8 +92,78 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The largest crown clade containing Chara vulgaris Linnaeus 1753 but not Arabidopsis thaliana (Linnaeus) Heynh. 1842 (Embryophyta), Coleochaete scutata Brébisson 1844 (Coleochaetophyceae), Entransia fimbriata E. O. Hughes 1943, Klebsormidium flaccidum (Kützing) Silva, Mattox and Blackwell 1972 (Klebsormidiophyceae), and Zygnema cruciatum (Vaucher) C. Agardh 1817 (Zygnematophyceae).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Charophyceae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "K. G. Karol",
+                            "alternate": [
+                                "Karol, K. G."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "Karol",
+                            "middlename": "G."
+                        },
+                        {
+                            "name": "R. M. McCourt",
+                            "alternate": [
+                                "McCourt, R. M."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "McCourt",
+                            "middlename": "M."
+                        },
+                        {
+                            "name": "J. D. Hall",
+                            "alternate": [
+                                "Hall, J. D."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Hall",
+                            "middlename": "D."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "205-207",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The largest crown clade containing Chara vulgaris Linnaeus 1753 but not Arabidopsis thaliana (Linnaeus) Heynh. 1842 (Embryophyta), Coleochaete scutata Brébisson 1844 (Coleochaetophyceae), Entransia fimbriata E. O. Hughes 1943, Klebsormidium flaccidum (Kützing) Silva, Mattox and Blackwell 1972 (Klebsormidiophyceae), and Zygnema cruciatum (Vaucher) C. Agardh 1817 (Zygnematophyceae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -102,51 +172,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
                         "label": "Chara vulgaris Linnaeus, 1753",
                         "nameComplete": "Chara vulgaris"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Arabidopsis thaliana Heynh, 1842",
-                        "nameComplete": "Arabidopsis thaliana"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Coleochaete scutata Brébisson, 1844",
-                        "nameComplete": "Coleochaete scutata"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Entransia fimbriata Hughes, 1943",
-                        "nameComplete": "Entransia fimbriata"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Klebsormidium flaccidum Blackwell and Mattox and Silva, 1972",
-                        "nameComplete": "Klebsormidium flaccidum"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Zygnema cruciatum Agardh, 1817",
-                        "nameComplete": "Zygnema cruciatum"
                     }
                 }
             ],

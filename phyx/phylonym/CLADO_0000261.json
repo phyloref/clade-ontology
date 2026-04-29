@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -69,10 +69,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 261,
+            "curatorNotes": "Regnum ID: '261'",
             "label": "Cetacea",
-            "dwc:scientificNameAuthorship": "Deméré, T. A.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Deméré, T. A.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Regnum animale in classes IX distributum sive synopsis methodica. Editio altera auctior. Leiden, Theodorum Haak",
@@ -95,8 +95,60 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The smallest crown clade containing Tursiops (originally Delphinus) truncatus (Montagu 1821) (Odontoceti/Delphinidae) and Balaena mysticetus Linnaeus 1758 (Mysticeti/Balaenidae).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Cetacea",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "T.q A. Demere",
+                            "alternate": [
+                                "Demere, T.q A."
+                            ],
+                            "firstname": "T.q",
+                            "lastname": "Demere",
+                            "middlename": "A."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "959-962",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The smallest crown clade containing Tursiops (originally Delphinus) truncatus (Montagu 1821) (Odontoceti/Delphinidae) and Balaena mysticetus Linnaeus 1758 (Mysticeti/Balaenidae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -105,15 +157,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Tursiops (originally Delphinus) truncatus Montagu, 1821",
                         "nameComplete": "Tursiops (originally Delphinus) truncatus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Balaena mysticetus Linnaeus, 1758",
-                        "nameComplete": "Balaena mysticetus"
                     }
                 }
             ],

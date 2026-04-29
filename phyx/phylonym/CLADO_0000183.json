@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -64,10 +64,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 183,
+            "curatorNotes": "Regnum ID: '183'",
             "label": "Araneomorphae",
-            "dwc:scientificNameAuthorship": "Agnarsson, I., Kuntner, M.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Agnarsson, I. and Kuntner, M.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "The spiders of Epping Forest.",
@@ -94,8 +94,67 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Hypochilus thorelli Marx 1888 (Paleocribellatae/Hypochilidae), Gradungula sorenseni Forster, 1955 and Austrochilus manni Gertsch & Zapfe 1955 (Austrochiloidea/Austrochilidae), Filistata insidiatrix (Forskål 1775) (Araneoclada/Filistatidae) and Araneus angulatus Clerck 1757 (Araneoclada/Araneidae).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Araneomorphae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "I. Agnarsson",
+                            "alternate": [
+                                "Agnarsson, I."
+                            ],
+                            "firstname": "I.",
+                            "lastname": "Agnarsson"
+                        },
+                        {
+                            "name": "M. Kuntner",
+                            "alternate": [
+                                "Kuntner, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Kuntner"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "623-624",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The crown clade originating in the most recent common ancestor of Hypochilus thorelli Marx 1888 (Paleocribellatae/Hypochilidae), Gradungula sorenseni Forster, 1955 and Austrochilus manni Gertsch & Zapfe 1955 (Austrochiloidea/Austrochilidae), Filistata insidiatrix (Forskål 1775) (Araneoclada/Filistatidae) and Araneus angulatus Clerck 1757 (Araneoclada/Araneidae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -104,42 +163,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Hypochilus thorelli Marx, 1888",
                         "nameComplete": "Hypochilus thorelli"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Gradungula sorenseni Forster, 1955",
-                        "nameComplete": "Gradungula sorenseni"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Austrochilus manni Gertsch and Zapfe, 1955",
-                        "nameComplete": "Austrochilus manni"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Filistata insidiatrix Forskål, 1775",
-                        "nameComplete": "Filistata insidiatrix"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Araneus angulatus Clerck, 1757",
-                        "nameComplete": "Araneus angulatus"
                     }
                 }
             ],

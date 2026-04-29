@@ -1,0 +1,118 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Nanotyrannus and Tyrannosaurus coexisted at the close of the Cretaceous",
+                "year": 2025,
+                "authors": [
+                    {
+                        "name": "Lindsay E. Zanno",
+                        "alternate": [
+                            "Zanno, Lindsay E."
+                        ],
+                        "firstname": "Lindsay",
+                        "lastname": "Zanno",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "James G. Napoli",
+                        "alternate": [
+                            "Napoli, James G."
+                        ],
+                        "firstname": "James",
+                        "lastname": "Napoli",
+                        "middlename": "G."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "Extended Data 9a",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Nature",
+                    "volume": "648",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '1208'",
+            "label": "Nanotyrannidae",
+            "scientificNameAuthorship": "Zanno, Lindsay E. and Napoli, James G.",
+            "namePublishedIn": [],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Nanotyrannus and Tyrannosaurus coexisted at the close of the Cretaceous",
+                    "year": 2025,
+                    "authors": [
+                        {
+                            "name": "Lindsay E. Zanno",
+                            "alternate": [
+                                "Zanno, Lindsay E."
+                            ],
+                            "firstname": "Lindsay",
+                            "lastname": "Zanno",
+                            "middlename": "E."
+                        },
+                        {
+                            "name": "James G. Napoli",
+                            "alternate": [
+                                "Napoli, James G."
+                            ],
+                            "firstname": "James",
+                            "lastname": "Napoli",
+                            "middlename": "G."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Nature",
+                        "volume": "648",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "Maximum-clade definition. The clade consisting of Nanotyrannus lancensis Gilmore 1946, and all organisms or species that share a more recent common ancestor with Nanotyrannus lancensis than with Tyrannosaurus rex Osborn 1905 and Albertosaurus sarcophagus Osborn 1905.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Nanotyrannus lancensis Gilmore, 1946",
+                        "nameComplete": "Nanotyrannus lancensis"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Tyrannosaurus rex Osborn, 1905",
+                        "nameComplete": "Tyrannosaurus rex"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
+                        "label": "Albertosaurus sarcophagus Osborn, 1905",
+                        "nameComplete": "Albertosaurus sarcophagus"
+                    }
+                }
+            ]
+        }
+    ]
+}

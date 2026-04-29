@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -77,10 +77,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 27,
+            "curatorNotes": "Regnum ID: '27'",
             "label": "Chlorophyta",
-            "dwc:scientificNameAuthorship": "Hall, J. D., Lewis, L. A., McCourt, R. M., Delwiche, C. F., Mishler, B., Karol, K. G.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Hall, J. D. and Lewis, L. A. and McCourt, R. M. and Delwiche, C. F. and Mishler, B. and Karol, K. G.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Das Pflanzenreich in seinen natürlichen Classen und Familien entwickelt und durch mehr als tausend in Kupfer gestochene übersichtlich-bildliche Darstellungen fur Anfänger und Freunde der Botanik.",
@@ -102,8 +102,104 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The largest crown clade containing Chlamydomonas reinhardti P. C. A. Dangeard 1891 but not Chara vulgaris Linnaeus 1753.",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Chlorophyta",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "J. D. Hall",
+                            "alternate": [
+                                "Hall, J. D."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Hall",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "L. A. Lewis",
+                            "alternate": [
+                                "Lewis, L. A."
+                            ],
+                            "firstname": "L.",
+                            "lastname": "Lewis",
+                            "middlename": "A."
+                        },
+                        {
+                            "name": "R. M. McCourt",
+                            "alternate": [
+                                "McCourt, R. M."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "McCourt",
+                            "middlename": "M."
+                        },
+                        {
+                            "name": "C. F. Delwiche",
+                            "alternate": [
+                                "Delwiche, C. F."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Delwiche",
+                            "middlename": "F."
+                        },
+                        {
+                            "name": "B. Mishler",
+                            "alternate": [
+                                "Mishler, B."
+                            ],
+                            "firstname": "B.",
+                            "lastname": "Mishler"
+                        },
+                        {
+                            "name": "K. G. Karol",
+                            "alternate": [
+                                "Karol, K. G."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "Karol",
+                            "middlename": "G."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "183-186",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The largest crown clade containing Chlamydomonas reinhardti P. C. A. Dangeard 1891 but not Chara vulgaris Linnaeus 1753.",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -115,17 +211,7 @@
                     }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Chara vulgaris Linnaeus, 1753",
-                        "nameComplete": "Chara vulgaris"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

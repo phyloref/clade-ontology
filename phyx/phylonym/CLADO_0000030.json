@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -60,8 +60,7 @@
                     "identifier": []
                 }
             },
-            "newick": "((((((((((((((Eichhornia, Hydrothrix), (Xiphidium, Angiozanthos)), \n(((Helmholtzia_glaberrima, Helmholtzia_acorifolia), Philydrum), Philydrella)),\n\n(((Palisota, Tradescantia), Cartonema), Hanguana)), \n(Ensete, Stelitzia)),\n\n((((((((Triticum, Oryza), Zea), Ecdeiocolea), Elegia), Flagellaria), ((Cyperus, Xyris), Mayaca)),\nAnanas), (Typha, Sparganium))),\n\nRoystonea), \n\n(Dasypogon, Kingia)),\n\nAsparagales), Lilales), (Pandanales, Dioscoreales)), Petrosaviales),\nAlismatales), Acorales)",
-            "phylogenyCitation": {}
+            "newick": "((((((((((((((Eichhornia, Hydrothrix), (Xiphidium, Angiozanthos)), \n(((Helmholtzia_glaberrima, Helmholtzia_acorifolia), Philydrum), Philydrella)),\n\n(((Palisota, Tradescantia), Cartonema), Hanguana)), \n(Ensete, Stelitzia)),\n\n((((((((Triticum, Oryza), Zea), Ecdeiocolea), Elegia), Flagellaria), ((Cyperus, Xyris), Mayaca)),\nAnanas), (Typha, Sparganium))),\n\nRoystonea), \n\n(Dasypogon, Kingia)),\n\nAsparagales), Lilales), (Pandanales, Dioscoreales)), Petrosaviales),\nAlismatales), Acorales)"
         },
         {
             "phylogenyCitation": {
@@ -685,10 +684,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 30,
+            "curatorNotes": "Regnum ID: '30'",
             "label": "Commelinidae",
-            "dwc:scientificNameAuthorship": "Graham, S. W., Saarela, J. M., Judd, W. S.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Graham, S. W. and Saarela, J. M. and Judd, W. S.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Sistema i filogeniia tsvetkovykh rastenii (Systema et phylogenia magnoliophytorum).",
@@ -710,8 +709,78 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The smallest crown clade containing Commelina communis L. 1753 (Commelinales), Dasypogon hookeri J. Drumm. 1843 (Dasypogonaceae), Oryza sativa L. 1753 (Poales) and Roystonea princeps (Becc.) Burret 1929 (Arecales).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Commelinidae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "S. W. Graham",
+                            "alternate": [
+                                "Graham, S. W."
+                            ],
+                            "firstname": "S.",
+                            "lastname": "Graham",
+                            "middlename": "W."
+                        },
+                        {
+                            "name": "J. M. Saarela",
+                            "alternate": [
+                                "Saarela, J. M."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Saarela",
+                            "middlename": "M."
+                        },
+                        {
+                            "name": "W. S. Judd",
+                            "alternate": [
+                                "Judd, W. S."
+                            ],
+                            "firstname": "W.",
+                            "lastname": "Judd",
+                            "middlename": "S."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "303-305",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The smallest crown clade containing Commelina communis L. 1753 (Commelinales), Dasypogon hookeri J. Drumm. 1843 (Dasypogonaceae), Oryza sativa L. 1753 (Poales) and Roystonea princeps (Becc.) Burret 1929 (Arecales).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -720,33 +789,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
                         "label": "Commelina communis Linnaeus, 1753",
                         "nameComplete": "Commelina communis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Dasypogon hookeri Drumm, 1843",
-                        "nameComplete": "Dasypogon hookeri"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Oryza sativa Linneaus, 1753",
-                        "nameComplete": "Oryza sativa"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Roystonea princeps Burret, 1929",
-                        "nameComplete": "Roystonea princeps"
                     }
                 }
             ],

@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -188,10 +188,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 18,
+            "curatorNotes": "Regnum ID: '18'",
             "label": "Asteridae",
-            "dwc:scientificNameAuthorship": "Olmstead, R. G., Judd, W. S.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Olmstead, R. G. and Judd, W. S.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Sistema i filogeniia tsvetkovykh rastenii (systema et phylogenia magnoliophytorum).",
@@ -215,8 +215,69 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The least inclusive clade containing Lamium purpureum Linnaeus 1753 (Lamiidae/Lamiales), Cornus mas Linnaeus 1753 (Cornales), Aster amellus Linnaeus 1753 (Campanulidae/Asterales), and Arbutus unedo Linnaeus 1753 (Ericales).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Asteridae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "R. G. Olmstead",
+                            "alternate": [
+                                "Olmstead, R. G."
+                            ],
+                            "firstname": "R.",
+                            "lastname": "Olmstead",
+                            "middlename": "G."
+                        },
+                        {
+                            "name": "W. S. Judd",
+                            "alternate": [
+                                "Judd, W. S."
+                            ],
+                            "firstname": "W.",
+                            "lastname": "Judd",
+                            "middlename": "S."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "357-359",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The least inclusive clade containing Lamium purpureum Linnaeus 1753 (Lamiidae/Lamiales), Cornus mas Linnaeus 1753 (Cornales), Aster amellus Linnaeus 1753 (Campanulidae/Asterales), and Arbutus unedo Linnaeus 1753 (Ericales).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -225,33 +286,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
                         "label": "Lamium purpureum Linnaeus, 1753",
                         "nameComplete": "Lamium purpureum"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Cornus mas Linnaeus, 1753",
-                        "nameComplete": "Cornus mas"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Aster amellus Linnaeus, 1753",
-                        "nameComplete": "Aster amellus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Arbutus unedo Linnaeus, 1753",
-                        "nameComplete": "Arbutus unedo"
                     }
                 }
             ],

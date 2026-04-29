@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -104,6 +104,39 @@
         },
         {
             "phylogenyCitation": {
+                "type": "article",
+                "title": "Phylogeny and systematics of Squamata (Reptilia) based on morphology.",
+                "year": 2008,
+                "authors": [
+                    {
+                        "name": "J. L. Conrad",
+                        "alternate": [
+                            "Conrad, J. L."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Conrad",
+                        "middlename": "L."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "56",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1206/310.1"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Bulletin of the American Museum of Natural History",
+                    "volume": "310",
+                    "identifier": []
+                }
+            }
+        },
+        {
+            "phylogenyCitation": {
                 "type": "book_section",
                 "title": "Phylogenetic Relationships of the Lizard Families",
                 "section_title": "Phylogenetic relationships within Squamata",
@@ -160,47 +193,14 @@
                 "identifier": [],
                 "link": []
             }
-        },
-        {
-            "phylogenyCitation": {
-                "type": "article",
-                "title": "Phylogeny and systematics of Squamata (Reptilia) based on morphology.",
-                "year": 2008,
-                "authors": [
-                    {
-                        "name": "J. L. Conrad",
-                        "alternate": [
-                            "Conrad, J. L."
-                        ],
-                        "firstname": "J.",
-                        "lastname": "Conrad",
-                        "middlename": "L."
-                    }
-                ],
-                "editors": [],
-                "series_editors": [],
-                "figure": "56",
-                "identifier": [
-                    {
-                        "type": "doi",
-                        "id": "10.1206/310.1"
-                    }
-                ],
-                "link": [],
-                "journal": {
-                    "name": "Bulletin of the American Museum of Natural History",
-                    "volume": "310",
-                    "identifier": []
-                }
-            }
         }
     ],
     "phylorefs": [
         {
-            "regnumId": 101,
+            "curatorNotes": "Regnum ID: '101'",
             "label": "Squamata",
-            "dwc:scientificNameAuthorship": "de Queiroz, K., Gauthier, J.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "de Queiroz, K. and Gauthier, J.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Die Ordnungen, Familien, und Gattungen der Reptilien, als Prodrom einer Naturgeschichte derselben.",
@@ -223,8 +223,68 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The largest crown clade containing Lacerta agilis Linnaeus 1758 but not Sphenodon (originally Hatteria) punctatus (Gray 1842).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Squamata",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "J. A. Gautheir",
+                            "alternate": [
+                                "Gautheir, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gautheir",
+                            "middlename": "A."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "1093-1101",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The largest crown clade containing Lacerta agilis Linnaeus 1758 but not Sphenodon (originally Hatteria) punctatus (Gray 1842).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -236,17 +296,7 @@
                     }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Sphenodon (originally Hatteria) punctatus Gray, 1842",
-                        "nameComplete": "Sphenodon (originally Hatteria) punctatus"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

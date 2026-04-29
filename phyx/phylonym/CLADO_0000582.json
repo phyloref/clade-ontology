@@ -1,0 +1,130 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "An Examination of the Relationships Between Extant Dolomena Wenz, 1940, Doxander Wenz, 1940, Mirabilistrombus Kronenberg, 1998, Neodilatilabrum Dekkers, 2008 and Labiostrombus Oostingh, 1925 (Stromboidea: Neostromboidae: Strombidae).",
+                "year": 2020,
+                "authors": [
+                    {
+                        "name": "A M Dekkers",
+                        "alternate": [
+                            "Dekkers, A M"
+                        ],
+                        "firstname": "A",
+                        "lastname": "Dekkers",
+                        "middlename": "M"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "The Festivus",
+                    "volume": "52",
+                    "identifier": [
+                        {
+                            "type": "isbn",
+                            "id": "0738-9388"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '582'",
+            "label": "Doxander",
+            "scientificNameAuthorship": "Maxwell, S J",
+            "namePublishedIn": [
+                {
+                    "type": "book_section",
+                    "title": "HandbuchderPaläozoologie",
+                    "section_title": "Gastropoda Teil 1: Allgemeiner Teil und Prosobranchia.",
+                    "year": 1940,
+                    "authors": [
+                        {
+                            "name": "W Wenz",
+                            "alternate": [
+                                "Wenz, W"
+                            ],
+                            "firstname": "W",
+                            "lastname": "Wenz"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "O H Schindewolf",
+                            "alternate": [
+                                "Schindewolf, O H"
+                            ],
+                            "firstname": "O",
+                            "lastname": "Schindewolf",
+                            "middlename": "H"
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "GebrüderBornträger",
+                    "city": "Berlin-Zehlendorf",
+                    "pages": "1-1639",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Registration of Neostromboidae Clades in the RegNum of the PhyloCode, and Errata",
+                    "year": 2021,
+                    "authors": [
+                        {
+                            "name": "S J Maxwell",
+                            "alternate": [
+                                "Maxwell, S J"
+                            ],
+                            "firstname": "S",
+                            "lastname": "Maxwell",
+                            "middlename": "J"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.54173/F533192"
+                        }
+                    ],
+                    "link": [],
+                    "journal": {
+                        "name": "The Festivus",
+                        "volume": "53",
+                        "identifier": [
+                            {
+                                "type": "isbn",
+                                "id": "0738-9388"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "definition": "The maximum clade consisting of Doxander vittatus (Linné, 1758) and all species that share a more recent common ancestor with them than with Neodilatilabrum marginatum (Linné, 1758),  Dolomena pulchella (Reeve,1851), Labiostrombus epidromis (Linné, 1758), Ministrombus minimus (Linné, 1771), Mirabilistrombus listeri (Gray, 1852), Neostrombus fusiformis (Sowerby II, 1842) or Laevistrombus vanikorensis (Quoy & Gaimard, 1834).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Doxander vittatus Linné, 1758",
+                        "nameComplete": "Doxander vittatus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

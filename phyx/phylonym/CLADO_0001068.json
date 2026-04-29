@@ -1,0 +1,69 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A taxonomic note on the tapejarid pterosaurs from the Pterosaur Graveyard site (Caiuá Group, ?Early Cretaceous of Southern Brazil): evidence for the presence of two species",
+                "year": 2024,
+                "authors": [
+                    {
+                        "name": "Pêgas",
+                        "alternate": [
+                            "Pêgas,"
+                        ],
+                        "lastname": "Pêgas"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '1068'",
+            "label": "Ludodactylini",
+            "scientificNameAuthorship": "Pêgas, Rodrigo",
+            "namePublishedIn": [],
+            "definitionSource": [],
+            "definition": "The most inclusive clade that includes Anhanguera blittersdorffi Campos & Kellner, 1985 but not Coloborhynchus clavirostris Owen, 1874 or Tropeognathus mesembrinus Wellnhofer, 1987.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Anhanguera blittersdorffi Campos and Kellner, 1985",
+                        "nameComplete": "Anhanguera blittersdorffi"
+                    }
+                }
+            ],
+            "externalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Coloborhynchus clavirostris Owen, 1874",
+                        "nameComplete": "Coloborhynchus clavirostris"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Tropeognathus mesembrinus Wellnhofer, 1987",
+                        "nameComplete": "Tropeognathus mesembrinus"
+                    }
+                }
+            ]
+        }
+    ]
+}

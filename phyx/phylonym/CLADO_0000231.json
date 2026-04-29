@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -37,12 +37,64 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 231,
+            "curatorNotes": "Regnum ID: '231'",
             "label": "Agelacrinitidae",
-            "dwc:scientificNameAuthorship": "Sumrall, C. D.",
-            "dwc:namePublishedIn": [],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The clade originating in the most recent common ancestor of Agelacrinites hamiltonensis Vanuxem 1842, Lepidodiscus squamosus (Meek and Worthen 1868), and Hypsiclavus huntsvillensis Sumrall 1996 (referred to as “Chester L. laudoni” in the reference phylogeny).",
+            "scientificNameAuthorship": "Sumrall, C. D.",
+            "namePublishedIn": [],
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Agelacrinitidae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "C. D. Sumrall",
+                            "alternate": [
+                                "Sumrall, C. D."
+                            ],
+                            "firstname": "C.",
+                            "lastname": "Sumrall",
+                            "middlename": "D."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "655-656",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The clade originating in the most recent common ancestor of Agelacrinites hamiltonensis Vanuxem 1842, Lepidodiscus squamosus (Meek and Worthen 1868), and Hypsiclavus huntsvillensis Sumrall 1996 (referred to as “Chester L. laudoni” in the reference phylogeny).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -51,24 +103,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Agelacrinites hamiltonensis Vanuxem, 1842",
                         "nameComplete": "Agelacrinites hamiltonensis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Lepidodiscus squamosus Meek and Worthen, 1868",
-                        "nameComplete": "Lepidodiscus squamosus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Hypsiclavus huntsvillensis Sumrall, 1996",
-                        "nameComplete": "Hypsiclavus huntsvillensis"
                     }
                 }
             ],

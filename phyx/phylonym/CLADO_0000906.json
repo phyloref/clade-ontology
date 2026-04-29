@@ -1,0 +1,202 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "An inverse latitudinal gradient in speciation rate for marine fishes",
+                "year": 2018,
+                "authors": [
+                    {
+                        "name": "D. L. Rabosky",
+                        "alternate": [
+                            "Rabosky, D. L."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Rabosky",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "J. Chang",
+                        "alternate": [
+                            "Chang, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Chang"
+                    },
+                    {
+                        "name": "P. O. Title",
+                        "alternate": [
+                            "Title, P. O."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Title",
+                        "middlename": "O."
+                    },
+                    {
+                        "name": "P. F. Cowman",
+                        "alternate": [
+                            "Cowman, P. F."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Cowman",
+                        "middlename": "F."
+                    },
+                    {
+                        "name": "L. Sallan",
+                        "alternate": [
+                            "Sallan, L."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Sallan"
+                    },
+                    {
+                        "name": "M. Friedman",
+                        "alternate": [
+                            "Friedman, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Friedman"
+                    },
+                    {
+                        "name": "K. Kaschner",
+                        "alternate": [
+                            "Kaschner, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Kaschner"
+                    },
+                    {
+                        "name": "C. Garilao",
+                        "alternate": [
+                            "Garilao, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Garilao"
+                    },
+                    {
+                        "name": "T. J. Near",
+                        "alternate": [
+                            "Near, T. J."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Near",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "M. Coll",
+                        "alternate": [
+                            "Coll, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Coll"
+                    },
+                    {
+                        "name": "M. E. Alfaro",
+                        "alternate": [
+                            "Alfaro, M. E."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Alfaro",
+                        "middlename": "E."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1038/s41586-018-0273-1"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Nature",
+                    "volume": "559",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '906'",
+            "label": "Cyprinoidei",
+            "scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Ueber die Ausarbeitung einer Fauna des Erzherzogthumes Öesterreich, nebst einer systematischen Aufzählung der in diesem Lande vorkommenden Säugethiere, Reptilien und Fische, als Prodrum einer Fauna derfelben",
+                    "year": 1832,
+                    "authors": [
+                        {
+                            "name": "L. J.F.J. Fitzinger",
+                            "alternate": [
+                                "Fitzinger, L. J.F.J."
+                            ],
+                            "firstname": "L.",
+                            "lastname": "Fitzinger",
+                            "middlename": "J.F.J."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Beiträge zur Landeskunde Österreichs unter der Enns, Wien",
+                        "volume": "1",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Phylogeny and classification of Actinopterygii",
+                    "authors": [
+                        {
+                            "name": "Thomas J. Near",
+                            "alternate": [
+                                "Near, Thomas J."
+                            ],
+                            "firstname": "Thomas",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "Christine E. Thacker",
+                            "alternate": [
+                                "Thacker, Christine E."
+                            ],
+                            "firstname": "Christine",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The least inclusive crown clade that contains Cyprinus carpio Linnaeus 1758, Danio rerio (Hamilton 1822), Leuciscus leuciscus (Cuvier 1816), and Paedocypris progenetica Kottelat, Britz, Tan, and White 2006.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Cyprinus carpio Linnaeus, 1758",
+                        "nameComplete": "Cyprinus carpio"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

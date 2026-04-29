@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -45,10 +45,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 102,
+            "curatorNotes": "Regnum ID: '102'",
             "label": "Stegocephali",
-            "dwc:scientificNameAuthorship": "Laurin, M.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Laurin, M.",
+            "namePublishedIn": [
                 {
                     "type": "article",
                     "title": "Synopsis of the extinct Batrachia of North America.",
@@ -75,8 +75,59 @@
                     }
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The largest clade that includes Eryops megacephalus Cope 1877 (Temnospondyli) but not Tiktaalik roseae Daeschler et al. 2006, Panderichthys rhombolepis Gross 1930 (Panderichthyidae), and Eusthenopteron foordi Whiteaves 1881 (Osteolepiformes).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Stegocephali",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "M. Laurin",
+                            "alternate": [
+                                "Laurin, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Laurin"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "741-745",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The largest clade that includes Eryops megacephalus Cope 1877 (Temnospondyli) but not Tiktaalik roseae Daeschler et al. 2006, Panderichthys rhombolepis Gross 1930 (Panderichthyidae), and Eusthenopteron foordi Whiteaves 1881 (Osteolepiformes).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -88,35 +139,7 @@
                     }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Tiktaalik roseae Daeschler, 2006",
-                        "nameComplete": "Tiktaalik roseae"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Panderichthys rhombolepis Gross, 1930",
-                        "nameComplete": "Panderichthys rhombolepis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Eusthenopteron foordi Whiteaves, 1881",
-                        "nameComplete": "Eusthenopteron foordi"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

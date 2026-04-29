@@ -1,0 +1,212 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "book_section",
+                "title": "The Late Cretaceous pterosaur Quetzalcoatlus Lawson 1975 (Pterodactyloidea: Azhdarchoidea)",
+                "section_title": "Phylogenetic systematics of Quetzalcoatlus (Pterosauria: Azhdarchidae)",
+                "year": 2021,
+                "authors": [
+                    {
+                        "name": "Brian Andres",
+                        "alternate": [
+                            "Andres, Brian"
+                        ],
+                        "firstname": "Brian",
+                        "lastname": "Andres"
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "Kevin Padian",
+                        "alternate": [
+                            "Padian, Kevin"
+                        ],
+                        "firstname": "Kevin",
+                        "lastname": "Padian"
+                    },
+                    {
+                        "name": "Matthew Brown",
+                        "alternate": [
+                            "Brown, Matthew"
+                        ],
+                        "firstname": "Matthew",
+                        "lastname": "Brown"
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "Society of Vertebrate Paleontology",
+                "city": "McLean, VA",
+                "pages": "203–217",
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1080/02724634.2020.1801703"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "https://www.tandfonline.com/doi/full/10.1080/02724634.2020.1801703"
+                    }
+                ]
+            }
+        },
+        {
+            "phylogenyCitation": {
+                "type": "article",
+                "title": "The Earliest Pterodactyloid and the Origin of the Group",
+                "year": 2014,
+                "authors": [
+                    {
+                        "name": "Brian Andres",
+                        "alternate": [
+                            "Andres, Brian"
+                        ],
+                        "firstname": "Brian",
+                        "lastname": "Andres"
+                    },
+                    {
+                        "name": "James M Clark",
+                        "alternate": [
+                            "Clark, James M"
+                        ],
+                        "firstname": "James",
+                        "lastname": "Clark",
+                        "middlename": "M"
+                    },
+                    {
+                        "name": "Xing Xu",
+                        "alternate": [
+                            "Xu, Xing"
+                        ],
+                        "firstname": "Xing",
+                        "lastname": "Xu"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.cub.2014.03.030"
+                    }
+                ],
+                "link": [
+                    {
+                        "url": "http://www.sciencedirect.com/science/article/pii/S0960982214003224"
+                    }
+                ],
+                "journal": {
+                    "name": "Current Biology",
+                    "volume": "24",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '349'",
+            "label": "Istiodactylus",
+            "scientificNameAuthorship": "Andres, Brian",
+            "namePublishedIn": [
+                {
+                    "type": "book_section",
+                    "title": "Dinosaurs of the Isle of Wight",
+                    "section_title": "Pterosaurs",
+                    "year": 2001,
+                    "authors": [
+                        {
+                            "name": "Stafford C B Howse",
+                            "alternate": [
+                                "Howse, Stafford C B"
+                            ],
+                            "firstname": "Stafford",
+                            "lastname": "Howse",
+                            "middlename": "C B"
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "David M Martill",
+                            "alternate": [
+                                "Martill, David M"
+                            ],
+                            "firstname": "David",
+                            "lastname": "Martill",
+                            "middlename": "M"
+                        },
+                        {
+                            "name": "Darren Naish",
+                            "alternate": [
+                                "Naish, Darren"
+                            ],
+                            "firstname": "Darren",
+                            "lastname": "Naish"
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "The Palaeontological Association",
+                    "city": "London",
+                    "pages": "324–335",
+                    "identifier": [],
+                    "link": [
+                        {
+                            "url": "https://www.palass.org/publications/field-guides-fossils/10/no-10-dinosaurs-isle-wight"
+                        }
+                    ]
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Phylogenetic Taxonomy of the Pterosauria",
+                    "authors": [
+                        {
+                            "name": "Brian Andres",
+                            "alternate": [
+                                "Andres, Brian"
+                            ],
+                            "firstname": "Brian",
+                            "lastname": "Andres"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "figure": "1",
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of Phylogenetic Taxonomy",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "Least inclusive clade containing Istiodactylus latidens (Seeley, 1901) and Istiodactylus sinensis Andres and Ji 2006.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Istiodactylus latidens Seeley, 1901",
+                        "nameComplete": "Istiodactylus latidens"
+                    }
+                },
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Istiodactylus sinensis Andres and Ji, 2006",
+                        "nameComplete": "Istiodactylus sinensis"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

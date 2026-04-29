@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -141,10 +141,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 251,
+            "curatorNotes": "Regnum ID: '251'",
             "label": "Rosidae",
-            "dwc:scientificNameAuthorship": "Judd, W. S., Cantino, P. D., Soltis, D. E., Soltis, P. S.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Judd, W. S. and Cantino, P. D. and Soltis, D. E. and Soltis, P. S.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "Sistema i filogeniia tesvetkovyhk rastenii (Systema et phylogenia magnoliophytorum).",
@@ -167,8 +167,87 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The largest crown clade containing Rosa cinnamomea L. 1753 (Fabidae/Rosaceae) but not Saxifraga mertensiana Bong. 1835 (Saxifragales) and Helianthus annuus L. 1753 (Asteridae) and Berberidopsis corallina Hook. f. 1862 (Berberidopsidales) and Stellaria media (L.) Cirillo 1784 (Caryophyllales) and Viscum album L. 1753 (Santalales) and Dillenia indica L. 1753 (Dilleniaceae) and Gunnera perpensa L. 1753 (Gunneraceae).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Rosidae",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "W. S. Judd",
+                            "alternate": [
+                                "Judd, W. S."
+                            ],
+                            "firstname": "W.",
+                            "lastname": "Judd",
+                            "middlename": "S."
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "D. E. Soltis",
+                            "alternate": [
+                                "Soltis, D. E."
+                            ],
+                            "firstname": "D.",
+                            "lastname": "Soltis",
+                            "middlename": "E."
+                        },
+                        {
+                            "name": "P. S. Soltis",
+                            "alternate": [
+                                "Soltis, P. S."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Soltis",
+                            "middlename": "S."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "327-330",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The largest crown clade containing Rosa cinnamomea L. 1753 (Fabidae/Rosaceae) but not Saxifraga mertensiana Bong. 1835 (Saxifragales) and Helianthus annuus L. 1753 (Asteridae) and Berberidopsis corallina Hook. f. 1862 (Berberidopsidales) and Stellaria media (L.) Cirillo 1784 (Caryophyllales) and Viscum album L. 1753 (Santalales) and Dillenia indica L. 1753 (Dilleniaceae) and Gunnera perpensa L. 1753 (Gunneraceae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -180,71 +259,7 @@
                     }
                 }
             ],
-            "externalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Saxifraga mertensiana Bong., 1835",
-                        "nameComplete": "Saxifraga mertensiana"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Helianthus annuus Linnaeus, 1753",
-                        "nameComplete": "Helianthus annuus"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Berberidopsis corallina Hook., 1862",
-                        "nameComplete": "Berberidopsis corallina"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Stellaria media Cirillo, 1784",
-                        "nameComplete": "Stellaria media"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Viscum album Linnaeus, 1753",
-                        "nameComplete": "Viscum album"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Dillenia indica Linnaeus, 1753",
-                        "nameComplete": "Dillenia indica"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Gunnera perpensa Linnaeus, 1753",
-                        "nameComplete": "Gunnera perpensa"
-                    }
-                }
-            ]
+            "externalSpecifiers": []
         }
     ]
 }

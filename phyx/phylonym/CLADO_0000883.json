@@ -1,0 +1,162 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Phylogenetic analysis of molecular and morphological data highlights uncertainty in the relationships of fossil and living species of Elopomorpha (Actinopterygii: Teleostei)",
+                "year": 2015,
+                "authors": [
+                    {
+                        "name": "Alex Dornburg",
+                        "alternate": [
+                            "Dornburg, Alex"
+                        ],
+                        "firstname": "Alex",
+                        "lastname": "Dornburg"
+                    },
+                    {
+                        "name": "Matt Friedman",
+                        "alternate": [
+                            "Friedman, Matt"
+                        ],
+                        "firstname": "Matt",
+                        "lastname": "Friedman"
+                    },
+                    {
+                        "name": "Thomas J. Near",
+                        "alternate": [
+                            "Near, Thomas J."
+                        ],
+                        "firstname": "Thomas",
+                        "lastname": "Near",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2015.04.004"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Phylogenetics and Evolution",
+                    "volume": "89",
+                    "identifier": []
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '883'",
+            "label": "Elopomorpha",
+            "scientificNameAuthorship": "Near, T. J. and Thacker, C. E.",
+            "namePublishedIn": [
+                {
+                    "type": "article",
+                    "title": "Phyletic studies of teleostean fishes, with a provisional classification of living forms",
+                    "year": 1966,
+                    "authors": [
+                        {
+                            "name": "P. H. Greenwood",
+                            "alternate": [
+                                "Greenwood, P. H."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Greenwood",
+                            "middlename": "H."
+                        },
+                        {
+                            "name": "D. E. Rosen",
+                            "alternate": [
+                                "Rosen, D. E."
+                            ],
+                            "firstname": "D.",
+                            "lastname": "Rosen",
+                            "middlename": "E."
+                        },
+                        {
+                            "name": "S. H. Weitzman",
+                            "alternate": [
+                                "Weitzman, S. H."
+                            ],
+                            "firstname": "S.",
+                            "lastname": "Weitzman",
+                            "middlename": "H."
+                        },
+                        {
+                            "name": "G. S. Myers",
+                            "alternate": [
+                                "Myers, G. S."
+                            ],
+                            "firstname": "G.",
+                            "lastname": "Myers",
+                            "middlename": "S."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the American Museum of Natural History",
+                        "volume": "131",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Phylogeny and classification of Actinopterygii",
+                    "authors": [
+                        {
+                            "name": "Thomas J. Near",
+                            "alternate": [
+                                "Near, Thomas J."
+                            ],
+                            "firstname": "Thomas",
+                            "lastname": "Near",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "Christine E. Thacker",
+                            "alternate": [
+                                "Thacker, Christine E."
+                            ],
+                            "firstname": "Christine",
+                            "lastname": "Thacker",
+                            "middlename": "E."
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "Bulletin of the Peabody Museum of Natural History",
+                        "identifier": []
+                    }
+                }
+            ],
+            "definition": "The least inclusive crown clade that contains Elops saurus Linnaeus 1766, Albula vulpes (Linnaeus 1758), and Anguilla rostrata (Lesueur 1817).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Elops saurus Linnaeus, 1766",
+                        "nameComplete": "Elops saurus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

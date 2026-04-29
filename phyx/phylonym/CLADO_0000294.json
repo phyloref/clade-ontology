@@ -1,5 +1,5 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
             "primaryPhylogenyCitation": {
@@ -149,10 +149,10 @@
     ],
     "phylorefs": [
         {
-            "regnumId": 294,
+            "curatorNotes": "Regnum ID: '294'",
             "label": "Arctoidea",
-            "dwc:scientificNameAuthorship": "Wolsan, M., Bryant, H. N., Wyss, A. R.",
-            "dwc:namePublishedIn": [
+            "scientificNameAuthorship": "Wolsan, M. and Bryant, H. N. and Wyss, A. R.",
+            "namePublishedIn": [
                 {
                     "type": "book",
                     "title": "On the value of the characters of the base of the cranium in the classification of the order Carnivora, and on the systematic position of Bassaris and other disputed forms.",
@@ -176,8 +176,86 @@
                     "link": []
                 }
             ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The smallest crown clade containing Ursus arctos Linnaeus 1758 (Ursidae), Mustela erminea Linnaeus 1758 (Mustelidae), Procyon lotor (Linnaeus 1758) (Procyonidae), Ailurus fulgens F. Cuvier 1825, and Mephitis mephitis (Schreber, 1776) (Mephitidae).",
+            "definitionSource": [
+                {
+                    "type": "book_section",
+                    "title": "Phylonyms: A Companion to the PhyloCode",
+                    "section_title": "Arctoidea",
+                    "year": 2020,
+                    "authors": [
+                        {
+                            "name": "M. Wolsan",
+                            "alternate": [
+                                "Wolsan, M."
+                            ],
+                            "firstname": "M.",
+                            "lastname": "Wolsan"
+                        },
+                        {
+                            "name": "H. N. Bryant",
+                            "alternate": [
+                                "Bryant, H. N."
+                            ],
+                            "firstname": "H.",
+                            "lastname": "Bryant",
+                            "middlename": "N."
+                        },
+                        {
+                            "name": "J. J. Flynn",
+                            "alternate": [
+                                "Flynn, J. J."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Flynn",
+                            "middlename": "J."
+                        },
+                        {
+                            "name": "A. R. Wyss",
+                            "alternate": [
+                                "Wyss, A. R."
+                            ],
+                            "firstname": "A.",
+                            "lastname": "Wyss",
+                            "middlename": "R."
+                        }
+                    ],
+                    "editors": [
+                        {
+                            "name": "K. de Queiroz",
+                            "alternate": [
+                                "de Queiroz, K."
+                            ],
+                            "firstname": "K.",
+                            "lastname": "de Queiroz"
+                        },
+                        {
+                            "name": "P. D. Cantino",
+                            "alternate": [
+                                "Cantino, P. D."
+                            ],
+                            "firstname": "P.",
+                            "lastname": "Cantino",
+                            "middlename": "D."
+                        },
+                        {
+                            "name": "J. A. Gauthier",
+                            "alternate": [
+                                "Gauthier, J. A."
+                            ],
+                            "firstname": "J.",
+                            "lastname": "Gauthier",
+                            "middlename": "A."
+                        }
+                    ],
+                    "series_editors": [],
+                    "publisher": "CRC Press",
+                    "city": "Boca Raton, FL",
+                    "pages": "1009-1013",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definition": "The smallest crown clade containing Ursus arctos Linnaeus 1758 (Ursidae), Mustela erminea Linnaeus 1758 (Mustelidae), Procyon lotor (Linnaeus 1758) (Procyonidae), Ailurus fulgens F. Cuvier 1825, and Mephitis mephitis (Schreber, 1776) (Mephitidae).",
             "internalSpecifiers": [
                 {
                     "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
@@ -186,42 +264,6 @@
                         "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
                         "label": "Ursus arctos Linnaeus, 1758",
                         "nameComplete": "Ursus arctos"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Mustela erminea Linnaeus, 1758",
-                        "nameComplete": "Mustela erminea"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Procyon lotor Linnaeus, 1758",
-                        "nameComplete": "Procyon lotor"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Ailurus fulgens Cuvier, 1825",
-                        "nameComplete": "Ailurus fulgens"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
-                        "label": "Mephitis mephitis Schreber, 1776",
-                        "nameComplete": "Mephitis mephitis"
                     }
                 }
             ],

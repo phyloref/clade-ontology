@@ -1,0 +1,75 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '561'",
+            "label": "Maculastrombus",
+            "scientificNameAuthorship": "Liverani, Virgilio and Dekkers, Aart M and Maxwell, Stephen J",
+            "namePublishedIn": [],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "The first record of Neodilatilabrum Dekkers, 2008 (Mollusca, Neostromboidae, Strombidae) in Australia",
+                    "year": 2021,
+                    "authors": [
+                        {
+                            "name": "Virgilio Liverani",
+                            "alternate": [
+                                "Liverani, Virgilio"
+                            ],
+                            "firstname": "Virgilio",
+                            "lastname": "Liverani"
+                        },
+                        {
+                            "name": "Aart M Dekkers",
+                            "alternate": [
+                                "Dekkers, Aart M"
+                            ],
+                            "firstname": "Aart",
+                            "lastname": "Dekkers",
+                            "middlename": "M"
+                        },
+                        {
+                            "name": "Stephen J Maxwell",
+                            "alternate": [
+                                "Maxwell, Stephen J"
+                            ],
+                            "firstname": "Stephen",
+                            "lastname": "Maxwell",
+                            "middlename": "J"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "figure": "1",
+                    "identifier": [],
+                    "link": [],
+                    "journal": {
+                        "name": "The Festivus",
+                        "volume": "53",
+                        "identifier": [
+                            {
+                                "type": "isbn",
+                                "id": "0738-9388"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "definition": "The clade has the characteristics outlined in the diagnosis, and contains Strombus maculatus Sowerby II, 1842 and taxa more closely related to it than to other members of the Neostrombini n. tribe.",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Strombus maculatus Sowerby, 1842",
+                        "nameComplete": "Strombus maculatus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}

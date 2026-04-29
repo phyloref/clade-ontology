@@ -1,0 +1,136 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Resolving phylogenetic and classical nomenclature: A Revision of Canarium Schumacher,1817 (Mollusca, Neostromboidae, Strombidae)",
+                "year": 2021,
+                "authors": [
+                    {
+                        "name": "V Liverani",
+                        "alternate": [
+                            "Liverani, V"
+                        ],
+                        "firstname": "V",
+                        "lastname": "Liverani"
+                    },
+                    {
+                        "name": "A M Dekkers",
+                        "alternate": [
+                            "Dekkers, A M"
+                        ],
+                        "firstname": "A",
+                        "lastname": "Dekkers",
+                        "middlename": "M"
+                    },
+                    {
+                        "name": "S J Maxwell",
+                        "alternate": [
+                            "Maxwell, S J"
+                        ],
+                        "firstname": "S",
+                        "lastname": "Maxwell",
+                        "middlename": "J"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "The Festivus",
+                    "volume": "53",
+                    "identifier": [
+                        {
+                            "type": "isbn",
+                            "id": "0738-9388"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "phylorefs": [
+        {
+            "curatorNotes": "Regnum ID: '569'",
+            "label": "Canarium",
+            "scientificNameAuthorship": "Maxwell, Stephen John",
+            "namePublishedIn": [
+                {
+                    "type": "book",
+                    "title": "Essai d'un Nouveau Système des Habitations des vers Testacés",
+                    "year": 1817,
+                    "authors": [
+                        {
+                            "name": "C F Schumacher",
+                            "alternate": [
+                                "Schumacher, C F"
+                            ],
+                            "firstname": "C",
+                            "lastname": "Schumacher",
+                            "middlename": "F"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "publisher": "Schultz",
+                    "city": "Copenhagen",
+                    "identifier": [],
+                    "link": []
+                }
+            ],
+            "definitionSource": [
+                {
+                    "type": "article",
+                    "title": "Registration of Neostromboidae Clades in the RegNum of the PhyloCode, and Errata",
+                    "year": 2021,
+                    "authors": [
+                        {
+                            "name": "S J Maxwell",
+                            "alternate": [
+                                "Maxwell, S J"
+                            ],
+                            "firstname": "S",
+                            "lastname": "Maxwell",
+                            "middlename": "J"
+                        }
+                    ],
+                    "editors": [],
+                    "series_editors": [],
+                    "identifier": [
+                        {
+                            "type": "doi",
+                            "id": "10.54173/F533192"
+                        }
+                    ],
+                    "link": [],
+                    "journal": {
+                        "name": "The Festivus",
+                        "volume": "53",
+                        "identifier": [
+                            {
+                                "type": "isbn",
+                                "id": "0738-9388"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "definition": "The maximum clade consisting of Canarium urceus (Linné, 1758) and all species that share a more recent common ancestor with them than with Tridentatarius dentatus (Linné, 1758), Terestrombus fragilis (Röding,1798),  Maculastrombus maculatus (Sowerby II, 1842) or Neostrombus fusiformis (Sowerby II, 1842).",
+            "internalSpecifiers": [
+                {
+                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
+                    "hasName": {
+                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
+                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000107",
+                        "label": "Canarium urceus Linné, 1758",
+                        "nameComplete": "Canarium urceus"
+                    }
+                }
+            ],
+            "externalSpecifiers": []
+        }
+    ]
+}
