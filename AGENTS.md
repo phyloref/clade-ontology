@@ -68,7 +68,7 @@ PhyloRegnum DB dump (JSON)
 
 - **`phyx/`** — Curated PHYX files organized by source:
   - `from_papers/` — Phyloreferences from peer-reviewed papers (e.g., `Brochu 2003/`)
-  - `phylonym/` — Files from the PhyloNym database. Has subdirs `newick-problems/` and `newick-recursion-error/` containing archival copies as `CLADO_*.json.txt` (renamed extension keeps them out of the standard `*.json` glob so the test suite skips their newicks); a regnum ID may appear at both root and subdir paths. `scripts/` holds ad-hoc helpers.
+  - `phylonym/` — Files from the Phylonym database. Has subdirs `newick-problems/` and `newick-recursion-error/` containing archival copies as `CLADO_*.json.txt` (renamed extension keeps them out of the standard `*.json` glob so the test suite skips their newicks); a regnum ID may appear at both root and subdir paths. `scripts/` holds ad-hoc helpers.
   - `encrypted/` — Git-crypt encrypted files (skipped during processing)
 - **`phyx2ontology/phyx2ontology.js`** — Converts PHYX files to a single Clade Ontology JSON-LD. Reads PHYX files, wraps them via `@phyloref/phyx`, and emits JSON-LD to STDOUT.
 - **`regnum2phyx/regnum2phyx.js`** — Converts PhyloRegnum database dumps (JSON arrays) into individual PHYX files. Handles specifiers, citations (BibJSON format), and author formatting.
