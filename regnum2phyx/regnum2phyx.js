@@ -417,8 +417,8 @@ for (const r of results) {
 
 // Write CSV report if --report was given.
 if (argv.report) {
-  const maxInternal = Math.max(0, ...results.map(r => r.internalSpecifiers.length));
-  const maxExternal = Math.max(0, ...results.map(r => r.externalSpecifiers.length));
+  const maxInternal = results.reduce((m, r) => Math.max(m, r.internalSpecifiers.length), 0);
+  const maxExternal = results.reduce((m, r) => Math.max(m, r.externalSpecifiers.length), 0);
 
   const internalCols = Array.from({ length: maxInternal }, (_, i) => `internal_specifier_${i + 1}`);
   const externalCols = Array.from({ length: maxExternal }, (_, i) => `external_specifier_${i + 1}`);
@@ -448,14 +448,18 @@ if (argv.report) {
 const successCount = results.filter(r => r.status === 'success').length;
 const warningCount = results.filter(r => r.status === 'warning').length;
 const skippedCount = results.filter(r => r.status === 'skipped').length;
-const countErrors = warningCount + skippedCount;
 
-if (countErrors > 0) {
+if (warningCount > 0 || skippedCount > 0) {
   process.stderr.write(
     `Processed ${results.length} entries: ${successCount} written successfully, ${skippedCount} skipped, ${warningCount} written with issues.\n`,
   );
-  process.stderr.write(`${countErrors} errors occurred while processing database dump.\n`);
+}
+
+// Only exit non-zero for hard errors (skipped = duplicate/unresolvable entries where no
+// file was written). Warnings mean the file was written but with unsupported specifiers.
+if (skippedCount > 0) {
+  process.stderr.write(`${skippedCount} entries were skipped due to errors.\n`);
   process.exit(1);
 } else {
-  process.stdout.write(`${successCount} Phyx files produced successfully.\n`);
+  process.stdout.write(`${successCount + warningCount} Phyx files produced successfully.\n`);
 }
