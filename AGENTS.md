@@ -1,6 +1,6 @@
-# CLAUDE.md
+# AGENTS.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance to AI coding agents (Claude Code, Codex, etc.) when working with code in this repository.
 
 ## Overview
 
@@ -57,6 +57,7 @@ PhyloRegnum DB dump (JSON)
 
 ### Key Directories
 
+- **`data/`** — Git-ignored directory for raw PhyloRegnum database dumps (JSON files) used as input to `regnum2phyx.js`. Not committed.
 - **`phyx/`** — Curated PHYX files organized by source:
   - `from_papers/` — Phyloreferences from peer-reviewed papers (e.g., `Brochu 2003/`)
   - `phylonym/` — Files from the PhyloNym database
@@ -71,8 +72,8 @@ PhyloRegnum DB dump (JSON)
 ### PHYX Format
 
 PHYX files are JSON with:
-- `@context`: points to `http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json`
-- `phylorefs`: array of phyloreference objects with `internalSpecifiers`, `externalSpecifiers`, `cladeDefinition`, etc.
+- `@context`: points to `http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json`
+- `phylorefs`: array of phyloreference objects with `internalSpecifiers`, `externalSpecifiers`, `definition`, etc.
 - `phylogenies`: array of phylogeny objects with Newick strings
 
 ### Key Library
