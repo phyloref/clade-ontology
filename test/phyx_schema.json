@@ -3,7 +3,8 @@
     "nomenclaturalCodes": {
       "type": "string",
       "enum": [
-        "http://purl.obolibrary.org/obo/NOMEN_0000107"
+        "http://purl.obolibrary.org/obo/NOMEN_0000107",
+        "http://purl.obolibrary.org/obo/NOMEN_0000109"
       ]
     },
     "agent": {
@@ -185,11 +186,12 @@
           "type": "array",
           "description": "Links to this publication.",
           "items": {
+            "type": "object",
             "required": [
               "url"
             ],
+            "additionalProperties": false,
             "properties": {
-              "additionalProperties": false,
               "url": {
                 "type": "string",
                 "description": "The URL of this publication."
@@ -245,7 +247,7 @@
           "minLength": 1
         },
         "specificEpithet": {
-          "description": "The genus portion of the taxon name.",
+          "description": "The specific epithet portion of the taxon name.",
           "type": "string",
           "minLength": 1
         }
@@ -433,6 +435,7 @@
       "type": "array",
       "description": "A list of additional OWL imports to be added in this ontology.",
       "items": {
+        "type": "string",
         "format": "uri-reference"
       }
     },
