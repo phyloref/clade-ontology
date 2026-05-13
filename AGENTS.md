@@ -4,7 +4,7 @@ This file provides guidance to AI coding agents (Claude Code, Codex, etc.) when 
 
 ## Overview
 
-The Clade Ontology is an ontology of exemplar phyloreferences curated from peer-reviewed publications. It stores phyloreferences (computable clade definitions) as PHYX files that are converted to OWL/JSON-LD for reasoning with an OWL reasoner (JPhyloRef + JFact++).
+The Clade Ontology is an ontology of exemplar phyloreferences curated from PhyloRegnum (https://www.phyloregnum.org/) and peer-reviewed publications. It stores phyloreferences (computable clade definitions) as PHYX files that are converted to n-triples and OWL/JSON-LD for reasoning with an OWL reasoner. We use JPhyloRef (https://github.com/phyloref/jphyloref) to wrap [Elk](https://liveontologies.github.io/elk-reasoner/).
 
 ## Commands
 
