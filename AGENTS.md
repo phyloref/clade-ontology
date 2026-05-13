@@ -10,7 +10,7 @@ The Clade Ontology is an ontology of exemplar phyloreferences curated from Phylo
 
 ```bash
 npm test           # Lint + run all Mocha tests (requires Node.js)
-npm run lint       # ESLint on test/, phyx2ontology/, and regnum2phyx/
+npm run lint       # Biome lint on test/, phyx2ontology/, and regnum2phyx/
 npm run mocha      # Run tests without linting
 npm run build-ontology  # Convert all phyx/ files into CLADO.json
 ```
@@ -82,7 +82,7 @@ PHYX files are JSON with:
 
 ### Linting
 
-ESLint uses `airbnb-base` + `mocha` plugin. Trailing commas required on multiline arrays/objects (not functions). ES6 syntax.
+Linting uses [Biome](https://biomejs.dev/). ES6 syntax.
 
 ### Git-Crypt
 
