@@ -53,7 +53,7 @@ function findPHYXFiles(dirPath) {
 }
 
 // Read command-line arguments.
-const argv = yargs.usage('Usage: $0 <directories or files to convert> [--no-phylogenies]')
+const argv = yargs(process.argv.slice(2)).usage('Usage: $0 <directories or files to convert> [--no-phylogenies]')
   .demandCommand(1) // Make sure there's at least one directory or file!
   .option('no-phylogenies', {
     // --no-phylogenies: Flag for turning off including phylogenies in the produced ontology.
@@ -128,6 +128,10 @@ for (const phyxFile of jsons) {
       console.warn(`Phyloreference ${phylorefWrapper.label} has `
         + `${phylorefWrapper.externalSpecifiers.length} external specifiers but `
         + `the limit is ${MAX_EXTERNAL_SPECIFIERS}`);
+      continue;
+    }
+    if (phylorefWrapper.internalSpecifiers.length === 1 && phylorefWrapper.externalSpecifiers.length === 0) {
+      console.warn(`Phyloreference ${phylorefWrapper.label} has only 1 internal specifier and no external specifiers — skipping (single-specifier limitation)`);
       continue;
     }
 
