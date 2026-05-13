@@ -18,8 +18,6 @@ const { TaxonConceptWrapper } = require('@phyloref/phyx/src/wrappers/TaxonConcep
 const { TaxonNameWrapper } = require('@phyloref/phyx/src/wrappers/TaxonNameWrapper');
 const { CitationWrapper } = require('@phyloref/phyx/src/wrappers/CitationWrapper');
 const { PhylorefWrapper } = require('@phyloref/phyx/src/wrappers/PhylorefWrapper');
-// owlterms provides shared IRI constants (including the Phyx context URL).
-const owlterms = require('@phyloref/phyx/src/utils/owlterms');
 
 // Nomenclatural codes from the NOMEN ontology. These differ from the
 // TaxonName-ontology IRIs in phyx.js (owlterms.ICZN_CODE etc.); we keep the
@@ -370,10 +368,10 @@ dump.forEach((entry, index) => {
   }
 
   // Prepare a simple Phyx file template.
-  // owlterms.PHYX_CONTEXT_JSON provides the canonical context URL from the library.
+  // TODO: use owlterms.PHYX_CONTEXT_JSON for the context URL once
+  // https://github.com/phyloref/phyx.js/pull/171 has been released (re-add owlterms import then).
   const phyxTemplate = pickBy({
     '@context': 'http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json',
-      // TODO: revert to owlterms.PHYX_CONTEXT_JSON once https://github.com/phyloref/phyx.js/pull/171 has been released.
     phylogenies,
     phylorefs: [phylorefWrapper.phyloref],
   });
