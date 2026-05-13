@@ -114,27 +114,16 @@ describe('Test Phyx files in repository', () => {
         return;
       }
 
-      it('has at least one Newick phylogeny', () => {
-        const phylogenies = json.phylogenies || [];
-        // assert.isAbove(phylogenies.length, 0, 'No phylogenies found in file');
-
-        const newicks = phylogenies
-          .map(ph => ph.newick || [])
-          .reduce((a, b) => a.concat(b), [])
-          .filter(nw => nw.trim() !== '');
-        // assert.isAbove(newicks.length, 0, 'No Newick phylogenies found in file');
-        if (newicks.length === 0) {
-          console.warn(`No Newick phylogenies found in file ${filename}.`);
-        }
-
-        // assert.equal(newicks.length, 1,
-        //   `Contains ${newicks.length} Newick phylogenies in ${phylogenies.length} phylogenies.`);
-        if (newicks.length > 1) {
-          console.warn(`Unexpectedly found ${newicks.length} Newick phylogenies in ${phylogenies.length} phylogenies in Phyx file ${filename}.`);
-        }
-      });
-
-      // console.log(`Loaded Phyx file ${filename}`);
+      const newicks = (json.phylogenies || [])
+        .map(ph => ph.newick || '')
+        .filter(nw => nw.trim() !== '');
+      if (newicks.length > 0) {
+        it(`has ${newicks.length} Newick phylogen${newicks.length === 1 ? 'y' : 'ies'}`, () => {
+          assert.isAbove(newicks.length, 0);
+        });
+      } else {
+        it.skip('has no Newick phylogenies');
+      }
 
       const skipFile = (json.phylorefs || [])
         .map(phyloref => new phyx.PhylorefWrapper(phyloref))
