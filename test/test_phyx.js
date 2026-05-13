@@ -162,8 +162,7 @@ describe('Test Phyx files in repository', () => {
             wrappedPhyloref.externalSpecifiers.length === 0
           ) {
             it.skip(
-              `Phyloreference "${wrappedPhyloref.label}" has only 1 internal specifier and no external specifiers — `
-              + 'cannot generate a valid OWL class expression (single-specifier limitation).'
+              `Phyloreference "${wrappedPhyloref.label}" has only 1 internal specifier and no external specifiers — cannot generate a valid OWL class expression (single-specifier limitation).`
             );
             return true;
           }
