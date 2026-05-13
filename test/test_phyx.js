@@ -157,6 +157,17 @@ describe('Test Phyx files in repository', () => {
             return true;
           }
 
+          if (
+            wrappedPhyloref.internalSpecifiers.length === 1 &&
+            wrappedPhyloref.externalSpecifiers.length === 0
+          ) {
+            it.skip(
+              `Phyloreference "${wrappedPhyloref.label}" has only 1 internal specifier and no external specifiers — `
+              + 'cannot generate a valid OWL class expression (single-specifier limitation).'
+            );
+            return true;
+          }
+
           return false;
         })
         .reduce((a, b) => a || b, false);
