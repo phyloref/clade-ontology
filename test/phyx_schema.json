@@ -3,6 +3,11 @@
     "nomenclaturalCodes": {
       "type": "string",
       "enum": [
+        "http://rs.tdwg.org/ontology/voc/TaxonName#ICZN",
+        "http://rs.tdwg.org/ontology/voc/TaxonName#ICBN",
+        "http://ontology.phyloref.org/tcan.owl#ICNP",
+        "http://ontology.phyloref.org/tcan.owl#ICTV",
+        "http://rs.tdwg.org/ontology/voc/TaxonName#ICNCP",
         "http://purl.obolibrary.org/obo/NOMEN_0000107",
         "http://purl.obolibrary.org/obo/NOMEN_0000109"
       ]
