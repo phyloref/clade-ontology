@@ -62,7 +62,7 @@ PhyloRegnum DB dump (JSON)
   - `from_papers/` — Phyloreferences from peer-reviewed papers (e.g., `Brochu 2003/`)
   - `phylonym/` — Files from the PhyloNym database
   - `encrypted/` — Git-crypt encrypted files (skipped during processing)
-- **`phyx2ontology/phyx2ontology.js`** — Converts PHYX files to a single Clade Ontology JSON-LD. Reads PHYX files, wraps them via `@phyloref/phyx`, and emits JSON-LD to STDOUT.
+- **`phyx2ontology/phyx2ontology.js`** — Converts Phyx files to a single Clade Ontology JSON-LD. Reads Phyx files, wraps them via `@phyloref/phyx`, and emits JSON-LD to STDOUT.
 - **`regnum2phyx/regnum2phyx.js`** — Converts PhyloRegnum database dumps (JSON arrays) into individual PHYX files. Handles specifiers, citations (BibJSON format), and author formatting.
 - **`test/`** — Mocha test suite:
   - `test_phyx.js` — Validates all PHYX files in `phyx/` (JSON schema + JSON-LD conversion). Skips git-crypt encrypted files.
