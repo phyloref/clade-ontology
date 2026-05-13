@@ -60,7 +60,7 @@ PhyloRegnum DB dump (JSON)
 - **`data/`** — Git-ignored directory for raw PhyloRegnum database dumps (JSON files) used as input to `regnum2phyx.js`. Not committed.
 - **`phyx/`** — Curated PHYX files organized by source:
   - `from_papers/` — Phyloreferences from peer-reviewed papers (e.g., `Brochu 2003/`)
-  - `phylonym/` — Files from the PhyloNym database
+  - `phylonym/` — Files from the Phylonym database, PhyloRegnum (https://www.phyloregnum.org/)
   - `encrypted/` — Git-crypt encrypted files (skipped during processing)
 - **`phyx2ontology/phyx2ontology.js`** — Converts Phyx files to a single Clade Ontology JSON-LD. Reads Phyx files, wraps them via `@phyloref/phyx`, and emits JSON-LD to STDOUT.
 - **`regnum2phyx/regnum2phyx.js`** — Converts PhyloRegnum database dumps (JSON arrays) into individual PHYX files. Handles specifiers, citations (BibJSON format), and author formatting.
