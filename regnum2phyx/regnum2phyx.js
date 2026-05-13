@@ -18,16 +18,7 @@ const { TaxonConceptWrapper } = require('@phyloref/phyx/src/wrappers/TaxonConcep
 const { TaxonNameWrapper } = require('@phyloref/phyx/src/wrappers/TaxonNameWrapper');
 const { CitationWrapper } = require('@phyloref/phyx/src/wrappers/CitationWrapper');
 const { PhylorefWrapper } = require('@phyloref/phyx/src/wrappers/PhylorefWrapper');
-
-// Nomenclatural codes from the NOMEN ontology. These differ from the
-// TaxonName-ontology IRIs in phyx.js (owlterms.ICZN_CODE etc.); we keep the
-// NOMEN IRIs here so that output stays consistent with existing phyx/ files.
-// See https://github.com/phyloref/phyx.js/issues/44 for the planned unification.
-const NAME_IN_UNKNOWN_CODE = 'http://purl.obolibrary.org/obo/NOMEN_0000036';
-const ICZN_NAME = 'http://purl.obolibrary.org/obo/NOMEN_0000107';
-const ICN_NAME = 'http://purl.obolibrary.org/obo/NOMEN_0000109';
-// const ICNP_NAME = 'http://purl.obolibrary.org/obo/NOMEN_0000110';
-// const ICTV_NAME = 'http://purl.obolibrary.org/obo/NOMEN_0000111';
+const owlterms = require('@phyloref/phyx/src/utils/owlterms');
 
 // Load necessary modules.
 const fs = require('node:fs');
@@ -324,19 +315,22 @@ dump.forEach((entry, index) => {
     const specifierAuthors = convertAuthorsIntoStrings(specifier.authors, 'only').join(' and ');
     const specifierCode = (specifier.specifier_code || '').trim();
 
-    let nomenCode = NAME_IN_UNKNOWN_CODE;
-    // As of the May 14, 2020 Regnum dump, only ICZN and ICBN
-    // are used as pre-existing codes. I'll add ICNP and ICTV
-    // as well once we need them.
+    let nomenCode = owlterms.UNKNOWN_CODE;
     switch (specifierCode) {
       case 'ICZN':
-        nomenCode = ICZN_NAME;
+        nomenCode = owlterms.ICZN_CODE;
         break;
       case 'ICBN':
-        nomenCode = ICN_NAME;
+        nomenCode = owlterms.ICN_CODE;
+        break;
+      case 'ICNP':
+        nomenCode = owlterms.ICNP_CODE;
+        break;
+      case 'ICTV':
+        nomenCode = owlterms.ICTV_CODE;
         break;
       case '':
-        nomenCode = NAME_IN_UNKNOWN_CODE;
+        nomenCode = owlterms.UNKNOWN_CODE;
         break;
       default:
         throw new Error(`Unknown specifier_code: '${specifierCode}'`);
@@ -357,19 +351,19 @@ dump.forEach((entry, index) => {
 
     // Use TaxonConceptWrapper.wrapTaxonName() to construct the specifier object,
     // using TaxonNameWrapper.TYPE_TAXON_NAME for the taxon name @type.
-    const specifierTemplate = TaxonConceptWrapper.wrapTaxonName({
+    const specifierTemplate = TaxonConceptWrapper.wrapTaxonName(pickBy({
       '@type': TaxonNameWrapper.TYPE_TAXON_NAME,
       nomenclaturalCode: nomenCode,
       label: scname,
       nameComplete: specifierName,
-    });
+    }));
 
     addTo.push(specifierTemplate);
   }
 
   // Prepare a simple Phyx file template.
-  // TODO: use owlterms.PHYX_CONTEXT_JSON for the context URL once
-  // https://github.com/phyloref/phyx.js/pull/171 has been released (re-add owlterms import then).
+  // TODO: switch to owlterms.PHYX_CONTEXT_JSON once
+  // https://github.com/phyloref/phyx.js/pull/171 has been released.
   const phyxTemplate = pickBy({
     '@context': 'http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json',
     phylogenies,
