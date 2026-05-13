@@ -50,7 +50,7 @@ node regnum2phyx/regnum2phyx.js dump.json -o output_dir/ --filenames regnum-id
 
 ```
 PhyloRegnum DB dump (JSON)
-    → regnum2phyx.js → PHYX files (.json in phyx/)
+    → regnum2phyx.js → Phyx files (.json in phyx/)
     → phyx2ontology.js → CLADO.json (OWL/JSON-LD)
     → JPhyloRef (Java) → reasoning/test results
 ```
@@ -58,27 +58,27 @@ PhyloRegnum DB dump (JSON)
 ### Key Directories
 
 - **`data/`** — Git-ignored directory for raw PhyloRegnum database dumps (JSON files) used as input to `regnum2phyx.js`. Not committed.
-- **`phyx/`** — Curated PHYX files organized by source:
+- **`phyx/`** — Curated Phyx files organized by source:
   - `from_papers/` — Phyloreferences from peer-reviewed papers (e.g., `Brochu 2003/`)
   - `phylonym/` — Files from the Phylonym database, PhyloRegnum (https://www.phyloregnum.org/)
   - `encrypted/` — Git-crypt encrypted files (skipped during processing)
 - **`phyx2ontology/phyx2ontology.js`** — Converts Phyx files to a single Clade Ontology JSON-LD. Reads Phyx files, wraps them via `@phyloref/phyx`, and emits JSON-LD to STDOUT.
-- **`regnum2phyx/regnum2phyx.js`** — Converts PhyloRegnum database dumps (JSON arrays) into individual PHYX files. Handles specifiers, citations (BibJSON format), and author formatting.
+- **`regnum2phyx/regnum2phyx.js`** — Converts PhyloRegnum database dumps (JSON arrays) into individual Phyx files. Handles specifiers, citations (BibJSON format), and author formatting.
 - **`test/`** — Mocha test suite:
-  - `test_phyx.js` — Validates all PHYX files in `phyx/` (JSON schema + JSON-LD conversion). Skips git-crypt encrypted files.
+  - `test_phyx.js` — Validates all Phyx files in `phyx/` (JSON schema + JSON-LD conversion). Skips git-crypt encrypted files.
   - `test_phyx2ontology.js` — Smoke-tests `phyx2ontology.js` execution on all Phyx files.
   - `regnum2phyx/exec.js` — Tests `regnum2phyx.js` against example dumps in `test/regnum2phyx/examples/` and compares output against `test/regnum2phyx/expected/`.
 
-### PHYX Format
+### Phyx Format
 
-PHYX files are JSON with:
+Phyx files are JSON with:
 - `@context`: points to `http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json`
 - `phylorefs`: array of phyloreference objects with `internalSpecifiers`, `externalSpecifiers`, `definition`, etc.
 - `phylogenies`: array of phylogeny objects with Newick strings
 
 ### Key Library
 
-`@phyloref/phyx` (npm) provides `PhylorefWrapper`, `PhylogenyWrapper`, and `PhyxWrapper` classes that convert PHYX objects to JSON-LD/OWL class restrictions.
+`@phyloref/phyx` (npm) provides `PhylorefWrapper`, `PhylogenyWrapper`, and `PhyxWrapper` classes that convert Phyx objects to JSON-LD/OWL class restrictions.
 
 ### Linting
 
@@ -86,4 +86,4 @@ Linting uses [Biome](https://biomejs.dev/). ES6 syntax.
 
 ### Git-Crypt
 
-Some PHYX files in `phyx/encrypted/` are git-crypt encrypted. Both `phyx2ontology.js` and `test_phyx.js` detect these by checking for the `\x00GITCRYPT` magic bytes and skip them gracefully.
+Some Phyx files in `phyx/encrypted/` are git-crypt encrypted. Both `phyx2ontology.js` and `test_phyx.js` detect these by checking for the `\x00GITCRYPT` magic bytes and skip them gracefully.
