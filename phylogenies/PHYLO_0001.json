@@ -1,0 +1,56 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Mallatt & Winchell 2007, fig. 1",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Ribosomal RNA genes and deuterostome phylogeny revisited: More cyclostomes, elasmobranchs, reptiles, and a brittle star.",
+                "year": 2007,
+                "authors": [
+                    {
+                        "name": "J. Mallatt",
+                        "alternate": [
+                            "Mallatt, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Mallatt"
+                    },
+                    {
+                        "name": "C. J. Winchell",
+                        "alternate": [
+                            "Winchell, C. J."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Winchell",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2006.11.023"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Phylogenetic Evolution",
+                    "volume": "43",
+                    "identifier": []
+                }
+            },
+            "newick": "(((((Branchiostoma, \n(((Eptatretus, Myxine), (Petromyzon, Geotria)),\n((Lepidosiren, (Protopterus, Neoceratodus)), \n((Chrysemys, ((Homo, Canis, Rattus), (Gallus, Anolis))),\n((Latimeria, (Acipenser, (Polypterus, (Danio, (Oncorhynchus, Siniperca))))), \n((Ambystoma, (Xenopus, Rana)), (Hexanchus, (Triakis, (Hydrolagus, Raja))))))))),\n\n(((Florometra, \n((Cucumeria, (Arbacia, Strongylocentrotus)), (Ophiomyxa, Asterias))),\n\n((Cephalodiscus, (Saccoglossus, Harrimania)), \n(Ptychodera_flava, Ptychodera_sp.))))),\n\n((Oikopleura, (Styela, (Ciona, Thalia))))),\n\n(Priapulus, Limulus), (Placopecten, Proceraea)))"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000006",
+            "regnumId": 6,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}

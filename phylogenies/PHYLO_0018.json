@@ -1,0 +1,58 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Cameron 2005, fig. 5",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A phylogeny of the hemichordates based on morphological characters.",
+                "year": 2005,
+                "authors": [
+                    {
+                        "name": "C. B. Cameron",
+                        "alternate": [
+                            "Cameron, C. B."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Cameron",
+                        "middlename": "B."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "5",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1139/z04-190"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Canadian Journal of Zoology",
+                    "volume": "83",
+                    "identifier": []
+                }
+            },
+            "newick": "(Cnidaria, \n((Polychaeta, Sipuncula),\n\n(((Crinoidea, (Asteroidea, (Ophuroidea, (Echinoidea, Holothuroidea)))),\n\n((Rhabdopleura, Cephalodiscus),\n\n(Protoglossus, Saccoflossus, Harrimania, Stereobalanus, Xenopleura, Saxipendium, \n((Spengelia, Schizocardium, Glandiceps, Willeyia), (Balangoglossus, Ptychodera, Glossobalanus))))),\n\n(Tunicata, (Cephalochordata, Vertebrata)))))"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000039",
+            "regnumId": 39,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000049",
+            "regnumId": 49,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000087",
+            "regnumId": 87,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}

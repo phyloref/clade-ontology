@@ -1,0 +1,94 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Gauthier et al. 1988, fig. 3",
+            "primaryPhylogenyCitation": {
+                "type": "book_section",
+                "title": "A phylogenetic analysis of Lepidosauromorpha. In the phylogenetic relationships of the lizard families.",
+                "section_title": "The phylogenetic relationships of the lizard families.",
+                "year": 1988,
+                "authors": [
+                    {
+                        "name": "J. Gauthier",
+                        "alternate": [
+                            "Gauthier, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Gauthier"
+                    },
+                    {
+                        "name": "K. de Queiroz",
+                        "alternate": [
+                            "de Queiroz, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "de Queiroz"
+                    },
+                    {
+                        "name": "R. Estes",
+                        "alternate": [
+                            "Estes, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Estes"
+                    }
+                ],
+                "editors": [
+                    {
+                        "name": "R. Estes",
+                        "alternate": [
+                            "Estes, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Estes"
+                    },
+                    {
+                        "name": "G. Pregill",
+                        "alternate": [
+                            "Pregill, G."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Pregill"
+                    }
+                ],
+                "series_editors": [],
+                "publisher": "Stanford University Press",
+                "city": "Palo Alto",
+                "pages": "15-98",
+                "figure": "3",
+                "identifier": [],
+                "link": []
+            },
+            "newick": "((((((((((((Ornithosuchia, Pseudosuchia), Proterochampsidae),\nErythrosuchidae), Proterosuchidae), Protorosauria), Choristodera), Trilophosaurus), Rhynchosauria),\nLepidosauromorpha), Araeoscelidia), (Testudines, Captorhinidae)),\n(((((((((((((((Mammalia, Morganucodontidae), Tritylodontidae), Exaeretodon), Diademodon), Thrinaxodon),\nProcynosuchus), Therocephalia), Dicynodontia), Gorgonopsia), Dinocephalia), Biarmosuchia), Sphenacodontinae),\nEdaphosaurus), Ophiacodon), Casea))\n\n"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000173",
+            "regnumId": 173,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000174",
+            "regnumId": 174,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000219",
+            "regnumId": 219,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000224",
+            "regnumId": 224,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000226",
+            "regnumId": 226,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}

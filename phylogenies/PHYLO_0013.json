@@ -1,0 +1,75 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Saarela et al. 2008, fig. 2",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Phylogenetic relationships in the monocots order Commelinales, with a focus on Philydraceae.",
+                "year": 2008,
+                "authors": [
+                    {
+                        "name": "J. M. Saarela",
+                        "alternate": [
+                            "Saarela, J. M."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Saarela",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "P. J. Prentis",
+                        "alternate": [
+                            "Prentis, P. J."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Prentis",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "H. S. Rai",
+                        "alternate": [
+                            "Rai, H. S."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Rai",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "S. W. Graham",
+                        "alternate": [
+                            "Graham, S. W."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Graham",
+                        "middlename": "W."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1139/B08-063"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Botany",
+                    "volume": "86",
+                    "identifier": []
+                }
+            },
+            "newick": "((((((((((((((Eichhornia, Hydrothrix), (Xiphidium, Angiozanthos)), \n(((Helmholtzia_glaberrima, Helmholtzia_acorifolia), Philydrum), Philydrella)),\n\n(((Palisota, Tradescantia), Cartonema), Hanguana)), \n(Ensete, Stelitzia)),\n\n((((((((Triticum, Oryza), Zea), Ecdeiocolea), Elegia), Flagellaria), ((Cyperus, Xyris), Mayaca)),\nAnanas), (Typha, Sparganium))),\n\nRoystonea), \n\n(Dasypogon, Kingia)),\n\nAsparagales), Lilales), (Pandanales, Dioscoreales)), Petrosaviales),\nAlismatales), Acorales)"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000030",
+            "regnumId": 30,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}

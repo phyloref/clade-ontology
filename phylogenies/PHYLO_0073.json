@@ -1,0 +1,116 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Lloyd et al. 2008, fig. 2",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Dinosaurs and the Cretaceous Terrestrial Revolution.",
+                "year": 2008,
+                "authors": [
+                    {
+                        "name": "G. T. Lloyd",
+                        "alternate": [
+                            "Lloyd, G. T."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Lloyd",
+                        "middlename": "T."
+                    },
+                    {
+                        "name": "K. E. Davis",
+                        "alternate": [
+                            "Davis, K. E."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Davis",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "D. Pisani",
+                        "alternate": [
+                            "Pisani, D."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Pisani"
+                    },
+                    {
+                        "name": "J. E. Tarver",
+                        "alternate": [
+                            "Tarver, J. E."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Tarver",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "M. Ruta",
+                        "alternate": [
+                            "Ruta, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Ruta"
+                    },
+                    {
+                        "name": "M. Sakamoto",
+                        "alternate": [
+                            "Sakamoto, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Sakamoto"
+                    },
+                    {
+                        "name": "D. W. E. Hone",
+                        "alternate": [
+                            "Hone, D. W. E."
+                        ],
+                        "firstname": "D. W.",
+                        "lastname": "Hone",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "R. Jennings",
+                        "alternate": [
+                            "Jennings, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Jennings"
+                    },
+                    {
+                        "name": "M. J. Benton",
+                        "alternate": [
+                            "Benton, M. J."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Benton",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1098/rspb.2008.0715"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Proceedings of the Royal Society B",
+                    "volume": "275",
+                    "identifier": []
+                }
+            },
+            "newick": "((Basal_Ornithischia, \n\n(Basal Thyreophora, \n((Huayangosaurus_taibaii, Stegosauridae), \n(Struthiosaurus_austriacus, Ankylosauria)),\n\n(Stormbergia_dangershoeki,\n\n((Heterodontosauridae, \n(Pachycephalosauria, \n(Basal_Ceratopsia, \n(Avaceratops_lammersi, Ceratopsidae)))),\n(Basal_Euornithopoda, (Dryosauridae, (Camptosaurus_dispar,\n(Basal_Iguanodontoidea, Euhadrosauria)))))))),\n\n(\n(Basal_Sauropodomorpha, (Prosauropoda, \n(Basal_Sauropoda, Neosauropoda))),\n\n(Basal_Theropoda, (Coelophysoidea, \n(Neoceratosauria, (Szechuanoraptor_zigongensis, (Megalosauroidea, \n(Carnosauria, (Basal_Neotetanurae, \n((Siamotyrannus_isanensis, Tyrannosauroidea),\n(Compsognathoidea, (Scipionyx_samniticus, \n(Basal_Coelurosauria, \n(Ornithomimosauria, (Basal_Maniraptora,\n(Oviraptorosauria, \n(Alvarezsauridae, (Gugyedong_maniraptoran, \n(Protarchaepteryx_robusta, \nEumaniraptora)))))))))))))))))))"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000195",
+            "regnumId": 195,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}

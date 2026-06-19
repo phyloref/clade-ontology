@@ -1,0 +1,57 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Donoghue & Smith 2001, fig. 8B",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "The anatomy of Turinia pagei (Powrie), and the phylogenetic status of the Thelodonti.",
+                "year": 2001,
+                "authors": [
+                    {
+                        "name": "J. P. C. Donoghue",
+                        "alternate": [
+                            "Donoghue, J. P. C."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Donoghue",
+                        "middlename": "P. C."
+                    },
+                    {
+                        "name": "M. P. Smith",
+                        "alternate": [
+                            "Smith, M. P."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Smith",
+                        "middlename": "P."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "8B",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1017/S026359330000002X"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Transactions of the Royal Society of Edinburgh: Earth Sciences",
+                    "volume": "92",
+                    "identifier": []
+                }
+            },
+            "newick": "(Temnospondyli, (Embolomeri, (Seymouriamorpha, (Reptiliomorpha, \n((Adelogyrinidae, Aistopoda), \n(Urocordylidae, (Scincosauridae, Keraterpetonidae)), \n(Microbrachis, (Pantylus, (Brachystelechidae, \n(Lysorophia, \n((\n(Karaurus, \n(Sirenidae, (Cryptobranchidae, Hynobiidae))),\n(Rhinatrematidae, Ichthyophiidae)), \n(Ascaphus, (Leiopelma, Discoglossus))))))))))))"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000253",
+            "regnumId": 253,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}

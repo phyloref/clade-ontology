@@ -1,0 +1,48 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Sidor 2001, fig. 3",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Simplification as a trend in synapsid cranial evolution.",
+                "year": 2001,
+                "authors": [
+                    {
+                        "name": "C. A. Sidor",
+                        "alternate": [
+                            "Sidor, C. A."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Sidor",
+                        "middlename": "A."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.0014-3820.2001.tb00663.x"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Evolution",
+                    "volume": "55",
+                    "identifier": []
+                }
+            },
+            "newick": "(\n((Aelurosaurus, Arctognathus), \nCephalicustriodes, Cyonosaurus, Leontocephalus, Scylacops, \n(Arctops, (Lycaenops, (Prorubidgea, (Dinogorgon, Rubidgea)))),\nAloposaurus, Goergonops), \n\n(((Hofmeyeria, ((Moschorhinus, Euchambersia, Olivieria),\n(((Theriognathus, Moschowhaitsia), Ictidosuchoides, Viatkosuchus), \n(Regisaurus, (Ericiolacerta, \n(Bauria, Watsoniella, Microgomphodon)))))), \nLycosuchus, Glanosuchus, Chthonosaurus, Ptomalestes), \n\n(Dvinia, (Procynosuchus, \n((Cynosaurus, (new_galesaurid, Galesaurus)), \n\n(Platycraniellus, Thrinaxodon, Bolotridon, \n\n((Cynognathus, (Diademodon, (Trirachodon, (Luangwa, (Massetognathus, \n((Exaeretodon, Gomphodontosuchus), (Oligokyphus, (Tritylodon, \n(Kayentatherium, (Bienotherium, (Bienotheroides, Bocatherium))))))))))),\n\n(BP/1/2669, (Ecteninion, \n((Aleodon, Belesodon, (Probelesodon-lew, Probelesodon-san)), \n(Probainognathus, (Pachygenelus, (Sinoconodon, (Morganucodon, \n(Ornithorhynchus, (Didelphis, Homo))))))))))))))))"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000290",
+            "regnumId": 290,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}
