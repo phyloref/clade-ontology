@@ -1,0 +1,48 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Sereno 1991, fig. 26A",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Basal archosaurs: phylogenetic relationships and functional implications. Society of Vertebrate Paleontology Memoir 2, J.",
+                "year": 1991,
+                "authors": [
+                    {
+                        "name": "P. C. Sereno",
+                        "alternate": [
+                            "Sereno, P. C."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Sereno",
+                        "middlename": "C."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "26A",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1080/02724634.1991.10011426"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Vertebrate Paleontology",
+                    "volume": "11",
+                    "identifier": []
+                }
+            },
+            "newick": "(Proterosuchus, Erythrosuchidae, Euparkeria, \nProterochampsidae, \n(Suchia, (Ornithosuchus, Riojasuchus),\nParasuchia), \n(Pterosauria, Scleromochlus), \nDinosauromorpha)"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000149",
+            "regnumId": 149,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}

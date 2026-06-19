@@ -1,0 +1,81 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Sanchez et al. 2015, fig. 9",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Systematics and evolution of the Miocene three-horned palaeomerycid ruminants (Mammalia, Cetartiodactyla).",
+                "year": 2015,
+                "authors": [
+                    {
+                        "name": "I. M. Sanchez",
+                        "alternate": [
+                            "Sanchez, I. M."
+                        ],
+                        "firstname": "I.",
+                        "lastname": "Sanchez",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "J. L. Cantalapiedra",
+                        "alternate": [
+                            "Cantalapiedra, J. L."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Cantalapiedra",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "M. Rios",
+                        "alternate": [
+                            "Rios, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Rios"
+                    },
+                    {
+                        "name": "V. Quiralte",
+                        "alternate": [
+                            "Quiralte, V."
+                        ],
+                        "firstname": "V.",
+                        "lastname": "Quiralte"
+                    },
+                    {
+                        "name": "J. Morales",
+                        "alternate": [
+                            "Morales, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Morales"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "9",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1371/journal.pone.0143034"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "PLoS ONE",
+                    "volume": "10",
+                    "identifier": []
+                }
+            },
+            "newick": "(Hyemoschus, (Gelocus, (Amphitragulus, \n\n(((Propalaeoryx, (Amphelomeryx, (Triceromeryx, Xenokeryx))),\n(Prolibytherium, (Orangemeryx, Giraffa))),\n\n(\n((Namibiomeryx, (Blastomeryx, Dremotherium)), ((Cranioceras, Sinclairomeryx), (Capreolus, Muntiacus))),\n(Sperrgebietomeryx, ((Merycodus, (Stockoceros, Antilocapra)),\n((Hispanomeryx, (Micromeryx, (Moschus_grandeavus, Moschus))),\n(Namacerus, Eudorcas)))))))))"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000263",
+            "regnumId": 263,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}

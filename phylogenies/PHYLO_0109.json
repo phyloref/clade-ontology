@@ -1,0 +1,47 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Mayr 2002, fig. 2",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Osteological evidence for paraphyly of the avian order Caprimulgiformes (nightjars and allies).",
+                "year": 2002,
+                "authors": [
+                    {
+                        "name": "G. Mayr",
+                        "alternate": [
+                            "Mayr, G."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Mayr"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1007/BF0246546"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Ornithology",
+                    "volume": "143",
+                    "identifier": []
+                }
+            },
+            "newick": "(Steatornithidae, Podargidae, \n((Caprimulgidae, Nyctibiidae), \n(Aegothelidae, (Trochildae, (Hemiprocnidae, Apodidae)))))"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000287",
+            "regnumId": 287,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}

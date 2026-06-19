@@ -1,0 +1,82 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Flynn et al. 2005, fig. 5",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Molecular phylogeny of the Carnivora (Mammalia): assessing the impact of increased sampling on resolving enigmatic relationships.",
+                "year": 2005,
+                "authors": [
+                    {
+                        "name": "J. J. Flynn",
+                        "alternate": [
+                            "Flynn, J. J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Flynn",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "J. A. Finarelli",
+                        "alternate": [
+                            "Finarelli, J. A."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Finarelli",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "S. Zehr",
+                        "alternate": [
+                            "Zehr, S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Zehr"
+                    },
+                    {
+                        "name": "J. Hsu",
+                        "alternate": [
+                            "Hsu, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Hsu"
+                    },
+                    {
+                        "name": "M. A. Nedbal",
+                        "alternate": [
+                            "Nedbal, M. A."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Nedbal",
+                        "middlename": "A."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "5",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1080/10635150590923326"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Syst. Biol.",
+                    "volume": "54",
+                    "identifier": []
+                }
+            },
+            "newick": "((Nandina, (Felidae, (Viverridae, (Hyaenidae, (Herpestidae, Malagasy_carnivorans))))),\n\n(Canidae, (Ursidae, ((Phocidae, (Otaridae, Odobenidae)),\n\n(Ailurus, (Mephitidae, (Procyonidae, (Basal/Other_mustelids, Martes-group, (Mustela, Lutrinae)))))))))"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000268",
+            "regnumId": 268,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}

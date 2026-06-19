@@ -1,0 +1,43 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Doyle 2006, fig. 8",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Seed ferns and the origin of angiosperms.",
+                "year": 2006,
+                "authors": [
+                    {
+                        "name": "J. A. Doyle",
+                        "alternate": [
+                            "Doyle, J. A."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Doyle",
+                        "middlename": "A."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "8",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Torrey Botanical Society",
+                    "volume": "133",
+                    "identifier": []
+                }
+            },
+            "newick": "(Elkinsia, (Lyginopteris, (Medullosans, \n\n(((((((Taxaceae, Cephalotaxus), Taxodiaceae), (Araucariac, Podocarpac)), \n(Pinaceae, (Ephedra, (Welwitschia, Gnetum)))), Emporia), Ginkgoales), \nCordaitales, Corystosperms, Autunia, Peltaspermum, Callistophyton, Cycadales, \nGlossopterids, Pentoxylon, \n(Bennittitales, (Caytonia, (Amborella, (Nymphaeales,\n((((((Schisandrac, Illicum), Trimenia), Austrobaileya), Chloranthac), \nWinteraceae), (Asaroideae, Saururaceae))))))))))"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000077",
+            "regnumId": 77,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}

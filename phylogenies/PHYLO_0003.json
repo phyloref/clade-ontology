@@ -1,0 +1,56 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Hilton & Bateman 2006, fig. 10",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Pteridosperms are the backbone of seed plant evolution. J. Torrey",
+                "year": 2006,
+                "authors": [
+                    {
+                        "name": "J. Hilton",
+                        "alternate": [
+                            "Hilton, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Hilton"
+                    },
+                    {
+                        "name": "R. M. Bateman",
+                        "alternate": [
+                            "Bateman, R. M."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Bateman",
+                        "middlename": "M."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "10",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.3159/1095-5674(2006)133[119:PATBOS]2.0.CO;2"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal Torrey Botanical Society",
+                    "volume": "133",
+                    "identifier": []
+                }
+            },
+            "newick": "(Tetraxylopteris, (Archaeopteris, Cercropsis), Elkinsia, Laceya, (Bilignea, Lyrasperma), \nHeterangium, Lyginopteris, (Medullosa, Quaestora), Callistophyton, (Cycadaceae, Zamiaceae),\nPeltaspermum, (Corystoperms, Autunia), Ginkoales, \n((Shanxioxylon, Cordaixylon, Mesoxylon), (Thucydia, Emporia, (Pinaceae, Podocarpaceae), \nCheirolepidiaceae, Araucariaceae, Supressaceae, Cephalotaxus, Taxaceae)), \n(Ephedra, Welwitschia, Gnetum), (Glossopterids, Pentoxylon), Bennettitales, Caytonia, \nNymphaeales, Piperaceae, (Aristolchioidaea, Monocots), Eudicots, Winteraceae, \n(Chloranthaceae, Laurales), Austrobaileya, Magnoliaceae, Eupomatia)"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000014",
+            "regnumId": 14,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Sumrall & Gahn 2006, fig. 3.1",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Morphological and systematic reinterpretation of two enigmatic edrioasteroids (Echinodermata) from Canada.",
+                "year": 2006,
+                "authors": [
+                    {
+                        "name": "C. D. Sumrall",
+                        "alternate": [
+                            "Sumrall, C. D."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Sumrall",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "F. J. Gahn",
+                        "alternate": [
+                            "Gahn, F. J."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Gahn",
+                        "middlename": "J."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3.1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1139/e05-114"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Can. Jour. Earth Sci.",
+                    "volume": "43",
+                    "identifier": []
+                }
+            },
+            "newick": "(((((((((Carneyella, Foerstediscus), Isorophus, Isorophusella), Agelacrinites, \nThresherodiscus), Neoisorophusella), Postibulla), Lepidodiscus, Ulrichidiscus),\nCooperidiscus), Clavidiscus), (Lispidecodus, Giganticlavus, Hypsiclavus))"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000232",
+            "regnumId": 232,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000233",
+            "regnumId": 233,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000245",
+            "regnumId": 245,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}

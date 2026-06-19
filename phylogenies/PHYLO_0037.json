@@ -1,0 +1,41 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Kluge 1991, fig. 4",
+            "primaryPhylogenyCitation": {
+                "type": "book_section",
+                "title": "Boine snake phylogeny and research cycles.",
+                "section_title": "Misc. Publ. Mus. Zool.",
+                "year": 1991,
+                "authors": [
+                    {
+                        "name": "A. G. Kluge",
+                        "alternate": [
+                            "Kluge, A. G."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Kluge",
+                        "middlename": "G."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "publisher": "Univ. Mich.",
+                "pages": "1-58",
+                "figure": "4",
+                "identifier": [],
+                "link": []
+            },
+            "newick": "(Scolecophidia, Dinilysia, (Anilius, (Cylindrophis, uropeltines)),\nXenopeltis, Loxocemus, (erycines, (pythonines, boines)), \n((Ungaliophis, Exiliboa), (Tropidophis, Trachyboa)), \n(Bolyeria, Casarea), Acrochordus, higher_snakes)"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000096",
+            "regnumId": 96,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}
