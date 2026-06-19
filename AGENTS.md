@@ -62,11 +62,15 @@ PhyloRegnum DB dump (JSON)
   - `from_papers/` — Phyloreferences from peer-reviewed papers (e.g., `Brochu 2003/`)
   - `phylonym/` — Files from the Phylonym database, PhyloRegnum (https://www.phyloregnum.org/)
   - `encrypted/` — Git-crypt encrypted files (skipped during processing)
+- **`phylogenies/`** — Shared, deduplicated reference-phylogeny store. One `PHYLO_NNNN.json` per unique Newick tree; each is a valid Phyx file plus a custom top-level `referenceFor` array mapping the tree to the `CLADO_NNNNNNN`/`regnumId` phyloreferences it validates. See `phylogenies/README.md`. (Round 1: the trees are *copied* here but still also live in `phyx/phylonym/`.)
+- **`lib/phylogenies.js`** — Shared helpers for the store (`loadStore`, `buildReferenceIndex`, `normalizeNewick`, `findJSONFiles`).
+- **`scripts/`** — Top-level home for ad-hoc/maintenance scripts. `scripts/phylogenies/extract-phylogenies.js` copies Newick trees out of `phyx/phylonym/` into the store (never modifies `phyx/`).
 - **`phyx2ontology/phyx2ontology.js`** — Converts Phyx files to a single Clade Ontology JSON-LD. Reads Phyx files, wraps them via `@phyloref/phyx`, and emits JSON-LD to STDOUT.
 - **`regnum2phyx/regnum2phyx.js`** — Converts PhyloRegnum database dumps (JSON arrays) into individual Phyx files. Handles specifiers, citations (BibJSON format), and author formatting.
 - **`test/`** — Mocha test suite:
   - `test_phyx.js` — Validates all Phyx files in `phyx/` (JSON schema + JSON-LD conversion). Skips git-crypt encrypted files.
   - `test_phyx2ontology.js` — Smoke-tests `phyx2ontology.js` execution on all Phyx files.
+  - `phylogenies/store.js` — Verifies the `phylogenies/` store is a faithful, deduplicated copy of the trees in `phyx/phylonym/`.
   - `regnum2phyx/exec.js` — Tests `regnum2phyx.js` against example dumps in `test/regnum2phyx/examples/` and compares output against `test/regnum2phyx/expected/`.
 
 ### Phyx Format
