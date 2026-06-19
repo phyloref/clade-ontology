@@ -10,7 +10,7 @@ The Clade Ontology is an ontology of exemplar phyloreferences curated from Phylo
 
 ```bash
 npm test           # Lint + run all Mocha tests (requires Node.js)
-npm run lint       # Biome lint on test/, phyx2ontology/, and regnum2phyx/
+npm run lint       # Biome lint on test/, phyx2ontology/, regnum2phyx/, lib/, scripts/
 npm run mocha      # Run tests without linting
 npm run build-ontology  # Convert all phyx/ files into CLADO.json
 ```
@@ -91,3 +91,11 @@ Linting uses [Biome](https://biomejs.dev/). ES6 syntax.
 ### Git-Crypt
 
 Some Phyx files in `phyx/encrypted/` are git-crypt encrypted. Both `phyx2ontology.js` and `test_phyx.js` detect these by checking for the `\x00GITCRYPT` magic bytes and skip them gracefully.
+
+### Gotchas for agents
+
+- **Anything matching `*.json` under `phyx/` is treated as a Phyx file.** The recursive walkers in `test_phyx.js` and `phyx2ontology.js` glob every `.json` and feed it to phyx.js, so do not put non-Phyx JSON (or new stores) inside `phyx/`. Archival/broken copies under `phyx/phylonym/` use a `.json.txt` extension specifically to dodge this glob; the shared `phylogenies/` store lives *outside* `phyx/` for the same reason.
+- **`PhyxWrapper.asJSONLD()` requires a `phylorefs` key**, even an empty `[]`. Its expected-resolution cross-linking iterates `jsonld.phylorefs`, so a Phyx document with only `phylogenies` throws `TypeError: Cannot read properties of undefined (reading 'forEach')`. Store files therefore include `"phylorefs": []`.
+- **Import phyx.js wrappers directly in standalone scripts**, e.g. `require('@phyloref/phyx/src/wrappers/PhylorefWrapper')`, not the package index. The index pulls in `PhyxWrapper → jsonld`, which breaks under newer Node. (Mocha tests use the package index fine; the constraint bites CLI scripts — see `regnum2phyx/regnum2phyx.js` and `lib/phylogenies.js`.)
+- **Resolution validation (does a phyloref resolve to its expected node?) only runs under `RUN_SLOW_TESTS`** via JPhyloRef; the default `npm test` and the `phyx2ontology.js` build path do not check resolution. `phyx2ontology.js` also wraps phylorefs and phylogenies *independently* (not through `PhyxWrapper`), so it never emits the node↔phyloref expected-resolution restrictions.
+- **`phylonym/` phylogenies have no explicit phyloref link** (no `expectedResolution` / `expectedPhyloreferenceNamed`); the relationship is structural (same file). Only `from_papers/` files carry explicit links via `additionalNodeProperties.expectedPhyloreferenceNamed` keyed by Newick node label. `curatorComments` likewise appear only in `from_papers/`.
