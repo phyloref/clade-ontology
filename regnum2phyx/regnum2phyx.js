@@ -80,18 +80,29 @@ function convertAuthorsIntoBibJSON(authors) {
     }));
 }
 
-function convertCitationsToBibJSON(citation, issues = []) {
+function convertCitationsToBibJSON(citation) {
   // Convert a citation from its Regnum representation into the
   // BibJSON format (http://okfnlabs.org/bibjson/). We use this rather than
   // CSL-JSON (https://github.com/citation-style-language/schema) because it's
   // easier to set up. We might want to switch over to CSL-JSON
   // eventually (https://github.com/phyloref/clade-ontology/issues/69).
+  //
+  // This is a pure function: it returns an object { entries, issues } where
+  // `entries` is the array of BibJSON entries produced and `issues` is an array
+  // of warning messages generated while converting. Callers are responsible for
+  // collecting the issues (see collectCitations() in the main loop).
 
-  if (!citation) return [];
+  if (!citation) return { entries: [], issues: [] };
   if (Array.isArray(citation)) {
-    // If given an array of citation objects, convert each one separately.
-    return citation.map(c => convertCitationsToBibJSON(c, issues))
-      .reduce((acc, val) => acc.concat(val), []);
+    // If given an array of citation objects, convert each one separately and
+    // concatenate both the entries and the issues they produced.
+    return citation.reduce((acc, c) => {
+      const result = convertCitationsToBibJSON(c);
+      return {
+        entries: acc.entries.concat(result.entries),
+        issues: acc.issues.concat(result.issues),
+      };
+    }, { entries: [], issues: [] });
   }
 
   // Do we have a title and a year? If not, skip this entry.
@@ -99,8 +110,11 @@ function convertCitationsToBibJSON(citation, issues = []) {
     citation.title === undefined || citation.title.trim() === ''
     || citation.year === undefined || citation.year.trim() === ''
   ) {
-    return [];
+    return { entries: [], issues: [] };
   }
+
+  // Warning messages generated while converting this single citation.
+  const issues = [];
 
   // Assume a default type of 'article' if none was provided.
   let type = citation.citation_type || 'article';
@@ -164,7 +178,7 @@ function convertCitationsToBibJSON(citation, issues = []) {
     issues.push(`Unknown citation type: '${type}', using anyway.`);
   }
 
-  return [entry];
+  return { entries: [entry], issues };
 }
 
 // Command line application starts here.
@@ -231,6 +245,15 @@ fs.mkdirSync(argv.outputDir);
 dump.forEach((entry, index) => {
   const phylorefLabel = entry.name.trim();
   const entryIssues = [];
+
+  // Convert citations to BibJSON, draining any issues the (pure) conversion
+  // produced into this entry's issue list and returning just the entries.
+  const collectCitations = (citation) => {
+    const { entries, issues } = convertCitationsToBibJSON(citation);
+    entryIssues.push(...issues);
+    return entries;
+  };
+
   const result = {
     regnumId: entry.id,
     label: phylorefLabel,
@@ -258,11 +281,11 @@ dump.forEach((entry, index) => {
     // year, we can use it to check whether the "description" citation(s) are
     // empty or contain an actual citation. In the latter case, we throw an Error
     // so we fail with an error.
-    const descriptionCitations = convertCitationsToBibJSON(entry.citations.description, entryIssues);
+    const descriptionCitations = collectCitations(entry.citations.description);
 
     if (descriptionCitations.length > 0) {
       throw new Error(`Citation of type 'description' found in entry: ${
-        JSON.stringify(convertCitationsToBibJSON(entry.citations.definitional, entryIssues), null, 4)
+        JSON.stringify(collectCitations(entry.citations.definitional), null, 4)
       }`);
     }
   }
@@ -273,18 +296,18 @@ dump.forEach((entry, index) => {
     curatorNotes: `Regnum ID: '${entry.id}'`,
     label: phylorefLabel,
     scientificNameAuthorship: (convertAuthorsIntoStrings(entry.authors)).join(' and '),
-    namePublishedIn: convertCitationsToBibJSON(entry.citations.preexisting, entryIssues),
-    definitionSource: convertCitationsToBibJSON(entry.citations.definitional, entryIssues),
+    namePublishedIn: collectCitations(entry.citations.preexisting),
+    definitionSource: collectCitations(entry.citations.definitional),
     definition: (entry.definition || '').trim(),
     internalSpecifiers: [],
     externalSpecifiers: [],
   }));
 
   // Do we have any phylogenies to save?
-  const primaryPhylogenyCitation = convertCitationsToBibJSON(entry.citations.primary_phylogeny, entryIssues).map(
+  const primaryPhylogenyCitation = collectCitations(entry.citations.primary_phylogeny).map(
     phylogeny => pickBy({ primaryPhylogenyCitation: phylogeny })
   );
-  const phylogenyCitation = convertCitationsToBibJSON(entry.citations.phylogeny, entryIssues).map(
+  const phylogenyCitation = collectCitations(entry.citations.phylogeny).map(
     phylogeny => pickBy({ phylogenyCitation: phylogeny })
   );
   const phylogenies = primaryPhylogenyCitation.concat(phylogenyCitation).filter(
