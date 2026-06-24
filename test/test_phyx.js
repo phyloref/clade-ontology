@@ -39,7 +39,7 @@ const MAX_EXTERNAL_SPECIFIERS = process.env.MAX_EXTERNAL_SPECIFIERS || 10;
 /*
  * Load the JSON schema.
  */
-const phyxSchemaJSON = JSON.parse(fs.readFileSync(`${__dirname}/phyx_schema.json`, { encoding: 'utf8' }));
+const phyxSchemaJSON = JSON.parse(fs.readFileSync(`${__dirname}/schema/phyx_schema.json`, { encoding: 'utf8' }));
 const ajvInstance = new Ajv({
   allErrors: true, // Display all error messages, not just the first.
 });
