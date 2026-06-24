@@ -7,7 +7,6 @@
  * and prove they agree before a future round removes the trees from the Phyx files.
  */
 
-const fs = require('node:fs');
 const path = require('node:path');
 
 const chai = require('chai');
@@ -16,6 +15,7 @@ const phyx = require('@phyloref/phyx');
 const {
   findJSONFiles,
   normalizeNewick,
+  scanSourcePhylogenies,
   loadStore,
   buildReferenceIndex,
   PHYLOGENIES_DIR,
@@ -27,20 +27,8 @@ const SOURCE_DIR = path.join('phyx', 'phylonym');
 
 /** Multiset of "cladoId\tnormalizedNewick" pairs found in the source Phyx files. */
 function sourcePairs() {
-  const pairs = [];
-  for (const file of findJSONFiles(SOURCE_DIR)) {
-    let json;
-    try {
-      json = JSON.parse(fs.readFileSync(file, 'utf8'));
-    } catch (e) {
-      continue;
-    }
-    const cladoId = path.basename(file, '.json');
-    for (const phylogeny of json.phylogenies || []) {
-      if (phylogeny.newick) pairs.push(`${cladoId}\t${normalizeNewick(phylogeny.newick)}`);
-    }
-  }
-  return pairs;
+  return scanSourcePhylogenies(findJSONFiles(SOURCE_DIR))
+    .map(({ cladoId, phylogeny }) => `${cladoId}\t${normalizeNewick(phylogeny.newick)}`);
 }
 
 /** Multiset of "cladoId\tnormalizedNewick" pairs implied by the store's referenceFor maps. */

@@ -22,6 +22,8 @@ const yargs = require('yargs');
 const {
   findJSONFiles,
   normalizeNewick,
+  scanSourcePhylogenies,
+  escapeCSV,
   PHYLOGENIES_DIR,
 } = require('../../lib/phylogenies');
 
@@ -52,10 +54,14 @@ const NOTE_KEY_RE = /curat|note|comment/i;
 
 const CONTEXT = 'http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json';
 
-/** Derive the stable CLADO id (filename stem) for a source Phyx file. */
-function cladoIdFor(file) {
-  return path.basename(file, '.json');
-}
+/** Numeric value of a CLADO id, for deterministic ordering by source. */
+const cladoNum = (id) => {
+  const m = /(\d+)/.exec(id || '');
+  return m ? Number.parseInt(m[1], 10) : Number.MAX_SAFE_INTEGER;
+};
+
+/** Order two occurrences by their source: earliest CLADO id, then phylogeny index. */
+const byClado = (a, b) => a.cladoNumValue - b.cladoNumValue || a.phyloIndex - b.phyloIndex;
 
 /** Build a short human-readable label from a citation object (best-effort, derived). */
 function deriveLabel(citation) {
@@ -97,34 +103,21 @@ function extractNotes(phylogeny) {
 // ---------------------------------------------------------------------------
 
 const sourceFiles = findJSONFiles(sourceDir).sort();
-const occurrences = []; // { cladoId, regnumId, phyloIndex, newick, normNewick, citationKey, citation, notes }
-
-for (const file of sourceFiles) {
-  let json;
-  try {
-    json = JSON.parse(fs.readFileSync(file, 'utf8'));
-  } catch (e) {
-    process.stderr.write(`Warning: could not parse ${file}: ${e.message}\n`);
-    continue;
-  }
-  const cladoId = cladoIdFor(file);
-  const regnumId = (json.phylorefs || [])[0]?.regnumId;
-
-  (json.phylogenies || []).forEach((phylogeny, phyloIndex) => {
-    if (!phylogeny.newick) return;
-    const citationKey = CITATION_KEYS.find((k) => phylogeny[k]);
-    occurrences.push({
-      cladoId,
-      regnumId,
-      phyloIndex,
-      newick: phylogeny.newick,
-      normNewick: normalizeNewick(phylogeny.newick),
-      citationKey,
-      citation: citationKey ? phylogeny[citationKey] : undefined,
-      notes: extractNotes(phylogeny),
-    });
-  });
-}
+// { cladoId, cladoNumValue, regnumId, phyloIndex, newick, normNewick, citationKey, citation, notes }
+const occurrences = scanSourcePhylogenies(sourceFiles).map(({ cladoId, regnumId, phyloIndex, phylogeny }) => {
+  const citationKey = CITATION_KEYS.find((k) => phylogeny[k]);
+  return {
+    cladoId,
+    cladoNumValue: cladoNum(cladoId),
+    regnumId,
+    phyloIndex,
+    newick: phylogeny.newick,
+    normNewick: normalizeNewick(phylogeny.newick),
+    citationKey,
+    citation: citationKey ? phylogeny[citationKey] : undefined,
+    notes: extractNotes(phylogeny),
+  };
+});
 
 // ---------------------------------------------------------------------------
 // 2. Group occurrences by normalized Newick (deduplication).
@@ -137,17 +130,11 @@ for (const occ of occurrences) {
   groups.set(occ.normNewick, list);
 }
 
-const cladoNum = (id) => {
-  const m = /(\d+)/.exec(id || '');
-  return m ? Number.parseInt(m[1], 10) : Number.MAX_SAFE_INTEGER;
-};
-
-// Deterministic ordering: by the earliest source (cladoId, phyloIndex) in each group.
-const orderedGroups = [...groups.values()].sort((a, b) => {
-  const keyA = a.map((o) => [cladoNum(o.cladoId), o.phyloIndex]).sort()[0];
-  const keyB = b.map((o) => [cladoNum(o.cladoId), o.phyloIndex]).sort()[0];
-  return keyA[0] - keyB[0] || keyA[1] - keyB[1];
-});
+// Sort each group's occurrences once so its earliest (canonical) source is element [0],
+// then order the groups by that canonical source for deterministic PHYLO numbering.
+const orderedGroups = [...groups.values()]
+  .map((group) => [...group].sort(byClado))
+  .sort((a, b) => byClado(a[0], b[0]));
 
 // ---------------------------------------------------------------------------
 // 3. Emit one store file per group, plus a CSV report.
@@ -167,10 +154,9 @@ const reportRows = [[
 orderedGroups.forEach((group, i) => {
   const phyloId = `PHYLO_${String(i + 1).padStart(argv.digits, '0')}`;
 
-  // Canonical occurrence = earliest source; its original newick and citation win.
-  const canonical = [...group].sort(
-    (a, b) => cladoNum(a.cladoId) - cladoNum(b.cladoId) || a.phyloIndex - b.phyloIndex,
-  )[0];
+  // Canonical occurrence = earliest source (group is already byClado-sorted); its original
+  // newick and citation win.
+  const canonical = group[0];
 
   // Merge any curator notes found across occurrences (rare in phylonym; defensive).
   const mergedNotes = Object.assign({}, ...group.map((o) => o.notes));
@@ -182,9 +168,9 @@ orderedGroups.forEach((group, i) => {
   phylogeny.newick = canonical.newick;
   Object.assign(phylogeny, mergedNotes);
 
+  // group is already byClado-sorted, so the references come out in (cladoId, phyloIndex) order.
   const referenceFor = group
-    .map((o) => ({ clado: o.cladoId, regnumId: o.regnumId, sourcePhylogenyIndex: o.phyloIndex }))
-    .sort((a, b) => cladoNum(a.clado) - cladoNum(b.clado) || a.sourcePhylogenyIndex - b.sourcePhylogenyIndex);
+    .map((o) => ({ clado: o.cladoId, regnumId: o.regnumId, sourcePhylogenyIndex: o.phyloIndex }));
 
   const storeFile = {
     '@context': CONTEXT,
@@ -204,16 +190,15 @@ orderedGroups.forEach((group, i) => {
   // Report diagnostics.
   const whitespaceVariants = new Set(group.map((o) => o.newick)).size;
   const dois = new Set(group.map((o) => citationDOI(o.citation)).filter(Boolean));
-  const csv = (s) => `"${String(s).replace(/"/g, '""')}"`;
   reportRows.push([
     phyloId,
     referenceFor.length,
-    csv(referenceFor.map((r) => r.clado).join(' ')),
-    csv(label || ''),
-    csv([...dois].join(' ')),
+    escapeCSV(referenceFor.map((r) => r.clado).join(' ')),
+    escapeCSV(label || ''),
+    escapeCSV([...dois].join(' ')),
     whitespaceVariants,
     dois.size > 1 ? 'YES' : '',
-    csv(Object.keys(mergedNotes).join(' ')),
+    escapeCSV(Object.keys(mergedNotes).join(' ')),
   ].join(','));
 });
 
