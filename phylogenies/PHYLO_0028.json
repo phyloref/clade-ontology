@@ -2,46 +2,53 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Doyle 2013, fig. 1.1",
+            "label": "Vallin & Laurin 2004, fig. 6",
             "primaryPhylogenyCitation": {
                 "type": "article",
-                "title": "Phylogenetic analyses and morphological innovations in land plants.",
-                "year": 2013,
+                "title": "Cranial morphology and affinities of Microbrachis, and a reappraisal of the phylogeny and lifestyle of the first amphibians.",
+                "year": 2004,
                 "authors": [
                     {
-                        "name": "J. A. Doyle",
+                        "name": "G. Vallin",
                         "alternate": [
-                            "Doyle, J. A."
+                            "Vallin, G."
                         ],
-                        "firstname": "J.",
-                        "lastname": "Doyle",
-                        "middlename": "A."
+                        "firstname": "G.",
+                        "lastname": "Vallin"
+                    },
+                    {
+                        "name": "M. Laurin",
+                        "alternate": [
+                            "Laurin, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Laurin"
                     }
                 ],
                 "editors": [],
                 "series_editors": [],
-                "figure": "1.1",
+                "figure": "6",
                 "identifier": [
                     {
                         "type": "doi",
-                        "id": "10.1002/9781119312994.apr0486"
+                        "id": "10.1671/5.1"
                     }
                 ],
                 "link": [],
                 "journal": {
-                    "name": "Annual Review of Plant Biology",
-                    "volume": "45",
+                    "name": "Journal of Vertebrate Paleontology",
+                    "volume": "24",
                     "identifier": []
                 }
             },
-            "newick": "(Glaucophytes, (Rhodophytes, (Chlorophytes, (Mesostigma, \n(Chlorokybus, (Klebsormidiales, (Zygnematales, \n(Coleochaetales, (Charales, (Liverworts, (Mosses, \n(Hornworts, (Homeophyton, (Alagophyton, (Rhynia, \n(\n(((((((Isoetes, Lepidodendrales), Selaginella), Lycopodiales), \nAsteroxylon), Zosterophylls), Renalia), Cooksonia), \n\n(Psilophyton, \n(((Filicales, Zygopterids), Marattiales, \n(Psilotales, Ophioglossales), Sphenophytes, Cadoxylopsids), \n(Aneurophytes, (Archaeopteris, Seed_plants))))))))))))))))))))"
+            "newick": "(Osteolepiformes, (Panderichthyidae, (Acanthostega, (Ichthyostega, \n(Tulerpeton, ((Crassigyrinus, Baphetidae), (Colosteidae, \n(\n(Dendrerpeton, (Eryops, (Ecolsonia, ((Tersomius, Apateon), (Amphibamus, Doleserpeton))))),\n\n((Proterogyrinus, Archeria), Gephyrostegidae,\n\n((Kotlassia, (Seymouria, Ariekanerpeton)),\n\n(\n((Aistopoda, Adelogyrinidae), (Nectridea, ((Microbrachis, Utaherpeton), \n(Pantylus, (Cardiocephalus, (Rhynchonkos, (Brachystelechidae, \n(Lysorophia, \n((Triadobatrachus, (Discoglossidae, Pipidae)), \n((Karaurus, Hynobiidae), (Proteidae, (Sirenidae, (Eocaecilia, \n(Rhinatrematidae, Ichthyophiidae)))))))))))))),\n\nWestlothiana, \n\n(Solendonsaurus, ((Limnoscelis, Diadectes), (Synapsida, (Captorhinidae, Procolophonidae)))))\n))))))))))"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000081",
-            "regnumId": 81,
+            "clado": "CLADO_0000074",
+            "regnumId": 74,
             "sourcePhylogenyIndex": 0
         }
     ]

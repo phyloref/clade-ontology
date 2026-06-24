@@ -2,36 +2,55 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Andres et al. 2014, fig. 3",
+            "label": "Yoon et al. 2006, fig. 3",
             "primaryPhylogenyCitation": {
                 "type": "article",
-                "title": "A new rhamphorhynchid pterosaur from the Upper Jurassic of Xinjiang, China, and the phylogenetic relationships of basal pterosaurs.",
-                "year": 2014,
+                "title": "Defining the major lineages of red algae (Rhodophyta).",
+                "year": 2006,
                 "authors": [
                     {
-                        "name": "B. J. Andres",
+                        "name": "H. S. Yoon",
                         "alternate": [
-                            "Andres, B. J."
+                            "Yoon, H. S."
                         ],
-                        "firstname": "B.",
-                        "lastname": "Andres",
-                        "middlename": "J."
+                        "firstname": "H.",
+                        "lastname": "Yoon",
+                        "middlename": "S."
                     },
                     {
-                        "name": "M. Clark",
+                        "name": "K. M. Müller",
                         "alternate": [
-                            "Clark, M."
+                            "Müller, K. M."
                         ],
-                        "firstname": "M.",
-                        "lastname": "Clark"
+                        "firstname": "K.",
+                        "lastname": "Müller",
+                        "middlename": "M."
                     },
                     {
-                        "name": "X. Xu",
+                        "name": "R. G. Sheath",
                         "alternate": [
-                            "Xu, X."
+                            "Sheath, R. G."
                         ],
-                        "firstname": "X.",
-                        "lastname": "Xu"
+                        "firstname": "R.",
+                        "lastname": "Sheath",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "F. D. Ott",
+                        "alternate": [
+                            "Ott, F. D."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Ott",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "D. Bhattacharya",
+                        "alternate": [
+                            "Bhattacharya, D."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Bhattacharya"
                     }
                 ],
                 "editors": [],
@@ -40,24 +59,24 @@
                 "identifier": [
                     {
                         "type": "doi",
-                        "id": "10.1080/02724630903409220"
+                        "id": "10.1111/j.1529-8817.2006.00210.x"
                     }
                 ],
                 "link": [],
                 "journal": {
-                    "name": "Journal of Vertebrate Paleontology",
-                    "volume": "30",
+                    "name": "Journal Phycology",
+                    "volume": "42",
                     "identifier": []
                 }
             },
-            "newick": "(Ornithosuchus_longidens, Herrerasaurus_ischigualastensis,\n(Scleromochlus_taylori, \n(Preondactylus_buffarinii,\n((Eudimorphodon_ranzii, Austriadactylus_cristatus), \n(Peteinosaurus_zambelli, \n(Dimorphodon_macronyx, \n(Campylognathoides_liasicus,\n\n(\n(((((Sericipterus_wucaiwanensis,\nAngustinaripterus_longicephalus),\nHarpactognathus_gentryii),\n(Cacibupteryx_caribensis, \nRhamphorhynchus_muentsteri)),\nDorygnathus_banthensis),\nScaphognathus_crassirostris), \n(Sordes_pilosus,\n((((Jeholopterus_ningchengensis,\nDendrorhynchoides_curvidentatus), \nBatrachognathus_volans), \nAnurognathus_ammoni), \nPterodactyloidea))))))))))\n"
+            "newick": "(((((((((Bangia_atropurpurea, Porphyra_purpurea), \nBangia_fuscopurpurea), \n(Bangia_sp, Porphyra_leucosticta)), \n\n((Thorea_violacea, Palmaria_palmata), \nChondrus_crispus)), \n\n(((Dixoniella_grisea, Glaucosphaera_vacuolata), \n(Rhodella_maculata, Rhodella_violacea)))),\n\n((Erythrolobus_coxiae, Flintiella_sanguinaria),\n((Porphyridium_purpureum, Porphridium_sordidum),\nPorphyridium_aerugineum))), \n\n(((((Compsopogon_coeruleus, C._coeruleus),\n(Compsopogon_coeruleus_C._oishii, \nCompsopogon_coeruleus_C._hookeri)),\n(Erythrotrichia_camea, \nErythrocladia_irregularis)), \nRhodochaete_parvula),\nBoldia_erythrosiphon)), \n\n((((((Bangiopsis_subsimplex, \nKyliniella_latvica), Purpureofilum_apyrenoidigerum),\n(Stylonema_alsidii_SAG2.94, Stylonema_alsidii_UTEX1957)),\nRhodospora_sordida), \n((Rhodosorus_marinus, Rhodosorus_sp.),\n(Chroothece_mobilis, Chroodactylon_ornatum))), \nRufusia_pilicola)), \n\n((((Galdieria_maxima, Cyanidioschyzon_merolae), \nCyanidium_calarium), \n(Cyanidium_sp._Monte_Rotaro, Cyanidium_sp._Sybil)),\n\n(((Galdieria_daedala, Galdieria_partita), \n(Galdieria_sulphuraria_SAG108-79, \nGaldieria_sulphuraria_UTEX2393)), \n(Galdieria_sulphuraria_DBV009, \nGaldieria_sulphuraria_DBV012))))"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000157",
-            "regnumId": 157,
+            "clado": "CLADO_0000156",
+            "regnumId": 156,
             "sourcePhylogenyIndex": 0
         }
     ]

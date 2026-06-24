@@ -2,54 +2,35 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Gauthier et al. 2012, fig. 1",
+            "label": "Burki et al. 2008, fig. 1",
             "primaryPhylogenyCitation": {
                 "type": "article",
-                "title": "Assembling the squamate tree of life: Perspectives from the phenotype and the fossil record.",
-                "year": 2012,
+                "title": "Phylogenomics reveals a new ‘megagroup’including most photosynthetic eukaryotes.",
+                "year": 2008,
                 "authors": [
                     {
-                        "name": "J. A. Gauthier",
+                        "name": "F. Burki",
                         "alternate": [
-                            "Gauthier, J. A."
+                            "Burki, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Burki"
+                    },
+                    {
+                        "name": "K. Shalchian-Tabrizi",
+                        "alternate": [
+                            "Shalchian-Tabrizi , K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Shalchian-Tabrizi"
+                    },
+                    {
+                        "name": "J. Pawlowski",
+                        "alternate": [
+                            "Pawlowski, J."
                         ],
                         "firstname": "J.",
-                        "lastname": "Gauthier",
-                        "middlename": "A."
-                    },
-                    {
-                        "name": "M. Kearney",
-                        "alternate": [
-                            "Kearney, M."
-                        ],
-                        "firstname": "M.",
-                        "lastname": "Kearney"
-                    },
-                    {
-                        "name": "J. A. Maisano",
-                        "alternate": [
-                            "Maisano, J. A."
-                        ],
-                        "firstname": "J.",
-                        "lastname": "Maisano",
-                        "middlename": "A."
-                    },
-                    {
-                        "name": "O. Rieppel",
-                        "alternate": [
-                            "Rieppel, O."
-                        ],
-                        "firstname": "O.",
-                        "lastname": "Rieppel"
-                    },
-                    {
-                        "name": "A. D. B. Behlke",
-                        "alternate": [
-                            "Behlke, A. D. B."
-                        ],
-                        "firstname": "A. D.",
-                        "lastname": "Behlke",
-                        "middlename": "B."
+                        "lastname": "Pawlowski"
                     }
                 ],
                 "editors": [],
@@ -58,24 +39,24 @@
                 "identifier": [
                     {
                         "type": "doi",
-                        "id": "10.3374/014.053.0101"
+                        "id": "10.1098/rsbl.2008.0224"
                     }
                 ],
                 "link": [],
                 "journal": {
-                    "name": "Bulletin Peabody Museum of Natural History",
-                    "volume": "53",
+                    "name": "Biology Letters",
+                    "volume": "4",
                     "identifier": []
                 }
             },
-            "newick": "(((Sphenodon_punctatus, Kallimodon_pulchellus), \nGephyrosaurus_bridensis),\n\n(Huehuecuetzpalli_mixtecus,\n\n(\n(Anolia_carolinensis, Aciprion_formosum, \nPetrosaurus_mearnsi, Uta_stansburiana, Sceloporus_variabilis, \nPhrynosoma_platyrhinos, Uma_scoparia, Leiocephalus_barahonensis,\n(Temujinia_ellisoni, Saichangurvel_davidsoni),\n(Crotaphytus_collaris, Gambelia_wislizenii), \n(Enyalioides_laticeps, Morunasaurus_annularis), \n(Liolaemus_bellii, Phymaturus_palluma),\n(Charlarodon_madagascariensis, Oplurus_cyclurus),\n(Isodontosaurus_gracilis, Zapsosaurus_sceliphros, \nPolrussia_mongoliensis), \n(Polychrus_marmoratus, (Basiliscus_basiliscus, \nCorytophanes_cristatus)),\n(Pristidactylus_torquatus, (Leiosaurus_catamarcensis,\nUrostrophus_vautieri)),\n(Uranoscodon_superciliosus, (Plica_plica, Stenocercus_guentheri)),\n(Sauromalus_ater, (Brachylophus_fasciatus, \n(Armandisaurus_explorator, Dipsosaurus_dorsalis))),\n(Ctenomastax_parva, \n((Priscagama_gobiensis, (Mimeosaurus_crassus, Phrynosomimus_asper)),\n((Leiolepis_belliana, Uromastyx_aegyptius), \n((Brookesia_brygooi, Chamaeleo_laevigatus),\n(Physignathus_cocincinus, (Calotes_emma, \n(Agama_agama, Pogona_vitticeps)))))))),\n\n(\n(Tchingisaurus_multivagus, (Gobinatus_arenosus, \n(Adamisaurus_magnidentatus, (Gilmoreteius, \nPolyglyphanodon_sternbergi)))),\n\n((Adriosaurus_suessi, Pontosaurus), \n(Aigialosaurus_dalmaticus,\n(Platecarpus, \n(Clidastes,\n(Plotosaurus, Tylosaurus))))), \nScleroglossa))))"
+            "newick": "(((((((((Alexandrium, (Karenia, Karlodinium)),\nOxyrrhis), Perkinsus), \n(Cryptosporidium, ((Eimeria, Toxoplasma), \n(Plasmodium, Theileria)))),\n\n(Paramecium, Tetrahymena)), \n\n(((Aureococcus, (Phaeodactylum, Thalassiosira)), \nPhytophthora), Blastocystis)), \n\n((Bigelowiella, (Cercomonas, Gymnophrys)), \n(Quinqueloculina, Reticulomyxa))), \n\n((((((((Arabidopsis, Brassica), (Oryza, Sorghum)), Pinus), \nPhyscomitrella), \n((Chlamydomonas, Volvox), Ostreococcus)),\n(Galdieria, (Gracilaria, Porphyra))), \n(Cyanophora, Glaucocystis)), \n(((Emiliania, Isochrysis), Pavlova), Guillardia))),\n\n(((Hartmannela, Acanthamoeba), (Dictyostelium, Mastigamoeba)),\n((((Cryptococcus, Ustilago), \n(Neurospora, Schizosaccharomyces)), Phycomyces), \n\n(((Drosophila, (Gallus, (Homo, Mus))), \n(Nematostella, Trichoplax)),\nMonosiga))),\n\n(((Euglena, (Leishmania, Trypanosoma)), \n(Naegleria, (Sawyeria, Stachyamoeba))),\n\n((Histiona, Reclinomonas), Jakoba)))"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000101",
-            "regnumId": 101,
+            "clado": "CLADO_0000092",
+            "regnumId": 92,
             "sourcePhylogenyIndex": 0
         }
     ]

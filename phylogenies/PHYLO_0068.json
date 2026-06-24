@@ -2,38 +2,60 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Dunn et al. 2005, fig. 6",
+            "label": "Collins et al., fig. 6",
             "primaryPhylogenyCitation": {
                 "type": "article",
-                "title": "Molecular phylogenetics of the Siphonophora (Cnidaria), with implications for the evolution of functional specialization.",
-                "year": 2005,
+                "title": "Medusozoan phylogeny and character evolution clarified by new large and small subunit rDNA data and an assessment of the utility of phylogenetic mixture models.",
                 "authors": [
                     {
-                        "name": "C. W. Dunn",
+                        "name": "A. G. Collins",
                         "alternate": [
-                            "Dunn, C. W."
+                            "Collins, A. G."
                         ],
-                        "firstname": "C.",
-                        "lastname": "Dunn",
-                        "middlename": "W."
+                        "firstname": "A.",
+                        "lastname": "Collins",
+                        "middlename": "G."
                     },
                     {
-                        "name": "P. R. Pugh",
+                        "name": "P. Schuchert",
                         "alternate": [
-                            "Pugh, P. R."
+                            "Schuchert, P."
                         ],
                         "firstname": "P.",
-                        "lastname": "Pugh",
-                        "middlename": "R."
+                        "lastname": "Schuchert"
                     },
                     {
-                        "name": "S. H. D. Haddock",
+                        "name": "A. C. Marques",
                         "alternate": [
-                            "Haddock, S. H. D."
+                            "Marques, A. C."
                         ],
-                        "firstname": "S. H.",
-                        "lastname": "Haddock",
-                        "middlename": "D."
+                        "firstname": "A.",
+                        "lastname": "Marques",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "T. Jankowski",
+                        "alternate": [
+                            "Jankowski, T."
+                        ],
+                        "firstname": "T.",
+                        "lastname": "Jankowski"
+                    },
+                    {
+                        "name": "M. Medina",
+                        "alternate": [
+                            "Medina, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Medina"
+                    },
+                    {
+                        "name": "B. Schierwater",
+                        "alternate": [
+                            "Schierwater, B."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Schierwater"
                     }
                 ],
                 "editors": [],
@@ -42,24 +64,39 @@
                 "identifier": [
                     {
                         "type": "doi",
-                        "id": "10.1080/10635150500354837"
+                        "id": "10.1080/10635150500433615"
                     }
                 ],
                 "link": [],
                 "journal": {
-                    "name": "Systematic biology",
-                    "volume": "54",
+                    "name": "Systematic Biology",
+                    "volume": "55",
                     "identifier": []
                 }
             },
-            "newick": "(Staurocladia_wellingtoni, \n(Porpita_porpita, Velella_velella),\n(Hydra, \n((Rhizophysa_eysenhardti, \n(Physalia_physalis, Rhizophysa_filiformis)),\n((\n(Apolemia_sp_1, Apolemia_sp_4), \n(Apolemia_sp_2, Apolemia_sp_3)),\n(Stephanomia_amphytridis, Cordagalma_cordiforme, \nStephalia_dilata, Erenna_sp,\n(Bargmannia_amoena, Bargmannia_elongata),\n\n(\n(Physophora_hydrostatica, (Forskalia_tholoides, \n((Forskalia_asymmetrica, Forkalia_formosa),\n((Forskalia_edwardsi_Pac_1, Forskalia_edwardsi_Pac_2),\nForskalia_edwardsi_Atl)))),\n\n((Nanomia_bijua_Atl, Nanomia_bijua_bijuga_Pac), \n((Halistemma_rubrum_Pac, (Halistemma_rubrum_Med, \nHalistemma_rubrum_Atl)),\n(Agalma_clausi, \n((Agalma_elegans_Atl, Agalma_elegans_Pac),\n(Agalma_okeni, \n(Athorybia_rosacea_Atl, Athorybia_rosacea_Pac))))))),\n\n((Praya_dubia, (Nectadamas_diomedeae, Nectopyramis_natans)),\n\n((Craseoa_lathetica, \n((Gymnopraia_lapislazula, Rosacea_flaccida),\n(Vogtia_pentacantha, (Vogtia_glabra, \n(Hippopodius_hippopus_Atl, Hippopodius_hippopus_Pac))))),\n\n(Clausophyid_sp_1, \n\n((Chuniphyes_multidentata, Clausophyes_ovata),\n\n(Sphaeronectes_gracilis, \n\n((Chelophyes_appendiculata, \n(Diphyes_dispar, Abylopsis_tetragona)),\n(Muggiaea_atlantica, (Lensia_conoidea, \n(Sulculeolaria_quadrivalvis_Atl, \nSulculeolaria_quadrivalvis_Pac))))))))))))))\n\n"
+            "newick": "(((((((((((((Acanthodes:1.0,Homalacanthus:1.0):1.0,Cheiracanthus:2.0):1.0,Mesacanthus:3.0,Promesacanthus:3.0):1.0,Cassidiceps:4.0):1.0,Euthacanthus:5.0):1.0,(Ischnacanthus:1.0,Poracanthodes:1.0):5.0):1.0,((((Cheirolepis:1.0,Howqualepis:1.0,Mimia:1.0):1.0,(Onychodus:1.0,Porolepis:1.0,Psarolepis:1.0):1.0):1.0,Ligulalepis:3.0):1.0,Dialipina:4.0):3.0):1.0,(((((Akmonistion:1.0,Cladoselache:1.0):1.0,Cladodoides:2.0,Doliodus:2.0,Hamiltonichthys:2.0,Obtusacanthus:2.0,Orthacanthus:2.0,Pucapampella:2.0,'\"Tamiobatis\"':2.0):1.0,Kathemacanthus:3.0):1.0,Brochoadmones:4.0):1.0,((Brachyacanthus:1.0,Parexus:1.0):1.0,Climatius:2.0):3.0,Ptomacanthus:5.0):3.0,Culmacanthus:8.0,((Diplacanthus:1.0,Gladiobranchus:1.0):1.0,Tetanopsyrus:2.0):6.0):1.0,((Buchanosteus:1.0,Coccosteus:1.0):1.0,Dicksonosteus:2.0):7.0):1.0,Brindabellaspis:10.0,((Campbellodus:1.0,Rhamphodopsis:1.0):1.0,Macropetalichthys:2.0):8.0):1.0,(Bothriolepis:1.0,Pterichthyodes:1.0):10.0):1.0,Osteostraci:12.0):1.0,Galeaspida:13.0);"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000170",
-            "regnumId": 170,
+            "clado": "CLADO_0000168",
+            "regnumId": 168,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000169",
+            "regnumId": 169,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000215",
+            "regnumId": 215,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000255",
+            "regnumId": 255,
             "sourcePhylogenyIndex": 0
         }
     ]

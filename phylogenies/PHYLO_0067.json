@@ -2,101 +2,82 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Collins et al., fig. 6",
+            "label": "France et al. 1996, fig. 3",
             "primaryPhylogenyCitation": {
                 "type": "article",
-                "title": "Medusozoan phylogeny and character evolution clarified by new large and small subunit rDNA data and an assessment of the utility of phylogenetic mixture models.",
+                "title": "DNA sequence variation of mitochondrial large-subunit rRNA provides support for a two-sublass organization of the Anthozoa (Cnidaria).",
+                "year": 1996,
                 "authors": [
                     {
-                        "name": "A. G. Collins",
+                        "name": "S. C. France",
                         "alternate": [
-                            "Collins, A. G."
+                            "France, S. C."
                         ],
-                        "firstname": "A.",
-                        "lastname": "Collins",
-                        "middlename": "G."
-                    },
-                    {
-                        "name": "P. Schuchert",
-                        "alternate": [
-                            "Schuchert, P."
-                        ],
-                        "firstname": "P.",
-                        "lastname": "Schuchert"
-                    },
-                    {
-                        "name": "A. C. Marques",
-                        "alternate": [
-                            "Marques, A. C."
-                        ],
-                        "firstname": "A.",
-                        "lastname": "Marques",
+                        "firstname": "S.",
+                        "lastname": "France",
                         "middlename": "C."
                     },
                     {
-                        "name": "T. Jankowski",
+                        "name": "P. E. Rosel",
                         "alternate": [
-                            "Jankowski, T."
+                            "Rosel, P. E."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Rosel",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "J. E. Agenbroad",
+                        "alternate": [
+                            "Agenbroad, J. E."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Agenbroad",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "L. S. Mullineaux",
+                        "alternate": [
+                            "Mullineaux, L. S."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Mullineaux",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "T. D. Kocher",
+                        "alternate": [
+                            "Kocher, T. D."
                         ],
                         "firstname": "T.",
-                        "lastname": "Jankowski"
-                    },
-                    {
-                        "name": "M. Medina",
-                        "alternate": [
-                            "Medina, M."
-                        ],
-                        "firstname": "M.",
-                        "lastname": "Medina"
-                    },
-                    {
-                        "name": "B. Schierwater",
-                        "alternate": [
-                            "Schierwater, B."
-                        ],
-                        "firstname": "B.",
-                        "lastname": "Schierwater"
+                        "lastname": "Kocher",
+                        "middlename": "D."
                     }
                 ],
                 "editors": [],
                 "series_editors": [],
-                "figure": "6",
-                "identifier": [
-                    {
-                        "type": "doi",
-                        "id": "10.1080/10635150500433615"
-                    }
-                ],
+                "figure": "3",
+                "identifier": [],
                 "link": [],
                 "journal": {
-                    "name": "Systematic Biology",
-                    "volume": "55",
+                    "name": "Molecular Marine Biology and Biotechnology",
+                    "volume": "5",
                     "identifier": []
                 }
             },
-            "newick": "(((((((((((((Acanthodes:1.0,Homalacanthus:1.0):1.0,Cheiracanthus:2.0):1.0,Mesacanthus:3.0,Promesacanthus:3.0):1.0,Cassidiceps:4.0):1.0,Euthacanthus:5.0):1.0,(Ischnacanthus:1.0,Poracanthodes:1.0):5.0):1.0,((((Cheirolepis:1.0,Howqualepis:1.0,Mimia:1.0):1.0,(Onychodus:1.0,Porolepis:1.0,Psarolepis:1.0):1.0):1.0,Ligulalepis:3.0):1.0,Dialipina:4.0):3.0):1.0,(((((Akmonistion:1.0,Cladoselache:1.0):1.0,Cladodoides:2.0,Doliodus:2.0,Hamiltonichthys:2.0,Obtusacanthus:2.0,Orthacanthus:2.0,Pucapampella:2.0,'\"Tamiobatis\"':2.0):1.0,Kathemacanthus:3.0):1.0,Brochoadmones:4.0):1.0,((Brachyacanthus:1.0,Parexus:1.0):1.0,Climatius:2.0):3.0,Ptomacanthus:5.0):3.0,Culmacanthus:8.0,((Diplacanthus:1.0,Gladiobranchus:1.0):1.0,Tetanopsyrus:2.0):6.0):1.0,((Buchanosteus:1.0,Coccosteus:1.0):1.0,Dicksonosteus:2.0):7.0):1.0,Brindabellaspis:10.0,((Campbellodus:1.0,Rhamphodopsis:1.0):1.0,Macropetalichthys:2.0):8.0):1.0,(Bothriolepis:1.0,Pterichthyodes:1.0):10.0):1.0,Osteostraci:12.0):1.0,Galeaspida:13.0);"
+            "newick": "(((((Anthothela_nuttingi, Lophogorgia_chilensis, Protodendron_sp., Murica_fructicosa, \nAcanthogorgia_sp., Alcyonium_sp.), \n\n(Isidella_sp., Lepidisis_alapa, Isidid_n.sp.A), \n\n(Corallum_ducale, Paragorgia_sp., Corallum_n.sp.),\n\nIsidid_s.sp.B, \n\n(Narella_bowersi, Narella_n.sp), \nChrysogorgia_chryseis), \n\nRenilla_muelleri), \n\n((Cerianthus_borealis, Cerianthropsis_americanus), \n(((Corynactis_californica, Enallopsammia_rostrata), Favia_fragum), \n(((Antipath_sp.B, Antipath_sp.A), Scichopathes_spiessi), \n(Anthopleura_elegansissima, (\"Orange\"_anemone, Hormathiid_anemone)))))),\n\n((Cassiopea_sp., Aurella_aurita), \n(Liriope_tetraphylla, Obelia_dichotoma)))\n"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000168",
-            "regnumId": 168,
+            "clado": "CLADO_0000167",
+            "regnumId": 167,
             "sourcePhylogenyIndex": 0
         },
         {
-            "clado": "CLADO_0000169",
-            "regnumId": 169,
-            "sourcePhylogenyIndex": 0
-        },
-        {
-            "clado": "CLADO_0000215",
-            "regnumId": 215,
-            "sourcePhylogenyIndex": 0
-        },
-        {
-            "clado": "CLADO_0000255",
-            "regnumId": 255,
+            "clado": "CLADO_0000172",
+            "regnumId": 172,
             "sourcePhylogenyIndex": 0
         }
     ]

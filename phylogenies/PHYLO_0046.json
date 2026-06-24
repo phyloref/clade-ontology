@@ -2,11 +2,11 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Soltis et al. 2003, fig. 2",
+            "label": "Soltis et al. 2011, fig. 1-2",
             "primaryPhylogenyCitation": {
                 "type": "article",
-                "title": "Gunnerales are sister to other core eudicots: implications for the evolution of pentamery.",
-                "year": 2003,
+                "title": "Angiosperm phylogeny:  17-genes, 640 taxa.",
+                "year": 2011,
                 "authors": [
                     {
                         "name": "D. E. Soltis",
@@ -18,105 +18,56 @@
                         "middlename": "E."
                     },
                     {
-                        "name": "A. E. Senters",
+                        "name": "S. Smith",
                         "alternate": [
-                            "Senters, A. E."
-                        ],
-                        "firstname": "A.",
-                        "lastname": "Senters",
-                        "middlename": "E."
-                    },
-                    {
-                        "name": "M. Zanis",
-                        "alternate": [
-                            "Zanis, M."
-                        ],
-                        "firstname": "M.",
-                        "lastname": "Zanis"
-                    },
-                    {
-                        "name": "S. Kim",
-                        "alternate": [
-                            "Kim, S."
+                            "Smith, S."
                         ],
                         "firstname": "S.",
-                        "lastname": "Kim"
+                        "lastname": "Smith"
                     },
                     {
-                        "name": "J. D. Thompson",
+                        "name": "N. Cellinese",
                         "alternate": [
-                            "Thompson, J. D."
+                            "Cellinese, N."
                         ],
-                        "firstname": "J.",
-                        "lastname": "Thompson",
-                        "middlename": "D."
-                    },
-                    {
-                        "name": "P. S. Soltis",
-                        "alternate": [
-                            "Soltis, P. S."
-                        ],
-                        "firstname": "P.",
-                        "lastname": "Soltis",
-                        "middlename": "S."
-                    },
-                    {
-                        "name": "L. P. Ronse De Craene",
-                        "alternate": [
-                            "Ronse De Craene, L. P."
-                        ],
-                        "firstname": "L.",
-                        "lastname": "Ronse De Craene",
-                        "middlename": "P."
-                    },
-                    {
-                        "name": "P. K. Endress",
-                        "alternate": [
-                            "Endress, P. K."
-                        ],
-                        "firstname": "P.",
-                        "lastname": "Endress",
-                        "middlename": "K."
-                    },
-                    {
-                        "name": "J. S. Farris",
-                        "alternate": [
-                            "Farris, J. S."
-                        ],
-                        "firstname": "J.",
-                        "lastname": "Farris",
-                        "middlename": "S."
+                        "firstname": "N.",
+                        "lastname": "Cellinese"
                     }
                 ],
                 "editors": [],
                 "series_editors": [],
-                "figure": "2",
+                "figure": "1-2",
                 "identifier": [
                     {
                         "type": "doi",
-                        "id": "10.3732/ajb.90.3.461"
+                        "id": "10.3732/ajb.1000404"
                     }
                 ],
                 "link": [],
                 "journal": {
                     "name": "American Journal of Botany",
-                    "volume": "90",
+                    "volume": "98",
                     "identifier": []
                 }
             },
-            "newick": "((((((((\n(((((Dillenia, \n((((Tamarix, Drosera), (Polygonum, Plumbago)), \n(Triphyophullum, Nepenthes)),\n(((Stellaria, Celosia), \n(((Mirabilis, Phytolacca), (Pereskia, Portulaca)), Mollugo)), \nAsteropeia))),\n\n((((Altingia, Liquidambar), \n((((((((Haloragis, Myriophyllum), Penthorum), Tetracarpaea),\n(((Dudleya, Sedum), Kalanchoe), Crassula)),\nPaeonia), Ribes),\n\n(((Peltoboykinia, \n(Heuchera, Saxifraga)), Sullivantia), \n(Itea, Pterostemon))), \nCercidiphyllum)),\n\n(((Corylopsis, Hamamelis), Disanthus), Exbucklandia)), \n\nDaphniphyllum)), \n\n(Leea, Vitis)), \n\n((\n(((((Celtis, Morus), Zelkova),\n((Shepherdia, Eleaganus), Ceanothus)), \n(Photinia, Spiraea)), \n((((Juglans, Myrica), Alnus), Chrysolepis),\n((Curcurbita, Begonia), Corynocarpus))), \n\n(\n((((((Hippocratea, Brexia), Euonymus), Stackhousia), \nParnassia), Krameria), Afrostyrax), \n\n(((Idesia, Populus), \n((Chrysobalanus, Medusagyne),\n(((Hypericum, Euphorbia), Reinwardtia), Androstachys))), \n(((Sloanea, Elaeocarpus), Eucryphia), \n(Averrhoa, Oxalis))))),\n\n((((Viviana, Greyia), (Terminalia, \n(Clarkia, Lythrum))), \n(Crossosoma, Staphylea)), \n\n((((((Bombax, Ochroma), (Durio, Sterculia)),\n((Neurada, Thymelea), Bixa)), \n(((Citrix, Sweitenia), Bursera), \n(Aesculus, Cupaniopsis))),\n((((Capparis, Brassica), Floerkia), Tropaeolum), Carica)), \nTapiscia)))), \n((Schoepfia, (((Eubrachion, Osyris), Viscum), Ophilia)),\n(((Philadelphus, Petalonyx), (Alangiuim, Cornus)),\n\n(\n((((((Anagallis, Androsace), Clavija), Maesa), \n(Tetramerista, Impatiens)), \n((Gilia, Idria), \n(Styrax, Halesia), (Galax, Sarracenia))), Manilkara),\n\n(\n((((((Rhynchoglossum, Veronica), (((Justicia, Barleria), Myoporum),\n(Verbena, Verbascum))), Olea), \n\n((((((Nicotiana, Lycopersicon), Petunia), Schizanthus), \n(Convolvulus, Borago)), (Montinia, Hydrolea)), \n(Nerium, Exacum))), Vahlia), Garrya),\n\n(((((((Helianthus, Tragopogon), Bamedesia), Boopsis), \n(Menyanthes, Nymphioides)), ((Corokia, Phelline), Donatia)),\n((Codonopsis, Campanula), Roussea)), \n((((Pittosporum, (Panax, Hedera)), (Apium, Delarbrea)), \nGriselinea), \n((((Scabiosa, Dipsacus), Symphoricarpos), Abelia), \nValeriana)),\n((Gonocaryum, Irvingbaileyea), Ilex))))))),\n\n(Aextoxicon, Berberidopsis)), \n\n(Gunnera, Myrothamnus)), \n\n(Tetracentron, Trochodendron)),\n\n((Buxus, Pachysandra), Didymeles)),\n\n(Meliosoma, Sabia)),\n\n(Platanus, (Nelumbo, Lambertia))), \n\n((((Akebia, Sinofranchetia), Decaisnea), (Circaester, Kingdonia)), \n((Menispermum, Tinospora), ((Caulophyllum, Nandinia),\n((((Coptis, Xanthorrihiza), Ranunculus), Hydrastis), \nGlaucidium))))), \n\n(Amborella, Cabomba), \n(Magnolia, (Chloranthus, Hedyosmum)))\n\n"
+            "newick": "((((((((((((((((((((((Fagales, Curcurbitales), Rosales), Fabales), \n((Oxalidales, Malpighiales), Celastrales)), Zygophyllales), \n\n((((((Malvales, Brassicales), Huerteales), Sapindales), Picramniaceae), \nCrossosomatales), (Geraniales, Myrtales))), \n\nVitaceae), Saxifragales), \n\n\n(((((((((Lamiales, Boraginaceae), (Solanales, Gentianales)), Vahliaceae), Oncothecaceae), \n(Garryales, Icacinaceae)), \n\n(((Asterales, Escalloniales), ((Apiales, (Paracryphiales, Dipsacales)), Bruniales)), Aquifoliales),\n\nEricales), Cornales), \n\n(Berberidopsidales, Caryophyllales)), Santalales), Dilleniaceae)), \n\nGunneraceae), Buxaceae), Trochodendraceae), \n\n(Sabiaceae, Proteales)), Ranunculales), Ceratophyllaceae), Monocotyledoneae), \n\n(((Magnoliales, Laurales), (Canellales, Piperales)), Chloranthaceae)), \n\n((Trimeniaceae, Schisandraceae), Austrobaileyaceae)), \n\n(Nymphaceae, Hydatellaceae)), \n\nAmborellaceae), \n\n((((Ginkoaceae, Cycadales), (Cupressaceae, Podocarpaceae)), Pinaceae), \n(Gnetaceae, Welwitschiaceae)))"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000048",
-            "regnumId": 48,
+            "clado": "CLADO_0000105",
+            "regnumId": 105,
             "sourcePhylogenyIndex": 0
         },
         {
-            "clado": "CLADO_0000117",
-            "regnumId": 117,
+            "clado": "CLADO_0000250",
+            "regnumId": 250,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000251",
+            "regnumId": 251,
             "sourcePhylogenyIndex": 0
         }
     ]

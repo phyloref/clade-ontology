@@ -2,85 +2,121 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Forrest et al. 2006, fig. 1",
+            "label": "Soltis et al. 2003, fig. 2",
             "primaryPhylogenyCitation": {
                 "type": "article",
-                "title": "Unraveling the evolutionary history of the liverworts (Marchantiophyta): multiple taxa, genomes and analyses.",
-                "year": 2006,
+                "title": "Gunnerales are sister to other core eudicots: implications for the evolution of pentamery.",
+                "year": 2003,
                 "authors": [
                     {
-                        "name": "L. L. Forrest",
+                        "name": "D. E. Soltis",
                         "alternate": [
-                            "Forrest, L. L."
-                        ],
-                        "firstname": "L.",
-                        "lastname": "Forrest",
-                        "middlename": "L."
-                    },
-                    {
-                        "name": "E. C. Davis",
-                        "alternate": [
-                            "Davis, E. C."
-                        ],
-                        "firstname": "E.",
-                        "lastname": "Davis",
-                        "middlename": "C."
-                    },
-                    {
-                        "name": "D. G. Long",
-                        "alternate": [
-                            "Long, D. G."
+                            "Soltis, D. E."
                         ],
                         "firstname": "D.",
-                        "lastname": "Long",
-                        "middlename": "G."
+                        "lastname": "Soltis",
+                        "middlename": "E."
                     },
                     {
-                        "name": "B. J. Crandall-Stotler",
+                        "name": "A. E. Senters",
                         "alternate": [
-                            "Crandall-Stotler, B. J."
-                        ],
-                        "firstname": "B.",
-                        "lastname": "Crandall-Stotler",
-                        "middlename": "J."
-                    },
-                    {
-                        "name": "A. Clarke",
-                        "alternate": [
-                            "Clarke, A."
+                            "Senters, A. E."
                         ],
                         "firstname": "A.",
-                        "lastname": "Clarke"
+                        "lastname": "Senters",
+                        "middlename": "E."
                     },
                     {
-                        "name": "M. L. Hollingsworth",
+                        "name": "M. Zanis",
                         "alternate": [
-                            "Hollingsworth, M. L."
+                            "Zanis, M."
                         ],
                         "firstname": "M.",
-                        "lastname": "Hollingsworth",
-                        "middlename": "L."
+                        "lastname": "Zanis"
+                    },
+                    {
+                        "name": "S. Kim",
+                        "alternate": [
+                            "Kim, S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Kim"
+                    },
+                    {
+                        "name": "J. D. Thompson",
+                        "alternate": [
+                            "Thompson, J. D."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Thompson",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "P. S. Soltis",
+                        "alternate": [
+                            "Soltis, P. S."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Soltis",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "L. P. Ronse De Craene",
+                        "alternate": [
+                            "Ronse De Craene, L. P."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Ronse De Craene",
+                        "middlename": "P."
+                    },
+                    {
+                        "name": "P. K. Endress",
+                        "alternate": [
+                            "Endress, P. K."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Endress",
+                        "middlename": "K."
+                    },
+                    {
+                        "name": "J. S. Farris",
+                        "alternate": [
+                            "Farris, J. S."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Farris",
+                        "middlename": "S."
                     }
                 ],
                 "editors": [],
                 "series_editors": [],
-                "figure": "1",
-                "identifier": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.3732/ajb.90.3.461"
+                    }
+                ],
                 "link": [],
                 "journal": {
-                    "name": "Bryologist",
-                    "volume": "109",
+                    "name": "American Journal of Botany",
+                    "volume": "90",
                     "identifier": []
                 }
             },
-            "newick": "(((((((Leafy_II, Leafy_I), (Simple_thalloids_II, Pleuroziaceae)), \nSimple_thalloids_I), \n(Complex_thalloids, Blasiaceae)), \n(Haplomitriaceae, Treubiaceae)), \n((Hornworts, Tracheophytes), Mosses)), \nAlgae)"
+            "newick": "((((((((\n(((((Dillenia, \n((((Tamarix, Drosera), (Polygonum, Plumbago)), \n(Triphyophullum, Nepenthes)),\n(((Stellaria, Celosia), \n(((Mirabilis, Phytolacca), (Pereskia, Portulaca)), Mollugo)), \nAsteropeia))),\n\n((((Altingia, Liquidambar), \n((((((((Haloragis, Myriophyllum), Penthorum), Tetracarpaea),\n(((Dudleya, Sedum), Kalanchoe), Crassula)),\nPaeonia), Ribes),\n\n(((Peltoboykinia, \n(Heuchera, Saxifraga)), Sullivantia), \n(Itea, Pterostemon))), \nCercidiphyllum)),\n\n(((Corylopsis, Hamamelis), Disanthus), Exbucklandia)), \n\nDaphniphyllum)), \n\n(Leea, Vitis)), \n\n((\n(((((Celtis, Morus), Zelkova),\n((Shepherdia, Eleaganus), Ceanothus)), \n(Photinia, Spiraea)), \n((((Juglans, Myrica), Alnus), Chrysolepis),\n((Curcurbita, Begonia), Corynocarpus))), \n\n(\n((((((Hippocratea, Brexia), Euonymus), Stackhousia), \nParnassia), Krameria), Afrostyrax), \n\n(((Idesia, Populus), \n((Chrysobalanus, Medusagyne),\n(((Hypericum, Euphorbia), Reinwardtia), Androstachys))), \n(((Sloanea, Elaeocarpus), Eucryphia), \n(Averrhoa, Oxalis))))),\n\n((((Viviana, Greyia), (Terminalia, \n(Clarkia, Lythrum))), \n(Crossosoma, Staphylea)), \n\n((((((Bombax, Ochroma), (Durio, Sterculia)),\n((Neurada, Thymelea), Bixa)), \n(((Citrix, Sweitenia), Bursera), \n(Aesculus, Cupaniopsis))),\n((((Capparis, Brassica), Floerkia), Tropaeolum), Carica)), \nTapiscia)))), \n((Schoepfia, (((Eubrachion, Osyris), Viscum), Ophilia)),\n(((Philadelphus, Petalonyx), (Alangiuim, Cornus)),\n\n(\n((((((Anagallis, Androsace), Clavija), Maesa), \n(Tetramerista, Impatiens)), \n((Gilia, Idria), \n(Styrax, Halesia), (Galax, Sarracenia))), Manilkara),\n\n(\n((((((Rhynchoglossum, Veronica), (((Justicia, Barleria), Myoporum),\n(Verbena, Verbascum))), Olea), \n\n((((((Nicotiana, Lycopersicon), Petunia), Schizanthus), \n(Convolvulus, Borago)), (Montinia, Hydrolea)), \n(Nerium, Exacum))), Vahlia), Garrya),\n\n(((((((Helianthus, Tragopogon), Bamedesia), Boopsis), \n(Menyanthes, Nymphioides)), ((Corokia, Phelline), Donatia)),\n((Codonopsis, Campanula), Roussea)), \n((((Pittosporum, (Panax, Hedera)), (Apium, Delarbrea)), \nGriselinea), \n((((Scabiosa, Dipsacus), Symphoricarpos), Abelia), \nValeriana)),\n((Gonocaryum, Irvingbaileyea), Ilex))))))),\n\n(Aextoxicon, Berberidopsis)), \n\n(Gunnera, Myrothamnus)), \n\n(Tetracentron, Trochodendron)),\n\n((Buxus, Pachysandra), Didymeles)),\n\n(Meliosoma, Sabia)),\n\n(Platanus, (Nelumbo, Lambertia))), \n\n((((Akebia, Sinofranchetia), Decaisnea), (Circaester, Kingdonia)), \n((Menispermum, Tinospora), ((Caulophyllum, Nandinia),\n((((Coptis, Xanthorrihiza), Ranunculus), Hydrastis), \nGlaucidium))))), \n\n(Amborella, Cabomba), \n(Magnolia, (Chloranthus, Hedyosmum)))\n\n"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000050",
-            "regnumId": 50,
+            "clado": "CLADO_0000048",
+            "regnumId": 48,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000117",
+            "regnumId": 117,
             "sourcePhylogenyIndex": 0
         }
     ]

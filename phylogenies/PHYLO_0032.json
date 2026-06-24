@@ -2,88 +2,63 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Hammerschmidt et al. 1996, fig. 2",
+            "label": "Crane et al. 2004, fig. 1",
             "primaryPhylogenyCitation": {
                 "type": "article",
-                "title": "Insights into the evolution of nuclear dualism in the ciliates revealed by phylogenetic analysis of rRNA sequences.",
-                "year": 1996,
+                "title": "Fossils and plant phylogeny.",
+                "year": 2004,
                 "authors": [
                     {
-                        "name": "B. Hammerschmidt",
+                        "name": "P. R. Crane",
                         "alternate": [
-                            "Hammerschmidt, B."
+                            "Crane, P. R."
                         ],
-                        "firstname": "B.",
-                        "lastname": "Hammerschmidt"
+                        "firstname": "P.",
+                        "lastname": "Crane",
+                        "middlename": "R."
                     },
                     {
-                        "name": "M. Schlegel",
+                        "name": "P. Herendeen",
                         "alternate": [
-                            "Schlegel, M."
+                            "Herendeen, P."
                         ],
-                        "firstname": "M.",
-                        "lastname": "Schlegel"
+                        "firstname": "P.",
+                        "lastname": "Herendeen"
                     },
                     {
-                        "name": "D. Lynn",
+                        "name": "E. M. Friis",
                         "alternate": [
-                            "Lynn, D."
+                            "Friis, E. M."
                         ],
-                        "firstname": "D.",
-                        "lastname": "Lynn"
-                    },
-                    {
-                        "name": "D. D. Leipe",
-                        "alternate": [
-                            "Leipe, D. D."
-                        ],
-                        "firstname": "D.",
-                        "lastname": "Leipe",
-                        "middlename": "D."
-                    },
-                    {
-                        "name": "M. L. Sogin",
-                        "alternate": [
-                            "Sogin, M. L."
-                        ],
-                        "firstname": "M.",
-                        "lastname": "Sogin",
-                        "middlename": "L."
-                    },
-                    {
-                        "name": "I. B. Raikov",
-                        "alternate": [
-                            "Raikov, I. B."
-                        ],
-                        "firstname": "I.",
-                        "lastname": "Raikov",
-                        "middlename": "B."
+                        "firstname": "E.",
+                        "lastname": "Friis",
+                        "middlename": "M."
                     }
                 ],
                 "editors": [],
                 "series_editors": [],
-                "figure": "2",
+                "figure": "1",
                 "identifier": [
                     {
                         "type": "doi",
-                        "id": "10.1111/j.1550-7408.1996.tb01396.x"
+                        "id": "10.3732/ajb.91.10.1683"
                     }
                 ],
                 "link": [],
                 "journal": {
-                    "name": "Journal of Eukaryotic Microbiology",
-                    "volume": "43",
+                    "name": "American Journal of Botany",
+                    "volume": "91",
                     "identifier": []
                 }
             },
-            "newick": "(Labyrinthuloides_minuta,\n\n(((Prorocentrum_micans, Symbiodinium_microadriaticum),\n(Sarcocystis_muris, Theileria_annulata)),\n\n(((Climacostomum_virens, Gruberia_sp., Spirostomum_ambiguum, \n(Eufolliculina_uhligi, Blepharisma_americanum)), \n(Tracheloraphis_sp., (Loxodes_striatus, Loxodes_magnus))),\n\n((\n(Metopus_contortus, Metopus_palaeformis), \n(Honalozoon_vermiculare, Loxophyllum_utriculariae), \nProtocruzia_sp., \n(Euplotes_aediculatus, (Oxytricha_granulifera, \n(Onychondromus_quadricornutus, Stylonychia_pustulata)))),\n\n(\n(Colopoda_inflata, (Pseudomicrothorax_dubius,\n(Furgasonia_blochmanni, Obertrumia_georgiana))),\nParamecium_tetraurelia, \n(Cyclidium_glaucoma, \n((Uronema_marinum, Cohnilembus_verminus), \nPseudocohnilembus_marinus)),\n\n((Ophryglena_catenula, Ichthyophthirius_multifiliis), \n((Tetrahymena_thermophila, Tetrahymena_canadensis), \n(Glaucoma_chattoni, Colpidium_campylum))), \n\nOpisthonecta_henneguyi, \n\n(Trithigmostoma_steini, Discophrya_collini))))))"
+            "newick": "(Chara, Coleochaete, \n((Notothylas, Anthoceros), (Sphaerocarpos, Monoclea, Haplomitrium),\n((Sphagnum, (Takakia, Andreaobryum, Andreaea, Polytrichum)),\n((Tortilicaulis, (Horneophyton, Caia)), \n(Aglaophyton, \n((Huvenia, (Stokmansella, Rhynia)),\n\n((Cooksonia_caledonica, Cooksonia_pertonii, \n(Eophyllophyton, \n(Psilophyton_crenulatum, Psilophyton_dawsonii,\n((Pertica, Tetraxylopteris), \n(Ibyka, (Pseudosporochnus, Rhacophyton)))))),\n\n(Startilmania, Yunia, Uskiella, Renalia, \nCooksonia_cambrensis, \n(Hicklingia, \n((Huia, Gumuia, Zosterophyllum_myretonianum, \nAdoketophyton, Discalis, Rebuchia, \nZosterophyllum_llanoveranum, \nZosterophyllum_fertile, \n(Zosterophyllum_divaricatum, \n(Tarella, Oricilla, Gosslingia, Hsua, Thrinkophyton,\n(Perotobarinophyton, Barinophyton_obscurum, \nBarinophyton_citrulliforme),\n(Sawdonia, Deheubarthia, \n(Konioria, Anisophyton), \n(Serrulacaulis, Crenaticaulis))))), \n(Nothia, Zosterophyllum_deciduum, \n((Drepanophycus, Baragwanathia, \nAsteroxylon), \n((Huperzia_squarrosa, Huperzia_selago),\n(Phylloglossum, (Lycopodium, Lycopodiella)),\n((Paralycopodites, Isoetes), \n(Minarodendron, Leclercquia), \n(Selaginella_selaginoides, \n(Tetragonostachys, Stachygynandrum))))))))))))))))"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000086",
-            "regnumId": 86,
+            "clado": "CLADO_0000083",
+            "regnumId": 83,
             "sourcePhylogenyIndex": 0
         }
     ]

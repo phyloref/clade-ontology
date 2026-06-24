@@ -2,64 +2,85 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Brown et al. 2009, fig. 3",
+            "label": "Forrest et al. 2006, fig. 1",
             "primaryPhylogenyCitation": {
                 "type": "article",
-                "title": "Phylogeny of the \"forgotten\" cellular slime mold, Fonticula alba, reveals a key evolutionary branch within Opisthokonta.",
-                "year": 2009,
+                "title": "Unraveling the evolutionary history of the liverworts (Marchantiophyta): multiple taxa, genomes and analyses.",
+                "year": 2006,
                 "authors": [
                     {
-                        "name": "M. W. Brown",
+                        "name": "L. L. Forrest",
                         "alternate": [
-                            "Brown, M. W."
+                            "Forrest, L. L."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Forrest",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "E. C. Davis",
+                        "alternate": [
+                            "Davis, E. C."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Davis",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "D. G. Long",
+                        "alternate": [
+                            "Long, D. G."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Long",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "B. J. Crandall-Stotler",
+                        "alternate": [
+                            "Crandall-Stotler, B. J."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Crandall-Stotler",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "A. Clarke",
+                        "alternate": [
+                            "Clarke, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Clarke"
+                    },
+                    {
+                        "name": "M. L. Hollingsworth",
+                        "alternate": [
+                            "Hollingsworth, M. L."
                         ],
                         "firstname": "M.",
-                        "lastname": "Brown",
-                        "middlename": "W."
-                    },
-                    {
-                        "name": "F. W. Spiegel",
-                        "alternate": [
-                            "Spiegel, F. W."
-                        ],
-                        "firstname": "F.",
-                        "lastname": "Spiegel",
-                        "middlename": "W."
-                    },
-                    {
-                        "name": "J. D. Silberman",
-                        "alternate": [
-                            "Silberman, J. D."
-                        ],
-                        "firstname": "J.",
-                        "lastname": "Silberman",
-                        "middlename": "D."
+                        "lastname": "Hollingsworth",
+                        "middlename": "L."
                     }
                 ],
                 "editors": [],
                 "series_editors": [],
-                "figure": "3",
-                "identifier": [
-                    {
-                        "type": "doi",
-                        "id": "10.1093/molbev/msp185"
-                    }
-                ],
+                "figure": "1",
+                "identifier": [],
                 "link": [],
                 "journal": {
-                    "name": "Molecular Biology & Evolution",
-                    "volume": "26",
+                    "name": "Bryologist",
+                    "volume": "109",
                     "identifier": []
                 }
             },
-            "newick": "((((((((\n((Fonticula_alba, Nuclearia_simplex), \n(Bastocladiella_emersonii, \n((Rhizophlyctis_rosea, (Batrachochytrium_dendrobatidis, Chytriomyces_confervae)),\n((Mortierella_verticillata, (Umbelopsis_ramanniana, (Rhizopus_stolonifer, Mucor_racemosus))),\n(\n(Cryptococcus_neoformans, (Schizophyllum_commune, Coprinopsis_cinerea)),\n(Schizosaccharomyces_pombe, (Neurospora_crassa, (Candida_albicans, Saccaromyces_cerevisiae)))))))),\n\n((((((Nematostella_vectensis, Geodia_cydonium), \n(Salpingoeca_amphoridium, Monosiga_ovata)), \nMinisteria_vibrans), Capsaspora_owczarzaki), \n(Sphaeroforma_arctica, Amoebidium_parasiticum)), \nCorallochytrium_limacisporum)),\n\nApusomonas_proboscidea), \n\n(Planomonas_micra, (Breviata_anathema, (Hartmanella_vermiformis, Acanthamoeba_castellanii)))),\n\nGonimonas_truncata), \n\n(Cyanophora_paradoxa, Glaucocystis_nostochinearum)), \n\n((Mesostigma_viride, Arabidopsis_thaliana), Chlamydomonas_reinhardtii)), \n\n(Apodachyla_brachynema, Phytophthora_palmivora)), \n\n((Oxytricha_granulifera, Paramecium_caudatum), Toxoplasma_gondii))"
+            "newick": "(((((((Leafy_II, Leafy_I), (Simple_thalloids_II, Pleuroziaceae)), \nSimple_thalloids_I), \n(Complex_thalloids, Blasiaceae)), \n(Haplomitriaceae, Treubiaceae)), \n((Hornworts, Tracheophytes), Mosses)), \nAlgae)"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000072",
-            "regnumId": 72,
+            "clado": "CLADO_0000050",
+            "regnumId": 50,
             "sourcePhylogenyIndex": 0
         }
     ]

@@ -2,63 +2,102 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Xia et al. 2009, fig. 4",
+            "label": "Estes et al. 1988, fig. 6",
             "primaryPhylogenyCitation": {
-                "type": "article",
-                "title": "Familial placement and relations of Rehmannia and Triaenophora (Scrophulariaceae s.l.) inferred from five gene regions.",
-                "year": 2009,
+                "type": "book_section",
+                "title": "Phylogenetic relationships within Squamata.",
+                "section_title": "Phylogenetic relationships of the lizard families",
+                "year": 1988,
                 "authors": [
                     {
-                        "name": "Z. Xia",
+                        "name": "R. Estes",
                         "alternate": [
-                            "Xia, Z."
+                            "Estes, R."
                         ],
-                        "firstname": "Z.",
-                        "lastname": "Xia"
+                        "firstname": "R.",
+                        "lastname": "Estes"
                     },
                     {
-                        "name": "Y. Z. Wang",
+                        "name": "K. de Queiroz",
                         "alternate": [
-                            "Wang, Y. Z."
+                            "de Queiroz, K."
                         ],
-                        "firstname": "Y.",
-                        "lastname": "Wang",
-                        "middlename": "Z."
+                        "firstname": "K.",
+                        "lastname": "de Queiroz"
                     },
                     {
-                        "name": "J. F. Smith",
+                        "name": "J. Gautheir",
                         "alternate": [
-                            "Smith, J. F."
+                            "Gautheir, J."
                         ],
                         "firstname": "J.",
-                        "lastname": "Smith",
-                        "middlename": "F."
+                        "lastname": "Gautheir"
                     }
                 ],
-                "editors": [],
-                "series_editors": [],
-                "figure": "4",
-                "identifier": [
+                "editors": [
                     {
-                        "type": "doi",
-                        "id": "10.3732/ajb.0800195"
+                        "name": "R. Estes",
+                        "alternate": [
+                            "Estes, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Estes"
+                    },
+                    {
+                        "name": "G. Pregill",
+                        "alternate": [
+                            "Pregill, G."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Pregill"
                     }
                 ],
-                "link": [],
-                "journal": {
-                    "name": "American Journal of Botany",
-                    "volume": "96",
-                    "identifier": []
-                }
+                "series_editors": [],
+                "publisher": "Stanford University Press",
+                "city": "Standford",
+                "pages": "119-281",
+                "figure": "6",
+                "identifier": [],
+                "link": []
             },
-            "newick": "(((((((((Castilleja, Pedicularis), Seymeria), \n(Tozzia, Melampyrum)),\n(((Alectra, Melasma), Orobanche), Boschniakia)), \nLindenbergia), \n\n(((((Rehm._piasezkii, Rehm._elata), (Rehm._solanifolia, Rehm._glutinosa)), \nRehm._henryi), Rehm._Chingii), \n(Triaen._rupestris, Triaen._shennongjiaensis))),\n\n((((Hemichaena, Berendtia), Mim._aurantiacus), \n((Mim._tenellus, Mim._szechuanensis), Phryma)), \nPaulownia)), \n\n((((Maz._stachydifolius, Maz._spicatus), (Maz._gracilis, Maz._japonicus)), \nMaz._omeiensis), Lancea_tibetica)), \n\n(((Thunbergia, Elytraria), Barleria), Lamium), \n\n((Kigelia, Catalpa), Sesamum))"
+            "newick": "(((Chamaeleontidae, Agamidae), Iguanidae),\n\n(Gekkonidae, Pygopdidae), \n\nDibamidae, Amphisbaenia, Serpentes, \n\n((Gymnophthalmidae, Teiidae), Lacertidae, Xantusiidae, (Scincidae, Cordylidae)),\n\n(Anguidae, Xenosauridae),\n\nHelodermatidae, Lanthanotus, Varanus)"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000073",
-            "regnumId": 73,
+            "clado": "CLADO_0000051",
+            "regnumId": 51,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000052",
+            "regnumId": 52,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000061",
+            "regnumId": 61,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000114",
+            "regnumId": 114,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000118",
+            "regnumId": 118,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000180",
+            "regnumId": 180,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000181",
+            "regnumId": 181,
             "sourcePhylogenyIndex": 0
         }
     ]

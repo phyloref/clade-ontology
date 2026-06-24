@@ -2,82 +2,104 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Simmons et al. 2008, fig. 4",
+            "label": "Roelants et al. 2007, fig. 1",
             "primaryPhylogenyCitation": {
                 "type": "article",
-                "title": "Primitive Early Eocene bat from Wyoming and the evolution of flight and echolocation.",
-                "year": 2008,
+                "title": "Global patterns of diversification in the history of modern amphibians.",
+                "year": 2007,
                 "authors": [
                     {
-                        "name": "N. B. Simmons",
+                        "name": "K. Roelants",
                         "alternate": [
-                            "Simmons, N. B."
-                        ],
-                        "firstname": "N.",
-                        "lastname": "Simmons",
-                        "middlename": "B."
-                    },
-                    {
-                        "name": "K. L. Seymour",
-                        "alternate": [
-                            "Seymour, K. L."
+                            "Roelants , K."
                         ],
                         "firstname": "K.",
-                        "lastname": "Seymour",
-                        "middlename": "L."
+                        "lastname": "Roelants"
                     },
                     {
-                        "name": "J. Habersetzer",
+                        "name": "D. J. Gower",
                         "alternate": [
-                            "Habersetzer, J."
+                            "Gower, D. J."
                         ],
-                        "firstname": "J.",
-                        "lastname": "Habersetzer"
+                        "firstname": "D.",
+                        "lastname": "Gower",
+                        "middlename": "J."
                     },
                     {
-                        "name": "G. F. Gunnell",
+                        "name": "M. Wilkinson",
                         "alternate": [
-                            "Gunnell, G. F."
+                            "Wilkinson, M."
                         ],
-                        "firstname": "G.",
-                        "lastname": "Gunnell",
-                        "middlename": "F."
+                        "firstname": "M.",
+                        "lastname": "Wilkinson"
+                    },
+                    {
+                        "name": "S. P. Loader",
+                        "alternate": [
+                            "Loader, S. P."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Loader",
+                        "middlename": "P."
+                    },
+                    {
+                        "name": "S. D. Biju",
+                        "alternate": [
+                            "Biju, S. D."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Biju",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "K. Guillaume",
+                        "alternate": [
+                            "Guillaume, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Guillaume"
+                    },
+                    {
+                        "name": "L. Moriau",
+                        "alternate": [
+                            "Moriau, L."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Moriau"
+                    },
+                    {
+                        "name": "F. Bossuyt",
+                        "alternate": [
+                            "Bossuyt, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Bossuyt"
                     }
                 ],
                 "editors": [],
                 "series_editors": [],
-                "figure": "4",
+                "figure": "1",
                 "identifier": [
                     {
                         "type": "doi",
-                        "id": "10.1038/nature06549"
+                        "id": "10.1073/pnas.0608378104"
                     }
                 ],
                 "link": [],
                 "journal": {
-                    "name": "Nature",
-                    "volume": "451",
+                    "name": "Proceedings of the National Academy of Science U. S. A.",
+                    "volume": "104",
                     "identifier": []
                 }
             },
-            "newick": "(Onychonycteris, (Icaronycteris, (Archaeonycteris, (Hassianycteris, \n(Palaeochiropteryx, ((Pteropodidae, Rhinolophoidea), (Emallonuroidea, \n(Noctilionidoidea, Vespertilionoidea))))))))"
+            "newick": "((Andrias, (Batrachuperus, Hynobius)),\n\n(Siren,\n\n(((Ambystoma, Dicamptodon),\n\n((Salamandra, ((Pleurodeles, Tylototriton), (Taricha, (Calotriton, Triturus)))))),\n\n((Proteus, Necturus), (Rhyacotriton, (Amphiuma, \n((Blitoglossa, (Eurycea, Pseudotriton)),\n((Plethodon, ((Desmognathus, Ensatira), (Hydromantes, Speleomantes)))))))))))"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000237",
-            "regnumId": 237,
-            "sourcePhylogenyIndex": 0
-        },
-        {
-            "clado": "CLADO_0000238",
-            "regnumId": 238,
-            "sourcePhylogenyIndex": 0
-        },
-        {
-            "clado": "CLADO_0000239",
-            "regnumId": 239,
+            "clado": "CLADO_0000234",
+            "regnumId": 234,
             "sourcePhylogenyIndex": 0
         }
     ]

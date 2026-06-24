@@ -2,73 +2,57 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Rougier et al. 2007, fig. 9",
+            "label": "Diogo 2007, fig. 3 and 4",
             "primaryPhylogenyCitation": {
-                "type": "article",
-                "title": "New Jurassic mammals from Patagonia, Argentina: a reappraisal of australosphenidan morphology and interrelationships.",
+                "type": "book",
+                "title": "The origin of higher clades.",
                 "year": 2007,
                 "authors": [
                     {
-                        "name": "G. W. Rougier",
+                        "name": "R. Diogo",
                         "alternate": [
-                            "Rougier, G. W."
+                            "Diogo, R."
                         ],
-                        "firstname": "G.",
-                        "lastname": "Rougier",
-                        "middlename": "W."
-                    },
-                    {
-                        "name": "A. G. Martinelli",
-                        "alternate": [
-                            "Martinelli, A. G."
-                        ],
-                        "firstname": "A.",
-                        "lastname": "Martinelli",
-                        "middlename": "G."
-                    },
-                    {
-                        "name": "A. M. Forasiepi",
-                        "alternate": [
-                            "Forasiepi, A. M."
-                        ],
-                        "firstname": "A.",
-                        "lastname": "Forasiepi",
-                        "middlename": "M."
-                    },
-                    {
-                        "name": "M. J. Novacek",
-                        "alternate": [
-                            "Novacek, M. J."
-                        ],
-                        "firstname": "M.",
-                        "lastname": "Novacek",
-                        "middlename": "J."
+                        "firstname": "R.",
+                        "lastname": "Diogo"
                     }
                 ],
                 "editors": [],
                 "series_editors": [],
-                "figure": "9",
-                "identifier": [
-                    {
-                        "type": "doi",
-                        "id": "10.1206/0003-0082(2007)507[1:NJMFPA]2.0.CO;2"
-                    }
-                ],
-                "link": [],
-                "journal": {
-                    "name": "American Museum of Natural History Novitates",
-                    "volume": "3566",
-                    "identifier": []
-                }
+                "publisher": "Science Publishers",
+                "city": "Enfield, New Hampshire",
+                "figure": "3 and 4",
+                "identifier": [],
+                "link": []
             },
-            "newick": "(Probaingnathus, ((Tritylodontids, Haramiyavia), (tritheledontids,\n(Adeloboasileus, (Sinoconodon, \n((Megazostrodon, (Morganucodon, Dinnetherium)),\n(Haldanodon, (Hadrocodium, ((Priacodon, Trioracodon),\n(Jeholodens, ((Gobiconodon, Amphilestes), (Kuehneotherium,\n(Tinodon, (zhangheotheriids, (Shuotherium, \n((plagiaulacidans, cimolodontans), \n\n(((Henosferus, Asfaltomylos), (Ambondro, ((Ausktribosphenos, Bishops),\n(Teinolophos, (Steropodon, (Obdurodon, Ornithorhynchus)))))),\n\n((Amphitherium, (Dryolestes, Henkelotherium)),\n\n(Vincelestes, (Peramus, (Kielantherium, Aegialodon, (Deltatheridium, \n(Pappotherium, \n(\n(Kokopellia, (Asiatherium, (Pucadelphys, Didelphis))), \n(Montanalestes, Asioryctes, Erinaceus, Prokennalestes)))))))))))))))))))))))))"
+            "newick": "((Osteoglossiformes, Hiodontiformes),\n\n((Elopiformes, (Albuliformes, (Notacanthiformes, (Anguiliformes, Saccopharyngiformes)))),\n\n(((Denticipitoidei, (Clupeoidea, Engrauloidea, Pristigasteroidea)),\n(Gonorynchiformes, (Cypriniformes, (Characiformes, (Gymnotiformes, Siluriformes))))),\n\n((Esociformes, (Ateleopodiformes, Stomiiformes, (Ctenosquamata, Aulopiformes))),\n((Alepocephaloidea, Argentinoidea), (Salmoniformes, (Osmeroidea, Galaxoidea)))))))"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000225",
-            "regnumId": 225,
+            "clado": "CLADO_0000206",
+            "regnumId": 206,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000208",
+            "regnumId": 208,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000210",
+            "regnumId": 210,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000212",
+            "regnumId": 212,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000214",
+            "regnumId": 214,
             "sourcePhylogenyIndex": 0
         }
     ]

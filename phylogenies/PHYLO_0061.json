@@ -2,55 +2,38 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Yoon et al. 2006, fig. 3",
+            "label": "Delwiche et al. 2002, fig. 3",
             "primaryPhylogenyCitation": {
                 "type": "article",
-                "title": "Defining the major lineages of red algae (Rhodophyta).",
-                "year": 2006,
+                "title": "Phylogeny of the genus Coleochaete (Coleochaetales, Charophyta) and related taxa inferred by analysis of the chloroplast gene rbcL.",
+                "year": 2002,
                 "authors": [
                     {
-                        "name": "H. S. Yoon",
+                        "name": "C. F. Delwiche",
                         "alternate": [
-                            "Yoon, H. S."
+                            "Delwiche, C. F."
                         ],
-                        "firstname": "H.",
-                        "lastname": "Yoon",
-                        "middlename": "S."
+                        "firstname": "C.",
+                        "lastname": "Delwiche",
+                        "middlename": "F."
                     },
                     {
-                        "name": "K. M. Müller",
+                        "name": "K. G. Karol",
                         "alternate": [
-                            "Müller, K. M."
+                            "Karol, K. G."
                         ],
                         "firstname": "K.",
-                        "lastname": "Müller",
-                        "middlename": "M."
-                    },
-                    {
-                        "name": "R. G. Sheath",
-                        "alternate": [
-                            "Sheath, R. G."
-                        ],
-                        "firstname": "R.",
-                        "lastname": "Sheath",
+                        "lastname": "Karol",
                         "middlename": "G."
                     },
                     {
-                        "name": "F. D. Ott",
+                        "name": "M. T. Cimino",
                         "alternate": [
-                            "Ott, F. D."
+                            "Cimino, M. T."
                         ],
-                        "firstname": "F.",
-                        "lastname": "Ott",
-                        "middlename": "D."
-                    },
-                    {
-                        "name": "D. Bhattacharya",
-                        "alternate": [
-                            "Bhattacharya, D."
-                        ],
-                        "firstname": "D.",
-                        "lastname": "Bhattacharya"
+                        "firstname": "M.",
+                        "lastname": "Cimino",
+                        "middlename": "T."
                     }
                 ],
                 "editors": [],
@@ -59,24 +42,24 @@
                 "identifier": [
                     {
                         "type": "doi",
-                        "id": "10.1111/j.1529-8817.2006.00210.x"
+                        "id": "10.1046/j.1529-8817.2002.01174"
                     }
                 ],
                 "link": [],
                 "journal": {
-                    "name": "Journal Phycology",
-                    "volume": "42",
+                    "name": "J. Phycol.",
+                    "volume": "38",
                     "identifier": []
                 }
             },
-            "newick": "(((((((((Bangia_atropurpurea, Porphyra_purpurea), \nBangia_fuscopurpurea), \n(Bangia_sp, Porphyra_leucosticta)), \n\n((Thorea_violacea, Palmaria_palmata), \nChondrus_crispus)), \n\n(((Dixoniella_grisea, Glaucosphaera_vacuolata), \n(Rhodella_maculata, Rhodella_violacea)))),\n\n((Erythrolobus_coxiae, Flintiella_sanguinaria),\n((Porphyridium_purpureum, Porphridium_sordidum),\nPorphyridium_aerugineum))), \n\n(((((Compsopogon_coeruleus, C._coeruleus),\n(Compsopogon_coeruleus_C._oishii, \nCompsopogon_coeruleus_C._hookeri)),\n(Erythrotrichia_camea, \nErythrocladia_irregularis)), \nRhodochaete_parvula),\nBoldia_erythrosiphon)), \n\n((((((Bangiopsis_subsimplex, \nKyliniella_latvica), Purpureofilum_apyrenoidigerum),\n(Stylonema_alsidii_SAG2.94, Stylonema_alsidii_UTEX1957)),\nRhodospora_sordida), \n((Rhodosorus_marinus, Rhodosorus_sp.),\n(Chroothece_mobilis, Chroodactylon_ornatum))), \nRufusia_pilicola)), \n\n((((Galdieria_maxima, Cyanidioschyzon_merolae), \nCyanidium_calarium), \n(Cyanidium_sp._Monte_Rotaro, Cyanidium_sp._Sybil)),\n\n(((Galdieria_daedala, Galdieria_partita), \n(Galdieria_sulphuraria_SAG108-79, \nGaldieria_sulphuraria_UTEX2393)), \n(Galdieria_sulphuraria_DBV009, \nGaldieria_sulphuraria_DBV012))))"
+            "newick": "(((((((((((((Oryza, Gnetum), Ginko), Isoetes), Angiopteris), (Megaceros, Anthoceros)), Mnium), \n(Marchantia, Sphaerocarpos)),\n(((Chara, Nitellopsis), Nitella), Tolypella)),\n\n((((((Coleochaete_orbicularis, Coleochaete_scutata), (Coleochaete_nitellarum, Coleochaete_sp._19b3)),\nColeochaete_sp._18a1),\n(Coleochaete_soluta, Coleochaete_pulvinata)),\n(Coleochaete_sieminskiana, Coleochaete_irregularis)),\n(Chaetospaeridium_ovalis, Chaetosphaeridium_globosum))),\n\n(((Zygnema, Mesotaenium), Spirogyra), (Gonatozygon, Desmidium))),\n\nChlorokybus),\n\n(Mesostigma_50.1, Mesostigma_296)),\n\n(((Mantoniella, Nephroselmis), (Chlorella, Ulva)), Bryopsis), Cyanophora)"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000156",
-            "regnumId": 156,
+            "clado": "CLADO_0000152",
+            "regnumId": 152,
             "sourcePhylogenyIndex": 0
         }
     ]

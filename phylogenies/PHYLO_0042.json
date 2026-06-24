@@ -2,72 +2,88 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Soltis et al. 2011, fig. 1-2",
+            "label": "Olmstead et al. 2008, fig. 1",
             "primaryPhylogenyCitation": {
                 "type": "article",
-                "title": "Angiosperm phylogeny:  17-genes, 640 taxa.",
-                "year": 2011,
+                "title": "A molecular phylogeny and classification of the Solanaceae.",
+                "year": 2008,
                 "authors": [
                     {
-                        "name": "D. E. Soltis",
+                        "name": "R. G. Olmstead",
                         "alternate": [
-                            "Soltis, D. E."
+                            "Olmstead , R. G."
                         ],
-                        "firstname": "D.",
-                        "lastname": "Soltis",
-                        "middlename": "E."
+                        "firstname": "R.",
+                        "lastname": "Olmstead",
+                        "middlename": "G."
                     },
                     {
-                        "name": "S. Smith",
+                        "name": "L. Bohs",
                         "alternate": [
-                            "Smith, S."
+                            "Bohs, L."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Bohs"
+                    },
+                    {
+                        "name": "H. Abdel Migid",
+                        "alternate": [
+                            "Abdel Migid, H."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Abdel Migid"
+                    },
+                    {
+                        "name": "E. Santiago-Valentin",
+                        "alternate": [
+                            "Santiago-Valentin, E."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Santiago-Valentin"
+                    },
+                    {
+                        "name": "V. F. Garcia",
+                        "alternate": [
+                            "Garcia, V. F."
+                        ],
+                        "firstname": "V.",
+                        "lastname": "Garcia",
+                        "middlename": "F."
+                    },
+                    {
+                        "name": "S. M. Collier",
+                        "alternate": [
+                            "Collier, S. M."
                         ],
                         "firstname": "S.",
-                        "lastname": "Smith"
-                    },
-                    {
-                        "name": "N. Cellinese",
-                        "alternate": [
-                            "Cellinese, N."
-                        ],
-                        "firstname": "N.",
-                        "lastname": "Cellinese"
+                        "lastname": "Collier",
+                        "middlename": "M."
                     }
                 ],
                 "editors": [],
                 "series_editors": [],
-                "figure": "1-2",
-                "identifier": [
-                    {
-                        "type": "doi",
-                        "id": "10.3732/ajb.1000404"
-                    }
-                ],
+                "figure": "1",
+                "identifier": [],
                 "link": [],
                 "journal": {
-                    "name": "American Journal of Botany",
-                    "volume": "98",
+                    "name": "Taxon",
+                    "volume": "57",
                     "identifier": []
                 }
             },
-            "newick": "((((((((((((((((((((((Fagales, Curcurbitales), Rosales), Fabales), \n((Oxalidales, Malpighiales), Celastrales)), Zygophyllales), \n\n((((((Malvales, Brassicales), Huerteales), Sapindales), Picramniaceae), \nCrossosomatales), (Geraniales, Myrtales))), \n\nVitaceae), Saxifragales), \n\n\n(((((((((Lamiales, Boraginaceae), (Solanales, Gentianales)), Vahliaceae), Oncothecaceae), \n(Garryales, Icacinaceae)), \n\n(((Asterales, Escalloniales), ((Apiales, (Paracryphiales, Dipsacales)), Bruniales)), Aquifoliales),\n\nEricales), Cornales), \n\n(Berberidopsidales, Caryophyllales)), Santalales), Dilleniaceae)), \n\nGunneraceae), Buxaceae), Trochodendraceae), \n\n(Sabiaceae, Proteales)), Ranunculales), Ceratophyllaceae), Monocotyledoneae), \n\n(((Magnoliales, Laurales), (Canellales, Piperales)), Chloranthaceae)), \n\n((Trimeniaceae, Schisandraceae), Austrobaileyaceae)), \n\n(Nymphaceae, Hydatellaceae)), \n\nAmborellaceae), \n\n((((Ginkoaceae, Cycadales), (Cupressaceae, Podocarpaceae)), Pinaceae), \n(Gnetaceae, Welwitschiaceae)))"
+            "newick": "(((((((((((((((((Solanum.herculeum,Solanum.trisectum),Solanum.aviculare),Solanum.dulcamara,(((((Solanum.melongena,Solanum.torvum),Solanum.pseudocapsicum),Solanum.wendlandii),Solanum.betaceum),Solanum.abutiloides),Solanum.lycopersicum),((Jaltomata.auriculata,Jaltomata.sinuosa),(Jaltomata.procumbens,Jaltomata.grandiflora))),(((((Capsicum.minutiflora,Capsicum.chinense,Capsicum.pubescens,Capsicum.baccatum),Capsicum.rhomboideum),(((Lycianthes.multiflora,Lycianthes.glandulosa),Lycianthes.heteroclita),Lycianthes.shanesii,Lycianthes.biflora)),(((Lycianthes.peduncularis,Lycianthes.ciliolata),Lycianthes.inequilatera),Lycianthes.rantonnei)),(((((((((Physalis.heterophylla,Physalis.peruviana),Physalis.philadephica),Margaranthus.solanaceus),(Chamaesaracha.sordida,Chamaesaracha.coronopus)),Quincula.lobata),Oryctes.nevadensis,(Physalis.alkekengi,Physalis.carpenteri),(Leucophysalis.grandiflora,Leucophysalis.nana),((((Witheringia.meiantha,Witheringia.macrantha),Brachistus.stramonifolius),Witheringia.solanacea),Witheringia.mexicana)),(((Acnistus.arborescens,Iochroma.australe,Eriolarynx.lorentzii,Vassobia.dichotoma),Saracha.punctata,Iochroma.fuchsioides,Iochroma.umbellatum,Dunalia.solanacea),(Larnax.subtriflora,Larnax.sylvarum))),(((Withania.coagulans,Withania.somnifera),Mellissia.begonifolia),(Aureliana.fasciculata,Athenaea.sp.),((Tubocapsicum.anomalum,(Nothocestrum.latifolium,Nothocestrum.longifolium)),Discopodium.penninervum))),((Cuatresia.exiguiflora,Cuatresia.cuneata),Cuatresia.riparia)),(Salpichroa.origanifolia,Nectouxia.formosa))),((Datura.leichhardtii,Datura.stramonium),(Brugmansia.aurea,Brugmansia.sanguinea),Iochroma.cardenasianum)),(Mandragora.officinarum,Mandragora.caulescens)),((((((Markea.panamensis1,Markea.panamensis2),Markea.ulei),Merinthopodium.neuranthum,Juanulloa.mexicana),Dyssochroma.viridiflora),(Solandra.brachycalyx,Solandra.grandiflora)),(Schultesianthus.leucanthous,Schultesianthus.megalandra))),Nicandra.physalodes),Exodeconus.miersii),(((Atropa.belladonna1,Atropa.belladonna2),((Anisodus.tanguticus,Anisodus.luridus),((Atropanthe.sinensis,((Physochlaina.orientalis,Physochlaina.infundibularis),Scopolia.carniolica,(Scopolia.japonica,Przewalskia.tangutica))),(((Hyoscyamus.pusillus,Hyoscyamus.albus),(Hyoscyamus.desertorum,Hyoscyamus.boveanus)),Hyoscyamus.muticus)))),((((Grabowskia.boerhaviifolia,Grabowskia.duplicata),Lycium.cestroides,Phrodus.microphyllus,Lycium.sandwicense),Lycium.barbarum,Lycium.pallidum),(Nolana.spathulata,(Nolana.linearifolia,Nolana.paradoxa)),(Sclerophylax.adnatifolia,Sclerophylax.gilliesii)),(Jabarosa.integrifolia,(Jaborosa.squarrosa,Jaborosa.sativa)),Latua.pubiflora)),(((((((((Cyphanthera.albicans,Duboisia.myoporoides),Duboisia.leichhardtii,Duboisia.hopwoodii),Cyphanthera.anthocercidea),Crenidium.spinescens),Cyphanthera.microphylla),(Anthotroche.walcottii,Anthotroche.pannosa,(Anthotroch.myoporoides,Anthotroche.blackii))),(Cyphanthera.odgersii,(Grammosolen.dixonii,Grammosolen.truncatus))),(((Anthocercis.sylvicola,Anthocerci.intricata),Anthocercis.angustifolia,Anthocercis.viscosa),(Anthocercis.gracilis,(Anthocercis.ilicifolia,Anthocercis.littorea)))),(Symonanthus.aromaticus,Symonanthus.bancroftii),((Nicotiana.paniculata,Nicotiana.glutinosa),(Nicotiana.acuminata,(Nicotiana.tabacum,Nicotiana.glauca,Nicotiana.africana,(Nicotiana.suaveolens.var.excelsior,Nicotiana.gossei)))))),((Schwenckia.lateriflora,Schwenckia.glabrata),Melananthus.guatemalensis),((((((Plowmania.nyctaginoides,Hunzikeria.texana),Bouchetia.erecta),(Nierembergia.andina,Nierembergia.hippomanica)),Leptoglossis.darcyana),(Brunfelsia.americana,Brunfelsia.uniflora)),(Petunia.axillaris,(Calibrachoa.parviflora,Fabiana.imbricata))),((Benthamiella.skottsbergii,(Combera.paradoxa,Pantacantha.ameghinoi)),(Salpiglossis.sinuata,(((Streptosolen.jamesonii,Browallia.eludens),Browallia.speciosa),(Protoschwenckia.mandonii,(Vestia.foetida,(Sessea.corymbiflora,((Cestrum.rigidum,(Cestrum.megalophyllum,Cestrum.strigilatum)),((Cestrum.tomentosum,Cestrum.macrophyllum),Cestrum.pittieri,Cestrum.nocturnum))))))))),Duckeodendron.cestroides,((((Goetzea.elegans,Goetzea.ekmanii),Espadaea.amoena,Henoonia.myrtifolia),Coeloneurum.ferrugineum),(Tsoala.tubiflora,Metternichia.principis))),(Schizanthus.pinnatus,Schizanthus.grahamii)),((Ipomoea.batatas,Convolvulus.arvensis),Evolvulus.glomeratus,Dinetus.truncatus)),Montinia.caryophyllacea);\n"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000105",
-            "regnumId": 105,
+            "clado": "CLADO_0000098",
+            "regnumId": 98,
             "sourcePhylogenyIndex": 0
         },
         {
-            "clado": "CLADO_0000250",
-            "regnumId": 250,
-            "sourcePhylogenyIndex": 0
-        },
-        {
-            "clado": "CLADO_0000251",
-            "regnumId": 251,
+            "clado": "CLADO_0000099",
+            "regnumId": 99,
             "sourcePhylogenyIndex": 0
         }
     ]
