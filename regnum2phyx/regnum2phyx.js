@@ -476,5 +476,6 @@ if (skippedCount > 0) {
   process.stderr.write(`${skippedCount} entries were skipped due to errors.\n`);
   process.exit(1);
 } else {
-  process.stdout.write(`${successCount + warningCount} Phyx files produced successfully.\n`);
+  const warnSuffix = warningCount > 0 ? ` (${warningCount} with warnings)` : '';
+  process.stdout.write(`${successCount + warningCount} Phyx files produced successfully${warnSuffix}.\n`);
 }
