@@ -2,92 +2,64 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Gauthier et al. 1988, fig. 3",
+            "label": "Dunn et al. 2005, fig. 6",
             "primaryPhylogenyCitation": {
-                "type": "book_section",
-                "title": "A phylogenetic analysis of Lepidosauromorpha. In the phylogenetic relationships of the lizard families.",
-                "section_title": "The phylogenetic relationships of the lizard families.",
-                "year": 1988,
+                "type": "article",
+                "title": "Molecular phylogenetics of the Siphonophora (Cnidaria), with implications for the evolution of functional specialization.",
+                "year": 2005,
                 "authors": [
                     {
-                        "name": "J. Gauthier",
+                        "name": "C. W. Dunn",
                         "alternate": [
-                            "Gauthier, J."
+                            "Dunn, C. W."
                         ],
-                        "firstname": "J.",
-                        "lastname": "Gauthier"
+                        "firstname": "C.",
+                        "lastname": "Dunn",
+                        "middlename": "W."
                     },
                     {
-                        "name": "K. de Queiroz",
+                        "name": "P. R. Pugh",
                         "alternate": [
-                            "de Queiroz, K."
+                            "Pugh, P. R."
                         ],
-                        "firstname": "K.",
-                        "lastname": "de Queiroz"
+                        "firstname": "P.",
+                        "lastname": "Pugh",
+                        "middlename": "R."
                     },
                     {
-                        "name": "R. Estes",
+                        "name": "S. H. D. Haddock",
                         "alternate": [
-                            "Estes, R."
+                            "Haddock, S. H. D."
                         ],
-                        "firstname": "R.",
-                        "lastname": "Estes"
+                        "firstname": "S. H.",
+                        "lastname": "Haddock",
+                        "middlename": "D."
                     }
                 ],
-                "editors": [
-                    {
-                        "name": "R. Estes",
-                        "alternate": [
-                            "Estes, R."
-                        ],
-                        "firstname": "R.",
-                        "lastname": "Estes"
-                    },
-                    {
-                        "name": "G. Pregill",
-                        "alternate": [
-                            "Pregill, G."
-                        ],
-                        "firstname": "G.",
-                        "lastname": "Pregill"
-                    }
-                ],
+                "editors": [],
                 "series_editors": [],
-                "publisher": "Stanford University Press",
-                "city": "Palo Alto",
-                "pages": "15-98",
-                "figure": "3",
-                "identifier": [],
-                "link": []
+                "figure": "6",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1080/10635150500354837"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Systematic biology",
+                    "volume": "54",
+                    "identifier": []
+                }
             },
-            "newick": "((((((((((((Ornithosuchia, Pseudosuchia), Proterochampsidae),\nErythrosuchidae), Proterosuchidae), Protorosauria), Choristodera), Trilophosaurus), Rhynchosauria),\nLepidosauromorpha), Araeoscelidia), (Testudines, Captorhinidae)),\n(((((((((((((((Mammalia, Morganucodontidae), Tritylodontidae), Exaeretodon), Diademodon), Thrinaxodon),\nProcynosuchus), Therocephalia), Dicynodontia), Gorgonopsia), Dinocephalia), Biarmosuchia), Sphenacodontinae),\nEdaphosaurus), Ophiacodon), Casea))\n\n"
+            "newick": "(Staurocladia_wellingtoni, \n(Porpita_porpita, Velella_velella),\n(Hydra, \n((Rhizophysa_eysenhardti, \n(Physalia_physalis, Rhizophysa_filiformis)),\n((\n(Apolemia_sp_1, Apolemia_sp_4), \n(Apolemia_sp_2, Apolemia_sp_3)),\n(Stephanomia_amphytridis, Cordagalma_cordiforme, \nStephalia_dilata, Erenna_sp,\n(Bargmannia_amoena, Bargmannia_elongata),\n\n(\n(Physophora_hydrostatica, (Forskalia_tholoides, \n((Forskalia_asymmetrica, Forkalia_formosa),\n((Forskalia_edwardsi_Pac_1, Forskalia_edwardsi_Pac_2),\nForskalia_edwardsi_Atl)))),\n\n((Nanomia_bijua_Atl, Nanomia_bijua_bijuga_Pac), \n((Halistemma_rubrum_Pac, (Halistemma_rubrum_Med, \nHalistemma_rubrum_Atl)),\n(Agalma_clausi, \n((Agalma_elegans_Atl, Agalma_elegans_Pac),\n(Agalma_okeni, \n(Athorybia_rosacea_Atl, Athorybia_rosacea_Pac))))))),\n\n((Praya_dubia, (Nectadamas_diomedeae, Nectopyramis_natans)),\n\n((Craseoa_lathetica, \n((Gymnopraia_lapislazula, Rosacea_flaccida),\n(Vogtia_pentacantha, (Vogtia_glabra, \n(Hippopodius_hippopus_Atl, Hippopodius_hippopus_Pac))))),\n\n(Clausophyid_sp_1, \n\n((Chuniphyes_multidentata, Clausophyes_ovata),\n\n(Sphaeronectes_gracilis, \n\n((Chelophyes_appendiculata, \n(Diphyes_dispar, Abylopsis_tetragona)),\n(Muggiaea_atlantica, (Lensia_conoidea, \n(Sulculeolaria_quadrivalvis_Atl, \nSulculeolaria_quadrivalvis_Pac))))))))))))))\n\n"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000173",
-            "regnumId": 173,
-            "sourcePhylogenyIndex": 0
-        },
-        {
-            "clado": "CLADO_0000174",
-            "regnumId": 174,
-            "sourcePhylogenyIndex": 0
-        },
-        {
-            "clado": "CLADO_0000219",
-            "regnumId": 219,
-            "sourcePhylogenyIndex": 0
-        },
-        {
-            "clado": "CLADO_0000224",
-            "regnumId": 224,
-            "sourcePhylogenyIndex": 0
-        },
-        {
-            "clado": "CLADO_0000226",
-            "regnumId": 226,
+            "clado": "CLADO_0000170",
+            "regnumId": 170,
             "sourcePhylogenyIndex": 0
         }
     ]

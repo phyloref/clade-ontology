@@ -2,41 +2,63 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Doyle 2006, fig. 8",
+            "label": "Xia et al. 2009, fig. 4",
             "primaryPhylogenyCitation": {
                 "type": "article",
-                "title": "Seed ferns and the origin of angiosperms.",
-                "year": 2006,
+                "title": "Familial placement and relations of Rehmannia and Triaenophora (Scrophulariaceae s.l.) inferred from five gene regions.",
+                "year": 2009,
                 "authors": [
                     {
-                        "name": "J. A. Doyle",
+                        "name": "Z. Xia",
                         "alternate": [
-                            "Doyle, J. A."
+                            "Xia, Z."
+                        ],
+                        "firstname": "Z.",
+                        "lastname": "Xia"
+                    },
+                    {
+                        "name": "Y. Z. Wang",
+                        "alternate": [
+                            "Wang, Y. Z."
+                        ],
+                        "firstname": "Y.",
+                        "lastname": "Wang",
+                        "middlename": "Z."
+                    },
+                    {
+                        "name": "J. F. Smith",
+                        "alternate": [
+                            "Smith, J. F."
                         ],
                         "firstname": "J.",
-                        "lastname": "Doyle",
-                        "middlename": "A."
+                        "lastname": "Smith",
+                        "middlename": "F."
                     }
                 ],
                 "editors": [],
                 "series_editors": [],
-                "figure": "8",
-                "identifier": [],
+                "figure": "4",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.3732/ajb.0800195"
+                    }
+                ],
                 "link": [],
                 "journal": {
-                    "name": "Journal of Torrey Botanical Society",
-                    "volume": "133",
+                    "name": "American Journal of Botany",
+                    "volume": "96",
                     "identifier": []
                 }
             },
-            "newick": "(Elkinsia, (Lyginopteris, (Medullosans, \n\n(((((((Taxaceae, Cephalotaxus), Taxodiaceae), (Araucariac, Podocarpac)), \n(Pinaceae, (Ephedra, (Welwitschia, Gnetum)))), Emporia), Ginkgoales), \nCordaitales, Corystosperms, Autunia, Peltaspermum, Callistophyton, Cycadales, \nGlossopterids, Pentoxylon, \n(Bennittitales, (Caytonia, (Amborella, (Nymphaeales,\n((((((Schisandrac, Illicum), Trimenia), Austrobaileya), Chloranthac), \nWinteraceae), (Asaroideae, Saururaceae))))))))))"
+            "newick": "(((((((((Castilleja, Pedicularis), Seymeria), \n(Tozzia, Melampyrum)),\n(((Alectra, Melasma), Orobanche), Boschniakia)), \nLindenbergia), \n\n(((((Rehm._piasezkii, Rehm._elata), (Rehm._solanifolia, Rehm._glutinosa)), \nRehm._henryi), Rehm._Chingii), \n(Triaen._rupestris, Triaen._shennongjiaensis))),\n\n((((Hemichaena, Berendtia), Mim._aurantiacus), \n((Mim._tenellus, Mim._szechuanensis), Phryma)), \nPaulownia)), \n\n((((Maz._stachydifolius, Maz._spicatus), (Maz._gracilis, Maz._japonicus)), \nMaz._omeiensis), Lancea_tibetica)), \n\n(((Thunbergia, Elytraria), Barleria), Lamium), \n\n((Kigelia, Catalpa), Sesamum))"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000077",
-            "regnumId": 77,
+            "clado": "CLADO_0000073",
+            "regnumId": 73,
             "sourcePhylogenyIndex": 0
         }
     ]

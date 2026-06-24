@@ -2,73 +2,46 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Karol et al. 2001, fig. 1",
+            "label": "Sereno 1991, fig. 26A",
             "primaryPhylogenyCitation": {
                 "type": "article",
-                "title": "The closest living relatives of land plants.",
-                "year": 2001,
+                "title": "Basal archosaurs: phylogenetic relationships and functional implications. Society of Vertebrate Paleontology Memoir 2, J.",
+                "year": 1991,
                 "authors": [
                     {
-                        "name": "K. G. Karol",
+                        "name": "P. C. Sereno",
                         "alternate": [
-                            "Karol, K. G."
+                            "Sereno, P. C."
                         ],
-                        "firstname": "K.",
-                        "lastname": "Karol",
-                        "middlename": "G."
-                    },
-                    {
-                        "name": "R. M. McCourt",
-                        "alternate": [
-                            "McCourt, R. M."
-                        ],
-                        "firstname": "R.",
-                        "lastname": "McCourt",
-                        "middlename": "M."
-                    },
-                    {
-                        "name": "M. T. Cimino",
-                        "alternate": [
-                            "Cimino, M. T."
-                        ],
-                        "firstname": "M.",
-                        "lastname": "Cimino",
-                        "middlename": "T."
-                    },
-                    {
-                        "name": "C. F. Delwiche",
-                        "alternate": [
-                            "Delwiche, C. F."
-                        ],
-                        "firstname": "C.",
-                        "lastname": "Delwiche",
-                        "middlename": "F."
+                        "firstname": "P.",
+                        "lastname": "Sereno",
+                        "middlename": "C."
                     }
                 ],
                 "editors": [],
                 "series_editors": [],
-                "figure": "1",
+                "figure": "26A",
                 "identifier": [
                     {
                         "type": "doi",
-                        "id": "10.1126/science.1065156"
+                        "id": "10.1080/02724634.1991.10011426"
                     }
                 ],
                 "link": [],
                 "journal": {
-                    "name": "Science",
-                    "volume": "294",
+                    "name": "Journal of Vertebrate Paleontology",
+                    "volume": "11",
                     "identifier": []
                 }
             },
-            "newick": "((((((((((((((Arabidopsis, Taxus), \n(Psilotum, Dicksonia)), \nHuperzia), Sphagnum), Anthoceros), Marchantia), \n\n(((Chara, Lamprothamnium), (Lychnothamnus, Nitellopsis)),\n(Nitella, Tolypella))), \n\n(((Coleochaete_obicularis, Coleochaete_soluta), \n(Coleochaete_irregularis, Coleochaete_sieminskiana)), \n(Chaetosphaeridium_ovalis, Chaetosphaeridium_globosum))), \n\n((((Mesotaenium, Mougeotia), Zygnema), Spirogyra),\n((Onychonema, Cosmocladium), Gonatozygon))), \n\n(((Klebsormidium_nitens, Klebsormidium_subtilissimum), \nKlebsormidium_flaccidum), Entransia)), \n\nChlorokybus), \n\n(Mesostigma_viride_50-1, Mesostigma_viride_296)), \n\n((((Volvox, Chalmydomonas), Paulschulzia), Pteromonas),\nNephroselmis)),\n\nCyanophora)"
+            "newick": "(Proterosuchus, Erythrosuchidae, Euparkeria, \nProterochampsidae, \n(Suchia, (Ornithosuchus, Riojasuchus),\nParasuchia), \n(Pterosauria, Scleromochlus), \nDinosauromorpha)"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000150",
-            "regnumId": 150,
+            "clado": "CLADO_0000149",
+            "regnumId": 149,
             "sourcePhylogenyIndex": 0
         }
     ]

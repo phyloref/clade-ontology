@@ -2,96 +2,58 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Yoon et al. 2006, fig. 1",
+            "label": "Vallin & Laurin 2004, fig. 6",
             "primaryPhylogenyCitation": {
                 "type": "article",
-                "title": "Defining the major lineages of red algae (Rhodophyta).",
-                "year": 2006,
+                "title": "Cranial morphology and affinities of Microbrachis, and a reappraisal of the phylogeny and lifestyle of the first amphibians.",
+                "year": 2004,
                 "authors": [
                     {
-                        "name": "H. S. Yoon",
+                        "name": "G. Vallin",
                         "alternate": [
-                            "Yoon, H. S."
+                            "Vallin, G."
                         ],
-                        "firstname": "H.",
-                        "lastname": "Yoon",
-                        "middlename": "S."
+                        "firstname": "G.",
+                        "lastname": "Vallin"
                     },
                     {
-                        "name": "K. M. Müller",
+                        "name": "M. Laurin",
                         "alternate": [
-                            "Müller, K. M."
+                            "Laurin, M."
                         ],
-                        "firstname": "K.",
-                        "lastname": "Müller",
-                        "middlename": "M."
-                    },
-                    {
-                        "name": "R. G. Sheath",
-                        "alternate": [
-                            "Sheath, R. G."
-                        ],
-                        "firstname": "R.",
-                        "lastname": "Sheath",
-                        "middlename": "G."
-                    },
-                    {
-                        "name": "F. D. Ott",
-                        "alternate": [
-                            "Ott, F. D."
-                        ],
-                        "firstname": "F.",
-                        "lastname": "Ott",
-                        "middlename": "D."
-                    },
-                    {
-                        "name": "D. Bhattacharya",
-                        "alternate": [
-                            "Bhattacharya, D."
-                        ],
-                        "firstname": "D.",
-                        "lastname": "Bhattacharya"
+                        "firstname": "M.",
+                        "lastname": "Laurin"
                     }
                 ],
                 "editors": [],
                 "series_editors": [],
-                "figure": "1",
+                "figure": "6",
                 "identifier": [
                     {
                         "type": "doi",
-                        "id": "10.1111/j.1529-8817.2006.00210.x"
+                        "id": "10.1671/5.1"
                     }
                 ],
                 "link": [],
                 "journal": {
-                    "name": "Journal of Phycology",
-                    "volume": "42",
+                    "name": "Journal of Vertebrate Paleontology",
+                    "volume": "24",
                     "identifier": []
                 }
             },
-            "newick": "((((((((Bangia_atropurpurea, Porphyra_purpurea), \n(Chondrus_crispus, Palmaria_palmata)), \n(Dixoniella_grisea, Rhodella_violacea)), \n\n(((Stylonema_alsidii, Rhodosorus_marinus), Bangiopsis_subsmplex),\n(Compsopogon_coeruleus, Rhodochaete_parvula))),\n\n(Flintiella_sanguinaria, Porphyridum_aerugineum)),\n\n((Cyanidium_caldarium, Cyanidioschzon_merolae), Galdieria_sulphuraria)),\n\n(((((((Arabidopsis_thaliana, Zea_mays), Pinus_thunbergii), \nPsilotum_nudum), (Anthoceros_formosae, Marchantia_polymorpha)),\nChaetosphaeridium_globosum), \n((Chlamydomonas_reinhardtii, Chlorella_vulgaris), Mesostigma_viride)),\n\n(Cyanophora_paradoxa, Glaucocystis_nostochinearum))),\n\n((Nostoc_sp., Thermosynechococcus_elongatus), Synechocystis_sp.))"
+            "newick": "(Euparkeria,(Teleocrater,((Marasuchus,(Asilisaurus,Buriolestes,Eodromaeus,Eoraptor,Lewisuchus,Pisanosaurus,Sacisaurus,Silesaurus,(((Zuolong,(Chilesaurus,((((Monolophosaurus,((Acrocanthosaurus,Sinraptor_dongi),(Allosaurus_fragilis,Neovenator))),(Condorraptor,Piatnitzkysaurus)),(Eustreptospondylus,Megalosaurus)),(Aorun,Bicentenaria,Compsognathus_corallestri,Sinocalliopteryx,Sinosauropteryx,(Coelurus,(Ornitholestes,(((Jianchangosaurus,(Haplocheirus,(Alvarezsaurus,Patagonykus))),((Fukuivenator,(((Aurornis,Serikornis,(Anchiornis_type,Anchiornis_LPMB00169)),(Archaeopteryx,(Rahonavis,(Balaur,((Sapeornis,(Confuciusornis,(Apsaravis,Archaeornithura,Chongmingia,Cruralispennia,Gansus_yumenensis,Hongshanornis,Ichthyornis,Iteravis,Parahongshanornis,Patagopteryx,Pengornis,Piscivoravis,Protopteryx,Vorona,Yanornis,Yixianornis,Zhongjianornis,(Archaeorhynchus,Schizooura),(Bohaiornis,(Sulcavis,Zhouornis)),(Hesperornis,(Meleagris,Vegavis))))),(Jixiangornis,Shenzhouraptor))))),(Xiaotingia,(Epidendrosaurus,(Epidexipteryx,Yi)))),((Jianianhualong,(Sinusonasus,(Gobivenator,Sinornithoides,Zanabazar))),(Sinovenator,(Jinfengopteryx,Mei)))),((Buitreraptor,Unenlagia_comahuensis),(Halszkaraptor,Mahakala)),(Microraptor,(Deinonychus,Velociraptor_mongoliensis))),(((Similicaudipteryx,(Caudipteryx,(Anzu,Khaan))),(Incisivosaurus,Protarchaeopteryx)),(Beipiaosaurus,Falcarius)))),(Nqwebasaurus,(Pelecanimimus,(Harpymimus,Shenzhousaurus)))))),(Guanlong,Tanycolagreus,(Eotyrannus,(Tyrannosaurus,(Gualicho,(Australovenator,Megaraptor))))))))),(Berberosaurus,(Ceratosaurus,(Eoabelisaurus,((Elaphrosaurus,Limusaurus),(Majungasaurus,Masiakasaurus)))))),((Liliensternus,(Coelophysis_rhodesiensis,Syntarsus_kayentakatae)),(Cryolophosaurus,Dilophosaurus))),(Daemonosaurus,Staurikosaurus,Tawa,(Herrerasaurus,Sanjuansaurus)),(Guaibasaurus,(Plateosaurus,Saturnalia)),(Heterodontosaurus,Tianyulong))),(Dromomeron,Lagerpeton))));\n"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000093",
-            "regnumId": 93,
+            "clado": "CLADO_0000106",
+            "regnumId": 106,
             "sourcePhylogenyIndex": 0
         },
         {
-            "clado": "CLADO_0000119",
-            "regnumId": 119,
-            "sourcePhylogenyIndex": 0
-        },
-        {
-            "clado": "CLADO_0000123",
-            "regnumId": 123,
-            "sourcePhylogenyIndex": 0
-        },
-        {
-            "clado": "CLADO_0000128",
-            "regnumId": 128,
+            "clado": "CLADO_0000244",
+            "regnumId": 244,
             "sourcePhylogenyIndex": 0
         }
     ]

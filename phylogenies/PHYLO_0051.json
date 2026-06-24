@@ -2,29 +2,46 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Saunders & Bailey 1997, fig. 1",
+            "label": "Muller et al. 2001, fig. 1",
             "primaryPhylogenyCitation": {
                 "type": "article",
-                "title": "Phylogenesis of pit-plug-associated features in the Rhodophyta: inferences from molecular systematic data.",
-                "year": 1997,
+                "title": "Ribosomal DNA phylogeny of the Bangiophycidae (Rhodophyta) and the origin of secondary plastids.",
+                "year": 2001,
                 "authors": [
                     {
-                        "name": "G. W. Saunders",
+                        "name": "K. M. Muller",
                         "alternate": [
-                            "Saunders, G. W."
+                            "Muller, K. M."
                         ],
-                        "firstname": "G.",
-                        "lastname": "Saunders",
-                        "middlename": "W."
+                        "firstname": "K.",
+                        "lastname": "Muller",
+                        "middlename": "M."
                     },
                     {
-                        "name": "J. C. Bailey",
+                        "name": "M. C. Oliveira",
                         "alternate": [
-                            "Bailey, J. C."
+                            "Oliveira, M. C."
                         ],
-                        "firstname": "J.",
-                        "lastname": "Bailey",
+                        "firstname": "M.",
+                        "lastname": "Oliveira",
                         "middlename": "C."
+                    },
+                    {
+                        "name": "R. G. Sheath",
+                        "alternate": [
+                            "Sheath, R. G."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Sheath",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "D. Bhattacharya",
+                        "alternate": [
+                            "Bhattacharya, D."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Bhattacharya"
                     }
                 ],
                 "editors": [],
@@ -33,24 +50,24 @@
                 "identifier": [
                     {
                         "type": "doi",
-                        "id": "10.1139/b97-858"
+                        "id": "10.2307/3558445"
                     }
                 ],
                 "link": [],
                 "journal": {
-                    "name": "Can. J. Bot.",
-                    "volume": "75",
+                    "name": "Am. J. Bot.",
+                    "volume": "88",
                     "identifier": []
                 }
             },
-            "newick": "(Stylonema_alsidii, Erythrocladia_sp., (Porphyra_umbilicalis, \n(Dixoniella_grisea, (Hildenbrandia_rubra, \n\n(Ahnfeltia_plicata, ((Rhodogorgon_carriebowensis, \n((Cheilosporum_sagittatum, (Corallina_officinalis, Bossiella_orbigniana)),\n(Amphiroa_fragilissima, Metagoniolithon_chara)),\n(Lothothamnion_glaciale, (Phymatolithon_laevigatum, Clathromorphum_compactum))), \n\n((Psilosiphon_scoparium, Nothocladus_nodosus), \n(((Audouinella_dasyae, Rhodochorton_purpureum), \n(Rhodothamniella_floridula, (Meiodiscus_spetsbergensis, \n(Rhodophysema_elegans, Palmaria_palmata)))),\n(Nemalion_helminthoides, Galaxaura_marginata)))), \n\n(\n((Cermium_macilentum, (Crouania_attenuata, \n((Anotrichium_furcellatum, Griffithsia_monilis), \n(Dasya_baillouviana, (Phycodrys_rubens, Rhodomela_confervoides))))), \n\n((Curdiea_flabellata, (Gracilaria_tikvahiae, Gracilariopsis_lemaneiformis)),\n\n((((Rhodymenia_linearis, Erythrocolon_podagricum), \n(Champia_affinis, (Gloioderma_fruticulosa, \n(Lomentaria_australis, Lomentaria_baileyana)))), \n\n(Sebdenia_flabellata, (Cryptonemia_undulata, Grateloupia_filiciana))),\n\n((Plocamiocolax_pulvinata, Plocamium_angustum),\n\n((Bonnemaisonia_hamifera, (Schizymenia_dubyi, \n(Gelidiella_acerosa, ((Gelidium_vagum, Gelidium_pusillum), (Pterocladia_lucida, Ptilophora_pinnatifida))))),\n\n(((Mastocarpus_stellatus, Schottera_nicaeensis),\n(Chondrus_crispus, Sarcothalia_crassifolia)), \n\n((Callophyllis_rangiferina, (Dasyphloea_insignis, Farlowia_mollis)),\n\n(((Sphaerococcus_coronopifolius, (Phacelocarpus_peperocarpos, Nizymenia_australis)), \n(Endocladia_muricata, Gloiopeltis_furcata)), \n\n((Furcellaria_lumbricalis, Areschougia_congesta), \n(Mychodea_carnosa, (Kappaphycus_alvarezii, Eucheuma_denticulatum)))))))))))))))))"
+            "newick": "(((((Porphyra_miniata, Bangia_fuscopurpurea), \n((Porphyra_tenera_T8, (Porphyra_tenera_T-1, (Porphyra_yezoensis, Porphyra_tenera_TU-3))),\n(Porphyra_leucosticta_L26199, Porphyra_leucosticta_SAG_B55.88))),\n((Porphyra_spiralis_var._amplifolia, Porphyra_acanthophora), Porphyra_dentata)),\nBangia_sp._VIS7),\n((Porphyra_umbilicalis, Bangia_fuscopurpurea_SAG), Bangia_atropurpurea))"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000130",
-            "regnumId": 130,
+            "clado": "CLADO_0000129",
+            "regnumId": 129,
             "sourcePhylogenyIndex": 0
         }
     ]

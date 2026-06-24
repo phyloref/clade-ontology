@@ -2,64 +2,82 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Smythe et al. 2006, fig. 7",
+            "label": "Simmons et al. 2008, fig. 4",
             "primaryPhylogenyCitation": {
                 "type": "article",
-                "title": "Nematode small subunit phylogeny correlates with alignment parameters.",
-                "year": 2006,
+                "title": "Primitive Early Eocene bat from Wyoming and the evolution of flight and echolocation.",
+                "year": 2008,
                 "authors": [
                     {
-                        "name": "A. B. Smythe",
+                        "name": "N. B. Simmons",
                         "alternate": [
-                            "Smythe, A. B."
+                            "Simmons, N. B."
                         ],
-                        "firstname": "A.",
-                        "lastname": "Smythe",
+                        "firstname": "N.",
+                        "lastname": "Simmons",
                         "middlename": "B."
                     },
                     {
-                        "name": "M. J. Sanderson",
+                        "name": "K. L. Seymour",
                         "alternate": [
-                            "Sanderson, M. J."
+                            "Seymour, K. L."
                         ],
-                        "firstname": "M.",
-                        "lastname": "Sanderson",
-                        "middlename": "J."
+                        "firstname": "K.",
+                        "lastname": "Seymour",
+                        "middlename": "L."
                     },
                     {
-                        "name": "S. A. Nadler",
+                        "name": "J. Habersetzer",
                         "alternate": [
-                            "Nadler, S. A."
+                            "Habersetzer, J."
                         ],
-                        "firstname": "S.",
-                        "lastname": "Nadler",
-                        "middlename": "A."
+                        "firstname": "J.",
+                        "lastname": "Habersetzer"
+                    },
+                    {
+                        "name": "G. F. Gunnell",
+                        "alternate": [
+                            "Gunnell, G. F."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Gunnell",
+                        "middlename": "F."
                     }
                 ],
                 "editors": [],
                 "series_editors": [],
-                "figure": "7",
+                "figure": "4",
                 "identifier": [
                     {
                         "type": "doi",
-                        "id": "0.1080/10635150601089001"
+                        "id": "10.1038/nature06549"
                     }
                 ],
                 "link": [],
                 "journal": {
-                    "name": "Systematic Biology",
-                    "volume": "55",
+                    "name": "Nature",
+                    "volume": "451",
                     "identifier": []
                 }
             },
-            "newick": "((((((((Adenophorea, (Diplolaimelloides_meyli, Daptonema_procerus)), \n((((Uncultured_nematode, Xyzzors_sp.), (Metachromadora_sp.,\n((Chromadoropsis_vivipara, Desmodora_ovigera), Acanthopharynx_micans))),\n\n((((Laxus_cosmopolitus, Laxus_oneistus), Catanema_sp, Stilbonema_majum), \n((Eubostrichus_parasitiferus, Eubostrichus_topiarius), Eubostrichus_dianae)), \nLeptonemella_sp.)), \n(Praeacanthonchus_sp., Paracanthonchus_caecus))),\n\n(\n(((Paratrichodorus_pachydermus, Paratrichodorus_anemones), \nTrichodorus_primitivus), Prismatolaimus_intermedius),\n(((Adoncholaimus_sp., Pontonema_vulgare), \n(Enoplus_brevis, Enoplus_meridionalis)), Trefusia_zostericola))),\n\n((Longidorus_elongatus, Xiphinema_rivesi), \n(Mylonchulus_arenicolus, Mermis_nigrescens))),\n\n(Trichuris_muris, Trichinella_spiralis)), \n\n(Chordodes_morgani, Gordius_aquaticus)), \n\nBrachionus_plicatilis), Priapulus_caudatus)\n\n\n"
+            "newick": "(Onychonycteris, (Icaronycteris, (Archaeonycteris, (Hassianycteris, \n(Palaeochiropteryx, ((Pteropodidae, Rhinolophoidea), (Emallonuroidea, \n(Noctilionidoidea, Vespertilionoidea))))))))"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000242",
-            "regnumId": 242,
+            "clado": "CLADO_0000237",
+            "regnumId": 237,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000238",
+            "regnumId": 238,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000239",
+            "regnumId": 239,
             "sourcePhylogenyIndex": 0
         }
     ]

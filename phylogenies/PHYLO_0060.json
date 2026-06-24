@@ -2,21 +2,12 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Delwiche et al. 2002, fig. 3",
+            "label": "Karol et al. 2001, fig. 1",
             "primaryPhylogenyCitation": {
                 "type": "article",
-                "title": "Phylogeny of the genus Coleochaete (Coleochaetales, Charophyta) and related taxa inferred by analysis of the chloroplast gene rbcL.",
-                "year": 2002,
+                "title": "The closest living relatives of land plants.",
+                "year": 2001,
                 "authors": [
-                    {
-                        "name": "C. F. Delwiche",
-                        "alternate": [
-                            "Delwiche, C. F."
-                        ],
-                        "firstname": "C.",
-                        "lastname": "Delwiche",
-                        "middlename": "F."
-                    },
                     {
                         "name": "K. G. Karol",
                         "alternate": [
@@ -27,6 +18,15 @@
                         "middlename": "G."
                     },
                     {
+                        "name": "R. M. McCourt",
+                        "alternate": [
+                            "McCourt, R. M."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "McCourt",
+                        "middlename": "M."
+                    },
+                    {
                         "name": "M. T. Cimino",
                         "alternate": [
                             "Cimino, M. T."
@@ -34,32 +34,41 @@
                         "firstname": "M.",
                         "lastname": "Cimino",
                         "middlename": "T."
+                    },
+                    {
+                        "name": "C. F. Delwiche",
+                        "alternate": [
+                            "Delwiche, C. F."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Delwiche",
+                        "middlename": "F."
                     }
                 ],
                 "editors": [],
                 "series_editors": [],
-                "figure": "3",
+                "figure": "1",
                 "identifier": [
                     {
                         "type": "doi",
-                        "id": "10.1046/j.1529-8817.2002.01174"
+                        "id": "10.1126/science.1065156"
                     }
                 ],
                 "link": [],
                 "journal": {
-                    "name": "J. Phycol.",
-                    "volume": "38",
+                    "name": "Science",
+                    "volume": "294",
                     "identifier": []
                 }
             },
-            "newick": "(((((((((((((Oryza, Gnetum), Ginko), Isoetes), Angiopteris), (Megaceros, Anthoceros)), Mnium), \n(Marchantia, Sphaerocarpos)),\n(((Chara, Nitellopsis), Nitella), Tolypella)),\n\n((((((Coleochaete_orbicularis, Coleochaete_scutata), (Coleochaete_nitellarum, Coleochaete_sp._19b3)),\nColeochaete_sp._18a1),\n(Coleochaete_soluta, Coleochaete_pulvinata)),\n(Coleochaete_sieminskiana, Coleochaete_irregularis)),\n(Chaetospaeridium_ovalis, Chaetosphaeridium_globosum))),\n\n(((Zygnema, Mesotaenium), Spirogyra), (Gonatozygon, Desmidium))),\n\nChlorokybus),\n\n(Mesostigma_50.1, Mesostigma_296)),\n\n(((Mantoniella, Nephroselmis), (Chlorella, Ulva)), Bryopsis), Cyanophora)"
+            "newick": "((((((((((((((Arabidopsis, Taxus), (Psilotum, Dicksonia)),\nHuperzia),\nSphagnum), \nAnthoceros),\nMarchantia),\n\n(((Chara, Lamprothamnium), (Lychnothamnus, Nitellopsis)),\n(Nitella, Tolypella))),\n\n(((Coleochatete_orbicularis, Coleochatete_soluta), \n(Coleochatete_irregularis, Coleochatete_sieminskiana)),\n(Chaetosphaeridium_ovalis, Chaetosphaeridium_globosum))),\n\n((((Mesotaenium, Mougeotia), Zygnema), Spirogyra), \n((Onychonema, Cosmocladium), Gonatozygon))),\n\n(((Klebsormidium_nitens, Klebsormidium_subtilissimum), \nKelbsormidium_flaccidum), Entransia)),\n\nChlorokybus),\n\n(Meostigma_viride_50-1, Meostigma_viride_296)),\n\n((((Volvox, Chlamydomonas), Paulschulzia), Pteromonas),\nNephroselmis)), \nCyanophora)"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000152",
-            "regnumId": 152,
+            "clado": "CLADO_0000151",
+            "regnumId": 151,
             "sourcePhylogenyIndex": 0
         }
     ]

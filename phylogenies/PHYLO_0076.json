@@ -2,127 +2,63 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Pick et al. 2010, fig. 1",
+            "label": "Sullivan et al. 2006, fig. 1 and 2",
             "primaryPhylogenyCitation": {
                 "type": "article",
-                "title": "Improved phylogenomic taxon sampling noticeably affects nonbilaterian relationships.",
-                "year": 2010,
+                "title": "A phylogenetic analysis of the major groups of catfishes (Teleostei: Siluriformes) using nuclear rag1 and rag2 gene sequences.",
+                "year": 2006,
                 "authors": [
                     {
-                        "name": "K. S. Pick",
+                        "name": "J. P. Sullivan",
                         "alternate": [
-                            "Pick, K. S."
+                            "Sullivan, J. P."
                         ],
-                        "firstname": "K.",
-                        "lastname": "Pick",
-                        "middlename": "S."
+                        "firstname": "J.",
+                        "lastname": "Sullivan",
+                        "middlename": "P."
                     },
                     {
-                        "name": "H. Philippe",
+                        "name": "J. G. Lundberg",
                         "alternate": [
-                            "Philippe, H."
+                            "Lundberg, J. G."
                         ],
-                        "firstname": "H.",
-                        "lastname": "Philippe"
+                        "firstname": "J.",
+                        "lastname": "Lundberg",
+                        "middlename": "G."
                     },
                     {
-                        "name": "F. Schreiber",
+                        "name": "M. Hardman",
                         "alternate": [
-                            "Schreiber, F."
-                        ],
-                        "firstname": "F.",
-                        "lastname": "Schreiber"
-                    },
-                    {
-                        "name": "D. Erpenbeck",
-                        "alternate": [
-                            "Erpenbeck, D."
-                        ],
-                        "firstname": "D.",
-                        "lastname": "Erpenbeck"
-                    },
-                    {
-                        "name": "D. J. Jackson",
-                        "alternate": [
-                            "Jackson, D. J."
-                        ],
-                        "firstname": "D.",
-                        "lastname": "Jackson",
-                        "middlename": "J."
-                    },
-                    {
-                        "name": "P. Wrede",
-                        "alternate": [
-                            "Wrede, P."
-                        ],
-                        "firstname": "P.",
-                        "lastname": "Wrede"
-                    },
-                    {
-                        "name": "M. Wiens",
-                        "alternate": [
-                            "Wiens, M."
+                            "Hardman, M."
                         ],
                         "firstname": "M.",
-                        "lastname": "Wiens"
-                    },
-                    {
-                        "name": "A. Alie",
-                        "alternate": [
-                            "Alie, A."
-                        ],
-                        "firstname": "A.",
-                        "lastname": "Alie"
-                    },
-                    {
-                        "name": "B. Morgenstern",
-                        "alternate": [
-                            "Morgenstern, B."
-                        ],
-                        "firstname": "B.",
-                        "lastname": "Morgenstern"
-                    },
-                    {
-                        "name": "M. Manuel",
-                        "alternate": [
-                            "Manuel, M."
-                        ],
-                        "firstname": "M.",
-                        "lastname": "Manuel"
-                    },
-                    {
-                        "name": "G. Worheide",
-                        "alternate": [
-                            "Worheide, G."
-                        ],
-                        "firstname": "G.",
-                        "lastname": "Worheide"
+                        "lastname": "Hardman"
                     }
                 ],
                 "editors": [],
                 "series_editors": [],
-                "figure": "1",
+                "figure": "1 and 2",
                 "identifier": [
                     {
                         "type": "doi",
-                        "id": "10.1093/molbev/msq089"
+                        "id": "10.1016/j.ympev.2006.05.044"
                     }
                 ],
                 "link": [],
                 "journal": {
-                    "name": "Molecular Biology Evolution",
-                    "volume": "27",
+                    "name": "Molecular Phylogenetics and Evolution",
+                    "volume": "41",
                     "identifier": []
                 }
             },
-            "newick": "(((((((((((((((Lumbricus_rubellus, Haementeria_depressa), \n(Urechis_caupo, Capitella_sp.)),\nPlatynereis_dumerilii),\nThemiste_lageniformis), \nChaetopterus_sp.), \n((Terebratalia_transcersa, Phoronis_vancouverensis),\n(Cerebratulus_lacteus, Carinoma_mutabilis))),\n\n(((\n((Crassostrea_virginica, Argopecten_irradians), \nMytilus_galloprovincialis), \n\n(Biomphalaria_glabrata, Aplysia_californica)),\nEuprymna_scolopes),\n(Chaetopleura_apiculata, Chaetoderma_nitidulum))), \n\n((((Schmidtea_mediterranea, Dugesia_japonica), \nEchinococcus_granulosus), \nParaplanocera_sp.), Macrostomum_lignano)), \n\n((((\n(((((Acanthoscurria_gomesiana, Boophilus_microplus),\nAnoplodactylus_eroticus), Carcinoscorpius_rotundicauda),\nScutigera_coleoptrata), \n((Litopenaeus_vannamei, Homarus_americanus), \n(Drosophila_melanogaster, Daphnia_pulex))), \nEuperipatoidea_kanangresnsis),\n\n(((Xiphinema_index, Trichinella_spiralis), \nSpinochordodes_tellini), \n(Richtersius_coronifer, Hypsibius_dujardini))),\n\n(Priapulus_caudatus, Echinoderes_horni)))), \n\n((((Saccoglossus_kowalevskii, Ptychordera_flava), \n(Strongylocentrotus_purpuratus, Asterina_pectinifera)),\nXenotubella_bocki), \n\n(((Homo_sapiens, Gallus_gallus), \nCiona_intestinalis), Branchiostoma_floridae))),\n\nTrichoplax_adhaerens),\n\n((\n(((Podocoryne_carnea, Hydractinia_echinata), \nHydra_magnipapillata), Clytia_hemisphaerica), \nCyanea_capillata), \n(((Metridium_senile, Anemonia_viridis), \nNematostella_vectensis), \n(Monastrae_faveolata, Acropora_millepora)))),\n\n((mertensiid_sp., Pleurobrachia_pileus), \nMnemiopsis_leidyi)), \n\n(((((((Lubomirskia_baicalensis, Ephydatia_muelleri), \nPachydictyum_globosum), Suberites_domuncula), \nAmphimedon_queenslandica),\nCarteriospongia_foliascens), \n\n((Heterochone_calyx, Crateromorpha_meyeri), \nOopsacas_minuta)), \n\n(\n(Oscarella_lobularis, Oscarella_carmela), \n(Sycon_raphanus, Leucetta_chagosensis)))),\n\n((Proterospongia_sp., Monosiga_brevicollis), \nMonosiga_ovata))\n\n\n"
+            "newick": "((Nematogenys_ine, \n((Trichomycterus_gui, Bullockia_mal), (Henonemus_pun, Ochmacanthus_alt)), \n((Callichthys_cal, Corydoras_tri), (Scoloplax_dis, \n((Astroblepus_sp1, Astroblepus_sp2), (Liposarcus_mul, (Loricaria_sim, \n(Lamontichthys_sti, Farlowella_nat))))))),\n((Diplomystes_mes, Diplomystes_nah), Siluroidei))"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000201",
-            "regnumId": 201,
+            "clado": "CLADO_0000199",
+            "regnumId": 199,
             "sourcePhylogenyIndex": 0
         }
     ]

@@ -2,87 +2,88 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Bremer et al. 1999, fig. 5",
+            "label": "Hammerschmidt et al. 1996, fig. 2",
             "primaryPhylogenyCitation": {
                 "type": "article",
-                "title": "More characters or more taxa for a robust phylogeny - Case study from the coffee family (Rubiaceae).",
-                "year": 1999,
+                "title": "Insights into the evolution of nuclear dualism in the ciliates revealed by phylogenetic analysis of rRNA sequences.",
+                "year": 1996,
                 "authors": [
                     {
-                        "name": "B. Bremer",
+                        "name": "B. Hammerschmidt",
                         "alternate": [
-                            "Bremer, B."
+                            "Hammerschmidt, B."
                         ],
                         "firstname": "B.",
-                        "lastname": "Bremer"
+                        "lastname": "Hammerschmidt"
                     },
                     {
-                        "name": "R. K. Jansen",
+                        "name": "M. Schlegel",
                         "alternate": [
-                            "Jansen, R. K."
-                        ],
-                        "firstname": "R.",
-                        "lastname": "Jansen",
-                        "middlename": "K."
-                    },
-                    {
-                        "name": "B. Oxelman",
-                        "alternate": [
-                            "Oxelman, B."
-                        ],
-                        "firstname": "B.",
-                        "lastname": "Oxelman"
-                    },
-                    {
-                        "name": "M. Backlund",
-                        "alternate": [
-                            "Backlund, M."
+                            "Schlegel, M."
                         ],
                         "firstname": "M.",
-                        "lastname": "Backlund"
+                        "lastname": "Schlegel"
                     },
                     {
-                        "name": "H. Lantz",
+                        "name": "D. Lynn",
                         "alternate": [
-                            "Lantz, H."
+                            "Lynn, D."
                         ],
-                        "firstname": "H.",
-                        "lastname": "Lantz"
+                        "firstname": "D.",
+                        "lastname": "Lynn"
                     },
                     {
-                        "name": "K. J. Kim",
+                        "name": "D. D. Leipe",
                         "alternate": [
-                            "Kim, K. J."
+                            "Leipe, D. D."
                         ],
-                        "firstname": "K.",
-                        "lastname": "Kim",
-                        "middlename": "J."
+                        "firstname": "D.",
+                        "lastname": "Leipe",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "M. L. Sogin",
+                        "alternate": [
+                            "Sogin, M. L."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Sogin",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "I. B. Raikov",
+                        "alternate": [
+                            "Raikov, I. B."
+                        ],
+                        "firstname": "I.",
+                        "lastname": "Raikov",
+                        "middlename": "B."
                     }
                 ],
                 "editors": [],
                 "series_editors": [],
-                "figure": "5",
+                "figure": "2",
                 "identifier": [
                     {
                         "type": "doi",
-                        "id": "0.1080/106351599260085"
+                        "id": "10.1111/j.1550-7408.1996.tb01396.x"
                     }
                 ],
                 "link": [],
                 "journal": {
-                    "name": "Systematic Biology",
-                    "volume": "48",
+                    "name": "Journal of Eukaryotic Microbiology",
+                    "volume": "43",
                     "identifier": []
                 }
             },
-            "newick": "(((Alstonia, Kopsia),\n(Gelsemium, Mostuea), \n(Anthocleista, Gentiana), \n(Antonia, \n((Spigelia, Strychnos), (Geniostoma, Logania)))), \n\n(Coptosapelta, \n\n(Luculia, \n\n(Ophiorrhiza, Pauridiantha, \n((Morinda, Psychotria),\n(Danais, (Carphalea, Pentas), \n(Anthospermum, (Oldenlandia, Spermacoce))))),\n\n((Cephalanthus, Cinchona, Hilia, \n(Guettarda, (Rogiera, Rondeletia)),\n(Strumpfia, (Exostema, (Chiococca, Erithalis)))),\n\n(((Pseudomuss, \n(Mussaenda_arcuata, Mussaenda_erythrophylla)),\n((Alberta, (Coffea, Gardenia)),\n(Scyphiphora, (Ixora, Vangueria)))),\n\n(Alseis, Calycophyllum, Condaminea, Emmenopterys, \nPentagonia, Pinckneya, Pogonopus, Rustia, Simira, Capirona, \n(Chimarrhis, Warszewiczia)))))))"
+            "newick": "(Labyrinthuloides_minuta,\n\n(((Prorocentrum_micans, Symbiodinium_microadriaticum),\n(Sarcocystis_muris, Theileria_annulata)),\n\n(((Climacostomum_virens, Gruberia_sp., Spirostomum_ambiguum, \n(Eufolliculina_uhligi, Blepharisma_americanum)), \n(Tracheloraphis_sp., (Loxodes_striatus, Loxodes_magnus))),\n\n((\n(Metopus_contortus, Metopus_palaeformis), \n(Honalozoon_vermiculare, Loxophyllum_utriculariae), \nProtocruzia_sp., \n(Euplotes_aediculatus, (Oxytricha_granulifera, \n(Onychondromus_quadricornutus, Stylonychia_pustulata)))),\n\n(\n(Colopoda_inflata, (Pseudomicrothorax_dubius,\n(Furgasonia_blochmanni, Obertrumia_georgiana))),\nParamecium_tetraurelia, \n(Cyclidium_glaucoma, \n((Uronema_marinum, Cohnilembus_verminus), \nPseudocohnilembus_marinus)),\n\n((Ophryglena_catenula, Ichthyophthirius_multifiliis), \n((Tetrahymena_thermophila, Tetrahymena_canadensis), \n(Glaucoma_chattoni, Colpidium_campylum))), \n\nOpisthonecta_henneguyi, \n\n(Trithigmostoma_steini, Discophrya_collini))))))"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000091",
-            "regnumId": 91,
+            "clado": "CLADO_0000086",
+            "regnumId": 86,
             "sourcePhylogenyIndex": 0
         }
     ]

@@ -2,45 +2,46 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Bremer 2002, fig. 1",
+            "label": "Doyle 2013, fig. 1.1",
             "primaryPhylogenyCitation": {
                 "type": "article",
-                "title": "Gondwanan evolution of the grass alliance of families (Poales).",
-                "year": 2002,
+                "title": "Phylogenetic analyses and morphological innovations in land plants.",
+                "year": 2013,
                 "authors": [
                     {
-                        "name": "K. Bremer",
+                        "name": "J. A. Doyle",
                         "alternate": [
-                            "Bremer, K."
+                            "Doyle, J. A."
                         ],
-                        "firstname": "K.",
-                        "lastname": "Bremer"
+                        "firstname": "J.",
+                        "lastname": "Doyle",
+                        "middlename": "A."
                     }
                 ],
                 "editors": [],
                 "series_editors": [],
-                "figure": "1",
+                "figure": "1.1",
                 "identifier": [
                     {
                         "type": "doi",
-                        "id": "10.1111/j.0014-3820.2002.tb01451.x"
+                        "id": "10.1002/9781119312994.apr0486"
                     }
                 ],
                 "link": [],
                 "journal": {
-                    "name": "Evolution",
-                    "volume": "56",
+                    "name": "Annual Review of Plant Biology",
+                    "volume": "45",
                     "identifier": []
                 }
             },
-            "newick": "(Calectasia, \n\n(\n(Spathanthus, (Rapatea, (Schoenocephalium, \n(Kunhardtia, Stegolepis)))),\n\n(\n((Sparganium, Typha), \n(Tillandsia, Hechtia, \n(Puya, Catopsis, (Aechmea, Ananas)))),\n\n(\n(Prionium, Thurnia),\n(Luzula, (Juncus, (Distichia, \n(Marsippospermum, Rostkovia)))),\n\n((Coleochola, Cyperus),\n((Lepironia, (Chorizandra, Chrysithrix)),\n(Mapania, (Hypolytrum_bullatum, Hypolytrum_nemorum)))),\n\n((\n((Abolboda, Orectanthe), \n(Xyris_capensis, Xyris_involucrata)), \n(Mesanthemum, \n((Eriocaulon, Lachnocaulon), \n(Syngonathus, Paepalanthus, Tonina)))),\n(\n(Anarthria, (Hopkinsia, Lyginia), \n((Elegia, Restio), \n((Eurychorda, Dapsilanthus),\n(Lepyrodia, Calorophus), \n(Sporadanthus, Centrolepis)))),\n\n(Flagellaria, \n(Joinvillea, \n\n((Ecdeiocolea, Georgeantha), \n\n((Anomochloa, Streptochaeta),\n\n(Pharus, \n\n((Guaduella, Puelia), \n\n((Bambusa, Oryza), (Arundo, Zea))))))))))))))"
+            "newick": "(Glaucophytes, (Rhodophytes, (Chlorophytes, (Mesostigma, \n(Chlorokybus, (Klebsormidiales, (Zygnematales, \n(Coleochaetales, (Charales, (Liverworts, (Mosses, \n(Hornworts, (Homeophyton, (Alagophyton, (Rhynia, \n(\n(((((((Isoetes, Lepidodendrales), Selaginella), Lycopodiales), \nAsteroxylon), Zosterophylls), Renalia), Cooksonia), \n\n(Psilophyton, \n(((Filicales, Zygopterids), Marattiales, \n(Psilotales, Ophioglossales), Sphenophytes, Cadoxylopsids), \n(Aneurophytes, (Archaeopteris, Seed_plants))))))))))))))))))))"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000085",
-            "regnumId": 85,
+            "clado": "CLADO_0000081",
+            "regnumId": 81,
             "sourcePhylogenyIndex": 0
         }
     ]

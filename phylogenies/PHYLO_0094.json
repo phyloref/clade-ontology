@@ -2,73 +2,67 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Bloch et al. 2007, fig. 4",
+            "label": "Delsuc et al. 2004, fig. 1, 3",
             "primaryPhylogenyCitation": {
                 "type": "article",
-                "title": "New Paleocene skeletons and the relationship of plesiadapiforms to crown-clade primates.",
-                "year": 2007,
+                "title": "Influence of Tertiary paleoenvironmental changes on the diversification of South American mammals: a relaxed molecular study within xenarthrans.",
+                "year": 2004,
                 "authors": [
                     {
-                        "name": "J. I. Bloch",
+                        "name": "F. Delsuc",
                         "alternate": [
-                            "Bloch , J. I."
+                            "Delsuc , F."
                         ],
-                        "firstname": "J.",
-                        "lastname": "Bloch",
-                        "middlename": "I."
+                        "firstname": "F.",
+                        "lastname": "Delsuc"
                     },
                     {
-                        "name": "M. T. Silcox",
+                        "name": "S. Vizcaíno",
                         "alternate": [
-                            "Silcox, M. T."
+                            "Vizcaíno, S."
                         ],
-                        "firstname": "M.",
-                        "lastname": "Silcox",
-                        "middlename": "T."
+                        "firstname": "S.",
+                        "lastname": "Vizcaíno"
                     },
                     {
-                        "name": "D. M. Boyer",
+                        "name": "E. J. P. Douzery",
                         "alternate": [
-                            "Boyer, D. M."
+                            "Douzery, E. J. P."
                         ],
-                        "firstname": "D.",
-                        "lastname": "Boyer",
-                        "middlename": "M."
-                    },
-                    {
-                        "name": "E. J. Sargis",
-                        "alternate": [
-                            "Sargis, E. J."
-                        ],
-                        "firstname": "E.",
-                        "lastname": "Sargis",
-                        "middlename": "J."
+                        "firstname": "E. J.",
+                        "lastname": "Douzery",
+                        "middlename": "P."
                     }
                 ],
                 "editors": [],
                 "series_editors": [],
-                "figure": "4",
+                "figure": "1, 3",
                 "identifier": [
                     {
                         "type": "doi",
-                        "id": "10.1073/pnas.0610579104"
+                        "id": "10.1186/1471-2148-4-11"
                     }
                 ],
                 "link": [],
                 "journal": {
-                    "name": "Proceedings of the National Academy of Sciences",
-                    "volume": "104",
+                    "name": "BMC Evolutionary Biology",
+                    "volume": "4",
                     "identifier": []
                 }
             },
-            "newick": "(((Dermoptera, Plagiomenidae), Scandentia), \n\n(Purgatorius, (Micromomyidae, ((Berruvius, Microsyopidae),\n((Palaechthon, Paromomyidae),\n\n((((Plesiadapidae, Carpolestidae), Saxonellidae), Chronolestes),\n\n(Altiatlasius, \n\n((Altanius, Adapoidea), Omomyoidea))))))))"
+            "newick": "(\n((Elephas, (Dugong, Procavia)), \n(Orycteropus, (Macroscelidae, (Amblysomus, Echinops)))),\n\n(\n(((Bradypus, Choloepus), (Cyclopes, (Myrmecophaga, Tamandua))),\n((Dasypus_kappleri, Dasypus_novemcinctus), \n((Priodontes, (Cabassous, Tolypeutes)), \n(Chaetophractus, (Euphractus, Zaedyus))))),\n\n(\n(Tupaia, (Homo, (Cynocephalus, (Lepus, \n((Aplodontia, Sciuridae), \n(Hystricidae, (Mus, Rattus))))))),\n\n((Erinaceus, Scalopus), \n(((Tonatia, (Myotis, Tadarida)), \n((Cynopterus, Pteropus), (Hipposideros, Megaderma))),\n(((Equus, Rhinocerotidae), (Felis, Manis)), \n(Lama, (Sus, (Bos, (Hippopotamus, Physeter))))))))))"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000258",
-            "regnumId": 258,
+            "clado": "CLADO_0000256",
+            "regnumId": 256,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000257",
+            "regnumId": 257,
             "sourcePhylogenyIndex": 0
         }
     ]

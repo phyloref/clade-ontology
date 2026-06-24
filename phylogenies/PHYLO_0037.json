@@ -2,39 +2,145 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Kluge 1991, fig. 4",
+            "label": "Sierra et al. 2016, fig. 1",
             "primaryPhylogenyCitation": {
-                "type": "book_section",
-                "title": "Boine snake phylogeny and research cycles.",
-                "section_title": "Misc. Publ. Mus. Zool.",
-                "year": 1991,
+                "type": "article",
+                "title": "Evolutionary origins of rhizarian parasites.",
+                "year": 2016,
                 "authors": [
                     {
-                        "name": "A. G. Kluge",
+                        "name": "R. Sierra",
                         "alternate": [
-                            "Kluge, A. G."
+                            "Sierra , R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Sierra"
+                    },
+                    {
+                        "name": "S. J. Cañas-Duarte",
+                        "alternate": [
+                            "Cañas-Duarte, S. J."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Cañas-Duarte",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "F. Burki",
+                        "alternate": [
+                            "Burki, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Burki"
+                    },
+                    {
+                        "name": "A. Schwelm",
+                        "alternate": [
+                            "Schwelm, A."
                         ],
                         "firstname": "A.",
-                        "lastname": "Kluge",
-                        "middlename": "G."
+                        "lastname": "Schwelm"
+                    },
+                    {
+                        "name": "J. Fogelqvist",
+                        "alternate": [
+                            "Fogelqvist, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Fogelqvist"
+                    },
+                    {
+                        "name": "C. Dixelius",
+                        "alternate": [
+                            "Dixelius, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Dixelius"
+                    },
+                    {
+                        "name": "L. N. González-García",
+                        "alternate": [
+                            "González-García, L. N."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "González-García",
+                        "middlename": "N."
+                    },
+                    {
+                        "name": "G. H. Gile",
+                        "alternate": [
+                            "Gile, G. H."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Gile",
+                        "middlename": "H."
+                    },
+                    {
+                        "name": "C. H. Slamovits",
+                        "alternate": [
+                            "Slamovits, C. H."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Slamovits",
+                        "middlename": "H."
+                    },
+                    {
+                        "name": "C. Klopp",
+                        "alternate": [
+                            "Klopp, C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Klopp"
+                    },
+                    {
+                        "name": "S. Restrepo",
+                        "alternate": [
+                            "Restrepo, S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Restrepo"
+                    },
+                    {
+                        "name": "I. Arzul",
+                        "alternate": [
+                            "Arzul, I."
+                        ],
+                        "firstname": "I.",
+                        "lastname": "Arzul"
+                    },
+                    {
+                        "name": "J. Powlowki",
+                        "alternate": [
+                            "Powlowki, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Powlowki"
                     }
                 ],
                 "editors": [],
                 "series_editors": [],
-                "publisher": "Univ. Mich.",
-                "pages": "1-58",
-                "figure": "4",
-                "identifier": [],
-                "link": []
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1093/molbev/msv340"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Biological Evolution",
+                    "volume": "33",
+                    "identifier": []
+                }
             },
-            "newick": "(Scolecophidia, Dinilysia, (Anilius, (Cylindrophis, uropeltines)),\nXenopeltis, Loxocemus, (erycines, (pythonines, boines)), \n((Ungaliophis, Exiliboa), (Tropidophis, Trachyboa)), \n(Bolyeria, Casarea), Acrochordus, higher_snakes)"
+            "newick": "(((((((((((Nonionellina_sp., Globobulimina_turgida), \n\n(Elphidium_margaritaceum, Bulimina_marginata)),\n\nAmmonia_sp),\n\nReticulomyxa_filosa), \n\n(Collozoum_sp, Spongosphaera_streptacantha)),\n\n((Phyllostaurus_siculus, Amphilonche_elongata), \nAstrolonche_serrata)), \n\n(((Bonamia_ostreae, Minchinia_chitonis),\nMikrocytos_mackini), \n(Gromia_sphaerica, Filoreta_sp))),\n\n(((Paracercomonas_marina, Guttulinopsis_vulgaris), \nBigelowiella_natans), Aulacantha_scolymantha)),\n\n(((((Plasmodium_falciparum, Theileria_annulata), \n(Neospora_caninum, Toxoplasma_gondii)), \nCryptosporidium_hominis), \n(((Symbiodinium_sp, Karlodinium_micrum), \nOxyrrhis_marina), Perkinsus_marinus)), \n\n((Ichthyophthirius_multifiliis, Tetrahymena_thermophila), \nParamecium_tetraurelia))), \n\n(((((((Phaeodactylum_tricornutum, Fragilariopsis_cylindrus),\nThalassiosira_pseudonana), \n(Pseudochattonella_farcimen, Aurococcus_anophagefferens)),\n(Nannochloropsis_gaditana, Ectocarpus_siliculosus)),\n\n((Pythium_arrhenomanes, Phytophthora_sp), Saprolegnia_parasitica)), \n\n(Aurantiochytrium_limacinum, Schizochytrium_aggregatum)), \n\nBlastocystis_hominis)),\n\n((((Oryza_sativa, Sorghum_bicolor), \n(Populus_trichocarpa, Arabidopsis_thaliana)), \nPhyscomitrella_patens), \n((Coccomyxa_sp, Volvox_carteri), Micromonas_sp)))\n\n"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000096",
-            "regnumId": 96,
+            "clado": "CLADO_0000090",
+            "regnumId": 90,
             "sourcePhylogenyIndex": 0
         }
     ]

@@ -2,55 +2,81 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Donoghue & Smith 2001, fig. 8B",
+            "label": "Rai et al. 2008, fig. 2",
             "primaryPhylogenyCitation": {
                 "type": "article",
-                "title": "The anatomy of Turinia pagei (Powrie), and the phylogenetic status of the Thelodonti.",
-                "year": 2001,
+                "title": "Inference of higher-order conifer relationships from a multi-locus plastid data set.",
+                "year": 2008,
                 "authors": [
                     {
-                        "name": "J. P. C. Donoghue",
+                        "name": "H. S. Rai",
                         "alternate": [
-                            "Donoghue, J. P. C."
+                            "Rai, H. S."
                         ],
-                        "firstname": "J.",
-                        "lastname": "Donoghue",
-                        "middlename": "P. C."
+                        "firstname": "H.",
+                        "lastname": "Rai",
+                        "middlename": "S."
                     },
                     {
-                        "name": "M. P. Smith",
+                        "name": "P. A. Reeves",
                         "alternate": [
-                            "Smith, M. P."
+                            "Reeves, P. A."
                         ],
-                        "firstname": "M.",
-                        "lastname": "Smith",
-                        "middlename": "P."
+                        "firstname": "P.",
+                        "lastname": "Reeves",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "R. Peakall",
+                        "alternate": [
+                            "Peakall, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Peakall"
+                    },
+                    {
+                        "name": "R. G. Olmstead",
+                        "alternate": [
+                            "Olmstead, R. G."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Olmstead",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "S. W. Graham",
+                        "alternate": [
+                            "Graham, S. W."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Graham",
+                        "middlename": "W."
                     }
                 ],
                 "editors": [],
                 "series_editors": [],
-                "figure": "8B",
+                "figure": "2",
                 "identifier": [
                     {
                         "type": "doi",
-                        "id": "10.1017/S026359330000002X"
+                        "id": "10.1139/B08-062"
                     }
                 ],
                 "link": [],
                 "journal": {
-                    "name": "Transactions of the Royal Society of Edinburgh: Earth Sciences",
-                    "volume": "92",
+                    "name": "Botany",
+                    "volume": "86",
                     "identifier": []
                 }
             },
-            "newick": "(Temnospondyli, (Embolomeri, (Seymouriamorpha, (Reptiliomorpha, \n((Adelogyrinidae, Aistopoda), \n(Urocordylidae, (Scincosauridae, Keraterpetonidae)), \n(Microbrachis, (Pantylus, (Brachystelechidae, \n(Lysorophia, \n((\n(Karaurus, \n(Sirenidae, (Cryptobranchidae, Hynobiidae))),\n(Rhinatrematidae, Ichthyophiidae)), \n(Ascaphus, (Leiopelma, Discoglossus))))))))))))"
+            "newick": "(((((((((((((Juniperus, Thuja), Widdringtonia), Taxodium), Metasequoia), Cunninghamia),\n\n((Taxus, Torreya), Cephalotaxus)), \n\nSciadopitys),\n\n((((Agathis_australis, Agathis_robusta), Wollemia), \n(Araucaria_bidwillii, Araucaria_cunninghamii)), \n((Podocarpus, Saxegothaea), Phyllocladus))),\n\n((Abies, Cedrus), (Pinus, Pseudotsuga))),\n\n(((((Illicium, Austrobaileya), Amborella), (Cabomba, Nymphaea)), \n(Cycas, Dioon)), Ginkgo)), \n\n((Welwitschia, Gnetum), Ephedra)),\n\n(Adiantum, Psilotum)),\n\n((Marchantia, Psyscomitrella), Anthoceros))\n\n\n\n"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000253",
-            "regnumId": 253,
+            "clado": "CLADO_0000249",
+            "regnumId": 249,
             "sourcePhylogenyIndex": 0
         }
     ]

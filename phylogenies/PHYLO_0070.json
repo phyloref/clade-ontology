@@ -2,95 +2,92 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Aguinaldo et al. 1997, fig. 2",
+            "label": "Gauthier et al. 1988, fig. 3",
             "primaryPhylogenyCitation": {
-                "type": "article",
-                "title": "Evidence for a clade of nematodes, arthropods and other moulting animals.",
-                "year": 1997,
+                "type": "book_section",
+                "title": "A phylogenetic analysis of Lepidosauromorpha. In the phylogenetic relationships of the lizard families.",
+                "section_title": "The phylogenetic relationships of the lizard families.",
+                "year": 1988,
                 "authors": [
                     {
-                        "name": "A. M. A. Aguinaldo",
+                        "name": "J. Gauthier",
                         "alternate": [
-                            "Aguinaldo, A. M. A."
-                        ],
-                        "firstname": "A. M.",
-                        "lastname": "Aguinaldo",
-                        "middlename": "A."
-                    },
-                    {
-                        "name": "J. M. Tuberville",
-                        "alternate": [
-                            "Tuberville, J. M."
+                            "Gauthier, J."
                         ],
                         "firstname": "J.",
-                        "lastname": "Tuberville",
-                        "middlename": "M."
+                        "lastname": "Gauthier"
                     },
                     {
-                        "name": "L. S. Linford",
+                        "name": "K. de Queiroz",
                         "alternate": [
-                            "Linford, L. S."
+                            "de Queiroz, K."
                         ],
-                        "firstname": "L.",
-                        "lastname": "Linford",
-                        "middlename": "S."
+                        "firstname": "K.",
+                        "lastname": "de Queiroz"
                     },
                     {
-                        "name": "M. C. Rivera",
+                        "name": "R. Estes",
                         "alternate": [
-                            "Rivera, M. C."
-                        ],
-                        "firstname": "M.",
-                        "lastname": "Rivera",
-                        "middlename": "C."
-                    },
-                    {
-                        "name": "J. R. Garey",
-                        "alternate": [
-                            "Garey, J. R."
-                        ],
-                        "firstname": "J.",
-                        "lastname": "Garey",
-                        "middlename": "R."
-                    },
-                    {
-                        "name": "R. A. Raff",
-                        "alternate": [
-                            "Raff, R. A."
+                            "Estes, R."
                         ],
                         "firstname": "R.",
-                        "lastname": "Raff",
-                        "middlename": "A."
-                    },
-                    {
-                        "name": "J. A. Lake",
-                        "alternate": [
-                            "Lake, J. A."
-                        ],
-                        "firstname": "J.",
-                        "lastname": "Lake",
-                        "middlename": "A."
+                        "lastname": "Estes"
                     }
                 ],
-                "editors": [],
+                "editors": [
+                    {
+                        "name": "R. Estes",
+                        "alternate": [
+                            "Estes, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Estes"
+                    },
+                    {
+                        "name": "G. Pregill",
+                        "alternate": [
+                            "Pregill, G."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Pregill"
+                    }
+                ],
                 "series_editors": [],
-                "figure": "2",
+                "publisher": "Stanford University Press",
+                "city": "Palo Alto",
+                "pages": "15-98",
+                "figure": "3",
                 "identifier": [],
-                "link": [],
-                "journal": {
-                    "name": "Nature",
-                    "volume": "387",
-                    "identifier": []
-                }
+                "link": []
             },
-            "newick": "(((((Kinorhynch, Priapulid), \n\n(Nematomorph, (Onychophoran, (Nematode, (Tardigrade, Arthropod_Crustacean), Arthropod_Insect)), \n(Arthropod_Myriapod, Arthropod_Chelicerate))),\n\n(Rotifer, (Oligochaete, (Brachiopod, (Polychaete, Mollusc))))), \n\nEchinoderm), Cnidarian)"
+            "newick": "((((((((((((Ornithosuchia, Pseudosuchia), Proterochampsidae),\nErythrosuchidae), Proterosuchidae), Protorosauria), Choristodera), Trilophosaurus), Rhynchosauria),\nLepidosauromorpha), Araeoscelidia), (Testudines, Captorhinidae)),\n(((((((((((((((Mammalia, Morganucodontidae), Tritylodontidae), Exaeretodon), Diademodon), Thrinaxodon),\nProcynosuchus), Therocephalia), Dicynodontia), Gorgonopsia), Dinocephalia), Biarmosuchia), Sphenacodontinae),\nEdaphosaurus), Ophiacodon), Casea))\n\n"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000190",
-            "regnumId": 190,
+            "clado": "CLADO_0000173",
+            "regnumId": 173,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000174",
+            "regnumId": 174,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000219",
+            "regnumId": 219,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000224",
+            "regnumId": 224,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000226",
+            "regnumId": 226,
             "sourcePhylogenyIndex": 0
         }
     ]

@@ -2,11 +2,11 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Sumrall & Gahn 2006, fig. 3.1",
+            "label": "Sumrall et al. 2013, fig. 2A",
             "primaryPhylogenyCitation": {
                 "type": "article",
-                "title": "Morphological and systematic reinterpretation of two enigmatic edrioasteroids (Echinodermata) from Canada.",
-                "year": 2006,
+                "title": "The first report of South American edrioasteroids and the paleoecology and ontogeny of rhenopyrgid echinoderms.",
+                "year": 2013,
                 "authors": [
                     {
                         "name": "C. D. Sumrall",
@@ -18,49 +18,56 @@
                         "middlename": "D."
                     },
                     {
-                        "name": "F. J. Gahn",
+                        "name": "S. Heredia",
                         "alternate": [
-                            "Gahn, F. J."
+                            "Heredia, S."
                         ],
-                        "firstname": "F.",
-                        "lastname": "Gahn",
-                        "middlename": "J."
+                        "firstname": "S.",
+                        "lastname": "Heredia"
+                    },
+                    {
+                        "name": "C. M. Rodriguez",
+                        "alternate": [
+                            "Rodriguez, C. M."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Rodriguez",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "A. I. Mestre",
+                        "alternate": [
+                            "Mestre, A. I."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Mestre",
+                        "middlename": "I."
                     }
                 ],
                 "editors": [],
                 "series_editors": [],
-                "figure": "3.1",
+                "figure": "2A",
                 "identifier": [
                     {
                         "type": "doi",
-                        "id": "10.1139/e05-114"
+                        "id": "10.4202/app.2011.0120"
                     }
                 ],
                 "link": [],
                 "journal": {
-                    "name": "Can. Jour. Earth Sci.",
-                    "volume": "43",
+                    "name": "Acta Palaeontol. Pol.",
+                    "volume": "58",
                     "identifier": []
                 }
             },
-            "newick": "(((((((((Carneyella, Foerstediscus), Isorophus, Isorophusella), Agelacrinites, \nThresherodiscus), Neoisorophusella), Postibulla), Lepidodiscus, Ulrichidiscus),\nCooperidiscus), Clavidiscus), (Lispidecodus, Giganticlavus, Hypsiclavus))"
+            "newick": "(Kailidiscus, \n((Paredriophus, (Cyathotheca, Lampteroblastus, Rhenopyrgus)),\n((Isorophus, Carneyella), Argodiscus)))"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000232",
-            "regnumId": 232,
-            "sourcePhylogenyIndex": 0
-        },
-        {
-            "clado": "CLADO_0000233",
-            "regnumId": 233,
-            "sourcePhylogenyIndex": 0
-        },
-        {
-            "clado": "CLADO_0000245",
-            "regnumId": 245,
+            "clado": "CLADO_0000229",
+            "regnumId": 229,
             "sourcePhylogenyIndex": 0
         }
     ]

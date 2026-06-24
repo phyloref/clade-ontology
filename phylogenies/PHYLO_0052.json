@@ -2,36 +2,12 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Le Gall et al. 2010, fig. 1",
+            "label": "Saunders & Bailey 1997, fig. 1",
             "primaryPhylogenyCitation": {
                 "type": "article",
-                "title": "Multigene phylogenetic analyses support recognition of the Sporolithales ord. nov.",
-                "year": 2010,
+                "title": "Phylogenesis of pit-plug-associated features in the Rhodophyta: inferences from molecular systematic data.",
+                "year": 1997,
                 "authors": [
-                    {
-                        "name": "L. Le Gall",
-                        "alternate": [
-                            "Le Gall, L."
-                        ],
-                        "firstname": "L.",
-                        "lastname": "Le Gall"
-                    },
-                    {
-                        "name": "C. Payri",
-                        "alternate": [
-                            "Payri, C."
-                        ],
-                        "firstname": "C.",
-                        "lastname": "Payri"
-                    },
-                    {
-                        "name": "L. Bittner",
-                        "alternate": [
-                            "Bittner, L."
-                        ],
-                        "firstname": "L.",
-                        "lastname": "Bittner"
-                    },
                     {
                         "name": "G. W. Saunders",
                         "alternate": [
@@ -40,6 +16,15 @@
                         "firstname": "G.",
                         "lastname": "Saunders",
                         "middlename": "W."
+                    },
+                    {
+                        "name": "J. C. Bailey",
+                        "alternate": [
+                            "Bailey, J. C."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Bailey",
+                        "middlename": "C."
                     }
                 ],
                 "editors": [],
@@ -48,29 +33,24 @@
                 "identifier": [
                     {
                         "type": "doi",
-                        "id": "10.1016/j.ympev.2009.05.026"
+                        "id": "10.1139/b97-858"
                     }
                 ],
                 "link": [],
                 "journal": {
-                    "name": "Mol. Phylogenet. Evol.",
-                    "volume": "54",
+                    "name": "Can. J. Bot.",
+                    "volume": "75",
                     "identifier": []
                 }
             },
-            "newick": "((Camelidae:11.0,((Suidae:1.0,Tayassuidae:1.0):9.0,((Hippopotamidae:8.0,((((Balaenopteridae:1.0,Eschrichtiidae:1.0):1.0,Neobalaenidae:2.0):1.0,Balaenidae:3.0):4.0,(((((Delphinidae:2.0,(Monodontidae:1.0,Phocoenidae:1.0):1.0):1.0,(Iniidae:1.0,Pontoporiidae:1.0):2.0):1.0,Ziphiidae:4.0):1.0,Platanistidae:5.0):1.0,(Kogiidae:1.0,Physeteridae:1.0):5.0):1.0):1.0):1.0,(Tragulidae:4.0,(((Bovidae:1.0,Moschidae:1.0):1.0,Cervidae:2.0):1.0,(Giraffidae:1.0,Antilocapridae:1.0):2.0):1.0):5.0):1.0):1.0):1.0,(Equidae:2.0,(Rhinocerotidae:1.0,Tapiridae:1.0):1.0):10.0);"
+            "newick": "(Stylonema_alsidii, Erythrocladia_sp., (Porphyra_umbilicalis, \n(Dixoniella_grisea, (Hildenbrandia_rubra, \n\n(Ahnfeltia_plicata, ((Rhodogorgon_carriebowensis, \n((Cheilosporum_sagittatum, (Corallina_officinalis, Bossiella_orbigniana)),\n(Amphiroa_fragilissima, Metagoniolithon_chara)),\n(Lothothamnion_glaciale, (Phymatolithon_laevigatum, Clathromorphum_compactum))), \n\n((Psilosiphon_scoparium, Nothocladus_nodosus), \n(((Audouinella_dasyae, Rhodochorton_purpureum), \n(Rhodothamniella_floridula, (Meiodiscus_spetsbergensis, \n(Rhodophysema_elegans, Palmaria_palmata)))),\n(Nemalion_helminthoides, Galaxaura_marginata)))), \n\n(\n((Cermium_macilentum, (Crouania_attenuata, \n((Anotrichium_furcellatum, Griffithsia_monilis), \n(Dasya_baillouviana, (Phycodrys_rubens, Rhodomela_confervoides))))), \n\n((Curdiea_flabellata, (Gracilaria_tikvahiae, Gracilariopsis_lemaneiformis)),\n\n((((Rhodymenia_linearis, Erythrocolon_podagricum), \n(Champia_affinis, (Gloioderma_fruticulosa, \n(Lomentaria_australis, Lomentaria_baileyana)))), \n\n(Sebdenia_flabellata, (Cryptonemia_undulata, Grateloupia_filiciana))),\n\n((Plocamiocolax_pulvinata, Plocamium_angustum),\n\n((Bonnemaisonia_hamifera, (Schizymenia_dubyi, \n(Gelidiella_acerosa, ((Gelidium_vagum, Gelidium_pusillum), (Pterocladia_lucida, Ptilophora_pinnatifida))))),\n\n(((Mastocarpus_stellatus, Schottera_nicaeensis),\n(Chondrus_crispus, Sarcothalia_crassifolia)), \n\n((Callophyllis_rangiferina, (Dasyphloea_insignis, Farlowia_mollis)),\n\n(((Sphaerococcus_coronopifolius, (Phacelocarpus_peperocarpos, Nizymenia_australis)), \n(Endocladia_muricata, Gloiopeltis_furcata)), \n\n((Furcellaria_lumbricalis, Areschougia_congesta), \n(Mychodea_carnosa, (Kappaphycus_alvarezii, Eucheuma_denticulatum)))))))))))))))))"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000132",
-            "regnumId": 132,
-            "sourcePhylogenyIndex": 0
-        },
-        {
-            "clado": "CLADO_0000261",
-            "regnumId": 261,
+            "clado": "CLADO_0000130",
+            "regnumId": 130,
             "sourcePhylogenyIndex": 0
         }
     ]

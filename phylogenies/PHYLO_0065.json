@@ -2,77 +2,130 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "France et al. 1996, fig. 3",
+            "label": "Wang et al. 2009, fig. 1",
             "primaryPhylogenyCitation": {
                 "type": "article",
-                "title": "DNA sequence variation of mitochondrial large-subunit rRNA provides support for a two-sublass organization of the Anthozoa (Cnidaria).",
-                "year": 1996,
+                "title": "Rosid radiation and the rapid rise of angiosperm-dominated forests.",
+                "year": 2009,
                 "authors": [
                     {
-                        "name": "S. C. France",
+                        "name": "H. C. Wang",
                         "alternate": [
-                            "France, S. C."
+                            "Wang, H. C."
                         ],
-                        "firstname": "S.",
-                        "lastname": "France",
+                        "firstname": "H.",
+                        "lastname": "Wang",
                         "middlename": "C."
                     },
                     {
-                        "name": "P. E. Rosel",
+                        "name": "M. J. Moore",
                         "alternate": [
-                            "Rosel, P. E."
+                            "Moore, M. J."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Moore",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "P. S. Solis",
+                        "alternate": [
+                            "Solis, P. S."
                         ],
                         "firstname": "P.",
-                        "lastname": "Rosel",
-                        "middlename": "E."
-                    },
-                    {
-                        "name": "J. E. Agenbroad",
-                        "alternate": [
-                            "Agenbroad, J. E."
-                        ],
-                        "firstname": "J.",
-                        "lastname": "Agenbroad",
-                        "middlename": "E."
-                    },
-                    {
-                        "name": "L. S. Mullineaux",
-                        "alternate": [
-                            "Mullineaux, L. S."
-                        ],
-                        "firstname": "L.",
-                        "lastname": "Mullineaux",
+                        "lastname": "Solis",
                         "middlename": "S."
                     },
                     {
-                        "name": "T. D. Kocher",
+                        "name": "C. D. Bell",
                         "alternate": [
-                            "Kocher, T. D."
+                            "Bell, C. D."
                         ],
-                        "firstname": "T.",
-                        "lastname": "Kocher",
+                        "firstname": "C.",
+                        "lastname": "Bell",
                         "middlename": "D."
+                    },
+                    {
+                        "name": "S. F. Brockingon",
+                        "alternate": [
+                            "Brockingon, S. F."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Brockingon",
+                        "middlename": "F."
+                    },
+                    {
+                        "name": "R. Alexandre",
+                        "alternate": [
+                            "Alexandre, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Alexandre"
+                    },
+                    {
+                        "name": "C. C. Davis",
+                        "alternate": [
+                            "Davis, C. C."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Davis",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "M. Latvis",
+                        "alternate": [
+                            "Latvis, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Latvis"
+                    },
+                    {
+                        "name": "S. R. Manchester",
+                        "alternate": [
+                            "Manchester, S. R."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Manchester",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "D. E. Soltis",
+                        "alternate": [
+                            "Soltis, D. E."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Soltis",
+                        "middlename": "E."
                     }
                 ],
                 "editors": [],
                 "series_editors": [],
-                "figure": "3",
-                "identifier": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1073/pnas.0813376106"
+                    }
+                ],
                 "link": [],
                 "journal": {
-                    "name": "Molecular Marine Biology and Biotechnology",
-                    "volume": "5",
+                    "name": "Proceedings of the National Academy of Science U. S. A.",
+                    "volume": "106",
                     "identifier": []
                 }
             },
-            "newick": "(((((Anthotheria_nuttingi, Lophogorgia_chilensis, Protodendron_sp., Muricea_fructicosa, Acanthogorgia_sp.),\n(Isidella_sp., Lepidisis_olapa, Isidid_n.sp.A),\n(Corallum_ducale, Paragorgia_sp., Corallum n.sp),\nIsidid_n.sp.B.,\n(Narella_bowersi, Narella_n.sp), \nChrysogoria_chyseis), Renilla_muelleri),\n\n((Cerianthus_borealis, Ceriantheopsis_americanus), \n(((Corynactis_california, Enallopsammia_rostrata), Favia_fragum),\n(((Antipath_sp.B, Antipath_sp.A), Stichopathes_spiessi), (Anthopleura_eleganrissima, (\"Orange\"_anemone, Hormathiid_anemone)))))),\n\n(((Cassiopea_sp., Aurella_aurita), (Liriope_tetraphylla, Obelia_dichotoma))))"
+            "newick": "((((((((((((((Ailanthus, Swietenia), Citrus), Cupaniopsis), \n((Bursera, Schinus), Nitraria)), \n\n((\n((((Anisoptera, Helianthemum), Bixa), \n(Gossypium, Theymelaea)), Neurada), \n\n((((((Arabidopsis, Capparis), Reseda), Batis), Floerkea), Carica), Tropaeolum)),\nTapiscia)), \n\nPicramnia), \n\n((Aphloia, (Ixerba, Strasburgeria)), \n((Crossosoma, Stachyurus), Staphylea))),\n\n(\n(((Clidemia, (Crypteronia, Penaea)),  \n((Eucalyptus, Myrtus), Qualea)),\n((Lythrum, Oenothera), Terminalia)), \n\n((Hypseocharis, Pelargonium), (Melianthus, (Viviana, Wendtia))))), \n\n(((\n((((Albizia, (Glycine, (Lotus, Medicago))), (Polygala, Securidaca)),\n\n(Sytlobasium, Suriana)), Quillaja), \n\n((((Alnus, (Juglans, Myrica)), Quercus), \n(Anisophyllea, (((Begonia, Datisca), Cucumis), Coriaria))),\n\n(((((Cannanis, Celtis), ((Ficus, Morus), Urtica)), Zelkova), \n(Ceanothus, Elaeagnus)), Spiraea))), \n\n(((((((Atuna, Hirtella), Drypetes), \n(((Byrsonima, Elatine), Manihot), \n((((Clusia, Hypericum), Irvingia), Ochna), \n(((Hydnocarpus_heterophylla, Hydnocarpus_sp.), (Hymenanthera, Leonia)), Populus))))),\n\n(Bruguiera, Phyllanthus)), (Humiria, Reinwardtia)), \n\n((Brunellia, ((Cephalotus, Elaeocarpus), Eucryphia)), (Connarus, Oxalis))), \n\n((((Brexia, Euonymus), Parnassia), Ruptiliocarpon), Hua)), \n\n((Bulnesia, Guaiacum), Krameria))), \n\n(Leea, Vitis)), \n\n((Cercidiphyllum, (Hamamelis, Liquidambar)), Heuchera)), \n\n(Berberiopsis, ((Cornus, (Nicotiana, Panax)), (Plumbago, Spinacia)))),\n\nGunnera), \nPlatanus, Trochodendron)\n\n\n"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000164",
-            "regnumId": 164,
+            "clado": "CLADO_0000159",
+            "regnumId": 159,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000161",
+            "regnumId": 161,
             "sourcePhylogenyIndex": 0
         }
     ]

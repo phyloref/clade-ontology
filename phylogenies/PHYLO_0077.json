@@ -2,27 +2,85 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Borchiellini et al. 2004, fig. 2",
+            "label": "Pick et al. 2010, fig. 1",
             "primaryPhylogenyCitation": {
                 "type": "article",
-                "title": "Molecular phylogeny of Demospongiae: implications for classification and scenarios of character evolution.",
-                "year": 2004,
+                "title": "Improved phylogenomic taxon sampling noticeably affects nonbilaterian relationships.",
+                "year": 2010,
                 "authors": [
                     {
-                        "name": "C. Borchiellini",
+                        "name": "K. S. Pick",
                         "alternate": [
-                            "Borchiellini , C."
+                            "Pick, K. S."
                         ],
-                        "firstname": "C.",
-                        "lastname": "Borchiellini"
+                        "firstname": "K.",
+                        "lastname": "Pick",
+                        "middlename": "S."
                     },
                     {
-                        "name": "C. Chombard",
+                        "name": "H. Philippe",
                         "alternate": [
-                            "Chombard, C."
+                            "Philippe, H."
                         ],
-                        "firstname": "C.",
-                        "lastname": "Chombard"
+                        "firstname": "H.",
+                        "lastname": "Philippe"
+                    },
+                    {
+                        "name": "F. Schreiber",
+                        "alternate": [
+                            "Schreiber, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Schreiber"
+                    },
+                    {
+                        "name": "D. Erpenbeck",
+                        "alternate": [
+                            "Erpenbeck, D."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Erpenbeck"
+                    },
+                    {
+                        "name": "D. J. Jackson",
+                        "alternate": [
+                            "Jackson, D. J."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Jackson",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "P. Wrede",
+                        "alternate": [
+                            "Wrede, P."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Wrede"
+                    },
+                    {
+                        "name": "M. Wiens",
+                        "alternate": [
+                            "Wiens, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Wiens"
+                    },
+                    {
+                        "name": "A. Alie",
+                        "alternate": [
+                            "Alie, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Alie"
+                    },
+                    {
+                        "name": "B. Morgenstern",
+                        "alternate": [
+                            "Morgenstern, B."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Morgenstern"
                     },
                     {
                         "name": "M. Manuel",
@@ -33,54 +91,38 @@
                         "lastname": "Manuel"
                     },
                     {
-                        "name": "E. Alivon",
+                        "name": "G. Worheide",
                         "alternate": [
-                            "Alivon, E."
+                            "Worheide, G."
                         ],
-                        "firstname": "E.",
-                        "lastname": "Alivon"
-                    },
-                    {
-                        "name": "J. Vacelet",
-                        "alternate": [
-                            "Vacelet, J."
-                        ],
-                        "firstname": "J.",
-                        "lastname": "Vacelet"
-                    },
-                    {
-                        "name": "N. Boury-Esnault",
-                        "alternate": [
-                            "Boury-Esnault, N."
-                        ],
-                        "firstname": "N.",
-                        "lastname": "Boury-Esnault"
+                        "firstname": "G.",
+                        "lastname": "Worheide"
                     }
                 ],
                 "editors": [],
                 "series_editors": [],
-                "figure": "2",
+                "figure": "1",
                 "identifier": [
                     {
                         "type": "doi",
-                        "id": "10.1016/j.ympev.2004.02.021"
+                        "id": "10.1093/molbev/msq089"
                     }
                 ],
                 "link": [],
                 "journal": {
-                    "name": "Molecular Phylogenetics and Evolution",
-                    "volume": "32",
+                    "name": "Molecular Biology Evolution",
+                    "volume": "27",
                     "identifier": []
                 }
             },
-            "newick": "(Diaphanoeca_grandis, Monosiga_brevicolis,\n\n(\n((Leucosolenia_sp., Petrobiona_massiliana), \n(Leucaltis_clathria, Soleniscus_radovani)),\n\n(((Montastraea_franski, Antipathes_galapagensis), \n(Hydra_circumcincta, Nectopyramis_sp.)),\n((Beroe_ovata, Mnemiopsis_leidyi), Pleurobrachia_bachei)),\n\n(Oscarella_tuberculata, Plakortis_simplex),\n\n(\n((((Spongia_officinalis, Hippospongia_communis), Pleraplysilla_spinifera),\nAplysilla_sulfurea), \n((Aplysina_cavernicola, Hexadella_pruvoti), Chondrosia_reniformis)),\n\n((((((((Microciona_prolifera, Mycale_fibrexilis), \n(Phorbas_tenacior, Crella_elegans)),\n(Spongosorites_genitrix, Suberites_ficus)),\n(Agelas_oroides, Axinella_damicornis)), \n(Dictyonella_incisa, Axinella_polypoides)),\n(Tetilla_japonica, Geodia_cydonium)),\n((Spongilla_lacustris, Eunapinus_fragilis), Ephydatia_muelleri, Clypeatula_cooperensis)),\nHaliclona_mediterranea))))"
+            "newick": "(((((((((((((((Lumbricus_rubellus, Haementeria_depressa), \n(Urechis_caupo, Capitella_sp.)),\nPlatynereis_dumerilii),\nThemiste_lageniformis), \nChaetopterus_sp.), \n((Terebratalia_transcersa, Phoronis_vancouverensis),\n(Cerebratulus_lacteus, Carinoma_mutabilis))),\n\n(((\n((Crassostrea_virginica, Argopecten_irradians), \nMytilus_galloprovincialis), \n\n(Biomphalaria_glabrata, Aplysia_californica)),\nEuprymna_scolopes),\n(Chaetopleura_apiculata, Chaetoderma_nitidulum))), \n\n((((Schmidtea_mediterranea, Dugesia_japonica), \nEchinococcus_granulosus), \nParaplanocera_sp.), Macrostomum_lignano)), \n\n((((\n(((((Acanthoscurria_gomesiana, Boophilus_microplus),\nAnoplodactylus_eroticus), Carcinoscorpius_rotundicauda),\nScutigera_coleoptrata), \n((Litopenaeus_vannamei, Homarus_americanus), \n(Drosophila_melanogaster, Daphnia_pulex))), \nEuperipatoidea_kanangresnsis),\n\n(((Xiphinema_index, Trichinella_spiralis), \nSpinochordodes_tellini), \n(Richtersius_coronifer, Hypsibius_dujardini))),\n\n(Priapulus_caudatus, Echinoderes_horni)))), \n\n((((Saccoglossus_kowalevskii, Ptychordera_flava), \n(Strongylocentrotus_purpuratus, Asterina_pectinifera)),\nXenotubella_bocki), \n\n(((Homo_sapiens, Gallus_gallus), \nCiona_intestinalis), Branchiostoma_floridae))),\n\nTrichoplax_adhaerens),\n\n((\n(((Podocoryne_carnea, Hydractinia_echinata), \nHydra_magnipapillata), Clytia_hemisphaerica), \nCyanea_capillata), \n(((Metridium_senile, Anemonia_viridis), \nNematostella_vectensis), \n(Monastrae_faveolata, Acropora_millepora)))),\n\n((mertensiid_sp., Pleurobrachia_pileus), \nMnemiopsis_leidyi)), \n\n(((((((Lubomirskia_baicalensis, Ephydatia_muelleri), \nPachydictyum_globosum), Suberites_domuncula), \nAmphimedon_queenslandica),\nCarteriospongia_foliascens), \n\n((Heterochone_calyx, Crateromorpha_meyeri), \nOopsacas_minuta)), \n\n(\n(Oscarella_lobularis, Oscarella_carmela), \n(Sycon_raphanus, Leucetta_chagosensis)))),\n\n((Proterospongia_sp., Monosiga_brevicollis), \nMonosiga_ovata))\n\n\n"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000202",
-            "regnumId": 202,
+            "clado": "CLADO_0000201",
+            "regnumId": 201,
             "sourcePhylogenyIndex": 0
         }
     ]

@@ -2,88 +2,87 @@
     "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
-            "label": "Olmstead et al. 2008, fig. 1",
+            "label": "Bremer et al. 1999, fig. 5",
             "primaryPhylogenyCitation": {
                 "type": "article",
-                "title": "A molecular phylogeny and classification of the Solanaceae.",
-                "year": 2008,
+                "title": "More characters or more taxa for a robust phylogeny - Case study from the coffee family (Rubiaceae).",
+                "year": 1999,
                 "authors": [
                     {
-                        "name": "R. G. Olmstead",
+                        "name": "B. Bremer",
                         "alternate": [
-                            "Olmstead , R. G."
+                            "Bremer, B."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Bremer"
+                    },
+                    {
+                        "name": "R. K. Jansen",
+                        "alternate": [
+                            "Jansen, R. K."
                         ],
                         "firstname": "R.",
-                        "lastname": "Olmstead",
-                        "middlename": "G."
+                        "lastname": "Jansen",
+                        "middlename": "K."
                     },
                     {
-                        "name": "L. Bohs",
+                        "name": "B. Oxelman",
                         "alternate": [
-                            "Bohs, L."
+                            "Oxelman, B."
                         ],
-                        "firstname": "L.",
-                        "lastname": "Bohs"
+                        "firstname": "B.",
+                        "lastname": "Oxelman"
                     },
                     {
-                        "name": "H. Abdel Migid",
+                        "name": "M. Backlund",
                         "alternate": [
-                            "Abdel Migid, H."
+                            "Backlund, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Backlund"
+                    },
+                    {
+                        "name": "H. Lantz",
+                        "alternate": [
+                            "Lantz, H."
                         ],
                         "firstname": "H.",
-                        "lastname": "Abdel Migid"
+                        "lastname": "Lantz"
                     },
                     {
-                        "name": "E. Santiago-Valentin",
+                        "name": "K. J. Kim",
                         "alternate": [
-                            "Santiago-Valentin, E."
+                            "Kim, K. J."
                         ],
-                        "firstname": "E.",
-                        "lastname": "Santiago-Valentin"
-                    },
-                    {
-                        "name": "V. F. Garcia",
-                        "alternate": [
-                            "Garcia, V. F."
-                        ],
-                        "firstname": "V.",
-                        "lastname": "Garcia",
-                        "middlename": "F."
-                    },
-                    {
-                        "name": "S. M. Collier",
-                        "alternate": [
-                            "Collier, S. M."
-                        ],
-                        "firstname": "S.",
-                        "lastname": "Collier",
-                        "middlename": "M."
+                        "firstname": "K.",
+                        "lastname": "Kim",
+                        "middlename": "J."
                     }
                 ],
                 "editors": [],
                 "series_editors": [],
-                "figure": "1",
-                "identifier": [],
+                "figure": "5",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "0.1080/106351599260085"
+                    }
+                ],
                 "link": [],
                 "journal": {
-                    "name": "Taxon",
-                    "volume": "57",
+                    "name": "Systematic Biology",
+                    "volume": "48",
                     "identifier": []
                 }
             },
-            "newick": "(((((((((((((((((Solanum.herculeum,Solanum.trisectum),Solanum.aviculare),Solanum.dulcamara,(((((Solanum.melongena,Solanum.torvum),Solanum.pseudocapsicum),Solanum.wendlandii),Solanum.betaceum),Solanum.abutiloides),Solanum.lycopersicum),((Jaltomata.auriculata,Jaltomata.sinuosa),(Jaltomata.procumbens,Jaltomata.grandiflora))),(((((Capsicum.minutiflora,Capsicum.chinense,Capsicum.pubescens,Capsicum.baccatum),Capsicum.rhomboideum),(((Lycianthes.multiflora,Lycianthes.glandulosa),Lycianthes.heteroclita),Lycianthes.shanesii,Lycianthes.biflora)),(((Lycianthes.peduncularis,Lycianthes.ciliolata),Lycianthes.inequilatera),Lycianthes.rantonnei)),(((((((((Physalis.heterophylla,Physalis.peruviana),Physalis.philadephica),Margaranthus.solanaceus),(Chamaesaracha.sordida,Chamaesaracha.coronopus)),Quincula.lobata),Oryctes.nevadensis,(Physalis.alkekengi,Physalis.carpenteri),(Leucophysalis.grandiflora,Leucophysalis.nana),((((Witheringia.meiantha,Witheringia.macrantha),Brachistus.stramonifolius),Witheringia.solanacea),Witheringia.mexicana)),(((Acnistus.arborescens,Iochroma.australe,Eriolarynx.lorentzii,Vassobia.dichotoma),Saracha.punctata,Iochroma.fuchsioides,Iochroma.umbellatum,Dunalia.solanacea),(Larnax.subtriflora,Larnax.sylvarum))),(((Withania.coagulans,Withania.somnifera),Mellissia.begonifolia),(Aureliana.fasciculata,Athenaea.sp.),((Tubocapsicum.anomalum,(Nothocestrum.latifolium,Nothocestrum.longifolium)),Discopodium.penninervum))),((Cuatresia.exiguiflora,Cuatresia.cuneata),Cuatresia.riparia)),(Salpichroa.origanifolia,Nectouxia.formosa))),((Datura.leichhardtii,Datura.stramonium),(Brugmansia.aurea,Brugmansia.sanguinea),Iochroma.cardenasianum)),(Mandragora.officinarum,Mandragora.caulescens)),((((((Markea.panamensis1,Markea.panamensis2),Markea.ulei),Merinthopodium.neuranthum,Juanulloa.mexicana),Dyssochroma.viridiflora),(Solandra.brachycalyx,Solandra.grandiflora)),(Schultesianthus.leucanthous,Schultesianthus.megalandra))),Nicandra.physalodes),Exodeconus.miersii),(((Atropa.belladonna1,Atropa.belladonna2),((Anisodus.tanguticus,Anisodus.luridus),((Atropanthe.sinensis,((Physochlaina.orientalis,Physochlaina.infundibularis),Scopolia.carniolica,(Scopolia.japonica,Przewalskia.tangutica))),(((Hyoscyamus.pusillus,Hyoscyamus.albus),(Hyoscyamus.desertorum,Hyoscyamus.boveanus)),Hyoscyamus.muticus)))),((((Grabowskia.boerhaviifolia,Grabowskia.duplicata),Lycium.cestroides,Phrodus.microphyllus,Lycium.sandwicense),Lycium.barbarum,Lycium.pallidum),(Nolana.spathulata,(Nolana.linearifolia,Nolana.paradoxa)),(Sclerophylax.adnatifolia,Sclerophylax.gilliesii)),(Jabarosa.integrifolia,(Jaborosa.squarrosa,Jaborosa.sativa)),Latua.pubiflora)),(((((((((Cyphanthera.albicans,Duboisia.myoporoides),Duboisia.leichhardtii,Duboisia.hopwoodii),Cyphanthera.anthocercidea),Crenidium.spinescens),Cyphanthera.microphylla),(Anthotroche.walcottii,Anthotroche.pannosa,(Anthotroch.myoporoides,Anthotroche.blackii))),(Cyphanthera.odgersii,(Grammosolen.dixonii,Grammosolen.truncatus))),(((Anthocercis.sylvicola,Anthocerci.intricata),Anthocercis.angustifolia,Anthocercis.viscosa),(Anthocercis.gracilis,(Anthocercis.ilicifolia,Anthocercis.littorea)))),(Symonanthus.aromaticus,Symonanthus.bancroftii),((Nicotiana.paniculata,Nicotiana.glutinosa),(Nicotiana.acuminata,(Nicotiana.tabacum,Nicotiana.glauca,Nicotiana.africana,(Nicotiana.suaveolens.var.excelsior,Nicotiana.gossei)))))),((Schwenckia.lateriflora,Schwenckia.glabrata),Melananthus.guatemalensis),((((((Plowmania.nyctaginoides,Hunzikeria.texana),Bouchetia.erecta),(Nierembergia.andina,Nierembergia.hippomanica)),Leptoglossis.darcyana),(Brunfelsia.americana,Brunfelsia.uniflora)),(Petunia.axillaris,(Calibrachoa.parviflora,Fabiana.imbricata))),((Benthamiella.skottsbergii,(Combera.paradoxa,Pantacantha.ameghinoi)),(Salpiglossis.sinuata,(((Streptosolen.jamesonii,Browallia.eludens),Browallia.speciosa),(Protoschwenckia.mandonii,(Vestia.foetida,(Sessea.corymbiflora,((Cestrum.rigidum,(Cestrum.megalophyllum,Cestrum.strigilatum)),((Cestrum.tomentosum,Cestrum.macrophyllum),Cestrum.pittieri,Cestrum.nocturnum))))))))),Duckeodendron.cestroides,((((Goetzea.elegans,Goetzea.ekmanii),Espadaea.amoena,Henoonia.myrtifolia),Coeloneurum.ferrugineum),(Tsoala.tubiflora,Metternichia.principis))),(Schizanthus.pinnatus,Schizanthus.grahamii)),((Ipomoea.batatas,Convolvulus.arvensis),Evolvulus.glomeratus,Dinetus.truncatus)),Montinia.caryophyllacea);\n"
+            "newick": "(((Alstonia, Kopsia),\n(Gelsemium, Mostuea), \n(Anthocleista, Gentiana), \n(Antonia, \n((Spigelia, Strychnos), (Geniostoma, Logania)))), \n\n(Coptosapelta, \n\n(Luculia, \n\n(Ophiorrhiza, Pauridiantha, \n((Morinda, Psychotria),\n(Danais, (Carphalea, Pentas), \n(Anthospermum, (Oldenlandia, Spermacoce))))),\n\n((Cephalanthus, Cinchona, Hilia, \n(Guettarda, (Rogiera, Rondeletia)),\n(Strumpfia, (Exostema, (Chiococca, Erithalis)))),\n\n(((Pseudomuss, \n(Mussaenda_arcuata, Mussaenda_erythrophylla)),\n((Alberta, (Coffea, Gardenia)),\n(Scyphiphora, (Ixora, Vangueria)))),\n\n(Alseis, Calycophyllum, Condaminea, Emmenopterys, \nPentagonia, Pinckneya, Pogonopus, Rustia, Simira, Capirona, \n(Chimarrhis, Warszewiczia)))))))"
         }
     ],
     "phylorefs": [],
     "referenceFor": [
         {
-            "clado": "CLADO_0000098",
-            "regnumId": 98,
-            "sourcePhylogenyIndex": 0
-        },
-        {
-            "clado": "CLADO_0000099",
-            "regnumId": 99,
+            "clado": "CLADO_0000091",
+            "regnumId": 91,
             "sourcePhylogenyIndex": 0
         }
     ]
