@@ -1,0 +1,100 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Pryer et al. 2001, fig. 1",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Horsetails and ferns are a monophyletic group and the closest living relatives to seed plants.",
+                "year": 2001,
+                "authors": [
+                    {
+                        "name": "K. M. Pryer",
+                        "alternate": [
+                            "Pryer, K. M."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Pryer",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "H. Schneider",
+                        "alternate": [
+                            "Schneider, H."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Schneider"
+                    },
+                    {
+                        "name": "A. R. Smith",
+                        "alternate": [
+                            "Smith, A. R."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Smith",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "R. Cranfill",
+                        "alternate": [
+                            "Cranfill, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Cranfill"
+                    },
+                    {
+                        "name": "P. G. Wolf",
+                        "alternate": [
+                            "Wolf, P. G."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Wolf",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "J. S. Hunt",
+                        "alternate": [
+                            "Hunt, J. S."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Hunt",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "S. D. Sipes",
+                        "alternate": [
+                            "Sipes, S. D."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Sipes",
+                        "middlename": "D."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1038/35054555"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Nature",
+                    "volume": "409",
+                    "identifier": []
+                }
+            },
+            "newick": "((((((((((((Pteridium, Blechnum), \n((Dicksonia, Plagiogyria), Cyathea)), \n(Marsilea, Salvinia)), \nLygodium),\n(Phanerosorus, Gleichenia)), \nHymenophyllum), \nOsmunda), \n((Equisetum_1, Equisetum_2),\n((Angiopteris, Marattia), Danaea))),\n\n((Ophioglossum, Botrychium), (Psilotum, Tmesipteris))), \n\n(((Gnetum, Pinus), (Cycas, Ginkgo)), \n(Austrobaileya, Chloranthus))), \n\n((Selaginella, Isoetes), Huperia)), \n\n((Polytrichum, Sphagnum), (Marchantia, Haplomitrium)),\n\nAnthoceros)"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000043",
+            "regnumId": 43,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}

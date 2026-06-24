@@ -1,0 +1,74 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Sumrall et al. 2013, fig. 2A",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "The first report of South American edrioasteroids and the paleoecology and ontogeny of rhenopyrgid echinoderms.",
+                "year": 2013,
+                "authors": [
+                    {
+                        "name": "C. D. Sumrall",
+                        "alternate": [
+                            "Sumrall, C. D."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Sumrall",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "S. Heredia",
+                        "alternate": [
+                            "Heredia, S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Heredia"
+                    },
+                    {
+                        "name": "C. M. Rodriguez",
+                        "alternate": [
+                            "Rodriguez, C. M."
+                        ],
+                        "firstname": "C.",
+                        "lastname": "Rodriguez",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "A. I. Mestre",
+                        "alternate": [
+                            "Mestre, A. I."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Mestre",
+                        "middlename": "I."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2A",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.4202/app.2011.0120"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Acta Palaeontol. Pol.",
+                    "volume": "58",
+                    "identifier": []
+                }
+            },
+            "newick": "(Kailidiscus, \n((Paredriophus, (Cyathotheca, Lampteroblastus, Rhenopyrgus)),\n((Isorophus, Carneyella), Argodiscus)))"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000229",
+            "regnumId": 229,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}

@@ -1,0 +1,74 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Soltis et al. 2011, fig. 1-2",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Angiosperm phylogeny:  17-genes, 640 taxa.",
+                "year": 2011,
+                "authors": [
+                    {
+                        "name": "D. E. Soltis",
+                        "alternate": [
+                            "Soltis, D. E."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Soltis",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "S. Smith",
+                        "alternate": [
+                            "Smith, S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Smith"
+                    },
+                    {
+                        "name": "N. Cellinese",
+                        "alternate": [
+                            "Cellinese, N."
+                        ],
+                        "firstname": "N.",
+                        "lastname": "Cellinese"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1-2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.3732/ajb.1000404"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "American Journal of Botany",
+                    "volume": "98",
+                    "identifier": []
+                }
+            },
+            "newick": "((((((((((((((((((((((Fagales, Curcurbitales), Rosales), Fabales), \n((Oxalidales, Malpighiales), Celastrales)), Zygophyllales), \n\n((((((Malvales, Brassicales), Huerteales), Sapindales), Picramniaceae), \nCrossosomatales), (Geraniales, Myrtales))), \n\nVitaceae), Saxifragales), \n\n\n(((((((((Lamiales, Boraginaceae), (Solanales, Gentianales)), Vahliaceae), Oncothecaceae), \n(Garryales, Icacinaceae)), \n\n(((Asterales, Escalloniales), ((Apiales, (Paracryphiales, Dipsacales)), Bruniales)), Aquifoliales),\n\nEricales), Cornales), \n\n(Berberidopsidales, Caryophyllales)), Santalales), Dilleniaceae)), \n\nGunneraceae), Buxaceae), Trochodendraceae), \n\n(Sabiaceae, Proteales)), Ranunculales), Ceratophyllaceae), Monocotyledoneae), \n\n(((Magnoliales, Laurales), (Canellales, Piperales)), Chloranthaceae)), \n\n((Trimeniaceae, Schisandraceae), Austrobaileyaceae)), \n\n(Nymphaceae, Hydatellaceae)), \n\nAmborellaceae), \n\n((((Ginkoaceae, Cycadales), (Cupressaceae, Podocarpaceae)), Pinaceae), \n(Gnetaceae, Welwitschiaceae)))"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000105",
+            "regnumId": 105,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000250",
+            "regnumId": 250,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000251",
+            "regnumId": 251,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}

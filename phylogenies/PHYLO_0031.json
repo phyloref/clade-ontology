@@ -1,0 +1,48 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Doyle 2013, fig. 1.1",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Phylogenetic analyses and morphological innovations in land plants.",
+                "year": 2013,
+                "authors": [
+                    {
+                        "name": "J. A. Doyle",
+                        "alternate": [
+                            "Doyle, J. A."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Doyle",
+                        "middlename": "A."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1.1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1002/9781119312994.apr0486"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Annual Review of Plant Biology",
+                    "volume": "45",
+                    "identifier": []
+                }
+            },
+            "newick": "(Glaucophytes, (Rhodophytes, (Chlorophytes, (Mesostigma, \n(Chlorokybus, (Klebsormidiales, (Zygnematales, \n(Coleochaetales, (Charales, (Liverworts, (Mosses, \n(Hornworts, (Homeophyton, (Alagophyton, (Rhynia, \n(\n(((((((Isoetes, Lepidodendrales), Selaginella), Lycopodiales), \nAsteroxylon), Zosterophylls), Renalia), Cooksonia), \n\n(Psilophyton, \n(((Filicales, Zygopterids), Marattiales, \n(Psilotales, Ophioglossales), Sphenophytes, Cadoxylopsids), \n(Aneurophytes, (Archaeopteris, Seed_plants))))))))))))))))))))"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000081",
+            "regnumId": 81,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}

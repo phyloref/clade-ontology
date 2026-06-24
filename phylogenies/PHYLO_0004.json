@@ -1,0 +1,60 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Crane et al. 2004, fig. 1",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Fossils and plant phylogeny",
+                "year": 2004,
+                "authors": [
+                    {
+                        "name": "P. R. Crane",
+                        "alternate": [
+                            "Crane, P. R."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Crane",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "P. Herendeen",
+                        "alternate": [
+                            "Herendeen, P."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Herendeen"
+                    },
+                    {
+                        "name": "E. M.  Friis",
+                        "alternate": [
+                            "Friis, E. M."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Friis",
+                        "middlename": "M."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "American Journal of Botany",
+                    "volume": "91",
+                    "identifier": []
+                }
+            },
+            "newick": "((Chara, Coleochaete), \n((Notothylas, Anthoceros), (Sphaerocarpos, Monoclea, Haplomitrium)),\n((Sphagnum, (Takakia, Andreaeobryum, Andreae, Polytrichum)),\n((Tortilicaulis, (Horneophyton, Caia)), \n(Aglaophyton, \n((Huvenia, (Stockmansella, Rhynia)), \n(((Cooksonia_caledonica, Cooksonia_pertonii), (Eophyllophyton, \n((Psilophyton_crenulatum, Psilophyton_dawsonii), (Pertica, Tetraxylopteris),\n(Ibyka, (Pseudosporochnus, Rhacophyton))))),\n((Sartilmania, Yunia, Uskiella, Renalia, Cooksonia_cambrensis),\n(Hicklingia, \n\n((Huia, Gumuia, Zosterophyllum_myretonianum, Adoketophyton, Discalis, \nRebuchia, Zoterophyllum_llanoveranum, Zoterophyllum_fertile),\n(Zosterophyllum_divaricatum, \n(Tarella, Oricilla, Gosslingia, Hsua, \nThrinkophyton, (Protobarinophyton, Barinophyton_obscurum, Barinophyton_citrulliforme), \n(Sawdonia, Deheubarthia, (Konioria, Anisophyton), \n(Serrulacaulis, Crenaticaulis)))),\n\n((Nothia, Zosterophyllum_deciduum), ((Drepanophycus, Baragwanathia,\nAsteroxylon), ((Huperzia_squarrosa, Huperzia_selago), (Phylloglossum, (Lycopodium, Lycopodiella)), \n((Paralycopodites, Isoetes), (Minarodendron, Leclercquia), \n(Seaginella_selaginoides, (Tetragonostachys, Stachygynandrum)))))))))))))))"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000015",
+            "regnumId": 15,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Simmons et al. 2008, fig. 4",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Primitive Early Eocene bat from Wyoming and the evolution of flight and echolocation.",
+                "year": 2008,
+                "authors": [
+                    {
+                        "name": "N. B. Simmons",
+                        "alternate": [
+                            "Simmons, N. B."
+                        ],
+                        "firstname": "N.",
+                        "lastname": "Simmons",
+                        "middlename": "B."
+                    },
+                    {
+                        "name": "K. L. Seymour",
+                        "alternate": [
+                            "Seymour, K. L."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Seymour",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "J. Habersetzer",
+                        "alternate": [
+                            "Habersetzer, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Habersetzer"
+                    },
+                    {
+                        "name": "G. F. Gunnell",
+                        "alternate": [
+                            "Gunnell, G. F."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Gunnell",
+                        "middlename": "F."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "4",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1038/nature06549"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Nature",
+                    "volume": "451",
+                    "identifier": []
+                }
+            },
+            "newick": "(Onychonycteris, (Icaronycteris, (Archaeonycteris, (Hassianycteris, \n(Palaeochiropteryx, ((Pteropodidae, Rhinolophoidea), (Emallonuroidea, \n(Noctilionidoidea, Vespertilionoidea))))))))"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000237",
+            "regnumId": 237,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000238",
+            "regnumId": 238,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000239",
+            "regnumId": 239,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Diogo 2007, fig. 3 and 4",
+            "primaryPhylogenyCitation": {
+                "type": "book",
+                "title": "The origin of higher clades.",
+                "year": 2007,
+                "authors": [
+                    {
+                        "name": "R. Diogo",
+                        "alternate": [
+                            "Diogo, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Diogo"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "publisher": "Science Publishers",
+                "city": "Enfield, New Hampshire",
+                "figure": "3 and 4",
+                "identifier": [],
+                "link": []
+            },
+            "newick": "((Osteoglossiformes, Hiodontiformes),\n\n((Elopiformes, (Albuliformes, (Notacanthiformes, (Anguiliformes, Saccopharyngiformes)))),\n\n(((Denticipitoidei, (Clupeoidea, Engrauloidea, Pristigasteroidea)),\n(Gonorynchiformes, (Cypriniformes, (Characiformes, (Gymnotiformes, Siluriformes))))),\n\n((Esociformes, (Ateleopodiformes, Stomiiformes, (Ctenosquamata, Aulopiformes))),\n((Alepocephaloidea, Argentinoidea), (Salmoniformes, (Osmeroidea, Galaxoidea)))))))"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000206",
+            "regnumId": 206,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000208",
+            "regnumId": 208,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000210",
+            "regnumId": 210,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000212",
+            "regnumId": 212,
+            "sourcePhylogenyIndex": 0
+        },
+        {
+            "clado": "CLADO_0000214",
+            "regnumId": 214,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}
