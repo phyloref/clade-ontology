@@ -5,6 +5,7 @@
 // Javascript libraries.
 const ChildProcess = require('node:child_process');
 const fs = require('node:fs');
+const path = require('node:path');
 
 const tmp = require('tmp');
 const chai = require('chai');
@@ -20,18 +21,23 @@ function loadJSON(filename) {
 }
 
 describe('Test regnum2phyx.js', () => {
-  for (const filename of fs.readdirSync(`${__dirname}/examples`)) {
-    describe(`Processing example Regnum dump: ${filename}`, () => {
-      const filepath = `${__dirname}/examples/${filename}`;
+  // Each correct test case is a self-contained directory under fixtures/correct/,
+  // named for the case: it holds the input dump (<case>/<case>.json) and the
+  // expected output Phyx files (<case>/expected/).
+  for (const basename of fs.readdirSync(`${__dirname}/../fixtures/correct`)) {
+    describe(`Processing example Regnum dump: ${basename}`, () => {
+      const caseDir = `${__dirname}/../fixtures/correct/${basename}`;
+      const filepath = `${caseDir}/${basename}.json`;
 
-      // We only test '.json' files.
-      if (!filepath.endsWith('.json')) {
-        it.skip('not a JSON file');
+      // We only test fixture directories that contain an input dump.
+      if (!fs.statSync(caseDir).isDirectory() || !fs.existsSync(filepath)) {
+        it.skip('not a fixture directory');
         return;
       }
 
-      // Create a temporary directory to make files into.
-      const tmpdirname = tmp.dirSync().name;
+      // Create a temporary directory and use a non-existing subdirectory as the
+      // output path, so regnum2phyx.js can create it (it errors if it already exists).
+      const tmpdirname = path.join(tmp.dirSync().name, 'output');
 
       // Run phyx2regnum.js on it.
       const child = ChildProcess.spawnSync(
@@ -53,11 +59,9 @@ describe('Test regnum2phyx.js', () => {
         expect(child.status).to.equal(0);
       });
 
-      // There should be an ./expected/${basename} directory
-      // containing at least one file.
-      const basename = filename.replace(/.json$/i, '');
+      // The case's expected/ directory should contain at least one file.
       const producedFiles = fs.readdirSync(`${tmpdirname}`);
-      const expectedFiles = fs.readdirSync(`${__dirname}/expected/${basename}`);
+      const expectedFiles = fs.readdirSync(`${caseDir}/expected`);
 
       it('should produce the expected files', () => {
         expect(producedFiles).to.deep.equal(expectedFiles);
@@ -67,7 +71,7 @@ describe('Test regnum2phyx.js', () => {
       for (const producedFile of producedFiles) {
         describe(`Testing produced file ${producedFile}`, () => {
           const producedPhyx = loadJSON(`${tmpdirname}/${producedFile}`);
-          const expectedPhyx = loadJSON(`${__dirname}/expected/${basename}/${producedFile}`);
+          const expectedPhyx = loadJSON(`${caseDir}/expected/${producedFile}`);
 
           it('should be identical to expected', () => {
             expect(producedPhyx).to.deep.equal(expectedPhyx);
