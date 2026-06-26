@@ -9,7 +9,8 @@
     "pretest": "npm run lint",
     "test": "mocha --recursive",
     "mocha": "mocha",
-    "build-ontology": "node phyx2ontology/phyx2ontology.js phyx/ > CLADO.json"
+    "build-ontology": "node phyx2ontology/phyx2ontology.js phyx/ > CLADO.json",
+    "regnum2phyx": "node regnum2phyx/regnum2phyx.js"
   },
   "repository": {
     "type": "git",
@@ -22,9 +23,9 @@
   },
   "homepage": "https://github.com/phyloref/clade-ontology#readme",
   "dependencies": {
-    "@phyloref/phyx": "^0.2.1",
-    "lodash": "^4.17.11",
-    "yargs": "^13.2.1"
+    "@phyloref/phyx": "^1.2.1",
+    "lodash": "^4.17.23",
+    "yargs": "^18.0.0"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
@@ -33,7 +34,10 @@
     "mocha": "^5.2.0",
     "tmp": "^0.1.0"
   },
+  "overrides": {
+    "jsonld": "^9.0.0"
+  },
   "engines": {
-    "node": ">=14.21.3"
+    "node": ">=22.0.0"
   }
 }
