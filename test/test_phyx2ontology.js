@@ -17,14 +17,19 @@ const assert = chai.assert;
 const tmpfilename = tmp.fileSync().name;
 
 describe('Executing phyx2ontology.js on all current Phyx files', function () {
-  this.timeout(10000);
+  this.timeout(60000);
 
+  // Redirect the child's stdout straight to a file via stdio. spawnSync's default
+  // maxBuffer is 1 MB and the ontology output for the current phyx/ corpus is
+  // hundreds of MB; using an in-memory buffer would cause Node to kill the child
+  // with SIGTERM as soon as that limit is exceeded.
+  const outFd = fs.openSync(tmpfilename, 'w');
   const child = ChildProcess.spawnSync(process.execPath, [
-    'phyx2ontology/phyx2ontology.js', BASE_DIR, '>', tmpfilename,
+    'phyx2ontology/phyx2ontology.js', BASE_DIR,
   ], {
-    encoding: 'utf8',
-    shell: true,
+    stdio: ['ignore', outFd, 'inherit'],
   });
+  fs.closeSync(outFd);
 
   it('should execute successfully', () => {
     assert.isNull(child.signal, `Terminated because of signal ${child.signal}`);
