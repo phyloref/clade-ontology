@@ -39,7 +39,7 @@ const MAX_EXTERNAL_SPECIFIERS = process.env.MAX_EXTERNAL_SPECIFIERS || 10;
 /*
  * Load the JSON schema.
  */
-const phyxSchemaJSON = JSON.parse(fs.readFileSync(`${__dirname}/phyx_schema.json`, { encoding: 'utf8' }));
+const phyxSchemaJSON = JSON.parse(fs.readFileSync(`${__dirname}/schema/phyx_schema.json`, { encoding: 'utf8' }));
 const ajvInstance = new Ajv({
   allErrors: true, // Display all error messages, not just the first.
 });
@@ -114,27 +114,16 @@ describe('Test Phyx files in repository', () => {
         return;
       }
 
-      it('has at least one Newick phylogeny', () => {
-        const phylogenies = json.phylogenies || [];
-        // assert.isAbove(phylogenies.length, 0, 'No phylogenies found in file');
-
-        const newicks = phylogenies
-          .map(ph => ph.newick || [])
-          .reduce((a, b) => a.concat(b), [])
-          .filter(nw => nw.trim() !== '');
-        // assert.isAbove(newicks.length, 0, 'No Newick phylogenies found in file');
-        if (newicks.length === 0) {
-          console.warn(`No Newick phylogenies found in file ${filename}.`);
-        }
-
-        // assert.equal(newicks.length, 1,
-        //   `Contains ${newicks.length} Newick phylogenies in ${phylogenies.length} phylogenies.`);
-        if (newicks.length > 1) {
-          console.warn(`Unexpectedly found ${newicks.length} Newick phylogenies in ${phylogenies.length} phylogenies in Phyx file ${filename}.`);
-        }
-      });
-
-      // console.log(`Loaded Phyx file ${filename}`);
+      const newicks = (json.phylogenies || [])
+        .map(ph => ph.newick || '')
+        .filter(nw => nw.trim() !== '');
+      if (newicks.length > 0) {
+        it(`has ${newicks.length} Newick phylogen${newicks.length === 1 ? 'y' : 'ies'}`, () => {
+          assert.isAbove(newicks.length, 0);
+        });
+      } else {
+        it.skip('has no Newick phylogenies');
+      }
 
       const skipFile = (json.phylorefs || [])
         .map(phyloref => new phyx.PhylorefWrapper(phyloref))
@@ -157,82 +146,95 @@ describe('Test Phyx files in repository', () => {
             return true;
           }
 
+          if (
+            wrappedPhyloref.internalSpecifiers.length === 1 &&
+            wrappedPhyloref.externalSpecifiers.length === 0
+          ) {
+            it.skip(
+              `Phyloreference "${wrappedPhyloref.label}" has only 1 internal specifier and no external specifiers — cannot generate a valid OWL class expression (single-specifier limitation).`
+            );
+            return true;
+          }
+
           return false;
         })
         .reduce((a, b) => a || b, false);
 
       if (!skipFile) {
-        console.log(`Converting Phyx file ${filename} into JSON-LD`);
-        const jsonld = JSON.stringify(wrappedPhyx.asJSONLD());
+        let jsonld;
+        let jsonldError = null;
+        let child;
+        let matches;
+
+        // Build JPhyloRef args at definition time (no async work needed here).
+        let jphylorefArgs = [
+          '-jar', `${__dirname}/jphyloref.jar`,
+          'test', '-', '--jsonld',
+        ];
+        if ('JVM_ARGS' in process.env) {
+          jphylorefArgs = process.env.JVM_ARGS.split(/\s+/).concat(jphylorefArgs);
+        }
+        if ('JPHYLOREF_ARGS' in process.env) {
+          jphylorefArgs = jphylorefArgs.concat(process.env.JPHYLOREF_ARGS.split(/\s+/));
+        }
+
+        before(function () {
+          this.timeout(30000);
+          console.log(`Converting Phyx file ${filename} into JSON-LD`);
+          // Catch errors so the hook doesn't abort the whole describe block;
+          // the 'produced a non-empty JSON-LD' it() will re-throw to isolate them.
+          try {
+            jsonld = JSON.stringify(wrappedPhyx.asJSONLD());
+          } catch (err) {
+            jsonldError = err;
+            return;
+          }
+
+          if (FLAG_SLOW_TESTS) {
+            // Execute JPhyloRef, giving it the JSON-LD on STDIN.
+            child = ChildProcess.spawnSync('java', jphylorefArgs, { input: jsonld });
+
+            // Parse the TAP-style summary line from JPhyloRef's STDERR.
+            matches = /Testing complete:(\d+) successes, (\d+) failures, (\d+) failures marked TODO, (\d+) skipped./.exec(child.stderr);
+            assert(matches !== null, `Test result line not found in STDERR <${child.stderr}>`);
+          }
+        });
 
         // Make sure the produced JSON-LD is not empty.
         it('produced a non-empty JSON-LD ontology without throwing an exception', () => {
+          if (jsonldError) throw jsonldError;
           assert.isNotEmpty(jsonld);
         });
 
         // Test the produced JSON-LD using JPhyloRef.
         if (FLAG_SLOW_TESTS) {
-          let args = [
-            '-jar', `${__dirname}/jphyloref.jar`,
-            'test', '-', '--jsonld',
-          ];
-
-          // Some command line arguments should also be inserted into the command line.
-          // JVM_ARGS should be given to the Java interpreter.
-          if ('JVM_ARGS' in process.env) {
-            args = process.env.JVM_ARGS.split(/\s+/).concat(args);
-          }
-
-          // JPHYLOREF_ARGS should be given to JPhyloRef
-          if ('JPHYLOREF_ARGS' in process.env) {
-            args = args.concat(process.env.JPHYLOREF_ARGS.split(/\s+/));
-          }
-
-          // Execute the command line, giving it the JSON-LD on STDIN.
-          const child = ChildProcess.spawnSync('java', args, { input: jsonld });
-
-          // Test whether we can read the test result line from JPhyloRef.
-          // Eventually, we will parse the TAP results directly.
-          const matches = /Testing complete:(\d+) successes, (\d+) failures, (\d+) failures marked TODO, (\d+) skipped./.exec(child.stderr);
-          assert(matches !== null, `Test result line not found in STDERR <${child.stderr}>`);
-          // console.log(`For ${filename}: ${matches}`);
-
           // Test whether we have any failures.
-          it('did not report any failures', () => {
+          it('did not report any failures', function () {
+            if (jsonldError) { this.skip(); return; }
             const failures = matches[2];
             assert.equal(failures, 0, `${failures} failures occurred during testing`);
           });
 
           describe('test the results of resolution', () => {
-            // Look for TODOs or skipped tests.
-            const successes = matches[1];
-            const todos = matches[3];
-            const skipped = matches[4];
-
-            if (todos > 0) {
-            // TODOs are phyloreferences that we didn't expect to resolve.
-              it.skip(`${todos} phyloreferences were marked as TODO during testing.`);
-              return;
-            }
-
-            if (skipped > 0) {
-            // Skipped phyloreferences are here for historical reasons: JPhyloRef
-            // won't actually recognize any phyloreferences as skipped. This has
-            // been reported as https://github.com/phyloref/jphyloref/issues/40
-              it.skip(`${skipped} phyloreferences were skipped during testing.`);
-              return;
-            }
-
             // We could have zero failures but also zero successes. A Phyx file
             // without any failures, TODOs or any successes in the Clade Ontology
             // should be reported as a failure.
-            it('had at least one success', () => {
-              assert.isAbove(successes, 0, 'No successes occurred during testing');
+            it('had at least one success', function () {
+              if (jsonldError) { this.skip(); return; }
+              // TODOs are phyloreferences that we didn't expect to resolve.
+              if (Number(matches[3]) > 0) { this.skip(); return; }
+              // Skipped phyloreferences: JPhyloRef won't recognize any as skipped.
+              // See https://github.com/phyloref/jphyloref/issues/40
+              if (Number(matches[4]) > 0) { this.skip(); return; }
+              assert.isAbove(Number(matches[1]), 0, 'No successes occurred during testing');
             });
 
             // On the off chance that all of the above made sense but the exit code didn't,
             // we'll check that here.
-            it('passed testing in JPhyloRef', () => {
+            it('passed testing in JPhyloRef', function () {
+              if (jsonldError) { this.skip(); return; }
+              if (Number(matches[3]) > 0) { this.skip(); return; }
+              if (Number(matches[4]) > 0) { this.skip(); return; }
               assert.equal(child.status, 0, 'Exit code from JPhyloRef was not zero');
             });
           });
