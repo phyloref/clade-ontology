@@ -63,7 +63,7 @@ PhyloRegnum DB dump (JSON)
   - `phylonym/` — Files from the Phylonym database, PhyloRegnum (https://www.phyloregnum.org/)
   - `encrypted/` — Git-crypt encrypted files (skipped during processing)
 - **`phylogenies/`** — Shared, deduplicated reference-phylogeny store. One `PHYLO_NNNN.json` per unique Newick tree; each is a valid Phyx file plus a custom top-level `referenceFor` array mapping the tree to the `CLADO_NNNNNNN`/`regnumId` phyloreferences it validates. See `phylogenies/README.md`. (Round 1: the trees are *copied* here but still also live in `phyx/phylonym/`.)
-- **`lib/phylogenies.js`** — Shared helpers for the store (`loadStore`, `buildReferenceIndex`, `normalizeNewick`, `findJSONFiles`).
+- **`lib/`** — Shared Node modules. `phylogenies.js` holds the store helpers (`loadStore`, `buildReferenceIndex`, `normalizeNewick`, `findJSONFiles`, `scanSourcePhylogenies`); `csv.js` holds `escapeCSV`, shared by the scripts that emit CSV reports.
 - **`scripts/`** — Top-level home for ad-hoc/maintenance scripts. `scripts/phylogenies/extract-phylogenies.js` copies Newick trees out of `phyx/phylonym/` into the store (never modifies `phyx/`).
 - **`phyx2ontology/phyx2ontology.js`** — Converts Phyx files to a single Clade Ontology JSON-LD. Reads Phyx files, wraps them via `@phyloref/phyx`, and emits JSON-LD to STDOUT.
 - **`regnum2phyx/regnum2phyx.js`** — Converts PhyloRegnum database dumps (JSON arrays) into individual Phyx files. Handles specifiers, citations (BibJSON format), and author formatting.

@@ -49,10 +49,15 @@ an empty `phylorefs` array) **plus** a custom top-level `referenceFor` array:
 
 ### Filenames
 
-Filenames are currently sequential (`PHYLO_0001.json` …) for stable referencing. They are
-expected to migrate to human-readable, publication-based names in a future round (e.g.
-`leadAuthor2009.json`, `leadAuthor2009_journal.json`). Treat the filename as an opaque id and
-use `referenceFor[].clado` for linking.
+Filenames are currently sequential (`PHYLO_0001.json` …). The extractor reads the existing
+store before rewriting it, so **a tree keeps its id as long as its Newick is unchanged**:
+inserting or removing a tree does not renumber the others, and the id of a tree that
+disappears is retired rather than recycled onto a different tree. Editing a tree's Newick,
+however, reads as a new tree and takes a new id.
+
+Filenames are expected to migrate to human-readable, publication-based names in a future round
+(e.g. `leadAuthor2009.json`, `leadAuthor2009_journal.json`). Treat the filename as an opaque id
+and use `referenceFor[].clado` for linking.
 
 ## Regenerating the store
 

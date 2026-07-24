@@ -62,8 +62,21 @@ describe('Reference-phylogeny store (phylogenies/)', () => {
       assert.isUndefined(seen.get(norm), `Duplicate Newick across ${seen.get(norm)} and ${file}`);
       seen.set(norm, file);
     }
+  });
+
+  it('holds one file per unique source tree', () => {
     // The 270 phylonym files hold 160 Newick-bearing phylogenies that reduce to 112 unique trees.
+    const uniqueSourceTrees = new Set(
+      scanSourcePhylogenies(findJSONFiles(SOURCE_DIR))
+        .map(({ phylogeny }) => normalizeNewick(phylogeny.newick)),
+    );
+    assert.strictEqual(store.length, uniqueSourceTrees.size);
     assert.strictEqual(store.length, 112, 'Expected 112 unique reference phylogenies');
+  });
+
+  it('assigns each store file a distinct PHYLO id', () => {
+    const ids = store.map(({ file }) => path.basename(file, '.json'));
+    assert.deepEqual([...new Set(ids)].sort(), [...ids].sort(), 'PHYLO ids must be unique');
   });
 
   it('builds a reference index keyed by CLADO id', () => {
