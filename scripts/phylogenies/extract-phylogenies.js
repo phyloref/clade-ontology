@@ -10,6 +10,11 @@
  * round will regenerate the Phyx files without their phylogenies once we have verified the
  * copy is faithful.
  *
+ * Scoped to phyx/phylonym/, which holds only plain Phyx JSON. Unparseable files are warned
+ * about and skipped; pointing this at phyx/ as a whole would silently reduce the git-crypt
+ * files in phyx/encrypted/ to warnings rather than the explicit magic-byte skip that
+ * test_phyx.js and phyx2ontology.js perform.
+ *
  * Usage:
  *   node scripts/phylogenies/extract-phylogenies.js [sourceDir] -o [storeDir] --report [csv]
  *   (defaults: sourceDir=phyx/phylonym, storeDir=phylogenies, report=phylogenies/extraction-report.csv)
@@ -23,9 +28,9 @@ const {
   findJSONFiles,
   normalizeNewick,
   scanSourcePhylogenies,
-  escapeCSV,
   PHYLOGENIES_DIR,
 } = require('../../lib/phylogenies');
+const { escapeCSV } = require('../../lib/csv');
 
 const argv = yargs(process.argv.slice(2))
   .usage('Usage: $0 [sourceDir] -o [storeDir] --report [csv]')
@@ -49,8 +54,6 @@ const storeDir = argv.o;
 
 // Recognized citation keys on a phylogeny entry, in order of preference.
 const CITATION_KEYS = ['primaryPhylogenyCitation', 'phylogenyCitation'];
-// Keys whose presence on a phylogeny entry we treat as curator notes worth carrying over.
-const NOTE_KEY_RE = /curat|note|comment/i;
 
 const CONTEXT = 'http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json';
 
@@ -76,7 +79,8 @@ function deriveLabel(citation) {
   if (who) parts.push(who);
   if (citation.year) parts.push(String(citation.year));
   let label = parts.join(' ');
-  if (citation.figure) label = `${label}, fig. ${citation.figure}`;
+  // Only qualify a label we actually have; a bare ", fig. 3" is worse than no label.
+  if (label && citation.figure) label = `${label}, fig. ${citation.figure}`;
   return label || undefined;
 }
 
@@ -88,22 +92,12 @@ function citationDOI(citation) {
   return doi ? String(doi.id).toLowerCase().replace(/^https?:\/\/doi\.org\//, '') : undefined;
 }
 
-/** Extract any curator-note-like fields from a phylogeny entry. */
-function extractNotes(phylogeny) {
-  const notes = {};
-  for (const [key, value] of Object.entries(phylogeny)) {
-    if (key === 'newick' || CITATION_KEYS.includes(key)) continue;
-    if (NOTE_KEY_RE.test(key)) notes[key] = value;
-  }
-  return notes;
-}
-
 // ---------------------------------------------------------------------------
 // 1. Scan source files and collect every Newick-bearing phylogeny occurrence.
 // ---------------------------------------------------------------------------
 
 const sourceFiles = findJSONFiles(sourceDir).sort();
-// { cladoId, cladoNumValue, regnumId, phyloIndex, newick, normNewick, citationKey, citation, notes }
+// { cladoId, cladoNumValue, regnumId, phyloIndex, newick, normNewick, citationKey, citation }
 const occurrences = scanSourcePhylogenies(sourceFiles).map(({ cladoId, regnumId, phyloIndex, phylogeny }) => {
   const citationKey = CITATION_KEYS.find((k) => phylogeny[k]);
   return {
@@ -115,7 +109,6 @@ const occurrences = scanSourcePhylogenies(sourceFiles).map(({ cladoId, regnumId,
     normNewick: normalizeNewick(phylogeny.newick),
     citationKey,
     citation: citationKey ? phylogeny[citationKey] : undefined,
-    notes: extractNotes(phylogeny),
   };
 });
 
@@ -141,32 +134,54 @@ const orderedGroups = [...groups.values()]
 // ---------------------------------------------------------------------------
 
 fs.mkdirSync(storeDir, { recursive: true });
-// Clean previously generated store files so re-runs are reproducible (leave README etc.).
+
+// PHYLO ids must survive re-runs: the store is regenerated whenever phyx/phylonym/ changes,
+// and positional numbering would renumber every tree after an insertion. Read the current
+// store first and let each tree keep the id already assigned to its normalized Newick; ids of
+// trees that have disappeared stay retired rather than being recycled onto a different tree.
+const idByNewick = new Map();
+const usedIds = new Set();
 for (const f of fs.readdirSync(storeDir)) {
-  if (/^PHYLO_\d+\.json$/.test(f)) fs.rmSync(path.join(storeDir, f));
+  if (!/^PHYLO_\d+\.json$/.test(f)) continue;
+  const phyloId = path.basename(f, '.json');
+  usedIds.add(phyloId);
+  const { phylogenies } = JSON.parse(fs.readFileSync(path.join(storeDir, f), 'utf8'));
+  const previous = (phylogenies || [])[0];
+  if (previous?.newick) idByNewick.set(normalizeNewick(previous.newick), phyloId);
+  // Clean previously generated store files so re-runs are reproducible (leave README etc.).
+  fs.rmSync(path.join(storeDir, f));
 }
 
-const reportRows = [[
+let nextNum = 0;
+function allocateId() {
+  let candidate;
+  do {
+    nextNum += 1;
+    candidate = `PHYLO_${String(nextNum).padStart(argv.digits, '0')}`;
+  } while (usedIds.has(candidate));
+  usedIds.add(candidate);
+  return candidate;
+}
+
+const reportHeader = [
   'phylo_id', 'num_references', 'clado_ids', 'label', 'citation_doi',
-  'newick_whitespace_variants', 'citation_divergence', 'notes_carried',
-].join(',')];
+  'newick_whitespace_variants', 'citation_divergence',
+].join(',');
+const reportRows = [];
 
-orderedGroups.forEach((group, i) => {
-  const phyloId = `PHYLO_${String(i + 1).padStart(argv.digits, '0')}`;
+let divergent = 0;
 
+for (const group of orderedGroups) {
   // Canonical occurrence = earliest source (group is already byClado-sorted); its original
   // newick and citation win.
   const canonical = group[0];
-
-  // Merge any curator notes found across occurrences (rare in phylonym; defensive).
-  const mergedNotes = Object.assign({}, ...group.map((o) => o.notes));
+  const phyloId = idByNewick.get(canonical.normNewick) || allocateId();
 
   const phylogeny = {};
   const label = deriveLabel(canonical.citation);
   if (label) phylogeny.label = label;
   if (canonical.citationKey) phylogeny[canonical.citationKey] = canonical.citation;
   phylogeny.newick = canonical.newick;
-  Object.assign(phylogeny, mergedNotes);
 
   // group is already byClado-sorted, so the references come out in (cladoId, phyloIndex) order.
   const referenceFor = group
@@ -190,6 +205,7 @@ orderedGroups.forEach((group, i) => {
   // Report diagnostics.
   const whitespaceVariants = new Set(group.map((o) => o.newick)).size;
   const dois = new Set(group.map((o) => citationDOI(o.citation)).filter(Boolean));
+  if (dois.size > 1) divergent += 1;
   reportRows.push([
     phyloId,
     referenceFor.length,
@@ -198,18 +214,20 @@ orderedGroups.forEach((group, i) => {
     escapeCSV([...dois].join(' ')),
     whitespaceVariants,
     dois.size > 1 ? 'YES' : '',
-    escapeCSV(Object.keys(mergedNotes).join(' ')),
   ].join(','));
-});
+}
+
+// Reused ids mean the rows are no longer emitted in id order; sort so the committed report
+// diffs minimally between runs (ids are zero-padded, so lexicographic order is numeric).
+reportRows.sort();
 
 fs.mkdirSync(path.dirname(argv.report), { recursive: true });
-fs.writeFileSync(argv.report, `${reportRows.join('\n')}\n`);
+fs.writeFileSync(argv.report, `${[reportHeader, ...reportRows].join('\n')}\n`);
 
 // ---------------------------------------------------------------------------
 // 4. Summary to STDERR.
 // ---------------------------------------------------------------------------
 
-const divergent = reportRows.filter((r) => r.includes(',YES,')).length;
 process.stderr.write(
   `Scanned ${sourceFiles.length} Phyx files in ${sourceDir}.\n`
   + `Found ${occurrences.length} Newick-bearing phylogenies → ${orderedGroups.length} unique trees.\n`
