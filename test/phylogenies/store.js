@@ -7,16 +7,19 @@
  * and prove they agree before a future round removes the trees from the Phyx files.
  */
 
+const fs = require('node:fs');
 const path = require('node:path');
 
 const chai = require('chai');
 const phyx = require('@phyloref/phyx');
+const tmp = require('tmp');
 
+const { findJSONFiles } = require('../../lib/files');
 const {
-  findJSONFiles,
   normalizeNewick,
   scanSourcePhylogenies,
   loadStore,
+  storePhylogeny,
   buildReferenceIndex,
   PHYLOGENIES_DIR,
 } = require('../../lib/phylogenies');
@@ -24,19 +27,20 @@ const {
 const assert = chai.assert;
 
 const SOURCE_DIR = path.join('phyx', 'phylonym');
+/** Every Newick-bearing phylogeny in the source Phyx files. */
+const sourceOccurrences = () => scanSourcePhylogenies(findJSONFiles(SOURCE_DIR));
 
 /** Multiset of "cladoId\tnormalizedNewick" pairs found in the source Phyx files. */
 function sourcePairs() {
-  return scanSourcePhylogenies(findJSONFiles(SOURCE_DIR))
+  return sourceOccurrences()
     .map(({ cladoId, phylogeny }) => `${cladoId}\t${normalizeNewick(phylogeny.newick)}`);
 }
 
 /** Multiset of "cladoId\tnormalizedNewick" pairs implied by the store's referenceFor maps. */
 function storePairs(store) {
   const pairs = [];
-  for (const { data } of store) {
-    const phylogeny = (data.phylogenies || [])[0];
-    const norm = normalizeNewick(phylogeny.newick);
+  for (const { file, data } of store) {
+    const norm = normalizeNewick(storePhylogeny({ file, data }).newick);
     for (const entry of data.referenceFor || []) pairs.push(`${entry.clado}\t${norm}`);
   }
   return pairs;
@@ -58,20 +62,20 @@ describe('Reference-phylogeny store (phylogenies/)', () => {
   it('deduplicates: each unique Newick lives in exactly one store file', () => {
     const seen = new Map(); // normNewick -> file
     for (const { file, data } of store) {
-      const norm = normalizeNewick((data.phylogenies || [])[0].newick);
+      const norm = normalizeNewick(storePhylogeny({ file, data }).newick);
       assert.isUndefined(seen.get(norm), `Duplicate Newick across ${seen.get(norm)} and ${file}`);
       seen.set(norm, file);
     }
   });
 
   it('holds one file per unique source tree', () => {
-    // The 270 phylonym files hold 160 Newick-bearing phylogenies that reduce to 112 unique trees.
+    // The 270 phylonym files hold 160 Newick-bearing phylogenies that reduce to 112 unique
+    // trees. Only the relationship is asserted: pinning the count here would fail the suite for
+    // a curator who legitimately adds a tree and correctly regenerates the store.
     const uniqueSourceTrees = new Set(
-      scanSourcePhylogenies(findJSONFiles(SOURCE_DIR))
-        .map(({ phylogeny }) => normalizeNewick(phylogeny.newick)),
+      sourceOccurrences().map(({ phylogeny }) => normalizeNewick(phylogeny.newick)),
     );
     assert.strictEqual(store.length, uniqueSourceTrees.size);
-    assert.strictEqual(store.length, 112, 'Expected 112 unique reference phylogenies');
   });
 
   it('assigns each store file a distinct PHYLO id', () => {
@@ -105,4 +109,29 @@ describe('Reference-phylogeny store (phylogenies/)', () => {
       });
     });
   }
+});
+
+describe('lib/phylogenies store helpers', () => {
+  it('ignores files in the store directory that are not PHYLO_NNNN.json', () => {
+    // The store directory also holds a README, the CSV report and the id ledger, and a curator
+    // may leave a working file there. None of them is a tree (compare the phyx/ glob hazard in
+    // AGENTS.md), so loadStore must not try to read a Newick out of them.
+    const dir = tmp.dirSync({ unsafeCleanup: true }).name;
+    const tree = { phylogenies: [{ newick: '(A,B);' }], phylorefs: [], referenceFor: [] };
+    fs.writeFileSync(path.join(dir, 'PHYLO_0001.json'), JSON.stringify(tree));
+    fs.writeFileSync(path.join(dir, 'phylo-ids.json'), JSON.stringify({ nextId: 2, ids: {} }));
+    fs.writeFileSync(path.join(dir, 'notes.json'), JSON.stringify({ hello: 'world' }));
+    fs.mkdirSync(path.join(dir, 'scratch'));
+    fs.writeFileSync(path.join(dir, 'scratch', 'PHYLO_0002.json'), JSON.stringify(tree));
+
+    const store = loadStore(dir);
+    assert.deepEqual(store.map(({ file }) => path.basename(file)), ['PHYLO_0001.json']);
+  });
+
+  it('names the offending file when a store file has no phylogeny', () => {
+    assert.throws(
+      () => storePhylogeny({ file: 'phylogenies/PHYLO_9999.json', data: { phylorefs: [] } }),
+      /PHYLO_9999\.json is not a store file/,
+    );
+  });
 });
