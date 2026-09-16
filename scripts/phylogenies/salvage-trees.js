@@ -198,8 +198,8 @@ function matchSlot(target, sourceCitation) {
 
 const ledgerHeader = [
   'clado_id', 'label', 'source_pr', 'source_branch', 'source_commit', 'commit_author',
-  'commit_date', 'source_path', 'target_slot', 'matched_on', 'citation_doi', 'figure',
-  'tip_count', 'newick_chars',
+  'commit_subject', 'commit_date', 'source_path', 'target_slot', 'matched_on', 'citation_doi',
+  'figure', 'tip_count', 'newick_chars',
 ].join(',');
 const ledgerRows = [];
 const skipped = [];
@@ -237,7 +237,7 @@ for (const [branch, source] of Object.entries(SOURCES)) {
         written += 1;
       }
 
-      const [commit = '', author = '', date = ''] = provenance(source.rev, sourcePath, tree.newick);
+      const [commit = '', author = '', date = '', subject = ''] = provenance(source.rev, sourcePath, tree.newick);
       ledgerRows.push([
         clado,
         escapeCSV(target.phylorefs?.[0]?.label || ''),
@@ -245,6 +245,7 @@ for (const [branch, source] of Object.entries(SOURCES)) {
         branch,
         commit,
         escapeCSV(author),
+        escapeCSV(subject),
         date,
         escapeCSV(sourcePath),
         `${slot.index}:${slot.key}`,
@@ -270,7 +271,9 @@ function countTips(newick) {
  * commit that added the file if the tree arrived with it.
  */
 function provenance(rev, file, newick) {
-  const format = '%H%x09%an%x09%aI';
+  // The subject carries the attribution the author field does not: every commit here is authored
+  // by the maintainer, while the transcriber is named in prose ("...from Anna", "...from RS").
+  const format = '%H%x09%an%x09%aI%x09%s';
   // A distinctive slice of the tree finds the commit that introduced it even if the file already
   // existed. Newick punctuation is safe inside a -S pickaxe string.
   const needle = normalizeNewick(newick).slice(10, 50);
