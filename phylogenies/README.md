@@ -101,6 +101,45 @@ attribution is still to come.
 Contested candidates from those branches — rival transcriptions of the same figure, and
 challengers to trees already in the store — were deliberately left out.
 
+## Curator attribution
+
+`attribution.csv` records who transcribed each tree, keyed by `PHYLO_NNNN`. Current state:
+**117 trees credited to Anna, 3 to RS** (Rebecca Stubbs, per the title of PR #45), **7
+unattributed**.
+
+Git authorship is no help: every commit in this repository is authored by the maintainer who
+committed it, so the curators appear nowhere in the author field. The attribution comes from
+commit *messages* instead — "Imported phylogenies curated by Anna", "Added new phyloreferences
+from RS" — mapped onto curators by the `CURATORS` table in the script.
+
+```bash
+node scripts/phylogenies/attribute-phylogenies.js
+```
+
+The script walks every commit touching `phyx/phylonym/` or `phyx/encrypted/phylonym/` on **any**
+branch, oldest first, and the first commit to introduce a Newick owns it. It has to work forwards:
+tracing backwards with `git log -S<newick>` bottoms out at whichever commit *moved* the file
+("Renamed from `REGNUM_` to `CLADO_`", "Reorganized PHYX files into a single folder", the 2021 move
+out of `encrypted/`), and `phyx/phylonym/` itself has only two commits in its history.
+
+Seven trees remain unattributed because the commit that introduces them is a reformatting pass
+("Updated Newicks", "Fixed specifier authorities in Phyx files") that credits nobody; their real
+transcriber is only knowable from outside the repository. **A curator written into the CSV by hand
+survives regeneration** — the script preserves an existing name wherever it would otherwise leave a
+blank, the same way the extractor preserves PHYLO ids. A name the script *derives* still wins, so
+correcting `CURATORS` propagates.
+
+This is committed as data rather than derived on demand because what history can tell us keeps
+degrading: every path move costs traceability, round 2 rewrites `phyx/` again, and the expansion of
+"RS" to a full name exists only in a GitHub pull request title. Full names and ORCIDs are not
+recoverable from the repository, so the `curator` column holds names as the commit messages give
+them and is meant to be corrected. Moving attribution into the phylogeny records themselves waits
+on the store-model decision.
+
+Note `salvage-provenance.csv` answers a different question — how each salvaged tree was written
+into `phyx/`, keyed by `CLADO_NNNNNNN` — and traces only within its source branch, so where the two
+disagree on a commit, **`attribution.csv` is the authoritative record of who transcribed a tree**.
+
 ## Roadmap
 
 - **Round 1 (this PR):** build and populate the store by copying; keep the trees in the Phyx
@@ -109,4 +148,5 @@ challengers to trees already in the store — were deliberately left out.
   trees back into Phyx objects at test/build time; remove the newicks from `phyx/phylonym/`;
   record auto-snapshot `expectedResolution` baselines so drift becomes a test failure; add
   cross-resolution discovery and Regnum citation cross-checks; migrate `from_papers/` (carrying
-  their `curatorComments`); and attribute each transcribed tree to a curator.
+  their `curatorComments`); and move curator attribution out of `attribution.csv` and into the
+  phylogeny records themselves.
