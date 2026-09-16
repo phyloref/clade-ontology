@@ -14,8 +14,8 @@ Phyx files in `phyx/phylonym/` mix two kinds of data with different lifecycles:
   Regnum.
 
 Keeping the trees inside the Phyx files made regeneration overwrite curated newicks, and the
-same tree was physically re-pasted into every phyloref file that cited it (160 newick-bearing
-phylogenies across `phyx/phylonym/` reduce to **112 unique trees**, with 25 duplicated across
+same tree was physically re-pasted into every phyloref file that cited it (175 newick-bearing
+phylogenies across `phyx/phylonym/` reduce to **127 unique trees**, with 25 duplicated across
 2–7 files). This store moves each unique tree into one file and records which phyloreferences
 it is a reference for.
 
@@ -73,6 +73,33 @@ DOI(s), and any anomalies (e.g. the same tree cited with divergent DOIs in diffe
 The Mocha test `test/phylogenies/store.js` verifies the store is a faithful, deduplicated copy
 of the source trees (every source `(cladoId, newick)` pair is reproduced exactly, each unique
 tree lives in one file, and every store file is a valid Phyx document).
+
+## Salvaged trees
+
+15 of the trees in the store were recovered from curation branches that were never merged
+(PRs #79 and #45). Every phyloref in `phyx/phylonym/` declares its reference phylogenies as
+citation slots — one `primaryPhylogenyCitation` plus any number of `phylogenyCitation` entries —
+and only some of those slots carry a Newick. These trees were transcribed in 2018–2020 against
+publications the target slots already cite, so recovering them meant filling in an empty `newick`
+field rather than transcribing anything:
+
+```bash
+node scripts/phylogenies/salvage-trees.js [--dry-run]
+# then regenerate the store, as above
+```
+
+The script refuses to write unless the source citation and the target slot agree on their DOI
+(or, where no usable DOI exists, on author surname + year + title) and exactly one slot matches,
+and it never overwrites a slot that already holds a tree. Re-running it is a no-op.
+
+`salvage-provenance.csv` records, per salvaged tree, the source PR and branch, the commit that
+introduced it, its author and date, the slot it filled and what it was matched on. It is written
+once and committed, unlike the regenerated `extraction-report.csv`. Note it records the *committer*
+of each tree, which is not necessarily the curator who transcribed it — per-tree curator
+attribution is still to come.
+
+Contested candidates from those branches — rival transcriptions of the same figure, and
+challengers to trees already in the store — were deliberately left out.
 
 ## Roadmap
 
