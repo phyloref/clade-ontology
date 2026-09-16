@@ -11,6 +11,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const chai = require('chai');
+const { isEqual } = require('lodash');
 const phyx = require('@phyloref/phyx');
 const tmp = require('tmp');
 
@@ -27,8 +28,17 @@ const {
 const assert = chai.assert;
 
 const SOURCE_DIR = path.join('phyx', 'phylonym');
+const CITATION_KEYS = ['primaryPhylogenyCitation', 'phylogenyCitation'];
+
 /** Every Newick-bearing phylogeny in the source Phyx files. */
 const sourceOccurrences = () => scanSourcePhylogenies(findJSONFiles(SOURCE_DIR));
+
+/** The citation keys an object carries, as an object (so two can be compared directly). */
+function citationsOf(obj) {
+  const citations = {};
+  for (const key of CITATION_KEYS) if (obj[key]) citations[key] = obj[key];
+  return citations;
+}
 
 /** Multiset of "cladoId\tnormalizedNewick" pairs found in the source Phyx files. */
 function sourcePairs() {
@@ -57,6 +67,25 @@ describe('Reference-phylogeny store (phylogenies/)', () => {
     const src = sourcePairs().sort();
     const dst = storePairs(store).sort();
     assert.deepEqual(dst, src, 'Store referenceFor pairs must exactly reproduce source (cladoId, newick) pairs');
+  });
+
+  it('preserves every source citation', () => {
+    // Deduplication must not lose a citation: the store keeps the canonical source's citations
+    // on the phylogeny, and any source that cited the same tree differently keeps its own copy
+    // on its referenceFor entry. Once round 2 strips the trees from phyx/, this is the only copy.
+    const index = buildReferenceIndex(store);
+    for (const { file, cladoId, phyloIndex, phylogeny } of sourceOccurrences()) {
+      const sourceCitations = citationsOf(phylogeny);
+      if (Object.keys(sourceCitations).length === 0) continue;
+      const ref = (index.get(cladoId) || [])
+        .find(({ entry }) => entry.sourcePhylogenyIndex === phyloIndex);
+      assert.isDefined(ref, `${file} phylogeny ${phyloIndex} is missing from the store`);
+      const stored = ref.entry.citations || citationsOf(ref.phylogeny);
+      assert.isTrue(
+        isEqual(stored, sourceCitations),
+        `${file} phylogeny ${phyloIndex}: citations in ${ref.file} do not match the source`,
+      );
+    }
   });
 
   it('deduplicates: each unique Newick lives in exactly one store file', () => {
