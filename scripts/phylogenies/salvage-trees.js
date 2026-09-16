@@ -278,11 +278,13 @@ function provenance(rev, file, newick) {
   // existed. Newick punctuation is safe inside a -S pickaxe string.
   const needle = normalizeNewick(newick).slice(10, 50);
   for (const args of [
-    ['log', '-1', `-S${needle}`, `--format=${format}`, rev, '--', file],
-    ['log', '-1', '--diff-filter=A', `--format=${format}`, rev, '--', file],
+    ['log', `-S${needle}`, `--format=${format}`, rev, '--', file],
+    ['log', '--diff-filter=A', `--format=${format}`, rev, '--', file],
   ]) {
     const out = ChildProcess.execFileSync('git', args, { maxBuffer: 1024 * 1024 }).toString().trim();
-    if (out) return out.split('\t');
+    // git log is newest-first, and a tree removed and re-added matches more than once. The
+    // introducing commit is the oldest match, so take the last line rather than passing -1.
+    if (out) return out.split('\n').pop().split('\t');
   }
   return [];
 }
