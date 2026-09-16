@@ -28,6 +28,9 @@ const {
   findJSONFiles,
   normalizeNewick,
   scanSourcePhylogenies,
+  citationDOI,
+  rawCitationDOI,
+  CITATION_KEYS,
   PHYLOGENIES_DIR,
 } = require('../../lib/phylogenies');
 const { escapeCSV } = require('../../lib/csv');
@@ -51,9 +54,6 @@ const argv = yargs(process.argv.slice(2))
 
 const sourceDir = argv._[0] || path.join('phyx', 'phylonym');
 const storeDir = argv.o;
-
-// Recognized citation keys on a phylogeny entry, in order of preference.
-const CITATION_KEYS = ['primaryPhylogenyCitation', 'phylogenyCitation'];
 
 const CONTEXT = 'http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json';
 
@@ -82,14 +82,6 @@ function deriveLabel(citation) {
   // Only qualify a label we actually have; a bare ", fig. 3" is worse than no label.
   if (label && citation.figure) label = `${label}, fig. ${citation.figure}`;
   return label || undefined;
-}
-
-/** Return the first DOI string found in a citation's identifier array, normalized. */
-function citationDOI(citation) {
-  if (!citation) return undefined;
-  const ids = citation.identifier || [];
-  const doi = ids.find((i) => i.type === 'doi');
-  return doi ? String(doi.id).toLowerCase().replace(/^https?:\/\/doi\.org\//, '') : undefined;
 }
 
 // ---------------------------------------------------------------------------
@@ -205,13 +197,18 @@ for (const group of orderedGroups) {
   // Report diagnostics.
   const whitespaceVariants = new Set(group.map((o) => o.newick)).size;
   const dois = new Set(group.map((o) => citationDOI(o.citation)).filter(Boolean));
+  // Fall back to the raw string for DOIs too malformed to normalize, so the report stays a place
+  // to spot and fix them rather than silently blanking the cell.
+  const reportedDOIs = new Set(
+    group.map((o) => citationDOI(o.citation) || rawCitationDOI(o.citation)).filter(Boolean),
+  );
   if (dois.size > 1) divergent += 1;
   reportRows.push([
     phyloId,
     referenceFor.length,
     escapeCSV(referenceFor.map((r) => r.clado).join(' ')),
     escapeCSV(label || ''),
-    escapeCSV([...dois].join(' ')),
+    escapeCSV([...reportedDOIs].join(' ')),
     whitespaceVariants,
     dois.size > 1 ? 'YES' : '',
   ].join(','));

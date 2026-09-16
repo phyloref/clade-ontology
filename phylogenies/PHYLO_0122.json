@@ -1,7 +1,8 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
+            "label": "Stefanovic et al. 2002, fig. 1",
             "primaryPhylogenyCitation": {
                 "type": "article",
                 "title": "Monophyly of the Convolvulaceae and circumscription of their major lineages based on DNA sequences of multiple chloroplast loci.",
@@ -51,101 +52,14 @@
                 }
             },
             "newick": "(((((((((((((((((((Argyreia_osyrensis, Argyreia_splendens), \nArgyreia_nervosa), \n(Turbina_oblongata, Turbina_oentheroides, \nParalepistemon_shirensis)),\n\nIpomoea_pes-tigridis), \n\n(((Turbina_corymbosa, Rivera_corymbosa), Ipomoea_obscura),\n((Stictocardia_tiliifolia, Stictocardia_incomta), \nLepistemon_owariensis))),\n\n(((((Ipomoea_tiliacea, Ipomoea_batas), Ipomoea_setosa),\nIpomoea_arborescens), \n(Ipomoea_coccinea, Ipomoea_quamoclit),\nIpomoea_wrightii, Ipomoea_aquatica, Calonyction_aculeatum),\n(Astripomoea_grantii, Astripomoea_malvacea))), \n\n((Merremia_dissecta, Merremia_aegyptia), Merremia_vitifolia)),\n\n(((Hewittia_sublobata, Hewittia_scandens),\n(Zenostegia_tridentata, Merremia_hastata)), \n((Operculina_pteripes, Operculina_sp), Operculina_turpethum))),\n\nMerremia_umbellata), \n\n((((Calystegia_macrostegia, Calystegia_sepium), \nConvolvulus_arvensis), \n(Convolvulus_assyricus, Convolvulus_mauritanicus), \nConvolvulus_sagittatus), \nPolymeria_pusilla)), \n\nMerremia_peltata), \n\n((((Aniseia_martinicensis, Aniseia_cernua), \n(Aniseia_argentinea, Iseia_luxurians)), \nOdonellia_hirtiflora), Tetralocularia_pennellii)),\n\n(((((Cuscuta_pentagona, Cuscuta_sandwichiana), Cuscata_gronovii),\nCuscuta_sp), Cuscuta_europaea), \n(Cuscuta_japonica, Cuscuta_reflexa))),\n\n(((((((((Hildebrandtia_promontorii, Hildebrandtia_sp), \nHildebrandtia_valo), \n((Hildebrandtia_africana, Sabaudiella_aloysii),\nCladostigma_hildebrandtoides)), \n(Seddera_hirsutus, Seddera_arabica)), \n((Evolvulus_glomeratus, Evolvulus_nuttallillanus),\nBreweria_rotundifolia)), \n(Cressa_truxillensis, Cressa_depressa)), \n((Bonamia_spectabilis, Bonamia_thunbergiana), \nStylisma_patens)),\n(Wilsonia_humilis, Wilsonia_backhousei)), \n((((Dichondra_brachypoda, Dichondra_occidentalis),\nFalkia_repens), Petrogenis_repens), \n(((Calycobolus_nutans, Porana_velutina), Porana_volubilis), \nMetaporana_parviflora))),\n\n(((((Dicranostyles_villosus, Dicranostyles_mildbraediana),\nDicranostyles_ampla),\n((Maripa_glabra, Maripa_paniculata), Maripa_repens)),\n((((Jacquemontia_pentantha, Jacquemontia_reclinata), \nJacquemontia_sandwicensis), Jacquemontia_tamnifolia),\nJacquemontia_blanchetti)),\n((((Bonamia_media, Itzaea_sericea), Calycobolus_glaber), \n(Dipteropeltis_poranoides, Rapona_tilifolia)), \nNeuropeltis_acuminata))),\n\n(Erycibe_hellwigii, Erycibe_glomerata)),\n\n((((Cordisepalum_thorelii, Cordisepalum_phalanthopetalum),\nPoranopsis_paniculata), Cardiochlamys_madagascariensis),\n((Trydinamia_megalantha, Porana_commixta), Dinetus_truncatus))),\n\nHumbertia_madagascariensis), \n\n(Nicotiana_tabacum, Schizanthus_pinnatus)),\n\nMontinia_caryophyllacea)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
-        },
-        {
-            "phylogenyCitation": {
-                "type": "article",
-                "title": "Testing the phylogenetic position of a parasitic plant (Cuscuta, Convolvulaceae, Asteridae):  Bayesian inference and the Parametric Bootstrap on data drawn from three genomes.",
-                "year": 2004,
-                "authors": [
-                    {
-                        "name": "S. L. Stefanovic",
-                        "alternate": [
-                            "Stefanovic, S. L."
-                        ],
-                        "firstname": "S.",
-                        "lastname": "Stefanovic",
-                        "middlename": "L."
-                    },
-                    {
-                        "name": "R. G. Olmstead",
-                        "alternate": [
-                            "Olmstead, R. G."
-                        ],
-                        "firstname": "R.",
-                        "lastname": "Olmstead",
-                        "middlename": "G."
-                    }
-                ],
-                "editors": [],
-                "series_editors": [],
-                "figure": "1, 3",
-                "identifier": [
-                    {
-                        "type": "doi",
-                        "id": "10.1080/10635150490445896"
-                    }
-                ],
-                "link": [],
-                "journal": {
-                    "name": "Systematic Biology",
-                    "volume": "53",
-                    "identifier": []
-                }
-            }
         }
     ],
-    "phylorefs": [
+    "phylorefs": [],
+    "referenceFor": [
         {
+            "clado": "CLADO_0000032",
             "regnumId": 32,
-            "label": "Convolvulaceae",
-            "dwc:scientificNameAuthorship": "Stefanović , S., Olmstead, R. G.",
-            "dwc:namePublishedIn": [
-                {
-                    "type": "book",
-                    "title": "Genera plantarum.",
-                    "year": 1789,
-                    "authors": [
-                        {
-                            "name": "A. L. Jussieu",
-                            "alternate": [
-                                "Jussieu, A. L."
-                            ],
-                            "firstname": "A.",
-                            "lastname": "Jussieu",
-                            "middlename": "L."
-                        }
-                    ],
-                    "editors": [],
-                    "series_editors": [],
-                    "city": "Paris",
-                    "identifier": [],
-                    "link": []
-                }
-            ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The least inclusive clade containing Convolvulus arvensis Linnaeus 1753 and Humbertia madagascariensis Lamarck 1786.",
-            "internalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Convolvulus arvensis Linnaeus, 1753",
-                        "nameComplete": "Convolvulus arvensis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Humbertia madagascariensis Lamarck, 1786",
-                        "nameComplete": "Humbertia madagascariensis"
-                    }
-                }
-            ],
-            "externalSpecifiers": []
+            "sourcePhylogenyIndex": 0
         }
     ]
 }

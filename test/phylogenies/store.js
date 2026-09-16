@@ -65,13 +65,13 @@ describe('Reference-phylogeny store (phylogenies/)', () => {
   });
 
   it('holds one file per unique source tree', () => {
-    // The 270 phylonym files hold 160 Newick-bearing phylogenies that reduce to 112 unique trees.
+    // The 270 phylonym files hold 175 Newick-bearing phylogenies that reduce to 127 unique trees.
     const uniqueSourceTrees = new Set(
       scanSourcePhylogenies(findJSONFiles(SOURCE_DIR))
         .map(({ phylogeny }) => normalizeNewick(phylogeny.newick)),
     );
     assert.strictEqual(store.length, uniqueSourceTrees.size);
-    assert.strictEqual(store.length, 112, 'Expected 112 unique reference phylogenies');
+    assert.strictEqual(store.length, 127, 'Expected 127 unique reference phylogenies');
   });
 
   it('assigns each store file a distinct PHYLO id', () => {

@@ -1,7 +1,8 @@
 {
-    "@context": "http://www.phyloref.org/phyx.js/context/v0.2.0/phyx.json",
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
     "phylogenies": [
         {
+            "label": "Antonelli 2008, fig. 2",
             "primaryPhylogenyCitation": {
                 "type": "article",
                 "title": "Higher level phylogeny and evolutionary trends in Campanulaceae subfam. Lobelioideae: Molecular signal overshadows morphology.",
@@ -35,58 +36,12 @@
             "newick": "(Helianthus_annuus,Roussea_simiplex,((Canarina_canariensis,(Jasione_montana,(Legousia_hybrida,(Campanula_asperuloides,(Campanula_trachelium,Campanula_latifolia))))),((Lobelia_physaloides,(Lobelia_coronopifolia,Lobelia_tomentosa)),((Grammatotheca_bergiana,Lobelia_aquatica),(Lobelia_sonderiana,((Lobelia_graniticola,Lobelia_erinus),(Lobelia_anceps,((Lobelia_leschenaultiana,(Lobelia_giberrosa,Lobelia_gregoriana),(Trematolobelia_macrostachys,(Lobelia_yuccoides,Lobelia_hypoleuca)),(Lobelia_stricklandiae,(Lobelia_exaltata,Lobelia_fistulosa)),((Bringhamia_insignis,Delissea_undulata),(Cyanea_angustifolia,(Clermontia_kakeana,Cyanea_koolauensis)))),(((Diastatea_micranta,(Solenopsis_laurentia,(Downingia_insignis,Downingia_bacigalupii))),((Lobelia_kalmii,(Lobelia_rotundifolia,(Lobelia_cardinalis,Lobelia_doertmanna))),(Lobelia_cordifolia,Lobelia_xalapensis,(Lobelia_irasuensis,(Lobelia_aguana,Lobelia_laxiflora)),((Lobelia_martagon,Hippobroma_longiflora),(Lobelia_krausii,Lobelia_stricta,Lobelia_portoricensis))))),(((Lobelia_polyphylla,Lobelia_tupa,Lobelia_excelsa),(Lobelia_oligophylla,(Lobelia_nummularia,Lobelia_roughii,((Lobelia_purpurascens,Isotoma_fluviatilis),(Lobelia_chinensis,(Lobelia_arenaria,Lobelia_angulata)))))),((Lysipomia_sphagnophila,Lysipomia_cuspidata),((Siphocampylus_fulgens,(Siphocampylus_affinis,Siphocampylus_brevicalyx)),((Siphocampylus_scandens,Siphocampylus_macropodus),(Centropogon_cornutus,(Centropogon_granulosus,Centropogon_gamosepalus))),(Centropogon_dissectus,Siphocampylus_giganteus,(Centropogon_trichodes,Centropogon_luteus,(Burmeistera_cyclostigmata,Burmeistera_domingensis)))))))))))))Lobelioideae))root"
         }
     ],
-    "phylorefs": [
+    "phylorefs": [],
+    "referenceFor": [
         {
+            "clado": "CLADO_0000002",
             "regnumId": 2,
-            "label": "Lobelioideae",
-            "dwc:scientificNameAuthorship": "Cellinese, N.",
-            "dwc:namePublishedIn": [
-                {
-                    "type": "book",
-                    "title": "Outlines of botany",
-                    "year": 1835,
-                    "authors": [
-                        {
-                            "name": "G. T. Burnett",
-                            "alternate": [
-                                "Burnett, G. T."
-                            ],
-                            "firstname": "G.",
-                            "lastname": "Burnett",
-                            "middlename": "T."
-                        }
-                    ],
-                    "editors": [],
-                    "series_editors": [],
-                    "publisher": "Renshaw",
-                    "city": "London",
-                    "identifier": [],
-                    "link": []
-                }
-            ],
-            "obo:IAO_0000119": [],
-            "cladeDefinition": "The crown clade originating in the most recent common ancestor of Lobelia cardinalis Linnaeus 1753 and Lobelia coronopifolia Linnaeus 1753.",
-            "internalSpecifiers": [
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Lobelia cardinalis Linnaeus, 1753",
-                        "nameComplete": "Lobelia cardinalis"
-                    }
-                },
-                {
-                    "@type": "http://rs.tdwg.org/ontology/voc/TaxonConcept#TaxonConcept",
-                    "hasName": {
-                        "@type": "http://rs.tdwg.org/ontology/voc/TaxonName#TaxonName",
-                        "nomenclaturalCode": "http://purl.obolibrary.org/obo/NOMEN_0000109",
-                        "label": "Lobelia coronopifolia Linnaeus, 1753",
-                        "nameComplete": "Lobelia coronopifolia"
-                    }
-                }
-            ],
-            "externalSpecifiers": []
+            "sourcePhylogenyIndex": 0
         }
     ]
 }
