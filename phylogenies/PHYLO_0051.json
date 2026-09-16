@@ -1,0 +1,74 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Muller et al. 2001, fig. 1",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Ribosomal DNA phylogeny of the Bangiophycidae (Rhodophyta) and the origin of secondary plastids.",
+                "year": 2001,
+                "authors": [
+                    {
+                        "name": "K. M. Muller",
+                        "alternate": [
+                            "Muller, K. M."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Muller",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "M. C. Oliveira",
+                        "alternate": [
+                            "Oliveira, M. C."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Oliveira",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "R. G. Sheath",
+                        "alternate": [
+                            "Sheath, R. G."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Sheath",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "D. Bhattacharya",
+                        "alternate": [
+                            "Bhattacharya, D."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Bhattacharya"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.2307/3558445"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Am. J. Bot.",
+                    "volume": "88",
+                    "identifier": []
+                }
+            },
+            "newick": "(((((Porphyra_miniata, Bangia_fuscopurpurea), \n((Porphyra_tenera_T8, (Porphyra_tenera_T-1, (Porphyra_yezoensis, Porphyra_tenera_TU-3))),\n(Porphyra_leucosticta_L26199, Porphyra_leucosticta_SAG_B55.88))),\n((Porphyra_spiralis_var._amplifolia, Porphyra_acanthophora), Porphyra_dentata)),\nBangia_sp._VIS7),\n((Porphyra_umbilicalis, Bangia_fuscopurpurea_SAG), Bangia_atropurpurea))"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000129",
+            "regnumId": 129,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}

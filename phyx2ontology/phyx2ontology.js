@@ -23,34 +23,7 @@ const yargs = require('yargs');
 // Load phyx.js, our PHYX library.
 const phyx = require('@phyloref/phyx');
 
-/*
- * Returns a list of PHYX files that we can test in the provided directory.
- */
-function findPHYXFiles(dirPath) {
-  // Read all files from the provided directory and look for '.json' files.
-  const filesFound = fs.readdirSync(dirPath).map((filename) => {
-    const filePath = path.join(dirPath, filename);
-
-    const stats = fs.statSync(filePath);
-    if (stats.isDirectory()) {
-      // Recurse into every directory in the provided directory.
-      return findPHYXFiles(filePath);
-    }
-
-    // Look for .json files (but not for '_as_owl.json' files, for historical reasons).
-    if (filePath.endsWith('.json')) {
-      return [filePath];
-    }
-
-    return [];
-  }).reduce((x, y) => x.concat(y), []); // This flattens the list of results.
-
-  // If no files could be found, the user might have made a mistake by entering
-  // the wrong directory name, so let them know that it failed.
-  if (filesFound.length === 0) process.stderr.write(`Warning: directory ${dirPath} contains no JSON files.`);
-
-  return filesFound;
-}
+const { findJSONFiles } = require('../lib/files');
 
 // Read command-line arguments.
 const argv = yargs(process.argv.slice(2)).usage('Usage: $0 <directories or files to convert> [--no-phylogenies]')
@@ -64,13 +37,17 @@ const argv = yargs(process.argv.slice(2)).usage('Usage: $0 <directories or files
   .alias('h', 'help')
   .argv;
 
-// Treat unnamed commands as files or directories to be scanned for JSON files.
-const phyxFiles = argv._.map((filenameOrDirname) => {
+// Treat unnamed commands as files or directories to be scanned for JSON files (findJSONFiles
+// is shared with test_phyx.js and the phylogeny tooling; see lib/files.js).
+const phyxFiles = argv._.flatMap((filenameOrDirname) => {
   const stats = fs.statSync(filenameOrDirname);
-  if (stats.isDirectory()) return findPHYXFiles(filenameOrDirname);
   if (stats.isFile()) return [filenameOrDirname];
-  throw new Error(`Argument ${filenameOrDirname} is neither a file nor a directory!`);
-}).reduce((acc, val) => acc.concat(val), []);
+  if (!stats.isDirectory()) throw new Error(`Argument ${filenameOrDirname} is neither a file nor a directory!`);
+  const found = findJSONFiles(filenameOrDirname);
+  // The user might have made a mistake by entering the wrong directory name, so let them know.
+  if (found.length === 0) process.stderr.write(`Warning: directory ${filenameOrDirname} contains no JSON files.`);
+  return found;
+});
 
 if (phyxFiles.length === 0) throw new Error('No arguments provided!');
 

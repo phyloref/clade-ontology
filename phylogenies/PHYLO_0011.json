@@ -1,0 +1,66 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Delsuc et al. 2008, fig. 1",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Additional molecular support for the new chordate phylogeny.",
+                "year": 2008,
+                "authors": [
+                    {
+                        "name": "F. Delsuc",
+                        "alternate": [
+                            "Delsuc, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Delsuc"
+                    },
+                    {
+                        "name": "G. Tsagogeorga",
+                        "alternate": [
+                            "Tsagogeorga, G."
+                        ],
+                        "firstname": "G.",
+                        "lastname": "Tsagogeorga"
+                    },
+                    {
+                        "name": "N. Lartillot",
+                        "alternate": [
+                            "Lartillot, N."
+                        ],
+                        "firstname": "N.",
+                        "lastname": "Lartillot"
+                    },
+                    {
+                        "name": "H. Philippe",
+                        "alternate": [
+                            "Philippe, H."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Philippe"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Genesis",
+                    "volume": "46",
+                    "identifier": []
+                }
+            },
+            "newick": "((Blastocladiella, Rhizopus), \n((Monosiga_ovata, (Proterospongia, Monosiga_brevicollis)),\n\n(((Nematostella, Acropora), (Hydra, Hydractinia)), \n(\n\n(\n((Haementeria, Lumbricidae), (Euprymna, (Gastropda, (Crassostrea,\n(Pectinidae, Mytilus))))),\n(Ixodidae, \n((Penaeidae, (Brachyura, Astacidea)),\n(Locusta, (Apis, (Tribolium, Bombyx)))))),\n\n(Strongylocentrotus, (Branchiostoma,\n((Oikopleura, (Diplosoma, (Ciona_intestinalis, Ciona_savignyi))),\n((Petromyzon, Eptatretus), (\n(Tetraodon, Danio), ((Homo, Galus), (Xenopus, Ambystoma)))))))))))"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000028",
+            "regnumId": 28,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}

@@ -1,0 +1,97 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Aguinaldo et al. 1997, fig. 2",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Evidence for a clade of nematodes, arthropods and other moulting animals.",
+                "year": 1997,
+                "authors": [
+                    {
+                        "name": "A. M. A. Aguinaldo",
+                        "alternate": [
+                            "Aguinaldo, A. M. A."
+                        ],
+                        "firstname": "A. M.",
+                        "lastname": "Aguinaldo",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "J. M. Tuberville",
+                        "alternate": [
+                            "Tuberville, J. M."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Tuberville",
+                        "middlename": "M."
+                    },
+                    {
+                        "name": "L. S. Linford",
+                        "alternate": [
+                            "Linford, L. S."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Linford",
+                        "middlename": "S."
+                    },
+                    {
+                        "name": "M. C. Rivera",
+                        "alternate": [
+                            "Rivera, M. C."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Rivera",
+                        "middlename": "C."
+                    },
+                    {
+                        "name": "J. R. Garey",
+                        "alternate": [
+                            "Garey, J. R."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Garey",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "R. A. Raff",
+                        "alternate": [
+                            "Raff, R. A."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Raff",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "J. A. Lake",
+                        "alternate": [
+                            "Lake, J. A."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Lake",
+                        "middlename": "A."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "Nature",
+                    "volume": "387",
+                    "identifier": []
+                }
+            },
+            "newick": "(((((Kinorhynch, Priapulid), \n\n(Nematomorph, (Onychophoran, (Nematode, (Tardigrade, Arthropod_Crustacean), Arthropod_Insect)), \n(Arthropod_Myriapod, Arthropod_Chelicerate))),\n\n(Rotifer, (Oligochaete, (Brachiopod, (Polychaete, Mollusc))))), \n\nEchinoderm), Cnidarian)"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000190",
+            "regnumId": 190,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}

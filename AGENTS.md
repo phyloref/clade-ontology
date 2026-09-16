@@ -10,7 +10,7 @@ The Clade Ontology is an ontology of exemplar phyloreferences curated from Phylo
 
 ```bash
 npm test           # Lint + run all Mocha tests (requires Node.js)
-npm run lint       # Biome lint on test/, phyx2ontology/, and regnum2phyx/
+npm run lint       # Biome lint on test/, phyx2ontology/, regnum2phyx/, lib/, scripts/
 npm run mocha      # Run tests without linting
 npm run build-ontology  # Convert all phyx/ files into CLADO.json
 ```
@@ -62,11 +62,16 @@ PhyloRegnum DB dump (JSON)
   - `from_papers/` — Phyloreferences from peer-reviewed papers (e.g., `Brochu 2003/`)
   - `phylonym/` — Files from the Phylonym database, PhyloRegnum (https://www.phyloregnum.org/)
   - `encrypted/` — Git-crypt encrypted files (skipped during processing)
+- **`phylogenies/`** — Shared, deduplicated reference-phylogeny store. One `PHYLO_NNNN.json` per unique Newick tree; each is a valid Phyx file plus a custom top-level `referenceFor` array mapping the tree to the `CLADO_NNNNNNN`/`regnumId` phyloreferences it validates. `phylo-ids.json` is the generated id ledger (see the gotcha below). See `phylogenies/README.md`. (Round 1: the trees are *copied* here but still also live in `phyx/phylonym/`.)
+- **`lib/`** — Shared Node modules. `files.js` holds `findJSONFiles`, the one recursive `*.json` walker used by `test_phyx.js`, `phyx2ontology.js` and the phylogeny tooling; `phylogenies.js` holds the store helpers (`loadStore`, `findStoreFiles`, `storePhylogeny`, `buildReferenceIndex`, `normalizeNewick`, `scanSourcePhylogenies`, `loadIdLedger`/`saveIdLedger`); `csv.js` holds `escapeCSV` and `parseCSVRow`, shared by the scripts that emit CSV reports and the tests that read them back.
+- **`scripts/`** — Top-level home for ad-hoc/maintenance scripts. `scripts/phylogenies/extract-phylogenies.js` copies Newick trees out of `phyx/phylonym/` into the store (never modifies `phyx/`); it writes the new store via a temp directory and refuses to run if it would retire more than half the store, unless given `--force`.
 - **`phyx2ontology/phyx2ontology.js`** — Converts Phyx files to a single Clade Ontology JSON-LD. Reads Phyx files, wraps them via `@phyloref/phyx`, and emits JSON-LD to STDOUT.
 - **`regnum2phyx/regnum2phyx.js`** — Converts PhyloRegnum database dumps (JSON arrays) into individual Phyx files. Handles specifiers, citations (BibJSON format), and author formatting.
 - **`test/`** — Mocha test suite:
   - `test_phyx.js` — Validates all Phyx files in `phyx/` (JSON schema + JSON-LD conversion). Skips git-crypt encrypted files.
   - `test_phyx2ontology.js` — Smoke-tests `phyx2ontology.js` execution on all Phyx files.
+  - `phylogenies/store.js` — Verifies the `phylogenies/` store is a faithful, deduplicated copy of the trees (and citations) in `phyx/phylonym/`.
+  - `phylogenies/extract.js` — Runs `extract-phylogenies.js` against temporary fixtures: PHYLO id stability across re-runs, citation preservation, report contents, and the refusals that stop a mis-aimed run from replacing the store.
   - `regnum2phyx/exec.js` — Tests `regnum2phyx.js` against example dumps in `test/regnum2phyx/examples/` and compares output against `test/regnum2phyx/expected/`.
 
 ### Phyx Format
@@ -84,6 +89,17 @@ Phyx files are JSON with:
 
 Linting uses [Biome](https://biomejs.dev/). ES6 syntax.
 
+**Run `npm ci` before trusting the lint.** `npm run lint` calls `biome` from `node_modules/.bin`, and if dependencies are stale or missing it fails loudly — but reaching for `npx biome` instead does not: `biome` on npm is an unrelated package (a template engine), so npx downloads *that*, lints nothing, and exits 0. A silent, instant "pass" from `npx biome` means the wrong binary, not clean code.
+
 ### Git-Crypt
 
 Some Phyx files in `phyx/encrypted/` are git-crypt encrypted. Both `phyx2ontology.js` and `test_phyx.js` detect these by checking for the `\x00GITCRYPT` magic bytes and skip them gracefully.
+
+### Gotchas for agents
+
+- **`phylogenies/phylo-ids.json` is the id ledger and must be committed with the store.** It is the only record of the PHYLO ids that have been *retired* (a retired id's store file is, by definition, deleted), so dropping or hand-editing it lets the extractor reissue an id onto a different tree and silently break every `PHYLO_NNNN` handle stored elsewhere. The store directory is read flat and filtered to `PHYLO_NNNN.json` (`lib/phylogenies.js`), so the ledger, the CSV report and the README are never mistaken for trees.
+- **Anything matching `*.json` under `phyx/` is treated as a Phyx file.** The recursive walkers in `test_phyx.js` and `phyx2ontology.js` glob every `.json` and feed it to phyx.js, so do not put non-Phyx JSON (or new stores) inside `phyx/`. Archival/broken copies under `phyx/phylonym/` use a `.json.txt` extension specifically to dodge this glob; the shared `phylogenies/` store lives *outside* `phyx/` for the same reason.
+- **`PhyxWrapper.asJSONLD()` requires a `phylorefs` key**, even an empty `[]`. Its expected-resolution cross-linking iterates `jsonld.phylorefs`, so a Phyx document with only `phylogenies` throws `TypeError: Cannot read properties of undefined (reading 'forEach')`. Store files therefore include `"phylorefs": []`.
+- **Import phyx.js wrappers directly in standalone scripts**, e.g. `require('@phyloref/phyx/src/wrappers/PhylorefWrapper')`, not the package index. The index pulls in `PhyxWrapper → jsonld`, which breaks under newer Node. (Mocha tests use the package index fine; the constraint bites CLI scripts — see `regnum2phyx/regnum2phyx.js` and `lib/phylogenies.js`.)
+- **Resolution validation (does a phyloref resolve to its expected node?) only runs under `RUN_SLOW_TESTS`** via JPhyloRef; the default `npm test` and the `phyx2ontology.js` build path do not check resolution. `phyx2ontology.js` also wraps phylorefs and phylogenies *independently* (not through `PhyxWrapper`), so it never emits the node↔phyloref expected-resolution restrictions.
+- **`phylonym/` phylogenies have no explicit phyloref link** (no `expectedResolution` / `expectedPhyloreferenceNamed`); the relationship is structural (same file). Only `from_papers/` files carry explicit links via `additionalNodeProperties.expectedPhyloreferenceNamed` keyed by Newick node label. `curatorComments` likewise appear only in `from_papers/`.

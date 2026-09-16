@@ -1,0 +1,65 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Xia et al. 2009, fig. 4",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Familial placement and relations of Rehmannia and Triaenophora (Scrophulariaceae s.l.) inferred from five gene regions.",
+                "year": 2009,
+                "authors": [
+                    {
+                        "name": "Z. Xia",
+                        "alternate": [
+                            "Xia, Z."
+                        ],
+                        "firstname": "Z.",
+                        "lastname": "Xia"
+                    },
+                    {
+                        "name": "Y. Z. Wang",
+                        "alternate": [
+                            "Wang, Y. Z."
+                        ],
+                        "firstname": "Y.",
+                        "lastname": "Wang",
+                        "middlename": "Z."
+                    },
+                    {
+                        "name": "J. F. Smith",
+                        "alternate": [
+                            "Smith, J. F."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Smith",
+                        "middlename": "F."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "4",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.3732/ajb.0800195"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "American Journal of Botany",
+                    "volume": "96",
+                    "identifier": []
+                }
+            },
+            "newick": "(((((((((Castilleja, Pedicularis), Seymeria), \n(Tozzia, Melampyrum)),\n(((Alectra, Melasma), Orobanche), Boschniakia)), \nLindenbergia), \n\n(((((Rehm._piasezkii, Rehm._elata), (Rehm._solanifolia, Rehm._glutinosa)), \nRehm._henryi), Rehm._Chingii), \n(Triaen._rupestris, Triaen._shennongjiaensis))),\n\n((((Hemichaena, Berendtia), Mim._aurantiacus), \n((Mim._tenellus, Mim._szechuanensis), Phryma)), \nPaulownia)), \n\n((((Maz._stachydifolius, Maz._spicatus), (Maz._gracilis, Maz._japonicus)), \nMaz._omeiensis), Lancea_tibetica)), \n\n(((Thunbergia, Elytraria), Barleria), Lamium), \n\n((Kigelia, Catalpa), Sesamum))"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000073",
+            "regnumId": 73,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}
