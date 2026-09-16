@@ -90,8 +90,8 @@ describe('extract-phylogenies.js', () => {
     const cite = (doi) => ({
       primaryPhylogenyCitation: { year: 2020, authors: [{ lastname: 'Smith' }], identifier: [{ type: 'doi', id: doi }] },
     });
-    writeSource(srcDir, 1, { newick: '(A,B);', ...cite('10.1/aaa') });
-    writeSource(srcDir, 2, { newick: '(A,B);', ...cite('10.1/bbb') });
+    writeSource(srcDir, 1, { newick: '(A,B);', ...cite('10.1234/aaa') });
+    writeSource(srcDir, 2, { newick: '(A,B);', ...cite('10.1234/bbb') });
     const child = runExtractor(srcDir, storeDir, report);
 
     assert.match(child.stderr, /1 tree\(s\) had divergent citations/);
