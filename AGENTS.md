@@ -89,6 +89,8 @@ Phyx files are JSON with:
 
 Linting uses [Biome](https://biomejs.dev/). ES6 syntax.
 
+**Run `npm ci` before trusting the lint.** `npm run lint` calls `biome` from `node_modules/.bin`, and if dependencies are stale or missing it fails loudly — but reaching for `npx biome` instead does not: `biome` on npm is an unrelated package (a template engine), so npx downloads *that*, lints nothing, and exits 0. A silent, instant "pass" from `npx biome` means the wrong binary, not clean code.
+
 ### Git-Crypt
 
 Some Phyx files in `phyx/encrypted/` are git-crypt encrypted. Both `phyx2ontology.js` and `test_phyx.js` detect these by checking for the `\x00GITCRYPT` magic bytes and skip them gracefully.
