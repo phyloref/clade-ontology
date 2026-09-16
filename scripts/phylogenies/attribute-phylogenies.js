@@ -25,7 +25,7 @@
  * Per-tree attribution inside the data itself waits on the store-model decision.
  *
  * Usage:
- *   node scripts/phylogenies/attribute-phylogenies.js [-o <csv>] [--store <dir>]
+ *   node scripts/phylogenies/attribute-phylogenies.js [-o <csv>] [--store <dir>] [--paths <p>...]
  */
 
 const ChildProcess = require('node:child_process');
@@ -44,12 +44,19 @@ const argv = yargs(process.argv.slice(2))
     default: path.join(PHYLOGENIES_DIR, 'attribution.csv'),
   })
   .option('store', { describe: 'Store directory to attribute', default: PHYLOGENIES_DIR })
+  .option('paths', {
+    describe: 'Repository paths whose history to walk',
+    type: 'array',
+    default: ['phyx/phylonym/', 'phyx/encrypted/phylonym/'],
+  })
   .help('h').alias('h', 'help').argv;
 
-// Paths the Phylonym trees have lived under. phyx/phylonym/ is where they are now; the encrypted
-// directory is where they were until the 2021 move, and is where the unmerged curation branches
-// still write.
-const HISTORICAL_PATHS = ['phyx/phylonym/', 'phyx/encrypted/phylonym/'];
+/*
+ * Paths the Phylonym trees have lived under, defaulted in --paths above: phyx/phylonym/ is where
+ * they are now, and the encrypted directory is where they were until the 2021 move and where the
+ * unmerged curation branches still write.
+ */
+const HISTORICAL_PATHS = argv.paths;
 
 /*
  * Commit subject -> curator. Ordered; the first match wins.
@@ -130,8 +137,11 @@ const commits = [...byEvent.values()].reverse();
 const introducedBy = new Map(); // phyloId -> commit
 for (const commit of commits) {
   if (introducedBy.size === phyloIdByNewick.size) break;
+  // --root so a root commit diffs against the empty tree; without it diff-tree prints nothing
+  // for one, and a tree introduced by a repository's first commit would never be attributed.
   const changed = git(
-    'diff-tree', '--no-commit-id', '--name-only', '-r', commit.hash, '--', ...HISTORICAL_PATHS,
+    'diff-tree', '--no-commit-id', '--name-only', '-r', '--root', commit.hash,
+    '--', ...HISTORICAL_PATHS,
   ).trim();
   for (const file of changed.split('\n').filter((f) => f.endsWith('.json'))) {
     const after = newicksAt(commit.hash, file);
