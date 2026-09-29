@@ -96,3 +96,7 @@ typings/
 
 # FuseBox cache
 .fusebox/
+
+# Temporary directories created while the reference-phylogeny store is being rewritten
+# (scripts/phylogenies/extract-phylogenies.js normally removes these itself).
+phylogenies/.extract-*
