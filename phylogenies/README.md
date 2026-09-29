@@ -122,10 +122,9 @@ The script refuses to write unless the source citation and the target slot agree
 and it never overwrites a slot that already holds a tree. Re-running it is a no-op.
 
 `salvage-provenance.csv` records, per salvaged tree, the source PR and branch, the commit that
-introduced it, its author and date, the slot it filled and what it was matched on. It is written
-once and committed, unlike the regenerated `extraction-report.csv`. Note it records the *committer*
-of each tree, which is not necessarily the curator who transcribed it — per-tree curator
-attribution is still to come.
+introduced it (author, subject and date), the slot it filled and what it was matched on. It is
+written once and committed, unlike the regenerated `extraction-report.csv`. Its `commit_author` is
+the *committer*, not the curator who transcribed the tree; for that, see `attribution.csv` below.
 
 Contested candidates from those branches — rival transcriptions of the same figure, and
 challengers to trees already in the store — were deliberately left out.
@@ -171,7 +170,7 @@ disagree on a commit, **`attribution.csv` is the authoritative record of who tra
 
 ## Roadmap
 
-- **Round 1 (this PR):** build and populate the store by copying; keep the trees in the Phyx
+- **Round 1 (current):** build and populate the store by copying; keep the trees in the Phyx
   files so we can verify the copy is faithful first.
 - **Round 2+ (future):** add an `assemble()` helper (`lib/phylogenies.js`) that injects store
   trees back into Phyx objects at test/build time; remove the newicks from `phyx/phylonym/`;
