@@ -1,0 +1,95 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Bauer et al. 2015, fig. 2",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Entorrhizomycota: a new fungal phylum reveals new perspectives on the evolution of Fungi.",
+                "year": 2015,
+                "authors": [
+                    {
+                        "name": "R. Bauer",
+                        "alternate": [
+                            "Bauer, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Bauer"
+                    },
+                    {
+                        "name": "S. Garnica",
+                        "alternate": [
+                            "Garnica, S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Garnica"
+                    },
+                    {
+                        "name": "F. Oberwinkler",
+                        "alternate": [
+                            "Oberwinkler, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Oberwinkler"
+                    },
+                    {
+                        "name": "K. Riess",
+                        "alternate": [
+                            "Riess, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Riess"
+                    },
+                    {
+                        "name": "M. Weiß",
+                        "alternate": [
+                            "Weiß, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Weiß"
+                    },
+                    {
+                        "name": "D. Begerow",
+                        "alternate": [
+                            "Begerow, D."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Begerow"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1371/journal.pone.0128183"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "PLOS One",
+                    "volume": "10",
+                    "identifier": []
+                }
+            },
+            "description": "Fig. 2. Bauer et al. 2015",
+            "additionalNodeProperties": {
+                "Dikarya": {
+                    "expectedPhyloreferenceNamed": [
+                        "Dikarya"
+                    ]
+                }
+            },
+            "newick": "(('Caenorhabditis elegans',('Drosophila melanogaster',('Mus musculus','Homo sapiens'))),('Encephalitozoon cuniculi',(('Neocallimastix frontalis',(('Monoblepharis macrandra','Hyaloraphidium curvaturn'),('Synchytrium macrosporum',('Boothiomyces macroporosum',('Cladochytrium replicatum','Polychytrium aggregatum'))))),(('Physoderma maydis',('Coelornomyces stegomyiae',('Allomyces macrogynus','Catenaria anguillulae'))),(('Conidiobolus coronatus','Entomophthora muscae'),(('Coemansia reversa',('Furculomyces boomerangus',('Capniomyces stellatus','Zancudomyces culisetae'))),('Basidiobolus ranarum',((('Entorrhiza parvula',('Entorrhiza aschersoniana','Entorrhiza casparyana')),((('Neolecta vitellina',('Taphrina deformans','Protomyces inouyei')),(('Saccharomyces cerevisiae','Candida albicans'),('Aleuria aurantia',(('Aspergillus fumigates','Lecanora hybocarpa'),('Sclerotinia sclerotiorum',('Neurospora crassa','Magnaporthe grisea')))))),(('Puccinia graminis',('Microbotryum violaceum',('Mixia osmundae','Agaricostilbum puicherrimum'))),(('Wallemia sebi',('Exobasidium vaccinii',('Tilletia goloskokovii',('Malassezia pachydermatis','Ustilago tritici')))),('Trernella mesenterica',('Calocera viscosa',('Hydnum repandum',(('Sebacina incrustans','Piriformospora indica'),('Ramaria stricta',('Tephrocybe rancida','Agaricus bisporus'))))))))))Dikarya,('Mucor hiemalis',('Gigaspora gigantea','Funneliformis mosseae'))))))))))root;"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000035",
+            "regnumId": 35,
+            "sourcePhylogenyIndex": 5
+        }
+    ]
+}

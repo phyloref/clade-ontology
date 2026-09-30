@@ -1,0 +1,96 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Cocquyt et al. 2009, fig. 1",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Gain and loss of elongation factor genes in green algae.",
+                "year": 2009,
+                "authors": [
+                    {
+                        "name": "E. Cocquyt",
+                        "alternate": [
+                            "Cocquyt, E."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Cocquyt"
+                    },
+                    {
+                        "name": "H. Verbruggen",
+                        "alternate": [
+                            "Verbruggen, H."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Verbruggen"
+                    },
+                    {
+                        "name": "F. Leliaert",
+                        "alternate": [
+                            "Leliaert, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Leliaert"
+                    },
+                    {
+                        "name": "F. W. Zechman",
+                        "alternate": [
+                            "Zechman, F. W."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Zechman",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "K. Sabbe",
+                        "alternate": [
+                            "Sabbe, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Sabbe"
+                    },
+                    {
+                        "name": "O. De Clerck",
+                        "alternate": [
+                            "De Clerck, O."
+                        ],
+                        "firstname": "O.",
+                        "lastname": "De Clerck"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1186/1471-2148-9-39"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "BMC Evolutionary Biology",
+                    "volume": "9",
+                    "identifier": []
+                }
+            },
+            "description": "Fig.1 Cocquyt et al. (2006)",
+            "additionalNodeProperties": {
+                "Chlorophyta": {
+                    "expectedPhyloreferenceNamed": [
+                        "Chlorophyta"
+                    ]
+                }
+            },
+            "newick": "('Cyanophora paradoxa',(('Cyanidioschyzon merolae',('Porphyra yezoensis',('Gracilaria spp','Chondrus crispus'))),((('Chlorokybus atmophyticus','Mesostigma viride'),('Entransia fimbriata',('Spirogyra spp',('Chara connivens',('Physcomitrella patens',(('Arabidopsis thaliana',('Actinidia spp','Cichorium intybus')),('Oryza sativa','Triticum aestivum'))))))),(('Nephroselmis olivacea',('Micromonas pusilla','Ostreococcus tauri')),('Tetraselmis spp',(('Chlorella vulgaris','Prototheca wickerhamii'),(('Scenedesmus obliquus',('Chlorococcum echinozygotum',('Chlamydomonas reinhardtii','Pleodorina spp'))),(('Ignatius tetrasporus',('Bolbocoleon piliferum',('Acrochaete repens',('Ulva fenestrata','Ulva intestinalis')))),((('Bornetella spp','Acetabularia spp'),('Ostreobium quekettii',('Bryopsis spp','Codium platylobium'))),('Ernodesmis verticillata',('Cladophora coelothrix',('Dictyosphaeria cavernosa',('Phyllodictyon pulcherrimum',('Boodlea composita','Valonia utricularis')))))))))))Chlorophyta)))root;"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000027",
+            "regnumId": 27,
+            "sourcePhylogenyIndex": 1
+        }
+    ]
+}

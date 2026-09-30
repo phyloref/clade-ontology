@@ -1,0 +1,88 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Cocquyt et al. 2009, fig. 1",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Gain and loss of elongation factor genes in green algae.",
+                "year": 2009,
+                "authors": [
+                    {
+                        "name": "E. Cocquyt",
+                        "alternate": [
+                            "Cocquyt, E."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Cocquyt"
+                    },
+                    {
+                        "name": "H. Verbruggen",
+                        "alternate": [
+                            "Verbruggen, H."
+                        ],
+                        "firstname": "H.",
+                        "lastname": "Verbruggen"
+                    },
+                    {
+                        "name": "F. Leliaert",
+                        "alternate": [
+                            "Leliaert, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Leliaert"
+                    },
+                    {
+                        "name": "F. W. Zechman",
+                        "alternate": [
+                            "Zechman, F. W."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Zechman",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "K. Sabbe",
+                        "alternate": [
+                            "Sabbe, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Sabbe"
+                    },
+                    {
+                        "name": "O. De Clerck",
+                        "alternate": [
+                            "De Clerck, O."
+                        ],
+                        "firstname": "O.",
+                        "lastname": "De Clerck"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1186/1471-2148-9-39"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "BMC Evolutionary Biology",
+                    "volume": "9",
+                    "identifier": []
+                }
+            },
+            "newick": "(Cyanophora_paradoxa,((Cyanidioschyzon_merolae,(Porphyra_yezoensis,(Gracilaria_spp,Chondrus_crispus))),(((Chlorokybus_atmophyticus,Mesostigma_viride),(Entransia_fimbriata,(Spirogyra_spp,(Chara_connivens,(Physcomitrella_patens,((Arabidopsis_thaliana,(Actinidia_spp,Cichorium_intybus)),(Oryza_sativa,Triticum_aestivum))))))),((Nephroselmis_olivacea,(Micromonas_pusilla,Ostreococcus_tauri)),(Tetraselmis_spp,((Chlorella_vulgaris,Prototheca_wickerhamii),((Scenedesmus_obliquus,((Chlamydomonas_reinhardtii,Pleodorina_spp),Chlorococcum_echinozygotum)),((Ignatius_tetrasporus,(Bolboceoleon_piliferum,((Ulva_fenestrata,Ulva_intestinalis),Acrochaete_repens))),(((Bornetella_spp,Acetabularia_spp),(Ostreobium_quekettii,(Bryopsis_spp,Codium_platylobium))),(Emodesmis_verticillata,(Cladophora_coelothrix,(Dictyosphaeria_cavemosa,((Phyllodictyon_pulcherrimum,Boodlea_composita),Balonia_utricularis))))))))))Chlorophyta)))root"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000027",
+            "regnumId": 27,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}
