@@ -63,8 +63,9 @@ an empty `phylorefs` array) **plus** a custom top-level `referenceFor` array:
   the earliest-numbered file is an accident, and round 2 will delete the source it came from.
 - Every other field of the canonical source's phylogeny (a `label`, a `description`,
   `additionalNodeProperties`, …) is copied too, and a source whose other fields differ keeps
-  its own on `referenceFor[].otherFields`. No `phyx/phylonym/` phylogeny has any such field
-  today; the copy is there so that one added later is not lost.
+  its own on `referenceFor[].otherFields`. Today the only such fields are the `description`
+  figure notes on three salvaged trees ("Vallin and Laurin 2004 Fig. 6"), and no two sources
+  disagree on one; the copy is there so that fields added later are not lost.
 
 ### How the two sides relate
 
