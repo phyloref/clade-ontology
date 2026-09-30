@@ -17,7 +17,6 @@ const MAX_EXTERNAL_SPECIFIERS = process.env.MAX_EXTERNAL_SPECIFIERS || 10;
 
 // Load necessary modules.
 const fs = require('node:fs');
-const path = require('node:path');
 const yargs = require('yargs');
 
 // Load phyx.js, our PHYX library.
