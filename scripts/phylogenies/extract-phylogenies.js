@@ -196,6 +196,16 @@ for (const file of findStoreFiles(storeDir)) {
   const previous = (JSON.parse(fs.readFileSync(file, 'utf8')).phylogenies || [])[0];
   if (!previous?.newick) continue;
   const fingerprint = newickFingerprint(previous.newick);
+  // A store file whose tree differs from the one the ledger records for its id has been edited
+  // by hand. Trusting either side would tie this id to two trees: if the ledger's tree is still
+  // in the source too, both would be written to the same file and one silently lost.
+  const recorded = ledger.ids[phyloId]?.newickSHA256;
+  if (recorded && recorded !== fingerprint) {
+    die(
+      `${file} holds a different tree from the one the id ledger records for ${phyloId}. Store files `
+      + `are generated: make the change in ${sourceDir}, restore ${file} (git checkout), and re-run.`,
+    );
+  }
   existingById.set(phyloId, { fingerprint, label: previous.label });
   idByFingerprint.set(fingerprint, phyloId);
   usedIds.add(phyloId);
@@ -232,6 +242,9 @@ for (const group of orderedGroups) {
   const canonical = group[0];
   const fingerprint = newickFingerprint(canonical.normNewick);
   const phyloId = idByFingerprint.get(fingerprint) || allocateId();
+  // Every path into idByFingerprint should keep ids one-to-one with trees; if one ever doesn't,
+  // stop here rather than let the second tree overwrite the first in newFiles.
+  if (newFiles.has(phyloId)) die(`two different trees were both assigned ${phyloId}`);
 
   const phylogeny = {};
   const label = deriveLabel(primaryCitation(canonical.citations));

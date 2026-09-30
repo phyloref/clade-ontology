@@ -203,6 +203,26 @@ describe('extract-phylogenies.js', () => {
     assert.lengthOf(storeIds(fx.storeDir), 1, '--force should allow the replacement');
   });
 
+  it('refuses to run when a store file no longer matches the id ledger', () => {
+    // A curator fixes a typo in PHYLO_0001.json and in one source, but the old tree survives in
+    // another source. Trusting the file would give PHYLO_0001 to both trees, and one of them
+    // would be overwritten in the store without a word.
+    const fx = fixture();
+    writeSource(fx.srcDir, 1, { newick: '(A,B);' });
+    writeSource(fx.srcDir, 2, { newick: '(A,B);' });
+    runExtractor(fx);
+
+    const storeFile = path.join(fx.storeDir, 'PHYLO_0001.json');
+    const edited = JSON.parse(fs.readFileSync(storeFile, 'utf8'));
+    edited.phylogenies[0].newick = '(A,C);';
+    fs.writeFileSync(storeFile, JSON.stringify(edited));
+    writeSource(fx.srcDir, 2, { newick: '(A,C);' });
+
+    const failed = runExtractor(fx, { expectFailure: true });
+    assert.match(failed.stderr, /holds a different tree from the one the id ledger records for PHYLO_0001/);
+    assert.deepEqual(storeIds(fx.storeDir), ['PHYLO_0001'], 'the store must be left untouched');
+  });
+
   it('refuses to empty the store from a source with no phylogenies', () => {
     const fx = fixture();
     writeSource(fx.srcDir, 1, { newick: '(A,B);' });

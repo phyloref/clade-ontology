@@ -96,6 +96,10 @@ all, or when the run would retire more than half of the existing store files —
 a run aimed at the wrong corner of `phyx/`. Pass `--force` if a wholesale replacement really is
 what you want.
 
+It also refuses to run when a store file's tree no longer matches the tree the ledger records
+for its id. Store files are generated, so a hand edit there would otherwise tie one id to two
+trees; make the change in `phyx/phylonym/`, restore the store file, and re-run.
+
 The Mocha test `test/phylogenies/store.js` verifies the store is a faithful, deduplicated copy
 of the source trees (every source `(cladoId, newick)` pair is reproduced exactly, every source
 citation is still present, each unique tree lives in one file, and every store file is a valid
