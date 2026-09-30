@@ -182,6 +182,12 @@ if (orderedGroups.length === 0) {
 // id already assigned to its Newick, and an id that has ever been assigned is never handed to
 // a different tree — which is why the ledger, not the files on disk, is the source of truth:
 // the file of a retired id is gone, so the files alone would let its id be recycled.
+//
+// Keying identity to the Newick is a round-1 device, not the intended model: while the store
+// is generated from phyx/phylonym/, the Newick is the only key an id can be re-derived from.
+// Once the store is the source of truth (round 2), the id is the file, a corrected
+// transcription keeps its id, and this script becomes a one-shot migration. Read
+// phylogenies/README.md ("Filenames", "Roadmap") and issue #123 before extending the ledger.
 // ---------------------------------------------------------------------------
 
 const ledger = loadIdLedger(storeDir);
