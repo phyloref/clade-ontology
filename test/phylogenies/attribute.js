@@ -80,7 +80,8 @@ describe('attribute-phylogenies.js', () => {
     const fixture = buildFixture('Imported phylogenies curated by Anna.');
     const [[phyloId, curator, , , ...subject]] = attribute(fixture);
     assert.strictEqual(phyloId, 'PHYLO_0001');
-    assert.strictEqual(curator, 'Anna');
+    // The subject gives a first name only; the script expands it to the curator's full name.
+    assert.strictEqual(curator, 'Anna Becker');
     assert.include(subject.join(','), 'curated by Anna');
   });
 
@@ -95,11 +96,15 @@ describe('attribute-phylogenies.js', () => {
 
     // Stand in for a maintainer correcting the blank the previous run left.
     const corrected = fs.readFileSync(fixture.ledger, 'utf8')
-      .replace('PHYLO_0001,,', 'PHYLO_0001,RS,');
+      .replace('PHYLO_0001,,', 'PHYLO_0001,Rebecca Stubbs,');
     fs.writeFileSync(fixture.ledger, corrected);
 
     const [[, curator]] = attribute(fixture);
-    assert.strictEqual(curator, 'RS', 'regenerating must not discard a hand-set curator');
+    assert.strictEqual(
+      curator,
+      'Rebecca Stubbs',
+      'regenerating must not discard a hand-set curator',
+    );
   });
 
   it('lets a derived curator win over a stale hand-set one', () => {
@@ -108,10 +113,10 @@ describe('attribute-phylogenies.js', () => {
     attribute(fixture);
     fs.writeFileSync(
       fixture.ledger,
-      fs.readFileSync(fixture.ledger, 'utf8').replace('PHYLO_0001,Anna,', 'PHYLO_0001,Nobody,'),
+      fs.readFileSync(fixture.ledger, 'utf8').replace('PHYLO_0001,Anna Becker,', 'PHYLO_0001,Nobody,'),
     );
 
     const [[, curator]] = attribute(fixture);
-    assert.strictEqual(curator, 'Anna');
+    assert.strictEqual(curator, 'Anna Becker');
   });
 });

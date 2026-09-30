@@ -166,13 +166,15 @@ challengers to trees already in the store — were deliberately left out.
 ## Curator attribution
 
 `attribution.csv` records who transcribed each tree, keyed by `PHYLO_NNNN`. Current state:
-**117 trees credited to Anna, 3 to RS** (Rebecca Stubbs, per the title of PR #45), **7
-unattributed**.
+**117 trees credited to Anna Becker, 3 to Rebecca Stubbs, 7 unattributed**
+([#125](https://github.com/phyloref/clade-ontology/issues/125)).
 
 Git authorship is no help: every commit in this repository is authored by the maintainer who
 committed it, so the curators appear nowhere in the author field. The attribution comes from
 commit *messages* instead — "Imported phylogenies curated by Anna", "Added new phyloreferences
-from RS" — mapped onto curators by the `CURATORS` table in the script.
+from RS" — mapped onto the curators' full names by the `CURATORS` table in the script. The
+messages never give more than "Anna" and "RS": "RS" is expanded only in the title of PR #45, and
+Anna's surname was supplied by the maintainer.
 
 ```bash
 node scripts/phylogenies/attribute-phylogenies.js
@@ -192,11 +194,9 @@ blank, the same way the extractor preserves PHYLO ids. A name the script *derive
 correcting `CURATORS` propagates.
 
 This is committed as data rather than derived on demand because what history can tell us keeps
-degrading: every path move costs traceability, round 2 rewrites `phyx/` again, and the expansion of
-"RS" to a full name exists only in a GitHub pull request title. Full names and ORCIDs are not
-recoverable from the repository, so the `curator` column holds names as the commit messages give
-them and is meant to be corrected. Moving attribution into the phylogeny records themselves waits
-on the store-model decision.
+degrading: every path move costs traceability, round 2 rewrites `phyx/` again, and the curators'
+full names were never in the repository to begin with. ORCIDs are not recorded yet. Moving
+attribution into the phylogeny records themselves waits on the store-model decision.
 
 Note `salvage-provenance.csv` answers a different question — how each salvaged tree was written
 into `phyx/`, keyed by `CLADO_NNNNNNN` — and traces only within its source branch, so where the two

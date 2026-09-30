@@ -5,10 +5,10 @@
  * introduced its Newick.
  *
  * Git authorship is no help here: every commit in this repository is authored by the maintainer
- * who committed it, so the curators who actually transcribed these trees -- Anna, and RS
- * (Rebecca Stubbs, per the title of PR #45) -- appear nowhere in the author field. What we have
- * instead is commit *messages*: "Imported phylogenies curated by Anna", "Added new phyloreferences
- * from RS". CURATORS below maps those subjects onto curators.
+ * who committed it, so the curators who actually transcribed these trees -- Anna Becker and
+ * Rebecca Stubbs -- appear nowhere in the author field. What we have instead is commit *messages*,
+ * which name them only as "Anna" and "RS": "Imported phylogenies curated by Anna", "Added new
+ * phyloreferences from RS". CURATORS below maps those subjects onto the curators' full names.
  *
  * Tracing backwards from a tree does not work. `git log -S<newick>` bottoms out at whichever
  * commit moved the file -- "Renamed from REGNUM_ to CLADO_", "Reorganized PHYX files into a single
@@ -17,12 +17,12 @@
  * instead: oldest commit first, and the first commit to introduce a given Newick owns it.
  *
  * This is why the attribution is committed as data rather than derived on demand. Every path move
- * degrades what history can tell us, round 2 will rewrite phyx/ again, and the expansion of "RS"
- * to a full name exists only in a GitHub pull request title. Capture it while it is still legible.
+ * degrades what history can tell us, round 2 will rewrite phyx/ again, and the full names were
+ * never in the repository: "RS" is expanded only in the title of PR #45, and Anna's surname was
+ * supplied by the maintainer. Capture it while it is still legible.
  *
- * Full names and identifiers (ORCIDs) are not recoverable from the repository; the `curator`
- * column holds the name as the commit messages give it, and is meant to be corrected by hand.
- * Per-tree attribution inside the data itself waits on the store-model decision.
+ * Identifiers (ORCIDs) are not recorded yet. Per-tree attribution inside the data itself waits on
+ * the store-model decision.
  *
  * Usage:
  *   node scripts/phylogenies/attribute-phylogenies.js [-o <csv>] [--store <dir>] [--paths <p>...]
@@ -59,17 +59,18 @@ const argv = yargs(process.argv.slice(2))
 const HISTORICAL_PATHS = argv.paths;
 
 /*
- * Commit subject -> curator. Ordered; the first match wins.
+ * Commit subject -> curator. Ordered; the first match wins. The subjects say only "Anna" and "RS";
+ * the full names come from the maintainer.
  *
  * "Updated phylogenies with latest" (2020-08-09, 30 trees) names nobody, but it sits between two
  * commits that credit Anna explicitly and uses the same phrasing as "Updated phylogenies with
- * latest from Anna". Attributing it to her is a judgement call, confirmed with the maintainer
+ * latest from Anna". Attributing it to Anna is a judgement call, confirmed with the maintainer
  * rather than inferred by this script -- hence the explicit pattern rather than a loose fallback.
  */
 const CURATORS = [
-  [/\bAnna\b/i, 'Anna'],
-  [/^Updated phylogenies with latest\.?$/i, 'Anna'],
-  [/\bfrom RS\b|\bby RS\b|\bRS\.?$/, 'RS'],
+  [/\bAnna\b/i, 'Anna Becker'],
+  [/^Updated phylogenies with latest\.?$/i, 'Anna Becker'],
+  [/\bfrom RS\b|\bby RS\b|\bRS\.?$/, 'Rebecca Stubbs'],
 ];
 
 /** Run git, returning stdout, or '' if the command failed (e.g. a path absent at that commit). */
