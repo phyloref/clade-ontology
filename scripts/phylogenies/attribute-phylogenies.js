@@ -10,6 +10,10 @@
  * which name them only as "Anna" and "RS": "Imported phylogenies curated by Anna", "Added new
  * phyloreferences from RS". CURATORS below maps those subjects onto the curators' full names.
  *
+ * Where the subject names nobody, the file itself sometimes does: the 2018 curation-tool files
+ * open their `curatorComments` with "Phyx file by R. Stubbs". That is the second source of
+ * evidence, and the `evidence` column says which one each row rests on.
+ *
  * Tracing backwards from a tree does not work. `git log -S<newick>` bottoms out at whichever
  * commit moved the file -- "Renamed from REGNUM_ to CLADO_", "Reorganized PHYX files into a single
  * folder", the 2021 move out of phyx/encrypted/ -- rather than the commit that transcribed the
@@ -73,6 +77,14 @@ const CURATORS = [
   [/\bfrom RS\b|\bby RS\b|\bRS\.?$/, 'Rebecca Stubbs'],
 ];
 
+/*
+ * `curatorComments` text -> curator, consulted only when the commit subject names nobody. The
+ * comments are read from the file as it stood in the commit that introduced the tree.
+ */
+const COMMENT_CURATORS = [
+  [/\bR\.\s*Stubbs\b/, 'Rebecca Stubbs'],
+];
+
 /** Run git, returning stdout, or '' if the command failed (e.g. a path absent at that commit). */
 function git(...args) {
   try {
@@ -85,21 +97,34 @@ function git(...args) {
   }
 }
 
-/** Normalized Newick strings present in a Phyx file at a given revision. */
-function newicksAt(rev, file) {
+/** A Phyx file as it stood at a given revision, or undefined if it is absent or unparseable. */
+function phyxAt(rev, file) {
   const text = git('cat-file', '--textconv', `${rev}:${file}`);
-  if (!text) return new Set();
+  if (!text) return undefined;
   try {
-    const phylogenies = JSON.parse(text).phylogenies || [];
-    return new Set(
-      phylogenies.map((p) => p.newick || '').filter((n) => n.trim()).map(normalizeNewick),
-    );
+    return JSON.parse(text);
   } catch {
     // Unparseable at this revision (mid-edit, or a format we no longer read). Not fatal: some
     // other commit will own the tree.
-    return new Set();
+    return undefined;
   }
 }
+
+/** Normalized Newick strings present in a Phyx file at a given revision. */
+function newicksAt(rev, file) {
+  const phylogenies = phyxAt(rev, file)?.phylogenies || [];
+  return new Set(
+    phylogenies.map((p) => p.newick || '').filter((n) => n.trim()).map(normalizeNewick),
+  );
+}
+
+/** The curator comments on the phyloreferences of a Phyx file at a given revision. */
+function curatorCommentsAt(rev, file) {
+  return (phyxAt(rev, file)?.phylorefs || []).map((p) => p.curatorComments || '').join('\n');
+}
+
+/** The curator named by the first matching pattern, or ''. */
+const curatorIn = (patterns, text) => (patterns.find(([pattern]) => pattern.test(text)) || [])[1] || '';
 
 // ---------------------------------------------------------------------------
 // 1. Index the store by normalized Newick.
@@ -135,7 +160,7 @@ for (const line of log.split('\n').filter(Boolean)) {
 // it, and later reorganizations and reformats cannot claim it.
 const commits = [...byEvent.values()].reverse();
 
-const introducedBy = new Map(); // phyloId -> commit
+const introducedBy = new Map(); // phyloId -> { hash, date, subject, file }
 for (const commit of commits) {
   if (introducedBy.size === phyloIdByNewick.size) break;
   // --root so a root commit diffs against the empty tree; without it diff-tree prints nothing
@@ -151,7 +176,7 @@ for (const commit of commits) {
     for (const newick of after) {
       if (before.has(newick)) continue;
       const phyloId = phyloIdByNewick.get(newick);
-      if (phyloId && !introducedBy.has(phyloId)) introducedBy.set(phyloId, commit);
+      if (phyloId && !introducedBy.has(phyloId)) introducedBy.set(phyloId, { ...commit, file });
     }
   }
 }
@@ -160,7 +185,9 @@ for (const commit of commits) {
 // 3. Emit the ledger.
 // ---------------------------------------------------------------------------
 
-const header = ['phylo_id', 'curator', 'introduced_in', 'commit_date', 'commit_subject'].join(',');
+const header = [
+  'phylo_id', 'curator', 'evidence', 'introduced_in', 'commit_date', 'commit_subject',
+].join(',');
 const rows = [];
 const tally = new Map();
 
@@ -182,14 +209,21 @@ if (fs.existsSync(argv.o)) {
 
 for (const phyloId of [...phyloIdByNewick.values()].sort()) {
   const commit = introducedBy.get(phyloId);
-  const derived = commit
-    ? (CURATORS.find(([pattern]) => pattern.test(commit.subject)) || [])[1] || ''
+  const fromSubject = commit ? curatorIn(CURATORS, commit.subject) : '';
+  const fromComments = commit && !fromSubject
+    ? curatorIn(COMMENT_CURATORS, curatorCommentsAt(commit.hash, commit.file))
     : '';
-  const curator = derived || existing.get(phyloId) || '';
+  const curator = fromSubject || fromComments || existing.get(phyloId) || '';
+  // What the name rests on. A name only the ledger vouches for was put there by a person.
+  const evidence = (fromSubject && 'commit subject')
+    || (fromComments && 'curator comments')
+    || (curator && 'set by hand')
+    || '';
   tally.set(curator || '(unattributed)', (tally.get(curator || '(unattributed)') || 0) + 1);
   rows.push([
     phyloId,
     escapeCSV(curator),
+    evidence,
     commit ? commit.hash.slice(0, 12) : '',
     commit ? commit.date.slice(0, 10) : '',
     escapeCSV(commit ? commit.subject : ''),
