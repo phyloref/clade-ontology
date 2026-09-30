@@ -29,9 +29,10 @@ an empty `phylorefs` array) **plus** a custom top-level `referenceFor` array:
   "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
   "phylogenies": [
     {
-      "label": "France et al. 1996, fig. 3",  // derived from the citation, for readability
+      "label": "France et al. 1996, fig. 3",  // the source's own, else derived from the citation
       "primaryPhylogenyCitation": { /* BibJSON copied from the source Phyx file */ },
       "phylogenyCitation": { /* every citation key the source carried is copied */ },
+      /* ...and every other field the source phylogeny carried */
       "newick": "(((...)));"
     }
   ],
@@ -43,7 +44,9 @@ an empty `phylorefs` array) **plus** a custom top-level `referenceFor` array:
       "regnumId": 172,
       "sourcePhylogenyIndex": 0,
       // Only when this source cited the tree differently from the canonical source above.
-      "citations": { "primaryPhylogenyCitation": { /* ... */ } }
+      "citations": { "primaryPhylogenyCitation": { /* ... */ } },
+      // Only when this source's other fields (label, description, ...) differ from it.
+      "otherFields": { "description": "..." }
     }
   ]
 }
@@ -58,6 +61,24 @@ an empty `phylorefs` array) **plus** a custom top-level `referenceFor` array:
   (usually the same publication recorded with more or fewer authors and identifiers), that
   source's own citations are kept on its `referenceFor` entry: which version happens to sit in
   the earliest-numbered file is an accident, and round 2 will delete the source it came from.
+- Every other field of the canonical source's phylogeny (a `label`, a `description`,
+  `additionalNodeProperties`, …) is copied too, and a source whose other fields differ keeps
+  its own on `referenceFor[].otherFields`. No `phyx/phylonym/` phylogeny has any such field
+  today; the copy is there so that one added later is not lost.
+
+### How the two sides relate
+
+A store file and the phyloreferences it lists answer to different upstreams. A `CLADO_NNNNNNN`
+file must match what PhyloRegnum says, and is regenerated wholesale from it; a `PHYLO_NNNN` file
+must match the publication it was transcribed from. `referenceFor` is the link between them,
+and it is authoritative: it is what lets a reasoner check that a phyloreference resolves to its
+expected node on this tree, which is the only thing the link exists for. The citations on the
+two sides usually agree, and a disagreement is worth a warning, but they are not the join:
+about a quarter of the citation slots in `phyx/phylonym/` carry no DOI, so joining on citation
+identity would silently drop them (the counts are in [#123](https://github.com/phyloref/clade-ontology/issues/123)). The link lives on the
+store side rather than in the Phyx files because that is the side that is not regenerated:
+anything written into a `CLADO_` file's citation slot is overwritten the next time
+`regnum2phyx.js` runs.
 
 ### Filenames
 
@@ -65,6 +86,12 @@ Filenames are currently sequential (`PHYLO_0001.json` …), and **a tree keeps i
 its Newick is unchanged**: inserting or removing a tree does not renumber the others, and the
 id of a tree that disappears is retired rather than recycled onto a different tree. Editing a
 tree's Newick, however, reads as a new tree and takes a new id.
+
+Keying the id to the Newick is a consequence of round 1, not the intended identity model: while
+the store is generated from `phyx/phylonym/`, the Newick is the only key the extractor can
+re-derive an id from. Once round 2 makes the store the source of truth, the id is simply the
+file, and correcting a transcription keeps its id, with git history as the provenance. The
+long-term model is decided in [#123](https://github.com/phyloref/clade-ontology/issues/123).
 
 That guarantee is held by `phylo-ids.json`, the **id ledger**: it records every id the store
 has ever assigned — live or retired — against a SHA-256 of its normalized Newick. The store
@@ -95,6 +122,12 @@ leaves the old store intact. Because the source directory is a bare positional a
 all, or when the run would retire more than half of the existing store files — the signature of
 a run aimed at the wrong corner of `phyx/`. Pass `--force` if a wholesale replacement really is
 what you want.
+
+It also refuses to run when a store file's tree no longer matches the tree the ledger records
+for its id. Store files are generated, so a hand edit there would otherwise tie one id to two
+trees; make the change in `phyx/phylonym/`, restore the store file, and re-run. That refusal
+protects a generated artifact and goes away with round 2, when store files become curated and
+editing one is the normal way to correct a tree.
 
 The Mocha test `test/phylogenies/store.js` verifies the store is a faithful, deduplicated copy
 of the source trees (every source `(cladoId, newick)` pair is reproduced exactly, every source
@@ -172,9 +205,15 @@ disagree on a commit, **`attribution.csv` is the authoritative record of who tra
 
 - **Round 1 (current):** build and populate the store by copying; keep the trees in the Phyx
   files so we can verify the copy is faithful first.
-- **Round 2+ (future):** add an `assemble()` helper (`lib/phylogenies.js`) that injects store
-  trees back into Phyx objects at test/build time; remove the newicks from `phyx/phylonym/`;
-  record auto-snapshot `expectedResolution` baselines so drift becomes a test failure; add
-  cross-resolution discovery and Regnum citation cross-checks; migrate `from_papers/` (carrying
-  their `curatorComments`); and move curator attribution out of `attribution.csv` and into the
-  phylogeny records themselves.
+- **Round 2 (future):** make the store the source of truth for trees. Add an `assemble()`
+  helper (`lib/phylogenies.js`) that injects store trees back into Phyx objects at test/build
+  time, then remove the newicks from `phyx/phylonym/`. From that point the store is no longer
+  derivable from `phyx/`, so three round-1 devices go with it: `test/phylogenies/store.js`,
+  which compares against source Newicks that will no longer exist; the extractor as a
+  regenerator (it becomes a one-shot migration); and Newick-keyed ids, including the refusal to
+  run over a hand-edited store file.
+- **Later:** record auto-snapshot `expectedResolution` baselines so drift becomes a test
+  failure; add cross-resolution discovery and Regnum citation cross-checks; migrate
+  `from_papers/` (carrying their `curatorComments`); and move curator attribution out of
+  `attribution.csv` and into the phylogeny records themselves. The identity and linkage model
+  is decided in [#123](https://github.com/phyloref/clade-ontology/issues/123).
