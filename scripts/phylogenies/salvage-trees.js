@@ -68,10 +68,10 @@ const argv = yargs(process.argv.slice(2))
  * The trees to salvage, and where each comes from.
  *
  * Only the uncontested ones: a single candidate tree, for a phyloref that has no tree of its own
- * yet. Asteridae and Campanulaceae belong here because the tree listed below matches the
- * publication their primary slot already cites; the rival trees on `summer_curation` cite
- * different publications that match no slot, which makes them additions to decide on, not
- * salvage.
+ * yet. Asteridae and Campanulaceae each have a second candidate on `summer_curation`, transcribed
+ * from the same publication as the tree listed below. It matches no slot only because the slot
+ * carries no DOI and the 2018 file no author or year, so it is a rival transcription to decide
+ * on, not salvage.
  */
 const SOURCES = {
   'add-support-for-testing-against-open-tree': {
