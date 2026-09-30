@@ -110,7 +110,7 @@ describe('Reference-phylogeny store (phylogenies/)', () => {
   });
 
   it('holds one file per unique source tree', () => {
-    // The 270 phylonym files hold 175 Newick-bearing phylogenies that reduce to 127 unique
+    // The 270 phylonym files hold 189 Newick-bearing phylogenies that reduce to 141 unique
     // trees. Only the relationship is asserted: pinning the count here would fail the suite for
     // a curator who legitimately adds a tree and correctly regenerates the store.
     const uniqueSourceTrees = new Set(
