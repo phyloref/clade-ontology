@@ -173,11 +173,21 @@ node scripts/phylogenies/salvage-trees.js [--dry-run]
 
 Five of the #45 trees say which node their phyloreference should resolve to, as
 `additionalNodeProperties.<node label>.expectedPhyloreferenceNamed`: Apo-Tracheophyta,
-Archaeplastida, Chlorophyta, Dikarya and Discicristata. These are the only explicit expected
-resolutions in `phyx/phylonym/`. The 2018 files name the phyloreference by their own label for it
-("Apo-Tracheophyte", "Dikarya " with a trailing space), which is rewritten to the label the
-`CLADO_` file uses, since an expectation that names no phyloreference in its file matches nothing.
-Whether each phyloreference actually resolves there is only tested under `RUN_SLOW_TESTS`.
+Archaeplastida, Chlorophyta, Dikarya and Discicristata. The 2018 files name the phyloreference by
+their own label for it ("Apo-Tracheophyte", "Dikarya " with a trailing space), which is rewritten
+to the label the `CLADO_` file uses, since an expectation that names no phyloreference in its
+file matches nothing.
+
+**The annotation alone does not reach the reasoner.** phyx.js reads it in
+`PhylorefWrapper.getExpectedNodeLabels()`, but `PhyxWrapper.asJSONLD()`, which builds what
+JPhyloRef tests, marks a node as expected only when its label equals the phyloreference's label
+or the phyloreference carries its own `expectedResolution`. Three of the five are therefore
+tested, because their node happens to be labelled with the clade's name (as it is on 24 trees in
+`phyx/phylonym/`). The other two are not: Apo-Tracheophyta (node "Tracheophytes") and
+Archaeplastida (node "plants"). Making those count needs an `expectedResolution` on the
+phyloreference, which is round-3 work in
+[#113](https://github.com/phyloref/clade-ontology/issues/113). Resolution itself is only tested
+under `RUN_SLOW_TESTS`.
 
 `salvage-provenance.csv` records, per salvaged tree, the source PR and branch, the commit that
 introduced it (author, subject and date), where the tree now sits and whether it was `filled` or
