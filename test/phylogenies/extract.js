@@ -27,12 +27,12 @@ function fixture() {
   return { base, srcDir, storeDir: path.join(base, 'store'), report: path.join(base, 'report.csv') };
 }
 
-/** Write a minimal source Phyx file (one phyloref, one phylogeny) into `dir`. */
+/** Write a minimal source Phyx file (one phyloref, one phylogeny or a list of them) into `dir`. */
 function writeSource(dir, regnumId, phylogeny) {
   const clado = `CLADO_${String(regnumId).padStart(7, '0')}`;
   fs.writeFileSync(
     path.join(dir, `${clado}.json`),
-    JSON.stringify({ phylorefs: [{ regnumId }], phylogenies: [phylogeny] }),
+    JSON.stringify({ phylorefs: [{ regnumId }], phylogenies: [].concat(phylogeny) }),
   );
 }
 
@@ -196,6 +196,34 @@ describe('extract-phylogenies.js', () => {
       [{ type: 'doi', id: '10.1234/bbb' }],
       'the divergent citation must be kept, not just reported',
     );
+  });
+
+  it('gives each tree its own store file when one source holds several', () => {
+    // Two transcriptions of one publication side by side, with an empty citation slot between
+    // them. Each is a tree in its own right, and sourcePhylogenyIndex is all that tells a
+    // reader which of the source's phylogenies a store file came from.
+    const fx = fixture();
+    writeSource(fx.srcDir, 1, [
+      { newick: '(A,B);', ...cite('10.1234/aaa') },
+      { phylogenyCitation: { year: 1999 } },
+      { newick: '(A,(B,C));', ...cite('10.1234/aaa') },
+    ]);
+    // A second source shares only the later tree.
+    writeSource(fx.srcDir, 2, { newick: '(A,(B,C));', ...cite('10.1234/aaa') });
+    runExtractor(fx);
+
+    const ids = idsByNewick(fx.storeDir);
+    assert.strictEqual(ids.size, 2, 'two distinct trees, so two store files');
+    const referenceFor = (newick) => JSON.parse(
+      fs.readFileSync(path.join(fx.storeDir, `${ids.get(newick)}.json`), 'utf8'),
+    ).referenceFor;
+    assert.deepEqual(referenceFor('(A,B);'), [
+      { clado: 'CLADO_0000001', regnumId: 1, sourcePhylogenyIndex: 0 },
+    ]);
+    assert.deepEqual(referenceFor('(A,(B,C));'), [
+      { clado: 'CLADO_0000001', regnumId: 1, sourcePhylogenyIndex: 2 },
+      { clado: 'CLADO_0000002', regnumId: 2, sourcePhylogenyIndex: 0 },
+    ]);
   });
 
   it('flags divergent citation DOIs in the report', () => {
