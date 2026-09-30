@@ -148,6 +148,38 @@ describe('extract-phylogenies.js', () => {
     assert.deepEqual(stored.phylogenies[0].phylogenyCitation.authors, [{ lastname: 'Jones' }]);
   });
 
+  it('copies every other field a source phylogeny carries', () => {
+    const fx = fixture();
+    writeSource(fx.srcDir, 1, {
+      label: 'Curated tree',
+      description: 'Redrawn from fig. 2',
+      newick: '(A,B)AB;',
+      additionalNodeProperties: { AB: { expectedPhyloreferenceNamed: ['AB'] } },
+      ...cite('10.1/aaa'),
+    });
+    runExtractor(fx);
+
+    const stored = JSON.parse(fs.readFileSync(path.join(fx.storeDir, 'PHYLO_0001.json'), 'utf8'));
+    const phylogeny = stored.phylogenies[0];
+    assert.strictEqual(phylogeny.label, 'Curated tree', "the source's own label wins over a derived one");
+    assert.strictEqual(phylogeny.description, 'Redrawn from fig. 2');
+    assert.deepEqual(phylogeny.additionalNodeProperties, { AB: { expectedPhyloreferenceNamed: ['AB'] } });
+  });
+
+  it('keeps the other fields of sources that disagree about the same tree', () => {
+    const fx = fixture();
+    writeSource(fx.srcDir, 1, { newick: '(A,B);' });
+    writeSource(fx.srcDir, 2, { newick: '(A,B);', description: 'Only this source says so' });
+    runExtractor(fx);
+
+    const stored = JSON.parse(fs.readFileSync(path.join(fx.storeDir, 'PHYLO_0001.json'), 'utf8'));
+    assert.isUndefined(stored.phylogenies[0].description);
+    const [canonical, alternate] = stored.referenceFor;
+    assert.isUndefined(canonical.otherFields);
+    assert.isUndefined(alternate.citations, 'the citations agree, so none are copied');
+    assert.deepEqual(alternate.otherFields, { description: 'Only this source says so' });
+  });
+
   it('keeps the citations of sources that disagree about the same tree', () => {
     const fx = fixture();
     writeSource(fx.srcDir, 1, { newick: '(A,B);', ...cite(undefined) });

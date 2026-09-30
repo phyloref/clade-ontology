@@ -29,9 +29,10 @@ an empty `phylorefs` array) **plus** a custom top-level `referenceFor` array:
   "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
   "phylogenies": [
     {
-      "label": "France et al. 1996, fig. 3",  // derived from the citation, for readability
+      "label": "France et al. 1996, fig. 3",  // the source's own, else derived from the citation
       "primaryPhylogenyCitation": { /* BibJSON copied from the source Phyx file */ },
       "phylogenyCitation": { /* every citation key the source carried is copied */ },
+      /* ...and every other field the source phylogeny carried */
       "newick": "(((...)));"
     }
   ],
@@ -43,7 +44,9 @@ an empty `phylorefs` array) **plus** a custom top-level `referenceFor` array:
       "regnumId": 172,
       "sourcePhylogenyIndex": 0,
       // Only when this source cited the tree differently from the canonical source above.
-      "citations": { "primaryPhylogenyCitation": { /* ... */ } }
+      "citations": { "primaryPhylogenyCitation": { /* ... */ } },
+      // Only when this source's other fields (label, description, ...) differ from it.
+      "otherFields": { "description": "..." }
     }
   ]
 }
@@ -58,6 +61,10 @@ an empty `phylorefs` array) **plus** a custom top-level `referenceFor` array:
   (usually the same publication recorded with more or fewer authors and identifiers), that
   source's own citations are kept on its `referenceFor` entry: which version happens to sit in
   the earliest-numbered file is an accident, and round 2 will delete the source it came from.
+- Every other field of the canonical source's phylogeny (a `label`, a `description`,
+  `additionalNodeProperties`, …) is copied too, and a source whose other fields differ keeps
+  its own on `referenceFor[].otherFields`. No `phyx/phylonym/` phylogeny has any such field
+  today; the copy is there so that one added later is not lost.
 
 ### Filenames
 

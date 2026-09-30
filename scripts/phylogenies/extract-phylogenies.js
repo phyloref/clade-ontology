@@ -9,9 +9,10 @@
  * IMPORTANT: this is a copy, not a move. It does NOT modify any file under phyx/. A future
  * round will regenerate the Phyx files without their phylogenies once we have verified the
  * copy is faithful. Until that round lands, everything the source phylogeny carries has to
- * survive the copy — a citation dropped here becomes a permanent loss the moment phyx/ is
- * stripped — so every citation key is copied, and the citations of sources that disagree are
- * preserved on their `referenceFor` entries rather than being reported and discarded.
+ * survive the copy — a field dropped here becomes a permanent loss the moment phyx/ is
+ * stripped — so every field of the canonical source's phylogeny is copied, and the citations
+ * and other fields of sources that disagree are preserved on their `referenceFor` entries
+ * rather than being reported and discarded.
  *
  * Scoped to phyx/phylonym/, which holds only plain Phyx JSON. Unparseable files are warned
  * about and skipped; pointing this at phyx/ as a whole would silently reduce the git-crypt
@@ -25,7 +26,7 @@
 
 const fs = require('node:fs');
 const path = require('node:path');
-const { isEqual } = require('lodash');
+const { isEqual, omit, pick } = require('lodash');
 const yargs = require('yargs');
 
 const {
@@ -130,20 +131,25 @@ function die(message) {
 // ---------------------------------------------------------------------------
 
 const sourceFiles = findJSONFiles(sourceDir).sort();
-// { cladoId, cladoNumValue, regnumId, phyloIndex, newick, normNewick, citations }
+// { cladoId, cladoNumValue, regnumId, phyloIndex, newick, normNewick, citations, otherFields }
 const occurrences = scanSourcePhylogenies(sourceFiles).map(({ cladoId, regnumId, phyloIndex, phylogeny }) => {
   // Copy *every* citation key the phylogeny carries, not just the preferred one: at least one
   // phylonym phylogeny (CLADO_0000030) has both, and the store is about to become the only copy.
-  const citations = {};
-  for (const key of CITATION_KEYS) if (phylogeny[key]) citations[key] = phylogeny[key];
+  // Everything else but the Newick (a label, a description, additionalNodeProperties…) goes in
+  // otherFields; today's phylonym phylogenies have none, but a source that adds one must not
+  // lose it.
+  const { newick, ...rest } = phylogeny;
+  const citations = pick(rest, CITATION_KEYS);
+  const otherFields = omit(rest, CITATION_KEYS);
   return {
     cladoId,
     cladoNumValue: cladoNum(cladoId),
     regnumId,
     phyloIndex,
-    newick: phylogeny.newick,
-    normNewick: normalizeNewick(phylogeny.newick),
+    newick,
+    normNewick: normalizeNewick(newick),
     citations,
+    otherFields,
   };
 });
 
@@ -235,6 +241,7 @@ const reportRows = [];
 const newFiles = new Map(); // phyloId -> { contents, fingerprint, label }
 let divergent = 0;
 let alternates = 0;
+let alternateFields = 0;
 
 for (const group of orderedGroups) {
   // Canonical occurrence = earliest source (group is already byClado-sorted); its original
@@ -246,21 +253,29 @@ for (const group of orderedGroups) {
   // stop here rather than let the second tree overwrite the first in newFiles.
   if (newFiles.has(phyloId)) die(`two different trees were both assigned ${phyloId}`);
 
-  const phylogeny = {};
-  const label = deriveLabel(primaryCitation(canonical.citations));
-  if (label) phylogeny.label = label;
-  Object.assign(phylogeny, canonical.citations);
-  phylogeny.newick = canonical.newick;
+  // A label the source gave the tree wins over one derived from its citation.
+  const label = canonical.otherFields.label || deriveLabel(primaryCitation(canonical.citations));
+  const phylogeny = {
+    ...(label ? { label } : {}),
+    ...canonical.citations,
+    ...canonical.otherFields,
+    newick: canonical.newick,
+  };
 
   // group is already byClado-sorted, so the references come out in (cladoId, phyloIndex) order.
   // A source whose citations differ from the canonical one keeps its own copy here: these are
   // usually the same publication recorded with more or fewer authors and identifiers, and
-  // which version happens to sit in the earliest-numbered file is an accident.
+  // which version happens to sit in the earliest-numbered file is an accident. Its other fields
+  // are kept the same way, and for the same reason.
   const referenceFor = group.map((o) => {
     const entry = { clado: o.cladoId, regnumId: o.regnumId, sourcePhylogenyIndex: o.phyloIndex };
     if (o !== canonical && !isEqual(o.citations, canonical.citations)) {
       entry.citations = o.citations;
       alternates += 1;
+    }
+    if (o !== canonical && !isEqual(o.otherFields, canonical.otherFields)) {
+      entry.otherFields = o.otherFields;
+      alternateFields += 1;
     }
     return entry;
   });
@@ -366,5 +381,6 @@ process.stderr.write(
   + `Wrote ${orderedGroups.length} store files to ${storeDir}/ and a report to ${argv.report}.\n`
   + `${retiring.length} store file(s) retired; their ids stay reserved in the id ledger.\n`
   + `${divergent} tree(s) had divergent citation DOIs across sources (see report); `
-  + `${alternates} differing source citation(s) kept on their referenceFor entries.\n`,
+  + `${alternates} differing source citation(s) and `
+  + `${alternateFields} differing set(s) of other fields kept on their referenceFor entries.\n`,
 );

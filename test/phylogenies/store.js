@@ -11,7 +11,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const chai = require('chai');
-const { isEqual } = require('lodash');
+const { isEqual, omit } = require('lodash');
 const phyx = require('@phyloref/phyx');
 const tmp = require('tmp');
 
@@ -39,6 +39,9 @@ function citationsOf(obj) {
   for (const key of CITATION_KEYS) if (obj[key]) citations[key] = obj[key];
   return citations;
 }
+
+/** Every field of a phylogeny other than its Newick and citations. */
+const otherFieldsOf = (obj) => omit(obj, ['newick', ...CITATION_KEYS]);
 
 /** Multiset of "cladoId\tnormalizedNewick" pairs found in the source Phyx files. */
 function sourcePairs() {
@@ -69,21 +72,30 @@ describe('Reference-phylogeny store (phylogenies/)', () => {
     assert.deepEqual(dst, src, 'Store referenceFor pairs must exactly reproduce source (cladoId, newick) pairs');
   });
 
-  it('preserves every source citation', () => {
-    // Deduplication must not lose a citation: the store keeps the canonical source's citations
-    // on the phylogeny, and any source that cited the same tree differently keeps its own copy
-    // on its referenceFor entry. Once round 2 strips the trees from phyx/, this is the only copy.
+  it('preserves every field of every source phylogeny', () => {
+    // Deduplication must not lose a citation or any other field: the store keeps the canonical
+    // source's fields on the phylogeny, and any source that differs keeps its own copy on its
+    // referenceFor entry (`citations` and `otherFields`). Once round 2 strips the trees from
+    // phyx/, this is the only copy.
     const index = buildReferenceIndex(store);
     for (const { file, cladoId, phyloIndex, phylogeny } of sourceOccurrences()) {
-      const sourceCitations = citationsOf(phylogeny);
-      if (Object.keys(sourceCitations).length === 0) continue;
       const ref = (index.get(cladoId) || [])
         .find(({ entry }) => entry.sourcePhylogenyIndex === phyloIndex);
       assert.isDefined(ref, `${file} phylogeny ${phyloIndex} is missing from the store`);
-      const stored = ref.entry.citations || citationsOf(ref.phylogeny);
+
+      const storedCitations = ref.entry.citations || citationsOf(ref.phylogeny);
       assert.isTrue(
-        isEqual(stored, sourceCitations),
+        isEqual(storedCitations, citationsOf(phylogeny)),
         `${file} phylogeny ${phyloIndex}: citations in ${ref.file} do not match the source`,
+      );
+
+      // A store phylogeny whose source had no label carries one derived from its citation,
+      // which is not a source field.
+      const storedOther = ref.entry.otherFields
+        || omit(otherFieldsOf(ref.phylogeny), 'label' in phylogeny ? [] : ['label']);
+      assert.isTrue(
+        isEqual(storedOther, otherFieldsOf(phylogeny)),
+        `${file} phylogeny ${phyloIndex}: fields in ${ref.file} do not match the source`,
       );
     }
   });
