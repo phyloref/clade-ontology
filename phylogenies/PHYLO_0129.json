@@ -1,0 +1,68 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Crane et al. 2004, fig. 1",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Fossils and plant phylogeny",
+                "year": 2004,
+                "authors": [
+                    {
+                        "name": "P. R. Crane",
+                        "alternate": [
+                            "Crane, P. R."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Crane",
+                        "middlename": "R."
+                    },
+                    {
+                        "name": "P. Herendeen",
+                        "alternate": [
+                            "Herendeen, P."
+                        ],
+                        "firstname": "P.",
+                        "lastname": "Herendeen"
+                    },
+                    {
+                        "name": "E. M.  Friis",
+                        "alternate": [
+                            "Friis, E. M."
+                        ],
+                        "firstname": "E.",
+                        "lastname": "Friis",
+                        "middlename": "M."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [],
+                "link": [],
+                "journal": {
+                    "name": "American Journal of Botany",
+                    "volume": "91",
+                    "identifier": []
+                }
+            },
+            "description": "Fig. 1. Crante et al. 2004",
+            "additionalNodeProperties": {
+                "Tracheophytes": {
+                    "expectedPhyloreferenceNamed": [
+                        "Apo-Tracheophyta"
+                    ]
+                }
+            },
+            "newick": "(Chara,Coleochaete,((Notothylas,Anthoceros),(Sphaerocarpos,Monoclea,Haplomitrium),((Sphagnum,(Takakia,Andreaeobryum,Andreaea,Polytrichum)),((Tortilicaulis,(Horneophyton,Caia)),(Aglaophyton,((Huvenia,(Stockmansella,Rhynia)),('Cooksonia caledonica','Cooksonia pertonii',(Eophylophyton,('Psilophyton crenulatum','Psllophyton dawsonii',((Pertica,Tetraxylopteris),(Ibyka,(Pseudosporochnus,Rhacophyton))))),(Sartilmania,Yunia,Uskiella,Renalia,'Cooksonia cambrensis',(Hicklingia,(Huia,Gumuia,'Zosterophyllum myretonianum',Adoketophyton,Discalis,Rebuchia,'Zosterophyllum llanoveranum','Zosterophyllum fertile',('Zosterophyllum divaricatum',(Tarella,Oricilla,Gosslingia,Hsua,Thrinkophyton,(Protobarinophyton,'Barinophyton obscurum','Barinophyton citrulliforme'),(Sawdonia,Deheubarthia,(Konioria,Anisophyton),(Serrulacaulis,Crenaticaulis)))),(Nothia,'Zosterophyllum deciduum',((Drepanophycus,Baragwanathia,Asteroxylon),(('Huperzia squarrosa','Huperzia selago'),(Phylloglossum,(Lycopodium,Lycopodiella)),((Paralycopodites,Isoetes),(Minarodendron,Leclercqia),('Selaginella selaginoides',(Tetragonostachys,Stachygynandrum)))))))))))Tracheophytes)))))root;"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000015",
+            "regnumId": 15,
+            "sourcePhylogenyIndex": 2
+        }
+    ]
+}

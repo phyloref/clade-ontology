@@ -1,0 +1,57 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Hilton & Bateman 2006, fig. 10",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Pteridosperms are the backbone of seed plant evolution. J. Torrey",
+                "year": 2006,
+                "authors": [
+                    {
+                        "name": "J. Hilton",
+                        "alternate": [
+                            "Hilton, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Hilton"
+                    },
+                    {
+                        "name": "R. M. Bateman",
+                        "alternate": [
+                            "Bateman, R. M."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Bateman",
+                        "middlename": "M."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "10",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.3159/1095-5674(2006)133[119:PATBOS]2.0.CO;2"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal Torrey Botanical Society",
+                    "volume": "133",
+                    "identifier": []
+                }
+            },
+            "description": "Fig. 10 Hilton and Bateman 2006",
+            "newick": "((Tetraxylopteris),(Archaeopteris,Cecropsis),((Elkinsia),(Laceya),Bilignea,Lyrasperma,(Heterangium),(Lyginopteris),((Medullosa,Quaestora),((Callistophyton),(Cycadaceae,Zamiaceae),((Peltaspermum),(Corystosperms,Autunia),(((Ginkgoales),(Thucydia,(Emporia,(Podocarpaceae,Pinaceae),(Cheirolepidiaceae,(Araucariaceae,(Cupressaceae,(Cephalotaxus,Taxaceae))))),((Cordaixylon,Mesoxylon),Shanxioxylon)),(((Welwitschia,Gnetum),Ephedra),((Glossopterids,Pentoxylon),(Bennettitales,(Caytonia,(Nymphaeales,(Piperaceae,((Aristolochioidaea,Monocots),(Eudicots,(Winteraceae,((Chloranthaceae,Laurales),((Austrobaileya),(Magnoliaceae,Eupomatia))))))))))))))))))Apo-Spermatophyta)root;"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000014",
+            "regnumId": 14,
+            "sourcePhylogenyIndex": 2
+        }
+    ]
+}

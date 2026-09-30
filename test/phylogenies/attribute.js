@@ -32,9 +32,10 @@ function git(cwd, ...args) {
 
 /**
  * Build a repository holding one Phyx file with one tree, committed with `subject`, plus a store
- * containing that same tree. Returns { repo, storeDir, ledger }.
+ * containing that same tree. `curatorComments`, if given, goes on the file's phyloreference.
+ * Returns { repo, storeDir, ledger }.
  */
-function buildFixture(subject) {
+function buildFixture(subject, curatorComments) {
   const repo = tmp.dirSync({ unsafeCleanup: true }).name;
   git(repo, 'init', '--quiet');
   // A fixture repo has no user config to inherit when git runs without a global identity.
@@ -44,7 +45,10 @@ function buildFixture(subject) {
   fs.mkdirSync(path.join(repo, SOURCE_DIR), { recursive: true });
   fs.writeFileSync(
     path.join(repo, SOURCE_DIR, 'CLADO_0000018.json'),
-    JSON.stringify({ phylorefs: [{ regnumId: 18 }], phylogenies: [{ newick: NEWICK }] }, null, 4),
+    JSON.stringify({
+      phylorefs: [{ regnumId: 18, ...(curatorComments ? { curatorComments } : {}) }],
+      phylogenies: [{ newick: NEWICK }],
+    }, null, 4),
   );
   git(repo, 'add', '-A');
   git(repo, 'commit', '--quiet', '-m', subject);
@@ -78,16 +82,38 @@ function attribute({ repo, storeDir, ledger }) {
 describe('attribute-phylogenies.js', () => {
   it('credits the curator named in the commit that introduced a tree', () => {
     const fixture = buildFixture('Imported phylogenies curated by Anna.');
-    const [[phyloId, curator, , , ...subject]] = attribute(fixture);
+    const [[phyloId, curator, evidence, , , ...subject]] = attribute(fixture);
     assert.strictEqual(phyloId, 'PHYLO_0001');
     // The subject gives a first name only; the script expands it to the curator's full name.
     assert.strictEqual(curator, 'Anna Becker');
+    assert.strictEqual(evidence, 'commit subject');
     assert.include(subject.join(','), 'curated by Anna');
   });
 
-  it('leaves the curator blank when the commit credits nobody', () => {
-    const [[, curator]] = attribute(buildFixture('Fixed specifier authorities in Phyx files.'));
+  it('leaves the curator blank when neither the commit nor the file credits anybody', () => {
+    const [[, curator, evidence]] = attribute(
+      buildFixture('Fixed specifier authorities in Phyx files.', 'Reference phylogeny: Fig. 1'),
+    );
     assert.strictEqual(curator, '', 'a commit naming no curator must not be attributed');
+    assert.strictEqual(evidence, '');
+  });
+
+  it('falls back to the curator comments in the file that introduced the tree', () => {
+    // The 2018 curation-tool files name their curator in the file, and the commits that last
+    // touched their trees ("Fixed a typo in the phylogeny.") name nobody.
+    const [[, curator, evidence]] = attribute(
+      buildFixture('Fixed a typo in the phylogeny.', 'PHYX file by R. Stubbs\n\nReference phylogeny: Fig. 1'),
+    );
+    assert.strictEqual(curator, 'Rebecca Stubbs');
+    assert.strictEqual(evidence, 'curator comments');
+  });
+
+  it('prefers the commit subject to the curator comments', () => {
+    const [[, curator, evidence]] = attribute(
+      buildFixture('Imported phylogenies curated by Anna.', 'PHYX file by R. Stubbs'),
+    );
+    assert.strictEqual(curator, 'Anna Becker');
+    assert.strictEqual(evidence, 'commit subject');
   });
 
   it('preserves a curator set by hand when it cannot derive one', () => {
@@ -99,12 +125,13 @@ describe('attribute-phylogenies.js', () => {
       .replace('PHYLO_0001,,', 'PHYLO_0001,Rebecca Stubbs,');
     fs.writeFileSync(fixture.ledger, corrected);
 
-    const [[, curator]] = attribute(fixture);
+    const [[, curator, evidence]] = attribute(fixture);
     assert.strictEqual(
       curator,
       'Rebecca Stubbs',
       'regenerating must not discard a hand-set curator',
     );
+    assert.strictEqual(evidence, 'set by hand', 'and must say that only the ledger vouches for it');
   });
 
   it('lets a derived curator win over a stale hand-set one', () => {
@@ -113,10 +140,11 @@ describe('attribute-phylogenies.js', () => {
     attribute(fixture);
     fs.writeFileSync(
       fixture.ledger,
-      fs.readFileSync(fixture.ledger, 'utf8').replace('PHYLO_0001,Anna Becker,', 'PHYLO_0001,Nobody,'),
+      fs.readFileSync(fixture.ledger, 'utf8').replace('PHYLO_0001,Anna Becker,commit subject,', 'PHYLO_0001,Nobody,set by hand,'),
     );
 
-    const [[, curator]] = attribute(fixture);
+    const [[, curator, evidence]] = attribute(fixture);
     assert.strictEqual(curator, 'Anna Becker');
+    assert.strictEqual(evidence, 'commit subject');
   });
 });

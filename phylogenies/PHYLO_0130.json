@@ -1,0 +1,71 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Burki et al. 2008, fig. 1",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Phylogenomics reveals a new ‘megagroup’ including most photosynthetic eukaryotes.",
+                "year": 2008,
+                "authors": [
+                    {
+                        "name": "F. Burki",
+                        "alternate": [
+                            "Burki, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Burki"
+                    },
+                    {
+                        "name": "K. Shalchian-Tabrizi",
+                        "alternate": [
+                            "Shalchian-Tabrizi, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Shalchian-Tabrizi"
+                    },
+                    {
+                        "name": "J. Pawlowski",
+                        "alternate": [
+                            "Pawlowski, J."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Pawlowski"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1098/rsbl.2008.0224"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Biol. Lett.",
+                    "volume": "4",
+                    "identifier": []
+                }
+            },
+            "description": "Fig. 1 Burki 2008",
+            "additionalNodeProperties": {
+                "plants": {
+                    "expectedPhyloreferenceNamed": [
+                        "Archaeplastida"
+                    ]
+                }
+            },
+            "newick": "((((Guillardia,(Pavlova,(Emiliania,Isochrysis))),(((Galdieria,(Gracilaria,Porphyra)),((Ostreococcus,(Chlamydomonas,Volvox)),(Physcomitrella,(Pinus,((Arabidopsis,Brassica),(Oryza,Sorghum)))))),(Cyanophora,Glaucocystis))plants),(((((((Alexandrium,(Karenia,Karlodinium)),Oxyrrhis),Perkinsus),(Cryptosporidium,((Eimeria,Toxoplasma),(Plasmodium,Theileria)))),(Paramecium,Tetrahymena)),(((Aureococcus,(Phaeodactylum,Thalassiosira)),Phytophthora),Blastocystis)),(((Cercomonas,Gymnophrys),Bigelowiella),(Quinqueloculina,Reticulomyxa)))),((((Hartmannella,Acanthamoeba),(Dictyostelium,Mastigamoeba)),((((Cryptococcus,Ustilago),(Neurospora,Schizosaccharomyces)),Phycomyces),(Monosiga,((Drosophila,(Gallus,(Homo,Mus))),(Nematostella,Trichoplax))))),(((Euglena,(Leishmania,Trypanosoma)),(Naegleria,(Sawyeria,Stachyamoeba))),((Histiona,Reclinomonas),Jakoba))))root;"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000016",
+            "regnumId": 16,
+            "sourcePhylogenyIndex": 1
+        }
+    ]
+}
