@@ -1,0 +1,87 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Bauer et al. 2015, fig. 2",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Entorrhizomycota: a new fungal phylum reveals new perspectives on the evolution of Fungi.",
+                "year": 2015,
+                "authors": [
+                    {
+                        "name": "R. Bauer",
+                        "alternate": [
+                            "Bauer, R."
+                        ],
+                        "firstname": "R.",
+                        "lastname": "Bauer"
+                    },
+                    {
+                        "name": "S. Garnica",
+                        "alternate": [
+                            "Garnica, S."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Garnica"
+                    },
+                    {
+                        "name": "F. Oberwinkler",
+                        "alternate": [
+                            "Oberwinkler, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Oberwinkler"
+                    },
+                    {
+                        "name": "K. Riess",
+                        "alternate": [
+                            "Riess, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Riess"
+                    },
+                    {
+                        "name": "M. Weiß",
+                        "alternate": [
+                            "Weiß, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Weiß"
+                    },
+                    {
+                        "name": "D. Begerow",
+                        "alternate": [
+                            "Begerow, D."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Begerow"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1371/journal.pone.0128183"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "PLOS One",
+                    "volume": "10",
+                    "identifier": []
+                }
+            },
+            "newick": "((((((((((((((((((Tephrocybe_rancida, Agaricus_bisporus), Ramaria_stricta),\n(Sebacina_incrustans, Piriformospora_indica)), \nHydnum_repandum), Calocera_vicosa), Tremella_mesenterica),\n\n((((Malassezia_pachydermatis, Ustilago_tritici), Tilletia_goloskokovii),\nExobasidium_vaccinii), Wallemia_sebi)),\n\n(((Agaricostilbum_pulcherrimum, Mixia_osmundae),\nMicrobotryum_violaceum), Puccinia_graminis)),\n\n((((((Neurospra_crassa, Magnaporthe_grisea), Sclerotinia_scerotiorum),\n(Aspergillus_fumigatus, Lecanora_hybocarpa)), \nAleuria_aurantia), \n(Saccharomyces_cerevisiae, Candida_albicans)), \n((Taphrina_deformans, Protomyces_inouyei), Neolecta_vitellina)),\n\n((Entorrhiza_aschersoniana, Entorrhiza_casparyana), Entorrhiza_parvula)),\n\n((Gigaspora_gigantea, Funneliformis_mosseae), Mucor_hiemalis)),\n\nMortierella_verticillata),\n\nBasidiobolus_ranarum),\n\n(((Caniomyces_stellatus, Zancudomyces_culisetae), Furculomyces_boomerangus),\nCoemansia_reversa)),\n\n(Conidiobolus_coronatus, Entomophthora_muscae)),\n\n(((Catenaria_anguillulae, Allomyces_macrogynus), Coelomomyces_stegomyiae),\nPhysoderma_maydis)),\n\n(((((Polychytrium_aggregatum, Cladochytrium_replicatum), \nBoothiomyces_macroporosum), Synchytrium_macrosporum),\n(Hyaloraphidium_curvatum, Monoblepharis_macranda)),\nNeocallimastix_frontalis)),\n\nEncephalitozoon_cuniculi),\n\n(((Mus_musculus, Homo_sapiens), Drosophila_melanogaster),\nCaenorhabditis_elegans))"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000035",
+            "regnumId": 35,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}

@@ -5,7 +5,7 @@
   "main": "index.js",
   "directories": {},
   "scripts": {
-    "lint": "biome lint test/ phyx2ontology/ regnum2phyx/",
+    "lint": "biome lint test/ phyx2ontology/ regnum2phyx/ lib/ scripts/",
     "pretest": "npm run lint",
     "test": "mocha --recursive",
     "mocha": "mocha",

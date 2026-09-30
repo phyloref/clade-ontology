@@ -1,0 +1,65 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Soltis et al. 2011, fig. 1, 2e-g",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Angiosperm phylogeny: 17 genes, 640 taxa.",
+                "year": 2011,
+                "authors": [
+                    {
+                        "name": "D. E. Soltis",
+                        "alternate": [
+                            "Soltis, D. E."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Soltis",
+                        "middlename": "E."
+                    },
+                    {
+                        "name": "S. A. Smith",
+                        "alternate": [
+                            "Smith, S. A."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Smith",
+                        "middlename": "A."
+                    },
+                    {
+                        "name": "N. Cellinese",
+                        "alternate": [
+                            "Cellinese, N."
+                        ],
+                        "firstname": "N.",
+                        "lastname": "Cellinese"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1, 2e-g",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.3732/ajb.1000404"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "American Journal of Botany",
+                    "volume": "98",
+                    "identifier": []
+                }
+            },
+            "newick": "(((((((((((Lamiales,Boranginaceae),(Solanales,Gentianales)),Vahliaceae),Oncothecaceae),(Garryales,Icacinaceae)),(((Asterales,Escalloniales),((Apiales,(Paracryphiales,Dipsacales)),Bruniales)),Aquifoliales)Campanulidae),Ericales),Cornales),(Berberidopsidales,Caryophyllales)),Santalales),Dilleniaceae)root"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000247",
+            "regnumId": 247,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}

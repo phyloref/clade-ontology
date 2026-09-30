@@ -1,0 +1,66 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Brown et al. 2009, fig. 3",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Phylogeny of the \"forgotten\" cellular slime mold, Fonticula alba, reveals a key evolutionary branch within Opisthokonta.",
+                "year": 2009,
+                "authors": [
+                    {
+                        "name": "M. W. Brown",
+                        "alternate": [
+                            "Brown, M. W."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Brown",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "F. W. Spiegel",
+                        "alternate": [
+                            "Spiegel, F. W."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Spiegel",
+                        "middlename": "W."
+                    },
+                    {
+                        "name": "J. D. Silberman",
+                        "alternate": [
+                            "Silberman, J. D."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Silberman",
+                        "middlename": "D."
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1093/molbev/msp185"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Biology & Evolution",
+                    "volume": "26",
+                    "identifier": []
+                }
+            },
+            "newick": "((((((((\n((Fonticula_alba, Nuclearia_simplex), \n(Bastocladiella_emersonii, \n((Rhizophlyctis_rosea, (Batrachochytrium_dendrobatidis, Chytriomyces_confervae)),\n((Mortierella_verticillata, (Umbelopsis_ramanniana, (Rhizopus_stolonifer, Mucor_racemosus))),\n(\n(Cryptococcus_neoformans, (Schizophyllum_commune, Coprinopsis_cinerea)),\n(Schizosaccharomyces_pombe, (Neurospora_crassa, (Candida_albicans, Saccaromyces_cerevisiae)))))))),\n\n((((((Nematostella_vectensis, Geodia_cydonium), \n(Salpingoeca_amphoridium, Monosiga_ovata)), \nMinisteria_vibrans), Capsaspora_owczarzaki), \n(Sphaeroforma_arctica, Amoebidium_parasiticum)), \nCorallochytrium_limacisporum)),\n\nApusomonas_proboscidea), \n\n(Planomonas_micra, (Breviata_anathema, (Hartmanella_vermiformis, Acanthamoeba_castellanii)))),\n\nGonimonas_truncata), \n\n(Cyanophora_paradoxa, Glaucocystis_nostochinearum)), \n\n((Mesostigma_viride, Arabidopsis_thaliana), Chlamydomonas_reinhardtii)), \n\n(Apodachyla_brachynema, Phytophthora_palmivora)), \n\n((Oxytricha_granulifera, Paramecium_caudatum), Toxoplasma_gondii))"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000072",
+            "regnumId": 72,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}

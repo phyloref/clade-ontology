@@ -1,0 +1,64 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Andres et al. 2014, fig. 3",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A new rhamphorhynchid pterosaur from the Upper Jurassic of Xinjiang, China, and the phylogenetic relationships of basal pterosaurs.",
+                "year": 2014,
+                "authors": [
+                    {
+                        "name": "B. J. Andres",
+                        "alternate": [
+                            "Andres, B. J."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Andres",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "M. Clark",
+                        "alternate": [
+                            "Clark, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Clark"
+                    },
+                    {
+                        "name": "X. Xu",
+                        "alternate": [
+                            "Xu, X."
+                        ],
+                        "firstname": "X.",
+                        "lastname": "Xu"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "3",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1080/02724630903409220"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Journal of Vertebrate Paleontology",
+                    "volume": "30",
+                    "identifier": []
+                }
+            },
+            "newick": "(Ornithosuchus_longidens, Herrerasaurus_ischigualastensis,\n(Scleromochlus_taylori, \n(Preondactylus_buffarinii,\n((Eudimorphodon_ranzii, Austriadactylus_cristatus), \n(Peteinosaurus_zambelli, \n(Dimorphodon_macronyx, \n(Campylognathoides_liasicus,\n\n(\n(((((Sericipterus_wucaiwanensis,\nAngustinaripterus_longicephalus),\nHarpactognathus_gentryii),\n(Cacibupteryx_caribensis, \nRhamphorhynchus_muentsteri)),\nDorygnathus_banthensis),\nScaphognathus_crassirostris), \n(Sordes_pilosus,\n((((Jeholopterus_ningchengensis,\nDendrorhynchoides_curvidentatus), \nBatrachognathus_volans), \nAnurognathus_ammoni), \nPterodactyloidea))))))))))\n"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000157",
+            "regnumId": 157,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Bremer 2002, fig. 1",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Gondwanan evolution of the grass alliance of families (Poales).",
+                "year": 2002,
+                "authors": [
+                    {
+                        "name": "K. Bremer",
+                        "alternate": [
+                            "Bremer, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Bremer"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1111/j.0014-3820.2002.tb01451.x"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Evolution",
+                    "volume": "56",
+                    "identifier": []
+                }
+            },
+            "newick": "(Calectasia, \n\n(\n(Spathanthus, (Rapatea, (Schoenocephalium, \n(Kunhardtia, Stegolepis)))),\n\n(\n((Sparganium, Typha), \n(Tillandsia, Hechtia, \n(Puya, Catopsis, (Aechmea, Ananas)))),\n\n(\n(Prionium, Thurnia),\n(Luzula, (Juncus, (Distichia, \n(Marsippospermum, Rostkovia)))),\n\n((Coleochola, Cyperus),\n((Lepironia, (Chorizandra, Chrysithrix)),\n(Mapania, (Hypolytrum_bullatum, Hypolytrum_nemorum)))),\n\n((\n((Abolboda, Orectanthe), \n(Xyris_capensis, Xyris_involucrata)), \n(Mesanthemum, \n((Eriocaulon, Lachnocaulon), \n(Syngonathus, Paepalanthus, Tonina)))),\n(\n(Anarthria, (Hopkinsia, Lyginia), \n((Elegia, Restio), \n((Eurychorda, Dapsilanthus),\n(Lepyrodia, Calorophus), \n(Sporadanthus, Centrolepis)))),\n\n(Flagellaria, \n(Joinvillea, \n\n((Ecdeiocolea, Georgeantha), \n\n((Anomochloa, Streptochaeta),\n\n(Pharus, \n\n((Guaduella, Puelia), \n\n((Bambusa, Oryza), (Arundo, Zea))))))))))))))"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000085",
+            "regnumId": 85,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}

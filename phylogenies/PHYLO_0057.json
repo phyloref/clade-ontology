@@ -1,0 +1,56 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Cohen & Weydmann 2005, fig. 2",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Molecular evidence that phoronids are a subtaxon of brachiopods (Brachiopoda: Phoronata) and that genetic divergence of metazoan phyla began long before the early Cambrian.",
+                "year": 2005,
+                "authors": [
+                    {
+                        "name": "B. L. Cohen",
+                        "alternate": [
+                            "Cohen, B. L."
+                        ],
+                        "firstname": "B.",
+                        "lastname": "Cohen",
+                        "middlename": "L."
+                    },
+                    {
+                        "name": "A. Weydmann",
+                        "alternate": [
+                            "Weydmann, A."
+                        ],
+                        "firstname": "A.",
+                        "lastname": "Weydmann"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ode.2004.12.002"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Organisms Diversity & Evolution",
+                    "volume": "5(4)",
+                    "identifier": []
+                }
+            },
+            "newick": "((((((Discinisca_cf._tenuis_Africa, Discinisca_cf._tenuis_SAmerica),\n(Glottidia_pyramidata, Lingula_cf._anatina)),\n\n(Novocrania_anomala, Craniid)),\n\n(Phoronid, Phoronis_hippocrepia)),\n\n((Terebratalia_transversa, Terebratulina_retusa), \n(Eohemithiris_grayii, Notosaria_nigricans))),\n\n((Chiton, Pectinid)))"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000144",
+            "regnumId": 144,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}

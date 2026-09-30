@@ -1,0 +1,65 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Sullivan et al. 2006, fig. 1 and 2",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "A phylogenetic analysis of the major groups of catfishes (Teleostei: Siluriformes) using nuclear rag1 and rag2 gene sequences.",
+                "year": 2006,
+                "authors": [
+                    {
+                        "name": "J. P. Sullivan",
+                        "alternate": [
+                            "Sullivan, J. P."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Sullivan",
+                        "middlename": "P."
+                    },
+                    {
+                        "name": "J. G. Lundberg",
+                        "alternate": [
+                            "Lundberg, J. G."
+                        ],
+                        "firstname": "J.",
+                        "lastname": "Lundberg",
+                        "middlename": "G."
+                    },
+                    {
+                        "name": "M. Hardman",
+                        "alternate": [
+                            "Hardman, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Hardman"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1 and 2",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1016/j.ympev.2006.05.044"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Molecular Phylogenetics and Evolution",
+                    "volume": "41",
+                    "identifier": []
+                }
+            },
+            "newick": "((Nematogenys_ine, \n((Trichomycterus_gui, Bullockia_mal), (Henonemus_pun, Ochmacanthus_alt)), \n((Callichthys_cal, Corydoras_tri), (Scoloplax_dis, \n((Astroblepus_sp1, Astroblepus_sp2), (Liposarcus_mul, (Loricaria_sim, \n(Lamontichthys_sti, Farlowella_nat))))))),\n((Diplomystes_mes, Diplomystes_nah), Siluroidei))"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000199",
+            "regnumId": 199,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}

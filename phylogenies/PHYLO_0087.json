@@ -1,0 +1,106 @@
+{
+    "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
+    "phylogenies": [
+        {
+            "label": "Roelants et al. 2007, fig. 1",
+            "primaryPhylogenyCitation": {
+                "type": "article",
+                "title": "Global patterns of diversification in the history of modern amphibians.",
+                "year": 2007,
+                "authors": [
+                    {
+                        "name": "K. Roelants",
+                        "alternate": [
+                            "Roelants , K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Roelants"
+                    },
+                    {
+                        "name": "D. J. Gower",
+                        "alternate": [
+                            "Gower, D. J."
+                        ],
+                        "firstname": "D.",
+                        "lastname": "Gower",
+                        "middlename": "J."
+                    },
+                    {
+                        "name": "M. Wilkinson",
+                        "alternate": [
+                            "Wilkinson, M."
+                        ],
+                        "firstname": "M.",
+                        "lastname": "Wilkinson"
+                    },
+                    {
+                        "name": "S. P. Loader",
+                        "alternate": [
+                            "Loader, S. P."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Loader",
+                        "middlename": "P."
+                    },
+                    {
+                        "name": "S. D. Biju",
+                        "alternate": [
+                            "Biju, S. D."
+                        ],
+                        "firstname": "S.",
+                        "lastname": "Biju",
+                        "middlename": "D."
+                    },
+                    {
+                        "name": "K. Guillaume",
+                        "alternate": [
+                            "Guillaume, K."
+                        ],
+                        "firstname": "K.",
+                        "lastname": "Guillaume"
+                    },
+                    {
+                        "name": "L. Moriau",
+                        "alternate": [
+                            "Moriau, L."
+                        ],
+                        "firstname": "L.",
+                        "lastname": "Moriau"
+                    },
+                    {
+                        "name": "F. Bossuyt",
+                        "alternate": [
+                            "Bossuyt, F."
+                        ],
+                        "firstname": "F.",
+                        "lastname": "Bossuyt"
+                    }
+                ],
+                "editors": [],
+                "series_editors": [],
+                "figure": "1",
+                "identifier": [
+                    {
+                        "type": "doi",
+                        "id": "10.1073/pnas.0608378104"
+                    }
+                ],
+                "link": [],
+                "journal": {
+                    "name": "Proceedings of the National Academy of Science U. S. A.",
+                    "volume": "104",
+                    "identifier": []
+                }
+            },
+            "newick": "((Andrias, (Batrachuperus, Hynobius)),\n\n(Siren,\n\n(((Ambystoma, Dicamptodon),\n\n((Salamandra, ((Pleurodeles, Tylototriton), (Taricha, (Calotriton, Triturus)))))),\n\n((Proteus, Necturus), (Rhyacotriton, (Amphiuma, \n((Blitoglossa, (Eurycea, Pseudotriton)),\n((Plethodon, ((Desmognathus, Ensatira), (Hydromantes, Speleomantes)))))))))))"
+        }
+    ],
+    "phylorefs": [],
+    "referenceFor": [
+        {
+            "clado": "CLADO_0000234",
+            "regnumId": 234,
+            "sourcePhylogenyIndex": 0
+        }
+    ]
+}
