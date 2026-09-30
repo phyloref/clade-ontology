@@ -187,7 +187,8 @@ an author). Its `commit_author` is the *committer*, not the curator who transcri
 that, see `attribution.csv` below. The decisions are made in `lib/salvage.js` and tested in
 `test/phylogenies/salvage.js`; the script itself reads git-crypt branches and cannot run in CI.
 
-Two kinds of tree are still outside the store, and neither is on those branches' tips:
+Two kinds of tree are still outside the store, and neither is on those branches' tips
+([#129](https://github.com/phyloref/clade-ontology/issues/129) has the full list):
 
 - 17 archived `.json.txt` files in `phyx/phylonym/newick-problems/` and `newick-recursion-error/`,
   set aside because of their Newicks. 14 of those phyloreferences have no live `CLADO_` file at
