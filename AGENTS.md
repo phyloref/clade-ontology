@@ -72,6 +72,7 @@ PhyloRegnum DB dump (JSON)
   - `test_phyx2ontology.js` — Smoke-tests `phyx2ontology.js` execution on all Phyx files.
   - `phylogenies/store.js` — Verifies the `phylogenies/` store is a faithful, deduplicated copy of the trees (with their citations and every other field) in `phyx/phylonym/`.
   - `phylogenies/extract.js` — Runs `extract-phylogenies.js` against temporary fixtures: PHYLO id stability across re-runs, citation preservation, report contents, and the refusals that stop a mis-aimed run from replacing the store.
+  - `lib/files.js` — Checks that the shared walker follows symlinked directories and survives a symlink cycle.
   - `regnum2phyx/exec.js` — Tests `regnum2phyx.js` against example dumps in `test/regnum2phyx/examples/` and compares output against `test/regnum2phyx/expected/`.
 
 ### Phyx Format
