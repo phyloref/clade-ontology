@@ -50,7 +50,7 @@ const { escapeCSV } = require('../../lib/csv');
 const argv = yargs(process.argv.slice(2))
   .usage('Usage: $0 [--dry-run] [--ledger <csv>]')
   .option('dry-run', {
-    describe: 'Report what would be written without modifying any file',
+    describe: 'Report what would be written without modifying any file (the ledger included)',
     type: 'boolean',
     default: false,
   })
@@ -139,11 +139,19 @@ const SOURCES = {
   },
 };
 
-/** Read a file from a git revision, decrypting git-crypt blobs via the configured diff filter. */
-function readFromRev(rev, file) {
-  return ChildProcess.execFileSync('git', ['cat-file', '--textconv', `${rev}:${file}`], {
-    maxBuffer: 256 * 1024 * 1024,
-  }).toString();
+/**
+ * Read a file from a git revision, decrypting git-crypt blobs via the configured diff filter.
+ *
+ * The filter is chosen by path, from the .gitattributes in the working tree, so a blob from
+ * before a move (under 2018's private/, say) comes back still encrypted. `attributesPath` names
+ * a path whose attributes to apply instead: pass the file's current path.
+ */
+function readFromRev(rev, file, attributesPath = file) {
+  return ChildProcess.execFileSync(
+    'git',
+    ['cat-file', '--textconv', `--path=${attributesPath}`, `${rev}:${file}`],
+    { maxBuffer: 256 * 1024 * 1024 },
+  ).toString();
 }
 
 /** Rough tip count: labels that follow an opening paren or comma in the Newick string. */
@@ -152,24 +160,41 @@ function countTips(newick) {
 }
 
 /**
- * The commit that introduced this tree: the one that added the Newick to the source file, or the
- * commit that added the file if the tree arrived with it.
+ * The commit that introduced this tree: the oldest commit in the source file's history whose copy
+ * of the file holds it. Returns [hash, author, date, subject], or [] if no revision does.
+ *
+ * This walks forwards and compares parsed, normalized Newicks, as attribute-phylogenies.js does,
+ * rather than asking `git log -S<slice of the Newick>` limited to the file's current path. That
+ * stopped at whichever commit moved the file ("Renamed from REGNUM_ to CLADO_", "Reorganized PHYX
+ * files into a single folder"), since to a path-limited log a move is the file appearing, tree
+ * and all; and a slice cut from the normalized Newick never matched a file that stored the tree
+ * across several lines. --follow carries the history across those moves, and each old copy is
+ * decrypted with the current path's attributes, since 2018's private/ has no git-crypt rule now.
  */
 function provenance(rev, file, newick) {
   // The subject carries the attribution the author field does not: every commit here is authored
   // by the maintainer, while the transcriber is named in prose ("...from Anna", "...from RS").
-  const format = '%H%x09%an%x09%aI%x09%s';
-  // A distinctive slice of the tree finds the commit that introduced it even if the file already
-  // existed. Newick punctuation is safe inside a -S pickaxe string.
-  const needle = normalizeNewick(newick).slice(10, 50);
-  for (const args of [
-    ['log', `-S${needle}`, `--format=${format}`, rev, '--', file],
-    ['log', '--diff-filter=A', `--format=${format}`, rev, '--', file],
-  ]) {
-    const out = ChildProcess.execFileSync('git', args, { maxBuffer: 1024 * 1024 }).toString().trim();
-    // git log is newest-first, and a tree removed and re-added matches more than once. The
-    // introducing commit is the oldest match, so take the last line rather than passing -1.
-    if (out) return out.split('\n').pop().split('\t');
+  // %x00 starts each record, so a record is its header line, then the file's path at that commit.
+  const format = '%x00%H%x09%an%x09%aI%x09%s';
+  const log = ChildProcess.execFileSync(
+    'git',
+    ['log', '--follow', '--name-only', `--format=${format}`, rev, '--', file],
+    { maxBuffer: 64 * 1024 * 1024 },
+  ).toString();
+  const wanted = normalizeNewick(newick);
+  // git log is newest-first; the introducing commit is the oldest that holds the tree.
+  for (const record of log.split('\0').filter(Boolean).reverse()) {
+    const [header, ...paths] = record.split('\n').filter(Boolean);
+    const [hash] = header.split('\t');
+    let json;
+    try {
+      json = JSON.parse(readFromRev(hash, paths[0], file));
+    } catch {
+      continue; // Deleted at this commit, or unparseable mid-edit: some other commit holds it.
+    }
+    const holds = (json.phylogenies || [])
+      .some((p) => (p.newick || '').trim() && normalizeNewick(p.newick) === wanted);
+    if (holds) return header.split('\t');
   }
   return [];
 }
@@ -254,27 +279,33 @@ for (const [branch, source] of Object.entries(SOURCES)) {
   }
 }
 
-if (!argv.dryRun) {
+/*
+ * A candidate that fails its checks means the candidate list and the data have diverged. Then
+ * nothing is written: the ledger has one row per tree in place, so rewriting it from this run
+ * would silently drop the failed tree's provenance, and a dry run writes nothing at all.
+ */
+const writing = !argv.dryRun && !skipped.length;
+if (writing) {
   for (const [targetPath, { json, changed }] of targets) {
     // Every file in phyx/phylonym/ round-trips exactly through 4-space JSON.stringify with no
     // trailing newline, so re-serializing keeps the diff to the lines we actually changed.
     if (changed) fs.writeFileSync(targetPath, JSON.stringify(json, null, 4));
   }
+  fs.mkdirSync(path.dirname(argv.ledger), { recursive: true });
+  ledgerRows.sort();
+  fs.writeFileSync(argv.ledger, `${[ledgerHeader, ...ledgerRows].join('\n')}\n`);
 }
 
-fs.mkdirSync(path.dirname(argv.ledger), { recursive: true });
-ledgerRows.sort();
-fs.writeFileSync(argv.ledger, `${[ledgerHeader, ...ledgerRows].join('\n')}\n`);
-
 const summary = [
-  `${argv.dryRun ? 'Would write' : 'Wrote'} ${written} tree(s) into ${argv.sourceDir}/.`,
+  `${writing ? 'Wrote' : 'Would write'} ${written} tree(s) into ${argv.sourceDir}/.`,
   `${ledgerRows.length} tree(s) in place: ${tally.filled} filling a citation slot, `
     + `${tally.appended} appended beside one.`,
-  `Wrote provenance to ${argv.ledger}.`,
+  `${writing ? 'Wrote' : 'Would write'} provenance to ${argv.ledger}.`,
   ...(skipped.length ? [`Skipped ${skipped.length}:`, ...skipped.map((s) => `  - ${s}`)] : []),
 ];
 process.stderr.write(`${summary.join('\n')}\n`);
 
-// A candidate that fails its checks means the candidate list and the data have diverged. Say so
-// with the exit code: a salvage that quietly dropped a tree is how one gets lost.
-if (skipped.length) process.exit(1);
+if (skipped.length) {
+  process.stderr.write(`Nothing written: ${skipped.length} candidate(s) failed their checks.\n`);
+  process.exit(1);
+}

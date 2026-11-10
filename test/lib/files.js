@@ -34,4 +34,16 @@ describe('lib/files.js findJSONFiles', () => {
     const found = findJSONFiles(root).map((f) => path.relative(root, f)).sort();
     assert.deepEqual(found, ['a.json', path.join('linked', 'c.json'), path.join('sub', 'b.json')]);
   });
+
+  it('survives a broken symlink, still returning one named *.json', () => {
+    const root = tmp.dirSync({ unsafeCleanup: true }).name;
+    fs.writeFileSync(path.join(root, 'a.json'), '{}');
+    // A link to a moved Phyx file must still be reported, so its reader fails on it by name...
+    fs.symlinkSync(path.join(root, 'moved.json'), path.join(root, 'gone.json'));
+    // ...while a link to an unmounted directory is skipped rather than ending the walk.
+    fs.symlinkSync(path.join(root, 'unmounted'), path.join(root, 'data'), 'dir');
+
+    const found = findJSONFiles(root).map((f) => path.relative(root, f)).sort();
+    assert.deepEqual(found, ['a.json', 'gone.json']);
+  });
 });

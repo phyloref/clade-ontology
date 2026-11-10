@@ -17,6 +17,8 @@ const path = require('node:path');
 const tmp = require('tmp');
 const chai = require('chai');
 
+const { parseCSVRow } = require('../../lib/csv');
+
 const assert = chai.assert;
 
 const SCRIPT = path.resolve(__dirname, '../../scripts/phylogenies/attribute-phylogenies.js');
@@ -75,8 +77,7 @@ function attribute({ repo, storeDir, ledger }) {
     { cwd: repo, encoding: 'utf8' },
   );
   assert.strictEqual(child.status, 0, `attribution failed: ${child.stderr}`);
-  return fs.readFileSync(ledger, 'utf8').trim().split('\n').slice(1)
-    .map((line) => line.split(','));
+  return fs.readFileSync(ledger, 'utf8').trim().split('\n').slice(1).map(parseCSVRow);
 }
 
 describe('attribute-phylogenies.js', () => {
@@ -146,5 +147,68 @@ describe('attribute-phylogenies.js', () => {
     const [[, curator, evidence]] = attribute(fixture);
     assert.strictEqual(curator, 'Anna Becker');
     assert.strictEqual(evidence, 'commit subject');
+  });
+
+  it('preserves a hand-set curator that needs CSV quoting', () => {
+    const fixture = buildFixture('Fixed specifier authorities in Phyx files.');
+    attribute(fixture);
+    fs.writeFileSync(
+      fixture.ledger,
+      fs.readFileSync(fixture.ledger, 'utf8')
+        .replace('PHYLO_0001,,', 'PHYLO_0001,"Anna Becker, Rebecca Stubbs",'),
+    );
+
+    // Twice: a curator read back wrong is truncated on the first run and re-quoted on the next.
+    attribute(fixture);
+    const [[, curator]] = attribute(fixture);
+    assert.strictEqual(curator, 'Anna Becker, Rebecca Stubbs');
+  });
+
+  it('credits the commit authored first, not the one committed first', () => {
+    const repo = tmp.dirSync({ unsafeCleanup: true }).name;
+    const commitAt = (authored, committed, subject) => {
+      const child = ChildProcess.spawnSync('git', ['commit', '--quiet', '-am', subject], {
+        cwd: repo,
+        encoding: 'utf8',
+        env: { ...process.env, GIT_AUTHOR_DATE: authored, GIT_COMMITTER_DATE: committed },
+      });
+      assert.strictEqual(child.status, 0, `git commit failed: ${child.stderr}`);
+    };
+    git(repo, 'init', '--quiet', '--initial-branch=main');
+    git(repo, 'config', 'user.email', 'fixture@example.com');
+    git(repo, 'config', 'user.name', 'Fixture Maintainer');
+    const source = path.join(repo, SOURCE_DIR, 'CLADO_0000018.json');
+    const writeTree = (newick) => fs.writeFileSync(
+      source,
+      JSON.stringify({ phylorefs: [{ regnumId: 18 }], phylogenies: [{ newick }] }, null, 4),
+    );
+
+    fs.mkdirSync(path.dirname(source), { recursive: true });
+    writeTree('');
+    git(repo, 'add', '-A');
+    commitAt('2020-01-01T00:00:00Z', '2020-01-01T00:00:00Z', 'Add an empty citation slot.');
+
+    // A reformat that brings the same tree in on another branch in August 2020...
+    git(repo, 'checkout', '--quiet', '-b', 'reformat');
+    writeTree(NEWICK);
+    commitAt('2020-08-01T00:00:00Z', '2020-08-01T00:00:00Z', 'Updated Newicks.');
+
+    // ...and the transcription, written in June 2020 but rebased (re-committed) in 2021.
+    git(repo, 'checkout', '--quiet', 'main');
+    writeTree(NEWICK);
+    commitAt('2020-06-01T00:00:00Z', '2021-03-01T00:00:00Z', 'Imported phylogenies curated by Anna.');
+
+    const storeDir = path.join(repo, 'phylogenies');
+    fs.mkdirSync(storeDir);
+    fs.writeFileSync(
+      path.join(storeDir, 'PHYLO_0001.json'),
+      JSON.stringify({ phylogenies: [{ newick: NEWICK }], phylorefs: [] }),
+    );
+
+    const [[, curator, , , date]] = attribute({
+      repo, storeDir, ledger: path.join(storeDir, 'attribution.csv'),
+    });
+    assert.strictEqual(curator, 'Anna Becker');
+    assert.strictEqual(date, '2020-06-01');
   });
 });

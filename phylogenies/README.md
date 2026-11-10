@@ -169,7 +169,9 @@ node scripts/phylogenies/salvage-trees.js [--dry-run]
   is processed first, because the trees already on `master` descend from that curation pass; so
   where both branches have a tree for an empty slot, the 2020 one fills it and the 2018 one is
   appended.
-- **Re-running is a no-op**, and a candidate that fails its checks fails the run.
+- **Re-running is a no-op.** A candidate that fails its checks fails the run, and then nothing
+  is written, the ledger included, so a regeneration cannot quietly drop a tree's provenance;
+  `--dry-run` writes nothing either.
 
 Five of the #45 trees say which node their phyloreference should resolve to, as
 `additionalNodeProperties.<node label>.expectedPhyloreferenceNamed`: Apo-Tracheophyta,
@@ -193,7 +195,10 @@ under `RUN_SLOW_TESTS`.
 introduced it (author, subject and date), where the tree now sits and whether it was `filled` or
 `appended`, what it was matched on, any expectation exactly as the source wrote it, and the
 source file's `curatorComments` (which say, for instance, that a Newick came from TreeBASE or from
-an author). Its `commit_author` is the *committer*, not the curator who transcribed the tree; for
+an author). The introducing commit is the oldest in the source file's history, followed across
+renames, whose copy holds the tree; a move such as "Renamed from `REGNUM_` to `CLADO_`" never
+counts, but a commit that corrected the tree ("Fixed a typo in the phylogeny.") does, as it does in
+`attribution.csv`: the tree in the store is the corrected one. Its `commit_author` is the *committer*, not the curator who transcribed the tree; for
 that, see `attribution.csv` below. The decisions are made in `lib/salvage.js` and tested in
 `test/phylogenies/salvage.js`; the script itself reads git-crypt branches and cannot run in CI.
 
@@ -210,7 +215,7 @@ Two kinds of tree are still outside the store, and neither is on those branches'
 ## Curator attribution
 
 `attribution.csv` records who transcribed each tree, keyed by `PHYLO_NNNN`. Current state:
-**120 trees credited to Anna Becker, 14 to Rebecca Stubbs, 7 unattributed**
+**123 trees credited to Anna Becker, 14 to Rebecca Stubbs, 4 unattributed**
 ([#125](https://github.com/phyloref/clade-ontology/issues/125)).
 
 Git authorship is no help: every commit in this repository is authored by the maintainer who
@@ -233,8 +238,15 @@ tracing backwards with `git log -S<newick>` bottoms out at whichever commit *mov
 ("Renamed from `REGNUM_` to `CLADO_`", "Reorganized PHYX files into a single folder", the 2021 move
 out of `encrypted/`), and `phyx/phylonym/` itself has only two commits in its history.
 
-Seven trees remain unattributed because the commit that introduces them is a reformatting pass
-("Updated Newicks", "Fixed specifier authorities in Phyx files") that credits nobody; their real
+"Oldest" means earliest *author* date. Much of the 2020 history was rebased, which resets the
+committer date that `git log` sorts by, so in committer order a transcription can land after a
+later reformat of the same tree and lose it: three of Anna Becker's trees were credited to an
+"Updated Newicks" pass that way. Of a rebased commit's several copies, the first one committed is
+the one recorded.
+
+Four trees remain unattributed because the commit that introduces them credits nobody: a
+maintenance pass ("Fixed specifier authorities in Phyx files", "Added expectation for Ascomycota",
+"Manually labeled one expected resolution"); their real
 transcriber is only knowable from outside the repository. **A curator written into the CSV by hand
 survives regeneration** — the script preserves an existing name wherever it would otherwise leave a
 blank, the same way the extractor preserves PHYLO ids. A name the script *derives* still wins, so

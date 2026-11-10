@@ -38,7 +38,7 @@ const path = require('node:path');
 const yargs = require('yargs');
 
 const { normalizeNewick, loadStore, PHYLOGENIES_DIR } = require('../../lib/phylogenies');
-const { escapeCSV } = require('../../lib/csv');
+const { escapeCSV, parseCSVRow } = require('../../lib/csv');
 
 const argv = yargs(process.argv.slice(2))
   .usage('Usage: $0 [-o <csv>] [--store <dir>]')
@@ -51,14 +51,16 @@ const argv = yargs(process.argv.slice(2))
   .option('paths', {
     describe: 'Repository paths whose history to walk',
     type: 'array',
-    default: ['phyx/phylonym/', 'phyx/encrypted/phylonym/'],
+    default: ['phyx/phylonym/', 'phyx/encrypted/phylonym/', 'private/phylonym/'],
   })
   .help('h').alias('h', 'help').argv;
 
 /*
  * Paths the Phylonym trees have lived under, defaulted in --paths above: phyx/phylonym/ is where
- * they are now, and the encrypted directory is where they were until the 2021 move and where the
- * unmerged curation branches still write.
+ * they are now, the encrypted directory is where they were until the 2021 move and where the
+ * unmerged curation branches still write, and private/phylonym/ is where the first 2018 files
+ * were added, before "Reorganized PHYX files into a single folder" moved them. Without it that
+ * move is the earliest commit to hold their trees, and it claims them.
  */
 const HISTORICAL_PATHS = argv.paths;
 
@@ -97,9 +99,16 @@ function git(...args) {
   }
 }
 
+/*
+ * git-crypt decrypts by path, using the .gitattributes in the working tree, and private/ has no
+ * git-crypt rule any more: its blobs would come back encrypted. Read them with the attributes of
+ * the directory they moved to.
+ */
+const attributesPath = (file) => file.replace(/^private\//, 'phyx/encrypted/');
+
 /** A Phyx file as it stood at a given revision, or undefined if it is absent or unparseable. */
 function phyxAt(rev, file) {
-  const text = git('cat-file', '--textconv', `${rev}:${file}`);
+  const text = git('cat-file', '--textconv', `--path=${attributesPath(file)}`, `${rev}:${file}`);
   if (!text) return undefined;
   try {
     return JSON.parse(text);
@@ -142,23 +151,30 @@ for (const { file, data } of loadStore(argv.store)) {
 
 // --all so the unmerged curation branches are included: that is where several of these trees were
 // transcribed, and PR #45 in particular is destined to be closed.
-const log = git('log', '--all', '--format=%H|%aI|%s', '--', ...HISTORICAL_PATHS).trim();
+const log = git('log', '--all', '--format=%H|%aI|%cI|%s', '--', ...HISTORICAL_PATHS).trim();
 
 /*
  * The 2018-2020 history was rebased across branches, so the same transcription appears under
- * several hashes. Collapsing on (date, subject) keeps one commit per real event -- otherwise
- * whichever duplicate is walked first wins arbitrarily and the hash recorded is a coin toss.
+ * several hashes. Collapsing on (author date, subject) keeps one commit per real event --
+ * otherwise whichever duplicate is walked first wins arbitrarily and the hash recorded is a coin
+ * toss. Of the copies, keep the one committed first: the original, not a later rebase of it.
  */
 const byEvent = new Map();
 for (const line of log.split('\n').filter(Boolean)) {
-  const [hash, date, ...rest] = line.split('|');
+  const [hash, date, committed, ...rest] = line.split('|');
   const subject = rest.join('|');
   const key = `${date}|${subject}`;
-  if (!byEvent.has(key)) byEvent.set(key, { hash, date, subject });
+  const copy = { hash, date, committed: Date.parse(committed), subject };
+  if (!byEvent.has(key) || copy.committed < byEvent.get(key).committed) byEvent.set(key, copy);
 }
-// git log is newest-first; reverse so the earliest commit to introduce a tree is the one that owns
-// it, and later reorganizations and reformats cannot claim it.
-const commits = [...byEvent.values()].reverse();
+/*
+ * Walk oldest first, so the earliest commit to introduce a tree is the one that owns it, and
+ * later reorganizations and reformats cannot claim it. "Oldest" is by author date: git log orders
+ * by committer date, which a rebase resets, so a transcription authored in 2020-06 and rebased in
+ * 2021 would otherwise sort after a 2020-08 reformat of the same tree and lose it to that.
+ */
+const commits = [...byEvent.values()]
+  .sort((a, b) => (Date.parse(a.date) - Date.parse(b.date)) || (a.committed - b.committed));
 
 const introducedBy = new Map(); // phyloId -> { hash, date, subject, file }
 for (const commit of commits) {
@@ -193,16 +209,21 @@ const tally = new Map();
 
 /*
  * Curators corrected by hand must survive regeneration, the same way the extractor preserves
- * PHYLO ids across runs. Commit messages cannot name everyone -- eight trees are introduced by
- * reformatting commits ("Updated Newicks", "Fixed specifier authorities") that credit nobody,
+ * PHYLO ids across runs. Commit messages cannot name everyone -- some trees are introduced by
+ * maintenance commits ("Fixed specifier authorities in Phyx files") that credit nobody,
  * and their real transcriber is only knowable from outside the repository. So a curator already
  * written into the ledger wins over a blank we would derive; re-running never silently discards
  * an edit. A derived name still takes precedence, so fixing CURATORS above propagates.
  */
 const existing = new Map();
 if (fs.existsSync(argv.o)) {
-  for (const line of fs.readFileSync(argv.o, 'utf8').trim().split('\n').slice(1)) {
-    const [phyloId, curator] = line.split(',');
+  // Parsed, not split on commas: a hand-set curator may be quoted ("Becker, Anna", or two names),
+  // and a naive split would truncate it and add another layer of quotes on every run.
+  const [columns, ...lines] = fs.readFileSync(argv.o, 'utf8').trim().split('\n').map(parseCSVRow);
+  const curatorColumn = columns.indexOf('curator');
+  for (const fields of lines) {
+    const [phyloId] = fields;
+    const curator = fields[curatorColumn];
     if (phyloId && curator) existing.set(phyloId, curator);
   }
 }
