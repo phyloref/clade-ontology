@@ -21,8 +21,8 @@
  * never in the repository: "RS" is expanded only in the title of PR #45, and Anna's surname was
  * supplied by the maintainer. Capture it while it is still legible.
  *
- * Identifiers (ORCIDs) are not recorded yet. Per-tree attribution inside the data itself waits on
- * the store-model decision.
+ * Each curator's ORCID comes from ORCID_BY_CURATOR below and fills the ledger's curator_orcid
+ * column. Per-tree attribution inside the data itself waits on the store-model decision.
  *
  * Usage:
  *   node scripts/phylogenies/attribute-phylogenies.js [-o <csv>] [--store <dir>] [--paths <p>...]
@@ -74,6 +74,17 @@ const CURATORS = [
   [/^Updated phylogenies with latest\.?$/i, 'Anna Becker'],
   [/\bfrom RS\b|\bby RS\b|\bRS\.?$/, 'Rebecca Stubbs'],
 ];
+
+/*
+ * Curator -> ORCID, as the full https URI ORCID asks to be cited by. Supplied by the maintainer
+ * and checked against each ORCID record's public name. The ledger's curator_orcid column is
+ * regenerated from this on every run, hand-set curators included, so a new curator's ORCID goes
+ * here rather than into the CSV. A curator missing from this table gets a blank.
+ */
+const ORCID_BY_CURATOR = new Map([
+  ['Anna Becker', 'https://orcid.org/0009-0005-6085-1100'],
+  ['Rebecca Stubbs', 'https://orcid.org/0000-0001-7386-2830'],
+]);
 
 /** Run git, returning stdout, or '' if the command failed (e.g. a path absent at that commit). */
 function git(...args) {
@@ -176,7 +187,7 @@ for (const commit of commits) {
 // 3. Emit the ledger.
 // ---------------------------------------------------------------------------
 
-const header = ['phylo_id', 'curator', 'introduced_in', 'commit_date', 'commit_subject'].join(',');
+const header = ['phylo_id', 'curator', 'curator_orcid', 'introduced_in', 'commit_date', 'commit_subject'].join(',');
 const rows = [];
 const tally = new Map();
 
@@ -211,6 +222,7 @@ for (const phyloId of [...phyloIdByNewick.values()].sort()) {
   rows.push([
     phyloId,
     escapeCSV(curator),
+    ORCID_BY_CURATOR.get(curator) || '',
     commit ? commit.hash.slice(0, 12) : '',
     commit ? commit.date.slice(0, 10) : '',
     escapeCSV(commit ? commit.subject : ''),
