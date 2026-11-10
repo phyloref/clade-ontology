@@ -203,7 +203,13 @@ const existingById = new Map(); // phyloId -> { fingerprint, label }
 for (const file of findStoreFiles(storeDir)) {
   const phyloId = path.basename(file, '.json');
   const previous = (JSON.parse(fs.readFileSync(file, 'utf8')).phylogenies || [])[0];
-  if (!previous?.newick) continue;
+  // A store file with no tree has been truncated or written by hand. Skipping it would leave its
+  // id looking free (unless the ledger knew it), to be reissued over the file, and would never
+  // retire the file either, since retiring works from the ids read here.
+  if (!previous?.newick) {
+    const fix = 'Store files are generated: restore it (git checkout) or delete it, and re-run.';
+    die(`${file} holds no Newick. ${fix}`);
+  }
   const fingerprint = newickFingerprint(previous.newick);
   // A store file whose tree differs from the one the ledger records for its id has been edited
   // by hand. Trusting either side would tie this id to two trees: if the ledger's tree is still

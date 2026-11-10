@@ -286,4 +286,19 @@ describe('extract-phylogenies.js', () => {
     );
   });
 
+  it('refuses to run when a store file holds no tree', () => {
+    const fx = fixture();
+    writeSource(fx.srcDir, 1, { newick: '(A,B);' });
+    runExtractor(fx);
+
+    // A store file the ledger has never heard of, with no Newick: its id must not be reissued
+    // over it, and it must not linger forever either.
+    const stray = path.join(fx.storeDir, 'PHYLO_0002.json');
+    fs.writeFileSync(stray, JSON.stringify({ phylogenies: [{}], phylorefs: [] }));
+    writeSource(fx.srcDir, 2, { newick: '(C,D);' });
+
+    const failed = runExtractor(fx, { expectFailure: true });
+    assert.match(failed.stderr, /PHYLO_0002\.json holds no Newick/);
+    assert.deepEqual(JSON.parse(fs.readFileSync(stray, 'utf8')).phylogenies, [{}], 'left untouched');
+  });
 });
