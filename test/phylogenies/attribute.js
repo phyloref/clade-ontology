@@ -83,16 +83,17 @@ function attribute({ repo, storeDir, ledger }) {
 describe('attribute-phylogenies.js', () => {
   it('credits the curator named in the commit that introduced a tree', () => {
     const fixture = buildFixture('Imported phylogenies curated by Anna.');
-    const [[phyloId, curator, evidence, , , ...subject]] = attribute(fixture);
+    const [[phyloId, curator, orcid, evidence, , , ...subject]] = attribute(fixture);
     assert.strictEqual(phyloId, 'PHYLO_0001');
     // The subject gives a first name only; the script expands it to the curator's full name.
     assert.strictEqual(curator, 'Anna Becker');
+    assert.strictEqual(orcid, 'https://orcid.org/0009-0005-6085-1100');
     assert.strictEqual(evidence, 'commit subject');
     assert.include(subject.join(','), 'curated by Anna');
   });
 
   it('leaves the curator blank when neither the commit nor the file credits anybody', () => {
-    const [[, curator, evidence]] = attribute(
+    const [[, curator, , evidence]] = attribute(
       buildFixture('Fixed specifier authorities in Phyx files.', 'Reference phylogeny: Fig. 1'),
     );
     assert.strictEqual(curator, '', 'a commit naming no curator must not be attributed');
@@ -102,7 +103,7 @@ describe('attribute-phylogenies.js', () => {
   it('falls back to the curator comments in the file that introduced the tree', () => {
     // The 2018 curation-tool files name their curator in the file, and the commits that last
     // touched their trees ("Fixed a typo in the phylogeny.") name nobody.
-    const [[, curator, evidence]] = attribute(
+    const [[, curator, , evidence]] = attribute(
       buildFixture('Fixed a typo in the phylogeny.', 'PHYX file by R. Stubbs\n\nReference phylogeny: Fig. 1'),
     );
     assert.strictEqual(curator, 'Rebecca Stubbs');
@@ -110,7 +111,7 @@ describe('attribute-phylogenies.js', () => {
   });
 
   it('prefers the commit subject to the curator comments', () => {
-    const [[, curator, evidence]] = attribute(
+    const [[, curator, , evidence]] = attribute(
       buildFixture('Imported phylogenies curated by Anna.', 'PHYX file by R. Stubbs'),
     );
     assert.strictEqual(curator, 'Anna Becker');
@@ -126,13 +127,14 @@ describe('attribute-phylogenies.js', () => {
       .replace('PHYLO_0001,,', 'PHYLO_0001,Rebecca Stubbs,');
     fs.writeFileSync(fixture.ledger, corrected);
 
-    const [[, curator, evidence]] = attribute(fixture);
+    const [[, curator, orcid, evidence]] = attribute(fixture);
     assert.strictEqual(
       curator,
       'Rebecca Stubbs',
       'regenerating must not discard a hand-set curator',
     );
     assert.strictEqual(evidence, 'set by hand', 'and must say that only the ledger vouches for it');
+    assert.strictEqual(orcid, 'https://orcid.org/0000-0001-7386-2830', 'and looks up its ORCID');
   });
 
   it('lets a derived curator win over a stale hand-set one', () => {
@@ -141,10 +143,13 @@ describe('attribute-phylogenies.js', () => {
     attribute(fixture);
     fs.writeFileSync(
       fixture.ledger,
-      fs.readFileSync(fixture.ledger, 'utf8').replace('PHYLO_0001,Anna Becker,commit subject,', 'PHYLO_0001,Nobody,set by hand,'),
+      fs.readFileSync(fixture.ledger, 'utf8').replace(
+        'PHYLO_0001,Anna Becker,https://orcid.org/0009-0005-6085-1100,commit subject,',
+        'PHYLO_0001,Nobody,,set by hand,',
+      ),
     );
 
-    const [[, curator, evidence]] = attribute(fixture);
+    const [[, curator, , evidence]] = attribute(fixture);
     assert.strictEqual(curator, 'Anna Becker');
     assert.strictEqual(evidence, 'commit subject');
   });
@@ -205,7 +210,7 @@ describe('attribute-phylogenies.js', () => {
       JSON.stringify({ phylogenies: [{ newick: NEWICK }], phylorefs: [] }),
     );
 
-    const [[, curator, , , date]] = attribute({
+    const [[, curator, , , , date]] = attribute({
       repo, storeDir, ledger: path.join(storeDir, 'attribution.csv'),
     });
     assert.strictEqual(curator, 'Anna Becker');

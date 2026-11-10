@@ -254,8 +254,12 @@ correcting `CURATORS` propagates.
 
 This is committed as data rather than derived on demand because what history can tell us keeps
 degrading: every path move costs traceability, round 2 rewrites `phyx/` again, and the curators'
-full names were never in the repository to begin with. ORCIDs are not recorded yet. Moving
-attribution into the phylogeny records themselves waits on the store-model decision.
+full names were never in the repository to begin with. Moving attribution into the phylogeny
+records themselves waits on the store-model decision.
+
+The `curator_orcid` column gives each curator's ORCID, from the `ORCID_BY_CURATOR` table in the
+script. It is regenerated on every run, for hand-set curators too, so a new curator's ORCID goes in
+that table, not in the CSV.
 
 Note `salvage-provenance.csv` answers a different question — how each salvaged tree was written
 into `phyx/`, keyed by `CLADO_NNNNNNN` — and traces only within its source branch, so where the two
