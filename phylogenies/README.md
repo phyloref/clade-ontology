@@ -158,7 +158,9 @@ candidate fails those checks it writes nothing, the ledger included, and exits n
 regeneration cannot quietly drop a tree's provenance; `--dry-run` writes nothing either.
 
 `salvage-provenance.csv` records, per salvaged tree, the source PR and branch, the commit that
-introduced it (author, subject and date), the slot it filled and what it was matched on. It is
+introduced it (author, subject and date), the slot it filled and what it was matched on. The
+introducing commit is the oldest in the source file's history, followed across renames, whose
+copy holds the tree; a move such as "Renamed from `REGNUM_` to `CLADO_`" never counts. It is
 written once and committed, unlike the regenerated `extraction-report.csv`. Its `commit_author` is
 the *committer*, not the curator who transcribed the tree; for that, see `attribution.csv` below.
 
