@@ -47,14 +47,16 @@ const argv = yargs(process.argv.slice(2))
   .option('paths', {
     describe: 'Repository paths whose history to walk',
     type: 'array',
-    default: ['phyx/phylonym/', 'phyx/encrypted/phylonym/'],
+    default: ['phyx/phylonym/', 'phyx/encrypted/phylonym/', 'private/phylonym/'],
   })
   .help('h').alias('h', 'help').argv;
 
 /*
  * Paths the Phylonym trees have lived under, defaulted in --paths above: phyx/phylonym/ is where
- * they are now, and the encrypted directory is where they were until the 2021 move and where the
- * unmerged curation branches still write.
+ * they are now, the encrypted directory is where they were until the 2021 move and where the
+ * unmerged curation branches still write, and private/phylonym/ is where the first 2018 files
+ * were added, before "Reorganized PHYX files into a single folder" moved them. Without it that
+ * move is the earliest commit to hold their trees, and it claims them.
  */
 const HISTORICAL_PATHS = argv.paths;
 
@@ -85,9 +87,16 @@ function git(...args) {
   }
 }
 
+/*
+ * git-crypt decrypts by path, using the .gitattributes in the working tree, and private/ has no
+ * git-crypt rule any more: its blobs would come back encrypted. Read them with the attributes of
+ * the directory they moved to.
+ */
+const attributesPath = (file) => file.replace(/^private\//, 'phyx/encrypted/');
+
 /** Normalized Newick strings present in a Phyx file at a given revision. */
 function newicksAt(rev, file) {
-  const text = git('cat-file', '--textconv', `${rev}:${file}`);
+  const text = git('cat-file', '--textconv', `--path=${attributesPath(file)}`, `${rev}:${file}`);
   if (!text) return new Set();
   try {
     const phylogenies = JSON.parse(text).phylogenies || [];
