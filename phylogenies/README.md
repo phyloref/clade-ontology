@@ -153,7 +153,9 @@ node scripts/phylogenies/salvage-trees.js [--dry-run]
 
 The script refuses to write unless the source citation and the target slot agree on their DOI
 (or, where no usable DOI exists, on author surname + year + title) and exactly one slot matches,
-and it never overwrites a slot that already holds a tree. Re-running it is a no-op.
+and it never overwrites a slot that already holds a tree. Re-running it is a no-op. If any
+candidate fails those checks it writes nothing, the ledger included, and exits non-zero, so a
+regeneration cannot quietly drop a tree's provenance; `--dry-run` writes nothing either.
 
 `salvage-provenance.csv` records, per salvaged tree, the source PR and branch, the commit that
 introduced it (author, subject and date), the slot it filled and what it was matched on. It is

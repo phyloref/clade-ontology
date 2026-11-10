@@ -50,7 +50,7 @@ const { escapeCSV } = require('../../lib/csv');
 const argv = yargs(process.argv.slice(2))
   .usage('Usage: $0 [--dry-run] [--ledger <csv>]')
   .option('dry-run', {
-    describe: 'Report what would be written without modifying any file',
+    describe: 'Report what would be written without modifying any file (the ledger included)',
     type: 'boolean',
     default: false,
   })
@@ -202,7 +202,9 @@ const ledgerHeader = [
   'figure', 'tip_count', 'newick_chars',
 ].join(',');
 const ledgerRows = [];
-const skipped = [];
+const notes = []; // Candidates already in place: expected on every re-run.
+const failures = []; // Candidates that failed a check: the list and the data have diverged.
+const pendingWrites = new Map(); // targetPath -> serialized Phyx, written only if nothing failed
 let written = 0;
 
 for (const [branch, source] of Object.entries(SOURCES)) {
@@ -217,12 +219,12 @@ for (const [branch, source] of Object.entries(SOURCES)) {
       const existing = (slot.phylogeny.newick || '').trim();
       if (existing) {
         if (normalizeNewick(existing) === normalizeNewick(tree.newick)) {
-          skipped.push(`${clado}: already salvaged`);
+          notes.push(`${clado}: already salvaged`);
         } else {
-          skipped.push(`${clado}: slot ${slot.index} already holds a different tree -- contested`);
+          failures.push(`${clado}: slot ${slot.index} already holds a different tree -- contested`);
           continue;
         }
-      } else if (!argv.dryRun) {
+      } else {
         slot.phylogeny.newick = tree.newick;
         // Figure-level notes ("Vallin and Laurin 2004 Fig. 6") say which figure was transcribed,
         // which the target slots do not record. Keep it where the source had one and we do not.
@@ -231,9 +233,7 @@ for (const [branch, source] of Object.entries(SOURCES)) {
         }
         // Every file in phyx/phylonym/ round-trips exactly through 4-space JSON.stringify with no
         // trailing newline, so re-serializing keeps the diff to the lines we actually changed.
-        fs.writeFileSync(targetPath, JSON.stringify(target, null, 4));
-        written += 1;
-      } else {
+        pendingWrites.set(targetPath, JSON.stringify(target, null, 4));
         written += 1;
       }
 
@@ -256,7 +256,7 @@ for (const [branch, source] of Object.entries(SOURCES)) {
         normalizeNewick(tree.newick).length,
       ].join(','));
     } catch (e) {
-      skipped.push(`${clado}: ${e.message}`);
+      failures.push(`${clado}: ${e.message}`);
     }
   }
 }
@@ -289,20 +289,28 @@ function provenance(rev, file, newick) {
   return [];
 }
 
-fs.mkdirSync(path.dirname(argv.ledger), { recursive: true });
-ledgerRows.sort();
-fs.writeFileSync(argv.ledger, `${[ledgerHeader, ...ledgerRows].join('\n')}\n`);
+/*
+ * A candidate that fails its checks means the candidate list and the data have diverged. Then
+ * nothing is written: the ledger has one row per tree in place, so rewriting it from this run
+ * would silently drop the failed tree's provenance, and a dry run writes nothing at all.
+ */
+const writing = !argv.dryRun && !failures.length;
+if (writing) {
+  for (const [targetPath, contents] of pendingWrites) fs.writeFileSync(targetPath, contents);
+  fs.mkdirSync(path.dirname(argv.ledger), { recursive: true });
+  ledgerRows.sort();
+  fs.writeFileSync(argv.ledger, `${[ledgerHeader, ...ledgerRows].join('\n')}\n`);
+}
 
 const summary = [
-  `${argv.dryRun ? 'Would salvage' : 'Salvaged'} ${written} tree(s) into ${argv.sourceDir}/.`,
-  `Wrote provenance for ${ledgerRows.length} tree(s) to ${argv.ledger}.`,
-  ...(skipped.length ? [`Skipped ${skipped.length}:`, ...skipped.map((s) => `  - ${s}`)] : []),
+  `${writing ? 'Salvaged' : 'Would salvage'} ${written} tree(s) into ${argv.sourceDir}/.`,
+  `${writing ? 'Wrote' : 'Would write'} provenance for ${ledgerRows.length} tree(s) to ${argv.ledger}.`,
+  ...(notes.length ? [`Unchanged ${notes.length}:`, ...notes.map((n) => `  - ${n}`)] : []),
+  ...(failures.length ? [`Failed ${failures.length}:`, ...failures.map((n) => `  - ${n}`)] : []),
 ];
 process.stderr.write(`${summary.join('\n')}\n`);
 
-// A salvage that silently did nothing is a failure, not a no-op: the guards are there to catch a
-// mismatch, and a mismatch means the candidate list and the data have diverged.
-if (!ledgerRows.length) {
-  process.stderr.write('No trees salvaged -- every candidate failed its checks.\n');
+if (failures.length) {
+  process.stderr.write(`Nothing written: ${failures.length} candidate(s) failed their checks.\n`);
   process.exit(1);
 }
