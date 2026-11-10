@@ -166,7 +166,7 @@ challengers to trees already in the store — were deliberately left out.
 ## Curator attribution
 
 `attribution.csv` records who transcribed each tree, keyed by `PHYLO_NNNN`. Current state:
-**117 trees credited to Anna Becker, 3 to Rebecca Stubbs, 7 unattributed**
+**120 trees credited to Anna Becker, 3 to Rebecca Stubbs, 4 unattributed**
 ([#125](https://github.com/phyloref/clade-ontology/issues/125)).
 
 Git authorship is no help: every commit in this repository is authored by the maintainer who
@@ -186,8 +186,15 @@ tracing backwards with `git log -S<newick>` bottoms out at whichever commit *mov
 ("Renamed from `REGNUM_` to `CLADO_`", "Reorganized PHYX files into a single folder", the 2021 move
 out of `encrypted/`), and `phyx/phylonym/` itself has only two commits in its history.
 
-Seven trees remain unattributed because the commit that introduces them is a reformatting pass
-("Updated Newicks", "Fixed specifier authorities in Phyx files") that credits nobody; their real
+"Oldest" means earliest *author* date. Much of the 2020 history was rebased, which resets the
+committer date that `git log` sorts by, so in committer order a transcription can land after a
+later reformat of the same tree and lose it: three of Anna Becker's trees were credited to an
+"Updated Newicks" pass that way. Of a rebased commit's several copies, the first one committed is
+the one recorded.
+
+Four trees remain unattributed because the commit that introduces them credits nobody: a
+maintenance pass ("Fixed specifier authorities in Phyx files", "Added expectation for Ascomycota",
+"Manually labeled one expected resolution"); their real
 transcriber is only knowable from outside the repository. **A curator written into the CSV by hand
 survives regeneration** — the script preserves an existing name wherever it would otherwise leave a
 blank, the same way the extractor preserves PHYLO ids. A name the script *derives* still wins, so

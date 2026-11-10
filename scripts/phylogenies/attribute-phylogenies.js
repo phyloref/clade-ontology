@@ -117,23 +117,30 @@ for (const { file, data } of loadStore(argv.store)) {
 
 // --all so the unmerged curation branches are included: that is where several of these trees were
 // transcribed, and PR #45 in particular is destined to be closed.
-const log = git('log', '--all', '--format=%H|%aI|%s', '--', ...HISTORICAL_PATHS).trim();
+const log = git('log', '--all', '--format=%H|%aI|%cI|%s', '--', ...HISTORICAL_PATHS).trim();
 
 /*
  * The 2018-2020 history was rebased across branches, so the same transcription appears under
- * several hashes. Collapsing on (date, subject) keeps one commit per real event -- otherwise
- * whichever duplicate is walked first wins arbitrarily and the hash recorded is a coin toss.
+ * several hashes. Collapsing on (author date, subject) keeps one commit per real event --
+ * otherwise whichever duplicate is walked first wins arbitrarily and the hash recorded is a coin
+ * toss. Of the copies, keep the one committed first: the original, not a later rebase of it.
  */
 const byEvent = new Map();
 for (const line of log.split('\n').filter(Boolean)) {
-  const [hash, date, ...rest] = line.split('|');
+  const [hash, date, committed, ...rest] = line.split('|');
   const subject = rest.join('|');
   const key = `${date}|${subject}`;
-  if (!byEvent.has(key)) byEvent.set(key, { hash, date, subject });
+  const copy = { hash, date, committed: Date.parse(committed), subject };
+  if (!byEvent.has(key) || copy.committed < byEvent.get(key).committed) byEvent.set(key, copy);
 }
-// git log is newest-first; reverse so the earliest commit to introduce a tree is the one that owns
-// it, and later reorganizations and reformats cannot claim it.
-const commits = [...byEvent.values()].reverse();
+/*
+ * Walk oldest first, so the earliest commit to introduce a tree is the one that owns it, and
+ * later reorganizations and reformats cannot claim it. "Oldest" is by author date: git log orders
+ * by committer date, which a rebase resets, so a transcription authored in 2020-06 and rebased in
+ * 2021 would otherwise sort after a 2020-08 reformat of the same tree and lose it to that.
+ */
+const commits = [...byEvent.values()]
+  .sort((a, b) => (Date.parse(a.date) - Date.parse(b.date)) || (a.committed - b.committed));
 
 const introducedBy = new Map(); // phyloId -> commit
 for (const commit of commits) {
@@ -166,8 +173,8 @@ const tally = new Map();
 
 /*
  * Curators corrected by hand must survive regeneration, the same way the extractor preserves
- * PHYLO ids across runs. Commit messages cannot name everyone -- eight trees are introduced by
- * reformatting commits ("Updated Newicks", "Fixed specifier authorities") that credit nobody,
+ * PHYLO ids across runs. Commit messages cannot name everyone -- some trees are introduced by
+ * maintenance commits ("Fixed specifier authorities in Phyx files") that credit nobody,
  * and their real transcriber is only knowable from outside the repository. So a curator already
  * written into the ledger wins over a blank we would derive; re-running never silently discards
  * an edit. A derived name still takes precedence, so fixing CURATORS above propagates.
