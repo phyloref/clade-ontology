@@ -266,4 +266,24 @@ describe('extract-phylogenies.js', () => {
     assert.match(failed.stderr, /no Newick-bearing phylogenies found/);
     assert.deepEqual(storeIds(fx.storeDir), ['PHYLO_0001']);
   });
+
+  it('refuses to run when a source file does not parse, rather than retiring its trees', () => {
+    const fx = fixture();
+    writeSource(fx.srcDir, 1, { newick: '(A,B);' });
+    writeSource(fx.srcDir, 2, { newick: '(C,D);' });
+    runExtractor(fx);
+    const before = fs.readFileSync(path.join(fx.storeDir, 'phylo-ids.json'), 'utf8');
+
+    // A trailing comma: the tree is unreadable, not deleted.
+    fs.writeFileSync(path.join(fx.srcDir, 'CLADO_0000002.json'), '{"phylogenies": [],}');
+    const failed = runExtractor(fx, { expectFailure: true });
+    assert.match(failed.stderr, /could not read .*CLADO_0000002\.json/);
+    assert.deepEqual(storeIds(fx.storeDir), ['PHYLO_0001', 'PHYLO_0002']);
+    assert.strictEqual(
+      fs.readFileSync(path.join(fx.storeDir, 'phylo-ids.json'), 'utf8'),
+      before,
+      'no id may be retired',
+    );
+  });
+
 });

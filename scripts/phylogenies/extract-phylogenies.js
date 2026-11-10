@@ -122,7 +122,14 @@ function die(message) {
 
 const sourceFiles = findJSONFiles(sourceDir).sort();
 // { cladoId, cladoNumValue, regnumId, phyloIndex, newick, normNewick, citations, otherFields }
-const occurrences = scanSourcePhylogenies(sourceFiles).map(({ cladoId, regnumId, phyloIndex, phylogeny }) => {
+// A source that fails to parse stops the run: its trees are unreadable, not deleted.
+let scanned;
+try {
+  scanned = scanSourcePhylogenies(sourceFiles);
+} catch (e) {
+  die(`${e.message}. Fix the file and re-run; the store is unchanged.`);
+}
+const occurrences = scanned.map(({ cladoId, regnumId, phyloIndex, phylogeny }) => {
   // Copy *every* citation key the phylogeny carries, not just the preferred one: at least one
   // phylonym phylogeny (CLADO_0000030) has both, and the store is about to become the only copy.
   // Everything else but the Newick (a label, a description, additionalNodeProperties…) goes in
