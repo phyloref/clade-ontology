@@ -34,7 +34,7 @@ const path = require('node:path');
 const yargs = require('yargs');
 
 const { normalizeNewick, loadStore, PHYLOGENIES_DIR } = require('../../lib/phylogenies');
-const { escapeCSV } = require('../../lib/csv');
+const { escapeCSV, parseCSVRow } = require('../../lib/csv');
 
 const argv = yargs(process.argv.slice(2))
   .usage('Usage: $0 [-o <csv>] [--store <dir>]')
@@ -174,8 +174,13 @@ const tally = new Map();
  */
 const existing = new Map();
 if (fs.existsSync(argv.o)) {
-  for (const line of fs.readFileSync(argv.o, 'utf8').trim().split('\n').slice(1)) {
-    const [phyloId, curator] = line.split(',');
+  // Parsed, not split on commas: a hand-set curator may be quoted ("Becker, Anna", or two names),
+  // and a naive split would truncate it and add another layer of quotes on every run.
+  const [columns, ...lines] = fs.readFileSync(argv.o, 'utf8').trim().split('\n').map(parseCSVRow);
+  const curatorColumn = columns.indexOf('curator');
+  for (const fields of lines) {
+    const [phyloId] = fields;
+    const curator = fields[curatorColumn];
     if (phyloId && curator) existing.set(phyloId, curator);
   }
 }

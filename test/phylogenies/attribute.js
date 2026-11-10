@@ -17,6 +17,8 @@ const path = require('node:path');
 const tmp = require('tmp');
 const chai = require('chai');
 
+const { parseCSVRow } = require('../../lib/csv');
+
 const assert = chai.assert;
 
 const SCRIPT = path.resolve(__dirname, '../../scripts/phylogenies/attribute-phylogenies.js');
@@ -71,8 +73,7 @@ function attribute({ repo, storeDir, ledger }) {
     { cwd: repo, encoding: 'utf8' },
   );
   assert.strictEqual(child.status, 0, `attribution failed: ${child.stderr}`);
-  return fs.readFileSync(ledger, 'utf8').trim().split('\n').slice(1)
-    .map((line) => line.split(','));
+  return fs.readFileSync(ledger, 'utf8').trim().split('\n').slice(1).map(parseCSVRow);
 }
 
 describe('attribute-phylogenies.js', () => {
@@ -119,4 +120,20 @@ describe('attribute-phylogenies.js', () => {
     const [[, curator]] = attribute(fixture);
     assert.strictEqual(curator, 'Anna Becker');
   });
+
+  it('preserves a hand-set curator that needs CSV quoting', () => {
+    const fixture = buildFixture('Fixed specifier authorities in Phyx files.');
+    attribute(fixture);
+    fs.writeFileSync(
+      fixture.ledger,
+      fs.readFileSync(fixture.ledger, 'utf8')
+        .replace('PHYLO_0001,,', 'PHYLO_0001,"Anna Becker, Rebecca Stubbs",'),
+    );
+
+    // Twice: a curator read back wrong is truncated on the first run and re-quoted on the next.
+    attribute(fixture);
+    const [[, curator]] = attribute(fixture);
+    assert.strictEqual(curator, 'Anna Becker, Rebecca Stubbs');
+  });
+
 });
