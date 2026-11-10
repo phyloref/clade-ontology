@@ -54,12 +54,24 @@ describe('Test Phyx files in repository', () => {
     describe(`Phyx file: ${filename}`, () => {
       // Make sure the file to test isn't empty.
       it('is not empty', () => {
-        const stats = fs.lstatSync(filename);
+        const stats = fs.statSync(filename); // The target's size, where the file is a symlink.
         assert.notEqual(stats.size, 0);
       });
 
-      // Load the Phyx data. Skip testing if it is git-crypt encrypted.
-      const data = fs.readFileSync(filename);
+      // Load the Phyx data. A file that cannot be read (a broken symlink, say) fails its own
+      // test here rather than throwing while Mocha collects, which would take every file's
+      // tests down with it.
+      let data;
+      try {
+        data = fs.readFileSync(filename);
+      } catch (ex) {
+        it('can be read', () => {
+          throw ex;
+        });
+        return;
+      }
+
+      // Skip testing if it is git-crypt encrypted.
       const gitcrypt = data.slice(0, 9);
       if (gitcrypt.equals(Buffer.from('\x00GITCRYPT'))) {
         it.skip('cannot test git-encrypted file');
