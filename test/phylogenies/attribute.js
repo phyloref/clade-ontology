@@ -176,13 +176,13 @@ describe('attribute-phylogenies.js', () => {
     // Stand in for a maintainer filling the blank the previous run left.
     editByHand(fixture, (contents) => {
       contents.curators[REBECCA] = { name: 'Rebecca Stubbs' };
-      contents.overrides.PHYLO_0001 = { transcribedBy: REBECCA };
+      contents.overrides.PHYLO_0001 = { transcribedBy: REBECCA, note: 'Confirmed by the maintainer.' };
     });
 
     const { trees, curators, overrides, stderr } = attribute(fixture);
     assert.strictEqual(trees.PHYLO_0001.transcribedBy, REBECCA, 'regenerating must not discard an override');
     assert.deepEqual(curators, { [REBECCA]: { name: 'Rebecca Stubbs' } });
-    assert.deepEqual(overrides, { PHYLO_0001: { transcribedBy: REBECCA } });
+    assert.deepEqual(overrides, { PHYLO_0001: { transcribedBy: REBECCA, note: 'Confirmed by the maintainer.' } });
     assert.notInclude(stderr, 'Warning');
   });
 

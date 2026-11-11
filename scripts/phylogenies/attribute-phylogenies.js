@@ -26,13 +26,18 @@
  * Newick in a phylogeny slot, which version it replaced, and each store tree is traced back
  * through those versions: the first is its `transcribed` event, every later one `revised`.
  *
+ * What counts as a commit writing a version -- renames followed, merges compared with each parent,
+ * rebased copies collapsed and ordered by author date, a tree pushed into the next slot not read
+ * as replaced -- is explained at the code that decides it, below.
+ *
  * This is why the attribution is committed as data rather than derived on demand. Every path move
  * degrades what history can tell us, round 2 will rewrite phyx/ again, and the full names were
  * never in the repository: "RS" is expanded only in the title of PR #45, and Anna's surname was
  * supplied by the maintainer. Capture it while it is still legible.
  *
  * attribution.json has three sections. `curators` (curator id -> { name }) and `overrides`
- * (phylo id -> { transcribedBy }) are maintained by hand and carried over untouched; `trees` is
+ * (phylo id -> { transcribedBy, note }) are maintained by hand and carried over untouched, so an
+ * override can say in its `note` who vouched for it and when; `trees` is
  * regenerated on every run. A curator id is the curator's ORCID URI, or `curator:<slug>` for
  * someone without one. This is deliberately not the PHYLO id ledger (phylo-ids.json): that file
  * must never be edited by hand and is written by the extractor, this one is edited by hand and

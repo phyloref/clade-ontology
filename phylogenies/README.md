@@ -160,9 +160,8 @@ in [#129](https://github.com/phyloref/clade-ontology/issues/129).
 ## Curator attribution
 
 `attribution.json` records who transcribed each tree and who revised it since, keyed by
-`PHYLO_NNNN`. Current state: **125 trees transcribed by Anna Becker, 14 by Rebecca Stubbs, 2
-unattributed**, and 9 revised after transcription
-([#125](https://github.com/phyloref/clade-ontology/issues/125)).
+`PHYLO_NNNN`. Trees that nobody can yet be credited with are tracked in
+[#125](https://github.com/phyloref/clade-ontology/issues/125).
 
 ```jsonc
 {
@@ -170,15 +169,16 @@ unattributed**, and 9 revised after transcription
   "curators": {        // hand-maintained: curator id -> { name }
     "https://orcid.org/0009-0005-6085-1100": { "name": "Anna Becker" }
   },
-  "overrides": {       // hand-maintained: who transcribed a tree history cannot attribute
-    "PHYLO_0116": { "transcribedBy": "https://orcid.org/0000-0001-7386-2830" }
+  "overrides": {       // hand-maintained: a transcriber history cannot supply, and why
+    "PHYLO_NNNN": { "transcribedBy": "https://orcid.org/...", "note": "who vouched for it, and when" }
   },
   "trees": {           // regenerated on every run
     "PHYLO_0006": {
       "transcribedBy": "https://orcid.org/0009-0005-6085-1100",  // absent if unattributed
       "history": [     // oldest first; only commits that changed the Newick
         { "event": "transcribed", "curator": "https://orcid.org/0009-0005-6085-1100",
-          "commit": "216f7b85a0ab", "date": "2020-07-13", "subject": "Imported phylogenies curated by Anna." },
+          "curatorFrom": "commit subject", "commit": "216f7b85a0ab", "date": "2020-07-13",
+          "subject": "Imported phylogenies curated by Anna." },
         { "event": "revised", "commit": "1cfdd8d23a82", "date": "2020-07-14",
           "subject": "Added expectation for Ascomycota." }   // no curator: the message names none
       ]
@@ -187,82 +187,34 @@ unattributed**, and 9 revised after transcription
 }
 ```
 
-A curator id is the curator's ORCID URI: it is already a global, resolvable identifier, and it
-carries over to JSON-LD unchanged when attribution moves into the store files. Someone without an
-ORCID gets a local `curator:<slug>`. **Edit only `curators` and `overrides`**; the script carries
-both over untouched, and refuses to run over a file it cannot parse rather than lose them. To add a
-curator, give them an entry in `curators` and a pattern in the script's `CURATORS` table.
-
-This is deliberately a separate file from the id ledger, `phylo-ids.json`. The ledger must never be
-edited by hand and is written by the extractor, which swaps it in with the store; this file is
-edited by hand and written by a slow walk of the history. They also cover different trees: the
-ledger keeps retired ids forever, this file only the trees in the store.
-
-Git authorship is no help: every commit in this repository is authored by the maintainer who
-committed it, so the curators appear nowhere in the author field. The attribution comes from
-commit *messages* instead — "Imported phylogenies curated by Anna", "Added new phyloreferences
-from RS" — mapped onto the curators' ORCIDs by the `CURATORS` table in the script. The
-messages never give more than "Anna" and "RS": "RS" is expanded only in the title of PR #45, and
-Anna's surname was supplied by the maintainer. Where the message names nobody, the script reads
-the `curatorComments` of the file as it stood in that commit: the 2018 files open theirs with
-"Phyx file by R. Stubbs". Each `transcribed` event's `curatorFrom` says which of the two it rests on;
-a name neither supplies can only come from an override.
-
 ```bash
 node scripts/phylogenies/attribute-phylogenies.js
 ```
 
-The script walks every commit touching `phyx/phylonym/`, `phyx/encrypted/phylonym/` or 2018's
-`private/phylonym/` on **any** branch, oldest first, and the first commit to write a Newick owns
-that version of the tree. It has to work forwards: tracing backwards with `git log -S<newick>`
-bottoms out at whichever commit *moved* the file ("Renamed from `REGNUM_` to `CLADO_`",
-"Reorganized PHYX files into a single folder", the 2021 move out of `encrypted/`), and
-`phyx/phylonym/` itself has only two commits in its history.
+- **Edit only `curators` and `overrides`.** The script carries both over untouched, and refuses
+  to run over a file it cannot parse rather than lose them. To add a curator, give them an entry
+  in `curators` and a pattern in the script's `CURATORS` table.
+- **A curator id is the curator's ORCID URI**, or a local `curator:<slug>` for someone without
+  one: it is already a global, resolvable identifier, and carries over to JSON-LD unchanged when
+  attribution moves into the store files.
+- **An override fills only a blank.** A curator the script derives still wins, so correcting
+  `CURATORS` propagates, and the script warns about an override that a derived curator now
+  contradicts.
+- **Curators come from commit messages**, because every commit here is authored by the maintainer
+  who committed it; where a message names nobody, from the `curatorComments` of the file that
+  first held the tree. `curatorFrom` says which.
+- **A tree is credited to whoever transcribed its first version**, not whoever wrote its current
+  Newick: a later commit that changes the Newick, such as a maintainer adding a node label, is a
+  `revised` event. How the history is read, and why, is in the header of
+  `attribute-phylogenies.js`.
+- **After a change, check the date spans the script prints.** Rebecca Stubbs worked on these
+  trees in 2018 and Anna Becker in 2020, so a misattributed tree shows up as overlapping spans.
 
-A commit writes a version only if the file it changed holds a Newick that the file's previous
-version did not. Renames are followed (from anywhere in the repository, not only those paths), so a
-move does not count as introducing the trees it carried; a merge is compared with each of its
-parents, so a tree first written while resolving one is credited to the merge, and a file a merge
-carried over unchanged from either side is credited to neither. A failed `git` command stops the run
-before anything is written: an earlier version read failures as empty history and rewrote the
-record with every derived field blank.
-
-**A tree is credited to whoever transcribed its first version, not whoever wrote its current
-Newick.** When a commit replaces the Newick in a phylogeny slot, the new version is linked to the
-one it replaced, and each store tree is followed back through those links. Without this, a
-maintainer's later edit claims the tree: PHYLO_0006 and PHYLO_0090 are Anna Becker's transcriptions
-that a maintainer reformatted and relabelled ("Added expectation for Ascomycota", "Manually
-labeled one expected resolution"), and were credited to nobody. A tree pushed into the next slot by
-one inserted ahead of it is still in the file, so it is not read as replaced. Commits that only
-move or reformat a file without changing a Newick never appear in `history`.
-
-"Oldest" means earliest *author* date. Much of the 2020 history was rebased, which resets the
-committer date that `git log` sorts by, so in committer order a transcription can land after a
-later reformat of the same tree and lose it: three of Anna Becker's trees were credited to an
-"Updated Newicks" pass that way. Of a rebased commit's several copies, the first one committed is
-the one recorded.
-
-Two trees remain unattributed because the commit that first wrote them credits nobody:
-PHYLO_0064 and PHYLO_0101 ("Fixed specifier authorities in Phyx files"). Their real transcriber is
-only knowable from outside the repository. No override is in use: the two trees once credited to
-Rebecca Stubbs by override (PHYLO_0114 and PHYLO_0116) are now credited by their files' own
-"Phyx file by R. Stubbs" comments. **An override survives regeneration**, the same way the extractor preserves PHYLO ids,
-but fills only a blank: a curator the script *derives* still wins, so correcting `CURATORS`
-propagates, and the script warns about an override that a derived curator now contradicts.
-
-**Check the curators' date spans after a change to the attribution.** Rebecca Stubbs and Anna
-Becker worked in different periods, so the script's summary prints each curator's first and last
-transcription date, and a misattribution shows up as overlapping spans. As of this writing they
-don't overlap: Rebecca Stubbs from 2018-07-05 to 2018-08-14, Anna Becker
-from 2020-06-30 to 2020-10-07. The two unattributed trees date from 2020-08-25, inside Anna Becker's
-period, but they arrive in new files (CLADO_0000158, CLADO_0000270/271) in a maintainer commit
-whose subject is about specifier authorities, and no earlier tree in the repository resembles
-them, so history alone cannot say whose they are.
-
-This is committed as data rather than derived on demand because what history can tell us keeps
-degrading: every path move costs traceability, round 2 rewrites `phyx/` again, and the curators'
-full names were never in the repository to begin with. Moving attribution into the phylogeny
-records themselves waits on the store-model decision.
+This is a separate file from the id ledger, `phylo-ids.json`, on purpose: the ledger must never be
+edited by hand and is swapped in by the extractor with the store, while this file is edited by
+hand and written by a slow walk of the history. It is committed as data rather than derived on
+demand because what history can tell us keeps degrading with every path move, and round 2 rewrites
+`phyx/` again.
 
 ## Roadmap
 
