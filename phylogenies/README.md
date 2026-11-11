@@ -148,7 +148,10 @@ above.
 citation slots — one `primaryPhylogenyCitation` plus any number of `phylogenyCitation` entries —
 and only some of those slots carry a Newick. These trees were transcribed in 2018–2020 against
 publications the target slots already cite, so recovering them meant filling in an empty `newick`
-field rather than transcribing anything:
+field rather than transcribing anything. The trees are written into `phyx/phylonym/`, not into
+this store, because in round 1 the store is regenerated from `phyx/phylonym/`: a tree written
+straight into `phylogenies/` would vanish on the next extraction. Until round 2 they are as
+exposed to a `regnum2phyx.js` regeneration as every other tree there.
 
 ```bash
 node scripts/phylogenies/salvage-trees.js [--dry-run]
