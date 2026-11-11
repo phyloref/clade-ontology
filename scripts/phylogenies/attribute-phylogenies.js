@@ -37,6 +37,7 @@
  *
  * Usage:
  *   node scripts/phylogenies/attribute-phylogenies.js [-o <json>] [--store <dir>] [--paths <p>...]
+ *     [--curators <json>]
  */
 
 const ChildProcess = require('node:child_process');
@@ -49,7 +50,7 @@ const {
 } = require('../../lib/phylogenies');
 
 const argv = yargs(process.argv.slice(2))
-  .usage('Usage: $0 [-o <json>] [--store <dir>] [--paths <p>...]')
+  .usage('Usage: $0 [-o <json>] [--store <dir>] [--paths <p>...] [--curators <json>]')
   .option('o', {
     alias: 'output',
     describe: 'Path to the attribution JSON (read for its hand-maintained sections, then rewritten)',
@@ -60,6 +61,10 @@ const argv = yargs(process.argv.slice(2))
     describe: 'Repository paths whose history to walk',
     type: 'array',
     default: ['phyx/phylonym/', 'phyx/encrypted/phylonym/', 'private/phylonym/'],
+  })
+  .option('curators', {
+    describe: 'JSON file of [{ pattern, flags, curator }] to use instead of the built-in CURATORS table',
+    type: 'string',
   })
   .help('h').alias('h', 'help').argv;
 
@@ -86,11 +91,26 @@ const REBECCA_STUBBS = 'https://orcid.org/0000-0001-7386-2830';
  * confirmed with the maintainer rather than inferred by this script -- hence the explicit pattern
  * rather than a loose fallback.
  */
-const CURATORS = [
+const BUILT_IN_CURATORS = [
   [/\bAnna\b/i, ANNA_BECKER],
   [/^Updated phylogenies with latest\.?$/i, ANNA_BECKER],
   [/\bfrom RS\b|\bby RS\b|\bRS\.?$/, REBECCA_STUBBS],
 ];
+
+/*
+ * --curators replaces the table above with one read from a JSON file, an ordered array of
+ * { pattern, flags, curator }. It exists so the tests can run on made-up curators instead of
+ * hard-coding real people's names and ORCIDs; this repository's curators belong in the table above.
+ */
+function loadCurators(file) {
+  try {
+    return JSON.parse(fs.readFileSync(file, 'utf8'))
+      .map(({ pattern, flags, curator }) => [new RegExp(pattern, flags), curator]);
+  } catch (e) {
+    return die(`could not read --curators ${file}: ${e.message}`);
+  }
+}
+const CURATORS = argv.curators ? loadCurators(argv.curators) : BUILT_IN_CURATORS;
 
 /** The curator a commit's subject credits, or undefined. */
 const curatorOf = (commit) => (CURATORS.find(([pattern]) => pattern.test(commit.subject)) || [])[1];
