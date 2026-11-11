@@ -218,8 +218,8 @@ Two kinds of tree are still outside the store, and neither is on those branches'
 ## Curator attribution
 
 `attribution.json` records who transcribed each tree and who revised it since, keyed by
-`PHYLO_NNNN`. Current state: **122 trees transcribed by Anna Becker, 3 by Rebecca Stubbs, 2
-unattributed**, and 4 revised after transcription
+`PHYLO_NNNN`. Current state: **125 trees transcribed by Anna Becker, 14 by Rebecca Stubbs, 2
+unattributed**, and 9 revised after transcription
 ([#125](https://github.com/phyloref/clade-ontology/issues/125)).
 
 ```jsonc
@@ -302,17 +302,16 @@ the one recorded.
 
 Two trees remain unattributed because the commit that first wrote them credits nobody:
 PHYLO_0064 and PHYLO_0101 ("Fixed specifier authorities in Phyx files"). Their real transcriber is
-only knowable from outside the repository. Two more were first written by a commit that names
-nobody, "Added two PHYX files curated from the Phylonym volume", and are credited to Rebecca Stubbs
-by override on the maintainer's word: PHYLO_0116, and PHYLO_0114, which she also later revised
-("Updated Amorphea from RS"). **An override survives regeneration**, the same way the extractor preserves PHYLO ids,
+only knowable from outside the repository. No override is in use: the two trees once credited to
+Rebecca Stubbs by override (PHYLO_0114 and PHYLO_0116) are now credited by their files' own
+"Phyx file by R. Stubbs" comments. **An override survives regeneration**, the same way the extractor preserves PHYLO ids,
 but fills only a blank: a curator the script *derives* still wins, so correcting `CURATORS`
 propagates, and the script warns about an override that a derived curator now contradicts.
 
 **Check the curators' date spans after a change to the attribution.** Rebecca Stubbs and Anna
 Becker worked in different periods, so the script's summary prints each curator's first and last
 transcription date, and a misattribution shows up as overlapping spans. As of this writing they
-don't overlap: Rebecca Stubbs from 2018-07-05 to 2018-08-14 (both overrides included), Anna Becker
+don't overlap: Rebecca Stubbs from 2018-07-05 to 2018-08-14, Anna Becker
 from 2020-06-30 to 2020-10-07. The two unattributed trees date from 2020-08-25, inside Anna Becker's
 period, but they arrive in new files (CLADO_0000158, CLADO_0000270/271) in a maintainer commit
 whose subject is about specifier authorities, and no earlier tree in the repository resembles
