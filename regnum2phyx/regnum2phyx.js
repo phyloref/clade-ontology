@@ -27,6 +27,7 @@ const yargs = require('yargs');
 const {
   has, pickBy, isEmpty,
 } = require('lodash');
+const { escapeCSV } = require('../lib/csv');
 
 // Helper functions.
 function convertAuthorsIntoStrings(authors, lastNameStatus = 'first') {
@@ -225,15 +226,6 @@ const dump = JSON.parse(fs.readFileSync(argv._[0], 'utf8'));
 // each of which should be written out to a separate file.
 const phyxProduced = {};  // keeps phylorefLabel → entry for O(1) duplicate detection
 const results = [];
-
-// Helper to escape a value for CSV output.
-function escapeCSV(field) {
-  const str = String(field == null ? '' : field);
-  if (str.includes(',') || str.includes('"') || str.includes('\n')) {
-    return `"${str.replace(/"/g, '""')}"`;
-  }
-  return str;
-}
 
 // Create the output directory if it doesn't exist.
 if (fs.existsSync(argv.outputDir)) {

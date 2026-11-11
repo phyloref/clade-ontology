@@ -8,6 +8,10 @@ paper.owl
 # Ignore Mac-specific files
 .DS_Store
 
+# Ignore JetBrains IDE files
+.idea/
+*.iml
+
 # Ignore libraries installed locally for JPhyloRef
 jphyloref/lib/
 
@@ -95,7 +99,7 @@ typings/
 
 #
 # The following rules are based on Github's .gitignore rules for Python.
-w
+# (`lib/` is left out: this repository keeps its shared Node modules there.)
 #
 
 # Ignore files produced by pytest
@@ -118,7 +122,6 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/
@@ -203,5 +206,6 @@ ENV/
 # mypy
 .mypy_cache/
 
-# PyCharm
-.idea/
+# Temporary directories created while the reference-phylogeny store is being rewritten
+# (scripts/phylogenies/migration/extract-phylogenies.js normally removes these itself).
+phylogenies/.extract-*

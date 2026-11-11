@@ -24,6 +24,8 @@ const path = require('node:path');
 const Ajv = require('ajv');
 const chai = require('chai');
 
+const { findJSONFiles } = require('../lib/files');
+
 const assert = chai.assert;
 
 /*
@@ -45,45 +47,31 @@ const ajvInstance = new Ajv({
 });
 const phyxSchema = ajvInstance.compile(phyxSchemaJSON);
 
-/*
- * Returns a list of Phyx files that we can test in the provided directory.
- *
- * We use a simple flatMap to search for these files. Since flatMap isn't in
- * Node.js yet, I use a map to recursively find the files and then flatten it
- * using reduce() and concat().
- *
- * This could be implemented asynchronously, but we need a list of files to
- * test each one individually in Mocha, so we need a synchronous implementation
- * to get that list before we start testing.
- */
-function findPhyxFiles(dirPath) {
-  return fs.readdirSync(dirPath).map((filename) => {
-    const filePath = path.join(dirPath, filename);
-
-    if (fs.lstatSync(filePath).isDirectory()) {
-      // Recurse into this directory.
-      return findPhyxFiles(filePath);
-    }
-    // Look for .json files.
-    if (filePath.endsWith('.json')) {
-      return [filePath];
-    }
-    return [];
-  }).reduce((x, y) => x.concat(y), []); // This flattens the list of results.
-}
-
 describe('Test Phyx files in repository', () => {
-  // Test each input file.
-  for (const filename of findPhyxFiles(BASE_DIR)) {
+  // Test each input file. Mocha needs the list of files up front to declare a test per file,
+  // so this walk is synchronous; it is shared with phyx2ontology.js via lib/files.js.
+  for (const filename of findJSONFiles(BASE_DIR)) {
     describe(`Phyx file: ${filename}`, () => {
       // Make sure the file to test isn't empty.
       it('is not empty', () => {
-        const stats = fs.lstatSync(filename);
+        const stats = fs.statSync(filename); // The target's size, where the file is a symlink.
         assert.notEqual(stats.size, 0);
       });
 
-      // Load the Phyx data. Skip testing if it is git-crypt encrypted.
-      const data = fs.readFileSync(filename);
+      // Load the Phyx data. A file that cannot be read (a broken symlink, say) fails its own
+      // test here rather than throwing while Mocha collects, which would take every file's
+      // tests down with it.
+      let data;
+      try {
+        data = fs.readFileSync(filename);
+      } catch (ex) {
+        it('can be read', () => {
+          throw ex;
+        });
+        return;
+      }
+
+      // Skip testing if it is git-crypt encrypted.
       const gitcrypt = data.slice(0, 9);
       if (gitcrypt.equals(Buffer.from('\x00GITCRYPT'))) {
         it.skip('cannot test git-encrypted file');
