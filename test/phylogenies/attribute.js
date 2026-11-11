@@ -34,7 +34,7 @@ const FILE = `${SOURCE_DIR}/CLADO_0000018.json`;
  * Both names and ORCIDs are already public in this repository, in phylogenies/attribution.json and
  * phylogenies/README.md.
  */
-const ANNA ='https://orcid.org/0009-0005-6085-1100';
+const ANNA = 'https://orcid.org/0009-0005-6085-1100';
 const REBECCA = 'https://orcid.org/0000-0001-7386-2830';
 
 /** Run a git command in `cwd`, throwing with its stderr if it fails. */
