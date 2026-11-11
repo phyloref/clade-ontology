@@ -39,6 +39,7 @@ const {
   citationDOI,
   rawCitationDOI,
   CITATION_KEYS,
+  ID_LEDGER_FILENAME,
   PHYLOGENIES_DIR,
 } = require('../../lib/phylogenies');
 const { findJSONFiles } = require('../../lib/files');
@@ -342,6 +343,21 @@ if (retiring.length > existingById.size / 2 && !argv.force) {
   );
 }
 
+// Record every id this store has ever used, so a retired id is never reissued. A tree that
+// comes back later matches its retired entry's fingerprint and takes its original id again.
+// An id already in the ledger keeps its entry (and its label, which store files do not carry);
+// the store files on disk add the ids a ledger written before them does not know.
+const ids = { ...ledger.ids };
+for (const [phyloId, { fingerprint, label }] of existingById) {
+  if (!ids[phyloId]) ids[phyloId] = { newickSHA256: fingerprint, ...(label ? { label } : {}) };
+}
+for (const [phyloId, { fingerprint, label }] of newFiles) {
+  ids[phyloId] = { newickSHA256: fingerprint, ...(label ? { label } : {}) };
+}
+for (const phyloId of Object.keys(ids)) {
+  if (!newFiles.has(phyloId)) ids[phyloId].retired = true;
+}
+
 fs.mkdirSync(storeDir, { recursive: true });
 // Write the complete new store into a sibling temp directory before touching the real one, so
 // a failure part-way through (an unwritable file, a full disk) leaves the store as it was
@@ -352,6 +368,15 @@ try {
   for (const [phyloId, { contents }] of newFiles) {
     fs.writeFileSync(path.join(tmpDir, `${phyloId}.json`), contents);
   }
+  saveIdLedger(tmpDir, {
+    nextId: Math.max(ledger.nextId, nextNum + 1, ...Object.keys(ids).map((id) => phyloNum(id) + 1)),
+    ids,
+  });
+  // The ledger goes in first. It is the only record of a retired id once its file is deleted, so
+  // a run interrupted after the deletions but before the ledger was saved could lose an id the
+  // ledger did not yet know, and a later run would hand it to a different tree. Saved first, an
+  // interrupted run leaves at worst a ledger ahead of the files, which the next run reconciles.
+  fs.renameSync(path.join(tmpDir, ID_LEDGER_FILENAME), path.join(storeDir, ID_LEDGER_FILENAME));
   for (const phyloId of newFiles.keys()) {
     fs.renameSync(path.join(tmpDir, `${phyloId}.json`), path.join(storeDir, `${phyloId}.json`));
   }
@@ -360,23 +385,6 @@ try {
 } finally {
   fs.rmSync(tmpDir, { recursive: true, force: true });
 }
-
-// Record every id this store has ever used, so a retired id is never reissued. A tree that
-// comes back later matches its retired entry's fingerprint and takes its original id again.
-const ids = { ...ledger.ids };
-for (const [phyloId, { fingerprint, label }] of existingById) {
-  ids[phyloId] = { newickSHA256: fingerprint, ...(label ? { label } : {}) };
-}
-for (const [phyloId, { fingerprint, label }] of newFiles) {
-  ids[phyloId] = { newickSHA256: fingerprint, ...(label ? { label } : {}) };
-}
-for (const phyloId of Object.keys(ids)) {
-  if (!newFiles.has(phyloId)) ids[phyloId].retired = true;
-}
-saveIdLedger(storeDir, {
-  nextId: Math.max(ledger.nextId, nextNum + 1, ...Object.keys(ids).map((id) => phyloNum(id) + 1)),
-  ids,
-});
 
 // Reused ids mean the rows are no longer emitted in id order; sort so the committed report
 // diffs minimally between runs (ids are zero-padded, so lexicographic order is numeric).
