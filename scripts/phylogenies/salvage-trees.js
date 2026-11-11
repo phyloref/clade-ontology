@@ -56,7 +56,7 @@ const argv = yargs(process.argv.slice(2))
   })
   .option('ledger', {
     describe: 'Path to write the provenance CSV to',
-    default: path.join(PHYLOGENIES_DIR, 'salvage-provenance.csv'),
+    default: path.join(PHYLOGENIES_DIR, 'migration', 'salvage-provenance.csv'),
   })
   .option('source-dir', {
     describe: 'Directory of target Phyx files',

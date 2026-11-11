@@ -23,7 +23,8 @@
  *
  * Usage:
  *   node scripts/phylogenies/extract-phylogenies.js [sourceDir] -o [storeDir] --report [csv]
- *   (defaults: sourceDir=phyx/phylonym, storeDir=phylogenies, report=phylogenies/extraction-report.csv)
+ *   (defaults: sourceDir=phyx/phylonym, storeDir=phylogenies,
+ *    report=phylogenies/migration/extraction-report.csv)
  */
 
 const fs = require('node:fs');
@@ -57,7 +58,7 @@ const argv = yargs(process.argv.slice(2))
   })
   .option('report', {
     describe: 'Path to write the CSV extraction report to',
-    default: path.join(PHYLOGENIES_DIR, 'extraction-report.csv'),
+    default: path.join(PHYLOGENIES_DIR, 'migration', 'extraction-report.csv'),
   })
   .option('digits', {
     describe: 'Number of digits to zero-pad PHYLO identifiers to',
