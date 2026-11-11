@@ -1,11 +1,12 @@
 /*
  * test/phylogenies/extract.js
  *
- * Exercises scripts/phylogenies/extract-phylogenies.js against temporary fixtures, focusing on
- * the behaviors the static store test (store.js) can't see: PHYLO ids must stay tied to their
- * tree across regenerations (insert/delete must not renumber, and a retired id must never come
- * back on a different tree), every source citation must survive deduplication, divergent
- * citation DOIs must be flagged in the report, and a mis-aimed run must not eat the store.
+ * Exercises scripts/phylogenies/migration/extract-phylogenies.js against temporary fixtures,
+ * focusing on the behaviors the static store test (store.js) can't see: PHYLO ids must stay tied
+ * to their tree across regenerations (insert/delete must not renumber, and a retired id must
+ * never come back on a different tree), every source citation must survive deduplication,
+ * divergent citation DOIs must be flagged in the report, and a mis-aimed run must not eat the
+ * store.
  */
 
 const ChildProcess = require('node:child_process');
@@ -41,7 +42,7 @@ function writeSource(dir, regnumId, phylogeny) {
 function runExtractor({ srcDir, storeDir, report }, { args = [], expectFailure = false } = {}) {
   const child = ChildProcess.spawnSync(
     process.execPath,
-    ['scripts/phylogenies/extract-phylogenies.js', srcDir, '-o', storeDir, '--report', report, ...args],
+    ['scripts/phylogenies/migration/extract-phylogenies.js', srcDir, '-o', storeDir, '--report', report, ...args],
     { encoding: 'utf8' },
   );
   if (expectFailure) assert.notStrictEqual(child.status, 0, 'extractor should have failed');

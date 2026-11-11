@@ -1,5 +1,5 @@
 /*
- * scripts/phylogenies/salvage-trees.js
+ * scripts/phylogenies/migration/salvage-trees.js
  *
  * Recovers curated reference phylogenies from branches that were never merged, by writing their
  * Newick strings into the phylogeny citation slots in phyx/phylonym/ that have been waiting for
@@ -29,8 +29,8 @@
  * have -- are deliberately out of scope. See the issue on the long-term store model.
  *
  * Usage:
- *   node scripts/phylogenies/salvage-trees.js [--dry-run] [--ledger <csv>]
- *   (then re-run scripts/phylogenies/extract-phylogenies.js to regenerate the store)
+ *   node scripts/phylogenies/migration/salvage-trees.js [--dry-run] [--ledger <csv>]
+ *   (then re-run scripts/phylogenies/migration/extract-phylogenies.js to regenerate the store)
  */
 
 const ChildProcess = require('node:child_process');
@@ -44,8 +44,8 @@ const {
   normalizeNewick,
   CITATION_KEYS,
   PHYLOGENIES_DIR,
-} = require('../../lib/phylogenies');
-const { escapeCSV } = require('../../lib/csv');
+} = require('../../../lib/phylogenies');
+const { escapeCSV } = require('../../../lib/csv');
 
 const argv = yargs(process.argv.slice(2))
   .usage('Usage: $0 [--dry-run] [--ledger <csv>]')

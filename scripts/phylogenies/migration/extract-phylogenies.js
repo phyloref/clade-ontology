@@ -1,5 +1,5 @@
 /*
- * scripts/phylogenies/extract-phylogenies.js
+ * scripts/phylogenies/migration/extract-phylogenies.js
  *
  * Round 1 of moving reference phylogenies into a standalone, deduplicated store (see
  * lib/phylogenies.js). This script COPIES every Newick-bearing phylogeny out of the
@@ -22,7 +22,8 @@
  * phyx2ontology.js.
  *
  * Usage:
- *   node scripts/phylogenies/extract-phylogenies.js [sourceDir] -o [storeDir] --report [csv]
+ *   node scripts/phylogenies/migration/extract-phylogenies.js [sourceDir] -o [storeDir]
+ *     --report [csv]
  *   (defaults: sourceDir=phyx/phylonym, storeDir=phylogenies,
  *    report=phylogenies/migration/extraction-report.csv)
  */
@@ -45,9 +46,9 @@ const {
   CITATION_KEYS,
   ID_LEDGER_FILENAME,
   PHYLOGENIES_DIR,
-} = require('../../lib/phylogenies');
-const { findJSONFiles } = require('../../lib/files');
-const { escapeCSV } = require('../../lib/csv');
+} = require('../../../lib/phylogenies');
+const { findJSONFiles } = require('../../../lib/files');
+const { escapeCSV } = require('../../../lib/csv');
 
 const argv = yargs(process.argv.slice(2))
   .usage('Usage: $0 [sourceDir] -o [storeDir] --report [csv]')

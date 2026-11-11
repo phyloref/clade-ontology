@@ -3,8 +3,8 @@
  *
  * Verifies that the standalone reference-phylogeny store in phylogenies/ is a faithful,
  * deduplicated copy of the Newick trees still embedded in phyx/phylonym/. This is the core
- * guarantee of round 1 (see scripts/phylogenies/extract-phylogenies.js): we keep both copies
- * and prove they agree before a future round removes the trees from the Phyx files.
+ * guarantee of round 1 (see scripts/phylogenies/migration/extract-phylogenies.js): we keep both
+ * copies and prove they agree before a future round removes the trees from the Phyx files.
  */
 
 const fs = require('node:fs');
