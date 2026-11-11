@@ -88,17 +88,32 @@ const ORCID_BY_CURATOR = new Map([
   ['Rebecca Stubbs', 'https://orcid.org/0000-0001-7386-2830'],
 ]);
 
-/** Run git, returning stdout, or '' if the command failed (e.g. a path absent at that commit). */
-function git(...args) {
+/** Stop with a message, leaving the existing ledger untouched. */
+function die(message) {
+  process.stderr.write(`Error: ${message}\n`);
+  process.exit(1);
+}
+
+/*
+ * Run git from the top of the repository, so --paths are always repository paths (as diff-tree
+ * reports them) whichever directory the script was started from. A failing git command stops the
+ * run. It once returned '' instead, so a broken run (started outside the repository, or with
+ * git-crypt locked) found no commits, blanked every derived column, rewrote the ledger and
+ * exited 0.
+ */
+function gitIn(cwd, args) {
   try {
     return ChildProcess.execFileSync('git', args, {
+      cwd,
       maxBuffer: 512 * 1024 * 1024,
-      stdio: ['ignore', 'pipe', 'ignore'],
+      stdio: ['ignore', 'pipe', 'pipe'],
     }).toString();
-  } catch {
-    return '';
+  } catch (e) {
+    return die(`git ${args.join(' ')} failed: ${String(e.stderr || e.message).trim()}`);
   }
 }
+const toplevel = gitIn(undefined, ['rev-parse', '--show-toplevel']).trim();
+const git = (...args) => gitIn(toplevel, args);
 
 /*
  * git-crypt decrypts by path, using the .gitattributes in the working tree, and private/ has no
@@ -107,20 +122,62 @@ function git(...args) {
  */
 const attributesPath = (file) => file.replace(/^private\//, 'phyx/encrypted/');
 
-/** Normalized Newick strings present in a Phyx file at a given revision. */
-function newicksAt(rev, file) {
-  const text = git('cat-file', '--textconv', `--path=${attributesPath(file)}`, `${rev}:${file}`);
-  if (!text) return new Set();
-  try {
-    const phylogenies = JSON.parse(text).phylogenies || [];
-    return new Set(
-      phylogenies.map((p) => p.newick || '').filter((n) => n.trim()).map(normalizeNewick),
-    );
-  } catch {
-    // Unparseable at this revision (mid-edit, or a format we no longer read). Not fatal: some
-    // other commit will own the tree.
-    return new Set();
+/*
+ * Normalized Newick strings in one blob, read with the git-crypt attributes of `file`.
+ *
+ * Cached by blob, since the same file contents recur across many commits and every read costs a
+ * git process plus a git-crypt decryption. Reading every blob through one `git cat-file --batch
+ * --textconv` would be cheaper still, but does not work here: git (2.54) prints the *encrypted*
+ * size in each record's header and then the decrypted contents, so the output cannot be split.
+ */
+const newickCache = new Map();
+function newicksOfBlob(blob, file) {
+  const key = `${blob}\t${attributesPath(file)}`;
+  if (!newickCache.has(key)) {
+    const text = git('cat-file', '--textconv', `--path=${attributesPath(file)}`, blob);
+    let newicks;
+    try {
+      const phylogenies = JSON.parse(text).phylogenies || [];
+      newicks = new Set(
+        phylogenies.map((p) => p.newick || '').filter((n) => n.trim()).map(normalizeNewick),
+      );
+    } catch {
+      // Unparseable at this revision (mid-edit, or a format we no longer read). Not fatal: some
+      // other commit will own the tree.
+      newicks = new Set();
+    }
+    newickCache.set(key, newicks);
   }
+  return newickCache.get(key);
+}
+
+/** Whether a repository path falls under one of the --paths pathspecs. */
+const underHistoricalPath = (file) => HISTORICAL_PATHS.some((spec) => file === spec
+  || file.startsWith(spec.endsWith('/') ? spec : `${spec}/`));
+
+/*
+ * The JSON files under --paths that `hash` changed relative to `parent` (or, for a root commit,
+ * added), as Map<path, { oldBlob, oldPath, newBlob }>. oldBlob is undefined for an added file.
+ *
+ * Renames are detected (-M) and the diff is not limited to --paths, so a file moved in from
+ * anywhere -- "Renamed from REGNUM_ to CLADO_", or out of a directory not in --paths -- is compared
+ * with its old self rather than read as new, and the move cannot claim the trees it carried.
+ */
+function changedFiles(hash, parent) {
+  const fields = (parent
+    ? git('diff-tree', '-r', '-M', '-z', '--raw', parent, hash)
+    : git('diff-tree', '-r', '--root', '-z', '--raw', '--no-commit-id', hash)
+  ).split('\0');
+  const changed = new Map();
+  for (let i = 0; i < fields.length - 1;) {
+    // :<old mode> <new mode> <old blob> <new blob> <status>, then one path, or two for a rename.
+    const [, , oldBlob, newBlob, status] = fields[i++].split(' ');
+    const oldPath = fields[i++];
+    const newPath = /^[RC]/.test(status) ? fields[i++] : oldPath;
+    if (status === 'D' || !newPath.endsWith('.json') || !underHistoricalPath(newPath)) continue;
+    changed.set(newPath, { oldBlob: /^0+$/.test(oldBlob) ? undefined : oldBlob, oldPath, newBlob });
+  }
+  return changed;
 }
 
 // ---------------------------------------------------------------------------
@@ -134,6 +191,7 @@ for (const entry of loadStore(argv.store)) {
   const { newick } = storePhylogeny(entry);
   phyloIdByNewick.set(normalizeNewick(newick), path.basename(entry.file, '.json'));
 }
+if (!phyloIdByNewick.size) die(`no store files found in ${argv.store}; nothing to attribute.`);
 
 // ---------------------------------------------------------------------------
 // 2. Walk every commit that touched a Phylonym path, oldest first.
@@ -141,7 +199,8 @@ for (const entry of loadStore(argv.store)) {
 
 // --all so the unmerged curation branches are included: that is where several of these trees were
 // transcribed, and PR #45 in particular is destined to be closed.
-const log = git('log', '--all', '--format=%H|%aI|%cI|%s', '--', ...HISTORICAL_PATHS).trim();
+const log = git('log', '--all', '--format=%H|%P|%aI|%cI|%s', '--', ...HISTORICAL_PATHS).trim();
+if (!log) die(`no commits touch ${HISTORICAL_PATHS.join(' ')}; is --paths right?`);
 
 /*
  * The 2018-2020 history was rebased across branches, so the same transcription appears under
@@ -151,10 +210,12 @@ const log = git('log', '--all', '--format=%H|%aI|%cI|%s', '--', ...HISTORICAL_PA
  */
 const byEvent = new Map();
 for (const line of log.split('\n').filter(Boolean)) {
-  const [hash, date, committed, ...rest] = line.split('|');
+  const [hash, parents, date, committed, ...rest] = line.split('|');
   const subject = rest.join('|');
   const key = `${date}|${subject}`;
-  const copy = { hash, date, committed: Date.parse(committed), subject };
+  const copy = {
+    hash, parents: parents.split(' ').filter(Boolean), date, committed: Date.parse(committed), subject,
+  };
   if (!byEvent.has(key) || copy.committed < byEvent.get(key).committed) byEvent.set(key, copy);
 }
 /*
@@ -169,16 +230,21 @@ const commits = [...byEvent.values()]
 const introducedBy = new Map(); // phyloId -> commit
 for (const commit of commits) {
   if (introducedBy.size === phyloIdByNewick.size) break;
-  // --root so a root commit diffs against the empty tree; without it diff-tree prints nothing
-  // for one, and a tree introduced by a repository's first commit would never be attributed.
-  const changed = git(
-    'diff-tree', '--no-commit-id', '--name-only', '-r', '--root', commit.hash,
-    '--', ...HISTORICAL_PATHS,
-  ).trim();
-  for (const file of changed.split('\n').filter((f) => f.endsWith('.json'))) {
-    const after = newicksAt(commit.hash, file);
+  // Diff against each parent in turn. A plain `diff-tree <commit>` prints nothing for a merge, so
+  // a tree first written while resolving one would never be attributed; and a root commit diffs
+  // against the empty tree, so a tree in a repository's first commit is not missed either.
+  const byParent = commit.parents.length
+    ? commit.parents.map((parent) => changedFiles(commit.hash, parent))
+    : [changedFiles(commit.hash)];
+  for (const [file, { newBlob }] of byParent[0]) {
+    // A file carried over unchanged from any parent introduces nothing: that parent had it first.
+    const sides = byParent.map((changed) => changed.get(file));
+    if (sides.some((side) => !side)) continue;
+    const after = newicksOfBlob(newBlob, file);
     if (!after.size) continue;
-    const before = newicksAt(`${commit.hash}^`, file);
+    const before = new Set(sides.flatMap(({ oldBlob, oldPath }) => (
+      oldBlob ? [...newicksOfBlob(oldBlob, oldPath)] : []
+    )));
     for (const newick of after) {
       if (before.has(newick)) continue;
       const phyloId = phyloIdByNewick.get(newick);

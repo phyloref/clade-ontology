@@ -7,7 +7,8 @@
  * messages cannot name everyone -- several trees are introduced by reformatting commits that credit
  * nobody -- so the ledger is meant to be edited, and an edit the next run silently discarded would
  * be worse than no ledger at all. That failure mode is invisible: the CSV still looks right, just
- * with a name missing again.
+ * with a name missing again. So is its cousin, a run whose git commands fail and which writes a
+ * ledger of blanks; and so is crediting a tree to a commit that only moved it.
  */
 
 const ChildProcess = require('node:child_process');
@@ -65,15 +66,44 @@ function buildFixture(subject) {
   return { repo, storeDir, ledger: path.join(storeDir, 'attribution.csv') };
 }
 
-/** Run the attribution script inside `repo`; returns the parsed ledger rows. */
-function attribute({ repo, storeDir, ledger }) {
-  const child = ChildProcess.spawnSync(
+/** Run the attribution script (inside `repo`, unless `cwd` says otherwise). */
+function runAttribution({ repo, storeDir, ledger }, cwd = repo) {
+  return ChildProcess.spawnSync(
     process.execPath,
     [SCRIPT, '--store', storeDir, '-o', ledger, '--paths', `${SOURCE_DIR}/`],
-    { cwd: repo, encoding: 'utf8' },
+    { cwd, encoding: 'utf8' },
   );
+}
+
+/** Run the attribution script inside `repo`; returns the parsed ledger rows. */
+function attribute(fixture, cwd = fixture.repo) {
+  const child = runAttribution(fixture, cwd);
   assert.strictEqual(child.status, 0, `attribution failed: ${child.stderr}`);
-  return fs.readFileSync(ledger, 'utf8').trim().split('\n').slice(1).map(parseCSVRow);
+  return fs.readFileSync(fixture.ledger, 'utf8').trim().split('\n').slice(1).map(parseCSVRow);
+}
+
+/** Write a one-tree Phyx file at `file` (a path inside `repo`), creating its directory. */
+function writePhyx(repo, file, newick) {
+  fs.mkdirSync(path.dirname(path.join(repo, file)), { recursive: true });
+  fs.writeFileSync(
+    path.join(repo, file),
+    JSON.stringify({ phylorefs: [{ regnumId: 18 }], phylogenies: [{ newick }] }, null, 4),
+  );
+}
+
+/** An empty repository with a store holding NEWICK; returns { repo, storeDir, ledger }. */
+function emptyFixture() {
+  const repo = tmp.dirSync({ unsafeCleanup: true }).name;
+  git(repo, 'init', '--quiet', '--initial-branch=main');
+  git(repo, 'config', 'user.email', 'fixture@example.com');
+  git(repo, 'config', 'user.name', 'Fixture Maintainer');
+  const storeDir = path.join(repo, 'phylogenies');
+  fs.mkdirSync(storeDir);
+  fs.writeFileSync(
+    path.join(storeDir, 'PHYLO_0001.json'),
+    JSON.stringify({ phylogenies: [{ newick: NEWICK }], phylorefs: [] }),
+  );
+  return { repo, storeDir, ledger: path.join(storeDir, 'attribution.csv') };
 }
 
 describe('attribute-phylogenies.js', () => {
@@ -136,6 +166,65 @@ describe('attribute-phylogenies.js', () => {
     attribute(fixture);
     const [[, curator]] = attribute(fixture);
     assert.strictEqual(curator, 'Anna Becker, Rebecca Stubbs');
+  });
+
+  it('refuses to write a ledger when git fails, rather than blanking it', () => {
+    const fixture = buildFixture('Imported phylogenies curated by Anna.');
+    attribute(fixture);
+    const before = fs.readFileSync(fixture.ledger, 'utf8');
+
+    // Outside any repository every git command fails; the ledger must survive untouched.
+    const elsewhere = tmp.dirSync({ unsafeCleanup: true }).name;
+    const child = runAttribution(fixture, elsewhere);
+    assert.notStrictEqual(child.status, 0, 'a run whose git commands fail must not exit 0');
+    assert.match(child.stderr, /git .* failed/);
+    assert.strictEqual(fs.readFileSync(fixture.ledger, 'utf8'), before);
+  });
+
+  it('reads --paths from the top of the repository wherever it is run from', () => {
+    const fixture = buildFixture('Imported phylogenies curated by Anna.');
+    const [[, curator]] = attribute(fixture, path.join(fixture.repo, SOURCE_DIR));
+    assert.strictEqual(curator, 'Anna Becker');
+  });
+
+  it('does not credit a tree to a commit that only moved it', () => {
+    // The tree was transcribed somewhere --paths does not cover, then moved into it. Read as an
+    // addition, the move would claim the tree; it should be left unattributed instead.
+    const fixture = emptyFixture();
+    writePhyx(fixture.repo, 'drafts/REGNUM_18.json', NEWICK);
+    git(fixture.repo, 'add', '-A');
+    git(fixture.repo, 'commit', '--quiet', '-m', 'Draft from somewhere else.');
+    fs.mkdirSync(path.join(fixture.repo, SOURCE_DIR), { recursive: true });
+    git(fixture.repo, 'mv', 'drafts/REGNUM_18.json', `${SOURCE_DIR}/CLADO_0000018.json`);
+    git(fixture.repo, 'commit', '--quiet', '-m', 'Renamed from REGNUM_ to CLADO_ by Anna.');
+
+    const [[, curator, , introducedIn]] = attribute(fixture);
+    assert.strictEqual(introducedIn, '', 'a move must not be recorded as introducing the tree');
+    assert.strictEqual(curator, '');
+  });
+
+  it('credits a tree first written while resolving a merge to the merge', () => {
+    const fixture = emptyFixture();
+    const file = `${SOURCE_DIR}/CLADO_0000018.json`;
+    writePhyx(fixture.repo, file, '(A,B);');
+    git(fixture.repo, 'add', '-A');
+    git(fixture.repo, 'commit', '--quiet', '-m', 'Add a placeholder tree.');
+    git(fixture.repo, 'checkout', '--quiet', '-b', 'side');
+    writePhyx(fixture.repo, file, '(A,C);');
+    git(fixture.repo, 'commit', '--quiet', '-am', 'Side edit.');
+    git(fixture.repo, 'checkout', '--quiet', 'main');
+    writePhyx(fixture.repo, file, '(A,D);');
+    git(fixture.repo, 'commit', '--quiet', '-am', 'Main edit.');
+
+    // The two edits conflict; the resolution is a tree neither side had.
+    ChildProcess.spawnSync('git', ['merge', '--quiet', 'side'], { cwd: fixture.repo });
+    writePhyx(fixture.repo, file, NEWICK);
+    git(fixture.repo, 'add', '-A');
+    git(fixture.repo, 'commit', '--quiet', '--no-edit', '-m', 'Merged phylogenies curated by Anna.');
+
+    const [[, curator, , introducedIn]] = attribute(fixture);
+    assert.strictEqual(introducedIn, git(fixture.repo, 'rev-parse', '--short=12', 'HEAD'));
+    assert.strictEqual(curator, 'Anna Becker');
   });
 
   it('credits the commit authored first, not the one committed first', () => {

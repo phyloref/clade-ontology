@@ -187,11 +187,20 @@ Anna's surname was supplied by the maintainer.
 node scripts/phylogenies/attribute-phylogenies.js
 ```
 
-The script walks every commit touching `phyx/phylonym/` or `phyx/encrypted/phylonym/` on **any**
-branch, oldest first, and the first commit to introduce a Newick owns it. It has to work forwards:
+The script walks every commit touching `phyx/phylonym/`, `phyx/encrypted/phylonym/` or 2018's
+`private/phylonym/` on **any** branch, oldest first, and the first commit to introduce a Newick owns
+it. It has to work forwards:
 tracing backwards with `git log -S<newick>` bottoms out at whichever commit *moved* the file
 ("Renamed from `REGNUM_` to `CLADO_`", "Reorganized PHYX files into a single folder", the 2021 move
 out of `encrypted/`), and `phyx/phylonym/` itself has only two commits in its history.
+
+A commit introduces a tree only if the file it wrote holds a Newick that the file's previous
+version did not. Renames are followed (from anywhere in the repository, not only those paths), so a
+move does not count as introducing the trees it carried; a merge is compared with each of its
+parents, so a tree first written while resolving one is credited to the merge, and a file a merge
+carried over unchanged from either side is credited to neither. A failed `git` command stops the run
+before anything is written: an earlier version read failures as empty history and rewrote the CSV
+with every derived column blank.
 
 "Oldest" means earliest *author* date. Much of the 2020 history was rebased, which resets the
 committer date that `git log` sorts by, so in committer order a transcription can land after a
