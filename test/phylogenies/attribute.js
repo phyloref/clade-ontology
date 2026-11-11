@@ -25,7 +25,16 @@ const SCRIPT = path.resolve(__dirname, '../../scripts/phylogenies/attribute-phyl
 const NEWICK = '(Aster_amellus,(Cornus_mas,Arbutus_unedo));';
 const SOURCE_DIR = 'phyx/phylonym';
 const FILE = `${SOURCE_DIR}/CLADO_0000018.json`;
-const ANNA = 'https://orcid.org/0009-0005-6085-1100';
+
+/*
+ * The real curators, not made-up ones. attribute-phylogenies.js maps commit subjects onto curators
+ * with a table built into the script (CURATORS), so a fixture commit that should be credited has
+ * to name "Anna" or "RS" the way the real history does, and the test has to expect the ORCIDs that
+ * table maps them to. That also means these tests exercise the real "Anna" and "from RS" patterns.
+ * Both names and ORCIDs are already public in this repository, in phylogenies/attribution.json and
+ * phylogenies/README.md.
+ */
+const ANNA ='https://orcid.org/0009-0005-6085-1100';
 const REBECCA = 'https://orcid.org/0000-0001-7386-2830';
 
 /** Run a git command in `cwd`, throwing with its stderr if it fails. */
