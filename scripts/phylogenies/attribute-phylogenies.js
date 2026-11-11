@@ -80,10 +80,11 @@ const REBECCA_STUBBS = 'https://orcid.org/0000-0001-7386-2830';
  * "RS"; who they are, and their ORCIDs, come from the maintainer. Their names live in the
  * `curators` section of attribution.json, not here.
  *
- * "Updated phylogenies with latest" (2020-08-09, 30 trees) names nobody, but it sits between two
- * commits that credit Anna explicitly and uses the same phrasing as "Updated phylogenies with
- * latest from Anna". Attributing it to Anna is a judgement call, confirmed with the maintainer
- * rather than inferred by this script -- hence the explicit pattern rather than a loose fallback.
+ * "Updated phylogenies with latest" (2020-08-09; transcribed 31 trees, revised a 32nd) names
+ * nobody, but it sits between two commits that credit Anna explicitly and uses the same phrasing
+ * as "Updated phylogenies with latest from Anna". Attributing it to Anna is a judgement call,
+ * confirmed with the maintainer rather than inferred by this script -- hence the explicit pattern
+ * rather than a loose fallback.
  */
 const CURATORS = [
   [/\bAnna\b/i, ANNA_BECKER],
@@ -338,7 +339,12 @@ for (const [newick, phyloId] of [...phyloIdByNewick.entries()].sort((a, b) => a[
   trees[phyloId] = { ...(transcribedBy ? { transcribedBy } : {}), history };
 
   const who = transcribedBy ? (curators[transcribedBy]?.name || transcribedBy) : '(unattributed)';
-  tally.set(who, (tally.get(who) || 0) + 1);
+  const date = history[0]?.date;
+  const entry = tally.get(who) || { count: 0, first: date, last: date };
+  entry.count += 1;
+  if (date && !(entry.first <= date)) entry.first = date;
+  if (date && !(entry.last >= date)) entry.last = date;
+  tally.set(who, entry);
 }
 
 // Every curator a tree names should have a name; every override should name a live tree.
@@ -364,9 +370,15 @@ fs.mkdirSync(path.dirname(argv.o), { recursive: true });
 fs.writeFileSync(argv.o, `${JSON.stringify(contents, null, 4)}\n`);
 
 const revised = Object.values(trees).filter((tree) => tree.history.length > 1).length;
+/*
+ * Each curator's transcriptions with the span of their dates. The curators worked in different
+ * periods (Rebecca Stubbs in 2018, Anna Becker in 2020), so a tree credited to one but dated in
+ * the other's period shows up here as a span that overlaps, and is the first thing to check.
+ */
 const summary = [...tally.entries()]
-  .sort((a, b) => b[1] - a[1])
-  .map(([who, n]) => `  ${String(n).padStart(4)}  ${who}`);
+  .sort((a, b) => b[1].count - a[1].count)
+  .map(([who, { count, first, last }]) => `  ${String(count).padStart(4)}  ${who}`
+    + `${first ? `  (${first} to ${last})` : ''}`);
 process.stderr.write(
   `Traced ${traced} of ${phyloIdByNewick.size} store trees across ${commits.length} commits; `
   + `${revised} were revised after transcription.\nTranscribed by:\n${summary.join('\n')}\n`

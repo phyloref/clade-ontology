@@ -261,6 +261,15 @@ by override on the maintainer's word: PHYLO_0116, and PHYLO_0114, which she also
 but fills only a blank: a curator the script *derives* still wins, so correcting `CURATORS`
 propagates, and the script warns about an override that a derived curator now contradicts.
 
+**Check the curators' date spans after a change to the attribution.** Rebecca Stubbs and Anna
+Becker worked in different periods, so the script's summary prints each curator's first and last
+transcription date, and a misattribution shows up as overlapping spans. As of this writing they
+don't overlap: Rebecca Stubbs from 2018-07-05 to 2018-08-14 (both overrides included), Anna Becker
+from 2020-06-30 to 2020-10-07. The two unattributed trees date from 2020-08-25, inside Anna Becker's
+period, but they arrive in new files (CLADO_0000158, CLADO_0000270/271) in a maintainer commit
+whose subject is about specifier authorities, and no earlier tree in the repository resembles
+them, so history alone cannot say whose they are.
+
 This is committed as data rather than derived on demand because what history can tell us keeps
 degrading: every path move costs traceability, round 2 rewrites `phyx/` again, and the curators'
 full names were never in the repository to begin with. Moving attribution into the phylogeny
