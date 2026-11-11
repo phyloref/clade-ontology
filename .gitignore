@@ -207,5 +207,5 @@ ENV/
 .mypy_cache/
 
 # Temporary directories created while the reference-phylogeny store is being rewritten
-# (scripts/phylogenies/extract-phylogenies.js normally removes these itself).
+# (scripts/phylogenies/migration/extract-phylogenies.js normally removes these itself).
 phylogenies/.extract-*

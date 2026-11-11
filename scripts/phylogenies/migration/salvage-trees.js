@@ -1,5 +1,5 @@
 /*
- * scripts/phylogenies/salvage-trees.js
+ * scripts/phylogenies/migration/salvage-trees.js
  *
  * Recovers curated reference phylogenies from branches that were never merged, by writing them
  * into the phyx/phylonym/ file of the phyloreference they were transcribed for.
@@ -24,8 +24,8 @@
  * worktree looks for keys under .git/worktrees/<name>/git-crypt and fails).
  *
  * Usage:
- *   node scripts/phylogenies/salvage-trees.js [--dry-run] [--ledger <csv>]
- *   (then re-run scripts/phylogenies/extract-phylogenies.js to regenerate the store)
+ *   node scripts/phylogenies/migration/salvage-trees.js [--dry-run] [--ledger <csv>]
+ *   (then re-run scripts/phylogenies/migration/extract-phylogenies.js to regenerate the store)
  */
 
 const ChildProcess = require('node:child_process');
@@ -38,14 +38,14 @@ const {
   rawCitationDOI,
   normalizeNewick,
   PHYLOGENIES_DIR,
-} = require('../../lib/phylogenies');
+} = require('../../../lib/phylogenies');
 const {
   readSourceTree,
   matchSlot,
   translateNodeProperties,
   placeTree,
-} = require('../../lib/salvage');
-const { escapeCSV } = require('../../lib/csv');
+} = require('../../../lib/salvage');
+const { escapeCSV } = require('../../../lib/csv');
 
 const argv = yargs(process.argv.slice(2))
   .usage('Usage: $0 [--dry-run] [--ledger <csv>]')
@@ -56,7 +56,7 @@ const argv = yargs(process.argv.slice(2))
   })
   .option('ledger', {
     describe: 'Path to write the provenance CSV to',
-    default: path.join(PHYLOGENIES_DIR, 'salvage-provenance.csv'),
+    default: path.join(PHYLOGENIES_DIR, 'migration', 'salvage-provenance.csv'),
   })
   .option('source-dir', {
     describe: 'Directory of target Phyx files',

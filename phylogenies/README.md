@@ -19,6 +19,9 @@ phylogenies across `phyx/phylonym/` reduce to **141 unique trees**, with 25 dupl
 2–7 files). This store moves each unique tree into one file and records which phyloreferences
 it is a reference for.
 
+The store is being introduced in three rounds, which this file refers to throughout. The plan,
+where it stands, and how round 1 was carried out are in [`migration/`](migration/README.md).
+
 ## File format
 
 Each `PHYLO_NNNN.json` is a **valid Phyx file** (a `phylogenies` array with a single tree, and
@@ -68,15 +71,16 @@ an empty `phylorefs` array) **plus** a custom top-level `referenceFor` array:
 - Every other field of the canonical source's phylogeny (a `label`, a `description`,
   `additionalNodeProperties`, …) is copied too, and a source whose other fields differ keeps
   its own on `referenceFor[].otherFields`. Today those fields are the figure notes and
-  expected-resolution annotations on the trees salvaged from #45 (see [`SALVAGE.md`](SALVAGE.md));
-  no two sources disagree on one.
+  expected-resolution annotations on the trees salvaged from #45 (see
+  [`migration/`](migration/README.md#salvaged-trees)); no two sources disagree on one.
 - **An `additionalNodeProperties.<node>.expectedPhyloreferenceNamed` annotation is copied, but is
   not by itself a tested expectation**: JPhyloRef only sees an expectation when the node is also
   labelled with the phyloreference's name, or the phyloreference has an `expectedResolution`.
-  The AGENTS.md gotcha and `SALVAGE.md` have the details.
+  The AGENTS.md gotcha and the [migration README](migration/README.md#salvaged-trees) have the
+  details.
 - A `label` appears only if the source phylogeny had one, and none do today. The short label
   the extractor derives from the citation ("France et al. 1996, fig. 3") goes into
-  `extraction-report.csv` and `phylo-ids.json` instead: written into `label`, it would be
+  `migration/extraction-report.csv` and `phylo-ids.json` instead: written into `label`, it would be
   indistinguishable from a curator's once round 2 removes the source copy.
 
 ### How the two sides relate
@@ -117,45 +121,17 @@ Filenames are expected to migrate to human-readable, publication-based names in 
 (e.g. `leadAuthor2009.json`, `leadAuthor2009_journal.json`). Treat the filename as an opaque id
 and use `referenceFor[].clado` for linking.
 
-## Regenerating the store
+## Building the store
 
-```bash
-node scripts/phylogenies/extract-phylogenies.js
-# defaults: source=phyx/phylonym  store=phylogenies/  report=phylogenies/extraction-report.csv
-```
-
-The extractor **copies** trees out of `phyx/phylonym/` and never modifies anything under
-`phyx/`. `extraction-report.csv` lists, per store file, the source CLADO ids, derived label,
-DOI(s), and any anomalies (e.g. the same tree cited with divergent DOIs in different files, and
-how many sources kept their own `citations` on a `referenceFor` entry).
-
-The new store is written into a temporary directory and moved into place, so an interrupted run
-leaves the old store intact. Because the source directory is a bare positional argument while
-`-o` defaults to `phylogenies/`, the extractor also **refuses** to run when it finds no trees at
-all, or when the run would retire more than half of the existing store files — the signature of
-a run aimed at the wrong corner of `phyx/`. Pass `--force` if a wholesale replacement really is
-what you want.
-
-It also refuses to run when a store file's tree no longer matches the tree the ledger records
-for its id. Store files are generated, so a hand edit there would otherwise tie one id to two
-trees; make the change in `phyx/phylonym/`, restore the store file, and re-run. That refusal
-protects a generated artifact and goes away with round 2, when store files become curated and
-editing one is the normal way to correct a tree.
-
-The Mocha test `test/phylogenies/store.js` verifies the store is a faithful, deduplicated copy
-of the source trees (every source `(cladoId, newick)` pair is reproduced exactly, every source
-citation is still present, each unique tree lives in one file, and every store file is a valid
-Phyx document). `test/phylogenies/extract.js` covers what a static store cannot show: id
-stability across re-runs, retired ids never coming back on another tree, and the refusals
-above.
-
-## Where the trees came from
-
-Most trees were transcribed into `phyx/phylonym/` directly. 29 were recovered from curation
-branches that were never merged (15 from #79, 14 from #45), by filling or appending beside
-citation slots that already cited their publication; [`SALVAGE.md`](SALVAGE.md) explains how, and
-`salvage-provenance.csv` records each one. Trees that are still missing from the store are listed
-in [#129](https://github.com/phyloref/clade-ontology/issues/129).
+The store is built by copying trees out of `phyx/phylonym/` with
+`scripts/phylogenies/migration/extract-phylogenies.js`. Most trees were transcribed into
+`phyx/phylonym/` directly; 29 were recovered from curation branches that were never merged (15
+from #79, 14 from #45), by filling or appending beside citation slots that already cited their
+publication. Trees that are still missing from the store are listed in
+[#129](https://github.com/phyloref/clade-ontology/issues/129). How to run the extractor and the
+salvage, what they refuse to do, and the reports they leave behind are documented in
+[`migration/`](migration/README.md), which holds everything that exists only for the migration and
+goes away with it.
 
 ## Curator attribution
 
@@ -215,20 +191,3 @@ edited by hand and is swapped in by the extractor with the store, while this fil
 hand and written by a slow walk of the history. It is committed as data rather than derived on
 demand because what history can tell us keeps degrading with every path move, and round 2 rewrites
 `phyx/` again.
-
-## Roadmap
-
-- **Round 1 (current):** build and populate the store by copying; keep the trees in the Phyx
-  files so we can verify the copy is faithful first.
-- **Round 2 (future):** make the store the source of truth for trees. Add an `assemble()`
-  helper (`lib/phylogenies.js`) that injects store trees back into Phyx objects at test/build
-  time, then remove the newicks from `phyx/phylonym/`. From that point the store is no longer
-  derivable from `phyx/`, so three round-1 devices go with it: `test/phylogenies/store.js`,
-  which compares against source Newicks that will no longer exist; the extractor as a
-  regenerator (it becomes a one-shot migration); and Newick-keyed ids, including the refusal to
-  run over a hand-edited store file.
-- **Later:** record auto-snapshot `expectedResolution` baselines so drift becomes a test
-  failure; add cross-resolution discovery and Regnum citation cross-checks; migrate
-  `from_papers/` (carrying their `curatorComments`); and move curator attribution out of
-  `attribution.json` and into the phylogeny records themselves. The identity and linkage model
-  is decided in [#123](https://github.com/phyloref/clade-ontology/issues/123).

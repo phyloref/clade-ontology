@@ -1,5 +1,5 @@
 /*
- * scripts/phylogenies/extract-phylogenies.js
+ * scripts/phylogenies/migration/extract-phylogenies.js
  *
  * Round 1 of moving reference phylogenies into a standalone, deduplicated store (see
  * lib/phylogenies.js). This script COPIES every Newick-bearing phylogeny out of the
@@ -22,8 +22,10 @@
  * phyx2ontology.js.
  *
  * Usage:
- *   node scripts/phylogenies/extract-phylogenies.js [sourceDir] -o [storeDir] --report [csv]
- *   (defaults: sourceDir=phyx/phylonym, storeDir=phylogenies, report=phylogenies/extraction-report.csv)
+ *   node scripts/phylogenies/migration/extract-phylogenies.js [sourceDir] -o [storeDir]
+ *     --report [csv]
+ *   (defaults: sourceDir=phyx/phylonym, storeDir=phylogenies,
+ *    report=phylogenies/migration/extraction-report.csv)
  */
 
 const fs = require('node:fs');
@@ -44,9 +46,9 @@ const {
   CITATION_KEYS,
   ID_LEDGER_FILENAME,
   PHYLOGENIES_DIR,
-} = require('../../lib/phylogenies');
-const { findJSONFiles } = require('../../lib/files');
-const { escapeCSV } = require('../../lib/csv');
+} = require('../../../lib/phylogenies');
+const { findJSONFiles } = require('../../../lib/files');
+const { escapeCSV } = require('../../../lib/csv');
 
 const argv = yargs(process.argv.slice(2))
   .usage('Usage: $0 [sourceDir] -o [storeDir] --report [csv]')
@@ -57,7 +59,7 @@ const argv = yargs(process.argv.slice(2))
   })
   .option('report', {
     describe: 'Path to write the CSV extraction report to',
-    default: path.join(PHYLOGENIES_DIR, 'extraction-report.csv'),
+    default: path.join(PHYLOGENIES_DIR, 'migration', 'extraction-report.csv'),
   })
   .option('digits', {
     describe: 'Number of digits to zero-pad PHYLO identifiers to',
@@ -188,7 +190,8 @@ if (orderedGroups.length === 0) {
 // is generated from phyx/phylonym/, the Newick is the only key an id can be re-derived from.
 // Once the store is the source of truth (round 2), the id is the file, a corrected
 // transcription keeps its id, and this script becomes a one-shot migration. Read
-// phylogenies/README.md ("Filenames", "Roadmap") and issue #123 before extending the ledger.
+// phylogenies/README.md ("Filenames"), the Roadmap in phylogenies/migration/README.md and
+// issue #123 before extending the ledger.
 // ---------------------------------------------------------------------------
 
 const ledger = loadIdLedger(storeDir);
