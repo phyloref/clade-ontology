@@ -143,7 +143,8 @@ above.
 ## Salvaged trees
 
 15 of the trees in the store were recovered from curation branches that were never merged
-(PRs #79 and #45). Every phyloref in `phyx/phylonym/` declares its reference phylogenies as
+(PRs [#79](https://github.com/phyloref/clade-ontology/pull/79) and
+[#45](https://github.com/phyloref/clade-ontology/pull/45)). Every phyloref in `phyx/phylonym/` declares its reference phylogenies as
 citation slots — one `primaryPhylogenyCitation` plus any number of `phylogenyCitation` entries —
 and only some of those slots carry a Newick. These trees were transcribed in 2018–2020 against
 publications the target slots already cite, so recovering them meant filling in an empty `newick`
@@ -215,7 +216,7 @@ Git authorship is no help: every commit in this repository is authored by the ma
 committed it, so the curators appear nowhere in the author field. The attribution comes from
 commit *messages* instead — "Imported phylogenies curated by Anna", "Added new phyloreferences
 from RS" — mapped onto the curators' ORCIDs by the `CURATORS` table in the script. The messages
-never give more than "Anna" and "RS": "RS" is expanded only in the title of PR #45, and Anna's
+never give more than "Anna" and "RS": "RS" is expanded only in the title of PR [#45](https://github.com/phyloref/clade-ontology/pull/45), and Anna's
 surname was supplied by the maintainer.
 
 ```bash
