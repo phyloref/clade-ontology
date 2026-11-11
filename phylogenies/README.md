@@ -173,7 +173,7 @@ challengers to trees already in the store — were deliberately left out.
 ## Curator attribution
 
 `attribution.json` records who transcribed each tree and who revised it since, keyed by
-`PHYLO_NNNN`. Current state: **122 trees transcribed by Anna Becker, 2 by Rebecca Stubbs, 3
+`PHYLO_NNNN`. Current state: **122 trees transcribed by Anna Becker, 3 by Rebecca Stubbs, 2
 unattributed**, and 4 revised after transcription
 ([#125](https://github.com/phyloref/clade-ontology/issues/125)).
 
@@ -252,11 +252,12 @@ later reformat of the same tree and lose it: three of Anna Becker's trees were c
 "Updated Newicks" pass that way. Of a rebased commit's several copies, the first one committed is
 the one recorded.
 
-Three trees remain unattributed because the commit that first wrote them credits nobody:
-PHYLO_0064 and PHYLO_0101 ("Fixed specifier authorities in Phyx files"), and PHYLO_0114, whose first
-version came from "Added two PHYX files curated from the Phylonym volume" and which Rebecca Stubbs
-later revised ("Updated Amorphea from RS"). Their real transcriber is only knowable from outside the
-repository. **An override survives regeneration**, the same way the extractor preserves PHYLO ids,
+Two trees remain unattributed because the commit that first wrote them credits nobody:
+PHYLO_0064 and PHYLO_0101 ("Fixed specifier authorities in Phyx files"). Their real transcriber is
+only knowable from outside the repository. Two more were first written by a commit that names
+nobody, "Added two PHYX files curated from the Phylonym volume", and are credited to Rebecca Stubbs
+by override on the maintainer's word: PHYLO_0116, and PHYLO_0114, which she also later revised
+("Updated Amorphea from RS"). **An override survives regeneration**, the same way the extractor preserves PHYLO ids,
 but fills only a blank: a curator the script *derives* still wins, so correcting `CURATORS`
 propagates, and the script warns about an override that a derived curator now contradicts.
 
