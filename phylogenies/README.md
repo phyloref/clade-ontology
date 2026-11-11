@@ -67,10 +67,13 @@ an empty `phylorefs` array) **plus** a custom top-level `referenceFor` array:
   the earliest-numbered file is an accident, and round 2 will delete the source it came from.
 - Every other field of the canonical source's phylogeny (a `label`, a `description`,
   `additionalNodeProperties`, …) is copied too, and a source whose other fields differ keeps
-  its own on `referenceFor[].otherFields`. Today those fields are the `description` figure
-  notes on the 14 trees salvaged from #45 ("Vallin and Laurin 2004 Fig. 6") and the
-  `additionalNodeProperties` on five of them (see [Salvaged trees](#salvaged-trees)); no two
-  sources disagree on one.
+  its own on `referenceFor[].otherFields`. Today those fields are the figure notes and
+  expected-resolution annotations on the trees salvaged from #45 (see [`SALVAGE.md`](SALVAGE.md));
+  no two sources disagree on one.
+- **An `additionalNodeProperties.<node>.expectedPhyloreferenceNamed` annotation is copied, but is
+  not by itself a tested expectation**: JPhyloRef only sees an expectation when the node is also
+  labelled with the phyloreference's name, or the phyloreference has an `expectedResolution`.
+  The AGENTS.md gotcha and `SALVAGE.md` have the details.
 - A `label` appears only if the source phylogeny had one, and none do today. The short label
   the extractor derives from the citation ("France et al. 1996, fig. 3") goes into
   `extraction-report.csv` and `phylo-ids.json` instead: written into `label`, it would be
@@ -146,74 +149,13 @@ Phyx document). `test/phylogenies/extract.js` covers what a static store cannot 
 stability across re-runs, retired ids never coming back on another tree, and the refusals
 above.
 
-## Salvaged trees
+## Where the trees came from
 
-29 of the trees in the store were recovered from curation branches that were never merged: 15
-from PR #79 and 14 from PR #45, which is every Newick at the tip of either branch. Every phyloref
-in `phyx/phylonym/` declares its reference phylogenies as citation slots — one
-`primaryPhylogenyCitation` plus any number of `phylogenyCitation` entries — and only some of those
-slots carry a Newick. Each of these trees was transcribed in 2018–2020 against a publication one
-of its phyloref's slots already cites, so recovering it was mechanical rather than a new
-transcription:
-
-```bash
-node scripts/phylogenies/salvage-trees.js [--dry-run]
-# then regenerate the store, as above
-```
-
-- **The source citation must match exactly one slot**, or nothing is written. The matchers are
-  tried strongest first: DOI, then author surname + year + title, then title alone, then author +
-  year. The weaker ones exist because many slots record no DOI and the 2018 files record no author
-  or year; a slot whose DOI names a different publication is never offered to them.
-- **An empty slot is filled** (17 trees).
-- **A slot that already holds a different tree is left alone, and the tree is appended** as a
-  further phylogeny repeating that slot's citation (12 trees). A curated tree is never
-  overwritten, and the script does not judge which transcription is better. The 2020 branch (#79)
-  is processed first, because the trees already on `master` descend from that curation pass; so
-  where both branches have a tree for an empty slot, the 2020 one fills it and the 2018 one is
-  appended.
-- **Re-running is a no-op.** A candidate that fails its checks fails the run, and then nothing
-  is written, the ledger included, so a regeneration cannot quietly drop a tree's provenance;
-  `--dry-run` writes nothing either.
-
-Five of the #45 trees say which node their phyloreference should resolve to, as
-`additionalNodeProperties.<node label>.expectedPhyloreferenceNamed`: Apo-Tracheophyta,
-Archaeplastida, Chlorophyta, Dikarya and Discicristata. The 2018 files name the phyloreference by
-their own label for it ("Apo-Tracheophyte", "Dikarya " with a trailing space), which is rewritten
-to the label the `CLADO_` file uses, since an expectation that names no phyloreference in its
-file matches nothing.
-
-**The annotation alone does not reach the reasoner.** phyx.js reads it in
-`PhylorefWrapper.getExpectedNodeLabels()`, but `PhyxWrapper.asJSONLD()`, which builds what
-JPhyloRef tests, marks a node as expected only when its label equals the phyloreference's label
-or the phyloreference carries its own `expectedResolution`. Three of the five are therefore
-tested, because their node happens to be labelled with the clade's name (as it is on 24 trees in
-`phyx/phylonym/`). The other two are not: Apo-Tracheophyta (node "Tracheophytes") and
-Archaeplastida (node "plants"). Making those count needs an `expectedResolution` on the
-phyloreference, which is round-3 work in
-[#113](https://github.com/phyloref/clade-ontology/issues/113). Resolution itself is only tested
-under `RUN_SLOW_TESTS`.
-
-`salvage-provenance.csv` records, per salvaged tree, the source PR and branch, the commit that
-introduced it (author, subject and date), where the tree now sits and whether it was `filled` or
-`appended`, what it was matched on, any expectation exactly as the source wrote it, and the
-source file's `curatorComments` (which say, for instance, that a Newick came from TreeBASE or from
-an author). The introducing commit is the oldest in the source file's history, followed across
-renames, whose copy holds the tree; a move such as "Renamed from `REGNUM_` to `CLADO_`" never
-counts, but a commit that corrected the tree ("Fixed a typo in the phylogeny.") does, as it does in
-`attribution.json`: the tree in the store is the corrected one. Its `commit_author` is the *committer*, not the curator who transcribed the tree; for
-that, see `attribution.json` below. The decisions are made in `lib/salvage.js` and tested in
-`test/phylogenies/salvage.js`; the script itself reads git-crypt branches and cannot run in CI.
-
-Two kinds of tree are still outside the store, and neither is on those branches' tips
-([#129](https://github.com/phyloref/clade-ontology/issues/129) has the full list):
-
-- 17 archived `.json.txt` files in `phyx/phylonym/newick-problems/` and `newick-recursion-error/`,
-  set aside because of their Newicks. 14 of those phyloreferences have no live `CLADO_` file at
-  all.
-- Picidae (`CLADO_0000285`) and Pan-Testudines (`CLADO_0000272`), deleted in 2020 along with
-  their trees for the same reason ("removed two files with failing Newick strings") and
-  recoverable only from history.
+Most trees were transcribed into `phyx/phylonym/` directly. 29 were recovered from curation
+branches that were never merged (15 from #79, 14 from #45), by filling or appending beside
+citation slots that already cited their publication; [`SALVAGE.md`](SALVAGE.md) explains how, and
+`salvage-provenance.csv` records each one. Trees that are still missing from the store are listed
+in [#129](https://github.com/phyloref/clade-ontology/issues/129).
 
 ## Curator attribution
 
@@ -321,10 +263,6 @@ This is committed as data rather than derived on demand because what history can
 degrading: every path move costs traceability, round 2 rewrites `phyx/` again, and the curators'
 full names were never in the repository to begin with. Moving attribution into the phylogeny
 records themselves waits on the store-model decision.
-
-Note `salvage-provenance.csv` answers a different question — how each salvaged tree was written
-into `phyx/`, keyed by `CLADO_NNNNNNN` — and traces only within its source branch, so where the two
-disagree on a commit, **`attribution.json` is the authoritative record of who transcribed a tree**.
 
 ## Roadmap
 
