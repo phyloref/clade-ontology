@@ -19,6 +19,9 @@ phylogenies across `phyx/phylonym/` reduce to **127 unique trees**, with 25 dupl
 2–7 files). This store moves each unique tree into one file and records which phyloreferences
 it is a reference for.
 
+The store is being introduced in three rounds, which this file refers to throughout. The plan,
+where it stands, and how round 1 was carried out are in [`migration/`](migration/README.md).
+
 ## File format
 
 Each `PHYLO_NNNN.json` is a **valid Phyx file** (a `phylogenies` array with a single tree, and
@@ -225,24 +228,3 @@ Note [`migration/salvage-provenance.csv`](migration/README.md#salvaged-trees) an
 question — how each salvaged tree was written into `phyx/`, keyed by `CLADO_NNNNNNN` — and traces
 only within its source branch, so where the two disagree on a commit, **`attribution.json` is the
 authoritative record of who transcribed a tree**.
-
-## Roadmap
-
-- **Round 1 (current):** build and populate the store by copying; keep the trees in the Phyx
-  files so we can verify the copy is faithful first.
-- **Round 2 (future):** make the store the source of truth for trees. Add an `assemble()`
-  helper (`lib/phylogenies.js`) that injects store trees back into Phyx objects at test/build
-  time, then remove the newicks from `phyx/phylonym/`. From that point the store is no longer
-  derivable from `phyx/`, so three round-1 devices go with it: `test/phylogenies/store.js`,
-  which compares against source Newicks that will no longer exist; the extractor as a
-  regenerator (it becomes a one-shot migration); and Newick-keyed ids, including the refusal to
-  run over a hand-edited store file.
-- **Later:** record auto-snapshot `expectedResolution` baselines so drift becomes a test
-  failure; add cross-resolution discovery and Regnum citation cross-checks; migrate
-  `from_papers/` (carrying their `curatorComments`); and move curator attribution out of
-  `attribution.json` and into the phylogeny records themselves. The identity and linkage model
-  is decided in [#123](https://github.com/phyloref/clade-ontology/issues/123).
-
-Everything that exists only to carry out these rounds — the extraction and salvage scripts, their
-reports, and their documentation — lives in [`migration/`](migration/README.md) and
-`scripts/phylogenies/migration/`, so that both can be deleted once the last round is done.

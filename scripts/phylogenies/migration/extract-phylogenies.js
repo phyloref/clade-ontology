@@ -190,7 +190,8 @@ if (orderedGroups.length === 0) {
 // is generated from phyx/phylonym/, the Newick is the only key an id can be re-derived from.
 // Once the store is the source of truth (round 2), the id is the file, a corrected
 // transcription keeps its id, and this script becomes a one-shot migration. Read
-// phylogenies/README.md ("Filenames", "Roadmap") and issue #123 before extending the ledger.
+// phylogenies/README.md ("Filenames"), the Roadmap in phylogenies/migration/README.md and
+// issue #123 before extending the ledger.
 // ---------------------------------------------------------------------------
 
 const ledger = loadIdLedger(storeDir);
