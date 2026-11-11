@@ -67,7 +67,7 @@ an empty `phylorefs` array) **plus** a custom top-level `referenceFor` array:
   disagree on one; the copy is there so that fields added later are not lost.
 - A `label` appears only if the source phylogeny had one, and none do today. The short label
   the extractor derives from the citation ("France et al. 1996, fig. 3") goes into
-  `extraction-report.csv` and `phylo-ids.json` instead: written into `label`, it would be
+  `migration/extraction-report.csv` and `phylo-ids.json` instead: written into `label`, it would be
   indistinguishable from a curator's once round 2 removes the source copy.
 
 ### How the two sides relate
@@ -108,71 +108,13 @@ Filenames are expected to migrate to human-readable, publication-based names in 
 (e.g. `leadAuthor2009.json`, `leadAuthor2009_journal.json`). Treat the filename as an opaque id
 and use `referenceFor[].clado` for linking.
 
-## Regenerating the store
+## Building the store
 
-```bash
-node scripts/phylogenies/extract-phylogenies.js
-# defaults: source=phyx/phylonym  store=phylogenies/  report=phylogenies/extraction-report.csv
-```
-
-The extractor **copies** trees out of `phyx/phylonym/` and never modifies anything under
-`phyx/`. `extraction-report.csv` lists, per store file, the source CLADO ids, derived label,
-DOI(s), and any anomalies (e.g. the same tree cited with divergent DOIs in different files, and
-how many sources kept their own `citations` on a `referenceFor` entry).
-
-The new store is written into a temporary directory and moved into place, so an interrupted run
-leaves the old store intact. Because the source directory is a bare positional argument while
-`-o` defaults to `phylogenies/`, the extractor also **refuses** to run when it finds no trees at
-all, or when the run would retire more than half of the existing store files — the signature of
-a run aimed at the wrong corner of `phyx/`. Pass `--force` if a wholesale replacement really is
-what you want.
-
-It also refuses to run when a store file's tree no longer matches the tree the ledger records
-for its id. Store files are generated, so a hand edit there would otherwise tie one id to two
-trees; make the change in `phyx/phylonym/`, restore the store file, and re-run. That refusal
-protects a generated artifact and goes away with round 2, when store files become curated and
-editing one is the normal way to correct a tree.
-
-The Mocha test `test/phylogenies/store.js` verifies the store is a faithful, deduplicated copy
-of the source trees (every source `(cladoId, newick)` pair is reproduced exactly, every source
-citation is still present, each unique tree lives in one file, and every store file is a valid
-Phyx document). `test/phylogenies/extract.js` covers what a static store cannot show: id
-stability across re-runs, retired ids never coming back on another tree, and the refusals
-above.
-
-## Salvaged trees
-
-15 of the trees in the store were recovered from curation branches that were never merged
-(PRs [#79](https://github.com/phyloref/clade-ontology/pull/79) and
-[#45](https://github.com/phyloref/clade-ontology/pull/45)). Every phyloref in `phyx/phylonym/` declares its reference phylogenies as
-citation slots — one `primaryPhylogenyCitation` plus any number of `phylogenyCitation` entries —
-and only some of those slots carry a Newick. These trees were transcribed in 2018–2020 against
-publications the target slots already cite, so recovering them meant filling in an empty `newick`
-field rather than transcribing anything. The trees are written into `phyx/phylonym/`, not into
-this store, because in round 1 the store is regenerated from `phyx/phylonym/`: a tree written
-straight into `phylogenies/` would vanish on the next extraction. Until round 2 they are as
-exposed to a `regnum2phyx.js` regeneration as every other tree there.
-
-```bash
-node scripts/phylogenies/salvage-trees.js [--dry-run]
-# then regenerate the store, as above
-```
-
-The script refuses to write unless the source citation and the target slot agree on their DOI
-(or, where no usable DOI exists, on author surname + year + title) and exactly one slot matches,
-and it never overwrites a slot that already holds a tree. Re-running it is a no-op. If any
-candidate fails those checks it writes nothing, the ledger included, and exits non-zero, so a
-regeneration cannot quietly drop a tree's provenance; `--dry-run` writes nothing either.
-
-`salvage-provenance.csv` records, per salvaged tree, the source PR and branch, the commit that
-introduced it (author, subject and date), the slot it filled and what it was matched on. The
-introducing commit is the oldest in the source file's history, followed across renames, whose
-copy holds the tree; a move such as "Renamed from `REGNUM_` to `CLADO_`" never counts. It is
-written once and committed, unlike the regenerated `extraction-report.csv`. Its `commit_author` is
-the *committer*, not the curator who transcribed the tree; for that, see `attribution.json` below.
-
-Contested candidates from those branches — rival transcriptions of the same figure, and
-challengers to trees already in the store — were deliberately left out.
+The store is built by copying trees out of `phyx/phylonym/` with
+`scripts/phylogenies/migration/extract-phylogenies.js`; 15 of them were first salvaged into
+`phyx/phylonym/` from unmerged curation branches. How to run both, what they refuse to do, and the
+reports they leave behind are documented in [`migration/`](migration/README.md), which holds
+everything that exists only for the migration and goes away with it.
 
 ## Curator attribution
 
@@ -279,9 +221,10 @@ degrading: every path move costs traceability, round 2 rewrites `phyx/` again, a
 full names were never in the repository to begin with. Moving attribution into the phylogeny
 records themselves waits on the store-model decision.
 
-Note `salvage-provenance.csv` answers a different question — how each salvaged tree was written
-into `phyx/`, keyed by `CLADO_NNNNNNN` — and traces only within its source branch, so where the two
-disagree on a commit, **`attribution.json` is the authoritative record of who transcribed a tree**.
+Note [`migration/salvage-provenance.csv`](migration/README.md#salvaged-trees) answers a different
+question — how each salvaged tree was written into `phyx/`, keyed by `CLADO_NNNNNNN` — and traces
+only within its source branch, so where the two disagree on a commit, **`attribution.json` is the
+authoritative record of who transcribed a tree**.
 
 ## Roadmap
 
@@ -299,3 +242,7 @@ disagree on a commit, **`attribution.json` is the authoritative record of who tr
   `from_papers/` (carrying their `curatorComments`); and move curator attribution out of
   `attribution.json` and into the phylogeny records themselves. The identity and linkage model
   is decided in [#123](https://github.com/phyloref/clade-ontology/issues/123).
+
+Everything that exists only to carry out these rounds — the extraction and salvage scripts, their
+reports, and their documentation — lives in [`migration/`](migration/README.md) and
+`scripts/phylogenies/migration/`, so that both can be deleted once the last round is done.
