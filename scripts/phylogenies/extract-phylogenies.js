@@ -14,10 +14,12 @@
  * and other fields of sources that disagree are preserved on their `referenceFor` entries
  * rather than being reported and discarded.
  *
- * Scoped to phyx/phylonym/, which holds only plain Phyx JSON. Unparseable files are warned
- * about and skipped; pointing this at phyx/ as a whole would silently reduce the git-crypt
- * files in phyx/encrypted/ to warnings rather than the explicit magic-byte skip that
- * test_phyx.js and phyx2ontology.js perform.
+ * Scoped to phyx/phylonym/, which holds only plain Phyx JSON. A file that does not parse stops
+ * the run with the store untouched: skipping it would read its trees as deleted, retire their
+ * ids and remove their store files (see scanSourcePhylogenies in lib/phylogenies.js). That is
+ * also why this cannot be pointed at phyx/ as a whole: the git-crypt files in phyx/encrypted/
+ * do not parse, and there is no magic-byte skip here like the one in test_phyx.js and
+ * phyx2ontology.js.
  *
  * Usage:
  *   node scripts/phylogenies/extract-phylogenies.js [sourceDir] -o [storeDir] --report [csv]
@@ -30,8 +32,9 @@ const { isEqual, omit, pick } = require('lodash');
 const yargs = require('yargs');
 
 const {
-  findStoreFiles,
   loadIdLedger,
+  loadStore,
+  storePhylogeny,
   newickFingerprint,
   normalizeNewick,
   saveIdLedger,
@@ -39,6 +42,7 @@ const {
   citationDOI,
   rawCitationDOI,
   CITATION_KEYS,
+  ID_LEDGER_FILENAME,
   PHYLOGENIES_DIR,
 } = require('../../lib/phylogenies');
 const { findJSONFiles } = require('../../lib/files');
@@ -200,15 +204,24 @@ for (const id of Object.keys(ledger.ids).sort()) {
 // ...then the store files on disk, which are authoritative for the trees currently stored (and
 // are the only source of ids on the first run after the ledger was introduced).
 const existingById = new Map(); // phyloId -> { fingerprint, label }
-for (const file of findStoreFiles(storeDir)) {
+// A store file that does not parse, or holds no tree, has been truncated or written by hand.
+// Skipping it would leave its id looking free (unless the ledger knew it), to be reissued over
+// the file, and would never retire the file either, since retiring works from the ids read here.
+const restoreIt = 'Store files are generated: restore it (git checkout) or delete it, and re-run.';
+let store;
+try {
+  store = loadStore(storeDir);
+} catch (e) {
+  die(`${e.message}. ${restoreIt}`);
+}
+for (const entry of store) {
+  const { file } = entry;
   const phyloId = path.basename(file, '.json');
-  const previous = (JSON.parse(fs.readFileSync(file, 'utf8')).phylogenies || [])[0];
-  // A store file with no tree has been truncated or written by hand. Skipping it would leave its
-  // id looking free (unless the ledger knew it), to be reissued over the file, and would never
-  // retire the file either, since retiring works from the ids read here.
-  if (!previous?.newick) {
-    const fix = 'Store files are generated: restore it (git checkout) or delete it, and re-run.';
-    die(`${file} holds no Newick. ${fix}`);
+  let previous;
+  try {
+    previous = storePhylogeny(entry);
+  } catch (e) {
+    die(`${e.message}. ${restoreIt}`);
   }
   const fingerprint = newickFingerprint(previous.newick);
   // A store file whose tree differs from the one the ledger records for its id has been edited
@@ -262,10 +275,12 @@ for (const group of orderedGroups) {
   // stop here rather than let the second tree overwrite the first in newFiles.
   if (newFiles.has(phyloId)) die(`two different trees were both assigned ${phyloId}`);
 
-  // A label the source gave the tree wins over one derived from its citation.
+  // A label the source gave the tree wins over one derived from its citation. A derived label
+  // goes only into the report and the id ledger, never into the store file: once round 2 strips
+  // the trees from phyx/, the store is the only copy, and a derived label sitting in `label`
+  // could no longer be told apart from one a curator wrote. It can be re-derived at any time.
   const label = canonical.otherFields.label || deriveLabel(primaryCitation(canonical.citations));
   const phylogeny = {
-    ...(label ? { label } : {}),
     ...canonical.citations,
     ...canonical.otherFields,
     newick: canonical.newick,
@@ -342,6 +357,21 @@ if (retiring.length > existingById.size / 2 && !argv.force) {
   );
 }
 
+// Record every id this store has ever used, so a retired id is never reissued. A tree that
+// comes back later matches its retired entry's fingerprint and takes its original id again.
+// An id already in the ledger keeps its entry (and its label, which store files do not carry);
+// the store files on disk add the ids a ledger written before them does not know.
+const ids = { ...ledger.ids };
+for (const [phyloId, { fingerprint, label }] of existingById) {
+  if (!ids[phyloId]) ids[phyloId] = { newickSHA256: fingerprint, ...(label ? { label } : {}) };
+}
+for (const [phyloId, { fingerprint, label }] of newFiles) {
+  ids[phyloId] = { newickSHA256: fingerprint, ...(label ? { label } : {}) };
+}
+for (const phyloId of Object.keys(ids)) {
+  if (!newFiles.has(phyloId)) ids[phyloId].retired = true;
+}
+
 fs.mkdirSync(storeDir, { recursive: true });
 // Write the complete new store into a sibling temp directory before touching the real one, so
 // a failure part-way through (an unwritable file, a full disk) leaves the store as it was
@@ -352,6 +382,15 @@ try {
   for (const [phyloId, { contents }] of newFiles) {
     fs.writeFileSync(path.join(tmpDir, `${phyloId}.json`), contents);
   }
+  saveIdLedger(tmpDir, {
+    nextId: Math.max(ledger.nextId, nextNum + 1, ...Object.keys(ids).map((id) => phyloNum(id) + 1)),
+    ids,
+  });
+  // The ledger goes in first. It is the only record of a retired id once its file is deleted, so
+  // a run interrupted after the deletions but before the ledger was saved could lose an id the
+  // ledger did not yet know, and a later run would hand it to a different tree. Saved first, an
+  // interrupted run leaves at worst a ledger ahead of the files, which the next run reconciles.
+  fs.renameSync(path.join(tmpDir, ID_LEDGER_FILENAME), path.join(storeDir, ID_LEDGER_FILENAME));
   for (const phyloId of newFiles.keys()) {
     fs.renameSync(path.join(tmpDir, `${phyloId}.json`), path.join(storeDir, `${phyloId}.json`));
   }
@@ -360,23 +399,6 @@ try {
 } finally {
   fs.rmSync(tmpDir, { recursive: true, force: true });
 }
-
-// Record every id this store has ever used, so a retired id is never reissued. A tree that
-// comes back later matches its retired entry's fingerprint and takes its original id again.
-const ids = { ...ledger.ids };
-for (const [phyloId, { fingerprint, label }] of existingById) {
-  ids[phyloId] = { newickSHA256: fingerprint, ...(label ? { label } : {}) };
-}
-for (const [phyloId, { fingerprint, label }] of newFiles) {
-  ids[phyloId] = { newickSHA256: fingerprint, ...(label ? { label } : {}) };
-}
-for (const phyloId of Object.keys(ids)) {
-  if (!newFiles.has(phyloId)) ids[phyloId].retired = true;
-}
-saveIdLedger(storeDir, {
-  nextId: Math.max(ledger.nextId, nextNum + 1, ...Object.keys(ids).map((id) => phyloNum(id) + 1)),
-  ids,
-});
 
 // Reused ids mean the rows are no longer emitted in id order; sort so the committed report
 // diffs minimally between runs (ids are zero-padded, so lexicographic order is numeric).

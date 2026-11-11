@@ -11,7 +11,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const chai = require('chai');
-const { isEqual, omit } = require('lodash');
+const { isEqual, omit, pick } = require('lodash');
 const phyx = require('@phyloref/phyx');
 const tmp = require('tmp');
 
@@ -33,12 +33,8 @@ const SOURCE_DIR = path.join('phyx', 'phylonym');
 /** Every Newick-bearing phylogeny in the source Phyx files. */
 const sourceOccurrences = () => scanSourcePhylogenies(findJSONFiles(SOURCE_DIR));
 
-/** The citation keys an object carries, as an object (so two can be compared directly). */
-function citationsOf(obj) {
-  const citations = {};
-  for (const key of CITATION_KEYS) if (obj[key]) citations[key] = obj[key];
-  return citations;
-}
+/** The citation keys an object carries, picked exactly as the extractor picks them. */
+const citationsOf = (obj) => pick(obj, CITATION_KEYS);
 
 /** Every field of a phylogeny other than its Newick and citations. */
 const otherFieldsOf = (obj) => omit(obj, ['newick', ...CITATION_KEYS]);
@@ -89,10 +85,9 @@ describe('Reference-phylogeny store (phylogenies/)', () => {
         `${file} phylogeny ${phyloIndex}: citations in ${ref.file} do not match the source`,
       );
 
-      // A store phylogeny whose source had no label carries one derived from its citation,
-      // which is not a source field.
-      const storedOther = ref.entry.otherFields
-        || omit(otherFieldsOf(ref.phylogeny), 'label' in phylogeny ? [] : ['label']);
+      // Exactly the source's fields: a label derived from the citation is not one of them, and
+      // must not be stored as if it were.
+      const storedOther = ref.entry.otherFields || otherFieldsOf(ref.phylogeny);
       assert.isTrue(
         isEqual(storedOther, otherFieldsOf(phylogeny)),
         `${file} phylogeny ${phyloIndex}: fields in ${ref.file} do not match the source`,
@@ -172,7 +167,7 @@ describe('lib/phylogenies store helpers', () => {
   it('names the offending file when a store file has no phylogeny', () => {
     assert.throws(
       () => storePhylogeny({ file: 'phylogenies/PHYLO_9999.json', data: { phylorefs: [] } }),
-      /PHYLO_9999\.json is not a store file/,
+      /PHYLO_9999\.json holds no Newick/,
     );
   });
 });

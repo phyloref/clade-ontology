@@ -16,6 +16,7 @@ const tmp = require('tmp');
 const chai = require('chai');
 
 const { parseCSVRow } = require('../../lib/csv');
+const { findStoreFiles } = require('../../lib/phylogenies');
 
 const assert = chai.assert;
 
@@ -48,11 +49,8 @@ function runExtractor({ srcDir, storeDir, report }, { args = [], expectFailure =
   return child;
 }
 
-/** The PHYLO ids currently in a store directory. */
-const storeIds = (storeDir) => fs.readdirSync(storeDir)
-  .filter((f) => /^PHYLO_\d+\.json$/.test(f))
-  .map((f) => path.basename(f, '.json'))
-  .sort();
+/** The PHYLO ids currently in a store directory, read the way the extractor reads them. */
+const storeIds = (storeDir) => findStoreFiles(storeDir).map((f) => path.basename(f, '.json'));
 
 /** Map of newick → PHYLO id for the current store. */
 function idsByNewick(storeDir) {
@@ -164,6 +162,19 @@ describe('extract-phylogenies.js', () => {
     assert.strictEqual(phylogeny.label, 'Curated tree', "the source's own label wins over a derived one");
     assert.strictEqual(phylogeny.description, 'Redrawn from fig. 2');
     assert.deepEqual(phylogeny.additionalNodeProperties, { AB: { expectedPhyloreferenceNamed: ['AB'] } });
+  });
+
+  it('keeps a label derived from the citation out of the store file', () => {
+    const fx = fixture();
+    writeSource(fx.srcDir, 1, { newick: '(A,B);', ...cite('10.1/aaa') });
+    runExtractor(fx);
+
+    const stored = JSON.parse(fs.readFileSync(path.join(fx.storeDir, 'PHYLO_0001.json'), 'utf8'));
+    assert.notProperty(stored.phylogenies[0], 'label', 'a derived label must not pose as a curated one');
+    const { rows, column } = readReport(fx.report);
+    assert.strictEqual(rows[0][column('label')], 'Smith 2020, fig. 3, top panel');
+    const ledger = JSON.parse(fs.readFileSync(path.join(fx.storeDir, 'phylo-ids.json'), 'utf8'));
+    assert.strictEqual(ledger.ids.PHYLO_0001.label, 'Smith 2020, fig. 3, top panel');
   });
 
   it('keeps the other fields of sources that disagree about the same tree', () => {
