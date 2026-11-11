@@ -90,6 +90,30 @@ describe('lib/salvage', () => {
       assert.deepEqual(slot.copies, []);
     });
 
+    it("matches a slot on any of its citations, not only the first", () => {
+      // CLADO_0000030 has a slot carrying both a primaryPhylogenyCitation and a
+      // phylogenyCitation; a tree transcribed against the second must still find it.
+      const target = {
+        phylorefs: [{ label: 'Asteridae' }],
+        phylogenies: [
+          { primaryPhylogenyCitation: OLMSTEAD },
+          { primaryPhylogenyCitation: { ...OLMSTEAD, identifier: doi('10.9999/another.paper') }, phylogenyCitation: { ...SOLTIS, identifier: doi('10.3732/ajb.1000404') } },
+        ],
+      };
+      const slot = matchSlot(target, tree2018());
+      assert.strictEqual(slot.index, 1);
+      assert.strictEqual(slot.key, 'phylogenyCitation');
+      assert.strictEqual(slot.how, 'doi:10.3732/ajb.1000404');
+    });
+
+    it('counts a slot both of whose citations match as one slot', () => {
+      const both = { ...SOLTIS, identifier: doi('10.3732/ajb.1000404') };
+      const target = { phylorefs: [{}], phylogenies: [{ primaryPhylogenyCitation: both, phylogenyCitation: both }] };
+      const slot = matchSlot(target, tree2018());
+      assert.strictEqual(slot.index, 0);
+      assert.strictEqual(slot.key, 'primaryPhylogenyCitation');
+    });
+
     it('falls back to the title when the slot records no DOI', () => {
       const slot = matchSlot(targetWith([OLMSTEAD], [SOLTIS]), tree2018());
       assert.strictEqual(slot.index, 1);
