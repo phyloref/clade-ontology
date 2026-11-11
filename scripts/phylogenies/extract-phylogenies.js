@@ -14,10 +14,12 @@
  * and other fields of sources that disagree are preserved on their `referenceFor` entries
  * rather than being reported and discarded.
  *
- * Scoped to phyx/phylonym/, which holds only plain Phyx JSON. Unparseable files are warned
- * about and skipped; pointing this at phyx/ as a whole would silently reduce the git-crypt
- * files in phyx/encrypted/ to warnings rather than the explicit magic-byte skip that
- * test_phyx.js and phyx2ontology.js perform.
+ * Scoped to phyx/phylonym/, which holds only plain Phyx JSON. A file that does not parse stops
+ * the run with the store untouched: skipping it would read its trees as deleted, retire their
+ * ids and remove their store files (see scanSourcePhylogenies in lib/phylogenies.js). That is
+ * also why this cannot be pointed at phyx/ as a whole: the git-crypt files in phyx/encrypted/
+ * do not parse, and there is no magic-byte skip here like the one in test_phyx.js and
+ * phyx2ontology.js.
  *
  * Usage:
  *   node scripts/phylogenies/extract-phylogenies.js [sourceDir] -o [storeDir] --report [csv]
