@@ -29,7 +29,6 @@ an empty `phylorefs` array) **plus** a custom top-level `referenceFor` array:
   "@context": "http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json",
   "phylogenies": [
     {
-      "label": "France et al. 1996, fig. 3",  // the source's own, else derived from the citation
       "primaryPhylogenyCitation": { /* BibJSON copied from the source Phyx file */ },
       "phylogenyCitation": { /* every citation key the source carried is copied */ },
       /* ...and every other field the source phylogeny carried */
@@ -66,6 +65,10 @@ an empty `phylorefs` array) **plus** a custom top-level `referenceFor` array:
   its own on `referenceFor[].otherFields`. Today the only such fields are the `description`
   figure notes on three salvaged trees ("Vallin and Laurin 2004 Fig. 6"), and no two sources
   disagree on one; the copy is there so that fields added later are not lost.
+- A `label` appears only if the source phylogeny had one, and none do today. The short label
+  the extractor derives from the citation ("France et al. 1996, fig. 3") goes into
+  `extraction-report.csv` and `phylo-ids.json` instead: written into `label`, it would be
+  indistinguishable from a curator's once round 2 removes the source copy.
 
 ### How the two sides relate
 

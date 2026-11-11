@@ -164,6 +164,19 @@ describe('extract-phylogenies.js', () => {
     assert.deepEqual(phylogeny.additionalNodeProperties, { AB: { expectedPhyloreferenceNamed: ['AB'] } });
   });
 
+  it('keeps a label derived from the citation out of the store file', () => {
+    const fx = fixture();
+    writeSource(fx.srcDir, 1, { newick: '(A,B);', ...cite('10.1/aaa') });
+    runExtractor(fx);
+
+    const stored = JSON.parse(fs.readFileSync(path.join(fx.storeDir, 'PHYLO_0001.json'), 'utf8'));
+    assert.notProperty(stored.phylogenies[0], 'label', 'a derived label must not pose as a curated one');
+    const { rows, column } = readReport(fx.report);
+    assert.strictEqual(rows[0][column('label')], 'Smith 2020, fig. 3, top panel');
+    const ledger = JSON.parse(fs.readFileSync(path.join(fx.storeDir, 'phylo-ids.json'), 'utf8'));
+    assert.strictEqual(ledger.ids.PHYLO_0001.label, 'Smith 2020, fig. 3, top panel');
+  });
+
   it('keeps the other fields of sources that disagree about the same tree', () => {
     const fx = fixture();
     writeSource(fx.srcDir, 1, { newick: '(A,B);' });

@@ -275,10 +275,12 @@ for (const group of orderedGroups) {
   // stop here rather than let the second tree overwrite the first in newFiles.
   if (newFiles.has(phyloId)) die(`two different trees were both assigned ${phyloId}`);
 
-  // A label the source gave the tree wins over one derived from its citation.
+  // A label the source gave the tree wins over one derived from its citation. A derived label
+  // goes only into the report and the id ledger, never into the store file: once round 2 strips
+  // the trees from phyx/, the store is the only copy, and a derived label sitting in `label`
+  // could no longer be told apart from one a curator wrote. It can be re-derived at any time.
   const label = canonical.otherFields.label || deriveLabel(primaryCitation(canonical.citations));
   const phylogeny = {
-    ...(label ? { label } : {}),
     ...canonical.citations,
     ...canonical.otherFields,
     newick: canonical.newick,

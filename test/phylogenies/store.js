@@ -85,10 +85,9 @@ describe('Reference-phylogeny store (phylogenies/)', () => {
         `${file} phylogeny ${phyloIndex}: citations in ${ref.file} do not match the source`,
       );
 
-      // A store phylogeny whose source had no label carries one derived from its citation,
-      // which is not a source field.
-      const storedOther = ref.entry.otherFields
-        || omit(otherFieldsOf(ref.phylogeny), 'label' in phylogeny ? [] : ['label']);
+      // Exactly the source's fields: a label derived from the citation is not one of them, and
+      // must not be stored as if it were.
+      const storedOther = ref.entry.otherFields || otherFieldsOf(ref.phylogeny);
       assert.isTrue(
         isEqual(storedOther, otherFieldsOf(phylogeny)),
         `${file} phylogeny ${phyloIndex}: fields in ${ref.file} do not match the source`,
