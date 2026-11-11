@@ -69,10 +69,19 @@ function emptyFixture(...storeNewicks) {
   return { repo, storeDir, output: path.join(storeDir, 'attribution.json') };
 }
 
-/** A repository whose one commit, with `subject`, adds NEWICK, which the store holds. */
-function buildFixture(subject) {
+/**
+ * A repository whose one commit, with `subject`, adds NEWICK, which the store holds.
+ * `curatorComments`, if given, goes on the file's phyloreference.
+ */
+function buildFixture(subject, curatorComments) {
   const fixture = emptyFixture();
   writePhyx(fixture.repo, FILE, NEWICK);
+  if (curatorComments) {
+    const file = path.join(fixture.repo, FILE);
+    const phyx = JSON.parse(fs.readFileSync(file, 'utf8'));
+    phyx.phylorefs[0].curatorComments = curatorComments;
+    fs.writeFileSync(file, JSON.stringify(phyx, null, 4));
+  }
   commit(fixture.repo, subject);
   return fixture;
 }
@@ -112,9 +121,52 @@ describe('attribute-phylogenies.js', () => {
     assert.include(event.subject, 'curated by Anna');
   });
 
-  it('leaves the curator blank when the commit credits nobody', () => {
-    const { trees } = attribute(buildFixture('Fixed specifier authorities in Phyx files.'));
+  it('leaves the curator blank when neither the commit nor the file credits anybody', () => {
+    const { trees } = attribute(
+      buildFixture('Fixed specifier authorities in Phyx files.', 'Reference phylogeny: Fig. 1'),
+    );
     assert.notProperty(trees.PHYLO_0001, 'transcribedBy', 'a commit naming no curator must not be attributed');
+    assert.notProperty(trees.PHYLO_0001.history[0], 'curatorFrom');
+  });
+
+  it('falls back to the curator comments in the file that introduced the tree', () => {
+    // The 2018 curation-tool files name their curator in the file, and the commits that added
+    // their trees ("Fixed a typo in the phylogeny.") name nobody.
+    const { trees } = attribute(
+      buildFixture('Fixed a typo in the phylogeny.', 'PHYX file by R. Stubbs\n\nReference phylogeny: Fig. 1'),
+    );
+    assert.strictEqual(trees.PHYLO_0001.transcribedBy, REBECCA);
+    assert.strictEqual(trees.PHYLO_0001.history[0].curatorFrom, 'curator comments');
+  });
+
+  it('prefers the commit subject to the curator comments', () => {
+    const { trees } = attribute(
+      buildFixture('Imported phylogenies curated by Anna.', 'PHYX file by R. Stubbs'),
+    );
+    assert.strictEqual(trees.PHYLO_0001.transcribedBy, ANNA);
+    assert.strictEqual(trees.PHYLO_0001.history[0].curatorFrom, 'commit subject');
+  });
+
+  it('does not read a revision\'s curator from the comments the file already had', () => {
+    // A maintainer relabels Rebecca's tree; the file still says "PHYX file by R. Stubbs", but that
+    // names who wrote the file, not who made the revision.
+    const fixture = buildFixture('Added two PHYX files.', 'PHYX file by R. Stubbs');
+    fs.writeFileSync(
+      path.join(fixture.storeDir, 'PHYLO_0001.json'),
+      JSON.stringify({ phylogenies: [{ newick: '(Aster_amellus,(Cornus_mas,Arbutus_unedo)Ericales);' }], phylorefs: [] }),
+    );
+    const file = path.join(fixture.repo, FILE);
+    const phyx = JSON.parse(fs.readFileSync(file, 'utf8'));
+    phyx.phylogenies[0].newick = '(Aster_amellus,(Cornus_mas,Arbutus_unedo)Ericales);';
+    fs.writeFileSync(file, JSON.stringify(phyx, null, 4));
+    commit(fixture.repo, 'Manually labeled one expected resolution.');
+
+    const { trees } = attribute(fixture);
+    assert.strictEqual(trees.PHYLO_0001.transcribedBy, REBECCA);
+    assert.deepEqual(
+      trees.PHYLO_0001.history.map(({ event, curator }) => [event, curator]),
+      [['transcribed', REBECCA], ['revised', undefined]],
+    );
   });
 
   it('preserves the hand-maintained curators and overrides', () => {

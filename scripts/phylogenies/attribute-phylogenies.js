@@ -9,6 +9,9 @@
  * Rebecca Stubbs -- appear nowhere in the author field. What we have instead is commit *messages*,
  * which name them only as "Anna" and "RS": "Imported phylogenies curated by Anna", "Added new
  * phyloreferences from RS". CURATORS below maps those subjects onto the curators' ORCIDs.
+ * Where the subject names nobody, the file itself sometimes does: the 2018 curation-tool files open
+ * their `curatorComments` with "Phyx file by R. Stubbs", which COMMENT_CURATORS reads for a tree's
+ * first version. Each event's `curatorFrom` says which of the two its curator came from.
  *
  * Tracing backwards from a tree does not work. `git log -S<newick>` bottoms out at whichever
  * commit moved the file -- "Renamed from REGNUM_ to CLADO_", "Reorganized PHYX files into a single
@@ -92,8 +95,19 @@ const CURATORS = [
   [/\bfrom RS\b|\bby RS\b|\bRS\.?$/, REBECCA_STUBBS],
 ];
 
-/** The curator a commit's subject credits, or undefined. */
-const curatorOf = (commit) => (CURATORS.find(([pattern]) => pattern.test(commit.subject)) || [])[1];
+/*
+ * `curatorComments` text -> curator id, consulted only for a tree's first version and only when
+ * the commit subject names nobody. The 2018 curation-tool files open theirs with "Phyx file by
+ * R. Stubbs", and the commits that added several of them ("Added two PHYX files curated from the
+ * Phylonym volume", "Fixed a typo in the phylogeny.") name no one. Not used for revisions: a file
+ * keeps its original curator's comment through a maintainer's later edit.
+ */
+const COMMENT_CURATORS = [
+  [/\bR\.\s*Stubbs\b/, REBECCA_STUBBS],
+];
+
+/** The curator id named by the first matching pattern in `text`, or undefined. */
+const curatorIn = (patterns, text) => (patterns.find(([pattern]) => pattern.test(text)) || [])[1];
 
 /** Stop with a message, leaving the existing ledger untouched. */
 function die(message) {
@@ -139,24 +153,30 @@ const attributesPath = (file) => file.replace(/^private\//, 'phyx/encrypted/');
  * --textconv` would be cheaper still, but does not work here: git (2.54) prints the *encrypted*
  * size in each record's header and then the decrypted contents, so the output cannot be split.
  */
-const newickCache = new Map();
-function newicksOfBlob(blob, file) {
+const blobCache = new Map();
+function readBlob(blob, file) {
   const key = `${blob}\t${attributesPath(file)}`;
-  if (!newickCache.has(key)) {
+  if (!blobCache.has(key)) {
     const text = git('cat-file', '--textconv', `--path=${attributesPath(file)}`, blob);
-    let newicks;
+    let read;
     try {
-      const phylogenies = JSON.parse(text).phylogenies || [];
-      newicks = phylogenies.map((p) => (String(p.newick || '').trim() ? normalizeNewick(p.newick) : ''));
+      const json = JSON.parse(text);
+      read = {
+        newicks: (json.phylogenies || [])
+          .map((p) => (String(p.newick || '').trim() ? normalizeNewick(p.newick) : '')),
+        // The comments on the file's phyloreferences, for COMMENT_CURATORS.
+        comments: (json.phylorefs || []).map((p) => p.curatorComments || '').join('\n'),
+      };
     } catch {
       // Unparseable at this revision (mid-edit, or a format we no longer read). Not fatal: some
       // other commit will own the tree.
-      newicks = [];
+      read = { newicks: [], comments: '' };
     }
-    newickCache.set(key, newicks);
+    blobCache.set(key, read);
   }
-  return newickCache.get(key);
+  return blobCache.get(key);
 }
+const newicksOfBlob = (blob, file) => readBlob(blob, file).newicks;
 
 /** Whether a repository path falls under one of the --paths pathspecs. */
 const underHistoricalPath = (file) => HISTORICAL_PATHS.some((spec) => file === spec
@@ -234,7 +254,8 @@ for (const line of log.split('\n').filter(Boolean)) {
 const commits = [...byEvent.values()]
   .sort((a, b) => (Date.parse(a.date) - Date.parse(b.date)) || (a.committed - b.committed));
 
-const introducedBy = new Map(); // normalized Newick -> the commit that first wrote it anywhere
+// normalized Newick -> the commit that first wrote it anywhere, with the blob and path it wrote
+const introducedBy = new Map();
 const replaced = new Map(); // normalized Newick -> the Newick it replaced in its slot, if any
 for (const commit of commits) {
   // Diff against each parent in turn. A plain `diff-tree <commit>` prints nothing for a merge, so
@@ -256,7 +277,7 @@ for (const commit of commits) {
     const before = new Set(beforeBySide.flat());
     after.forEach((newick, slot) => {
       if (!newick || before.has(newick) || introducedBy.has(newick)) return;
-      introducedBy.set(newick, commit);
+      introducedBy.set(newick, { ...commit, blob: newBlob, file });
       // A new version of the tree in this slot, if the slot held another tree that this commit
       // removed from the file. One still elsewhere in the file was moved, not replaced: a new
       // tree inserted ahead of another pushes it into the next slot, and must not be read as a
@@ -320,8 +341,17 @@ for (const [newick, phyloId] of [...phyloIdByNewick.entries()].sort((a, b) => a[
   const versions = versionsOf(newick);
   if (versions.length) traced += 1;
   const history = versions.map(({ commit }, i) => {
-    const curator = curatorOf(commit);
-    return { event: i === 0 ? 'transcribed' : 'revised', ...(curator ? { curator } : {}), ...commitRecord(commit) };
+    let curator = curatorIn(CURATORS, commit.subject);
+    let curatorFrom = curator && 'commit subject';
+    if (!curator && i === 0) {
+      curator = curatorIn(COMMENT_CURATORS, readBlob(commit.blob, commit.file).comments);
+      curatorFrom = curator && 'curator comments';
+    }
+    return {
+      event: i === 0 ? 'transcribed' : 'revised',
+      ...(curator ? { curator, curatorFrom } : {}),
+      ...commitRecord(commit),
+    };
   });
 
   /*
