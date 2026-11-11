@@ -166,20 +166,25 @@ function readSourceTree(json) {
 
 /**
  * Find the single citation slot in `target` that the source citation belongs to. Returns
- * { index, key, citation } or throws explaining why the match was not unique.
+ * { index, key, phylogeny, how } or throws explaining why the match was not unique.
+ *
+ * A slot is one phylogeny, and it matches if *any* of its citation keys does: a phylogeny may
+ * carry both a primaryPhylogenyCitation and a phylogenyCitation (CLADO_0000030 does), and a tree
+ * transcribed against the second must still find its slot. `key` names the citation that matched.
  */
 function matchSlot(target, sourceCitation) {
-  const slots = (target.phylogenies || []).map((phylogeny, index) => {
-    const key = CITATION_KEYS.find((k) => phylogeny[k]);
-    return { index, key, phylogeny, citation: key ? phylogeny[key] : undefined };
-  });
+  const slots = (target.phylogenies || []).map((phylogeny, index) => ({
+    index,
+    phylogeny,
+    citations: CITATION_KEYS.filter((k) => phylogeny[k]).map((key) => ({ key, citation: phylogeny[key] })),
+  }));
 
   const sourceDOI = citationDOI(sourceCitation);
-  let matches;
-  let how;
+  let identify; // citation -> the identity compared
+  let wanted;
   if (sourceDOI) {
-    matches = slots.filter((s) => citationDOI(s.citation) === sourceDOI);
-    how = `doi:${sourceDOI}`;
+    identify = citationDOI;
+    wanted = sourceDOI;
   } else {
     // Cuculidae's citation is a book with no DOI at all, so fall back to the bibliographic
     // fingerprint rather than refusing to salvage it.
@@ -188,9 +193,13 @@ function matchSlot(target, sourceCitation) {
       const raw = rawCitationDOI(sourceCitation) || 'none';
       throw new Error(`no usable DOI (raw: ${raw}) and no author+year+title to fall back on`);
     }
-    matches = slots.filter((s) => citationFingerprint(s.citation) === fingerprint);
-    how = `fingerprint:${fingerprint}`;
+    identify = citationFingerprint;
+    wanted = fingerprint;
   }
+  const how = `${sourceDOI ? 'doi' : 'fingerprint'}:${wanted}`;
+  const matches = slots
+    .map((slot) => ({ ...slot, key: slot.citations.find((c) => identify(c.citation) === wanted)?.key }))
+    .filter((slot) => slot.key);
 
   if (matches.length !== 1) {
     throw new Error(
