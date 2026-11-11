@@ -32,8 +32,9 @@ const { isEqual, omit, pick } = require('lodash');
 const yargs = require('yargs');
 
 const {
-  findStoreFiles,
   loadIdLedger,
+  loadStore,
+  storePhylogeny,
   newickFingerprint,
   normalizeNewick,
   saveIdLedger,
@@ -203,15 +204,24 @@ for (const id of Object.keys(ledger.ids).sort()) {
 // ...then the store files on disk, which are authoritative for the trees currently stored (and
 // are the only source of ids on the first run after the ledger was introduced).
 const existingById = new Map(); // phyloId -> { fingerprint, label }
-for (const file of findStoreFiles(storeDir)) {
+// A store file that does not parse, or holds no tree, has been truncated or written by hand.
+// Skipping it would leave its id looking free (unless the ledger knew it), to be reissued over
+// the file, and would never retire the file either, since retiring works from the ids read here.
+const restoreIt = 'Store files are generated: restore it (git checkout) or delete it, and re-run.';
+let store;
+try {
+  store = loadStore(storeDir);
+} catch (e) {
+  die(`${e.message}. ${restoreIt}`);
+}
+for (const entry of store) {
+  const { file } = entry;
   const phyloId = path.basename(file, '.json');
-  const previous = (JSON.parse(fs.readFileSync(file, 'utf8')).phylogenies || [])[0];
-  // A store file with no tree has been truncated or written by hand. Skipping it would leave its
-  // id looking free (unless the ledger knew it), to be reissued over the file, and would never
-  // retire the file either, since retiring works from the ids read here.
-  if (!previous?.newick) {
-    const fix = 'Store files are generated: restore it (git checkout) or delete it, and re-run.';
-    die(`${file} holds no Newick. ${fix}`);
+  let previous;
+  try {
+    previous = storePhylogeny(entry);
+  } catch (e) {
+    die(`${e.message}. ${restoreIt}`);
   }
   const fingerprint = newickFingerprint(previous.newick);
   // A store file whose tree differs from the one the ledger records for its id has been edited

@@ -33,7 +33,9 @@ const fs = require('node:fs');
 const path = require('node:path');
 const yargs = require('yargs');
 
-const { normalizeNewick, loadStore, PHYLOGENIES_DIR } = require('../../lib/phylogenies');
+const {
+  normalizeNewick, loadStore, storePhylogeny, PHYLOGENIES_DIR,
+} = require('../../lib/phylogenies');
 const { escapeCSV, parseCSVRow } = require('../../lib/csv');
 
 const argv = yargs(process.argv.slice(2))
@@ -126,9 +128,11 @@ function newicksAt(rev, file) {
 // ---------------------------------------------------------------------------
 
 const phyloIdByNewick = new Map();
-for (const { file, data } of loadStore(argv.store)) {
-  const newick = (data.phylogenies || [])[0]?.newick;
-  if (newick) phyloIdByNewick.set(normalizeNewick(newick), path.basename(file, '.json'));
+// storePhylogeny throws on a malformed store file rather than skipping it: a tree skipped here
+// would silently drop out of the ledger, taking any hand-set curator with it.
+for (const entry of loadStore(argv.store)) {
+  const { newick } = storePhylogeny(entry);
+  phyloIdByNewick.set(normalizeNewick(newick), path.basename(entry.file, '.json'));
 }
 
 // ---------------------------------------------------------------------------

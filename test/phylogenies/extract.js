@@ -16,6 +16,7 @@ const tmp = require('tmp');
 const chai = require('chai');
 
 const { parseCSVRow } = require('../../lib/csv');
+const { findStoreFiles } = require('../../lib/phylogenies');
 
 const assert = chai.assert;
 
@@ -48,11 +49,8 @@ function runExtractor({ srcDir, storeDir, report }, { args = [], expectFailure =
   return child;
 }
 
-/** The PHYLO ids currently in a store directory. */
-const storeIds = (storeDir) => fs.readdirSync(storeDir)
-  .filter((f) => /^PHYLO_\d+\.json$/.test(f))
-  .map((f) => path.basename(f, '.json'))
-  .sort();
+/** The PHYLO ids currently in a store directory, read the way the extractor reads them. */
+const storeIds = (storeDir) => findStoreFiles(storeDir).map((f) => path.basename(f, '.json'));
 
 /** Map of newick → PHYLO id for the current store. */
 function idsByNewick(storeDir) {
