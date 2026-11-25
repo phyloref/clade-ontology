@@ -73,7 +73,7 @@ PhyloRegnum DB dump (JSON)
   - `phylogenies/store.js` — Verifies the `phylogenies/` store is a faithful, deduplicated copy of the trees (with their citations and every other field) in `phyx/phylonym/`.
   - `phylogenies/extract.js` — Runs `extract-phylogenies.js` against temporary fixtures: PHYLO id stability across re-runs, citation preservation, report contents, and the refusals that stop a mis-aimed run from replacing the store.
   - `phylogenies/citations.js` — DOI normalization in `lib/phylogenies.js`: `citationDOI` rejects anything not shaped like a DOI, so two citations never match on shared junk.
-  - `phylogenies/attribute.js` — Runs `attribute-phylogenies.js` in a throwaway git repository: a hand-set override survives regeneration and a derived curator still wins, a tree is credited to its transcriber rather than a later relabelling, and moves, merges and failing git commands are handled.
+  - `phylogenies/attribute.js` — Runs `attribute-phylogenies.js` in a throwaway git repository, with made-up curators (Alice and Bob, ORCID's example ids) passed via `--curators` so no real curator is hard-coded in a test: a hand-set override survives regeneration and a derived curator still wins, a tree is credited to its transcriber rather than a later relabelling, and moves, merges and failing git commands are handled.
   - `lib/files.js` — Checks that the shared walker follows symlinked directories and survives a symlink cycle.
   - `regnum2phyx/exec.js` — Tests `regnum2phyx.js` against example dumps in `test/regnum2phyx/examples/` and compares output against `test/regnum2phyx/expected/`.
 
