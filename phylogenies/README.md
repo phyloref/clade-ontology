@@ -184,6 +184,9 @@ node scripts/phylogenies/attribute-phylogenies.js
   Newick: a later commit that changes the Newick, such as a maintainer adding a node label, is a
   `revised` event. How the history is read, and why, is in the header of
   `attribute-phylogenies.js`.
+- **The history read is `HEAD` plus the `archive/*` tags**, which hold the never-merged curation
+  branches and are never deleted; see
+  [Archived source branches](migration/README.md#archived-source-branches).
 - **After a change, check the date spans the script prints.** Rebecca Stubbs worked on these
   trees in 2018 and Anna Becker in 2020, so a misattributed tree shows up as overlapping spans.
 

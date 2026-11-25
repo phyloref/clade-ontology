@@ -201,6 +201,28 @@ node scripts/phylogenies/migration/salvage-trees.js [--dry-run]
 The decisions are made in `lib/salvage.js` and tested in `test/phylogenies/salvage.js`; the script
 itself reads git-crypt branches and cannot run in CI.
 
+#### Archived source branches
+
+The salvage and the attribution read their history from four annotated tags, not from branches:
+
+| Tag | Why it is kept |
+| --- | --- |
+| `archive/summer_curation` | the tip of PR #45, which the salvage reads its 14 trees from |
+| `archive/add-support-for-testing-against-open-tree` | PR #79's branch as the salvage read it: 15 trees |
+| `archive/summer_curation_with_phyx_js` | the original 2018 commits that `attribution.json` cites (13 of them), later rebased onto PR #45's branch under new hashes |
+| `archive/phyxtract-v2` | the only archived ref holding one more commit that `attribution.json` cites |
+
+**Never delete or move these tags.** The ledgers cite commits that only they hold, so deleting one
+leaves those citations pointing at nothing once GitHub garbage-collects the commits, and the
+scripts could no longer reproduce what is committed. Each tag's message says the same, so
+`git show archive/<name>` explains it to someone who has not read this file.
+
+The branches themselves are now safe to delete, and PR #45 has been closed. PR #79 is still in use, but
+its later commits do not reach the salvage, which reads the tag. `attribute-phylogenies.js` walks
+`HEAD` plus `archive/*` rather than `--all`: with `--all` its output depended on which branches a
+clone had, and deleting any of them changed the ledger. A tree salvaged from somewhere new needs
+its source tagged here first.
+
 #### Figure notes and expected resolutions
 
 The 14 trees from #45 carry the figure they were transcribed from as a `description` ("Vallin and
