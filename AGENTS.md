@@ -11,9 +11,10 @@ The Clade Ontology is an ontology of exemplar phyloreferences curated from Phylo
 ```bash
 npm test                 # Lint + run all Mocha tests
 npm run lint             # Biome lint
-npm run mocha            # Tests without linting
+npm run mocha            # Tests without linting (recursive, so it includes test/regnum2phyx/)
 npm run build-ontology   # Convert all phyx/ files into CLADO.json
 npx mocha test/test_phyx.js           # A single test file
+npx mocha test/regnum2phyx/exec.js    # The regnum2phyx end-to-end test
 RUN_SLOW_TESTS=1 npm test             # Also check resolution with JPhyloRef (Java); see test/AGENTS.md
 cd test && bash download.sh           # Fetch the JPhyloRef JAR and Phyx JSON schema
 node phyx2ontology/phyx2ontology.js phyx/ [--no-phylogenies] > CLADO.json
