@@ -1,0 +1,9 @@
+# phyx/
+
+Curated Phyx files. Every `*.json` here is validated and converted as one, so this file is Markdown on purpose.
+
+- **Every file in `phylonym/` round-trips exactly through `JSON.stringify(obj, null, 4)` with no trailing newline.** Any script that edits one in place should write it back that way; anything else (2-space indent, a trailing `\n`) reformats the whole file and buries a one-field change in a whole-file diff.
+- **A `phylonym/` file can hold more than one tree.** Twelve do, each pair being two transcriptions of one publication with identical citations. Don't take `phylogenies.find((p) => p.newick)` to be *the* tree, or a `CLADO_` id to name one store file: look a tree up by `(clado, sourcePhylogenyIndex)`.
+- **`additionalNodeProperties.expectedPhyloreferenceNamed` does not by itself create a tested expectation.** `PhylorefWrapper.getExpectedNodeLabels()` reads it, but `PhyxWrapper.asJSONLD()`, which builds what JPhyloRef tests, marks a node as expected only when its label equals the phyloreference's label or the phyloreference has its own `expectedResolution`. So the annotations in `from_papers/` and on the five `phylonym/` trees salvaged from #45 count only where the node is also labelled with the clade's name; two of those five are not (`CLADO_0000015`, node "Tracheophytes"; `CLADO_0000016`, node "plants"). Migrating them to `expectedResolution` is #133. Conversely, many `phylonym/` trees record an expectation only through a node that carries the phyloreference's label (#134).
+- **`phyx2ontology.js` never emits expected resolutions.** It wraps phylorefs and phylogenies separately, not through `PhyxWrapper`, so the node↔phyloref restrictions exist only in what the slow tests build.
+- **`curatorComments` appear only in `from_papers/`.** Those of the trees salvaged from #45 are in `phylogenies/migration/salvage-provenance.csv`.

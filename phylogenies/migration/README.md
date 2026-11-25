@@ -143,6 +143,16 @@ Phyx document). `test/phylogenies/extract.js` covers what a static store cannot 
 stability across re-runs, retired ids never coming back on another tree, and the refusals
 above.
 
+### Merge conflicts in generated files
+
+Stacked branches (#115, #128, …) all rewrite `phylogenies/phylo-ids.json`, `extraction-report.csv`,
+`salvage-provenance.csv` and the `trees` section of `phylogenies/attribution.json`. Resolve a
+conflict in any of them by regenerating, not by hand: take either side
+(`git checkout --ours <file>`), finish resolving the code and `phyx/`, then re-run the extractor,
+the salvage and the attribution, and check that what changed is what you expect. A hand-merged
+ledger can tie one id to two trees. Only `attribution.json`'s `curators` and `overrides` are
+merged by hand, since nothing regenerates them.
+
 ### Salvaged trees
 
 29 of the trees in the store were recovered from curation branches that were never merged: 15
