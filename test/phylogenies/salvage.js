@@ -225,9 +225,9 @@ describe('lib/salvage', () => {
       }
     });
 
-    it('reports a tree that was already on master as present, not as placed by the salvage', () => {
-      // Master already holds two transcriptions of one publication, and the source tree equals
-      // the second. Nothing on record says the salvage put it there.
+    it('reports a tree that was already in place as present, not as placed by the salvage', () => {
+      // The target already holds two transcriptions of one publication, and the source tree
+      // equals the second. Nothing on record says the salvage put it there.
       const tree = tree2018();
       const target = targetWith([SOLTIS, '(X,Y);']);
       target.phylogenies.push({ primaryPhylogenyCitation: cloneDeep(SOLTIS), newick: tree.newick });

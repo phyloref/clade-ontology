@@ -180,8 +180,9 @@ node scripts/phylogenies/migration/salvage-trees.js [--dry-run]
   is written, the ledger included, so a regeneration cannot quietly drop a tree's provenance;
   `--dry-run` writes nothing either.
 - **The ledger says which trees in place the salvage put there.** A tree already in its slot, or
-  beside it, cannot say so itself: `master` holds pairs of transcriptions with identical
-  citations, and a source tree can equal one of them. So each run reads the existing ledger, and
+  beside it, cannot say so itself: it may have been on `master` before the salvage (a #79 tree
+  can equal one there, since `master`'s trees descend from that pass), or an earlier run may
+  have put it there. So each run reads the existing ledger, and
   a tree still where the ledger says the salvage put it keeps its `filled` or `appended`; any
   other tree found in place is recorded as `present`, there before the salvage. Delete the ledger
   and every tree reads as `present`. A ledger with no `action` column (the first run wrote one)
