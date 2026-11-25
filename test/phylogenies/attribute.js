@@ -78,10 +78,19 @@ function emptyFixture(...storeNewicks) {
   return { repo, storeDir, output: path.join(storeDir, 'attribution.json') };
 }
 
-/** A repository whose one commit, with `subject`, adds NEWICK, which the store holds. */
-function buildFixture(subject) {
+/**
+ * A repository whose one commit, with `subject`, adds NEWICK, which the store holds.
+ * `curatorComments`, if given, goes on the file's phyloreference.
+ */
+function buildFixture(subject, curatorComments) {
   const fixture = emptyFixture();
   writePhyx(fixture.repo, FILE, NEWICK);
+  if (curatorComments) {
+    const file = path.join(fixture.repo, FILE);
+    const phyx = JSON.parse(fs.readFileSync(file, 'utf8'));
+    phyx.phylorefs[0].curatorComments = curatorComments;
+    fs.writeFileSync(file, JSON.stringify(phyx, null, 4));
+  }
   commit(fixture.repo, subject);
   return fixture;
 }
@@ -121,9 +130,73 @@ describe('attribute-phylogenies.js', () => {
     assert.include(event.subject, 'curated by Anna');
   });
 
-  it('leaves the curator blank when the commit credits nobody', () => {
-    const { trees } = attribute(buildFixture('Fixed specifier authorities in Phyx files.'));
+  it('leaves the curator blank when neither the commit nor the file credits anybody', () => {
+    const { trees } = attribute(
+      buildFixture('Fixed specifier authorities in Phyx files.', 'Reference phylogeny: Fig. 1'),
+    );
     assert.notProperty(trees.PHYLO_0001, 'transcribedBy', 'a commit naming no curator must not be attributed');
+    assert.notProperty(trees.PHYLO_0001.history[0], 'curatorFrom');
+  });
+
+  it('falls back to the curator comments in the file that introduced the tree', () => {
+    // The 2018 curation-tool files name their curator in the file, and the commits that added
+    // their trees ("Fixed a typo in the phylogeny.") name nobody.
+    const { trees } = attribute(
+      buildFixture('Fixed a typo in the phylogeny.', 'PHYX file by R. Stubbs\n\nReference phylogeny: Fig. 1'),
+    );
+    assert.strictEqual(trees.PHYLO_0001.transcribedBy, REBECCA);
+    assert.strictEqual(trees.PHYLO_0001.history[0].curatorFrom, 'curator comments');
+  });
+
+  it('does not credit the file\'s curator with a tree added to the file later', () => {
+    // Rebecca wrote the file; a maintainer later adds an unrelated second tree in a commit that
+    // names nobody. Her comment is still in the file, but she did not transcribe that tree.
+    const SECOND = '(Lamium_album,(Mentha_aquatica,Salvia_pratensis));';
+    const fixture = emptyFixture(NEWICK, SECOND);
+    writePhyx(fixture.repo, FILE, NEWICK);
+    const file = path.join(fixture.repo, FILE);
+    const phyx = JSON.parse(fs.readFileSync(file, 'utf8'));
+    phyx.phylorefs[0].curatorComments = 'PHYX file by R. Stubbs';
+    fs.writeFileSync(file, JSON.stringify(phyx, null, 4));
+    commit(fixture.repo, 'Added two PHYX files.');
+    phyx.phylogenies.push({ newick: SECOND });
+    fs.writeFileSync(file, JSON.stringify(phyx, null, 4));
+    commit(fixture.repo, 'Added another reference phylogeny.');
+
+    const { trees } = attribute(fixture);
+    assert.strictEqual(trees.PHYLO_0001.transcribedBy, REBECCA, 'the tree that came with the file is hers');
+    assert.notProperty(trees.PHYLO_0002, 'transcribedBy');
+    assert.notProperty(trees.PHYLO_0002.history[0], 'curatorFrom');
+  });
+
+  it('prefers the commit subject to the curator comments', () => {
+    const { trees } = attribute(
+      buildFixture('Imported phylogenies curated by Anna.', 'PHYX file by R. Stubbs'),
+    );
+    assert.strictEqual(trees.PHYLO_0001.transcribedBy, ANNA);
+    assert.strictEqual(trees.PHYLO_0001.history[0].curatorFrom, 'commit subject');
+  });
+
+  it('does not read a revision\'s curator from the comments the file already had', () => {
+    // A maintainer relabels Rebecca's tree; the file still says "PHYX file by R. Stubbs", but that
+    // names who wrote the file, not who made the revision.
+    const fixture = buildFixture('Added two PHYX files.', 'PHYX file by R. Stubbs');
+    fs.writeFileSync(
+      path.join(fixture.storeDir, 'PHYLO_0001.json'),
+      JSON.stringify({ phylogenies: [{ newick: '(Aster_amellus,(Cornus_mas,Arbutus_unedo)Ericales);' }], phylorefs: [] }),
+    );
+    const file = path.join(fixture.repo, FILE);
+    const phyx = JSON.parse(fs.readFileSync(file, 'utf8'));
+    phyx.phylogenies[0].newick = '(Aster_amellus,(Cornus_mas,Arbutus_unedo)Ericales);';
+    fs.writeFileSync(file, JSON.stringify(phyx, null, 4));
+    commit(fixture.repo, 'Manually labeled one expected resolution.');
+
+    const { trees } = attribute(fixture);
+    assert.strictEqual(trees.PHYLO_0001.transcribedBy, REBECCA);
+    assert.deepEqual(
+      trees.PHYLO_0001.history.map(({ event, curator }) => [event, curator]),
+      [['transcribed', REBECCA], ['revised', undefined]],
+    );
   });
 
   it('preserves the hand-maintained curators and overrides', () => {
@@ -133,13 +206,13 @@ describe('attribute-phylogenies.js', () => {
     // Stand in for a maintainer filling the blank the previous run left.
     editByHand(fixture, (contents) => {
       contents.curators[REBECCA] = { name: 'Rebecca Stubbs' };
-      contents.overrides.PHYLO_0001 = { transcribedBy: REBECCA };
+      contents.overrides.PHYLO_0001 = { transcribedBy: REBECCA, note: 'Confirmed by the maintainer.' };
     });
 
     const { trees, curators, overrides, stderr } = attribute(fixture);
     assert.strictEqual(trees.PHYLO_0001.transcribedBy, REBECCA, 'regenerating must not discard an override');
     assert.deepEqual(curators, { [REBECCA]: { name: 'Rebecca Stubbs' } });
-    assert.deepEqual(overrides, { PHYLO_0001: { transcribedBy: REBECCA } });
+    assert.deepEqual(overrides, { PHYLO_0001: { transcribedBy: REBECCA, note: 'Confirmed by the maintainer.' } });
     assert.notInclude(stderr, 'Warning');
   });
 
@@ -269,10 +342,12 @@ describe('attribute-phylogenies.js', () => {
     git(repo, 'add', '-A');
     commitAt('2020-01-01T00:00:00Z', '2020-01-01T00:00:00Z', 'Add an empty citation slot.');
 
-    // A reformat that brings the same tree in on another branch in August 2020...
+    // A reformat that brings the same tree in on another branch in August 2020, kept as an
+    // archive/* tag (an untagged branch is not walked at all)...
     git(repo, 'checkout', '--quiet', '-b', 'reformat');
     writePhyx(repo, FILE, NEWICK);
     commitAt('2020-08-01T00:00:00Z', '2020-08-01T00:00:00Z', 'Updated Newicks.');
+    git(repo, 'tag', 'archive/reformat');
 
     // ...and the transcription, written in June 2020 but rebased (re-committed) in 2021.
     git(repo, 'checkout', '--quiet', 'main');
@@ -282,5 +357,46 @@ describe('attribute-phylogenies.js', () => {
     const { trees } = attribute(fixture);
     assert.strictEqual(trees.PHYLO_0001.transcribedBy, ANNA);
     assert.strictEqual(trees.PHYLO_0001.history[0].date, '2020-06-01');
+  });
+
+  /*
+   * The script walks HEAD plus the archive/* tags, not --all: with --all, which branches a clone
+   * happened to have decided what was written, so deleting one changed the ledger. A tree that
+   * exists only on an archived branch must still be found, and one on a stray branch ignored even
+   * when that branch's copy is older.
+   */
+  it('walks the archive/* tags and HEAD, and no other branch', () => {
+    const fixture = emptyFixture();
+    const { repo } = fixture;
+    const commitAt = (authored, subject) => {
+      git(repo, 'add', '-A');
+      const child = ChildProcess.spawnSync('git', ['commit', '--quiet', '-m', subject], {
+        cwd: repo,
+        encoding: 'utf8',
+        env: { ...process.env, GIT_AUTHOR_DATE: authored, GIT_COMMITTER_DATE: authored },
+      });
+      assert.strictEqual(child.status, 0, `git commit failed: ${child.stderr}`);
+    };
+
+    writePhyx(repo, FILE, '');
+    commitAt('2018-01-01T00:00:00Z', 'Add an empty citation slot.');
+
+    // An untagged branch transcribes the tree first...
+    git(repo, 'checkout', '--quiet', '-b', 'stray');
+    writePhyx(repo, FILE, NEWICK);
+    commitAt('2018-03-01T00:00:00Z', 'Imported phylogenies curated by Anna.');
+
+    // ...and an archived branch later; neither is merged into main.
+    git(repo, 'checkout', '--quiet', 'main');
+    git(repo, 'checkout', '--quiet', '-b', 'curation');
+    writePhyx(repo, FILE, NEWICK);
+    commitAt('2018-07-01T00:00:00Z', 'Added new phyloreferences from RS.');
+    const archived = git(repo, 'rev-parse', '--short=12', 'HEAD');
+    git(repo, 'tag', '-a', 'archive/curation', '-m', 'Kept for the test.');
+    git(repo, 'checkout', '--quiet', 'main');
+
+    const { trees } = attribute(fixture);
+    assert.strictEqual(trees.PHYLO_0001.transcribedBy, REBECCA);
+    assert.strictEqual(trees.PHYLO_0001.history[0].commit, archived);
   });
 });

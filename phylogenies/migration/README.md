@@ -5,7 +5,7 @@ from it wholesale by `regnum2phyx.js`. The reference phylogenies in the same fil
 trees transcribed by hand from publications. Because both live in one file, regenerating the
 phyloreferences overwrites the trees, so we cannot pull updates from PhyloRegnum without losing
 curated work ([#113](https://github.com/phyloref/clade-ontology/issues/113)). The same tree is also
-pasted into every file that cites it: 175 Newick-bearing phylogenies hold only 127 distinct trees.
+pasted into every file that cites it: 189 Newick-bearing phylogenies hold only 141 distinct trees.
 
 This migration moves the trees into a store of their own, [`phylogenies/`](../README.md), in three
 rounds. When it is done, a `CLADO_NNNNNNN` file answers only to PhyloRegnum, a `PHYLO_NNNN` file
@@ -18,7 +18,7 @@ get there, and both can be deleted once the last round is done.
 | | `phyx/phylonym/CLADO_*.json` | `phylogenies/PHYLO_*.json` | Source of truth for trees |
 |---|---|---|---|
 | Before | phyloreferences and Newicks | — | the Phyx files |
-| Round 1 | unchanged, plus 15 salvaged Newicks | a copy of every distinct tree | the Phyx files; the store is regenerated from them |
+| Round 1 | unchanged, plus 29 salvaged trees | a copy of every distinct tree | the Phyx files; the store is regenerated from them |
 | Round 2 | phyloreferences only | the trees | the store; `assemble()` joins the two at build time |
 | Round 3 | phyloreferences only | the trees, and more of them | the store |
 
@@ -27,9 +27,10 @@ get there, and both can be deleted once the last round is done.
 *As of November 2026. The live checklist is [#113](https://github.com/phyloref/clade-ontology/issues/113);
 update this section when a round lands.*
 
-- **Round 1 is in review** in [#115](https://github.com/phyloref/clade-ontology/pull/115). Stacked
-  on it: [#128](https://github.com/phyloref/clade-ontology/pull/128), which rescues the 14 trees
-  still held only on unmerged curation branches and lets a phyloreference have several trees, and
+- **Round 1 is in review** in [#115](https://github.com/phyloref/clade-ontology/pull/115) (the
+  store, and the first 15 salvaged trees) and
+  [#128](https://github.com/phyloref/clade-ontology/pull/128), stacked on it (the other 14, which
+  let a phyloreference have several trees). Also stacked on #115:
   [#141](https://github.com/phyloref/clade-ontology/pull/141), a proposal to run the attribution
   tests on made-up curators.
 - **Round 2 has not started.** Its shape depends on
@@ -50,9 +51,9 @@ update this section when a round lands.*
 
 - **Round 1: copy the trees into a standalone store.** Build and populate the store by copying,
   and keep the trees in the Phyx files too, so a test can prove the copy is faithful. Round 1
-  produces 127 store files, an id ledger (`phylo-ids.json`) that keeps every `PHYLO_` id tied to
-  its tree, 15 trees salvaged from never-merged curation branches, and `attribution.json`, which
-  records who transcribed each tree.
+  produces 141 store files, an id ledger (`phylo-ids.json`) that keeps every `PHYLO_` id tied to
+  its tree, 29 trees salvaged from never-merged curation branches (so a phyloreference can now have
+  several trees), and `attribution.json`, which records who transcribed each tree.
 - **Round 2: make the store the source of truth.** Add an `assemble()` helper
   (`lib/phylogenies.js`) that injects store trees back into Phyx objects at test and build time,
   then remove the Newicks from `phyx/phylonym/`. From that point the store is no longer derivable
@@ -81,8 +82,10 @@ update this section when a round lands.*
 | `scripts/phylogenies/migration/salvage-trees.js` | fills empty `newick` fields from old branches | deleted when the migration is done |
 | `scripts/phylogenies/attribute-phylogenies.js` | mines commit messages for curators | stays while `attribution.json` does |
 | `lib/phylogenies.js`, `lib/files.js`, `lib/csv.js` | shared helpers | stay; `assemble()` is added in round 2 |
+| `lib/salvage.js` | the salvage's per-tree decisions | deleted with the salvage script |
 | `test/phylogenies/store.js` | proves the store is a faithful copy of `phyx/` | retired in round 2 |
 | `test/phylogenies/extract.js` | id stability and the extractor's refusals | deleted with the extractor |
+| `test/phylogenies/salvage.js` | the salvage's per-tree decisions | deleted with `lib/salvage.js` |
 | `test/phylogenies/citations.js`, `attribute.js` | DOI normalization, attribution | stay with the code they test |
 
 ## Where to start reading
@@ -128,8 +131,8 @@ a run aimed at the wrong corner of `phyx/`. Pass `--force` if a wholesale replac
 what you want.
 
 It also refuses to run when a store file's tree no longer matches the tree the ledger records
-for its id. Store files are generated, so a hand edit there would otherwise tie one id to two
-trees; make the change in `phyx/phylonym/`, restore the store file, and re-run. That refusal
+for its id. Store files are generated, so a hand edit there would otherwise give one id to two
+different Newicks; make the change in `phyx/phylonym/`, restore the store file, and re-run. That refusal
 protects a generated artifact and goes away with round 2, when store files become curated and
 editing one is the normal way to correct a tree.
 
@@ -140,38 +143,136 @@ Phyx document). `test/phylogenies/extract.js` covers what a static store cannot 
 stability across re-runs, retired ids never coming back on another tree, and the refusals
 above.
 
+### Merge conflicts in generated files
+
+Stacked branches (#115, #128, …) all rewrite `phylogenies/phylo-ids.json`, `extraction-report.csv`,
+`salvage-provenance.csv` and the `trees` section of `phylogenies/attribution.json`. Resolve a
+conflict in any of them by regenerating, not by hand: take either side
+(`git checkout --ours <file>`), finish resolving the code and `phyx/`, then re-run the extractor,
+the salvage and the attribution, and check that what changed is what you expect. A hand-merged
+ledger can give one `PHYLO` id to two different Newicks. Only `attribution.json`'s `curators` and
+`overrides` are merged by hand, since nothing regenerates them.
+
 ### Salvaged trees
 
-15 of the trees in the store were recovered from curation branches that were never merged
-(PRs [#79](https://github.com/phyloref/clade-ontology/pull/79) and
-[#45](https://github.com/phyloref/clade-ontology/pull/45)). Every phyloref in `phyx/phylonym/`
-declares its reference phylogenies as citation slots — one `primaryPhylogenyCitation` plus any
-number of `phylogenyCitation` entries — and only some of those slots carry a Newick. These trees
-were transcribed in 2018–2020 against publications the target slots already cite, so recovering
-them meant filling in an empty `newick` field rather than transcribing anything. The trees are
-written into `phyx/phylonym/`, not into the store, because in round 1 the store is regenerated
-from `phyx/phylonym/`: a tree written straight into `phylogenies/` would vanish on the next
-extraction. Until round 2 they are as exposed to a `regnum2phyx.js` regeneration as every other
-tree there.
+29 of the trees in the store were recovered from curation branches that were never merged: 15
+from PR [#79](https://github.com/phyloref/clade-ontology/pull/79) and 14 from PR
+[#45](https://github.com/phyloref/clade-ontology/pull/45), which is every Newick at the tip of
+either branch.
+
+Every phyloref in `phyx/phylonym/` declares its reference phylogenies as citation slots — one
+`primaryPhylogenyCitation` plus any number of `phylogenyCitation` entries — and only some of those
+slots carry a Newick. Each of these trees was transcribed in 2018–2020 against a publication one
+of its phyloref's slots already cites, so recovering it was mechanical rather than a new
+transcription. The trees are written into `phyx/phylonym/`, not into the store, because in round 1
+the store is regenerated from `phyx/phylonym/`: a tree written straight into `phylogenies/` would
+vanish on the next extraction. Until round 2 they are as exposed to a `regnum2phyx.js`
+regeneration as every other tree there.
 
 ```bash
 node scripts/phylogenies/migration/salvage-trees.js [--dry-run]
 # then regenerate the store, as above
 ```
 
-The script refuses to write unless the source citation and the target slot agree on their DOI
-(or, where no usable DOI exists, on author surname + year + title) and exactly one slot matches,
-and it never overwrites a slot that already holds a tree. Re-running it is a no-op. If any
-candidate fails those checks it writes nothing, the ledger included, and exits non-zero, so a
-regeneration cannot quietly drop a tree's provenance; `--dry-run` writes nothing either.
+- **The source citation must match exactly one slot**, or nothing is written. A slot matches if
+  any of its citations does. The matchers are tried strongest first: DOI, then author surname +
+  year + title, then title alone, then author + year. The weaker ones exist because many slots
+  record no DOI and the 2018 files record no author or year; a citation whose DOI names a
+  different publication is never offered to them.
+- **An empty slot is filled** (17 trees).
+- **A slot that already holds a different tree is left alone, and the tree is appended** as a
+  further phylogeny repeating that slot's citation (12 trees). A curated tree is never
+  overwritten, and the script does not judge which transcription is better. The 2020 branch (#79)
+  is processed first, because the trees already on `master` descend from that curation pass; so
+  where both branches have a tree for an empty slot, the 2020 one fills it and the 2018 one is
+  appended.
+- **Re-running is a no-op.** A candidate that fails its checks fails the run, and then nothing
+  is written, the ledger included, so a regeneration cannot quietly drop a tree's provenance;
+  `--dry-run` writes nothing either.
+- **The ledger says which trees in place the salvage put there.** A tree already in its slot, or
+  beside it, cannot say so itself: it may have been on `master` before the salvage (a #79 tree
+  can equal one there, since `master`'s trees descend from that pass), or an earlier run may
+  have put it there. So each run reads the existing ledger, and
+  a tree still where the ledger says the salvage put it keeps its `filled` or `appended`; any
+  other tree found in place is recorded as `present`, there before the salvage. Delete the ledger
+  and every tree reads as `present`. A ledger with no `action` column (the first run wrote one)
+  stops the run.
 
-`salvage-provenance.csv` records, per salvaged tree, the source PR and branch, the commit that
-introduced it (author, subject and date), the slot it filled and what it was matched on. The
-introducing commit is the oldest in the source file's history, followed across renames, whose
-copy holds the tree; a move such as "Renamed from `REGNUM_` to `CLADO_`" never counts. It is
-written once and committed, unlike the regenerated `extraction-report.csv`. Its `commit_author` is
-the *committer*, not the curator who transcribed the tree; for that, see
-[`attribution.json`](../README.md#curator-attribution).
+The decisions are made in `lib/salvage.js` and tested in `test/phylogenies/salvage.js`; the script
+itself reads git-crypt branches and cannot run in CI.
 
-Contested candidates from those branches — rival transcriptions of the same figure, and
-challengers to trees already in the store — were deliberately left out.
+#### Archived source branches
+
+The salvage and the attribution read their history from four annotated tags, not from branches:
+
+| Tag | Why it is kept |
+| --- | --- |
+| `archive/summer_curation` | the tip of PR #45, which the salvage reads its 14 trees from |
+| `archive/add-support-for-testing-against-open-tree` | PR #79's branch as the salvage read it: 15 trees |
+| `archive/summer_curation_with_phyx_js` | the original 2018 commits that `attribution.json` cites (13 of them), later rebased onto PR #45's branch under new hashes |
+| `archive/phyxtract-v2` | the only archived ref holding one more commit that `attribution.json` cites |
+
+**Never delete or move these tags.** The ledgers cite commits that only they hold, so deleting one
+leaves those citations pointing at nothing once GitHub garbage-collects the commits, and the
+scripts could no longer reproduce what is committed. Each tag's message says the same, so
+`git show archive/<name>` explains it to someone who has not read this file.
+
+The branches themselves are now safe to delete, and PR #45 has been closed. PR #79 is still in use, but
+its later commits do not reach the salvage, which reads the tag. `attribute-phylogenies.js` walks
+`HEAD` plus `archive/*` rather than `--all`: with `--all` its output depended on which branches a
+clone had, and deleting any of them changed the ledger. A tree salvaged from somewhere new needs
+its source tagged here first.
+
+#### Figure notes and expected resolutions
+
+The 14 trees from #45 carry the figure they were transcribed from as a `description` ("Vallin and
+Laurin 2004 Fig. 6"), which the store copies like any other field of a phylogeny.
+
+Five of them also say which node their phyloreference should resolve to, as
+`additionalNodeProperties.<node label>.expectedPhyloreferenceNamed`: Apo-Tracheophyta,
+Archaeplastida, Chlorophyta, Dikarya and Discicristata. The 2018 files name the phyloreference by
+their own label for it ("Apo-Tracheophyte", "Dikarya " with a trailing space), which is rewritten
+to the label the `CLADO_` file uses, since an expectation that names no phyloreference in its
+file matches nothing.
+
+**The annotation alone does not reach the reasoner.** phyx.js reads it in
+`PhylorefWrapper.getExpectedNodeLabels()`, but `PhyxWrapper.asJSONLD()`, which builds what
+JPhyloRef tests, marks a node as expected only when its label equals the phyloreference's label
+or the phyloreference carries its own `expectedResolution`. Three of the five are therefore
+tested, because their node happens to be labelled with the clade's name (as it is on 24 trees in
+`phyx/phylonym/`). The other two are not: Apo-Tracheophyta (node "Tracheophytes") and
+Archaeplastida (node "plants"). Making those count needs an `expectedResolution` on the
+phyloreference, which is round-3 work in
+[#113](https://github.com/phyloref/clade-ontology/issues/113). Resolution itself is only tested
+under `RUN_SLOW_TESTS`.
+
+#### `salvage-provenance.csv`
+
+One row per salvaged tree: the source PR and branch, the commit that introduced it (author, subject
+and date), where the tree now sits and whether it was `filled`, `appended` or already `present`, what it was matched
+on, any expectation exactly as the source wrote it, and the source file's `curatorComments` (which
+say, for instance, that a Newick came from TreeBASE or from an author). It is written once and
+committed, unlike the regenerated `extraction-report.csv`.
+
+The introducing commit is the oldest in the source file's history, followed across renames, whose
+copy holds the tree; a move such as "Renamed from `REGNUM_` to `CLADO_`" never counts, but a commit
+that corrected the tree ("Fixed a typo in the phylogeny.") does: the tree in the store is the
+corrected one.
+
+This answers a different question from [`attribution.json`](../README.md#curator-attribution): how
+each salvaged tree was written into `phyx/`, keyed by `CLADO_NNNNNNN`, tracing only within its
+source branch. Its `commit_author` is the *committer*, not the curator who transcribed the tree.
+Where the two disagree, **`attribution.json` is the authoritative record of who transcribed a
+tree**.
+
+#### Still outside the store
+
+Two kinds of tree are not on those branches' tips and were not salvaged
+([#129](https://github.com/phyloref/clade-ontology/issues/129) has the full list):
+
+- 17 archived `.json.txt` files in `phyx/phylonym/newick-problems/` and `newick-recursion-error/`,
+  set aside because of their Newicks. 14 of those phyloreferences have no live `CLADO_` file at
+  all.
+- Picidae (`CLADO_0000285`) and Pan-Testudines (`CLADO_0000272`), deleted in 2020 along with
+  their trees for the same reason ("removed two files with failing Newick strings") and
+  recoverable only from history.

@@ -1,32 +1,27 @@
 /*
  * scripts/phylogenies/migration/salvage-trees.js
  *
- * Recovers curated reference phylogenies from branches that were never merged, by writing their
- * Newick strings into the phylogeny citation slots in phyx/phylonym/ that have been waiting for
- * them.
+ * Recovers curated reference phylogenies from branches that were never merged, by writing them
+ * into the phyx/phylonym/ file of the phyloreference they were transcribed for.
  *
  * Every phyloref in phyx/phylonym/ already declares its reference phylogenies as citation slots
- * (one `primaryPhylogenyCitation` plus any number of `phylogenyCitation` entries) and only 160 of
- * the 682 slots carry a Newick. The trees on these branches fill some of the empty ones: each was
- * transcribed against a publication the target slot already cites, so salvage is filling in a
- * field, not transcribing a tree.
+ * (one `primaryPhylogenyCitation` plus any number of `phylogenyCitation` entries), and most slots
+ * carry no Newick. Each tree on these branches was transcribed against a publication one of those
+ * slots already cites, so salvage is mechanical, and we hold it to that:
  *
- * That makes the operation mechanical, and we hold it to that:
- *
- *   - The tree is only written if the source citation and the target slot agree on their DOI
- *     (see citationDOI, which rejects the malformed DOIs Phylonym contains), or, for sources with
- *     no usable DOI, on author surname + year + title. Exactly one slot must match.
- *   - The target slot must be empty. We never overwrite a curated tree; a tree that would is a
- *     contested candidate, not a salvage.
+ *   - The tree is only written if its source citation matches exactly one slot: on DOI, else on
+ *     author surname + year + title, else on title, else on author + year (see lib/salvage.js;
+ *     citationDOI rejects the malformed DOIs Phylonym contains). What matched is recorded.
+ *   - An empty slot is filled. A slot that already holds a different tree is left alone, and the
+ *     tree is appended as a further phylogeny repeating the slot's citation: two transcriptions
+ *     of one publication, side by side. We never overwrite a curated tree, and never judge which
+ *     transcription is the better one.
  *   - Re-running is a no-op once a tree is in place, so this can be run again to regenerate the
  *     provenance ledger.
  *
  * Source files live on git-crypt encrypted branches. `git cat-file --textconv` applies git-crypt's
  * diff filter, so an unlocked repository can read them without checking the branches out (a linked
  * worktree looks for keys under .git/worktrees/<name>/git-crypt and fails).
- *
- * Contested candidates -- rival transcriptions of the same figure, challengers to trees we already
- * have -- are deliberately out of scope. See the issue on the long-term store model.
  *
  * Usage:
  *   node scripts/phylogenies/migration/salvage-trees.js [--dry-run] [--ledger <csv>]
@@ -42,10 +37,15 @@ const {
   citationDOI,
   rawCitationDOI,
   normalizeNewick,
-  CITATION_KEYS,
   PHYLOGENIES_DIR,
 } = require('../../../lib/phylogenies');
-const { escapeCSV } = require('../../../lib/csv');
+const {
+  readSourceTree,
+  matchSlot,
+  translateNodeProperties,
+  placeTree,
+} = require('../../../lib/salvage');
+const { escapeCSV, parseCSVRow } = require('../../../lib/csv');
 
 const argv = yargs(process.argv.slice(2))
   .usage('Usage: $0 [--dry-run] [--ledger <csv>]')
@@ -65,18 +65,22 @@ const argv = yargs(process.argv.slice(2))
   .help('h').alias('h', 'help').argv;
 
 /*
- * The trees to salvage, and where each comes from.
+ * The trees to salvage, and where each comes from: every Newick at the tip of either branch.
  *
- * Only the uncontested ones: a single candidate tree, for a phyloref that has no tree of its own
- * yet. Asteridae and Campanulaceae each have a second candidate on `summer_curation`, transcribed
- * from the same publication as the tree listed below. It matches no slot only because the slot
- * carries no DOI and the 2018 file no author or year, so it is a rival transcription to decide
- * on, not salvage.
+ * Each is read from an archive/* tag at the tip the salvage was run against, not from the branch,
+ * so the salvage stays reproducible after #45's branch is deleted or #79's moves on. `branch` is
+ * the key below, which is what the ledger records. See "Archived source branches" in
+ * phylogenies/migration/README.md.
+ *
+ * Order matters where two trees want the same slot. The 2020 branch goes first because the trees
+ * already on master descend from that curation pass, so its tree takes an empty slot and the 2018
+ * tree for the same publication is appended after it -- the same arrangement the 2018 trees get
+ * wherever master already holds a tree.
  */
 const SOURCES = {
   'add-support-for-testing-against-open-tree': {
     pr: 79,
-    rev: 'origin/add-support-for-testing-against-open-tree',
+    rev: 'archive/add-support-for-testing-against-open-tree',
     // Same CLADO_NNNNNNN.json names as the target, under the since-emptied encrypted directory.
     file: (clado) => `phyx/encrypted/phylonym/${clado}.json`,
     clados: [
@@ -84,31 +88,59 @@ const SOURCES = {
       'CLADO_0000018', // Asteridae
       'CLADO_0000020', // Campanulaceae
       'CLADO_0000021', // Campanuloideae
+      'CLADO_0000023', // Caniformia
       'CLADO_0000024', // Caryophyllales
+      'CLADO_0000027', // Chlorophyta
       'CLADO_0000031', // Coniferae
       'CLADO_0000032', // Convolvulaceae
       'CLADO_0000044', // Feliformia
       'CLADO_0000165', // Cnidaria
       'CLADO_0000247', // Apiidae
+      'CLADO_0000279', // Galloanserae -- master already holds a different tree for this citation
       'CLADO_0000280', // Cuculidae
       'CLADO_0000297', // Foraminifera
     ],
   },
   summer_curation: {
     pr: 45,
-    rev: 'origin/summer_curation',
+    rev: 'archive/summer_curation',
     // 2018 curation-tool format: per-clade filenames, and the citation sits at the top level of
     // the file rather than on the phylogeny.
     file: (clado) => `phyx/encrypted/phylonym/${{
       CLADO_0000008: 'phyloref.amorphea.Minge2009.2.json',
       CLADO_0000009: 'phyloref.amphibia.Vallin2004.json',
       CLADO_0000011: 'phyloref.angiospermae.Doyle2018.json',
+      CLADO_0000014: 'phloref.Apo-Spermatophyta.Hilton_Bateman_2006.json',
+      CLADO_0000015: 'phyloref.Apo-Tracheophyte.Crane.2004.json',
+      CLADO_0000016: 'phyloref.Archaeplastida.Burki.2008.json',
+      CLADO_0000018: 'phyloref.Asteridae.Soltis2011.json',
+      CLADO_0000019: 'phloref.Basidomycota.James_2006.json',
+      CLADO_0000020: 'phyloref.Campanulaceae.Tank2010.json',
+      CLADO_0000022: 'phyloref.Bignoniaceae.Olmstead.2009.json',
+      CLADO_0000023: 'phyloref.caniformia.Flynn2005.json',
+      CLADO_0000027: 'phyloref.Chlorophyta.Cocquyt.2009.json',
+      CLADO_0000035: 'phyloref.Dikarya.Bauer.2015.json',
+      CLADO_0000036: 'phyloref.Discicristata.Hampl.2009.json',
     }[clado]}`,
     clados: [
       'CLADO_0000008', // Amorphea
       'CLADO_0000009', // Amphibia
       'CLADO_0000011', // Angiospermae -- filename says 2018, the citation is Doyle 2008
+      'CLADO_0000014', // Apo-Spermatophyta
+      'CLADO_0000015', // Apo-Tracheophyta
+      'CLADO_0000016', // Archaeplastida
+      'CLADO_0000018', // Asteridae
+      'CLADO_0000019', // Basidiomycota
+      'CLADO_0000020', // Campanulaceae
+      'CLADO_0000022', // Bignoniaceae
+      'CLADO_0000023', // Caniformia
+      'CLADO_0000027', // Chlorophyta
+      'CLADO_0000035', // Dikarya
+      'CLADO_0000036', // Discicristata
     ],
+    // The Chlorophyta file marks its expected node as "Chlorphyta"; the node in its Newick is
+    // labelled "Chlorophyta", so as written the annotation points at nothing.
+    nodeLabelFixes: { CLADO_0000027: { Chlorphyta: 'Chlorophyta' } },
   },
 };
 
@@ -127,157 +159,6 @@ function readFromRev(rev, file, attributesPath = file) {
   ).toString();
 }
 
-/** First author surname + year + lowercased title, for sources with no usable DOI. */
-function citationFingerprint(citation) {
-  if (!citation) return undefined;
-  const first = (citation.authors || [])[0];
-  const who = (first?.lastname || first?.name || '').trim().toLowerCase();
-  const title = String(citation.title || '').trim().toLowerCase().replace(/[.\s]+$/, '');
-  if (!who || !citation.year || !title) return undefined;
-  return `${who}|${citation.year}|${title}`;
-}
-
-/**
- * Describe the tree to salvage out of a source file: its Newick, the citation it was transcribed
- * against, and any figure note. Handles both source formats -- the 2020 files carry the citation
- * on the phylogeny, the 2018 files at the top level of the document.
- */
-function readSourceTree(json) {
-  const bearing = (json.phylogenies || []).filter((p) => (p.newick || '').trim());
-  if (bearing.length !== 1) {
-    throw new Error(`expected exactly one Newick-bearing phylogeny, found ${bearing.length}`);
-  }
-  const [phylogeny] = bearing;
-  const onPhylogeny = CITATION_KEYS.map((k) => phylogeny[k]).find(Boolean);
-  // The 2018 format records doi/title/citation as top-level strings; synthesize the little we
-  // need from them so both formats compare the same way.
-  const topLevel = json.doi || json.title
-    ? {
-      title: json.title,
-      identifier: json.doi ? [{ type: 'doi', id: json.doi }] : [],
-    }
-    : undefined;
-  return {
-    newick: phylogeny.newick,
-    citation: onPhylogeny || topLevel,
-    figure: phylogeny.description,
-  };
-}
-
-/**
- * Find the single citation slot in `target` that the source citation belongs to. Returns
- * { index, key, phylogeny, how } or throws explaining why the match was not unique.
- *
- * A slot is one phylogeny, and it matches if *any* of its citation keys does: a phylogeny may
- * carry both a primaryPhylogenyCitation and a phylogenyCitation (CLADO_0000030 does), and a tree
- * transcribed against the second must still find its slot. `key` names the citation that matched.
- */
-function matchSlot(target, sourceCitation) {
-  const slots = (target.phylogenies || []).map((phylogeny, index) => ({
-    index,
-    phylogeny,
-    citations: CITATION_KEYS.filter((k) => phylogeny[k]).map((key) => ({ key, citation: phylogeny[key] })),
-  }));
-
-  const sourceDOI = citationDOI(sourceCitation);
-  let identify; // citation -> the identity compared
-  let wanted;
-  if (sourceDOI) {
-    identify = citationDOI;
-    wanted = sourceDOI;
-  } else {
-    // Cuculidae's citation is a book with no DOI at all, so fall back to the bibliographic
-    // fingerprint rather than refusing to salvage it.
-    const fingerprint = citationFingerprint(sourceCitation);
-    if (!fingerprint) {
-      const raw = rawCitationDOI(sourceCitation) || 'none';
-      throw new Error(`no usable DOI (raw: ${raw}) and no author+year+title to fall back on`);
-    }
-    identify = citationFingerprint;
-    wanted = fingerprint;
-  }
-  const how = `${sourceDOI ? 'doi' : 'fingerprint'}:${wanted}`;
-  const matches = slots
-    .map((slot) => ({ ...slot, key: slot.citations.find((c) => identify(c.citation) === wanted)?.key }))
-    .filter((slot) => slot.key);
-
-  if (matches.length !== 1) {
-    throw new Error(
-      `${matches.length} of ${slots.length} citation slots match ${how}, expected exactly 1`,
-    );
-  }
-  return { ...matches[0], how };
-}
-
-// ---------------------------------------------------------------------------
-// Salvage each tree, or explain why it was skipped.
-// ---------------------------------------------------------------------------
-
-const ledgerHeader = [
-  'clado_id', 'label', 'source_pr', 'source_branch', 'source_commit', 'commit_author',
-  'commit_subject', 'commit_date', 'source_path', 'target_slot', 'matched_on', 'citation_doi',
-  'figure', 'tip_count', 'newick_chars',
-].join(',');
-const ledgerRows = [];
-const notes = []; // Candidates already in place: expected on every re-run.
-const failures = []; // Candidates that failed a check: the list and the data have diverged.
-const pendingWrites = new Map(); // targetPath -> serialized Phyx, written only if nothing failed
-let written = 0;
-
-for (const [branch, source] of Object.entries(SOURCES)) {
-  for (const clado of source.clados) {
-    const sourcePath = source.file(clado);
-    const targetPath = path.join(argv.sourceDir, `${clado}.json`);
-    try {
-      const target = JSON.parse(fs.readFileSync(targetPath, 'utf8'));
-      const tree = readSourceTree(JSON.parse(readFromRev(source.rev, sourcePath)));
-      const slot = matchSlot(target, tree.citation);
-
-      const existing = (slot.phylogeny.newick || '').trim();
-      if (existing) {
-        if (normalizeNewick(existing) === normalizeNewick(tree.newick)) {
-          notes.push(`${clado}: already salvaged`);
-        } else {
-          failures.push(`${clado}: slot ${slot.index} already holds a different tree -- contested`);
-          continue;
-        }
-      } else {
-        slot.phylogeny.newick = tree.newick;
-        // Figure-level notes ("Vallin and Laurin 2004 Fig. 6") say which figure was transcribed,
-        // which the target slots do not record. Keep it where the source had one and we do not.
-        if (tree.figure && !slot.phylogeny.description) {
-          slot.phylogeny.description = tree.figure;
-        }
-        // Every file in phyx/phylonym/ round-trips exactly through 4-space JSON.stringify with no
-        // trailing newline, so re-serializing keeps the diff to the lines we actually changed.
-        pendingWrites.set(targetPath, JSON.stringify(target, null, 4));
-        written += 1;
-      }
-
-      const [commit = '', author = '', date = '', subject = ''] = provenance(source.rev, sourcePath, tree.newick);
-      ledgerRows.push([
-        clado,
-        escapeCSV(target.phylorefs?.[0]?.label || ''),
-        source.pr,
-        branch,
-        commit,
-        escapeCSV(author),
-        escapeCSV(subject),
-        date,
-        escapeCSV(sourcePath),
-        `${slot.index}:${slot.key}`,
-        escapeCSV(slot.how),
-        escapeCSV(citationDOI(tree.citation) || rawCitationDOI(tree.citation) || ''),
-        escapeCSV(tree.figure || ''),
-        countTips(tree.newick),
-        normalizeNewick(tree.newick).length,
-      ].join(','));
-    } catch (e) {
-      failures.push(`${clado}: ${e.message}`);
-    }
-  }
-}
-
 /** Rough tip count: labels that follow an opening paren or comma in the Newick string. */
 function countTips(newick) {
   return (normalizeNewick(newick).match(/[(,]\s*[^(),:;]+/g) || []).length;
@@ -294,6 +175,10 @@ function countTips(newick) {
  * and all; and a slice cut from the normalized Newick never matched a file that stored the tree
  * across several lines. --follow carries the history across those moves, and each old copy is
  * decrypted with the current path's attributes, since 2018's private/ has no git-crypt rule now.
+ *
+ * -m because --follow leaves merges out of the log altogether otherwise, so a tree first written
+ * while resolving a merge would be credited to the next commit that held it. With -m a merge is
+ * listed once per parent, each time with its path; reading it twice is harmless.
  */
 function provenance(rev, file, newick) {
   // The subject carries the attribution the author field does not: every commit here is authored
@@ -302,7 +187,7 @@ function provenance(rev, file, newick) {
   const format = '%x00%H%x09%an%x09%aI%x09%s';
   const log = ChildProcess.execFileSync(
     'git',
-    ['log', '--follow', '--name-only', `--format=${format}`, rev, '--', file],
+    ['log', '--follow', '-m', '--name-only', `--format=${format}`, rev, '--', file],
     { maxBuffer: 64 * 1024 * 1024 },
   ).toString();
   const wanted = normalizeNewick(newick);
@@ -323,28 +208,139 @@ function provenance(rev, file, newick) {
   return [];
 }
 
+/** Fold a multi-line note onto one line: the ledger is read back a line at a time. */
+const oneLine = (text) => String(text || '').split(/\s*\n\s*/).filter(Boolean).join(' / ');
+
+// ---------------------------------------------------------------------------
+// Salvage each tree, or explain why it was skipped.
+// ---------------------------------------------------------------------------
+
+const ledgerHeader = [
+  'clado_id', 'label', 'source_pr', 'source_branch', 'source_commit', 'commit_author',
+  'commit_subject', 'commit_date', 'source_path', 'target_slot', 'action', 'matched_on',
+  'citation_doi', 'figure', 'tip_count', 'newick_chars', 'expected_at_node',
+  'expectation_as_written', 'curator_comments',
+].join(',');
+const ledgerRows = [];
+const skipped = [];
+const tally = { filled: 0, appended: 0, present: 0 };
+let written = 0;
+
+/*
+ * What the previous run recorded for each tree, as `${clado}\t${branch}` -> { action, index }.
+ * A tree already in place cannot say whether this script put it there or it was on master all
+ * along (see placeTree), so the ledger is the record of which: a tree still where the ledger
+ * says the salvage put it keeps its action, and anything else found in place is 'present'.
+ */
+const previousRuns = new Map();
+if (fs.existsSync(argv.ledger)) {
+  const [header, ...rows] = fs.readFileSync(argv.ledger, 'utf8').split('\n').filter(Boolean);
+  const column = Object.fromEntries(parseCSVRow(header).map((name, i) => [name, i]));
+  // An older ledger (the first salvage run's had no `action`) would otherwise read as blank
+  // actions and be rewritten with them.
+  const missing = ['clado_id', 'source_branch', 'target_slot', 'action'].filter((name) => !(name in column));
+  if (missing.length) {
+    const why = 'cannot tell which trees in place this script put there. Nothing written.';
+    process.stderr.write(`Error: ${argv.ledger} has no ${missing.join(', ')} column; ${why}\n`);
+    process.exit(1);
+  }
+  for (const row of rows.map(parseCSVRow)) {
+    previousRuns.set(`${row[column.clado_id]}\t${row[column.source_branch]}`, {
+      action: row[column.action],
+      index: Number.parseInt(row[column.target_slot], 10),
+    });
+  }
+}
+
+// Two candidates can target one file, and the second must see what the first did to it, in a dry
+// run too. So each target is parsed once and written back at the end.
+const targets = new Map(); // path -> { json, changed }
+function loadTarget(targetPath) {
+  if (!targets.has(targetPath)) {
+    targets.set(targetPath, { json: JSON.parse(fs.readFileSync(targetPath, 'utf8')), changed: false });
+  }
+  return targets.get(targetPath);
+}
+
+for (const [branch, source] of Object.entries(SOURCES)) {
+  for (const clado of source.clados) {
+    const sourcePath = source.file(clado);
+    const targetPath = path.join(argv.sourceDir, `${clado}.json`);
+    try {
+      const loaded = loadTarget(targetPath);
+      const target = loaded.json;
+      const tree = readSourceTree(JSON.parse(readFromRev(source.rev, sourcePath)));
+      const slot = matchSlot(target, tree);
+      const { properties, notes } = translateNodeProperties(
+        tree,
+        target.phylorefs?.[0]?.label,
+        source.nodeLabelFixes?.[clado],
+      );
+
+      const placed = placeTree(target, tree, slot, properties, previousRuns.get(`${clado}\t${branch}`));
+      tally[placed.action] += 1;
+      if (placed.written) {
+        written += 1;
+        loaded.changed = true;
+      }
+
+      const [commit = '', author = '', date = '', subject = ''] = provenance(source.rev, sourcePath, tree.newick);
+      ledgerRows.push([
+        clado,
+        escapeCSV(target.phylorefs?.[0]?.label || ''),
+        source.pr,
+        branch,
+        commit,
+        escapeCSV(author),
+        escapeCSV(subject),
+        date,
+        escapeCSV(sourcePath),
+        `${placed.index}:${slot.key}`,
+        placed.action,
+        escapeCSV(slot.how),
+        escapeCSV(citationDOI(tree.citation) || rawCitationDOI(tree.citation) || ''),
+        escapeCSV(tree.figure || ''),
+        countTips(tree.newick),
+        normalizeNewick(tree.newick).length,
+        escapeCSV(notes.map((n) => n.node).join(' ')),
+        // What the source file said, where we changed it: the node label it keyed the expectation
+        // on, and its own name for the phyloreference.
+        escapeCSV(notes.map((n) => `${n.writtenNode} => ${JSON.stringify(n.writtenPhyloref)}`).join('; ')),
+        escapeCSV(oneLine(tree.curatorComments)),
+      ].join(','));
+    } catch (e) {
+      skipped.push(`${clado} (#${source.pr}): ${e.message}`);
+    }
+  }
+}
+
 /*
  * A candidate that fails its checks means the candidate list and the data have diverged. Then
  * nothing is written: the ledger has one row per tree in place, so rewriting it from this run
  * would silently drop the failed tree's provenance, and a dry run writes nothing at all.
  */
-const writing = !argv.dryRun && !failures.length;
+const writing = !argv.dryRun && !skipped.length;
 if (writing) {
-  for (const [targetPath, contents] of pendingWrites) fs.writeFileSync(targetPath, contents);
+  for (const [targetPath, { json, changed }] of targets) {
+    // Every file in phyx/phylonym/ round-trips exactly through 4-space JSON.stringify with no
+    // trailing newline, so re-serializing keeps the diff to the lines we actually changed.
+    if (changed) fs.writeFileSync(targetPath, JSON.stringify(json, null, 4));
+  }
   fs.mkdirSync(path.dirname(argv.ledger), { recursive: true });
   ledgerRows.sort();
   fs.writeFileSync(argv.ledger, `${[ledgerHeader, ...ledgerRows].join('\n')}\n`);
 }
 
 const summary = [
-  `${writing ? 'Salvaged' : 'Would salvage'} ${written} tree(s) into ${argv.sourceDir}/.`,
-  `${writing ? 'Wrote' : 'Would write'} provenance for ${ledgerRows.length} tree(s) to ${argv.ledger}.`,
-  ...(notes.length ? [`Unchanged ${notes.length}:`, ...notes.map((n) => `  - ${n}`)] : []),
-  ...(failures.length ? [`Failed ${failures.length}:`, ...failures.map((n) => `  - ${n}`)] : []),
+  `${writing ? 'Wrote' : 'Would write'} ${written} tree(s) into ${argv.sourceDir}/.`,
+  `${ledgerRows.length} tree(s) in place: ${tally.filled} filling a citation slot, `
+    + `${tally.appended} appended beside one, ${tally.present} already there before the salvage.`,
+  `${writing ? 'Wrote' : 'Would write'} provenance to ${argv.ledger}.`,
+  ...(skipped.length ? [`Skipped ${skipped.length}:`, ...skipped.map((s) => `  - ${s}`)] : []),
 ];
 process.stderr.write(`${summary.join('\n')}\n`);
 
-if (failures.length) {
-  process.stderr.write(`Nothing written: ${failures.length} candidate(s) failed their checks.\n`);
+if (skipped.length) {
+  process.stderr.write(`Nothing written: ${skipped.length} candidate(s) failed their checks.\n`);
   process.exit(1);
 }

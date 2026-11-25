@@ -228,8 +228,8 @@ for (const entry of store) {
   }
   const fingerprint = newickFingerprint(previous.newick);
   // A store file whose tree differs from the one the ledger records for its id has been edited
-  // by hand. Trusting either side would tie this id to two trees: if the ledger's tree is still
-  // in the source too, both would be written to the same file and one silently lost.
+  // by hand. Trusting either side would give this id two different Newicks: if the ledger's tree
+  // is still in the source too, both would be written to the same file and one silently lost.
   const recorded = ledger.ids[phyloId]?.newickSHA256;
   if (recorded && recorded !== fingerprint) {
     die(
