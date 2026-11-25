@@ -145,6 +145,22 @@ describe('lib/salvage', () => {
       assert.throws(() => matchSlot(target, tree), /none of 1 citation slots match/);
     });
 
+    it('matches a year only standing on its own', () => {
+      // "2010" as one end of a page range, or inside a DOI, is not the year 2010.
+      const target = targetWith([{ authors: [{ lastname: 'Smith' }], year: 2010, title: 'Other.' }]);
+      for (const citationText of [
+        'Smith J. Bot. J. pp. 2010-2025 (1998).',
+        'Smith J. Bot. J. 1998, pp. 1990–2010.',
+        'Smith J. 1998. doi:10.1600/2010.x',
+        'Smith J. 1998. Vol. 20101.',
+      ]) {
+        const tree = tree2018({ citation: { title: 'Unrelated' }, citationText });
+        assert.throws(() => matchSlot(target, tree), /none of 1 citation slots match/, citationText);
+      }
+      const tree = tree2018({ citation: { title: 'Unrelated' }, citationText: 'Smith J. Bot. J. (2010): 1-20.' });
+      assert.strictEqual(matchSlot(target, tree).how, 'author+year:smith 2010');
+    });
+
     it('refuses when two different slots match', () => {
       const target = targetWith([SOLTIS], [{ ...SOLTIS, year: 2012 }]);
       assert.throws(() => matchSlot(target, tree2018()), /2 of 2 citation slots match on title/);
