@@ -4,7 +4,7 @@ Each test file's header comment says what it covers.
 
 ## Slow tests (`RUN_SLOW_TESTS=1`)
 
-They run JPhyloRef on each Phyx file to check that every phyloreference resolves to its expected node. Optional environment variables: `JVM_ARGS`, `JPHYLOREF_ARGS`, `MAX_INTERNAL_SPECIFIERS`, `MAX_EXTERNAL_SPECIFIERS`.
+They run JPhyloRef on each Phyx file to check that every phyloreference resolves to its expected node. Optional environment variables: `JVM_ARGS`, `JPHYLOREF_ARGS`. `MAX_INTERNAL_SPECIFIERS` and `MAX_EXTERNAL_SPECIFIERS` are not slow-test-only: they also skip files in the default run and drop phyloreferences from `CLADO.json` (see the root `AGENTS.md`).
 
 **As of 2026-09-30 they cannot confirm anything** (#132). No phyloreference tried resolves to any node:
 
