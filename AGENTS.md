@@ -1,89 +1,40 @@
 # AGENTS.md
 
-This file provides guidance to AI coding agents (Claude Code, Codex, etc.) when working with code in this repository.
+Guidance for AI coding agents working in this repository. This file holds what applies everywhere; rules for one part of the repository live in an `AGENTS.md` in that directory (`phyx/`, `test/`), which Claude Code loads once it reads a file there. Keep it that way: add a rule here only if it bites before an agent has opened any file in the directory it concerns. There is deliberately no `CLAUDE.md`: Claude Code reads `AGENTS.md` itself, but by default only when no `CLAUDE.md` exists at or above the working directory, so adding one (even a symlink) hides every nested `AGENTS.md`.
 
 ## Overview
 
-The Clade Ontology is an ontology of exemplar phyloreferences curated from PhyloRegnum (https://www.phyloregnum.org/) and peer-reviewed publications. It stores phyloreferences (computable clade definitions) in the Phyx format (https://github.com/phyloref/phyx.js/, https://www.phyloref.org/phyx.js/, https://doi.org/10.7717/peerj.12618 -- JSON Schema and JSON-LD contexts available at https://www.phyloref.org/phyx.js/context/) that are converted to n-triples and OWL/JSON-LD for reasoning with an OWL reasoner. We use JPhyloRef (https://github.com/phyloref/jphyloref) to wrap [Elk](https://liveontologies.github.io/elk-reasoner/).
+The Clade Ontology is an ontology of exemplar phyloreferences curated from PhyloRegnum (https://www.phyloregnum.org/) and peer-reviewed publications. It stores phyloreferences (computable clade definitions) as Phyx files (JSON-LD; see https://www.phyloref.org/phyx.js/ and https://doi.org/10.7717/peerj.12618), which `@phyloref/phyx` converts to OWL for reasoning. We use JPhyloRef (https://github.com/phyloref/jphyloref) to wrap [Elk](https://liveontologies.github.io/elk-reasoner/).
 
 ## Commands
 
 ```bash
-npm test           # Lint + run all Mocha tests (requires Node.js)
-npm run lint       # Biome lint on test/, phyx2ontology/, and regnum2phyx/
-npm run mocha      # Run tests without linting
-npm run build-ontology  # Convert all phyx/ files into CLADO.json
+npm test                 # Lint + run all Mocha tests
+npm run lint             # Biome lint
+npm run mocha            # Tests without linting
+npm run build-ontology   # Convert all phyx/ files into CLADO.json
+npx mocha test/test_phyx.js           # A single test file
+RUN_SLOW_TESTS=1 npm test             # Also check resolution with JPhyloRef (Java); see test/AGENTS.md
+cd test && bash download.sh           # Fetch the JPhyloRef JAR and Phyx JSON schema
+node phyx2ontology/phyx2ontology.js phyx/ [--no-phylogenies] > CLADO.json
+node regnum2phyx/regnum2phyx.js dump.json -o output_dir/ [--filenames regnum-id]
 ```
 
-**Run a single test file:**
-```bash
-npx mocha test/test_phyx.js
-npx mocha test/regnum2phyx/exec.js
-```
-
-**Enable slow tests (requires Java + JPhyloRef):**
-```bash
-RUN_SLOW_TESTS=1 npm test
-# Optional env vars: JVM_ARGS, JPHYLOREF_ARGS, MAX_INTERNAL_SPECIFIERS, MAX_EXTERNAL_SPECIFIERS
-```
-
-**Download test dependencies (JPhyloRef JAR and Phyx JSON schema):**
-```bash
-cd test && bash download.sh
-```
-
-**Build the Clade Ontology:**
-```bash
-node phyx2ontology/phyx2ontology.js phyx/ > CLADO.json
-node phyx2ontology/phyx2ontology.js phyx/ --no-phylogenies > CLADO.json
-```
-
-**Convert a PhyloRegnum database dump to Phyx files:**
-```bash
-node regnum2phyx/regnum2phyx.js dump.json -o output_dir/
-node regnum2phyx/regnum2phyx.js dump.json -o output_dir/ --filenames regnum-id
-```
-
-## Architecture
-
-### Data Pipeline
+## Data pipeline
 
 ```
-PhyloRegnum DB dump (JSON)
-    → regnum2phyx.js → Phyx files (.json in phyx/)
-    → phyx2ontology.js → CLADO.json (OWL/JSON-LD)
+PhyloRegnum DB dump (JSON, in the git-ignored data/)
+    → regnum2phyx/regnum2phyx.js → Phyx files (phyx/)
+    → phyx2ontology/phyx2ontology.js → CLADO.json (OWL/JSON-LD)
     → JPhyloRef (Java) → reasoning/test results
 ```
 
-### Key Directories
+`phyx/` holds the curated Phyx files: `from_papers/` (from peer-reviewed papers), `phylonym/` (from PhyloRegnum) and `encrypted/` (git-crypt).
 
-- **`data/`** — Git-ignored directory for raw PhyloRegnum database dumps (JSON files) used as input to `regnum2phyx.js`. Not committed.
-- **`phyx/`** — Curated Phyx files organized by source:
-  - `from_papers/` — Phyloreferences from peer-reviewed papers (e.g., `Brochu 2003/`)
-  - `phylonym/` — Files from the Phylonym database, PhyloRegnum (https://www.phyloregnum.org/)
-  - `encrypted/` — Git-crypt encrypted files (skipped during processing)
-- **`phyx2ontology/phyx2ontology.js`** — Converts Phyx files to a single Clade Ontology JSON-LD. Reads Phyx files, wraps them via `@phyloref/phyx`, and emits JSON-LD to STDOUT.
-- **`regnum2phyx/regnum2phyx.js`** — Converts PhyloRegnum database dumps (JSON arrays) into individual Phyx files. Handles specifiers, citations (BibJSON format), and author formatting.
-- **`test/`** — Mocha test suite:
-  - `test_phyx.js` — Validates all Phyx files in `phyx/` (JSON schema + JSON-LD conversion). Skips git-crypt encrypted files.
-  - `test_phyx2ontology.js` — Smoke-tests `phyx2ontology.js` execution on all Phyx files.
-  - `regnum2phyx/exec.js` — Tests `regnum2phyx.js` against example dumps in `test/regnum2phyx/examples/` and compares output against `test/regnum2phyx/expected/`.
+## Gotchas
 
-### Phyx Format
-
-Phyx files are JSON with:
-- `@context`: points to `http://www.phyloref.org/phyx.js/context/v1.1.0/phyx.json`
-- `phylorefs`: array of phyloreference objects with `internalSpecifiers`, `externalSpecifiers`, `definition`, etc.
-- `phylogenies`: array of phylogeny objects with Newick strings
-
-### Key Library
-
-`@phyloref/phyx` (npm) provides `PhylorefWrapper`, `PhylogenyWrapper`, and `PhyxWrapper` classes that convert Phyx objects to JSON-LD/OWL class restrictions.
-
-### Linting
-
-Linting uses [Biome](https://biomejs.dev/). ES6 syntax.
-
-### Git-Crypt
-
-Some Phyx files in `phyx/encrypted/` are git-crypt encrypted. Both `phyx2ontology.js` and `test_phyx.js` detect these by checking for the `\x00GITCRYPT` magic bytes and skip them gracefully.
+- **Every `*.json` under `phyx/` is treated as a Phyx file.** `test_phyx.js` and `phyx2ontology.js` walk the tree and feed each one to phyx.js, so don't put other JSON there. Archived or broken copies use a `.json.txt` extension to stay out of the walk.
+- **Run `npm ci` before trusting the lint.** `npm run lint` uses `biome` from `node_modules/.bin`. `npx biome` instead downloads an unrelated npm package (a template engine), lints nothing and exits 0: a silent, instant pass means the wrong binary, not clean code.
+- **In standalone scripts, import phyx.js wrappers directly**, e.g. `require('@phyloref/phyx/src/wrappers/TaxonConceptWrapper')`, as `regnum2phyx.js` does. The package index pulls in `PhyxWrapper → jsonld`, which breaks under newer Node. Mocha tests can use the index.
+- **Nothing checks resolution by default, and the slow tests currently can't.** Only `RUN_SLOW_TESTS` asks JPhyloRef whether a phyloreference resolves to its expected node, and at present no phyloreference resolves to any node (#132). A slow-test failure says nothing about the file under test; see `test/AGENTS.md`.
+- **Git-crypt:** files in `phyx/encrypted/` are encrypted; `phyx2ontology.js` and `test_phyx.js` skip them by their `\x00GITCRYPT` magic bytes. In an unlocked repository, `git cat-file --textconv <rev>:<path>` decrypts a blob from any revision without a checkout. A linked worktree cannot decrypt (git-crypt looks for its keys under `.git/worktrees/<name>/`), so work in the main checkout.
