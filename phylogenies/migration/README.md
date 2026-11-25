@@ -179,6 +179,13 @@ node scripts/phylogenies/migration/salvage-trees.js [--dry-run]
 - **Re-running is a no-op.** A candidate that fails its checks fails the run, and then nothing
   is written, the ledger included, so a regeneration cannot quietly drop a tree's provenance;
   `--dry-run` writes nothing either.
+- **The ledger says which trees in place the salvage put there.** A tree already in its slot, or
+  beside it, cannot say so itself: `master` holds pairs of transcriptions with identical
+  citations, and a source tree can equal one of them. So each run reads the existing ledger, and
+  a tree still where the ledger says the salvage put it keeps its `filled` or `appended`; any
+  other tree found in place is recorded as `present`, there before the salvage. Delete the ledger
+  and every tree reads as `present`. A ledger with no `action` column (the first run wrote one)
+  stops the run.
 
 The decisions are made in `lib/salvage.js` and tested in `test/phylogenies/salvage.js`; the script
 itself reads git-crypt branches and cannot run in CI.
@@ -209,7 +216,7 @@ under `RUN_SLOW_TESTS`.
 #### `salvage-provenance.csv`
 
 One row per salvaged tree: the source PR and branch, the commit that introduced it (author, subject
-and date), where the tree now sits and whether it was `filled` or `appended`, what it was matched
+and date), where the tree now sits and whether it was `filled`, `appended` or already `present`, what it was matched
 on, any expectation exactly as the source wrote it, and the source file's `curatorComments` (which
 say, for instance, that a Newick came from TreeBASE or from an author). It is written once and
 committed, unlike the regenerated `extraction-report.csv`.

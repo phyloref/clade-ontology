@@ -216,12 +216,36 @@ describe('lib/salvage', () => {
         const tree = tree2018();
         const first = placeTree(target, tree, matchSlot(target, tree));
         const before = cloneDeep(target);
-        // Whitespace differences must not read as a new tree.
+        // Whitespace differences must not read as a new tree. The second run is told, as the
+        // script tells it from the ledger, what the first did.
         const again = { ...tree, newick: ` ${tree.newick}\n` };
-        const second = placeTree(target, again, matchSlot(target, again));
+        const second = placeTree(target, again, matchSlot(target, again), {}, first);
         assert.deepEqual(second, { ...first, written: false });
         assert.deepEqual(target, before);
       }
+    });
+
+    it('reports a tree that was already on master as present, not as placed by the salvage', () => {
+      // Master already holds two transcriptions of one publication, and the source tree equals
+      // the second. Nothing on record says the salvage put it there.
+      const tree = tree2018();
+      const target = targetWith([SOLTIS, '(X,Y);']);
+      target.phylogenies.push({ primaryPhylogenyCitation: cloneDeep(SOLTIS), newick: tree.newick });
+      const before = cloneDeep(target);
+      assert.deepEqual(
+        placeTree(target, tree, matchSlot(target, tree)),
+        { action: 'present', index: 1, written: false },
+      );
+      // Nor does a ledger row recording a different place for it.
+      assert.strictEqual(
+        placeTree(target, tree, matchSlot(target, tree), {}, { action: 'appended', index: 2 }).action,
+        'present',
+      );
+      assert.deepEqual(target, before);
+
+      // And likewise for a tree already filling its slot.
+      const filled = targetWith([SOLTIS, tree.newick]);
+      assert.strictEqual(placeTree(filled, tree, matchSlot(filled, tree)).action, 'present');
     });
 
     it('lets two trees share one citation: the first fills the slot, the second is appended', () => {

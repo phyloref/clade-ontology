@@ -45,7 +45,7 @@ const {
   translateNodeProperties,
   placeTree,
 } = require('../../../lib/salvage');
-const { escapeCSV } = require('../../../lib/csv');
+const { escapeCSV, parseCSVRow } = require('../../../lib/csv');
 
 const argv = yargs(process.argv.slice(2))
   .usage('Usage: $0 [--dry-run] [--ledger <csv>]')
@@ -218,8 +218,34 @@ const ledgerHeader = [
 ].join(',');
 const ledgerRows = [];
 const skipped = [];
-const tally = { filled: 0, appended: 0 };
+const tally = { filled: 0, appended: 0, present: 0 };
 let written = 0;
+
+/*
+ * What the previous run recorded for each tree, as `${clado}\t${branch}` -> { action, index }.
+ * A tree already in place cannot say whether this script put it there or it was on master all
+ * along (see placeTree), so the ledger is the record of which: a tree still where the ledger
+ * says the salvage put it keeps its action, and anything else found in place is 'present'.
+ */
+const previousRuns = new Map();
+if (fs.existsSync(argv.ledger)) {
+  const [header, ...rows] = fs.readFileSync(argv.ledger, 'utf8').split('\n').filter(Boolean);
+  const column = Object.fromEntries(parseCSVRow(header).map((name, i) => [name, i]));
+  // An older ledger (the first salvage run's had no `action`) would otherwise read as blank
+  // actions and be rewritten with them.
+  const missing = ['clado_id', 'source_branch', 'target_slot', 'action'].filter((name) => !(name in column));
+  if (missing.length) {
+    const why = 'cannot tell which trees in place this script put there. Nothing written.';
+    process.stderr.write(`Error: ${argv.ledger} has no ${missing.join(', ')} column; ${why}\n`);
+    process.exit(1);
+  }
+  for (const row of rows.map(parseCSVRow)) {
+    previousRuns.set(`${row[column.clado_id]}\t${row[column.source_branch]}`, {
+      action: row[column.action],
+      index: Number.parseInt(row[column.target_slot], 10),
+    });
+  }
+}
 
 // Two candidates can target one file, and the second must see what the first did to it, in a dry
 // run too. So each target is parsed once and written back at the end.
@@ -246,7 +272,7 @@ for (const [branch, source] of Object.entries(SOURCES)) {
         source.nodeLabelFixes?.[clado],
       );
 
-      const placed = placeTree(target, tree, slot, properties);
+      const placed = placeTree(target, tree, slot, properties, previousRuns.get(`${clado}\t${branch}`));
       tally[placed.action] += 1;
       if (placed.written) {
         written += 1;
@@ -303,7 +329,7 @@ if (writing) {
 const summary = [
   `${writing ? 'Wrote' : 'Would write'} ${written} tree(s) into ${argv.sourceDir}/.`,
   `${ledgerRows.length} tree(s) in place: ${tally.filled} filling a citation slot, `
-    + `${tally.appended} appended beside one.`,
+    + `${tally.appended} appended beside one, ${tally.present} already there before the salvage.`,
   `${writing ? 'Wrote' : 'Would write'} provenance to ${argv.ledger}.`,
   ...(skipped.length ? [`Skipped ${skipped.length}:`, ...skipped.map((s) => `  - ${s}`)] : []),
 ];
