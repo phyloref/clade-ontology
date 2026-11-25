@@ -238,6 +238,39 @@ describe('lib/salvage', () => {
       assert.isFalse(placeTree(target, b, matchSlot(target, b)).written);
     });
 
+    it('merges node annotations into a slot that already has some', () => {
+      const target = targetWith([SOLTIS]);
+      target.phylogenies[0].additionalNodeProperties = { root: { comment: 'kept' } };
+      const tree = tree2018();
+      const placed = placeTree(target, tree, matchSlot(target, tree), { Inner: { a: 1 } });
+      assert.isTrue(placed.written);
+      assert.deepEqual(target.phylogenies[0].additionalNodeProperties, {
+        root: { comment: 'kept' },
+        Inner: { a: 1 },
+      });
+
+      // An empty object, too, is merged into rather than taken as a reason to skip.
+      const empty = targetWith([SOLTIS]);
+      empty.phylogenies[0].additionalNodeProperties = {};
+      placeTree(empty, tree, matchSlot(empty, tree), { Inner: { a: 1 } });
+      assert.deepEqual(empty.phylogenies[0].additionalNodeProperties, { Inner: { a: 1 } });
+    });
+
+    it('refuses, changing nothing, rather than drop or overwrite what the slot already says', () => {
+      const tree = tree2018({ figure: 'Fig. 1' });
+      const clashes = [
+        ['additionalNodeProperties', { Inner: { a: 2 } }, /different additionalNodeProperties for node "Inner"/],
+        ['description', 'Fig. 2', /already has a different description/],
+      ];
+      for (const [key, value, message] of clashes) {
+        const target = targetWith([SOLTIS]);
+        target.phylogenies[0][key] = value;
+        const before = cloneDeep(target);
+        assert.throws(() => placeTree(target, tree, matchSlot(target, tree), { Inner: { a: 1 } }), message);
+        assert.deepEqual(target, before, `a refused ${key} must leave the slot untouched`);
+      }
+    });
+
     it('refuses a tree that is already filed under a different citation', () => {
       const target = targetWith([SOLTIS], [OLMSTEAD, '((A,B)Inner,C)root;']);
       const tree = tree2018();
