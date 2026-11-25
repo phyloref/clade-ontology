@@ -101,11 +101,15 @@ const CURATORS = [
 ];
 
 /*
- * `curatorComments` text -> curator id, consulted only for a tree's first version and only when
- * the commit subject names nobody. The 2018 curation-tool files open theirs with "Phyx file by
- * R. Stubbs", and the commits that added several of them ("Added two PHYX files curated from the
- * Phylonym volume", "Fixed a typo in the phylogeny.") name no one. Not used for revisions: a file
- * keeps its original curator's comment through a maintainer's later edit.
+ * `curatorComments` text -> curator id, consulted only when the commit subject names nobody, and
+ * only for a tree's first version written by the commit that created its file. The 2018
+ * curation-tool files open theirs with "Phyx file by R. Stubbs", and the commits that added
+ * several of them ("Added two PHYX files curated from the Phylonym volume") name no one.
+ *
+ * The comments belong to the file's phyloreferences, not to any one tree, and a file keeps them
+ * through every later edit. So they say who wrote the file, and that is only who transcribed a
+ * tree when the tree arrived with the file. A tree added to the file later, or a revision, by a
+ * commit that names nobody is left blank rather than credited to whoever wrote the file.
  */
 const COMMENT_CURATORS = [
   [/\bR\.\s*Stubbs\b/, REBECCA_STUBBS],
@@ -282,7 +286,9 @@ for (const commit of commits) {
     const before = new Set(beforeBySide.flat());
     after.forEach((newick, slot) => {
       if (!newick || before.has(newick) || introducedBy.has(newick)) return;
-      introducedBy.set(newick, { ...commit, blob: newBlob, file });
+      // Whether this commit created the file (no earlier copy on any side), for COMMENT_CURATORS.
+      const createdFile = sides.every(({ oldBlob }) => !oldBlob);
+      introducedBy.set(newick, { ...commit, blob: newBlob, file, createdFile });
       // A new version of the tree in this slot, if the slot held another tree that this commit
       // removed from the file. One still elsewhere in the file was moved, not replaced: a new
       // tree inserted ahead of another pushes it into the next slot, and must not be read as a
@@ -348,7 +354,7 @@ for (const [newick, phyloId] of [...phyloIdByNewick.entries()].sort((a, b) => a[
   const history = versions.map(({ commit }, i) => {
     let curator = curatorIn(CURATORS, commit.subject);
     let curatorFrom = curator && 'commit subject';
-    if (!curator && i === 0) {
+    if (!curator && i === 0 && commit.createdFile) {
       curator = curatorIn(COMMENT_CURATORS, readBlob(commit.blob, commit.file).comments);
       curatorFrom = curator && 'curator comments';
     }

@@ -148,6 +148,27 @@ describe('attribute-phylogenies.js', () => {
     assert.strictEqual(trees.PHYLO_0001.history[0].curatorFrom, 'curator comments');
   });
 
+  it('does not credit the file\'s curator with a tree added to the file later', () => {
+    // Rebecca wrote the file; a maintainer later adds an unrelated second tree in a commit that
+    // names nobody. Her comment is still in the file, but she did not transcribe that tree.
+    const SECOND = '(Lamium_album,(Mentha_aquatica,Salvia_pratensis));';
+    const fixture = emptyFixture(NEWICK, SECOND);
+    writePhyx(fixture.repo, FILE, NEWICK);
+    const file = path.join(fixture.repo, FILE);
+    const phyx = JSON.parse(fs.readFileSync(file, 'utf8'));
+    phyx.phylorefs[0].curatorComments = 'PHYX file by R. Stubbs';
+    fs.writeFileSync(file, JSON.stringify(phyx, null, 4));
+    commit(fixture.repo, 'Added two PHYX files.');
+    phyx.phylogenies.push({ newick: SECOND });
+    fs.writeFileSync(file, JSON.stringify(phyx, null, 4));
+    commit(fixture.repo, 'Added another reference phylogeny.');
+
+    const { trees } = attribute(fixture);
+    assert.strictEqual(trees.PHYLO_0001.transcribedBy, REBECCA, 'the tree that came with the file is hers');
+    assert.notProperty(trees.PHYLO_0002, 'transcribedBy');
+    assert.notProperty(trees.PHYLO_0002.history[0], 'curatorFrom');
+  });
+
   it('prefers the commit subject to the curator comments', () => {
     const { trees } = attribute(
       buildFixture('Imported phylogenies curated by Anna.', 'PHYX file by R. Stubbs'),
