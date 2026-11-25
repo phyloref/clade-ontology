@@ -150,7 +150,7 @@ Stacked branches (#115, #128, …) all rewrite `phylogenies/phylo-ids.json`, `ex
 conflict in any of them by regenerating, not by hand: take either side
 (`git checkout --ours <file>`), finish resolving the code and `phyx/`, then re-run the extractor,
 the salvage and the attribution, and check that what changed is what you expect. A hand-merged
-ledger can tie one id to two trees. Only `attribution.json`'s `curators` and `overrides` are
+ledger can give one `PHYLO` id to two different Newicks. Only `attribution.json`'s `curators` and `overrides` are
 merged by hand, since nothing regenerates them.
 
 ### Salvaged trees
