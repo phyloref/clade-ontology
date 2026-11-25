@@ -279,6 +279,12 @@ describe('lib/salvage', () => {
       assert.strictEqual(notes[0].writtenNode, 'Innner');
     });
 
+    it('refuses an expectation when the target phyloreference has no label', () => {
+      // Mapped onto an undefined label it would be written as `[null]`.
+      const tree = tree2018({ nodeProperties: expecting('Inner', 'Asteridae') });
+      assert.throws(() => translateNodeProperties(tree, undefined), /target phyloreference has no label/);
+    });
+
     it('carries other node properties through unchanged', () => {
       const nodeProperties = { root: { comment: 'outgroup rooted' } };
       const { properties, notes } = translateNodeProperties(tree2018({ nodeProperties }), 'Asteridae');
