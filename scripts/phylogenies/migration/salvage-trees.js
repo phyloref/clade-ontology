@@ -170,6 +170,10 @@ function countTips(newick) {
  * and all; and a slice cut from the normalized Newick never matched a file that stored the tree
  * across several lines. --follow carries the history across those moves, and each old copy is
  * decrypted with the current path's attributes, since 2018's private/ has no git-crypt rule now.
+ *
+ * -m because --follow leaves merges out of the log altogether otherwise, so a tree first written
+ * while resolving a merge would be credited to the next commit that held it. With -m a merge is
+ * listed once per parent, each time with its path; reading it twice is harmless.
  */
 function provenance(rev, file, newick) {
   // The subject carries the attribution the author field does not: every commit here is authored
@@ -178,7 +182,7 @@ function provenance(rev, file, newick) {
   const format = '%x00%H%x09%an%x09%aI%x09%s';
   const log = ChildProcess.execFileSync(
     'git',
-    ['log', '--follow', '--name-only', `--format=${format}`, rev, '--', file],
+    ['log', '--follow', '-m', '--name-only', `--format=${format}`, rev, '--', file],
     { maxBuffer: 64 * 1024 * 1024 },
   ).toString();
   const wanted = normalizeNewick(newick);
