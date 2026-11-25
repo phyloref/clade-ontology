@@ -177,8 +177,9 @@ node scripts/phylogenies/attribute-phylogenies.js
   `CURATORS` propagates, and the script warns about an override that a derived curator now
   contradicts.
 - **Curators come from commit messages**, because every commit here is authored by the maintainer
-  who committed it; where a message names nobody, from the `curatorComments` of the file that
-  first held the tree. `curatorFrom` says which.
+  who committed it. Where a message names nobody, they come from the file's `curatorComments`,
+  but only for a tree that arrived with the file: the comments say who wrote the file, not who
+  added a tree to it later. `curatorFrom` says which.
 - **A tree is credited to whoever transcribed its first version**, not whoever wrote its current
   Newick: a later commit that changes the Newick, such as a maintainer adding a node label, is a
   `revised` event. How the history is read, and why, is in the header of
