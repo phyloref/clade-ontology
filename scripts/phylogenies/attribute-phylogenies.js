@@ -233,9 +233,14 @@ if (!phyloIdByNewick.size) die(`no store files found in ${argv.store}; nothing t
 // 2. Walk every commit that touched a Phylonym path, oldest first.
 // ---------------------------------------------------------------------------
 
-// --all so the unmerged curation branches are included: that is where several of these trees were
-// transcribed, and PR #45 in particular is destined to be closed.
-const log = git('log', '--all', '--format=%H|%P|%aI|%cI|%s', '--', ...HISTORICAL_PATHS).trim();
+// HEAD plus the archive/* tags, so the unmerged curation branches are included: that is where
+// several of these trees were transcribed, and their PRs were closed or are still open. Not --all,
+// which made the output depend on which branches a clone happened to have: deleting a branch
+// changed the ledger. The tags pin exactly the history this ledger cites; see "Archived source
+// branches" in phylogenies/migration/README.md.
+const log = git(
+  'log', 'HEAD', '--tags=archive/*', '--format=%H|%P|%aI|%cI|%s', '--', ...HISTORICAL_PATHS,
+).trim();
 if (!log) die(`no commits touch ${HISTORICAL_PATHS.join(' ')}; is --paths right?`);
 
 /*

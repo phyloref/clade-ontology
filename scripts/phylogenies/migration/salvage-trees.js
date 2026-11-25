@@ -67,6 +67,11 @@ const argv = yargs(process.argv.slice(2))
 /*
  * The trees to salvage, and where each comes from: every Newick at the tip of either branch.
  *
+ * Each is read from an archive/* tag at the tip the salvage was run against, not from the branch,
+ * so the salvage stays reproducible after #45's branch is deleted or #79's moves on. `branch` is
+ * the key below, which is what the ledger records. See "Archived source branches" in
+ * phylogenies/migration/README.md.
+ *
  * Order matters where two trees want the same slot. The 2020 branch goes first because the trees
  * already on master descend from that curation pass, so its tree takes an empty slot and the 2018
  * tree for the same publication is appended after it -- the same arrangement the 2018 trees get
@@ -75,7 +80,7 @@ const argv = yargs(process.argv.slice(2))
 const SOURCES = {
   'add-support-for-testing-against-open-tree': {
     pr: 79,
-    rev: 'origin/add-support-for-testing-against-open-tree',
+    rev: 'archive/add-support-for-testing-against-open-tree',
     // Same CLADO_NNNNNNN.json names as the target, under the since-emptied encrypted directory.
     file: (clado) => `phyx/encrypted/phylonym/${clado}.json`,
     clados: [
@@ -98,7 +103,7 @@ const SOURCES = {
   },
   summer_curation: {
     pr: 45,
-    rev: 'origin/summer_curation',
+    rev: 'archive/summer_curation',
     // 2018 curation-tool format: per-clade filenames, and the citation sits at the top level of
     // the file rather than on the phylogeny.
     file: (clado) => `phyx/encrypted/phylonym/${{
