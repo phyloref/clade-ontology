@@ -342,10 +342,12 @@ describe('attribute-phylogenies.js', () => {
     git(repo, 'add', '-A');
     commitAt('2020-01-01T00:00:00Z', '2020-01-01T00:00:00Z', 'Add an empty citation slot.');
 
-    // A reformat that brings the same tree in on another branch in August 2020...
+    // A reformat that brings the same tree in on another branch in August 2020, kept as an
+    // archive/* tag (an untagged branch is not walked at all)...
     git(repo, 'checkout', '--quiet', '-b', 'reformat');
     writePhyx(repo, FILE, NEWICK);
     commitAt('2020-08-01T00:00:00Z', '2020-08-01T00:00:00Z', 'Updated Newicks.');
+    git(repo, 'tag', 'archive/reformat');
 
     // ...and the transcription, written in June 2020 but rebased (re-committed) in 2021.
     git(repo, 'checkout', '--quiet', 'main');
@@ -355,5 +357,46 @@ describe('attribute-phylogenies.js', () => {
     const { trees } = attribute(fixture);
     assert.strictEqual(trees.PHYLO_0001.transcribedBy, ANNA);
     assert.strictEqual(trees.PHYLO_0001.history[0].date, '2020-06-01');
+  });
+
+  /*
+   * The script walks HEAD plus the archive/* tags, not --all: with --all, which branches a clone
+   * happened to have decided what was written, so deleting one changed the ledger. A tree that
+   * exists only on an archived branch must still be found, and one on a stray branch ignored even
+   * when that branch's copy is older.
+   */
+  it('walks the archive/* tags and HEAD, and no other branch', () => {
+    const fixture = emptyFixture();
+    const { repo } = fixture;
+    const commitAt = (authored, subject) => {
+      git(repo, 'add', '-A');
+      const child = ChildProcess.spawnSync('git', ['commit', '--quiet', '-m', subject], {
+        cwd: repo,
+        encoding: 'utf8',
+        env: { ...process.env, GIT_AUTHOR_DATE: authored, GIT_COMMITTER_DATE: authored },
+      });
+      assert.strictEqual(child.status, 0, `git commit failed: ${child.stderr}`);
+    };
+
+    writePhyx(repo, FILE, '');
+    commitAt('2018-01-01T00:00:00Z', 'Add an empty citation slot.');
+
+    // An untagged branch transcribes the tree first...
+    git(repo, 'checkout', '--quiet', '-b', 'stray');
+    writePhyx(repo, FILE, NEWICK);
+    commitAt('2018-03-01T00:00:00Z', 'Imported phylogenies curated by Anna.');
+
+    // ...and an archived branch later; neither is merged into main.
+    git(repo, 'checkout', '--quiet', 'main');
+    git(repo, 'checkout', '--quiet', '-b', 'curation');
+    writePhyx(repo, FILE, NEWICK);
+    commitAt('2018-07-01T00:00:00Z', 'Added new phyloreferences from RS.');
+    const archived = git(repo, 'rev-parse', '--short=12', 'HEAD');
+    git(repo, 'tag', '-a', 'archive/curation', '-m', 'Kept for the test.');
+    git(repo, 'checkout', '--quiet', 'main');
+
+    const { trees } = attribute(fixture);
+    assert.strictEqual(trees.PHYLO_0001.transcribedBy, REBECCA);
+    assert.strictEqual(trees.PHYLO_0001.history[0].commit, archived);
   });
 });
