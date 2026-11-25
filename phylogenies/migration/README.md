@@ -131,8 +131,8 @@ a run aimed at the wrong corner of `phyx/`. Pass `--force` if a wholesale replac
 what you want.
 
 It also refuses to run when a store file's tree no longer matches the tree the ledger records
-for its id. Store files are generated, so a hand edit there would otherwise tie one id to two
-trees; make the change in `phyx/phylonym/`, restore the store file, and re-run. That refusal
+for its id. Store files are generated, so a hand edit there would otherwise give one id to two
+different Newicks; make the change in `phyx/phylonym/`, restore the store file, and re-run. That refusal
 protects a generated artifact and goes away with round 2, when store files become curated and
 editing one is the normal way to correct a tree.
 
@@ -150,8 +150,8 @@ Stacked branches (#115, #128, …) all rewrite `phylogenies/phylo-ids.json`, `ex
 conflict in any of them by regenerating, not by hand: take either side
 (`git checkout --ours <file>`), finish resolving the code and `phyx/`, then re-run the extractor,
 the salvage and the attribution, and check that what changed is what you expect. A hand-merged
-ledger can give one `PHYLO` id to two different Newicks. Only `attribution.json`'s `curators` and `overrides` are
-merged by hand, since nothing regenerates them.
+ledger can give one `PHYLO` id to two different Newicks. Only `attribution.json`'s `curators` and
+`overrides` are merged by hand, since nothing regenerates them.
 
 ### Salvaged trees
 
