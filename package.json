@@ -8,7 +8,7 @@
     "lint": "biome lint test/ phyx2ontology/ regnum2phyx/",
     "pretest": "npm run lint",
     "test": "mocha --recursive",
-    "mocha": "mocha",
+    "mocha": "mocha --recursive",
     "build-ontology": "node phyx2ontology/phyx2ontology.js phyx/ > CLADO.json",
     "regnum2phyx": "node regnum2phyx/regnum2phyx.js"
   },
